@@ -46,14 +46,15 @@ everything i learned at SJSU as a mechanical engineering student
 - ME 120 - Experimental Methods
 - ME 130 - Applied Engineering Analysis
 - ME 154 - Mechanical Engineering Design
-- MECH Technical Elective 1:
+- ME 192 - Robotics and Manufacturing Systems
 
 ### Year 4
 **Spring 2028**
 
-- MECH Technical Electives 2:
+
 - ME 147 - Dynamic Systems Vibration and Control
 - ME 190 - Mechatronics Design
+- ME 284 – Sensor and Actuator Integration
 - ME 195A - Senior Design Project I
 - ME 195B - Senior Design Project II
 
