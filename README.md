@@ -1,6 +1,6 @@
 # engineering
 
-everything i learned at SJSU as a mechanical engineering student
+everything i learned as a mechanical engineering student at SJSU
 
 ## Courses
 
