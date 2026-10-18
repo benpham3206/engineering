@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Every measurement is an estimate. Accuracy tells you how close the estimate is to the true value, precision tells you how well repeated estimates agree, and uncertainty is the honest size of the doubt that remains.
+Every measurement is an estimate. Accuracy tells you how close the estimate is to the true value, precision tells you how well repeated estimates agree, and uncertainty is the size of the doubt that remains.
 
 **Prerequisites:** [01 - Units and dimensional analysis](01-units-and-dimensional-analysis.md)
 **Time:** 6-8 h
@@ -50,7 +50,7 @@ $$\%\text{ error} = \frac{\bar{x} - x_{\text{true}}}{x_{\text{true}}} \times 100
 - Sample standard deviation: $s = 0.0221\ \text{mm}$ (computed with Python's `statistics.stdev`).
 - Standard uncertainty of the mean: $u(\bar{x}) = 0.0221 / \sqrt{10} = 0.0070\ \text{mm}$.
 - Result: $25.097 \pm 0.007\ \text{mm}$.
-- Consistency check: the difference from the certified value is $25.097 - 25.10 = -0.003\ \text{mm}$. The combined uncertainty is $\sqrt{0.007^2 + 0.002^2} = 0.0073\ \text{mm}$, and 0.003 mm is less than one of those, so the data agree with the certificate.
+- Consistency check: the difference from the certified value is $25.097 - 25.10 = -0.003\ \text{mm}$. The combined uncertainty is $\sqrt{0.007^2 + 0.002^2} = 0.0073\ \text{mm}$. The difference, 0.003 mm, is smaller than that, so the data agree with the certificate.
 
 **Answer:** $\bar{x} = 25.097\ \text{mm}$, $u(\bar{x}) = 0.007\ \text{mm}$. The mean agrees with the certified 25.10 mm.
 

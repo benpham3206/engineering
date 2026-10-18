@@ -9,7 +9,7 @@ A lookup sheet for building and checking electrical, mechatronic, robotic, therm
 - Conservation holds in every system: charge (KCL), energy (KVL, and Bernoulli with losses), and mass (continuity). If your numbers create any of them, recheck the work.
 - Every model has a regime. Ohm's law assumes linear parts, the ideal op-amp rules assume negative feedback, and Bernoulli assumes no friction and no added energy. Check the regime before you trust the formula.
 - Power that is not delivered to the load ends up as heat. Size parts and heat paths for dissipation, not only for voltage and current.
-- A rating is a limit, not a target. Design against the worst case of supply, temperature, and tolerance.
+- A rating is a limit. Design against the worst case of supply, temperature, and tolerance.
 - Unit errors are the most common source of wrong answers. Convert to SI (ohm, A, V, m, s, W, Pa, N m) before you compute.
 - A prediction counts only after a measurement checks it. Write the predicted number down before the test.
 - Change one variable per test, so each result has one cause.
@@ -418,4 +418,3 @@ Books (paid, named only):
 - Hughes and Drury, *Electric Motors and Drives*.
 - Shigley's *Mechanical Engineering Design*, and the Hydraulic Institute pump standards (by name).
 
-No free online sources are listed. No URL was fetched and confirmed in this session.

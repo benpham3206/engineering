@@ -24,7 +24,7 @@ Most engineering work reaches people as writing. A test result that nobody can r
 
 ### Writing process
 
-- Make an outline before you write any sentences. Each heading should be a claim or a question, not just a label.
+- Make an outline before you write any sentences. Each heading should be a claim or a question, not a label.
 - Write a rough draft fast, without stopping to polish.
 - Revise for content first (is the argument complete and in order?), then for clarity (are the sentences short and direct?), then for mechanics (spelling, units, numbering).
 - Read the draft out loud or have someone else read it. Mark every sentence the reader would need to ask about.
@@ -71,7 +71,7 @@ Below are outlines you can copy. Replace the bracketed text with your own conten
 
 ### Design review slide outline
 
-This is a slide-by-slide outline for a design review. The full guidance for slides is in [03-presentations.md](03-presentations.md).
+The full guidance for slides is in [03-presentations.md](03-presentations.md).
 
 1. Title slide: project, design revision, presenter, date.
 2. Problem statement: the need, in one sentence, and the main requirements.
@@ -109,7 +109,7 @@ This is a slide-by-slide outline for a design review. The full guidance for slid
 
 ## Go deeper
 
-- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University: memos, technical reports, and other workplace genres.
-- [Purdue OWL: Writing Report Abstracts](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/technical_reports_and_report_abstracts/index.html) by Purdue University: how to write informational and descriptive abstracts.
+- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering memos, technical reports, and other workplace genres.
+- [Purdue OWL: Writing Report Abstracts](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/technical_reports_and_report_abstracts/index.html) by Purdue University, covering how to write informational and descriptive abstracts.
 - [OpenStax Writing Guide with Handbook](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University): free general writing textbook covering the writing process and revision.
-- [Purdue OWL](https://owl.purdue.edu/owl/purdue_owl.html) by Purdue University: the full writing resource index, including general writing and grammar.
+- [Purdue OWL](https://owl.purdue.edu/owl/purdue_owl.html) by Purdue University, the full writing resource index, including general writing and grammar.

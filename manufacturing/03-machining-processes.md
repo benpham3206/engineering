@@ -24,7 +24,7 @@ A CNC program is usually a list of blocks, each with a command code. Common code
 - M03 and M05: start and stop the spindle.
 - F: feed rate. S: spindle speed.
 
-Most CNC programs are written by a CAM (computer-aided manufacturing) program from a CAD model. An engineer should still know what the commands mean so the program can be checked by eye.
+A CAM (computer-aided manufacturing) program writes most CNC programs from a CAD model. An engineer should still know what the commands mean so the program can be checked by eye.
 
 Workholding is a large part of any machining job. Vises, clamps, fixtures, and chucks hold the part so the cut does not move it. A poor hold causes chatter, poor finish, and dangerous part ejection.
 

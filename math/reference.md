@@ -395,7 +395,7 @@ Convergence and coefficient decay:
 
 - One-sided tail beyond $z$: $1 - \Phi(z)$. Beyond $3\sigma$ it is $1.35\times10^{-3}$; beyond $4\sigma$ it is $3.2\times10^{-5}$.
 
-Holds when: the process is stable and the variable is close to symmetric and light-tailed. Breaks when: the tail is heavy (fatigue life, wind gusts, failure of rare events), where $z$-based tails underestimate risk by orders of magnitude. A $6\sigma$ normal tail is a number about the model, not the world.
+Holds when: the process is stable and the variable is close to symmetric and light-tailed. Breaks when: the tail is heavy (fatigue life, wind gusts, failure of rare events), where $z$-based tails underestimate risk by orders of magnitude. A $6\sigma$ normal tail is a model prediction, not a measured frequency.
 
 ### Z and t critical values (typical)
 
@@ -555,6 +555,6 @@ Classic books by name. Paid titles are named only; no links.
 - Golub and Van Loan, *Matrix Computations* (paid): numerical linear algebra, LU, Cholesky, conditioning.
 - Burden and Faires, *Numerical Analysis* (paid): root finding, quadrature, and ODE solvers with error analysis.
 - Montgomery, *Design and Analysis of Experiments* (paid): confidence intervals, design, and inference for engineers.
-- NIST Engineering Statistics Handbook (free, published by the U.S. National Institute of Standards and Technology): distributions, intervals, and hypothesis tests. Not fetched this session, so no URL is given.
-- NIST Digital Library of Mathematical Functions (free, published by NIST): special functions and identities. Not fetched this session, so no URL is given.
+- [NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/) by the U.S. National Institute of Standards and Technology: free. Distributions, intervals, and hypothesis tests.
+- [NIST Digital Library of Mathematical Functions](https://dlmf.nist.gov/) by NIST: free. Special functions and identities.
 - Hamming, *Numerical Methods for Scientists and Engineers* (paid): round-off, stability, and practical error control.

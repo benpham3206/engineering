@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Taking things apart to learn how they work is a normal and valuable engineering activity. It is also one that can cross lines: into someone else's patent, into their copyrighted drawings, into a safety-critical part, or into a product whose license forbids it. This lesson gives a short set of checks to run before you take apart, measure, copy, or sell a reverse-engineered design. It is general information, not legal advice. Laws and contracts differ by country and by product.
+Taking things apart to learn how they work is a normal and valuable engineering activity. It can also go past legal or ethical limits: into someone else's patent, into their copyrighted drawings, into a safety-critical part, or into a product whose license forbids it. It is general information, not legal advice. Laws and contracts differ by country and by product.
 
 **Prerequisites:** [Teardowns](01-teardowns.md)
 **Time:** 2-3 h
@@ -12,7 +12,7 @@ Taking things apart to learn how they work is a normal and valuable engineering 
 - **Learning from a product you own** is the usual starting point. Studying how a product works is a different act from copying it for sale.
 - **Patents** protect an invention for a limited time. A patent is a right you apply for and, if granted, enforce. Reading a published patent to learn how a device works is a normal use of public information. Making, selling, or using a patented design without permission can infringe the patent, even if you rebuilt it yourself.
 - **Copyright** protects original creative works, including drawings, CAD files, manuals, and photographs. Copying a copyrighted drawing or a 3D model is different from measuring a physical part and making your own drawing from those measurements. The distinction is a common source of confusion, so check before you publish a copied file.
-- **Trade secrets** are confidential information a company protects by keeping it secret, such as a formula or a process. Reverse-engineering a product you bought is generally treated as a fair way to learn what is on the market, but it does not give you permission to use confidential information that someone else took or leaked.
+- **Trade secrets** are confidential information a company protects by keeping it secret, such as a formula or a process. Reverse-engineering a product you bought is generally treated as a fair way to learn what is on the market. It does not give you permission to use confidential information that someone else took or leaked.
 - **Licenses and terms of use** can restrict what you do with software or a device. Some software licenses forbid decompiling it. Read the terms that came with the product you own, and do not assume they allow or forbid anything without reading them.
 - **Trademarks** are brand names, logos, and trade dress. Making a copy that uses a brand to pass as the original is a problem even if the part itself is not patented.
 - **Safety-critical parts** include brake components, pressure vessels, medical devices, electrical protection, and anything whose failure can injure a person. A reverse-engineered copy of one of these needs engineering verification and testing before anyone relies on it. A guess that looks close is not enough.
@@ -39,7 +39,7 @@ A learner wants to rebuild the crank arm of a bicycle they own, and later sell c
 4. **Safety:** A crank is a load-bearing part whose failure can throw a rider off the bike. The learner needs engineering verification, such as fatigue and load testing, before any sale.
 5. **Result:** Personal study and a repair are fine. Sale needs a different profile from the patent, an own-measured model, and testing to a recognized standard.
 
-The example shows the order of checks: ownership, patents, copyright, then safety. Each stop point changes what the learner may do next.
+Each stop point changes what the learner may do next.
 
 ## Practice
 

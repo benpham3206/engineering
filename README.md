@@ -27,9 +27,9 @@ An engineer is a problem solver who applies scientific principles, mathematical 
 
 Every file is one of three types, marked at the top:
 
-- **Lesson:** teaches a topic from scratch, with a worked example and practice problems. The numbered files in each folder.
-- **Reference:** a dense lookup sheet for working engineers: equations with the limits where they stop being true, typical values, rules of thumb, and checklists. The `reference` files in each folder.
-- **Philosophy:** the principles behind good engineering. Start with [Principles that last](philosophy/07-principles-that-last.md).
+- **Lesson.** The numbered files in each folder. Each one teaches a topic from scratch, with a worked example and practice problems.
+- **Reference.** The `reference` files in each folder. Each one is a dense lookup sheet for working engineers, with equations and the limits where they stop being true, typical values, rules of thumb, and checklists.
+- **Philosophy.** The principles behind good engineering. Start with [Principles that last](philosophy/07-principles-that-last.md).
 
 If you are **learning**, follow the [roadmap](ROADMAP.md): four years of lessons and projects, laid out like a mechanical engineering degree.
 
@@ -50,7 +50,7 @@ If you are **working**, go straight to the reference sheets in the table below.
 | [problem-solving](problem-solving) | A repeatable method for new problems | [sheet](problem-solving/reference.md) |
 | [applications](applications) | Circuits, mechatronics, robotics, projects | [sheet](applications/reference.md) |
 | [reverse-engineering](reverse-engineering) | Taking things apart to learn how they work | [sheet](reverse-engineering/reference.md) |
-| [tools](tools) | Software, calculators, and shop tools | [sheet](tools/reference.md) |
+| [tools](tools) | Software, calculators, drafting, shop, and machinist tools | [sheet](tools/reference.md) |
 
 Also: [courses](courses) and [units](units).
 
@@ -62,13 +62,3 @@ This repo is written to stay useful for a very long time, so it follows a few ru
 - **SI units first.** With the assumptions written out, including which planet's gravity.
 - **Models are simplified representations of reality.** Formulas have their limits.
 - **Plain text.** Markdown and open formats that any person or computer can read.
-
-## Checking the repo
-
-One command checks that every link resolves, every file declares its type, every lesson follows the template, and every folder README lists its files:
-
-```
-python scripts/check.py
-```
-
-Run it before every commit.

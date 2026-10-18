@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-No part is made to an exact size. A tolerance is the allowed variation in a dimension. Tolerancing sets the limits that keep a part working, and stack-up adds up the variation of several parts that must fit together. This lesson covers plus-minus tolerances, limits, fits, and the two standard ways to stack tolerances. Geometric tolerances (GD&T) are covered in the next two lessons.
+No part is made to an exact size. A tolerance is the allowed variation in a dimension. Tolerancing sets the limits that keep a part working, and stack-up adds up the variation of several parts that must fit together. Geometric tolerances (GD&T) are covered in the next two lessons.
 
 **Prerequisites:** [02 Engineering graphics](02-engineering-graphics.md), [01 Design process](01-design-process.md), and the algebra section of [math](../math/README.md)
 **Time:** 5-8 h
@@ -98,7 +98,7 @@ So with RSS, $g$ is between $4.82$ mm and $5.18$ mm.
 
 **Answer.** Nominal gap 5.00 mm (0.197 in). Worst-case range 4.72 to 5.28 mm (0.186 to 0.208 in). RSS range about 4.82 to 5.18 mm (0.190 to 0.204 in).
 
-**Sanity check.** The RSS range is narrower than the worst case, as expected. Both are centered on 5.00 mm. A gap of 4.72 mm is the worst-case low end. If the design needs at least 4.8 mm, worst-case fails and RSS passes with some risk. That decision belongs to the designer, not the arithmetic.
+**Sanity check.** The RSS range is narrower than the worst case, as expected. Both are centered on 5.00 mm. A gap of 4.72 mm is the worst-case low end. If the design needs at least 4.8 mm, worst-case fails and RSS passes with some risk. Whether that risk is acceptable is the designer's decision.
 
 ## Checklist
 

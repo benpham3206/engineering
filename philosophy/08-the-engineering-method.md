@@ -38,10 +38,10 @@ A clear goal alone does not open the fast path. Cutting expensive stock, pouring
 ## Build
 
 1. **Question every requirement.** Each one should trace to a person and a reason. Requirements from unknown sources are often wrong.
-2. **Delete what does not need to exist.** The best part is no part. Use the first option that works: no part at all, an existing part of the design, a standard catalog part, then a custom part. Never delete safety, margin you need, or anything that prevents a failure.
+2. **Delete what does not need to exist.** A part that does not exist cannot fail. Use the first option that works: no part at all, an existing part of the design, a standard catalog part, then a custom part. Never delete safety, margin you need, or anything that prevents a failure.
 3. **Integrate.** Combine parts where it removes joints and failure points, and keep separate the parts that need to be serviced or replaced separately.
 4. **Simplify** what remains.
-5. **Make it,** in order: break the system into subsystems, define the interfaces (loads, fits, signals, units), sequence the work by dependency, and build and integrate one piece at a time.
+5. **Make it.** Break the system into subsystems, define the interfaces (loads, fits, signals, units), sequence the work by dependency, and build and integrate one piece at a time.
 6. **Verify.** Check against the requirements and metrics, with tests where failure matters. Check every interface the change reaches: mating parts, assemblies, drawings, the bill of materials, the manual, and the way it is taken apart again.
 7. **Optimize only when measured.** Default: do not. Make it lighter or cheaper only when a measured metric misses its target, the part you are optimizing is the real bottleneck, and the design is already verified.
 8. **Shorten the feedback loop.** Faster test cycles beat cleverer analysis.
@@ -71,7 +71,7 @@ A clear goal alone does not open the fast path. Cutting expensive stock, pouring
 
 ## Example
 
-**A replacement bracket for a ceiling-mounted projector.** The fast path tempts: it is one small part. Run the gate. Consequence: it hangs over people's heads. Not low. So take the full path.
+**A replacement bracket for a ceiling-mounted projector.** The fast path is tempting because it is one small part. Run the gate. The consequence is high, since the part hangs over people's heads, so take the full path.
 
 - Plan: the goal is to hold the projector for ten years with no creep or loosening. Constraint: a falling load must not be possible. Assumption: the ceiling anchor is sound, which is checked by a pull test. Worst case times ten: the bracket fails and the projector falls; so add a secondary safety cable, a second, independent load path.
 - Build: delete the decorative cover plate (no requirement traces to it). Use a standard steel angle instead of a custom part. Verify by hand calculation against [the mechanics reference](../physics/reference-mechanics.md) and a proof load test at several times the projector's weight.

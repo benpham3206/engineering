@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Real pipes carry water to homes, fuel to engines, and cooling fluid through plants. A control volume is a fixed region of space that you draw around a piece of a system so you can balance mass, momentum, and energy across its edges. Pipe flow is the most common case where friction matters, so this lesson ends with the Darcy-Weisbach head-loss equation and an explicit formula for the friction factor.
+Real pipes carry water to homes, fuel to engines, and cooling fluid through plants. A control volume is a fixed region of space that you draw around a piece of a system so you can balance mass, momentum, and energy across its edges. Pipe flow is the most common case where friction matters.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](10-hydrostatics-and-bernoulli.md)
 **Time:** 8-10 h
@@ -21,11 +21,11 @@ Real pipes carry water to homes, fuel to engines, and cooling fluid through plan
 
 ### Mass balance (continuity)
 
-For steady flow through a control volume with one inlet and one outlet, the mass entering each second equals the mass leaving. For incompressible flow in a pipe whose area changes, this becomes a simple rule: velocity goes up where area goes down. If you halve the diameter, the area drops by a factor of 4, so the speed goes up by a factor of 4.
+For steady flow through a control volume with one inlet and one outlet, the mass entering each second equals the mass leaving. For incompressible flow in a pipe whose area changes, This becomes a simple rule. Velocity goes up where area goes down. If you halve the diameter, the area drops by a factor of 4, so the speed goes up by a factor of 4.
 
 ### Momentum balance (in brief)
 
-Momentum balances tell you the net force a flow puts on a bend, nozzle, or pipe support. The idea is that the net force on the fluid in the control volume equals the rate at which momentum leaves minus the rate at which it enters, including the pressure forces on the surface. In this lesson, you only need to know that a bend in a pipe pushes on its support. You will not solve a momentum problem here.
+Momentum balances tell you the net force a flow puts on a bend, nozzle, or pipe support. The net force on the fluid in the control volume equals the rate at which momentum leaves minus the rate at which it enters, including the pressure forces on the surface. In this lesson, you only need to know that a bend in a pipe pushes on its support. You will not solve a momentum problem here.
 
 ### Energy balance and head loss
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An experiment is a question you ask the world in a controlled way. Good design decides what you change, what you hold still, how many times you repeat, and how you guard against bias. A well-designed experiment can answer a question with a modest number of runs. A poorly designed one wastes time even when the measurements are precise.
+An experiment tests a question under controlled conditions. Good design decides what you change, what you hold still, how many times you repeat, and how you guard against bias. A well-designed experiment can answer a question with a modest number of runs. A poorly designed one wastes time even when the measurements are precise.
 
 **Prerequisites:** [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [03 - Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md)
 **Time:** 6-8 h
@@ -51,7 +51,7 @@ Sixteen replicates per setting give $u(\bar{x}) = 0.20 / \sqrt{16} = 0.05$ °C.
 
 **Answer:** (a) 16 replicates per setting. (b) 8 settings, 128 runs total in a full factorial with 16 replicates each.
 
-**Sanity check:** Halving the target uncertainty to 0.025 °C would require four times as many replicates (64). The square law explains why precision is expensive: each extra digit of certainty costs much more time than the one before.
+**Sanity check:** Halving the target uncertainty to 0.025 °C would require four times as many replicates (64).
 
 ## Practice
 

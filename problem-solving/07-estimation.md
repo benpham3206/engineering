@@ -5,7 +5,7 @@
 An estimate gives a useful answer when the exact data is missing. A Fermi problem asks for a
 quantity such as "how much energy heats a bath?" and answers it by breaking the question into
 parts, using values you know or can look up, and rounding aggressively. The result is an order
-of magnitude with a range, and every assumption is written down so it can be checked or changed.
+of magnitude with a range, and you write down every assumption so a reader can check or change it.
 
 **Prerequisites:** [Sanity-check the answer](06-sanity-check-the-answer.md)
 **Time:** 4-6 h

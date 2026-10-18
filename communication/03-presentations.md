@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Engineers present to reviewers, customers, managers, and sometimes to the public. A good talk gets a decision or an understanding in a few minutes, and a bad one buries the point under charts. This lesson covers how to plan a technical presentation, build slides that support the talk, and run a design review.
+Engineers present to reviewers, customers, managers, and sometimes to the public. A good talk gets a decision or an understanding in a few minutes, and a bad one hides the point among charts.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md): the same reader-first habits apply to slides.
 **Time:** 4-6 h
@@ -26,7 +26,7 @@ A common structure, which works for most engineering reviews:
 5. **Risks and open items.** What could still go wrong and what you need to learn.
 6. **Ask.** The decision, approval, or feedback you want.
 
-Keep the whole talk to the time you are given, with room for questions. A rule of thumb is one main slide per minute for a standard review, but use the time you were actually assigned.
+Keep the whole talk to the time you are given, with room for questions. A rule of thumb is one main slide per minute for a standard review, but use the time you were assigned.
 
 ### Building slides
 
@@ -64,7 +64,7 @@ Use this for a design review or project update.
 
 **Outline.**
 
-1. **Title.** "Motor mount revision B design review." Presenter, date, and the decision requested: approval to build a prototype.
+1. **Title.** "Motor mount revision B design review." Presenter, date, and a request for approval to build a prototype.
 2. **Problem.** "The motor mount must carry 2 kN with less than the specified deflection." Show the requirements in a short table.
 3. **Approach.** "Redesign with a thicker web was the best trade-off between weight and stiffness." Show two or three options, each with its main pro and con.
 4. **Analysis.** "The revised mount meets the load requirement with margin." Show a bar chart of predicted deflection for the three designs against the limit. Label the axis "Deflection (mm)" and show the limit as a line.
@@ -100,5 +100,5 @@ Use this for a design review or project update.
 
 ## Go deeper
 
-- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University: includes workplace writing genres, including white papers and presentation-related guidance.
-- [OpenStax Writing Guide with Handbook](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University): free general writing guide covering the writing process and revision, which applies to slides and speaking notes.
+- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace writing genres, including white papers and presentation-related guidance.
+- [OpenStax Writing Guide with Handbook](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University), a free general writing guide covering the writing process and revision, which applies to slides and speaking notes.

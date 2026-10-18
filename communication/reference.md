@@ -13,7 +13,7 @@ A lookup sheet of templates, conventions, and checks for writing, drawing, prese
 - Use one name for each part, signal, and quantity in every document that mentions it.
 - Words that define a requirement have fixed meanings: "shall" is mandatory, "should" is a recommendation, "may" is permitted.
 - Drawings, graphs, and units follow shared standards so that every reader sees the same thing.
-- Record the decision and its reason, not only the outcome. Future readers need the why.
+- Record the decision, its reason, and the outcome. Future readers need the why.
 - Write for a reader who was not in the room, and who will read the document years later.
 
 ## 1. Writing templates

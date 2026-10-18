@@ -28,7 +28,7 @@ voltage-and-resistance pattern), [Mathematics folder](../math/README.md)
   current, and thermal resistance plays the role of electrical resistance.
 - **Heat sink**: a metal part with fins that increases surface area so convection can carry more heat
   to the air.
-- **Units note**: a temperature difference is the same in kelvin and degrees Celsius. Use kelvin
+- **Units note.** A temperature difference is the same in kelvin and degrees Celsius. Use kelvin
   for absolute temperatures in gas laws, but differences can use either.
 
 ## Key equations

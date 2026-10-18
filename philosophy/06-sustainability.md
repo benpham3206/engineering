@@ -9,7 +9,7 @@ Sustainability means meeting present needs without damaging the ability of futur
 
 ## Core ideas
 
-- The most widely used definition of sustainable development comes from the 1987 report "Our Common Future," by the World Commission on Environment and Development (the Brundtland Commission): development that meets the needs of the present without compromising the ability of future generations to meet their own needs.
+- The most widely used definition comes from the 1987 report "Our Common Future," by the World Commission on Environment and Development (the Brundtland Commission). It defines sustainable development as development that meets the needs of the present without compromising the ability of future generations to meet their own needs.
 - Sustainability has three parts that people often discuss together: environmental health, economic viability, and social equity. A design that is green but unaffordable, or cheap but harmful to a community, is not sustainable.
 - A system is a stock and flow problem. Resources come into a product as inputs (materials, energy, water), move through it, and leave as outputs (products, emissions, waste). Sustainable design reduces inputs, keeps materials in use longer, and reduces harmful outputs.
 - Life cycle thinking looks at the whole life of a product:
@@ -19,7 +19,7 @@ Sustainability means meeting present needs without damaging the ability of futur
   - Use, including energy and maintenance.
   - End of life: reuse, recycling, or disposal.
   A product that looks clean in use may have a heavy impact in manufacturing or disposal.
-- Durability and repairability are often the largest levers. A product that lasts longer or can be repaired spreads its impact over more years.
+- Durability and repairability often have the largest effect. A product that lasts longer or can be repaired spreads its impact over more years.
 - Energy efficiency and material efficiency both matter. Less energy in use reduces emissions over the product's lifetime. Less material per unit of function reduces impact in every stage.
 - Engineers face trade-offs. Recycled materials may be harder to make into a specific part. A longer-lasting product may cost more up front. Sustainable engineering names these trade-offs and uses life cycle numbers to compare options.
 - Climate and resource limits change the design inputs. Energy prices, water availability, and the local grid carbon intensity all affect which design is best in a given place.

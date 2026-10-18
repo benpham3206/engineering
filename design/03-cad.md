@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-CAD is the software used to model parts, put them together into assemblies, and produce drawings. A good CAD model is a clear recipe: anyone can open it, change one dimension, and get a correct result. A bad model breaks the moment one thing moves.
+CAD is the software used to model parts, put them together into assemblies, and produce drawings. A good CAD model stays correct when anyone opens it and changes one dimension. A bad model breaks the moment one thing moves.
 
 **Prerequisites:** [01 Design process](01-design-process.md), [02 Engineering graphics](02-engineering-graphics.md)
 **Time:** 6-10 h
@@ -86,7 +86,7 @@ A bracket holds a motor. It is 60 mm (2.36 in) long, 40 mm wide, and 5 mm (0.20 
 - **Pattern.** Instead of drawing four circles by hand, you could sketch one hole and use a rectangular pattern. This keeps the spacing editable from one dimension.
 - **Check.** Change the rectangle width from 40 mm to 45 mm. Holes dimensioned from the origin edge stay in place. Holes dimensioned from the far edge move with it. Either can be right, but the model must match the intent you chose, and the drawing must show it.
 
-The example shows why parametric habits matter. A change should move only what it should move.
+A change should move only what it should move.
 
 ## Practice
 

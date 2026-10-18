@@ -1,6 +1,6 @@
 # measurement
 
-Knowing how well you know something. Every number needs a unit and an uncertainty.
+Measurement tells you how well you know a quantity. Every number needs a unit and an uncertainty.
 
 **Prerequisites:** high-school algebra, or [math](../math/README.md) for the algebra and basic calculus used in uncertainty and fitting.
 

@@ -2,8 +2,7 @@
 
 **Type:** lesson
 
-Gears change speed and torque between shafts. Fasteners clamp parts together, and their job is to hold a preload that does not loosen. Springs store energy and give a force that changes with length. These three machine elements appear in almost every machine, and each has a few formulas that a designer uses over and over. This lesson covers the basic sizing of each.
-
+Gears change speed and torque between shafts. Fasteners clamp parts together, and their job is to hold a preload that does not loosen. Springs store energy and give a force that changes with length. These three machine elements appear in almost every machine, and each has a few formulas that a designer uses over and over.
 **Prerequisites:** [07 Factor of safety and failure](07-factor-of-safety-and-failure.md), [08 Shafts and bearings](08-shafts-and-bearings.md)
 **Time:** 8-12 h
 
@@ -114,7 +113,7 @@ Step 3. Torque: $T = K F_i d = 0.20 \times 26\,100 \times 10 = 52\,200$ N$\cdot$
 
 **Answer.** Preload 26.1 kN. Tighten to about 52 N$\cdot$m with a calibrated wrench.
 
-**Sanity check.** A 26 kN clamp load is large for an M10 bolt, but it matches the idea that most of the bolt's proof load is used for clamping. A torque of 52 N$\cdot$m is a reasonable wrench value for an M10 bolt. The torque is very sensitive to friction: if the nut factor were 0.15 with lubrication, the same torque would give a larger preload, which is why the nut factor must be stated.
+**Sanity check.** A 26 kN clamp load is large for an M10 bolt, but it matches the idea that most of the bolt's proof load is used for clamping. A torque of 52 N$\cdot$m is a reasonable wrench value for an M10 bolt. The torque is very sensitive to friction. With a lubricated nut factor of 0.15, the same torque gives a larger preload, so the nut factor must be stated.
 
 ## Worked example: gear pair
 

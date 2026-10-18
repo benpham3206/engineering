@@ -1,6 +1,6 @@
 # math
 
-The language engineering is written in. Most of the work here is knowing which tool fits the problem and checking that the answer makes sense.
+Math is the notation engineering uses. Most of the work here is knowing which tool fits the problem and checking that the answer makes sense.
 
 **Prerequisites:** none. This is the foundation for the other folders. High-school algebra is assumed. Start with [Algebra](01-algebra.md).
 

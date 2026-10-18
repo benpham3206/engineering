@@ -4,7 +4,7 @@
 
 A sketch turns a sentence into a picture you can check. Engineers draw before they calculate
 because a picture shows which forces exist, which way they point, and where the system ends.
-A free-body diagram is the most useful sketch in mechanics: it shows one object and every
+A free-body diagram is the most useful sketch in mechanics. It shows one object and every
 force acting on it.
 
 **Prerequisites:** [Define the problem](01-define-the-problem.md)
@@ -15,7 +15,7 @@ force acting on it.
 - A **sketch** is a quick drawing with the key geometry: lengths, angles, supports, and loads.
   Label every dimension with its value and unit.
 - A **free-body diagram (FBD)** is a sketch of one object, cut away from everything touching
-  it. The object is drawn as a simple box or dot. Each contact or field is replaced by a force
+  it. Draw the object as a simple box or dot, and replace each contact or field with a force
   arrow.
 - A **force arrow** shows direction and, roughly, magnitude. Label each arrow with a symbol
   such as $W$, $N$, $T$, or $f$.

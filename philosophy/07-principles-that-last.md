@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-Tools change every few years. Materials change every few decades. The laws of physics and the habits of good engineers do not change at all. These principles held for the people who built aqueducts, they hold for the people building rockets now, and they will hold for whoever builds the ships that leave this solar system.
+Tools change every few years. Materials change every few decades. The laws of physics and the habits of good engineers do not change at all. These principles held for the people who built aqueducts, and they hold for the people building rockets now.
 
 **Prerequisites:** none. Read this first, and read it again every few years.
 
@@ -32,9 +32,9 @@ Tools change every few years. Materials change every few decades. The laws of ph
 
 ## Be honest
 
-- **Report what happened, not what you hoped.** Bad data you tell people about is useful. Good data you invented is a disaster waiting for a date.
+- **Report what happened, not what you hoped.** Bad data you tell people about is useful. Data you invent, however good it looks, causes a failure later.
 - **Say "I don't know" early.** It is cheap at the start of a project and very expensive at the end.
-- **Safety outranks schedule, cost, and pride.** If you believe something is unsafe, say so in writing, and do not sign what you would not stand under.
+- **Safety outranks schedule, cost, and pride.** If you believe something is unsafe, say so in writing, and do not sign work you believe is unsafe.
 - **Write it down so someone else can check it.** Work that cannot be reviewed cannot be trusted, including your own work six months later.
 
 ## Keep your work alive

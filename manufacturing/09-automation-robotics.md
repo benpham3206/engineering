@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Automation uses machines, controls, and sensors to do work with little or no human hands on the task. A robot is one kind of automated machine: a programmable arm or mechanism that moves and acts. Automation makes sense when a task is repeatable, dangerous, precise, or needs to run for long hours. An engineer who designs for automation must think about the process, the sensors, the controls, and the safety of the cell, not only the part.
+Automation uses machines, controls, and sensors to do work with little or no human handling. A robot is one kind of automated machine: a programmable arm or mechanism that moves and acts. Automation makes sense when a task is repeatable, dangerous, precise, or needs to run for long hours. An engineer who designs for automation must think about the process, the sensors, the controls, and the safety of the cell, not only the part.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Tolerances, fits, and surface finish](08-tolerances-fits-finish.md)
 **Time:** 5-7 h
@@ -61,7 +61,7 @@ $$\text{OEE} = 0.90 \times 0.85 \times 0.98 = 0.750$$
 
 **Answer:** The OEE is 0.750, or 75.0 percent.
 
-**Sanity check:** Each factor is between 0 and 1, so the product must be smaller than the smallest factor. Here the smallest factor is 0.85, and 0.750 is below it. The result is consistent.
+**Sanity check:** Each factor is between 0 and 1, so the product must be smaller than the smallest factor. Here the smallest factor is 0.85, and 0.750 is below it.
 
 ## Practice
 

@@ -2,8 +2,7 @@
 
 **Type:** lesson
 
-Oscillations, waves, and light show up in almost every machine: springs and suspensions, sound and vibration in structures, sensors that use light, and the temperature and heat that decide how a part behaves. This lesson covers the basic ideas you need before studying vibrations, heat transfer, and thermodynamics.
-
+Oscillations, waves, and light show up in almost every machine: springs and suspensions, sound and vibration in structures, sensors that use light, and the temperature and heat that decide how a part behaves.
 **Prerequisites:** [02-particle-dynamics.md](02-particle-dynamics.md) (forces and Newton's second law)
 **Time:** 8-12 h
 
@@ -25,7 +24,7 @@ Oscillations, waves, and light show up in almost every machine: springs and susp
 - A **longitudinal wave** moves the medium along the direction of travel. Sound in air is an example.
 - The **wavelength** $\lambda$ is the distance over which the wave pattern repeats, in meters.
 - The **wave speed** $v$ is how fast the pattern moves. It is linked to the others by $v = f\lambda$.
-- Wave speed depends on the medium. The frequency is set by the source and stays the same when the wave enters a new medium.
+- Wave speed depends on the medium. The source sets the frequency, which stays the same when the wave enters a new medium.
 
 ### Standing waves and resonance
 

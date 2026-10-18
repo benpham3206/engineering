@@ -2,8 +2,7 @@
 
 **Type:** lesson
 
-Every part is made from a material and shaped by a process. The material affects strength, weight, and cost, and the process affects the shape the designer could make. Careful observation and a few simple tests can tell you a lot. This lesson covers the clues you can read by eye, the tests you can do at a bench with basic tools, and what each clue suggests about how the part was made.
-
+Every part is made from a material and shaped by a process. The material affects strength, weight, and cost, and the process affects the shape the designer could make. Careful observation and a few simple tests can tell you a lot.
 **Prerequisites:** [Teardowns](01-teardowns.md), [Measuring existing parts](02-measuring-existing-parts.md)
 **Time:** 8-12 h
 

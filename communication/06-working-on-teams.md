@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Almost no engineering product is built by one person. Projects succeed or fail on how people divide the work, share information, make decisions, and handle disagreement. This lesson covers the roles teams need, how to run a meeting that produces decisions, how to give and receive feedback, and how to keep work visible to everyone.
+Almost no engineering product is built by one person. Projects succeed or fail on how people divide the work, share information, make decisions, and handle disagreement.
 
 **Prerequisites:** [04-documentation.md](04-documentation.md): teams depend on shared records.
 **Time:** 3-5 h
@@ -101,5 +101,5 @@ Use this to check a team's working process.
 
 ## Go deeper
 
-- [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA: free handbook from NASA whose sections include crosscutting technical management.
-- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University: workplace writing genres, including memos, which teams use to communicate decisions.
+- [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA, a free handbook whose sections include crosscutting technical management.
+- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace writing genres, including memos, which teams use to communicate decisions.

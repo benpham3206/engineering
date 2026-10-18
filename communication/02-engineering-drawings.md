@@ -2,14 +2,14 @@
 
 **Type:** lesson
 
-An engineering drawing is the set of instructions a machinist, inspector, or supplier uses to make a part. It has to say the same thing to everyone who reads it, so it follows strict conventions for layout, lines, and dimensions. This lesson covers the parts of a drawing and the rules that make it unambiguous. For how to model and draw parts in CAD and how to use geometric dimensioning and tolerancing, see [the design folder](../design/README.md).
+An engineering drawing is the set of instructions a machinist, inspector, or supplier uses to make a part. It has to say the same thing to everyone who reads it, so it follows strict conventions for layout, lines, and dimensions. For how to model and draw parts in CAD and how to use geometric dimensioning and tolerancing, see [the design folder](../design/README.md).
 
 **Prerequisites:** none. Helpful first: [01-technical-writing.md](01-technical-writing.md) for the habit of stating things precisely.
 **Time:** 8-12 h
 
 ## Core ideas
 
-- **A drawing is a contract.** If a dimension or note is missing, the maker has to guess. Every feature the part needs must be defined on the drawing or in a document it refers to.
+- **A drawing is the binding specification.** If a dimension or note is missing, the maker has to guess. Every feature the part needs must be defined on the drawing or in a document it refers to.
 - **Views show the shape.** A single view cannot show a three-dimensional part. Standard views (front, top, right side) show the part from directions that line up with each other.
 - **Lines carry meaning.** Each line style means something specific. A reader should be able to tell a visible edge from a hidden one at a glance.
 - **Dimensions give size.** Every size on the drawing comes from a dimension, not from scaling the picture. Drawings are not drawn to scale for the reader.
@@ -112,5 +112,5 @@ Use this to review a drawing before release.
 
 ## Go deeper
 
-- [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: free engineering library. Search the mechanical engineering shelf for graphics or design texts.
-- [Design folder](../design/README.md) by this repository: engineering graphics, CAD, and GD&T topics that build on this lesson.
+- [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts, a free engineering library. Search the mechanical engineering shelf for graphics or design texts.
+- [Design folder](../design/README.md) by this repository, covering engineering graphics, CAD, and GD&T topics that build on this lesson.

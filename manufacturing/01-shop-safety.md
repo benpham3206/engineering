@@ -12,8 +12,8 @@ Shop safety is the first skill in manufacturing because every other skill depend
 - **Hazard**: a source of harm, such as a spinning spindle or a hot weld.
 - **Risk**: the chance that a hazard hurts someone, combined with how bad the harm could be.
 - **Control**: anything that lowers risk. Controls work best in this order: remove the hazard, guard it, add warnings, then rely on personal protective equipment (PPE).
-- **Lockout/tagout (LOTO)**: a set of steps that makes a machine unable to start while someone works on it. The energy source is switched off, locked, tagged, and checked with a test before work begins.
-- **PPE**: gear worn on the body, such as safety glasses, hearing protection, and gloves. PPE is the last line of defense, not the first.
+- **Lockout/tagout (LOTO)**: a set of steps that makes a machine unable to start while someone works on it. Switch off the energy source, lock and tag it, and test it before work begins.
+- **PPE**: gear worn on the body, such as safety glasses, hearing protection, and gloves. PPE is the last control, not the first.
 
 Most shop injuries come from a small set of causes:
 
@@ -42,7 +42,7 @@ Before you run any machine, check these points:
 - Clear the work area of tools, rags, and chips before you start the machine.
 - Never reach past a running tool to grab a chip. Stop the machine, then clear it with a brush or hook.
 - Apply LOTO before you clean, adjust, change a tool, or repair anything inside the guard.
-- Report near misses. A near miss is a free warning.
+- Report near misses. A near miss warns you before anyone is hurt.
 
 ## Example
 

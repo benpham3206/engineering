@@ -67,7 +67,7 @@ Then Newton's second law gives $F = ma = (1500)(1.0) = 1500$ N, which matches.
 
 **Answer:** The net forward force is $F = 1500$ N, and the acceleration is $a = 1.0$ m/s^2.
 
-**Sanity check:** An acceleration of 1.0 m/s^2 is a gentle, realistic value for a car, about a tenth of gravity. The two methods agree. The speed goes from 15 to 25 m/s, which is an increase of 10 m/s over 200 m, and an average speed of 20 m/s would take 10 s. A constant acceleration of 1.0 m/s^2 for 10 s gives a change of 10 m/s, so the numbers are consistent.
+**Sanity check:** An acceleration of 1.0 m/s^2 is about a tenth of gravity, a plausible value for a car. The two methods agree. The speed goes from 15 to 25 m/s, which is an increase of 10 m/s over 200 m, and an average speed of 20 m/s would take 10 s. A constant acceleration of 1.0 m/s^2 for 10 s gives a change of 10 m/s, so the numbers are consistent.
 
 ## Practice
 

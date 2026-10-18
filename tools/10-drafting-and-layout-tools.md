@@ -55,7 +55,7 @@ Steel rules are also used alone for straight lines and for checking lengths. Hol
 
 A straightedge guides a pencil or scriber along a straight line. Check the edge against a known straight surface before you trust it.
 
-A **T-square** is a straightedge with a crosspiece, or head, that slides along the side of a drawing board. Its blade is used for horizontal lines. Keep the head pressed firmly against the board edge. A T-square works well for horizontal lines and as a base for triangles.
+A **T-square** is a straightedge with a crosspiece, or head, that slides along the side of a drawing board. Its blade is used for horizontal lines. Keep the head pressed firmly against the board edge.
 
 Two drafting triangles are standard:
 
@@ -109,7 +109,7 @@ Check the square head against a known flat surface and against the blade. A squa
 Layout is the work of marking exact lines and points on a part before cutting, drilling, or milling it. Good layout starts with a flat, true reference and uses the same datum for every mark.
 
 - **Surface plate.** A flat, heavy plate of granite or cast iron. It is the reference surface for all layout work on metal. Keep it clean and cover it when not in use.
-- **Layout fluid.** A thin coat of dye or blue fluid on the metal. It makes a scribed line easy to see. Let it dry before scribing. Layout fluid is wiped off after use.
+- **Layout fluid.** A thin coat of dye or blue fluid on the metal. It makes a scribed line easy to see. Let it dry before scribing. Wipe off the layout fluid after use.
 - **Scriber.** A hardened steel point that scribes a fine line in the layout fluid. Lean it about 15 degrees in the direction of travel and pull it along a straightedge or square. Keep the point sharp.
 - **Height gauge.** A vertical scale on a base with a sliding head that carries a scriber. Set the height on the scale, then scribe a line on the part at that height. Measure heights from the surface plate, not from the table.
 - **Center punch.** A punch with a wide point, about 90 degrees, that makes a small dimple to start a drill. Strike it once, firmly, on the exact point.

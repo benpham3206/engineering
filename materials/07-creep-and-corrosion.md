@@ -20,7 +20,7 @@ Two slow failure modes often decide how long a part lasts. Creep is the slow def
 ### Corrosion
 
 - **Corrosion** is the loss of material by a chemical or electrochemical reaction with the environment.
-- Corrosion is electrochemical in most metals. An **anode** (where the metal dissolves) and a **cathode** (where a reduction reaction happens) are joined through an electrolyte such as water, which lets current flow.
+- Corrosion is electrochemical in most metals. An electrolyte such as water lets current flow between an **anode** (where the metal dissolves) and a **cathode** (where a reduction reaction happens).
 - **Galvanic corrosion** happens when two different metals touch in an electrolyte. The less noble metal corrodes faster. Aluminum bolts in steel plates are a classic case.
 - **Pitting** is local, deep attack that can perforate thin walls even when the average loss is small.
 - **Crevice corrosion** happens in gaps, under gaskets, and at lap joints, where the local chemistry becomes aggressive.

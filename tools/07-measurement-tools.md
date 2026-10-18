@@ -17,7 +17,7 @@ Every design number depends on a measurement, and every measurement has an error
 - A **tolerance** is the allowed variation in a dimension, such as $\pm 0.05$ mm.
 - A **stack-up** adds tolerances of parts that line up in one direction. Two methods are common: worst case (add all the errors) and root-sum-square (RSS, the square root of the sum of squares). RSS assumes independent errors.
 
-Read the [NIST SI guide](https://www.nist.gov/pml/special-publication-811) for consistent unit use. Use it when you record and convert readings.
+Read the [NIST SI guide](https://www.nist.gov/pml/special-publication-811) for consistent unit use when you record and convert readings.
 
 ## Key equations
 

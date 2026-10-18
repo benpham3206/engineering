@@ -1,12 +1,14 @@
 # Roadmap
 
-One path through this reference for someone learning from scratch: four years, laid out like a mechanical engineering degree. Working engineers can skip this and use the reference sheets in each folder. Each semester is about 15 weeks at 15-20 hours a week. Go faster or slower as you need; the order matters more than the pace.
+This is one path through the repo for someone learning from scratch. It takes four years and follows the order of a mechanical engineering degree. Working engineers can skip it and use the reference sheets in each folder.
+
+Each semester is about 15 weeks at 15-20 hours a week. Go faster or slower as you need. The order matters more than the pace.
 
 Every semester has three parts:
 
-- **Learn:** lessons from the folders listed
-- **Build:** at least one project from [applications](applications/README.md)
-- **Write:** a short report on what you built, using [communication](communication/README.md)
+- Study the lessons from the folders listed.
+- Build at least one project from [applications](applications/README.md).
+- Write a short report on what you built, using [communication](communication/README.md).
 
 ## Before you start
 

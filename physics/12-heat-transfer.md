@@ -2,8 +2,7 @@
 
 **Type:** lesson
 
-Heat moves whenever there is a temperature difference. Engineers use that fact to keep buildings warm, electronics cool, and engines within their material limits. This lesson covers the three modes of heat transfer (conduction, convection, and radiation) and shows how to combine them into a thermal resistance network, which turns a heat-flow problem into a circuit problem.
-
+Heat moves whenever there is a temperature difference. Engineers use that fact to keep buildings warm, electronics cool, and engines within their material limits.
 **Prerequisites:** [Waves, light, and heat](07-waves-light-heat.md), [Thermodynamics: first law](08-thermo-first-law.md)
 **Time:** 8-10 h
 
@@ -51,7 +50,7 @@ A chain of layers in series works like a series electrical circuit. For one-dime
 - Heat rate is the total temperature difference divided by the total resistance.
 - The temperature at any interface can be found by stepping down from one side, using $\Delta T = q R$ for each element.
 
-This method is quick and has a clear logic. Use it first before attempting a full solution with differential equations.
+This method is quick. Use it first before attempting a full solution with differential equations.
 
 ### Common assumptions
 
@@ -124,7 +123,7 @@ Inside air is at 21 °C, outside air at $-5$ °C. Find the heat rate through the
 
 **Answer:** $q = 16.7$ W through the 1.0 m$^2$ section, so the heat flux is 16.7 W/m$^2$. $T_1 = 18.9$ °C, $T_2 = 16.6$ °C, $T_3 = -4.3$ °C.
 
-**Sanity check:** The outer air-to-surface drop is $q/(h_o A) = 16.7 / 25 = 0.67$ K, and $T_3 - T_\text{out} = -4.33 - (-5) = 0.67$ K. They agree. Most of the temperature drop (about 21 K of the total 26 K) happens across the insulation, which has the largest resistance. That matches the intent of an insulation layer. The interface temperatures fall in the right order from warm inside to cold outside.
+**Sanity check:** The outer air-to-surface drop is $q/(h_o A) = 16.7 / 25 = 0.67$ K, and $T_3 - T_\text{out} = -4.33 - (-5) = 0.67$ K. They agree. Most of the temperature drop (about 21 K of the total 26 K) happens across the insulation, which has the largest resistance.
 
 ## Practice
 

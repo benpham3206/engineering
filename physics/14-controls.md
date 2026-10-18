@@ -49,7 +49,7 @@ Steady-state error for a unit step (the error is $1 - y(\infty)$):
 
 $$e_{ss} = \frac{1}{1 + K_p K}$$
 
-Sign conventions: a larger $K_p K$ shrinks both the steady error and the closed-loop time constant. The 2 percent settling time of a first-order response is about $4\tau_{cl}$.
+A larger $K_p K$ shrinks both the steady error and the closed-loop time constant. The 2 percent settling time of a first-order response is about $4\tau_{cl}$.
 
 ## Worked example
 

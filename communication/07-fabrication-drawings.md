@@ -21,7 +21,7 @@ Put these on every drawing, even a simple one.
 
 - **Material and stock size.** The alloy, temper or grade, and the size of the raw stock. For example, "6061-T6 aluminum plate, 6 mm thick, cut to 200 x 120 mm." A material with no standard code, such as "steel," is not enough.
 - **Finish and coating.** What the surface should look like at the end. "As machined," "deburred," "anodize Type II, clear," or "no coating" are all valid. Leaving it blank forces a guess.
-- **Heat treatment.** Say "none" if there is none. If a heat treatment is required, give the process and the hardness range. Note that purchased tempers such as T6 are already heat treated by the supplier.
+- **Heat treatment.** Say "none" if there is none. If a heat treatment is required, give the process and the hardness range. Purchased tempers such as T6 are already heat treated by the supplier.
 - **General tolerance note.** The default tolerance for dimensions that have no tolerance of their own, for example "linear +/-0.1 mm unless noted." Angles usually get their own default.
 - **Units.** Stated once in the title block or notes. Most metric shops work in millimetres.
 - **Scale.** Usually 1:1 for parts a shop builds. State it anyway, and use "NTS" if the views are not to scale.
@@ -38,14 +38,14 @@ Dimensioning for the shop asks a different question than dimensioning for the de
 - **Mark functional dimensions.** A functional dimension controls fit, alignment, or function, such as a bore that takes a bearing. Give it a tight tolerance and make it easy to inspect. Dimensions that do not affect function can use the general tolerance.
 - **Avoid closed chains.** A closed chain is a loop of dimensions that all meet at the same point, for example a row of holes with a total length and each spacing given. The shop cannot hold all of them, and the stack-up of the tolerances may not close. Leave one dimension in the chain off, or dimension every feature from the same datum.
 - **Use reference dimensions carefully.** A reference dimension is marked "(REF)" and shows a size for information only. The shop does not cut to it. Use it for a total length that is the sum of other dimensions, so the reader can check the math, but never let the shop build to a reference value.
-- **Give each feature one size and one location.** Do not repeat a hole diameter in two views.
+- Do not repeat a hole diameter in two views.
 
 ### Hole callouts and hole tables
 
 Holes are the most common source of shop questions. A complete hole callout gives the type, the size, the depth if it is not through, and the thread if it is tapped.
 
 - **Through hole.** A diameter with "THRU," for example "Ø6.6 THRU." The hole goes all the way through the part.
-- **Blind hole.** A diameter and a depth, for example "Ø5.0 x 8 DEEP." If the depth matters, state whether it is the drilled depth or the full depth including the point. Specifying the drill point angle is needed for precise depth.
+- **Blind hole.** A diameter and a depth, for example "Ø5.0 x 8 DEEP." If the depth matters, state whether it is the drilled depth or the full depth including the point. Precise depth also requires the drill point angle.
 - **Counterbore.** A pocket for a socket head screw head. Give the through diameter, the counterbore diameter, the counterbore depth, and the symbol that marks a counterbore. Check the fastener head size before you set the number.
 - **Countersink.** A cone that lets a flat head screw sit flush. Give the through diameter, the countersink diameter at the surface, and the included angle. For most flat head screws the angle is 90 degrees, but check the fastener data.
 - **Tapped hole.** A thread size, pitch, and class, for example "M6 x 1.0-6H." Give the thread depth and the drilled depth separately, because the tap drill goes deeper than the thread. The thread notation follows ISO 128. The tap drill is the hole diameter you drill before tapping.
@@ -108,7 +108,7 @@ A weldment is a welded assembly built from cut and formed pieces. The drawing sh
 
 - **Cut list.** A table of every piece to be cut, with its length, quantity, material, and any angle or end cut. The cutting shop uses it directly.
 - **Weld symbols.** Welds are shown with a standard symbol on a reference line, not drawn as a picture. The full symbol set is in AWS A2.4. In words, the common parts of a weld symbol are these:
-  - The reference line points to the joint. An arrow at one end points to the joint.
+  - An arrow at one end of the reference line points to the joint.
   - A weld symbol below the reference line means the weld is on the arrow side of the joint. A symbol above the line means it is on the other side.
   - A fillet weld symbol is a small right triangle. The weld size, usually the leg length, goes on the left of the symbol. Length and spacing for intermittent welds go on the right.
   - A "weld all around" flag at the corner of the symbol means the weld goes around the whole joint.
@@ -189,7 +189,7 @@ Calculated values:
 - Bore limits for 20 H7 (ISO hole tolerance, typical values for this size range): $20.000$ mm to $20.021$ mm.
 - Smallest edge distance for any hole: 15 mm.
 - Nearest hole to the bore center: 96.2 mm.
-- Hole spacing: 170 mm in x and 90 mm in y, corner to corner the diagonal is 192.4 mm.
+- Hole spacing: 170 mm in x and 90 mm in y. The corner-to-corner diagonal is 192.4 mm.
 - Net plate volume after holes: $144\,000 - 1885 - 471 = 141\,644$ mm$^3$.
 - Mass: $141\,644 \times 2.70 \times 10^{-3} = 382$ g (about 0.38 kg).
 
@@ -227,7 +227,7 @@ General notes:
 
 **Sanity check.** Walk the reader through the drawing as a machinist. Hold the plate against datum A and datum B. Can every hole be found from those two edges? Is there a tap drill for each hole? Is the bore size readable? Can the reader make the part without asking a question?
 
-**Problem found by the check.** The M6 holes go through a 6 mm plate. Aluminum needs about 1.5 times the diameter in thread engagement, which is 9 mm. A 6 mm through thread gives only 1.0 times the diameter, so the threads may strip under load. The drawing must not release as is. The designer must choose one of three fixes and write it down: thicken the plate to 9 mm or more, add a thread insert, or accept the lower engagement with a stated load limit. The drawing is the place where that decision is recorded.
+**Problem found by the check.** The M6 holes go through a 6 mm plate. Aluminum needs about 1.5 times the diameter in thread engagement, which is 9 mm. A 6 mm through thread gives only 1.0 times the diameter, so the threads may strip under load. The drawing must not release as is. The designer must choose one of three fixes and write it down: thicken the plate to 9 mm or more, add a thread insert, or accept the lower engagement with a stated load limit.
 
 ## Practice
 
@@ -243,7 +243,7 @@ Each item is a review exercise. Read the drawing or description, find what a fab
 1. Material code, stock size, finish, heat treatment, general tolerance note, units, projection symbol, revision entry, quantity. Each entry is specific, for example "Steel, mild, 150 x 25 x 6 mm bar, as cut, no heat treatment, +/-0.1 mm default."
 2. A full callout such as "M8 x 1.25-6H, tap drill 6.75 mm, depth 10 mm thread and drill depth stated separately." The minor diameter for $M8 \times 1.25$ is 6.65 mm, and the answer must reach that number and say which drill is used.
 3. Bend allowance of 4.08 mm for one 90 degree bend. The drawing must show the flat size, bend lines, bend direction, inside radius, K-factor or the shop's table, and any hole-to-bend spacing.
-4. The three dimensions 25, 75, and 150 are measured from the same datum, but the overall length of 175 mm implies a gap after 150 mm that is not dimensioned. The fix is to dimension the last hole from the right edge datum, or to mark one dimension as reference only.
+4. The three dimensions 25, 75, and 150 are measured from the same datum. The overall length of 175 mm implies a gap after 150 mm that is not dimensioned. The fix is to dimension the last hole from the right edge datum, or to mark one dimension as reference only.
 
 </details>
 
@@ -257,7 +257,7 @@ Each item is a review exercise. Read the drawing or description, find what a fab
 
 ## Go deeper
 
-- [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials. Search the site for machining, manufacturing, or mechanical design courses.
-- [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: a free engineering library. Browse the bookshelves for manufacturing and drawing texts.
-- [Engineering drawings](02-engineering-drawings.md) in this folder: the title block, views, and line types that every fabrication drawing uses.
+- [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT, free course materials. Search the site for machining, manufacturing, or mechanical design courses.
+- [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project, a free engineering library. Browse the bookshelves for manufacturing and drawing texts.
+- [Engineering drawings](02-engineering-drawings.md) in this folder, covering the title block, views, and line types that every fabrication drawing uses.
 - Standards named for reference only, and paid: ASME Y14.5 (geometric dimensioning and tolerancing), ASME Y14.100 (engineering drawing practices), ISO 128 (technical drawings, general principles), and AWS A2.4 (welding symbols). Look them up through a library or your employer.

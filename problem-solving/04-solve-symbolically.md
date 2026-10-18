@@ -34,8 +34,8 @@ catches errors before the arithmetic hides them. Plug in numbers only at the end
 - Numbers hide structure. Once you have $283.2$, you cannot tell whether it depends on
   $\sin\theta$ or on $\cos\theta$.
 - Rounding errors pile up. Carry full precision on a calculator, then round at the end.
-- Symbolic results test themselves. A formula that returns zero when the load is zero is
-  already a good sign.
+- Symbolic results are easy to check. A formula that returns zero when the load is zero
+  passes a basic test.
 
 ## Key equations
 
@@ -89,14 +89,13 @@ $$
 **Answer:** $T \approx 283\ \text{N}$ in each cable.
 
 **Sanity check:** The two cables together hold the weight, 490.5 N. Each carries 283 N, and
-$2 \times 283 \times \sin 60^\circ = 490.5$ N. The check closes, and each cable carries a bit
+$2 \times 283 \times \sin 60^\circ = 490.5$ N. The check passes, and each cable carries a bit
 more than half the weight because they are not vertical.
 
 ### Why the symbolic form helps
 
 The formula $T = \dfrac{mg}{2\sin\theta}$ shows at once that $T$ grows as $\theta$ shrinks. A
-shallow cable takes much more load. You get that insight without any numbers. That is the
-reason to keep symbols.
+shallow cable takes much more load. You get that insight without any numbers.
 
 ## Practice
 

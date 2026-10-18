@@ -83,7 +83,7 @@ $$
 \Delta U = Q - W
 $$
 
-Use one sign convention and state it. A common one is heat added to the system and work done by the system are positive.
+Use one sign convention and state it. A common one counts heat added to the system and work done by the system as positive.
 
 For a steady-flow open system, per unit mass with one inlet and one outlet:
 
@@ -268,7 +268,7 @@ Four assumptions. All four must hold between the two points:
 1. **Steady flow.** Nothing changes with time at the points compared.
 2. **Incompressible.** Density is constant. Valid for liquids and for gases at Mach numbers below about 0.3.
 3. **Frictionless (inviscid).** No viscous losses between the points.
-4. **Along one streamline.** The two points lie on the same streamline (or the flow is irrotational, for the wider form). No shaft work or heat transfer sits between them.
+4. **Along one streamline.** The two points lie on the same streamline (or the flow is irrotational, for the wider form). No shaft work or heat transfer occurs between them.
 
 **Breaks when:** friction is significant (add $h_f$, see pipe flow), a pump or turbine sits between the points (add $h_p$ or $h_t$), the flow is compressible, the flow is unsteady, the streamline crosses a shock or a mixing zone, or the flow separates from a surface.
 
@@ -343,7 +343,7 @@ Typical absolute roughness $\varepsilon$ (typical, from standard Moody-chart val
 | Concrete | 0.3 to 3 |
 | Riveted steel | 0.9 to 9 |
 
-Typical minor-loss coefficients $K$ (typical, based on the downstream velocity for expansions and the velocity in the fitting otherwise; take exact values from a cited handbook for design):
+Typical minor-loss coefficients $K$ (typical values). Each $K$ uses the downstream velocity for expansions and the velocity in the fitting otherwise. Take exact values for design from a cited handbook:
 
 | Fitting | $K$ |
 |---|---|
@@ -647,4 +647,4 @@ Property data:
 - CoolProp (free, open source, Python): steam, water, air, and many refrigerants. See [Free engineering software](../tools/09-free-software.md).
 - IAPWS-95, the international formulation for water and steam properties, underlies most steam tables and CoolProp water data.
 
-Free sources: the free textbooks and course notes linked in the "Go deeper" sections of lessons 08 to 12 are not repeated here, because their links were not re-fetched for this sheet.
+Free textbooks and course notes are linked in the "Go deeper" sections of lessons 08 to 12.

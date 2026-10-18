@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A plot is a claim about data, and the reader will believe it at a glance. An honest figure shows the data accurately, labels everything the reader needs, and shows how certain the values are. This lesson covers how to choose a format, lay out axes, label units, show uncertainty, and avoid the common tricks that make a plot misleading.
+A plot is a claim about data, and the reader will believe it at a glance. An honest figure shows the data accurately, labels everything the reader needs, and shows how certain the values are.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md) for referring to figures in text.
 **Time:** 4-6 h
@@ -16,14 +16,14 @@ A plot is a claim about data, and the reader will believe it at a glance. An hon
   - A **table** gives exact values when the reader needs to look up a number. A table is better than a plot when there are only a few values.
 - **Every figure has a caption.** The caption says what the figure shows, the conditions, and the source. The reader should understand the figure without reading the body text.
 - **Every axis has a label and a unit.** Write "Displacement (mm)" and not "Displacement." The unit goes in parentheses or after a slash.
-- **Show the data, not only a summary.** Where you can, plot each measurement as a point. A line through means hides the spread.
+- **Show the data.** Where you can, plot each measurement as a point. A line through means hides the spread.
 - **Show uncertainty.** Error bars, shaded bands, or a note of the confidence interval tell the reader how precise a value is. State what the bars mean (standard deviation, standard error, or a confidence interval). If you do not say, the reader will assume.
 
 ### Axes and scales
 
 - Start a linear axis at a value that makes the data easy to read. A bar chart must start at zero because bar length is read as a quantity. A line or scatter plot does not have to start at zero, but if it does not, say so.
 - Choose tick marks that are evenly spaced and easy to read, such as multiples of 1, 2, or 5.
-- Use a log scale only when the data span several orders of magnitude, and label the axis clearly as log.
+- Use a log scale only when the data span several orders of magnitude, and label the axis as log.
 - Keep the same scale when you compare two plots side by side.
 - Put the independent variable on the horizontal axis (for example time or applied load) and the dependent variable on the vertical axis (for example temperature or displacement). This is the usual convention, not a rule.
 
@@ -72,7 +72,7 @@ Use this for every figure before you send it.
 **Figure design.**
 
 1. **Type.** Scatter plot of the three trials at each load, with the mean at each load joined by a line. This shows both the trend and the spread.
-2. **Axes.** Horizontal: "Applied load (N)," values from zero to the largest load tested. Vertical: "Tip deflection (mm)," starting at zero, since deflection is a magnitude and the zero point is physically meaningful.
+2. **Axes.** Horizontal: "Applied load (N)," values from zero to the largest load tested. Vertical: "Tip deflection (mm)," starting at zero, since deflection is a magnitude with a meaningful zero.
 3. **Uncertainty.** Error bars showing one standard deviation of the three trials at each load.
 4. **Series.** One series for the measured data, with a line for a theoretical prediction in a different style, labeled directly on the plot.
 5. **Notes.** Do not use a smoothed curve through the means. Use the measured points.
@@ -107,6 +107,6 @@ Use this for every figure before you send it.
 
 ## Go deeper
 
-- [NIST e-Handbook of Statistical Methods: Graphical techniques (alphabetic)](https://www.itl.nist.gov/div898/handbook/eda/section3/eda33.htm) by NIST: free government reference describing box plots, histograms, scatter plots, run sequence plots, and other standard graphics.
-- [NIST e-Handbook: EDA techniques](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3.htm) by NIST: the index page for exploratory data analysis graphics, grouped by the question each one answers.
-- [The International System of Units (SI)](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST: the seven base units, so you can write axis labels with correct unit symbols.
+- [NIST e-Handbook of Statistical Methods: Graphical techniques (alphabetic)](https://www.itl.nist.gov/div898/handbook/eda/section3/eda33.htm) by NIST, a free government reference describing box plots, histograms, scatter plots, run sequence plots, and other standard graphics.
+- [NIST e-Handbook: EDA techniques](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3.htm) by NIST, the index page for exploratory data analysis graphics, grouped by the question each one answers.
+- [The International System of Units (SI)](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST, covering the seven base units, so you can write axis labels with correct unit symbols.

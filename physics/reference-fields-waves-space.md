@@ -428,8 +428,8 @@ Typical values using mean radii. Surface gravity is $g = GM / R_{\text{mean}}^2$
 | Europa | 1560.8 | $3.2027 \times 10^{12}$ | 1.31 | 2.03 |
 
 - Earth's computed $g = 9.82$ m/s$^2$ at the mean radius differs from the defined 9.80665 m/s$^2$ because the real Earth is oblate and rotates. Use a local measured value or a geodetic model for real work.
-- All $g$ values here are $GM/R^2$ at the mean radius, with no rotation. Fast rotators differ a lot: effective equatorial gravity is about 24.8 m/s$^2$ on Jupiter and about 10.4 m/s$^2$ on Saturn. For gas giants, "surface" means the 1 bar pressure level.
-- Jupiter and Saturn "surface gravity" here is at the mean radius, where the 1 bar level is not defined. Use the equatorial radius (71 492 km and 60 268 km) to get the equatorial $g$: 24.79 m/s$^2$ and 10.44 m/s$^2$.
+- All $g$ values here are $GM/R^2$ at the mean radius, with no rotation. For Jupiter and Saturn the radius is measured at the 1 bar pressure level, because they have no solid surface.
+- Gas giants are strongly oblate, so the equatorial radius gives a lower value: $GM/R_{eq}^2$ is about 24.79 m/s$^2$ on Jupiter ($R_{eq}$ = 71 492 km) and 10.44 m/s$^2$ on Saturn (60 268 km). Their fast rotation lowers the effective value at the equator further, to about 22.6 and 8.8 m/s$^2$.
 - Titan and Europa values are typical published mean-radius values, not exact.
 
 ## Checklists
@@ -491,7 +491,7 @@ Quick tests:
 
 ## Further reference
 
-No URLs are included: none were fetched in this session. Classic works by name:
+Classic works by name:
 
 - Griffiths, *Introduction to Electrodynamics* (undergraduate electromagnetism).
 - Jackson, *Classical Electrodynamics* (graduate electromagnetism).

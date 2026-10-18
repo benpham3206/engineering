@@ -12,10 +12,10 @@ A dense lookup sheet for engineers solving real problems: the working method, di
 - Every answer comes from a model, and the assumptions are part of the model. Write them down with the answer.
 - Second law: no cyclic device converts heat fully into work. The Carnot bound is $\eta \le 1 - T_c/T_h$, with temperatures in kelvin.
 - Nothing carries matter or information faster than light in vacuum: $c = 299\,792\,458\ \text{m/s}$ (exact).
-- Scaling: areas grow as $L^2$ and volumes and masses as $L^3$. Strength and stiffness scale differently, so a larger copy of a part is rarely a safe copy.
+- Scaling: areas grow as $L^2$ and volumes and masses as $L^3$. Strength and stiffness scale differently, so a scaled-up part needs its own strength check.
 - Local conditions matter: $g$, air pressure, and temperature depend on place. State the local value. Earth values are one case.
 - A correct formula obeys its limits. Test it at zero, at very large values, and at special angles.
-- Failures are chains. Fix the broken link, not the symptom.
+- A failure is a chain of steps, so fix the broken step, not the symptom.
 
 ## The method on one page
 
@@ -70,7 +70,7 @@ $$
 
 - Holds when: the body shape is geometrically similar between tests, and the only forces are drag and inertia or viscosity. Compressibility enters as $v$ approaches the speed of sound (a common rule-of-thumb threshold is Mach 0.3).
 - Breaks when: shape changes, surface roughness matters, or compressibility or free-surface effects are present. Each one adds a missing pi group.
-- Typical: a smooth sphere has $C_d \approx 0.47$ over a wide subcritical range of Re (typical, roughly $10^3$ to $10^5$). A car at 30 m/s with $C_d A = 0.66\ \text{m}^2$ in air of density $1.2\ \text{kg/m}^3$ feels about $356\ \text{N}$ of drag, which is about $10.7\ \text{kW}$ of power to overcome (typical).
+- Typical: a smooth sphere has $C_d \approx 0.47$ over a wide subcritical range of Re (typical, roughly $10^3$ to $10^5$). A car at 30 m/s with $C_d A = 0.66\ \text{m}^2$ in air of density $1.2\ \text{kg/m}^3$ feels about $356\ \text{N}$ of drag. Overcoming that drag takes about $10.7\ \text{kW}$ of power (typical).
 
 **Holds when:** the list of variables is complete. Dimensional analysis cannot find a variable you forgot. It only finds the form of the answer from the list you give it.
 **Breaks when:** a variable is left out (for example, air resistance missing from a pendulum with a heavy bob at high speed), or the physics has a regime change inside the test range.
@@ -106,7 +106,7 @@ Dimensional check: write the dimensions of each term. Terms that add must match.
 - Power: $1\ \text{hp} \approx 746\ \text{W}$ (mechanical horsepower; other horsepower definitions differ).
 - Speed: $1\ \text{m/s} = 3.6\ \text{km/h}$.
 - Pressure: $1\ \text{atm} = 101\,325\ \text{Pa}$ (exact by definition).
-- Mistake to watch: a factor of 10 usually means a prefix error, a factor of 2 usually a missing or extra factor.
+- Mistake to watch: a factor of 10 usually means a prefix error, a factor of 2 usually means a missing or extra factor.
 
 ## Orders of magnitude
 

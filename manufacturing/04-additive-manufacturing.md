@@ -12,12 +12,12 @@ Additive manufacturing (AM) builds a part one thin layer at a time, adding mater
 - **Slicing**: software cuts the 3D model into horizontal layers and writes the path for each one. Each layer is called a slice.
 - **Layer thickness**: the height of one layer, often 0.05 to 0.3 mm in polymer printing. Thinner layers look smoother and take longer.
 - **Build direction**: the direction the layers stack. The part is usually weaker across layers than along them, because the bonds between layers are the weak points.
-- **Support**: material printed under overhangs so the upper layers have something to rest on. Supports are removed after the build.
+- **Support**: material printed under overhangs so the upper layers have something to rest on. Remove supports after the build.
 - **Overhang**: a part of the model that sticks out past the layer below. Steep overhangs need supports or a different orientation.
 
 Common processes include:
 
-- **Fused deposition modeling (FDM)**: a plastic filament is melted and extruded through a nozzle. It is cheap and common, but layers are visible and parts are often weaker across layers.
+- **Fused deposition modeling (FDM)**: the printer melts plastic filament and extrudes it through a nozzle. It is cheap and common, but layers are visible and parts are often weaker across layers.
 - **Stereolithography (SLA) and DLP**: a light source cures liquid resin one layer at a time. It gives fine detail and a smooth surface.
 - **Selective laser sintering (SLS)**: a laser fuses powder, usually nylon. The unfused powder supports the part, so supports are rarely needed.
 - **Metal powder bed fusion**: a laser or electron beam melts metal powder layer by layer. It makes strong metal parts but needs careful control of heat and stress.

@@ -11,7 +11,7 @@ A teardown is taking a product apart in a planned, careful way so you can see ho
 
 - A teardown has three goals: understand the structure, record it well enough to rebuild it, and do it without hurting yourself or damaging evidence.
 - Before you touch anything, read the label, look for a service manual, and search for any warning about batteries, springs, or capacitors.
-- Photograph the product from every side before you open it. Photograph each step as you go. Photos are the only record you cannot lose by forgetting a detail.
+- Photograph the product from every side before you open it. Photograph each step as you go. Photos keep details you would otherwise forget.
 - Work in the order you remove things. Take the outer shell off first, then the next layer, and so on. Reversing the order later is easier when you know the sequence.
 - Keep fasteners sorted. Use a tray or a labeled cup for each group, and note where each fastener came from. A screw that looks the same as another may have a different length or thread.
 - Stored energy is the main hazard. Springs under tension, charged capacitors, lithium batteries, and parts held under load can release energy suddenly. Discharge capacitors and remove batteries before you cut or pry anything.
@@ -76,7 +76,7 @@ A small desk lamp has a clamp base, a flexible arm, and a plastic head. The owne
 5. Undo the head's clip housing. Log each clip and its direction of release. The clips release toward the arm, so the head comes off along the arm axis.
 6. Write the exploded parts list. There are 11 parts in total: base, cover, two screws, arm tube, cable, socket, two clips, head shell, shade, and one gasket.
 
-Result: the head is held by two clips and one gasket, with no hidden screws. A new shade can be fitted if its clip position matches. The log is the evidence that supports that conclusion.
+Result: the head is held by two clips and one gasket, with no hidden screws. A new shade can be fitted if its clip position matches.
 
 ## Practice
 

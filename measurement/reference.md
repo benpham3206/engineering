@@ -10,7 +10,7 @@ A lookup sheet for units, SI rules, uncertainty, significant figures, sensors, t
 - The SI base units are fixed by exact constants (2019 revision). Exact conversions stay exact; anything else needs its stated uncertainty.
 - Averaging reduces random error only. It does not remove systematic error (bias, zero offset, wrong calibration).
 - Independent uncertainties combine by root-sum-square (RSS). Linear addition gives a bound, not an estimate.
-- Resolution limits what you can read. Calibration and bias limit what is true. Do not confuse them.
+- Resolution limits what you can read. Calibration and bias limit how close a value is to the true one. Do not confuse them.
 - Sample at more than twice the highest frequency you need. Aliasing cannot be undone after sampling.
 - Traceability is an unbroken chain of comparisons, each with a stated uncertainty.
 - Check every result for dimensions, sign, limits, and order of magnitude before trusting it.
@@ -547,4 +547,4 @@ $$u(b) = \frac{s_r}{\sqrt{\sum (x_i - \bar{x})^2}} \qquad u(a) = s_r\sqrt{\frac{
 - Holman, J. P., *Experimental Methods for Engineers*. Paid; experiment design and uncertainty.
 - Roark's Formulas for Stress and Strain, for strain-to-stress models beyond uniaxial. Paid.
 - Machinery's Handbook, for gauge tolerances and metrology tables. Paid.
-- Vishay Measurements Group strain gauge technical notes, for gauge installation and bridge practice. Free from the manufacturer; no URL confirmed in this session.
+- Vishay Measurements Group strain gauge technical notes, for gauge installation and bridge practice. Free from the manufacturer.

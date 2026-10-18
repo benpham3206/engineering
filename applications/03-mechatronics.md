@@ -21,7 +21,7 @@ modern machines, from printers to cars, are built this way.
   0 V). Digital outputs switch things on and off.
 - **Analog input**: an analog-to-digital converter (ADC) measures a voltage and returns a number. A
   10-bit ADC returns integers from 0 to 1023.
-- **PWM** (pulse-width modulation): a digital output switches on and off quickly. The fraction of
+- **PWM** (pulse-width modulation): a digital output switches on and off at a set frequency. The fraction of
   time it is on is the duty cycle. The average voltage seen by the load is the supply voltage times
   the duty cycle. PWM is how a microcontroller controls motor speed or LED brightness.
 - **Motor driver**: a power circuit that lets a small microcontroller switch a motor that needs

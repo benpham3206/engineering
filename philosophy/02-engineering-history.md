@@ -18,11 +18,11 @@ Engineering history is a record of people solving real problems and, often, lear
   - Find the physical cause, such as a material fault or a force that was not counted.
   - Find the root cause, meaning the decision or process that allowed the physical cause to happen.
   - Recommend changes to design, testing, rules, or training.
-- Root cause analysis is important. Stopping at the broken part is common, but it misses the design, testing, or management decisions that let the part fail.
+- Stopping at the broken part is common, but it misses the design, testing, or management decisions that let the part fail.
 
 ### Case: Tacoma Narrows Bridge (1940)
 
-The Tacoma Narrows Bridge in Washington State opened in July 1940. It was a suspension bridge with a narrow, shallow, and flexible deck. In November 1940, in moderate winds, the deck began twisting strongly and then broke apart. The collapse is famous, and it is often used in teaching about aeroelastic flutter.
+The Tacoma Narrows Bridge in Washington State opened in July 1940. It was a suspension bridge with a narrow, shallow, and flexible deck. In November 1940, in moderate winds, the deck began twisting strongly and then broke apart. The collapse is famous and is often used to teach aeroelastic flutter.
 
 What the record shows, based on the Washington State Department of Transportation history of the bridge:
 
@@ -62,7 +62,7 @@ Apply the checklist to the Tacoma Narrows Bridge.
 - Change that followed: bridges are now tested for aerodynamic stability, and designs use deep, stiff, or aerodynamically shaped decks when wind is a concern.
 - Check: any new long-span bridge should show its wind analysis. If it does not, that is a flag, even if the static strength numbers look fine.
 
-The answer is not "the bridge was badly built." The answer is that the design process did not include a physical effect that mattered, and the change made the field safer.
+The bridge was not simply badly built. The design process did not include a physical effect that mattered, and the change made the field safer.
 
 ## Practice
 

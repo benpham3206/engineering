@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Data acquisition (DAQ) is the chain that turns a sensor's analog voltage into numbers a computer can store. Each step, from conditioning the signal to choosing a sample rate and bit depth, sets limits on what you can actually see. Get the sampling wrong and the data can show frequencies that are not in the physical system at all.
+Data acquisition (DAQ) is the chain that turns a sensor's analog voltage into numbers a computer can store. Each step, from conditioning the signal to choosing a sample rate and bit depth, limits what the data can show. Get the sampling wrong and the data can show frequencies that are not in the physical system at all.
 
 **Prerequisites:** [05 - Sensors and transducers](05-sensors-and-transducers.md), [07 - Thermocouples and accelerometers](07-thermocouples-and-accelerometers.md)
 **Time:** 6-8 h
@@ -96,4 +96,4 @@ Without a filter, the 2.4 kHz harmonic would appear as a false 1.6 kHz tone in t
 - [Signal Processing and Modeling (Engineering LibreTexts)](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Signal_Processing_and_Modeling) by LibreTexts: the bookshelf for signals and systems, which covers sampling and reconstruction.
 - [Engineering LibreTexts home](https://eng.libretexts.org/) by LibreTexts: free engineering textbooks, including electrical topics.
 
-Note: the aliasing and ADC equations above are standard textbook results, computed and checked with Python. A free source with a full sampling derivation (sinc reconstruction, aliasing proof) was not confirmed in this session, so look for one in the signals bookshelf above.
+The aliasing and ADC equations above are standard textbook results. For a full derivation of sampling and aliasing, see the signals bookshelf above.

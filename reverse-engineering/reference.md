@@ -11,7 +11,7 @@ A lookup sheet for engineers taking a part apart and rebuilding it: thread and f
 - A worn part shows its present size, not its designed size. Find an unworn surface before you choose a nominal value.
 - Units are a source of error. Convert to one system first, then calculate, then convert back only for display.
 - Matching appearance is not matching performance. Strength, hardness, and fatigue life need tests.
-- Keep the evidence. A photo, a logged measurement, or a mass check outlives memory.
+- Keep the evidence. A photo, a logged measurement, or a mass check remains after memory fades.
 - A rebuilt part that carries a load or protects a person needs engineering verification before anyone relies on it.
 - Ownership of a product does not transfer the right to copy its design.
 
@@ -378,4 +378,3 @@ Named books and standards. Paid items are named only, with no link.
 - ISO 3, Preferred numbers. Paid.
 - ASM Handbook, Volume 1: Properties and Selection (ASM International). Material property reference. Paid.
 
-No free links are included here. None were fetched in this session, and the rule is to link only sources confirmed to load free content.

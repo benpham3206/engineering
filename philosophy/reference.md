@@ -11,7 +11,7 @@ A lookup sheet for engineers who need to recall a documented failure, check a de
 - Any change to a design, material, supplier, or operating condition needs a fresh analysis, not just a fresh look.
 - Units are part of the interface. A number without a unit is not a value.
 - Software and reused parts carry their assumptions with them. Reuse outside the original envelope is a new design.
-- Warning signs are data. A concern that is recorded but not acted on is still a failure in waiting.
+- Warning signs are data. A concern that is recorded but not acted on is still a latent failure.
 - Schedule and cost pressure do not change physics. They change which risks get accepted, so acceptance must be explicit and documented.
 - Risk is never zero. The acceptable level is set by people responsible for the public, and the engineer's job is to make that decision informed.
 

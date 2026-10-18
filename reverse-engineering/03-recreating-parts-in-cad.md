@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Recreating a part in CAD (computer-aided design) means building a digital model of it from your measurements and photos. The goal is not just to match the shape. The goal is to rebuild the design intent: the reasons the features are where they are, so that the model still makes sense when a dimension changes.
+Recreating a part in CAD (computer-aided design) means building a digital model of it from your measurements and photos. Matching the shape is not enough. The model must also rebuild the design intent: the reasons the features are where they are, so that the model still makes sense when a dimension changes.
 
 **Prerequisites:** [Teardowns](01-teardowns.md), [Measuring existing parts](02-measuring-existing-parts.md)
 **Time:** 8-12 h

@@ -81,4 +81,4 @@ Balance condition: $\quad R_1 / R_2 = R_3 / R_4$
 - [6.002 Circuits and Electronics (Spring 2007)](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/) by MIT OpenCourseWare: resistive networks and sources, the circuit foundation for bridges.
 - [Electronics (Wikibooks)](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: resistors and DC circuits.
 
-Note: the bridge-specific equations above were derived from Kirchhoff's rules and checked with Python. No free bridge tutorial was confirmed in this session.
+The bridge equations above follow from Kirchhoff's rules.

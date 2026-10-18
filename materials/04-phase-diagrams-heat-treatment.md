@@ -33,11 +33,11 @@ In a two-phase region, the mass fraction of each phase is found by the lever rul
 
 ### Heat treatment
 
-- **Annealing.** Heat the metal, then cool slowly. This gives a soft, ductile, low-stress structure. Used before forming or machining.
+- **Annealing.** Heat the metal, then cool slowly. This gives a soft, ductile, low-stress structure. Engineers use it before forming or machining.
 - **Normalizing.** Heat, then cool in still air. Gives a finer, more uniform structure than annealing.
 - **Quenching.** Heat, then cool very fast, usually in water, oil, or a polymer bath. In steel this traps carbon and forms **martensite**, a very hard but brittle phase.
-- **Tempering.** Reheat a quenched part to a moderate temperature, then cool. This reduces brittleness at the cost of some hardness. Almost every quenched steel part is tempered.
-- **Precipitation hardening (aging).** Dissolve a second phase at high temperature, quench, then hold at a lower temperature so fine particles form. The particles block dislocations. Used in aluminum alloys such as 6061-T6 (the "T6" means solution heat treated and artificially aged).
+- **Tempering.** Reheat a quenched part to a moderate temperature, then cool. This reduces brittleness at the cost of some hardness. Engineers temper almost every quenched steel part.
+- **Precipitation hardening (aging).** Dissolve a second phase at high temperature, quench, then hold at a lower temperature so fine particles form. The particles block dislocations. Engineers use it on aluminum alloys such as 6061-T6 (the "T6" means solution heat treated and artificially aged).
 
 ## Key equations
 
@@ -53,7 +53,7 @@ where:
 - $C_L$ is the composition of the liquid at that temperature (wt%)
 - $C_S$ is the composition of the solid at that temperature (wt%)
 
-The two fractions always add to 1. This is a quick check on your work.
+The two fractions always add to 1.
 
 ## Worked example
 
@@ -70,7 +70,7 @@ The two fractions always add to 1. This is a quick check on your work.
 
 **Answer:** About 27.3 percent solid and 72.7 percent liquid by mass.
 
-**Sanity check:** $0.273 + 0.727 = 1.000$. The overall composition 35 is closer to the liquid value 32 than to the solid value 43, and the liquid fraction is the larger one. Both results agree with that.
+**Sanity check:** $0.273 + 0.727 = 1.000$. The overall composition 35 is closer to the liquid value 32 than to the solid value 43, and the liquid fraction is the larger one.
 
 ## Practice
 
@@ -95,7 +95,7 @@ The two fractions always add to 1. This is a quick check on your work.
 - Swapping $C_L$ and $C_S$ in the lever rule. The fraction of solid uses the distance from $C_0$ to the liquid side, so check your numerator carefully.
 - Reading the composition from the wrong line (liquidus instead of solidus) at a given temperature.
 - Forgetting that heat treatment changes the microstructure, not the chemical composition.
-- Assuming a quenched part is ready to use. Quenched martensite is often too brittle, so it is tempered.
+- Assuming a quenched part is ready to use. Quenched martensite is often too brittle, so engineers temper it.
 - Confusing annealing (slow cool, soft) with quenching (fast cool, hard).
 
 ## Go deeper

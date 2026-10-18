@@ -74,7 +74,7 @@ Zero-force member rules (for a joint with no external load):
 - Two non-collinear members at a joint: both are zero force.
 - Three members at a joint where two are collinear: the third is zero force.
 
-Worked check. Triangle truss: pin at A $(0, 0)$, roller at B $(4, 0)$ m, apex C $(2, 3)$ m, 10 kN load down at C. By symmetry each reaction is 5 kN up.
+Worked check. A triangle truss has a pin at A $(0, 0)$, a roller at B $(4, 0)$ m, and an apex C $(2, 3)$ m, with a 10 kN load down at C. By symmetry each reaction is 5 kN up.
 
 - Member AC has length $\sqrt{13} \approx 3.606$ m. Joint A: $F_{AC} = -\tfrac{5\sqrt{13}}{3} = -6.009$ kN (compression).
 - Horizontal balance at A: $F_{AB} = 10/3 = 3.333$ kN (tension).
@@ -194,7 +194,7 @@ Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $
 Holds when: planar motion, rigid body, rolling without slip where stated.
 Breaks when: 3D rotation (inertia becomes a tensor and $\omega$ and angular momentum may not align), or slipping (friction work changes the rolling relation).
 
-Worked result: a 10 kg solid disk of radius 0.3 m pulled with a horizontal 50 N force at its centre, rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ m/s^2 and needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor with $N = 98.1$ N.
+Worked result. A 10 kg solid disk of radius 0.3 m, pulled with a horizontal 50 N force at its centre and rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ m/s^2. It needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor with $N = 98.1$ N.
 
 ### Mass moments of inertia (typical formulas, body mass $m$)
 

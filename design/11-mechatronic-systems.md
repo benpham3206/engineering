@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A mechatronic system combines mechanics, electronics, sensors, actuators, and software into one machine that senses what it is doing and corrects itself. A 3D printer, a robotic arm, a camera gimbal, and a car's cruise control are all mechatronic systems. The skill is in the connections: a good mechanical design is wasted if the sensor cannot see the motion, and a good controller cannot fix a loose gear.
+A mechatronic system combines mechanics, electronics, sensors, actuators, and software into one machine that senses what it is doing and corrects itself. A 3D printer, a robotic arm, a camera gimbal, and a car's cruise control are all mechatronic systems. The skill is in the connections. A good mechanical design is wasted if the sensor cannot see the motion, and a good controller cannot fix a loose gear.
 
 **Prerequisites:** [01 Design process](01-design-process.md), [08 Shafts and bearings](08-shafts-and-bearings.md), and the measurement lessons in [measurement](../measurement/README.md) and the electricity and motion lessons in [physics](../physics/README.md)
 **Time:** 10-15 h
@@ -79,7 +79,7 @@ Step 5. Linear speed: $v = \dfrac{5 \times 600}{60} = 50$ mm/s.
 
 **Answer.** Angle per count 0.09 degrees. Linear travel per count 1.25 micrometres. Counts per second 40 000. Nut speed 50 mm/s.
 
-**Sanity check.** At 600 rpm, the screw turns 10 times per second. Each turn moves 5 mm, so the speed is 50 mm/s, which matches step 5. The 40 000 counts per second equals 4000 counts per turn times 10 turns per second. The resolution of 1.25 micrometres is far smaller than the 5 mm lead, which shows that a fine sensor on a coarse screw can still give fine positioning, as long as the screw is stiff and backlash-free.
+**Sanity check.** At 600 rpm, the screw turns 10 times per second. Each turn moves 5 mm, so the speed is 50 mm/s, which matches step 5. The 40 000 counts per second equals 4000 counts per turn times 10 turns per second. The resolution of 1.25 micrometres is far smaller than the 5 mm lead. A fine sensor on a coarse screw can still give fine positioning, as long as the screw is stiff and backlash-free.
 
 ## Checklist
 

@@ -48,7 +48,7 @@ Here $\sigma$ is stress in pascals (Pa), and $A$ is cross-sectional area in m$^2
 
 Because the area is in mm$^2$ and the force is in N, the result of $F/A$ is in MPa. This matches what the cell formulas compute.
 
-The stresses are computed in Python with the same formula:
+Running the same formula in Python gives these stresses:
 
 ```
 d = 8 mm   sigma = 238.73 MPa

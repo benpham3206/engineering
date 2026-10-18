@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Projects turn the theory into hardware you can touch and test. The ladder below starts with a
+Projects turn the theory into hardware that you can measure and test. The ladder below starts with a
 first-year bench exercise and ends with a capstone. Each rung uses the skills from the rungs below it,
 and each one has a clear goal and a check you can run yourself.
 
@@ -13,15 +13,15 @@ and each one has a clear goal and a check you can run yourself.
 
 ## Core ideas
 
-- **Build, measure, compare**: a project is done when you can measure what you built and compare it with
+- **Build, measure, compare.** A project is done when you can measure what you built and compare it with
   the number your theory predicted. A gap between the two is useful information, not a failure.
-- **Write the goal first**: a goal that a stranger could check is a good goal. "The bridge holds 2 kg"
+- **Write the goal first.** A goal that a stranger could check is a good goal. "The bridge holds 2 kg"
   works. "A good bridge" does not.
-- **Keep a log**: record the date, the design change, the measured result, and the predicted result.
+- **Keep a log.** Record the date, the design change, the measured result, and the predicted result.
   Engineers reuse logs more than they reuse their memory.
-- **Safety first**: check current limits, keep batteries and motors away from loose hair and clothing,
+- **Safety first.** Check current limits, keep batteries and motors away from loose hair and clothing,
   and wear eye protection for cutting, catapults, and fans.
-- **One change at a time**: change one variable per test, so you know what caused the result.
+- **One change at a time.** Change one variable per test, so you know what caused the result.
 
 ## The ladder
 

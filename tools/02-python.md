@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Python is a free programming language. Engineers use it to repeat calculations, check hand work, fit data, and build small tools. You need almost no software to start: Python and a text editor or Jupyter notebook.
+Python is a free programming language. Engineers use it to repeat calculations, check hand work, fit data, and build small tools. You need almost no software to start, only Python and a text editor or Jupyter notebook.
 
 **Prerequisites:** [Algebra and functions](../math/README.md)
 **Time:** 10-15 h to become comfortable with the basics used here

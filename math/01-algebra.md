@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Algebra is the language of "unknown quantity, known relationship." Engineers use it to rearrange formulas, solve for a required size or load, and check units before they trust a result.
+Algebra finds an unknown quantity from a known relationship. Engineers use it to rearrange formulas, solve for a required size or load, and check units before they trust a result.
 
 **Prerequisites:** none. High-school arithmetic and basic fractions are assumed.
 **Time:** 8-12 h
@@ -11,7 +11,7 @@ Algebra is the language of "unknown quantity, known relationship." Engineers use
 
 - A variable is a symbol for a number you do not know yet, or a number that can change.
 - An equation says two expressions are equal. Solving it means finding the values that make it true.
-- The rule that makes algebra work: whatever you do to one side, do to the other. Add, subtract, multiply, or divide both sides by the same thing (except zero).
+- Algebra works because whatever you do to one side, you do to the other. Add, subtract, multiply, or divide both sides by the same thing (except zero).
 - A function is a rule that takes an input and gives exactly one output. In engineering, the input is often a load, time, or temperature and the output is a stress, a deflection, or a temperature.
 - Units are algebra too. If you multiply newtons by meters, the result is joules. A formula that does not balance its units is wrong, even if the arithmetic is right.
 - Rearranging a formula is a skill of its own. A formula like $S = \frac{bh^2}{6}$ can be solved for $h$ once you isolate the squared term and take a square root.

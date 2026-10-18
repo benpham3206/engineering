@@ -35,7 +35,7 @@ Ideas that tie the topics together:
 
 Assumptions behind the formulas in this lesson:
 
-- Circuits are made of ideal wires and lumped resistors. Wire resistance is ignored.
+- Circuits use ideal wires and lumped resistors. This lesson ignores wire resistance.
 - Fields are uniform over the region of interest.
 - The magnetic field is steady or changes slowly enough that the quasi-static laws apply.
 

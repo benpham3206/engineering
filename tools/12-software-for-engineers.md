@@ -29,8 +29,8 @@ Most engineers write some software, even if they never call themselves programme
 - A **commit** is one saved snapshot with a message. Keep one logical change per commit, and write the message as a short imperative sentence with units where they apply, such as `Use 25 kN allowable in bolt check`.
 - A **branch** is a separate line of work. Make a branch for a design change or an experiment, so the main line stays working.
 - A **merge** combines a finished branch back into another branch. A **pull request** (a review request on a hosting site such as GitHub, as of 2026) asks someone to read the changes before the merge.
-- **What to commit:** scripts, tests, input data (CSV or JSON), exported neutral files that matter (STEP, PDF, a results table), a list of library versions, and a README that says how to run the work.
-- **What not to commit:** generated outputs you can regenerate, virtual environment folders, cache folders such as `__pycache__/`, temporary files, and secrets. Put the patterns in a `.gitignore` file.
+- **Commit these.** Scripts, tests, input data (CSV or JSON), exported neutral files that matter (STEP, PDF, a results table), a list of library versions, and a README that says how to run the work.
+- **Keep these out.** Generated outputs you can regenerate, virtual environment folders, cache folders such as `__pycache__/`, temporary files, and secrets. Put the patterns in a `.gitignore` file.
 - **Large binary CAD files** such as `.SLDPRT` or `.FCStd` cannot be diffed or merged. Git stores each version as a full copy, so the repository grows fast. Options: track them with Git LFS (as of 2026), keep them in a shared file vault with its own revision system, or keep a text source (a script that rebuilds the model) next to the native file. Always keep a neutral export (STEP) for the revision a drawing or test refers to.
 
 ### Project environments and dependencies
@@ -65,7 +65,7 @@ Most engineers write some software, even if they never call themselves programme
 
 ### Automating engineering tools
 
-- Many engineering programs have a scripting interface. Examples (as of 2026): the **SolidWorks API** can be driven from Python through **COM** (Windows' component interface) using the `pywin32` package. **FreeCAD** has a built-in Python console and a macro editor. **Blender** runs Python scripts from its command line.
+- Many engineering programs have a scripting interface. Examples (as of 2026): the SolidWorks API can be driven from Python through COM (Windows' component interface) using the `pywin32` package. **FreeCAD** has a built-in Python console and a macro editor. **Blender** runs Python scripts from its command line.
 - The usual jobs are batch exports (every drawing in a folder to PDF), setting parameters and regenerating a model, and pulling mass or volume values into a table.
 - Before you automate a tool, do the job once by hand and write down each step. A script that repeats a wrong manual step is still wrong.
 - Keep the script, the input list, and a log of what was produced in the same repository.
@@ -196,7 +196,7 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-**Run (Python 3.14, the output was produced by running these files):**
+**Run it:**
 
 ```
 python -m unittest -v test_check_preload

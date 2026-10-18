@@ -21,7 +21,7 @@ Free alternatives:
 - **FreeCAD**, free and open source, is a parametric 3D modeler. Download it from [freecad.org](https://www.freecad.org/). Its Part and Sketcher workbenches cover sketch, extrude, fillet, and mass properties.
 - **Onshape**, a browser-based CAD tool, has a free plan. Its [pricing page](https://www.onshape.com/en/pricing) says the free plan is for non-commercial use and that all documents on it are public. Use it for practice models only.
 
-The same extrude and fillet workflow works in all three programs. Learn one well, then pick up the others quickly.
+The same extrude and fillet workflow works in all three programs. Learn one well, then pick up the others.
 
 ## Key equations
 

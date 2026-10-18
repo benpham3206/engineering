@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-These processes shape material without cutting it away. Casting pours molten metal into a mold. Forming pushes solid metal into shape with force, as in forging, stamping, and rolling. Molding shapes plastic or other materials in a cavity, as in injection molding. Each process is best at a certain volume and part size, and each leaves its own shrinkage, grain, or parting-line features that a designer has to account for.
+These processes shape material without cutting it away. Casting pours molten metal into a mold. Forming pushes solid metal into shape with force, as in forging, stamping, and rolling. Molding shapes plastic or other materials in a cavity, as in injection molding. Each process is best at a certain volume and part size. Each also leaves its own shrinkage, grain, or parting-line features that a designer must account for.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)
 **Time:** 5-7 h
@@ -10,13 +10,13 @@ These processes shape material without cutting it away. Casting pours molten met
 ## Core ideas
 
 - **Casting**: a liquid metal fills a mold cavity and solidifies. Sand casting is cheap and flexible for large, low-volume parts. Die casting forces metal into steel dies under pressure and is fast for high volume. Investment casting uses wax patterns and gives fine detail.
-- **Shrinkage**: most metals and plastics get smaller as they cool. The pattern or mold must be made larger than the final part by the shrink allowance.
+- **Shrinkage**: most metals and plastics get smaller as they cool. Make the pattern or mold larger than the final part by the shrink allowance.
 - **Draft**: a slight taper on vertical walls so the part can be pulled from the mold or die without tearing. Designers usually add a few degrees of draft.
 - **Parting line**: the joint where two halves of a mold or die meet. It leaves a thin line or flash on the part that may need removing.
 - **Forging**: a hammer or press squeezes hot or cold metal into shape. The grain flows with the shape, which often gives strong parts.
 - **Stamping**: a press forces sheet metal into a die in one or more strokes. It is fast and repeatable, and it is a common route for sheet metal parts (lesson 07).
 - **Extrusion**: metal or plastic is pushed through a shaped opening to make a long constant cross-section, such as aluminum window frames.
-- **Injection molding**: molten plastic is injected into a closed steel mold under pressure, cooled, and ejected. Tooling is expensive, but each part is cheap once the mold exists.
+- **Injection molding**: molten plastic is forced into a closed steel mold under pressure, cooled, and ejected as a part. Tooling is expensive, but each part is cheap once the mold exists.
 
 Each process has a rough volume where it makes economic sense. Injection molding tooling can cost thousands of dollars, so it pays off only for large runs. Sand casting needs a pattern but no hard tooling, so it suits small runs of big parts.
 

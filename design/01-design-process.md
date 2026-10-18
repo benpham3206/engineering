@@ -49,7 +49,7 @@ Early in a project, changes are cheap. A sketch costs minutes. A cast part costs
 
 ## Design reviews
 
-A design review is a planned meeting where the design is checked against the requirements before the next stage starts. Reviews are sometimes called gates. They stop a weak design from moving forward on momentum.
+A design review is a planned meeting where the design is checked against the requirements before the next stage starts. Reviews are sometimes called gates. They stop a weak design from advancing without a check.
 
 - Hold a review at the end of each major stage, such as after concepts, after detail design, and after the first prototype test.
 - Bring the requirements list, the decisions made so far, and the test results.
@@ -68,7 +68,7 @@ A design is only as good as its record. Keep these up to date:
 - Test data with dates, equipment used, and the person who ran the test.
 - Known open issues.
 
-Future you will forget why a dimension is 14.3 mm. A short note saves hours later.
+Without a note, the reason for a dimension such as 14.3 mm is lost. A short note saves hours later.
 
 ## Checklist
 
@@ -87,11 +87,9 @@ A team must design a clamp that holds a 20 mm (0.79 in) thick workpiece in a ben
 - **Need.** Hold the workpiece steady during drilling, so the hole is in the right place.
 - **Requirements.** Clamping force of at least 300 N (67 lbf). Opens to at least 25 mm (1 in). Total mass under 0.5 kg (1.1 lb). Costs under US$15 in parts.
 - **Concepts.** (1) A C-clamp from a purchased part. (2) A cam lever clamp. (3) A toggle clamp.
-- **Trade study.** Weights: force 5, cost 3, mass 2, ease of use 4. The team scores each concept and finds the toggle clamp has the highest weighted total, but only if it meets the 25 mm opening. The toggle clamp opens to 22 mm, so it fails a hard requirement and is removed. The cam lever clamp is chosen.
+- **Trade study.** Weights: force 5, cost 3, mass 2, ease of use 4. The team scores each concept and finds the toggle clamp has the highest weighted total, but only if it meets the 25 mm opening. The toggle clamp opens to 22 mm, so it fails a hard requirement, and the team removes it. The team chooses the cam lever clamp.
 - **Risk.** The lever might slip under vibration. The test plan is to drill 20 holes with the clamp and check the workpiece for movement.
-- **Result.** The first prototype slipped. A rubber pad was added to the jaw, and the second test passed. Both test results are recorded.
-
-The example shows the loop at work: a hard requirement removed a concept, a risk was identified early, and a test drove a change.
+- **Result.** The first prototype slipped. The team added a rubber pad to the jaw, and the second test passed. Both test results are recorded.
 
 ## Practice
 

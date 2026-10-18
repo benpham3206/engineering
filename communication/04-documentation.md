@@ -2,18 +2,18 @@
 
 **Type:** lesson
 
-A design is only as useful as the record of why it looks the way it does. Documentation covers the specifications, test records, change history, and user instructions that let someone else build, operate, maintain, or fix a product years later. This lesson covers what to write down, how to organize it, and how to keep it correct.
+A design is only as useful as the record of why it looks the way it does. Documentation covers the specifications, test records, change history, and user instructions that let someone else build, operate, maintain, or fix a product years later.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md) and [02-engineering-drawings.md](02-engineering-drawings.md).
 **Time:** 4-6 h
 
 ## Core ideas
 
-- **Document the decisions, not just the result.** The drawing says what the part is. The record says why the wall is 4 mm thick and what was rejected. Future engineers need the reasons to change the design safely.
+- **Document the decisions behind the result.** The drawing says what the part is. The record says why the wall is 4 mm thick and what was rejected. Future engineers need the reasons to change the design safely.
 - **Each document has one owner and one purpose.** A spec defines requirements. A test report records what was measured. A user manual tells an operator what to do. Do not mix them.
 - **Requirements are testable.** "The enclosure should be strong" cannot be verified. "The enclosure shall survive a 1 m drop onto concrete without loss of function" can be.
 - **Versions and revisions matter.** Every document needs a revision letter or number, a date, and a change note. Readers must be able to tell which version they are reading.
-- **Documentation rots.** A document that disagrees with the current design is worse than none. Update it in the same change that changes the design.
+- **Documentation goes out of date.** A document that disagrees with the current design is worse than none. Update it in the same change that changes the design.
 
 ### Common types of engineering documentation
 
@@ -37,7 +37,7 @@ A design is only as useful as the record of why it looks the way it does. Docume
 ### Keeping it current
 
 - Store documents in one version-controlled location. Each change should be traceable to a person and a date.
-- Review documents at each design milestone, not only at the end of the project.
+- Review documents at each design milestone and at the end of the project.
 - When a design changes, list every document that refers to it and update them together.
 
 ## Checklist
@@ -84,7 +84,7 @@ Use this to review a document before release.
 <details><summary>What a good answer includes</summary>
 
 1. A stranger could set it up from the README alone, and the limits section is honest.
-2. The entry is dated, says what you expected and what happened, and records raw numbers, not only conclusions.
+2. The entry is dated, says what you expected and what happened, and records raw numbers and conclusions.
 3. Revisions run A, B, C in order, and each description says what changed and why.
 4. Every sticking point becomes an edit to the README.
 
@@ -100,6 +100,6 @@ Use this to review a document before release.
 
 ## Go deeper
 
-- [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA: free handbook on requirements, documentation, and technical management. Section 6.0 covers crosscutting technical management.
-- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University: workplace document types, including memos and technical reports.
-- [NIST e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3.htm) by NIST: free government handbook; useful when you record statistical results and need to describe them correctly.
+- [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA, a free handbook on requirements, documentation, and technical management. Section 6.0 covers crosscutting technical management.
+- [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace document types, including memos and technical reports.
+- [NIST e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3.htm) by NIST, a free government handbook that is useful when you record statistical results and need to describe them correctly.

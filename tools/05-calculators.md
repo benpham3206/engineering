@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A calculator is the fastest tool for a quick number, an exam, or a check on the shop floor. Knowing when to reach for one, and when to switch to code or a spreadsheet, saves time and prevents a whole class of silent errors.
+A calculator is the fastest tool for a quick number, an exam, or a check on the shop floor. Knowing when to use one, and when to switch to code or a spreadsheet, saves time and prevents a whole class of silent errors.
 
 **Prerequisites:** [Algebra](../math/README.md) and basic trigonometry.
 **Time:** 2-4 h, then practice until it is automatic
@@ -11,9 +11,9 @@ A calculator is the fastest tool for a quick number, an exam, or a check on the 
 
 ### When to use a calculator
 
-- **Use one** for quick checks, estimates, single formulas, unit conversions, exams, and anywhere a computer is not practical (the shop, the field, a meeting).
+- **Use one** for quick checks, estimates, single formulas, unit conversions, exams, and anywhere a computer is not practical, such as the shop, the field, or a meeting.
 - **Switch to a spreadsheet or code** when you repeat the same calculation with different inputs, when there are more than a few steps, when someone else must check your work, or when you need a plot. A calculation in a script can be reread, rerun, and reviewed. Keystrokes cannot.
-- **Rule of thumb:** if you will do it twice, or if it matters, write it down where it can be checked. See [Python](02-python.md) and [Spreadsheets](03-spreadsheets.md).
+- **Rule of thumb.** If you will do it twice, or if it matters, write it down where it can be checked. See [Python](02-python.md) and [Spreadsheets](03-spreadsheets.md).
 
 ### Kinds of calculators
 
@@ -28,7 +28,7 @@ A calculator is the fastest tool for a quick number, an exam, or a check on the 
 - **Check the angle mode.** Degrees or radians is the most common calculator error in engineering. $\sin(30)$ in radian mode is about $-0.988$, not $0.5$.
 - **Store intermediate results** in memory instead of retyping rounded values. Rounding early changes the final digits. Round once, at the end.
 - **Use parentheses generously.** $a/bc$ is read differently by different calculators. Type $a/(b \cdot c)$.
-- **Know your entry mode.** Algebraic entry evaluates the expression as written. RPN (reverse Polish notation, used on many HP calculators) puts numbers on a stack and applies operators after them; it needs no parentheses and shows every intermediate result. Both work. Pick one and practice it until you do not think about it.
+- **Know your entry mode.** Algebraic entry evaluates the expression as written. RPN, or reverse Polish notation, is used on many HP calculators. It puts numbers on a stack and applies operators after them. It needs no parentheses and shows every intermediate result. Both work. Pick one and practice it until you do not think about it.
 - **Carry units on paper,** even when the calculator does not. Some calculators can attach units to numbers and convert them; use that if yours does, but check it once by hand.
 - **Write down the inputs and the result** with units. A number on a screen is gone the moment you press clear.
 

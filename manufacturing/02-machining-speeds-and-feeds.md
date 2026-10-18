@@ -19,7 +19,7 @@ Machining removes material from a block of stock with a cutting tool, so you can
 
 Speeds depend on the material, the tool coating and material, the machine's power and rigidity, and whether you use coolant. Tool makers publish starting values for each tool. Treat those as the starting point and adjust from there while you watch chips and sound.
 
-Signs you are running too fast: the tool turns blue or glows, the edge chips quickly, and the surface finish gets worse. Signs you are running too slow: the chips are thin and powdery, the tool rubs instead of cutting, and the tool wears from heat built up by rubbing.
+You are running too fast when the tool turns blue or glows, the edge chips quickly, and the surface finish gets worse. You are running too slow when the chips are thin and powdery, the tool rubs instead of cutting, and heat built up by rubbing wears the tool.
 
 ## Key equations
 
@@ -62,7 +62,7 @@ $$\text{MRR} = 0.25 \times 0.5 \times 18.34 = 2.29 \text{ in}^3/\text{min}$$
 
 **Answer:** $N \approx 2290$ rpm (about 2292 rpm), $f_m \approx 18.3$ ipm, MRR $\approx 2.29$ in$^3$/min.
 
-**Sanity check:** Put the same numbers into SI. Convert $V = 300$ SFM to about $91.4$ m/min and $D = 0.5$ in to $12.7$ mm. Then $N = 1000 \times 91.4 / (\pi \times 12.7) \approx 2292$ rpm, which matches. The two forms agree.
+**Sanity check:** Put the same numbers into SI. Convert $V = 300$ SFM to about $91.4$ m/min and $D = 0.5$ in to $12.7$ mm. Then $N = 1000 \times 91.4 / (\pi \times 12.7) \approx 2292$ rpm, which matches.
 
 **SI version of the same idea:** A 12 mm, 4-flute end mill at $V = 90$ m/min with $f_z = 0.1$ mm/tooth gives $N = 1000 \times 90 / (\pi \times 12) \approx 2387$ rpm and $f_m = 0.1 \times 4 \times 2387 \approx 955$ mm/min.
 

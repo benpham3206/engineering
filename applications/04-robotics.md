@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A robot arm is a chain of links connected by joints. Forward kinematics answers one question: given
+A robot arm is a chain of links connected by joints. Forward kinematics answers one question. Given
 the joint angles, where is the tip of the arm? A DC motor is the actuator that turns the joints,
 and its torque and speed set how strong and how fast the arm can move.
 
@@ -16,7 +16,7 @@ and its torque and speed set how strong and how fast the arm can move.
 - **Degrees of freedom**: the number of independent joint variables. A two-link planar arm has two.
 - **Forward kinematics**: the map from joint angles to the tip position. It is pure geometry, with
   no forces or motors involved.
-- **Angle convention**: in a planar arm, the second joint angle is usually measured relative to the
+- **Angle convention.** In a planar arm, the second joint angle is usually measured relative to the
   first link. The absolute angle of the second link is then $\theta_1 + \theta_2$.
 - **DC motor**: a motor whose speed is set by its voltage and whose output torque is set by its
   current. Two constants link them: torque constant $K_t$ and back-EMF constant $K_e$.

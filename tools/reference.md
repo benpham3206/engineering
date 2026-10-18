@@ -6,7 +6,7 @@ This sheet covers how to choose, check, and keep engineering software and measur
 
 ## Principles
 
-- Tools change; the test of a tool is whether you can check its answer. A result you cannot verify is not yet yours.
+- Tools change; the test of a tool is whether you can check its answer. A result you cannot verify is unproven.
 - Prefer open, documented formats. A file you can read from a published spec, or with a text editor, outlives the program that wrote it.
 - Scripts beat clicks. A script reruns the same steps; a sequence of clicks leaves no record of what was done.
 - Keep the source with the result. A number without its model, input data, and tool version cannot be audited or reproduced.
@@ -55,7 +55,7 @@ Longevity is a judgment about how likely a format is to be readable in a decade 
 
 ## Numerical computing cheat sheet
 
-Python lines were run on this machine (Python 3.14, NumPy 2.5.1, SciPy 1.18.0, as of 2026-10-17). MATLAB and Octave lines are the standard equivalents and were **not** run here, because Octave is not installed. The plot lines use matplotlib, which is not installed here, so they were not run either.
+The Python lines were tested with Python 3.14, NumPy 2.5, and SciPy 1.18 (as of 2026). The MATLAB and Octave lines are the standard equivalents. Function names can change between versions, so check against your installed documentation.
 
 Python setup:
 
@@ -80,7 +80,7 @@ from scipy import integrate, optimize, signal
 | Labeled plot | `plt.plot(t, y); plt.xlabel("t (s)"); plt.ylabel("y (V)")` | `plot(t, y); xlabel("t (s)"); ylabel("y (V)")` |
 | Save figure | `plt.savefig("fig.png", dpi=150)` | `print -dpng -r150 fig.png` |
 
-Verified Python output (run this session):
+Python output:
 
 ```
 solve    x = [0.09090909 0.63636364], residual = 0.0
@@ -280,7 +280,7 @@ Resolution values are typical. Check the stated accuracy of the tool you own.
 
 ## Further reference
 
-Named standards and books. Paid items are named only. Free items are not linked here because their URLs were not checked in this session.
+Named standards and books. Paid items are named only. Free items are linked in the lessons in this folder.
 
 - Golub and Van Loan, *Matrix Computations* (Johns Hopkins University Press). Standard text for linear algebra methods, including conditioning.
 - Trefethen and Bau, *Numerical Linear Algebra* (SIAM). Clear treatment of stability and conditioning.

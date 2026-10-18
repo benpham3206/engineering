@@ -86,7 +86,7 @@ $Q = 6000\ \text{W}$. Run it with the same formula. It gives 6000 W, so the form
 arithmetic are correct. The bug is in the input.
 
 **Step 3, check each input's units.** $A$ is 1.5 m$^2$, correct. $\Delta T$ is 20 K, correct.
-$k$ is W/(m $\cdot$ K), correct. $L$ was entered as $0.04\ \text{m}$, which is 4 cm, not 4 mm.
+$k$ is W/(m $\cdot$ K), correct. The student entered $L$ as $0.04\ \text{m}$, which is 4 cm, not 4 mm.
 The pane is 0.0040 m thick.
 
 **Step 4, isolate.** Change only $L$ from $0.04$ to $0.0040$ and rerun. The output changes from
@@ -96,7 +96,7 @@ The pane is 0.0040 m thick.
 value: 6000 W. As a second, independent check, double the thickness: 3000 W, half the answer,
 as the formula predicts.
 
-**Answer:** $Q = 6.0 \times 10^3\ \text{W}$. The cause was $L$ entered in centimeters instead of
+**Answer:** $Q = 6.0 \times 10^3\ \text{W}$. The cause was entering $L$ in centimeters instead of
 meters, a factor of 10 error.
 
 **Sanity check:** 6 kW matches the estimate from lesson 05. The corrected value passes both the

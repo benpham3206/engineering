@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Choosing a material is a design decision with numbers attached. Engineers start with what the part must do, turn that into a simple objective (usually mass or cost), and then rank candidate materials by a performance index. Michael Ashby popularized this method, and it works for almost any structural part.
+Choosing a material is a design decision that needs numbers. Engineers start with what the part must do, turn that into a simple objective (usually mass or cost), and then rank candidate materials by a performance index. Michael Ashby popularized this method, and it works for almost any structural part.
 
 **Prerequisites:** [Mechanical properties](03-mechanical-properties.md), [Material classes](05-material-classes.md), [Failure: fracture and fatigue](06-fracture-and-fatigue.md), [Creep and corrosion](07-creep-and-corrosion.md)
 **Time:** 8-10 h
@@ -22,7 +22,7 @@ The procedure is always the same:
 
 ### Example performance indices
 
-The table below gives indices for common cases. All assume a light part, meaning the objective is mass and the length or load is fixed.
+These indices assume a light part, meaning the objective is mass and the length or load is fixed.
 
 - **Stiff, light tie** (a rod in tension, stiffness limited): maximize $E/\rho$.
 - **Stiff, light beam** (bending, stiffness limited, square section): maximize $E^{1/2}/\rho$.

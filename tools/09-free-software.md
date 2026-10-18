@@ -228,7 +228,7 @@ Every step uses a free tool, and every step is the same workflow an engineer fol
 
 - Putting private or client work on a free plan whose files are public.
 - Using a personal-use or student license for paid work. That breaks the license terms.
-- Trusting an FEA or CFD color plot without a hand calculation to check it against. Free and paid solvers are both happy to give confident wrong answers when the boundary conditions are wrong.
+- Trusting an FEA or CFD color plot without a hand calculation to check it against. Free and paid solvers both return confident wrong answers when the boundary conditions are wrong.
 - Saving only in a native format. Export STEP, DXF, CSV, and PDF copies.
 - Tool hopping. Finish projects in one tool before trying the next.
 

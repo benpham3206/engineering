@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-No part is made exactly to its drawing dimension. Tolerances state how far a size may vary, fits describe how two mating parts fit together given those variations, and surface finish describes the texture of the surface. An engineer who writes tolerances that are too tight adds cost, and one who writes them too loose gets parts that do not assemble or do not work. This lesson gives the core ideas and simple arithmetic. Full standard tables are in the handbooks that the shop uses.
+No part is made exactly to its drawing dimension. Tolerances state how far a size may vary, fits describe how two mating parts fit together given those variations, and surface finish describes the texture of the surface. An engineer who writes tolerances that are too tight adds cost, and one who writes them too loose gets parts that do not assemble or do not work. Full standard tables are in the handbooks that the shop uses.
 
 **Prerequisites:** [Machining speeds and feeds](02-machining-speeds-and-feeds.md), [Machining processes](03-machining-processes.md)
 **Time:** 6-8 h
@@ -71,8 +71,7 @@ $$C_{\min} = 25.000 - 24.993 = 0.007 \text{ mm}$$
 
 **Answer:** Clearance fit, with clearance from 0.007 mm to 0.041 mm.
 
-**Sanity check:** The hole's tolerance is 0.021 mm and the shaft's tolerance is 0.013 mm. The total clearance range should be about the sum of those tolerances, which is 0.034 mm. The computed range is 0.041 - 0.007 = 0.034 mm. The numbers agree.
-
+**Sanity check:** The hole's tolerance is 0.021 mm and the shaft's tolerance is 0.013 mm. The total clearance range should be about the sum of those tolerances, which is 0.034 mm. The computed range is 0.041 - 0.007 = 0.034 mm.
 **Stack-up example:** Three parts are 10.00 mm (tolerance $\pm 0.05$), 15.00 mm ($\pm 0.05$), and 20.00 mm ($\pm 0.10$), in a line. The nominal total is 45.00 mm. Worst case is $\pm 0.20$ mm. The RSS value is $\sqrt{0.05^2 + 0.05^2 + 0.10^2} = \sqrt{0.0025 + 0.0025 + 0.01} = \sqrt{0.015} = 0.1225$ mm, about $\pm 0.12$ mm. The RSS value is smaller, which is why statistical stack-up is used when the risk allows it.
 
 **Surface roughness example:** A turning feed of $f = 0.2$ mm/rev with a tool nose radius of $r = 0.8$ mm gives an ideal peak height of $R_{\max} = 0.2^2 / (8 \times 0.8) = 0.00625$ mm, which is 6.25 micrometers.

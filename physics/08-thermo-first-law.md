@@ -2,8 +2,7 @@
 
 **Type:** lesson
 
-Thermodynamics is the study of energy and how it moves between heat and work. Engines, compressors, turbines, refrigerators, and power plants all depend on it. This lesson introduces the properties of a gas, the ideal gas model, work and heat, and the first law of thermodynamics for closed and open systems.
-
+Thermodynamics is the study of energy and how it moves between heat and work. Engines, compressors, turbines, refrigerators, and power plants all depend on it.
 **Prerequisites:** [07-waves-light-heat.md](07-waves-light-heat.md) (temperature, heat, and specific heat)
 **Time:** 8-12 h
 
@@ -23,7 +22,7 @@ Thermodynamics is the study of energy and how it moves between heat and work. En
 
 - An **ideal gas** is a model where molecules do not attract each other and take up almost no space. Air at room temperature and atmospheric pressure behaves close enough to an ideal gas for most engineering work.
 - The ideal gas law relates pressure, specific volume, and temperature. For a fixed mass, it links them through the gas constant $R$.
-- For dry air, $R = 287$ J/(kg K). This value is used throughout this lesson, so no steam table is needed.
+- For dry air, $R = 287$ J/(kg K). This lesson uses this value throughout, so no steam table is needed.
 - Two specific heats matter. $c_p$ is the specific heat at constant pressure. $c_v$ is the specific heat at constant volume. For air, $c_p \approx 1005$ J/(kg K) and $c_v \approx 718$ J/(kg K). These are typical values near room temperature.
 - The ratio $k = c_p/c_v$ is about $1.4$ for air.
 

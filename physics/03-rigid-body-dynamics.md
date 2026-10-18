@@ -56,7 +56,7 @@ $$v_G = \omega r \qquad a_G = \alpha r$$
 
 **Assumptions:** The disk is uniform and rigid. It starts from rest. It rolls without slipping, so $a_G = \alpha r$. The force acts horizontally through the center.
 
-**FBD description:** Draw the disk as a circle. Draw the 50 N force as an arrow to the right through the center. Draw the weight down through the center and the normal force up at the contact point. Draw the friction force as a horizontal arrow at the bottom of the disk. Friction points to the left, opposite to the motion, because the bottom of the disk tends to slide forward relative to the floor when the center is pulled forward.
+**FBD description:** Draw the disk as a circle. Draw the 50 N force as an arrow to the right through the center. Draw the weight down through the center and the normal force up at the contact point. Draw the friction force as a horizontal arrow at the bottom of the disk. Friction points to the left, opposite to the motion. Pulling the center forward makes the bottom of the disk tend to slide forward relative to the floor.
 
 **Solution:**
 

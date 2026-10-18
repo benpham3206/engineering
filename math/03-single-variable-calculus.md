@@ -13,7 +13,7 @@ Calculus describes change. A derivative gives the rate at which something change
 - The derivative $f'(x)$ is the slope of the tangent line, or the instantaneous rate of change. It is defined as the limit of the average rate of change over a shrinking interval.
 - Useful rules: power rule $\frac{d}{dx} x^n = n x^{n-1}$, product rule, quotient rule, and chain rule. The chain rule handles a function inside another function.
 - The integral $\int_a^b f(x)\,dx$ is the signed area under $f$ from $a$ to $b$. It is also the limit of a sum of thin slices.
-- The fundamental theorem of calculus connects the two ideas: differentiation and integration are inverse operations. If $F' = f$, then $\int_a^b f\,dx = F(b) - F(a)$.
+- The fundamental theorem of calculus connects the two ideas. Differentiation and integration are inverse operations. If $F' = f$, then $\int_a^b f\,dx = F(b) - F(a)$.
 - A series is a sum of infinitely many terms. A Taylor series approximates a smooth function with polynomials around a point. Keeping only the first few terms gives an approximation with a known error, which engineers rely on for small angles and small strains.
 - Engineering rule of thumb: if a quantity is given as a rate, integrate it to get the total. If a quantity is a total, differentiate it to get the rate.
 
@@ -49,7 +49,7 @@ Symbols: $f$ is any function, $h$ is a small step, $x$ is position (m) unless st
 
 1. Second moment of area of the rectangle: $I = \dfrac{b h^3}{12} = \dfrac{0.05 \times 0.10^3}{12} = 4.167 \times 10^{-6}\ \mathrm{m^4}$.
 2. Bending moment at distance $x$ from the fixed end, measured from the load: $M(x) = P(L - x)$ in magnitude.
-3. Integrate the curvature twice (the standard result, reached by integrating $M/EI$ with the boundary conditions $w(0) = 0$, $w'(0) = 0$), and evaluate at $x = L$. The result is $\delta = \dfrac{P L^3}{3 E I}$.
+3. Integrate the curvature $M/EI$ twice with the boundary conditions $w(0) = 0$ and $w'(0) = 0$, then evaluate at $x = L$. The result is $\delta = \dfrac{P L^3}{3 E I}$.
 4. Check the integral numerically with `scipy.integrate.quad`, using the unit-load form $\delta = \int_0^L \dfrac{P (L-x)^2}{EI}\,dx$. It returns $0.0032\ \mathrm{m}$.
 5. Substitute: $\delta = \dfrac{1000 \times 2.0^3}{3 \times 200\times10^9 \times 4.167\times10^{-6}} = 0.0032\ \mathrm{m}$.
 

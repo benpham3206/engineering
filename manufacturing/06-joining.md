@@ -13,7 +13,7 @@ Joining connects two or more parts into one assembly. The three main families ar
 - **Fillet weld**: a triangular weld in a corner joint. Its size is given by the leg length (the two equal sides of the triangle).
 - **Throat**: the shortest distance from the root of the weld to its face. For a standard 45 degree fillet weld, the throat is about 0.707 times the leg length.
 - **Heat-affected zone (HAZ)**: the region next to a weld that is heated but does not melt. Its properties can change, so welded parts can lose strength near the weld.
-- **Bolt**: a threaded fastener that clamps parts together. Bolts are usually tightened to a set preload, which is the clamping force. Preload matters more than the torque number alone.
+- **Bolt**: a threaded fastener that clamps parts together. You usually tighten a bolt to a set preload, which is the clamping force. Preload matters more than the torque number alone.
 - **Adhesive**: a material that bonds surfaces by filling and gripping them. Surface preparation (cleaning and roughening) decides most of the bond strength.
 - **Clearance hole**: a hole a little larger than the bolt, so the bolt passes through. A tapped hole has threads cut into it so a bolt screws in directly.
 
@@ -50,7 +50,7 @@ $$t = 0.707 \times 6 = 4.24 \text{ mm}$$
 
 **Answer:** The throat is about 4.24 mm.
 
-**Sanity check:** The throat is always smaller than the leg, because the throat is the short side of a triangle with two legs of length 6 mm. A throat of 4.24 mm is shorter than 6 mm, which fits the geometry.
+**Sanity check:** The throat is always smaller than the leg, because the throat is the short side of a triangle with two legs of length 6 mm. The computed throat of 4.24 mm is shorter than the 6 mm leg, as it must be.
 
 ## Practice
 

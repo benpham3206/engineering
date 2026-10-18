@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A sensor turns a physical quantity such as temperature, force, or position into something you can measure. A transducer is the broader term for any device that converts energy from one form to another, and most sensors are transducers. Engineers use them to close the loop between a machine and the world it operates in.
+A sensor turns a physical quantity such as temperature, force, or position into something you can measure. A transducer is the broader term for any device that converts energy from one form to another, and most sensors are transducers. Engineers use them to feed a machine information about the physical world it operates in.
 
 **Prerequisites:** [01 - Units and dimensional analysis](01-units-and-dimensional-analysis.md), [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md)
 **Time:** 4-6 h
@@ -85,4 +85,3 @@ $$P = \frac{12.8\ \text{mA} - 4\ \text{mA}}{1.6\ \text{mA/bar}} = 5.5\ \text{bar
 - [University Physics Volume 2, Chapter 10: Introduction](https://openstax.org/books/university-physics-volume-2/pages/10-introduction) by OpenStax: resistors and circuit basics that underpin resistive sensors.
 - [Electronics (Wikibooks)](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: resistors and DC circuits, the basics behind resistive transducers.
 
-Note: no free source specific to sensor characteristics (sensitivity, linearity, live zero) was confirmed in this session. The links above cover the electrical and uncertainty background only.

@@ -25,13 +25,13 @@ Engineers use these ideas to answer questions like: how deep can a dam wall be b
 
 ### Pressure in a resting fluid
 
-Take a column of fluid with cross-section $A$ and height $h$ above a point. Its weight is $\rho g h A$. The pressure at the bottom must hold up that weight plus whatever pressure sits on top. This gives the **hydrostatic law**: the pressure increases linearly with depth.
+Take a column of fluid with cross-section $A$ and height $h$ above a point. Its weight is $\rho g h A$. The pressure at the bottom must hold up that weight plus whatever pressure sits on top. This gives the **hydrostatic law**. Pressure increases linearly with depth.
 
 Two points at the same depth in the same connected fluid have the same pressure. This is why a U-tube with the same fluid on both sides settles with equal levels.
 
 ### Pressure on a plane surface
 
-The force on a submerged flat surface is the average pressure times the area. For a vertical gate whose top edge is at the free surface, the average pressure is half the bottom pressure, so the force is one half of $\rho g h_\text{bottom}$ times the area. The line of action sits below the centroid. Engineers call that offset the center of pressure. For this lesson, know the average-pressure rule and that the force acts below the centroid.
+The force on a submerged flat surface is the average pressure times the area. For a vertical gate whose top edge is at the free surface, the average pressure is half the bottom pressure, so the force is one half of $\rho g h_\text{bottom}$ times the area. The line of action sits below the centroid. Engineers call that offset the center of pressure.
 
 ### Buoyancy
 
@@ -120,7 +120,7 @@ $$
 
 **Answer:** $p_1 - p_2 \approx 12.2$ kPa (about 1.8 psi). The wide section is at higher pressure.
 
-**Sanity check:** Speed went up by a factor of 4, since $V_2/V_1 = (D_1/D_2)^2 = 4$. The pressure drop should be on the order of $\rho V_2^2 / 2 \approx 13$ kPa, which matches 12.2 kPa. The pressure drop is in the right range and in the right direction.
+**Sanity check:** Speed went up by a factor of 4, since $V_2/V_1 = (D_1/D_2)^2 = 4$. The pressure drop should be on the order of $\rho V_2^2 / 2 \approx 13$ kPa, which matches 12.2 kPa.
 
 ## Practice
 

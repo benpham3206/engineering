@@ -45,7 +45,7 @@ $$T = \frac{W}{2\sin\alpha}$$
 
 **Solution:**
 
-1. Convert the angle if needed. Here we keep degrees, so the calculator must be in degree mode, or we convert: $35^\circ = 35 \times \pi/180 = 0.6109\ \mathrm{rad}$.
+1. Convert the angle if needed. Here we keep degrees, so the calculator must be in degree mode. Or convert first: $35^\circ = 35 \times \pi/180 = 0.6109\ \mathrm{rad}$.
 2. Horizontal component: $F_x = 1200 \cos 35^\circ = 1200 \times 0.8192 = 982.98\ \mathrm{N}$.
 3. Vertical component: $F_y = 1200 \sin 35^\circ = 1200 \times 0.5736 = 688.29\ \mathrm{N}$.
 

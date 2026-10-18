@@ -336,7 +336,7 @@ $$\text{Takt} = \frac{\text{available time}}{\text{customer demand}}$$
 ### Automation
 
 - Accuracy is closeness to target. Repeatability is closeness across repeats. A robot can repeat well and still be off target (lesson worked case: 0.02 mm repeatability, 0.3 mm offset).
-- Payload is the mass at the tool flange, and it includes the tool and the part, not only the part.
+- Payload is the mass at the tool flange, and it includes the tool and the part.
 - Safety: a cobot's speed and force limits reduce risk but do not remove the need for a risk assessment. Fixed guards and light curtains are the usual tools for other cells.
 - **Holds when:** the task is repeatable and the sensors confirm each step. **Breaks when:** the part presentation changes, or there is no fault state for jams and missing parts.
 
@@ -372,7 +372,7 @@ Before releasing a welded joint:
 Before trusting a capability claim:
 
 - Process is in control on a control chart.
-- Cpk is computed with the process mean, not only Cp.
+- Compute Cpk with the process mean. Cp alone does not show centering.
 - Sample size and subgrouping are stated.
 
 ## Sanity checks

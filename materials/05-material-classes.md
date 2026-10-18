@@ -10,7 +10,7 @@ Engineering materials fall into four broad classes. Each class has a typical bon
 ## Core ideas
 
 - **Metals** have metallic bonds. They are conductive, usually ductile, and dense. Most are crystalline polycrystals. Examples: steel, aluminum, copper, titanium.
-- **Polymers** are long chains of repeating units (monomers) held together by covalent bonds. Chains are tied to each other by weak secondary bonds. Examples: polyethylene, nylon, ABS, epoxy.
+- **Polymers** are long chains of repeating units (monomers) held together by covalent bonds. Weak secondary bonds tie the chains to each other. Examples: polyethylene, nylon, ABS, epoxy.
 - **Ceramics** are compounds of metals or semimetals with oxygen, nitrogen, or carbon, held together by ionic and covalent bonds. They are hard, stiff, heat resistant, and brittle. Examples: alumina, silicon carbide, glass, concrete.
 - **Composites** combine two or more materials with different properties so the result is better than either alone. Usually a strong, stiff fiber or particle sits inside a tougher matrix. Examples: carbon fiber reinforced polymer, fiberglass, reinforced concrete.
 

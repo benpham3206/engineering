@@ -73,7 +73,7 @@ The careful answer agrees with the estimate.
 **Step 3, check the reported value.** $198\ \text{m/s}$ is ten times the careful value of
 $19.8\ \text{m/s}$. A factor of exactly 10 usually points to a misplaced decimal point or a
 unit slip. The number alone does not say which one. It does say the report fails the
-order-of-magnitude check, so the calculation must be found and redone (lesson 08 shows how).
+order-of-magnitude check, so find the error and redo the calculation (lesson 08 shows how).
 
 **Step 4, sign check.** The speed is a magnitude, so the sign is not in question here. The
 direction is down, and the speed is positive.

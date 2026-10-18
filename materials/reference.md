@@ -9,7 +9,7 @@ A lookup sheet for choosing, checking, and failing-analysing engineering materia
 - Processing sets structure, structure sets properties, and properties set performance. Change the processing and the same composition can behave very differently.
 - Stiffness comes from bonding and changes little with microstructure. Strength, toughness, and fatigue life depend strongly on microstructure and flaws.
 - Real parts contain flaws. Fracture happens when a crack reaches its critical size, not when the average stress reaches a limit.
-- Temperature changes everything. Above roughly 0.3 to 0.5 of the melting temperature (in kelvin), creep and time-dependent failure matter.
+- Temperature changes most properties. Above roughly 0.3 to 0.5 of the melting temperature (in kelvin), creep and time-dependent failure matter.
 - Corrosion is electrochemistry. No electrolyte, or no electron path between the two sites, means no galvanic corrosion.
 - Table values are typical, not guaranteed. Design to specified minimums from the supplier or code, with the actual condition, temperature, and environment.
 - Any single property is not a material choice. Rank candidates by a performance index built from the constraints and the objective.
@@ -33,8 +33,8 @@ Crystal structures of common metals (room temperature):
 | HCP | Ti (alpha), Mg, Zn | 6 (hcp cell) | 0.74 | Few slip systems, often less ductile |
 
 - Density of a crystal: $\rho = \dfrac{n M}{V_c N_A}$, where $\rho$ is density (kg/m$^3$), $n$ the atoms per cell, $M$ the molar mass (kg/mol), $V_c$ the cell volume (m$^3$), and $N_A = 6.022 \times 10^{23}$ mol$^{-1}$. Check: alpha iron (BCC, $a = 0.2866$ nm) gives about 7880 kg/m$^3$.
-- Holds for ideal lattices. Breaks when vacancies, precipitates, or porosity change the density, which is why cast and sintered parts differ from the crystal value.
-- Hall-Petch: $\sigma_y = \sigma_0 + k_y d^{-1/2}$, where $d$ is grain diameter (m), and $\sigma_0$ and $k_y$ are material constants. Holds for grains from micrometres down to about tens of nanometres. Breaks at very fine grains, where grain boundary sliding softens the metal.
+- The formula holds for ideal lattices. It breaks when vacancies, precipitates, or porosity change the density, which is why cast and sintered parts differ from the crystal value.
+- Hall-Petch: $\sigma_y = \sigma_0 + k_y d^{-1/2}$, where $d$ is grain diameter (m), and $\sigma_0$ and $k_y$ are material constants. The relation holds for grains from micrometres down to about tens of nanometres. It breaks at very fine grains, where grain boundary sliding softens the metal.
 - Strengthening mechanisms all work by blocking dislocation motion: grain refinement, solid solution, precipitates, and cold work.
 
 ## Typical property table
@@ -82,9 +82,9 @@ For an isotropic, linear elastic material, only two independent constants are ne
 - Bulk modulus: $K = \dfrac{E}{3(1-2\nu)}$, where $K$ is the ratio of hydrostatic pressure to volumetric strain.
 - Equivalent form: $E = 2G(1+\nu) = 3K(1-2\nu)$.
 - Stability bounds: $-1 < \nu < 0.5$. Most metals have $\nu$ near 0.3, cork is near 0, and rubber is near 0.5.
-- Holds when: linear elastic, isotropic, small strain, and uniform material. Breaks for: composites, wood, single crystals, and anything past yield.
+- The relations hold for linear elastic, isotropic, small-strain, uniform materials. They break for composites, wood, single crystals, and anything past yield.
 - Sanity: steel with $E = 200$ GPa and $\nu = 0.3$ gives $G = 77$ GPa and $K = 167$ GPa.
-- Thermal strain: $\varepsilon_{\text{th}} = \alpha\,\Delta T$, with $\alpha$ the coefficient of thermal expansion (1/K). A fully constrained, linear elastic bar carries $\sigma = E\,\alpha\,\Delta T$ in compression on heating. Breaks when the part can move freely or when the material yields.
+- Thermal strain: $\varepsilon_{\text{th}} = \alpha\,\Delta T$, with $\alpha$ the coefficient of thermal expansion (1/K). A fully constrained, linear elastic bar carries $\sigma = E\,\alpha\,\Delta T$ in compression on heating. It breaks when the part can move freely or when the material yields.
 
 ## Stress-strain curve landmarks
 
@@ -96,7 +96,7 @@ For an isotropic, linear elastic material, only two independent constants are ne
 - Fracture point: the stress and strain where the specimen separates. Engineering values can drop after necking, so true stress is the better measure of local stress.
 - Resilience (elastic energy per unit volume to yield): $U_r = \dfrac{\sigma_y^2}{2E}$ (J/m$^3$). Useful for springs.
 - Toughness: the area under the stress-strain curve to fracture (J/m$^3$).
-- Work hardening (Hollomon form, plastic range): $\sigma_t = K\,\varepsilon_t^{\,n}$, where $K$ is the strength coefficient (MPa) and $n$ the strain hardening exponent (dimensionless). Holds for uniform plastic flow before necking.
+- Work hardening (Hollomon form, plastic range): $\sigma_t = K\,\varepsilon_t^{\,n}$, where $K$ is the strength coefficient (MPa) and $n$ the strain hardening exponent (dimensionless). The relation holds for uniform plastic flow before necking.
 - Yield-to-tensile ratio: high ratio (near 1) means little work-hardening margin before a load drop; cold-worked and quenched steels often have high ratios.
 
 ## Hardness scales
@@ -112,7 +112,7 @@ Hardness is resistance to local indentation. No hardness scale is an absolute me
 | Knoop (HK) | Elongated diamond pyramid | Thin coatings, brittle materials | Gives an elongated indent for direction-sensitive readings |
 | Shore A or D | Spring-loaded indenter | Elastomers and polymers | Durometer, not comparable to metal scales |
 
-- Rule of thumb: for metals, hardness roughly tracks yield and tensile strength. For steel, tensile strength is roughly 3.4 times the Brinell number, in MPa. Holds for plain carbon and low alloy steels in the annealed or tempered state. Breaks for cold worked, case hardened, or highly alloyed steels.
+- Rule of thumb: for metals, hardness roughly tracks yield and tensile strength. For steel, tensile strength is roughly 3.4 times the Brinell number, in MPa. It holds for plain carbon and low alloy steels in the annealed or tempered state. It breaks for cold worked, case hardened, or highly alloyed steels.
 - Test thickness: the sample should be at least about ten times the indent depth thick, or the reading is pulled low by the support.
 - Hardness is a surface and local reading. It does not show subsurface properties after case hardening or decarburization.
 
@@ -150,7 +150,7 @@ Ranking table (computed; ranking only, not design values):
 | Soda-lime glass | 28.0 | 3.35 | 1.65 | n/a | n/a | n/a |
 | Alumina | 94.9 | 4.93 | 1.84 | n/a | n/a | n/a |
 
-Holds when: the constraint and the objective match the index, the section shape matches the load case, and the material is not limited by a different constraint (for example fatigue, creep, or fracture). Breaks when: the part is limited by fracture toughness (brittle materials), by temperature, or by cost and manufacturability. Glass and alumina score high on stiffness indices but cannot be chosen on that basis alone.
+The indices hold when the constraint and objective match the index, the section shape matches the load case, and no other constraint (for example fatigue, creep, or fracture) limits the part. They break when fracture toughness (brittle materials), temperature, or cost and manufacturability limit the part. Glass and alumina score high on stiffness indices but cannot be chosen on that basis alone.
 
 ## Failure modes and the governing property
 
@@ -176,7 +176,7 @@ Notes: buckling depends on stiffness and geometry, not strength. A stiff, strong
 - Stress intensity factor for a crack of length $a$ under stress $\sigma$: $K = Y\,\sigma\,\sqrt{\pi a}$. Units: MPa $\sqrt{\text{m}}$ with $\sigma$ in MPa and $a$ in m.
 - Geometry factor $Y$: about 1.12 for an edge crack in a wide plate. Use 1.0 for a through crack in an infinite plate.
 - Fracture occurs when $K = K_{IC}$. Critical crack length: $a_c = \dfrac{1}{\pi}\left(\dfrac{K_{IC}}{Y\sigma}\right)^2$.
-- Holds for linear elastic behavior, plane strain, and a crack that is small compared with the part. Breaks for ductile metals with large plastic zones (use J-integral or COD methods) and for very thin sections.
+- The formula holds for linear elastic behavior, plane strain, and a crack small compared with the part. It breaks for ductile metals with large plastic zones (use J-integral or COD methods) and for very thin sections.
 - Plane strain validity (ASTM E399 criterion): crack length and thickness both at least $2.5\,(K_{IC}/\sigma_y)^2$. Thinner sections need a different test or fail the validity check.
 - Example (6061-T6, $K_{IC} \approx 30$ MPa $\sqrt{\text{m}}$, $\sigma_y = 276$ MPa): minimum valid thickness is about 30 mm. Critical edge crack at $\sigma = 138$ MPa (half yield) and $Y = 1.12$ is about 12 mm.
 - Example (soda-lime glass, $K_{IC} \approx 0.75$ MPa $\sqrt{\text{m}}$, $\sigma = 50$ MPa, $Y = 1.12$): critical edge crack is about 0.06 mm, which shows how little flaw glass tolerates.
@@ -191,27 +191,27 @@ Typical fracture toughness (MPa $\sqrt{\text{m}}$, typical):
 | Ti-6Al-4V | about 50-100 |
 
 - Strength and toughness are separate. High yield strength does not mean high $K_{IC}$.
-- Crack growth under cyclic load follows the Paris law form $da/dN = C\,(\Delta K)^m$, with $C$ and $m$ material constants. Holds in the stable growth region only.
+- Crack growth under cyclic load follows the Paris law form $da/dN = C\,(\Delta K)^m$, with $C$ and $m$ material constants. The law holds only in the stable growth region.
 
 ## Fatigue basics
 
 - Stress amplitude $\sigma_a = \dfrac{\sigma_{\max} - \sigma_{\min}}{2}$. Stress ratio $R = \sigma_{\min}/\sigma_{\max}$.
 - Fatigue occurs in three stages: crack initiation (usually at a surface or inclusion), slow propagation, and final fracture.
-- Steels (wrought, rotating beam test rule of thumb): endurance limit $S_e' \approx 0.5\,S_{ut}$ for $S_{ut} \le 1400$ MPa, and $S_e' \approx 700$ MPa for higher strength. Holds for smooth, polished specimens in air at room temperature. Breaks for notched, corroded, large, or hot parts.
+- Steels (wrought, rotating beam test rule of thumb): endurance limit $S_e' \approx 0.5\,S_{ut}$ for $S_{ut} \le 1400$ MPa, and $S_e' \approx 700$ MPa for higher strength. It holds for smooth, polished specimens in air at room temperature. It breaks for notched, corroded, large, or hot parts.
 - Marin factors reduce the endurance limit for the real part: surface finish, size, loading mode, temperature, reliability, and miscellaneous effects. Apply them multiplicatively to $S_e'$.
 - Aluminum alloys and most non-ferrous metals have no clear endurance limit. Design to a stated finite life, commonly $10^8$ or $5 \times 10^8$ cycles.
-- Mean stress: modified Goodman relation $\dfrac{\sigma_a}{S_e} + \dfrac{\sigma_m}{S_{ut}} = 1$. Holds for ductile metals. Breaks for brittle materials and for compressive mean stress (which is usually kinder).
+- Mean stress: modified Goodman relation $\dfrac{\sigma_a}{S_e} + \dfrac{\sigma_m}{S_{ut}} = 1$. It holds for ductile metals. It breaks for brittle materials and for compressive mean stress, which is usually kinder.
 - Stress concentration: $\sigma_{\max} = K_t\,\sigma_{\text{nominal}}$. Fatigue notch factor $K_f$ is lower than $K_t$ for notch-sensitive materials. Use $K_f$ for fatigue.
 - Surface finish, corrosion, residual stress (shot peening helps), and notches can each cut fatigue life a lot.
 
 ## Creep
 
 - Creep is time-dependent deformation under constant stress. Three stages: primary (decelerating), secondary (steady-state), and tertiary (accelerating to rupture).
-- Regime rule: creep matters when the absolute temperature is above about 0.3 to 0.5 of the absolute melting temperature $T_m$ (in kelvin). Holds for metals and many ceramics. Polymers creep at much lower temperature, so use the glass transition temperature $T_g$ as the reference.
+- Regime rule: creep matters when the absolute temperature is above about 0.3 to 0.5 of the absolute melting temperature $T_m$ (in kelvin). It holds for metals and many ceramics. Polymers creep at much lower temperature, so use the glass transition temperature $T_g$ as the reference.
 - Worked check: aluminum ($T_m \approx 933$ K) creeps at about 280 K to 470 K, which is about 7 C to 195 C. Lead ($T_m \approx 601$ K) is at about 0.49 $T_m$ at room temperature, so lead creeps at room temperature.
 - Steady-state creep rate: $\dot{\varepsilon} = A\,\sigma^{n}\exp\!\left(-\dfrac{Q}{RT}\right)$, with $\dot{\varepsilon}$ in 1/s, $\sigma$ in MPa, $n$ the stress exponent (often 3 to 8 for metals), $Q$ the activation energy (J/mol), $R = 8.314$ J/(mol K), and $T$ in kelvin.
 - Temperature ratio at the same stress: $\dfrac{\dot{\varepsilon}_2}{\dot{\varepsilon}_1} = \exp\!\left[\dfrac{Q}{R}\left(\dfrac{1}{T_1} - \dfrac{1}{T_2}\right)\right]$. Example: with $Q = 200$ kJ/mol, raising T from 900 K to 1000 K increases the creep rate by about 14.5 times.
-- Breaks when: the model is applied with Celsius instead of kelvin, when the microstructure changes (overaging, phase transformation), or when multiaxial stress or oxidation dominate.
+- It breaks when the model is applied with Celsius instead of kelvin, when the microstructure changes (overaging, phase transformation), or when multiaxial stress or oxidation dominate.
 - Design responses: higher melting point material, precipitate-strengthened alloys, lower stress, lower temperature, and wall thickness allowance for creep life.
 
 ## Galvanic series and galvanic corrosion
@@ -230,11 +230,11 @@ Qualitative ordering in seawater, from most anodic (least noble, corrodes first)
 - Graphite
 - Silver, gold, platinum
 
-- Anode (the less noble metal) dissolves; cathode (the more noble) is protected. Holds when the two metals are electrically connected and share one electrolyte.
+- Anode (the less noble metal) dissolves; cathode (the more noble) is protected. This holds when the two metals are electrically connected and share one electrolyte.
 - Area ratio: a small anode touching a large cathode corrodes fast. A large anode with a small cathode corrodes slowly.
 - Order within the noble group depends on alloy, condition (active or passive), flow, and temperature. Use ASTM G82 data for measured positions.
 
-Corrosion rate (uniform attack, Faraday's law): mass loss rate $= \dfrac{i\,M}{n\,F}$, where $i$ is the current density (A/cm$^2$), $M$ the molar mass (g/mol), $n$ the valence, and $F = 96\,485$ C/mol. Penetration rate $= \dfrac{\text{mass loss rate}}{\rho}$. Example: iron ($M = 55.85$ g/mol, $n = 2$, $\rho = 7.87$ g/cm$^3$) at $i = 10$ $\mu$A/cm$^2$ corrodes at about 0.12 mm/year. For iron, each 1 $\mu$A/cm$^2$ is about 0.012 mm/year. Holds for uniform attack only. Pitting and crevice attack can perforate thin walls long before the average loss looks serious.
+Corrosion rate (uniform attack, Faraday's law): mass loss rate $= \dfrac{i\,M}{n\,F}$, where $i$ is the current density (A/cm$^2$), $M$ the molar mass (g/mol), $n$ the valence, and $F = 96\,485$ C/mol. Penetration rate $= \dfrac{\text{mass loss rate}}{\rho}$. Example: iron ($M = 55.85$ g/mol, $n = 2$, $\rho = 7.87$ g/cm$^3$) at $i = 10$ $\mu$A/cm$^2$ corrodes at about 0.12 mm/year. For iron, each 1 $\mu$A/cm$^2$ is about 0.012 mm/year. The rule holds for uniform attack only. Pitting and crevice attack can perforate thin walls long before the average loss looks serious.
 
 ## Corrosion protection options
 
