@@ -2,6 +2,12 @@
 
 everything i learned as a mechanical engineering student at SJSU
 
+## What is engineering?
+
+Engineering is using math, science, and experience to design and build things that solve real problems, within real limits like cost, safety, time, and materials.
+
+Science asks how the world works. Engineering asks what we can make with that knowledge, and whether it will hold up.
+
 ## Advice
 
 1. Learn the fundamentals.
