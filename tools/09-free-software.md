@@ -173,7 +173,7 @@ These come from a working mechanical engineering setup (as of 2026) and fill gap
 | [pywin32](https://github.com/mhammond/pywin32) | Open source | Drive Windows programs from Python, including automating SolidWorks through its COM API. |
 | [FFmpeg](https://ffmpeg.org/) | Open source | Converts and trims video. Pull frames from high-speed test footage, or make an animation from simulation frames. |
 | [Unreal Engine](https://www.unrealengine.com/) | Free to use, royalties above a revenue threshold | Real-time 3D for interactive visualization, simulators, and digital twins. Read the license for commercial work. |
-| [HP calculator software](https://hpcalcs.com/download/) | Free | Connectivity Kit and emulator for HP Prime calculators, from HP's official calculator licensee. See [Graphing calculators](05-hp-prime.md). |
+| [HP calculator software](https://hpcalcs.com/download/) | Free | Connectivity Kit and emulator for HP Prime calculators, from HP's official calculator licensee. See [Calculators](05-calculators.md). |
 | [GitHub CLI](https://cli.github.com/) | Open source | Work with GitHub repositories, issues, and pull requests from the terminal. |
 
 Licensed tools in the same setup, for reference: SolidWorks (CAD and simulation), MATLAB (numerical computing), and Microsoft 365 (documents). Each has a free equivalent in the tables above. Many universities give students these licenses free, so check before you pay.

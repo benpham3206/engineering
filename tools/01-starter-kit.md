@@ -21,7 +21,7 @@ The list below is in the order most learners need the items.
 - **GNU Octave.** A free program that runs most MATLAB-style code. Use it if your course uses MATLAB and you do not have a license. See the [manual index](https://docs.octave.org/latest/).
 - **FreeCAD.** Free, open-source 3D CAD. It is the free alternative to SolidWorks. See [freecad.org](https://www.freecad.org/).
 - **Onshape free plan.** A browser-based CAD tool with a free plan. Read the [pricing page](https://www.onshape.com/en/pricing) before you use it. The free plan is for non-commercial use, and all documents on it are public. Do not put private or client designs there.
-- **Scientific calculator.** One that handles fractions, exponents, logs, and trig. It is for exams and quick checks. A graphing calculator is useful, but only buy one if your course requires it. The [HP Prime lesson](05-hp-prime.md) explains what a graphing calculator adds.
+- **Scientific calculator.** One that handles fractions, exponents, logs, and trig. It is for exams and quick checks. A graphing calculator is useful, but only buy one if your course requires it. The [calculators lesson](05-calculators.md) explains when to use one and what a graphing calculator adds.
 - **Measuring tools.** A steel rule, a tape measure, and a digital caliper cover most early work. See the [measurement lesson](07-measurement-tools.md) before you buy.
 - **Safety glasses and hearing protection.** Cheap, and needed in any shop. The [shop tools lesson](08-shop-tools.md) covers when to use them.
 - **Notebook or lab book.** Paper or digital. Date every entry and write down the units.
