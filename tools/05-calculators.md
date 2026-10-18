@@ -102,3 +102,4 @@ There are no calculator-specific equations, but two habits are worth writing as 
 - [Free engineering software](09-free-software.md) in this folder: free calculator apps, emulators, and the HP calculator Connectivity Kit.
 - [Python](02-python.md) in this folder: what to switch to when a calculation outgrows a calculator.
 - [Problem-solving](../problem-solving/README.md): estimation and sanity checks, the habits that make calculator results trustworthy.
+- [Tools reference](reference.md): the lookup sheet for this topic.

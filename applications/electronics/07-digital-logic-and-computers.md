@@ -147,3 +147,4 @@ George Boole published *The Laws of Thought* in 1854, which set out the algebra 
 - [Computation Structures (6.004), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/) by MIT: binary information, combinational and sequential logic, finite state machines, and processor and memory design.
 - [Introductory Digital Systems Laboratory (6.111), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/) by MIT: digital logic, state machines, and building a system on an FPGA.
 - Related lessons: [Mechatronics](06-mechatronics.md), [Sensors in products](05-sensors-in-products.md), [Printed circuit boards](04-printed-circuit-boards.md), [Data acquisition and sampling](../../measurement/08-data-acquisition-and-sampling.md), and [Semiconductors and computing](../../history/09-semiconductors-and-computing.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

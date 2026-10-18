@@ -132,3 +132,4 @@ Thomas Newcomen built an atmospheric steam engine in England about 1712, and it 
 - [University Physics Volume 2, section 4.2, Heat Engines](https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines) by OpenStax: how a heat engine converts heat to work and how efficiency is defined.
 - [University Physics Volume 2, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: the limits that the Carnot and Rankine cycles describe.
 - Related lessons: [Internal combustion engines](06-internal-combustion-engines.md), [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md), [Heat exchangers](05-heat-exchangers.md), [Pumps](09-pumps.md), [Piping and valves](12-piping-and-valves.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

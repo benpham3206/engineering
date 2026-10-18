@@ -134,3 +134,4 @@ Here $P_{loss}$ is the loss in watts (W), $I$ is the current in amperes (A), and
 - [The inventions, researches and writings of Nikola Tesla](https://www.gutenberg.org/ebooks/39272), edited by Thomas Commerford Martin, free on Project Gutenberg. Tesla's papers and patents on AC systems.
 - [Physics II: Electricity and Magnetism](https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/), MIT OpenCourseWare, free. A university course that covers induction and the field equations.
 - Related lessons: [Electricity and magnetism](../physics/06-electricity-and-magnetism.md), [Transformers](../applications/electrical/05-transformers.md), [The power grid](../applications/electrical/08-the-power-grid.md), and [Radio and antennas](../applications/waves-and-communication/02-radio-and-antennas.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

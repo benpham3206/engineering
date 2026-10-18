@@ -171,3 +171,4 @@ Archimedes' principle is still the first tool for buoyancy, from ship hulls to s
 - [Vitruvius, The Ten Books on Architecture](https://www.gutenberg.org/ebooks/20239), Project Gutenberg
 - [MacTutor biography of al-Khwarizmi](https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/), University of St Andrews
 - Related lessons: [Simple machines](../01-simple-machines.md), [Ancient engineering](../02-ancient-engineering.md), [Medieval and Renaissance](../03-medieval-and-renaissance.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Algebra](../../math/01-algebra.md)
+- [People of engineering reference](../reference-people.md): the lookup sheet for this topic.

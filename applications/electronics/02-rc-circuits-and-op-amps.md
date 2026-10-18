@@ -55,6 +55,18 @@ step is applied at $t = 0$, with the capacitor starting at $0\ \text{V}$.
 way to 5 V, and $0.86 \times 5 = 4.3\ \text{V}$, close to $4.40\ \text{V}$. Half of the final voltage
 is reached in roughly $0.7\tau$, and $0.326 / 0.47 = 0.69$, which agrees.
 
+## How it fails
+
+- **Capacitor overvoltage and reversed polarity.** A capacitor driven above its voltage rating breaks down and shorts, and a polarized electrolytic connected backward heats and can vent or burst. The signs are bulging or leaking cases. Derate to about 50 to 80 percent of the rated voltage, and check polarity before power-up.
+- **Electrolytic aging.** The electrolyte dries out with heat and time, so capacitance falls and equivalent series resistance rises. The sign is ripple, a timing circuit running off its design value, or a capacitor that runs warm. Keep capacitors away from heat and use parts rated for the temperature.
+- **Shorted capacitor.** A shorted capacitor passes the full supply current. A fuse or current limit stops the failure from spreading, and a series resistor limits inrush current into a discharged capacitor.
+- **Component tolerance and drift.** Resistor and capacitor values vary with tolerance, temperature, and age, so the time constant $	au = RC$ drifts. Use tighter tolerance or stable dielectrics (film or C0G) where timing matters.
+- **Op-amp saturation.** The output cannot go beyond the supply rails. When the gain times the input exceeds the rails, the output clips. The sign is a flat-topped waveform. Reduce the gain, check the input range, and pick an amplifier whose output reaches the rails you need.
+- **Op-amp oscillation.** Capacitive loads, long input leads, and high gain can add phase lag so the feedback turns positive and the circuit rings or oscillates. The sign is a high-frequency buzz on the output. A small series resistor at the output, a small feedback capacitor, and a decoupling capacitor close to each supply pin prevent it.
+- **Input offset and bias current.** A tiny input offset voltage or bias current times a large gain gives a large output error. The sign is a nonzero output with zero input. Use low-offset amplifiers or a trim.
+- **Noise pickup and ground loops.** Two ground connections at different potentials drive current through a shared path and inject hum into small signals, and long high-impedance inputs pick up electromagnetic interference. Shielded twisted cable, a single-point ground, and short input leads reduce both.
+- **Charged capacitor shock.** A large capacitor stays charged after power-off. Eliminate the hazard by discharging it, add a bleeder resistor as an engineering control, and use procedures and PPE after that. Under lockout/tagout, isolate and lock the supply, discharge stored energy, and prove zero voltage with a meter before touching the circuit.
+
 ## Practice
 
 1. Find $\tau$ for $R = 1\ \text{k}\Omega$ and $C = 100\ \mu\text{F}$.
@@ -95,3 +107,4 @@ is reached in roughly $0.7\tau$, and $0.326 / 0.47 = 0.69$, which agrees.
   by OpenStax: resistors and circuit analysis, a good base before RC circuits.
 - Previous: [Lesson 01, circuit basics](01-circuit-basics.md).
 - Next: [Lesson 03, mechatronics](06-mechatronics.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

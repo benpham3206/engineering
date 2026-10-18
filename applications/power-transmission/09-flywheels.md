@@ -149,3 +149,4 @@ Rotating masses that keep turning between pushes are very old. Potters' wheels u
 - [Shafts and bearings](../../design/08-shafts-and-bearings.md): how the shaft and the bearings carry the rotor.
 - [Energy storage](../energy/06-energy-storage.md): flywheels next to batteries, pumped hydro, and compressed air at grid scale.
 - [Clutches and brakes](04-clutches-and-brakes.md): flywheels in clutch and brake assemblies.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

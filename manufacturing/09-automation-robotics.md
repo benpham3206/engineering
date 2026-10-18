@@ -94,3 +94,4 @@ $$\text{OEE} = 0.90 \times 0.85 \times 0.98 = 0.750$$
 - [NIST: Manufacturing](https://www.nist.gov/manufacturing) by NIST: national research on manufacturing, including automation and robotics.
 - [NIST: Weights and measures](https://www.nist.gov/pml/weights-and-measures) by NIST: measurement standards that underpin accuracy claims.
 - [OSHA: Machine guarding](https://www.osha.gov/machine-guarding) by OSHA (U.S. Department of Labor): guarding principles that apply to automated cells.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

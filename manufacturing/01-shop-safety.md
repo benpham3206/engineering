@@ -11,8 +11,8 @@ Shop safety is the first skill in manufacturing because every other skill depend
 
 - **Hazard**: a source of harm, such as a spinning spindle or a hot weld.
 - **Risk**: the chance that a hazard hurts someone, combined with how bad the harm could be.
-- **Control**: anything that lowers risk. Controls work best in this order: remove the hazard, guard it, add warnings, then rely on personal protective equipment (PPE).
-- **Lockout/tagout (LOTO)**: a set of steps that makes a machine unable to start while someone works on it. Switch off the energy source, lock and tag it, and test it before work begins.
+- **Control**: anything that lowers risk. Controls work best in this order: eliminate the hazard, substitute a safer material or process, add engineering controls (guards, interlocks), add administrative controls (training, procedures, warnings), then rely on personal protective equipment (PPE).
+- **Lockout/tagout (LOTO)**: a set of steps that makes a machine unable to start while someone works on it. Identify every energy source (electrical, mechanical, hydraulic, pneumatic, thermal, gravity, chemical), isolate each one, lock and tag the isolation points, release or restrain stored energy, and verify a zero-energy state before work begins.
 - **PPE**: gear worn on the body, such as safety glasses, hearing protection, and gloves. PPE is the last control, not the first.
 
 Most shop injuries come from a small set of causes:
@@ -95,3 +95,4 @@ Before you run any machine, check these points:
 - [Machine guarding](https://www.osha.gov/machine-guarding) by OSHA (U.S. Department of Labor): what guards do, common hazards, and how to protect workers.
 - [Control of hazardous energy (lockout/tagout)](https://www.osha.gov/control-hazardous-energy) by OSHA: the steps for locking out equipment during service and maintenance.
 - [Welding, cutting, and brazing](https://www.osha.gov/welding-cutting-brazing) by OSHA: hazards and standards for hot work, which is covered in lesson 06.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

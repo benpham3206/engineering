@@ -154,3 +154,4 @@ Inside air is at 21 °C, outside air at $-5$ °C. Find the heat rate through the
 - [A Heat Transfer Textbook](https://ahtt.mit.edu/) by John H. Lienhard IV and John H. Lienhard V, MIT: a free, full heat transfer textbook covering conduction, convection, and radiation.
 - [A Heat Transfer Textbook, table of contents](https://ahtt.mit.edu/table-of-contents) by the same authors: the chapter list, including conduction (chapters 2, 4, and 5), convection (chapters 6 to 8), and radiation (chapter 10).
 - Previous: [Control volumes and pipe flow](11-control-volumes-pipe-flow.md) covers the convection boundary conditions and fluid flow ideas you need before the convection chapters of the textbook.
+- [Thermal-fluids reference](reference-thermofluids.md): the lookup sheet for this topic.

@@ -137,3 +137,4 @@ So with RSS, $g$ is between $4.82$ mm and $5.18$ mm.
 - [Paul's Online Math Notes](https://tutorial.math.lamar.edu/) by Paul Dawkins: free algebra review for signs, inequalities, and absolute value.
 - [NIST, Metric (SI) program](https://www.nist.gov/pml/owm/metric-si) by the National Institute of Standards and Technology: official guidance on SI units, useful when mixing metric and inch dimensions.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering texts that cover measurement and statistics background.
+- [Design reference](reference.md): the lookup sheet for this topic.

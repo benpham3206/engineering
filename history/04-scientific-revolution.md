@@ -140,3 +140,4 @@ Galileo's work in Padua and Pisa set the pattern for measurement-based physics. 
 - [Library of Congress](https://www.loc.gov/). Digitized historical books and prints on clocks, astronomy, and navigation.
 
 Related lessons: [Medieval and renaissance engineering](03-medieval-and-renaissance.md), [Scientific revolution people](people/03-scientists-and-mathematicians.md), [Clocks and watches](../applications/everyday/07-clocks-and-watches.md), [Industrial revolution](05-industrial-revolution.md), [Mathematics folder](../math/README.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

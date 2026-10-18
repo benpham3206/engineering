@@ -140,3 +140,4 @@ Compressed air powered rock drills in the Mont Cenis tunnel through the Alps in 
 - [Fluid Mechanics, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors: an open text on fluid statics and control-volume analysis, the method used for the flow balances in this lesson.
 - Related: [Pumps](09-pumps.md) for the same affinity logic applied to liquids, and [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md) for axial compressors in engines.
 - Related: [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md) for compressed air driving machine actuators, and [Vacuum cleaners](../everyday/04-vacuum-cleaners.md) for fans and suction.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

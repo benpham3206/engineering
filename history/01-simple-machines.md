@@ -170,3 +170,4 @@ The formulas stay the same in every machine, from a bicycle crank to a hydraulic
 - [MIT OpenCourseWare](https://ocw.mit.edu/), free course materials from MIT, including engineering courses on mechanics.
 - Related lessons: [Statics](../physics/01-statics.md), [Elevators and cranes](../applications/machines-robots/05-elevators-and-cranes.md), [Conveyors and automation](../applications/machines-robots/06-conveyors-and-automation.md).
 - Next: [Ancient engineering](02-ancient-engineering.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

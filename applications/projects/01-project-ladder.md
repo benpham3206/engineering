@@ -136,3 +136,4 @@ building.
 - [NIST, SI prefixes](https://www.nist.gov/pml/owm/metric-si-prefixes) by NIST: keep units consistent in
   every log.
 - Previous: [Lesson 06, fluid systems](../thermal-fluid/02-fluid-systems.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

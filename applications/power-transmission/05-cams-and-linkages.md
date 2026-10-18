@@ -189,3 +189,4 @@ rocking beam into straight-line motion. Franz Grashof published the criterion fo
   by MIT OpenCourseWare: the full course with its lecture and assignment materials.
 - Related lesson. [Clutches and brakes](04-clutches-and-brakes.md) for the friction parts that stop a
   cam-driven mechanism or hold it in place.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

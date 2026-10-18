@@ -4,7 +4,7 @@
 
 Safety means that a design keeps people from harm across the conditions it will meet. Risk is the chance of harm multiplied by how bad the harm would be. Engineers care because they decide what is acceptably safe, and those decisions are made long before anyone uses the product.
 
-**Prerequisites:** [What engineering is](01-what-engineering-is.md), [Engineering history](02-engineering-history.md)
+**Prerequisites:** [What engineering is](01-what-engineering-is.md), [Learning from history and failure](02-engineering-history.md)
 **Time:** 5-8 h
 
 ## Core ideas
@@ -13,10 +13,11 @@ Safety means that a design keeps people from harm across the conditions it will 
 - Safety is designed in. Good designers find hazards early, remove them when possible, guard against the rest, and warn users about what remains.
 - A common order of protection, from strongest to weakest:
   - Eliminate the hazard (remove the source).
-  - Guard it (add barriers, interlocks, or automatic shutoffs).
-  - Warn (labels, alarms, instructions).
-  - Train or rely on careful behavior.
-  The weakest layer is the one that fails most often in practice.
+  - Substitute a less hazardous material or process.
+  - Engineering controls (guards, barriers, interlocks, ventilation, automatic shutoffs).
+  - Administrative controls (procedures, training, warnings, labels, alarms, scheduling).
+  - Personal protective equipment (PPE) such as glasses, gloves, and hearing protection.
+  The weakest layers depend most on human behavior, so they fail most often in practice.
 - Safety factor is the ratio of the strength of a part to the load it will carry. A part with a capacity of 10 kN carrying a load of 5 kN has a safety factor of 2. Safety factors cover uncertain loads, material variation, and manufacturing error.
 - Defense in depth means stacking independent protections, so one failure does not cause harm by itself.
 - Failure modes and effects analysis (FMEA) is a method where the team lists each part or step, asks how it could fail, what the effect would be, and how likely and detectable the failure is. The result ranks what to fix first.
@@ -121,3 +122,4 @@ Answers are key points a good answer covers. See each question above.
 - [An Investigation of the Therac-25 Accidents](https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html) by Nancy Leveson and Clark Turner, reprinted by MIT: the full article in readable form, first of three parts.
 - [NIST Disaster and Failure Studies](https://www.nist.gov/topics/disaster-failure-studies) by NIST: federal investigations of structural and building failures.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials on reliability and safety engineering.
+- [Philosophy failure cases](reference.md): the lookup sheet for this topic.

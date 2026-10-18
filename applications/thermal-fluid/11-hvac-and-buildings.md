@@ -151,3 +151,4 @@ Roman baths used hypocausts, which warmed floors and walls with hot air from a f
 - [NIST Chemistry WebBook, fluid properties](https://webbook.nist.gov/chemistry/fluid/): thermophysical property data for water and other fluids, useful for checking values in psychrometric and hydronic calculations.
 - Related lessons: [Thermal systems](01-thermal-systems.md), [Refrigeration and air conditioning](03-refrigeration-and-air-conditioning.md), [Heat pumps](04-heat-pumps.md), [Heat exchangers](05-heat-exchangers.md), [Compressors and fans](10-compressors-and-fans.md), [Piping and valves](12-piping-and-valves.md).
 - Related fundamentals: [Heat transfer](../../physics/12-heat-transfer.md), [Units and dimensional analysis](../../measurement/01-units-and-dimensional-analysis.md), [Safety and risk](../../philosophy/03-safety-and-risk.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

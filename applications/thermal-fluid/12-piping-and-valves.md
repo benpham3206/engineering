@@ -164,3 +164,4 @@ Denis Papin fitted a safety valve to a steam digester in the late 1600s, which m
 - [NIST Chemistry WebBook, fluid properties](https://webbook.nist.gov/chemistry/fluid/): density, viscosity, and other property data for water at the temperature of your system.
 - Related lessons: [Fluid systems](02-fluid-systems.md), [Pumps](09-pumps.md), [Compressors and fans](10-compressors-and-fans.md), [HVAC and buildings](11-hvac-and-buildings.md), [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md), [Toilets and plumbing](../everyday/06-toilets-and-plumbing.md), [Pressure vessels and tanks](../structures/03-pressure-vessels-and-tanks.md).
 - Related fundamentals: [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md), [Units and dimensional analysis](../../measurement/01-units-and-dimensional-analysis.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

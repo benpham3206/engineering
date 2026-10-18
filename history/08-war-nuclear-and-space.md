@@ -122,3 +122,4 @@ Computing grew from wartime problems. Ballistic tables, code breaking, and nucle
 - [National Air and Space Museum, Smithsonian](https://airandspace.si.edu/). Collections on aircraft, jet engines, and rockets.
 - [MIT OpenCourseWare](https://ocw.mit.edu/). Free course materials from MIT, including classical mechanics and related engineering courses.
 - Related lessons: [Radar and sonar](../applications/waves-and-communication/07-radar-and-sonar.md), [Nuclear reactors](../applications/energy/04-nuclear-reactors.md), [Gas turbines and jet engines](../applications/thermal-fluid/07-gas-turbines-and-jet-engines.md), [Rockets](../applications/vehicles-aerospace/07-rockets.md), [Digital logic and computers](../applications/electronics/07-digital-logic-and-computers.md), and [Lesson 09, semiconductors and computing](09-semiconductors-and-computing.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

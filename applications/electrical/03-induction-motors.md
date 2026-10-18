@@ -142,3 +142,4 @@ Galileo Ferraris in Turin demonstrated the rotating magnetic field in 1885, and 
 - [Electric Motors](https://www.energy.gov/eere/buildings/electric-motors) by the U.S. Department of Energy: efficiency standards and test rules for induction motors.
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/) by MIT: circuit models and power electronics used in variable frequency drives.
 - Related lessons: [DC motors](01-dc-motors.md) and [Brushless and stepper motors](02-brushless-and-stepper-motors.md) cover the other motor families. [Circuit basics](../electronics/01-circuit-basics.md) covers the resistance and voltage relations used in the equivalent circuit.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

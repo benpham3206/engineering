@@ -60,6 +60,17 @@ voltage if the same $12\ \text{V}$ motor is driven at a $25$ percent duty cycle.
 reference, or $2.5\ \text{V}$. That matches. A $25$ percent duty cycle should give one quarter of
 12 V, which is 3 V.
 
+## How it fails
+
+- **Sensor drift and bias.** Sensors change with temperature, age, and supply voltage, so a reading creeps with no change in the physical input. The sign is a slow disagreement with a reference. Calibrate against a known standard, and compensate or use a reference signal.
+- **Noise and ground loops.** Motor switching and long cables inject electromagnetic interference into sensor lines, and multiple ground paths add hum. The sign is jitter or spikes that follow motor activity. Use shielded twisted cable, a single-point ground, filters, and routing that keeps signal wires away from motor wires.
+- **Inductive kickback.** Switching off a motor, relay, or solenoid makes a voltage spike that destroys the transistor or the microcontroller pin. The sign is a driver that fails after some switching. A flyback diode across the coil prevents it.
+- **Motor stall and overheating.** A blocked motor draws stall current and the windings heat quickly. The sign is a hot motor and a sagging supply. Current limiting, a thermal cutoff in the winding, and a controller that detects stall protect it.
+- **Driver and supply overload.** A pin that supplies more than its rated current fails, and a supply with too little margin browns out the controller. The sign is random resets. Drive loads through a transistor or driver rated for the current, and use a separate or well-decoupled supply.
+- **Software hang and brownout.** A stuck program or a low supply voltage leaves outputs in an unknown state. A watchdog timer resets the controller, a brownout detector holds it in reset, and outputs should default to a safe state.
+- **Connector and cable fatigue.** Cables that flex at a moving joint break their conductors inside the insulation. The sign is an intermittent fault that follows motion. Use flex-rated cable, strain relief, and locking connectors.
+- **Moving and stored energy hazards.** A machine can start, trap, or crush, and springs, raised loads, and batteries hold energy. Eliminate the hazard by designing it out, substitute lower force and voltage, add guards and interlocks, an emergency stop and a safe-torque-off function, then administrative controls and PPE. For maintenance, apply lockout/tagout: isolate and lock each energy source, release or block stored energy, and verify zero energy by trying to start the machine and by measuring.
+
 ## Practice
 
 1. A 10-bit ADC has a $3.3\ \text{V}$ reference. Find the step size in millivolts.
@@ -99,5 +110,6 @@ reference, or $2.5\ \text{V}$. That matches. A $25$ percent duty cycle should gi
   background on digital logic and amplifiers that sensor interfaces use.
 - [NIST, SI prefixes](https://www.nist.gov/pml/owm/metric-si-prefixes) by NIST: standard unit prefixes
   for millivolts, microfarads, and kilohms.
-- Previous: [Lesson 02, RC circuits and op-amps](02-rc-circuits-and-op-amps.md).
-- Next: [Lesson 04, robotics](../machines-robots/01-robot-arms.md).
+- Previous: [Sensors in products](05-sensors-in-products.md).
+- Next: [Robot arms](../machines-robots/01-robot-arms.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

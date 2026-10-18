@@ -48,7 +48,7 @@ Holes are the most common source of shop questions. A complete hole callout give
 - **Blind hole.** A diameter and a depth, for example "Ø5.0 x 8 DEEP." If the depth matters, state whether it is the drilled depth or the full depth including the point. Precise depth also requires the drill point angle.
 - **Counterbore.** A pocket for a socket head screw head. Give the through diameter, the counterbore diameter, the counterbore depth, and the symbol that marks a counterbore. Check the fastener head size before you set the number.
 - **Countersink.** A cone that lets a flat head screw sit flush. Give the through diameter, the countersink diameter at the surface, and the included angle. For most flat head screws the angle is 90 degrees, but check the fastener data.
-- **Tapped hole.** A thread size, pitch, and class, for example "M6 x 1.0-6H." Give the thread depth and the drilled depth separately, because the tap drill goes deeper than the thread. The thread notation follows ISO 128. The tap drill is the hole diameter you drill before tapping.
+- **Tapped hole.** A thread size, pitch, and class, for example "M6 x 1.0-6H." Give the thread depth and the drilled depth separately, because the tap drill goes deeper than the thread. The metric thread designation and tolerance classes follow ISO 965. The tap drill is the hole diameter you drill before tapping.
 - **Hole table.** When there are many holes, put them in a table. One row per hole type, with columns for the ID, the quantity, the feature and size, the depth, and the x and y position from the datums. Each hole gets a letter or number that matches a label on the view.
 
 Rules of thumb for holes:
@@ -111,7 +111,7 @@ A weldment is a welded assembly built from cut and formed pieces. The drawing sh
   - An arrow at one end of the reference line points to the joint.
   - A weld symbol below the reference line means the weld is on the arrow side of the joint. A symbol above the line means it is on the other side.
   - A fillet weld symbol is a small right triangle. The weld size, usually the leg length, goes on the left of the symbol. Length and spacing for intermittent welds go on the right.
-  - A "weld all around" flag at the corner of the symbol means the weld goes around the whole joint.
+  - A circle at the junction of the arrow and the reference line means "weld all around": the weld goes around the whole joint. A flag at that junction means a field weld, made at the install site instead of in the shop.
 - **Welding notes.** The welding process, filler material, and any inspection requirement. Say which welds need inspection and what kind.
 - **Distortion and sequence.** The drawing states what the weld must achieve. The shop decides the sequence and the fixture unless the design needs a specific order.
 

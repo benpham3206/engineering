@@ -143,3 +143,4 @@ The 10-90 rise time, $0.122$ s, matches $2.197\,\tau_{cl} = 0.122$ s.
 - [MIT OpenCourseWare 2.14 Analysis and Design of Feedback Control Systems (Spring 2014)](https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/) by MIT: a free undergraduate course on transfer functions, time response, root locus and loop shaping.
 - [MIT OpenCourseWare 2.14, calendar](https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/pages/calendar/) by MIT: lists the lecture on PID control and the lecture on first- and second-order time response, which match this lesson.
 - [MIT OpenCourseWare 2.14, syllabus](https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/pages/syllabus) by MIT: states that the course uses linear transfer function models and analysis in the time and frequency domains.
+- [Mechanics reference](reference-mechanics.md): the lookup sheet for this topic.

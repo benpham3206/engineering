@@ -92,7 +92,7 @@ Starting bands for turning only. Drilling and milling often run lower. Tool supp
 
 ### Worked check (from the lesson example, SI)
 
-Slot 40 mm wide, 10 mm deep, with a 10 mm, 3-flute end mill in 6061 at $V = 250$ m/min and $f_z = 0.08$ mm/tooth.
+Full-width slot 10 mm wide, 40 mm long, and 10 mm deep, cut in one pass with a 10 mm, 3-flute end mill in 6061 at $V = 250$ m/min and $f_z = 0.08$ mm/tooth.
 
 - $N = 1000 \times 250 / (\pi \times 10) = 7958$ rpm
 - $f_m = 0.08 \times 3 \times 7958 = 1910$ mm/min
@@ -283,7 +283,7 @@ $$L_{\text{flat}} = \sum L_{\text{outside flanges}} - BD$$
 
 ### Surface roughness
 
-- Ra is the arithmetic average deviation from the mean line, in um. Rz is the average of the largest peaks and valleys over a sample length. Both are limits on the drawing. Real surfaces are rougher where the process or wear is worse.
+- Ra is the arithmetic average deviation from the mean line, in um. Rz is the average of the largest peaks and valleys over a sample length. Both are maximum limits on the drawing. A surface rougher than the specified maximum Ra or Rz is nonconforming. Rougher surfaces come from worse process or tool wear, so check against the limit.
 - Typical Ra by process: see the process selection table.
 - **Holds when:** the surface is measured over the sample length the standard requires. **Breaks when:** the reading is taken across lay or on a damaged area.
 

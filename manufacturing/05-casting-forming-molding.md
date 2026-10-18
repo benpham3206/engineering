@@ -75,3 +75,4 @@ $$L_{\text{pattern}} = 200 \times (1 + 0.013) = 200 \times 1.013 = 202.6 \text{ 
 - [NASA Glenn Research Center](https://www.nasa.gov/glenn/) by NASA: government materials and manufacturing research, useful for real-world context on processing.
 - [NIST: Manufacturing](https://www.nist.gov/manufacturing) by NIST: an overview of manufacturing processes and standards.
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: rearranging and solving simple percent and proportion formulas.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

@@ -111,10 +111,11 @@ A lightly damped structure has $\zeta$ much less than 1. The worked example belo
 - Mixing up $f$ (Hz) and $\omega$ (rad/s). Frequency in the formulas for $\omega_n$ and $r$ must be in rad/s. Divide by $2\pi$ only when you need Hz.
 - Forgetting the square root in $\zeta = c/(2\sqrt{km})$. Using $c/(2km)$ gives the wrong units and the wrong value.
 - Using $\omega_d$ for an overdamped system. It has no real meaning when $\zeta \ge 1$.
-- Treating the resonance peak as exactly $1/(2\zeta)$. That is a good estimate at light damping, but the exact peak is slightly lower and at a slightly different frequency.
+- Treating the resonance peak as exactly $1/(2\zeta)$. That is a good estimate at light damping, but the exact peak, $1/(2\zeta\sqrt{1-\zeta^2})$, is slightly higher and at a slightly different frequency.
 - Using the steady-state formula before transients have decayed. Start-up motion includes a free-vibration part that dies out over time.
 
 ## Go deeper
 
 - [MIT OpenCourseWare 2.003SC Engineering Dynamics (Fall 2011)](https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/) by MIT: a free course with a unit on mechanical vibration, multi-degree-of-freedom systems and mode superposition. Use it for the next level after this lesson.
 - [MIT OpenCourseWare 2.003SC, course pages](https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/pages/) by MIT: lists the vibration units (mechanical vibration, multi-DOF vibration, mode superposition) as a study map.
+- [Mechanics reference](reference-mechanics.md): the lookup sheet for this topic.

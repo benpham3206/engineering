@@ -128,3 +128,4 @@ Michael Faraday showed continuous rotation from electromagnetic force in London 
 - [University Physics Volume 2, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law and the back-EMF that opposes a motor's supply.
 - [Electric Motors](https://www.energy.gov/eere/buildings/electric-motors) by the U.S. Department of Energy: the federal efficiency standards and test rules for motors.
 - Related lessons: [Robot arms](../machines-robots/01-robot-arms.md) uses the same DC motor torque and speed relations to drive joints. Next: [Brushless and stepper motors](02-brushless-and-stepper-motors.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

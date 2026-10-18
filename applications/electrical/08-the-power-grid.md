@@ -150,3 +150,4 @@ Thomas Edison's Pearl Street Station in New York began supplying direct current 
 - [U.S. Energy Information Administration, Electricity in the U.S.](https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php), a free summary of how the U.S. generates electricity.
 - [OpenStax University Physics Volume 2, Chapter 14](https://openstax.org/books/university-physics-volume-2/pages/14-introduction), free text on alternating current, RLC circuits, and power in AC circuits.
 - Related lessons: [Transformers](05-transformers.md), [Generators and alternators](04-generators-and-alternators.md), [Induction motors](03-induction-motors.md), [Batteries](06-batteries.md), and [Power supplies and converters](07-power-supplies-and-converters.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

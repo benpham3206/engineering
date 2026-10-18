@@ -144,3 +144,4 @@ Poul la Cour in Denmark used wind turbines to generate electricity in the 1890s.
 - [How do wind turbines work](https://www.energy.gov/eere/wind/how-do-wind-turbines-work), U.S. Department of Energy: how lift turns the rotor and how the generator makes electricity.
 - [Wind energy basics](https://www.energy.gov/eere/wind/wind-energy-basics), U.S. Department of Energy: an overview of the rotor, generator, gearbox, lift, and drag in wind turbines.
 - Related lessons: [Solar photovoltaics](01-solar-photovoltaics.md), [Hydroelectric power](03-hydroelectric-power.md), [Energy storage](06-energy-storage.md), [Aircraft and wings](../vehicles-aerospace/05-aircraft-and-wings.md), [Generators and alternators](../electrical/04-generators-and-alternators.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

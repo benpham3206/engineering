@@ -169,3 +169,4 @@ A note on engagement: shops describe this rule as giving about 75 percent thread
 - [Machining](https://en.wikibooks.org/wiki/Machining) on Wikibooks: an open textbook on turning, milling, drilling, grinding, and inspection.
 - [Measurement folder](../measurement/README.md): error and uncertainty, for the reading you take with an indicator or gauge.
 - Related: [Measurement tools](07-measurement-tools.md), [Shop tools](08-shop-tools.md), [Manufacturing folder](../manufacturing/README.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

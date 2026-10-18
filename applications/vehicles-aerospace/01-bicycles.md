@@ -41,7 +41,7 @@ Steering depends on the geometry of the fork. Trail is the distance along the gr
 
 ## Key equations
 
-The gear ratio compares the number of teeth on the chainring and the cog. $N$ is a tooth count, so $G$ is dimensionless:
+Assumes the chain does not slip on the teeth. The gear ratio compares the number of teeth on the chainring and the cog. $N$ is a tooth count, so $G$ is dimensionless:
 
 $$G = \frac{N_{ring}}{N_{cog}}$$
 
@@ -49,23 +49,23 @@ The crank turns at a cadence measured in revolutions per minute. The crank angul
 
 $$\omega_c = \frac{2\pi\,\text{cadence}}{60}, \qquad \omega_w = \omega_c G$$
 
-The bicycle speed in metres per second, with wheel radius $r$ in metres, is:
+The wheel rolls without slip, and $r$ is the effective rolling radius. The bicycle speed in metres per second, with $r$ in metres, is:
 
 $$v = \omega_w r$$
 
-Rolling resistance is a force in newtons. Here $C_{rr}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g = 9.81\ \text{m/s}^2$:
+Assumes a flat road, a constant coefficient, and a tyre that rolls without slipping. Rolling resistance is a force in newtons. Here $C_{rr}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g = 9.81\ \text{m/s}^2$:
 
 $$F_{rr} = C_{rr}\, m\, g$$
 
-Air drag in newtons depends on the air density $\rho_a$ in kilograms per cubic metre, the speed $v$ in metres per second, and $C_dA$, the drag coefficient times the frontal area in square metres. A typical road position has $C_dA$ near $0.35\ \text{m}^2$:
+Assumes still air and a constant drag coefficient, with $v$ equal to the speed over the ground. Air drag in newtons depends on the air density $\rho_a$ in kilograms per cubic metre, the speed $v$ in metres per second, and $C_dA$, the drag coefficient times the frontal area in square metres. A typical road position has $C_dA$ near $0.35\ \text{m}^2$:
 
 $$F_d = \tfrac{1}{2}\rho_a C_d A\, v^2$$
 
-On a grade of angle $\theta$, the gravity force along the slope in newtons is:
+Assumes a straight slope of constant angle $\theta$. On that grade, the gravity force along the slope in newtons is:
 
 $$F_g = m g \sin\theta$$
 
-The power the rider delivers at the wheel, in watts, is the total resistance force times the speed. The input power at the pedals is larger because the drivetrain loses some energy. Here $\eta$ is the drivetrain efficiency, which is about 0.97 for a clean chain (typical):
+Assumes steady speed, so the acceleration and kinetic energy terms vanish, and a constant drivetrain efficiency. The power the rider delivers at the wheel, in watts, is the total resistance force times the speed. The input power at the pedals is larger because the drivetrain loses some energy. Here $\eta$ is the drivetrain efficiency, which is about 0.97 for a clean chain (typical):
 
 $$P_{wheel} = (F_{rr} + F_d + F_g)\, v, \qquad P_{in} = \frac{P_{wheel}}{\eta}$$
 
@@ -152,6 +152,7 @@ Karl Drais built the draisine in Mannheim in 1817. It had two wheels and a steer
 
 ## Go deeper
 
+- [Reference sheet: mechanics](../../physics/reference-mechanics.md): forces, power, and rotation in one place.
 - [OpenStax University Physics Volume 1, chapter 6, applications of Newton's laws](https://openstax.org/books/university-physics-volume-1/pages/6-introduction): friction, drag, and terminal speed.
 - [OpenStax University Physics Volume 1, chapter 7, work, energy, and power](https://openstax.org/books/university-physics-volume-1/pages/7-introduction): the work-energy theorem and power.
 - [OpenStax University Physics Volume 1, chapter 10, rotational motion](https://openstax.org/books/university-physics-volume-1/pages/10-introduction): angular speed and moment of inertia for wheels and cranks.

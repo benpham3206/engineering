@@ -214,3 +214,4 @@ Carnot's 1824 analysis of ideal heat engines set the limit that still bounds the
 - Next: [Heat pumps](04-heat-pumps.md), which use the same cycle to heat a building.
 - Related: [Thermodynamics II](../../physics/09-thermo-second-law-cycles.md) for the second law and COP
   limits, and [Heat exchangers](05-heat-exchangers.md) for the coils in the evaporator and condenser.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -85,6 +85,16 @@ $R_2 = 6.8\ \text{k}\Omega$. Assume the battery is ideal and the wires have no r
 **Sanity check:** $R_2$ is about two-thirds of the total resistance, so it should take about two-thirds
 of the 9 V. $6.06 / 9 = 0.67$, which fits.
 
+## How it fails
+
+- **Overheated resistors.** A resistor dissipates $P = I^2 R$. If that exceeds its rating, the body darkens, smells, and the value drifts or the part opens. Choose a power rating at least twice the calculated dissipation (derating).
+- **Overcurrent in wires and traces.** A short circuit or an overload heats conductors until the insulation melts. The warning sign is a warm cable or a discolored board. Fuses and circuit breakers open the circuit before the wire overheats, so the fuse rating must sit below the current limit of the wire.
+- **Shorted and open parts.** A solder bridge, a pinched wire, or a failed component can short a supply. A short draws very high current, so a supply needs current limiting or a fuse. An open joint gives zero current and a floating, unpredictable voltage.
+- **Solder joint and connector fatigue.** Vibration and repeated heating and cooling crack solder joints and wear connector contacts. The sign is a circuit that works only when tapped or flexed. Strain relief, locking connectors, and clean crimps reduce it.
+- **Contact resistance.** A corroded or loose terminal adds resistance, and $I^2 R$ heating at that spot grows until the connector burns. A discolored terminal is the warning. Torque terminals to specification and inspect them.
+- **Voltage divider loading.** A load connected to a divider output lowers the voltage below the unloaded value. The sign is a reading that sags when the load connects. Keep the load resistance much larger than the divider resistors, or buffer the output.
+- **Electric shock.** Current through the body can stop the heart at levels far below what trips a fuse, so a fuse protects the wire and not the person. Controls in order of strength are: eliminate the hazard by working on de-energized circuits, substitute low voltage (batteries or a limited supply), add engineering controls such as enclosures, insulation, ground-fault protection, and interlocks, apply administrative controls such as procedures and training, and wear PPE such as insulated gloves and eye protection last. For maintenance, apply lockout/tagout: isolate the supply, lock and tag the disconnect, discharge stored energy, then prove zero energy with a tested meter before touching conductors.
+
 ## Practice
 
 1. Find the current through a $220\ \Omega$ resistor across a $5\ \text{V}$ source.
@@ -129,3 +139,4 @@ of the 9 V. $6.06 / 9 = 0.67$, which fits.
 - [Electronics, Wikibooks](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors:
   a free open text on electronics fundamentals.
 - Next step: [Lesson 02, RC circuits and op-amps](02-rc-circuits-and-op-amps.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

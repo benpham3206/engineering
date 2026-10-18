@@ -103,3 +103,4 @@ Use this to check a team's working process.
 
 - [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA, a free handbook whose sections include crosscutting technical management.
 - [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace writing genres, including memos, which teams use to communicate decisions.
+- [Communication reference](reference.md): the lookup sheet for this topic.

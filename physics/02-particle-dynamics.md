@@ -98,3 +98,4 @@ Then Newton's second law gives $F = ma = (1500)(1.0) = 1500$ N, which matches.
 - [MIT OpenCourseWare 8.01SC Classical Mechanics, Fall 2016](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT: free lecture notes and problem sets on kinematics, Newton's laws, work, energy, and momentum, CC BY-NC-SA 4.0.
 - [University Physics Volume 1, Chapter 1, Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: units, unit conversion, and problem-solving habits, free online. Read it before the chapters on motion, which cover this lesson's topics in more depth.
 - Next: [Rigid body dynamics](03-rigid-body-dynamics.md), which adds rotation to the particle model.
+- [Mechanics reference](reference-mechanics.md): the lookup sheet for this topic.

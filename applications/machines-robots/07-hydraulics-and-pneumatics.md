@@ -69,6 +69,10 @@ and reservoir. The exhaust air goes to the atmosphere instead of back to a tank.
 
 ## Key equations
 
+Assumptions for the equations below: the oil is incompressible except where the bulk modulus
+appears, the flow is steady, friction and leakage are zero unless a line says otherwise, and the
+pressures are gauge pressures.
+
 Pressure and force, with $p$ in pascals (Pa), $F$ in newtons (N), and $A$ the piston area in square
 metres (m$^2$):
 
@@ -98,9 +102,9 @@ Pump input power for pump efficiency $\eta$, a dimensionless number between 0 an
 
 $$P_{\text{in}} = \frac{p\,Q}{\eta}$$
 
-Ideal jet speed from a small leak, with pressure drop $\Delta p$ in pascals, oil density $\rho$ in
-kilograms per cubic metre (kg/m$^3$), and jet speed $v_j$ in m/s. A typical density for hydraulic oil
-is 870 kg/m$^3$:
+Ideal jet speed from a small leak, assuming no friction and no losses at the orifice (so the result
+is an upper bound), with pressure drop $\Delta p$ in pascals, oil density $\rho$ in kilograms per
+cubic metre (kg/m$^3$), and jet speed $v_j$ in m/s. A typical density for hydraulic oil is 870 kg/m$^3$:
 
 $$v_j = \sqrt{\frac{2\,\Delta p}{\rho}}$$
 
@@ -109,8 +113,8 @@ pascals. A typical bulk modulus for mineral oil is about $1.6 \times 10^9$ Pa:
 
 $$E = \frac{\Delta p^2\,V}{2K}$$
 
-Energy stored by a raised load of mass $m$ in kilograms (kg) at height $h$ in metres (m), with
-$g = 9.81\ \text{m/s}^2$:
+Energy stored by a raised load of mass $m$ in kilograms (kg) at height $h$ in metres (m), assuming
+the load is held still and the local gravity is $g = 9.81\ \text{m/s}^2$:
 
 $$E = m\,g\,h$$
 
@@ -173,15 +177,38 @@ A held load is a larger hazard than the oil in the line.
 ## How it fails
 
 - Hose or fitting burst: a worn hose or an overpressure spike splits the line. The oil sprays out at
-  high speed. Hose ratings, guards, and relief valves are the safeguards.
+  high speed.
 - Injection injury: a pinhole leak at high pressure forces oil into the skin. The oil looks like a
   small cut or bruise, but it damages tissue and can cause infection. Treat every high-pressure
-  injection as a surgical emergency and get medical care at once. Never check for leaks with a hand.
-  Use a piece of cardboard, and depressurize the system first.
-- Dropped load: a leaking directional valve lets a raised cylinder sink. Counterbalance valves and
-  load-holding circuits stop the drop.
-- Stored energy after shutdown: an accumulator stays charged after the pump stops. Isolate it, bleed
-  it, and tag it before service. Lockout and tagout procedures cover this.
+  injection as a surgical emergency and get medical care at once.
+- Dropped load: a leaking directional valve lets a raised cylinder sink.
+- Stored energy after shutdown: an accumulator stays charged after the pump stops, and a cylinder
+  holds pressure on one side after the pump is off.
+
+Safety follows the hierarchy of controls, strongest first:
+
+1. Elimination: design the load so it does not need to be held in the air, or remove the hazard
+   entirely, for example by using a mechanical stop.
+2. Substitution: use a lower operating pressure, a lower-energy actuator such as an electric drive
+   for light loads, or a fire-resistant fluid where that suits the task.
+3. Engineering controls: relief valves, pressure-rated hoses with guards, counterbalance and
+   load-holding valves, flow restrictors, check valves, and hardwired emergency stops that cut pump
+   power directly rather than through a program.
+4. Administrative controls: written procedures, training, a maintenance schedule for hoses and
+   relief valves, and a rule that no one checks for leaks with a bare hand.
+5. Personal protective equipment: safety glasses, a face shield, and gloves. PPE is the last layer,
+   because a jet at high pressure can pass through ordinary clothing.
+
+Lockout and tagout before any service:
+
+- Isolate every energy source: shut off the pump motor at its disconnect, close the supply valve,
+  and disconnect the electrical and pneumatic supply where applicable.
+- Release or restrain the stored hydraulic and pneumatic pressure: open the bleed valves, let the
+  accumulator discharge through its bleed port, and block any raised load with mechanical stops or
+  safety blocks before work begins.
+- Verify a zero-energy state: attempt to start the machine from its normal control, confirm the
+  pressure gauge reads zero, and only then begin work. Lock and tag every isolation point, and remove
+  the lock only when the person who applied it is finished.
 - Contamination: particles score the spool and the bore, and the valve sticks. Filters and regular oil
   changes prevent it.
 - Overheating: throttling and internal leakage heat the oil, which thins it and reduces its
@@ -244,7 +271,9 @@ followed the same pattern.
 - [University Physics Volume 1, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction)
   by OpenStax: Pascal's principle, hydraulic systems, and fluid pressure.
 - [Robotics, Wikibooks](https://en.wikibooks.org/wiki/Robotics) by Wikibooks contributors: actuators,
-  including pneumatic and hydraulic drives, and how they connect to robot joints.
+  including pneumatic drives, and how they connect to robot joints.
+- Reference sheets: [Applications reference](../reference.md) and
+  [Thermofluids reference](../../physics/reference-thermofluids.md).
 - Related lessons: [Fluid systems](../thermal-fluid/02-fluid-systems.md),
   [Pumps](../thermal-fluid/09-pumps.md),
   [Piping and valves](../thermal-fluid/12-piping-and-valves.md),

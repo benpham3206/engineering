@@ -174,3 +174,4 @@ Alessandro Volta described his voltaic pile, the first electrochemical cell, in 
 - [10.626 Electrochemical Energy Systems, Spring 2014](https://ocw.mit.edu/courses/10-626-electrochemical-energy-systems-spring-2014/), MIT OpenCourseWare. Free graduate course on battery thermodynamics, kinetics, and transport, with lithium-ion lecture notes.
 - [Batteries and Fuel Cells](https://chem.libretexts.org/Courses/University_of_Toronto/UTSC%3A_First-Year_Chemistry_Textbook_%28Fall_2025%29/18%3A_Electrochemistry/18.06%3A_Batteries_and_Fuel_Cells), LibreTexts. Free introduction to primary and secondary cells, including lead-acid and lithium-ion.
 - Related lessons: [power supplies and converters](07-power-supplies-and-converters.md), [energy storage](../energy/06-energy-storage.md), [electric vehicles](../vehicles-aerospace/04-electric-vehicles.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

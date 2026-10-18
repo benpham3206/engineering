@@ -109,3 +109,4 @@ Answers are key points a good answer covers. See each question above.
 - [NSPE Code of Ethics for Engineers](https://www.nspe.org/resources/ethics/code-ethics) by the National Society of Professional Engineers: the full code and its related guidance. The landing page is free; the full text is linked from it.
 - [Report of the Presidential Commission on the Space Shuttle Challenger Accident](https://www.nasa.gov/history/rogersrep/genindex.htm) by NASA, from the Rogers Commission (1986): the official investigation. The chapter on the cause is at [Chapter IV](https://www.nasa.gov/history/rogersrep/v1ch4.htm).
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials. Search for engineering ethics or professional practice courses.
+- [Philosophy failure cases](reference.md): the lookup sheet for this topic.

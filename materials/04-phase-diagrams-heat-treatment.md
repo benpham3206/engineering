@@ -103,3 +103,4 @@ The two fractions always add to 1.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: phase equilibria, phase diagrams, and microstructure.
 - [Materials Laboratory](https://ocw.mit.edu/courses/3-014-materials-laboratory-fall-2006/) by MIT OpenCourseWare: thermal analysis (DSC) used to find phase transformation temperatures.
 - [Crystal structures and defects](02-crystal-structures-defects.md): the lattice ideas behind phases and solid solutions.
+- [Materials reference](reference.md): the lookup sheet for this topic.

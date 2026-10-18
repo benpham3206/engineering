@@ -92,3 +92,4 @@ This assumes perfect bonding and fibers all aligned with the load. Real composit
 - [Mechanics of Materials](https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/) by MIT OpenCourseWare: mechanical properties of ceramics, metals, and polymers.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: how bonding determines the four material classes.
 - [Introduction to Solid-State Chemistry](https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/) by MIT OpenCourseWare: why solids of different bonding types behave differently.
+- [Materials reference](reference.md): the lookup sheet for this topic.

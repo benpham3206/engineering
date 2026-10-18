@@ -119,3 +119,4 @@ Step 5. Linear speed: $v = \dfrac{5 \times 600}{60} = 50$ mm/s.
 - [MIT OpenCourseWare, 2.017J Design of Electromechanical Robotic Systems](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/) by MIT: a free course on designing and testing electromechanical robots, covering sensing, actuation, and control in hardware.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering textbooks, including circuits and control background.
 - [OpenStax University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax at Rice University: free physics text covering motion and forces that drive actuators.
+- [Design reference](reference.md): the lookup sheet for this topic.

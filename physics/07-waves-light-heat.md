@@ -149,3 +149,4 @@ $$
 - [Introduction to Oscillations, University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/15-introduction) by OpenStax: simple harmonic motion, damping, and forced oscillations, free to read.
 - [Introduction to Waves, University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/16-introduction) by OpenStax: traveling waves, wave speed on a string, interference, and standing waves, free to read.
 - [Introduction to Temperature and Heat, University Physics Volume 2](https://openstax.org/books/university-physics-volume-2/pages/1-introduction) by OpenStax: temperature scales, thermal expansion, specific heat, and calorimetry, free to read.
+- [Fields, waves, and space reference](reference-fields-waves-space.md): the lookup sheet for this topic.

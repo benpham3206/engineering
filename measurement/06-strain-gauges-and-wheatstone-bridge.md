@@ -82,3 +82,4 @@ Balance condition: $\quad R_1 / R_2 = R_3 / R_4$
 - [Electronics (Wikibooks)](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: resistors and DC circuits.
 
 The bridge equations above follow from Kirchhoff's rules.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

@@ -119,3 +119,4 @@ Nicolaus Otto and Eugen Langen built a practical four-stroke gas engine in Colog
 - [University Physics Volume 2, section 4.2, Heat Engines](https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines) by OpenStax: how a heat engine turns heat into work and defines its efficiency.
 - [University Physics Volume 2, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: why no engine can convert all its heat into work.
 - Related lessons: [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md), [Steam power plants](08-steam-power-plants.md), [Thermal systems](01-thermal-systems.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

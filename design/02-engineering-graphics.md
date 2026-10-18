@@ -120,3 +120,4 @@ If the hidden lines did not match the circle, the reader would see two different
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: a free hub that includes engineering graphics and design material.
 - [Paul's Online Math Notes](https://tutorial.math.lamar.edu/) by Paul Dawkins: free algebra and geometry refreshers that support reading scaled views.
 - ASME Y14.3 covers multiview and sectional view drawings. It is a paid standard, named here for reference only.
+- [Design reference](reference.md): the lookup sheet for this topic.

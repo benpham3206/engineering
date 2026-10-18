@@ -80,3 +80,4 @@ Sixteen replicates per setting give $u(\bar{x}) = 0.20 / \sqrt{16} = 0.05$ °C.
 - [Introduction to Statistics (chapter 1)](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: sampling methods, data collection, and what separates good data from bad.
 - [Introduction to Probability and Statistics (18.05)](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/) by MIT OpenCourseWare: confidence intervals and hypothesis testing for comparing settings.
 - [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: how to build an uncertainty budget from replicates and other components.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

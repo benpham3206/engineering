@@ -192,3 +192,4 @@ Netherlands introduced a belt-driven CVT, the Variomatic, in 1958.
   by MIT OpenCourseWare: the full course with its lecture and assignment materials.
 - Related lessons. [Clutches and brakes](04-clutches-and-brakes.md) for the friction elements that engage gears
   in a transmission, and [Cams and linkages](05-cams-and-linkages.md) for other ways to turn motion into motion.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

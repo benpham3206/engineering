@@ -24,7 +24,7 @@ Design tips:
 - Keep holes and slots at least about one material thickness away from a bend line, so they do not distort.
 - Use the same bend radius throughout a part when possible. Changing tools costs time.
 - Keep bends the same direction when you can, so the part can be formed in fewer setups.
-- Check the grain direction of the sheet. Bending across the grain is safer than bending along it on many materials.
+- Check the rolling direction (grain) of the sheet. A bend line parallel to the rolling direction is more likely to crack, so orient bend lines across (perpendicular to) the rolling direction where possible.
 
 ## Key equations
 
@@ -80,7 +80,7 @@ $$BA = 1.5708 \times 3.66 = 5.749 \text{ mm}$$
 - Adding the flange lengths alone and forgetting the bend allowance, which makes the part too short or too long.
 - Using the outside dimensions for the flat blank without subtracting the material used by the bend.
 - Assuming one K-factor fits all materials and tooling. Use the shop's chart and test a sample.
-- Ignoring the grain direction, which causes cracks when bending across the grain on some alloys.
+- Ignoring the rolling direction, which causes cracks when the bend line runs parallel to the grain on some alloys.
 - Specifying a bend radius smaller than the material can take.
 
 ## Go deeper
@@ -88,3 +88,4 @@ $$BA = 1.5708 \times 3.66 = 5.749 \text{ mm}$$
 - [OpenStax University Physics Volume 1, Chapter 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax (Rice University): units and dimensional checks, useful for converting between mm and inches.
 - [NIST: SI units](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST: the SI base units and how to express lengths consistently.
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: solving and rearranging simple formulas.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

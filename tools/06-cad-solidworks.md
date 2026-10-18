@@ -95,3 +95,4 @@ volume = 0.00012000000000000003 m^3, mass = 0.32400000000000007 kg
 - [Onshape pricing](https://www.onshape.com/en/pricing) by Onshape: the free plan terms and the public-document rule.
 - [NIST Special Publication 811](https://www.nist.gov/pml/special-publication-811) by NIST: the SI guide for consistent units in models and drawings.
 - Related: [Measurement tools](07-measurement-tools.md), [shop tools](08-shop-tools.md), [design folder](../design/README.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

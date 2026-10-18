@@ -122,3 +122,4 @@ right order of magnitude. Lesson 06 covers this habit in detail.
 - [SI units](https://www.nist.gov/pml/owm/metric-si/si-units) by NIST: the official list of SI base units from the U.S. National Institute of Standards and Technology.
 - [Classical Mechanics (8.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT OpenCourseWare: free lecture notes and problem sets on forces and motion.
 - George Polya, *How to Solve It* (1945): the classic book on problem-solving steps, starting with "understand the problem." Read the first part. It is a printed book, so no link is given.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

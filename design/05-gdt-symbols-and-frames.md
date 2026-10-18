@@ -129,3 +129,4 @@ Runout matches a rotating part, and the size tolerance alone does not.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering textbooks where drawing and tolerance topics appear.
 - [MIT OpenCourseWare, 2.017J Design of Electromechanical Robotic Systems](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/) by MIT: a free course that shows how tolerances and fits affect real mechanical designs.
 - No free GD&T textbook was confirmed for this lesson. The standard itself is ASME Y14.5, a paid document, named here for reference only.
+- [Design reference](reference.md): the lookup sheet for this topic.

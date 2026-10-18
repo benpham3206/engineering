@@ -115,3 +115,4 @@ below that. Intuition says the 198 m/s value is wrong, and the estimate agrees.
 - [Units and standards](https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards) by OpenStax: the metric scale and the size of common quantities.
 - [University Physics Volume 1](https://openstax.org/details/books/university-physics-volume-1) by OpenStax: the measurement chapter covers order-of-magnitude estimates.
 - [Classical Mechanics (8.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT OpenCourseWare: problem sets with checks on signs and sizes.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

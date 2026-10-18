@@ -85,3 +85,4 @@ A second, linear example: a spring reads 12 N at 10 mm of stretch and 30 N at 25
 - [College Algebra 2e](https://openstax.org/books/college-algebra-2e/pages/1-introduction-to-prerequisites) by OpenStax: free textbook, chapter 1 reviews the prerequisites.
 - [Algebra notes](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Paul's Online Math Notes: worked examples on equations, inequalities, and functions.
 - Next: [Trigonometry](02-trigonometry.md), which needs these skills for angles and right triangles.
+- [Math reference](reference.md): the lookup sheet for this topic.

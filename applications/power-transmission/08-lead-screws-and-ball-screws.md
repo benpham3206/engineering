@@ -150,3 +150,4 @@ Screw threads on machines were hard to make accurately for centuries, and a lead
 - [CNC machines](../machines-robots/03-cnc-machines.md): ball screws move the axes of a machine tool.
 - [Gear trains](01-gear-trains.md): the rotary side of the drive, when a gear reduces the speed before the screw.
 - [Flywheels](09-flywheels.md): how rotating inertia smooths the torque of an engine that drives the screw.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

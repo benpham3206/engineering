@@ -84,4 +84,4 @@ $$P = \frac{12.8\ \text{mA} - 4\ \text{mA}}{1.6\ \text{mA/bar}} = 5.5\ \text{bar
 - [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: how to carry sensor accuracy specifications into a combined uncertainty.
 - [University Physics Volume 2, Chapter 10: Introduction](https://openstax.org/books/university-physics-volume-2/pages/10-introduction) by OpenStax: resistors and circuit basics that underpin resistive sensors.
 - [Electronics (Wikibooks)](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: resistors and DC circuits, the basics behind resistive transducers.
-
+- [Measurement reference](reference.md): the lookup sheet for this topic.

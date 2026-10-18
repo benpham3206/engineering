@@ -91,3 +91,4 @@ rpm with 12/pi: 4583.662361046586
 - [NIST Special Publication 811](https://www.nist.gov/pml/special-publication-811) by NIST: units and conversions for the dimensions you cut to.
 - [Measurement tools](07-measurement-tools.md): reading the tools you check the part with.
 - Related: [CAD](06-cad-solidworks.md), [starter kit](01-starter-kit.md), [design folder](../design/README.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

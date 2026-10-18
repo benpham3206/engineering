@@ -99,3 +99,4 @@ delta = 0.0009999999999999998 m = 0.9999999999999998 mm
 - [SciPy User Guide](https://docs.scipy.org/doc/scipy/tutorial/index.html) by the SciPy project: solvers, integration, and statistics.
 - [MIT 6.0001 Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) by MIT OpenCourseWare: a free full course.
 - Related: [GNU Octave and MATLAB](04-matlab.md), [spreadsheets](03-spreadsheets.md), [starter kit](01-starter-kit.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

@@ -140,3 +140,4 @@ James Clerk Maxwell predicted electromagnetic waves in the 1860s, and his equati
 - [University Physics Volume 2, Chapter 16.1, Maxwell's equations and electromagnetic waves](https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves) by OpenStax. Maxwell's theory and Hertz's experiments.
 - [University Physics Volume 2, Chapter 16.5, The electromagnetic spectrum](https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum) by OpenStax. The radio bands among the other electromagnetic waves.
 - Related: [Microwave ovens](01-microwave-ovens.md), which uses the same wave equations at 2.45 GHz, and [Lasers](03-lasers.md), which uses the same wavelength and energy ideas at optical frequencies.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

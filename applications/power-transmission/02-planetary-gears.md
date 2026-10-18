@@ -153,3 +153,4 @@ The Antikythera mechanism, found in 1901 in a shipwreck off the Greek island of 
 - [Gear trains](01-gear-trains.md): the spur, helical, bevel, and worm forms that a planetary set can combine with.
 - [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md): the pitch-diameter and center-distance formulas that set each planet's place between the sun and ring.
 - [Belts and chains](03-belts-and-chains.md): another way to transmit speed and torque between shafts, with no tooth meshing.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

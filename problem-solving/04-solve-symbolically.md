@@ -128,3 +128,4 @@ shallow cable takes much more load. You get that insight without any numbers.
 - [Classical Mechanics (8.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT OpenCourseWare: lecture notes that derive results symbolically.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: free engineering texts, including statics chapters with symbolic solutions.
 - Polya, *How to Solve It* (1945), a printed book on problem-solving steps. No link is given.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

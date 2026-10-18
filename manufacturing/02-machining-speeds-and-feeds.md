@@ -97,3 +97,4 @@ $$\text{MRR} = 0.25 \times 0.5 \times 18.34 = 2.29 \text{ in}^3/\text{min}$$
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: solving equations and rearranging formulas, which you need to move between US and SI.
 - [OpenStax University Physics Volume 1, Chapter 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax (Rice University): units, unit conversion, and the habit of checking dimensions.
 - [NIST: SI units](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST: the official SI base units and how they are used, including the meter and millimeter.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

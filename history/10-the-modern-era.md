@@ -114,3 +114,4 @@ The same principles apply to engineering that has not been invented yet. Enginee
 - [GPS.gov](https://www.gps.gov/): the official United States information site for the Global Positioning System, free to read.
 - [Digital logic and computers](../applications/electronics/07-digital-logic-and-computers.md) and [GPS](../applications/waves-and-communication/08-gps.md): how the chips and the satellite signals work in this repo.
 - [Semiconductors and computing](09-semiconductors-and-computing.md): the chips that made the modern era possible.
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

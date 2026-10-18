@@ -88,3 +88,4 @@ $$u(b) = \frac{s_r}{\sqrt{\sum (x_i - \bar{x})^2}} \qquad u(a) = s_r \sqrt{\frac
 - [Introduction to Statistics (chapter 1)](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: descriptive statistics, data collection, and the vocabulary of analysis.
 - [Introduction to Probability and Statistics (18.05)](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/) by MIT OpenCourseWare: linear regression and confidence intervals.
 - [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: how to combine uncertainty components and report a final result.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

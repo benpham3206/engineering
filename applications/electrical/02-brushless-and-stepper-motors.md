@@ -135,3 +135,4 @@ Brushless motors became practical in the 1960s, when transistors could switch th
 - [University Physics Volume 2, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law, the basis for back-EMF in every motor here.
 - [Electric Motors](https://www.energy.gov/eere/buildings/electric-motors) by the U.S. Department of Energy: standards that set efficiency limits for motors and drives.
 - Related lessons: [Mechatronics](../electronics/06-mechatronics.md) covers PWM, sensors, and motor drivers. [Feedback control](../../physics/14-controls.md) explains the position and speed loops that servo drives use. Next: [Induction motors](03-induction-motors.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

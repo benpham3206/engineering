@@ -37,7 +37,7 @@ The Jacobian links joint speeds to tool speed. Controllers use it to move the to
 
 Symbols: $L_1$, $L_2$ are link lengths (m). $\theta_1$, $\theta_2$ are joint angles (rad). $(x, y)$ is the tip position (m). $m_1$, $m_2$ are link masses (kg). $m_p$ is the payload mass (kg). $g$ is gravitational acceleration, $9.81\ \text{m/s}^2$. $\tau$ is joint torque (N m). $N$ is the gear ratio (dimensionless). $\eta$ is gearbox efficiency (dimensionless). $\omega$ is angular speed (rad/s).
 
-Forward kinematics for a planar two-link arm:
+Forward kinematics for a planar two-link arm. Assumes rigid links of fixed length, two revolute joints, and a base at the origin:
 
 $$x = L_1 \cos\theta_1 + L_2 \cos(\theta_1 + \theta_2), \qquad y = L_1 \sin\theta_1 + L_2 \sin(\theta_1 + \theta_2)$$
 
@@ -45,13 +45,13 @@ Inverse kinematics, with $r^2 = x^2 + y^2$:
 
 $$\cos\theta_2 = \frac{x^2 + y^2 - L_1^2 - L_2^2}{2 L_1 L_2}, \qquad \theta_1 = \operatorname{atan2}(y, x) - \operatorname{atan2}\big(L_2 \sin\theta_2,\; L_1 + L_2 \cos\theta_2\big)$$
 
-A positive $\theta_2$ and a negative $\theta_2$ give the elbow-down and elbow-up solutions. A reachable point needs $|L_1 - L_2| \le r \le L_1 + L_2$.
+A positive $\theta_2$ and a negative $\theta_2$ give the elbow-down and elbow-up solutions. A reachable point needs $|L_1 - L_2| \le r \le L_1 + L_2$. Assumes the same planar model as above, with $\operatorname{atan2}$ taking the quadrant of $(x, y)$ into account.
 
 Jacobian, which maps $\dot\theta$ (rad/s) to tip velocity (m/s):
 
 $$J = \begin{bmatrix} -L_1 \sin\theta_1 - L_2 \sin(\theta_1+\theta_2) & -L_2 \sin(\theta_1+\theta_2) \\ L_1 \cos\theta_1 + L_2 \cos(\theta_1+\theta_2) & L_2 \cos(\theta_1+\theta_2) \end{bmatrix}, \qquad \det J = L_1 L_2 \sin\theta_2$$
 
-The arm is singular where $\det J = 0$, which means $\theta_2 = 0$ or $\pi$. Near a singularity, a small tip speed needs very large joint speeds.
+The arm is singular where $\det J = 0$, which means $\theta_2 = 0$ or $\pi$. Near a singularity, a small tip speed needs very large joint speeds. Assumes the planar model above, with joint speeds as the only inputs and no joint limits applied.
 
 Gravity torque for the arm in a vertical plane, with a horizontal shoulder axis:
 
@@ -59,19 +59,19 @@ $$\tau_1 = g\Big[m_1 \tfrac{L_1}{2}\cos\theta_1 + m_2\big(L_1\cos\theta_1 + \tfr
 
 $$\tau_2 = g\Big[m_2 \tfrac{L_2}{2}\cos(\theta_1+\theta_2) + m_p L_2 \cos(\theta_1+\theta_2)\Big]$$
 
-Each term is a mass times $g$ times its horizontal distance from the joint, in N m.
+Each term is a mass times $g$ times its horizontal distance from the joint, in N m. Assumes static equilibrium (no acceleration, no friction), uniform links with centres at their midpoints, a point payload at the tip, and a horizontal shoulder axis so gravity acts in the arm's plane.
 
-Motor and gearbox, for a joint with output torque $\tau_{joint}$ (N m) and output speed $\omega_{joint}$ (rad/s):
+Motor and gearbox, for a joint with output torque $\tau_{joint}$ (N m) and output speed $\omega_{joint}$ (rad/s). Assumes a constant efficiency $\eta$ over the operating range and ignores gearbox inertia, backlash, and motor back-EMF losses:
 
 $$\tau_{motor} = \frac{\tau_{joint}}{N\,\eta}, \qquad \omega_{motor} = N\,\omega_{joint}$$
 
-Backlash of angle $\Delta\theta$ (rad) at a joint with link length $L$ (m) moves the tip by about $e \approx L\,\Delta\theta$.
+Backlash of angle $\Delta\theta$ (rad) at a joint with link length $L$ (m) moves the tip by about $e \approx L\,\Delta\theta$. Assumes the link is rigid and the small-angle approximation holds, so $\Delta\theta$ is well below 1 rad.
 
 Denavit-Hartenberg (DH) transform between frame $i-1$ and frame $i$, with four parameters per joint: link length $a_i$ (m), link twist $\alpha_i$ (rad), link offset $d_i$ (m), and joint angle $\theta_i$ (rad):
 
 $${}^{i-1}T_i = \begin{bmatrix} \cos\theta_i & -\sin\theta_i\cos\alpha_i & \sin\theta_i\sin\alpha_i & a_i\cos\theta_i \\ \sin\theta_i & \cos\theta_i\cos\alpha_i & -\cos\theta_i\sin\alpha_i & a_i\sin\theta_i \\ 0 & \sin\alpha_i & \cos\alpha_i & d_i \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
 
-Multiplying the transforms from base to tip gives the tool pose. Each revolute joint varies $\theta_i$, and each prismatic joint varies $d_i$.
+Assumes each joint frame is set by the standard DH convention, with all four parameters defined for that joint. Multiplying the transforms from base to tip gives the tool pose. Each revolute joint varies $\theta_i$, and each prismatic joint varies $d_i$.
 
 ## Worked example
 
@@ -132,6 +132,10 @@ print(tau_worst, tau_worst*1.5/(50*0.80))
 - Link deflection: a stiff controller that assumes rigid links will miss the tip by the amount the links sag. Calibration or sensing on the output side corrects the error.
 - Encoder or cable faults: a lost joint angle sends the arm to the wrong pose. Dual encoders and emergency-stop circuits limit the damage.
 
+### Robot cell safety
+
+Industrial robot cells follow the hierarchy of controls, in this order. Elimination removes the hazard, for example by loading parts from a conveyor outside the arm's reach so no one enters the cell. Substitution uses a lower-energy design, such as a smaller payload or a speed limit set low enough for a safe stop. Engineering controls are built into the cell: fixed guards around the envelope, interlocked gates that remove motor power when opened, light curtains or laser scanners, and safety-rated stops. Stop category 0 removes power at once, stop category 1 stops under control and then removes power, and stop category 2 stops under control and keeps power on. Administrative controls are lockout-tagout before entry, training, and written procedures. Personal protective equipment is the last layer and does not replace the others. This follows the stop-category definitions of IEC 60204-1 and the industrial robot safety requirements of ISO 10218.
+
 ## History
 
 George Devol filed a patent for a programmable article transfer machine in 1954. The first industrial robot arm, Unimate, was installed at a General Motors plant in Ewing Township, New Jersey, in 1961. Jacques Denavit and Richard Hartenberg published their linkage notation in 1955. Victor Scheinman's Stanford arm, built around 1969, was an electric arm with six degrees of freedom that made computer control practical. Modern arms still use DH parameters or a close variant.
@@ -170,3 +174,5 @@ George Devol filed a patent for a programmable article transfer machine in 1954.
 - [Planetary gears](../power-transmission/02-planetary-gears.md) for the gearbox ratio and efficiency used in step 6.
 - [Gear trains](../power-transmission/01-gear-trains.md) for ratio and backlash basics.
 - [Mobile robots](02-mobile-robots.md) for the next robot type in this folder.
+- [Reference sheets](../reference.md) for the applications index and quick-look tables.
+- [Mechanics reference](../../physics/reference-mechanics.md) for the statics and dynamics formulas used in the torque sizing.

@@ -45,17 +45,13 @@ $$\text{SNR} \approx 6.02\,n + 1.76\ \text{dB}$$
 
 **Given:** A bearing housing vibrates with content up to about 800 Hz. Its sensor has a faint 2.4 kHz harmonic that matters for diagnosis. The DAQ card uses a 12-bit ADC with a 10 V full span (from -5 V to +5 V).
 
-**Find:** (a) a sample rate that avoids aliasing the 800 Hz content, (b) what the 2.4 kHz harmonic would appear as if left unfiltered at 4 kHz sampling, (c) the ADC LSB and RMS quantization noise.
+**Find:** (a) a sample rate that captures the 2.4 kHz harmonic without aliasing, (b) the anti-alias filter corner and what the filter must remove, (c) the ADC LSB and RMS quantization noise.
 
-**Assumptions:** The sensor output is already conditioned to the ADC range. The anti-alias filter is a good low-pass with cutoff near 1 kHz.
+**Assumptions:** The sensor output is already conditioned to the ADC range. The anti-alias filter is a low-pass whose corner can be chosen freely.
 
-**Solution (a):** Choose $f_s = 5 \times 800 = 4000$ Hz. The Nyquist frequency is $f_N = 2000$ Hz, which is well above 800 Hz.
+**Solution (a):** The 2.4 kHz harmonic matters, so $f_s$ must be well above $2 \times 2400 = 4800$ Hz. Choose $f_s = 20{,}000$ Hz, about 8 times the harmonic. The Nyquist frequency is $f_N = 10{,}000$ Hz, well above 2.4 kHz.
 
-**Solution (b):** The 2.4 kHz harmonic is above $f_N = 2000$ Hz, so it aliases:
-
-$$f_{\text{alias}} = |2400 - 4000| = 1600\ \text{Hz}$$
-
-Without a filter, the 2.4 kHz harmonic would appear as a false 1.6 kHz tone in the data. The fix is an anti-alias filter with cutoff near 1 kHz, which removes the 2.4 kHz content before sampling.
+**Solution (b):** Set the anti-alias filter corner above 2.4 kHz, for example at 5 kHz, so the harmonic passes. Real filters roll off gradually, so the filter needs strong attenuation before the Nyquist frequency of 10 kHz and beyond. Content at frequency $f$ above $f_N$ folds to $|f - 20000|$ Hz. Noise at 17.6 kHz would fold onto the 2.4 kHz harmonic, and noise at 15 kHz would fold to 5 kHz, so the filter must already have removed it. The filter keeps the harmonic and removes what would fold onto it.
 
 **Solution (c):**
 
@@ -63,9 +59,9 @@ Without a filter, the 2.4 kHz harmonic would appear as a false 1.6 kHz tone in t
 - RMS quantization noise: $2.441\ \text{mV} / \sqrt{12} = 0.705\ \text{mV}$
 - Ideal SNR: $6.02 \times 12 + 1.76 = 74.0\ \text{dB}$
 
-**Answer:** (a) $f_s = 4000$ Hz. (b) The 2.4 kHz harmonic would alias to 1.6 kHz, so an anti-alias filter is required. (c) LSB = 2.44 mV; quantization noise is 0.705 mV RMS.
+**Answer:** (a) $f_s = 20$ kHz. (b) A filter corner near 5 kHz passes the 2.4 kHz harmonic and must attenuate content above 10 kHz. (c) LSB = 2.44 mV; quantization noise is 0.705 mV RMS.
 
-**Sanity check:** The sample rate gives 5 samples per cycle at 800 Hz, which is a reasonable margin. The LSB at 2.44 mV is well below the 0.1 V range of a typical vibration signal at that gain, so quantization is not the limit. The alias calculation agrees with the rule that any frequency above 2 kHz at this sample rate folds back.
+**Sanity check:** The sample rate gives about 8 samples per cycle at 2.4 kHz and 25 per cycle at 800 Hz, a comfortable margin over the 2-sample minimum. The LSB at 2.44 mV is well below the 0.1 V range of a typical vibration signal at that gain, so quantization is not the limit. The filter corner (5 kHz) sits above the signal (2.4 kHz) and well below the frequency that folds onto it (20 - 5 = 15 kHz).
 
 ## Practice
 
@@ -97,3 +93,4 @@ Without a filter, the 2.4 kHz harmonic would appear as a false 1.6 kHz tone in t
 - [Engineering LibreTexts home](https://eng.libretexts.org/) by LibreTexts: free engineering textbooks, including electrical topics.
 
 The aliasing and ADC equations above are standard textbook results. For a full derivation of sampling and aliasing, see the signals bookshelf above.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

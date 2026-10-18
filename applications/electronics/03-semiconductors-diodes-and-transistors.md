@@ -131,3 +131,4 @@ In December 1947, John Bardeen and Walter Brattain at Bell Labs in New Jersey bu
 - [Transistors, HyperPhysics, Georgia State University](https://hyperphysics.gsu.edu/hbase/Electronic/transis.html): a short overview of the junction transistor.
 - Related lessons: [RC circuits and op-amps](02-rc-circuits-and-op-amps.md), [Printed circuit boards](04-printed-circuit-boards.md), [Digital logic and computers](07-digital-logic-and-computers.md).
 - Previous: [Circuit basics](01-circuit-basics.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

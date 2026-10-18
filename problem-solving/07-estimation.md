@@ -137,3 +137,4 @@ and 8 kWh for a typical bath.
 - [Units and standards](https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards) by OpenStax: SI units and prefixes for converting J, kWh, and MJ.
 - [SI units](https://www.nist.gov/pml/owm/metric-si/si-units) by NIST: the reference for the base and derived units used here.
 - Polya, *How to Solve It* (1945), a printed book with a section on estimating and checking results. No link is given.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

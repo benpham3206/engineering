@@ -73,3 +73,4 @@ Each stop point changes what the learner may do next.
 - [Control of Hazardous Energy (Lockout/Tagout)](https://www.osha.gov/control-hazardous-energy) by OSHA: a free U.S. government guide to controlling dangerous energy during work on equipment.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: free engineering books for the design and safety topics behind this lesson.
 - See also the [design folder](../design/README.md) for how safety and standards shape design choices.
+- [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

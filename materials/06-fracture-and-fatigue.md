@@ -102,3 +102,4 @@ where $\sigma_a$ is the stress amplitude (MPa) and $R$ is the stress ratio (dime
 - [Mechanics of Materials](https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/) by MIT OpenCourseWare: stress, strain, and the mechanical behavior of materials under load.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: how microstructure and defects control failure.
 - [Mechanical properties](03-mechanical-properties.md): the basic tests and definitions behind this lesson.
+- [Materials reference](reference.md): the lookup sheet for this topic.

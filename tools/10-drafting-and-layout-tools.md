@@ -241,3 +241,4 @@ chord < arc: True
 - [Mechanical Drawing Self-Taught](https://www.gutenberg.org/ebooks/23319) by Joshua Rose, on Project Gutenberg: an older, public-domain manual on hand drafting instruments and constructions. Free to read and download.
 - [OSHA](https://www.osha.gov/) by the U.S. Occupational Safety and Health Administration: the home page for workplace safety rules. Search it for hand tool and machine guarding guidance when you work with scribers, punches, and layout tools in a shop.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: a free course library. Search it for design and manufacturing courses that cover drawing and layout in more depth.
+- [Tools reference](reference.md): the lookup sheet for this topic.

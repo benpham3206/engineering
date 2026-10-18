@@ -93,3 +93,4 @@ worst = 0.23 mm, rss = 0.1375 mm
 - [University Physics Volume 1, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: units, unit conversion, dimensional analysis, and significant figures. Free to read.
 - [Measurement folder](../measurement/README.md): the error and uncertainty lessons for this topic.
 - Related: [CAD](06-cad-solidworks.md), [shop tools](08-shop-tools.md), [starter kit](01-starter-kit.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

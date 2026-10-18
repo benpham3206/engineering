@@ -247,3 +247,4 @@ how integrating many small parts on one substrate can cut cost and raise reliabi
 - Related lessons: [War, nuclear, and space history](../08-war-nuclear-and-space.md),
   [Semiconductors and computing history](../09-semiconductors-and-computing.md),
   [Digital logic and computers](../../applications/electronics/07-digital-logic-and-computers.md).
+- [People of engineering reference](../reference-people.md): the lookup sheet for this topic.

@@ -47,9 +47,13 @@ Thin-wall hoop stress in the skin, with $p$ the internal pressure difference in 
 
 $$\sigma_h = \frac{p\,r}{t}$$
 
+This assumes a closed circular cylinder with uniform internal pressure, a thin wall ($t/r < 0.1$), linear elastic material, and it ignores the stiffening effect of stringers and frames.
+
 Axial stress in the same thin shell:
 
 $$\sigma_a = \frac{p\,r}{2t}$$
+
+This assumes the same thin closed cylinder with end caps that carry the axial load, and the same linear elastic, uniform-pressure conditions.
 
 The thin-wall formulas hold when the wall is thin compared with the radius, which is $t/r$ below about 0.1.
 
@@ -57,15 +61,19 @@ Bending stress in a stringer or spar cap, with $M$ the bending moment in N m, $y
 
 $$\sigma = \frac{M\,y}{I}$$
 
+This assumes a straight beam with a constant cross-section, plane sections that stay plane, linear elastic material, and small deflections, so the moment arm does not change.
+
 Margin of safety against yield, with $\sigma_y$ the yield strength in pascals and $\sigma$ the applied stress:
 
 $$\text{MS} = \frac{\sigma_y}{\sigma} - 1$$
+
+This assumes a single static load case, a uniform stress field at the point checked, and that yield is the failure criterion. It does not cover fatigue or buckling.
 
 Crack growth in fatigue, the Paris law, with $a$ the crack length in metres, $N$ the number of load cycles, $\Delta K$ the stress intensity range in Pa$\sqrt{\text{m}}$, and $C$ and $m$ material constants:
 
 $$\frac{da}{dN} = C\,(\Delta K)^m, \qquad \Delta K = \Delta\sigma\sqrt{\pi a}$$
 
-Here $\Delta\sigma$ is the stress range in pascals.
+Here $\Delta\sigma$ is the stress range in pascals. These assume constant-amplitude loading, a crack that grows in the stable Paris regime (not near the threshold or the fracture limit), a geometry factor of 1 for a crack in a wide plate, and $C$ and $m$ determined from tests in the same material and environment.
 
 ## Worked example
 
@@ -137,4 +145,7 @@ The Wright Flyer of 1903 used a wood and fabric structure. Alfred Wilm in German
 - [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md): how designers choose margins.
 - [Pressure vessels and tanks](03-pressure-vessels-and-tanks.md): the thin-wall and hoop-stress background in a non-aircraft setting.
 - [Aircraft and wings](../vehicles-aerospace/05-aircraft-and-wings.md): the forces and loads that the structure must carry.
+- [Reference: mechanics](../../physics/reference-mechanics.md): equation sheet for stress, bending, and related quantities.
+- [Reference: materials](../../materials/reference.md): equation sheet for mechanical properties, fracture, and fatigue.
+- [Reference: design](../../design/reference.md): equation sheet for factors of safety and failure criteria.
 </content>

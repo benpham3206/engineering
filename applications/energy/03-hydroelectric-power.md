@@ -149,3 +149,4 @@ Lester Pelton developed the impulse wheel that bears his name in California in t
 - [Types of hydropower turbines](https://www.energy.gov/eere/water/types-hydropower-turbines), U.S. Department of Energy: the impulse and reaction turbine types, with their typical head and flow ranges.
 - [Types of hydropower plants](https://www.energy.gov/eere/water/types-hydropower-plants), U.S. Department of Energy: run-of-river, storage, and pumped-storage plants, with an explanation of how pumped storage works.
 - Related lessons: [Fluid systems](../thermal-fluid/02-fluid-systems.md), [Energy storage](06-energy-storage.md), [Solar photovoltaics](01-solar-photovoltaics.md), [Wind turbines](02-wind-turbines.md), [Generators and alternators](../electrical/04-generators-and-alternators.md), [The power grid](../electrical/08-the-power-grid.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

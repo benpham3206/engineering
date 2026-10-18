@@ -135,3 +135,4 @@ units test and the limit test.
 - [SI units](https://www.nist.gov/pml/owm/metric-si/si-units) by NIST: the reference for the prefixes and base units to check during debugging.
 - [Classical Mechanics (8.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT OpenCourseWare: problem sets where checking a wrong answer is part of the exercise.
 - Polya, *How to Solve It* (1945), a printed book on checking a solution and looking back at it. No link is given.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

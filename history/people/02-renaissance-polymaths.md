@@ -137,3 +137,4 @@ These five people show three habits that still matter. Brunelleschi built a dome
 - [MacTutor biography of Galileo](https://mathshistory.st-andrews.ac.uk/Biographies/Galileo/), University of St Andrews
 - [MacTutor biography of Simon Stevin](https://mathshistory.st-andrews.ac.uk/Biographies/Stevin/), University of St Andrews
 - Related lessons: [Ancient and medieval minds](01-ancient-and-medieval-minds.md), [Medieval and Renaissance](../03-medieval-and-renaissance.md), [Scientific revolution](../04-scientific-revolution.md), [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Algebra](../../math/01-algebra.md)
+- [People of engineering reference](../reference-people.md): the lookup sheet for this topic.

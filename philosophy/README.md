@@ -7,7 +7,7 @@ Why engineering matters, and how to think about the responsibility that comes wi
 ## Lessons
 
 - [What engineering is](01-what-engineering-is.md)
-- [Engineering history](02-engineering-history.md)
+- [Learning from history and failure](02-engineering-history.md)
 - [Safety and risk](03-safety-and-risk.md)
 - [Ethics and professional responsibility](04-ethics-and-professional-responsibility.md)
 - [Global and social impact](05-global-and-social-impact.md)

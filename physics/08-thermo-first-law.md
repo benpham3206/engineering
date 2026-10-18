@@ -75,6 +75,12 @@ $$
 Steady-flow energy balance for an open system with one inlet and one outlet, with negligible kinetic and potential energy changes:
 
 $$
+\dot{Q} - \dot{W} = \dot{m}\,(h_2 - h_1)
+$$
+
+For an approximately adiabatic device ($\dot{Q} \approx 0$) with an ideal gas, $h_2 - h_1 = c_p\,(T_2 - T_1)$, so:
+
+$$
 \dot{W} = \dot{m}\,c_p\,(T_1 - T_2)
 $$
 
@@ -157,3 +163,4 @@ $$
 - [Introduction to Thermodynamics (Chapter 3), University Physics Volume 2](https://openstax.org/books/university-physics-volume-2/pages/3-introduction) by OpenStax: systems, work, heat, the first law, and processes for an ideal gas, free to read.
 - [First Law of Thermodynamics](https://www.grc.nasa.gov/www/k-12/airplane/thermo1.html) by NASA Glenn Research Center: internal energy as a state variable and the relation between heat, work, and energy change.
 - [Introduction to the Temperature and Heat chapter, University Physics Volume 2](https://openstax.org/books/university-physics-volume-2/pages/1-introduction) by OpenStax: temperature, specific heat, and calorimetry, useful as background for the heat terms in this lesson.
+- [Thermal-fluids reference](reference-thermofluids.md): the lookup sheet for this topic.

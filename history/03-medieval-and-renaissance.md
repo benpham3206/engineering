@@ -116,3 +116,4 @@ Water wheels, windmills, and mechanical clocks each spread from a few workshops 
 - [Library of Congress](https://www.loc.gov/). Digitized books and prints that include medieval and early modern technical works.
 
 Related lessons: [Simple machines](01-simple-machines.md), [Ancient engineering](02-ancient-engineering.md), [Scientific revolution](04-scientific-revolution.md), [Medieval and renaissance people](people/02-renaissance-polymaths.md), [Ancient and medieval minds](people/01-ancient-and-medieval-minds.md), [Pumps](../applications/thermal-fluid/09-pumps.md), [Clocks and watches](../applications/everyday/07-clocks-and-watches.md), [Buildings and skyscrapers](../applications/structures/02-buildings-and-skyscrapers.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

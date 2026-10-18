@@ -188,3 +188,4 @@ Leather flat belts drove factory machinery through overhead line shafts across t
 - [Gear trains](01-gear-trains.md): the positive-engagement alternative to friction and chain drives, with exact ratios and higher efficiency.
 - [Planetary gears](02-planetary-gears.md): compact speed and torque changes that use meshing teeth in place of belts.
 - [Shafts and bearings](../../design/08-shafts-and-bearings.md): how belt and chain loads reach the shaft and its bearings.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

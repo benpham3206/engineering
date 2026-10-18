@@ -89,3 +89,4 @@ Symbols: $f$ is any function, $h$ is a small step, $x$ is position (m) unless st
 - [Calculus Volume 1](https://openstax.org/books/calculus-volume-1/pages/1-introduction) by OpenStax: free online calculus textbook.
 - [Calculus I, II, and III notes](https://tutorial.math.lamar.edu/) by Paul Dawkins, Paul's Online Math Notes: worked examples for limits, derivatives, and integrals.
 - Next: [Multivariable calculus](04-multivariable-calculus.md).
+- [Math reference](reference.md): the lookup sheet for this topic.

@@ -146,3 +146,4 @@ Archimedes and the Alexandrian engineer Ctesibius both described water-lifting m
 - [Fluid Mechanics, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors: an open text on fluid statics and control-volume analysis.
 - Related: [Fluid systems](02-fluid-systems.md) for the power and head basics, and [Compressors and fans](10-compressors-and-fans.md) for the same affinity logic applied to gas.
 - Related: [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md) for pumps as they drive machine actuators.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

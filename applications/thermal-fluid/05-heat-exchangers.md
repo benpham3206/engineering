@@ -188,3 +188,4 @@ Sadi Carnot's 1824 work on heat engines set the limits on how much of the heat c
 - Related: [Heat transfer](../../physics/12-heat-transfer.md) for the thermal resistance network,
   [Refrigeration and air conditioning](03-refrigeration-and-air-conditioning.md) for the evaporator and
   condenser coils, and [Heat pumps](04-heat-pumps.md) for heat exchangers on the source side.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

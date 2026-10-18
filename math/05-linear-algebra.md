@@ -89,3 +89,4 @@ $$\mathbf{K} = \begin{pmatrix} k_1 + k_2 & -k_2 \\ -k_2 & k_2 + k_3 \end{pmatrix
 - [Linear Algebra (18.06)](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) by MIT OpenCourseWare, taught by Gilbert Strang: full course with lectures and problem sets.
 - [Linear algebra routines](https://numpy.org/doc/stable/reference/routines.linalg.html) by the NumPy project: reference for `solve`, `eig`, `inv`, and `det`.
 - Next: [Differential equations](06-differential-equations.md).
+- [Math reference](reference.md): the lookup sheet for this topic.

@@ -130,3 +130,4 @@ George and Robert Stephenson's locomotive Rocket won the Rainhill Trials in 1829
 - [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook on Newton's laws, friction, work, and energy. It is licensed CC BY-NC-SA.
 - [MIT OpenCourseWare](https://ocw.mit.edu/): free lecture notes, exams, and videos from MIT, with no registration required. Search for courses on dynamics and transportation systems.
 - Related: [Cars](02-cars.md), [Electric vehicles](04-electric-vehicles.md), [Gear trains](../power-transmission/01-gear-trains.md), [Brakes and clutches](../power-transmission/04-clutches-and-brakes.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md), [Mechanical properties](../../materials/03-mechanical-properties.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

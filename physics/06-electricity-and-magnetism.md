@@ -145,3 +145,4 @@ $$\mathcal{E} = -N\,\frac{d\Phi_B}{dt}$$
 - [Physics II: Electricity and Magnetism](https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/) by MIT OpenCourseWare (8.02, Spring 2007): free course materials covering electric fields, Gauss's law, circuits, magnetic fields, and Faraday's law, under a Creative Commons license.
 - [Readings](https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/pages/readings/) for the same course by MIT OpenCourseWare: a session-by-session list of topics and textbook chapter references, useful for choosing what to read next.
 - Previous lesson: none in this folder. For the circuit and force ideas used here, the algebra in [Statics](01-statics.md) is a useful warm-up on vectors.
+- [Fields, waves, and space reference](reference-fields-waves-space.md): the lookup sheet for this topic.

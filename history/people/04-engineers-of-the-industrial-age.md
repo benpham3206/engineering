@@ -144,3 +144,4 @@ These engineers worked with limited theory and built many things that worked. Sm
 - [The story of John Smeaton and the Eddystone lighthouse](https://www.gutenberg.org/ebooks/76767), Project Gutenberg: a free account of Smeaton's lighthouse and his mortar.
 - [The Life of George Stephenson and of his Son Robert Stephenson](https://www.gutenberg.org/ebooks/46229) by Samuel Smiles, Project Gutenberg: a free biography of both Stephensons.
 - Related lessons: [Thermodynamics: second law and cycles](../../physics/09-thermo-second-law-cycles.md), [Steam power plants](../../applications/thermal-fluid/08-steam-power-plants.md), and [Scientists and mathematicians](03-scientists-and-mathematicians.md).
+- [People of engineering reference](../reference-people.md): the lookup sheet for this topic.

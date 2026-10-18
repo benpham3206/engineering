@@ -47,6 +47,7 @@ T = 2\rho A v_i^2 \qquad v_h = \sqrt{\frac{T}{2\rho A}} \qquad P_{\text{ideal}} 
 $$
 
 - $T$ is thrust (N), which equals weight in hover. $\rho$ is air density (kg/m$^3$, about 1.225 at sea level). $A$ is the total rotor disk area (m$^2$). $v_h$ is the hover induced velocity (m/s). $P_{\text{ideal}}$ is the ideal induced power (W), the least power that the rotor can use for this thrust.
+- Assumptions: ideal actuator disk, uniform inflow across the disk, hover (no forward or vertical speed), steady and incompressible flow, air at rest far upstream, and no profile drag, swirl, or tip losses. Real rotors need more power than $P_{\text{ideal}}$.
 
 Actual shaft power with a figure of merit $FM$, a measure of how close the rotor comes to the ideal.
 
@@ -55,12 +56,15 @@ P = \frac{P_{\text{ideal}}}{FM}
 $$
 
 - $FM$ is the figure of merit (dimensionless). Well-designed helicopter rotors reach about 0.7 to 0.8 (typical values). Small drone rotors often reach 0.5 to 0.7 (typical values).
+- Assumptions: $FM$ is a single empirical factor, assumed constant over the hover condition, that lumps together the profile drag, swirl, and tip losses that the ideal model omits. Its value must come from measurement or a more detailed model.
 
 Disk loading, the thrust per unit disk area, which sets the hover power.
 
 $$
 \frac{T}{A} \quad \text{(N/m}^2\text{)}
 $$
+
+- Assumptions: thrust spread uniformly over the disk area $A$. Disk loading is a design ratio, not a measured quantity.
 
 Thrust in a multirotor. Each rotor makes thrust proportional to the square of its speed. Here $k_T$ is a thrust coefficient.
 
@@ -69,6 +73,7 @@ T_{\text{rotor}} = k_T \omega^2
 $$
 
 - $\omega$ is rotor angular speed (rad/s). $k_T$ is the thrust coefficient (N s$^2$/rad$^2$), set by blade shape and air density.
+- Assumptions: $k_T$ is constant over the operating range, which holds at low forward speed and in hover. Inflow effects, stall, and compressibility at high tip speed break this relation.
 
 ## Worked example
 
@@ -149,4 +154,5 @@ Juan de la Cierva developed the autogiro in Spain, and its first successful flig
 - [What is thrust?](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/what-is-thrust/) by NASA Glenn Research Center: how a rotor or engine produces force by pushing air or gas backward.
 - [Unified Engineering I, II, III, and IV (16.01)](https://ocw.mit.edu/courses/16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006/) by MIT OpenCourseWare: fluid mechanics and propulsion, with lecture notes.
 - [Bernoulli's equation](https://www.grc.nasa.gov/www/k-12/airplane/bern.html) by NASA Glenn Research Center: the pressure and speed relation that underlies blade lift.
+- Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) and [Thermofluids reference](../../physics/reference-thermofluids.md).
 - Related lessons: [Aircraft and wings](05-aircraft-and-wings.md), [Rockets](07-rockets.md), [Batteries](../electrical/06-batteries.md), [Brushless and stepper motors](../electrical/02-brushless-and-stepper-motors.md), and [Controls](../../physics/14-controls.md).

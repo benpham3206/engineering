@@ -134,3 +134,4 @@ The Soviet Union launched Sputnik 1 on 4 October 1957, the first artificial sate
 - [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook on mechanics, gravitation, and fluids. It is licensed CC BY-NC-SA.
 - [MIT OpenCourseWare](https://ocw.mit.edu/): free lecture notes, exams, and videos from MIT, with no registration required. Search for courses on orbital mechanics and spacecraft design.
 - Related: [Rockets](07-rockets.md), [Photovoltaics](../energy/01-solar-photovoltaics.md), [Batteries](../electrical/06-batteries.md), [Thermal systems](../thermal-fluid/01-thermal-systems.md), [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

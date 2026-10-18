@@ -92,7 +92,7 @@ $$\mu_s \ge \frac{16.67}{98.1} = 0.170$$
 
 **Answer:** $a_G \approx 3.33$ m/s^2 to the right. The friction force is about 16.7 N to the left. The floor must provide $\mu_s \ge 0.17$.
 
-**Sanity check:** The disk accelerates at about one third of $F/m = 5$ m/s^2, because the disk's rotational inertia takes part of the force. For a hollow hoop, the result would be $F/(2m)$, a smaller acceleration, which fits because more of the mass sits far from the axis. The friction force of 16.7 N is well under the 98.1 N normal force, so a floor with a moderate coefficient of friction can keep the disk from slipping. A floor with a much smaller coefficient would let it slip.
+**Sanity check:** The disk accelerates at two thirds of $F/m = 5$ m/s^2 (a one-third reduction), because the disk's rotational inertia takes part of the force. For a hollow hoop, the result would be $F/(2m)$, a smaller acceleration, which fits because more of the mass sits far from the axis. The friction force of 16.7 N is well under the 98.1 N normal force, so a floor with a moderate coefficient of friction can keep the disk from slipping. A floor with a much smaller coefficient would let it slip.
 
 ## Practice
 
@@ -123,3 +123,4 @@ $$\mu_s \ge \frac{16.67}{98.1} = 0.170$$
 - [MIT OpenCourseWare 2.003SC Engineering Dynamics, Fall 2011](https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/) by MIT: free notes and course materials covering force-momentum methods for planar rigid bodies, CC BY-NC-SA 4.0.
 - [MIT OpenCourseWare 8.01SC Classical Mechanics, Fall 2016](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT: free course covering rotation, rolling, and collisions, CC BY-NC-SA 4.0. Use it for extra practice with rolling problems.
 - Previous: [Particle dynamics](02-particle-dynamics.md), for the translation half of this lesson.
+- [Mechanics reference](reference-mechanics.md): the lookup sheet for this topic.

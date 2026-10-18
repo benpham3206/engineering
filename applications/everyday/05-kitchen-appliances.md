@@ -34,6 +34,8 @@ Kettles come as corded jugs with the element in the base, as concealed-element k
 
 ## Key equations
 
+Assumptions for every equation below: the supply voltage is steady, the element is purely resistive, water is a liquid with a constant specific heat between 20 and 100 $^\circ$C, and the efficiency $\eta$ lumps together all heat that does not reach the water.
+
 - Electrical power: $P = V I$, in watts (W), where $V$ is voltage in volts (V) and $I$ is current in amperes (A).
 - Resistive power: $P = V^2 / R$, with $R$ the element resistance in ohms ($\Omega$).
 - Heat to raise water: $Q = m c \, \Delta T$, where $Q$ is energy in joules (J), $m$ is mass in kilograms (kg), $c = 4186\ \text{J/(kg K)}$ is the specific heat of liquid water (typical value), and $\Delta T$ is the temperature rise in kelvin (K).
@@ -76,6 +78,16 @@ A kettle rated at $1500\ \text{W}$ with $\eta = 0.80$ takes $279\ \text{s}$, abo
 - **Blender seal and lid failure.** A worn seal leaks, and a bypassed lid interlock lets the blades run with the lid open. Interlock switches and motor thermal protectors exist for these failures.
 - **Induction faults.** An unmagnetic pan does not heat. A cracked glass top can fail from impact or thermal shock. The control electronics need cooling, so a blocked vent leads to a shutdown.
 
+## Safety and the hierarchy of controls
+
+Kitchen appliances carry electrical, thermal, and mechanical hazards. Designers and users apply these controls in order, starting with the most effective.
+
+- **Elimination.** Remove the hazard entirely. A cordless kettle with a sealed base removes the risk of a cord pulled into water. A blender cannot drop its blades, because cutting is its purpose, so the blender relies on the lower controls.
+- **Substitution.** Replace a hazard with a lower one. Induction heating removes the open flame of a gas burner and the hot glowing coil of a resistance cooktop. The surface stays cooler where no pan sits.
+- **Engineering controls.** Build the protection into the appliance. Examples are the steam switch and dry-boil cut-out on a kettle, the thermal fuse in a toaster, the lid interlock on a blender, and the pan-detection circuit on an induction cooktop. Double insulation and a ground connection reduce shock risk.
+- **Administrative controls.** Set rules for use and maintenance. The manual says to keep the kettle off the base when empty, to clear crumbs from the toaster tray, and to descale the kettle regularly.
+- **Personal protective equipment.** Oven gloves and a splash guard are the last layer. They protect the user only after the layers above have failed.
+
 ## History
 
 Charles Strite patented a pop-up toaster in 1919, and the Waters Genter Company built the first commercial version. Earlier toasters held bread against a wire grid by hand. The spring-loaded carriage and the timed release made toast without supervision.
@@ -110,9 +122,12 @@ Fred Waring's company introduced the Waring Blendor in 1937. The high-speed blen
 
 ## Go deeper
 
-External sources were not verified for this lesson, so none are listed. Related lessons in this repo:
+- [OpenStax University Physics Volume 2, Chapter 3](https://openstax.org/books/university-physics-volume-2/pages/3-introduction): free textbook on heat, specific heat, and energy transfer.
+
+Related lessons and reference sheets in this repo:
 
 - [Thermal systems](../thermal-fluid/01-thermal-systems.md) for heat, temperature, and energy balances.
 - [Heat transfer](../../physics/12-heat-transfer.md) for conduction, convection, and radiation from the heater to the food.
+- [Reference: thermofluids](../../physics/reference-thermofluids.md) for the heat and fluid equations used here.
 - [DC motors](../electrical/01-dc-motors.md) for the torque and speed of the blender's motor.
 - [Digital logic and computers](../electronics/07-digital-logic-and-computers.md) for the timers and controllers in modern appliances.

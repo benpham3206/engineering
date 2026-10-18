@@ -144,3 +144,4 @@ $n = \dfrac{350}{117.9} = 2.97$.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: a free hub that includes mechanics of materials and stress analysis.
 - [OpenStax University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax at Rice University: free physics text for forces, equilibrium, and the basics behind stress.
 - [NIST, Metric (SI) program](https://www.nist.gov/pml/owm/metric-si) by NIST: official SI unit guidance, useful for keeping MPa, N, and mm consistent.
+- [Design reference](reference.md): the lookup sheet for this topic.

@@ -239,3 +239,4 @@ Every step uses a free tool, and every step is the same workflow an engineer fol
 - [SciPy](https://scipy.org/) by the SciPy community: the core library for scientific computing in Python, with user guides.
 - [KiCad](https://www.kicad.org/) by the KiCad project: documentation and getting-started guide for schematics and PCBs.
 - Related: [Starter kit](01-starter-kit.md), [Python](02-python.md), [GNU Octave and MATLAB](04-matlab.md), [CAD](06-cad-solidworks.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

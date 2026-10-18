@@ -84,3 +84,4 @@ A desktop stapler has a flat base, a spring-loaded body, a hinged top, and a sma
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library to browse for statics and load paths.
 - [e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/) by NIST and SEMATECH: free reference on evidence and variation, useful when you weigh how strong a clue is.
 - See also the [design folder](../design/README.md) for how designers make these choices on purpose.
+- [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

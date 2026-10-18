@@ -113,3 +113,4 @@ The full guidance for slides is in [03-presentations.md](03-presentations.md).
 - [Purdue OWL: Writing Report Abstracts](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/technical_reports_and_report_abstracts/index.html) by Purdue University, covering how to write informational and descriptive abstracts.
 - [OpenStax Writing Guide with Handbook](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University): free general writing textbook covering the writing process and revision.
 - [Purdue OWL](https://owl.purdue.edu/owl/purdue_owl.html) by Purdue University, the full writing resource index, including general writing and grammar.
+- [Communication reference](reference.md): the lookup sheet for this topic.

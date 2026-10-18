@@ -35,6 +35,8 @@ Steering works through a linkage. The driver turns the steering wheel, a rack or
 
 ## Key equations
 
+The ride and damping equations assume a linear spring and a linear viscous damper, small deflections, and a quarter-car model with one corner and no coupling to the other wheels. The Ackermann relation assumes rigid links, no tire slip, and small steering angles, so it gives the ideal geometry and not the real angles under load.
+
 - **Ride frequency (quarter-car model):** $f_n = \dfrac{1}{2\pi} \sqrt{\dfrac{k}{m_s}}$, in Hz, where $k$ is the spring rate of one corner in N/m and $m_s$ is the sprung mass of that corner in kg. Typical passenger cars have $f_n$ from 1.0 to 1.5 Hz.
 - **Critical damping:** $c_{crit} = 2\sqrt{k \, m_s}$, in N s/m.
 - **Damping ratio:** $\zeta = c / c_{crit}$, dimensionless. Most road cars use $\zeta$ from 0.2 to 0.4, which gives a few bounces after a bump.
@@ -77,6 +79,12 @@ Steering works through a linkage. The driver turns the steering wheel, a rack or
 - **Steering rack leaks or a failed pump:** hydraulic power steering loses assist. The driver must turn the wheel with far more effort.
 - **Misalignment:** a wrong toe or camber setting wears the tires quickly and pulls the car to one side. Alignment checks and tolerance limits on the tie rods guard against it.
 
+### Spring service hazard
+
+A compressed coil spring stores energy. Removing a strut without compressing the spring first can release that energy suddenly and throw parts or injure a hand. The hierarchy of controls applies here. Elimination means not removing the spring when a complete strut assembly can be swapped instead. Substitution means using a pre-assembled strut with a factory-compressed spring. Engineering controls are a spring compressor with a guard and a safety catch, and a bench vise that holds the strut. Administrative controls are a written procedure, a second person in the room, and training. Personal protective equipment is safety glasses and gloves.
+
+Lockout and tagout for suspension work means the following. Isolate the car by removing the key and disconnecting the battery if the work involves electronic dampers or active suspension. Release or restrain stored energy by compressing each spring with a rated compressor and holding it before any bolt is removed. Verify a zero-energy state by confirming that the spring tension is off the strut before the final bolt comes out, and by checking that the car is supported on stands before work begins.
+
 ## History
 
 Ackermann steering geometry takes its name from Rudolph Ackermann, who held an English patent for it in about 1818. The geometry is also credited to Georg Lankensperger, a carriage maker in Munich, who used it in horse-drawn carriages. Robert William Thomson patented a pneumatic tire in 1845, and John Boyd Dunlop patented a pneumatic bicycle tire in Belfast in 1888. The coil spring and the leaf spring carried carriages long before the car, and the damper followed as cars grew faster.
@@ -110,4 +118,5 @@ Ackermann steering geometry takes its name from Rudolph Ackermann, who held an E
 ## Go deeper
 
 - [University Physics Volume 1, Chapter 15 (oscillations)](https://openstax.org/books/university-physics-volume-1/pages/15-introduction) by OpenStax: simple harmonic motion and damped oscillations, the basis for the ride frequency and damping ratio.
+- Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) for the vibration and force relations, and [Design reference](../../design/reference.md) for the design vocabulary.
 - Related lessons: [Vibrations](../../physics/13-vibrations.md), [Cars](02-cars.md), [Electric vehicles](04-electric-vehicles.md), [Differentials and transmissions](../power-transmission/06-differentials-and-transmissions.md).

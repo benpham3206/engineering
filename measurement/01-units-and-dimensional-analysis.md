@@ -89,3 +89,4 @@ $$\omega = 1800\ \frac{\text{rev}}{\text{min}} \times \frac{2\pi\ \text{rad}}{\t
 - [Unit Conversion (section 1.3)](https://openstax.org/books/university-physics-volume-1/pages/1-3-unit-conversion) by OpenStax: worked conversions between unit systems.
 - [Dimensional Analysis (section 1.4)](https://openstax.org/books/university-physics-volume-1/pages/1-4-dimensional-analysis) by OpenStax: base dimensions and dimensional consistency.
 - [NIST SP 811, Guide for the Use of the International System of Units](https://www.nist.gov/pml/special-publication-811) by NIST: the official SI rules for writing units and prefixes.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

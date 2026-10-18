@@ -56,7 +56,7 @@ $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
 
 **Answer:** Mean $25.003$ mm, $s = 0.0189$ mm. The 95% interval for the true mean is $24.990$ to $25.017$ mm. About 2.5% of shafts are expected above 25.04 mm.
 
-**Sanity check:** The interval is narrow because $n = 10$ and the spread is small. The true mean is inside the nominal 25.00 mm band, so the process is centered. A 2.5% reject rate is a number a process engineer can act on.
+**Sanity check:** The interval is narrow because $n = 10$ and the spread is small. The interval contains 25.00 mm, so the sample does not show a statistically significant offset of the mean at the 95% level. That does not prove the process is centered. The 2.5% figure depends on the upper limit of 25.04 mm and on the data being roughly normal. A reject rate or capability claim needs specification limits and evidence about the process distribution.
 
 ## Practice
 
@@ -87,3 +87,4 @@ $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
 - [Engineering Statistics Handbook, section 1.3.5 Quantitative Techniques](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35.htm) by NIST: confidence intervals, hypothesis tests, and outlier checks for engineering data.
 - [Introductory Statistics](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: free textbook covering descriptive statistics, probability, and inference.
 - Next: [Numerical methods](08-numerical-methods.md).
+- [Math reference](reference.md): the lookup sheet for this topic.

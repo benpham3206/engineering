@@ -117,3 +117,4 @@ A change should move only what it should move.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering references that cover drawing and design practice.
 - [MIT OpenCourseWare, 2.017J Design of Electromechanical Robotic Systems](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/) by MIT: a free course where students design and model real machines in CAD.
 - Your CAD vendor's free learning pages are useful. Check the license terms of any student or trial edition before relying on it.
+- [Design reference](reference.md): the lookup sheet for this topic.

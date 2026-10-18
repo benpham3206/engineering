@@ -45,7 +45,7 @@ voltage-and-resistance pattern), [Mathematics folder](../../math/README.md)
 **Given:** A brick-like wall of area $A = 10\ \text{m}^2$, thickness $L = 0.20\ \text{m}$, and
 conductivity $k = 0.80\ \text{W/(m K)}$ separates a room at $25\ \text{C}$ from outdoor air at $5\ \text{C}$.
 Assume the inside surface is at room temperature. The outside convection coefficient is
-$h = 10\ \text{W/(m}^2\text{K)}$. Ignore the inside convection and the outer surface resistance.
+$h = 10\ \text{W/(m}^2\text{K)}$. Inside convection adds no resistance. Outside convection is included. Ignore radiation and contact resistance.
 
 **Find:** (a) the total thermal resistance, (b) the heat rate through the wall, and (c) the outer
 surface temperature.
@@ -69,6 +69,16 @@ about $10.7\ \text{C}$.
 **Sanity check:** A $20\ \text{K}$ difference across a wall of this size losing hundreds of watts is
 plausible for a room, given $10\ \text{m}^2$ of area. The two drops, $14.3\ \text{K}$ and $5.7\ \text{K}$, add up to
 the full $20\ \text{K}$.
+
+## How it fails
+
+- **Fouling.** Scale, dirt, or biological film builds on a heat exchanger surface and adds a thermal resistance. The sign is a rising outlet temperature or a falling heat transfer at the same flow. Design with a fouling allowance, filter the fluid, treat the water, and clean on schedule.
+- **Contact resistance growth.** The joint between a chip and a heat sink relies on thermal paste or a pad. Paste dries out and pumps out, and fasteners relax, so the interface resistance rises. The sign is a part running hotter over time. Use the correct mounting pressure and replace the interface material at service.
+- **Thermal runaway.** Some devices, including transistors, batteries, and heaters with positive feedback, make more heat as they get hotter. The temperature then climbs until the part fails. Current limiting, temperature sensing, and a thermal cutoff stop it, and the heat path must be sized for the worst case.
+- **Overheating.** Blocked vents, dust, a failed fan, or a hot ambient raise the temperature past the design limit. The sign is thermal throttling, a shutdown, or discolored parts. Derate the power, add a thermal fuse or cutoff, and keep airflow paths clear.
+- **Insulation moisture.** Wet insulation conducts heat much better than dry insulation, and it causes corrosion under the insulation. The sign is damp or stained cladding and condensation. A vapor barrier, sealed joints, and inspection reduce it.
+- **Thermal expansion and cycling.** Parts of different materials expand by different amounts, so joints and bonds crack after repeated cycles. The sign is a crack or a loose joint. Allow room for expansion with a sliding support or an expansion loop, and match materials.
+- **Burns and scalds.** Hot surfaces and steam cause burns, and pressurized hot fluid can discharge suddenly. Eliminate the hazard by removing the heat source, substitute a lower temperature, add insulation, guards, and relief valves, then use warning signs and procedures, and finally gloves and face protection. For maintenance, apply lockout/tagout on heat and fluid sources, let the system cool, release the pressure, and verify zero energy with a gauge and a temperature check.
 
 ## Practice
 
@@ -112,3 +122,4 @@ the full $20\ \text{K}$.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library that includes heat
   transfer textbooks.
 - Next: [Lesson 06, fluid systems](02-fluid-systems.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

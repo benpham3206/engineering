@@ -100,10 +100,11 @@ $$C_{\min} = 25.000 - 24.993 = 0.007 \text{ mm}$$
 - Calculating clearance with the wrong pairing, such as the hole's upper limit with the shaft's upper limit. Clearance uses the hole's upper limit with the shaft's lower limit for the maximum.
 - Specifying tighter tolerances than the function needs, which raises cost without benefit.
 - Using worst-case stack-up everywhere, or using RSS when the risk is high and the parts must always fit.
-- Forgetting that surface roughness on the drawing is a limit, and the real surface can be rougher.
+- Forgetting that the surface roughness on the drawing is a maximum, so a surface rougher than the limit is nonconforming.
 
 ## Go deeper
 
 - [NIST: SI units](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST: SI base units and the prefixes used for micrometers and millimeters.
 - [NIST: Weights and measures](https://www.nist.gov/pml/weights-and-measures) by NIST: the measurement standards office, including metric (SI) programs.
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: subtracting limits and solving simple formulas.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

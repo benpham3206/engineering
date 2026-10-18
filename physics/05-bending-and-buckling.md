@@ -149,3 +149,4 @@ $$r = \sqrt{\frac{I}{A}}, \qquad \text{slenderness} = \frac{K L}{r}$$
 - [Chapter 8: Beam Bending, Buckling, and Torsion](https://eng.libretexts.org/Courses/California_State_Polytechnic_University_Humboldt/Mechanical_Behavior_of_Material/Chapter_8:_Beam_Bending,_Buckling,_and_Torsion) by Cal Poly Humboldt, via Engineering LibreTexts: free notes on Euler-Bernoulli beams, the simply supported deflection formulas, and the pinned column derivation.
 - [Stresses in Beams](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_%28Roylance%29/04:_Bending/4.02:_Stresses_in_Beams) by David Roylance, MIT OpenCourseWare, via Engineering LibreTexts: the flexure formula and the pinned-pinned buckling load, in a free, openly licensed textbook.
 - Previous lesson: [Axial and torsion](04-axial-and-torsion.md), which covers the stress and strain basics used here.
+- [Mechanics reference](reference-mechanics.md): the lookup sheet for this topic.

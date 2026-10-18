@@ -84,3 +84,4 @@ Answers are key points a good answer covers. See each question above.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials. Search for courses on engineering and society, or technology policy.
 - [NSPE Code of Ethics for Engineers](https://www.nspe.org/resources/ethics/code-ethics) by the National Society of Professional Engineers: the public-welfare duties that apply to social impact.
 - See [sustainability](06-sustainability.md) for the environmental side of the same questions.
+- [Philosophy failure cases](reference.md): the lookup sheet for this topic.

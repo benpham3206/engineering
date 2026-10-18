@@ -122,3 +122,4 @@ These are typical textbook values at room temperature. Real values depend on all
 - [Mechanics of Materials](https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/) by MIT OpenCourseWare: stress, strain, and mechanical behavior of ceramics, metals, and polymers.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: how bonding and structure set stiffness and strength.
 - [Materials Laboratory](https://ocw.mit.edu/courses/3-014-materials-laboratory-fall-2006/) by MIT OpenCourseWare: how tests such as tension and hardness are run in practice.
+- [Materials reference](reference.md): the lookup sheet for this topic.

@@ -103,3 +103,4 @@ The team does not check the savings on cost alone. They also check that the snap
 - [MIT OpenCourseWare, 2.017J Design of Electromechanical Robotic Systems](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/) by MIT: a free course where design and build decisions are tested in real hardware.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering textbooks with design and manufacturing background.
 - Published DFA guidelines from manufacturers and universities are useful, but check that each source is free and reliable before relying on it.
+- [Design reference](reference.md): the lookup sheet for this topic.

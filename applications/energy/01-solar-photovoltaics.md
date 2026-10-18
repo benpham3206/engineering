@@ -148,3 +148,4 @@ In 1839, Alexandre-Edmond Becquerel observed the photovoltaic effect in France. 
 
 - [How does solar work](https://www.energy.gov/eere/solar/how-does-solar-work), U.S. Department of Energy: a short, free explanation of how sunlight becomes electricity in a panel.
 - Related lessons: [Wind turbines](02-wind-turbines.md), [Hydroelectric power](03-hydroelectric-power.md), [Energy storage](06-energy-storage.md), [The power grid](../electrical/08-the-power-grid.md), [Semiconductors, diodes, and transistors](../electronics/03-semiconductors-diodes-and-transistors.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -45,6 +45,7 @@ L = \tfrac{1}{2}\rho V^2 S\, C_L \qquad D = \tfrac{1}{2}\rho V^2 S\, C_D
 $$
 
 - $L$ is lift (N). $D$ is drag (N). $\rho$ is air density (kg/m$^3$, about 1.225 at sea level). $V$ is airspeed (m/s). $S$ is wing area (m$^2$). $C_L$ and $C_D$ are the lift and drag coefficients (dimensionless).
+- Assumptions: steady flight, subsonic and incompressible air, and $C_L$ and $C_D$ both referenced to the same wing area $S$.
 
 Stall speed, where lift equals weight at the maximum lift coefficient.
 
@@ -53,6 +54,7 @@ V_s = \sqrt{\frac{2W}{\rho\, S\, C_{L,\max}}}
 $$
 
 - $V_s$ is stall speed (m/s). $W = mg$ is weight (N), with $m$ in kg and $g = 9.81$ m/s$^2$ near Earth's surface. $C_{L,\max}$ is the maximum lift coefficient (dimensionless). The stall speed rises with the square root of the load factor $n$ in a turn, because lift must equal $nW$.
+- Assumptions: steady, unaccelerated flight at the stall point, a load factor of 1 (level flight) unless the text says otherwise, and $C_{L,\max}$ set for the configuration in use.
 
 Induced drag, which comes from the lift itself, and total drag.
 
@@ -61,6 +63,7 @@ C_{D,i} = \frac{C_L^2}{\pi\, e\, AR} \qquad C_D = C_{D,0} + C_{D,i} \qquad AR = 
 $$
 
 - $C_{D,i}$ is induced drag coefficient. $C_{D,0}$ is zero-lift drag coefficient, which covers form drag and skin friction. $e$ is the Oswald efficiency factor, typically 0.7 to 0.85 (typical value). $AR$ is aspect ratio (dimensionless). $b$ is wingspan (m).
+- Assumptions: subsonic, steady flow. The factor $e$ folds the real lift distribution into one number, and $e = 1$ would be the elliptical lift distribution, which is the lowest induced drag for a given span and lift.
 
 Thin-airfoil lift slope, valid below the stall.
 
@@ -69,6 +72,7 @@ C_L \approx 2\pi\alpha
 $$
 
 - $\alpha$ is angle of attack in radians. A real wing gives a little less lift than this ideal value.
+- Assumptions: thin airfoil, inviscid and incompressible flow, small angle of attack, and flow attached below the stall.
 
 Power required in level flight.
 
@@ -77,6 +81,7 @@ P = D\, V
 $$
 
 - $P$ is power (W) at the propeller or engine shaft. This value ignores propeller losses and uses the drag at the given speed.
+- Assumptions: steady, level, unaccelerated flight, so thrust equals drag, and the drag used is the total drag at that speed.
 
 ## Worked example
 
@@ -163,5 +168,6 @@ Otto Lilienthal made hundreds of glider flights in Germany in the 1890s. The Wri
 - [What is lift?](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/what-is-lift/) by NASA Glenn Research Center: how lift arises on a wing, from a plain-language starting point.
 - [What is drag?](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/what-is-drag/) by NASA Glenn Research Center: form drag, skin friction, and induced drag.
 - [Bernoulli's equation](https://www.grc.nasa.gov/www/k-12/airplane/bern.html) by NASA Glenn Research Center: the pressure and speed relation for airfoils and pitot tubes.
+- Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) and [Thermofluids reference](../../physics/reference-thermofluids.md).
 - [University Physics Volume 1, Chapter 14 (fluid dynamics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: fluids, pressure, and Bernoulli's equation.
 - Related lessons: [Rotorcraft and drones](06-rotorcraft-and-drones.md), [Rockets](07-rockets.md), and [Gas turbines and jet engines](../thermal-fluid/07-gas-turbines-and-jet-engines.md).

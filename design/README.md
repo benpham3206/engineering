@@ -15,7 +15,7 @@ Study order:
   - [GD&T symbols and frames](05-gdt-symbols-and-frames.md): datums, feature control frames, characteristic symbols
   - [GD&T material conditions and position](06-gdt-material-conditions-and-position.md): MMC, LMC, RFS, bonus tolerance, position
 - [Factor of safety and failure](07-factor-of-safety-and-failure.md): stress, yield, von Mises
-- [Machine elements](08-shafts-and-bearings.md): shafts, bearings, gears, fasteners, springs
+- Machine elements:
   - [Shafts and bearings](08-shafts-and-bearings.md): torsion sizing, bearing life
   - [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md): gear geometry, bolt preload, spring rate
 - [Design for manufacturing and assembly](10-design-for-manufacturing-and-assembly.md)

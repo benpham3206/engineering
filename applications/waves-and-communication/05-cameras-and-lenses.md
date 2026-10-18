@@ -113,3 +113,4 @@ Ibn al-Haytham described the pinhole camera in his *Book of Optics*, written in 
 - [University Physics Volume 3, Chapter 2: geometric optics, thin lenses, the eye, and the camera](https://openstax.org/books/university-physics-volume-3/pages/2-introduction) by OpenStax. Free, with the thin-lens model and the camera section.
 - [Optics, course 2.71](https://ocw.mit.edu/courses/2-71-optics-spring-2009/) by MIT OpenCourseWare. Free lecture materials on optical systems and their engineering use.
 - Related lessons: [Sensors in products](../electronics/05-sensors-in-products.md), which covers image sensors in more depth, and [Waves, light, and heat](../../physics/07-waves-light-heat.md), which covers the wave behavior of light.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

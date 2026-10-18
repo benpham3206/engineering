@@ -45,23 +45,31 @@ Travel per second for a lead screw turning at $N$ revolutions per second (rev/s)
 
 $$v = N L$$
 
+Assumptions: the screw turns without slip, and the nut and screw have no lead error. $v$ is in metres per second (m/s).
+
 Position resolution of a feedback device that gives $n_c$ counts per revolution (dimensionless):
 
 $$\delta x = \frac{L}{n_c}$$
+
+Assumptions: the counts are evenly spaced, and the screw turns with no backlash. $\delta x$ is the smallest measurable step in metres (m). It is not the accuracy of the axis.
 
 Torque at the motor to push an axial force $F$ in newtons (N) through a ball screw of efficiency $\eta$ (dimensionless, about 0.9 for a ball screw):
 
 $$T = \frac{F L}{2 \pi \eta}$$
 
-Here $T$ is in newton metres (N m). Acceleration torque is extra, and it comes from the inertia of the moving parts.
+Assumptions: steady motion at constant speed, so acceleration torque is zero, and the efficiency $\eta$ holds for the load. Here $T$ is in newton metres (N m). Acceleration torque is extra, and it comes from the inertia of the moving parts.
 
 Mechanical power at the shaft, with angular speed $\omega$ in radians per second (rad/s):
 
 $$P = T \omega, \qquad \omega = 2 \pi N$$
 
+Assumptions: the torque and speed are steady, and the power is the shaft output, not the electrical input. $P$ is in watts (W).
+
 Thermal growth of a steel member of length $L_0$ in metres (m) when its temperature rises by $\Delta T$ in kelvin (K), with linear expansion coefficient $\alpha$ of about $11.7 \times 10^{-6}$ per K for carbon steel (typical):
 
 $$\Delta L = \alpha L_0 \Delta T$$
+
+Assumptions: the member is uniform in temperature, it expands freely (no constraint), and $\alpha$ is constant over the temperature range. $\Delta L$ is in metres (m).
 
 ## Worked example
 
@@ -99,6 +107,16 @@ $$\Delta L = \alpha L_0 \Delta T$$
 - **Pitch error and screw wear:** the screw's lead varies along its length. The sign is a periodic error along the axis. Laser calibration produces an error map, which the controller uses to correct position.
 - **Overtravel:** an axis that runs past its end stops can strike the frame. Limit switches, software travel limits, and an emergency stop protect the machine and operator.
 
+**Safety controls, in order of preference:**
+
+1. Elimination: avoid the hazard. For example, a fully enclosed machine keeps hands out of the cutting zone.
+2. Substitution: use a lower-speed axis or a lower-power spindle for setup work where the job allows.
+3. Engineering controls: a guard with an interlock that stops motion when opened, an emergency stop, software and hard limits, and a tool-breakage detector.
+4. Administrative controls: a written start-up check, a rule against running an unproved program, and a trained operator for each machine.
+5. Personal protective equipment: safety glasses, hearing protection, and no loose sleeves or gloves near rotating parts. PPE protects the operator, and it does not replace the controls above.
+
+**Lockout and tagout for service:** before a technician works on an axis, spindle, or drive, the technician switches off the machine and isolates its electrical supply at the disconnect. The technician locks the disconnect with a personal lock and attaches a tag with the name and date. The technician then confirms that the machine does not start by pressing the controls, and waits for the drive's stored charge to drain. For a vertical axis, the technician blocks the head with a mechanical support, because gravity can move it. The lock comes off only by the person who fitted it, after the work and the checks are complete.
+
 ## History
 
 Numerical control grew out of work at the MIT Servomechanisms Laboratory. Around 1952, a team there demonstrated a vertical milling machine that followed a program on punched tape to move along its axes. The project was carried out with Parsons Corporation, which had proposed positioning machine tools from punched cards. Through the 1950s and 1960s, control moved from tape to computers, and feedback on machine axes became standard.
@@ -133,5 +151,6 @@ Numerical control grew out of work at the MIT Servomechanisms Laboratory. Around
 
 - [MIT OpenCourseWare, Design and Manufacturing I (2.007)](https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/) by MIT: a free course on machine design and manufacturing.
 - [NIST: Manufacturing](https://www.nist.gov/manufacturing) by NIST: national work on measurement and machine tool accuracy.
+- Reference sheets: [Manufacturing reference](../../manufacturing/reference.md) and [Mechanics reference](../../physics/reference-mechanics.md).
 - [Machining speeds and feeds](../../manufacturing/02-machining-speeds-and-feeds.md) and [Tolerances, fits, and finish](../../manufacturing/08-tolerances-fits-finish.md): the process side of accuracy.
 - [Lead screws and ball screws](../power-transmission/08-lead-screws-and-ball-screws.md) and [Robot arms](01-robot-arms.md): the same drive and kinematics ideas in other machines.

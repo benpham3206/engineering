@@ -89,13 +89,15 @@ $$V = \frac{1}{n} R^{2/3} S^{1/2}$$
 
 where $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient in s/m$^{1/3}$ (a dimensionless value for many use cases, typically about 0.013 for finished masonry or concrete), $R = A/P$ is the hydraulic radius in metres (m), $A$ is the wetted cross-section area in square metres (m$^2$), $P$ is the wetted perimeter in metres (m), and $S$ is the channel slope, a dimensionless ratio of drop to length.
 
-The flow rate follows from continuity:
+Assumptions for the Manning equation: the flow is steady and uniform, so the depth and velocity do not change along the channel. The channel is prismatic, with the same cross-section along its length. The slope is small, so the water surface runs nearly parallel to the bed. The flow is fully turbulent and rough, so $n$ is constant for the given lining.
+
+The flow rate follows from continuity, which assumes the water is incompressible and no water leaves or enters the channel between sections:
 
 $$Q = A V$$
 
 where $Q$ is the volume flow rate in cubic metres per second (m$^3$/s).
 
-The slope comes from the total drop and the channel length:
+The slope comes from the total drop and the channel length, and it assumes the drop is uniform along the channel:
 
 $$S = \frac{\Delta z}{L}$$
 
@@ -126,7 +128,7 @@ A gravity aqueduct trades construction effort for running cost. A steep channel 
 
 ## How it fails
 
-Aqueducts fail when water leaks through cracked mortar, when channels silt up, or when a valley crossing loses its support. Siphons fail when pressure exceeds the pipe strength. Qanats fail when shafts collapse or when the water table drops below the tunnel. Reservoirs fail when embankments wash out, and the Angkor system depended on maintaining embankments and sluices through each monsoon. Sabotage and war also cut water supplies, as in Rome in 537 CE.
+Aqueducts fail when water leaks through cracked mortar, when channels silt up, or when a valley crossing loses its support. Siphons fail when pressure exceeds the pipe strength. Qanats fail when shafts collapse or when the water table drops below the tunnel. Digging crews faced cave-ins and bad air, and the controls that exist today follow the hierarchy of controls. Elimination removes the hazard by avoiding deep digging where a shallow source exists. Substitution swaps hand digging for machine excavation with trench supports. Engineering controls add shoring, ventilation shafts, and gas monitors. Administrative controls set crew rotation and inspection rules. Personal protective equipment, such as helmets and harnesses, is the last layer. Reservoirs fail when embankments wash out, and the Angkor system depended on maintaining embankments and sluices through each monsoon. Sabotage and war also cut water supplies, as in Rome in 537 CE.
 
 ## History
 
@@ -179,4 +181,5 @@ Gravity moves water over long distances if the slope is controlled. The aqueduct
 
 - [The Ten Books on Architecture, Vitruvius](https://www.gutenberg.org/ebooks/20239), Project Gutenberg eBook 20239. Book VIII covers water sources and how to build channels.
 - [The archaeology of Rome, Part 8: The aqueducts, John Henry Parker](https://www.gutenberg.org/ebooks/73752), Project Gutenberg eBook 73752. A nineteenth-century survey of Roman aqueducts.
+- Reference sheet: [Thermofluids reference](../../physics/reference-thermofluids.md) for open channel and pipe flow.
 - Related lessons: [Ancient engineering](../02-ancient-engineering.md), [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md), [Dams](../../applications/structures/05-dams.md), [Bridges](../../applications/structures/01-bridges.md).

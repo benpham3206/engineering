@@ -46,25 +46,37 @@ Round-trip range, with $R$ in metres, $c$ in m/s, and $t$ in seconds:
 
 $$R = \frac{c\,t}{2}$$
 
+This assumes free-space propagation at a constant $c$, a stationary target during the round trip, and a single reflection.
+
 Range resolution, the smallest separation two targets can have and still show as two echoes, with $\tau$ the pulse length in seconds:
 
 $$\Delta R = \frac{c\,\tau}{2}$$
+
+This assumes a rectangular pulse with no pulse compression, and two targets are resolved only when their echoes do not overlap in time.
 
 Doppler shift for radar, with $v$ the radial speed toward the sensor in m/s and $f_0$ the transmitted frequency in Hz:
 
 $$f_d = \frac{2 v f_0}{c}$$
 
+This assumes a monostatic radar (same antenna sends and receives), non-relativistic speeds with $v \ll c$, and motion along the line of sight only.
+
 Radial speed from a measured Doppler shift $f_d$:
 
 $$v = \frac{c\,f_d}{2 f_0}$$
+
+This is the inverse of the Doppler relation and assumes the same conditions: monostatic radar, $v \ll c$, and radial motion only.
 
 Sonar range uses the speed of sound in the medium, $c_w$ in m/s:
 
 $$R = \frac{c_w t}{2}$$
 
+This assumes a uniform medium with constant sound speed $c_w$ and straight-line sound paths, so refraction from temperature layers is ignored.
+
 Angular resolution of a circular dish, with $\lambda$ the wavelength in m and $D$ the dish diameter in m, in radians:
 
 $$\theta \approx 1.22\,\frac{\lambda}{D}$$
+
+This assumes a circular aperture with uniform illumination, a far-field observer, and $D \gg \lambda$.
 
 ## Worked example
 
@@ -137,4 +149,5 @@ Christian Hülsmeyer showed a radio-echo device for detecting ships in Germany i
 - [GPS](08-gps.md): another time-of-flight system, which turns travel time into position.
 - [History, war, nuclear, and space](../../history/08-war-nuclear-and-space.md): the wartime development of radar and jet engines.
 - [Waves, light, and heat](../../physics/07-waves-light-heat.md): the wave and Doppler background used in this lesson.
+- [Reference: fields, waves, and space](../../physics/reference-fields-waves-space.md): equation sheet for wave speed, Doppler, and related quantities.
 </content>

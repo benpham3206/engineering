@@ -77,17 +77,19 @@ $$F_{grade} = m g \sin\theta \approx m g G$$
 
 where $F_{grade}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g = 9.81\ \text{m/s}^2$ is the gravitational acceleration, $\theta$ is the angle of the slope, and $G$ is the grade, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
 
+Assumptions: the track is straight, the grade is constant, the train moves at constant speed, and rolling resistance and air drag are ignored. The estimate gives only the part of the force due to gravity.
+
 The energy needed to raise a load by height $h$ is:
 
 $$E = m g h$$
 
-where $E$ is the energy in joules (J), and $h$ is the height in metres (m).
+where $E$ is the energy in joules (J), and $h$ is the height in metres (m). Assumptions: the energy goes entirely into potential energy, with no losses in the locomotive or the track.
 
 For a lock, the water needed to raise a boat depends on the chamber area and the lift:
 
 $$V = A_{chamber}\, h_{lift}$$
 
-where $V$ is the volume of water in cubic metres (m$^3$), $A_{chamber}$ is the chamber's plan area in square metres (m$^2$), and $h_{lift}$ is the lift in metres (m).
+where $V$ is the volume of water in cubic metres (m$^3$), $A_{chamber}$ is the chamber's plan area in square metres (m$^2$), and $h_{lift}$ is the lift in metres (m). Assumptions: the chamber walls are vertical, the chamber area is constant over the lift, and leakage through the gates is neglected.
 
 ## Worked example
 
@@ -113,7 +115,7 @@ Railway engineers keep grades low, because heavier grades need more locomotives 
 
 ## How it fails
 
-Canals fail when banks breach, when sediment fills the channel, or when a lock gate leaks. The Culebra Cut slid into the channel in the decades after the Panama Canal opened, and dredging remained a constant job. Railways fail when track washes out in floods, when grades exceed what the locomotives can pull, or when a single track jams traffic. Accidents during construction, including blasting and tunnel collapses, were a leading cause of worker deaths on many lines.
+Canals fail when banks breach, when sediment fills the channel, or when a lock gate leaks. The Culebra Cut slid into the channel in the decades after the Panama Canal opened, and dredging remained a constant job. Railways fail when track washes out in floods, when grades exceed what the locomotives can pull, or when a single track jams traffic. Accidents during construction, including blasting and tunnel collapses, were a leading cause of worker deaths on many lines. Those hazards map onto the hierarchy of controls. Elimination removes the hazard, for example by routing a line around a tunnel. Substitution swaps black powder for safer explosives and replaces hand drilling with machine drills. Engineering controls add ventilation in tunnels, drainage, and bracing for cuts. Administrative controls set blasting schedules, crew limits, and clear warnings before detonation. Personal protective equipment, such as hard hats and eye protection, is the last layer, and it protects only the worker wearing it. Disease was controlled the same way, from removing mosquito breeding water at Panama, which is elimination, to screens and quarantine, which are administrative controls.
 
 ## History
 
@@ -164,4 +166,5 @@ Route choice sets the cost. A canal or railway that avoids steep grades and deep
 - [The Great American Canals, Volume 2: The Erie Canal, Archer Butler Hulbert](https://www.gutenberg.org/ebooks/41008), Project Gutenberg eBook 41008. A history of the Erie Canal.
 - [The Panama Canal and Its Makers, Vaughan Cornish](https://www.gutenberg.org/ebooks/37671), Project Gutenberg eBook 37671. An early account of the canal's construction.
 - [Lives of the Engineers: The Locomotive, George and Robert Stephenson, Samuel Smiles](https://www.gutenberg.org/ebooks/27710), Project Gutenberg eBook 27710. Biographies of the railway pioneers.
+- Reference sheet: [Mechanics reference](../../physics/reference-mechanics.md) for forces on slopes and energy.
 - Related lessons: [Trains](../../applications/vehicles-aerospace/10-trains.md), [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md), [Industrial revolution](../05-industrial-revolution.md), [Engineers of the industrial age](../people/04-engineers-of-the-industrial-age.md).

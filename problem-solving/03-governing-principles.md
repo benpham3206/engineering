@@ -164,3 +164,4 @@ the real values would be a little lower.
 - [Classical Mechanics (8.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT OpenCourseWare: lectures on Newton's laws and energy conservation with problem sets.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: free engineering textbooks, including statics and dynamics shelves.
 - For more practice on these principles, see the [physics](../physics/README.md) folder.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

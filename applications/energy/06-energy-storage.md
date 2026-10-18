@@ -147,3 +147,4 @@ Gaston Planté in France built the first practical rechargeable lead-acid batter
 - [Solar photovoltaics](01-solar-photovoltaics.md) and [wind turbines](02-wind-turbines.md): the variable sources that storage smooths.
 - [Hydroelectric power](03-hydroelectric-power.md): turbines and head in more detail.
 - [Fuel cells and hydrogen](05-fuel-cells-and-hydrogen.md): hydrogen as a long-duration store.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -92,3 +92,4 @@ d = 14 mm  sigma = 77.95 MPa
 - [SciPy User Guide](https://docs.scipy.org/doc/scipy/tutorial/index.html) by the SciPy project: the code route for the same table-style calculations.
 - [Paul's Online Math Notes, Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx) by Paul Dawkins, Lamar University: the rules for solving formulas that your sheet computes.
 - Related: [Python](02-python.md), [GNU Octave and MATLAB](04-matlab.md), [starter kit](01-starter-kit.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

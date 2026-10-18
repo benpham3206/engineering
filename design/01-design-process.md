@@ -120,3 +120,4 @@ A team must design a clamp that holds a 20 mm (0.79 in) thick workpiece in a ben
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: a free hub of engineering textbooks, useful for design and mechanics background.
 - [Beginner's Guide to Aeronautics](https://www.grc.nasa.gov/www/k-12/airplane/) by NASA Glenn Research Center: an accessible free guide that shows how engineers trade lift, weight, and power in real vehicles.
 - The ASME Y14.5 standard and the ASME Y14 drawing series cover drawing rules. Those are paid standards, so read them through a library or employer.
+- [Design reference](reference.md): the lookup sheet for this topic.

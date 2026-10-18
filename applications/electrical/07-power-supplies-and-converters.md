@@ -156,3 +156,4 @@ Early power supplies used vibrating contacts and motor-generator sets, and vacuu
 - [OpenStax University Physics Volume 2, Chapter 10](https://openstax.org/books/university-physics-volume-2/pages/10-introduction), free text on electric circuits, resistors, and Kirchhoff's rules.
 - [OpenStax University Physics Volume 2, Chapter 14](https://openstax.org/books/university-physics-volume-2/pages/14-introduction), free text on alternating current and RLC circuits.
 - Related lessons: [Circuit basics](../electronics/01-circuit-basics.md), [RC circuits and op-amps](../electronics/02-rc-circuits-and-op-amps.md), [Transformers](05-transformers.md), [Batteries](06-batteries.md), and [The power grid](08-the-power-grid.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

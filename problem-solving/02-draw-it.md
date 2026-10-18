@@ -141,3 +141,4 @@ length if the box is at rest.
 - [University Physics Volume 1](https://openstax.org/details/books/university-physics-volume-1) by OpenStax: the chapters on forces and Newton's laws include free-body diagrams.
 - [Classical Mechanics (8.01SC)](https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/) by MIT OpenCourseWare: lecture materials on forces and free-body diagrams.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library of engineering textbooks; search its mechanics and statics shelves for free-body diagram practice.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

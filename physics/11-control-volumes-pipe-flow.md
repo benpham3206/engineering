@@ -174,3 +174,4 @@ $$
 - [Applied Fluid Mechanics Lab Manual, Experiment 4: Energy Loss in Pipes](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Applied_Fluid_Mechanics_Lab_Manual_(Ahmari_and_Kabir)/01%3A_Lab_Manual/01.4%3A_Experiment_%234%3A_Energy_Loss_in_Pipes) by Habib Ahmari and Shah Md Imran Kabir, LibreTexts: the Darcy-Weisbach equation and friction losses, with a hands-on lab.
 - [Advanced Fluid Mechanics (2.25, Fall 2013)](https://ocw.mit.edu/courses/2-25-advanced-fluid-mechanics-fall-2013/) by MIT OpenCourseWare: a free MIT course with problem sets and solutions on control volumes and internal flow.
 - Previous: [Hydrostatics and Bernoulli](10-hydrostatics-and-bernoulli.md) covers the frictionless energy balance this lesson extends.
+- [Thermal-fluids reference](reference-thermofluids.md): the lookup sheet for this topic.

@@ -15,7 +15,7 @@ A shaft carries torque from a motor or handle to the parts that do work, such as
 - **Stress concentration.** Keyways, shoulders, and small fillets raise the local stress. This lesson ignores them, so real shafts need extra margin or a formal stress concentration factor.
 - **Bearings** carry radial load (perpendicular to the shaft) and sometimes thrust load (along the shaft). Ball and roller bearings are the common types.
 - **Bearing life** is the number of revolutions (or hours) a bearing runs before a set fraction fails, usually 10 percent. It is called the L10 life.
-- **Runout and fits.** The shaft seat for a bearing needs a tight fit and low runout, so the bearing can carry load without wear. This ties to [04 Tolerancing and stack-up](04-tolerancing-and-stack-up.md) and [05 GD&T symbols and frames](05-gdt-symbols-and-frames.md).
+- **Runout and fits.** The shaft seat for a bearing needs low runout. Select fits by which ring sees rotating load (that ring gets the interference fit), load magnitude, temperature, internal clearance, and which ring must float axially. This ties to [04 Tolerancing and stack-up](04-tolerancing-and-stack-up.md) and [05 GD&T symbols and frames](05-gdt-symbols-and-frames.md).
 
 ## Key equations
 
@@ -130,10 +130,11 @@ $L_h = \dfrac{10^6 \times 64}{60 \times 1500} = \dfrac{64 \times 10^6}{90\,000} 
 - Using $S_y$ directly as the shear limit instead of half of it.
 - Forgetting the cube in the diameter formula, so the answer is much too small or large.
 - Ignoring the keyway or shoulder, which can be the real point of failure.
-- Using the bearing exponent 3 for a roller bearing, which gives a life estimate that is too high.
+- Using the bearing exponent 3 for a roller bearing, which changes the life estimate. The roller exponent is $10/3$. For $C/P > 1$, using 3 predicts a life that is too low (at $C/P = 3$: 27 versus 38.9).
 
 ## Go deeper
 
 - [OpenStax University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax at Rice University: free physics text covering rotation, torque, and angular motion.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering textbooks, including mechanics of materials and machine design topics.
 - [Paul's Online Math Notes](https://tutorial.math.lamar.edu/) by Paul Dawkins: free algebra review for exponents, roots, and unit conversions used in the sizing and life formulas.
+- [Design reference](reference.md): the lookup sheet for this topic.

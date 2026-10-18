@@ -151,3 +151,4 @@ In December 1938, Otto Hahn and Fritz Strassmann in Berlin found barium among th
 - [Steam power plants](../thermal-fluid/08-steam-power-plants.md): the Rankine cycle that turns reactor heat into electricity.
 - [The power grid](../electrical/08-the-power-grid.md): how generated power reaches the load.
 - [Heat transfer](../../physics/12-heat-transfer.md): conduction through fuel and cladding, and convection to the coolant.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

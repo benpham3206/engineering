@@ -121,3 +121,4 @@ $$\frac{m_1}{m_2} = \frac{\rho_1 / E_1^{1/2}}{\rho_2 / E_2^{1/2}}$$
 - [Mechanics of Materials](https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/) by MIT OpenCourseWare: the mechanical properties that feed the performance indices.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: how structure and bonding set the properties in the table.
 - [Materials Laboratory](https://ocw.mit.edu/courses/3-014-materials-laboratory-fall-2006/) by MIT OpenCourseWare: how the property data in a selection study are measured.
+- [Materials reference](reference.md): the lookup sheet for this topic.

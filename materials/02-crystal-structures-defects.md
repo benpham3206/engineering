@@ -108,3 +108,4 @@ Atoms per cell: simple cubic 1, BCC 2, FCC 4.
 - [Introduction to Solid-State Chemistry](https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/) by MIT OpenCourseWare: lattices, unit cells, and defects.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: crystal structure, defects, and their effect on properties.
 - [Materials Laboratory](https://ocw.mit.edu/courses/3-014-materials-laboratory-fall-2006/) by MIT OpenCourseWare: how structure is measured in the lab, including x-ray scattering.
+- [Materials reference](reference.md): the lookup sheet for this topic.

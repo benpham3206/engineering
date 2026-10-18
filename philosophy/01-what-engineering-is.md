@@ -106,3 +106,4 @@ Answers are key points a good answer covers. See each question above.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free lecture notes, exams, and videos. Search for introductory engineering design courses.
 - [Engineering ethics and professional duties (NSPE)](https://www.nspe.org/resources/ethics/code-ethics) by the National Society of Professional Engineers: the professional code that licensed engineers follow. Read it alongside [Lesson 04](04-ethics-and-professional-responsibility.md).
 - See [problem-solving](../problem-solving/README.md) for the structured methods used in the design loop.
+- [Philosophy failure cases](reference.md): the lookup sheet for this topic.

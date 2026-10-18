@@ -144,3 +144,4 @@ William Grove described a gas voltaic battery in 1839, which is generally regard
 - [Hydrogen storage, U.S. Department of Energy](https://www.energy.gov/eere/fuelcells/hydrogen-storage): compressed, liquid, and materials-based storage.
 - [Batteries](../electrical/06-batteries.md): the other way to store electrical energy, for comparison.
 - [Energy storage](06-energy-storage.md): where hydrogen fits among grid storage options.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

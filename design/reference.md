@@ -82,7 +82,7 @@ $$
 | Von Mises (distortion energy) | Ductile | $\sigma_{vm} \ge S_y$, so $n = S_y/\sigma_{vm}$ | Ductile metals, general default | Yield only; not for brittle |
 | Mohr-Coulomb | Brittle, unequal tension and compression strength | $\sigma_1/S_{ut} - \sigma_3/S_{uc} \ge 1$ (compression $\sigma_3$ negative) | Rock, soil, cast iron, concrete-like | Needs both strengths; not for ductile metals |
 
-- Tresca and von Mises differ by up to about 15 percent in plane stress. They agree on pure torsion and on uniaxial load.
+- Tresca and von Mises differ by up to about 15 percent in plane stress. They agree in uniaxial tension. In pure shear Tresca gives an equivalent stress of $2\tau$ and von Mises gives $\sqrt{3}\,\tau$, about 15 percent apart.
 - Worked check (von Mises): $\sigma_x = 120$, $\sigma_y = 40$, $\tau_{xy} = 30$ MPa gives $\sigma_{vm} = 117.9$ MPa. With $S_y = 350$ MPa, $n = 2.97$.
 - Worked check (Mohr-Coulomb): $\sigma_1 = 100$, $\sigma_3 = -200$ MPa, $S_{ut} = 600$, $S_{uc} = 800$ MPa gives bracket $= 0.1667 + 0.25 = 0.4167$, so $n = 2.40$.
 - Holds when: loading is static and the material behaves as its class. Breaks when: loads cycle (use fatigue), temperature is high (creep), or the part is near a notch and is brittle.
@@ -285,7 +285,7 @@ $$
 - Example: $k_b = 1$, $k_m = 4$ gives $C = 0.2$.
 - Thread engagement rule of thumb: steel nut into steel, about one nominal diameter. Softer materials (aluminum, cast iron, plastics) need longer engagement, commonly 1.5 times the diameter or more. Check thread stripping in softer parts.
 - Holds when: the joint is rigid-body, preload stays (no embedding or relaxation), and the bolt stays in the elastic range. Breaks when: the joint is compliant, vibration causes loosening, or torque is the only control (scatter is large because friction varies).
-- Worked: M10 grade 8.8, $S_p = 600$ MPa, $A_t = 58.0$ mm$^2$, $K = 0.20$. $F_i = 26.1$ kN, $T = 52.2$ N$\cdot$m.
+- Worked: M10 grade 8.8, $S_p = 580$ MPa, $A_t = 58.0$ mm$^2$, $K = 0.20$. $F_i = 25.2$ kN, $T = 50.5$ N$\cdot$m.
 
 ## Shafts
 

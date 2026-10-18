@@ -27,7 +27,7 @@ Atoms bond because the combined system has lower energy than the separate atoms.
 ### Why bond type matters for engineers
 
 - Bond strength sets the melting point. Stronger bonds need more heat to break.
-- Directional bonds (covalent, ionic) tend to make materials brittle because atoms do not slide easily past each other. Non-directional metallic bonds let atoms slide, so metals are ductile.
+- Covalent bonds are directional, so covalent solids tend to be brittle. Ionic bonds are nondirectional, but ionic solids are also brittle because slip moves like charges next to each other and they repel. Metallic bonds are nondirectional and let atoms slide, so metals are ductile.
 - Secondary bonds let polymer chains slip, so plastics creep and soften more than metals or ceramics do.
 
 ## Key equations
@@ -78,9 +78,9 @@ Electronegativity difference is a rough guide to bond character. A large differe
 
 1. Al 3, Si 4, O 6
 2. about -4.80 eV
-3. about -2.88 eV
+3. about -2.40 eV
 4. Mg-O (difference 2.13) is more ionic than Si-O (difference 1.54)
-5. Answer in your own words. Copper has metallic bonds that let atoms slide. Glass has directional covalent and ionic bonds that resist sliding.
+5. Answer in your own words. Copper has metallic bonds that let atoms slide. Glass has directional covalent bonds (with some ionic character) that resist sliding.
 
 </details>
 
@@ -98,3 +98,4 @@ Electronegativity difference is a rough guide to bond character. A large differe
 - [Introduction to Solid-State Chemistry](https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/) by MIT OpenCourseWare: how bonding and structure explain why solids behave as they do.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: structure, energetics, and bonding in engineering materials.
 - [Physics folder](../physics/README.md): forces and energy background that helps with Coulomb's law.
+- [Materials reference](reference.md): the lookup sheet for this topic.

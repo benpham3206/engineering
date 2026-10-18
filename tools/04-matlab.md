@@ -91,3 +91,4 @@ The Octave equivalent is `x = A\b`. This lesson did not run it, because Octave i
 - [MIT 6.0001 Introduction to Computer Science and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) by MIT OpenCourseWare: a free course on the programming ideas that carry over to MATLAB.
 - [Paul's Online Math Notes, Algebra](https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx) by Paul Dawkins, Lamar University: review for the algebra behind each system.
 - Related: [Python](02-python.md), [spreadsheets](03-spreadsheets.md), [calculators](05-calculators.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

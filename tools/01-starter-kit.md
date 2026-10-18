@@ -81,3 +81,4 @@ None. This lesson is a checklist.
 - [Onshape pricing](https://www.onshape.com/en/pricing) by Onshape: the free plan terms, including the public-document rule.
 - [FreeCAD](https://www.freecad.org/) by the FreeCAD project: the free open-source CAD tool.
 - Related: [Python](02-python.md), [spreadsheets](03-spreadsheets.md), [CAD: SolidWorks](06-cad-solidworks.md).
+- [Tools reference](reference.md): the lookup sheet for this topic.

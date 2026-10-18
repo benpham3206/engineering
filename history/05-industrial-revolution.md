@@ -127,3 +127,4 @@ $$1\ \text{hp} = 550\ \text{ft lbf/s} = 745.7\ \text{W}$$
 - [Reflections on the motive power of heat](https://www.gutenberg.org/ebooks/78610), Sadi Carnot, free on Project Gutenberg. The 1824 work that introduced the efficiency limit.
 - [University Physics Volume 2, Chapter 1](https://openstax.org/books/university-physics-volume-2/pages/1-introduction), OpenStax, free. Heat, temperature, and the basics of thermodynamics.
 - Related lessons: [Thermal systems](../applications/thermal-fluid/01-thermal-systems.md), [Thermodynamics II](../physics/09-thermo-second-law-cycles.md), [Steam power plants](../applications/thermal-fluid/08-steam-power-plants.md), and [Electrical age](06-electrical-age.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

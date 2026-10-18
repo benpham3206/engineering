@@ -18,7 +18,7 @@ Engineers check three things. The dam must not slide along its base. It must not
 The steps run as follows:
 
 1. Water pressure at depth $h$ is $p = \rho g h$. Pressure rises in a straight line from zero at the surface to a maximum at the base.
-2. The pressure adds up to one horizontal force per metre of dam length. That force acts at one-third of the water depth above the base.
+2. The pressure adds up to one horizontal force per metre of dam length. That force acts at height $H/3$ above the base, which is a depth of $2H/3$ below the free surface.
 3. The dam's weight pushes down through its centre of mass. Multiplied by its lever arm about the downstream toe, the weight resists tipping. Uplift from water under the base pushes up and reduces the net resisting force.
 4. The base spreads the load into the rock or soil. The stress at the base must stay below what the foundation can carry.
 
@@ -46,27 +46,27 @@ Hydrostatic pressure at depth $h$:
 
 $$p = \rho g h$$
 
-Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg/m}^3$ for fresh water, typical), $g = 9.81\ \text{m/s}^2$, and $h$ is depth in metres.
+Assumes the water is at rest and incompressible, and that $p$ is gauge pressure above the free surface. Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg/m}^3$ for fresh water, typical), $g = 9.81\ \text{m/s}^2$, and $h$ is depth in metres.
 
 Resultant water force per metre of dam length, for a vertical face with water depth $H$:
 
 $$F_H = \tfrac{1}{2}\rho g H^2$$
 
-Here $F_H$ is in newtons per metre (N/m), and $H$ is the water depth in metres. The force acts horizontally at height $H/3$ above the base.
+Assumes still water, a vertical upstream face, and a dam that does not move under load. Here $F_H$ is in newtons per metre (N/m), and $H$ is the water depth in metres. The center of pressure acts horizontally at height $H/3$ above the base, which is a depth of $2H/3$ below the free surface.
 
 Weight per metre of dam length for a triangular gravity section:
 
 $$W = \rho_c\, g\, A, \qquad A = \tfrac{1}{2} B H$$
 
-Here $\rho_c$ is the concrete density in kilograms per cubic metre (about $2400\ \text{kg/m}^3$, typical), $A$ is the cross-section area in square metres, and $B$ is the base width in metres.
+Assumes uniform concrete density and a triangular section with a vertical upstream face. Here $\rho_c$ is the concrete density in kilograms per cubic metre (about $2400\ \text{kg/m}^3$, typical), $A$ is the cross-section area in square metres, and $B$ is the base width in metres.
 
 Moments per metre of dam length, taken about the downstream toe:
 
 $$M_R = W \cdot \tfrac{2}{3} B, \qquad M_O = F_H \cdot \tfrac{H}{3}$$
 
-Both moments are in newton metres per metre (N m/m). $M_R$ resists tipping, and $M_O$ tips the dam.
+Assumes a rigid dam that rotates about the downstream toe, with no uplift and no tailwater. Both moments are in newton metres per metre (N m/m). $M_R$ resists tipping, and $M_O$ tips the dam. The centroid of the triangle sits $B/3$ from the upstream face, so its arm about the downstream toe is $B - B/3 = 2B/3$. That arm is positive, so the weight resists tipping.
 
-Factor of safety against overturning:
+The factor of safety against overturning assumes that the weight is the only restoring force, with no uplift, no tailwater, and no earthquake load.
 
 $$FS_{ot} = \frac{M_R}{M_O}$$
 
@@ -139,13 +139,15 @@ Egyptian builders constructed the Sadd el-Kafara dam, one of the oldest known la
 
 ## Common mistakes
 
-- **Putting the water force at mid-depth.** The resultant of a triangular pressure distribution acts at one-third of the depth above the base, not at one-half.
+- **Putting the water force at mid-depth.** On a vertical face of height $H$, the center of pressure sits $2H/3$ below the free surface, which is $H/3$ above the base. It is not at mid-depth.
 - **Leaving out uplift.** Uplift can cut the effective weight a great deal. A design that passes without uplift can fail with it.
 - **Treating the overturning factor as the only check.** A dam can overturn safely and still slide or crush its foundation. Check all three.
 - **Mixing units in the moments.** Force per metre and lever arm give moment per metre, in N m/m. Pressure in pascals is force per square metre, which is a different quantity.
 
 ## Go deeper
 
+- [Reference sheet: thermofluids](../../physics/reference-thermofluids.md): pressure, hydrostatics, and fluid forces in one place.
+- [Reference sheet: mechanics](../../physics/reference-mechanics.md): statics, moments, and factor of safety in one place.
 - [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md): pressure with depth, and the basis of the water force.
 - [Mechanical properties](../../materials/03-mechanical-properties.md): compressive strength and stiffness of concrete and rock.
 - [Bridges](01-bridges.md): another structure that carries load to the ground through a foundation.

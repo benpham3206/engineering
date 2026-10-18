@@ -107,3 +107,4 @@ where $F = 96\,485$ C/mol is the Faraday constant and $\rho$ is the density (g/c
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: thermal activation, diffusion, and the energetics behind creep and corrosion.
 - [Introduction to Solid-State Chemistry](https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/) by MIT OpenCourseWare: the chemical basis of reactions at material surfaces.
 - [Mechanics of Materials](https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/) by MIT OpenCourseWare: the stress and strain background needed for creep.
+- [Materials reference](reference.md): the lookup sheet for this topic.

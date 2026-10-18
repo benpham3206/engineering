@@ -83,3 +83,4 @@ $$\%\text{ error} = \frac{\bar{x} - x_{\text{true}}}{x_{\text{true}}} \times 100
 - [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: the standard reference on Type A and Type B evaluation and standard uncertainty.
 - [Introduction to Statistics (chapter 1)](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: data, sampling, and the vocabulary of statistics.
 - [Introduction to Probability and Statistics (18.05)](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/) by MIT OpenCourseWare: probability, confidence intervals, and hypothesis testing.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

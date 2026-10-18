@@ -66,7 +66,7 @@ A second example, integration error. Estimate $\int_0^1 e^{-x^2}\,dx$, whose exa
 
 1. $x_1 = 1.500000$
 2. $0.375$, error $+0.0417$
-3. Midpoint $2.0625$ (bracket $[2.0, 2.125]$)
+3. Midpoint $2.125$ (bracket $[2.0, 2.125]$)
 4. $y_1 = 0.9$
 
 </details>
@@ -84,3 +84,4 @@ A second example, integration error. Estimate $\int_0^1 e^{-x^2}\,dx$, whose exa
 - [SciPy Tutorial](https://docs.scipy.org/doc/scipy/tutorial/index.html) by the SciPy project: sections on integration (`scipy.integrate`), optimization and root finding (`scipy.optimize`), and linear algebra.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: free, open-access engineering texts that include numerical methods chapters.
 - Next: [Software solvers](09-software-solvers.md).
+- [Math reference](reference.md): the lookup sheet for this topic.

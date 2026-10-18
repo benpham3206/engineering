@@ -110,3 +110,4 @@ Use this for every figure before you send it.
 - [NIST e-Handbook of Statistical Methods: Graphical techniques (alphabetic)](https://www.itl.nist.gov/div898/handbook/eda/section3/eda33.htm) by NIST, a free government reference describing box plots, histograms, scatter plots, run sequence plots, and other standard graphics.
 - [NIST e-Handbook: EDA techniques](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3.htm) by NIST, the index page for exploratory data analysis graphics, grouped by the question each one answers.
 - [The International System of Units (SI)](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST, covering the seven base units, so you can write axis labels with correct unit symbols.
+- [Communication reference](reference.md): the lookup sheet for this topic.

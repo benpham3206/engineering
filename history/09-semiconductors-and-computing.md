@@ -117,3 +117,4 @@ Treat any growth trend as a fit to data. Check whether the fit still holds, and 
 - [Digital logic and computers](../applications/electronics/07-digital-logic-and-computers.md): gates, flip-flops, and the microcontroller in this repo.
 - [Diodes and transistors](../applications/electronics/03-semiconductors-diodes-and-transistors.md): doping, the p-n junction, and the MOSFET switch in detail.
 - Next: [The modern era](10-the-modern-era.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

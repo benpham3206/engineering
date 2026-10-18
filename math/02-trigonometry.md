@@ -84,3 +84,4 @@ A second example, a symmetric two-cable hanger at $30^\circ$ to the horizontal c
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: free, open-access engineering textbooks. Search for statics or trigonometry.
 - [Algebra notes](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Paul's Online Math Notes: review of the algebra used when rearranging trig formulas.
 - Next: [Single-variable calculus](03-single-variable-calculus.md).
+- [Math reference](reference.md): the lookup sheet for this topic.

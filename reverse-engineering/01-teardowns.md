@@ -110,3 +110,4 @@ Result: the head is held by two clips and one gasket, with no hidden screws. A n
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library of engineering bookshelves that you can browse for the mechanical and materials topics used in the next lessons.
 - [Mechanical Engineering bookshelf](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering) by LibreTexts: a free starting point for machine elements and design.
 - See also the [design folder](../design/README.md) for how products are designed before they are built.
+- [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

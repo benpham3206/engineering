@@ -41,7 +41,7 @@ Before you run a new CNC program or a new setup:
 
 ## Example
 
-**Given:** A 40 mm wide, 10 mm deep slot must be cut in a block of 6061 aluminum (a common alloy) using a 10 mm, 3-flute end mill. The slot is a full-width cut in one pass. Starting values from the tool maker are $V = 250$ m/min and $f_z = 0.08$ mm/tooth.
+**Given:** A slot 10 mm wide, 40 mm long, and 10 mm deep must be cut in a block of 6061 aluminum (a common alloy) using a 10 mm, 3-flute end mill. The slot is a full-width cut in one pass. Starting values from the tool maker are $V = 250$ m/min and $f_z = 0.08$ mm/tooth.
 
 **Find:** Which process to use, and the starting spindle speed and feed rate.
 
@@ -57,7 +57,7 @@ $$f_m = 0.08 \times 3 \times 7958 = 1910 \text{ mm/min}$$
 
 **Answer:** Mill the slot with an end mill at about 7960 rpm and a feed of about 1910 mm/min.
 
-**Sanity check:** The depth of 10 mm equals the tool diameter, so the cut is full width and the tool is at full engagement. Full-width slots load the tool heavily. Many machinists would reduce the depth per pass or the feed for the first run, so the 1910 mm/min is a ceiling, not a target.
+**Sanity check:** The slot width equals the tool diameter, so the cut is full width and the tool is at full radial engagement, and the 10 mm depth equals one tool diameter. Full-width slots load the tool heavily. Many machinists would reduce the depth per pass or the feed for the first run, so the 1910 mm/min is a ceiling, not a target.
 
 ## Practice
 
@@ -89,3 +89,4 @@ $$f_m = 0.08 \times 3 \times 7958 = 1910 \text{ mm/min}$$
 
 - [NIST: Manufacturing](https://www.nist.gov/manufacturing) by NIST: an overview of national manufacturing research, including machining and quality.
 - [NASA Glenn Research Center](https://www.nasa.gov/glenn/) by NASA: a government research center with machining and manufacturing work, useful for real industry context.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

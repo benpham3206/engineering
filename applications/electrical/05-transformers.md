@@ -174,3 +174,4 @@ Michael Faraday's induction experiments in 1831 established the principle. In th
 - [University Physics Volume 2, Chapter 15: AC Circuits](https://openstax.org/books/university-physics-volume-2/pages/15-introduction), OpenStax. Free text covering AC circuits and transformers.
 - [University Physics Volume 2, Chapter 13: Electromagnetic Induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction), OpenStax. Free text covering the induction that drives a transformer.
 - Related lessons: [generators and alternators](04-generators-and-alternators.md), [power supplies and converters](07-power-supplies-and-converters.md), [the power grid](08-the-power-grid.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

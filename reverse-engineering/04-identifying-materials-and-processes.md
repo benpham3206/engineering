@@ -97,3 +97,4 @@ $$\rho = \frac{53.4}{6.8} = 7.85 \text{ g/cm}^3$$
 - [Mechanical Engineering bookshelf](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering) by LibreTexts: free material on machining and design for manufacture.
 - [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: free units and measurement material to support density calculations.
 - [SI units and the metric system](https://www.nist.gov/pml/owm/metric-si) by NIST: the official guide to the units used in density.
+- [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

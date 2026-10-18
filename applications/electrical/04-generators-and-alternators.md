@@ -172,3 +172,4 @@ Michael Faraday demonstrated electromagnetic induction in 1831 in England. Hippo
 - [University Physics Volume 2, Chapter 13: Electromagnetic Induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction), OpenStax. Free text covering Faraday's law, Lenz's law, and electric generators.
 - [University Physics Volume 2, Chapter 15: AC Circuits](https://openstax.org/books/university-physics-volume-2/pages/15-introduction), OpenStax. Free text covering alternating current, phase, and transformers.
 - Related lessons: [DC motors](01-dc-motors.md), [induction motors](03-induction-motors.md), [transformers](05-transformers.md), [the power grid](08-the-power-grid.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

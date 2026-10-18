@@ -160,3 +160,4 @@ The Antikythera mechanism, a bronze device recovered from a shipwreck off the Gr
 - [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md): the module, pitch diameter, and center distance formulas that this lesson builds on.
 - [Planetary gears](02-planetary-gears.md): the same ratio idea with three moving members and the Willis equation.
 - [Belts and chains](03-belts-and-chains.md): the other way to pass power between shafts, with no teeth meshing.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

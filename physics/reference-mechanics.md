@@ -232,7 +232,7 @@ Typical elastic properties (metals, room temperature; standard textbook values):
 - Shear modulus: $G = \dfrac{E}{2(1 + \nu)}$. Steel $G \approx 77$ GPa.
 - Hooke's law (linear elastic): $\sigma = E\varepsilon$, $\tau = G\gamma$.
 
-Holds when: linear elastic (stress below yield; yield is near 0.2 percent strain for most structural metals), small strain, uniform material.
+Holds when: linear elastic (stress below yield; the 0.2 percent offset yield is the stress that leaves 0.2 percent permanent strain after unloading; total strain at that stress also includes the elastic part $\sigma_y/E$), small strain, uniform material.
 Breaks when: stress exceeds yield, the material is anisotropic (composites, wood, rolled sheets), the part is above its creep temperature, or the strain is large.
 
 ### Axial loading
@@ -319,7 +319,7 @@ Breaks when: 3D stress (use all three principal stresses), or when the Mohr circ
 $$\sigma_{vm} = \sqrt{\sigma_x^2 - \sigma_x\sigma_y + \sigma_y^2 + 3\tau_{xy}^2}$$
 
 - Example above: $\sigma_{vm} = 88.9$ MPa. Factor of safety against yield is $\sigma_y / \sigma_{vm}$.
-- Tresca (maximum shear): $\tau_{\max} = (\sigma_1 - \sigma_2)/2$, more conservative than von Mises.
+- Tresca (maximum shear), plane stress with $\sigma_3 = 0$: $\tau_{\max} = \dfrac{\max(\sigma_1,\sigma_2,0) - \min(\sigma_1,\sigma_2,0)}{2}$. The Tresca equivalent stress is the largest of $\sigma_1$, $\sigma_2$, 0 minus the smallest. It is more conservative than von Mises.
 
 Holds when: ductile material, static load, yield is the failure mode.
 Breaks when: brittle materials (use maximum normal stress or Mohr-Coulomb), fatigue (use a fatigue criterion such as Goodman or Soderberg), or buckling and fracture-mechanics failures.

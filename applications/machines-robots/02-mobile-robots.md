@@ -38,17 +38,17 @@ Navigation adds three questions to odometry. Where am I? That is localization. W
 
 Symbols: $r$ is wheel radius (m). $b$ is wheel separation, the distance between the two contact points (m). $v_L$, $v_R$ are the left and right wheel rim speeds (m/s). $v$ is forward speed of the robot centre (m/s). $\omega$ is turn rate (rad/s), positive counterclockwise. $\theta$ is heading (rad). $(x, y)$ is position (m). $\varphi_L$, $\varphi_R$ are wheel angles (rad). $N$ is the encoder count in one sample (counts), and $\mathrm{CPR}$ is the encoder counts per wheel revolution (counts/rev). $R$ is the turning radius (m).
 
-Forward kinematics of a differential drive:
+Forward kinematics of a differential drive. Assumes no wheel slip, equal wheel radii, a rigid axle, and a flat floor:
 
 $$v = \frac{v_R + v_L}{2}, \qquad \omega = \frac{v_R - v_L}{b}, \qquad R = \frac{b}{2}\,\frac{v_R + v_L}{v_R - v_L}$$
 
-Inverse kinematics, for a commanded forward speed $v$ and turn rate $\omega$:
+Inverse kinematics, for a commanded forward speed $v$ and turn rate $\omega$. Assumes the same no-slip, rigid-axle conditions as the forward model:
 
 $$v_L = v - \frac{\omega b}{2}, \qquad v_R = v + \frac{\omega b}{2}$$
 
 Each wheel angular speed is $\omega_w = v_w / r$, in rad/s.
 
-Continuous motion model:
+Continuous motion model. Assumes no slip and a flat floor, with pose $(x, y, \theta)$ as the full state:
 
 $$\dot x = v\cos\theta, \qquad \dot y = v\sin\theta, \qquad \dot\theta = \omega$$
 
@@ -58,17 +58,17 @@ $$\Delta s = \frac{r(\Delta\varphi_R + \Delta\varphi_L)}{2}, \qquad \Delta\theta
 
 $$x_{k+1} = x_k + \Delta s\cos\!\big(\theta_k + \tfrac{\Delta\theta}{2}\big), \qquad y_{k+1} = y_k + \Delta s\sin\!\big(\theta_k + \tfrac{\Delta\theta}{2}\big), \qquad \theta_{k+1} = \theta_k + \Delta\theta$$
 
-The midpoint heading in the position update reduces error compared with using the start heading.
+The midpoint heading in the position update reduces error compared with using the start heading. Assumes each wheel count is exact, the wheels roll without slip, and the heading changes steadily within one sample.
 
-Encoder resolution, the smallest distance one count can represent: $\delta = 2\pi r / \mathrm{CPR}$ (m).
+Encoder resolution, the smallest distance one count can represent: $\delta = 2\pi r / \mathrm{CPR}$ (m). Assumes the wheel rolls without slip and the encoder counts every step.
 
 Go-to-goal control, with goal $(x_g, y_g)$, distance $\rho = \sqrt{(x_g - x)^2 + (y_g - y)^2}$ (m), and heading error $\alpha = \operatorname{atan2}(y_g - y, x_g - x) - \theta$ (rad):
 
 $$v = k_\rho\,\rho, \qquad \omega = k_\alpha\,\alpha$$
 
-The gains $k_\rho$ (1/s) and $k_\alpha$ (1/s) set how fast the robot closes distance and turns.
+The gains $k_\rho$ (1/s) and $k_\alpha$ (1/s) set how fast the robot closes distance and turns. Assumes the pose is known exactly, the path is free of obstacles, and the gains are positive.
 
-Ultrasonic range from echo time $t$ (s), with sound speed $c \approx 343\ \text{m/s}$ in air at 20 °C: $d = c\,t / 2$.
+Ultrasonic range from echo time $t$ (s), with sound speed $c \approx 343\ \text{m/s}$ in air at 20 °C: $d = c\,t / 2$. Assumes the sound travels a straight path to the target and back, with no wind and no multipath echoes.
 
 ## Worked example
 
@@ -162,3 +162,5 @@ William Grey Walter built small light-seeking tortoise robots in Bristol, Englan
 - [Sensors in products](../electronics/05-sensors-in-products.md) for how encoders, IMUs, and range sensors work.
 - [Robot arms](01-robot-arms.md) for the kinematics of the manipulator arm, which shares the same ideas of frames and Jacobians.
 - [Mechatronics](../electronics/06-mechatronics.md) for the sensor, actuator, and controller loop that every mobile robot runs.
+- [Reference sheets](../reference.md) for the applications index and quick-look tables.
+- [Mechanics reference](../../physics/reference-mechanics.md) for the kinematics and dynamics formulas behind wheel motion.

@@ -140,3 +140,4 @@ the total is larger.
 - [SI units](https://www.nist.gov/pml/owm/metric-si/si-units) by NIST: the official SI reference used by U.S. government labs.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: free engineering textbooks, with units and conversion chapters in several shelves.
 - [University Physics Volume 1](https://openstax.org/details/books/university-physics-volume-1) by OpenStax: the first chapter on measurement and dimensional analysis.
+- [Problem-solving reference](reference.md): the lookup sheet for this topic.

@@ -126,3 +126,4 @@ Frank Whittle in England patented a jet engine design in 1930, and his first eng
 - [Turbine Engine Thermodynamic Cycle, Brayton Cycle](https://www.grc.nasa.gov/www/k-12/airplane/brayton.html) by NASA Glenn Research Center: the gas turbine cycle, with T-s and p-V diagrams.
 - [University Physics Volume 2, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: why the efficiency of any engine has a limit.
 - Related lessons: [Internal combustion engines](06-internal-combustion-engines.md), [Steam power plants](08-steam-power-plants.md), [Aircraft and wings](../vehicles-aerospace/05-aircraft-and-wings.md), [Rockets](../vehicles-aerospace/07-rockets.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -141,3 +141,4 @@ Randall and Boot at the University of Birmingham developed the cavity magnetron 
 - [University Physics Volume 2, Chapter 16.5, The electromagnetic spectrum](https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum) by OpenStax. Where microwaves sit among the other electromagnetic waves.
 - [Microwave Ovens](https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens) by the U.S. Food and Drug Administration. Leakage limits and consumer safety guidance.
 - Next: [Radio and antennas](02-radio-and-antennas.md), which uses the same wave equations at lower frequencies.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

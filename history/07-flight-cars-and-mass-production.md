@@ -117,3 +117,4 @@ Standards turn one shop's parts into a supply chain. A part that matches a writt
 - [Wright Brothers National Memorial, National Park Service](https://www.nps.gov/wrbr/). Historical material on the 1903 flights from a U.S. federal agency.
 - [National Air and Space Museum, Smithsonian](https://airandspace.si.edu/). Aviation and spaceflight collections.
 - Related lessons: [Aircraft and wings](../applications/vehicles-aerospace/05-aircraft-and-wings.md), [Internal combustion engines](../applications/thermal-fluid/06-internal-combustion-engines.md), [Cars](../applications/vehicles-aerospace/02-cars.md), and [Lesson 08, war, nuclear, and space](08-war-nuclear-and-space.md).
+- [History of engineering reference](reference.md): the lookup sheet for this topic.

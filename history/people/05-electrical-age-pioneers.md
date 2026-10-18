@@ -222,3 +222,4 @@ is the first step in improving it.
 - Related lessons: [Electrical age history](../06-electrical-age.md),
   [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md),
   [Generators and alternators](../../applications/electrical/04-generators-and-alternators.md).
+- [People of engineering reference](../reference-people.md): the lookup sheet for this topic.

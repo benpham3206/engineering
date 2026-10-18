@@ -33,6 +33,8 @@ Three forces act on a car moving at steady speed on a level road. The tires supp
 
 ## Key equations
 
+The equations below assume steady speed unless an equation includes acceleration. Tires roll without slip at the contact patch. Rolling resistance and drag coefficients stay constant over the speed range. Air is uniform with no wind. Braking uses one constant friction coefficient, and the stopping distance ignores reaction time.
+
 - **Wheel speed:** $\omega_w = v / r$, where $\omega_w$ is the wheel angular speed in radians per second, $v$ is the car speed in m/s, and $r$ is the loaded tire radius in m.
 - **Engine speed:** $\omega_e = \omega_w \, G$, where $G$ is the overall ratio (gearbox times final drive), dimensionless.
 - **Wheel torque:** $T_w = F_{tire} \, r$, where $T_w$ is in N m and $F_{tire}$ is the tire force in N.
@@ -85,6 +87,12 @@ Three forces act on a car moving at steady speed on a level road. The tires supp
 - **Driveline wear:** worn CV joints, universal joints, or differential gears make clunks and vibrations. These parts see high torque at large steering angles.
 - **Overheating:** a blocked radiator or failed water pump raises coolant temperature. Temperature gauges and warning lights give the first warning.
 
+### Controlling brake failure risk
+
+Brake failure is controlled by the hierarchy of controls, from the most effective to the least. Elimination removes the hazard, for example by avoiding a need for high-speed stops. Substitution replaces a weak part with a better one, such as a brake fluid with a higher boiling point. Engineering controls sit inside the car, and they include dual-circuit hydraulics, ABS, and a parking brake that acts on a separate mechanism. Administrative controls are maintenance intervals, inspection checklists, and driver training. Personal protective equipment is the last layer, and mechanics wear eye protection and gloves when they service brakes.
+
+Servicing a brake system uses lockout and tagout. Isolate every energy source by stopping the engine and removing the key. Release or restrain stored energy by chocking the wheels and releasing the parking brake only after the car is supported. In a conventional hydraulic system, the fluid holds pressure only while the pedal or the booster is loaded, so keep the pedal released while bleeding. Verify a zero-energy state by checking that the car is held on the stands, that the stands are on firm ground, and that the wheels cannot roll, before anyone works under the car.
+
 ## History
 
 Karl Benz built a three-wheeled Motorwagen in Mannheim, Germany, and received a German patent for it in 1886. Gottlieb Daimler and Wilhelm Maybach developed a fast, lightweight engine in Cannstatt about the same time. Henry Ford introduced the Model T in 1908, and his Highland Park plant began a moving assembly line in 1913. The line cut the time to build a car and made the car affordable for many families.
@@ -119,4 +127,5 @@ Karl Benz built a three-wheeled Motorwagen in Mannheim, Germany, and received a 
 
 - [Where the energy goes in a gasoline car](https://www.fueleconomy.gov/feg/atv.shtml) by the U.S. Department of Energy: where energy is lost in conventional cars across driving cycles.
 - [University Physics Volume 1, Chapter 5 (Newton's laws of motion)](https://openstax.org/books/university-physics-volume-1/pages/5-introduction) by OpenStax: forces, free-body diagrams, and the basis for the road load balance.
+- Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) for the force and power relations, and [Design reference](../../design/reference.md) for the design vocabulary used in the trade-offs.
 - Related lessons: [Differentials and transmissions](../power-transmission/06-differentials-and-transmissions.md), [Internal combustion engines](../thermal-fluid/06-internal-combustion-engines.md), [Suspension and steering](03-suspension-and-steering.md), [Electric vehicles](04-electric-vehicles.md).

@@ -181,3 +181,4 @@ supplied the cycle that heat pumps still use. Sadi Carnot's 1824 limit on heat e
   water.
 - Related: [Refrigeration and air conditioning](03-refrigeration-and-air-conditioning.md) for the cycle, and
   [Thermal systems](01-thermal-systems.md) for the conduction and convection losses a heat pump must cover.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -115,3 +115,4 @@ Alexander Graham Bell patented the telephone in 1876, and its transmitter and re
 - [University Physics Volume 2, Chapter 11: magnetic force on a current-carrying conductor](https://openstax.org/books/university-physics-volume-2/pages/11-introduction) by OpenStax. Free, covering the force behind the voice coil.
 - [University Physics Volume 2, Chapter 13: electromagnetic induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax. Free, covering the emf that a moving coil produces.
 - Related lessons: [Circuit basics](../electronics/01-circuit-basics.md), which covers the amplifier circuits that drive speakers, and [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

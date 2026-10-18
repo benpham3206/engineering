@@ -139,3 +139,4 @@ Einstein described stimulated emission in 1917. Charles Townes and Arthur Schawl
 - [University Physics Volume 3, Chapter 8.6, Lasers](https://openstax.org/books/university-physics-volume-3/pages/8-6-lasers) by OpenStax. Stimulated emission, population inversion, and laser applications.
 - [Frequently Asked Questions About Lasers](https://www.fda.gov/radiation-emitting-products/laser-products-and-instruments/frequently-asked-questions-about-lasers) by the U.S. Food and Drug Administration. Hazard classes and laser safety guidance.
 - Related: [Radio and antennas](02-radio-and-antennas.md), which uses the same wavelength and energy ideas at radio frequencies.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

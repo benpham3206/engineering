@@ -102,3 +102,4 @@ Use this for a design review or project update.
 
 - [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace writing genres, including white papers and presentation-related guidance.
 - [OpenStax Writing Guide with Handbook](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University), a free general writing guide covering the writing process and revision, which applies to slides and speaking notes.
+- [Communication reference](reference.md): the lookup sheet for this topic.

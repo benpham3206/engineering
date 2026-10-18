@@ -194,3 +194,4 @@ $$
 - [Astrodynamics (16.346), Fall 2008](https://ocw.mit.edu/courses/16-346-astrodynamics-fall-2008/) by MIT OpenCourseWare: two-body orbits, Kepler's problem, and mission planning, with lecture notes and problem sets under CC BY-NC-SA 4.0.
 - [First Law of Thermodynamics](https://www.grc.nasa.gov/www/k-12/airplane/thermo1.html) by NASA Glenn Research Center: a plain statement of energy balance, useful background for the exhaust energy in a rocket.
 - [Rocket thrust](https://www.grc.nasa.gov/www/k-12/airplane/rocket.html) by NASA Glenn Research Center: how thrust comes from accelerating expelled mass, as a conceptual introduction before the rocket equation.
+- [Fields, waves, and space reference](reference-fields-waves-space.md): the lookup sheet for this topic.

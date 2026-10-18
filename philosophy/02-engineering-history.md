@@ -1,4 +1,4 @@
-# Engineering history
+# Learning from history and failure
 
 **Type:** philosophy
 
@@ -26,7 +26,7 @@ The Tacoma Narrows Bridge in Washington State opened in July 1940. It was a susp
 
 What the record shows, based on the Washington State Department of Transportation history of the bridge:
 
-- The collapse is attributed mainly to torsional flutter, a self-sustaining twisting motion. Wind vortices locked onto the motion of the deck.
+- The collapse is attributed mainly to self-excited aeroelastic torsional flutter, a twisting motion in which the deck's own movement changed the wind forces so they fed the motion. This differs from ordinary vortex-shedding resonance, where an outside vortex frequency drives the structure.
 - The deck's design resisted twisting poorly. Its shallow, narrow shape and flexibility let the motion grow until the structure could not survive it.
 - The WSDOT account also notes that a slipped cable band at mid-span had unbalanced the main cables, which started the motion.
 - Expert boards studied the failure. Their work and the later university research changed how bridge engineers account for wind. Wind is now treated as a design load, and wind tunnel testing became standard for long-span bridges.
@@ -99,3 +99,5 @@ Answers are key points a good answer covers. See each question above.
 - [Tacoma Narrows Bridge history and lessons from failure](https://wsdot.wa.gov/tnbhistory/bridges-failure.htm) by the Washington State Department of Transportation: the state agency's account of the collapse and its causes.
 - [NIST Disaster and Failure Studies](https://www.nist.gov/topics/disaster-failure-studies) by the National Institute of Standards and Technology: a list of federal investigations of building and infrastructure failures, with a path into the reports.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials. Search for history of technology or structural engineering courses.
+- [history](../history/README.md): the full story of engineering, era by era, with its people and great projects.
+- [Philosophy failure cases](reference.md): the lookup sheet for this topic.

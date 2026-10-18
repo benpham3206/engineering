@@ -35,6 +35,8 @@ Motor torque and power follow a standard shape. Torque is roughly constant from 
 
 ## Key equations
 
+The power and range equations assume steady speed on a level road, no wind, and constant efficiencies at the operating point. Range assumes a constant energy use per km over the trip, so it is an estimate and not a guarantee. The regenerative energy equation assumes a constant recovery fraction, and it ignores the energy the motor draws to spin up after the stop. The C-rate equation assumes constant current over the discharge.
+
 - **Mechanical power at the shaft:** $P = T \, \omega$, in W, with $T$ in N m and $\omega$ in rad/s.
 - **Motor speed from road speed:** $\omega_m = (v / r) \, G$, where $v$ is the car speed in m/s, $r$ is the tire radius in m, and $G$ is the reduction gear ratio, dimensionless.
 - **Battery power:** $P_{batt} = P_w / \eta_{dt} + P_{aux}$, in W, where $P_w = F_{road} \, v$ is the wheel power, $\eta_{dt}$ is the battery-to-wheel efficiency (the product of inverter, motor, and gear efficiencies), and $P_{aux}$ is the power for heating, lights, and electronics in W.
@@ -90,6 +92,12 @@ The same steps at the other speeds give:
 - **Overheated motor or inverter:** repeated hill climbs or towing can raise temperatures beyond limits. The controller reduces power to protect the parts, and the driver sees a warning light.
 - **Capacity fade:** the usable energy falls over years and many charge cycles. Warning signs are a shorter range and a lower state-of-health reading from the BMS.
 
+### High-voltage service hazard
+
+A traction pack runs at hundreds of volts, and its capacitors hold charge after the car is off. The hierarchy of controls applies. Elimination means that a repair avoids opening the pack when a module swap or a service-plug isolation is enough. Substitution means using a pack with sealed, pre-tested modules. Engineering controls are the service disconnect plug, interlocks that open the contactors, insulated tools rated for the voltage, and an insulation monitor. Administrative controls are a written procedure, certified high-voltage training, and a second trained person present. Personal protective equipment is rated insulating gloves with a leather protector, a face shield, and insulated footwear.
+
+Lockout and tagout for high-voltage work means the following. Isolate the pack by pulling the service disconnect and taking it out of the car, then lock it in a box and tag it. Release or restrain stored energy by waiting for the DC-link capacitors to discharge, which the service manual gives as a time, and by bleeding them with the approved tool. Verify a zero-energy state by measuring the voltage across the pack terminals and the DC link with a meter rated for the pack voltage, and by confirming zero volts on each conductor before touching it. Never assume the pack is dead because the car is off.
+
 ## History
 
 Ferdinand Porsche showed a car with electric hub motors in the wheels at the 1900 Paris Exposition, and it was built by the Lohner company in Vienna. Electric cars were common in cities in the early 1900s. Gasoline cars took most of the market by the 1920s, helped by longer range and the electric starter. Toyota launched the Prius hybrid in Japan in 1997, which brought electric drive to mass production. The Tesla Roadster (2008) and the Nissan Leaf (2010) showed that a battery EV could sell in volume with modern lithium-ion cells.
@@ -124,4 +132,5 @@ Ferdinand Porsche showed a car with electric hub motors in the wheels at the 190
 
 - [Electric vehicles, U.S. Department of Energy](https://www.fueleconomy.gov/feg/evtech.shtml) by the U.S. Department of Energy: how battery electric vehicles work, with their advantages and drawbacks.
 - [Where the energy goes in a gasoline car](https://www.fueleconomy.gov/feg/atv.shtml) by the U.S. Department of Energy: energy losses in conventional cars across driving cycles, for comparison with EVs.
+- Reference sheets: [Thermofluids reference](../../physics/reference-thermofluids.md) for the efficiency and thermal limits, and [Fields, waves, and space reference](../../physics/reference-fields-waves-space.md) for the electromagnetic relations behind the motor.
 - Related lessons: [Batteries](../electrical/06-batteries.md), [Brushless and stepper motors](../electrical/02-brushless-and-stepper-motors.md), [Induction motors](../electrical/03-induction-motors.md), [Suspension and steering](03-suspension-and-steering.md), [Internal combustion engines](../thermal-fluid/06-internal-combustion-engines.md).

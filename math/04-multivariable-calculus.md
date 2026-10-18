@@ -85,3 +85,4 @@ A double-integral check: for a rectangle of width $b = 0.05\ \mathrm{m}$ and hei
 - [Calculus III notes](https://tutorial.math.lamar.edu/) by Paul Dawkins, Paul's Online Math Notes: partial derivatives, multiple integrals, and vector calculus with worked examples.
 - [Active Calculus](https://activecalculus.org/) by Matthew Boelkins and collaborators: free, openly licensed calculus text (CC BY-SA) for a single-variable review.
 - Next: [Linear algebra](05-linear-algebra.md).
+- [Math reference](reference.md): the lookup sheet for this topic.

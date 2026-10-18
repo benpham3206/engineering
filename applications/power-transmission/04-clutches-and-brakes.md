@@ -203,3 +203,4 @@ early twentieth century.
 - Related lessons: [Thermal systems](../thermal-fluid/01-thermal-systems.md) for heat flow from the
   rotor to the air, and [Shafts and bearings](../../design/08-shafts-and-bearings.md) for the shafts
   that carry the torque.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

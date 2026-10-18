@@ -93,3 +93,4 @@ Answers are key points a good answer covers. See each question above.
 - [The 17 Sustainable Development Goals](https://sdgs.un.org/goals) by the United Nations: goals 12 (responsible consumption and production) and 13 (climate action) cover the core of sustainable engineering.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials. Search for courses on sustainable design, energy, or environmental engineering.
 - See [global and social impact](05-global-and-social-impact.md) for the social side of the same questions, and [safety and risk](03-safety-and-risk.md) for how long-term hazards are managed.
+- [Philosophy failure cases](reference.md): the lookup sheet for this topic.

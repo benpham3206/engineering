@@ -111,3 +111,4 @@ The cooling check gives $40.01^\circ\mathrm{C}$, not $40.00$. The difference com
 - [SciPy Tutorial](https://docs.scipy.org/doc/scipy/tutorial/index.html) by the SciPy project: integration, optimization, linear algebra, and ODE solvers with examples.
 - [NumPy linear algebra routines](https://numpy.org/doc/stable/reference/routines.linalg.html) by the NumPy project: reference for `solve`, `eig`, `inv`, and `det`.
 - Next: return to [Algebra](01-algebra.md) or the [math folder README](README.md) to choose the next topic.
+- [Math reference](reference.md): the lookup sheet for this topic.

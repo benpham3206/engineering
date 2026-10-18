@@ -137,3 +137,4 @@ Archimedes described the principle of buoyancy in the third century BC. Pierre B
 - [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook covering fluid statics and buoyancy. It is licensed CC BY-NC-SA.
 - [MIT OpenCourseWare](https://ocw.mit.edu/): free lecture notes, exams, and videos from MIT, with no registration required. Search for courses on ship hydrostatics and naval architecture.
 - Related: [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md), [Pumps](../thermal-fluid/09-pumps.md), [Pressure vessels and tanks](../structures/03-pressure-vessels-and-tanks.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

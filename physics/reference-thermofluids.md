@@ -49,7 +49,7 @@ Typical ideal-gas properties near 300 K and 1 atm (typical):
 | Helium | 4.003 | 2077 | 5193 | 3116 | 1.67 |
 | Hydrogen | 2.016 | 4124 | 14 307 | 10 185 | 1.405 |
 
-- $c_p$ and $k$ rise with temperature. For air at 1000 K (typical), $c_p \approx 1140$ J/(kg K) and $k \approx 1.33$. Use temperature-dependent property data for hot gas.
+- For air, $c_p$ rises with temperature while $k$ falls. For air at 1000 K (typical), $c_p \approx 1140$ J/(kg K) and $k \approx 1.33$. Use temperature-dependent property data for hot gas.
 - Monatomic gases have $k = 5/3$. Diatomic gases near room temperature have $k \approx 1.40$. Polyatomic gases are lower.
 
 ### Polytropic and isentropic relations
@@ -231,10 +231,10 @@ $$
 Force on a submerged plane surface of area $A$ with centroid depth $h_c$:
 
 $$
-F = \rho g h_c A, \qquad y_\text{cp} = y_c - \frac{I_{xc}}{y_c A}
+F = \rho g h_c A, \qquad y_\text{cp} = y_c + \frac{I_{xc}}{y_c A}
 $$
 
-- $y_\text{cp}$ is the depth of the center of pressure measured along the plane. It always lies below the centroid. $I_{xc}$ is the second moment of area about the centroid (m$^4$).
+- $y_\text{cp}$ and $y_c$ are distances measured down the plane from the free-surface line, so the center of pressure lies below the centroid. $I_{xc}$ is the second moment of area about the centroid (m$^4$). For vertical depth on a plate inclined at angle $\theta$ from the horizontal, $h_\text{cp} = h_c + \dfrac{I_{xc}\sin^2\theta}{h_c A}$.
 
 Buoyancy:
 
@@ -389,10 +389,15 @@ Typical drag coefficients (typical, subcritical unless noted, based on the state
 | Passenger car | 0.25 to 0.35 | Frontal area, typical modern shapes |
 | Streamlined body (airfoil at low angle) | about 0.01 | Planform area. Mostly skin friction. |
 
-Flat plate skin friction (local, parallel flow, $x$ from the leading edge, typical correlations):
+Flat plate skin friction (parallel flow, typical correlations). Average values over plate length $L$, with $Re_L = UL/\nu$:
 
-- Laminar: $C_f = 1.328/\sqrt{Re_x}$, for $Re_x$ up to about $5 \times 10^5$.
-- Turbulent: $C_f = 0.074\,Re_x^{-1/5}$, for about $5 \times 10^5$ to $10^7$.
+- Laminar: $\bar{C}_f = 1.328/\sqrt{Re_L}$, for $Re_L$ up to about $5 \times 10^5$.
+- Turbulent: $\bar{C}_f = 0.074\,Re_L^{-1/5}$, for about $5 \times 10^5$ to $10^7$.
+
+Local values at distance $x$ from the leading edge, with $Re_x = Ux/\nu$:
+
+- Laminar: $C_{f,x} = 0.664/\sqrt{Re_x}$, for $Re_x$ up to about $5 \times 10^5$.
+- Turbulent: $C_{f,x} = 0.0592\,Re_x^{-1/5}$, for about $5 \times 10^5$ to $10^7$.
 
 Lift:
 

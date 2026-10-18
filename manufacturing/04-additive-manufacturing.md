@@ -87,3 +87,4 @@ $$n = \frac{40}{0.1} = 400 \text{ layers}$$
 
 - [NIST: Manufacturing](https://www.nist.gov/manufacturing) by NIST: national manufacturing research, including additive manufacturing standards work.
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: solving simple formulas such as $n = h/t$.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.

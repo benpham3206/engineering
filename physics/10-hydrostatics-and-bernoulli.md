@@ -153,3 +153,4 @@ $$
 - [Bernoulli's Equation](https://www.grc.nasa.gov/www/k-12/airplane/bern.html) by NASA Glenn Research Center: a plain-language explanation of pressure, speed, and the Bernoulli relation.
 - [Advanced Fluid Mechanics (2.25, Fall 2013)](https://ocw.mit.edu/courses/2-25-advanced-fluid-mechanics-fall-2013/) by MIT OpenCourseWare: a free MIT fluid mechanics course with problem sets and solutions for after you finish this lesson.
 - Next: [Control volumes and pipe flow](11-control-volumes-pipe-flow.md) adds friction and mass and energy balances to what you learned here.
+- [Thermal-fluids reference](reference-thermofluids.md): the lookup sheet for this topic.

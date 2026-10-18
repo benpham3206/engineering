@@ -87,3 +87,4 @@ Worst-case bound for a product, for comparison: $\quad \Delta_{\text{max}} = |b|
 - [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: section 5 and Appendix A give the RSS propagation law.
 - [University Physics Volume 1, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: significant figures and estimates in a physics context.
 - [Introduction to Probability and Statistics (18.05)](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/) by MIT OpenCourseWare: variance and the algebra behind independent-error addition.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

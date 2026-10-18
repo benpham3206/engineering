@@ -136,3 +136,4 @@ Step 6. Check under RFS: the allowed zone is 0.25 mm, and $0.284 > 0.25$, so the
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: a free engineering hub where tolerancing and fit topics appear.
 - [MIT OpenCourseWare, 2.017J Design of Electromechanical Robotic Systems](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/) by MIT: a free course where tolerance and fit decisions affect real assemblies.
 - The position and material condition rules are defined in ASME Y14.5, a paid standard, named here for reference only.
+- [Design reference](reference.md): the lookup sheet for this topic.

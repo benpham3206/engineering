@@ -19,6 +19,8 @@ Also read these once at the start, and again every year:
 - [philosophy](philosophy/README.md): what engineering is and the responsibility that comes with it
 - [problem-solving](problem-solving/README.md): the method you will use on every problem in this repo
 
+Read one [history](history/README.md) lesson a month alongside the semester. Each one shows how the topics you are studying were first worked out.
+
 ## Year 1: foundations
 
 **Semester 1**
@@ -33,7 +35,8 @@ Also read these once at the start, and again every year:
 - [math](math/README.md): multivariable calculus, intro to linear algebra
 - [physics](physics/README.md): dynamics
 - [design](design/README.md): CAD parts, assemblies, and drawings
-- [manufacturing](manufacturing/README.md): shop safety, hand tools, 3D printing
+- [manufacturing](manufacturing/README.md): shop safety, 3D printing
+- Hand tools: [shop tools](tools/08-shop-tools.md), [machinist bench tools](tools/11-machinist-bench-tools.md)
 - [measurement](measurement/README.md): units, significant figures, calipers and micrometers
 
 ## Year 2: the core sciences

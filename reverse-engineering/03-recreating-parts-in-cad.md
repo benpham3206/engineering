@@ -115,3 +115,4 @@ If the measured mass of the real part is 89 g, the steel answer fits. If it is 3
 - [Mechanical Engineering bookshelf](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering) by LibreTexts: free books on design and machine elements.
 - [SI units and the metric system](https://www.nist.gov/pml/owm/metric-si) by NIST: the official guide to SI units, useful when you convert between mm, cm, and grams.
 - See also the [design folder](../design/README.md) for the design process that sits behind the features you rebuild.
+- [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

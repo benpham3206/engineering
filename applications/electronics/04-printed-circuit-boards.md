@@ -124,3 +124,4 @@ Paul Eisler, an Austrian engineer working in England, built a radio with printed
 - [Table of resistivity, HyperPhysics, Georgia State University](https://hyperphysics.gsu.edu/hbase/Tables/rstiv.html): reference values for copper and other conductors at 20 °C.
 - Related lessons: [Semiconductors: diodes and transistors](03-semiconductors-diodes-and-transistors.md), [RC circuits and op-amps](02-rc-circuits-and-op-amps.md), [Mechatronics](06-mechatronics.md), [Design for manufacturing and assembly](../../design/10-design-for-manufacturing-and-assembly.md).
 - Previous: [Circuit basics](01-circuit-basics.md).
+- [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -113,3 +113,4 @@ Charles K. Kao and George A. Hockham proposed in 1966 that glass fiber with loss
 - [University Physics Volume 3, Chapter 1: light, reflection, refraction, and total internal reflection](https://openstax.org/books/university-physics-volume-3/pages/1-introduction) by OpenStax. Free, with a full treatment of the physics used here.
 - [Optics, course 2.71](https://ocw.mit.edu/courses/2-71-optics-spring-2009/) by MIT OpenCourseWare. Free lecture materials on optical science with engineering applications.
 - Related lessons: [Lasers](03-lasers.md), which covers the light source, and [Radio and antennas](02-radio-and-antennas.md), which covers the other main way to send a signal without a wire.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

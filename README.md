@@ -31,6 +31,8 @@ Every file is one of three types, marked at the top:
 - **Reference.** The `reference` files in each folder. Each one is a dense lookup sheet for working engineers, with equations and the limits where they stop being true, typical values, rules of thumb, and checklists.
 - **Philosophy.** The principles behind good engineering. Start with [Principles that last](philosophy/07-principles-that-last.md).
 
+The README in each folder is a map of that folder, not a lesson.
+
 If you are **learning**, follow the [roadmap](ROADMAP.md): four years of lessons and projects, laid out like a mechanical engineering degree.
 
 If you are **working**, go straight to the reference sheets in the table below.
@@ -48,7 +50,8 @@ If you are **working**, go straight to the reference sheets in the table below.
 | [communication](communication) | Reports, drawings, presentations | [templates](communication/reference.md) |
 | [philosophy](philosophy) | Ethics, safety, and the principles that last | [failure cases](philosophy/reference.md) |
 | [problem-solving](problem-solving) | A repeatable method for new problems | [sheet](problem-solving/reference.md) |
-| [applications](applications) | Circuits, mechatronics, robotics, projects | [sheet](applications/reference.md) |
+| [applications](applications) | How engineered things work, from refrigerators and gears to robots, rockets, and medical devices | [sheet](applications/reference.md) |
+| [history](history) | Engineering from the simple machines to semiconductors: eras, people, and great projects | [timeline](history/reference.md), [people](history/reference-people.md), [projects](history/reference-projects.md) |
 | [reverse-engineering](reverse-engineering) | Taking things apart to learn how they work | [sheet](reverse-engineering/reference.md) |
 | [tools](tools) | Software, calculators, drafting, shop, and machinist tools | [sheet](tools/reference.md) |
 

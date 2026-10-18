@@ -141,3 +141,4 @@ The name honors Gerolamo Cardano, an Italian mathematician who described the joi
 - [Lead screws and ball screws](08-lead-screws-and-ball-screws.md): the next lesson, on linear motion from rotation.
 - [Mechatronic systems](../../design/11-mechatronic-systems.md): why the coupling sits between the motor encoder and the load.
 - [Vibrations](../../physics/13-vibrations.md): natural frequency and critical speed.
+- [Applications reference](../reference.md): the lookup sheet for this topic.

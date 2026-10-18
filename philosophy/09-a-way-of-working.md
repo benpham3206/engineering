@@ -113,3 +113,4 @@ In practice:
 - [The engineering method](08-the-engineering-method.md): the gate, plan, build, and refine.
 - [Principles that last](07-principles-that-last.md): the laws and habits that never expire.
 - [Problem-solving](../problem-solving/README.md): estimation, sanity checks, and root cause tools.
+- [Philosophy failure cases](reference.md): the lookup sheet for this topic.

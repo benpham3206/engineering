@@ -88,3 +88,4 @@ A second-order example: $m = 2\ \mathrm{kg}$, $c = 4\ \mathrm{N\,s/m}$, $k = 50\
 - [Ordinary Differential Equations (18.03SC)](https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/) by MIT OpenCourseWare: full course with lectures on first-order, second-order, and Laplace methods.
 - [Differential Equations notes](https://tutorial.math.lamar.edu/classes/de/de.aspx) by Paul Dawkins, Paul's Online Math Notes: chapters on first-order, second-order, and Laplace transforms with worked examples.
 - Next: [Probability and statistics](07-probability-and-statistics.md).
+- [Math reference](reference.md): the lookup sheet for this topic.

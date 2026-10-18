@@ -45,9 +45,13 @@ Pseudorange for satellite $i$, with $t_{rx}$ the receiver time, $t_{tx,i}$ the s
 
 $$\rho_i = c\,(t_{rx} - t_{tx,i})$$
 
+This assumes the signal travels at $c$ the whole way, so the ionosphere and troposphere delays are ignored here, and it treats the time stamps as exact apart from the clock errors.
+
 Each pseudorange also contains the clock error, so the solved equation is
 
 $$\rho_i = \sqrt{(x - x_i)^2 + (y - y_i)^2 + (z - z_i)^2} + c\,\delta t$$
+
+This assumes straight-line signal paths, a single clock error $\delta t$ shared by all satellites in the solution, and satellite positions known exactly.
 
 where $(x_i, y_i, z_i)$ are the satellite coordinates in metres and $\delta t$ is the receiver clock error in seconds.
 
@@ -55,17 +59,25 @@ Distance from a clock error $\delta t$ is
 
 $$d = c\,\delta t$$
 
+This assumes the clock error $\delta t$ is a pure time offset in seconds, and it is the distance error the receiver would make in a single pseudorange.
+
 Orbital speed of a circular orbit, with $GM = 3.986 \times 10^{14}$ m$^3$/s$^2$ (typical value for Earth) and $r$ the orbit radius in metres:
 
 $$v = \sqrt{\frac{GM}{r}}$$
+
+This assumes a circular orbit around a spherical point mass, with no atmospheric drag and no perturbations from the Moon or the Sun.
 
 Special relativity: a moving clock runs slow by a fraction of about $v^2 / (2c^2)$.
 
 $$\frac{\Delta f}{f} \approx -\frac{v^2}{2c^2}$$
 
+This assumes $v \ll c$ (a first-order expansion) and compares a moving clock with a stationary clock in an inertial frame, ignoring gravity.
+
 General relativity: a clock higher in Earth's gravity runs fast by the gravitational potential difference divided by $c^2$. With $R$ the Earth radius in metres and $r$ the satellite orbit radius in metres:
 
 $$\frac{\Delta f}{f} \approx \frac{GM}{c^2}\left(\frac{1}{R} - \frac{1}{r}\right)$$
+
+This assumes a weak static gravitational field (potential much smaller than $c^2$), a spherically symmetric Earth, and it ignores Earth's rotation and the orbit's eccentricity.
 
 Both effects are fractions of the clock rate. Multiply by the number of seconds in a day, $86\,400$ s, to get the time error per day.
 
@@ -143,4 +155,6 @@ The United States Department of Defense developed GPS, called NAVSTAR GPS, from 
 - [Radio and antennas](02-radio-and-antennas.md): the signal and antenna basics that GPS uses.
 - [The modern era](../../history/10-the-modern-era.md): the history of GPS and other modern systems.
 - [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md): the orbit and velocity background used here.
+- [Reference: mechanics](../../physics/reference-mechanics.md): equation sheet for orbital speed and related quantities.
+- [Reference: fields, waves, and space](../../physics/reference-fields-waves-space.md): equation sheet for wave propagation and space systems.
 </content>

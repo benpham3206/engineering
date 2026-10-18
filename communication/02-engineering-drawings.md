@@ -114,3 +114,4 @@ Use this to review a drawing before release.
 
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts, a free engineering library. Search the mechanical engineering shelf for graphics or design texts.
 - [Design folder](../design/README.md) by this repository, covering engineering graphics, CAD, and GD&T topics that build on this lesson.
+- [Communication reference](reference.md): the lookup sheet for this topic.

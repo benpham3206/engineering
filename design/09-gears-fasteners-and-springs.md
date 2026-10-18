@@ -21,7 +21,7 @@ Gears change speed and torque between shafts. Fasteners clamp parts together, an
 - A **bolt** is a threaded fastener that stretches when tightened. The stretch creates the **preload**, a tension that clamps the parts together.
 - **Preload** is the main job of a bolt. A bolt that is clamped firmly does not slip under shear load, and it resists fatigue better.
 - The **tensile stress area** $A_t$ is the effective area of a threaded bolt, between the root and pitch diameters. It is looked up in tables for standard threads.
-- The **proof strength** $S_p$ is the stress a bolt can carry without permanent stretch. For grade 8.8 steel bolts, the standard proof strength is 600 MPa (about 87 ksi).
+- The **proof strength** $S_p$ is the stress a bolt can carry without permanent stretch. For grade 8.8 steel bolts, the ISO 898-1 minimum proof stress is 580 MPa for diameters up to 16 mm (about 84 ksi).
 - A typical design preload is 75 percent of the proof load, which leaves margin for relaxation.
 - Torque is the usual way to set preload in the shop. The **torque-tension relation** links the two, and the nut factor $K$ depends on friction. A typical value for dry steel is about 0.2.
 
@@ -95,9 +95,9 @@ Typical shear modulus for steel: $G = 79$ GPa (about 11.5 Msi). This is a typica
 
 ## Worked example: bolt preload
 
-An M10 coarse-thread steel bolt of grade 8.8 is tightened into a steel plate. Its proof strength is $S_p = 600$ MPa (typical for grade 8.8), its tensile stress area is $A_t = 58.0$ mm$^2$ (standard for M10 by 1.5), and the nut factor is $K = 0.20$ for dry steel. Find the preload and the tightening torque.
+An M10 coarse-thread steel bolt of grade 8.8 is tightened into a steel plate. Its proof strength is $S_p = 580$ MPa (ISO 898-1 minimum for grade 8.8, $d \le 16$ mm), its tensile stress area is $A_t = 58.0$ mm$^2$ (standard for M10 by 1.5), and the nut factor is $K = 0.20$ for dry steel. Find the preload and the tightening torque.
 
-**Given.** $S_p = 600$ MPa, $A_t = 58.0$ mm$^2$, $K = 0.20$, $d = 10$ mm.
+**Given.** $S_p = 580$ MPa, $A_t = 58.0$ mm$^2$, $K = 0.20$, $d = 10$ mm.
 
 **Find.** Preload $F_i$ and torque $T$.
 
@@ -105,15 +105,15 @@ An M10 coarse-thread steel bolt of grade 8.8 is tightened into a steel plate. It
 
 **Solution.**
 
-Step 1. Proof load: $S_p A_t = 600 \times 58.0 = 34\,800$ N.
+Step 1. Proof load: $S_p A_t = 580 \times 58.0 = 33\,640$ N.
 
-Step 2. Preload: $F_i = 0.75 \times 34\,800 = 26\,100$ N $\approx 26.1$ kN (about 5.9 kip).
+Step 2. Preload: $F_i = 0.75 \times 33\,640 = 25\,230$ N $\approx 25.2$ kN (about 5.7 kip).
 
-Step 3. Torque: $T = K F_i d = 0.20 \times 26\,100 \times 10 = 52\,200$ N$\cdot$mm $= 52.2$ N$\cdot$m (about 38.5 lbf$\cdot$ft).
+Step 3. Torque: $T = K F_i d = 0.20 \times 25\,230 \times 10 = 50\,460$ N$\cdot$mm $= 50.5$ N$\cdot$m (about 37.2 lbf$\cdot$ft).
 
-**Answer.** Preload 26.1 kN. Tighten to about 52 N$\cdot$m with a calibrated wrench.
+**Answer.** Preload 25.2 kN. Tighten to about 50 N$\cdot$m with a calibrated wrench.
 
-**Sanity check.** A 26 kN clamp load is large for an M10 bolt, but it matches the idea that most of the bolt's proof load is used for clamping. A torque of 52 N$\cdot$m is a reasonable wrench value for an M10 bolt. The torque is very sensitive to friction. With a lubricated nut factor of 0.15, the same torque gives a larger preload, so the nut factor must be stated.
+**Sanity check.** A 25 kN clamp load is large for an M10 bolt, but it matches the idea that most of the bolt's proof load is used for clamping. A torque of 50 N$\cdot$m is a reasonable wrench value for an M10 bolt. The torque is very sensitive to friction. With a lubricated nut factor of 0.15, the same torque gives a larger preload, so the nut factor must be stated.
 
 ## Worked example: gear pair
 
@@ -148,14 +148,14 @@ Under a 20 N load the deflection is $x = 20 / 3.86 = 5.18$ mm.
 
 1. Two gears have module 3 mm, $N_1 = 24$ teeth, and $N_2 = 36$ teeth. Find the center distance in mm.
 2. For the gears in question 1, find the gear ratio $N_2 / N_1$. Give the number to one decimal place.
-3. An M8 bolt has $S_p = 600$ MPa and $A_t = 36.6$ mm$^2$. Find the preload in kN to one decimal place.
+3. An M8 bolt has $S_p = 580$ MPa and $A_t = 36.6$ mm$^2$. Find the preload in kN to one decimal place.
 4. A spring has $d = 3$ mm, $D = 24$ mm, $N_a = 8$, and $G = 79\,000$ MPa. Find $k$ in N/mm to two decimals.
 
 <details><summary>Answers</summary>
 
 1. 90
 2. 1.5
-3. 16.5
+3. 15.9
 4. 7.23
 
 </details>
@@ -173,3 +173,4 @@ Under a 20 N load the deflection is $x = 20 / 3.86 = 5.18$ mm.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering textbooks, including machine design and mechanics topics.
 - [Paul's Online Math Notes](https://tutorial.math.lamar.edu/) by Paul Dawkins: free algebra and exponent review for the cube and fourth-power terms in the spring and shaft formulas.
 - Gear and fastener standards (for example the ISO and ASME tables) are the real reference for tooth profiles and thread sizes. Many are paid, so check the library or your employer first.
+- [Design reference](reference.md): the lookup sheet for this topic.

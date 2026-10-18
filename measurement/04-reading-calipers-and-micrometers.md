@@ -81,3 +81,4 @@ For the caliper, $\delta = 0.02$ mm, so $u = 0.0058$ mm. For the micrometer, $\d
 - [University Physics Volume 1, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: units, measurement, and estimates in physics context.
 
 Note: no free tutorial specific to calipers and micrometers was confirmed for this lesson. Check the manufacturer's manual for your tool's scale layout, and use a real tool to practice.
+- [Measurement reference](reference.md): the lookup sheet for this topic.

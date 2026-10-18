@@ -83,3 +83,4 @@ $$t = 0.707 \times 6 = 4.24 \text{ mm}$$
 - [Welding, cutting, and brazing](https://www.osha.gov/welding-cutting-brazing) by OSHA (U.S. Department of Labor): hot-work hazards, standards, and controls.
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: solving formulas, including the throat calculation.
 - [NIST: Manufacturing](https://www.nist.gov/manufacturing) by NIST: manufacturing quality and joining research.
+- [Manufacturing reference](reference.md): the lookup sheet for this topic.
