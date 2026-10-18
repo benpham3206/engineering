@@ -1,117 +1,172 @@
-# Robotics: forward kinematics and DC motor torque and speed
+# Robot arms
 
 **Type:** lesson
 
-A robot arm is a chain of links connected by joints. Forward kinematics answers one question. Given
-the joint angles, where is the tip of the arm? A DC motor is the actuator that turns the joints,
-and its torque and speed set how strong and how fast the arm can move.
+A robot arm is a chain of links and joints that moves a tool to a point in space. Engineers use its kinematics to find where the tool goes, and its statics and dynamics to size the motors, gears, and structure that move it.
 
-**Prerequisites:** [Mechatronics](../electronics/06-mechatronics.md), [Circuit basics](../electronics/01-circuit-basics.md)
-**Time:** 10-14 h
+**Prerequisites:** [Trigonometry](../../math/02-trigonometry.md), [Linear algebra](../../math/05-linear-algebra.md), [Statics](../../physics/01-statics.md), [Rigid-body dynamics](../../physics/03-rigid-body-dynamics.md), [Mechatronics](../electronics/06-mechatronics.md)
+**Time:** 12-16 h
 
 ## Core ideas
 
-- **Link**: a rigid bar between two joints. Its length is fixed.
-- **Joint**: a point where two links meet and can rotate. A revolute joint rotates about one axis.
-- **Degrees of freedom**: the number of independent joint variables. A two-link planar arm has two.
-- **Forward kinematics**: the map from joint angles to the tip position. It is pure geometry, with
-  no forces or motors involved.
-- **Angle convention.** In a planar arm, the second joint angle is usually measured relative to the
-  first link. The absolute angle of the second link is then $\theta_1 + \theta_2$.
-- **DC motor**: a motor whose speed is set by its voltage and whose output torque is set by its
-  current. Two constants link them: torque constant $K_t$ and back-EMF constant $K_e$.
-- **Back-EMF**: a motor spinning produces a voltage opposing its supply. This is why a motor draws
-  less current as it speeds up.
-- **Stall**: the condition where the motor is held still. The current is at its largest and so is
-  the torque.
-- **Gear ratio**: a gearbox trades speed for torque. Ideal gears multiply torque and divide speed
-  by the same ratio.
+### How it works
+
+A serial manipulator is a chain of rigid links joined by joints. One end, the base, is fixed. The other end carries the tool. Each joint adds one degree of freedom. A tool that must reach any position and orientation in space needs six degrees of freedom.
+
+Forward kinematics turns joint values into a tool pose. It is pure geometry, with no forces. Inverse kinematics runs the other way. Given a target pose, it finds joint values that reach it. A planar arm with two links has at most two solutions for a reachable point. The two solutions are called elbow-up and elbow-down.
+
+The Jacobian links joint speeds to tool speed. Controllers use it to move the tool in a straight line. It also links joint torques to the force at the tool. A tool force $\mathbf{F}$ needs joint torques $\boldsymbol{\tau} = J^{T}\mathbf{F}$ to hold it still. Gravity and the payload create these static torques at every joint, and the motors must supply them.
+
+### Main parts
+
+- Links are rigid bars. Their stiffness decides how much the tip sags under load.
+- Revolute joints (R) rotate about one axis. Prismatic joints (P) slide along one axis. Most industrial arms use revolute joints.
+- Actuators are usually servo motors with an encoder, followed by a gearbox. Planetary gearboxes, harmonic drives, and cycloidal drives are common at the joints.
+- Encoders on the motor side and often on the output side measure each joint angle.
+- The end effector is the tool at the tip: a gripper, a vacuum cup, a welding torch, or a spindle.
+
+### Variants
+
+- Cartesian (gantry) arms use three prismatic joints in a rectangular frame. They are rigid and simple to model, but they fill a box-shaped workspace.
+- Cylindrical arms use one rotation and two linear motions.
+- SCARA arms use two parallel revolute joints and one vertical prismatic joint. They are stiff in the vertical direction, which suits pick-and-place assembly.
+- Articulated arms use three or more revolute joints. They have the largest workspace for their footprint and are the most common industrial type.
+- Parallel (delta) robots drive one platform through several arms that share a base. Their moving mass is small, so they are fast for light parts.
 
 ## Key equations
 
-Two-link planar arm, with link lengths $L_1$ and $L_2$ in metres (m), joint angles $\theta_1$ and
-$\theta_2$ in radians:
+Symbols: $L_1$, $L_2$ are link lengths (m). $\theta_1$, $\theta_2$ are joint angles (rad). $(x, y)$ is the tip position (m). $m_1$, $m_2$ are link masses (kg). $m_p$ is the payload mass (kg). $g$ is gravitational acceleration, $9.81\ \text{m/s}^2$. $\tau$ is joint torque (N m). $N$ is the gear ratio (dimensionless). $\eta$ is gearbox efficiency (dimensionless). $\omega$ is angular speed (rad/s).
 
-- Tip position: $x = L_1 \cos\theta_1 + L_2 \cos(\theta_1 + \theta_2)$
-- Tip position: $y = L_1 \sin\theta_1 + L_2 \sin(\theta_1 + \theta_2)$
+Forward kinematics for a planar two-link arm:
 
-DC motor, with supply voltage $V$ in volts (V), armature resistance $R$ in ohms ($\Omega$), current $I$
-in amperes (A), speed $\omega$ in radians per second (rad/s), torque $T$ in newton metres (N m):
+$$x = L_1 \cos\theta_1 + L_2 \cos(\theta_1 + \theta_2), \qquad y = L_1 \sin\theta_1 + L_2 \sin(\theta_1 + \theta_2)$$
 
-- Voltage balance: $V = I R + K_e \omega$
-- Torque: $T = K_t I$, where $K_t$ is N m/A
-- Speed: $\omega = (V - I R) / K_e$, where $K_e$ is V s/rad
-- Stall current: $I_{stall} = V / R$; stall torque: $T_{stall} = K_t V / R$
-- Mechanical power: $P_{mech} = T \omega$, electrical input $P_{elec} = V I$
+Inverse kinematics, with $r^2 = x^2 + y^2$:
 
-Typical values for a small motor are $K_t = K_e$ in SI units, so the two constants share one number.
+$$\cos\theta_2 = \frac{x^2 + y^2 - L_1^2 - L_2^2}{2 L_1 L_2}, \qquad \theta_1 = \operatorname{atan2}(y, x) - \operatorname{atan2}\big(L_2 \sin\theta_2,\; L_1 + L_2 \cos\theta_2\big)$$
+
+A positive $\theta_2$ and a negative $\theta_2$ give the elbow-down and elbow-up solutions. A reachable point needs $|L_1 - L_2| \le r \le L_1 + L_2$.
+
+Jacobian, which maps $\dot\theta$ (rad/s) to tip velocity (m/s):
+
+$$J = \begin{bmatrix} -L_1 \sin\theta_1 - L_2 \sin(\theta_1+\theta_2) & -L_2 \sin(\theta_1+\theta_2) \\ L_1 \cos\theta_1 + L_2 \cos(\theta_1+\theta_2) & L_2 \cos(\theta_1+\theta_2) \end{bmatrix}, \qquad \det J = L_1 L_2 \sin\theta_2$$
+
+The arm is singular where $\det J = 0$, which means $\theta_2 = 0$ or $\pi$. Near a singularity, a small tip speed needs very large joint speeds.
+
+Gravity torque for the arm in a vertical plane, with a horizontal shoulder axis:
+
+$$\tau_1 = g\Big[m_1 \tfrac{L_1}{2}\cos\theta_1 + m_2\big(L_1\cos\theta_1 + \tfrac{L_2}{2}\cos(\theta_1+\theta_2)\big) + m_p\big(L_1\cos\theta_1 + L_2\cos(\theta_1+\theta_2)\big)\Big]$$
+
+$$\tau_2 = g\Big[m_2 \tfrac{L_2}{2}\cos(\theta_1+\theta_2) + m_p L_2 \cos(\theta_1+\theta_2)\Big]$$
+
+Each term is a mass times $g$ times its horizontal distance from the joint, in N m.
+
+Motor and gearbox, for a joint with output torque $\tau_{joint}$ (N m) and output speed $\omega_{joint}$ (rad/s):
+
+$$\tau_{motor} = \frac{\tau_{joint}}{N\,\eta}, \qquad \omega_{motor} = N\,\omega_{joint}$$
+
+Backlash of angle $\Delta\theta$ (rad) at a joint with link length $L$ (m) moves the tip by about $e \approx L\,\Delta\theta$.
+
+Denavit-Hartenberg (DH) transform between frame $i-1$ and frame $i$, with four parameters per joint: link length $a_i$ (m), link twist $\alpha_i$ (rad), link offset $d_i$ (m), and joint angle $\theta_i$ (rad):
+
+$${}^{i-1}T_i = \begin{bmatrix} \cos\theta_i & -\sin\theta_i\cos\alpha_i & \sin\theta_i\sin\alpha_i & a_i\cos\theta_i \\ \sin\theta_i & \cos\theta_i\cos\alpha_i & -\cos\theta_i\sin\alpha_i & a_i\sin\theta_i \\ 0 & \sin\alpha_i & \cos\alpha_i & d_i \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+
+Multiplying the transforms from base to tip gives the tool pose. Each revolute joint varies $\theta_i$, and each prismatic joint varies $d_i$.
 
 ## Worked example
 
-**Given:** A two-link planar arm has $L_1 = 0.30\ \text{m}$ and $L_2 = 0.20\ \text{m}$. The joints are set
-at $\theta_1 = 30^\circ$ and $\theta_2 = 45^\circ$ (relative). A DC motor drives the first joint with
-$V = 12\ \text{V}$, $R = 1.5\ \Omega$, $K_t = K_e = 0.02$ (SI), and carries a load of $T = 0.05\ \text{N m}$.
+**Given:** A two-link arm in a vertical plane. $L_1 = 0.40\ \text{m}$, $L_2 = 0.30\ \text{m}$. Link masses $m_1 = 2.0\ \text{kg}$ (uniform, centre at the midpoint) and $m_2 = 1.0\ \text{kg}$. Payload $m_p = 1.5\ \text{kg}$ at the tip. The target tip point is $(0.45, 0.35)\ \text{m}$. Assumptions: static loads only, no friction, and a horizontal shoulder axis. The gearbox ratio and efficiency are chosen in step 6.
 
-**Find:** (a) the tip position $(x, y)$, (b) the motor current, speed, and mechanical output power,
-and (c) the efficiency of the motor.
+**Find:** (a) both inverse kinematics solutions and which is elbow-up, (b) the shoulder torque at the target and in the worst pose, and (c) the motor and gearbox for the shoulder.
 
 **Solution:**
 
-1. Convert angles: $\theta_1 = 0.5236\ \text{rad}$, $\theta_1 + \theta_2 = 75^\circ = 1.309\ \text{rad}$.
-2. (a) $x = 0.30 \cos 30^\circ + 0.20 \cos 75^\circ = 0.2598 + 0.0518 = 0.3116\ \text{m}$.
-   $y = 0.30 \sin 30^\circ + 0.20 \sin 75^\circ = 0.1500 + 0.1932 = 0.3432\ \text{m}$.
-   The tip is $0.4635\ \text{m}$ from the base.
-3. (b) Current from torque: $I = T / K_t = 0.05 / 0.02 = 2.50\ \text{A}$.
-   Speed: $\omega = (12 - 2.5 \times 1.5) / 0.02 = 8.25 / 0.02 = 412.5\ \text{rad/s}$, which is
-   $3939\ \text{rpm}$.
-   Mechanical output: $P_{mech} = 0.05 \times 412.5 = 20.6\ \text{W}$.
-4. (c) Electrical input: $P_{elec} = 12 \times 2.5 = 30.0\ \text{W}$.
-   Efficiency: $20.6 / 30.0 = 0.69$, or $69$ percent. The remaining $9.4\ \text{W}$ is $I^2 R$ heat.
+1. Reach: $r^2 = 0.45^2 + 0.35^2 = 0.325\ \text{m}^2$, so $r = 0.5701\ \text{m}$. The limits are $0.10$ m and $0.70$ m, so the point is reachable.
+2. $\cos\theta_2 = (0.325 - 0.160 - 0.090) / (2 \times 0.40 \times 0.30) = 0.3125$, so $\theta_2 = \pm 71.79^\circ$.
+3. Elbow-up: $\theta_2 = -71.79^\circ$ and $\theta_1 = 67.87^\circ$. The elbow sits at $(0.151, 0.371)\ \text{m}$, above the line from base to tip.
+   Elbow-down: $\theta_2 = +71.79^\circ$ and $\theta_1 = 7.88^\circ$. The elbow sits at $(0.396, 0.055)\ \text{m}$, below that line.
+   Both solutions return the tip to $(0.450, 0.350)\ \text{m}$.
+4. At the target, the shoulder torque is $11.05\ \text{N m}$ in elbow-up and $14.66\ \text{N m}$ in elbow-down. The elbow torque is $5.87\ \text{N m}$ in elbow-up and $1.06\ \text{N m}$ in elbow-down.
+5. Worst pose: the arm is fully horizontal, so $\theta_1 = \theta_2 = 0$. The shoulder torque is $g(m_1 L_1/2 + m_2(L_1 + L_2/2) + m_p(L_1 + L_2)) = 9.81(0.40 + 0.55 + 1.05) = 9.81 \times 2.00 = 19.62\ \text{N m}$. The elbow torque there is $9.81(0.15 + 0.45) = 5.89\ \text{N m}$.
+6. Sizing with a safety factor $SF = 1.5$, a gear ratio $N = 50$, and efficiency $\eta = 0.80$:
+   Joint torque $= 1.5 \times 19.62 = 29.43\ \text{N m}$.
+   Motor torque $= 29.43 / (50 \times 0.80) = 0.736\ \text{N m}$.
+   A joint speed of $60^\circ/\text{s} = 1.047\ \text{rad/s}$ needs a motor speed of $50 \times 1.047 = 52.4\ \text{rad/s}$, which is $500\ \text{rpm}$.
 
-**Answer:** (a) tip at $(0.312, 0.343)\ \text{m}$, distance $0.464\ \text{m}$. (b) $I = 2.50\ \text{A}$,
-$\omega = 412\ \text{rad/s}$ ($3939\ \text{rpm}$), $P_{mech} = 20.6\ \text{W}$. (c) $69$ percent.
+The Python used for steps 2 to 6:
 
-**Sanity check:** Both link lengths sum to $0.50\ \text{m}$, so the tip must lie within a $0.50\ \text{m}$
-radius of the base. $0.464\ \text{m}$ is inside that limit. The efficiency loss $I^2 R = 2.5^2 \times 1.5 =
-9.4\ \text{W}$ matches $30.0 - 20.6$.
+```python
+import math
+g, L1, L2, m1, m2, mp = 9.81, 0.40, 0.30, 2.0, 1.0, 1.5
+x, y = 0.45, 0.35
+c2 = (x*x + y*y - L1**2 - L2**2) / (2*L1*L2)
+t2 = math.acos(c2)
+for t2s in (t2, -t2):                     # +: elbow-down, -: elbow-up
+    k1, k2 = L1 + L2*math.cos(t2s), L2*math.sin(t2s)
+    t1 = math.atan2(y, x) - math.atan2(k2, k1)
+    tau_sh = g*(m1*L1/2*math.cos(t1) + m2*(L1*math.cos(t1) + L2/2*math.cos(t1+t2s))
+                + mp*(L1*math.cos(t1) + L2*math.cos(t1+t2s)))
+    print(math.degrees(t1), math.degrees(t2s), tau_sh)
+tau_worst = g*(m1*L1/2 + m2*(L1 + L2/2) + mp*(L1 + L2))
+print(tau_worst, tau_worst*1.5/(50*0.80))
+```
+
+**Answer:** (a) Elbow-up: $\theta_1 = 67.9^\circ$, $\theta_2 = -71.8^\circ$. Elbow-down: $\theta_1 = 7.9^\circ$, $\theta_2 = 71.8^\circ$. (b) Shoulder torque is $19.6\ \text{N m}$ in the worst pose, and $14.7\ \text{N m}$ or $11.0\ \text{N m}$ at the target depending on the solution. (c) The shoulder needs a motor delivering $0.74\ \text{N m}$ at $500\ \text{rpm}$ through a $50{:}1$ gearbox at $\eta = 0.80$.
+
+**Sanity check:** The total mass is $4.5\ \text{kg}$, so the weight is $44.1\ \text{N}$. The mass-weighted horizontal distance is $2.00\ \text{kg m} / 4.5\ \text{kg} = 0.444\ \text{m}$. Multiplying gives $44.1 \times 0.444 = 19.6\ \text{N m}$, which matches step 5. The tip check in step 3 confirms both IK solutions.
+
+## Design trade-offs
+
+- Reach against stiffness and payload: the gravity torque grows with reach, and the tip sags more under load. Manufacturers quote payload at a stated reach, and the rating falls as reach grows.
+- Gear ratio against speed and backlash: a higher ratio multiplies torque and lets a smaller motor work, but it slows the joint and adds gear backlash. Planetary gearboxes are stiff with high torque per volume. Harmonic drives are compact with very little backlash but are less stiff.
+- Link material: steel has a stiffness of about 200 GPa and aluminium about 69 GPa. Aluminium links are lighter and cheaper but sag about three times as much for the same section.
+- Backlash: a joint with $0.2^\circ$ of backlash and a $0.40$ m link moves the tip about $0.40 \times 0.0035 = 1.40\ \text{mm}$.
+- Speed against accuracy: fast motions create dynamic torques and vibration that static sizing misses. Slower paths keep the error small.
+
+## How it fails
+
+- Singularities: near $\det J = 0$, a small tip command demands huge joint speeds and torques. Controllers limit speed and avoid singular paths.
+- Overload: a payload above the rating or a reach beyond the chart raises motor current, slows the response, and increases position error. Overload torque limits and force sensing protect the arm.
+- Joint brake failure: when power is cut, gravity pulls the arm down. Holding brakes on the joints prevent it.
+- Gear wear: backlash grows over thousands of hours, and accuracy drops. Periodic checks and calibration catch it early.
+- Link deflection: a stiff controller that assumes rigid links will miss the tip by the amount the links sag. Calibration or sensing on the output side corrects the error.
+- Encoder or cable faults: a lost joint angle sends the arm to the wrong pose. Dual encoders and emergency-stop circuits limit the damage.
+
+## History
+
+George Devol filed a patent for a programmable article transfer machine in 1954. The first industrial robot arm, Unimate, was installed at a General Motors plant in Ewing Township, New Jersey, in 1961. Jacques Denavit and Richard Hartenberg published their linkage notation in 1955. Victor Scheinman's Stanford arm, built around 1969, was an electric arm with six degrees of freedom that made computer control practical. Modern arms still use DH parameters or a close variant.
 
 ## Practice
 
-1. Two links of $0.5\ \text{m}$ each, $\theta_1 = 0$ and $\theta_2 = 90^\circ$. Find the tip $x$ and $y$.
-2. The same arm with $\theta_1 = 90^\circ$ and $\theta_2 = 0$. Find the tip $x$ and $y$.
-3. A $24\ \text{V}$ motor has $R = 2\ \Omega$ and $K_t = 0.05$. Find the stall torque.
-4. The $12\ \text{V}$ motor of the worked example runs with no load. Find its no-load speed in rpm,
-   ignoring friction.
-5. The motor of the worked example draws $4.0\ \text{A}$. Find its torque.
+1. Two links with $L_1 = L_2 = 0.50\ \text{m}$. Find both inverse kinematics solutions for the tip at $(0.50, 0.50)\ \text{m}$.
+2. A horizontal two-link arm has $L_1 = 0.30\ \text{m}$, $L_2 = 0.20\ \text{m}$, $m_1 = 1.0\ \text{kg}$, $m_2 = 0.5\ \text{kg}$, and no payload. Find the shoulder torque in the fully extended pose.
+3. A joint must deliver $8.0\ \text{N m}$ at the output through a $30{:}1$ gearbox with $\eta = 0.75$. Find the motor torque.
+4. A robot returns to a point within $\pm 0.05\ \text{mm}$ every time, but the average position is $0.30\ \text{mm}$ from the commanded point. Which figure is repeatability, and which is accuracy?
+5. An arm has $L_1 = 0.40\ \text{m}$ and $L_2 = 0.30\ \text{m}$. Can it reach a point $0.80\ \text{m}$ from its base?
 
 <details><summary>Answers</summary>
 
-1. $x = 0.500\ \text{m}$, $y = 0.500\ \text{m}$
-2. $x = 0.000\ \text{m}$, $y = 1.000\ \text{m}$
-3. $0.60\ \text{N m}$
-4. $5730\ \text{rpm}$
-5. $0.080\ \text{N m}$
+1. Elbow-down: $\theta_1 = 0^\circ$, $\theta_2 = 90^\circ$. Elbow-up: $\theta_1 = 90^\circ$, $\theta_2 = -90^\circ$.
+2. $3.43\ \text{N m}$. The calculation is $9.81(0.15 + 0.50 \times 0.40) = 9.81 \times 0.35$.
+3. $0.356\ \text{N m}$, from $8.0 / (30 \times 0.75) = 8.0 / 22.5$.
+4. Repeatability is $\pm 0.05\ \text{mm}$. Accuracy is the $0.30\ \text{mm}$ offset from the command.
+5. No. The maximum reach is $L_1 + L_2 = 0.70\ \text{m}$.
 
 </details>
 
 ## Common mistakes
 
-- Using degrees inside a sine or cosine that expects radians. Check the calculator mode before you
-  compute.
-- Adding $\theta_2$ to $\theta_1$ when the joint angle is defined as absolute. Read the convention for
-  your arm first.
-- Forgetting back-EMF. Using $V / R$ for the running current gives a stall-level current, which is far
-  too high.
-- Mixing up $K_t$ and $K_e$. Torque uses $K_t$ with current, and speed uses $K_e$ with voltage.
-- Assuming a motor's full rated torque is available at full speed. Torque falls as speed rises, so the
-  usable operating point is a trade-off.
+- Reading $\theta_2$ as an absolute angle when the arm uses the relative convention, or the reverse. Check the convention before solving.
+- Sizing the shoulder for the target pose. The worst pose is usually the fully extended one.
+- Using the payload mass without its lever arm. Torque is force times distance from the joint.
+- Ignoring acceleration. Static torque misses the inertia torque, which can be larger than gravity during fast moves.
+- Calling a tight spread of repeated points "accurate." Repeatability and accuracy are different specifications.
 
 ## Go deeper
 
-- [Robotics, Wikibooks](https://en.wikibooks.org/wiki/Robotics) by Wikibooks contributors: an open
-  introduction to robot structure, sensing, and control.
-- [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
-  by MIT: the circuit model behind motor drive and power electronics.
-- For trigonometry and vectors, which the arm geometry uses, see the [math folder](../../math/README.md).
-- Previous: [Lesson 03, mechatronics](../electronics/06-mechatronics.md).
-- Next: [Lesson 05, thermal systems](../thermal-fluid/01-thermal-systems.md).
+- [Modern Robotics](https://hades.mech.northwestern.edu/index.php/Modern_Robotics) by Kevin Lynch and Frank Park. The site links free preprint PDFs of the updated first edition. It covers kinematics, Jacobians, and dynamics in depth.
+- [Introduction to Robotics (2.12)](https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/), MIT OpenCourseWare. Free lectures and notes on planar and spatial kinematics and control.
+- [DC motors](../electrical/01-dc-motors.md) for the torque-speed curve of the joint motor.
+- [Planetary gears](../power-transmission/02-planetary-gears.md) for the gearbox ratio and efficiency used in step 6.
+- [Gear trains](../power-transmission/01-gear-trains.md) for ratio and backlash basics.
+- [Mobile robots](02-mobile-robots.md) for the next robot type in this folder.
