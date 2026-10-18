@@ -1,5 +1,7 @@
 # Projects: a ladder of build projects
 
+**Type:** lesson
+
 Projects turn the theory into hardware you can touch and test. The ladder below starts with a
 first-year bench exercise and ends with a capstone. Each rung uses the skills from the rungs below it,
 and each one has a clear goal and a check you can run yourself.

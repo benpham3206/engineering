@@ -4,7 +4,7 @@ How the physical world behaves, and the models engineers use to predict it.
 
 **Prerequisites:** [math](../math/README.md) through single-variable calculus. Multivariable calculus and differential equations are needed by the thermal-fluids and vibrations lessons. Start with [Statics](01-statics.md).
 
-## Topics
+## Lessons
 
 - [Statics: free-body diagrams, equilibrium, trusses, frames, friction](01-statics.md)
 - [Particle dynamics: kinematics, kinetics, work and energy, impulse and momentum](02-particle-dynamics.md)
@@ -20,6 +20,15 @@ How the physical world behaves, and the models engineers use to predict it.
 - [Heat transfer: conduction, convection, radiation](12-heat-transfer.md)
 - [Vibrations](13-vibrations.md)
 - [Feedback control](14-controls.md)
+- [Orbital mechanics and rockets](15-orbital-mechanics-and-rockets.md)
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Mechanics reference](reference-mechanics.md): statics, sections, dynamics, stress, beams, buckling, vibrations, controls
+- [Thermal-fluids reference](reference-thermofluids.md): thermodynamics, fluid mechanics, heat transfer
+- [Fields, waves, and space reference](reference-fields-waves-space.md): constants, electromagnetism, waves, optics, orbits, planetary data
 
 ## Related courses
 

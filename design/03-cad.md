@@ -1,5 +1,7 @@
 # CAD (computer-aided design)
 
+**Type:** lesson
+
 CAD is the software used to model parts, put them together into assemblies, and produce drawings. A good CAD model is a clear recipe: anyone can open it, change one dimension, and get a correct result. A bad model breaks the moment one thing moves.
 
 **Prerequisites:** [01 Design process](01-design-process.md), [02 Engineering graphics](02-engineering-graphics.md)

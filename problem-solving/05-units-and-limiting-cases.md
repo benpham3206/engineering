@@ -1,5 +1,7 @@
 # Check units and limiting cases
 
+**Type:** lesson
+
 Two quick tests catch many wrong formulas before you trust them. The first is dimensional
 analysis: every term in an equation must have the same units, and the final result must have
 the units of the quantity you want. The second is the limiting case: push one input to an

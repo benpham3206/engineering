@@ -1,5 +1,7 @@
 # Automation and robotics
 
+**Type:** lesson
+
 Automation uses machines, controls, and sensors to do work with little or no human hands on the task. A robot is one kind of automated machine: a programmable arm or mechanism that moves and acts. Automation makes sense when a task is repeatable, dangerous, precise, or needs to run for long hours. An engineer who designs for automation must think about the process, the sensors, the controls, and the safety of the cell, not only the part.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Tolerances, fits, and surface finish](08-tolerances-fits-finish.md)

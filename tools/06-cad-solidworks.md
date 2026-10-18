@@ -1,5 +1,7 @@
 # CAD: SolidWorks and free alternatives
 
+**Type:** lesson
+
 CAD (computer-aided design) software builds 3D models of parts and assemblies, and produces drawings and mass properties. SolidWorks is a paid, widely used parametric CAD program, so many employers and courses expect it. You can learn the same ideas in free tools, and the skills carry over.
 
 **Prerequisites:** [Starter kit](01-starter-kit.md), [Python](02-python.md) (for mass checks), and [measurement tools](07-measurement-tools.md) (for dimensions). Also see the [design folder](../design/README.md).

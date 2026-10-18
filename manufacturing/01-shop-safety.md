@@ -1,5 +1,7 @@
 # Shop safety
 
+**Type:** lesson
+
 Shop safety is the first skill in manufacturing because every other skill depends on it. A machine that can cut metal can also cut a hand, pull in a sleeve, or throw a chip into an eye. An engineer who designs parts also needs to know how they get made safely.
 
 **Prerequisites:** none

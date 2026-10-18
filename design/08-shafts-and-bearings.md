@@ -1,5 +1,7 @@
 # Shafts and bearings
 
+**Type:** lesson
+
 A shaft carries torque from a motor or handle to the parts that do work, such as gears, pulleys, or wheels. Bearings hold the shaft in place while letting it turn. Shaft sizing is a classic design problem: pick a diameter so the shear stress from the torque stays below a safe limit. Bearing selection asks how long the bearing will last under load. This lesson covers both, using the factor of safety from [07 Factor of safety and failure](07-factor-of-safety-and-failure.md).
 
 **Prerequisites:** [07 Factor of safety and failure](07-factor-of-safety-and-failure.md), [05 GD&T symbols and frames](05-gdt-symbols-and-frames.md) (for runout on shaft seats), and the torque and rotation lessons in [physics](../physics/README.md)

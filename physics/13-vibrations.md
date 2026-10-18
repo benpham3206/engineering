@@ -1,5 +1,7 @@
 # Vibrations
 
+**Type:** lesson
+
 Vibration is motion that repeats around an equilibrium position. Engineers care because almost every structure, machine and vehicle shakes, and a part that is driven near its natural frequency can grow large enough to crack or fail.
 
 **Prerequisites:** [02-particle-dynamics.md](02-particle-dynamics.md), [07-waves-light-heat.md](07-waves-light-heat.md)

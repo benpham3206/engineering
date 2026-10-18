@@ -4,7 +4,7 @@ Putting the fundamentals together to build real things.
 
 **Prerequisites:** [math](../math/README.md) and [physics](../physics/README.md) first.
 
-## Topics
+## Lessons
 
 - [Circuit basics: Ohm's law, KVL, and KCL](01-circuit-basics.md)
 - [RC circuits and op-amp basics](02-rc-circuits-and-op-amps.md)
@@ -13,6 +13,12 @@ Putting the fundamentals together to build real things.
 - [Thermal systems: conduction, convection, and thermal resistance](05-thermal-systems.md)
 - [Fluid systems: continuity, Bernoulli, pumps, and pipe losses](06-fluid-systems.md)
 - [Projects: a ladder of build projects](07-projects.md)
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Applications reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
 ## Related courses
 

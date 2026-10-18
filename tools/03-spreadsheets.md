@@ -1,5 +1,7 @@
 # Spreadsheets for engineering
 
+**Type:** lesson
+
 A spreadsheet is a grid of cells where formulas update when inputs change. Engineers use it for tables, quick sweeps, unit checks, and records. It is the fastest tool for "what if" questions, and the easiest to get wrong without labels.
 
 **Prerequisites:** [Algebra and functions](../math/README.md). [Python](02-python.md) is useful but not required.

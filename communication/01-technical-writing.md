@@ -1,5 +1,7 @@
 # Technical writing: reports, memos, and lab reports
 
+**Type:** lesson
+
 Most engineering work reaches people as writing. A test result that nobody can read has the same value as no test at all. Technical writing is the craft of putting facts in an order a busy reader can use, with enough detail to check them.
 
 **Prerequisites:** none

@@ -1,5 +1,7 @@
 # Differential equations
 
+**Type:** lesson
+
 A differential equation relates a function to its own derivatives. Many physical laws are written this way: cooling, motion, circuits, and vibration. Engineers solve them to predict how a system changes over time, and to design it so that it settles where it should.
 
 **Prerequisites:** [Single-variable calculus](03-single-variable-calculus.md), [Linear algebra](05-linear-algebra.md) for systems

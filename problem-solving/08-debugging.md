@@ -1,5 +1,7 @@
 # Debugging when it does not work
 
+**Type:** lesson
+
 When an answer is wrong, or a calculation or build fails, the cause is almost never a
 mystery. It is one step in a chain that you have not yet checked. Debugging means
 isolating that step: shrink the problem until you can see which part breaks, then fix only

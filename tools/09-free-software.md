@@ -1,6 +1,10 @@
 # Free engineering software
 
+**Type:** lesson
+
 You do not need expensive licenses to learn or do real engineering work. For almost every paid tool used in industry there is a free one that is capable enough for coursework, personal projects, and a lot of professional work. This lesson is a map of those tools, grouped by job.
+
+> **Dated material (as of 2026).** Software names, licenses, and free-plan terms change. The categories, the habits in Core ideas, and the open file formats will last much longer than any tool listed here. When a tool disappears, look for its replacement by job, not by name.
 
 **Prerequisites:** none. Read [Starter kit](01-starter-kit.md) first if you have not set anything up yet.
 **Time:** 2-3 h to read and install the core set, then ongoing
@@ -156,6 +160,23 @@ Paid equivalents: KeyShot, SolidWorks Visualize.
 | [Git](https://git-scm.com/) | Open source | Version control for code, notes, and even CAD scripts. This repo uses it. |
 
 Paid equivalents: Microsoft Office, Visio, EndNote.
+
+### More free tools worth having
+
+These come from a working mechanical engineering setup (as of 2026) and fill gaps the tables above do not.
+
+| Tool | License | Use |
+|---|---|---|
+| [pandas](https://pandas.pydata.org/) | Open source | Tables of test data in Python: load CSV, clean, group, and summarize. |
+| [OpenCV](https://opencv.org/) | Open source | Computer vision in Python: measuring parts from photos, tracking motion in test video. |
+| [PyMuPDF](https://pymupdf.readthedocs.io/) | Open source | Read, search, and extract text and tables from PDF datasheets and standards. |
+| [pywin32](https://github.com/mhammond/pywin32) | Open source | Drive Windows programs from Python, including automating SolidWorks through its COM API. |
+| [FFmpeg](https://ffmpeg.org/) | Open source | Converts and trims video. Pull frames from high-speed test footage, or make an animation from simulation frames. |
+| [Unreal Engine](https://www.unrealengine.com/) | Free to use, royalties above a revenue threshold | Real-time 3D for interactive visualization, simulators, and digital twins. Read the license for commercial work. |
+| [HP calculator software](https://hpcalcs.com/download/) | Free | Connectivity Kit and emulator for HP Prime calculators, from HP's official calculator licensee. See [Graphing calculators](05-hp-prime.md). |
+| [GitHub CLI](https://cli.github.com/) | Open source | Work with GitHub repositories, issues, and pull requests from the terminal. |
+
+Licensed tools in the same setup, for reference: SolidWorks (CAD and simulation), MATLAB (numerical computing), and Microsoft 365 (documents). Each has a free equivalent in the tables above. Many universities give students these licenses free, so check before you pay.
 
 ## Checklist: a core install
 

@@ -1,5 +1,7 @@
 # Measurement tools
 
+**Type:** lesson
+
 Every design number depends on a measurement, and every measurement has an error. Measurement tools include rules, calipers, micrometers, gauges, and digital readouts. Learn to read them correctly, estimate the uncertainty, and combine errors in a stack of parts.
 
 **Prerequisites:** [Starter kit](01-starter-kit.md). Also [algebra and functions](../math/README.md). The [measurement folder](../measurement/README.md) covers error and uncertainty in depth.

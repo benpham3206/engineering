@@ -1,5 +1,7 @@
 # Experiment design
 
+**Type:** lesson
+
 An experiment is a question you ask the world in a controlled way. Good design decides what you change, what you hold still, how many times you repeat, and how you guard against bias. A well-designed experiment can answer a question with a modest number of runs. A poorly designed one wastes time even when the measurements are precise.
 
 **Prerequisites:** [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [03 - Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md)

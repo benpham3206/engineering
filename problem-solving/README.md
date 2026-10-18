@@ -4,7 +4,7 @@ A repeatable way to work through problems you have not seen before.
 
 **Prerequisites:** [math](../math/README.md) for algebra and trigonometry.
 
-## Topics
+## Lessons
 
 - [Define the problem: knowns, unknowns, assumptions](01-define-the-problem.md)
 - [Draw it: sketches, free-body diagrams, schematics](02-draw-it.md)
@@ -14,6 +14,12 @@ A repeatable way to work through problems you have not seen before.
 - [Sanity-check the answer: order of magnitude, sign, intuition](06-sanity-check-the-answer.md)
 - [Estimation](07-estimation.md)
 - [Debugging when it does not work](08-debugging.md)
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Problem solving reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
 ## Related courses
 

@@ -1,5 +1,7 @@
 # Multivariable calculus
 
+**Type:** lesson
+
 Multivariable calculus handles functions of several variables, such as temperature that depends on both $x$ and $y$. Engineers use it for heat flow, fluid flow, stress in plates, the center of mass of irregular parts, and the moments of inertia that govern how a shaft or beam resists bending.
 
 **Prerequisites:** [Single-variable calculus](03-single-variable-calculus.md), [Linear algebra](05-linear-algebra.md) helps for vector work but is not required first

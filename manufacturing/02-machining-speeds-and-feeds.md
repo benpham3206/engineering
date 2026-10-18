@@ -1,5 +1,7 @@
 # Machining speeds and feeds
 
+**Type:** lesson
+
 Machining removes material from a block of stock with a cutting tool, so you can shape it into a part. Three numbers control how fast that happens: spindle speed (how fast the tool or part turns), feed rate (how fast the tool moves into the material), and material removal rate (how much material comes out per minute). Getting these right is how a machinist keeps tools alive and parts on size.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)

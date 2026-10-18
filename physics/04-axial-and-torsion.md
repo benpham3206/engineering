@@ -1,5 +1,7 @@
 # Axial and torsion
 
+**Type:** lesson
+
 Stress and strain describe what happens inside a material when you pull, push, or twist it. Engineers use them to check that a rod, cable, or shaft is strong enough and stiff enough before anything gets built.
 
 **Prerequisites:** [Statics](01-statics.md) (free-body diagrams and equilibrium)

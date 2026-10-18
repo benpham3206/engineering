@@ -1,5 +1,7 @@
 # Pick the governing principles
 
+**Type:** lesson
+
 A principle is a law of nature or a rule of the model that ties your knowns to your unknowns.
 Most engineering problems use only a few: force balance, Newton's second law, conservation of
 energy, and conservation of mass or heat. The skill is picking the right ones, not memorizing

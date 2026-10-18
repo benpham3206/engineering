@@ -1,5 +1,7 @@
 # Thermodynamics: properties, work, heat, and the first law
 
+**Type:** lesson
+
 Thermodynamics is the study of energy and how it moves between heat and work. Engines, compressors, turbines, refrigerators, and power plants all depend on it. This lesson introduces the properties of a gas, the ideal gas model, work and heat, and the first law of thermodynamics for closed and open systems.
 
 **Prerequisites:** [07-waves-light-heat.md](07-waves-light-heat.md) (temperature, heat, and specific heat)

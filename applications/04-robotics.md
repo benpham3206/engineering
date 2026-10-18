@@ -1,5 +1,7 @@
 # Robotics: forward kinematics and DC motor torque and speed
 
+**Type:** lesson
+
 A robot arm is a chain of links connected by joints. Forward kinematics answers one question: given
 the joint angles, where is the tip of the arm? A DC motor is the actuator that turns the joints,
 and its torque and speed set how strong and how fast the arm can move.

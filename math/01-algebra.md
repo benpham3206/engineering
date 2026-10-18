@@ -1,5 +1,7 @@
 # Algebra
 
+**Type:** lesson
+
 Algebra is the language of "unknown quantity, known relationship." Engineers use it to rearrange formulas, solve for a required size or load, and check units before they trust a result.
 
 **Prerequisites:** none. High-school arithmetic and basic fractions are assumed.

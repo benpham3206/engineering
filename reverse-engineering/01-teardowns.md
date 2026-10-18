@@ -1,5 +1,7 @@
 # Teardowns
 
+**Type:** lesson
+
 A teardown is taking a product apart in a planned, careful way so you can see how it is built. Engineers do teardowns to learn how a competitor's product is put together, to repair something, or to study a design they are about to improve. A good teardown records every part, how each part is held, and what order the parts came off in, so you can put the product back together or rebuild it on paper.
 
 **Prerequisites:** none

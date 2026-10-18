@@ -1,5 +1,7 @@
 # Electricity and magnetism
 
+**Type:** lesson
+
 Electricity and magnetism explain how motors, generators, sensors, and every electronic circuit work. Engineers use these ideas to size wiring, design power supplies, and predict how a coil or magnet will respond to a changing current.
 
 **Prerequisites:** none (basic algebra is enough)

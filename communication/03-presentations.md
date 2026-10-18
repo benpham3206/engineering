@@ -1,5 +1,7 @@
 # Presentations
 
+**Type:** lesson
+
 Engineers present to reviewers, customers, managers, and sometimes to the public. A good talk gets a decision or an understanding in a few minutes, and a bad one buries the point under charts. This lesson covers how to plan a technical presentation, build slides that support the talk, and run a design review.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md): the same reader-first habits apply to slides.

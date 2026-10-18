@@ -1,5 +1,7 @@
 # Bending and buckling
 
+**Type:** lesson
+
 A beam carries loads sideways, such as a floor joist or a shelf. A column carries load along its length, such as a building post or a strut in a truss. Beams fail by bending too far or by overstressing the outer fibers. Columns can fail suddenly by buckling, even when the stress in the material is well below its yield strength.
 
 **Prerequisites:** [Statics](01-statics.md) (reactions and internal forces), [Axial and torsion](04-axial-and-torsion.md) (stress, strain, and Hooke's law)

@@ -1,5 +1,7 @@
 # GD&T material conditions and position
 
+**Type:** lesson
+
 Position is the most used geometric tolerance, and it is the one most often misread. It becomes powerful when you add material conditions (MMC and LMC), because the allowed position error can grow when the feature is made away from its tightest size. That growth is called bonus tolerance. This lesson explains MMC, LMC, RFS, bonus tolerance, and virtual condition, then works a full position check on a hole.
 
 The rules come from ASME Y14.5, a paid standard. This lesson describes the common practice in plain words. Check the standard for any case that is not covered here.

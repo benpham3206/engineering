@@ -1,5 +1,7 @@
 # Control volumes and pipe flow
 
+**Type:** lesson
+
 Real pipes carry water to homes, fuel to engines, and cooling fluid through plants. A control volume is a fixed region of space that you draw around a piece of a system so you can balance mass, momentum, and energy across its edges. Pipe flow is the most common case where friction matters, so this lesson ends with the Darcy-Weisbach head-loss equation and an explicit formula for the friction factor.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](10-hydrostatics-and-bernoulli.md)

@@ -1,5 +1,7 @@
 # RC circuits and op-amp basics
 
+**Type:** lesson
+
 An RC circuit is a resistor and a capacitor working together. Its voltage changes over time in a
 smooth, predictable way. An op-amp is a small amplifier chip that, with two resistors, sets a
 precise gain. Engineers use RC circuits for timing, filtering, and smoothing, and op-amps for

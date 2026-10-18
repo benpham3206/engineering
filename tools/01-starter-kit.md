@@ -1,5 +1,7 @@
 # Starter kit
 
+**Type:** lesson
+
 A short list of tools a self-taught engineer can get started with on a tight budget. Most of the list is free. The paid items are optional and you can skip them until a course or project needs them.
 
 **Prerequisites:** [Python lesson](02-python.md) for the software parts. Otherwise none.

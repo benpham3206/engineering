@@ -1,5 +1,7 @@
 # Define the problem
 
+**Type:** lesson
+
 Most wrong engineering answers start with a problem that was never fully stated. Before you
 write an equation, you need to know what you have, what you want, and what you are assuming.
 Engineers call this step scoping, and it takes less time than the mistakes it prevents.

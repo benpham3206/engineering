@@ -1,5 +1,7 @@
 # Atomic structure and bonding
 
+**Type:** lesson
+
 Every material property you will meet later comes from how atoms hold on to their electrons and to each other. An engineer who knows why steel is stiff and rubber is soft can predict how a part will behave before building it.
 
 **Prerequisites:** none

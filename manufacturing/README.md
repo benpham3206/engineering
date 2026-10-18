@@ -4,7 +4,7 @@ How parts actually get made, and what that means for how they should be designed
 
 **Prerequisites:** basic high-school algebra. Start with [shop safety](01-shop-safety.md), then work through the lessons in order.
 
-## Topics
+## Lessons
 
 - [Shop safety](01-shop-safety.md)
 - Machining: milling, turning, drilling, CNC
@@ -16,6 +16,12 @@ How parts actually get made, and what that means for how they should be designed
 - [Sheet metal](07-sheet-metal.md)
 - [Tolerances, fits, and surface finish](08-tolerances-fits-finish.md)
 - [Automation and robotics](09-automation-robotics.md)
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Manufacturing reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
 ## Related courses
 

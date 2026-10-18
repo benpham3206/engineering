@@ -1,5 +1,7 @@
 # Graphing calculators: what the HP Prime does for engineering
 
+**Type:** lesson
+
 A graphing calculator such as the HP Prime handles algebra, solving, plotting, and unit conversion in your hand. It is useful in class and on exams, and it is a fast check on paper work. It does not replace understanding, and many courses limit which models you may use.
 
 This lesson stays general. It explains the jobs a calculator like this does well, and gives a free alternative for each job. The exact menus differ by model, so read your model's manual for button steps.

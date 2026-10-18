@@ -1,5 +1,7 @@
 # Legal and ethical limits
 
+**Type:** lesson
+
 Taking things apart to learn how they work is a normal and valuable engineering activity. It is also one that can cross lines: into someone else's patent, into their copyrighted drawings, into a safety-critical part, or into a product whose license forbids it. This lesson gives a short set of checks to run before you take apart, measure, copy, or sell a reverse-engineered design. It is general information, not legal advice. Laws and contracts differ by country and by product.
 
 **Prerequisites:** [Teardowns](01-teardowns.md)

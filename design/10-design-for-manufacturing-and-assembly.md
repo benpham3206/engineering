@@ -1,5 +1,7 @@
 # Design for manufacturing and assembly
 
+**Type:** lesson
+
 A design that works on paper can still be expensive, slow, or error-prone to make and put together. Design for manufacturing and assembly (DFMA) is the habit of shaping a part so it can be produced and assembled with the least cost and risk. The main rules are simple: fewer parts, parts that are easy to locate and fasten, and features that match the process that will make them.
 
 **Prerequisites:** [03 CAD](03-cad.md), [04 Tolerancing and stack-up](04-tolerancing-and-stack-up.md), and the process overview in [manufacturing](../manufacturing/README.md)

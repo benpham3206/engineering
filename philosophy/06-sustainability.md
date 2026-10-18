@@ -1,5 +1,7 @@
 # Sustainability
 
+**Type:** philosophy
+
 Sustainability means meeting present needs without damaging the ability of future people to meet theirs. Engineers care because nearly every design uses materials, energy, and land, and it creates waste when it ends its life. Sustainable engineering makes those costs visible and plans for them from the start.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md), [Global and social impact](05-global-and-social-impact.md)

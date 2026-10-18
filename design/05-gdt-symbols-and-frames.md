@@ -1,5 +1,7 @@
 # GD&T symbols and frames
 
+**Type:** lesson
+
 Geometric Dimensioning and Tolerancing (GD&T) is a symbolic language for describing the shape, orientation, and location of features, and how much each may vary. Plus-minus tolerances on a size cannot control a flat face, a square corner, or a hole's position on a bolt circle. GD&T can. This lesson covers the building blocks: datums, the feature control frame, and the main characteristic symbols. The next lesson covers material conditions and position in depth.
 
 The rules are written in the ASME Y14.5 standard, which is paid. Read it through a library or your employer. The ideas in this lesson are the common core that the standard describes.

@@ -1,5 +1,7 @@
 # Precision, accuracy, and uncertainty
 
+**Type:** lesson
+
 Every measurement is an estimate. Accuracy tells you how close the estimate is to the true value, precision tells you how well repeated estimates agree, and uncertainty is the honest size of the doubt that remains.
 
 **Prerequisites:** [01 - Units and dimensional analysis](01-units-and-dimensional-analysis.md)

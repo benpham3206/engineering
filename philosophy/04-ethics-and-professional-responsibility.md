@@ -1,5 +1,7 @@
 # Ethics and professional responsibility
 
+**Type:** philosophy
+
 Engineering ethics is the set of duties an engineer owes to the public, employers, clients, and the profession. Engineers care because their work can affect many people who never see the design, and because professional licensing gives them authority that carries responsibility.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md), [Safety and risk](03-safety-and-risk.md)

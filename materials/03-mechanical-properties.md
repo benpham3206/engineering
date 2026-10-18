@@ -1,5 +1,7 @@
 # Mechanical properties: strength, stiffness, hardness, toughness, ductility
 
+**Type:** lesson
+
 Mechanical properties describe how a material responds to force. Engineers use them to decide whether a beam will sag, a shaft will snap, or a bracket will bend permanently. These words are often mixed up, so this lesson defines each one carefully.
 
 **Prerequisites:** [Atomic structure and bonding](01-atomic-structure-bonding.md), [Crystal structures and defects](02-crystal-structures-defects.md)

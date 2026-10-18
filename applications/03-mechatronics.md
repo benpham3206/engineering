@@ -1,5 +1,7 @@
 # Mechatronics: sensors, actuators, and microcontrollers
 
+**Type:** lesson
+
 Mechatronics is the combination of mechanical parts, electronics, and software. A microcontroller
 reads sensors, decides what to do, and drives actuators such as motors, valves, and lights. Most
 modern machines, from printers to cars, are built this way.

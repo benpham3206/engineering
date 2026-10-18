@@ -1,5 +1,7 @@
 # Working on teams
 
+**Type:** lesson
+
 Almost no engineering product is built by one person. Projects succeed or fail on how people divide the work, share information, make decisions, and handle disagreement. This lesson covers the roles teams need, how to run a meeting that produces decisions, how to give and receive feedback, and how to keep work visible to everyone.
 
 **Prerequisites:** [04-documentation.md](04-documentation.md): teams depend on shared records.

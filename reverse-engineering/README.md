@@ -4,7 +4,7 @@ Learning how things work by taking them apart, measuring them, and rebuilding th
 
 **Prerequisites:** basic algebra and units (see [measurement](../measurement) and [design](../design)). Read the lessons in order.
 
-## Topics
+## Lessons
 
 - [Teardowns](01-teardowns.md)
 - [Measuring existing parts](02-measuring-existing-parts.md)
@@ -12,5 +12,11 @@ Learning how things work by taking them apart, measuring them, and rebuilding th
 - [Identifying materials and manufacturing processes](04-identifying-materials-and-processes.md)
 - [Working out the design intent](05-working-out-design-intent.md)
 - [Legal and ethical limits](06-legal-and-ethical-limits.md)
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Reverse engineering reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
 See also: [design](../design), [measurement](../measurement), [manufacturing](../manufacturing)

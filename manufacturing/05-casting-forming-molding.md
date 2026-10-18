@@ -1,5 +1,7 @@
 # Casting, forming, and molding
 
+**Type:** lesson
+
 These processes shape material without cutting it away. Casting pours molten metal into a mold. Forming pushes solid metal into shape with force, as in forging, stamping, and rolling. Molding shapes plastic or other materials in a cavity, as in injection molding. Each process is best at a certain volume and part size, and each leaves its own shrinkage, grain, or parting-line features that a designer has to account for.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)

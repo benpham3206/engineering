@@ -1,5 +1,7 @@
 # Single-variable calculus
 
+**Type:** lesson
+
 Calculus describes change. A derivative gives the rate at which something changes, and an integral adds up many small pieces. Engineers use derivatives for velocity, slope, and heat flow, and integrals for deflection, total work, and total heat.
 
 **Prerequisites:** [Algebra](01-algebra.md), [Trigonometry](02-trigonometry.md)

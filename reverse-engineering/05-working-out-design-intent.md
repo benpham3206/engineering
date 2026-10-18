@@ -1,5 +1,7 @@
 # Working out the design intent
 
+**Type:** lesson
+
 Design intent is the reason an engineer made each choice: why this material, why this wall thickness, why this hole is here and not there. Measuring and modeling tell you what a part is. Design intent tells you why it is that way, and that is what you need to change it, repair it, or design something better. This lesson gives a method for asking those questions and a worked example using a desktop stapler.
 
 **Prerequisites:** [Teardowns](01-teardowns.md), [Measuring existing parts](02-measuring-existing-parts.md), [Recreating parts in CAD](03-recreating-parts-in-cad.md)

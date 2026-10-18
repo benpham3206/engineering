@@ -1,5 +1,7 @@
 # Oscillations, waves, light, and heat
 
+**Type:** lesson
+
 Oscillations, waves, and light show up in almost every machine: springs and suspensions, sound and vibration in structures, sensors that use light, and the temperature and heat that decide how a part behaves. This lesson covers the basic ideas you need before studying vibrations, heat transfer, and thermodynamics.
 
 **Prerequisites:** [02-particle-dynamics.md](02-particle-dynamics.md) (forces and Newton's second law)

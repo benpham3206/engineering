@@ -4,7 +4,7 @@ Why engineering matters, and how to think about the responsibility that comes wi
 
 **Prerequisites:** none to start. Work through the lessons in the order listed below.
 
-## Topics
+## Lessons
 
 - [What engineering is](01-what-engineering-is.md)
 - [Engineering history](02-engineering-history.md)
@@ -12,6 +12,14 @@ Why engineering matters, and how to think about the responsibility that comes wi
 - [Ethics and professional responsibility](04-ethics-and-professional-responsibility.md)
 - [Global and social impact](05-global-and-social-impact.md)
 - [Sustainability](06-sustainability.md)
+- [Principles that last](07-principles-that-last.md): the laws and habits of good engineering that never expire. Read this first.
+- [The engineering method](08-the-engineering-method.md): the gate, then plan, build, and refine. How to do engineering work at any scale.
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Failure cases and decision frameworks](reference.md): famous failures, the patterns they share, risk matrices, and when to stop work
 
 ## Related courses
 

@@ -1,5 +1,7 @@
 # Sanity-check the answer
 
+**Type:** lesson
+
 Before you report a number, ask whether it could be true. A sanity check does not prove the
 answer is right, but it catches most arithmetic slips, misplaced decimal points, and sign
 errors. Three quick checks cover most cases: order of magnitude, sign, and physical intuition.

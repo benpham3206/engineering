@@ -1,5 +1,7 @@
 # Failure: fracture and fatigue
 
+**Type:** lesson
+
 Most structures do not fail because the load is too big on day one. They fail because a small crack grows, slowly or suddenly, until the remaining material cannot carry the load. Fracture is the sudden case. Fatigue is the case where repeated loading grows a crack over many cycles.
 
 **Prerequisites:** [Mechanical properties](03-mechanical-properties.md), [Material classes](05-material-classes.md)

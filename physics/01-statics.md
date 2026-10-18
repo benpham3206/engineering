@@ -1,5 +1,7 @@
 # Statics
 
+**Type:** lesson
+
 Statics is the study of bodies that do not move. Engineers use it to find the forces in cables, trusses, frames, and supports before they size anything, because a part that carries too much load fails. Every later topic in this folder builds on the free-body diagram and the equilibrium equations below.
 
 **Prerequisites:** none in this folder. You should be comfortable with high-school algebra and basic trigonometry (sine, cosine, tangent).

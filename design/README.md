@@ -4,7 +4,7 @@ Turning a need into something that works, can be built, and can be explained.
 
 **Prerequisites:** [math](../math/README.md) (algebra and trigonometry), [physics](../physics/README.md) (forces and motion), and [materials](../materials/README.md) (stress basics). Start with lesson 01.
 
-## Topics
+## Lessons
 
 Study order:
 
@@ -20,6 +20,12 @@ Study order:
   - [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md): gear geometry, bolt preload, spring rate
 - [Design for manufacturing and assembly](10-design-for-manufacturing-and-assembly.md)
 - [Mechatronic systems](11-mechatronic-systems.md): sensors, actuators, control loops
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Design reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
 ## Related courses
 

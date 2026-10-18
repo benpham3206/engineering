@@ -1,5 +1,7 @@
 # Trigonometry
 
+**Type:** lesson
+
 Trigonometry turns angles into lengths and back again. Engineers use it to split a force into horizontal and vertical parts, find the length of a brace, and describe anything that repeats, such as vibration and AC power.
 
 **Prerequisites:** [Algebra](01-algebra.md)

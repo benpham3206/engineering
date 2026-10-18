@@ -1,5 +1,7 @@
 # Joining: welding, fastening, and adhesives
 
+**Type:** lesson
+
 Joining connects two or more parts into one assembly. The three main families are welding (fusing the base metal, usually with heat), mechanical fastening (bolts, screws, rivets, and pins), and adhesive bonding (glues and epoxies). Each has different strength, cost, inspection, and reversibility. Engineers choose a joint by asking what load it carries, whether it must come apart later, and how it will be checked.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)

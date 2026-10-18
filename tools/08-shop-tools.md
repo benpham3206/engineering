@@ -1,5 +1,7 @@
 # Shop tools
 
+**Type:** lesson
+
 Shop tools cut, drill, bend, and finish material. Basic shop skill is hands-on and needs supervision and training. This lesson gives the concepts you need before you use a machine: surface speed, feed, safety guards, and the habits of a careful machinist.
 
 Do not use a machine you have not been trained on. Use the school or community shop, or a qualified instructor. Read the [OSHA machine guarding overview](https://www.osha.gov/machine-guarding), which says any part of a machine that could injure a worker must be guarded.

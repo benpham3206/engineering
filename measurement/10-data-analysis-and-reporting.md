@@ -1,5 +1,7 @@
 # Data analysis and reporting
 
+**Type:** lesson
+
 Raw readings become useful only after you summarize them, fit a model to them, and report the result with its uncertainty. This lesson covers the core tools: the mean and standard deviation, a straight-line fit by least squares, residuals to check the fit, and a reporting format that another engineer can check.
 
 **Prerequisites:** [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [03 - Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md), [09 - Experiment design](09-experiment-design.md)

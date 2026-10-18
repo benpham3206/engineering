@@ -1,5 +1,7 @@
 # Thermal systems: conduction, convection, and thermal resistance
 
+**Type:** lesson
+
 Thermal engineers keep parts cool, keep rooms warm, and move heat from one place to another. A
 processor needs a heat sink, a building needs insulation, and a heat exchanger moves heat from hot
 fluid to cold fluid. The same few ideas cover all three.

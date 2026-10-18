@@ -1,5 +1,7 @@
 # Hydrostatics and Bernoulli
 
+**Type:** lesson
+
 Fluids push, float, and speed up or slow down in predictable ways. Hydrostatics explains why pressure grows with depth and why things float. Bernoulli's equation links pressure and speed along a flow line, and it is the first tool engineers use to size pumps, nozzles, dams, and pipes.
 
 **Prerequisites:** [Statics](01-statics.md), [Particle dynamics and energy](02-particle-dynamics.md)

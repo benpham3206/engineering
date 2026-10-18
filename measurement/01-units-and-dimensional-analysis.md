@@ -1,5 +1,7 @@
 # Units and dimensional analysis
 
+**Type:** lesson
+
 A measurement is a number with a unit. Engineers use units to check that equations make sense, convert between systems, and catch mistakes before they become expensive.
 
 **Prerequisites:** none (high-school algebra helps)

@@ -4,7 +4,7 @@ The language engineering is written in. Most of the work here is knowing which t
 
 **Prerequisites:** none. This is the foundation for the other folders. High-school algebra is assumed. Start with [Algebra](01-algebra.md).
 
-## Topics
+## Lessons
 
 - [Algebra](01-algebra.md)
 - [Trigonometry](02-trigonometry.md)
@@ -15,6 +15,12 @@ The language engineering is written in. Most of the work here is knowing which t
 - [Probability and statistics](07-probability-and-statistics.md)
 - [Numerical methods: root finding, integration, ODE solvers, error](08-numerical-methods.md)
 - [Software solvers: MATLAB, Python, spreadsheets, calculators](09-software-solvers.md)
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Math reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
 ## Related courses
 

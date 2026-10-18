@@ -1,5 +1,7 @@
 # Additive manufacturing
 
+**Type:** lesson
+
 Additive manufacturing (AM) builds a part one thin layer at a time, adding material only where the part needs it. 3D printing is the common name. The layer-by-layer process lets you make shapes that are hard or impossible to machine, but it also brings its own limits on strength, surface finish, and speed. An engineer who designs for AM must design for the way the part is built, not only for its final shape.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)

@@ -1,5 +1,7 @@
 # Figures, tables, and plots
 
+**Type:** lesson
+
 A plot is a claim about data, and the reader will believe it at a glance. An honest figure shows the data accurately, labels everything the reader needs, and shows how certain the values are. This lesson covers how to choose a format, lay out axes, label units, show uncertainty, and avoid the common tricks that make a plot misleading.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md) for referring to figures in text.

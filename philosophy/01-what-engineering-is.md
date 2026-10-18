@@ -1,5 +1,7 @@
 # What engineering is
 
+**Type:** philosophy
+
 Engineering is the work of using science, math, and practical judgment to design, build, and maintain things that people rely on. An engineer cares because every design choice affects real people, money, and safety, and the job is to make those choices on purpose instead of by accident.
 
 **Prerequisites:** none

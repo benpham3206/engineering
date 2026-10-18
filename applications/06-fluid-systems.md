@@ -1,5 +1,7 @@
 # Fluid systems: continuity, Bernoulli, pumps, and pipe losses
 
+**Type:** lesson
+
 A fluid system moves water, air, or oil through pipes, ducts, and pumps. Engineers size the pipe,
 choose the pump, and check that the pressure stays in range. Three ideas cover most of the work:
 mass is conserved, energy is conserved along a streamline, and friction takes energy away.

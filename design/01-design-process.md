@@ -1,5 +1,7 @@
 # Design process
 
+**Type:** lesson
+
 Design is the work of turning a need into something that works, can be built, and can be explained. Engineers use a repeatable process so that decisions are traceable and mistakes are caught early, when they are cheap to fix.
 
 **Prerequisites:** none

@@ -1,5 +1,7 @@
 # Engineering history
 
+**Type:** philosophy
+
 Engineering history is a record of people solving real problems and, often, learning hard lessons from failures. An engineer studies it because the same mistakes repeat when people forget the past, and because many current safety rules exist only because someone was hurt.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md)

@@ -1,5 +1,7 @@
 # Safety and risk
 
+**Type:** philosophy
+
 Safety means that a design keeps people from harm across the conditions it will meet. Risk is the chance of harm multiplied by how bad the harm would be. Engineers care because they decide what is acceptably safe, and those decisions are made long before anyone uses the product.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md), [Engineering history](02-engineering-history.md)

@@ -1,5 +1,7 @@
 # Heat transfer
 
+**Type:** lesson
+
 Heat moves whenever there is a temperature difference. Engineers use that fact to keep buildings warm, electronics cool, and engines within their material limits. This lesson covers the three modes of heat transfer (conduction, convection, and radiation) and shows how to combine them into a thermal resistance network, which turns a heat-flow problem into a circuit problem.
 
 **Prerequisites:** [Waves, light, and heat](07-waves-light-heat.md), [Thermodynamics: first law](08-thermo-first-law.md)

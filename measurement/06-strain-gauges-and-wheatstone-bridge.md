@@ -1,5 +1,7 @@
 # Strain gauges and the Wheatstone bridge
 
+**Type:** lesson
+
 A strain gauge is a thin resistive wire or foil bonded to a part. When the part stretches or squeezes, the gauge's resistance changes by a tiny, measurable amount. A Wheatstone bridge turns that small resistance change into a small voltage that an instrument can read.
 
 **Prerequisites:** [05 - Sensors and transducers](05-sensors-and-transducers.md), [01 - Units and dimensional analysis](01-units-and-dimensional-analysis.md)

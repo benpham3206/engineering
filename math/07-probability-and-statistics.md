@@ -1,5 +1,7 @@
 # Probability and statistics
 
+**Type:** lesson
+
 Probability describes uncertainty in a model. Statistics uses measured data to estimate what a process actually does. Engineers use both to set tolerances, judge whether a test result is real or noise, and estimate how often a part will fail.
 
 **Prerequisites:** [Algebra](01-algebra.md), [Single-variable calculus](03-single-variable-calculus.md) for the continuous-distribution parts

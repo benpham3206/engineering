@@ -1,5 +1,7 @@
 # Circuit basics: Ohm's law, KVL, and KCL
 
+**Type:** lesson
+
 Circuit analysis is the bookkeeping that tells you the voltage and current at every part of a
 circuit. Almost every electronic device, from a phone charger to a motor controller, is built
 from a handful of rules that you can apply with algebra.

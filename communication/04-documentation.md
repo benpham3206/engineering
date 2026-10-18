@@ -1,5 +1,7 @@
 # Documentation
 
+**Type:** lesson
+
 A design is only as useful as the record of why it looks the way it does. Documentation covers the specifications, test records, change history, and user instructions that let someone else build, operate, maintain, or fix a product years later. This lesson covers what to write down, how to organize it, and how to keep it correct.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md) and [02-engineering-drawings.md](02-engineering-drawings.md).

@@ -1,5 +1,7 @@
 # Propagating uncertainty and significant figures
 
+**Type:** lesson
+
 Most results are calculated from several measured quantities, and each one carries its own uncertainty. Propagation of uncertainty is the method for finding the uncertainty of the result. Significant figures are the simpler rule for writing the result so it does not claim more precision than you have.
 
 **Prerequisites:** [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md)

@@ -1,5 +1,7 @@
 # Draw it
 
+**Type:** lesson
+
 A sketch turns a sentence into a picture you can check. Engineers draw before they calculate
 because a picture shows which forces exist, which way they point, and where the system ends.
 A free-body diagram is the most useful sketch in mechanics: it shows one object and every

@@ -1,5 +1,7 @@
 # Factor of safety and failure
 
+**Type:** lesson
+
 A part fails when the stress in it is too high for the material. Engineers do not design to the edge of failure. They design with a factor of safety (FoS), a margin that covers unknown loads, material variation, and manufacturing error. This lesson defines stress, shows how to compare it with a material strength, and introduces two failure checks, the maximum shear and von Mises criteria, for parts under more than one stress.
 
 **Prerequisites:** [01 Design process](01-design-process.md), and the force and equilibrium lessons in [physics](../physics/README.md) and the stress-strain basics in [materials](../materials/README.md)

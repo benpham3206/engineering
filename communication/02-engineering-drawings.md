@@ -1,5 +1,7 @@
 # Engineering drawings
 
+**Type:** lesson
+
 An engineering drawing is the set of instructions a machinist, inspector, or supplier uses to make a part. It has to say the same thing to everyone who reads it, so it follows strict conventions for layout, lines, and dimensions. This lesson covers the parts of a drawing and the rules that make it unambiguous. For how to model and draw parts in CAD and how to use geometric dimensioning and tolerancing, see [the design folder](../design/README.md).
 
 **Prerequisites:** none. Helpful first: [01-technical-writing.md](01-technical-writing.md) for the habit of stating things precisely.

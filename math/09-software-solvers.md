@@ -1,5 +1,7 @@
 # Software solvers
 
+**Type:** lesson
+
 Software does the arithmetic so you can focus on the model. The hard part is still setting up the problem correctly, checking units, and knowing whether the answer is reasonable. This lesson shows how to hand the earlier lessons' problems to Python with NumPy and SciPy, and what to check afterward.
 
 **Prerequisites:** [Linear algebra](05-linear-algebra.md), [Numerical methods](08-numerical-methods.md), [Differential equations](06-differential-equations.md)

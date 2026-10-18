@@ -1,5 +1,7 @@
 # Solve symbolically before plugging in numbers
 
+**Type:** lesson
+
 Carry letters, not numbers, through the algebra for as long as you can. A symbolic answer
 shows how each input affects the result, lets you check units and limits (lesson 05), and
 catches errors before the arithmetic hides them. Plug in numbers only at the end.

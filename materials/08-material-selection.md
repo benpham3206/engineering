@@ -1,5 +1,7 @@
 # Material selection
 
+**Type:** lesson
+
 Choosing a material is a design decision with numbers attached. Engineers start with what the part must do, turn that into a simple objective (usually mass or cost), and then rank candidate materials by a performance index. Michael Ashby popularized this method, and it works for almost any structural part.
 
 **Prerequisites:** [Mechanical properties](03-mechanical-properties.md), [Material classes](05-material-classes.md), [Failure: fracture and fatigue](06-fracture-and-fatigue.md), [Creep and corrosion](07-creep-and-corrosion.md)

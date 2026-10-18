@@ -1,5 +1,7 @@
 # Reading calipers and micrometers
 
+**Type:** lesson
+
 Calipers and micrometers measure lengths such as shaft diameters and plate thicknesses with resolution down to hundredths of a millimeter. Reading them correctly is a skill, and most errors come from misreading the scales rather than from the tool itself.
 
 **Prerequisites:** [01 - Units and dimensional analysis](01-units-and-dimensional-analysis.md), [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md)

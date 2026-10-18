@@ -4,7 +4,7 @@ The software, hardware, and calculators that make engineering work faster.
 
 **Prerequisites:** [Algebra and functions](../math/README.md) for the computation and calculator lessons. [Measurement](../measurement/README.md) is useful before the shop lesson. Start with the starter kit.
 
-## Topics
+## Lessons
 
 1. [Starter kit](01-starter-kit.md): the minimal, mostly free toolset for a self-taught engineer
 2. [Python](02-python.md): free calculations, arrays, and solvers
@@ -15,5 +15,11 @@ The software, hardware, and calculators that make engineering work faster.
 7. [Measurement tools](07-measurement-tools.md): reading tools, resolution, and tolerance stacks
 8. [Shop tools](08-shop-tools.md): surface speed, RPM, and machine safety
 9. [Free engineering software](09-free-software.md): free and open-source CAD, FEA, CFD, MATLAB alternatives, circuits, fabrication, and documentation tools
+
+## Reference
+
+For quick lookup while working. Each sheet opens with the principles of the field.
+
+- [Tools reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
 See also: [math](../math), [design](../design), [measurement](../measurement)

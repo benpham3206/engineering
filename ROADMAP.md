@@ -1,6 +1,6 @@
 # Roadmap
 
-A four-year path through this repo, laid out like a mechanical engineering degree. Each semester is about 15 weeks at 15-20 hours a week. Go faster or slower as you need; the order matters more than the pace.
+One path through this reference for someone learning from scratch: four years, laid out like a mechanical engineering degree. Working engineers can skip this and use the reference sheets in each folder. Each semester is about 15 weeks at 15-20 hours a week. Go faster or slower as you need; the order matters more than the pace.
 
 Every semester has three parts:
 

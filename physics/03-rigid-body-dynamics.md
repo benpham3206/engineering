@@ -1,5 +1,7 @@
 # Rigid body dynamics
 
+**Type:** lesson
+
 Rigid body dynamics extends particle dynamics to bodies that have size and shape, so they can rotate as well as move. Engineers use it for wheels, gears, flywheels, rotating shafts, and any part that spins up or slows down. This lesson covers planar motion, where the body moves and rotates in a single plane.
 
 **Prerequisites:** [Particle dynamics](02-particle-dynamics.md) and [Statics](01-statics.md) (moments and free-body diagrams).
