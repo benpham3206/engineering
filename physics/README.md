@@ -2,17 +2,24 @@
 
 How the physical world behaves, and the models engineers use to predict it.
 
+**Prerequisites:** [math](../math/README.md) through single-variable calculus. Multivariable calculus and differential equations are needed by the thermal-fluids and vibrations lessons. Start with [Statics](01-statics.md).
+
 ## Topics
 
-- Statics: free-body diagrams, equilibrium, trusses, frames, friction
-- Dynamics: kinematics, kinetics, work and energy, impulse and momentum
-- Mechanics of materials: stress, strain, torsion, bending, buckling
-- Fluid mechanics: hydrostatics, Bernoulli, control volumes, pipe flow
-- Thermodynamics: properties, first and second laws, cycles
-- Heat transfer: conduction, convection, radiation
-- Vibrations and controls
-- Electricity and magnetism
-- Waves, light, heat
+- [Statics: free-body diagrams, equilibrium, trusses, frames, friction](01-statics.md)
+- [Particle dynamics: kinematics, kinetics, work and energy, impulse and momentum](02-particle-dynamics.md)
+- [Rigid-body dynamics](03-rigid-body-dynamics.md)
+- [Mechanics of materials I: stress, strain, axial loading, torsion](04-axial-and-torsion.md)
+- [Mechanics of materials II: bending, deflection, buckling](05-bending-and-buckling.md)
+- [Electricity and magnetism](06-electricity-and-magnetism.md)
+- [Oscillations, waves, light, and heat](07-waves-light-heat.md)
+- [Thermodynamics I: properties, work, heat, first law](08-thermo-first-law.md)
+- [Thermodynamics II: entropy, second law, cycles](09-thermo-second-law-cycles.md)
+- [Fluid mechanics I: hydrostatics and Bernoulli](10-hydrostatics-and-bernoulli.md)
+- [Fluid mechanics II: control volumes and pipe flow](11-control-volumes-pipe-flow.md)
+- [Heat transfer: conduction, convection, radiation](12-heat-transfer.md)
+- [Vibrations](13-vibrations.md)
+- [Feedback control](14-controls.md)
 
 ## Related courses
 

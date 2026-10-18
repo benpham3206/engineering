@@ -2,14 +2,17 @@
 
 Putting the fundamentals together to build real things.
 
+**Prerequisites:** [math](../math/README.md) and [physics](../physics/README.md) first.
+
 ## Topics
 
-- Circuits and electronics
-- Mechatronics: sensors, actuators, microcontrollers
-- Robotics
-- Thermal systems
-- Fluid systems
-- Projects
+- [Circuit basics: Ohm's law, KVL, and KCL](01-circuit-basics.md)
+- [RC circuits and op-amp basics](02-rc-circuits-and-op-amps.md)
+- [Mechatronics: sensors, actuators, and microcontrollers](03-mechatronics.md)
+- [Robotics: forward kinematics and DC motor torque and speed](04-robotics.md)
+- [Thermal systems: conduction, convection, and thermal resistance](05-thermal-systems.md)
+- [Fluid systems: continuity, Bernoulli, pumps, and pipe losses](06-fluid-systems.md)
+- [Projects: a ladder of build projects](07-projects.md)
 
 ## Related courses
 

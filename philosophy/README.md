@@ -2,14 +2,16 @@
 
 Why engineering matters, and how to think about the responsibility that comes with it.
 
+**Prerequisites:** none to start. Work through the lessons in the order listed below.
+
 ## Topics
 
-- What engineering is
-- Ethics and professional responsibility
-- Safety and risk
-- Engineering history
-- Global and social impact
-- Sustainability
+- [What engineering is](01-what-engineering-is.md)
+- [Engineering history](02-engineering-history.md)
+- [Safety and risk](03-safety-and-risk.md)
+- [Ethics and professional responsibility](04-ethics-and-professional-responsibility.md)
+- [Global and social impact](05-global-and-social-impact.md)
+- [Sustainability](06-sustainability.md)
 
 ## Related courses
 

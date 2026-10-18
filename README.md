@@ -33,4 +33,4 @@ Science asks how the world works. Engineering asks what we can make with that kn
 | [reverse-engineering](reverse-engineering) | Taking things apart to learn how they work |
 | [tools](tools) | Software, calculators, and shop tools |
 
-Also: [courses](courses) and [units](units).
+Also: [roadmap](ROADMAP.md) (the four-year study plan), [courses](courses), and [units](units).
