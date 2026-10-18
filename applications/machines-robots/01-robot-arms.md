@@ -6,7 +6,7 @@ A robot arm is a chain of links connected by joints. Forward kinematics answers 
 the joint angles, where is the tip of the arm? A DC motor is the actuator that turns the joints,
 and its torque and speed set how strong and how fast the arm can move.
 
-**Prerequisites:** [Mechatronics](03-mechatronics.md), [Circuit basics](01-circuit-basics.md)
+**Prerequisites:** [Mechatronics](../electronics/06-mechatronics.md), [Circuit basics](../electronics/01-circuit-basics.md)
 **Time:** 10-14 h
 
 ## Core ideas
@@ -112,6 +112,6 @@ radius of the base. $0.464\ \text{m}$ is inside that limit. The efficiency loss 
   introduction to robot structure, sensing, and control.
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
   by MIT: the circuit model behind motor drive and power electronics.
-- For trigonometry and vectors, which the arm geometry uses, see the [math folder](../math/README.md).
-- Previous: [Lesson 03, mechatronics](03-mechatronics.md).
-- Next: [Lesson 05, thermal systems](05-thermal-systems.md).
+- For trigonometry and vectors, which the arm geometry uses, see the [math folder](../../math/README.md).
+- Previous: [Lesson 03, mechatronics](../electronics/06-mechatronics.md).
+- Next: [Lesson 05, thermal systems](../thermal-fluid/01-thermal-systems.md).

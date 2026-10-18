@@ -4,7 +4,7 @@
 
 Most engineers write some software, even if they never call themselves programmers. You repeat the same calculation in a spreadsheet, rename 200 files by hand, or export the same CAD view for each revision. This lesson covers the working skills behind that work: the terminal, version control, reproducible environments, small reliable scripts, testing, debugging, and the basics of web apps. The ideas last longer than any single tool.
 
-**Prerequisites:** [Python for engineering calculations](02-python.md), [Free engineering software](09-free-software.md), and the [Tools reference](../tools/reference.md) (the Git and checklist sections)
+**Prerequisites:** [Python for engineering calculations](02-python.md), [Free engineering software](09-free-software.md), and the [Tools reference](reference.md) (the Git and checklist sections)
 **Time:** 20-30 h to work through the core ideas and practice, then ongoing
 
 ## Core ideas
@@ -256,4 +256,4 @@ Numbers and checks to compare against. A good answer includes the work, not only
 - [Pro Git](https://git-scm.com/book/en/v2) by Scott Chacon and Ben Straub: the free online book on Git, from first commit through branches, merges, and remotes (2nd edition, 2014, still the standard reference).
 - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html) by the Python Software Foundation: the official language guide, with sections on functions, modules, and the standard library.
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) by MIT: free course on the shell, editors, Git, debugging, and automation, with lectures and notes.
-- Related: [Python for engineering calculations](02-python.md), [Free engineering software](09-free-software.md), [Tools reference](../tools/reference.md) (Git commands and file formats).
+- Related: [Python for engineering calculations](02-python.md), [Free engineering software](09-free-software.md), [Tools reference](reference.md) (Git commands and file formats).

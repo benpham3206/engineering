@@ -94,4 +94,4 @@ is reached in roughly $0.7\tau$, and $0.326 / 0.47 = 0.69$, which agrees.
 - [University Physics Volume 2, Chapter 10](https://openstax.org/books/university-physics-volume-2/pages/10-introduction)
   by OpenStax: resistors and circuit analysis, a good base before RC circuits.
 - Previous: [Lesson 01, circuit basics](01-circuit-basics.md).
-- Next: [Lesson 03, mechatronics](03-mechatronics.md).
+- Next: [Lesson 03, mechatronics](06-mechatronics.md).

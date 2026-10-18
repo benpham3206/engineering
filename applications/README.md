@@ -6,13 +6,13 @@ Putting the fundamentals together to build real things.
 
 ## Lessons
 
-- [Circuit basics: Ohm's law, KVL, and KCL](01-circuit-basics.md)
-- [RC circuits and op-amp basics](02-rc-circuits-and-op-amps.md)
-- [Mechatronics: sensors, actuators, and microcontrollers](03-mechatronics.md)
-- [Robotics: forward kinematics and DC motor torque and speed](04-robotics.md)
-- [Thermal systems: conduction, convection, and thermal resistance](05-thermal-systems.md)
-- [Fluid systems: continuity, Bernoulli, pumps, and pipe losses](06-fluid-systems.md)
-- [Projects: a ladder of build projects](07-projects.md)
+- [Circuit basics: Ohm's law, KVL, and KCL](electronics/01-circuit-basics.md)
+- [RC circuits and op-amp basics](electronics/02-rc-circuits-and-op-amps.md)
+- [Mechatronics: sensors, actuators, and microcontrollers](electronics/06-mechatronics.md)
+- [Robotics: forward kinematics and DC motor torque and speed](machines-robots/01-robot-arms.md)
+- [Thermal systems: conduction, convection, and thermal resistance](thermal-fluid/01-thermal-systems.md)
+- [Fluid systems: continuity, Bernoulli, pumps, and pipe losses](thermal-fluid/02-fluid-systems.md)
+- [Projects: a ladder of build projects](projects/01-project-ladder.md)
 
 ## Reference
 

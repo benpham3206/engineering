@@ -14,6 +14,7 @@ Why engineering matters, and how to think about the responsibility that comes wi
 - [Sustainability](06-sustainability.md)
 - [Principles that last](07-principles-that-last.md): the laws and habits of good engineering that never expire. Read this first.
 - [The engineering method](08-the-engineering-method.md): the gate, then plan, build, and refine. How to do engineering work at any scale.
+- [A way of working](09-a-way-of-working.md): habits for thinking, building, deciding, and recovering from failure on any project.
 
 ## Reference
 

@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-A method for doing engineering work of any size, from choosing a bolt to building a spacecraft. It is adapted for physical engineering from the author's [engineering standard](https://github.com/benpham3206/agent-engineering/blob/main/standards/engineering.md), which states it in full.
+A method for doing engineering work of any size, from choosing a bolt to building a spacecraft. It is adapted for physical engineering from an [engineering standard](https://github.com/benpham3206/agent-engineering/blob/main/standards/engineering.md), which states it in full.
 
 **Prerequisites:** [Principles that last](07-principles-that-last.md).
 
@@ -101,6 +101,6 @@ A clear goal alone does not open the fast path. Cutting expensive stock, pouring
 
 ## Go deeper
 
-- [Engineering standard](https://github.com/benpham3206/agent-engineering/blob/main/standards/engineering.md) by Ben Pham: the full method, including modularity, outcome over activity, and the project lifecycle.
+- [Engineering standard](https://github.com/benpham3206/agent-engineering/blob/main/standards/engineering.md): the full method, including modularity, outcome over activity, and the project lifecycle.
 - [Principles that last](07-principles-that-last.md) and [Safety and risk](03-safety-and-risk.md) in this folder.
 - [Problem-solving](../problem-solving/README.md): the same discipline applied to a single problem.

@@ -6,7 +6,7 @@ A fluid system moves water, air, or oil through pipes, ducts, and pumps. Enginee
 choose the pump, and check that the pressure stays in range. Three ideas cover most of the work:
 mass is conserved, energy is conserved along a streamline, and friction takes energy away.
 
-**Prerequisites:** [Thermal systems](05-thermal-systems.md), [Mathematics folder](../math/README.md)
+**Prerequisites:** [Thermal systems](01-thermal-systems.md), [Mathematics folder](../../math/README.md)
 **Time:** 10-14 h
 
 ## Core ideas
@@ -104,4 +104,4 @@ water pipe at this speed.
   an open text on fluid statics and turbulent flow.
 - [University Physics Volume 1, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction)
   by OpenStax: fluids, Pascal's principle, buoyancy, Bernoulli's equation, and viscosity.
-- Next: [Lesson 07, projects](07-projects.md).
+- Next: [Lesson 07, projects](../projects/01-project-ladder.md).

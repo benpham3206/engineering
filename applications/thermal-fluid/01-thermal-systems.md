@@ -6,8 +6,8 @@ Thermal engineers keep parts cool, keep rooms warm, and move heat from one place
 processor needs a heat sink, a building needs insulation, and a heat exchanger moves heat from hot
 fluid to cold fluid. The same few ideas cover all three.
 
-**Prerequisites:** [Circuit basics](01-circuit-basics.md) (the thermal analogy uses the same
-voltage-and-resistance pattern), [Mathematics folder](../math/README.md)
+**Prerequisites:** [Circuit basics](../electronics/01-circuit-basics.md) (the thermal analogy uses the same
+voltage-and-resistance pattern), [Mathematics folder](../../math/README.md)
 **Time:** 8-12 h
 
 ## Core ideas
@@ -111,4 +111,4 @@ the full $20\ \text{K}$.
   by OpenStax: the definitions of heat and temperature that this lesson builds on.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library that includes heat
   transfer textbooks.
-- Next: [Lesson 06, fluid systems](06-fluid-systems.md).
+- Next: [Lesson 06, fluid systems](02-fluid-systems.md).

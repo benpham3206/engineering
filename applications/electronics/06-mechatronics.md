@@ -100,4 +100,4 @@ reference, or $2.5\ \text{V}$. That matches. A $25$ percent duty cycle should gi
 - [NIST, SI prefixes](https://www.nist.gov/pml/owm/metric-si-prefixes) by NIST: standard unit prefixes
   for millivolts, microfarads, and kilohms.
 - Previous: [Lesson 02, RC circuits and op-amps](02-rc-circuits-and-op-amps.md).
-- Next: [Lesson 04, robotics](04-robotics.md).
+- Next: [Lesson 04, robotics](../machines-robots/01-robot-arms.md).
