@@ -12,6 +12,7 @@ Engineering work only counts once someone else can understand it.
 - [Documentation](04-documentation.md)
 - [Figures, tables, and plots](05-figures-tables-plots.md)
 - [Working on teams](06-working-on-teams.md)
+- [Fabrication drawings](07-fabrication-drawings.md): drawings a machine shop, sheet metal shop, or welder can build from without calling you
 
 ## Reference
 

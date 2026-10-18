@@ -15,6 +15,9 @@ The software, hardware, and calculators that make engineering work faster.
 7. [Measurement tools](07-measurement-tools.md): reading tools, resolution, and tolerance stacks
 8. [Shop tools](08-shop-tools.md): surface speed, RPM, and machine safety
 9. [Free engineering software](09-free-software.md): free and open-source CAD, FEA, CFD, MATLAB alternatives, circuits, fabrication, and documentation tools
+10. [Drafting and layout tools](10-drafting-and-layout-tools.md): scales, compass and dividers, protractors, squares, sketching, and laying out on metal
+11. [Machinist bench tools](11-machinist-bench-tools.md): workholding, indicators and edge finders, taps and tap drills, reamers, files, and hand tools
+12. [Software skills for engineers](12-software-for-engineers.md): terminal, Git, scripts, tests, debugging, automating CAD, and web basics
 
 ## Reference
 
