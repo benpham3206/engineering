@@ -2,8 +2,6 @@
 
 everything i learned as a mechanical engineering student at SJSU
 
-A timeless engineering reference. Lessons to learn from, reference sheets to work from, and principles that stay true whatever we end up building.
-
 ## What is engineering?
 
 Engineering is using math, science, and experience to design and build things that solve real problems, with constraints like cost, safety, time, and materials.
