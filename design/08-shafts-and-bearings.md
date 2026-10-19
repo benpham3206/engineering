@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A shaft carries torque from a motor or handle to the parts that do work, such as gears, pulleys, or wheels. Bearings hold the shaft in place while letting it turn. Shaft sizing is a classic design problem: pick a diameter so the shear stress from the torque stays below a safe limit. Bearing selection asks how long the bearing will last under load.
+A shaft is a rotating rod that carries torque from a motor or handle to the parts that do work, such as gears, pulleys, or wheels, and a bearing is a support that holds the shaft in place while letting it turn. Engineers size both carefully because an undersized shaft can twist, bend, or break, and a poor bearing wears out long before the rest of the machine. Shaft sizing is a classic design problem: pick a diameter so the shear stress from the torque stays below a safe limit. Bearing selection asks how long the bearing will last under load.
 **Prerequisites:** [Factor of safety and failure](07-factor-of-safety-and-failure.md), [GD&T symbols and frames](05-gdt-symbols-and-frames.md) (for runout on shaft seats), [Axial and torsion](../physics/04-axial-and-torsion.md), [Bending and buckling](../physics/05-bending-and-buckling.md), [Rigid body dynamics](../physics/03-rigid-body-dynamics.md) (torque and rotation)
 **Time:** 8-12 h
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Pipes carry water, steam, oil, gas, and chemicals from one place to another. Valves start, stop, and regulate that flow. An engineer sizes the pipe so the pressure loss stays acceptable, and sizes the valves and relief devices so that a sudden stop or an overpressure does not break the system.
+Piping and valves are the pipes, fittings, and valves that carry water, steam, oil, gas, and chemicals from one place to another and start, stop, or regulate the flow. An engineer sizes the pipe so the pressure loss stays acceptable, and sizes the valves and relief devices so that a sudden stop or an overpressure does not break the system.
 
 **Prerequisites:** [Fluid systems](02-fluid-systems.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 6-10 h

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A dam holds back water and turns a river or valley into a reservoir. An engineer must make sure the dam stays in place under the push of the water, its own weight, uplift from water under its base, floods, and earthquakes.
+A dam is a barrier that holds back water and turns a river or valley into a reservoir. An engineer must make sure the dam stays in place under the push of the water, its own weight, uplift, floods, and earthquakes, because a failed dam can release the whole reservoir downstream.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md)
 **Time:** 6-8 h

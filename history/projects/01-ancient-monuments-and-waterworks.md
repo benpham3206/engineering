@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-From about 2600 BCE to the early centuries CE, builders in Egypt, Rome, Iran, Cambodia, and China solved problems of stone, water, and scale that engineers still meet. This lesson covers six projects from that span and the engineering each one needed. The aqueduct gradient example uses the same open channel flow ideas as the fluid systems lesson.
+Ancient monuments and waterworks are the large stone structures and water systems that builders in Egypt, Rome, Iran, Cambodia, and China made from about 2600 BCE to the early centuries CE. Engineers today should know them because the problems of stone, water, and scale that these builders solved are the same ones engineers still meet. This lesson covers six projects from that span and the engineering each one needed. The aqueduct gradient example uses the same open channel flow ideas as the fluid systems lesson.
 
 **Prerequisites:** [Simple machines](../01-simple-machines.md), [Ancient engineering](../02-ancient-engineering.md), [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md)
 **Time:** 4-6 h

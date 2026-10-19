@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A rocket carries its own oxidizer or oxidizer and fuel, so it works in vacuum. An engineer who designs one must size the engine, the nozzle, the propellant tanks, and the structure that holds them, and each choice trades performance against mass and risk.
+A rocket is a vehicle that carries its own fuel and oxidizer, so it works in a vacuum. A rocket that is too heavy cannot leave the ground, and one that fails in flight can destroy its payload.
+
+An engineer who designs one must size the engine, the nozzle, the propellant tanks, and the structure that holds them, and each choice trades performance against mass and risk.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
 **Time:** 8-10 h

@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A photovoltaic (PV) cell turns sunlight directly into electricity with no moving parts and no heat engine. Engineers size PV arrays by the power a panel makes at a given sunlight level, and they check how much energy a site yields over a day or a year.
+Solar photovoltaics, or PV, are arrays of cells that turn sunlight directly into electricity with no moving parts and no heat engine. Engineers need to understand the physics because a solar plant's output depends on how much sunlight its cells receive.
+
+Engineers size PV arrays by the power a panel makes at a given sunlight level, and they check how much energy a site yields over a day or a year.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 6-8 h

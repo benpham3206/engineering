@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Particle dynamics studies how forces change the motion of a body. Engineers use it to predict how a car stops, how a projectile lands, and how a machine part speeds up. This lesson treats the body as a particle, a point with mass, and uses three tools: Newton's second law, work and energy, and impulse and momentum.
+Particle dynamics is the study of how forces change the motion of a body. Engineers use it to predict how a car stops, how a projectile lands, and how a machine part speeds up. This lesson treats the body as a particle, a point with mass, and uses three tools: Newton's second law, work and energy, and impulse and momentum.
 
 **Prerequisites:** [Statics](01-statics.md) (free-body diagrams and force components), [Single-variable calculus](../math/03-single-variable-calculus.md) (velocity and acceleration as rates, impulse and work as integrals)
 **Time:** 10-14 h

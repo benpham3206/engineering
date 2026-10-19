@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Energy storage holds energy from one time and returns it at another, so supply can follow demand. Engineers use storage to smooth the output of solar and wind plants, to cover peak demand, and to keep a grid stable within seconds. Each technology stores energy in a different form, and the size of the store depends on both how much energy it holds and how fast it can deliver it.
+Energy storage is a set of technologies that hold energy from one time and return it at another, so supply can follow demand. Engineers need storage because the energy a grid receives rarely matches the energy it needs at the same moment, and storage decides whether the grid stays stable.
+
+Engineers use storage to smooth the output of solar and wind plants, to cover peak demand, and to keep a grid stable within seconds. Each technology stores energy in a different form, and the size of the store depends on both how much energy it holds and how fast it can deliver it.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 8-10 h

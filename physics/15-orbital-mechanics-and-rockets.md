@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Orbital mechanics predicts how a spacecraft moves under gravity, and rocket equations predict how much propellant it takes to change that motion. Together they tell an engineer whether a mission is possible and how large the rocket must be.
+Orbital mechanics and rocketry are the study of how a spacecraft moves under gravity and how much propellant it takes to change that motion. Together they tell an engineer whether a mission is possible and how large the rocket must be.
 
 **Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 10-14 h

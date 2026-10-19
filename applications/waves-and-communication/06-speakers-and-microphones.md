@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A loudspeaker turns an electrical signal into sound pressure, and a microphone does the reverse. Engineers need the force, motion, and pressure relations to size a speaker driver, pick a microphone, and set a level that is loud enough without distortion or hearing damage.
+Speakers and microphones are devices that convert between electrical signals and sound pressure. A badly matched speaker or microphone can make a sound system useless, so the choice must be made with care.
+
+Engineers need the force, motion, and pressure relations to size a speaker driver, pick a microphone, and set a level that is loud enough without distortion or hearing damage.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md)
 **Time:** 6-8 h

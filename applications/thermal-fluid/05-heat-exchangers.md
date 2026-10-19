@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A heat exchanger moves heat from one fluid to another without mixing them. Radiators, car engine coolers,
+A heat exchanger is a device that moves heat from one fluid to another without mixing them. A heat exchanger that is too small or poorly designed cannot move the heat its system needs. Radiators, car engine coolers,
 air conditioner coils, boilers, and chemical plants all depend on one. Engineers size an exchanger by
 asking how much heat must move, how hot each stream gets, and how much surface the job needs.
 

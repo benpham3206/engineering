@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-An electric vehicle (EV) drives its wheels with one or more electric motors, and a battery pack stores the energy. An engineer who understands an EV can size the motor for a given speed and grade, choose a pack for a target range, and predict how much energy regenerative braking returns. The range estimate works from the same road load that sets the power of any car.
+Electric vehicles, or EVs, are cars that drive their wheels with one or more electric motors powered by a battery pack. The battery and motor sit at the center of the design, so a mistake in either one changes the whole car.
+
+An engineer who understands an EV can size the motor for a given speed and grade, choose a pack for a target range, and predict how much energy regenerative braking returns. The range estimate works from the same road load that sets the power of any car.
 
 **Prerequisites:** [Cars](02-cars.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [DC motors](../electrical/01-dc-motors.md), [Batteries](../electrical/06-batteries.md)
 **Time:** 6-8 h

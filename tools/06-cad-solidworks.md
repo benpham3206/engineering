@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-CAD (computer-aided design) software builds 3D models of parts and assemblies, and produces drawings and mass properties. SolidWorks is a paid, widely used parametric CAD program, so many employers and courses expect it. You can learn the same ideas in free tools, and the skills carry over.
+CAD, short for computer-aided design, is software that builds 3D models of parts and assemblies on a computer and produces drawings and mass properties. Engineers use it to test a design before anything is cut or cast, so a mistake shows up on screen instead of in metal.
+
+SolidWorks is a paid, widely used parametric CAD program, so many employers and courses expect it. You can learn the same ideas in free tools, and the skills carry over.
 
 **Prerequisites:** [Starter kit](01-starter-kit.md), [Python](02-python.md) (for mass checks), and [measurement tools](07-measurement-tools.md) (for dimensions). Also see the [design folder](../design/README.md).
 **Time:** 15-25 h to model simple parts confidently

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Machining removes material from a block of stock with a cutting tool, so you can shape it into a part. Three numbers control how fast that happens: spindle speed (how fast the tool or part turns), feed rate (how fast the tool moves into the material), and material removal rate (how much material comes out per minute). Getting these right is how a machinist keeps tools alive and parts on size.
+Speeds and feeds are the cutting settings that decide how fast a tool turns, how fast it moves into the material, and how much material it removes in a given time. A machinist must set them correctly because wrong values break tools and make parts that miss their size. Machining removes material from a block of stock with a cutting tool, so you can shape it into a part. Three numbers control how fast that happens: spindle speed (how fast the tool or part turns), feed rate (how fast the tool moves into the material), and material removal rate (how much material comes out per minute).
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Algebra](../math/01-algebra.md)
 **Time:** 6-8 h

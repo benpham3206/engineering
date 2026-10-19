@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+A measurement tool is an instrument that reads a length, angle, or size and shows it as a number with units, such as a rule, a caliper, or a micrometer. Engineers rely on these tools to turn a physical part into a number, so knowing how to read them keeps a design honest.
+
 Every design number depends on a measurement, and every measurement has an error. Measurement tools include rules, calipers, micrometers, gauges, and digital readouts. Learn to read them correctly, estimate the uncertainty, and combine errors in a stack of parts.
 
 **Prerequisites:** [Starter kit](01-starter-kit.md), [Algebra](../math/01-algebra.md), [Precision, accuracy, and uncertainty](../measurement/02-precision-accuracy-and-uncertainty.md), and [Propagating uncertainty and significant figures](../measurement/03-propagating-uncertainty-and-significant-figures.md) (for the tolerance stack-up example).

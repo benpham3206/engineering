@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-An infusion pump delivers a fluid at a set volume rate through tubing, and a ventilator moves gas into and out of a lung model with controlled pressure and flow. Both devices are engineered as closed-loop systems with alarms, because a fault in flow or pressure can reach the user in seconds.
+Infusion pumps and ventilators are closed-loop medical devices that deliver fluid or gas in controlled amounts. Their alarms matter, because a fault in flow or pressure can reach the user in seconds.
+
+An infusion pump delivers a fluid at a set volume rate through tubing, and a ventilator moves gas into and out of a lung model with controlled pressure and flow.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Feedback control](../../physics/14-controls.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md)
 **Time:** 6-8 h

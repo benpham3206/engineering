@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-An aircraft stays up because its wings make lift, and its engines pay for the drag that the wings and body create. An engineer sizes the wing to set the stall speed, the cruise drag, and the power the engine must supply.
+An aircraft is a flying machine that stays up because its wings make lift. A wing sized wrong can stall too early or cost too much engine power to fly, so engineers must check it first.
+
+An engineer sizes the wing to set the stall speed, the cruise drag, and the power the engine must supply to pay for the drag of the wings and body.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 8-10 h

@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A suspension keeps the tires on the road while the body carries the load and absorbs bumps. A steering system turns the front wheels so that the car follows the driver's chosen path. Engineers tune the spring and damper for ride comfort and grip, and they set the steering geometry so that the inner and outer wheels turn through the right angles in a corner.
+Suspension and steering are the springs, dampers, and linkages that keep a car's tires on the road and turn its front wheels. Poor suspension or steering geometry can make a car lose grip in a corner, so an engineer must get both right.
+
+Engineers tune the spring and damper for ride comfort and grip, and they set the steering geometry so that the inner and outer wheels turn through the right angles in a corner.
 
 **Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Statics](../../physics/01-statics.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 5-7 h

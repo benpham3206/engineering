@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-From about 1600 to 1700, scientists began to describe motion, falling bodies, and the heavens with measurements and mathematics. Engineers gained the tools that made those measurements repeatable: the pendulum clock, the balance spring, and the telescope. The longitude problem at sea forced a precise clock to be built, and that clock is still the model for reliable timing.
+The scientific revolution is the period from about 1600 to 1700 when scientists began to describe motion, falling bodies, and the heavens with measurements and mathematics rather than reasoning mainly from older authorities. Engineers today should know it because it gave them the pendulum clock, the balance spring, and the telescope, which made measurement repeatable. The longitude problem at sea forced a precise clock to be built, and that clock is still the model for reliable timing.
 
 **Prerequisites:** [Medieval and renaissance engineering](03-medieval-and-renaissance.md), [Trigonometry](../math/02-trigonometry.md), [Vibrations](../physics/13-vibrations.md)
 **Time:** 3-4 h

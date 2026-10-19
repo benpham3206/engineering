@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A flywheel stores energy as rotation. It smooths the speed of an engine, press, or pump, and it can hold energy for a short time in a grid or vehicle system. Engineers size the flywheel for the energy it must store and limit its rim speed, because a rotor that bursts throws its pieces outward with lethal energy.
+A flywheel is a rotating mass that stores energy as rotation. Engineers size the flywheel for the energy it must store and limit its rim speed, because a rotor that bursts throws its pieces outward with lethal energy. It smooths the speed of an engine, press, or pump, and it can hold energy for a short time in a grid or vehicle system.
 
 **Prerequisites:** [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Mechanical properties](../../materials/03-mechanical-properties.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md)
 **Time:** 4-6 h

@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Precision, accuracy, and uncertainty are three ways to describe how good a measured value is. Engineers need all three, because a number with no stated uncertainty cannot be checked against a design limit.
+
 Every measurement is an estimate. Accuracy tells you how close the estimate is to the true value, precision tells you how well repeated estimates agree, and uncertainty is the size of the doubt that remains.
 
 **Prerequisites:** [Units and dimensional analysis](01-units-and-dimensional-analysis.md), [Probability and statistics](../math/07-probability-and-statistics.md) (mean and standard deviation)

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-From about 1750 to 1900, engineers turned science and craft into machines, bridges, railways, and steel on a scale no earlier society had reached. This lesson covers thirteen people, from John Smeaton to Gustave Eiffel. Each entry says when and where the person worked, what they built, and which lesson in this repo uses that work.
+Engineers of the industrial age are the people who, from about 1750 to 1900, turned science and craft into machines, bridges, railways, and steel on a scale no earlier society had reached. Engineers today should know them because the machines, bridges, and steel they built set methods that modern engineers still use. This lesson covers thirteen people, from John Smeaton to Gustave Eiffel. Each entry says when and where the person worked, what they built, and which lesson in this repo uses that work.
 
 **Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 3-5 h

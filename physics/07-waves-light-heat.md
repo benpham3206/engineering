@@ -2,7 +2,8 @@
 
 **Type:** lesson
 
-Oscillations, waves, and light show up in almost every machine: springs and suspensions, sound and vibration in structures, sensors that use light, and the temperature and heat that decide how a part behaves.
+An oscillation is a motion that repeats, a wave is a disturbance that carries energy from one place to another, light is a wave of electric and magnetic fields, and heat is energy that moves between things at different temperatures. Engineers need all four because they show up in almost every machine: springs and suspensions, sound and vibration in structures, sensors that use light, and the temperature and heat that decide how a part behaves.
+
 **Prerequisites:** [Particle dynamics](02-particle-dynamics.md) (forces and Newton's second law), [Trigonometry](../math/02-trigonometry.md) (sinusoids)
 **Time:** 8-12 h
 

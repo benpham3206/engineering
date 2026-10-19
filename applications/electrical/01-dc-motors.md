@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A DC motor turns electrical energy into rotation with a simple rule. Current in a conductor inside a magnetic field feels a force, and a commutator keeps that force pointing the same way as the rotor turns. Engineers choose DC motors when they need simple speed and torque control, and they must understand the brushes and commutator because those set the motor's wear, noise, and limits.
+A DC motor is a machine that turns electrical energy into rotation with a simple rule. Engineers choose DC motors when they need simple speed and torque control, and they must understand the brushes and commutator because those set the motor's wear, noise, and limits. Current in a conductor inside a magnetic field feels a force, and a commutator keeps that force pointing the same way as the rotor turns.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [Mechatronics](../electronics/06-mechatronics.md)
 **Time:** 6-8 h

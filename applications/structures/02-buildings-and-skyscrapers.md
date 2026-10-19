@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A building must hold up its own weight, the weight of its occupants and contents, and the sideways forces from wind and earthquakes. Engineers design a frame, a set of walls, and a foundation so that every load reaches the ground and the building stays within safe stress and sway limits.
+A building is a structure that houses people and their belongings and stands on a frame, walls, and a foundation. An engineer who designs one must make sure every load reaches the ground, because a building that sways too far or settles unevenly becomes unsafe to occupy.
+
+A building must hold up its own weight, the weight of its occupants and contents, and the sideways forces from wind and earthquakes.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Bending and buckling](../../physics/05-bending-and-buckling.md), [Mechanics reference](../../physics/reference-mechanics.md)
 **Time:** 8-12 h

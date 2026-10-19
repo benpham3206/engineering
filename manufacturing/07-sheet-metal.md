@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Sheet metal parts start as flat sheets that are cut, bent, punched, and sometimes welded into 3D shapes. Enclosures, brackets, ducts, and panels are common examples. The key challenge is that a bend changes the length of the material. If you add up the flat outside dimensions, the flat blank is wrong, so you need a rule for how much material the bend uses. That rule is bend allowance.
+Sheet metal is thin, flat metal that is cut, bent, punched, and sometimes welded into 3D parts such as enclosures, brackets, ducts, and panels. Engineers use it because it is a common, low-cost way to make light parts in quantity, and a designer must plan the bends to get them right. The key challenge is that a bend changes the length of the material. If you add up the flat outside dimensions, the flat blank is wrong, so you need a rule for how much material the bend uses. That rule is bend allowance.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Machining speeds and feeds](02-machining-speeds-and-feeds.md) (for the unit habits), [Algebra](../math/01-algebra.md)
 **Time:** 4-6 h

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Most engineering metals and many ceramics are crystalline. Their atoms repeat in a regular pattern, and the pattern decides how dense the material is, how it deforms, and where it is weak. Real crystals also contain flaws, and those flaws often control strength.
+A crystal structure is the regular, repeating arrangement of atoms in a solid, and a defect is a flaw in that arrangement. Engineers need both because the pattern decides how dense the material is, how it deforms, and where it is weak. Most engineering metals and many ceramics are crystalline, and the flaws in real crystals often control strength.
 
 **Prerequisites:** [Atomic structure and bonding](01-atomic-structure-bonding.md), [Algebra](../math/01-algebra.md)
 **Time:** 6-8 h

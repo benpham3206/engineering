@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Almost no engineering product is built by one person. Projects succeed or fail on how people divide the work, share information, make decisions, and handle disagreement.
+Working on teams is the practice of dividing, sharing, and deciding on engineering work with other people. Engineers need it because almost no engineering product is built by one person, and projects succeed or fail on how people divide the work, share information, make decisions, and handle disagreement.
 
 **Prerequisites:** [04-documentation.md](04-documentation.md): teams depend on shared records.
 **Time:** 3-5 h

@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Semiconductors are materials that conduct electricity better than insulators and worse than metals, and diodes and transistors are the parts built from them. Engineers need these parts because almost all modern electronics depends on how they switch current.
+
 A diode passes current in one direction, and a transistor uses a small input to control a large current. These two parts sit inside every power supply, motor drive, and processor, so an engineer who knows how they switch can read a datasheet and design a driver that works.
 
 **Prerequisites:** [Circuit basics](01-circuit-basics.md), [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md)

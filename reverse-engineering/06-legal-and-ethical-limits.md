@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Legal and ethical limits are the rules from patents, copyright, licenses, and trademarks that decide what you may do with a product or design you have studied. Knowing them matters to an engineer, because a copy or rebuild that ignores them can infringe someone else's rights.
+
 Taking things apart to learn how they work is a normal and valuable engineering activity. It can also go past legal or ethical limits: into someone else's patent, into their copyrighted drawings, into a safety-critical part, or into a product whose license forbids it. It is general information, not legal advice. Laws and contracts differ by country and by product.
 
 **Prerequisites:** [Teardowns](01-teardowns.md)

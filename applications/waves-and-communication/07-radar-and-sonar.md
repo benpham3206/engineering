@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Radar and sonar find objects by sending a wave out and listening for the echo. Engineers use them to measure distance and speed for aircraft, ships, weather, road vehicles, and seabed mapping. Three quantities cover most of the work: the round-trip time gives range, the frequency shift gives radial speed, and the pulse length sets the smallest separation a system can resolve.
+Radar and sonar are systems that find objects by sending a wave out and listening for its echo. A wrong echo reading can send an aircraft or ship off course, so engineers must get every measurement right.
+
+Engineers use them to measure distance and speed for aircraft, ships, weather, road vehicles, and seabed mapping. Three quantities cover most of the work: the round-trip time gives range, the frequency shift gives radial speed, and the pulse length sets the smallest separation a system can resolve.
 
 **Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Radio and antennas](02-radio-and-antennas.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6-8 h

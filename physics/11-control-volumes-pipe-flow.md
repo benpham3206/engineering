@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Real pipes carry water to homes, fuel to engines, and cooling fluid through plants. A control volume is a fixed region of space that you draw around a piece of a system so you can balance mass, momentum, and energy across its edges. Pipe flow is the most common case where friction matters.
+A control volume is a fixed region of space drawn around part of a system so that mass, momentum, and energy can be balanced across its edges, and pipe flow is fluid moving through a closed pipe. Engineers use both for the water that reaches homes, the fuel that reaches engines, and the cooling fluid in plants, and pipe flow is the most common case where friction matters.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](10-hydrostatics-and-bernoulli.md)
 **Time:** 8-10 h

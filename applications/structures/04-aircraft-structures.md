@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-An aircraft structure carries flight loads, cabin pressure, and landing loads through a thin shell that must weigh as little as possible. Engineers design the skin, frames, and stringers so the aircraft stays within stress limits for its whole life, which means tracking fatigue and damage that grow over thousands of flights.
+An aircraft structure is the thin shell of skin, frames, and stringers that carries an aircraft's flight, pressure, and landing loads. An engineer must keep that shell within stress limits for its whole life, because fatigue and damage grow over thousands of flights.
+
+The shell must also weigh as little as possible, which is why it is thin.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Bending and buckling](../../physics/05-bending-and-buckling.md), [Mechanical properties](../../materials/03-mechanical-properties.md), [Single-variable calculus](../../math/03-single-variable-calculus.md)
 **Time:** 8-10 h

@@ -2,7 +2,8 @@
 
 **Type:** lesson
 
-Heat moves whenever there is a temperature difference. Engineers use that fact to keep buildings warm, electronics cool, and engines within their material limits.
+Heat transfer is the movement of thermal energy caused by a temperature difference, through conduction, convection, and radiation. Engineers use it to keep buildings warm, electronics cool, and engines within their material limits.
+
 **Prerequisites:** [Oscillations, waves, light, and heat](07-waves-light-heat.md), [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md)
 **Time:** 8-10 h
 

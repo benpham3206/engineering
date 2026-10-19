@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-The power grid carries electricity from power plants to homes, factories, and offices across distances of hundreds of kilometres. It runs as one machine that must match supply and demand every second. An engineer who understands the grid can size a transmission line, read a frequency number, and see why a fault in one substation can trip breakers far away.
+The power grid is the network that carries electricity from power plants to homes, factories, and offices across distances of hundreds of kilometres. An engineer who understands the grid can size a transmission line, read a frequency number, and see why a fault in one substation can trip breakers far away. It runs as one machine that must match supply and demand every second.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 8-10 h

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Machining is a family of processes that remove material with a cutting tool. Milling uses a rotating multi-tooth cutter on a stationary or moving workpiece. Turning spins the workpiece and holds a single-point tool against it. Drilling makes round holes with a rotating bit. CNC (computer numerical control) runs these operations from a program, so the same part can be made again and again with the same accuracy.
+Machining is the family of processes that shapes a part by cutting away material with a tool. Engineers need to know which process to choose because each one sets the shape, accuracy, and cost of the finished part. Milling uses a rotating multi-tooth cutter on a stationary or moving workpiece. Turning spins the workpiece and holds a single-point tool against it. Drilling makes round holes with a rotating bit. CNC (computer numerical control) runs these operations from a program, so the same part can be made again and again with the same accuracy.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Machining speeds and feeds](02-machining-speeds-and-feeds.md)
 **Time:** 6-8 h

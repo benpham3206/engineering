@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-The first law says energy is conserved. The second law says some energy conversions are impossible, and it sets the best efficiency any engine can reach.
+The second law of thermodynamics is the rule that some energy conversions are impossible, and it sets the best efficiency any engine can reach. Engineers use it, with entropy and the cycles of engines and refrigerators, to judge how close a real engine, refrigerator, or power plant can get to its ideal limit. The first law says energy is conserved.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md) (work, heat, the first law, and ideal gas air), [Single-variable calculus](../math/03-single-variable-calculus.md) (entropy as an integral, natural logarithm)
 **Time:** 8-12 h

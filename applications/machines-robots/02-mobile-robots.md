@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A mobile robot moves itself across floors, yards, or warehouses. It must know where it is, decide where to go, and drive its wheels to get there. This lesson covers the kinematics of the common wheeled base, how wheel encoders give odometry, the sensors that correct odometry, and the basic steps of navigation.
+A mobile robot is a machine that moves itself across floors, yards, or warehouses. An engineer who designs one must get its position and path right, because a robot that loses track of where it is cannot do its job safely.
+
+A mobile robot must know where it is, decide where to go, and drive its wheels to get there. This lesson covers the kinematics of the common wheeled base, how wheel encoders give odometry, the sensors that correct odometry, and the basic steps of navigation.
 
 **Prerequisites:** [Trigonometry](../../math/02-trigonometry.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Probability and statistics](../../math/07-probability-and-statistics.md), [Mechatronics](../electronics/06-mechatronics.md), [Sensors in products](../electronics/05-sensors-in-products.md)
 **Time:** 10-14 h

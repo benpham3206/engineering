@@ -2,8 +2,9 @@
 
 **Type:** lesson
 
-Thermal engineers keep parts cool, keep rooms warm, and move heat from one place to another. A
-processor needs a heat sink, a building needs insulation, and a heat exchanger moves heat from hot
+A thermal system is any arrangement of parts that adds, removes, or moves heat so that a device or building stays within its safe temperature range. Engineers who ignore heat flow build parts that overheat, fail, or waste energy.
+
+A processor needs a heat sink, a building needs insulation, and a heat exchanger moves heat from hot
 fluid to cold fluid. The same few ideas cover all three.
 
 **Prerequisites:** [Circuit basics](../electronics/01-circuit-basics.md) (the thermal analogy uses the same voltage-and-resistance pattern), [Algebra](../../math/01-algebra.md)

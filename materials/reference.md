@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-A lookup sheet for choosing, checking, and failing-analysing engineering materials, for engineers who already know the basics and need a value, a relation, or a checklist in the middle of a job.
+Materials engineering is the study of how the structure and processing of a material set its properties and how that material performs in service. Engineers need it because a material's performance depends on how it was made, not only on its name. A lookup sheet for choosing, checking, and failing-analysing engineering materials, for engineers who already know the basics and need a value, a relation, or a checklist in the middle of a job.
 
 ## Principles
 

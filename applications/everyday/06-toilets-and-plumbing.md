@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A toilet moves waste with a short burst of water, and the plumbing around it keeps sewer gas out of the room and water flowing at a usable pressure. Engineers size the tank, the trap, and the vent so that each flush clears the bowl and the trap keeps its water seal. Water pressure in a building comes from the utility supply or a pump, and every fixture must work at the pressure it receives.
+Toilets and plumbing are the fixtures and pipes that remove waste with a short burst of water and keep sewer gas out of a building. A fault in one fixture can flood a room or let sewer gas into it, so these systems must work every time.
+
+Engineers size the tank, the trap, and the vent so that each flush clears the bowl and the trap keeps its water seal. Water pressure in a building comes from the utility supply or a pump, and every fixture must work at the pressure it receives.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md), [Pumps](../thermal-fluid/09-pumps.md)
 **Time:** 4-6 h

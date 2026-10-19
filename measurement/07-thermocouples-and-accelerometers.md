@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Thermocouples measure temperature with a voltage produced by a junction of two dissimilar metals. Accelerometers measure acceleration, usually with a small mass on a spring, and output a voltage or digital value proportional to it. Both are common sensors on machines, test rigs, and vehicles.
+Thermocouples and accelerometers are two common sensors, one for temperature and one for acceleration. Engineers rely on them to watch temperature and motion on machines, test rigs, and vehicles.
+
+Thermocouples measure temperature with a voltage produced by a junction of two dissimilar metals. Accelerometers measure acceleration, usually with a small mass on a spring, and output a voltage or digital value proportional to it.
 
 **Prerequisites:** [Sensors and transducers](05-sensors-and-transducers.md), [Electricity and magnetism](../physics/06-electricity-and-magnetism.md), [Particle dynamics](../physics/02-particle-dynamics.md) (acceleration)
 **Time:** 4-6 h

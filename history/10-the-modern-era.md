@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-From about 1970 onward, engineers gained tools that changed how they design, test, and build: computer simulation, satellite navigation, networked data, additive manufacturing, and modern batteries and solar cells. These tools form the working environment of engineers today, and each one brings a new way to fail, such as trusting a precise-looking simulation.
+The modern era is the period from about 1970 onward, when engineers gained tools that changed how they design, test, and build: computer simulation, satellite navigation, networked data, additive manufacturing, and modern batteries and solar cells. Engineers today should know it because these tools form their working environment, and each one brings a new way to fail, such as trusting a precise-looking simulation.
 
 **Prerequisites:** [Semiconductors and computing](09-semiconductors-and-computing.md), [War, nuclear, and space](08-war-nuclear-and-space.md), [Principles that last](../philosophy/07-principles-that-last.md), [Linear algebra](../math/05-linear-algebra.md), [Numerical methods](../math/08-numerical-methods.md)
 **Time:** 3-4 h

@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A rotorcraft lifts itself by spinning blades that push air down, so it can hover and fly at low speed. An engineer sizes the rotor from the hover power, which momentum theory predicts, and designs the control system that keeps the craft stable.
+Rotorcraft and drones are aircraft that lift themselves with spinning blades that push air down, so they can hover and fly at low speed. A craft that cannot hover or stay level will crash, so its design must be proven before it flies.
+
+An engineer sizes the rotor from the hover power, which momentum theory predicts, and designs the control system that keeps the craft stable.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Feedback control](../../physics/14-controls.md)
 **Time:** 6-8 h

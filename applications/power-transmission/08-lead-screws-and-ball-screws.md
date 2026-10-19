@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A lead screw turns rotary motion into linear motion through a threaded nut. A ball screw does the same job with steel balls that roll in the thread groove, which cuts friction. Engineers choose these screws for precise positions and large thrust, and they must check efficiency, back-driving, and the speed at which a long screw whirls.
+Lead screws and ball screws are threaded rods that turn rotary motion into linear motion through a nut, and a ball screw uses steel balls that roll in the thread groove, which cuts friction. Engineers choose these screws for precise positions and large thrust, and they must check efficiency, back-driving, and the speed at which a long screw whirls.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md) (friction and moments), [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md) (thread geometry and bolt preload), [Bending and buckling](../../physics/05-bending-and-buckling.md), [Mechatronic systems](../../design/11-mechatronic-systems.md) (lead and encoder counts), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 5-7 h

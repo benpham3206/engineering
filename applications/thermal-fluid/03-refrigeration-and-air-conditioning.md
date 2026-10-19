@@ -2,10 +2,9 @@
 
 **Type:** lesson
 
-A refrigerator and an air conditioner move heat from a cold space to a warm one. They do this with a
-refrigerant that boils at low pressure, absorbs heat, is squeezed to high pressure, and releases heat.
-Engineers use the same vapor-compression cycle in kitchens, offices, cars, and cold stores, so it is
-worth understanding once.
+Refrigeration and air conditioning are the methods of moving heat from a cold space to a warmer one. Engineers use the same vapor-compression cycle in kitchens, offices, cars, and cold stores, so it is worth understanding once.
+
+Both use a refrigerant that boils at low pressure, absorbs heat, is squeezed to high pressure, and releases heat.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Thermal systems](01-thermal-systems.md), [Algebra](../../math/01-algebra.md)
 **Time:** 8-10 h

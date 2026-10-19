@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A transmission changes the speed and torque from the engine to the wheels, and a differential lets the
+A transmission is a set of gears that changes the speed and torque from the engine to the wheels, and a differential is a gear set that lets the
 two driven wheels turn at different speeds in a corner. Engineers pick the gear ratios to match the
 engine's power band to the vehicle's speed and load, and they set the differential to balance traction
 against steering and wear. Both parts follow simple ratio and torque rules, and efficiency decides how

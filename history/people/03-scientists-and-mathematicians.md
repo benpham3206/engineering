@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-From about 1650 to 1920, scientists and mathematicians wrote the equations that engineers still use to size beams, pipes, circuits, and engines. This lesson covers fourteen people in rough order of their work, and each entry links to the lesson in this repo that uses it.
+Scientists and mathematicians are the thinkers, active from about 1650 to 1920, who wrote the equations that engineers still use. Engineers today should know them because those equations still size beams, pipes, circuits, and engines in real designs. This lesson covers fourteen people in rough order of their work, and each entry links to the lesson in this repo that uses it.
 
 **Prerequisites:** [Scientific revolution](../04-scientific-revolution.md), [Single-variable calculus](../../math/03-single-variable-calculus.md), [Bending and buckling](../../physics/05-bending-and-buckling.md), [Heat transfer](../../physics/12-heat-transfer.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 4-6 h

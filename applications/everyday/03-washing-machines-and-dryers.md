@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A washing machine spins a drum fast enough to throw water out of clothes, and a dryer heats air to evaporate the rest. The spin g-force grows with the square of the drum speed and with the drum radius, and an unbalanced load turns that force into shaking. Engineers who size drums, motors, and suspensions need these relations and the safety measures they demand.
+Washing machines and dryers are appliances that remove water from clothes, one by spinning and one by heating air. Engineers need the physics of spin and heat because an unbalanced drum shakes the machine, and drying speed depends on the heat supplied.
+
+The spin g-force grows with the square of the drum speed and with the drum radius, and an unbalanced load turns that force into shaking. Engineers who size drums, motors, and suspensions need these relations and the safety measures they demand.
 
 **Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 3-4 h

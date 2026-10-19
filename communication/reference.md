@@ -2,6 +2,8 @@
 
 **Type:** reference
 
+Engineering communication is the writing, drawing, presenting, and documenting that let others act on engineering work. Engineers need it because work that its readers cannot understand is not finished.
+
 A lookup sheet of templates, conventions, and checks for writing, drawing, presenting, and documenting engineering work, for an engineer who needs a layout, a rule, or a checklist in the middle of a task.
 
 ## Principles

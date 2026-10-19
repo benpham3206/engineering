@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Most results are calculated from several measured quantities, and each one carries its own uncertainty. Propagation of uncertainty is the method for finding the uncertainty of the result. Significant figures are the simpler rule for writing the result so it does not claim more precision than you have.
+Propagation of uncertainty is the method for finding how the uncertainties of measured inputs combine into the uncertainty of a result. Engineers need it, because a result is only as trustworthy as the uncertainties it was built from.
+
+Most results are calculated from several measured quantities, and each one carries its own uncertainty. Significant figures are the simpler rule for writing the result so it does not claim more precision than you have.
 
 **Prerequisites:** [Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [Single-variable calculus](../math/03-single-variable-calculus.md) (partial derivatives as sensitivities)
 **Time:** 6-8 h

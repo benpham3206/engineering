@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Raw readings become useful only after you summarize them, fit a model to them, and report the result with its uncertainty. This lesson covers the core tools: the mean and standard deviation, a straight-line fit by least squares, residuals to check the fit, and a reporting format that another engineer can check.
+Data analysis is the work of turning raw readings into a summary, a fitted model, and a reported result with its uncertainty. Engineers need it because raw readings mean little until someone can check how they were summarized.
+
+This lesson covers the core tools: the mean and standard deviation, a straight-line fit by least squares, residuals to check the fit, and a reporting format that another engineer can check.
 
 **Prerequisites:** [Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md), [Experiment design](09-experiment-design.md), [Probability and statistics](../math/07-probability-and-statistics.md) (least-squares fits)
 **Time:** 8-10 h

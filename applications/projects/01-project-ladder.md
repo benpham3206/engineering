@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Projects turn the theory into hardware that you can measure and test. The ladder below starts with a
+A build project is a hands-on exercise in which you make a piece of hardware and then measure and test it. Projects matter to engineers because they show whether a theory predicts what real hardware does, and a gap between the two is useful information.
+
+The ladder below starts with a
 first-year bench exercise and ends with a capstone. Each rung uses the skills from the rungs below it,
 and each one has a clear goal and a check you can run yourself.
 

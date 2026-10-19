@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A part fails when the stress in it is too high for the material. Engineers do not design to the edge of failure. They design with a factor of safety (FoS), a margin that covers unknown loads, material variation, and manufacturing error.
+A factor of safety (FoS) is the ratio of a part's strength to the stress it must carry in service, a margin that covers unknown loads, material variation, and manufacturing error. Engineers need it because no load, material, or process is ever exactly as predicted. A part fails when the stress in it is too high for the material. Engineers do not design to the edge of failure.
 **Prerequisites:** [Design process](01-design-process.md), [Statics](../physics/01-statics.md), [Axial and torsion](../physics/04-axial-and-torsion.md), [Mechanical properties](../materials/03-mechanical-properties.md)
 **Time:** 6-10 h
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-No part is made to an exact size. A tolerance is the allowed variation in a dimension. Tolerancing sets the limits that keep a part working, and stack-up adds up the variation of several parts that must fit together. Geometric tolerances (GD&T) are covered in the next two lessons.
+Tolerancing is the practice of setting the allowed variation in each dimension so a part keeps working, and stack-up is the adding up of that variation across several parts that must fit together. Every part varies a little, so a design that ignores tolerances can look correct on paper and still fail to assemble. Geometric tolerances (GD&T) are covered in the next two lessons.
 
 **Prerequisites:** [Engineering graphics](02-engineering-graphics.md), [Design process](01-design-process.md), [Algebra](../math/01-algebra.md), [Probability and statistics](../math/07-probability-and-statistics.md) (for the RSS method)
 **Time:** 5-8 h

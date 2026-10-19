@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-Lookup sheet for the working engineer who needs a formula, a typical value, a rule with its limit, or a checklist mid-job. It assumes the lessons in this folder are known.
+Manufacturing is the set of processes that turn raw material into finished parts by removing, adding, or deforming material. Every process leaves its own limits, and a designer who ignores them draws parts that cannot be made as shown. Lookup sheet for the working engineer who needs a formula, a typical value, a rule with its limit, or a checklist mid-job. It assumes the lessons in this folder are known.
 
 ## Principles
 

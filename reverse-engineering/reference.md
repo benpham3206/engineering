@@ -2,6 +2,8 @@
 
 **Type:** reference
 
+Reverse engineering is the process of taking a finished product apart to learn how it is built, then rebuilding its design from measurements and evidence. Engineers do it to repair, improve, or replace a part when no drawing exists.
+
 A lookup sheet for engineers taking a part apart and rebuilding it: thread and fastener identification, material and process clues, typical densities, nominal-size inference, measurement order, and the checks that keep the work lawful and safe.
 
 ## Principles

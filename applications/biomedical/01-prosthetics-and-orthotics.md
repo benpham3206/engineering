@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A prosthesis replaces a missing limb, and an orthosis supports or corrects a limb that remains. Engineers design both to carry body loads, copy the motion of a healthy joint, and stay comfortable against the skin for many hours a day.
+Prosthetics and orthotics are devices that replace a missing limb or support and correct one that remains. A poorly fitted device can cause sores and falls, so the design must be comfortable as well as strong.
+
+Engineers design both to carry body loads, copy the motion of a healthy joint, and stay comfortable against the skin for many hours a day.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Mechanical properties](../../materials/03-mechanical-properties.md), [Failure: fracture and fatigue](../../materials/06-fracture-and-fatigue.md), [Batteries](../electrical/06-batteries.md)
 **Time:** 6-8 h

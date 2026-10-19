@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Stress and strain describe what happens inside a material when you pull, push, or twist it. Engineers use them to check that a rod, cable, or shaft is strong enough and stiff enough before anything gets built.
+Axial loading and torsion are the pulling, pushing, and twisting of a rod, cable, or shaft, and stress and strain are the measures of the force and deformation inside the material when that happens. Engineers use them to check that a rod, cable, or shaft is strong enough and stiff enough before anything gets built.
 
 **Prerequisites:** [Statics](01-statics.md) (free-body diagrams and equilibrium)
 **Time:** 6-8 h

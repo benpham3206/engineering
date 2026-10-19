@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Free engineering software is the set of no-cost programs that do the same jobs as paid engineering tools, such as CAD, simulation, spreadsheets, and programming. Knowing which free options exist lets a student or new engineer learn and work without a license budget.
+
 You do not need expensive licenses to learn or do real engineering work. For almost every paid tool used in industry there is a free one that is capable enough for coursework, personal projects, and a lot of professional work. This lesson is a map of those tools, grouped by job.
 
 > **Dated material (as of 2026).** Software names, licenses, and free-plan terms change. The categories, the habits in Core ideas, and the open file formats will last much longer than any tool listed here. When a tool disappears, look for its replacement by job, not by name.

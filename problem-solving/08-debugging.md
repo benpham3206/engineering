@@ -2,11 +2,11 @@
 
 **Type:** lesson
 
+Debugging is the process of finding the one step in a chain that causes a wrong answer or failed build, and fixing only that step. Engineers need it because guessing and changing several things at once slows the search and hides the real cause.
+
 When an answer is wrong, or a calculation or build fails, the cause is almost never a
-mystery. It is one step in a chain that you have not yet checked. Debugging means
-isolating that step: shrink the problem until you can see which part breaks, then fix only
-that part. Guessing and changing several things at once makes the search slower and hides
-the real cause.
+mystery. Find it by shrinking the problem until you can see which part breaks, then fix only
+that part.
 
 **Prerequisites:** [Sanity-check the answer](06-sanity-check-the-answer.md), [Check units and limiting cases](05-units-and-limiting-cases.md)
 **Time:** 4-6 h

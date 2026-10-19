@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Position is the most used geometric tolerance, and it is the one most often misread. Adding material conditions (MMC and LMC) lets the allowed position error grow when the feature is made away from its tightest size. That growth is called bonus tolerance.
+Position is a geometric tolerance that limits how far a feature's center or axis may sit from its true location, and a material condition (MMC or LMC) is a rule that ties the allowed error to the feature's actual size. Engineers use both to control where features sit without paying for tighter machining than the function needs. Position is the most used geometric tolerance, and it is the one most often misread. Adding material conditions lets the allowed position error grow when the feature is made away from its tightest size, and that growth is called bonus tolerance.
 
 The rules come from ASME Y14.5, a paid standard. This lesson describes the common practice in plain words. Check the standard for any case that is not covered here.
 

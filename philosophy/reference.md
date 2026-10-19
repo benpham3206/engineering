@@ -2,6 +2,8 @@
 
 **Type:** reference
 
+Failure analysis is the study of why engineered things break, and a decision framework is a structured way to choose what to do next. Engineers need both because most failures repeat patterns that a careful check can catch.
+
 A lookup sheet for engineers who need to recall a documented failure, check a design against the patterns that repeat across failures, or decide when to stop, escalate, or refuse a piece of work.
 
 ## Principles

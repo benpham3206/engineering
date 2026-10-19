@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-A dense lookup sheet of the algebra, calculus, linear algebra, differential equation, transform, Fourier, probability, and numerical formulas an engineer needs mid-task, with the assumptions under which each one holds.
+Mathematics is the language of quantities, patterns, and change, written in numbers and symbols. This sheet is a dense lookup of the algebra, calculus, linear algebra, differential equation, transform, Fourier, probability, and numerical formulas an engineer needs mid-task, with the assumptions under which each one holds.
 
 ## Principles
 

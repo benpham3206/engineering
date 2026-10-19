@@ -2,6 +2,8 @@
 
 **Type:** reference
 
+Engineering tools are the software, file formats, and measuring instruments that an engineer uses to calculate, record, and check work. Engineers must choose them with care, because work saved in a dead format or measured with the wrong instrument cannot be trusted or reopened.
+
 This sheet covers how to choose, check, and keep engineering software and measuring tools: the file formats that keep work readable for decades, a side-by-side numerical cheat sheet (Python and MATLAB/Octave), the Git commands engineering work needs, and hand and measuring tool selection. It is for any engineer who needs a formula, a format, a command, or a checklist in the middle of a task.
 
 ## Principles

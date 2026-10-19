@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A short list of tools a self-taught engineer can get started with on a tight budget. Most of the list is free. The paid items are optional and you can skip them until a course or project needs them.
+A starter kit is the short list of tools and software that a self-taught engineer can get started with on a tight budget. Choosing it with care keeps your money and time on learning instead of on equipment you never open.
+
+Most of the list is free. The paid items are optional and you can skip them until a course or project needs them.
 
 **Prerequisites:** [Python lesson](02-python.md) for the software parts. Otherwise none.
 **Time:** 2-3 h to set up everything in this list

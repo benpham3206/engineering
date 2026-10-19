@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Between 1825 and 1916, canals and railways turned slow, costly overland and sea routes into corridors that carried goods every day. The projects in this lesson cut through land, lifted ships and trains over hills, and linked oceans and continents. Engineers still use the same basic tools to plan long routes, including grade control, cut-and-fill earthworks, water control, and freight costing.
+Canals and railways are the transport routes, built between 1825 and 1916, that turned slow, costly overland and sea routes into corridors that carried goods every day. Engineers still use the same basic tools to plan long routes, including grade control, cut-and-fill earthworks, water control, and freight costing. The projects in this lesson cut through land, lifted ships and trains over hills, and linked oceans and continents.
 
 **Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Ancient monuments and waterworks](01-ancient-monuments-and-waterworks.md), [Trains](../../applications/vehicles-aerospace/10-trains.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
 **Time:** 4-6 h

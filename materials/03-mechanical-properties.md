@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Mechanical properties describe how a material responds to force. Engineers use them to decide whether a beam will sag, a shaft will snap, or a bracket will bend permanently.
+Mechanical properties are the measurable traits of a material, such as strength, stiffness, hardness, toughness, and ductility, that describe how it responds to force. Engineers use them to decide whether a beam will sag, a shaft will snap, or a bracket will bend permanently.
 **Prerequisites:** [Atomic structure and bonding](01-atomic-structure-bonding.md), [Crystal structures and defects](02-crystal-structures-defects.md), [Algebra](../math/01-algebra.md)
 **Time:** 8-10 h
 

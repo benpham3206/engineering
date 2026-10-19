@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Linear algebra organizes many equations into one matrix equation, $\mathbf{K}\mathbf{u} = \mathbf{F}$. Engineers use it to solve truss and frame structures, circuit networks, and multi-degree-of-freedom vibration, and eigenvalues tell you natural frequencies and the stability of a system.
+Linear algebra is the branch of mathematics that organizes many equations into one matrix equation, $\mathbf{K}\mathbf{u} = \mathbf{F}$. Engineers use it to solve truss and frame structures, circuit networks, and multi-degree-of-freedom vibration, and eigenvalues tell you natural frequencies and the stability of a system.
 
 **Prerequisites:** [Algebra](01-algebra.md)
 **Time:** 30-40 h

@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-A lookup sheet for building and checking electrical, mechatronic, robotic, thermal, and fluid systems, for an engineer who needs a formula, a value, a limit, or a checklist in the middle of a build or a review.
+Applied engineering is the use of physics and mathematics to design, build, and check real machines and systems, here electrical, mechatronic, robotic, thermal, and fluid ones. This sheet gives an engineer the formula, value, limit, or checklist needed in the middle of a build or a review.
 
 ## Principles
 

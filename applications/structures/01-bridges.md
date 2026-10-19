@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A bridge carries traffic across a gap by moving its loads from the deck to supports on each side. Engineers choose a bridge type from the span, the ground, the traffic, and the budget, then check that every member carries its load without bending too far, buckling, or breaking.
+A bridge is a structure that carries a road, rail line, or path across a gap. A bridge that fails can cut off a town's road or railway, so an engineer must get the design right before the first load crosses.
+
+Engineers choose a bridge type from the span, the ground, the traffic, and the budget, then check that every member carries its load without bending too far, buckling, or breaking.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Bending and buckling](../../physics/05-bending-and-buckling.md), [Mechanics reference](../../physics/reference-mechanics.md)
 **Time:** 8-12 h

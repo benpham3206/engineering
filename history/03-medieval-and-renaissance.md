@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Between about 500 and 1600, engineers in Europe, the Islamic world, and China turned moving water, wind, and springs into steady power. They built mills, clocks, cathedrals, and printing presses. Each of these machines still shows up in modern design: the water wheel as a turbine ancestor, the clock as a timing regulator, the printing press as the first mass production of a document.
+Medieval and renaissance engineering is the period from about 500 to 1600 when engineers in Europe, the Islamic world, and China learned to turn moving water, wind, and springs into steady power. Engineers today should know it because the mills, clocks, cathedrals, and printing presses built then still shape modern design, from the water wheel as a turbine ancestor to the clock as a timing regulator and the printing press as the first mass production of a document.
 
 **Prerequisites:** [Simple machines](01-simple-machines.md), [Ancient engineering](02-ancient-engineering.md), [Hydrostatics and Bernoulli](../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 2-3 h

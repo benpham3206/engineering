@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Between about 1876 and about 1914, the internal combustion engine, the airplane, and the production line moved from workshops into daily life. Engineers still design every vehicle around the trade-offs these inventors first faced: power against weight, efficiency against cost, and a design that can be built many times over.
+Flight, cars, and mass production is the story of how the internal combustion engine, the airplane, and the production line moved from workshops into daily life between about 1876 and about 1914. Engineers still design every vehicle around the trade-offs these inventors first faced: power against weight, efficiency against cost, and a design that can be built many times over.
 
 **Prerequisites:** [Industrial revolution](05-industrial-revolution.md), [Electrical age](06-electrical-age.md), [Thermodynamics II](../physics/09-thermo-second-law-cycles.md), [Hydrostatics and Bernoulli](../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 2-3 h

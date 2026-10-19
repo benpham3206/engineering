@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-No part is made exactly to its drawing dimension. Tolerances state how far a size may vary, fits describe how two mating parts fit together given those variations, and surface finish describes the texture of the surface. An engineer who writes tolerances that are too tight adds cost, and one who writes them too loose gets parts that do not assemble or do not work. Full standard tables are in the handbooks that the shop uses.
+Tolerances, fits, and surface finish are the rules on a drawing that control how much a part's size and texture may vary and how two mating parts fit together. Every part is made with some variation, so these rules decide whether finished parts assemble and work. An engineer who writes tolerances that are too tight adds cost, and one who writes them too loose gets parts that do not assemble or do not work. Full standard tables are in the handbooks that the shop uses.
 
 **Prerequisites:** [Machining speeds and feeds](02-machining-speeds-and-feeds.md), [Machining processes](03-machining-processes.md), [Tolerancing and stack-up](../design/04-tolerancing-and-stack-up.md)
 **Time:** 6-8 h

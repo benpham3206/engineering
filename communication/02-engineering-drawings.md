@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An engineering drawing is the set of instructions a machinist, inspector, or supplier uses to make a part. It has to say the same thing to everyone who reads it, so it follows strict conventions for layout, lines, and dimensions. For how to model and draw parts in CAD and how to use geometric dimensioning and tolerancing, see [the design folder](../design/README.md).
+An engineering drawing is the set of instructions a machinist, inspector, or supplier uses to make a part. Engineers must make it exact, because any dimension or note left off forces the maker to guess. It has to say the same thing to everyone who reads it, so it follows strict conventions for layout, lines, and dimensions. For how to model and draw parts in CAD and how to use geometric dimensioning and tolerancing, see [the design folder](../design/README.md).
 
 **Prerequisites:** none. Helpful first: [01-technical-writing.md](01-technical-writing.md) for the habit of stating things precisely.
 **Time:** 8-12 h

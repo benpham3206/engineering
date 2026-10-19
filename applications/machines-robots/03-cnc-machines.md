@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A CNC machine moves a cutting tool or a workpiece along straight and rotary axes, each driven by a motor under closed-loop or open-loop control. Its accuracy comes from the machine itself: the stiffness of the structure, the lead of the screws, the resolution of the feedback, and how well the controller holds each axis on its path. An engineer who buys, programs, or repairs a machine tool must know which of these limits the result.
+A CNC machine is a computer-controlled machine tool that moves a cutting tool or a workpiece along straight and rotary axes, each driven by a motor under closed-loop or open-loop control. An engineer who buys, programs, or repairs one must know what limits its accuracy, because a machine that cannot hold its path makes every part wrong.
+
+Its accuracy comes from the machine itself: the stiffness of the structure, the lead of the screws, the resolution of the feedback, and how well the controller holds each axis on its path.
 
 **Prerequisites:** [Machining processes](../../manufacturing/03-machining-processes.md), [Mechatronics](../electronics/06-mechatronics.md), [DC motors](../electrical/01-dc-motors.md), [Brushless and stepper motors](../electrical/02-brushless-and-stepper-motors.md)
 **Time:** 8-10 h

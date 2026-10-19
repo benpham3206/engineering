@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Most engineering work reaches people as writing. A test result that nobody can read has the same value as no test at all. Technical writing is the craft of putting facts in an order a busy reader can use, with enough detail to check them.
+Technical writing is the craft of putting facts in an order a busy reader can use, with enough detail to check them. Engineers need it because most engineering work reaches people as writing, and a test result that nobody can read has the same value as no test at all.
 
 **Prerequisites:** none
 **Time:** 4-6 h

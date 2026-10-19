@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-CAD is the software used to model parts, put them together into assemblies, and produce drawings. A good CAD model stays correct when anyone opens it and changes one dimension. A bad model breaks the moment one thing moves.
+CAD, or computer-aided design, is the use of software to model parts, put them together into assemblies, and produce drawings. Engineers rely on it because one model can drive the drawings, the analysis, and the manufacturing files, so a change made once stays consistent everywhere. A good CAD model stays correct when anyone opens it and changes one dimension. A bad model breaks the moment one thing moves.
 
 **Prerequisites:** [Design process](01-design-process.md), [Engineering graphics](02-engineering-graphics.md)
 **Time:** 6-10 h

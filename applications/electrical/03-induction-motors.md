@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An induction motor makes torque without brushes and without magnets on the rotor. Three-phase currents in the stator make a rotating magnetic field, and that field induces currents in the rotor, which then turn to follow it. Induction motors drive most pumps, fans, compressors, and conveyors in industry, so engineers need to understand slip, the speed-torque curve, and how a variable frequency drive changes speed.
+An induction motor is a motor that makes torque without brushes and without magnets on the rotor. Induction motors drive most pumps, fans, compressors, and conveyors in industry, so engineers need to understand slip, the speed-torque curve, and how a variable frequency drive changes speed. Three-phase currents in the stator make a rotating magnetic field, and that field induces currents in the rotor, which then turn to follow it.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [DC motors](01-dc-motors.md)
 **Time:** 6-8 h

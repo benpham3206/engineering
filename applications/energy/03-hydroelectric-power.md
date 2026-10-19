@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A hydroelectric plant turns the energy of falling water into electricity, and it does so with a turbine and generator that run for decades. Engineers need to understand it because the output depends on two numbers, the head and the flow, and because the same plant can store energy by pumping water back uphill.
+Hydroelectric power is electricity made by letting falling water drive a turbine and generator. Plants are long-lived civil works, so the site's height and water supply decide how much energy they deliver over decades.
+
+Engineers need to understand it because the output depends on two numbers, the head and the flow, and because the same plant can store energy by pumping water back uphill.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md)
 **Time:** 6-8 h

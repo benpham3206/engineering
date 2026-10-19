@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Machinist bench tools are the hand tools and fixtures a machinist uses at a workbench to hold, locate, thread, and finish a part. Engineers who know what these tools can do avoid designs that cost extra time to hold, thread, or finish.
+
 A machinist spends much of the day holding parts, finding edges, cutting threads, and checking holes. The bench tools for those jobs are cheap, and each one has a correct way to use it. As a designer, you need to know what these tools can and cannot do, so you draw parts they can actually make.
 
 **Prerequisites:** [Measurement tools](07-measurement-tools.md), [Shop tools](08-shop-tools.md), and [Machining speeds and feeds](../manufacturing/02-machining-speeds-and-feeds.md).

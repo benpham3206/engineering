@@ -2,9 +2,7 @@
 
 **Type:** lesson
 
-The engineers in this lesson built the theory, machines, and systems of the twentieth century. Their
-work produced the aircraft, rockets, computers, transistors, and communication codes that engineers
-still use every day. Several of them also had controversial records, and those are covered briefly
+Twentieth-century engineers are the people who built the theory, machines, and systems behind aircraft, rockets, computers, transistors, and communication codes. Engineers today should know them because these inventions are still in daily use. Several of them also had controversial records, and those are covered briefly
 and factually.
 
 **Prerequisites:** [War, nuclear, and space](../08-war-nuclear-and-space.md), [Semiconductors and computing](../09-semiconductors-and-computing.md), [Algebra](../../math/01-algebra.md)

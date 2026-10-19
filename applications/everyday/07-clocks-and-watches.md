@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A clock counts equal intervals of time. Every clock needs an oscillator with a steady period, a way to count its cycles, and a way to drive the display. A pendulum clock, a mechanical watch, and a quartz watch solve these three jobs in different ways, and each choice sets the accuracy, the size, and the cost.
+Clocks and watches are timekeeping devices that count equal intervals of time. Each timekeeping device trades accuracy, size, and cost, so an engineer must understand how its oscillator, counter, and display work together.
+
+Every clock needs an oscillator with a steady period, a way to count its cycles, and a way to drive the display. A pendulum clock, a mechanical watch, and a quartz watch solve these three jobs in different ways.
 
 **Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Circuit basics](../electronics/01-circuit-basics.md), [Digital logic and computers](../electronics/07-digital-logic-and-computers.md)
 **Time:** 4-6 h

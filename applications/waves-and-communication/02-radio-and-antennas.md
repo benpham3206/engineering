@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A radio link turns information into an electromagnetic wave, sends the wave through air, and recovers the information at a receiver. An engineer sizes the antenna to the wavelength and checks the link budget, so the received signal stays well above the noise.
+Radio and antennas are the parts of a link that turn information into electromagnetic waves and recover it at a receiver. A weak received signal can be lost in noise, so an engineer must size the antenna to the wavelength and check the link budget.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md)
 **Time:** 4-6 h

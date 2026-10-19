@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A plot is a claim about data, and the reader will believe it at a glance. An honest figure shows the data accurately, labels everything the reader needs, and shows how certain the values are.
+Figures, tables, and plots are the visual and tabular ways an engineer presents data to a reader. Engineers must make them honest, because a reader will believe a plot at a glance.
+
+An honest figure shows the data accurately, labels everything the reader needs, and shows how certain the values are.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md) for referring to figures in text, [Probability and statistics](../math/07-probability-and-statistics.md) for means and error bars, and [Precision, accuracy, and uncertainty](../measurement/02-precision-accuracy-and-uncertainty.md) for uncertainty.
 **Time:** 4-6 h

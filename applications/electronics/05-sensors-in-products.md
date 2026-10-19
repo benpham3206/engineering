@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+A sensor is a part that turns a physical quantity, such as acceleration, temperature, or a magnetic field, into an electrical signal that a product can read. Engineers need to understand these sensors because the accuracy a user sees depends on the sensor and on every electronic stage that follows it.
+
 A phone, car, or appliance reads the world through a small set of sensors. Accelerometers, thermistors, Hall-effect sensors, and image sensors cover most of what these products measure. Engineers pick a sensor for its signal, its power draw, and how well it survives the product's environment.
 
 **Prerequisites:** [Sensors and transducers](../../measurement/05-sensors-and-transducers.md), [Circuit basics](01-circuit-basics.md), [RC circuits and op-amp basics](02-rc-circuits-and-op-amps.md), [Semiconductors](03-semiconductors-diodes-and-transistors.md)

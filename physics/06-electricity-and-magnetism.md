@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Electricity and magnetism explain how motors, generators, sensors, and every electronic circuit work. Engineers use these ideas to size wiring, design power supplies, and predict how a coil or magnet will respond to a changing current.
+Electricity and magnetism are the linked forces that act on electric charge and the currents it makes. Motors, generators, sensors, and every electronic circuit depend on them, and engineers use these ideas to size wiring, design power supplies, and predict how a coil or magnet will respond to a changing current.
 
 **Prerequisites:** [Algebra](../math/01-algebra.md), [Trigonometry](../math/02-trigonometry.md), [Single-variable calculus](../math/03-single-variable-calculus.md) (Faraday's law uses a rate of change of flux)
 **Time:** 8-10 h

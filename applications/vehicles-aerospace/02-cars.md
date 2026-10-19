@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A car turns stored energy into motion, and the tires push on the road to move it. Engineers size the engine, the gearbox, and the brakes from one balance: the force at the tires must match the resistance the car meets. This lesson covers the drivetrain layout, the road load that the car must overcome, and the braking distance that friction allows.
+A car is a road vehicle that turns stored fuel or battery energy into motion through its tires. An engineer who designs one must get its power and brakes right, because a car that cannot stop in time puts its driver and others at risk.
+
+Engineers size the engine, the gearbox, and the brakes from one balance: the force at the tires must match the resistance the car meets. This lesson covers the drivetrain layout, the road load that the car must overcome, and the braking distance that friction allows.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6-8 h

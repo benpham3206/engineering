@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+A unit is an agreed-upon amount of a quantity, such as one metre of length, that every measurement is counted in. Every number in engineering means nothing without its unit, and mixing units has destroyed a spacecraft.
+
 A measurement is a number with a unit. Engineers use units to check that equations make sense, convert between systems, and catch mistakes before they become expensive.
 
 **Prerequisites:** none (high-school algebra helps)

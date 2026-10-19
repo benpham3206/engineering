@@ -2,10 +2,11 @@
 
 **Type:** lesson
 
+Picking the governing principles is the step of choosing the laws and model rules that connect what you know to what you want to find. Engineers need it because the right principles, not memorized formulas, decide whether a problem can be solved.
+
 A principle is a law of nature or a rule of the model that ties your knowns to your unknowns.
 Most engineering problems use only a few: force balance, Newton's second law, conservation of
-energy, and conservation of mass or heat. The skill is picking the right ones, not memorizing
-every formula.
+energy, and conservation of mass or heat.
 
 **Prerequisites:** [Define the problem](01-define-the-problem.md), [Draw it](02-draw-it.md), [Statics](../physics/01-statics.md), [Particle dynamics](../physics/02-particle-dynamics.md)
 **Time:** 4-6 h

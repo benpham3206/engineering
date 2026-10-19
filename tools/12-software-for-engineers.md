@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Software skills for engineers are the working habits and tools, such as the terminal, version control, and small scripts, that let an engineer run calculations and keep work repeatable. Engineers need them because a task done by hand is slow to repeat, while a script reruns the same steps every time.
+
 Most engineers write some software, even if they never call themselves programmers. You repeat the same calculation in a spreadsheet, rename 200 files by hand, or export the same CAD view for each revision. This lesson covers the working skills behind that work: the terminal, version control, reproducible environments, small reliable scripts, testing, debugging, and the basics of web apps. The ideas last longer than any single tool.
 
 **Prerequisites:** [Python for engineering calculations](02-python.md), [Free engineering software](09-free-software.md), [Tools reference](reference.md) (the Git and checklist sections), [Factor of safety and failure](../design/07-factor-of-safety-and-failure.md)

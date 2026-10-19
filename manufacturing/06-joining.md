@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Joining connects two or more parts into one assembly. The three main families are welding (fusing the base metal, usually with heat), mechanical fastening (bolts, screws, rivets, and pins), and adhesive bonding (glues and epoxies). Each has different strength, cost, inspection, and reversibility. Engineers choose a joint by asking what load it carries, whether it must come apart later, and how it will be checked.
+Joining is the making of a connection between two or more parts so they act as one assembly. Every assembly is only as strong as its joints, so a weak or poorly inspected joint can cause a whole machine to fail. The three main families are welding (fusing the base metal, usually with heat), mechanical fastening (bolts, screws, rivets, and pins), and adhesive bonding (glues and epoxies). Each has different strength, cost, inspection, and reversibility. Engineers choose a joint by asking what load it carries, whether it must come apart later, and how it will be checked.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)
 **Time:** 5-7 h

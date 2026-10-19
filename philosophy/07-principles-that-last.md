@@ -2,7 +2,9 @@
 
 **Type:** philosophy
 
-Tools change every few years. Materials change every few decades. The laws of physics and the habits of good engineers do not change at all. These principles held for the people who built aqueducts, and they hold for the people building rockets now.
+Principles that last are the laws of physics and the habits of good engineers that stay true across decades and generations. Engineers return to them because tools and materials keep changing while these do not.
+
+Tools change every few years. Materials change every few decades. These principles held for the people who built aqueducts, and they hold for the people building rockets now.
 
 **Prerequisites:** none. Read this first, and read it again every few years.
 

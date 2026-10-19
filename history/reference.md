@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-Lookup sheet for the main events, eras, and ideas in the history lessons, for an engineer who needs a date, a place, or the lesson that covers it. Every row comes from a statement in the lessons, and dates marked "about" keep that hedge.
+The history of engineering is the record of the machines, structures, and systems that people built with the energy, materials, and knowledge of each age. This sheet is a lookup for the main events, eras, and ideas in the history lessons, for an engineer who needs a date, a place, or the lesson that covers it. Every row comes from a statement in the lessons, and dates marked "about" keep that hedge.
 
 ## Principles
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-In the 1400s and 1500s, Europeans joined mathematics, art, mining, and mechanics into single careers. Engineers of this period built domes, studied machines on paper, wrote the first full guide to mining, and began to test motion and strength with numbers. This lesson profiles five people from that period and shows where their work is found today.
+Renaissance polymaths are the Europeans of the 1400s and 1500s who joined mathematics, art, mining, and mechanics into single careers. Engineers today should know them because their work on domes, machines, mining, and the testing of motion and strength still shows up in engineering methods. This lesson profiles five people from that period and shows where their work is found today.
 
 **Prerequisites:** [Ancient and medieval minds](01-ancient-and-medieval-minds.md), [Simple machines](../01-simple-machines.md), [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
 **Time:** 6-8 h

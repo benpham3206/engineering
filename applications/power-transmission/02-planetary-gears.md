@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A planetary gear train puts a sun gear, planet gears, and a ring gear in one compact set, so three members can turn at once. It gives high ratios in a small space and forms the core of automatic transmissions, hub gears, and gearmotors. The Willis equation ties the speeds of the three members together, and an engineer uses it to pick the input, output, and fixed member.
+A planetary gear train is a gear set that puts a sun gear, planet gears, and a ring gear in one compact unit, so three members can turn at once. It gives high ratios in a small space and forms the core of automatic transmissions, hub gears, and gearmotors. The Willis equation ties the speeds of the three members together, and an engineer uses it to pick the input, output, and fixed member.
 
 **Prerequisites:** [Gear trains](01-gear-trains.md), [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 4-6 h

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Between about 1935 and 1957, radar, jet engines, nuclear reactors, rockets, and electronic computers moved from research into working machines, driven largely by war and the cold war that followed. Many of today's power plants, aircraft, satellites, and computers still rely on the physics, design methods, and safety rules these programs created.
+War, nuclear, and space engineering is the story of the programs, driven largely by war and the cold war that followed, that moved radar, jet engines, nuclear reactors, rockets, and electronic computers from research into working machines between about 1935 and 1957. Many of today's power plants, aircraft, satellites, and computers still rely on the physics, design methods, and safety rules these programs created.
 
 **Prerequisites:** [Electrical age](06-electrical-age.md), [Flight, cars, and mass production](07-flight-cars-and-mass-production.md), [Waves, light, and heat](../physics/07-waves-light-heat.md), [Thermodynamics II](../physics/09-thermo-second-law-cycles.md), [Orbital mechanics and rockets](../physics/15-orbital-mechanics-and-rockets.md)
 **Time:** 3-4 h

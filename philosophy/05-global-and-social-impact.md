@@ -2,7 +2,9 @@
 
 **Type:** philosophy
 
-Engineering changes how people live, work, travel, get water and power, and communicate, and it does so unevenly across regions and social groups. Engineers care because the people who gain or lose from a project are often not the people who make the design choices.
+Global and social impact is the effect that engineering has on how people live, work, and get essential services across regions and social groups. Engineers need to understand it because the people who gain or lose from a project are often not the people who make the design choices.
+
+Engineering changes how people live, work, travel, get water and power, and communicate, and it does so unevenly across regions and social groups.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md), [Ethics and professional responsibility](04-ethics-and-professional-responsibility.md)
 **Time:** 3-5 h

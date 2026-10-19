@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-Lookup sheet for the great projects in the history lessons, for an engineer who needs a date, a size, or the lesson a project teaches. Each row gives one number the lesson states and keeps the lesson's hedges on dates and counts.
+The great projects of engineering history are the large built works, such as canals, bridges, dams, and networks, that tested the engineering of their age. This sheet is a lookup for the great projects in the history lessons, for an engineer who needs a date, a size, or the lesson a project teaches. Each row gives one number the lesson states and keeps the lesson's hedges on dates and counts.
 
 | Project | Built | Where | Scale | Engineering lesson it teaches | Lesson |
 |---|---|---|---|---|---|

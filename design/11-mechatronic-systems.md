@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A mechatronic system combines mechanics, electronics, sensors, actuators, and software into one machine that senses what it is doing and corrects itself. A 3D printer, a robotic arm, a camera gimbal, and a car's cruise control are all mechatronic systems. The skill is in the connections. A good mechanical design is wasted if the sensor cannot see the motion, and a good controller cannot fix a loose gear.
+A mechatronic system is a machine that combines mechanics, electronics, sensors, actuators, and software so it can sense what it is doing and correct itself. Engineers who build these systems must understand every part, because a weak link in any one of them limits the performance of the whole machine. A 3D printer, a robotic arm, a camera gimbal, and a car's cruise control are all mechatronic systems. The skill is in the connections. A good mechanical design is wasted if the sensor cannot see the motion, and a good controller cannot fix a loose gear.
 
 **Prerequisites:** [Design process](01-design-process.md), [Shafts and bearings](08-shafts-and-bearings.md), [Sensors and transducers](../measurement/05-sensors-and-transducers.md), [Electricity and magnetism](../physics/06-electricity-and-magnetism.md), [Feedback control](../physics/14-controls.md)
 **Time:** 10-15 h

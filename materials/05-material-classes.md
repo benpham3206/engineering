@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Engineering materials fall into four broad classes. Each class has a typical bonding type, a typical range of properties, and typical uses. Knowing the class tells you what to expect before you test a single sample.
+Metals, polymers, ceramics, and composites are the four broad classes of engineering material, and each class has a typical bonding type, range of properties, and set of uses. Engineers need the classes because knowing one tells you what to expect before you test a single sample.
 
 **Prerequisites:** [Atomic structure and bonding](01-atomic-structure-bonding.md), [Crystal structures and defects](02-crystal-structures-defects.md), [Mechanical properties](03-mechanical-properties.md), [Algebra](../math/01-algebra.md)
 **Time:** 6-8 h

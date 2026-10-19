@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Two quick tests catch many wrong formulas before you trust them. The first is dimensional
+Checking units and limiting cases is the practice of testing a formula with dimensional analysis and with an extreme input value. Engineers need it because these two quick tests catch many wrong formulas before anyone trusts them.
+
+The first test is dimensional
 analysis. Every term in an equation must have the same units, and the final result must have
 the units of the quantity you want. The second is the limiting case. Push one input to an
 extreme value (zero, very large, or a special angle) and check whether the answer does what

@@ -2,9 +2,9 @@
 
 **Type:** lesson
 
-A heat pump moves heat from a cold source, such as outdoor air or the ground, into a warm building. It
-uses the same refrigeration cycle as an air conditioner, run in the other direction. It delivers more
-heat than the electricity it consumes, so it heats a building with less energy than a resistance heater.
+A heat pump is a machine that moves heat from a cold source, such as outdoor air or the ground, into a warm building. Engineers use heat pumps because one delivers more heat than the electricity it consumes, so it heats a building with less energy than a resistance heater.
+
+It uses the same refrigeration cycle as an air conditioner, run in the other direction.
 
 **Prerequisites:** [Refrigeration and air conditioning](03-refrigeration-and-air-conditioning.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Thermal systems](01-thermal-systems.md)
 **Time:** 6-8 h

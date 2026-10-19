@@ -2,8 +2,9 @@
 
 **Type:** lesson
 
-A sketch turns a sentence into a picture you can check. Engineers draw before they calculate
-because a picture shows which forces exist, which way they point, and where the system ends.
+Drawing the problem is the step of making a sketch that shows the parts, forces, and boundaries of a system before any calculation. Engineers need it because a picture shows which forces exist, which way they point, and where the system ends.
+
+A sketch turns a sentence into a picture you can check.
 A free-body diagram is the most useful sketch in mechanics. It shows one object and every
 force acting on it.
 

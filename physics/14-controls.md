@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A control system measures an output, compares it with a desired value, and changes an input to close the gap. Engineers use feedback to hold a temperature, keep a drone level, or position a robot arm, even when the plant changes or a disturbance pushes on it.
+Feedback control is a method in which a system measures its output, compares it with a desired value, and changes its input to close the gap. Engineers use feedback to hold a temperature, keep a drone level, or position a robot arm, even when the plant changes or a disturbance pushes on it.
 
 **Prerequisites:** [Vibrations](13-vibrations.md), [Particle dynamics](02-particle-dynamics.md), [Differential equations](../math/06-differential-equations.md) (Laplace transforms and transfer functions)
 **Time:** 8-12 h

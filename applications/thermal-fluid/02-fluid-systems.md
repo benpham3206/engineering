@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A fluid system moves water, air, or oil through pipes, ducts, and pumps. Engineers size the pipe,
+A fluid system is a set of pipes, ducts, and pumps that moves water, air, or oil from one place to another. A fluid system sized wrongly delivers too little flow or wastes pump power. Engineers size the pipe,
 choose the pump, and check that the pressure stays in range. Three ideas cover most of the work:
 mass is conserved, energy is conserved along a streamline, and friction takes energy away.
 

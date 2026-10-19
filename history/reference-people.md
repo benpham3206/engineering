@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-Lookup sheet for the people profiled in the history lessons, for an engineer who needs a name, a date, or the lesson that covers the work. The table is alphabetical by surname and gives lived dates exactly as the lessons state them.
+The people of engineering history are the inventors, builders, and scientists whose work created the machines, structures, and systems that engineers use. This sheet is a lookup for the people profiled in the history lessons, for an engineer who needs a name, a date, or the lesson that covers the work. The table is alphabetical by surname and gives lived dates exactly as the lessons state them.
 
 | Name | Lived | Field | Known for | Lesson |
 |---|---|---|---|---|

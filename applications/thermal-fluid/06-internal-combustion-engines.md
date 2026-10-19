@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An internal combustion engine burns fuel inside its own cylinders and turns the heat from that burning into shaft work. Engineers use it to size power and torque, to predict fuel use, and to meet emissions limits in cars, trucks, generators, and small tools.
+An internal combustion engine is a machine that burns fuel inside its own cylinders and turns the heat from that burning into shaft work. Engineers use it to size power and torque, to predict fuel use, and to meet emissions limits in cars, trucks, generators, and small tools.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 8-12 h

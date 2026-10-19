@@ -2,6 +2,8 @@
 
 **Type:** reference
 
+Measurement is the process of giving a physical quantity a number, a unit, and an uncertainty. Engineers need all three, because a value without them cannot be trusted or compared.
+
 A lookup sheet for units, SI rules, uncertainty, significant figures, sensors, thermocouples, strain gauges, sampling, and experiment design, for an engineer who needs a value or a rule in the middle of a measurement task.
 
 ## Principles

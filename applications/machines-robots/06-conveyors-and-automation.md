@@ -2,9 +2,9 @@
 
 **Type:** lesson
 
-A conveyor moves material along a fixed path with a belt or rollers, and automation decides when it
-starts, stops, and where each item goes. An engineer sizes the drive for speed, throughput, and
-power, and designs the control logic so that a fault stops the line safely.
+Conveyors and automation are the belts, rollers, and control logic that move and sort material along a production line. An engineer who designs a line must get the drive and control logic right, because an undersized drive or a poor fault response stops the whole line.
+
+An engineer sizes the drive for speed, throughput, and power, and designs the control logic so that a fault stops the line safely.
 
 **Prerequisites:** [Mechatronics](../electronics/06-mechatronics.md), [Sensors in products](../electronics/05-sensors-in-products.md), [Digital logic and computers](../electronics/07-digital-logic-and-computers.md), [Gear trains](../power-transmission/01-gear-trains.md), [Statics](../../physics/01-statics.md)
 **Time:** 8-12 h

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Every material property you will meet later comes from how atoms hold on to their electrons and to each other. An engineer who knows why steel is stiff and rubber is soft can predict how a part will behave before building it.
+Atomic structure is the arrangement of protons, neutrons, and electrons inside an atom, and bonding is the way atoms hold on to one another. Engineers need both because the stiffness, strength, and softness of every material come from these bonds. An engineer who knows why steel is stiff and rubber is soft can predict how a part will behave before building it.
 
 **Prerequisites:** none
 **Time:** 6-8 h

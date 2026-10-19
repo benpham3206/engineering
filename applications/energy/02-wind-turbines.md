@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A wind turbine takes kinetic energy from moving air and turns it into electricity. Engineers need to understand it because the power in the wind rises with the cube of the wind speed, and no rotor can capture all of it.
+Wind turbines are machines that take kinetic energy from moving air and turn it into electricity. A turbine's output is set by the wind speed and the size of its rotor, so every design starts from those two numbers.
+
+Engineers need to understand them because the power in the wind rises with the cube of the wind speed, and no rotor can capture all of it.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md)
 **Time:** 6-8 h

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A gear train passes power from one shaft to another through meshing teeth, and the tooth count sets the speed and torque at the output. Designers pick the tooth form, the number of stages, and the losses, and each choice changes noise, size, and how the drive wears out.
+A gear train is a set of meshing gears that passes power from one shaft to another, and the tooth count sets the speed and torque at the output. Designers pick the tooth form, the number of stages, and the losses, and each choice changes noise, size, and how the drive wears out.
 
 **Prerequisites:** [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 4-6 h

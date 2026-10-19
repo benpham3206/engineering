@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Ships and submarines are vessels that float on water or travel beneath its surface. A vessel that is poorly balanced can capsize at sea, which is why its shape must be designed with care.
+
 A ship floats because the water it pushes aside weighs as much as the ship. It stays upright because its shape and weight distribution keep its center of buoyancy in the right place. Naval architects size hulls, check stability, and choose propulsion, and each of these choices changes the others.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Statics](../../physics/01-statics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)

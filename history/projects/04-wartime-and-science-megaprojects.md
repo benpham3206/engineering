@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Between 1940 and 2008, governments paid for projects too large and too risky for one firm or one laboratory. Radar, the Manhattan Project, Apollo, the International Space Station, and the Large Hadron Collider each set a new scale for engineering, and each produced costs and harms that engineers still study.
+Wartime and science megaprojects are the very large projects that governments paid for between 1940 and 2008 because they were too large and too risky for one firm or one laboratory, such as radar, the Manhattan Project, Apollo, the International Space Station, and the Large Hadron Collider. Engineers today should know them because each one set a new scale for engineering and produced costs and harms that engineers still study.
 
 **Prerequisites:** [Electrical age](../06-electrical-age.md), [War, nuclear, and space](../08-war-nuclear-and-space.md), [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md)
 **Time:** 3 to 4 hours

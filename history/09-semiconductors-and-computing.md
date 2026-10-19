@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Between 1904 and the early 1970s, engineers replaced hot, power-hungry vacuum tubes with the transistor, and then with the integrated circuit, which put many switches on one small chip. Every computer, phone, and controller in use today rests on that shrinking switch, and the scaling trend that followed still sets what engineers can build.
+A semiconductor is a material whose ability to carry current can be controlled, and engineers used it to build the transistor and the integrated circuit, the tiny switches that make modern computers possible. Engineers today should know this history because every computer, phone, and controller in use today rests on that shrinking switch, and the scaling trend that followed still sets what engineers can build. Between 1904 and the early 1970s, engineers replaced hot, power-hungry vacuum tubes with the transistor, and then with the integrated circuit, which put many switches on one small chip.
 
 **Prerequisites:** [The electrical age](06-electrical-age.md), [Diodes and transistors](../applications/electronics/03-semiconductors-diodes-and-transistors.md), [Digital logic and computers](../applications/electronics/07-digital-logic-and-computers.md), [Algebra](../math/01-algebra.md)
 **Time:** 3-4 h

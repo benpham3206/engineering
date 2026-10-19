@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Elevators and cranes lift loads with ropes, drums, and motors, and both depend on one physics: a load must balance around a support point. An elevator must hold its car safely even if the drive fails. A crane must stay upright when it lifts a load on the end of a boom. Both are rated by limits set by ropes, brakes, and stability, and an engineer who sizes or inspects them must check each limit.
+Elevators and cranes are lifting machines that move loads with ropes, drums, and motors, and both depend on a load balancing around a support point. An engineer who sizes or inspects one must check each rated limit, because a failed rope or brake can drop a load.
+
+An elevator must hold its car safely even if the drive fails. A crane must stay upright when it lifts a load on the end of a boom.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md), [Induction motors](../electrical/03-induction-motors.md)
 **Time:** 8-10 h

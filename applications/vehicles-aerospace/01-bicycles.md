@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A bicycle turns the rider's leg power into speed through a chain, gears, and two wheels. Engineers use the same physics to size gears, estimate how much power a rider needs on a hill, and design a frame that steers stably.
+A bicycle is a two-wheeled vehicle that turns a rider's leg power into speed through a chain and gears. A bicycle that is hard to pedal or hard to steer is useless to its rider, so an engineer must get both right.
+
+Engineers use the same physics to size gears, estimate how much power a rider needs on a hill, and design a frame that steers stably.
 
 **Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 4-6 h

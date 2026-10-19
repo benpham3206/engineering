@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-From the 1880s to the 2010s, engineers built bridges, dams, and towers that set records for span, height, and power. Each one forced advances in steel and concrete, foundations, wind and seismic design, and construction safety. This lesson covers eight projects and the engineering each one needed.
+Bridges, dams, and towers are the large structures that engineers built from the 1880s to the 2010s to set records for span, height, and power. Engineers today should know them because each one forced advances in steel and concrete, foundations, wind and seismic design, and construction safety. This lesson covers eight projects and the engineering each one needed.
 
 **Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Electrical age](../06-electrical-age.md), [Canals and railways](02-canals-and-railways.md), [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 5-7 h

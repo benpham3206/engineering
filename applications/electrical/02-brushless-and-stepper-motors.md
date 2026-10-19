@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Brushless DC (BLDC) and permanent magnet synchronous (PMSM) motors replace the brushes with electronic switching, which removes the main wear part of a brushed motor. Stepper motors move in fixed angular steps and can hold a position without a sensor. Engineers use these motors in drones, appliances, disk drives, 3D printers, and machine tools, so they need to understand how the drive electronics and the magnets work together.
+Brushless and stepper motors are two kinds of electric motor: brushless motors replace the brushes with electronic switching, and stepper motors move in fixed angular steps. Engineers use these motors in drones, appliances, disk drives, 3D printers, and machine tools, so they need to understand how the drive electronics and the magnets work together. Brushless DC (BLDC) and permanent magnet synchronous (PMSM) motors remove the brushes, which are the main wear part of a brushed motor, and stepper motors can hold a position without a sensor.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Mechatronics](../electronics/06-mechatronics.md), [DC motors](01-dc-motors.md)
 **Time:** 8-10 h

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A generator converts rotating mechanical power into electrical power by moving conductors through a magnetic field. An engineer should understand it because almost all grid electricity and the charging current in every car come from such machines, and sizing one means matching speed, voltage, and losses.
+A generator is a machine that converts rotating mechanical power into electrical power by moving conductors through a magnetic field. An engineer should understand it because almost all grid electricity and the charging current in every car come from such machines, and sizing one means matching speed, voltage, and losses.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Trigonometry](../../math/02-trigonometry.md), [Single-variable calculus](../../math/03-single-variable-calculus.md)
 **Time:** 4-6 h

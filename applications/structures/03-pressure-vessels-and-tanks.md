@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A pressure vessel holds a gas or liquid at a pressure different from its surroundings. A storage tank holds liquid at close to atmospheric pressure, and the liquid's weight loads its walls. Engineers size the wall thickness so the stress stays within an allowable limit, and they test the finished vessel before use.
+Pressure vessels and tanks are closed containers that hold gas or liquid, a pressure vessel at a pressure different from its surroundings. An engineer who designs one must size the wall so its stress stays within an allowable limit and test the finished vessel before use, because a vessel that fails under pressure can burst and injure people nearby.
+
+A storage tank holds liquid at close to atmospheric pressure, and the liquid's weight loads its walls.
 
 **Prerequisites:** [Axial and torsion](../../physics/04-axial-and-torsion.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Mechanics reference](../../physics/reference-mechanics.md)
 **Time:** 6-10 h

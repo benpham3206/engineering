@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+Zippers and buttons are fasteners that hold a garment closed. Fasteners sit on garments that are opened and closed many times, so each part must be sized to survive that repeated use.
+
 A zipper joins two rows of teeth that interlock when a slider pushes them together and separate when it pulls them apart. A button or snap holds a garment closed through a shank or a spring socket that yields and then grips. Engineers who size fasteners need the tooth count, the load shared by the teeth, and the stiffness of the snap spring.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Mechanical properties](../../materials/03-mechanical-properties.md)

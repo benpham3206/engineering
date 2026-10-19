@@ -2,9 +2,7 @@
 
 **Type:** lesson
 
-Hydraulic and pneumatic systems move loads by sending a pressurized fluid through pumps, valves, and
-cylinders. An engineer sizes the cylinder for force, the pump and valves for speed, and designs against
-the stored energy and high-pressure jets that make these systems dangerous.
+Hydraulic and pneumatic systems are ways of moving loads with pressurized liquid or gas sent through pumps, valves, and cylinders. An engineer who designs or services one must size the cylinder for force and the valves for speed, because stored energy and high-pressure jets make these systems dangerous.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md)
 **Time:** 8-12 h

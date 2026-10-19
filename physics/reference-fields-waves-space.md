@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-A lookup sheet for electromagnetism, circuits, waves, optics, and orbital mechanics, for an engineer who already knows the lessons in this folder and needs a formula, a constant, a limit, or a check in seconds.
+Electromagnetism is the study of electric and magnetic fields, circuits are closed paths that carry electric current, waves are disturbances that carry energy through space or a material, optics is the study of light, and orbital mechanics is the study of how objects move under gravity in space. This sheet is a lookup for all five, for an engineer who already knows the lessons in this folder and needs a formula, a constant, a limit, or a check in seconds.
 
 ## Principles
 

@@ -2,6 +2,8 @@
 
 **Type:** reference
 
+Problem solving is the method of turning a stated problem into a checked answer. Engineers need it because most wrong answers come from a skipped step, not from a missing formula.
+
 A dense lookup sheet for engineers solving real problems: the working method, dimensional analysis, limiting-case tests, orders of magnitude, Fermi estimates, root-cause tools, decision matrices, debugging checklists, and the cognitive traps that bend answers. Use it mid-task; the lessons in this folder teach the same ideas.
 
 ## Principles

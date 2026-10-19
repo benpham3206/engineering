@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A building needs heat in winter, cooling in summer, and fresh air all year. HVAC systems move heat and air to keep occupants comfortable and safe, and an engineer who sizes them must balance heat losses, moisture, and airflow.
+Heating, ventilation, and air conditioning, known as HVAC, are the systems that heat, cool, and bring fresh air into a building. An engineer who sizes them must balance heat losses, moisture, and airflow to keep occupants comfortable and safe.
+
+A building needs heat in winter, cooling in summer, and fresh air all year.
 
 **Prerequisites:** [Thermal systems](01-thermal-systems.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 8-12 h

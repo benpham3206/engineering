@@ -2,9 +2,7 @@
 
 **Type:** lesson
 
-The people in this lesson turned electricity and radio from lab curiosities into networks that run
-cities and carry messages across oceans. Their motors, generators, grids, radios, and assembly lines
-are still the building blocks engineers use today.
+Electrical age pioneers are the inventors and engineers who turned electricity and radio from lab curiosities into networks that run cities and carry messages across oceans. Engineers today should know them because their motors, generators, grids, radios, and assembly lines are still the building blocks engineers use.
 
 **Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Electrical age](../06-electrical-age.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 3-4 h

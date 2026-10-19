@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A gas turbine compresses air, burns fuel in it, and expands the hot gas through a turbine. Part of the turbine's work drives the compressor, and the rest either turns a shaft or leaves as a fast jet that pushes the engine forward. Engineers use the Brayton cycle to estimate efficiency and the thrust equation to size engines for aircraft, power plants, and ships.
+A gas turbine is an engine that compresses air, burns fuel in it, and expands the hot gas through a turbine. Engineers use the Brayton cycle to estimate efficiency and the thrust equation to size engines for aircraft, power plants, and ships. Part of the turbine's work drives the compressor, and the rest either turns a shaft or leaves as a fast jet that pushes the engine forward.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 8-12 h

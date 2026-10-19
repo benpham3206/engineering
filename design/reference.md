@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-Lookup sheet for mechanical design: process gates, factor of safety, static and fatigue failure, tolerancing and GD&T, fits, fasteners, shafts, bearings, gears, springs, and DFMA. For an engineer who knows the basics and needs a formula, a limit, or a checklist mid-task.
+Mechanical design is the field of choosing the shape, size, material, and tolerances of machine parts so they carry their loads safely and can be made and assembled. Every design choice trades cost, safety, and performance against one another, and a poor choice shows up later as a failed part or an expensive rework. Lookup sheet for mechanical design: process gates, factor of safety, static and fatigue failure, tolerancing and GD&T, fits, fasteners, shafts, bearings, gears, springs, and DFMA. For an engineer who knows the basics and needs a formula, a limit, or a checklist mid-task.
 
 ## Principles
 

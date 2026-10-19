@@ -2,7 +2,7 @@
 
 **Type:** reference
 
-Lookup sheet for thermodynamics, fluid mechanics, and heat transfer: equations, validity limits, typical values, and sanity checks for use during real analysis and design work. It pairs with lessons 07 to 12 in this folder.
+Thermodynamics is the study of energy, heat, and work, fluid mechanics is the study of liquids and gases at rest and in motion, and heat transfer is the study of how thermal energy moves. This sheet lists equations, validity limits, typical values, and sanity checks for use during real analysis and design work. It pairs with lessons 07 to 12 in this folder.
 
 ## Principles
 

@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A calculator is the fastest tool for a quick number, an exam, or a check on the shop floor. Knowing when to use one, and when to switch to code or a spreadsheet, saves time and prevents a whole class of silent errors.
+A calculator is a device or app that does arithmetic and other math, such as powers, logarithms, and trigonometry, on numbers you enter. Knowing its strengths and limits matters to an engineer because a wrong keystroke gives a confident-looking wrong answer.
+
+It is the fastest tool for a quick number, an exam, or a check on the shop floor. Knowing when to use one, and when to switch to code or a spreadsheet, saves time and prevents a whole class of silent errors.
 
 **Prerequisites:** [Algebra](../math/01-algebra.md) and [Trigonometry](../math/02-trigonometry.md). [Axial and torsion](../physics/04-axial-and-torsion.md) helps with the worked example.
 **Time:** 2-4 h, then practice until it is automatic

@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A vacuum cleaner moves air through a hose and a filter, and the suction at the nozzle is the pressure difference the fan creates. The useful output is the air power, which is the airflow times the pressure difference, and most of the electrical input is lost in the motor and fan. Engineers who size fans, hoses, cyclones, and filters use these relations to predict performance and to pick a filter that traps the dust that matters.
+A vacuum cleaner is an appliance that uses a fan to pull dusty air through a hose and a filter. A cleaner that moves too little air or lacks suction fails its user even when its motor is powerful, so the balance between the two matters.
+
+The suction at the nozzle is the pressure difference the fan creates. The useful output is the air power, which is the airflow times the pressure difference, and most of the electrical input is lost in the motor and fan. Engineers who size fans, hoses, cyclones, and filters use these relations to predict performance and to pick a filter that traps the dust that matters.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md)
 **Time:** 3-4 h

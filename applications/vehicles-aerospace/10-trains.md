@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A train moves on steel wheels over steel rails, and the only thing that pushes or stops it is the small contact patch under each wheel. Engineers design traction, braking, and signaling around that contact, because a train that cannot grip the rail can neither accelerate nor stop on time. Signaling keeps trains apart, so a train never runs into the one ahead.
+Trains are vehicles that run on steel wheels over steel rails, and the only thing that pushes or stops them is the small contact patch under each wheel. Engineers design traction, braking, and signaling around that contact, because a train that cannot grip the rail can neither accelerate nor stop on time. Signaling keeps trains apart, so a train never runs into the one ahead.
 
 **Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Statics](../../physics/01-statics.md)
 **Time:** 6-10 h

@@ -2,9 +2,9 @@
 
 **Type:** lesson
 
-Before you report a number, ask whether it could be true. A sanity check does not prove the
-answer is right, but it catches most arithmetic slips, misplaced decimal points, and sign
-errors. Three quick checks cover most cases: order of magnitude, sign, and physical intuition.
+A sanity check is a quick test of whether a result could be true. Engineers need it because it catches most arithmetic slips, misplaced decimal points, and sign errors before a number is reported.
+
+A sanity check does not prove the answer is right. Three quick checks cover most cases: order of magnitude, sign, and physical intuition.
 
 **Prerequisites:** [Check units and limiting cases](05-units-and-limiting-cases.md), [Particle dynamics](../physics/02-particle-dynamics.md)
 **Time:** 2-3 h

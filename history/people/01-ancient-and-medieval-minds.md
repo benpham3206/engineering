@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-From about 2650 BCE to the early 1200s, people in Egypt, Greece, Rome, China, India, and the Islamic world built the first tools of engineering: geometry, mechanics, optics, and precise timekeeping. Their methods, from proofs to measured instruments, set the pattern that engineers still follow. This lesson profiles the people behind those tools and shows where their work survives today.
+Ancient and medieval minds are the people who, from about 2650 BCE to the early 1200s, built the first tools of engineering in Egypt, Greece, Rome, China, India, and the Islamic world: geometry, mechanics, optics, and precise timekeeping. Engineers today should know them because their methods, from proofs to measured instruments, still set the pattern that engineers follow. This lesson profiles the people behind those tools and shows where their work survives today.
 
 **Prerequisites:** [Simple machines](../01-simple-machines.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 6-8 h

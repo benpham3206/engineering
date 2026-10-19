@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A transformer changes an alternating voltage up or down by linking two coils through a shared magnetic core. Engineers use transformers at almost every step between a power station and a wall socket, and they design them around the turns ratio, the losses, and the isolation that separates the two windings.
+A transformer is a device that changes an alternating voltage up or down by linking two coils through a shared magnetic core. Engineers use transformers at almost every step between a power station and a wall socket, and they design them around the turns ratio, the losses, and the isolation that separates the two windings.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md)
 **Time:** 4-6 h

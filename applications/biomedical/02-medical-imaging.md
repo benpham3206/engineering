@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Medical imaging makes pictures of the inside of the body without opening it. Each modality uses a different physical signal, such as X-ray attenuation, radio-frequency signals from spinning protons, or echoes of sound, and engineers must understand that signal to size the hardware and control the risks.
+Medical imaging is the set of methods that make pictures of the inside of the body without opening it. Doctors use these pictures to find disease and guide treatment, so the accuracy and safety of each method matter to every patient.
+
+Each modality uses a different physical signal, such as X-ray attenuation, radio-frequency signals from spinning protons, or echoes of sound, and engineers must understand that signal to size the hardware and control the risks.
 
 **Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Algebra](../../math/01-algebra.md)
 **Time:** 6-8 h

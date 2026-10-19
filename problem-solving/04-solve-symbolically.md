@@ -2,9 +2,10 @@
 
 **Type:** lesson
 
-Carry letters, not numbers, through the algebra for as long as you can. A symbolic answer
-shows how each input affects the result, lets you check units and limits (lesson 05), and
-catches errors before the arithmetic hides them. Plug in numbers only at the end.
+Solving symbolically is the practice of keeping letters, not numbers, in the algebra until the end. Engineers need it because a symbolic answer shows how each input affects the result and makes errors easier to spot.
+
+Carry letters, not numbers, through the algebra for as long as you can. This also lets you
+check units and limits (lesson 05). Plug in numbers only at the end.
 
 **Prerequisites:** [Define the problem](01-define-the-problem.md), [Pick the governing principles](03-governing-principles.md), [Algebra](../math/01-algebra.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 3-5 h

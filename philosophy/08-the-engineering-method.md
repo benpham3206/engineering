@@ -2,7 +2,9 @@
 
 **Type:** philosophy
 
-A method for doing engineering work of any size, from choosing a bolt to building a spacecraft. It is adapted for physical engineering from an [engineering standard](https://github.com/benpham3206/agent-engineering/blob/main/standards/engineering.md), which states it in full.
+The engineering method is a repeatable set of steps for doing engineering work of any size, from choosing a bolt to building a spacecraft. Engineers use it because a repeatable method catches errors that improvised work misses.
+
+It is adapted for physical engineering from an [engineering standard](https://github.com/benpham3206/agent-engineering/blob/main/standards/engineering.md), which states it in full.
 
 **Prerequisites:** [Principles that last](07-principles-that-last.md).
 

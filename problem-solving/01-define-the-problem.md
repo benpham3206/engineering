@@ -2,8 +2,8 @@
 
 **Type:** lesson
 
-Most wrong engineering answers start with a problem that was never fully stated. Before you
-write an equation, you need to know what you have, what you want, and what you are assuming.
+Defining the problem is the step of stating what you have, what you want, and what you are assuming before you calculate. Engineers need it because most wrong engineering answers start with a problem that was never fully stated.
+
 Engineers call this step scoping, and it takes less time than the mistakes it prevents.
 
 **Prerequisites:** none, but [Algebra](../math/01-algebra.md) helps.

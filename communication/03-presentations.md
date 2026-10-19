@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Engineers present to reviewers, customers, managers, and sometimes to the public. A good talk gets a decision or an understanding in a few minutes, and a bad one hides the point among charts.
+Presenting is the act of sharing a technical point with an audience so that it can make a decision or understand the work. Engineers need it because the audience judges the point by what it can take in during a few minutes.
+
+Engineers present to reviewers, customers, managers, and sometimes to the public. A bad talk hides the point among charts.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md): the same reader-first habits apply to slides.
 **Time:** 4-6 h

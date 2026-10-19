@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-An estimate gives a useful answer when the exact data is missing. A Fermi problem asks for a
+Estimation is the practice of finding the order of magnitude of an answer from known values when exact data is missing. Engineers need it because a rough answer with its assumptions shows quickly whether a detailed analysis is worth doing.
+
+A Fermi problem asks for a
 quantity such as "how much energy heats a bath?" and answers it by breaking the question into
 parts, using values you know or can look up, and rounding aggressively. The result is an order
 of magnitude with a range, and you write down every assumption so a reader can check or change it.

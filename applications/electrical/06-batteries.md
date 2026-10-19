@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A battery stores chemical energy and releases it as electricity through two reactions at its electrodes. Engineers choose a battery by its energy, power, life, and safety, and lithium-ion cells need careful management because a fault can release heat fast enough to start a fire.
+A battery is a device that stores chemical energy and releases it as electricity through two reactions at its electrodes. Engineers choose a battery by its energy, power, life, and safety, and lithium-ion cells need careful management because a fault can release heat fast enough to start a fire.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md)
 **Time:** 4-6 h

@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-A tower and its cables carry wind, ice, and their own weight into the ground with very little material. An engineer must predict how far a cable sags and how much tension it carries, because the sag sets clearances and the tension sets the size of every anchor.
+Towers and cables are tall supports and the cables that brace them, which together carry wind, ice, and weight into the ground with very little material. Getting a cable's sag or tension wrong can leave a line too close to the ground or pull an anchor out of its footing.
+
+An engineer must predict how far a cable sags and how much tension it carries, because the sag sets clearances and the tension sets the size of every anchor.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Trigonometry](../../math/02-trigonometry.md), [Single-variable calculus](../../math/03-single-variable-calculus.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md)
 **Time:** 6-8 h

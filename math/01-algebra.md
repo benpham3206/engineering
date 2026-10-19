@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Algebra finds an unknown quantity from a known relationship. Engineers use it to rearrange formulas, solve for a required size or load, and check units before they trust a result.
+Algebra is the branch of mathematics that uses letters for unknown numbers and rules for solving equations. Engineers use it to rearrange formulas, solve for a required size or load, and check units before they trust a result.
 
 **Prerequisites:** none. High-school arithmetic and basic fractions are assumed.
 **Time:** 8-12 h

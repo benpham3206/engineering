@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Gears change speed and torque between shafts. Fasteners clamp parts together, and their job is to hold a preload that does not loosen. Springs store energy and give a force that changes with length. These three machine elements appear in almost every machine, and each has a few formulas that a designer uses over and over.
+Gears are toothed wheels that change speed and torque between shafts, fasteners are bolts, screws, and nuts that clamp parts together with a preload that does not loosen, and springs are elastic parts that store energy and give a force that changes with length. Almost every machine uses all three, so a designer must size and select each one correctly or the machine will slip, loosen, or fail. Each of the three has a few formulas that a designer uses over and over.
 **Prerequisites:** [Factor of safety and failure](07-factor-of-safety-and-failure.md), [Shafts and bearings](08-shafts-and-bearings.md), [Axial and torsion](../physics/04-axial-and-torsion.md)
 **Time:** 8-12 h
 

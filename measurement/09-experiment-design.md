@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-An experiment tests a question under controlled conditions. Good design decides what you change, what you hold still, how many times you repeat, and how you guard against bias. A well-designed experiment can answer a question with a modest number of runs. A poorly designed one wastes time even when the measurements are precise.
+Experiment design is the planning of a test so that its result answers one clear question. Engineers need it because a poorly designed experiment wastes time even when every measurement is precise.
+
+An experiment tests a question under controlled conditions. Good design decides what you change, what you hold still, how many times you repeat, and how you guard against bias. A well-designed experiment can answer a question with a modest number of runs.
 
 **Prerequisites:** [Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md), [Probability and statistics](../math/07-probability-and-statistics.md)
 **Time:** 6-8 h

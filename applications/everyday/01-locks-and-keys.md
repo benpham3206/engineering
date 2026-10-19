@@ -2,6 +2,8 @@
 
 **Type:** lesson
 
+A lock is a mechanism that keeps a door, box, or machine closed until the right key or code releases it. Locks guard property and people, so their design must hold up against anyone who tries to open them without the key.
+
 A pin tumbler lock stops the plug from turning until every pin stack sits at exactly the right height. The key sets those heights, and the number of possible heights sets how many keys a lock can have. An engineer who understands the counting can judge how much a lock resists guessing, and how much it resists picking, drilling, and bumping.
 
 **Prerequisites:** [Algebra](../../math/01-algebra.md), [Probability and statistics](../../math/07-probability-and-statistics.md), [Tolerancing and stack-up](../../design/04-tolerancing-and-stack-up.md), [Axial and torsion](../../physics/04-axial-and-torsion.md)

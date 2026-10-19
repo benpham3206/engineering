@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Many engineering equations cannot be solved by hand. Numerical methods replace an exact answer with a sequence of approximations that you can carry out, check, and stop when the error is small enough. Engineers use them for root finding, integrals without closed forms, and differential equations solved over time.
+Numerical methods are step-by-step procedures that replace an exact answer with a sequence of approximations that you can carry out, check, and stop when the error is small enough. Many engineering equations cannot be solved by hand, so engineers use numerical methods for root finding, integrals without closed forms, and differential equations solved over time.
 
 **Prerequisites:** [Single-variable calculus](03-single-variable-calculus.md), [Differential equations](06-differential-equations.md), [Linear algebra](05-linear-algebra.md)
 **Time:** 30-40 h
