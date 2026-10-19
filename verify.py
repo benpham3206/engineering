@@ -668,6 +668,31 @@ DATE_TRIGGER = re.compile(
 AS_OF = re.compile(r"\(?as of (\d{4})\)?", re.I)
 APPROX = re.compile(r"(?i)\b(about|around|circa|c\.|approximately|roughly)\s")
 SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z*(\[])")
+CONTROL = re.compile("[\x00-\x08\x0b\x0c\x0e-\x1f\t]")
+# Long LaTeX command names that are never plain words inside math. A lost
+# backslash turns k\Omega into kOmega, which renders as italic letters.
+BARE_COMMAND = re.compile(
+    r"(alpha|beta|gamma|delta|epsilon|theta|lambda|sigma|omega|varphi"
+    r"|Omega|Delta|Sigma|Gamma|Lambda|Theta|frac|sqrt|times|cdot|infty|partial|nabla)$")
+
+
+def bare_commands(line):
+    """LaTeX command names missing their backslash inside $...$ spans.
+
+    Each letter run is a token; a run that starts with a backslash is a command
+    and is fine (\\dfrac, \\varepsilon). A run without one that ends in a command
+    name (kOmega, arepsilon, frac) lost its backslash.
+    """
+    s = re.sub(r"`[^`]*`", " ", line)
+    out = []
+    for m in re.finditer(r"\$\$?([^$]+)\$\$?", s):
+        body = re.sub(r"\\(?:text|mathrm|operatorname|mathit|mathbf)\{[^}]*\}", " ", m.group(1))
+        for tok in re.finditer(r"(\\?)([A-Za-z]+)", body):
+            if not tok.group(1) and (b := BARE_COMMAND.search(tok.group(2))):
+                out.append(b.group())
+    return out
+
+
 def unrendered_math(line):
     """Inline $...$ spans that GitHub shows as raw text.
 
@@ -756,6 +781,12 @@ def check_doc(doc, docs, data, out, stats, prereqs):
                     add(n, "anchor", GATE, f"no heading #{anchor} in {rel(dest)}")
         if DASH.search(line):
             add(n, "dash", GATE, "em or en dash")
+        if CONTROL.search(line) and n not in doc.code:
+            add(n, "control", GATE, "control character (often a collapsed escape: \\t in \\text, \\a in \\arctan, "
+                                    "\\v in \\varepsilon, \\f in \\frac, \\b in \\beta)")
+        if n not in doc.code:
+            for name in bare_commands(line):
+                add(n, "math-render", GATE, f"LaTeX command without its backslash in math: {name!r}")
         if n not in doc.math:
             for span in unrendered_math(line):
                 add(n, "math-render", GATE, f"inline math GitHub will not render: {span!r}")

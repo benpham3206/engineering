@@ -6,6 +6,17 @@ This maps one real program's course sequence, San Jose State University mechanic
 
 Each course lists the lessons and reference sheets that cover it, in the order to study them. "Not covered yet" lines mark parts of a course the repo has no lesson for.
 
+## Where to build at SJSU
+
+A **makerspace** is a shared room of fabrication tools that any trained member may use; a **machine shop** holds the heavier metal-cutting machines and usually needs a safety course first. Using them early turns lessons into parts. Learn each machine from the shared lessons first: [Shop safety](../manufacturing/01-shop-safety.md), [Shop tools](../tools/08-shop-tools.md), and [Machinist bench tools](../tools/11-machinist-bench-tools.md). Equipment and rules change from term to term; the lists below are as of 2026, from each space's own page.
+
+| Space | What it has | How to get in |
+|---|---|---|
+| College of Engineering Makerspace | 4 Bambu P1S printers (PLA and PETG only), 1 Bambu X1C and 6 Voron 2.4 printers, a 600 W Universal laser cutter (material up to 1/4 in, by ticket), four soldering stations, a grinding room (belt and disk sanders, band saw, drill press, miter saw, abrasive tumbler, ultrasonic baths, sand blasting cabinet), and a paint booth [src](../data/claims/sjsu.md#sjsu-coe-makerspace-2026) | Submit an iSupport ticket before arriving; open Monday to Friday, 10 a.m. to 4 p.m., in fall and spring [src](../data/claims/sjsu.md#sjsu-coe-makerspace-2026) |
+| Central Machine Shop, Engineering rooms 184, 186, 188, and 190 | CNC mill, CNC lathe, brake, shear, punches, welder, bead blaster, grinders, saws, and a paint booth [src](../data/claims/sjsu.md#sjsu-coe-central-shops-2026) | Request work through iSupport with your faculty advisor's approval; CNC parts need final drawings and a solid model [src](../data/claims/sjsu.md#sjsu-coe-central-shops-2026) |
+| ME Student Project Center (machine shop, ENG 123) | Its page lists no machines; ask the lab director. It holds 15 people or 4 student teams at once [src](../data/claims/sjsu.md#sjsu-me-mspc-2026) | ME Omnilock request form, then a Canvas safety course, then one-hour bookings [src](../data/claims/sjsu.md#sjsu-me-mspc-2026) |
+| MLK Library Rapid Prototyping Lab | Ultimaker 3 printers, a Glowforge laser cutter, a Silhouette Cameo vinyl cutter, a heat press, soldering irons, and hand tools [src](../data/claims/sjsu.md#sjsu-lib-prototyping-2026) | Open to every major; 3D printing is free by appointment, and the cutters need a training video plus hands-on training [src](../data/claims/sjsu.md#sjsu-lib-prototyping-2026) |
+
 ## Prerequisites
 
 ### AP Calculus AB

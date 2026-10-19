@@ -28,5 +28,7 @@ Study order:
 For quick lookup while working. Each sheet opens with the principles of the field.
 
 - [Design reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
+- [Machine design reference](reference-machine-design.md): bolted and welded joints, power screws, shafts, keys, springs, bearings, gears, belts and chains, clutches and brakes, and press fits
+- [Reliability reference](reference-reliability.md): hazard and survival functions, exponential, Weibull, and lognormal lives, system models, availability, fault trees, and demonstration tests
 
 See also: [manufacturing](../manufacturing), [materials](../materials), [reverse-engineering](../reverse-engineering)

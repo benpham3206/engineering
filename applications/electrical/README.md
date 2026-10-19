@@ -17,6 +17,7 @@ Motors, generators, transformers, batteries, converters, and the grid that ties 
 
 ## Reference
 
+- [Electrical power reference](reference.md): phasors, complex power, three-phase systems, per-unit, transformers, machines, lines, symmetrical components, and fault current
 - [Applications reference](../reference.md)
 
 See also: [all applications](../README.md)

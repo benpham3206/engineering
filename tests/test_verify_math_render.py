@@ -41,5 +41,22 @@ class UnrenderedMath(unittest.TestCase):
             self.assertEqual(len(verify.unrendered_math(line)), 1, line)
 
 
+class CollapsedEscape(unittest.TestCase):
+    def test_tab_in_prose_is_a_gate_finding(self):
+        import tempfile
+        with tempfile.TemporaryDirectory(dir=ROOT / "tests" / "fixtures") as d:
+            p = Path(d) / "tab.md"
+            p.write_text("# Tab\n\n**Type:** lesson\n\nArea in $\text{m}^2$.\n", encoding="utf-8")
+            out = []
+            verify.check_doc(verify.Doc(p), {}, verify.Data(out), out, verify.Stats(), {})
+            self.assertIn("control", [f.check for f in out])
+
+    def test_bare_command_names(self):
+        self.assertEqual(verify.bare_commands(r"A $1\ \text{k}\Omega$ and $\alpha\,\varepsilon$ load."), [])
+        self.assertEqual(verify.bare_commands(r"A $\text{alpha test}$ is text."), [])
+        self.assertEqual(verify.bare_commands(r"A $1\ kOmega$ resistor."), ["Omega"])
+        self.assertEqual(verify.bare_commands(r"$T = arepsilon T_s$ and $x = frac{1}{2}$"), ["epsilon", "frac"])
+
+
 if __name__ == "__main__":
     unittest.main()

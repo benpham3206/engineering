@@ -18,6 +18,11 @@ The software, hardware, and calculators that make engineering work faster.
 10. [Drafting and layout tools](10-drafting-and-layout-tools.md): scales, compass and dividers, protractors, squares, sketching, and laying out on metal
 11. [Machinist bench tools](11-machinist-bench-tools.md): workholding, indicators and edge finders, taps and tap drills, reamers, files, and hand tools
 12. [Software skills for engineers](12-software-for-engineers.md): terminal, Git, scripts, tests, debugging, automating CAD, and web basics
+13. [Multimeters](13-multimeters.md): voltage, resistance, continuity, and current, accuracy specs, meter loading, true RMS, and measurement categories
+14. [Electronics bench tools](14-electronics-bench-tools.md): bench supply, oscilloscope, function generator, logic analyzer, soldering, breadboards, and ESD
+15. [Digital fabrication machines](15-digital-fabrication-machines.md): FDM and resin 3D printers, laser cutters, CNC routers, vinyl cutters, and choosing between them
+16. [Hand and power tools](16-hand-and-power-tools.md): the hand tools to own, the common power tools, and the guard or habit that prevents each injury
+17. [Test and inspection instruments](17-test-and-inspection-instruments.md): force and torque gauges, tachometers, infrared thermometers, thermal cameras, sound level meters, borescopes, and hardness and roughness testers
 
 ## Reference
 
