@@ -45,7 +45,7 @@ The power of a water wheel depends on the mass of water that falls each second a
 
 $$P = \rho \, g \, Q \, H \, \eta$$
 
-Here $P$ is the **shaft power** in watts (W), $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), with a typical value of $1000\ \text{kg/m}^3$ for fresh water, $g$ is gravitational acceleration in metres per second squared (m/s$^2$), with $g = 9.81\ \text{m/s}^2$ at Earth's surface, $Q$ is the volume flow rate of water in cubic metres per second (m$^3$/s), $H$ is the **head**, or height the water falls through, in metres (m), and $\eta$ is the wheel efficiency, a number between 0 and 1. Overshot wheels reached efficiencies around 0.7 to 0.8. Undershot wheels, which the water pushed from below, were often 0.2 to 0.4 efficient.
+Here $P$ is the **shaft power** in watts (W), $\rho$ is the water density in kilograms per cubic metre ($\text{kg/m}^3$), with a typical value of $1000\ \text{kg/m}^3$ for fresh water, $g$ is gravitational acceleration in metres per second squared ($\text{m/s}^2$), with $g = 9.81\ \text{m/s}^2$ at Earth's surface, $Q$ is the volume flow rate of water in cubic metres per second ($\text{m}^3$/s), $H$ is the **head**, or height the water falls through, in metres (m), and $\eta$ is the wheel efficiency, a number between 0 and 1. Overshot wheels reached efficiencies around 0.7 to 0.8. Undershot wheels, which the water pushed from below, were often 0.2 to 0.4 efficient.
 
 The lever and pulley relations from [simple machines](01-simple-machines.md) still apply to the gear trains that connected the wheel to the stone or the hammer.
 

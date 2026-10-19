@@ -13,9 +13,9 @@ mass is conserved, energy is conserved along a streamline, and friction takes en
 
 - **Fluid**: a substance that flows and takes the shape of its container. Liquids are nearly
   incompressible, and gases are compressible. This lesson treats water as incompressible.
-- **Density** $\rho$ (kg/m$^3$): mass per unit volume. Water is about $1000\ \text{kg}/\text{m}^3$.
+- **Density** $\rho$ ($\text{kg/m}^3$): mass per unit volume. Water is about $1000\ \text{kg}/\text{m}^3$.
 - **Pressure** $p$ (pascals, Pa): force per unit area. Hydrostatic pressure grows with depth.
-- **Volume flow rate** $Q$ (m$^3$/s): the volume of fluid passing a point per second.
+- **Volume flow rate** $Q$ ($\text{m}^3$/s): the volume of fluid passing a point per second.
 - **Velocity** $v$ (m/s): the average speed of the fluid across a pipe.
 - **Continuity** (conservation of mass): for an incompressible fluid in a pipe, the flow rate is the same
   everywhere. A narrow section must be faster than a wide one.
@@ -34,10 +34,10 @@ mass is conserved, energy is conserved along a streamline, and friction takes en
 
 ## Key equations
 
-- Continuity: $Q = A_1 v_1 = A_2 v_2$, where $A$ is the pipe cross-section in square metres (m$^2$).
+- Continuity: $Q = A_1 v_1 = A_2 v_2$, where $A$ is the pipe cross-section in square metres ($\text{m}^2$).
 - Circular pipe area: $A = \pi D^2 / 4$, with $D$ the diameter in metres.
 - Bernoulli (no friction), in pascals: $p_1 + \tfrac{1}{2}\rho v_1^2 + \rho g z_1 = p_2 + \tfrac{1}{2}\rho v_2^2 + \rho g z_2$,
-  where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface) and $z$ is height in metres.
+  where $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface) and $z$ is height in metres.
 - Pump power (hydraulic): $P = \rho g Q H$, in watts, where $H$ is head in metres.
 - Shaft (input) power: $P_{\mathrm{in}} = \rho g Q H / \eta$.
 - Reynolds number: $\mathrm{Re} = \rho v D / \mu$, with dynamic viscosity $\mu$ in Pa s. For water at about 20 C,

@@ -36,17 +36,17 @@ Kettles come as corded jugs with the element in the base, as concealed-element k
 
 ## Key equations
 
-Assumptions for every equation below: the supply voltage is steady, the element is purely resistive, water is a liquid with a constant specific heat between 20 and 100 $^\circ$C, and the efficiency $\eta$ lumps together all heat that does not reach the water.
+Assumptions for every equation below: the supply voltage is steady, the element is purely resistive, water is a liquid with a constant specific heat between 20 and 100 $^\circ\text{C}$, and the efficiency $\eta$ lumps together all heat that does not reach the water.
 
 - Electrical power: $P = V I$, in watts (W), where $V$ is voltage in volts (V) and $I$ is current in amperes (A).
 - Resistive power: $P = V^2 / R$, with $R$ the element resistance in ohms ($\Omega$).
 - Heat to raise water: $Q = m c \, \Delta T$, where $Q$ is energy in joules (J), $m$ is mass in kilograms (kg), $c = 4186\ \text{J/(kg K)}$ is the specific heat of liquid water (typical value), and $\Delta T$ is the temperature rise in kelvin (K).
-- Latent heat of vaporization: $Q = m L_v$, where $L_v \approx 2.26\ \text{MJ/kg}$ is the heat needed to turn water at 100 $^\circ$C into steam (typical value).
+- Latent heat of vaporization: $Q = m L_v$, where $L_v \approx 2.26\ \text{MJ/kg}$ is the heat needed to turn water at 100 $^\circ\text{C}$ into steam (typical value).
 - Time to heat: $t = Q / (P \eta)$, where $\eta$ is the fraction of the appliance's power that reaches the water. This is dimensionless.
 
 ## Worked example
 
-**Given:** A kettle holds 1.0 kg of water at 20 $^\circ$C. The water boils at 100 $^\circ$C at sea level. The kettle is rated at $P = 2200\ \text{W}$, and its efficiency is $\eta = 0.85$.
+**Given:** A kettle holds 1.0 kg of water at 20 $^\circ\text{C}$. The water boils at 100 $^\circ\text{C}$ at sea level. The kettle is rated at $P = 2200\ \text{W}$, and its efficiency is $\eta = 0.85$.
 
 **Find:** (a) the heat that the water needs, (b) the electrical energy the kettle draws, and (c) the time to boil.
 
@@ -105,7 +105,7 @@ Fred Waring's company introduced the Waring Blendor in 1937. The high-speed blen
 
 1. A 1500 W kettle runs for 2.0 min. Find the energy it uses in kilojoules.
 2. The same kettle runs on a 120 V supply. Find the current and the element resistance.
-3. A 0.5 kg batch of water heats from 20 $^\circ$C to 100 $^\circ$C in a 2200 W kettle with $\eta = 0.85$. Find the time to boil.
+3. A 0.5 kg batch of water heats from 20 $^\circ\text{C}$ to 100 $^\circ\text{C}$ in a 2200 W kettle with $\eta = 0.85$. Find the time to boil.
 4. A 1000 W toaster runs for 2.5 min. Find the energy in kilojoules and in kilowatt-hours.
 
 <details><summary>Answers</summary>

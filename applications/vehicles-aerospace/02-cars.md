@@ -42,10 +42,10 @@ The equations below assume steady speed unless an equation includes acceleration
 - **Wheel torque:** $T_w = F_{\mathrm{tire}} \, r$, where $T_w$ is in N m and $F_{\mathrm{tire}}$ is the tire force in N.
 - **Engine torque:** $T_e = T_w / (G \, \eta_{\mathrm{dt}})$, where $\eta_{\mathrm{dt}}$ is the **drivetrain efficiency**, typically 0.90 to 0.95 for a manual or automatic gearbox with a final drive.
 - **Power:** $P = T \, \omega$, in W, with torque in N m and angular speed in rad/s. At the wheels, $P_w = F_{\mathrm{road}} \, v$.
-- **Rolling resistance:** $F_{\mathrm{rr}} = C_{\mathrm{rr}} \, m \, g$, where $C_{\mathrm{rr}}$ is the rolling resistance coefficient (dimensionless, typically 0.008 to 0.012 on asphalt), $m$ is mass in kg, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface).
-- **Aerodynamic drag:** $F_d = \tfrac{1}{2} \rho \, C_d \, A \, v^2$, where $\rho$ is the air density in kg/m$^3$ (typically 1.20 at 20 C at sea level), $C_d$ is the **drag coefficient** (dimensionless, typically 0.25 to 0.35 for production cars), and $A$ is the frontal area in m$^2$.
+- **Rolling resistance:** $F_{\mathrm{rr}} = C_{\mathrm{rr}} \, m \, g$, where $C_{\mathrm{rr}}$ is the rolling resistance coefficient (dimensionless, typically 0.008 to 0.012 on asphalt), $m$ is mass in kg, and $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface).
+- **Aerodynamic drag:** $F_d = \tfrac{1}{2} \rho \, C_d \, A \, v^2$, where $\rho$ is the air density in $\text{kg/m}^3$ (typically 1.20 at 20 C at sea level), $C_d$ is the **drag coefficient** (dimensionless, typically 0.25 to 0.35 for production cars), and $A$ is the frontal area in $\text{m}^2$.
 - **Road grade:** $F_g = m \, g \sin\theta$, where $\theta$ is the road angle. A 6 percent grade means $\tan\theta = 0.06$.
-- **Total road load:** $F_{\mathrm{road}} = F_{\mathrm{rr}} + F_d + F_g + m a$, where $a$ is the acceleration in m/s$^2$.
+- **Total road load:** $F_{\mathrm{road}} = F_{\mathrm{rr}} + F_d + F_g + m a$, where $a$ is the acceleration in $\text{m/s}^2$.
 - **Braking deceleration limit:** $a_{\mathrm{max}} = \mu g$, where $\mu$ is the tire-road friction coefficient (dimensionless, about 0.8 to 1.0 on dry asphalt).
 - **Stopping distance:** $d = v^2 / (2 \mu g)$, in m, with the speed $v$ in m/s. This ignores the driver's reaction time.
 - **Braking weight transfer:** $\Delta N = m \, a \, h / L$, where $\Delta N$ is the load moved to the front axle in N, $h$ is the height of the center of mass in m, and $L$ is the wheelbase in m.

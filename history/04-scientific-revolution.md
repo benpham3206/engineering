@@ -41,7 +41,7 @@ The period of a **simple pendulum** for small swings is
 
 $$T = 2\pi \sqrt{\frac{L}{g}}$$
 
-where $T$ is the **period** in seconds (s), $L$ is the length from pivot to bob centre in metres (m), and $g$ is **gravitational acceleration** in metres per second squared (m/s$^2$). The standard value is $g = 9.81\ \text{m/s}^2$, but $g$ changes with latitude, from about 9.78 at the equator to about 9.83 at the poles (typical values). A pendulum of fixed length therefore runs slightly differently at different places.
+where $T$ is the **period** in seconds (s), $L$ is the length from pivot to bob centre in metres (m), and $g$ is **gravitational acceleration** in metres per second squared ($\text{m/s}^2$). The standard value is $g = 9.81\ \text{m/s}^2$, but $g$ changes with latitude, from about 9.78 at the equator to about 9.83 at the poles (typical values). A pendulum of fixed length therefore runs slightly differently at different places.
 
 For larger swings, the period grows with amplitude. For a swing of half-angle $\theta_0$ in radians, the period is approximately
 

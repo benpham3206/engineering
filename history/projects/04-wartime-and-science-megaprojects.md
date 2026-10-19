@@ -111,11 +111,11 @@ Orbital speed. For a circular orbit,
 
 $$v = \sqrt{\frac{\mu}{r}}$$
 
-where $v$ is the orbital speed in metres per second, $\mu = 3.986 \times 10^{14}$ m$^3$/s$^2$ is the Earth gravitational parameter, and $r$ is the orbit radius from Earth's centre in metres. The equation assumes a point-mass Earth, no atmospheric drag, and no other perturbing bodies.
+where $v$ is the orbital speed in metres per second, $\mu = 3.986 \times 10^{14}$ $\text{m}^3/\text{s}^2$ is the Earth gravitational parameter, and $r$ is the orbit radius from Earth's centre in metres. The equation assumes a point-mass Earth, no atmospheric drag, and no other perturbing bodies.
 
 ## Worked example
 
-**Given:** A spacecraft parks in a circular Earth orbit at 185 km altitude. The Earth radius is 6371 km and its gravitational parameter is $\mu_E = 3.986 \times 10^{14}$ m$^3$/s$^2$. The Moon's mean distance from Earth is 384 400 km. The Moon's gravitational parameter is $\mu_M = 4.903 \times 10^{12}$ m$^3$/s$^2$, its radius is 1737.4 km, and the spacecraft enters a circular lunar orbit at 100 km altitude. Assume the spacecraft reaches the Moon with an excess speed of 0.8 km/s relative to the Moon.
+**Given:** A spacecraft parks in a circular Earth orbit at 185 km altitude. The Earth radius is 6371 km and its gravitational parameter is $\mu_E = 3.986 \times 10^{14}$ $\text{m}^3/\text{s}^2$. The Moon's mean distance from Earth is 384 400 km. The Moon's gravitational parameter is $\mu_M = 4.903 \times 10^{12}$ $\text{m}^3/\text{s}^2$, its radius is 1737.4 km, and the spacecraft enters a circular lunar orbit at 100 km altitude. Assume the spacecraft reaches the Moon with an excess speed of 0.8 km/s relative to the Moon.
 
 **Find:** The ideal delta-v for four burns: trans-lunar injection (TLI), lunar orbit insertion (LOI), descent to the surface, and ascent back to a 100 km lunar orbit.
 

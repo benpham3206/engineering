@@ -27,22 +27,22 @@ Exact SI defining constants (2019 redefinition; exact by definition, so no uncer
 | $h$ | Planck constant | $6.62607015 \times 10^{-34}$ | J s |
 | $e$ | Elementary charge | $1.602176634 \times 10^{-19}$ | C |
 | $k_B$ | Boltzmann constant | $1.380649 \times 10^{-23}$ | J/K |
-| $N_A$ | Avogadro constant | $6.02214076 \times 10^{23}$ | mol$^{-1}$ |
+| $N_A$ | Avogadro constant | $6.02214076 \times 10^{23}$ | $\text{mol}^{-1}$ |
 | $K_{\mathrm{cd}}$ | Luminous efficacy at 540 THz | 683 | lm/W |
 
 Other constants used in this sheet:
 
 | Symbol | Quantity | Value | Unit | Status |
 |---|---|---|---|---|
-| $g_0$ | Standard gravity | 9.80665 | m/s$^2$ | Exact (defined) |
-| $G$ | Newtonian gravitational constant | $6.67430 \times 10^{-11}$ | m$^3$ kg$^{-1}$ s$^{-2}$ | Measured, relative uncertainty about $2 \times 10^{-5}$ (CODATA 2018) |
+| $g_0$ | Standard gravity | 9.80665 | $\text{m/s}^2$ | Exact (defined) |
+| $G$ | Newtonian gravitational constant | $6.67430 \times 10^{-11}$ | $\text{m}^3$ $\text{kg}^{-1}$ $\text{s}^{-2}$ | Measured, relative uncertainty about $2 \times 10^{-5}$ (CODATA 2018) |
 | $\varepsilon_0$ | Vacuum permittivity | $8.8541878 \times 10^{-12}$ | F/m | Derived from $c$ and $\mu_0$ (CODATA) |
-| $\mu_0$ | Vacuum permeability | $1.2566371 \times 10^{-6}$ | N/A$^2$ | Relation: $\mu_0 = 1/(\varepsilon_0 c^2)$. Not exactly $4\pi \times 10^{-7}$ (the pre-2019 defined value), which differs by about $5 \times 10^{-10}$ relative |
-| $\sigma$ | Stefan-Boltzmann constant | $5.670374 \times 10^{-8}$ | W m$^{-2}$ K$^{-4}$ | Derived from $h$, $k_B$, $c$: $\sigma = 2\pi^5 k_B^4 / (15 h^3 c^2)$ |
-| $k_e$ | Coulomb constant | $8.98755 \times 10^{9}$ | N m$^2$/C$^2$ | $k_e = 1/(4\pi\varepsilon_0)$ |
+| $\mu_0$ | Vacuum permeability | $1.2566371 \times 10^{-6}$ | $\text{N/A}^2$ | Relation: $\mu_0 = 1/(\varepsilon_0 c^2)$. Not exactly $4\pi \times 10^{-7}$ (the pre-2019 defined value), which differs by about $5 \times 10^{-10}$ relative |
+| $\sigma$ | Stefan-Boltzmann constant | $5.670374 \times 10^{-8}$ | W $\text{m}^{-2}$ $\text{K}^{-4}$ | Derived from $h$, $k_B$, $c$: $\sigma = 2\pi^5 k_B^4 / (15 h^3 c^2)$ |
+| $k_e$ | Coulomb constant | $8.98755 \times 10^{9}$ | N $\text{m}^2/\text{C}^2$ | $k_e = 1/(4\pi\varepsilon_0)$ |
 
 - Quote $\varepsilon_0$ and $\mu_0$ to 5 significant figures unless the work needs more. Later CODATA adjustments move the last digits by about $10^{-9}$ relative.
-- Use $\mu_0 = 4\pi \times 10^{-7}$ N/A$^2$ only as a rounded value; it is accurate to about $10^{-9}$ relative after 2019 (the old definition was exact).
+- Use $\mu_0 = 4\pi \times 10^{-7}$ $\text{N/A}^2$ only as a rounded value; it is accurate to about $10^{-9}$ relative after 2019 (the old definition was exact).
 
 ## Electricity and magnetism
 
@@ -53,7 +53,7 @@ $$F = k_e \frac{|q_1 q_2|}{r^2}, \qquad \vec{E} = \frac{\vec{F}}{q}$$
 - $F$: force (N). $q_1, q_2$: charges (C). $r$: separation (m). $\vec{E}$: field (V/m).
 - Point charge: $E = k_e |q| / r^2$.
 - Infinite line charge of linear density $\lambda$ (C/m): $E = \lambda / (2\pi\varepsilon_0 r)$.
-- Infinite plane of surface density $\sigma_s$ (C/m$^2$): $E = \sigma_s / (2\varepsilon_0)$.
+- Infinite plane of surface density $\sigma_s$ ($\text{C/m}^2$): $E = \sigma_s / (2\varepsilon_0)$.
 - Potential of a point charge: $V = k_e q / r$ (V).
 
 **Holds when:** charges are at rest, or move slowly, and the field is static. Point charge formulas need the charge to be small compared with $r$, or the distribution to be spherical.
@@ -89,7 +89,7 @@ $$\oint_C \vec{B} \cdot d\vec{\ell} = \mu_0 I_{\text{enc}}$$
 
 $$\mathcal{E} = -N \frac{d\Phi_B}{dt}, \qquad \Phi_B = \int \vec{B} \cdot d\vec{A}$$
 
-- $\mathcal{E}$: induced emf (V). $\Phi_B$: flux (Wb $=$ T m$^2$). $N$: number of turns.
+- $\mathcal{E}$: induced emf (V). $\Phi_B$: flux (Wb $=$ T $\text{m}^2$). $N$: number of turns.
 - Motional emf of a rod of length $\ell$ moving at $v$ across a field $B$: $\mathcal{E} = B \ell v$ (for $\vec{v}$, $\vec{B}$, and the rod mutually perpendicular; in general $\mathcal{E} = (\vec{v} \times \vec{B}) \cdot \vec{\ell}$).
 - Lenz's law sets the sign: the induced current opposes the change in flux.
 
@@ -115,7 +115,7 @@ $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}), \qquad \vec{F}_{\text{wire}} = 
 
 | Geometry | Capacitance | Symbols |
 |---|---|---|
-| Parallel plates (fringing neglected) | $C = \varepsilon A / d$ | $A$ plate area (m$^2$), $d$ gap (m) |
+| Parallel plates (fringing neglected) | $C = \varepsilon A / d$ | $A$ plate area ($\text{m}^2$), $d$ gap (m) |
 | Coaxial cylinders, length $L$ | $C = 2\pi\varepsilon L / \ln(b/a)$ | $a$, $b$ inner and outer radii (m) |
 | Isolated sphere, radius $R$ | $C = 4\pi\varepsilon R$ | $R$ (m) |
 | Two spheres, radii $a$, $b$ (center to center $d \gg a, b$) | $C \approx 4\pi\varepsilon / (1/a + 1/b)$ | |
@@ -123,7 +123,7 @@ $$\vec{F} = q(\vec{E} + \vec{v} \times \vec{B}), \qquad \vec{F}_{\text{wire}} = 
 - Series: $1/C = \sum 1/C_i$. Parallel: $C = \sum C_i$.
 - Dielectric filling: multiply $\varepsilon_0$ by $\varepsilon_r$ (relative permittivity, dimensionless).
 
-Example: parallel plates with $A = 0.010$ m$^2$ and $d = 1.0$ mm in air give $C = 88.5$ pF.
+Example: parallel plates with $A = 0.010$ $\text{m}^2$ and $d = 1.0$ mm in air give $C = 88.5$ pF.
 
 **Holds when:** the gap is small compared with the plate size (parallel plates) and the field is confined.
 
@@ -182,7 +182,7 @@ $$\tau_{\mathrm{RL}} = \frac{L}{R}, \qquad i_L(t) = \frac{V_0}{R} \left(1 - e^{-
 - $\tau$: time constant (s). After $5\tau$ the response is within 1 percent of its final value.
 - Discharge: $v_C = V_0 e^{-t/\tau}$ and $i_L = (V_0 / R) e^{-t/\tau}$ once the source is removed.
 
-Example: $R = 1.0$ k$\Omega$ and $C = 1.0$ $\mu$F give $\tau = 1.0$ ms. $L = 10$ mH with $R = 100$ $\Omega$ gives $\tau = 0.10$ ms.
+Example: $R = 1.0$ $\text{k}\Omega$ and $C = 1.0$ $\mu\text{F}$ give $\tau = 1.0$ ms. $L = 10$ mH with $R = 100$ $\Omega$ gives $\tau = 0.10$ ms.
 
 **Holds when:** the element is linear and lumped; the source is an ideal step.
 
@@ -220,14 +220,14 @@ Speed in common media (typical):
 
 | Medium | Speed (m/s) | Basis |
 |---|---|---|
-| Air, 20 $^\circ$C | 343 | Ideal gas, $v = \sqrt{\gamma R T / M}$ |
-| Fresh water, 20 $^\circ$C | about 1480 | Typical |
+| Air, 20 $^\circ\text{C}$ | 343 | Ideal gas, $v = \sqrt{\gamma R T / M}$ |
+| Fresh water, 20 $^\circ\text{C}$ | about 1480 | Typical |
 | Steel bar, longitudinal | about 5000 to 6000 | Depends on mode and geometry; $\sqrt{E/\rho}$ for a thin bar |
 | Light in vacuum | 299 792 458 | Exact |
 
 - Sound in an ideal gas: $v = \sqrt{\gamma R T / M}$ with $\gamma$ the heat capacity ratio (1.4 for air), $R$ the gas constant, $T$ in kelvin, and $M$ the molar mass (kg/mol).
 - Wave on a string: $v = \sqrt{T_s / \mu}$, with $T_s$ tension (N) and $\mu$ mass per unit length (kg/m).
-- Bar: $v = \sqrt{E / \rho}$, with $E$ Young's modulus (Pa) and $\rho$ density (kg/m$^3$).
+- Bar: $v = \sqrt{E / \rho}$, with $E$ Young's modulus (Pa) and $\rho$ density ($\text{kg/m}^3$).
 
 **Holds when:** linear, non-dispersive, small amplitude.
 
@@ -268,9 +268,9 @@ Example: a 440 Hz source approaching a stationary listener at 30 m/s in 343 m/s 
 
 ### Intensity and decibels
 
-- Intensity (power per unit area, W/m$^2$) from a point source of power $P$ (W) at distance $r$ (m): $I = P / (4\pi r^2)$ (free field, no reflection).
-- Sound intensity level: $L_I = 10 \log_{10}(I / I_0)$ dB, with $I_0 = 10^{-12}$ W/m$^2$.
-- Sound pressure level: $L_p = 20 \log_{10}(p / p_0)$ dB, with $p_0 = 20\ \mu$Pa (rms).
+- Intensity (power per unit area, $\text{W/m}^2$) from a point source of power $P$ (W) at distance $r$ (m): $I = P / (4\pi r^2)$ (free field, no reflection).
+- Sound intensity level: $L_I = 10 \log_{10}(I / I_0)$ dB, with $I_0 = 10^{-12}$ $\text{W/m}^2$.
+- Sound pressure level: $L_p = 20 \log_{10}(p / p_0)$ dB, with $p_0 = 20\ \mu\text{Pa}$ (rms).
 - Doubling intensity: $+3$ dB. Doubling pressure: $+6$ dB. Halving distance from a point source: $+6$ dB.
 - Adding incoherent sources: add intensities, then convert to dB. Two 80 dB sources give 83 dB, not 160 dB.
 
@@ -321,7 +321,7 @@ $$\theta_{\min} = 1.22 \frac{\lambda}{D} \qquad \text{(Rayleigh criterion, circu
 - $\theta_{\min}$: smallest resolvable angle (rad). $\lambda$: wavelength (m). $D$: aperture diameter (m).
 - Microscope (Abbe): smallest resolvable distance $d = \lambda / (2\,\text{NA})$, with $\text{NA} = n \sin\theta$.
 
-Example: $\lambda = 550$ nm and $D = 0.10$ m give $\theta_{\min} = 6.7\ \mu$rad. A microscope with NA 0.95 at 550 nm resolves about 290 nm.
+Example: $\lambda = 550$ nm and $D = 0.10$ m give $\theta_{\min} = 6.7\ \mu\text{rad}$. A microscope with NA 0.95 at 550 nm resolves about 290 nm.
 
 **Holds when:** the aperture is circular, the source is incoherent, and the object is in the far field.
 
@@ -333,12 +333,12 @@ Example: $\lambda = 550$ nm and $D = 0.10$ m give $\theta_{\min} = 6.7\ \mu$rad.
 
 $$F = G \frac{m_1 m_2}{r^2}, \qquad g = \frac{GM}{r^2}$$
 
-- $F$: force (N). $m_1$, $m_2$: masses (kg). $r$: distance between centers (m). $M$: mass of the attracting body (kg). $g$: gravitational acceleration at distance $r$ (m/s$^2$).
+- $F$: force (N). $m_1$, $m_2$: masses (kg). $r$: distance between centers (m). $M$: mass of the attracting body (kg). $g$: gravitational acceleration at distance $r$ ($\text{m/s}^2$).
 - Weight at a location: $W = m g_{\text{local}}$. Use the local $g$, not 9.80665.
 - Above a body of radius $R$ at altitude $h$: $g(h) = g_{\text{surface}} \, (R / (R + h))^2$.
-- Standard gravity $g_0 = 9.80665$ m/s$^2$ is a defined reference for converting mass and force, not a value at any place.
+- Standard gravity $g_0 = 9.80665$ $\text{m/s}^2$ is a defined reference for converting mass and force, not a value at any place.
 
-Standard gravitational parameter $\mu = GM$ (m$^3$/s$^2$) is usually known more precisely than $G$ or $M$ separately. Use $\mu$ in every orbit formula.
+Standard gravitational parameter $\mu = GM$ ($\text{m}^3/\text{s}^2$) is usually known more precisely than $G$ or $M$ separately. Use $\mu$ in every orbit formula.
 
 **Holds when:** point masses, or spherically symmetric bodies seen from outside; no relativistic effects.
 
@@ -390,7 +390,7 @@ Typical specific impulse (vacuum, approximate):
 |---|---|
 | Cold gas thruster | 50 to 80 for nitrogen; up to about 165 for helium |
 | Monopropellant hydrazine | 200 to 230 |
-| Liquid bipropellant (LOX/kerosene, LOX/LH$_2$) | about 300 to 360 (kerosene); about 390 to 460 (LH$_2$) |
+| Liquid bipropellant (LOX/kerosene, $\text{LOX/LH}_2$) | about 300 to 360 (kerosene); about 390 to 460 ($\text{LH}_2$) |
 | Solid rocket motor | 240 to 280 |
 | Electric (Hall thruster, ion) | 1500 to 4000 |
 
@@ -402,9 +402,9 @@ Example: $I_{\mathrm{sp}} = 450$ s and a mass ratio of 3 give $\Delta v = 4.85$ 
 
 ## Radiation and heat in space
 
-- Stefan-Boltzmann law: $P = \varepsilon \sigma A T^4$, with $\varepsilon$ emissivity (0 to 1, dimensionless), $A$ area (m$^2$), $T$ absolute temperature (K).
-- Example: an ideal black body at 300 K emits $\sigma T^4 = 459$ W/m$^2$.
-- Equilibrium temperature of a body with absorptance $\alpha$ facing sunlight flux $S$ (about 1361 W/m$^2$ at 1 au): $\alpha S = \varepsilon \sigma T^4$ (for a flat plate radiating from one side, no internal heat).
+- Stefan-Boltzmann law: $P = \varepsilon \sigma A T^4$, with $\varepsilon$ emissivity (0 to 1, dimensionless), $A$ area ($\text{m}^2$), $T$ absolute temperature (K).
+- Example: an ideal black body at 300 K emits $\sigma T^4 = 459$ $\text{W/m}^2$.
+- Equilibrium temperature of a body with absorptance $\alpha$ facing sunlight flux $S$ (about 1361 $\text{W/m}^2$ at 1 au): $\alpha S = \varepsilon \sigma T^4$ (for a flat plate radiating from one side, no internal heat).
 
 **Holds when:** blackbody or grey-body emission, uniform temperature.
 
@@ -414,7 +414,7 @@ Example: $I_{\mathrm{sp}} = 450$ s and a mass ratio of 3 give $\Delta v = 4.85$ 
 
 Typical values using mean radii. Surface gravity is $g = GM / R_{\text{mean}}^2$ (point mass, no rotation, no oblateness). Escape speed is $\sqrt{2GM / R_{\text{mean}}}$. Gas giants and the Sun have no solid surface, so these are reference values at the mean radius.
 
-| Body | Mean radius (km) | $GM$ (m$^3$/s$^2$, typical) | Surface $g$ (m/s$^2$, typical) | Escape speed (km/s, typical) |
+| Body | Mean radius (km) | $GM$ ($\text{m}^3/\text{s}^2$, typical) | Surface $g$ ($\text{m/s}^2$, typical) | Escape speed (km/s, typical) |
 |---|---|---|---|---|
 | Sun (photosphere, nominal) | 695 700 | $1.3271 \times 10^{20}$ | 274.2 | 617.7 |
 | Mercury | 2439.7 | $2.2032 \times 10^{13}$ | 3.70 | 4.25 |
@@ -427,9 +427,9 @@ Typical values using mean radii. Surface gravity is $g = GM / R_{\text{mean}}^2$
 | Titan | 2574.7 | $8.978 \times 10^{12}$ | 1.35 | 2.64 |
 | Europa | 1560.8 | $3.2027 \times 10^{12}$ | 1.31 | 2.03 |
 
-- Earth's computed $g = 9.82$ m/s$^2$ at the mean radius differs from the defined 9.80665 m/s$^2$ because the real Earth is oblate and rotates. Use a local measured value or a geodetic model for real work.
+- Earth's computed $g = 9.82$ $\text{m/s}^2$ at the mean radius differs from the defined 9.80665 $\text{m/s}^2$ because the real Earth is oblate and rotates. Use a local measured value or a geodetic model for real work.
 - All $g$ values here are $GM/R^2$ at the mean radius, with no rotation. For Jupiter and Saturn the radius is measured at the 1 bar pressure level, because they have no solid surface.
-- Gas giants are strongly oblate, so the equatorial radius gives a lower value: $GM/R_{\mathrm{eq}}^2$ is about 24.79 m/s$^2$ on Jupiter ($R_{\mathrm{eq}}$ $=$ 71 492 km) and 10.44 m/s$^2$ on Saturn (60 268 km). Their fast rotation lowers the effective value at the equator further, to about 22.6 and 8.8 m/s$^2$.
+- Gas giants are strongly oblate, so the equatorial radius gives a lower value: $GM/R_{\mathrm{eq}}^2$ is about 24.79 $\text{m/s}^2$ on Jupiter ($R_{\mathrm{eq}}$ $=$ 71 492 km) and 10.44 $\text{m/s}^2$ on Saturn (60 268 km). Their fast rotation lowers the effective value at the equator further, to about 22.6 and 8.8 $\text{m/s}^2$.
 - Titan and Europa values are typical published mean-radius values, not exact.
 
 ## Checklists
@@ -471,7 +471,7 @@ Orders of magnitude to catch wrong answers:
 | Quantity | Expected order of magnitude |
 |---|---|
 | Force between two electrons 1 m apart | $2.3 \times 10^{-28}$ N electric; gravity is about $5 \times 10^{-71}$ N |
-| Earth surface $g$ | about 10 m/s$^2$ |
+| Earth surface $g$ | about 10 $\text{m/s}^2$ |
 | Speed of sound in air | about 340 m/s |
 | Speed of light | $3 \times 10^8$ m/s |
 | LEO period | about 90 min |
@@ -487,7 +487,7 @@ Quick tests:
 - If a rocket $\Delta v$ comes out larger than $I_{\mathrm{sp}} g_0 \ln(\text{mass ratio})$, you added terms that do not belong.
 - If a wavelength in water is longer than in air for the same frequency, the index was inverted ($n = c/v$, so higher $n$ means shorter $\lambda$).
 - If the circular speed at a given radius is larger than the escape speed, the formula was typed wrong ($v_e = \sqrt{2} v_c$).
-- Energy stored in a capacitor should be $\frac{1}{2} C V^2$, which is a few microjoules for a 1 $\mu$F capacitor at 3 V.
+- Energy stored in a capacitor should be $\frac{1}{2} C V^2$, which is a few microjoules for a 1 $\mu\text{F}$ capacitor at 3 V.
 
 ## Further reference
 

@@ -35,7 +35,7 @@ Variables:
 | $T$ | torque | lbf in |
 | $L$ | length | furlong |
 | $G$ | shear modulus | |
-| $J$ | polar moment | m$^{4}$ |
+| $J$ | polar moment | $\text{m}^{4}$ |
 
 Holds when: the shaft is circular.
 Breaks when: the section warps.

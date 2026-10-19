@@ -60,7 +60,7 @@ Symbols:
 
 - $Q$ is heat flow rate in watts (W), which is joules per second.
 - $k$ is thermal conductivity in W/(m $\cdot$ K). Typical single-pane glass is about 0.8 W/(m $\cdot$ K).
-- $A$ is area in square meters (m$^2$).
+- $A$ is area in square meters ($\text{m}^2$).
 - $\Delta T$ is the temperature difference in kelvin (K) or degrees Celsius (a difference is the same in both).
 - $L$ is thickness in meters (m).
 
@@ -74,7 +74,7 @@ The result is in watts, as required.
 
 ## Worked example
 
-**Problem.** A single-pane window is 1.5 m$^2$ in area and 4.0 mm thick. The inner glass surface is 20 K warmer
+**Problem.** A single-pane window is 1.5 $\text{m}^2$ in area and 4.0 mm thick. The inner glass surface is 20 K warmer
 than the outer glass surface. Estimate the heat loss through the glass, and check the formula with units and
 limits.
 

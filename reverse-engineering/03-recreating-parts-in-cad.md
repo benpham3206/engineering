@@ -38,14 +38,14 @@ Volume of a cylinder hole, where $r$ is the radius in millimeters and $h$ is the
 
 $$V_{\text{hole}} = \pi r^2 h$$
 
-Mass from volume, where $m$ is mass in grams, $\rho$ is density in grams per cubic centimeter (g/cm$^3$), and $V$ is volume in cubic centimeters:
+Mass from volume, where $m$ is mass in grams, $\rho$ is density in grams per cubic centimeter ($\text{g/cm}^3$), and $V$ is volume in cubic centimeters:
 
 $$m = \rho V$$
 
 Typical densities (standard textbook values, which vary a little by alloy):
 
-- Low-carbon steel: about 7.85 g/cm$^3$
-- Aluminum alloy (such as 6061): about 2.70 g/cm$^3$
+- Low-carbon steel: about 7.85 $\text{g/cm}^3$
+- Aluminum alloy (such as 6061): about 2.70 $\text{g/cm}^3$
 
 Unit note: $1\ \text{cm}^3 = 1000\ \text{mm}^3$.
 
@@ -67,7 +67,7 @@ Each hole has radius $r = 3$ mm, so the volume of one hole is:
 
 $$V_{\text{hole}} = \pi (3)^2 (5) = 141.37 \text{ mm}^3$$
 
-Four holes remove $4 \times 141.37 = 565.49$ mm$^3$. Net volume:
+Four holes remove $4 \times 141.37 = 565.49$ $\text{mm}^3$. Net volume:
 
 $$V = 12000 - 565.49 = 11434.51 \text{ mm}^3 = 11.43 \text{ cm}^3$$
 
@@ -79,19 +79,19 @@ Aluminum mass:
 
 $$m_{\text{Al}} = 2.70 \times 11.43 = 30.87 \text{ g}$$
 
-**Answer:** The net volume is 11.43 cm$^3$. The mass is about 89.8 g as steel and about 30.9 g as aluminum.
+**Answer:** The net volume is 11.43 $\text{cm}^3$. The mass is about 89.8 g as steel and about 30.9 g as aluminum.
 
-**Sanity check:** A 5 mm thick plate is about 0.5 cm thick, and its footprint is 24 cm$^2$ before holes. Volume should be near $24 \times 0.5 = 12$ cm$^3$, which matches 11.43 cm$^3$ after removing four small holes. A mass near 90 g for steel is in the right range for a plate that size.
+**Sanity check:** A 5 mm thick plate is about 0.5 cm thick, and its footprint is 24 $\text{cm}^2$ before holes. Volume should be near $24 \times 0.5 = 12$ $\text{cm}^3$, which matches 11.43 $\text{cm}^3$ after removing four small holes. A mass near 90 g for steel is in the right range for a plate that size.
 
 If the measured mass of the real part is 89 g, the steel answer fits. If it is 31 g, the material is probably aluminum. This is how a mass check helps you choose between material guesses.
 
 ## Practice
 
 1. A plate is 80 mm by 50 mm by 4 mm with no holes. What is its volume in cubic millimeters?
-2. A 10 mm diameter hole goes 4 mm deep through a part. What is its volume in cubic millimeters, rounded to 0.1 mm$^3$?
-3. A solid part has a net volume of 42.0 cm$^3$. What is its mass in grams as low-carbon steel?
-4. A part has a net volume of 18.5 cm$^3$. What is its mass in grams as aluminum?
-5. A part weighs 81.0 g as steel. What is its volume in cubic centimeters, rounded to 0.01 cm$^3$?
+2. A 10 mm diameter hole goes 4 mm deep through a part. What is its volume in cubic millimeters, rounded to 0.1 $\text{mm}^3$?
+3. A solid part has a net volume of 42.0 $\text{cm}^3$. What is its mass in grams as low-carbon steel?
+4. A part has a net volume of 18.5 $\text{cm}^3$. What is its mass in grams as aluminum?
+5. A part weighs 81.0 g as steel. What is its volume in cubic centimeters, rounded to 0.01 $\text{cm}^3$?
 
 <details><summary>Answers</summary>
 
@@ -108,7 +108,7 @@ If the measured mass of the real part is 89 g, the steel answer fits. If it is 3
 - Modeling the shape without any dimension relationships, so a single change breaks the whole part.
 - Using a rounded measurement from a steel rule as a design dimension without checking against a standard size.
 - Forgetting to subtract holes from the volume when checking mass, which overstates the weight.
-- Mixing units, such as cubic millimeters with grams per cubic centimeter. Convert to cm$^3$ before multiplying by density.
+- Mixing units, such as cubic millimeters with grams per cubic centimeter. Convert to $\text{cm}^3$ before multiplying by density.
 - Leaving out fillets and chamfers because they look small. They often explain where a part was machined or molded.
 
 ## Go deeper

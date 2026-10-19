@@ -132,7 +132,7 @@ seconds (s).
 
 $$\mathcal{E} = -N \frac{d\Phi_B}{dt}$$
 
-The flux through a coil of area $A$ (m$^2$) in a field $B$ (T) is $\Phi_B = B A\cos\theta$, where
+The flux through a coil of area $A$ ($\text{m}^2$) in a field $B$ (T) is $\Phi_B = B A\cos\theta$, where
 $\theta$ is the angle in radians (rad) between the field and the coil's normal. A coil that spins at a
 constant angular speed $\omega$ (rad/s) has $\theta = \omega t$. The voltage then becomes
 
@@ -143,7 +143,7 @@ $f$ in hertz (Hz) by $\omega = 2\pi f$.
 
 ## Worked example
 
-**Given:** A simple generator has $N = 200$ turns, a field $B = 0.5$ T, a coil area $A = 0.01$ m$^2$
+**Given:** A simple generator has $N = 200$ turns, a field $B = 0.5$ T, a coil area $A = 0.01$ $\text{m}^2$
 (a 10 cm by 10 cm square), and a frequency $f = 50$ Hz.
 
 **Find:** The peak EMF and the RMS EMF.
@@ -176,7 +176,7 @@ is the first step in improving it.
 
 ## Practice
 
-1. A generator has $N = 500$ turns, $B = 0.3$ T, $A = 0.02$ m$^2$, and $f = 60$ Hz. Find the peak EMF.
+1. A generator has $N = 500$ turns, $B = 0.3$ T, $A = 0.02$ $\text{m}^2$, and $f = 60$ Hz. Find the peak EMF.
 2. The same generator from question 1 runs at half the frequency, 30 Hz. Find the peak EMF.
 3. Explain why a transformer does not work on a steady DC supply.
 4. Lovelace's Note G computes Bernoulli numbers on a machine that was never built. What does that

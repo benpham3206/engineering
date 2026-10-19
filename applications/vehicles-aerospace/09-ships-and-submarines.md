@@ -47,7 +47,7 @@ Buoyant force on a body in water, in newtons (N):
 
 $$F_B = \rho g V$$
 
-where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $V$ is the displaced volume in cubic metres (m$^3$). Typical seawater density is $\rho \approx 1025\ \text{kg}/\text{m}^3$, and fresh water is about $1000\ \text{kg}/\text{m}^3$.
+where $\rho$ is the water density in kilograms per cubic metre ($\text{kg/m}^3$), $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface), and $V$ is the displaced volume in cubic metres ($\text{m}^3$). Typical seawater density is $\rho \approx 1025\ \text{kg}/\text{m}^3$, and fresh water is about $1000\ \text{kg}/\text{m}^3$.
 
 For a ship in equilibrium, $F_B = \Delta g$, where $\Delta$ is the displacement mass in kilograms.
 
@@ -59,7 +59,7 @@ where $\mathrm{KB}$ is the height of the center of buoyancy above the keel in me
 
 $$\mathrm{BM} = \frac{I}{V} = \frac{L B_w^3}{12 V}$$
 
-where $I = L B_w^3 / 12$ is the second moment of the waterplane area about the centerline, in metres to the fourth power (m$^4$). For a box-shaped hull of draft $T$, the center of buoyancy sits at $\mathrm{KB} = T / 2$.
+where $I = L B_w^3 / 12$ is the second moment of the waterplane area about the centerline, in metres to the fourth power ($\text{m}^4$). For a box-shaped hull of draft $T$, the center of buoyancy sits at $\mathrm{KB} = T / 2$.
 
 For a small transverse weight shift $w$ moved a distance $d$ across the deck, the heel angle $\theta$ in radians is approximately:
 

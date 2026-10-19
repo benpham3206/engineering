@@ -10,13 +10,13 @@
 ## Core ideas
 
 - **Heat** ($Q$, or $q$ for a rate) is energy that moves because of a temperature difference. Heat transfer rate is measured in watts ($\mathrm{W} = \mathrm{J/s}$).
-- **Heat flux** $q''$ is heat rate per unit area (W/m$^2$). It is often easier to work with than the total rate.
+- **Heat flux** $q''$ is heat rate per unit area ($\text{W/m}^2$). It is often easier to work with than the total rate.
 - There are three modes:
   - **Conduction**: energy moves through a solid or stationary fluid by molecular motion and electron motion. Metals conduct well. Foam and air conduct poorly.
   - **Convection**: energy is carried by fluid motion. Forced convection uses a fan or pump. Natural convection uses buoyancy from warm, less dense fluid.
   - **Radiation**: energy travels as electromagnetic waves. It needs no medium, so it works across vacuum. Sunlight reaching Earth is radiation.
 - **Thermal conductivity** $k$ describes how well a material conducts heat (W/m K). Typical values: copper about 400 W/m K, concrete about 1 W/m K, fiberglass insulation about 0.04 W/m K.
-- **Convection coefficient** $h$ describes how well a fluid carries heat away from a surface (W/m$^2$ K). Typical values: still air about 5-10, moving air 25-250, moving water 500-10 000.
+- **Convection coefficient** $h$ describes how well a fluid carries heat away from a surface ($\text{W/m}^2$ K). Typical values: still air about 5-10, moving air 25-250, moving water 500-10 000.
 - **Emissivity** $\varepsilon$ is a number from 0 to 1 that says how well a surface radiates compared with a perfect black body. Dull black paint is close to 0.9. Polished aluminum is often around 0.05.
 - **Steady state** means temperatures do not change with time. Most design problems assume this.
 - **Thermal resistance** $R$ (K/W) is the temperature difference needed to drive one watt through a path. Heat flow is $\Delta T / R$. This is the same idea as Ohm's law for electrical resistance.
@@ -63,7 +63,7 @@ This method is quick. Use it first before attempting a full solution with differ
 
 ## Key equations
 
-Symbols: $q$ $=$ heat rate (W), $q''$ $=$ heat flux (W/m$^2$), $k$ $=$ thermal conductivity (W/m K), $A$ $=$ area (m$^2$), $L$ $=$ thickness (m), $h$ $=$ convection coefficient (W/m$^2$ K), $\varepsilon$ $=$ emissivity (dimensionless), $\sigma$ $=$ Stefan-Boltzmann constant, $5.670 \times 10^{-8}$ W/m$^2$ K$^4$, $T$ and $T_\text{sur}$ $=$ absolute temperatures (K), $\Delta T$ $=$ temperature difference (K), $R$ $=$ thermal resistance (K/W).
+Symbols: $q$ $=$ heat rate (W), $q''$ $=$ heat flux ($\text{W/m}^2$), $k$ $=$ thermal conductivity (W/m K), $A$ $=$ area ($\text{m}^2$), $L$ $=$ thickness (m), $h$ $=$ convection coefficient ($\text{W/m}^2$ K), $\varepsilon$ $=$ emissivity (dimensionless), $\sigma$ $=$ Stefan-Boltzmann constant, $5.670 \times 10^{-8}$ $\text{W/m}^2$ $\text{K}^4$, $T$ and $T_\text{sur}$ $=$ absolute temperatures (K), $\Delta T$ $=$ temperature difference (K), $R$ $=$ thermal resistance (K/W).
 
 Fourier's law for conduction through a plane wall:
 
@@ -93,16 +93,16 @@ Here $T_{\infty,1}$ and $T_{\infty,2}$ are the fluid temperatures on each side.
 
 ## Worked example
 
-**Insulated exterior wall section.** A wall section is 1.0 m$^2$ in area. From inside to outside it has:
+**Insulated exterior wall section.** A wall section is 1.0 $\text{m}^2$ in area. From inside to outside it has:
 
-- Inside air convection, $h_i = 8$ W/m$^2$ K (typical value for still indoor air).
+- Inside air convection, $h_i = 8$ $\text{W/m}^2$ K (typical value for still indoor air).
 - Brick, thickness 0.10 m, $k = 0.72$ W/m K (typical value).
 - Mineral wool insulation, thickness 0.05 m, $k = 0.04$ W/m K (typical value).
-- Outside air convection, $h_o = 25$ W/m$^2$ K (typical value for a windy outside).
+- Outside air convection, $h_o = 25$ $\text{W/m}^2$ K (typical value for a windy outside).
 
 Inside air is at 21 °C, outside air at $-5$ °C. Find the heat rate through the wall, and find the temperature at the brick-insulation interface and at the insulation's outer surface.
 
-**Given:** $A = 1.0$ m$^2$, $T_\text{in} = 21$ °C, $T_\text{out} = -5$ °C, layers as above.
+**Given:** $A = 1.0$ $\text{m}^2$, $T_\text{in} = 21$ °C, $T_\text{out} = -5$ °C, layers as above.
 
 **Find:** $q$, $T_1$ (inside surface of the brick), $T_2$ (brick-insulation interface), and $T_3$ (outer surface of the insulation).
 
@@ -110,7 +110,7 @@ Inside air is at 21 °C, outside air at $-5$ °C. Find the heat rate through the
 
 **Solution:**
 
-1. Resistances (per unit area, $A = 1$ m$^2$):
+1. Resistances (per unit area, $A = 1$ $\text{m}^2$):
    - Inside convection: $R_i = 1/(8 \times 1) = 0.125$ K/W.
    - Brick: $R_b = 0.10/(0.72 \times 1) = 0.1389$ K/W.
    - Insulation: $R_\text{ins} = 0.05/(0.04 \times 1) = 1.250$ K/W.
@@ -122,22 +122,22 @@ Inside air is at 21 °C, outside air at $-5$ °C. Find the heat rate through the
    - Brick-insulation interface: $T_2 = 18.9 - 16.7 \times 0.1389 = 16.6$ °C.
    - Outer surface of the insulation: $T_3 = 16.6 - 16.7 \times 1.250 = -4.3$ °C.
 
-**Answer:** $q = 16.7$ W through the 1.0 m$^2$ section, so the heat flux is 16.7 W/m$^2$. $T_1 = 18.9$ °C, $T_2 = 16.6$ °C, $T_3 = -4.3$ °C.
+**Answer:** $q = 16.7$ W through the 1.0 $\text{m}^2$ section, so the heat flux is 16.7 $\text{W/m}^2$. $T_1 = 18.9$ °C, $T_2 = 16.6$ °C, $T_3 = -4.3$ °C.
 
 **Sanity check:** The outer air-to-surface drop is $q/(h_o A) = 16.7 / 25 = 0.67$ K, and $T_3 - T_\text{out} = -4.33 - (-5) = 0.67$ K. They agree. Most of the temperature drop (about 21 K of the total 26 K) happens across the insulation, which has the largest resistance.
 
 ## Practice
 
-1. A concrete wall is 0.20 m thick, with $k = 1.0$ W/m K, area 10 m$^2$, and temperature difference 15 K across it. Find the heat rate in W.
-2. A surface with $h = 10$ W/m$^2$ K and area 2.0 m$^2$ is at 20 K above the air. Find the heat rate in W.
-3. A surface with $\varepsilon = 0.8$ at 350 K radiates to surroundings at 300 K. Find the net radiative flux in W/m$^2$.
-4. A wall has $h_\text{in} = 10$ W/m$^2$ K, a layer of $L = 0.10$ m with $k = 0.5$ W/m K, and $h_\text{out} = 20$ W/m$^2$ K. Its area is 1.0 m$^2$, the inside air is at 30 °C, and the outside air is at 0 °C. Find the heat rate in W.
+1. A concrete wall is 0.20 m thick, with $k = 1.0$ W/m K, area 10 $\text{m}^2$, and temperature difference 15 K across it. Find the heat rate in W.
+2. A surface with $h = 10$ $\text{W/m}^2$ K and area 2.0 $\text{m}^2$ is at 20 K above the air. Find the heat rate in W.
+3. A surface with $\varepsilon = 0.8$ at 350 K radiates to surroundings at 300 K. Find the net radiative flux in $\text{W/m}^2$.
+4. A wall has $h_\text{in} = 10$ $\text{W/m}^2$ K, a layer of $L = 0.10$ m with $k = 0.5$ W/m K, and $h_\text{out} = 20$ $\text{W/m}^2$ K. Its area is 1.0 $\text{m}^2$, the inside air is at 30 °C, and the outside air is at 0 °C. Find the heat rate in W.
 
 <details><summary>Answers</summary>
 
 1. 750 W
 2. 400 W
-3. 313.3 W/m$^2$
+3. 313.3 $\text{W/m}^2$
 4. 85.7 W
 
 </details>

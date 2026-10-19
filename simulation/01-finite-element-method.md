@@ -40,7 +40,7 @@ Convergence has limits. Stress at a **singularity**, such as a sharp inside corn
 
 ## Key equations
 
-Symbols: $E$ = Young's modulus (Pa); $A$ = cross-section area (m$^2$); $l$ = element length (m); $x$ = position along the element (m); $u$ = axial displacement (m); $u_1, u_2$ = nodal displacements (m); $\varepsilon$ = strain (dimensionless); $\sigma$ = stress (Pa); $k$ = element stiffness (N/m); $F_1, F_2$ = nodal forces (N).
+Symbols: $E$ = Young's modulus (Pa); $A$ = cross-section area ($\text{m}^2$); $l$ = element length (m); $x$ = position along the element (m); $u$ = axial displacement (m); $u_1, u_2$ = nodal displacements (m); $\varepsilon$ = strain (dimensionless); $\sigma$ = stress (Pa); $k$ = element stiffness (N/m); $F_1, F_2$ = nodal forces (N).
 
 Linear shape functions for a two-node bar element, $0 \le x \le l$:
 
@@ -64,9 +64,9 @@ The bar element holds for linear elastic material, small strain, and load along 
 
 ## Worked example
 
-**Two-element stepped bar.** A steel bar is fixed at its left end. The first element is 1.0 m long with area 200 mm$^2$. The second is 1.0 m long with area 100 mm$^2$. A 10 kN axial load pulls on the free end. Find the nodal displacements, the reaction, and the stress in each element, and compare with the exact answer.
+**Two-element stepped bar.** A steel bar is fixed at its left end. The first element is 1.0 m long with area 200 $\text{mm}^2$. The second is 1.0 m long with area 100 $\text{mm}^2$. A 10 kN axial load pulls on the free end. Find the nodal displacements, the reaction, and the stress in each element, and compare with the exact answer.
 
-**Given:** $E = 200$ GPa, $l_1 = l_2 = 1.0$ m, $A_1 = 200$ mm$^2$, $A_2 = 100$ mm$^2$, $P = 10$ kN. Nodes 1, 2, 3 from left to right.
+**Given:** $E = 200$ GPa, $l_1 = l_2 = 1.0$ m, $A_1 = 200$ $\text{mm}^2$, $A_2 = 100$ $\text{mm}^2$, $P = 10$ kN. Nodes 1, 2, 3 from left to right.
 
 **Find:** $u_2$, $u_3$, the reaction at node 1, $\sigma_1$, $\sigma_2$.
 
@@ -129,8 +129,8 @@ expect(0.5 * k1 * u2**2 + 0.5 * k2 * (u3 - u2)**2, "3.75 J")
 
 ## Practice
 
-1. Find the stiffness $k = EA/l$ of one bar element with $E = 70$ GPa, $A = 300$ mm$^2$, and $l = 0.50$ m, in MN/m.
-2. A single bar element of length 1.5 m, area 100 mm$^2$, and $E = 200$ GPa carries a 20 kN end pull, fixed at the other end. Find the tip displacement in mm.
+1. Find the stiffness $k = EA/l$ of one bar element with $E = 70$ GPa, $A = 300$ $\text{mm}^2$, and $l = 0.50$ m, in MN/m.
+2. A single bar element of length 1.5 m, area 100 $\text{mm}^2$, and $E = 200$ GPa carries a 20 kN end pull, fixed at the other end. Find the tip displacement in mm.
 3. A bar of length $L$, fixed at one end, carries a uniform axial load along its length. It is modeled with 2 equal linear elements and consistent nodal loads. The stress in the element at the fixed end is constant. As a fraction of the exact stress at the fixed end, what does the model report? (The exact stress there is the highest in the bar.)
 4. For problem 3, the stress error at the fixed end, as a fraction of the exact value, is $1/(2n)$ for $n$ equal elements. How many elements give an error of at most 0.02?
 5. An analyst's bracket model predicts a tip deflection of 12.0 mm. A hand beam calculation gives 10.0 mm. Decide where to look first, and find the percentage difference relative to the hand value.

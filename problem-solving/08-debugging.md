@@ -85,7 +85,7 @@ The bad answer reproduces, so the cause is in the inputs or the formula.
 $Q = 6000\ \text{W}$. Run it with the same formula. It gives 6000 W, so the formula and
 arithmetic are correct. The bug is in the input.
 
-**Step 3, check each input's units.** $A$ is 1.5 m$^2$, correct. $\Delta T$ is 20 K, correct.
+**Step 3, check each input's units.** $A$ is 1.5 $\text{m}^2$, correct. $\Delta T$ is 20 K, correct.
 $k$ is W/(m $\cdot$ K), correct. The student entered $L$ as $0.04\ \text{m}$, which is 4 cm, not 4 mm.
 The pane is 0.0040 m thick.
 
@@ -107,7 +107,7 @@ units test and the limit test.
 1. A student enters the glass thickness as 4 cm instead of 4 mm. By what factor is the
    reported heat loss wrong?
 2. A student computes $v = 2gh$ for $h = 20\ \text{m}$ and forgets the square root. What value
-   do they get, in m$^2$/s$^2$?
+   do they get, in $\text{m}^2/\text{s}^2$?
 3. A student on Earth uses $g = 9.8$ instead of $9.81$ for $h = 20\ \text{m}$. The speed changes by how
    much, in m/s? Give the difference of $\sqrt{2gh}$ for the two values.
 

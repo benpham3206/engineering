@@ -12,7 +12,7 @@ sensor signal conditioning.
 ## Core ideas
 
 - **Capacitor**: a part that stores charge and voltage. Its voltage cannot change instantly.
-  The capacitance $C$ is measured in farads (F). Typical bench values are microfarads ($\mu$F).
+  The capacitance $C$ is measured in farads (F). Typical bench values are microfarads ($\mu\text{F}$).
 - **Charging**: when a voltage is applied through a resistor, current flows into the capacitor
   and its voltage rises gradually.
 - **Time constant** $\tau$ (tau): the product $RC$. After one time constant, a charging capacitor

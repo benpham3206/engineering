@@ -71,7 +71,7 @@ Step 1. Counts per revolution: $4P = 4000$.
 
 Step 2. Angle per count: $\theta_{\text{count}} = \dfrac{360}{4000} = 0.09^\circ$.
 
-Step 3. Linear travel per count: $\Delta x = \dfrac{5}{4000} = 0.00125$ mm $= 1.25\ \mu$m.
+Step 3. Linear travel per count: $\Delta x = \dfrac{5}{4000} = 0.00125$ mm $= 1.25\ \mu\text{m}$.
 
 Step 4. Counts per second: $f = \dfrac{4000 \times 600}{60} = 40\,000$ counts/s.
 

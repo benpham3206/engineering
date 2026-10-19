@@ -90,11 +90,11 @@ Assumptions: the member is uniform in temperature, it expands freely (no constra
 
 **Answer:** (a) $1\ \mu\text{m}$ per count. (b) 300 rpm. (c) 2.65 N m. (d) 83 W at this load.
 
-**Sanity check:** The power check agrees with the torque and speed. A servo motor with a continuous torque rating well above 2.65 N m, plus margin for acceleration, is the right size. The 1 $\mu$m resolution is not the accuracy of the axis. Pitch error, backlash, and thermal growth add to it, as the next sections show.
+**Sanity check:** The power check agrees with the torque and speed. A servo motor with a continuous torque rating well above 2.65 N m, plus margin for acceleration, is the right size. The 1 $\mu\text{m}$ resolution is not the accuracy of the axis. Pitch error, backlash, and thermal growth add to it, as the next sections show.
 
 ## Design trade-offs
 
-- **Stiffness against mass:** a heavy casting resists deflection and damps vibration. It also needs larger drives and limits acceleration. A frame that deflects 10 $\mu$m under 1500 N has a stiffness of 150 N/$\mu$m, or 150 kN/mm.
+- **Stiffness against mass:** a heavy casting resists deflection and damps vibration. It also needs larger drives and limits acceleration. A frame that deflects 10 $\mu\text{m}$ under 1500 N has a stiffness of 150 $\text{N/}\mu\text{m}$, or 150 kN/mm.
 - **Screw lead:** torque scales with lead, so a small lead needs less motor torque for the same force. A large lead gives more travel per revolution and more speed at a low motor speed, but it lowers the resolution per count for a given encoder.
 - **Stepper against servo:** a stepper is cheaper and holds position without feedback. It loses steps when the load exceeds its torque at that speed. A servo costs more and corrects position errors as they happen.
 - **Ball screw against linear motor:** a ball screw is cheap and has high force, but it wears and has limited speed. A linear motor drives the table directly with no screw wear. It needs more magnet material and cooling.

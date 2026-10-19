@@ -45,7 +45,7 @@ where:
 
 - $\sigma$ is engineering stress (Pa or MPa)
 - $F$ is the applied force (N)
-- $A_0$ is the original cross-sectional area (m$^2$)
+- $A_0$ is the original cross-sectional area ($\text{m}^2$)
 - $\varepsilon$ is engineering strain (dimensionless)
 - $\Delta L$ is the change in gauge length (m)
 - $L_0$ is the original gauge length (m)
@@ -60,7 +60,7 @@ where $E$ is Young's modulus (Pa or GPa, with $1\ \mathrm{GPa} = 10^9\ \mathrm{P
 
 These are typical textbook values at room temperature. Real values depend on alloy, heat treatment, grain size, moisture, and processing, so use supplier data for real design work. Yield strength is listed as "n/a" when the material does not yield in a clear, sharp way.
 
-| Material | Density $\rho$ (kg/m$^3$) | Young's modulus $E$ (GPa) | Yield strength $\sigma_y$ (MPa) |
+| Material | Density $\rho$ ($\text{kg/m}^3$) | Young's modulus $E$ (GPa) | Yield strength $\sigma_y$ (MPa) |
 |---|---|---|---|
 | 1018 steel (cold drawn) | 7870 | 205 | 370 |
 | 6061-T6 aluminum | 2700 | 69 | 276 |
@@ -81,7 +81,7 @@ These are typical textbook values at room temperature. Real values depend on all
 
 **Solution:**
 
-1. Area: $A_0 = \pi (0.005\ \text{m})^2 = 7.854 \times 10^{-5}$ m$^2$.
+1. Area: $A_0 = \pi (0.005\ \text{m})^2 = 7.854 \times 10^{-5}$ $\text{m}^2$.
 2. Stress: $\sigma = 20\,000 / 7.854 \times 10^{-5} = 2.546 \times 10^{8}$ Pa $= 254.6$ MPa.
 3. Strain: $\varepsilon = 0.25 / 200 = 0.00125$.
 4. Modulus: $E = \sigma / \varepsilon = 254.6 \times 10^{6} / 0.00125 = 2.037 \times 10^{11}$ Pa $= 204$ GPa.
@@ -93,7 +93,7 @@ These are typical textbook values at room temperature. Real values depend on all
 
 ## Practice
 
-1. A 5 mm diameter rod carries 4 kN. What is the stress in MPa? (Area $= 1.963 \times 10^{-5}$ m$^2$.)
+1. A 5 mm diameter rod carries 4 kN. What is the stress in MPa? (Area $= 1.963 \times 10^{-5}$ $\text{m}^2$.)
 2. A 100 mm long aluminum bar stretches 0.10 mm under load. What is its strain?
 3. Using the strain from Problem 2 and a stress of 69 MPa, find the modulus in GPa.
 4. Which has higher toughness, a material with high strength and low ductility, or one with moderate strength and high ductility? Explain in one sentence.

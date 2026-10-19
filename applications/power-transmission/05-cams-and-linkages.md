@@ -65,7 +65,7 @@ rotation angle $\beta$ in rad, with the cam turning at angular speed $\omega$ in
 
 $$s(\theta) = \frac{h}{2}\left(1 - \cos\frac{\pi\theta}{\beta}\right)$$
 
-Peak follower velocity in metres per second (m/s) and peak acceleration in metres per second squared (m/s$^2$):
+Peak follower velocity in metres per second (m/s) and peak acceleration in metres per second squared ($\text{m/s}^2$):
 
 $$v_{\mathrm{max}} = \frac{\pi h \omega}{2\beta}, \qquad a_{\mathrm{max}} = \frac{\pi^2 h \omega^2}{2\beta^2}$$
 

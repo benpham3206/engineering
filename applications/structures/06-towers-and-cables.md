@@ -117,7 +117,7 @@ Galileo studied hanging chains in his 1638 book *Two New Sciences* and wrongly c
 ## Practice
 
 1. A cable spans 200 m and carries a load of 50 N/m with a horizontal tension of 20 kN. Find the parabolic sag, then the cable length.
-2. A tower face of 30 m$^2$ is exposed to wind at 25 m/s. Its drag coefficient is 1.2. Find the wind force.
+2. A tower face of 30 $\text{m}^2$ is exposed to wind at 25 m/s. Its drag coefficient is 1.2. Find the wind force.
 3. A cable spans 100 m with a self-weight of 20 N/m and a horizontal tension of 10 kN. Find the catenary support tension.
 4. A guy cable at 45 degrees carries 10 kN of tension. Find its horizontal and vertical components.
 

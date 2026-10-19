@@ -33,8 +33,8 @@ Pendulum clocks come as longcase (grandfather) clocks, mantel clocks, and wall c
 
 Assumptions for the equations below: the pendulum is a point mass on a light, rigid rod, the swing is small (below about 15 degrees) so the sine of the angle is close to the angle, and gravity is uniform at $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface, typical sea-level value; it varies from about 9.78 to 9.83 with latitude). The hairspring is an ideal linear torsion spring, and friction is neglected in the period calculation.
 
-- Pendulum period: $T = 2\pi \sqrt{L / g}$, where $T$ is the period in seconds (s), $L$ is the length from pivot to bob centre in metres (m), and $g$ is gravity in m/s$^2$. The period does not depend on the bob mass.
-- Balance wheel period: $T = 2\pi \sqrt{I / \kappa}$, where $I$ is the wheel's moment of inertia in kg m$^2$ and $\kappa$ is the hairspring's torsional stiffness in N m/rad. The assumption is that the spring is linear and the amplitude is small.
+- Pendulum period: $T = 2\pi \sqrt{L / g}$, where $T$ is the period in seconds (s), $L$ is the length from pivot to bob centre in metres (m), and $g$ is gravity in $\text{m/s}^2$. The period does not depend on the bob mass.
+- Balance wheel period: $T = 2\pi \sqrt{I / \kappa}$, where $I$ is the wheel's moment of inertia in kg $\text{m}^2$ and $\kappa$ is the hairspring's torsional stiffness in N m/rad. The assumption is that the spring is linear and the amplitude is small.
 - Quartz frequency and division: $f_{\text{out}} = f_{\text{in}} / 2^{n}$, where $f_{\text{in}}$ is the crystal frequency in hertz (Hz), $n$ is the number of binary stages (a dimensionless integer), and $f_{\text{out}}$ is the output frequency. The assumption is that each stage divides exactly by two.
 - Rate error: $\varepsilon = \Delta f / f$, expressed in parts per million (ppm) as $\varepsilon \times 10^6$. The clock error in seconds per day is $\varepsilon \times 86\,400\ \text{s}$. The assumption is that the rate error is constant over the day.
 

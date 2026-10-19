@@ -55,7 +55,7 @@ Determinant:
 
 $$\det J = L_1 L_2 \sin\theta_2$$
 
-It follows by multiplying out the two diagonals, where the $L_2^2$ terms cancel and the product reduces through $\sin(\theta_1+\theta_2)\cos\theta_1 - \cos(\theta_1+\theta_2)\sin\theta_1 = \sin\theta_2$. It does not depend on $\theta_1$, since rotating the whole arm about the base cannot change whether it is singular. Units: m$^2$.
+It follows by multiplying out the two diagonals, where the $L_2^2$ terms cancel and the product reduces through $\sin(\theta_1+\theta_2)\cos\theta_1 - \cos(\theta_1+\theta_2)\sin\theta_1 = \sin\theta_2$. It does not depend on $\theta_1$, since rotating the whole arm about the base cannot change whether it is singular. Units: $\text{m}^2$.
 
 Static force map. Take the arm in slow, frictionless motion with the link weights ignored. Mechanical power from the motors equals power delivered by the tip:
 

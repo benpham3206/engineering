@@ -28,37 +28,37 @@ A lookup sheet for units, SI rules, uncertainty, significant figures, sensors, t
 | mass | kilogram (kg) | fixed through the Planck constant | $h = 6.62607015 \times 10^{-34}$ J s |
 | electric current | ampere (A) | a fixed number of elementary charges per second | $e = 1.602176634 \times 10^{-19}$ C |
 | temperature | kelvin (K) | fixed through the energy per kelvin of thermal motion | $k_B = 1.380649 \times 10^{-23}$ J/K |
-| amount of substance | mole (mol) | a fixed count of entities | $N_A = 6.02214076 \times 10^{23}$ mol$^{-1}$ |
+| amount of substance | mole (mol) | a fixed count of entities | $N_A = 6.02214076 \times 10^{23}$ $\text{mol}^{-1}$ |
 | luminous intensity | candela (cd) | light power at 540 THz scaled by a fixed efficacy | $K_{\text{cd}} = 683$ lm/W |
 
-- Standard gravity $g_0 = 9.80665$ m/s$^2$ is a defined constant, not a base unit. Local gravity differs (about 9.78 to 9.83 m/s$^2$ at sea level across Earth; typical).
+- Standard gravity $g_0 = 9.80665$ $\text{m/s}^2$ is a defined constant, not a base unit. Local gravity differs (about 9.78 to 9.83 $\text{m/s}^2$ at sea level across Earth; typical).
 - Dimension symbols: $L$ (length), $M$ (mass), $T$ (time), $I$ (current), $\Theta$ (temperature), $N$ (amount), $J$ (luminous intensity).
 
 ### 1.2 Named SI derived units
 
 | Quantity | Unit | Symbol | Base units | Equivalent |
 |---|---|---|---|---|
-| frequency | hertz | Hz | s$^{-1}$ | cycles per second |
-| force, weight | newton | N | kg m s$^{-2}$ | |
-| pressure, stress | pascal | Pa | kg m$^{-1}$ s$^{-2}$ | N/m$^2$ |
-| energy, work, heat | joule | J | kg m$^2$ s$^{-2}$ | N m |
-| power | watt | W | kg m$^2$ s$^{-3}$ | J/s |
+| frequency | hertz | Hz | $\text{s}^{-1}$ | cycles per second |
+| force, weight | newton | N | kg m $\text{s}^{-2}$ | |
+| pressure, stress | pascal | Pa | kg $\text{m}^{-1}$ $\text{s}^{-2}$ | $\text{N/m}^2$ |
+| energy, work, heat | joule | J | kg $\text{m}^2$ $\text{s}^{-2}$ | N m |
+| power | watt | W | kg $\text{m}^2$ $\text{s}^{-3}$ | J/s |
 | electric charge | coulomb | C | A s | |
-| electric potential | volt | V | kg m$^2$ s$^{-3}$ A$^{-1}$ | W/A |
-| resistance | ohm | $\Omega$ | kg m$^2$ s$^{-3}$ A$^{-2}$ | V/A |
-| conductance | siemens | S | kg$^{-1}$ m$^{-2}$ s$^3$ A$^2$ | A/V |
-| capacitance | farad | F | kg$^{-1}$ m$^{-2}$ s$^4$ A$^2$ | C/V |
-| inductance | henry | H | kg m$^2$ s$^{-2}$ A$^{-2}$ | Wb/A |
-| magnetic flux | weber | Wb | kg m$^2$ s$^{-2}$ A$^{-1}$ | V s |
-| magnetic flux density | tesla | T | kg s$^{-2}$ A$^{-1}$ | Wb/m$^2$ |
-| absorbed dose | gray | Gy | m$^2$ s$^{-2}$ | J/kg |
-| dose equivalent | sievert | Sv | m$^2$ s$^{-2}$ | J/kg (weighted) |
-| activity | becquerel | Bq | s$^{-1}$ | |
-| catalytic activity | katal | kat | mol s$^{-1}$ | |
+| electric potential | volt | V | kg $\text{m}^2$ $\text{s}^{-3}$ $\text{A}^{-1}$ | W/A |
+| resistance | ohm | $\Omega$ | kg $\text{m}^2$ $\text{s}^{-3}$ $\text{A}^{-2}$ | V/A |
+| conductance | siemens | S | $\text{kg}^{-1}$ $\text{m}^{-2}$ $\text{s}^3$ $\text{A}^2$ | A/V |
+| capacitance | farad | F | $\text{kg}^{-1}$ $\text{m}^{-2}$ $\text{s}^4$ $\text{A}^2$ | C/V |
+| inductance | henry | H | kg $\text{m}^2$ $\text{s}^{-2}$ $\text{A}^{-2}$ | Wb/A |
+| magnetic flux | weber | Wb | kg $\text{m}^2$ $\text{s}^{-2}$ $\text{A}^{-1}$ | V s |
+| magnetic flux density | tesla | T | kg $\text{s}^{-2}$ $\text{A}^{-1}$ | $\text{Wb/m}^2$ |
+| absorbed dose | gray | Gy | $\text{m}^2$ $\text{s}^{-2}$ | J/kg |
+| dose equivalent | sievert | Sv | $\text{m}^2$ $\text{s}^{-2}$ | J/kg (weighted) |
+| activity | becquerel | Bq | $\text{s}^{-1}$ | |
+| catalytic activity | katal | kat | mol $\text{s}^{-1}$ | |
 | luminous flux | lumen | lm | cd sr | |
-| illuminance | lux | lx | cd sr m$^{-2}$ | lm/m$^2$ |
+| illuminance | lux | lx | cd sr $\text{m}^{-2}$ | $\text{lm/m}^2$ |
 
-- Radian (rad) and steradian (sr) are dimensionless (m/m and m$^2$/m$^2$).
+- Radian (rad) and steradian (sr) are dimensionless (m/m and $\text{m}^2/\text{m}^2$).
 - Degree Celsius: $t\ [\text{°C}] = T\ [\text{K}] - 273.15$ exactly. A temperature difference of 1 °C equals 1 K.
 
 ### 1.3 SI prefixes (exact powers of ten)
@@ -91,13 +91,13 @@ Exact means set by definition. Derived means computed from exact pieces. Each va
 | length | 1 ft | m | 0.3048 | exact |
 | length | 1 yd | m | 0.9144 | exact |
 | length | 1 statute mile | m | 1609.344 | exact |
-| area | 1 in$^2$ | mm$^2$ | 645.16 | exact (25.4$^2$) |
+| area | 1 $\text{in}^2$ | $\text{mm}^2$ | 645.16 | exact ($25.4^2$) |
 | mass | 1 lb (avoirdupois) | kg | 0.45359237 | exact |
 | mass | 1 slug | kg | 14.593903 | derived ($32.174049\ \mathrm{lb} \times 0.45359237\ \mathrm{kg}$) |
 | force | 1 lbf | N | 4.4482216152605 | exact ($\mathrm{lb} \times g_0$) |
-| pressure | 1 psi (lbf/in$^2$) | Pa | 6894.757 | derived (lbf / in$^2$) |
+| pressure | 1 psi ($\text{lbf/in}^2$) | Pa | 6894.757 | derived (lbf / $\text{in}^2$) |
 | pressure | 1 ksi | MPa | 6.894757 | derived |
-| pressure | 1 lbf/ft$^2$ | Pa | 47.880259 | derived |
+| pressure | 1 $\text{lbf/ft}^2$ | Pa | 47.880259 | derived |
 | pressure | 1 atm | Pa | 101325 | exact |
 | pressure | 1 bar | Pa | 100000 | exact |
 | pressure | 1 torr (mmHg) | Pa | 133.322368 | derived (atm / 760) |
@@ -114,12 +114,12 @@ Exact means set by definition. Derived means computed from exact pieces. Each va
 | speed | 1 knot | m/s | 0.5144444 | exact (1852 m per 3600 s) |
 | volume | 1 US gallon | L | 3.785411784 | exact |
 | volume | 1 imperial gallon | L | 4.54609 | exact |
-| density | 1 lbm/ft$^3$ | kg/m$^3$ | 16.018463 | derived |
-| acceleration | 1 g (standard gravity) | m/s$^2$ | 9.80665 | exact |
+| density | 1 $\text{lbm/ft}^3$ | $\text{kg/m}^3$ | 16.018463 | derived |
+| acceleration | 1 g (standard gravity) | $\text{m/s}^2$ | 9.80665 | exact |
 | temperature | $t$ [°F] to $t$ [°C] | | $t_C = (t_F - 32) \times 5/9$ | exact |
 | temperature | $t$ [°C] to $T$ [K] | | $T = t_C + 273.15$ | exact |
 
-- Use the factor for the base unit squared or cubed when converting areas and volumes: 1 in$^2$ is $25.4^2$ mm$^2$, not 25.4 mm$^2$.
+- Use the factor for the base unit squared or cubed when converting areas and volumes: 1 $\text{in}^2$ is $25.4^2$ $\text{mm}^2$, not 25.4 $\text{mm}^2$.
 - rpm to rad/s: $\omega = 2\pi N / 60$.
 
 ### 1.5 SI writing style (NIST SP 811, own summary)
@@ -127,10 +127,10 @@ Exact means set by definition. Derived means computed from exact pieces. Each va
 - Unit symbols are upright (roman) and never take a plural "s". Quantity symbols ($m$ for mass, $T$ for temperature) are italic.
 - Write unit symbols in lowercase unless the unit is named after a person (N, Pa, J, W, A, K, V, Hz, $\Omega$).
 - Leave a space between the number and the unit symbol: 25 mm, 20 °C. Plane angles are the exception: 90°.
-- Put no space between a prefix and its unit symbol: 5 mm, not 5 m m. Use one prefix only: write nm, not m$\mu$m.
+- Put no space between a prefix and its unit symbol: 5 mm, not 5 m m. Use one prefix only: write nm, not $\text{m}\mu\text{m}$.
 - No period after a unit symbol except at the end of a sentence.
-- Mix symbols or names, never both in one expression: "5 kg/m$^3$" or "five kilograms per cubic meter", not "5 kilograms/m$^3$".
-- Products use a centered dot or a space (N m or N$\cdot$m). Quotients use one slash (m/s$^2$) or negative exponents (m s$^{-2}$); never two slashes in one unit without parentheses.
+- Mix symbols or names, never both in one expression: "5 $\text{kg/m}^3$" or "five kilograms per cubic meter", not "5 $\text{kilograms/m}^3$".
+- Products use a centered dot or a space (N m or $\text{N}\cdot\text{m}$). Quotients use one slash ($\text{m/s}^2$) or negative exponents (m $\text{s}^{-2}$); never two slashes in one unit without parentheses.
 - Write a leading zero before the decimal point (0.5, not .5). Group long numbers in threes from the decimal point with a thin space, not a comma.
 - Use "kelvin" and K with no degree sign. Use °C for the Celsius scale.
 - The liter symbol is L (capital). Use "t" for the metric tonne. Minute, hour, and day (min, h, d) are accepted with SI.
@@ -253,7 +253,7 @@ $$\left(\frac{u_y}{|y|}\right)^2 = \sum_i \left(p_i \frac{u(x_i)}{|x_i|}\right)^
 3. Round the value to the same decimal place as the rounded uncertainty.
 4. Write $x \pm u$ with units, $k$ and coverage if expanded, $N$, and the method.
 
-Example: $\rho = 2.6308$ g/cm$^3$ with $u = 0.0253$ g/cm$^3$ becomes $\rho = 2.631 \pm 0.025$ g/cm$^3$ (2.631 rounded to the thousandths place, matching $u$ rounded to 0.025).
+Example: $\rho = 2.6308$ $\text{g/cm}^3$ with $u = 0.0253$ $\text{g/cm}^3$ becomes $\rho = 2.631 \pm 0.025$ $\text{g/cm}^3$ (2.631 rounded to the thousandths place, matching $u$ rounded to 0.025).
 
 ### Holds when / breaks when
 
@@ -338,7 +338,7 @@ Transverse sensitivity: a gauge responds a little to strain across its grid, so 
 | Metal foil $\mathrm{GF}$ | about 2 |
 | Excitation | 2 to 10 V |
 | Output at 1000 $\mu\varepsilon$, quarter bridge, 5 V excitation, $\mathrm{GF} = 2$ | 2.5 mV |
-| Output resolution needed for 10 $\mu\varepsilon$ on the same setup | about 25 $\mu$V |
+| Output resolution needed for 10 $\mu\varepsilon$ on the same setup | about 25 $\mu\text{V}$ |
 
 ### 6.3 Wiring
 
@@ -357,11 +357,11 @@ Transverse sensitivity: a gauge responds a little to strain across its grid, so 
 | Type | Pair (+ / -) | Nominal range | Notes |
 |---|---|---|---|
 | J | iron / constantan | -210 to 1200 °C | reducing atmospheres; iron rusts |
-| K | chromel / alumel | -200 to 1350 °C | general purpose; about 41 $\mu$V/°C near room temperature |
+| K | chromel / alumel | -200 to 1350 °C | general purpose; about 41 $\mu\text{V}$/°C near room temperature |
 | T | copper / constantan | -200 to 400 °C | low-temperature and moisture-tolerant |
 | E | chromel / constantan | -200 to 900 °C | highest output of the common base-metal types |
 | N | Nicrosil / Nisil | -270 to 1300 °C | better oxidation resistance than K |
-| R | Pt-13 % Rh / Pt | 0 to 1768 °C | noble metal; low output, about 10 $\mu$V/°C (typical) |
+| R | Pt-13 % Rh / Pt | 0 to 1768 °C | noble metal; low output, about 10 $\mu\text{V}$/°C (typical) |
 | S | Pt-10 % Rh / Pt | 0 to 1768 °C | noble metal; historical reference type |
 | B | Pt-30 % Rh / Pt-6 % Rh | 0 to 1820 °C | very low output below about 600 °C; needs care at low temperature |
 
@@ -373,7 +373,7 @@ Transverse sensitivity: a gauge responds a little to strain across its grid, so 
 
 Linear approximation near room temperature: $T_{\text{hot}} = T_{\text{cj}} + V / S$, with $S$ the Seebeck sensitivity (type K about $4.1 \times 10^{-5}$ V/K) and $T_{\text{cj}}$ the cold junction temperature.
 
-At 41 $\mu$V/°C, 1 mV of signal is about 24 °C of temperature difference (typical).
+At 41 $\mu\text{V}$/°C, 1 mV of signal is about 24 °C of temperature difference (typical).
 
 ### 7.3 Accelerometers
 
@@ -519,12 +519,12 @@ $$u(b) = \frac{s_r}{\sqrt{\sum (x_i - \bar{x})^2}} \qquad u(a) = s_r\sqrt{\frac{
 ## Sanity checks
 
 - Dimensions: both sides of every equation match.
-- 1 in $\approx$ 25.4 mm; 1 ft $\approx$ 0.305 m; 1 in$^2$ $\approx$ 645 mm$^2$.
+- 1 in $\approx$ 25.4 mm; 1 ft $\approx$ 0.305 m; 1 $\text{in}^2$ $\approx$ 645 $\text{mm}^2$.
 - 1 lbf $\approx$ 4.45 N; 1 psi $\approx$ 6.9 kPa; 1 atm $\approx$ 101 kPa.
 - 1 hp $\approx$ 746 W; $1\ \mathrm{kWh} = 3.6\ \mathrm{MJ}$; 1 BTU $\approx$ 1055 J.
 - Standard gravity: $1\ \mathrm{g} = 9.81\ \mathrm{m/s^2}$ (9.80665 exact). A static MEMS axis should read about 1 g.
 - Strain: 1000 $\mu\varepsilon$ with $\mathrm{GF} = 2$ gives $\Delta R/R = 0.2$ %, and a quarter bridge at 5 V gives about 2.5 mV.
-- Thermocouple: about 41 $\mu$V/°C for type K; 1 mV is about 24 °C.
+- Thermocouple: about 41 $\mu\text{V}$/°C for type K; 1 mV is about 24 °C.
 - Averaging: $N$ readings reduce $u$ by $\sqrt{N}$. Quadrupling $N$ halves $u$.
 - Sampling: a 12-bit ADC on 10 V has an LSB of about 2.44 mV.
 - Settling: 12 bits to 1 LSB needs about 8.3 time constants (9.0 for half an LSB).

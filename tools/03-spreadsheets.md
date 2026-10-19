@@ -26,7 +26,7 @@ Axial stress in a round rod under tensile force $F$ (N) with diameter $d$ (m):
 
 $$\sigma = \frac{F}{A}, \qquad A = \frac{\pi d^2}{4}$$
 
-Here $\sigma$ is stress in pascals (Pa), and $A$ is cross-sectional area in m$^2$. In a sheet, write the diameter in mm and convert in the formula with a units cell.
+Here $\sigma$ is stress in pascals (Pa), and $A$ is cross-sectional area in $\text{m}^2$. In a sheet, write the diameter in mm and convert in the formula with a units cell.
 
 ## Worked example
 
@@ -40,13 +40,13 @@ Here $\sigma$ is stress in pascals (Pa), and $A$ is cross-sectional area in m$^2
 
 | | A | B | C |
 |---|---|---|---|
-| 1 | Diameter (mm) | Area (mm$^2$) | Stress (MPa) |
+| 1 | Diameter (mm) | Area ($\text{mm}^2$) | Stress (MPa) |
 | 2 | 8 | `=PI()*A2^2/4` | `=12000/B2` |
 | 3 | 10 | `=PI()*A3^2/4` | `=12000/B3` |
 | 4 | 12 | `=PI()*A4^2/4` | `=12000/B4` |
 | 5 | 14 | `=PI()*A5^2/4` | `=12000/B5` |
 
-Because the area is in mm$^2$ and the force is in N, the result of $F/A$ is in MPa. This matches what the cell formulas compute.
+Because the area is in $\text{mm}^2$ and the force is in N, the result of $F/A$ is in MPa. This matches what the cell formulas compute.
 
 Running the same formula in Python gives these stresses:
 
@@ -71,7 +71,7 @@ d = 14 mm  sigma = 77.95 MPa
 
 <details><summary>Answers</summary>
 
-1. About 59.7 MPa at 16 mm (area 201.1 mm$^2$).
+1. About 59.7 MPa at 16 mm (area 201.1 $\text{mm}^2$).
 2. The load cell. Every stress cell changes.
 3. Values: 0.95, 0.61, 0.42, 0.31 (ratios for 8 to 14 mm).
 4. Answers will vary. Check that the formulas still point to the same row.

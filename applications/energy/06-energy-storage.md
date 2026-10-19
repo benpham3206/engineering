@@ -58,7 +58,7 @@ Energy returned by a store, with round-trip efficiency $\eta_{\mathrm{rt}}$ (dim
 
 $$E_{\mathrm{out}} = \eta_{\mathrm{rt}} E_{\mathrm{in}}$$
 
-Rotational kinetic energy of a flywheel, with moment of inertia $I$ in kg m$^2$ and angular speed $\omega$ in rad/s:
+Rotational kinetic energy of a flywheel, with moment of inertia $I$ in kg $\text{m}^2$ and angular speed $\omega$ in rad/s:
 
 $$E = \tfrac{1}{2} I \omega^2$$
 

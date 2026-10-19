@@ -47,7 +47,7 @@ where $\omega$ is the **angular speed** in radians per second (rad/s) and $N$ is
 
 $$a = \omega^{2} r$$
 
-where $a$ is the acceleration in metres per second squared (m/s$^2$) and $r$ is the drum radius in metres (m).
+where $a$ is the acceleration in metres per second squared ($\text{m/s}^2$) and $r$ is the drum radius in metres (m).
 
 Spin g-force, with $g = 9.81\ \text{m}/\text{s}^2$ (standard gravity):
 

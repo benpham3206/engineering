@@ -26,7 +26,7 @@ Read the [Python Tutorial](https://docs.python.org/3/tutorial/index.html) for th
 
 ## Key equations
 
-Simply supported beam with a center point load $F$ (N), span $L$ (m), modulus $E$ (Pa), and second moment of area $I$ (m$^4$):
+Simply supported beam with a center point load $F$ (N), span $L$ (m), modulus $E$ (Pa), and second moment of area $I$ ($\text{m}^4$):
 
 $$\delta = \frac{F L^3}{48\,E\,I}$$
 
@@ -69,7 +69,7 @@ delta = 0.0009999999999999998 m = 0.9999999999999998 mm
 ## Practice
 
 1. Change the load to 3000 N and rerun the calculation. What is the new $\delta$ in mm?
-2. Compute the second moment of area for a 30 mm wide by 60 mm tall section. Give the answer in m$^4$.
+2. Compute the second moment of area for a 30 mm wide by 60 mm tall section. Give the answer in $\text{m}^4$.
 3. Write a function `deflection(F, L, E, I)` that returns $\delta$. Test it with the worked example.
 4. Use a list of three loads (2, 4, 6 kN) and print the deflection for each.
 5. Convert your final answer to inches. Use $1\ \text{in} = 25.4\ \text{mm}$.
@@ -77,7 +77,7 @@ delta = 0.0009999999999999998 m = 0.9999999999999998 mm
 <details><summary>Answers</summary>
 
 1. 0.25 mm
-2. $5.4 \times 10^{-7}$ m$^4$ ($5.4 \times 10^{-7}$)
+2. $5.4 \times 10^{-7}$ $\text{m}^4$ ($5.4 \times 10^{-7}$)
 3. Check: 1.0 mm at 5000 N.
 4. Check: 0.4, 0.8, 1.2 mm.
 5. 0.039 in

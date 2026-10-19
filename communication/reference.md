@@ -389,7 +389,7 @@ Rules: keep line weights consistent across the sheet, with thick for visible edg
 | Drawing number and revision | Revision letter changes with any change to the part |
 | Material and finish | Specification, grade, and treatment |
 | Units | Millimeters or inches, stated once |
-| Default tolerance | For example, "$\pm 0.1$ mm unless noted" |
+| Default tolerance | For example, `±0.1 mm UNLESS NOTED` |
 | Scale | For example 1:2, or "NTS" (not to scale) |
 | Projection symbol | First-angle or third-angle |
 | Drawn by, checked by, date | Names and dates for each |

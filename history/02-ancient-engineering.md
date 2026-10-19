@@ -63,15 +63,15 @@ Flow in an open channel, such as an aqueduct, follows the Manning equation in SI
 
 $$V = \frac{1}{n} R_h^{2/3} S^{1/2}$$
 
-Here $V$ is the mean velocity in metres per second (m/s), $n$ is the **Manning roughness coefficient** (units s/m$^{1/3}$, typical value 0.013 for smooth stone or mortar lining), $R_h$ is the hydraulic radius in metres (m), and $S$ is the channel slope, a ratio of drop to length with no units. The **hydraulic radius** is the flow area $A$ divided by the wetted perimeter $P$:
+Here $V$ is the mean velocity in metres per second (m/s), $n$ is the **Manning roughness coefficient** (units $\text{s/m}^{1/3}$, typical value 0.013 for smooth stone or mortar lining), $R_h$ is the hydraulic radius in metres (m), and $S$ is the channel slope, a ratio of drop to length with no units. The **hydraulic radius** is the flow area $A$ divided by the wetted perimeter $P$:
 
 $$R_h = \frac{A}{P}$$
 
-The flow rate follows from continuity, with $A$ in square metres (m$^2$):
+The flow rate follows from continuity, with $A$ in square metres ($\text{m}^2$):
 
 $$Q = A V$$
 
-Here $Q$ is the flow rate in cubic metres per second (m$^3$/s).
+Here $Q$ is the flow rate in cubic metres per second ($\text{m}^3$/s).
 
 ## Worked example
 
@@ -91,9 +91,9 @@ Here $Q$ is the flow rate in cubic metres per second (m$^3$/s).
 6. Daily volume: $0.423 \times 86\,400 = 36\,600\ \text{m}^3/\text{day}$, rounded from 36 561.
 7. Travel time for 1 km: $1000 / 0.882 = 1134\ \text{s}$, which is 18.9 min.
 
-**Answer:** (a) The mean velocity is 0.88 m/s. (b) The flow is 0.42 m$^3$/s, or 423 L/s, which is about 36 600 m$^3$ per day. (c) Water takes about 19 minutes to travel 1 km.
+**Answer:** (a) The mean velocity is 0.88 m/s. (b) The flow is 0.42 $\text{m}^3$/s, or 423 L/s, which is about 36 600 $\text{m}^3$ per day. (c) Water takes about 19 minutes to travel 1 km.
 
-**Sanity check:** Velocity grows with the square root of slope, so halving the slope to 1 in 2000 should cut velocity by a factor of $\sqrt{2}$. Recomputing gives $V = 0.623\ \text{m/s}$, and $0.882 / 0.623 = 1.42$, which matches $\sqrt{2}$. Flow at the gentler slope is $0.299\ \text{m}^3/\text{s}$. A single channel of this size moves about 36 600 m$^3$ of water each day.
+**Sanity check:** Velocity grows with the square root of slope, so halving the slope to 1 in 2000 should cut velocity by a factor of $\sqrt{2}$. Recomputing gives $V = 0.623\ \text{m/s}$, and $0.882 / 0.623 = 1.42$, which matches $\sqrt{2}$. Flow at the gentler slope is $0.299\ \text{m}^3/\text{s}$. A single channel of this size moves about 36 600 $\text{m}^3$ of water each day.
 
 ## Lessons for engineers today
 

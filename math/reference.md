@@ -273,7 +273,7 @@ Newton's law of cooling (lumped capacity), $T_a$ ambient, $k$ in 1/s:
 
 $$T(t) = T_a + (T_0 - T_a)\,e^{-kt}, \qquad k = \frac{h_c A}{\rho V c_p}$$
 
-- Here $h_c$ is the convective coefficient (W/(m$^2$ K)), $A$ area (m$^2$), $\rho$ density (kg/m$^3$), $V$ volume (m$^3$), $c_p$ specific heat (J/(kg K)).
+- Here $h_c$ is the convective coefficient (W/($\text{m}^2$ K)), $A$ area ($\text{m}^2$), $\rho$ density ($\text{kg/m}^3$), $V$ volume ($\text{m}^3$), $c_p$ specific heat (J/(kg K)).
 - Holds when: the Biot number $\mathrm{Bi} = h_c L_c/k_{\mathrm{th}} \ll 0.1$, with $L_c = V/A$ and $k_{\mathrm{th}}$ the solid's thermal conductivity. Then the body is nearly uniform in temperature.
 - Breaks when: $\mathrm{Bi}$ is not small (temperature gradients inside the body matter), when $h_c$ or $T_a$ varies, or when radiation is significant at high temperature (the law is then not linear in $T$).
 

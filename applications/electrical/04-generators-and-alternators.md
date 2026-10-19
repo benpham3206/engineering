@@ -55,7 +55,7 @@ Sinusoidal EMF from a rotating coil:
 
 $$e(t) = N B A \omega \sin(\omega t)$$
 
-Here $B$ is the flux density in teslas (T), $A$ is the coil area in square metres (m$^2$), and $\omega$ is the angular speed in radians per second (rad/s).
+Here $B$ is the flux density in teslas (T), $A$ is the coil area in square metres ($\text{m}^2$), and $\omega$ is the angular speed in radians per second (rad/s).
 
 Peak and **root-mean-square (rms)** values:
 
@@ -146,7 +146,7 @@ Michael Faraday demonstrated electromagnetic induction in 1831 in England. Hippo
 ## Practice
 
 1. A four-pole generator runs at 1800 rpm. Find its output frequency in hertz.
-2. A coil with 300 turns and an area of 0.010 m$^2$ turns at 50 rad/s in a uniform field of 0.50 T. Find the peak EMF and the rms EMF.
+2. A coil with 300 turns and an area of 0.010 $\text{m}^2$ turns at 50 rad/s in a uniform field of 0.50 T. Find the peak EMF and the rms EMF.
 3. A 12-pole generator must produce 50 Hz. Find the speed in rpm.
 4. A three-phase synchronous generator at 50 Hz has 400 turns per phase and a peak flux per pole of 0.030 Wb. Use $E = 4.44\,f\,N\,\Phi$ to find the rms EMF per phase.
 5. An alternator delivers 13.8 V at 90 A with an efficiency of 0.55. Find its shaft input power in watts.

@@ -55,7 +55,7 @@ The wheel rolls without slip, and $r$ is the effective rolling radius. The bicyc
 
 $$v = \omega_w r$$
 
-Assumes a flat road, a constant coefficient, and a tyre that rolls without slipping. Rolling resistance is a force in newtons. Here $C_{\mathrm{rr}}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface):
+Assumes a flat road, a constant coefficient, and a tyre that rolls without slipping. Rolling resistance is a force in newtons. Here $C_{\mathrm{rr}}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface):
 
 $$F_{\mathrm{rr}} = C_{\mathrm{rr}}\, m\, g$$
 

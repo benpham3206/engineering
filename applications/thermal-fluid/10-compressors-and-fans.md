@@ -55,9 +55,9 @@ Reciprocating compressors handle small to medium flow at high pressure, and they
 - Actual shaft power: $P = P_{\mathrm{is}}/\eta_{\mathrm{is}}$, with $\eta_{\mathrm{is}}$ dimensionless.
 - Actual outlet temperature: $T_2 = T_1 + (T_{2s} - T_1)/\eta_{\mathrm{is}}$.
 - Isothermal ideal power: $P_{\mathrm{iso}} = \dot m\, R T_1 \ln(p_2/p_1)$, with $R = 287\ \text{J/(kg K)}$ for air (typical).
-- Fan laws at fixed geometry: $Q \propto N$, $\Delta p \propto \rho N^2$, $P \propto \rho N^3$, with $N$ in rev/min and $\rho$ in kg/m$^3$.
-- Fan air power: $P_{\mathrm{air}} = Q\, \Delta p$, in W, with $Q$ in m$^3$/s and $\Delta p$ in Pa. Shaft power is $P_{\mathrm{air}}/\eta$.
-- Choked leak through an orifice: $\dot m = C_d A p_0 \sqrt{\gamma/(R T_0)} \left(\dfrac{2}{\gamma+1}\right)^{(\gamma+1)/(2(\gamma-1))}$, with $C_d$ dimensionless (about 0.6 for a sharp hole), $A$ in m$^2$, $p_0$ in Pa, and $T_0$ in K.
+- Fan laws at fixed geometry: $Q \propto N$, $\Delta p \propto \rho N^2$, $P \propto \rho N^3$, with $N$ in rev/min and $\rho$ in $\text{kg/m}^3$.
+- Fan air power: $P_{\mathrm{air}} = Q\, \Delta p$, in W, with $Q$ in $\text{m}^3$/s and $\Delta p$ in Pa. Shaft power is $P_{\mathrm{air}}/\eta$.
+- Choked leak through an orifice: $\dot m = C_d A p_0 \sqrt{\gamma/(R T_0)} \left(\dfrac{2}{\gamma+1}\right)^{(\gamma+1)/(2(\gamma-1))}$, with $C_d$ dimensionless (about 0.6 for a sharp hole), $A$ in $\text{m}^2$, $p_0$ in Pa, and $T_0$ in K.
 
 ## Worked example
 

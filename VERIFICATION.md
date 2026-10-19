@@ -28,7 +28,7 @@ The design rule follows from this table: make every check that can be determinis
 
 ## Severity
 
-- **Gate.** Fails the build in any file: broken links and anchors, missing or unknown `**Type:**`, em or en dashes, prerequisite cycles, any failing verify block, any `expect` whose number is not printed where it claims, any citation to an unknown claim, and any registry error in `data/`.
+- **Gate.** Fails the build in any file: broken links and anchors, missing or unknown `**Type:**`, em or en dashes, inline math GitHub will not render (an opening `$` right after a letter, digit, slash, hyphen, bracket, or quote, as in `kg/m$^3$`, or a closing `$` right before a letter or digit, as in `$F$s`; write `$\text{kg/m}^3$` and `$F\text{s}$`), prerequisite cycles, any failing verify block, any `expect` whose number is not printed where it claims, any citation to an unknown claim, and any registry error in `data/`.
 - **Content.** Fails the build in strict files and is counted as debt elsewhere: template sections, the definition-first rule, answers outside a `<details>` block, process notes, unverified worked examples or answers, uncovered printed numbers, constant mismatches, Earth values without "Earth" or "standard", uncited dated claims, cited values not stated, `as of` without a dated claim, watch conflicts, and reference entries that break the contract below.
 - **Advice.** Never fails: stale dated claims and sources without an archive snapshot.
 

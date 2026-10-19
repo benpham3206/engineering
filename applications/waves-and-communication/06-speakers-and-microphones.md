@@ -42,7 +42,7 @@ A condenser microphone uses a thin diaphragm close to a fixed plate. The two for
 - Newton's second law for the moving assembly, with mass $m$ in kilograms and acceleration $a$ in metres per second squared: $a = F / m$.
 - **Motional emf** in a microphone or in the back-emf of a speaker, with coil velocity $v$ in metres per second: $e = B\,l\,v$.
 - **Sound pressure level**, in decibels, with rms pressure $p$ in pascals and the reference pressure $p_0 = 20\ \mu\text{Pa}$: $L_p = 20 \log_{10}(p / p_0)$.
-- Acoustic intensity of a plane wave, in W/m$^2$: $I = p^2 / (\rho c)$, where $\rho = 1.2$ kg/m$^3$ is the density of air and $c = 343$ m/s is the speed of sound in air at about 20 °C (typical). The product $\rho c$ is about $412$ Pa s/m.
+- Acoustic intensity of a plane wave, in $\text{W/m}^2$: $I = p^2 / (\rho c)$, where $\rho = 1.2$ $\text{kg/m}^3$ is the density of air and $c = 343$ m/s is the speed of sound in air at about 20 °C (typical). The product $\rho c$ is about $412$ Pa s/m.
 - **Acoustic efficiency**, dimensionless: $\eta = P_{\mathrm{acoustic}} / P_{\mathrm{electrical}}$.
 
 Doubling the pressure raises the level by $20 \log_{10} 2 = 6.0$ dB. Doubling the acoustic power raises it by $10 \log_{10} 2 = 3.0$ dB.
@@ -56,12 +56,12 @@ Doubling the pressure raises the level by $20 \log_{10} 2 = 6.0$ dB. Doubling th
 **Solution:**
 
 1. Force: $F = B\,l\,I = 1.0 \times 8.0 \times 2.0 = 16$ N.
-2. Acceleration: $a = F / m = 16 / 0.010 = 1600$ m/s$^2$. This is about $1600 / 9.81 = 163$ times the acceleration of gravity at Earth's surface.
+2. Acceleration: $a = F / m = 16 / 0.010 = 1600$ $\text{m/s}^2$. This is about $1600 / 9.81 = 163$ times the acceleration of gravity at Earth's surface.
 3. Sound pressure level: $L_p = 20 \log_{10}\!\left(\dfrac{0.10}{20 \times 10^{-6}}\right) = 20 \log_{10}(5000) = 74.0$ dB.
 
-**Answer:** (a) 16 N. (b) 1600 m/s$^2$. (c) 74 dB.
+**Answer:** (a) 16 N. (b) 1600 $\text{m/s}^2$. (c) 74 dB.
 
-**Sanity check:** A 1.0 Pa rms wave is about 94 dB, and 0.10 Pa is one tenth of that pressure, which is 20 dB lower, giving 74 dB. The intensity is $I = (0.10)^2 / 412 = 2.4 \times 10^{-5}$ W/m$^2$, which is far above the hearing threshold of about $10^{-12}$ W/m$^2$, as expected for a 74 dB sound. An acceleration of 1600 m/s$^2$ is high, so the cone must stay light and stiff.
+**Sanity check:** A 1.0 Pa rms wave is about 94 dB, and 0.10 Pa is one tenth of that pressure, which is 20 dB lower, giving 74 dB. The intensity is $I = (0.10)^2 / 412 = 2.4 \times 10^{-5}$ $\text{W/m}^2$, which is far above the hearing threshold of about $10^{-12}$ $\text{W/m}^2$, as expected for a 74 dB sound. An acceleration of 1600 $\text{m/s}^2$ is high, so the cone must stay light and stiff.
 
 ## Design trade-offs
 
@@ -100,7 +100,7 @@ Alexander Graham Bell patented the telephone in 1876, and its transmitter and re
 1. $F = 1.2 \times 6.0 \times 1.5 = 10.8$ N.
 2. $L_p = 20 \log_{10}\!\left(\dfrac{2.0}{20 \times 10^{-6}}\right) = 100$ dB.
 3. $p = 20\ \mu\text{Pa} \times 10^{60/20} = 0.020$ Pa.
-4. $a = 10 / 0.015 = 667$ m/s$^2$.
+4. $a = 10 / 0.015 = 667$ $\text{m/s}^2$.
 5. Sound pressure level uses $20 \log_{10}$ of the pressure ratio. Acoustic power is proportional to the square of the pressure, so the power level uses $10 \log_{10}$. Doubling the pressure gives $20 \log_{10} 2 = 6.0$ dB, and doubling the power gives $10 \log_{10} 2 = 3.0$ dB.
 
 </details>

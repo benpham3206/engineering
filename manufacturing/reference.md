@@ -59,15 +59,15 @@ Turning material removal rate, where $f$ is feed per revolution (mm/rev) and $V$
 
 $$\text{MRR} = a_p\, f\, V$$
 
-Cutting power from specific cutting energy $k_c$ (J/mm$^3$; note that 1 J/mm$^3$ equals 1000 N/mm$^2$):
+Cutting power from specific cutting energy $k_c$ ($\text{J/mm}^3$; note that 1 $\text{J/mm}^3$ equals 1000 $\text{N/mm}^2$):
 
 $$P_c = k_c\, \text{MRR}$$
 
-Units: $P_c$ in W when MRR is in mm$^3$/s. Motor input power is $P_c/\eta$, with $\eta$ the drive efficiency, typically 0.7 to 0.9 (typical).
+Units: $P_c$ in W when MRR is in $\text{mm}^3$/s. Motor input power is $P_c/\eta$, with $\eta$ the drive efficiency, typically 0.7 to 0.9 (typical).
 
 ### Specific cutting energy (typical, broad)
 
-| Work material | $k_c$ (J/mm$^3$, typical) |
+| Work material | $k_c$ ($\text{J/mm}^3$, typical) |
 |---|---|
 | Aluminum (wrought) | 0.5 to 1.0 |
 | Cast iron | 1.0 to 1.5 |
@@ -96,8 +96,8 @@ Full-width slot 10 mm wide, 40 mm long, and 10 mm deep, cut in one pass with a 1
 
 - $N = 1000 \times 250 / (\pi \times 10) = 7958$ rpm
 - $f_m = 0.08 \times 3 \times 7958 = 1910$ mm/min
-- MRR $= 10 \times 10 \times 1910 = 191{,}000$ mm$^3$/min $= 3183$ mm$^3$/s
-- $P_c \approx 0.7 \times 3183 \approx 2.2$ kW at $k_c = 0.7$ J/mm$^3$ (typical aluminum), before drive losses
+- MRR $= 10 \times 10 \times 1910 = 191{,}000$ $\text{mm}^3$/min $= 3183$ $\text{mm}^3$/s
+- $P_c \approx 0.7 \times 3183 \approx 2.2$ kW at $k_c = 0.7$ $\text{J/mm}^3$ (typical aluminum), before drive losses
 
 ### Rules of thumb
 
@@ -213,7 +213,7 @@ Shear capacity of a fillet weld of length $L$ with allowable shear stress $\tau_
 
 $$F = \tau_{\text{allow}}\; 0.707\,a\, L$$
 
-Units: $F$ in N when $\tau_{\text{allow}}$ is in N/mm$^2$ and $a$, $L$ in mm. Take $\tau_{\text{allow}}$ from the governing code (for example AWS D1.1 for steel structures, or AISC 360) for the electrode and base metal. Do not use a value from memory for a load-bearing joint.
+Units: $F$ in N when $\tau_{\text{allow}}$ is in $\text{N/mm}^2$ and $a$, $L$ in mm. Take $\tau_{\text{allow}}$ from the governing code (for example AWS D1.1 for steel structures, or AISC 360) for the electrode and base metal. Do not use a value from memory for a load-bearing joint.
 
 - **Holds when:** the load is static, fusion is complete, and the weld is sized by its throat. **Breaks when:** the joint sees fatigue, the heat-affected zone is weakened, or there is undercut, porosity, or lack of fusion.
 - Sanity: throat is always less than the leg. A leg of 6 mm gives a throat of about 4.24 mm.
@@ -379,8 +379,8 @@ Before trusting a capability claim:
 
 - Spindle speed: at 300 SFM, a $1/2$ in cutter should run near 2300 rpm. A 10 mm tool at 90 m/min runs near 2900 rpm.
 - Feed rate: feed rate is $f_z \times z \times N$. Double the flutes doubles the feed rate at the same chip load.
-- MRR: a 10 mm by 10 mm pass at 1900 mm/min removes about 190,000 mm$^3$/min. If the answer is off by 1000, check the units.
-- Cutting power: MRR in mm$^3$/s times $k_c$ in J/mm$^3$ gives W. A few kW for a modest slot in aluminum is plausible; tens of kW for a small end mill is not.
+- MRR: a 10 mm by 10 mm pass at 1900 mm/min removes about 190,000 $\text{mm}^3$/min. If the answer is off by 1000, check the units.
+- Cutting power: MRR in $\text{mm}^3$/s times $k_c$ in $\text{J/mm}^3$ gives W. A few kW for a modest slot in aluminum is plausible; tens of kW for a small end mill is not.
 - Drill cone: depth of a 118 degree point is about 0.3 times the diameter. A 10 mm drill's point adds about 3 mm.
 - Bend allowance: the arc length of a 90 degree bend is about 1.57 times the radius to the neutral axis. Check that $\text{BA}$ is less than the outside arc.
 - Fillet throat: must be less than the leg. $0.707 \times$ leg is the right order of magnitude.

@@ -12,7 +12,7 @@ Hydrostatics is the study of fluids at rest, and Bernoulli's equation is the ene
 
 - A **fluid** is a substance that deforms continuously when a shear force acts on it. Liquids and gases are both fluids.
 - **Density** ($\rho$) is mass per unit volume. Typical value for fresh water: $\rho = 1000\ \text{kg/m}^3$. Typical value for air at sea level on Earth: $\rho \approx 1.2\ \text{kg/m}^3$.
-- **Pressure** ($p$) is force per unit area, acting equally in all directions at a point in a fluid at rest. SI unit: pascal (Pa = N/m$^2$). US customary: psi (lbf/in$^2$). 1 psi = 6895 Pa.
+- **Pressure** ($p$) is force per unit area, acting equally in all directions at a point in a fluid at rest. SI unit: pascal (Pa = $\text{N/m}^2$). US customary: psi ($\text{lbf/in}^2$). 1 psi = 6895 Pa.
 - **Gauge pressure** is pressure measured relative to the local atmosphere. **Absolute pressure** is measured relative to a perfect vacuum. Absolute = gauge + atmospheric. Most tire and tank gauges read gauge pressure.
 - **Hydrostatic** means the fluid is at rest. Inside a resting fluid, pressure rises with depth and does not change sideways at the same depth.
 - **Pascal's principle**: a pressure change applied to an enclosed fluid is transmitted undiminished to every part of the fluid and to the container walls. This is why hydraulic presses multiply force.
@@ -59,7 +59,7 @@ Bernoulli does not give you the flow rate. It tells you how pressure and speed t
 
 ## Key equations
 
-Symbols: $p$ = pressure (Pa), $\rho$ = density (kg/m$^3$), $g$ = local gravitational acceleration (9.81 m/s$^2$ or 32.2 ft/s$^2$ at Earth's surface), $h$ = depth or height (m), $V$ = velocity (m/s), $z$ = elevation above a reference (m), $p_\text{atm}$ = atmospheric pressure, 101 325 Pa for the standard atmosphere at sea level on Earth (14.7 psi).
+Symbols: $p$ = pressure (Pa), $\rho$ = density ($\text{kg/m}^3$), $g$ = local gravitational acceleration (9.81 $\text{m/s}^2$ or 32.2 $\text{ft/s}^2$ at Earth's surface), $h$ = depth or height (m), $V$ = velocity (m/s), $z$ = elevation above a reference (m), $p_\text{atm}$ = atmospheric pressure, 101 325 Pa for the standard atmosphere at sea level on Earth (14.7 psi).
 
 Hydrostatic pressure at depth $h$ below a free surface:
 
@@ -99,9 +99,9 @@ $$
 
 ## Worked example
 
-**Venturi section in a water line.** A horizontal pipe carries water. It narrows from diameter 0.10 m to 0.05 m. The flow rate is 0.010 m$^3$/s. Find the pressure drop between the wide and narrow sections.
+**Venturi section in a water line.** A horizontal pipe carries water. It narrows from diameter 0.10 m to 0.05 m. The flow rate is 0.010 $\text{m}^3$/s. Find the pressure drop between the wide and narrow sections.
 
-**Given:** $D_1 = 0.10$ m, $D_2 = 0.05$ m, $Q = 0.010$ m$^3$/s, $\rho = 1000$ kg/m$^3$, pipe horizontal ($z_1 = z_2$).
+**Given:** $D_1 = 0.10$ m, $D_2 = 0.05$ m, $Q = 0.010$ $\text{m}^3$/s, $\rho = 1000$ $\text{kg/m}^3$, pipe horizontal ($z_1 = z_2$).
 
 **Find:** $p_1 - p_2$.
 
@@ -109,14 +109,14 @@ $$
 
 **Solution:**
 
-1. Areas: $A_1 = \pi D_1^2/4 = \pi(0.10)^2/4 = 7.854 \times 10^{-3}$ m$^2$.
-   $A_2 = \pi(0.05)^2/4 = 1.963 \times 10^{-3}$ m$^2$.
+1. Areas: $A_1 = \pi D_1^2/4 = \pi(0.10)^2/4 = 7.854 \times 10^{-3}$ $\text{m}^2$.
+   $A_2 = \pi(0.05)^2/4 = 1.963 \times 10^{-3}$ $\text{m}^2$.
 2. Velocities from $V = Q/A$:
    $V_1 = 0.010 / 7.854\times10^{-3} = 1.273$ m/s.
    $V_2 = 0.010 / 1.963\times10^{-3} = 5.093$ m/s.
 3. Bernoulli with $z_1 = z_2$:
    $p_1 - p_2 = \tfrac{1}{2}\rho(V_2^2 - V_1^2) = 0.5 \times 1000 \times (5.093^2 - 1.273^2)$.
-4. $5.093^2 = 25.94$ and $1.273^2 = 1.621$, so the difference is $24.32$ m$^2$/s$^2$.
+4. $5.093^2 = 25.94$ and $1.273^2 = 1.621$, so the difference is $24.32$ $\text{m}^2/\text{s}^2$.
    $p_1 - p_2 = 500 \times 24.32 = 1.216 \times 10^4$ Pa.
 
 **Answer:** $p_1 - p_2 \approx 12.2$ kPa (about 1.8 psi). The wide section is at higher pressure.
@@ -159,7 +159,7 @@ check(dp < 0.5 * rho * V2**2, "the drop is below the narrow-section dynamic pres
 1. Find the gauge pressure in fresh water 10.0 m below the free surface. Give the answer in kPa.
 2. Find the absolute pressure at the same depth, with $p_\text{atm} = 101.3$ kPa (the standard atmosphere on Earth). Give the answer in kPa.
 3. Water drains from a hole 5.00 m below the free surface of an open tank. Find the exit speed in m/s, ignoring losses.
-4. A wood block of density 500 kg/m$^3$ and volume 0.0100 m$^3$ floats in fresh water. Find the submerged volume in m$^3$.
+4. A wood block of density 500 $\text{kg/m}^3$ and volume 0.0100 $\text{m}^3$ floats in fresh water. Find the submerged volume in $\text{m}^3$.
 5. In the worked example, the narrow section diameter is halved again to 0.025 m with the same flow rate. Find the new pressure drop between the 0.10 m and 0.025 m sections in kPa.
 
 <details><summary>Answers</summary>
@@ -167,7 +167,7 @@ check(dp < 0.5 * rho * V2**2, "the drop is below the narrow-section dynamic pres
 1. 98.1 kPa
 2. 199.4 kPa
 3. 9.90 m/s
-4. 0.00500 m$^3$
+4. 0.00500 $\text{m}^3$
 5. 206.7 kPa
 
 ```verify

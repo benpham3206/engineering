@@ -668,6 +668,37 @@ DATE_TRIGGER = re.compile(
 AS_OF = re.compile(r"\(?as of (\d{4})\)?", re.I)
 APPROX = re.compile(r"(?i)\b(about|around|circa|c\.|approximately|roughly)\s")
 SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z*(\[])")
+def unrendered_math(line):
+    """Inline $...$ spans that GitHub shows as raw text.
+
+    GitHub renders inline math only when the opening $ follows whitespace, the
+    line start, "(" or "**", and the closing $ is not followed by a letter or
+    digit. So kg/m$^3$ and $F$s stay raw; write $\\text{kg/m}^3$ and $F\\text{s}$.
+    """
+    s = re.sub(r"`[^`]*`", lambda m: " " * len(m.group()), line)
+    bad, i = [], 0
+    while (a := s.find("$", i)) >= 0:
+        if a and s[a - 1] == "\\":
+            i = a + 1
+            continue
+        if s.startswith("$$", a):
+            b = s.find("$$", a + 2)
+            if b < 0:
+                break
+            i = b + 2
+            continue
+        b = a + 1
+        while (b := s.find("$", b)) > 0 and s[b - 1] == "\\":
+            b += 1
+        if b < 0:
+            break
+        pre, post = s[:a], s[b + 1:b + 2]
+        if (pre and not (pre[-1].isspace() or pre[-1] == "(" or pre.endswith("**"))) or post.isalnum():
+            bad.append(line[max(0, a - 12):b + 3])
+        i = b + 1
+    return bad
+
+
 PLAIN_MATH = re.compile(r"[A-Za-z0-9)\]]\^-?[A-Za-z0-9({]|\bsqrt\(|[\u0391-\u03a9\u03b1-\u03c9\u2264\u2265\u2248\u00b1\u00f7\u221a\u221e\u222b\u2211\u2202\u00d7\u2260]")
 LABEL_LINE = re.compile(r"^\*\*[A-Za-z][A-Za-z ,()-]*:\*\*")
 DEFINITION = re.compile(r"\b(is|are|was|were|means|refers to|describes)\b")
@@ -725,6 +756,9 @@ def check_doc(doc, docs, data, out, stats, prereqs):
                     add(n, "anchor", GATE, f"no heading #{anchor} in {rel(dest)}")
         if DASH.search(line):
             add(n, "dash", GATE, "em or en dash")
+        if n not in doc.math:
+            for span in unrendered_math(line):
+                add(n, "math-render", GATE, f"inline math GitHub will not render: {span!r}")
         if not is_meta(doc) and doc.path.parent != DATA and doc.path.parent.parent != DATA:
             if PROCESS.search(line):
                 add(n, "process-note", CONTENT, f"process note: {PROCESS.search(line).group()}")

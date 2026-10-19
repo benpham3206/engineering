@@ -103,7 +103,7 @@ $$
 \gamma = \frac{1}{\sqrt{1 - v^2/c^2}}, \qquad \Delta t = \gamma\,\Delta t_0
 $$
 
-For $v \ll c$, a moving clock falls behind by the fraction $v^2/(2c^2)$. In a weak gravitational field, a clock at distance $r$ from the centre of a body of gravitational parameter $\mu = G M$ (m$^3$/s$^2$) runs fast relative to one at $R < r$ by the fraction $\mu(1/R - 1/r)/c^2$. Both approximations hold when $v \ll c$ and $\mu/(r c^2) \ll 1$, and break near black holes or for relativistic speeds.
+For $v \ll c$, a moving clock falls behind by the fraction $v^2/(2c^2)$. In a weak gravitational field, a clock at distance $r$ from the centre of a body of gravitational parameter $\mu = G M$ ($\text{m}^3/\text{s}^2$) runs fast relative to one at $R < r$ by the fraction $\mu(1/R - 1/r)/c^2$. Both approximations hold when $v \ll c$ and $\mu/(r c^2) \ll 1$, and break near black holes or for relativistic speeds.
 
 Mass-energy and binding energy, with $\Delta m$ the mass defect (kg):
 
@@ -153,21 +153,21 @@ $$
 
 **Clock offset of a navigation satellite.** A satellite in a circular orbit of radius 26 560 km (about a twelve-hour orbit) carries a clock. Find the net daily offset of the satellite clock relative to a clock at the surface of Earth, and the range error it would cause in one day if uncorrected.
 
-**Given:** orbit radius $r = 2.656 \times 10^{7}$ m, Earth mean radius $R = 6.371 \times 10^{6}$ m, Earth's gravitational parameter $\mu = 3.986004 \times 10^{14}$ m$^3$/s$^2$, $c$ from the constants table, one day $= 1$ d.
+**Given:** orbit radius $r = 2.656 \times 10^{7}$ m, Earth mean radius $R = 6.371 \times 10^{6}$ m, Earth's gravitational parameter $\mu = 3.986004 \times 10^{14}$ $\text{m}^3/\text{s}^2$, $c$ from the constants table, one day $= 1$ d.
 
-**Find:** the speed effect, the gravity effect, the net offset in $\mu$s per day, and the range error in km.
+**Find:** the speed effect, the gravity effect, the net offset in $\mu\text{s}$ per day, and the range error in km.
 
 **Assumptions:** circular orbit, weak-field and low-speed approximations, a spherical non-rotating Earth with the ground clock at rest. Earth's rotation moves the ground clock slowly and shifts the result by a small fraction of a microsecond per day, which this example ignores.
 
 **Solution:**
 
 1. Orbital speed: $v = \sqrt{\mu/r} = 3874$ m/s. The period $2\pi\sqrt{r^3/\mu}$ is 11.97 h, which checks the twelve-hour description.
-2. Speed effect: the fraction $-v^2/(2c^2) = -8.349 \times 10^{-11}$. Over one day this is $-7.21\ \mu$s.
-3. Gravity effect: the fraction $+\mu(1/R - 1/r)/c^2 = 5.291 \times 10^{-10}$. Over one day this is $+45.72\ \mu$s.
-4. Net: $45.72 - 7.21 = +38.50\ \mu$s per day. The satellite clock runs fast.
+2. Speed effect: the fraction $-v^2/(2c^2) = -8.349 \times 10^{-11}$. Over one day this is $-7.21\ \mu\text{s}$.
+3. Gravity effect: the fraction $+\mu(1/R - 1/r)/c^2 = 5.291 \times 10^{-10}$. Over one day this is $+45.72\ \mu\text{s}$.
+4. Net: $45.72 - 7.21 = +38.50\ \mu\text{s}$ per day. The satellite clock runs fast.
 5. Range error in one day: $c \times 38.50\ \mu\text{s} = 11.54$ km.
 
-**Answer:** the satellite clock gains about 38.5 $\mu$s per day, which would grow into a range error of about 11.5 km per day if left uncorrected.
+**Answer:** the satellite clock gains about 38.5 $\mu\text{s}$ per day, which would grow into a range error of about 11.5 km per day if left uncorrected.
 
 **Sanity check:** the gravity term dominates because the satellite is high above the surface, and its sign is opposite to the speed term. The speed effect is the fractional size $v^2/(2c^2)$, a few parts in ten billion, so a day (86 400 s) gives microseconds, not milliseconds.
 
@@ -205,7 +205,7 @@ check(net > q(0, "s"), "satellite clock runs fast")
 
 1. Light of wavelength 300 nm falls on a metal with work function 2.30 eV. Find the photon energy and the maximum kinetic energy of the ejected electrons, in eV.
 2. An electron is accelerated from rest through 100 V. Find its de Broglie wavelength in nm, using the non-relativistic form. Take the electron mass as $9.1093837 \times 10^{-31}$ kg.
-3. An electron is confined in a box of width 1.00 nm with infinite walls. Find the ground-state energy $E_1$ in eV, and the wavelength in $\mu$m of the photon emitted when the electron drops from $n = 2$ to $n = 1$.
+3. An electron is confined in a box of width 1.00 nm with infinite walls. Find the ground-state energy $E_1$ in eV, and the wavelength in $\mu\text{m}$ of the photon emitted when the electron drops from $n = 2$ to $n = 1$.
 4. An electron meets a barrier 0.50 nm wide whose top is 4.00 eV above the electron energy. Estimate the transmission probability. Then find the factor by which the tunnel current falls when the gap widens by 0.10 nm.
 5. A radioactive sample has half-life 10.0 h. (a) Find the fraction left after 36.0 h. (b) A nuclear reaction has a mass defect of $3.0 \times 10^{-29}$ kg. Find the energy released in MeV. Explain which method you used for each part.
 
@@ -213,7 +213,7 @@ check(net > q(0, "s"), "satellite clock runs fast")
 
 1. Photon energy 4.13 eV; maximum kinetic energy 1.83 eV.
 2. 0.123 nm.
-3. $E_1 = 0.376$ eV; the photon wavelength is 1.10 $\mu$m, in the infrared.
+3. $E_1 = 0.376$ eV; the photon wavelength is 1.10 $\mu\text{m}$, in the infrared.
 4. $T \approx 3.5 \times 10^{-5}$; the current falls by a factor of 7.8.
 5. (a) 0.0825, using the half-life form $2^{-t/t_{1/2}}$ directly. (b) 16.8 MeV, using $E_b = \Delta m\,c^2$ and converting joules to MeV.
 

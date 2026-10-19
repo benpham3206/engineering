@@ -44,7 +44,7 @@ Wavelength inside a material, with relative permittivity $\varepsilon_r = \varep
 
 $$\lambda_m = \frac{\lambda_0}{\operatorname{Re}\sqrt{\varepsilon_r}}$$
 
-Power absorbed per unit volume, in W/m$^3$, with $\varepsilon_0 = 8.85 \times 10^{-12}\ \text{F/m}$ and $E$ the rms electric field in V/m:
+Power absorbed per unit volume, in $\text{W/m}^3$, with $\varepsilon_0 = 8.85 \times 10^{-12}\ \text{F/m}$ and $E$ the rms electric field in V/m:
 
 $$p = 2\pi f\, \varepsilon_0\, \varepsilon''\, E^2$$
 
@@ -86,7 +86,7 @@ $$f_r = \frac{1}{2\pi\tau}$$
 
 ## How it fails
 
-- **Damaged door or seal.** Bent hinges, cracked glass, or a worn gasket open a path for microwaves. The US Food and Drug Administration limits leakage over an oven's life to 5 mW/cm$^2$ at about 5 cm from the surface. Warning signs are a door that does not seal flush and visible damage. Interlock switches and the leakage standard exist because of this failure.
+- **Damaged door or seal.** Bent hinges, cracked glass, or a worn gasket open a path for microwaves. The US Food and Drug Administration limits leakage over an oven's life to 5 $\text{mW/cm}^2$ at about 5 cm from the surface. Warning signs are a door that does not seal flush and visible damage. Interlock switches and the leakage standard exist because of this failure.
 - **Running empty.** With no food to absorb the power, most of it reflects back to the magnetron. Repeated reflection can damage the magnetron.
 - **Metal in the cavity.** Sharp metal edges concentrate the field and cause arcing. The warning sign is sparking.
 - **Superheated liquid.** Water heated in a smooth cup can rise above its boiling point and erupt when disturbed. The FDA reports serious scalds from this. Stirring the liquid partway through heating and heating in short bursts reduce the risk.

@@ -51,7 +51,7 @@ $$
 T = 2\rho A v_i^2 \qquad v_h = \sqrt{\frac{T}{2\rho A}} \qquad P_{\text{ideal}} = T v_h = \frac{T^{3/2}}{\sqrt{2\rho A}}
 $$
 
-- $T$ is thrust (N), which equals weight in hover. $\rho$ is air density (kg/m$^3$, about 1.225 at sea level on Earth). $A$ is the total rotor disk area (m$^2$). $v_h$ is the hover induced velocity (m/s). $P_{\text{ideal}}$ is the ideal induced power (W), the least power that the rotor can use for this thrust.
+- $T$ is thrust (N), which equals weight in hover. $\rho$ is air density ($\text{kg/m}^3$, about 1.225 at sea level on Earth). $A$ is the total rotor disk area ($\text{m}^2$). $v_h$ is the hover induced velocity (m/s). $P_{\text{ideal}}$ is the ideal induced power (W), the least power that the rotor can use for this thrust.
 - Assumptions: ideal actuator disk, uniform inflow across the disk, hover (no forward or vertical speed), steady and incompressible flow, air at rest far upstream, and no profile drag, swirl, or tip losses. Real rotors need more power than $P_{\text{ideal}}$.
 
 Actual shaft power with a **figure of merit** $\mathrm{FM}$, a measure of how close the rotor comes to the ideal.
@@ -77,12 +77,12 @@ $$
 T_{\text{rotor}} = k_T \omega^2
 $$
 
-- $\omega$ is rotor angular speed (rad/s). $k_T$ is the thrust coefficient (N s$^2$/rad$^2$), set by blade shape and air density.
+- $\omega$ is rotor angular speed (rad/s). $k_T$ is the thrust coefficient (N $\text{s}^2/\text{rad}^2$), set by blade shape and air density.
 - Assumptions: $k_T$ is constant over the operating range, which holds at low forward speed and in hover. Inflow effects, stall, and compressibility at high tip speed break this relation.
 
 ## Worked example
 
-**Given.** A 2.0 kg quadcopter has four rotors, each 0.254 m in diameter, so each has radius $R = 0.127$ m. It hovers at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Assume $\mathrm{FM} = 0.70$.
+**Given.** A 2.0 kg quadcopter has four rotors, each 0.254 m in diameter, so each has radius $R = 0.127$ m. It hovers at sea level on Earth, where $\rho = 1.225$ $\text{kg/m}^3$. Assume $\mathrm{FM} = 0.70$.
 
 **Find.** (a) the thrust needed, (b) the total disk area and disk loading, (c) the ideal hover power and the shaft power, and (d) the power per rotor.
 
@@ -91,7 +91,7 @@ $$
 **Solution.**
 
 1. Thrust equals weight: $T = mg = 2.0 \times 9.80665 = 19.61$ N.
-2. Total disk area: $A = 4\pi R^2 = 4\pi (0.127)^2 = 0.2027$ m$^2$. Disk loading: $T/A = 19.61 / 0.2027 = 96.8$ N/m$^2$.
+2. Total disk area: $A = 4\pi R^2 = 4\pi (0.127)^2 = 0.2027$ $\text{m}^2$. Disk loading: $T/A = 19.61 / 0.2027 = 96.8$ $\text{N/m}^2$.
 3. Hover induced velocity:
 $$
 v_h = \sqrt{\frac{19.61}{2 \times 1.225 \times 0.2027}} = 6.28\ \text{m/s}
@@ -103,7 +103,7 @@ $$
 The shaft power at $\mathrm{FM} = 0.70$ is $P = 123 / 0.70 = 176$ W.
 5. Power per rotor: $176 / 4 = 44$ W.
 
-**Answer.** (a) $T = 19.6$ N. (b) $A = 0.203$ m$^2$ and $T/A = 96.8$ N/m$^2$. (c) $P_{\text{ideal}} = 123$ W and shaft power $P = 176$ W. (d) About 44 W per rotor.
+**Answer.** (a) $T = 19.6$ N. (b) $A = 0.203$ $\text{m}^2$ and $T/A = 96.8$ $\text{N/m}^2$. (c) $P_{\text{ideal}} = 123$ W and shaft power $P = 176$ W. (d) About 44 W per rotor.
 
 **Sanity check.** The shaft power of 176 W is in the range of small quadcopters with a few hundred grams of payload. Battery input power is higher, because motor and controller losses add to it. Doubling the mass would multiply the ideal power by $2^{1.5} = 2.83$, so a heavier drone costs much more power, not just proportionally more.
 
@@ -131,7 +131,7 @@ Juan de la Cierva developed the autogiro in Spain, and its first successful flig
 ## Practice
 
 1. A quadcopter has a mass of 1.5 kg and is in hover at sea level. Find the thrust needed in N.
-2. The same 1.5 kg quadcopter has four rotors of 0.254 m diameter. Find the hover induced velocity in m/s, using $\rho = 1.225$ kg/m$^3$.
+2. The same 1.5 kg quadcopter has four rotors of 0.254 m diameter. Find the hover induced velocity in m/s, using $\rho = 1.225$ $\text{kg/m}^3$.
 3. Find the ideal hover power for the 1.5 kg quadcopter in W.
 4. A rotor's thrust doubles at the same disk area. Find the factor by which the ideal hover power increases.
 5. A rotor speeds up by 10 percent, and thrust rises with $\omega^2$. Find the percentage increase in thrust.

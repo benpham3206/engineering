@@ -51,11 +51,11 @@ For a thick-walled cylinder with inner radius $r_i$ and outer radius $r_o$ in m,
 
 $$\sigma_{\theta,\mathrm{max}} = p\,\frac{r_o^2 + r_i^2}{r_o^2 - r_i^2}$$
 
-For a storage tank of liquid with density $\rho$ in kg/m$^3$, depth $h$ in m, and radius $R$ in m, the hoop stress at depth $h$ is:
+For a storage tank of liquid with density $\rho$ in $\text{kg/m}^3$, depth $h$ in m, and radius $R$ in m, the hoop stress at depth $h$ is:
 
 $$\sigma_h = \frac{\rho g h R}{t}$$
 
-where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). The bottom ring has the largest value, so $h$ is the full liquid depth.
+where $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface). The bottom ring has the largest value, so $h$ is the full liquid depth.
 
 ## Worked example
 

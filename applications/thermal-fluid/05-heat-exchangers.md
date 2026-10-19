@@ -51,7 +51,7 @@ rate, so fins and large surfaces are used.
 ## Key equations
 
 - Heat rate: $\dot{Q} = U A \Delta T_{\mathrm{lm}}$, where $\dot{Q}$ is in watts (W), $U$ is the overall heat transfer
-  coefficient in W/(m$^2$ K), $A$ is the heat transfer area in square metres (m$^2$), and $\Delta T_{\mathrm{lm}}$ is the
+  coefficient in W/($\text{m}^2$ K), $A$ is the heat transfer area in square metres ($\text{m}^2$), and $\Delta T_{\mathrm{lm}}$ is the
   log mean temperature difference in kelvin (K).
 - Log mean temperature difference: $\Delta T_{\mathrm{lm}} = \dfrac{\Delta T_1 - \Delta T_2}{\ln(\Delta T_1 / \Delta T_2)}$,
   where $\Delta T_1$ and $\Delta T_2$ are the temperature differences between the two fluids at the two ends of
@@ -63,7 +63,7 @@ rate, so fins and large surfaces are used.
 - **Number of transfer units (NTU)**: $\mathrm{NTU} = \dfrac{UA}{C_{\mathrm{min}}}$, dimensionless.
 - Capacity ratio: $C_r = C_{\mathrm{min}} / C_{\mathrm{max}}$, dimensionless.
 - Counterflow effectiveness: $\varepsilon = \dfrac{1 - \exp[-\mathrm{NTU}(1 - C_r)]}{1 - C_r \exp[-\mathrm{NTU}(1 - C_r)]}$.
-- Fouling: $\dfrac{1}{U} = \dfrac{1}{U_{\mathrm{clean}}} + R_f$, where $R_f$ is the fouling resistance in m$^2$ K/W.
+- Fouling: $\dfrac{1}{U} = \dfrac{1}{U_{\mathrm{clean}}} + R_f$, where $R_f$ is the fouling resistance in $\text{m}^2$ K/W.
 
 For a counterflow exchanger with $C_r = 1$, the effectiveness formula reduces to $\mathrm{NTU} / (1 + \mathrm{NTU})$.
 
@@ -111,8 +111,8 @@ coefficient and lowers fouling, but it raises pumping power, because pressure dr
 square of velocity in the pipe. A larger area lowers the outlet temperature gap, but it costs more.
 
 Typical overall coefficients differ by orders of magnitude. Water-to-water exchangers often reach about
-850 to 1700 W/(m$^2$ K), while gas-to-water exchangers such as air-side coils reach only about 10 to 100
-W/(m$^2$ K) on the bare surface (typical textbook ranges). Fins on the gas side recover much of that gap.
+850 to 1700 W/($\text{m}^2$ K), while gas-to-water exchangers such as air-side coils reach only about 10 to 100
+W/($\text{m}^2$ K) on the bare surface (typical textbook ranges). Fins on the gas side recover much of that gap.
 
 Plate exchangers are compact and easy to open for cleaning, but gaskets limit their temperature and
 pressure. Shell-and-tube units handle high pressure and dirty fluids, but they are bulky and costly per

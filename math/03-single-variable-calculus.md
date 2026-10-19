@@ -31,7 +31,7 @@ Taylor series of $\sin x$ about $0$ ($x$ in radians):
 
 $$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots$$
 
-Euler-Bernoulli beam relation for small deflections $w(x)$ (m), bending moment $M(x)$ (N m), flexural rigidity $EI$ (N m$^2$), where $E$ is Young's modulus (Pa) and $I$ is the second moment of area (m$^4$):
+Euler-Bernoulli beam relation for small deflections $w(x)$ (m), bending moment $M(x)$ (N m), flexural rigidity $EI$ (N $\text{m}^2$), where $E$ is Young's modulus (Pa) and $I$ is the second moment of area ($\text{m}^4$):
 
 $$\frac{d^2 w}{dx^2} = \frac{M(x)}{EI}$$
 
@@ -81,7 +81,7 @@ Symbols: $f$ is any function, $h$ is a small step, $x$ is position (m) unless st
 - Dropping the limits of integration, or evaluating $F(a)$ and $F(b)$ in the wrong order.
 - Mixing up a rate and a total. Ask which one the problem gives you before choosing derivative or integral.
 - Using a Taylor series far from its center point. Approximations are accurate only near the point where they are built.
-- Mishandling units: a moment of inertia in cm$^4$ used with SI formulas gives an answer that is off by $10^8$.
+- Mishandling units: a moment of inertia in $\text{cm}^4$ used with SI formulas gives an answer that is off by $10^8$.
 
 ## Go deeper
 

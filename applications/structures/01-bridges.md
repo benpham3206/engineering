@@ -40,7 +40,7 @@ For a simply supported beam with uniform load $w$ in N/m over span $L$ in m:
 
 - Maximum shear force at the supports: $V_{\mathrm{max}} = \dfrac{wL}{2}$, in N.
 - Maximum bending moment at midspan: $M_{\mathrm{max}} = \dfrac{wL^2}{8}$, in N m.
-- Bending stress at the extreme fiber: $\sigma = \dfrac{Mc}{I}$, in Pa, where $c$ is the distance in m from the neutral axis to the outer fiber and $I$ is the second moment of area in m$^4$.
+- Bending stress at the extreme fiber: $\sigma = \dfrac{Mc}{I}$, in Pa, where $c$ is the distance in m from the neutral axis to the outer fiber and $I$ is the second moment of area in $\text{m}^4$.
 - Midspan deflection: $\delta = \dfrac{5wL^4}{384\,EI}$, in m, where $E$ is the elastic modulus in Pa (about $200\times10^9$ Pa for structural steel, typical).
 
 For a parabolic cable under uniform load with span $L$ in m and sag $s$ in m:
@@ -97,7 +97,7 @@ The Romans built stone arch bridges that still stand, and their designs spread a
 1. A simply supported beam spans 12 m and carries a uniform load of 20 kN/m. Find the maximum bending moment and the maximum shear force.
 2. A parabolic cable spans 100 m with a sag of 4 m and carries a uniform load of 20 kN/m. Find the horizontal tension in the cable.
 3. The span in the worked example doubles, and the load per metre and the section stay the same. How many times larger does the midspan moment become? How many times larger does the deflection become?
-4. In the worked example, the second moment of area doubles to 0.040 m$^4$. Find the new midspan deflection in mm.
+4. In the worked example, the second moment of area doubles to 0.040 $\text{m}^4$. Find the new midspan deflection in mm.
 5. Explain in one or two sentences why the top fibers of a simply supported beam are in compression and the bottom fibers are in tension.
 
 <details><summary>Answers</summary>

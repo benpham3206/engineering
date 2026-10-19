@@ -18,8 +18,8 @@ fluid to cold fluid. The same few ideas cover all three.
 - **Conduction**: heat moves through a solid by atom-to-atom transfer. The material property is the
   thermal conductivity $k$ in W/(m K). Metals have high $k$, and foams and air have low $k$.
 - **Convection**: heat moves from a solid surface into a moving fluid such as air or water. The
-  convection coefficient $h$ in W/(m$^2$ K) depends on the fluid, its speed, and the surface shape.
-  Typical $h$ is about 5-25 W/(m$^2$ K) for natural air convection and higher for forced air.
+  convection coefficient $h$ in W/($\text{m}^2$ K) depends on the fluid, its speed, and the surface shape.
+  Typical $h$ is about 5-25 W/($\text{m}^2$ K) for natural air convection and higher for forced air.
 - **Radiation**: heat carried by electromagnetic waves. It matters at high temperature or in vacuum.
   This lesson uses conduction and convection only.
 - **Thermal resistance** $R_{\mathrm{th}}$ (kelvin per watt, K/W): a path's resistance to heat flow. Layers in
@@ -33,10 +33,10 @@ fluid to cold fluid. The same few ideas cover all three.
 
 ## Key equations
 
-- Conduction through a plane wall of area $A$ (m$^2$) and thickness $L$ (m):
+- Conduction through a plane wall of area $A$ ($\text{m}^2$) and thickness $L$ (m):
   $\dot{Q} = \dfrac{k A \Delta T}{L}$
 - Thermal resistance of conduction: $R_{\mathrm{cond}} = \dfrac{L}{k A}$ (K/W)
-- Convection: $\dot{Q} = h A \Delta T$, with $h$ in W/(m$^2$ K).
+- Convection: $\dot{Q} = h A \Delta T$, with $h$ in W/($\text{m}^2$ K).
 - Thermal resistance of convection: $R_{\mathrm{conv}} = \dfrac{1}{h A}$ (K/W)
 - Layers in series: $R_{\mathrm{tot}} = \sum R_i$, and $\dot{Q} = \dfrac{\Delta T_{\mathrm{total}}}{R_{\mathrm{tot}}}$.
 

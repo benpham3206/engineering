@@ -26,7 +26,7 @@
 
 - **Fatigue** is failure under repeated or fluctuating stress, often at stress levels well below the yield strength.
 - Fatigue has three stages: crack **initiation** (often at a surface scratch or pore), slow crack **propagation** over many cycles, and sudden **final fracture** when the remaining section is too small.
-- Fatigue life is often shown as an $S$-$N$ curve, a plot of stress amplitude against the number of cycles to failure. Many steels and titanium alloys have an **endurance limit**, a stress below which they last indefinitely. Aluminum alloys usually do not have a clear endurance limit.
+- Fatigue life is often shown as an $S\text{-}N$ curve, a plot of stress amplitude against the number of cycles to failure. Many steels and titanium alloys have an **endurance limit**, a stress below which they last indefinitely. Aluminum alloys usually do not have a clear endurance limit.
 - Surface finish, corrosion, residual stress, and notches all lower fatigue life a lot.
 
 ## Key equations
@@ -63,7 +63,7 @@ where $\sigma_a$ is the stress amplitude (MPa) and $R$ is the stress ratio (dime
 **Solution:**
 
 1. Convert the crack length: $a = 0.002$ m.
-2. Compute $\sqrt{\pi a} = \sqrt{0.0062832} = 0.07927$ m$^{1/2}$.
+2. Compute $\sqrt{\pi a} = \sqrt{0.0062832} = 0.07927$ $\text{m}^{1/2}$.
 3. Compute $K = 1.12 \times 200 \times 0.07927 = 17.8$ MPa $\sqrt{\text{m}}$.
 4. Compare with the toughness: $17.8 < 40$, so the crack does not grow fast.
 5. Critical crack length at this stress: $a_c = \frac{1}{\pi}\left(\frac{40}{1.12 \times 200}\right)^2 = 0.01015$ m $\approx 10.2$ mm.
@@ -92,7 +92,7 @@ where $\sigma_a$ is the stress amplitude (MPa) and $R$ is the stress ratio (dime
 
 ## Common mistakes
 
-- Using the crack length in mm inside the $K$ formula. Convert to metres first, so $\sqrt{\pi a}$ comes out in m$^{1/2}$.
+- Using the crack length in mm inside the $K$ formula. Convert to metres first, so $\sqrt{\pi a}$ comes out in $\text{m}^{1/2}$.
 - Forgetting the geometry factor $Y$. Results without it can be off by tens of percent.
 - Treating fatigue as a stress problem only. Surface finish, corrosion, and notches can matter more than the average stress.
 - Assuming that a material with high yield strength has high fracture toughness. Strength and toughness are separate properties.

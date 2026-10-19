@@ -39,7 +39,7 @@ The inertia depends on where the mass sits. A thin rim at radius $R$ has $I = mR
 
 ## Key equations
 
-Kinetic energy, with $I$ in kg m$^2$, $\omega$ in rad/s, and $E$ in joules (J):
+Kinetic energy, with $I$ in kg $\text{m}^2$, $\omega$ in rad/s, and $E$ in joules (J):
 
 $$E = \tfrac{1}{2} I \omega^2$$
 
@@ -55,7 +55,7 @@ Inertia needed for a given energy fluctuation:
 
 $$I = \frac{\Delta E}{\omega_m^2\,C_s}$$
 
-**Hoop stress** in a thin rim, with density $\rho$ in kg/m$^3$ and rim speed $v = \omega R$ in m/s, gives $\sigma$ in pascals (Pa):
+**Hoop stress** in a thin rim, with density $\rho$ in $\text{kg/m}^3$ and rim speed $v = \omega R$ in m/s, gives $\sigma$ in pascals (Pa):
 
 $$\sigma = \rho v^2$$
 
@@ -75,7 +75,7 @@ $$P = \frac{\Delta E}{\Delta t}$$
 
 ## Worked example
 
-**Given:** A flywheel on an engine runs at a mean speed of $n_m = 600$ rev/min. The energy fluctuation per cycle is $\Delta E = 4.0$ kJ, and the speed fluctuation coefficient is $C_s = 0.02$. The flywheel is a thin steel ring with mean radius $R = 0.50$ m. Steel has a density of $7850$ kg/m$^3$ (typical) and a yield strength of $370$ MPa (typical for cold-drawn 1018 steel).
+**Given:** A flywheel on an engine runs at a mean speed of $n_m = 600$ rev/min. The energy fluctuation per cycle is $\Delta E = 4.0$ kJ, and the speed fluctuation coefficient is $C_s = 0.02$. The flywheel is a thin steel ring with mean radius $R = 0.50$ m. Steel has a density of $7850$ $\text{kg/m}^3$ (typical) and a yield strength of $370$ MPa (typical for cold-drawn 1018 steel).
 
 **Find:** (a) the required inertia $I$, (b) the rim mass $m$, (c) the rim speed $v$ and the hoop stress $\sigma$, and (d) the safety factor against yield.
 
@@ -84,13 +84,13 @@ $$P = \frac{\Delta E}{\Delta t}$$
 **Solution:**
 
 1. Mean angular speed: $\omega_m = 2\pi(600)/60 = 62.83$ rad/s.
-2. Inertia: $I = \Delta E/(\omega_m^2 C_s) = 4000/(62.83^2 \times 0.02) = 4000/78.96 = 50.7$ kg m$^2$.
+2. Inertia: $I = \Delta E/(\omega_m^2 C_s) = 4000/(62.83^2 \times 0.02) = 4000/78.96 = 50.7$ kg $\text{m}^2$.
 3. Rim mass: $m = I/R^2 = 50.7/0.25 = 203$ kg.
 4. Rim speed: $v = \omega_m R = 62.83 \times 0.50 = 31.4$ m/s.
 5. Hoop stress: $\sigma = \rho v^2 = 7850 \times 31.4^2 = 7.75$ MPa.
 6. Safety factor: $n = 370/7.75 = 47.8$.
 
-**Answer:** (a) $50.7$ kg m$^2$. (b) $203$ kg. (c) $31.4$ m/s and $7.75$ MPa. (d) About $48$.
+**Answer:** (a) $50.7$ kg $\text{m}^2$. (b) $203$ kg. (c) $31.4$ m/s and $7.75$ MPa. (d) About $48$.
 
 **Sanity check:** The stored energy is $E = \tfrac{1}{2} I\omega_m^2 = 0.5 \times 50.7 \times 62.83^2 = 100$ kJ. The fluctuation $\Delta E = 4$ kJ is 4 percent of that, which equals $2C_s$, as the formulas predict. The rim stress is far below yield, so the rim is not the limit here. The bore, the keyway, and the spoke joints still need their own stress check, because each revolution cycles those parts.
 
@@ -118,17 +118,17 @@ Rotating masses that keep turning between pushes are very old. Potters' wheels u
 
 ## Practice
 
-1. A rotor has $I = 2$ kg m$^2$ and spins at $\omega = 300$ rad/s. How much kinetic energy does it store?
+1. A rotor has $I = 2$ kg $\text{m}^2$ and spins at $\omega = 300$ rad/s. How much kinetic energy does it store?
 2. The same rotor slows from 300 rad/s to 240 rad/s. How much energy does it give back?
-3. A flywheel runs at a mean speed of 500 rev/min, with $\Delta E = 2$ kJ per cycle and $C_s = 0.01$. Find the required inertia in kg m$^2$.
-4. A thin steel ring has an allowable stress of 200 MPa and a density of 7850 kg/m$^3$. Find its maximum rim speed.
+3. A flywheel runs at a mean speed of 500 rev/min, with $\Delta E = 2$ kJ per cycle and $C_s = 0.01$. Find the required inertia in kg $\text{m}^2$.
+4. A thin steel ring has an allowable stress of 200 MPa and a density of 7850 $\text{kg/m}^3$. Find its maximum rim speed.
 5. A solid steel disc has the same allowable stress of 200 MPa, and $\nu = 0.3$. Find its maximum rim speed.
 
 <details><summary>Answers</summary>
 
 1. $E = \tfrac{1}{2}(2)(300)^2 = 90\,000$ J, which is 90 kJ.
 2. $\Delta E = \tfrac{1}{2}(2)(300^2 - 240^2) = 32\,400$ J, which is 32.4 kJ.
-3. $\omega_m = 2\pi(500)/60 = 52.36$ rad/s, so $I = 2000/(52.36^2 \times 0.01) = 73.0$ kg m$^2$.
+3. $\omega_m = 2\pi(500)/60 = 52.36$ rad/s, so $I = 2000/(52.36^2 \times 0.01) = 73.0$ kg $\text{m}^2$.
 4. $v_{\mathrm{max}} = \sqrt{200\times10^6/7850} = 159.6$ m/s.
 5. $v_{\mathrm{max}} = \sqrt{8 \times 200\times10^6/((3.3)(7850))} = 248.5$ m/s.
 

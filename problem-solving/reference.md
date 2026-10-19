@@ -43,7 +43,7 @@ Use it to find the form of a relationship before you know the equation.
 - Result: the relationship is equivalent to $n - k$ dimensionless groups, called $\pi$ groups. Write it as $f(\Pi_1, \Pi_2, \dots) = 0$.
 - Choose $k$ repeating variables that together carry all base dimensions and are independent of each other. Each $\pi$ group is one remaining variable multiplied by powers of the repeating variables, with exponents chosen so the group is dimensionless.
 
-**Worked example: simple pendulum.** Period $T$ (s) of a bob of mass $m$ (kg) on a string of length $L$ (m), in local gravity $g$ (m/s$^2$), released from angle $\theta_0$ (rad, dimensionless).
+**Worked example: simple pendulum.** Period $T$ (s) of a bob of mass $m$ (kg) on a string of length $L$ (m), in local gravity $g$ ($\text{m/s}^2$), released from angle $\theta_0$ (rad, dimensionless).
 
 - Variables: $n = 5$ ($T, m, L, g, \theta_0$). Base dimensions: $k = 3$ ($M$, $L$, $T$).
 - Pi groups: $n - k = 2$.
@@ -64,7 +64,7 @@ Use it to find the form of a relationship before you know the equation.
 
 For $L = 1.00\ \text{m}$ at standard gravity $g = 9.80665\ \text{m/s}^2$: $T_0 = 2\pi\sqrt{L/g} = 2.006\ \text{s}$ at small angle. At $20$ deg the period is $2.022\ \text{s}$; at $60$ deg it is $2.153\ \text{s}$.
 
-**Second example, drag on a body.** Force $F$ (N) on a body of size $D$ (m) moving at speed $v$ (m/s) through fluid of density $\rho$ (kg/m$^3$) and dynamic viscosity $\mu$ (Pa$\cdot$s). Five variables, three base dimensions, so two groups:
+**Second example, drag on a body.** Force $F$ (N) on a body of size $D$ (m) moving at speed $v$ (m/s) through fluid of density $\rho$ ($\text{kg/m}^3$) and dynamic viscosity $\mu$ ($\text{Pa}\cdot\text{s}$). Five variables, three base dimensions, so two groups:
 
 $$
 C_d = \frac{F}{\tfrac{1}{2}\rho v^2 D^2}, \qquad \text{Re} = \frac{\rho v D}{\mu}, \qquad C_d = f(\text{Re}) \text{ for a fixed shape}
@@ -197,7 +197,7 @@ Electrical power in watts. Energy in kWh for one hour of use is the same number 
 | DC fast charger for EV | 50 to 350 kW | Varies by charger class |
 | Average household (typical, one country's scale) | about 1 to 1.5 kW average | Average, not peak |
 | Large power station | 0.5 to 1 GW | One 1 GW plant for one year is 8.76 TWh (computed) |
-| Sunlight on a surface at noon | about 1 kW/m$^2$ | Peak clear sky, typical |
+| Sunlight on a surface at noon | about 1 $\text{kW/m}^2$ | Peak clear sky, typical |
 
 - Holds when: values are used for scale. Devices vary by model.
 - Breaks when: you multiply peak by time and forget duty cycle. Use average power for energy.

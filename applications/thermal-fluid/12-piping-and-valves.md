@@ -44,13 +44,13 @@ Pumps add energy to the flow, and a pump that stops or trips also changes the fl
 
 $$Q = A v = \frac{\pi D^2}{4} v \qquad \Rightarrow \qquad D = \sqrt{\frac{4Q}{\pi v}}$$
 
-Here $Q$ is the volume flow in m$^3$/s, $A$ is the pipe area in m$^2$, $v$ is the mean velocity in m/s, and $D$ is the inside diameter in m.
+Here $Q$ is the volume flow in $\text{m}^3$/s, $A$ is the pipe area in $\text{m}^2$, $v$ is the mean velocity in m/s, and $D$ is the inside diameter in m.
 
 Friction loss along a straight pipe, the Darcy-Weisbach form:
 
 $$\Delta p_f = f \, \frac{L}{D} \, \frac{\rho v^2}{2}, \qquad h_f = \frac{\Delta p_f}{\rho g}$$
 
-Here $\Delta p_f$ is the pressure drop in Pa, $f$ is the friction factor (dimensionless), $L$ is the pipe length in m, $\rho$ is the fluid density in kg/m$^3$, and $h_f$ is the head loss in m. For water, $\rho \approx 1000$ kg/m$^3$ (typical).
+Here $\Delta p_f$ is the pressure drop in Pa, $f$ is the friction factor (dimensionless), $L$ is the pipe length in m, $\rho$ is the fluid density in $\text{kg/m}^3$, and $h_f$ is the head loss in m. For water, $\rho \approx 1000$ $\text{kg/m}^3$ (typical).
 
 **Local loss** through a valve or fitting:
 
@@ -68,7 +68,7 @@ Here $a$ is the pressure wave speed in m/s, $K_b$ is the bulk modulus of water (
 
 $$\Delta p = \rho \, a \, \Delta v \qquad \text{or, as head,} \qquad \Delta h = \frac{a \, \Delta v}{g}$$
 
-Here $\Delta p$ is the surge pressure rise in Pa, $\Delta v$ is the change in velocity in m/s, $\Delta h$ is the surge head in m, and $g = 9.81$ m/s$^2$ (Earth surface). The equation assumes the closure is rapid, meaning the closing time $t_c$ is no longer than the round trip of the wave:
+Here $\Delta p$ is the surge pressure rise in Pa, $\Delta v$ is the change in velocity in m/s, $\Delta h$ is the surge head in m, and $g = 9.81$ $\text{m/s}^2$ (Earth surface). The equation assumes the closure is rapid, meaning the closing time $t_c$ is no longer than the round trip of the wave:
 
 $$t_c \le t_{\mathrm{crit}} = \frac{2L}{a}$$
 
@@ -84,7 +84,7 @@ Here $v$ is the initial velocity in m/s, and $t_c$ is the closing time in s.
 
 **Part A, sizing.**
 
-**Given:** A water main carries $Q = 0.01571$ m$^3$/s. The design velocity is $v = 2.0$ m/s. The water is at about 20 C, with kinematic viscosity $\nu = 1.0 \times 10^{-6}$ m$^2$/s (typical).
+**Given:** A water main carries $Q = 0.01571$ $\text{m}^3$/s. The design velocity is $v = 2.0$ m/s. The water is at about 20 C, with kinematic viscosity $\nu = 1.0 \times 10^{-6}$ $\text{m}^2$/s (typical).
 
 **Find:** The inside diameter $D$ and the Reynolds number.
 
@@ -97,7 +97,7 @@ Here $v$ is the initial velocity in m/s, and $t_c$ is the closing time in s.
 
 **Part B, water hammer.**
 
-**Given:** The same pipe is $L = 1000$ m long and made of steel with $E = 2.0 \times 10^{11}$ Pa and wall thickness $e = 5$ mm. Water has $K_b = 2.2 \times 10^{9}$ Pa. A valve at the downstream end closes in $t_c = 0.5$ s. The steady pressure is 0.5 MPa, and the pipe is rated for 4.0 MPa. Use $g = 9.81$ m/s$^2$ (Earth surface).
+**Given:** The same pipe is $L = 1000$ m long and made of steel with $E = 2.0 \times 10^{11}$ Pa and wall thickness $e = 5$ mm. Water has $K_b = 2.2 \times 10^{9}$ Pa. A valve at the downstream end closes in $t_c = 0.5$ s. The steady pressure is 0.5 MPa, and the pipe is rated for 4.0 MPa. Use $g = 9.81$ $\text{m/s}^2$ (Earth surface).
 
 **Find:** The wave speed, the surge pressure, the surge head, and whether the pipe survives.
 
@@ -139,15 +139,15 @@ Denis Papin fitted a safety valve to a steam digester in the late 1600s, which m
 
 Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
-1. Water flows at 1.5 m/s in a pipe of diameter 0.050 m. Find the volume flow $Q$ in m$^3$/s.
+1. Water flows at 1.5 m/s in a pipe of diameter 0.050 m. Find the volume flow $Q$ in $\text{m}^3$/s.
 2. A fully open ball valve has $K = 0.1$. Water flows through it at $v = 2.0$ m/s. Find the pressure loss in pascals.
-3. Find the inside diameter of a pipe that carries 0.010 m$^3$/s at a design velocity of 2.0 m/s.
+3. Find the inside diameter of a pipe that carries 0.010 $\text{m}^3$/s at a design velocity of 2.0 m/s.
 4. A 100 m pipe has diameter 0.10 m and friction factor $f = 0.020$. Water flows at 2.0 m/s. Find the friction head loss in metres.
 5. A pressure wave travels at $a = 1200$ m/s. The velocity drops by $\Delta v = 1.0$ m/s in a rapid closure. Find the surge pressure in MPa.
 
 <details><summary>Answers</summary>
 
-1. $A = \pi (0.050)^2 / 4 = 0.0019635$ m$^2$, so $Q = 0.0019635 \times 1.5 = 0.0029$ m$^3$/s.
+1. $A = \pi (0.050)^2 / 4 = 0.0019635$ $\text{m}^2$, so $Q = 0.0019635 \times 1.5 = 0.0029$ $\text{m}^3$/s.
 2. $\Delta p = K \rho v^2 / 2 = 0.1 \times 1000 \times 2.0^2 / 2 = 200$ Pa.
 3. $D = \sqrt{4 \times 0.010 / (\pi \times 2.0)} = 0.080$ m.
 4. $h_f = f (L/D) v^2 / (2g) = 0.020 \times (100/0.10) \times 2.0^2 / (2 \times 9.81) = 4.1$ m.

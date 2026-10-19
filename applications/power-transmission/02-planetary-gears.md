@@ -59,7 +59,7 @@ $$
 \frac{\omega_s}{\omega_c} = 1 + \frac{N_r}{N_s}
 $$
 
-Output torque, with $\eta$ dimensionless and $T$ in N$\cdot$m, for the ring-fixed layout:
+Output torque, with $\eta$ dimensionless and $T$ in $\text{N}\cdot\text{m}$, for the ring-fixed layout:
 
 $$
 T_c = \eta\, \frac{\omega_s}{\omega_c}\, T_s
@@ -77,7 +77,7 @@ Three fixed-member cases, with $N_s = 24$, $N_p = 12$, $N_r = 48$, and sun input
 
 ## Worked example
 
-**Given.** A gearmotor drives a planetary reduction with a ring fixed to the housing. The sun has $N_s = 24$ teeth, each planet has $N_p = 12$ teeth, and the ring has $N_r = 48$ teeth. The motor turns the sun at 1500 rpm and delivers $T_s = 10$ N$\cdot$m. The mesh efficiency is $\eta = 0.97$ for the whole set.
+**Given.** A gearmotor drives a planetary reduction with a ring fixed to the housing. The sun has $N_s = 24$ teeth, each planet has $N_p = 12$ teeth, and the ring has $N_r = 48$ teeth. The motor turns the sun at 1500 rpm and delivers $T_s = 10$ $\text{N}\cdot\text{m}$. The mesh efficiency is $\eta = 0.97$ for the whole set.
 
 **Find.** The carrier speed, the output torque, and the output power.
 
@@ -91,13 +91,13 @@ Step 2. Speed ratio: $\omega_s / \omega_c = 1 + N_r / N_s = 1 + 48/24 = 3.0$.
 
 Step 3. Carrier speed: $n_c = 1500 / 3.0 = 500$ rpm, which is $\omega_c = 52.36$ rad/s.
 
-Step 4. Output torque: $T_c = 0.97 \times 3.0 \times 10 = 29.1$ N$\cdot$m.
+Step 4. Output torque: $T_c = 0.97 \times 3.0 \times 10 = 29.1$ $\text{N}\cdot\text{m}$.
 
 Step 5. Input power: $\omega_s = 1500 \times 2\pi / 60 = 157.1$ rad/s, so $P_{\mathrm{in}} = 10 \times 157.1 = 1571$ W.
 
 Step 6. Output power: $P_{\mathrm{out}} = 29.1 \times 52.36 = 1524$ W, which is $0.97 \times 1571$ W.
 
-**Answer.** Carrier speed 500 rpm. Output torque 29.1 N$\cdot$m. Output power about 1524 W.
+**Answer.** Carrier speed 500 rpm. Output torque 29.1 $\text{N}\cdot\text{m}$. Output power about 1524 W.
 
 **Sanity check.** The output speed is one third of the input, and the output torque is about three times the input, less the 3 percent loss. The output power equals $0.97$ times the input power, so the energy balance holds.
 

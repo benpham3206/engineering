@@ -69,7 +69,7 @@ Because crack growth under a stress range $\Delta\sigma$ follows a power law, th
 
 ## Key equations
 
-Symbols: $A_b$ = bolt cross-section area (m$^2$), $E$ = elastic modulus (Pa), $L$ = length of a bolt segment (m), $k_b$ and $k_m$ = bolt and member stiffness (N/m), $d$ = bolt nominal diameter (m), $d_w$ = diameter of the washer face or bearing area (m), $l$ = grip length, the total thickness of the clamped parts (m).
+Symbols: $A_b$ = bolt cross-section area ($\text{m}^2$), $E$ = elastic modulus (Pa), $L$ = length of a bolt segment (m), $k_b$ and $k_m$ = bolt and member stiffness (N/m), $d$ = bolt nominal diameter (m), $d_w$ = diameter of the washer face or bearing area (m), $l$ = grip length, the total thickness of the clamped parts (m).
 
 Bolt stiffness for a bolt with area $A$ over length $L$:
 
@@ -95,7 +95,7 @@ $$
 P_0 = \frac{F_i}{1 - C}
 $$
 
-Bolt stresses for a load cycling from 0 to $P$, with $A_t$ the tensile stress area (m$^2$):
+Bolt stresses for a load cycling from 0 to $P$, with $A_t$ the tensile stress area ($\text{m}^2$):
 
 $$
 \sigma_a = \frac{C P}{2 A_t}, \qquad \sigma_m = \frac{F_i}{A_t} + \frac{C P}{2 A_t}
@@ -127,7 +127,7 @@ Holds when: loads act on the stated plane, the joint stays elastic, the weld is 
 
 **Bolted joint, external load and fatigue.** A pressure cover is held by M10 grade 8.8 bolts through two steel plates, each 10 mm thick. Each bolt is tightened to a preload of 75 percent of its proof load. In service each bolt sees an external tensile load that cycles between 0 and 10 kN. Find the joint constant, the peak bolt force, the load that would separate the joint, and the fatigue safety factor.
 
-**Given:** $d = 10$ mm, $A_t = 58.0$ mm$^2$ (M10 coarse thread), $S_p = 580$ MPa, $E = 200$ GPa (a typical value for steel), grip $l = 20$ mm, $d_w = 1.5\,d$, $P = 10$ kN per bolt, $S_e = 129$ MPa (assumed corrected endurance limit for a rolled thread, a stated input for this example), $S_{ut} = 800$ MPa (assumed tensile strength, a stated input).
+**Given:** $d = 10$ mm, $A_t = 58.0$ $\text{mm}^2$ (M10 coarse thread), $S_p = 580$ MPa, $E = 200$ GPa (a typical value for steel), grip $l = 20$ mm, $d_w = 1.5\,d$, $P = 10$ kN per bolt, $S_e = 129$ MPa (assumed corrected endurance limit for a rolled thread, a stated input for this example), $S_{ut} = 800$ MPa (assumed tensile strength, a stated input).
 
 **Find:** $C$, $F_b$ at peak load, $P_0$, $n$.
 
@@ -206,10 +206,10 @@ check(P0 > 2 * P, "separation load well above working load")
 
 **Solution:**
 
-1. Throat area: $A = 0.707 \times 6 \times 200 = 848$ mm$^2$ (two welds of 100 mm).
+1. Throat area: $A = 0.707 \times 6 \times 200 = 848$ $\text{mm}^2$ (two welds of 100 mm).
 2. Direct shear: $\tau' = 20\,000 / 848 = 23.6$ MPa.
 3. Moment: $M = 20\,000 \times 150 = 3.00 \times 10^6$ N mm.
-4. Polar moment of lines: $J_u = 100 \times 100^2 / 2 + 100^3 / 6 = 6.67 \times 10^5$ mm$^3$. Then $J = 0.707 \times 6 \times 6.67\times10^5 = 2.83 \times 10^6$ mm$^4$.
+4. Polar moment of lines: $J_u = 100 \times 100^2 / 2 + 100^3 / 6 = 6.67 \times 10^5$ $\text{mm}^3$. Then $J = 0.707 \times 6 \times 6.67\times10^5 = 2.83 \times 10^6$ $\text{mm}^4$.
 5. Farthest end is at $x = 50$ mm, $y = 50$ mm, so $r = 70.7$ mm. Secondary shear: $\tau'' = 3.00 \times 10^6 \times 70.7 / 2.83 \times 10^6 = 75.0$ MPa, perpendicular to $r$.
 6. Components. The secondary shear at this end has components $53.0$ MPa along $x$ and $53.0$ MPa along $y$, and the $y$ component adds to the direct shear. Sum along $y$: $23.6 + 53.0 = 76.6$ MPa.
 7. Resultant: $\sqrt{53.0^2 + 76.6^2} = 93.2$ MPa.

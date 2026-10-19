@@ -55,7 +55,7 @@ where $F$ is the force along the slope in newtons (N), $W$ is the load's weight 
 
 $$d = \tfrac{1}{2} g t^2$$
 
-where $d$ is the distance in metres (m), $t$ is the time in seconds (s), and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface).
+where $d$ is the distance in metres (m), $t$ is the time in seconds (s), and $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface).
 
 ## Worked example
 

@@ -43,7 +43,7 @@ The ride and damping equations assume a linear spring and a linear viscous dampe
 - **Critical damping:** $c_{\mathrm{crit}} = 2\sqrt{k \, m_s}$, in N s/m.
 - **Damping ratio:** $\zeta = c / c_{\mathrm{crit}}$, dimensionless. Most road cars use $\zeta$ from 0.2 to 0.4, which gives a few bounces after a bump.
 - **Wheel hop frequency:** $f_w = \dfrac{1}{2\pi} \sqrt{\dfrac{k_t}{m_u}}$, in Hz, where $k_t$ is the tire stiffness in N/m and $m_u$ is the **unsprung mass** (wheel, hub, brake, and part of the links) in kg. Typical values are 10 to 15 Hz.
-- **Static deflection:** $\delta = m_s \, g / k$, in m, where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). The spring compresses by this much under the static load.
+- **Static deflection:** $\delta = m_s \, g / k$, in m, where $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface). The spring compresses by this much under the static load.
 - **Ideal Ackermann relation:** $\cot\delta_{\mathrm{out}} - \cot\delta_{\mathrm{in}} = t / L$, where $\delta_{\mathrm{in}}$ and $\delta_{\mathrm{out}}$ are the inner and outer wheel angles in radians, $t$ is the track width in m, and $L$ is the wheelbase in m. The inner wheel has the larger angle.
 - **Steering ratio:** $R_s = \theta_{\mathrm{wheel}} / \delta_{\mathrm{road}}$, dimensionless, where $\theta_{\mathrm{wheel}}$ is the steering wheel angle and $\delta_{\mathrm{road}}$ is the road wheel angle, both in the same unit. A ratio of 15:1 means that a 15 degree turn of the steering wheel turns the road wheels 1 degree.
 

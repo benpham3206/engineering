@@ -77,19 +77,19 @@ Archimedes' principle says a body in a fluid feels an upward buoyant force equal
 
 $$F_b = \rho_f \, g \, V_{\text{sub}}$$
 
-where $F_b$ is the buoyant force in newtons (N), $\rho_f$ is the fluid density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $V_{\text{sub}}$ is the volume of fluid displaced in cubic metres (m$^3$).
+where $F_b$ is the buoyant force in newtons (N), $\rho_f$ is the fluid density in kilograms per cubic metre ($\text{kg/m}^3$), $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface), and $V_{\text{sub}}$ is the volume of fluid displaced in cubic metres ($\text{m}^3$).
 
 A floating body sinks until the displaced fluid weighs as much as the body. The fraction of the body underwater is:
 
 $$\frac{V_{\text{sub}}}{V} = \frac{\rho_o}{\rho_f}$$
 
-where $V$ is the body's total volume in m$^3$ and $\rho_o$ is the body's density in kg/m$^3$. Typical values are $\rho_f = 1000\ \text{kg/m}^3$ for fresh water and $\rho_o = 2700\ \text{kg/m}^3$ for aluminium.
+where $V$ is the body's total volume in $\text{m}^3$ and $\rho_o$ is the body's density in $\text{kg/m}^3$. Typical values are $\rho_f = 1000\ \text{kg/m}^3$ for fresh water and $\rho_o = 2700\ \text{kg/m}^3$ for aluminium.
 
 ## Worked example
 
 ### Given
 
-A solid aluminium block has a mass of 1.00 kg and a density of 2700 kg/m$^3$. It hangs from a spring scale and is fully submerged in fresh water at 1000 kg/m$^3$.
+A solid aluminium block has a mass of 1.00 kg and a density of 2700 $\text{kg/m}^3$. It hangs from a spring scale and is fully submerged in fresh water at 1000 $\text{kg/m}^3$.
 
 ### Find
 
@@ -97,7 +97,7 @@ The buoyant force, the block's true weight, and the reading on the spring scale.
 
 ### Assumptions
 
-The block is fully submerged. The water is at rest and at room temperature. Water density is 1000 kg/m$^3$ and $g = 9.81\ \text{m/s}^2$ (Earth surface).
+The block is fully submerged. The water is at rest and at room temperature. Water density is 1000 $\text{kg/m}^3$ and $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 ### Solution
 
@@ -133,9 +133,9 @@ Archimedes' principle is still the first tool for buoyancy, from ship hulls to s
 
 1. Short answer. A steel ship floats even though steel is denser than water. Why? Explain in terms of average density and displaced water.
 
-2. Calculation. A solid 4.0 kg block with density 8000 kg/m$^3$ is fully submerged in fresh water. Find the volume, the buoyant force, the true weight, and the apparent weight. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+2. Calculation. A solid 4.0 kg block with density 8000 $\text{kg/m}^3$ is fully submerged in fresh water. Find the volume, the buoyant force, the true weight, and the apparent weight. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
-3. Calculation. A wooden block with density 600 kg/m$^3$ and volume 0.020 m$^3$ floats in fresh water. Find the fraction submerged, the submerged volume, and the block's weight. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+3. Calculation. A wooden block with density 600 $\text{kg/m}^3$ and volume 0.020 $\text{m}^3$ floats in fresh water. Find the fraction submerged, the submerged volume, and the block's weight. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 4. Calculation. Archimedes bounded $\pi$ between $3\tfrac{10}{71}$ and $3\tfrac{1}{7}$. Find the two decimal values and the gap between them.
 

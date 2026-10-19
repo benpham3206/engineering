@@ -50,7 +50,7 @@ $$T = \frac{P}{\omega}, \qquad \omega = \frac{2\pi n}{60}$$
 
 Here $P$ is power in watts (W), $\omega$ is angular speed in rad/s, and $T$ is torque in newton metres (N m).
 
-Twist of a uniform shaft of length $L$ (m) with shear modulus $G$ (Pa) and polar second moment of area $J$ (m$^4$):
+Twist of a uniform shaft of length $L$ (m) with shear modulus $G$ (Pa) and polar second moment of area $J$ ($\text{m}^4$):
 
 $$\theta = \frac{T L}{G J}, \qquad k_t = \frac{G J}{L}$$
 
@@ -122,7 +122,7 @@ The name honors Gerolamo Cardano, an Italian mathematician who described the joi
 1. $\omega = 2\pi(1000)/60 = 104.72$ rad/s, so $T = 2000/104.72 = 19.1$ N m.
 2. $\omega_{\mathrm{max}} = 1200/\cos 15^\circ = 1242$ rev/min.
 3. $1/\cos^2 25^\circ = 1.217$.
-4. $J = \pi(0.025)^4/32 = 3.83 \times 10^{-8}$ m$^4$, so $\theta = (50)(0.50)/(79\times10^9 \times 3.83\times10^{-8}) = 0.00825$ rad, which is $0.47^\circ$.
+4. $J = \pi(0.025)^4/32 = 3.83 \times 10^{-8}$ $\text{m}^4$, so $\theta = (50)(0.50)/(79\times10^9 \times 3.83\times10^{-8}) = 0.00825$ rad, which is $0.47^\circ$.
 
 </details>
 

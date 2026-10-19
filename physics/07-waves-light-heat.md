@@ -125,7 +125,7 @@ $$
 2. A string has tension $50$ N and mass per unit length $0.010$ kg/m. Find the wave speed.
 3. Light with a wavelength of $500$ nm in vacuum enters water with $n = 1.33$. Find its wavelength in water.
 4. Light travels from air ($n = 1.00$) into glass ($n = 1.50$) at an incidence angle of $30^\circ$. Find the refraction angle.
-5. A $2.0$ kg mass of water is heated from $20\,^\circ$C to $80\,^\circ$C. Find the heat added, in kilojoules.
+5. A $2.0$ kg mass of water is heated from $20\,^\circ\text{C}$ to $80\,^\circ\text{C}$. Find the heat added, in kilojoules.
 
 <details><summary>Answers</summary>
 

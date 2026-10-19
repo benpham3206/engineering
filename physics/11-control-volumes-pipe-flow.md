@@ -12,7 +12,7 @@ A control volume is a fixed region of space drawn around part of a system so tha
 - A **control volume** (CV) is a chosen region with a boundary called the **control surface**. Mass, momentum, and energy can enter or leave through the control surface. Everything inside is what you analyze.
 - A **system** is a fixed quantity of matter. A control volume is usually easier for engineers because devices like pumps, valves, and pipes stay in one place.
 - **Steady flow** means nothing inside the control volume changes with time. The mass, momentum, and energy inside stay constant, so what enters must equal what leaves.
-- **Volume flow rate** $Q$ is the volume of fluid passing a section per second (m$^3$/s). **Mean velocity** $V$ is $Q$ divided by the cross-section area $A$.
+- **Volume flow rate** $Q$ is the volume of fluid passing a section per second ($\text{m}^3$/s). **Mean velocity** $V$ is $Q$ divided by the cross-section area $A$.
 - **Mass flow rate** $\dot m$ is mass per second (kg/s). For incompressible flow, $\dot m = \rho Q$.
 - **Laminar** flow is smooth and layered. **Turbulent** flow is mixed and chaotic. The **Reynolds number** $\mathrm{Re}$ tells you which regime you are in. Below about 2300, pipe flow is laminar. Above about 4000, it is turbulent. Between them is a transition zone that engineers usually avoid in design.
 - **Head loss** $h_f$ is energy per unit weight lost to friction along a pipe, expressed as a height of fluid (m of water). It is the friction term Bernoulli's equation was missing.
@@ -72,7 +72,7 @@ Each fitting adds a loss:
 
 ## Key equations
 
-Symbols: $Q$ $=$ volume flow rate (m$^3$/s), $\dot m$ $=$ mass flow rate (kg/s), $A$ $=$ area (m$^2$), $V$ $=$ mean velocity (m/s), $\rho$ $=$ density (kg/m$^3$), $D$ $=$ pipe diameter (m), $\mu$ $=$ dynamic viscosity (Pa s), $L$ $=$ pipe length (m), $g$ $=$ local gravitational acceleration (9.81 m/s$^2$ or 32.2 ft/s$^2$ at Earth's surface), $\varepsilon$ $=$ wall roughness (m), $h_f$ $=$ friction head loss (m), $f$ $=$ Darcy friction factor (dimensionless), $K$ $=$ minor loss coefficient (dimensionless).
+Symbols: $Q$ $=$ volume flow rate ($\text{m}^3$/s), $\dot m$ $=$ mass flow rate (kg/s), $A$ $=$ area ($\text{m}^2$), $V$ $=$ mean velocity (m/s), $\rho$ $=$ density ($\text{kg/m}^3$), $D$ $=$ pipe diameter (m), $\mu$ $=$ dynamic viscosity (Pa s), $L$ $=$ pipe length (m), $g$ $=$ local gravitational acceleration (9.81 $\text{m/s}^2$ or 32.2 $\text{ft/s}^2$ at Earth's surface), $\varepsilon$ $=$ wall roughness (m), $h_f$ $=$ friction head loss (m), $f$ $=$ Darcy friction factor (dimensionless), $K$ $=$ minor loss coefficient (dimensionless).
 
 Volume and mass flow rate:
 
@@ -118,18 +118,18 @@ $$
 
 ## Worked example
 
-**Water pipeline section.** Water at 20 °C flows through 60 m of commercial steel pipe with inside diameter 0.050 m. The volume flow rate is 0.0020 m$^3$/s. Find the mean velocity, the Reynolds number, the friction factor, the head loss, and the pressure drop.
+**Water pipeline section.** Water at 20 °C flows through 60 m of commercial steel pipe with inside diameter 0.050 m. The volume flow rate is 0.0020 $\text{m}^3$/s. Find the mean velocity, the Reynolds number, the friction factor, the head loss, and the pressure drop.
 
-**Given:** $L = 60$ m, $D = 0.050$ m, $Q = 0.0020$ m$^3$/s, $\rho = 998$ kg/m$^3$, $\mu = 1.00 \times 10^{-3}$ Pa s, $\varepsilon = 0.045$ mm (typical value for commercial steel).
+**Given:** $L = 60$ m, $D = 0.050$ m, $Q = 0.0020$ $\text{m}^3$/s, $\rho = 998$ $\text{kg/m}^3$, $\mu = 1.00 \times 10^{-3}$ Pa s, $\varepsilon = 0.045$ mm (typical value for commercial steel).
 
 **Find:** $V$, $\mathrm{Re}$, $f$, $h_f$, and $\Delta p$ along the pipe.
 
-**Assumptions:** steady, fully developed, incompressible flow. Gravity is the Earth surface value, $g = 9.81$ m/s$^2$. Horizontal pipe, so the pressure drop is entirely due to friction. Minor losses ignored for this section.
+**Assumptions:** steady, fully developed, incompressible flow. Gravity is the Earth surface value, $g = 9.81$ $\text{m/s}^2$. Horizontal pipe, so the pressure drop is entirely due to friction. Minor losses ignored for this section.
 
 **Solution:**
 
 1. Area and velocity:
-   $A = \pi D^2 / 4 = \pi (0.050)^2 / 4 = 1.963 \times 10^{-3}$ m$^2$.
+   $A = \pi D^2 / 4 = \pi (0.050)^2 / 4 = 1.963 \times 10^{-3}$ $\text{m}^2$.
    $V = Q / A = 0.0020 / 1.963 \times 10^{-3} = 1.019$ m/s.
 2. Reynolds number:
    $\mathrm{Re} = \rho V D / \mu = 998 \times 1.019 \times 0.050 / 1.00\times10^{-3} = 5.08 \times 10^4$.
@@ -147,7 +147,7 @@ $$
 
 ## Practice
 
-1. Water flows at 2.0 m/s in a pipe with inside diameter 0.030 m. Find the mass flow rate in kg/s, using $\rho = 998$ kg/m$^3$.
+1. Water flows at 2.0 m/s in a pipe with inside diameter 0.030 m. Find the mass flow rate in kg/s, using $\rho = 998$ $\text{kg/m}^3$.
 2. Water at 20 °C flows at 1.0 m/s in a 0.020 m pipe. Find the Reynolds number.
 3. Laminar oil flow has $\mathrm{Re} = 1500$, $L = 30$ m, $D = 0.020$ m, and $V = 1.0$ m/s. Find the friction factor and the head loss in m.
 4. A sharp-edged entrance with $K = 0.5$ carries water at 2.0 m/s. Find the minor head loss in m.

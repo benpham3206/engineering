@@ -44,11 +44,11 @@ The air cannot stop completely behind the rotor. If it did, it would block the f
 
 ## Key equations
 
-Kinetic power in the wind, in watts, for air with cross-sectional area $A$ in square metres (m$^2$) moving at speed $v$ in metres per second (m/s):
+Kinetic power in the wind, in watts, for air with cross-sectional area $A$ in square metres ($\text{m}^2$) moving at speed $v$ in metres per second (m/s):
 
 $$P_{\mathrm{wind}} = \frac{1}{2} \rho A v^3$$
 
-where $\rho$ is the air density in kilograms per cubic metre (kg/m$^3$). At sea level on Earth and 15 °C, $\rho \approx 1.225\ \text{kg}/\text{m}^3$ (standard value). The **swept area** of a rotor of diameter $D$ in metres is $A = \pi D^2 / 4$.
+where $\rho$ is the air density in kilograms per cubic metre ($\text{kg/m}^3$). At sea level on Earth and 15 °C, $\rho \approx 1.225\ \text{kg}/\text{m}^3$ (standard value). The **swept area** of a rotor of diameter $D$ in metres is $A = \pi D^2 / 4$.
 
 Turbine output, in watts, with power coefficient $C_p$:
 

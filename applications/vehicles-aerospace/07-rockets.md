@@ -48,7 +48,7 @@ $$
 F = \dot m\, v_e + (p_e - p_a)\, A_e
 $$
 
-- $F$ is thrust (N). $\dot m$ is propellant mass flow rate (kg/s). $v_e$ is exhaust velocity at the nozzle exit (m/s). $p_e$ is exit pressure (Pa). $p_a$ is ambient pressure (Pa), zero in vacuum and 101 325 Pa at sea level on Earth. $A_e$ is nozzle exit area (m$^2$).
+- $F$ is thrust (N). $\dot m$ is propellant mass flow rate (kg/s). $v_e$ is exhaust velocity at the nozzle exit (m/s). $p_e$ is exit pressure (Pa). $p_a$ is ambient pressure (Pa), zero in vacuum and 101 325 Pa at sea level on Earth. $A_e$ is nozzle exit area ($\text{m}^2$).
 - Assumptions: steady flow, uniform conditions across the exit plane, one-dimensional flow, and no external forces on the gas after it leaves the nozzle.
 
 **Specific impulse**, a measure of how efficiently a propellant makes thrust.
@@ -57,7 +57,7 @@ $$
 I_{\mathrm{sp}} = \frac{F}{\dot m\, g_0} \qquad v_e = I_{\mathrm{sp}}\, g_0 \text{ when } p_e = p_a
 $$
 
-- $I_{\mathrm{sp}}$ is specific impulse (s). $g_0 = 9.80665$ m/s$^2$ is standard gravity. The second form applies only when the pressure term in the thrust equation is zero.
+- $I_{\mathrm{sp}}$ is specific impulse (s). $g_0 = 9.80665$ $\text{m/s}^2$ is standard gravity. The second form applies only when the pressure term in the thrust equation is zero.
 - Assumptions: the pressure term is zero for the second form, and the flow is steady. For the first form, the thrust and mass flow are both measured over the same period.
 
 Choked mass flow through the throat, with an ideal gas.
@@ -66,7 +66,7 @@ $$
 \dot m = \frac{A_t\, p_c\, \Gamma}{\sqrt{R\, T_c}} \qquad \Gamma = \sqrt{\gamma}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{2(\gamma-1)}}
 $$
 
-- $A_t$ is throat area (m$^2$). $p_c$ is chamber pressure (Pa). $R$ is the specific gas constant (J/(kg K)), equal to the universal gas constant 8314.46 J/(kmol K) divided by the molar mass in kg/kmol. $T_c$ is chamber temperature (K). $\gamma$ is the ratio of specific heats (dimensionless).
+- $A_t$ is throat area ($\text{m}^2$). $p_c$ is chamber pressure (Pa). $R$ is the specific gas constant (J/(kg K)), equal to the universal gas constant 8314.46 J/(kmol K) divided by the molar mass in kg/kmol. $T_c$ is chamber temperature (K). $\gamma$ is the ratio of specific heats (dimensionless).
 - Assumptions: ideal gas with constant $\gamma$, isentropic flow from chamber to throat, no friction or heat loss, and the throat flow exactly at Mach 1.
 
 **Exit velocity** for an ideal nozzle expansion.
@@ -101,7 +101,7 @@ $$
 r = a\, p_c^{\,n}
 $$
 
-- $r$ is burn rate, the speed at which the grain surface recedes (m/s). $a$ is a constant with units of (m/s)/Pa$^n$ and is set by the propellant. $p_c$ is chamber pressure (Pa). $n$ is the pressure exponent (dimensionless), often between 0.3 and 0.5 for typical propellants.
+- $r$ is burn rate, the speed at which the grain surface recedes (m/s). $a$ is a constant with units of $(\text{m/s})/\text{Pa}^n$ and is set by the propellant. $p_c$ is chamber pressure (Pa). $n$ is the pressure exponent (dimensionless), often between 0.3 and 0.5 for typical propellants.
 - Assumptions: the pressure is uniform in the port, the propellant composition is fixed, and $a$ and $n$ hold over the pressure range used.
 
 The rocket equation, which turns exhaust speed into velocity change, is derived in [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md). This lesson covers the hardware that sets $v_e$.
@@ -140,7 +140,7 @@ F_{\text{sl}} = 100 \times 2838 + (0.10\times10^6 - 101\,325)(0.230) = 283.5\ \t
 $$
 $I_{\mathrm{sp},\text{sl}} = 283\,500 / 980.665 = 289$ s.
 
-**Answer.** (a) $A_t = 0.0253$ m$^2$, a throat diameter of about 0.18 m. (b) $v_e = 2838$ m/s. (c) $M_e = 3.21$ and $A_e = 0.230$ m$^2$, an exit diameter of about 0.54 m. (d) Vacuum: $F = 307$ kN and $I_{\mathrm{sp}} = 313$ s. Sea level: $F = 283$ kN and $I_{\mathrm{sp}} = 289$ s.
+**Answer.** (a) $A_t = 0.0253$ $\text{m}^2$, a throat diameter of about 0.18 m. (b) $v_e = 2838$ m/s. (c) $M_e = 3.21$ and $A_e = 0.230$ $\text{m}^2$, an exit diameter of about 0.54 m. (d) Vacuum: $F = 307$ kN and $I_{\mathrm{sp}} = 313$ s. Sea level: $F = 283$ kN and $I_{\mathrm{sp}} = 289$ s.
 
 **Sanity check.** Vacuum specific impulse of 313 s is in the range of kerosene and oxygen engines. The sea-level value is lower because the exit pressure sits slightly below ambient, so the engine is overexpanded there and loses thrust. Real engines run below these ideal values because of friction, heat loss, and incomplete mixing.
 
@@ -169,7 +169,7 @@ Konstantin Tsiolkovsky published the basis of rocket theory in 1903. Robert Godd
 
 1. An engine has $I_{\mathrm{sp}} = 300$ s. Find the effective exhaust velocity $I_{\mathrm{sp}} g_0$ in m/s. This equals the physical exit velocity only when $p_e = p_a$.
 2. An engine has $\dot m = 50$ kg/s and an effective exhaust velocity $I_{\mathrm{sp}} g_0 = 2900$ m/s, which already includes any exit-pressure thrust. Find the thrust in kN.
-3. A throat carries $\dot m = 20$ kg/s at $p_c = 5.0$ MPa and $T_c = 3300$ K, with $R = 350$ J/(kg K) and $\gamma = 1.2$. Find the throat area in cm$^2$.
+3. A throat carries $\dot m = 20$ kg/s at $p_c = 5.0$ MPa and $T_c = 3300$ K, with $R = 350$ J/(kg K) and $\gamma = 1.2$. Find the throat area in $\text{cm}^2$.
 4. An engine makes 100 kN of thrust at $I_{\mathrm{sp}} = 280$ s. Find the mass flow rate in kg/s.
 5. A nozzle has an area ratio of 16 and $\gamma = 1.2$. Find the exit Mach number.
 
@@ -177,7 +177,7 @@ Konstantin Tsiolkovsky published the basis of rocket theory in 1903. Robert Godd
 
 1. $I_{\mathrm{sp}} g_0 = 300 \times 9.80665 = 2942$ m/s (effective exhaust velocity)
 2. $F = \dot m \times I_{\mathrm{sp}} g_0 = 50 \times 2900 = 145\,000$ N, which is 145 kN
-3. $\Gamma = 0.6485$, so $A_t = 20 \times \sqrt{350 \times 3300} / (5.0\times10^6 \times 0.6485) = 6.63\times10^{-3}$ m$^2$, which is 66.3 cm$^2$
+3. $\Gamma = 0.6485$, so $A_t = 20 \times \sqrt{350 \times 3300} / (5.0\times10^6 \times 0.6485) = 6.63\times10^{-3}$ $\text{m}^2$, which is 66.3 $\text{cm}^2$
 4. $\dot m = 100\,000 / (280 \times 9.80665) = 36.4$ kg/s
 5. $M_e = 3.60$
 

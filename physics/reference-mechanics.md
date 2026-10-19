@@ -153,9 +153,9 @@ expect(exp(q(0.2, "") * 2 * pi), "3.514")
 
 ## Section properties
 
-Area $A$ (m$^{2}$), centroid, and second moments of area $I$ (m$^{4}$) about the centroidal axis. Polar moment $J$ (m$^{4}$) is about the centroid for circular shafts.
+Area $A$ ($\text{m}^{2}$), centroid, and second moments of area $I$ ($\text{m}^{4}$) about the centroidal axis. Polar moment $J$ ($\text{m}^{4}$) is about the centroid for circular shafts.
 
-| Section | $A$ | $I$ about centroid | $S = I/c$ (m$^{3}$) | Other |
+| Section | $A$ | $I$ about centroid | $S = I/c$ ($\text{m}^{3}$) | Other |
 |---|---|---|---|---|
 | Rectangle, width $b$, depth $h$ (bending about axis parallel to $b$) | $bh$ | $\dfrac{bh^3}{12}$ | $\dfrac{bh^2}{6}$ | Centroid at $h/2$ from base |
 | Rectangle about its base edge | $bh$ | $\dfrac{bh^3}{3}$ | | Parallel axis at base |
@@ -174,18 +174,18 @@ I-beam approximation (idealized section: two rectangular flanges of width $b$ an
 
 $$I_x = \frac{bH^3 - (b - t_w)h^3}{12} \qquad A \approx 2bt_f + t_w h$$
 
-- Example: $H = 200$ mm, $b = 100$ mm, $t_f = 10$ mm, $t_w = 6$ mm. Then $h = 180$ mm, $I_x = 2.10 \times 10^7$ mm$^{4}$ ($2098$ cm$^{4}$), $A = 3080$ mm$^{2}$.
+- Example: $H = 200$ mm, $b = 100$ mm, $t_f = 10$ mm, $t_w = 6$ mm. Then $h = 180$ mm, $I_x = 2.10 \times 10^7$ $\text{mm}^{4}$ ($2098$ $\text{cm}^{4}$), $A = 3080$ $\text{mm}^{2}$.
 - Root fillets and rolled tolerances are ignored. Use catalog values for a real rolled shape.
 
 Variables:
 
 | Symbol | Meaning | SI unit |
 |---|---|---|
-| $A$, $A_i$ | cross-section area, and the area of part $i$ of a composite | m$^{2}$ |
+| $A$, $A_i$ | cross-section area, and the area of part $i$ of a composite | $\text{m}^{2}$ |
 | $\bar{y}$, $y_i$ | centroid height of the composite, and of part $i$ | m |
-| $I$, $I_c$, $I_x$ | second moment of area about a parallel axis, the centroidal axis, and the strong axis | m$^{4}$ |
-| $J$ | polar second moment of area | m$^{4}$ |
-| $S$ | section modulus $I/c$, with $c$ the distance to the extreme fibre | m$^{3}$ |
+| $I$, $I_c$, $I_x$ | second moment of area about a parallel axis, the centroidal axis, and the strong axis | $\text{m}^{4}$ |
+| $J$ | polar second moment of area | $\text{m}^{4}$ |
+| $S$ | section modulus $I/c$, with $c$ the distance to the extreme fibre | $\text{m}^{3}$ |
 | $d$ | distance between the centroidal axis and the parallel axis; in the section table, a solid circle's diameter | m |
 | $D$, $d_i$ | outer and inner diameter of a hollow circle | m |
 | $b$, $H$, $h$ | width (rectangle or flange), overall depth of the I-beam, depth of a rectangle or clear web depth | m |
@@ -226,7 +226,7 @@ Variables:
 |---|---|---|
 | $x$, $x_0$ | position now and at $t = 0$ | m |
 | $v$, $v_0$ | velocity now and at $t = 0$ | m/s |
-| $a$ | constant acceleration | m/s$^{2}$ |
+| $a$ | constant acceleration | $\text{m/s}^{2}$ |
 | $t$ | time | s |
 
 Holds when: acceleration is constant along the path.
@@ -243,10 +243,10 @@ Variables:
 |---|---|---|
 | $\mathbf{F}$ | external force on the body | N |
 | $m$ | mass | kg |
-| $\mathbf{a}$ | acceleration of the centre of mass | m/s$^{2}$ |
+| $\mathbf{a}$ | acceleration of the centre of mass | $\text{m/s}^{2}$ |
 | $M_G$ | moment about the centre of mass | N m |
-| $I_G$ | mass moment of inertia about the centre of mass | kg m$^{2}$ |
-| $\alpha$ | angular acceleration | rad/s$^{2}$ |
+| $I_G$ | mass moment of inertia about the centre of mass | kg $\text{m}^{2}$ |
+| $\alpha$ | angular acceleration | $\text{rad/s}^{2}$ |
 
 Holds when: inertial frame, $v \ll c$, and the body mass is constant.
 Breaks when: mass changes (rockets: use $F = \dot{m}v$ terms), relativistic speeds, or non-inertial frames without fictitious forces.
@@ -260,7 +260,7 @@ With non-conservative work (friction, damping):
 
 $$K_1 + U_1 + W_{\text{nc}} = K_2 + U_2$$
 
-- Gravity near a surface: $U = mgh$, with $g$ the local gravitational acceleration. Earth: $g = 9.81$ m/s$^{2}$ (typical).
+- Gravity near a surface: $U = mgh$, with $g$ the local gravitational acceleration. Earth: $g = 9.81$ $\text{m/s}^{2}$ (typical).
 - Spring: $U = \tfrac{1}{2}kx^2$.
 
 Variables:
@@ -272,7 +272,7 @@ Variables:
 | $U$, $U_1$, $U_2$ | potential energy, at state 1 and state 2 | J |
 | $m$ | mass | kg |
 | $v$ | speed | m/s |
-| $g$ | local gravitational acceleration | m/s$^{2}$ |
+| $g$ | local gravitational acceleration | $\text{m/s}^{2}$ |
 | $h$ | height above a chosen datum | m |
 | $k$ | spring stiffness | N/m |
 | $x$ | spring stretch from its free length | m |
@@ -307,7 +307,7 @@ Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $
 
 ### Rotation
 
-- Angular position $\theta$ (rad), velocity $\omega$ (rad/s), acceleration $\alpha$ (rad/s$^{2}$).
+- Angular position $\theta$ (rad), velocity $\omega$ (rad/s), acceleration $\alpha$ ($\text{rad/s}^{2}$).
 - Rolling without slip on a surface: $v_G = \omega r$, $a_G = \alpha r$.
 - Rotational kinetic energy about the centre: $K_{\text{rot}} = \tfrac{1}{2}I_G \omega^2$.
 - Total planar kinetic energy: $K = \tfrac{1}{2}m v_G^2 + \tfrac{1}{2}I_G \omega^2$.
@@ -316,7 +316,7 @@ Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $
 Holds when: planar motion, rigid body, rolling without slip where stated.
 Breaks when: 3D rotation (inertia becomes a tensor and $\omega$ and angular momentum may not align), or slipping (friction work changes the rolling relation).
 
-Worked result. A 10 kg solid disk of radius 0.3 m, pulled with a horizontal 50 N force at its centre and rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ m/s$^{2}$. It needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor on Earth with $N = 98.1$ N.
+Worked result. A 10 kg solid disk of radius 0.3 m, pulled with a horizontal 50 N force at its centre and rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ $\text{m/s}^{2}$. It needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor on Earth with $N = 98.1$ N.
 
 <details><summary>Verification</summary>
 
@@ -338,7 +338,7 @@ expect(f / N, "0.17")
 
 ### Mass moments of inertia (typical formulas, body mass $m$)
 
-| Body | Axis | $I$ (kg m$^{2}$) |
+| Body | Axis | $I$ (kg $\text{m}^{2}$) |
 |---|---|---|
 | Thin rod, length $L$ | Through centre, perpendicular to rod | $\dfrac{mL^2}{12}$ |
 | Thin rod, length $L$ | Through one end, perpendicular to rod | $\dfrac{mL^2}{3}$ |
@@ -386,7 +386,7 @@ Variables:
 |---|---|---|
 | $\sigma$, $\tau$ | normal and shear stress | Pa |
 | $F$, $V$ | normal and shear force on the cut | N |
-| $A$ | area of the cut | m$^{2}$ |
+| $A$ | area of the cut | $\text{m}^{2}$ |
 | $\varepsilon$ | normal strain | dimensionless |
 | $\delta$, $L$ | change in length and original length | m |
 | $\gamma$ | shear strain | rad |
@@ -412,7 +412,7 @@ Variables:
 |---|---|---|
 | $\sigma$ | axial normal stress | Pa |
 | $P$ | axial force | N |
-| $A$ | cross-section area | m$^{2}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 | $\delta$, $L$ | elongation and length | m |
 | $E$ | Young's modulus | Pa |
 
@@ -434,7 +434,7 @@ Variables:
 | $\tau$, $\tau_{\max}$ | shear stress at radius $r$, and at the surface | Pa |
 | $T$ | torque | N m |
 | $r$, $c$ | radius to the point, outer radius | m |
-| $J$ | polar second moment of area | m$^{4}$ |
+| $J$ | polar second moment of area | $\text{m}^{4}$ |
 | $\phi$ | angle of twist | rad |
 | $L$ | shaft length | m |
 | $G$ | shear modulus | Pa |
@@ -470,7 +470,7 @@ Transverse shear stress (beams):
 
 $$\tau = \frac{VQ}{Ib}$$
 
-- $V$ shear force (N), $Q = \int y\, dA$ first moment of area above the cut (m$^{3}$), $b$ width at the cut (m).
+- $V$ shear force (N), $Q = \int y\, dA$ first moment of area above the cut ($\text{m}^{3}$), $b$ width at the cut (m).
 - Rectangle: $\tau_{\max} = \dfrac{3V}{2A}$ at the neutral axis.
 - Circle: $\tau_{\max} = \dfrac{4V}{3A}$.
 
@@ -481,13 +481,13 @@ Variables:
 | $\sigma$, $\sigma_{\max}$ | bending stress at $y$, and at the extreme fibre | Pa |
 | $M$ | bending moment | N m |
 | $y$, $c$ | distance from the neutral axis, to the extreme fibre | m |
-| $I$ | second moment of area about the neutral axis | m$^{4}$ |
-| $S$ | section modulus $I/c$ | m$^{3}$ |
+| $I$ | second moment of area about the neutral axis | $\text{m}^{4}$ |
+| $S$ | section modulus $I/c$ | $\text{m}^{3}$ |
 | $\tau$, $\tau_{\max}$ | transverse shear stress, and its peak | Pa |
 | $V$ | shear force | N |
-| $Q$ | first moment of the area beyond the cut | m$^{3}$ |
+| $Q$ | first moment of the area beyond the cut | $\text{m}^{3}$ |
 | $b$ | width of the section at the cut | m |
-| $A$ | cross-section area | m$^{2}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 
 Holds when: slender beam (span over depth roughly 10 or more), prismatic, plane sections stay plane, linear elastic.
 Breaks when: deep or short beams (shear is significant; use shear deformation or Timoshenko theory), thin-walled sections (shear flow), or stress concentrations at supports and load points.
@@ -605,9 +605,9 @@ Variables:
 | $\tau_{\max}$ | maximum shear stress | Pa |
 | $P$ | axial force | N |
 | $M$ | bending moment | N m |
-| $A$ | cross-section area | m$^{2}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 | $c$ | distance from the neutral axis to the extreme fibre | m |
-| $I$ | second moment of area about the neutral axis | m$^{4}$ |
+| $I$ | second moment of area about the neutral axis | $\text{m}^{4}$ |
 
 Holds when: ductile material, static load, yield is the failure mode.
 Breaks when: brittle materials (use maximum normal stress or Mohr-Coulomb), fatigue (use a fatigue criterion such as Goodman or Soderberg), or buckling and fracture-mechanics failures.
@@ -631,7 +631,7 @@ check(tresca > vm, "Tresca equivalent stress is the larger, so the more conserva
 
 ## Beams
 
-Deflection and moment formulas for prismatic beams, linear elastic, small slope. $E$ in Pa, $I$ in m$^{4}$, $L$ in m.
+Deflection and moment formulas for prismatic beams, linear elastic, small slope. $E$ in Pa, $I$ in $\text{m}^{4}$, $L$ in m.
 
 | Case | Max moment | Location | Max deflection | Location |
 |---|---|---|---|---|
@@ -670,7 +670,7 @@ Euler critical load for a straight, slender, elastic column with effective lengt
 
 $$P_{cr} = \frac{\pi^2 EI}{(KL)^2} \qquad \sigma_{cr} = \frac{\pi^2 E}{(KL/r)^2} \qquad r = \sqrt{\frac{I}{A}}$$
 
-Here $P_{cr}$ is in N, $E$ in Pa, $I$ the smallest second moment of area in m$^{4}$, $L$ in m, $r$ the radius of gyration in m.
+Here $P_{cr}$ is in N, $E$ in Pa, $I$ the smallest second moment of area in $\text{m}^{4}$, $L$ in m, $r$ the radius of gyration in m.
 
 | End condition | $K$ (ideal) | Shape of buckled column |
 |---|---|---|
@@ -693,8 +693,8 @@ Variables:
 | $P_{cr}$ | critical buckling load | N |
 | $\sigma_{cr}$ | critical average stress $P_{cr}/A$ | Pa |
 | $E$ | Young's modulus | Pa |
-| $I$ | smallest second moment of area of the section | m$^{4}$ |
-| $A$ | cross-section area | m$^{2}$ |
+| $I$ | smallest second moment of area of the section | $\text{m}^{4}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 | $K$ | effective-length factor for the end conditions | dimensionless |
 | $L$ | column length | m |
 | $r$ | radius of gyration $\sqrt{I/A}$ | m |
@@ -964,11 +964,11 @@ Vibration and control:
 
 ## Sanity checks
 
-- Earth gravity is about 9.81 m/s$^{2}$ (typical, varies from about 9.78 to 9.83 with latitude and altitude). Use $g$ local for other bodies.
-- $1$ MPa $= 10^6$ N/m$^{2}$. In US units, 1 MPa is about 145 psi.
+- Earth gravity is about 9.81 $\text{m/s}^{2}$ (typical, varies from about 9.78 to 9.83 with latitude and altitude). Use $g$ local for other bodies.
+- $1$ MPa $= 10^6$ $\text{N/m}^{2}$. In US units, 1 MPa is about 145 psi.
 - Steel at 200 MPa carries strain $200 \times 10^6 / 200 \times 10^9 = 1 \times 10^{-3}$. That is 1 mm per metre.
 - Kinetic energy of 1 kg at 1 m/s is 0.5 J. A 1 kg object at 10 m/s carries 50 J.
-- Stress on a 1 cm$^{2}$ area of 1 MPa corresponds to 100 N of force.
+- Stress on a 1 $\text{cm}^{2}$ area of 1 MPa corresponds to 100 N of force.
 - Shear yield of a ductile metal is about 0.58 times its tensile yield (von Mises, $\sigma_y/\sqrt{3}$). Tresca gives 0.5.
 - For mild steel, a column with $KL/r$ above about 126 is Euler-governed. Below that, use the Johnson parabola, because Euler overpredicts the load.
 - Damping ratio of most structures is roughly 0.01 to 0.05 (typical), so resonance peaks are large unless damping is added.

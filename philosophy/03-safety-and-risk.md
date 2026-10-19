@@ -68,7 +68,7 @@ $$
 \sigma = \frac{F}{A}
 $$
 
-where $F$ is the force (N, or lbf) and $A$ is the cross-sectional area (m$^2$, or in$^2$).
+where $F$ is the force (N, or lbf) and $A$ is the cross-sectional area ($\text{m}^2$, or $\text{in}^2$).
 
 ## Worked example
 

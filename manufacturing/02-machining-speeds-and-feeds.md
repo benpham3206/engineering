@@ -60,7 +60,7 @@ $$f_m = 0.002 \times 4 \times 2292 = 18.34 \text{ ipm}$$
 3. Material removal rate:
 $$\text{MRR} = 0.25 \times 0.5 \times 18.34 = 2.29 \text{ in}^3/\text{min}$$
 
-**Answer:** $N \approx 2290$ rpm (about 2292 rpm), $f_m \approx 18.3$ ipm, MRR $\approx 2.29$ in$^3$/min.
+**Answer:** $N \approx 2290$ rpm (about 2292 rpm), $f_m \approx 18.3$ ipm, MRR $\approx 2.29$ $\text{in}^3$/min.
 
 **Sanity check:** Put the same numbers into SI. Convert $V = 300$ SFM to about $91.4$ m/min and $D = 0.5$ in to $12.7$ mm. Then $N = 1000 \times 91.4 / (\pi \times 12.7) \approx 2292$ rpm, which matches.
 
@@ -71,7 +71,7 @@ $$\text{MRR} = 0.25 \times 0.5 \times 18.34 = 2.29 \text{ in}^3/\text{min}$$
 1. A $1/2$ in end mill runs at $V = 400$ SFM. What is the spindle speed in rpm?
 2. A 10 mm drill runs at $V = 25$ m/min. What is the spindle speed in rpm? Give one decimal place.
 3. A 4-flute cutter has $f_z = 0.003$ in/tooth and runs at 2000 rpm. What is the feed rate in ipm?
-4. A milling pass has $a_p = 0.2$ in, $a_e = 0.4$ in, and $f_m = 20$ ipm. What is the MRR in in$^3$/min?
+4. A milling pass has $a_p = 0.2$ in, $a_e = 0.4$ in, and $f_m = 20$ ipm. What is the MRR in $\text{in}^3$/min?
 5. A $1/4$ in drill is run at 100 SFM. What is the spindle speed in rpm? Round to the nearest whole rpm.
 
 <details><summary>Answers</summary>
@@ -79,7 +79,7 @@ $$\text{MRR} = 0.25 \times 0.5 \times 18.34 = 2.29 \text{ in}^3/\text{min}$$
 1. 3056 rpm
 2. 795.8 rpm
 3. 24.0 ipm
-4. 1.6 in$^3$/min
+4. 1.6 $\text{in}^3$/min
 5. 1528 rpm
 
 </details>
