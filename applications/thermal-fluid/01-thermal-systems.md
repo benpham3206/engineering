@@ -21,7 +21,7 @@ fluid to cold fluid. The same few ideas cover all three.
   Typical $h$ is about 5-25 W/(m$^2$ K) for natural air convection and higher for forced air.
 - **Radiation**: heat carried by electromagnetic waves. It matters at high temperature or in vacuum.
   This lesson uses conduction and convection only.
-- **Thermal resistance** $R_{th}$ (kelvin per watt, K/W): a path's resistance to heat flow. Layers in
+- **Thermal resistance** $R_{\mathrm{th}}$ (kelvin per watt, K/W): a path's resistance to heat flow. Layers in
   series add their resistances, just like resistors in series.
 - **Thermal analogy**: temperature difference plays the role of voltage, heat rate plays the role of
   current, and thermal resistance plays the role of electrical resistance.
@@ -34,10 +34,10 @@ fluid to cold fluid. The same few ideas cover all three.
 
 - Conduction through a plane wall of area $A$ (m$^2$) and thickness $L$ (m):
   $\dot{Q} = \dfrac{k A \Delta T}{L}$
-- Thermal resistance of conduction: $R_{cond} = \dfrac{L}{k A}$ (K/W)
+- Thermal resistance of conduction: $R_{\mathrm{cond}} = \dfrac{L}{k A}$ (K/W)
 - Convection: $\dot{Q} = h A \Delta T$, with $h$ in W/(m$^2$ K).
-- Thermal resistance of convection: $R_{conv} = \dfrac{1}{h A}$ (K/W)
-- Layers in series: $R_{tot} = \sum R_i$, and $\dot{Q} = \dfrac{\Delta T_{total}}{R_{tot}}$.
+- Thermal resistance of convection: $R_{\mathrm{conv}} = \dfrac{1}{h A}$ (K/W)
+- Layers in series: $R_{\mathrm{tot}} = \sum R_i$, and $\dot{Q} = \dfrac{\Delta T_{\mathrm{total}}}{R_{\mathrm{tot}}}$.
 
 ## Worked example
 
@@ -51,18 +51,18 @@ surface temperature.
 
 **Solution:**
 
-1. Conduction resistance: $R_{cond} = L / (kA) = 0.20 / (0.80 \times 10) = 0.025\ \text{K/W}$.
-2. Convection resistance outside: $R_{conv} = 1 / (hA) = 1 / (10 \times 10) = 0.010\ \text{K/W}$.
-3. Total: $R_{tot} = 0.025 + 0.010 = 0.035\ \text{K/W}$.
+1. Conduction resistance: $R_{\mathrm{cond}} = L / (kA) = 0.20 / (0.80 \times 10) = 0.025\ \text{K/W}$.
+2. Convection resistance outside: $R_{\mathrm{conv}} = 1 / (hA) = 1 / (10 \times 10) = 0.010\ \text{K/W}$.
+3. Total: $R_{\mathrm{tot}} = 0.025 + 0.010 = 0.035\ \text{K/W}$.
 4. Temperature difference: $\Delta T = 25 - 5 = 20\ \text{K}$.
 5. Heat rate: $\dot{Q} = 20 / 0.035 = 571\ \text{W}$.
-6. Outer surface temperature: the drop across the outer convection layer is $\dot{Q} R_{conv}$, which is
+6. Outer surface temperature: the drop across the outer convection layer is $\dot{Q} R_{\mathrm{conv}}$, which is
    $571 \times 0.010 = 5.7\ \text{K}$. The outer surface is therefore at $5 + 5.7 = 10.7\ \text{C}$.
 
-Check the drop: $\dot{Q} R_{cond} = 571 \times 0.025 = 14.3\ \text{K}$. Adding that to the convection drop,
+Check the drop: $\dot{Q} R_{\mathrm{cond}} = 571 \times 0.025 = 14.3\ \text{K}$. Adding that to the convection drop,
 $14.3 + 5.7 = 20.0\ \text{K}$, which matches the total.
 
-**Answer:** (a) $R_{tot} = 0.035\ \text{K/W}$. (b) $\dot{Q} = 571\ \text{W}$. (c) The outer surface is at
+**Answer:** (a) $R_{\mathrm{tot}} = 0.035\ \text{K/W}$. (b) $\dot{Q} = 571\ \text{W}$. (c) The outer surface is at
 about $10.7\ \text{C}$.
 
 **Sanity check:** A $20\ \text{K}$ difference across a wall of this size losing hundreds of watts is
@@ -85,7 +85,7 @@ the full $20\ \text{K}$.
    Find $\dot{Q}$.
 2. A surface with $h = 15\ \text{W/(m}^2\text{K)}$ and $A = 0.20\ \text{m}^2$ sees $\Delta T = 40\ \text{K}$.
    Find $\dot{Q}$.
-3. A wall has $R_{th} = 0.05\ \text{K/W}$ and $\Delta T = 10\ \text{K}$. Find $\dot{Q}$.
+3. A wall has $R_{\mathrm{th}} = 0.05\ \text{K/W}$ and $\Delta T = 10\ \text{K}$. Find $\dot{Q}$.
 4. Insulation with $k = 0.040\ \text{W/(m K)}$, $A = 10\ \text{m}^2$, $L = 0.10\ \text{m}$, and $\Delta T = 20\ \text{K}$.
    Find $\dot{Q}$.
 5. A path carries $\dot{Q} = 100\ \text{W}$ across $\Delta T = 20\ \text{K}$. Find the total thermal resistance.

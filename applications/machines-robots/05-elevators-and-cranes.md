@@ -49,9 +49,9 @@ $$\frac{T_1}{T_2} = e^{\mu \theta}$$
 
 Assumptions: the rope is about to slip, the friction is uniform around the wrap, and the rope is inextensible.
 
-Motor power for an elevator at steady speed. $m_c$ is the car mass, $m_L$ the rated load, and $m_{cw}$ the counterweight, all in kilograms (kg). $g$ is the local gravitational acceleration ($9.81\ \text{m/s}^2$ at Earth's surface). $v$ is the car speed in metres per second (m/s), and $\eta$ is the drive efficiency (dimensionless):
+Motor power for an elevator at steady speed. $m_c$ is the car mass, $m_L$ the rated load, and $m_{\mathrm{cw}}$ the counterweight, all in kilograms (kg). $g$ is the local gravitational acceleration ($9.81\ \text{m}/\text{s}^2$ at Earth's surface). $v$ is the car speed in metres per second (m/s), and $\eta$ is the drive efficiency (dimensionless):
 
-$$P = \frac{(m_c + m_L - m_{cw})\, g\, v}{\eta}$$
+$$P = \frac{(m_c + m_L - m_{\mathrm{cw}})\, g\, v}{\eta}$$
 
 Assumptions: steady speed (acceleration ignored), uniform efficiency, and a counterweight that stays in place. The result is in watts (W).
 
@@ -69,7 +69,7 @@ Assumptions: the crane tips about one line, the restoring masses act at their st
 
 ## Worked example
 
-**Given:** A mobile crane tips about its front outrigger line. Its body weighs $W_b = 40\ \text{kN}$, with its centre of gravity $2.0\ \text{m}$ behind the tipping line. A counterweight of $W_{cw} = 10\ \text{kN}$ sits $4.0\ \text{m}$ behind the line. The load chart margin is $f = 0.75$, an assumed value for this example.
+**Given:** A mobile crane tips about its front outrigger line. Its body weighs $W_b = 40\ \text{kN}$, with its centre of gravity $2.0\ \text{m}$ behind the tipping line. A counterweight of $W_{\mathrm{cw}} = 10\ \text{kN}$ sits $4.0\ \text{m}$ behind the line. The load chart margin is $f = 0.75$, an assumed value for this example.
 
 **Find:** (a) the restoring moment, and (b) the rated capacity at radii of 6 m, 9 m, and 12 m.
 
@@ -122,7 +122,7 @@ Elisha Otis demonstrated a safety brake for a hoist at the New York Crystal Pala
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. An elevator car has a mass of 1000 kg, the counterweight is 1400 kg, the rated load is 1000 kg, and the car travels at 2.5 m/s. The drive efficiency is 0.75. Find the motor power at full load.
 2. A traction sheave has a wrap angle of $\pi$ rad and an effective friction coefficient $\mu = 0.15$. The heavy-side tension is 2000 N. Find the light-side tension at the point of slip.

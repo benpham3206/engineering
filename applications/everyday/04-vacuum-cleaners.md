@@ -32,7 +32,7 @@ The suction is the pressure difference, measured in pascals (Pa) or as a water c
 
 ## Key equations
 
-Assumptions for all equations below: air behaves as an incompressible fluid at about 20 °C, with density $\rho \approx 1.2\ \text{kg/m}^3$ (typical value), and the flow is steady.
+Assumptions for all equations below: air behaves as an incompressible fluid at about 20 °C, with density $\rho \approx 1.2\ \text{kg}/\text{m}^3$ (typical value), and the flow is steady.
 
 Volume flow rate through a hose of uniform diameter:
 
@@ -42,15 +42,15 @@ where $Q$ is the volume flow rate in cubic metres per second (m$^3$/s), $v$ is t
 
 Air power, the useful output of the fan:
 
-$$P_{air} = Q\,\Delta P$$
+$$P_{\mathrm{air}} = Q\,\Delta P$$
 
-where $P_{air}$ is in watts (W) and $\Delta P$ is the suction pressure difference in pascals (Pa). This assumes the pressure difference acts across the full airflow.
+where $P_{\mathrm{air}}$ is in watts (W) and $\Delta P$ is the suction pressure difference in pascals (Pa). This assumes the pressure difference acts across the full airflow.
 
 Efficiency of the motor and fan together:
 
-$$\eta = \frac{P_{air}}{P_{in}}$$
+$$\eta = \frac{P_{\mathrm{air}}}{P_{\mathrm{in}}}$$
 
-where $\eta$ is dimensionless and $P_{in}$ is the electrical input power in watts (W).
+where $\eta$ is dimensionless and $P_{\mathrm{in}}$ is the electrical input power in watts (W).
 
 Dynamic (velocity) pressure in the hose:
 
@@ -72,13 +72,13 @@ where $a$ is in metres per second squared (m/s$^2$), $v_t$ is in metres per seco
 
 ## Worked example
 
-**Given:** A canister vacuum has airflow $Q = 0.035\ \text{m}^3/\text{s}$, suction $\Delta P = 6.0\ \text{kPa}$, and electrical input $P_{in} = 1000\ \text{W}$. The hose has an inner diameter $D = 32\ \text{mm}$.
+**Given:** A canister vacuum has airflow $Q = 0.035\ \text{m}^3/\text{s}$, suction $\Delta P = 6.0\ \text{kPa}$, and electrical input $P_{\mathrm{in}} = 1000\ \text{W}$. The hose has an inner diameter $D = 32\ \text{mm}$.
 
 **Find:** (a) the air power, (b) the efficiency, (c) the hose velocity, and (d) the velocity pressure.
 
 **Solution:**
 
-1. Air power: $P_{air} = 0.035 \times 6000 = 210\ \text{W}$.
+1. Air power: $P_{\mathrm{air}} = 0.035 \times 6000 = 210\ \text{W}$.
 2. Efficiency: $\eta = 210 / 1000 = 0.21$, which is 21%.
 3. Hose area: $A = \pi (0.032)^2 / 4 = 8.04 \times 10^{-4}\ \text{m}^2$. Velocity: $v = 0.035 / 8.04 \times 10^{-4} = 43.5\ \text{m/s}$.
 4. Velocity pressure: $p_v = \tfrac{1}{2} \times 1.2 \times 43.5^2 = 1136\ \text{Pa}$.
@@ -89,7 +89,7 @@ where $a$ is in metres per second squared (m/s$^2$), $v_t$ is in metres per seco
 
 **Fan speed example.** Raising the fan speed 10% gives $1.10^3 = 1.331$, so the power rises about 33% while the airflow rises only 10%. Raising fan speed therefore costs power out of proportion to the airflow gained.
 
-**Cyclone example.** With a tangential speed of $v_t = 15\ \text{m/s}$ at a radius of $r = 0.06\ \text{m}$, $a = 15^2 / 0.06 = 3750\ \text{m/s}^2$, which is about $382\ \text{g}$. Dust particles experience a large outward force, which is why the cyclone separates them.
+**Cyclone example.** With a tangential speed of $v_t = 15\ \text{m/s}$ at a radius of $r = 0.06\ \text{m}$, $a = 15^2 / 0.06 = 3750\ \text{m}/\text{s}^2$, which is about $382\ \text{g}$. Dust particles experience a large outward force, which is why the cyclone separates them.
 
 ## Design trade-offs
 
@@ -128,10 +128,10 @@ Electric vacuum cleaners appeared in the early twentieth century. Hubert Cecil B
 
 <details><summary>Answers</summary>
 
-1. $P_{air} = 0.02 \times 4000 = 80\ \text{W}$.
+1. $P_{\mathrm{air}} = 0.02 \times 4000 = 80\ \text{W}$.
 2. $1.20^3 = 1.728$, so the power rises about 73%.
 3. $A = \pi (0.025)^2 / 4 = 4.91 \times 10^{-4}\ \text{m}^2$, so $v = 0.02 / 4.91 \times 10^{-4} = 40.7\ \text{m/s}$.
-4. $a = 20^2 / 0.05 = 8000\ \text{m/s}^2$, which is about $815\ \text{g}$.
+4. $a = 20^2 / 0.05 = 8000\ \text{m}/\text{s}^2$, which is about $815\ \text{g}$.
 
 </details>
 

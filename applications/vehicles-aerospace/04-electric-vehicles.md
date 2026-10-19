@@ -39,28 +39,28 @@ The power and range equations assume steady speed on a level road, no wind, and 
 
 - **Mechanical power at the shaft:** $P = T \, \omega$, in W, with $T$ in N m and $\omega$ in rad/s.
 - **Motor speed from road speed:** $\omega_m = (v / r) \, G$, where $v$ is the car speed in m/s, $r$ is the tire radius in m, and $G$ is the reduction gear ratio, dimensionless.
-- **Battery power:** $P_{batt} = P_w / \eta_{dt} + P_{aux}$, in W, where $P_w = F_{road} \, v$ is the wheel power, $\eta_{dt}$ is the battery-to-wheel efficiency (the product of inverter, motor, and gear efficiencies), and $P_{aux}$ is the power for heating, lights, and electronics in W.
-- **Drivetrain efficiency:** $\eta_{dt} = \eta_{inv} \, \eta_{mot} \, \eta_{gear}$, dimensionless. Typical values are 0.95, 0.92, and 0.98.
-- **Road load:** $F_{road} = C_{rr} \, m \, g + \tfrac{1}{2} \rho \, C_d \, A \, v^2$, in N, with rolling resistance from the tire, $m$ the mass in kg, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). $C_{rr}$ and $C_d$ are dimensionless, $\rho$ is the air density in kg/m$^3$, and $A$ is the frontal area in m$^2$. See [Cars](02-cars.md) for the derivation.
-- **Energy per distance:** $e = P_{batt} / v$, in J/m. To express it in Wh/km, divide the value in J/m by 3.6, because $1\ \text{Wh/km} = 3.6\ \text{J/m}$.
-- **Range:** $R = E_{use} / e$, in km, where $E_{use}$ is the usable pack energy in Wh. Usable energy is the nominal pack energy times the fraction the BMS allows you to use.
+- **Battery power:** $P_{\mathrm{batt}} = P_w / \eta_{\mathrm{dt}} + P_{\mathrm{aux}}$, in W, where $P_w = F_{\mathrm{road}} \, v$ is the wheel power, $\eta_{\mathrm{dt}}$ is the battery-to-wheel efficiency (the product of inverter, motor, and gear efficiencies), and $P_{\mathrm{aux}}$ is the power for heating, lights, and electronics in W.
+- **Drivetrain efficiency:** $\eta_{\mathrm{dt}} = \eta_{\mathrm{inv}} \, \eta_{\mathrm{mot}} \, \eta_{\mathrm{gear}}$, dimensionless. Typical values are 0.95, 0.92, and 0.98.
+- **Road load:** $F_{\mathrm{road}} = C_{\mathrm{rr}} \, m \, g + \tfrac{1}{2} \rho \, C_d \, A \, v^2$, in N, with rolling resistance from the tire, $m$ the mass in kg, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). $C_{\mathrm{rr}}$ and $C_d$ are dimensionless, $\rho$ is the air density in kg/m$^3$, and $A$ is the frontal area in m$^2$. See [Cars](02-cars.md) for the derivation.
+- **Energy per distance:** $e = P_{\mathrm{batt}} / v$, in J/m. To express it in Wh/km, divide the value in J/m by 3.6, because $1\ \text{Wh/km} = 3.6\ \text{J/m}$.
+- **Range:** $R = E_{\mathrm{use}} / e$, in km, where $E_{\mathrm{use}}$ is the usable pack energy in Wh. Usable energy is the nominal pack energy times the fraction the BMS allows you to use.
 - **Battery C-rate:** $C = I / Q$, dimensionless, where $I$ is the current in A and $Q$ is the rated capacity in Ah. A discharge at 1C empties the pack in one hour.
-- **Regenerative energy:** $E_{regen} = \eta_{regen} \, \tfrac{1}{2} m v_0^2$, in J, where $\eta_{regen}$ is the fraction of kinetic energy returned to the pack and $v_0$ is the speed before braking in m/s. Typical values of $\eta_{regen}$ are 0.5 to 0.7 for the brake energy the motor can recover, and the rest goes to friction brakes and losses.
+- **Regenerative energy:** $E_{\mathrm{regen}} = \eta_{\mathrm{regen}} \, \tfrac{1}{2} m v_0^2$, in J, where $\eta_{\mathrm{regen}}$ is the fraction of kinetic energy returned to the pack and $v_0$ is the speed before braking in m/s. Typical values of $\eta_{\mathrm{regen}}$ are 0.5 to 0.7 for the brake energy the motor can recover, and the rest goes to friction brakes and losses.
 
 ## Worked example
 
-**Given:** A midsize EV with mass $m = 1800\ \text{kg}$, $C_{rr} = 0.010$, $C_d = 0.25$, and frontal area $A = 2.3\ \text{m}^2$. Air density is $\rho = 1.20\ \text{kg/m}^3$. The battery-to-wheel efficiency is $\eta_{dt} = 0.88$, and the auxiliary load is $P_{aux} = 0.5\ \text{kW}$. The usable pack energy is $E_{use} = 75\ \text{kWh}$. The car drives at a steady speed on a level road, with no wind and no regenerative braking included.
+**Given:** A midsize EV with mass $m = 1800\ \text{kg}$, $C_{\mathrm{rr}} = 0.010$, $C_d = 0.25$, and frontal area $A = 2.3\ \text{m}^2$. Air density is $\rho = 1.20\ \text{kg}/\text{m}^3$. The battery-to-wheel efficiency is $\eta_{\mathrm{dt}} = 0.88$, and the auxiliary load is $P_{\mathrm{aux}} = 0.5\ \text{kW}$. The usable pack energy is $E_{\mathrm{use}} = 75\ \text{kWh}$. The car drives at a steady speed on a level road, with no wind and no regenerative braking included.
 
 **Find:** the energy use per km and the range at 50, 100, and 130 km/h.
 
-**Assumptions:** The values for $C_{rr}$, $C_d$, $A$, and $\eta_{dt}$ are typical for a midsize EV. Real range depends on temperature, cabin heating, wind, and driving style, so this is a steady-speed estimate only. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Assumptions:** The values for $C_{\mathrm{rr}}$, $C_d$, $A$, and $\eta_{\mathrm{dt}}$ are typical for a midsize EV. Real range depends on temperature, cabin heating, wind, and driving style, so this is a steady-speed estimate only. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Solution at 100 km/h ($v = 27.78\ \text{m/s}$):**
 
-1. Rolling resistance: $F_{rr} = 0.010 \times 1800 \times 9.81 = 176.6\ \text{N}$.
+1. Rolling resistance: $F_{\mathrm{rr}} = 0.010 \times 1800 \times 9.81 = 176.6\ \text{N}$.
 2. Aerodynamic drag: $F_d = 0.5 \times 1.20 \times 0.25 \times 2.3 \times 27.78^2 = 266.2\ \text{N}$.
 3. Wheel power: $P_w = (176.6 + 266.2) \times 27.78 = 12.30\ \text{kW}$.
-4. Battery power: $P_{batt} = 12.30 / 0.88 + 0.5 = 14.48\ \text{kW}$.
+4. Battery power: $P_{\mathrm{batt}} = 12.30 / 0.88 + 0.5 = 14.48\ \text{kW}$.
 5. Energy per km: at 100 km/h the car covers 100 km in one hour, so $e = 14.48\ \text{kWh}/100\ \text{km} = 144.8\ \text{Wh/km}$.
 6. Range: $R = 75\ \text{kWh} / 144.8\ \text{Wh/km} = 518\ \text{km}$.
 

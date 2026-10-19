@@ -45,7 +45,7 @@ Typical densities (standard textbook values, which vary a little by alloy):
 - Low-carbon steel: about 7.85 g/cm$^3$
 - Aluminum alloy (such as 6061): about 2.70 g/cm$^3$
 
-Unit note: 1 cm$^3$ = 1000 mm$^3$.
+Unit note: $1\ \text{cm}^3 = 1000\ \text{mm}^3$.
 
 ## Worked example
 

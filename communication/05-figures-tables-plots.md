@@ -90,7 +90,7 @@ Use this for every figure before you send it.
 
 <details><summary>What a good answer includes</summary>
 
-1. Time on the x axis in minutes, temperature on the y axis in degrees C, a title, and data points shown as markers.
+1. Time on the $x$ axis in minutes, temperature on the $y$ axis in degrees C, a title, and data points shown as markers.
 2. Error bars are about half the thermometer's smallest division, or its stated accuracy.
 3. Units are in the column headings, not repeated in every cell, and digits match the measurement precision.
 4. The redraw starts the axis at a defensible value, labels units, and uses flat 2D marks.

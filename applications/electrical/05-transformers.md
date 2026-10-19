@@ -69,19 +69,19 @@ The product $VI$ is the apparent power in volt-amperes (VA). For a resistive loa
 
 Core flux and primary voltage:
 
-$$V_1 \approx 4.44\, f\, N_1\, \Phi_{max}$$
+$$V_1 \approx 4.44\, f\, N_1\, \Phi_{\mathrm{max}}$$
 
-Here $f$ is the supply frequency in hertz, and $\Phi_{max}$ is the peak core flux in webers (Wb). This shows that a transformer needs AC, and that a lower frequency needs more flux and a bigger core for the same voltage.
+Here $f$ is the supply frequency in hertz, and $\Phi_{\mathrm{max}}$ is the peak core flux in webers (Wb). This shows that a transformer needs AC, and that a lower frequency needs more flux and a bigger core for the same voltage.
 
 Efficiency:
 
-$$\eta = \frac{P_{out}}{P_{out} + P_{core} + P_{cu}}$$
+$$\eta = \frac{P_{\mathrm{out}}}{P_{\mathrm{out}} + P_{\mathrm{core}} + P_{\mathrm{cu}}}$$
 
-Here $P_{out}$ is the output power in watts, $P_{core}$ is the core loss in watts, and $P_{cu}$ is the copper loss in watts.
+Here $P_{\mathrm{out}}$ is the output power in watts, $P_{\mathrm{core}}$ is the core loss in watts, and $P_{\mathrm{cu}}$ is the copper loss in watts.
 
 Copper loss and core loss:
 
-$$P_{cu} = I^2 R \qquad P_{cu} = x^2 P_{cu,rated}$$
+$$P_{\mathrm{cu}} = I^2 R \qquad P_{\mathrm{cu}} = x^2 P_{\mathrm{cu},\mathrm{rated}}$$
 
 Here $I$ is the winding current in amps, $R$ is the winding resistance in ohms, and $x$ is the load as a fraction of rated current (dimensionless). Core loss depends on voltage and frequency, not on load current, so it stays about constant.
 
@@ -103,8 +103,8 @@ Here $Z_1$ and $Z_2$ are impedances in ohms.
 
 1. Turns ratio: $a = V_1 / V_2 = 7200 / 240 = 30$, so the ratio is 30:1.
 2. Rated currents: $I_2 = 25\,000 / 240 = 104.2\ \text{A}$ on the secondary, and $I_1 = 25\,000 / 7200 = 3.47\ \text{A}$ on the primary.
-3. Output at 75 percent load: $P_{out} = 0.75 \times 25\,000 = 18\,750\ \text{W}$.
-4. Copper loss at 75 percent current: $P_{cu} = 350 \times 0.75^2 = 196.9\ \text{W}$. Core loss stays at 120 W.
+3. Output at 75 percent load: $P_{\mathrm{out}} = 0.75 \times 25\,000 = 18\,750\ \text{W}$.
+4. Copper loss at 75 percent current: $P_{\mathrm{cu}} = 350 \times 0.75^2 = 196.9\ \text{W}$. Core loss stays at 120 W.
 5. Efficiency: $\eta = 18\,750 / (18\,750 + 120 + 196.9) = 18\,750 / 19\,066.9 = 0.983$.
 
 **Answer:** (a) 30:1. (b) 104 A on the secondary and 3.47 A on the primary. (c) About 98.3 percent.
@@ -155,7 +155,7 @@ Michael Faraday's induction experiments in 1831 established the principle. In th
 
 1. 60 V, from $V_2 = V_1 N_2 / N_1 = 1200 \times 50 / 1000$.
 2. 208 A, from $I_2 = 50\,000 / 240$.
-3. 10.0 kW, from $P_{in} = 9200 / 0.92$.
+3. 10.0 kW, from $P_{\mathrm{in}} = 9200 / 0.92$.
 4. 97.3 percent, from $\eta = 20\,000 / (20\,000 + 150 + 400)$.
 5. 400 ohms, from $Z_1 = a^2 Z_2 = 10^2 \times 4$.
 

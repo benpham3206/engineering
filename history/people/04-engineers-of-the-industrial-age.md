@@ -27,7 +27,7 @@ Telford was born in Westerkirk, Scotland, and worked as a bridge and road engine
 
 ### George Stephenson, 1781 to 1848
 
-Stephenson was born in Wylam, Northumberland, in England. He built the locomotive *Locomotion* for the Stockton and Darlington Railway, which opened in 1825. He and his son Robert designed the *Rocket*, which won the Rainhill Trials in 1829. The *Rocket* showed that a light, fast steam locomotive could pull trains on a public line. Engineers use his railway standards, including the 4 ft 8½ in gauge, in many of today's railways. See [Trains](../../applications/vehicles-aerospace/10-trains.md).
+Stephenson was born in Wylam, Northumberland, in England. He built the locomotive *Locomotion* for the Stockton and Darlington Railway, which opened in 1825. He and his son Robert designed the *Rocket*, which won the Rainhill Trials in 1829. The *Rocket* showed that a light, fast steam locomotive could pull trains on a public line. Engineers use his railway standards, including the 4 ft $8\tfrac{1}{2}$ in gauge, in many of today's railways. See [Trains](../../applications/vehicles-aerospace/10-trains.md).
 
 ### Robert Stephenson, 1803 to 1859
 
@@ -71,7 +71,7 @@ Eiffel was born in Dijon, France, and ran a large iron-structures firm near Pari
 | 1805 | Thomas Telford | Pontcysyllte Aqueduct | [Canals and railways](../projects/02-canals-and-railways.md) |
 | 1824 | Sadi Carnot | *Reflections on the Motive Power of Fire* and the efficiency limit | [Second law and cycles](../../physics/09-thermo-second-law-cycles.md) |
 | 1825 | George Stephenson | *Locomotion* on the Stockton and Darlington Railway | [Trains](../../applications/vehicles-aerospace/10-trains.md) |
-| 1829 | Robert and George Stephenson | *Rocket* wins the Rainhill Trials | [Trains](../../applications/vehicles-aerospace/10-trains.md) |
+| 1829 | Robert Stephenson and Company (design credit disputed between Robert and George) | *Rocket* wins the Rainhill Trials | [Trains](../../applications/vehicles-aerospace/10-trains.md) |
 | 1841 | Joseph Whitworth | Standard screw thread with a 55 degree angle | [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md) |
 | 1843 | Isambard Kingdom Brunel | SS *Great Britain*, iron hull and screw propeller | [Ships and submarines](../../applications/vehicles-aerospace/09-ships-and-submarines.md) |
 | 1856 | Henry Bessemer | Bessemer process for cheap steel | [Material classes](../../materials/05-material-classes.md) |

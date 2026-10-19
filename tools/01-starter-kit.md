@@ -32,7 +32,7 @@ None. This lesson is a checklist.
 
 ## Worked example
 
-**Given:** A learner has $600 for tools over one year and no shop access.
+**Given:** A learner has \$600 for tools over one year and no shop access.
 
 **Find:** Which items to buy first.
 
@@ -40,7 +40,7 @@ None. This lesson is a checklist.
 
 **Solution:**
 
-1. Install free software first: Python, Jupyter, FreeCAD, Octave. Cost: $0.
+1. Install free software first: Python, Jupyter, FreeCAD, Octave. Cost: \$0.
 2. Buy a digital caliper and a steel rule for measurement practice.
 3. Keep the remaining budget for a course-specific item or a shop day pass.
 

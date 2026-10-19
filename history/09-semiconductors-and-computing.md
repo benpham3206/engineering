@@ -23,7 +23,7 @@ The transistor works because of how silicon conducts. Pure silicon is a poor con
 
 ### The integrated circuit
 
-Building many separate transistors and wiring them by hand limited both size and reliability. In 1958, Jack Kilby at Texas Instruments built a circuit with transistors and other components on one piece of germanium. In 1959, Robert Noyce at Fairchild Semiconductor in California built a version on silicon. Noyce's version used the planar process, in which photolithography patterns the wiring and components on a flat surface. Because the process could make many devices at once, it became the basis of nearly all later chips. Kilby shared the 2000 Nobel Prize in Physics for his part in the invention.
+Building many separate transistors and wiring them by hand limited both size and reliability. In 1958, Jack Kilby at Texas Instruments built a circuit with transistors and other components on one piece of germanium. In 1959, Robert Noyce at Fairchild Semiconductor in California designed a version for silicon, and Fairchild made the first working planar chips in 1960. Noyce's version used the planar process, in which photolithography patterns the wiring and components on a flat surface. Because the process could make many devices at once, it became the basis of nearly all later chips. Kilby shared the 2000 Nobel Prize in Physics for his part in the invention.
 
 ### The microprocessor
 
@@ -44,7 +44,7 @@ Smaller transistors switch faster and use less energy per switch. Robert Dennard
 | 1945 | ENIAC | J. Presper Eckert and John Mauchly, University of Pennsylvania | A large electronic digital computer built from about 17,000 tubes |
 | 1947 | Point-contact transistor | John Bardeen and Walter Brattain, Bell Labs, New Jersey | The first working solid-state amplifier, with no hot filament |
 | 1958 | First integrated circuit | Jack Kilby, Texas Instruments, Dallas | Put several components on one piece of germanium |
-| 1959 | Planar silicon integrated circuit | Robert Noyce, Fairchild Semiconductor, California | Photolithography made many devices at once, which scaled to modern chips |
+| 1959 | Planar silicon integrated circuit design (first working chips 1960) | Robert Noyce, Fairchild Semiconductor, California | Photolithography made many devices at once, which scaled to modern chips |
 | 1971 | Intel 4004 | Federico Faggin, Ted Hoff, Stanley Mazor, and Masatoshi Shima, Intel, California | The first commercial single-chip microprocessor, with about 2,300 transistors |
 
 ## Key equations

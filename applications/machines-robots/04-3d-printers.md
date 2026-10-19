@@ -24,20 +24,20 @@ A single move passes through these steps:
 ### Main parts
 
 - **Frame:** an aluminum or steel frame holds the axes in place. Flex in the frame shows as ringing and as misalignment between layers.
-- **Belts and pulleys:** toothed belts, usually with a 2 mm pitch, drive the XY axes. Each pulley turns a fixed length of belt per revolution.
-- **Lead screws:** a threaded rod drives the Z axis, which lifts the bed or the toolhead.
+- **Belts and pulleys:** toothed belts, usually with a 2 mm pitch, drive the $\mathrm{XY}$ axes. Each pulley turns a fixed length of belt per revolution.
+- **Lead screws:** a threaded rod drives the $Z$ axis, which lifts the bed or the toolhead.
 - **Stepper motors and drivers:** steppers are open loop. They count steps without feedback and can lose steps under heavy load or fast acceleration.
 - **Toolhead (fused deposition):** an extruder motor drives filament through a gear. A heater cartridge in the hotend melts the filament before it leaves the nozzle.
 - **Bed:** a heated plate with its own sensor and heater. It holds the part at a steady temperature during the build.
-- **Light path (resin printers):** a galvanometer mirror or a projector directs light onto a resin vat. A Z stage lifts the part out of the vat one layer at a time.
+- **Light path (resin printers):** a galvanometer mirror or a projector directs light onto a resin vat. A $Z$ stage lifts the part out of the vat one layer at a time.
 - **Powder system (powder bed printers):** a build piston lowers one layer at a time. A roller spreads powder across the bed, and a chamber heater holds the build area warm.
 
 ### Variants
 
-- **Cartesian:** separate motors drive X, Y, and Z. The bed or a gantry carries the motion.
-- **CoreXY:** two motors drive one belt loop, and the toolhead moves in XY. The moving mass is lower, so the toolhead accelerates faster.
+- **Cartesian:** separate motors drive $X$, $Y$, and $Z$. The bed or a gantry carries the motion.
+- **CoreXY:** two motors drive two separate belts that cross, and the toolhead moves in $\mathrm{XY}$. The moving mass is lower, so the toolhead accelerates faster.
 - **Delta:** three arms hang from a fixed top plate. The moving parts are light, and the build volume is cylindrical.
-- **Resin printers:** a Z stage moves in a vat of liquid resin. Light from a laser or a projector cures each layer.
+- **Resin printers:** a $Z$ stage moves in a vat of liquid resin. Light from a laser or a projector cures each layer.
 - **Powder bed printers:** an enclosed chamber holds a build piston and powder. These printers suit metal and nylon parts.
 
 ## Key equations
@@ -68,23 +68,23 @@ Assumptions: the surface is at a uniform temperature, the air is still, and $h$ 
 
 ## Worked example
 
-**Given:** A Cartesian printer has GT2 pulleys with 20 teeth at a pitch of $p = 0.002\ \text{m}$. Its motors have 200 full steps per revolution, run at 16 microsteps per step. The Z lead screw has a lead of $L = 0.008\ \text{m}$. The toolhead moves $0.200\ \text{m}$ at $v = 0.100\ \text{m/s}$. The bed is $0.20\ \text{m}$ by $0.20\ \text{m}$ and must hold $\Delta T = 60\ \text{K}$ above room air, with $h = 10\ \text{W/(m}^2\text{K)}$.
+**Given:** A Cartesian printer has GT2 pulleys with 20 teeth at a pitch of $p = 0.002\ \text{m}$. Its motors have 200 full steps per revolution, run at 16 microsteps per step. The $Z$ lead screw has a lead of $L = 0.008\ \text{m}$. The toolhead moves $0.200\ \text{m}$ at $v = 0.100\ \text{m/s}$. The bed is $0.20\ \text{m}$ by $0.20\ \text{m}$ and must hold $\Delta T = 60\ \text{K}$ above room air, with $h = 10\ \text{W/(m}^2\text{K)}$.
 
-**Find:** (a) the XY and Z step sizes, (b) the step count and step rate for the move, and (c) the steady heat loss from the bed.
+**Find:** (a) the $\mathrm{XY}$ and $Z$ step sizes, (b) the step count and step rate for the move, and (c) the steady heat loss from the bed.
 
 **Assumptions:** The belt does not stretch, the motor takes exact steps, acceleration is ignored, and $h$ is the typical natural-convection value above.
 
 **Solution:**
 
 1. Pulley circumference: $p z = 0.002 \times 20 = 0.040\ \text{m}$. Steps per revolution: $n_s m = 200 \times 16 = 3200$.
-2. XY step: $\delta x = 0.040 / 3200 = 1.25 \times 10^{-5}\ \text{m} = 0.0125\ \text{mm}$.
-3. Z step: $\delta z = 0.008 / 3200 = 2.5 \times 10^{-6}\ \text{m} = 0.0025\ \text{mm}$.
+2. $\mathrm{XY}$ step: $\delta x = 0.040 / 3200 = 1.25 \times 10^{-5}\ \text{m} = 0.0125\ \text{mm}$.
+3. $Z$ step: $\delta z = 0.008 / 3200 = 2.5 \times 10^{-6}\ \text{m} = 0.0025\ \text{mm}$.
 4. Move: $0.200 / 1.25 \times 10^{-5} = 16\,000$ steps. Step rate: $f = 0.100 / 1.25 \times 10^{-5} = 8000\ \text{Hz}$. Move time: $0.200 / 0.100 = 2.0\ \text{s}$.
 5. Bed loss: $A = 0.20 \times 0.20 = 0.040\ \text{m}^2$, so $P = 10 \times 0.040 \times 60 = 24\ \text{W}$.
 
-**Answer:** (a) 0.0125 mm in XY and 0.0025 mm in Z. (b) 16 000 steps at 8000 Hz, taking 2.0 s. (c) 24 W at steady state.
+**Answer:** (a) 0.0125 mm in $\mathrm{XY}$ and 0.0025 mm in $Z$. (b) 16 000 steps at 8000 Hz, taking 2.0 s. (c) 24 W at steady state.
 
-**Sanity check:** The move takes 2.0 s and covers 16 000 steps, so the step rate is 16 000 divided by 2.0, which is 8000 Hz. The Z step of 0.0025 mm is far finer than a typical layer height of 0.1 to 0.2 mm, so the mechanics of Z are not the limit. The bed loss is a floor, because real heat loss to the frame and to the air is larger.
+**Sanity check:** The move takes 2.0 s and covers 16 000 steps, so the step rate is 16 000 divided by 2.0, which is 8000 Hz. The $Z$ step of 0.0025 mm is far finer than a typical layer height of 0.1 to 0.2 mm, so the mechanics of $Z$ are not the limit. The bed loss is a floor, because real heat loss to the frame and to the air is larger.
 
 ## Design trade-offs
 
@@ -112,7 +112,7 @@ Assumptions: the surface is at a uniform temperature, the air is still, and $h$ 
 4. Administrative controls: a written start-up check, a rule against leaving a heater unattended, and a dust-cleaning schedule.
 5. Personal protective equipment: gloves for handling hot parts, and a respirator or filter where the process releases fine particles.
 
-**Lockout and tagout for service:** before any work on the axes, heaters, or powder chamber, turn off the printer at its supply. Lock the switch with a personal lock, attach a tag with the name of the person working, and confirm the machine does not start by trying the controls. Discharge stored energy, such as a raised Z stage or a hot heater, and wait for the bed to cool. Remove the lock only after the person who placed it is finished.
+**Lockout and tagout for service:** before any work on the axes, heaters, or powder chamber, turn off the printer at its supply. Lock the switch with a personal lock, attach a tag with the name of the person working, and confirm the machine does not start by trying the controls. Discharge stored energy, such as a raised $Z$ stage or a hot heater, and wait for the bed to cool. Remove the lock only after the person who placed it is finished.
 
 ## History
 
@@ -121,10 +121,10 @@ Chuck Hull received a patent in 1986 for stereolithography, a process that cures
 ## Practice
 
 1. A GT2 pulley has 20 teeth at a 2 mm pitch. The motor has 200 full steps per revolution and runs at 16 microsteps. How many steps per revolution does the motor take, and how far does the belt move per microstep?
-2. The same printer's Z lead screw has an 8 mm lead. How far does the Z axis move per microstep?
+2. The same printer's $Z$ lead screw has an 8 mm lead. How far does the $Z$ axis move per microstep?
 3. A bed of $0.30\ \text{m} \times 0.30\ \text{m}$ holds $70\ \text{K}$ above room air, with $h = 10\ \text{W/(m}^2\text{K)}$. What is the steady heat loss in watts?
-4. The toolhead moves at $0.050\ \text{m/s}$ on the XY axes that step $0.0125\ \text{mm}$. What is the step rate in hertz?
-5. Short answer: the Z step is far finer than the layer height. What limits the accuracy of the part instead?
+4. The toolhead moves at $0.050\ \text{m/s}$ on the $\mathrm{XY}$ axes that step $0.0125\ \text{mm}$. What is the step rate in hertz?
+5. Short answer: the $Z$ step is far finer than the layer height. What limits the accuracy of the part instead?
 
 <details><summary>Answers</summary>
 

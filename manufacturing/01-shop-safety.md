@@ -46,7 +46,7 @@ Before you run any machine, check these points:
 
 ## Example
 
-**Given:** A bench drill press with a 1/2 in (12.7 mm) drill bit. The operator plans to drill a steel bracket held by hand.
+**Given:** A bench drill press with a $1/2$ in (12.7 mm) drill bit. The operator plans to drill a steel bracket held by hand.
 
 **Find:** The hazards and the controls to use before drilling.
 

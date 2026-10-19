@@ -34,7 +34,7 @@ Gravity toilets are the most common in homes. Pressure-assisted toilets use a pr
 
 ## Key equations
 
-Assumptions for every equation below: the water is incompressible at 1000 kg/m$^3$, the fluid is at a steady temperature, gravity is uniform at $g = 9.81\ \text{m/s}^2$ (Earth surface, true near sea level and mid latitudes), and the flow is steady in each pipe section.
+Assumptions for every equation below: the water is incompressible at 1000 kg/m$^3$, the fluid is at a steady temperature, gravity is uniform at $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface, true near sea level and mid latitudes), and the flow is steady in each pipe section.
 
 - Static pressure: $p = \rho g h$, where $p$ is gauge pressure in pascals (Pa), $\rho$ is water density in kg/m$^3$, $g$ is gravitational acceleration in m/s$^2$, and $h$ is depth below the free surface in metres (m). The assumption is that the water is at rest.
 - Pressure change with height: $p_2 = p_1 - \rho g \, \Delta z$, where $\Delta z$ is the height gain in metres. The assumption is that the water is at rest between the two points.
@@ -43,7 +43,7 @@ Assumptions for every equation below: the water is incompressible at 1000 kg/m$^
 
 ## Worked example
 
-**Given:** A house has a supply at a meter at $p_1 = 350\ \text{kPa}$ gauge. A second-floor bathroom fixture sits $\Delta z = 6\ \text{m}$ above the meter, with the water at rest. A 20 mm supply pipe carries $Q = 0.5\ \text{L/s}$ to the fixture. The trap seal is $h_s = 50\ \text{mm}$ deep. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Given:** A house has a supply at a meter at $p_1 = 350\ \text{kPa}$ gauge. A second-floor bathroom fixture sits $\Delta z = 6\ \text{m}$ above the meter, with the water at rest. A 20 mm supply pipe carries $Q = 0.5\ \text{L/s}$ to the fixture. The trap seal is $h_s = 50\ \text{mm}$ deep. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Find:** (a) the static pressure at the fixture, (b) the mean velocity in the 20 mm pipe, and (c) the pressure that the trap seal can hold.
 
@@ -93,7 +93,7 @@ Thomas Crapper was a sanitary plumber in London in the late nineteenth century, 
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A tank sits 2.0 m above a bowl. Find the gauge pressure at the bowl in kilopascals.
 2. A flush releases 6 L of water in 4.0 s. Find the mean volume flow rate in litres per second.

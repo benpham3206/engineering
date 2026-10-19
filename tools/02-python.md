@@ -64,7 +64,7 @@ delta = 0.0009999999999999998 m = 0.9999999999999998 mm
 
 **Answer:** $\delta \approx 1.0$ mm.
 
-**Sanity check:** The beam is 2 m long, and a 1 mm sag is 1/2000 of the span. That is a plausible service deflection for a stiff steel beam. The span-to-depth ratio is 20, which is a common rule-of-thumb proportion.
+**Sanity check:** The beam is 2 m long, and a 1 mm sag is $1/2000$ of the span. That is a plausible service deflection for a stiff steel beam. The span-to-depth ratio is 20, which is a common rule-of-thumb proportion.
 
 ## Practice
 
@@ -72,12 +72,12 @@ delta = 0.0009999999999999998 m = 0.9999999999999998 mm
 2. Compute the second moment of area for a 30 mm wide by 60 mm tall section. Give the answer in m$^4$.
 3. Write a function `deflection(F, L, E, I)` that returns $\delta$. Test it with the worked example.
 4. Use a list of three loads (2, 4, 6 kN) and print the deflection for each.
-5. Convert your final answer to inches. Use 1 in = 25.4 mm.
+5. Convert your final answer to inches. Use $1\ \text{in} = 25.4\ \text{mm}$.
 
 <details><summary>Answers</summary>
 
 1. 0.25 mm
-2. 5.4 x 10$^{-7}$ m$^4$ (5.4e-07)
+2. $5.4 \times 10^{-7}$ m$^4$ ($5.4 \times 10^{-7}$)
 3. Check: 1.0 mm at 5000 N.
 4. Check: 0.4, 0.8, 1.2 mm.
 5. 0.039 in

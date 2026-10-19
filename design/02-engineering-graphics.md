@@ -66,7 +66,7 @@ When you read a drawing, follow this order:
 ## Common drawing conventions
 
 - Units are shown in the title block. Most SI drawings use millimetres with the unit omitted from each number.
-- Radius is written with R. Diameter is written with the symbol that looks like a circle with a slash.
+- Radius is written with $R$. Diameter is written with the symbol that looks like a circle with a slash.
 - Chamfers and fillets have their own notation. Read the note for the size.
 - A dimension should be placed once and only once. Repeating a dimension creates a conflict when you change the design.
 

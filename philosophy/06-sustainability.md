@@ -52,8 +52,8 @@ Two water heaters both meet the same need: hot water for a household.
 
 Compare the cost over a 6-year period. Use only the purchase price for this simple comparison, and assume energy use is the same.
 
-- Product A: cost per year = \$60 / 2 years = \$30 per year. Over 6 years, that is 3 purchases, so the total is \$180.
-- Product B: cost per year = \$120 / 6 years = \$20 per year. Over 6 years, that is 1 purchase, so the total is \$120.
+- Product A: $\text{cost per year} = \$60 / (2\ \text{years}) = \$30\ \text{per year}$. Over 6 years, that is 3 purchases, so the total is \$180.
+- Product B: $\text{cost per year} = \$120 / (6\ \text{years}) = \$20\ \text{per year}$. Over 6 years, that is 1 purchase, so the total is \$120.
 - Result: Product B costs about 33 percent less per year of service. It also needs 2 fewer units made, shipped, and eventually discarded over the same 6 years.
 
 Real comparisons add energy use, maintenance, and disposal. The simple example shows the main point: the longer-lasting product spreads its impact across more years. A full life cycle study would check whether Product B's materials or energy use offset that gain.

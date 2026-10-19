@@ -36,8 +36,8 @@ A simply supported beam shows the idea. The load pushes the beam down, and the t
 
 For a simply supported beam with uniform load $w$ in N/m over span $L$ in m:
 
-- Maximum shear force at the supports: $V_{max} = \dfrac{wL}{2}$, in N.
-- Maximum bending moment at midspan: $M_{max} = \dfrac{wL^2}{8}$, in N m.
+- Maximum shear force at the supports: $V_{\mathrm{max}} = \dfrac{wL}{2}$, in N.
+- Maximum bending moment at midspan: $M_{\mathrm{max}} = \dfrac{wL^2}{8}$, in N m.
 - Bending stress at the extreme fiber: $\sigma = \dfrac{Mc}{I}$, in Pa, where $c$ is the distance in m from the neutral axis to the outer fiber and $I$ is the second moment of area in m$^4$.
 - Midspan deflection: $\delta = \dfrac{5wL^4}{384\,EI}$, in m, where $E$ is the elastic modulus in Pa (about $200\times10^9$ Pa for structural steel, typical).
 
@@ -100,7 +100,7 @@ The Romans built stone arch bridges that still stand, and their designs spread a
 
 <details><summary>Answers</summary>
 
-1. $M_{max} = wL^2/8 = 20\,000 \times 12^2 / 8 = 360\ \text{kN m}$. $V_{max} = wL/2 = 120\ \text{kN}$.
+1. $M_{\mathrm{max}} = wL^2/8 = 20\,000 \times 12^2 / 8 = 360\ \text{kN m}$. $V_{\mathrm{max}} = wL/2 = 120\ \text{kN}$.
 2. $H = wL^2/(8s) = 20\,000 \times 100^2 / (8 \times 4) = 6.25\times10^6\ \text{N}$, which is $6250\ \text{kN}$.
 3. Moment grows with $L^2$, so it becomes 4 times larger. Deflection grows with $L^4$, so it becomes 16 times larger.
 4. Deflection is inversely proportional to $I$, so it halves to $105/2 = 53\ \text{mm}$, about $52.7\ \text{mm}$.

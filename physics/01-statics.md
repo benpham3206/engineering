@@ -10,7 +10,7 @@ Statics is the study of bodies that do not move. Engineers use it to find the fo
 ## Core ideas
 
 - A **force** is a push or pull with a size (magnitude), a direction, and a point where it acts. Forces are measured in newtons (N) in SI units or pounds-force (lbf) in US customary units.
-- A **vector** has a magnitude and a direction. You add forces as vectors, usually by splitting each force into x and y components.
+- A **vector** has a magnitude and a direction. You add forces as vectors, usually by splitting each force into $x$ and $y$ components.
 - A **particle** is a body small enough that all forces act at one point. Cables and pins are often modeled this way.
 - A **rigid body** is a body that does not change shape. Forces can act at different points on it, so you also track moments.
 - **Equilibrium** means the body is not accelerating. A body at rest is in equilibrium, and so is a body moving at a steady velocity.
@@ -31,7 +31,7 @@ $$\sum F_x = 0 \qquad \sum F_y = 0 \qquad \sum M_O = 0$$
 
 Here $F_x$ and $F_y$ are force components in newtons (N), and $M_O$ is the moment about a chosen point $O$ in newton-meters (N m) or pound-feet (lb ft).
 
-For a force $F$ at angle $\theta$ measured from the positive x axis:
+For a force $F$ at angle $\theta$ measured from the positive $x$ axis:
 
 $$F_x = F\cos\theta \qquad F_y = F\sin\theta$$
 
@@ -75,7 +75,7 @@ $$T_1 = 622.3 \times \frac{\cos 60^\circ}{\cos 40^\circ} \approx 406.2\ \text{N}
 
 ## Practice
 
-1. A 50 kg block sits on a horizontal floor with $\mu_s = 0.4$. Find the largest horizontal pull P, in newtons, before the block starts to slide. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+1. A 50 kg block sits on a horizontal floor with $\mu_s = 0.4$. Find the largest horizontal pull $P$, in newtons, before the block starts to slide. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 2. A 500 N load hangs from two symmetric cables. Each cable makes 45 degrees with the horizontal. Find the tension in each cable, in newtons.
 3. A simply supported beam 10 m long carries a 12 kN point load at its midspan. Find the magnitude of each support reaction, in newtons. Neglect the beam's own weight.
 

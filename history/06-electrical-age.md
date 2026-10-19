@@ -71,9 +71,9 @@ Here $V_p$ and $V_s$ are the primary and secondary voltages in volts (V), and $N
 
 Power lost in a line as heat:
 
-$$P_{loss} = I^2 R$$
+$$P_{\text{loss}} = I^2 R$$
 
-Here $P_{loss}$ is the loss in watts (W), $I$ is the current in amperes (A), and $R$ is the line resistance in ohms ($\Omega$).
+Here $P_{\text{loss}}$ is the loss in watts (W), $I$ is the current in amperes (A), and $R$ is the line resistance in ohms ($\Omega$).
 
 ## Worked example: why high voltage reduces line loss
 

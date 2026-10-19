@@ -160,13 +160,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Applications reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-## Related courses
-
-- EE 98 - Intro to Circuit Analysis
-- ME 106 - Fundamentals of Mechatronics Engineering
-- ME 190 - Mechatronics Design
-- ME 192 - Robotics and Manufacturing Systems
-- ME 195A - Senior Design Project I
-- ME 195B - Senior Design Project II
-
 See also: [design](../design), [tools](../tools)

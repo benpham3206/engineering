@@ -29,7 +29,7 @@ Density, where $\rho$ is density in grams per cubic centimeter (g/cm$^3$), $m$ i
 
 $$\rho = \frac{m}{V}$$
 
-Volume by water displacement, where $V$ is the volume of the sample in cubic centimeters, $V_2$ is the water level after the sample is added, and $V_1$ is the water level before, both read in milliliters (1 mL = 1 cm$^3$):
+Volume by water displacement, where $V$ is the volume of the sample in cubic centimeters, $V_2$ is the water level after the sample is added, and $V_1$ is the water level before, both read in milliliters ($1\ \text{mL} = 1\ \text{cm}^3$):
 
 $$V = V_2 - V_1$$
 

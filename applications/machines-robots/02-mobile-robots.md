@@ -66,7 +66,7 @@ Go-to-goal control, with goal $(x_g, y_g)$, distance $\rho = \sqrt{(x_g - x)^2 +
 
 $$v = k_\rho\,\rho, \qquad \omega = k_\alpha\,\alpha$$
 
-The gains $k_\rho$ (1/s) and $k_\alpha$ (1/s) set how fast the robot closes distance and turns. Assumes the pose is known exactly, the path is free of obstacles, and the gains are positive.
+The gains $k_\rho$ (1/s) and $k_\alpha$ (1/s) set how fast the robot closes distance and turns. Assumes the pose is known exactly, the path is free of obstacles, the gains are positive, $k_\alpha > k_\rho$, and the goal stays in front of the robot ($|\alpha| < \pi/2$). Outside these conditions the robot can circle or diverge.
 
 Ultrasonic range from echo time $t$ (s), with sound speed $c \approx 343\ \text{m/s}$ in air at 20 °C: $d = c\,t / 2$. Assumes the sound travels a straight path to the target and back, with no wind and no multipath echoes.
 
@@ -113,7 +113,7 @@ print(x, y, th, ds/dt, dth/dt, ds/dth)   # 0.0201, 0.0001, 0.0101, 0.2011, 0.100
 - Sensor cost against accuracy: wheel encoders are cheap and give fast updates, but they drift. Lidar costs more and gives accurate maps. Camera systems cost little hardware but need more processing.
 - Speed against stopping distance: at $1\ \text{m/s}$ a robot needs a larger safe margin to stop than at $0.2\ \text{m/s}$. Speed limits near people set the maximum speed.
 - Battery against runtime: battery mass reduces payload and raises motor load. Motor efficiency and the drive ratio also set runtime.
-- Floor type: encoders work well on hard floors and undercount on carpet or sand, where wheels slip.
+- Floor type: encoders work well on hard floors and overcount travel on carpet or sand, where driven wheels slip.
 
 ## How it fails
 

@@ -31,7 +31,7 @@ Here $N$ is spindle speed in RPM, $V$ is surface speed in sfm, and $D$ is tool d
 
 ## Worked example
 
-**Given:** A 1/4 in (0.25 in) drill bit in aluminum. The recommended surface speed for this material and tool is 300 sfm.
+**Given:** A $1/4$ in (0.25 in) drill bit in aluminum. The recommended surface speed for this material and tool is 300 sfm.
 
 **Find:** The spindle speed in RPM.
 
@@ -61,9 +61,9 @@ rpm with 12/pi: 4583.662361046586
 
 ## Practice
 
-1. A 3/8 in drill runs in steel at 80 sfm. Find the RPM to the nearest whole number.
-2. A 1/2 in drill runs in aluminum at 300 sfm. Find the RPM to the nearest whole number.
-3. Which bit runs faster at the same surface speed, the 1/4 in or the 1/2 in? Explain in one sentence.
+1. A $3/8$ in drill runs in steel at 80 sfm. Find the RPM to the nearest whole number.
+2. A $1/2$ in drill runs in aluminum at 300 sfm. Find the RPM to the nearest whole number.
+3. Which bit runs faster at the same surface speed, the $1/4$ in or the $1/2$ in? Explain in one sentence.
 4. Name three guards or safety items you must have before you start a drill press.
 5. Your chips come off as long, unbroken ribbons. Name one adjustment to try, and state the reason.
 
@@ -71,7 +71,7 @@ rpm with 12/pi: 4583.662361046586
 
 1. 815 RPM (814.9 before rounding)
 2. 2292 RPM
-3. The 1/4 in bit. Smaller diameter needs higher RPM at the same surface speed.
+3. The $1/4$ in bit. Smaller diameter needs higher RPM at the same surface speed.
 4. Answers will vary. Examples: safety glasses, a secured workpiece, and a guard or clear area around the spindle.
 5. Answers will vary. Example: increase feed to break the chip, with the reason that it reduces the chip length.
 

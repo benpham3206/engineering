@@ -41,13 +41,13 @@ The engineering. Builders used rammed earth, stone, and brick, depending on what
 
 The scale. The walls of all periods together run for many thousands of kilometres across the north of China.
 
-What went wrong. The Qin and later rulers used forced labor to build the walls. Many workers died, but no reliable total exists. The walls did not decide the fate of the Ming capital. In 1644 Beijing fell after Wu Sangui opened the Shanhai Pass, at the eastern end of the wall, to Manchu forces.
+What went wrong. The Qin and later rulers used forced labor to build the walls. Many workers died, but no reliable total exists. The walls did not decide the fate of the Ming capital. In April 1644 rebels under Li Zicheng took Beijing. Wu Sangui then opened the Shanhai Pass, at the eastern end of the wall, to Manchu forces, who drove out Li and took the city.
 
 How it changed the world. The wall shaped the border, trade, and control of movement for two thousand years. It also became a national symbol in modern times, and UNESCO has listed sections as a World Heritage Site.
 
 ### The Grand Canal of China
 
-The problem. Grain grown in the wet, rice-producing south had to reach the capital in the north. Rivers in China flow mostly east to west, so the route had to link them with canals that climb and descend.
+The problem. Grain grown in the wet, rice-producing south had to reach the capital in the north. Rivers in China flow mostly west to east, so the route had to link them with canals that climb and descend.
 
 The engineering. Builders joined existing canals and rivers into one waterway. Pound locks, which raise or lower boats between gated chambers, let the canal climb between water levels. Engineers dug new channels where needed and built embankments to hold the water and protect the fields.
 
@@ -87,7 +87,7 @@ The Manning equation estimates the mean velocity in an open channel that flows u
 
 $$V = \frac{1}{n} R^{2/3} S^{1/2}$$
 
-where $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient in s/m$^{1/3}$ (a dimensionless value for many use cases, typically about 0.013 for finished masonry or concrete), $R = A/P$ is the hydraulic radius in metres (m), $A$ is the wetted cross-section area in square metres (m$^2$), $P$ is the wetted perimeter in metres (m), and $S$ is the channel slope, a dimensionless ratio of drop to length.
+where $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient in s/m$^{1/3}$ (typically about 0.013 for finished masonry or concrete), $R = A/P$ is the hydraulic radius in metres (m), $A$ is the wetted cross-section area in square metres (m$^2$), $P$ is the wetted perimeter in metres (m), and $S$ is the channel slope, a dimensionless ratio of drop to length.
 
 Assumptions for the Manning equation: the flow is steady and uniform, so the depth and velocity do not change along the channel. The channel is prismatic, with the same cross-section along its length. The slope is small, so the water surface runs nearly parallel to the bed. The flow is fully turbulent and rough, so $n$ is constant for the given lining.
 

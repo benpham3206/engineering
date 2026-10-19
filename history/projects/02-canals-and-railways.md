@@ -19,7 +19,7 @@ The scale. Construction ran from 1817 to 1825, and the canal opened on October 2
 
 What went wrong. Many laborers were immigrants, including many from Ireland. Work in the swamps and low ground exposed crews to malaria and other fevers, and the canal earned the nickname "Clinton's Ditch" after DeWitt Clinton, the governor who backed the project. Deaths among the crews are not well recorded.
 
-How it changed the world. Freight that cost about $100 a ton to move overland fell to about $10 a ton by canal, according to figures that were widely cited at the time. New York City grew into the largest port in the country, and the canal opened the Great Lakes to settlers and trade. Canals in other states soon copied the model.
+How it changed the world. Freight that cost about \$100 a ton to move overland fell to about \$10 a ton by canal, according to figures that were widely cited at the time. New York City grew into the largest port in the country, and the canal opened the Great Lakes to settlers and trade. Canals in other states soon copied the model.
 
 ### The Suez Canal
 
@@ -27,7 +27,7 @@ The problem. Ships from Europe to India and East Asia sailed around the Cape of 
 
 The engineering. The canal is a sea-level channel about 193 km long with no locks, which means the Mediterranean and Red Sea levels are close enough that the water does not need to be lifted. Dredgers cut through sand, clay, and rock. Engineers built in a desert, using freshwater channels and workers' camps. Ships pass through in convoys that meet at passing bays.
 
-The scale. Construction ran from 1859 to 1869, and the canal opened on November 17, 1869. The French engineer Ferdinand de Lesseps led the company that built it. The canal shortened the sea route from Europe to Asia by thousands of kilometres.
+The scale. Construction ran from 1859 to 1869, and the canal opened on November 17, 1869. The French diplomat Ferdinand de Lesseps promoted the canal and led the company that built it. The canal shortened the sea route from Europe to Asia by thousands of kilometres.
 
 What went wrong. Egyptian laborers worked under a forced labor system that the company and the government arranged. Conditions were harsh, and disease and accidents killed many workers. Estimates of the death toll vary widely, and the figures are disputed. The canal was closed during the Six-Day War of 1967 and reopened in 1975. Egypt nationalized the canal in 1956, which triggered a crisis that involved Britain, France, and Israel.
 
@@ -37,7 +37,7 @@ How it changed the world. Trade between Europe and Asia shifted toward steamship
 
 The problem. Ships sailing between the Atlantic and Pacific oceans had to go around Cape Horn at the tip of South America, a dangerous passage. Crossing the Isthmus of Panama promised a route far shorter than that voyage, but the land was mountainous, the climate was wet, and disease was common.
 
-The engineering. The canal is about 82 km long, and it uses locks to lift ships about 26 m above sea level and lower them again on the other side. The lifts are arranged in three flights, at Gatun on the Atlantic side and at Pedro Miguel and Miraflores on the Pacific side. Engineers dammed the Chagres River to create Gatun Lake, which supplies the water for each lockage. The Culebra Cut required removing large volumes of rock and soil through the continental divide. The original locks measured 33.5 m wide and about 305 m long.
+The engineering. The canal is about 82 km long, and it uses locks to lift ships about 26 m above sea level and lower them again on the other side. The lifts sit at three lock sites: Gatun on the Atlantic side, where three chambers in a row raise ships the full 26 m, and Pedro Miguel and Miraflores on the Pacific side, which lower ships in one and two steps. Engineers dammed the Chagres River to create Gatun Lake, which supplies the water for each lockage. The Culebra Cut required removing large volumes of rock and soil through the continental divide. The original locks measured 33.5 m wide and about 305 m long.
 
 The scale. The French company attempted a sea-level canal from 1881 to 1889 and failed. Estimates of the deaths during that effort run to about 22,000, though the figure is uncertain. The United States took over the project and completed the canal in 1914, which is when it opened to traffic on August 15, 1914. The canal was widened with a third set of locks, which opened in 2016 for larger ships.
 
@@ -73,9 +73,9 @@ How it changed the world. The railway opened Siberia to settlers and industry, a
 
 The force that a train must overcome on a grade comes from the component of weight along the slope:
 
-$$F_{grade} = m g \sin\theta \approx m g G$$
+$$F_{\text{grade}} = m g \sin\theta \approx m g G$$
 
-where $F_{grade}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $\theta$ is the angle of the slope, and $G$ is the grade, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
+where $F_{\text{grade}}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $\theta$ is the angle of the slope, and $G$ is the grade, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
 
 Assumptions: the track is straight, the grade is constant, the train moves at constant speed, and rolling resistance and air drag are ignored. The estimate gives only the part of the force due to gravity.
 
@@ -87,9 +87,9 @@ where $E$ is the energy in joules (J), and $h$ is the height in metres (m). Assu
 
 For a lock, the water needed to raise a boat depends on the chamber area and the lift:
 
-$$V = A_{chamber}\, h_{lift}$$
+$$V = A_{\text{chamber}}\, h_{\text{lift}}$$
 
-where $V$ is the volume of water in cubic metres (m$^3$), $A_{chamber}$ is the chamber's plan area in square metres (m$^2$), and $h_{lift}$ is the lift in metres (m). Assumptions: the chamber walls are vertical, the chamber area is constant over the lift, and leakage through the gates is neglected.
+where $V$ is the volume of water in cubic metres (m$^3$), $A_{\text{chamber}}$ is the chamber's plan area in square metres (m$^2$), and $h_{\text{lift}}$ is the lift in metres (m). Assumptions: the chamber walls are vertical, the chamber area is constant over the lift, and leakage through the gates is neglected.
 
 ## Worked example
 
@@ -111,7 +111,7 @@ where $V$ is the volume of water in cubic metres (m$^3$), $A_{chamber}$ is the c
 
 ## Design trade-offs
 
-Railway engineers keep grades low, because heavier grades need more locomotives or slower trains. Canal engineers choose between locks and long cuts. Locks lift boats cheaply in material but use water and slow traffic. A long cut avoids locks but needs more excavation. Both projects balance cost against capacity, and the Panama Canal's three-flight design put lifts where water supply and rock conditions allowed them.
+Railway engineers keep grades low, because heavier grades need more locomotives or slower trains. Canal engineers choose between locks and long cuts. Locks lift boats cheaply in material but use water and slow traffic. A long cut avoids locks but needs more excavation. Both projects balance cost against capacity, and the Panama Canal's three-site design put lifts where water supply and rock conditions allowed them.
 
 ## How it fails
 
@@ -137,9 +137,9 @@ Route choice sets the cost. A canal or railway that avoids steep grades and deep
 
 ## Practice
 
-1. The Erie Canal is 363 miles long. Convert its length to kilometres, using 1 mile = 1.609 km.
+1. The Erie Canal is 363 miles long. Convert its length to kilometres, using $1\ \mathrm{mile} = 1.609\ \mathrm{km}$.
 2. A 500 t train climbs a 2 percent grade. Find the grade force in kilonewtons, using $g = 9.81\ \text{m/s}^2$ (Earth surface).
-3. The Panama Canal lifts ships 26 m across three lock flights of equal height. Find the lift per flight in metres.
+3. The Gatun locks lift ships 26 m across three chambers of equal height. Find the lift per chamber in metres.
 4. Find the energy needed to raise a 1000 t train by 50 m, in kilowatt hours.
 5. Explain in two or three sentences why the Suez Canal does not need locks.
 
@@ -147,7 +147,7 @@ Route choice sets the cost. A canal or railway that avoids steep grades and deep
 
 1. $363 \times 1.609 = 584\ \text{km}$.
 2. $F = 5.0 \times 10^5 \times 9.81 \times 0.02 = 9.8 \times 10^4\ \text{N}$, which is about 98 kN.
-3. $26 / 3 = 8.7\ \text{m}$ per flight.
+3. $26 / 3 = 8.7\ \text{m}$ per chamber.
 4. $E = 1.0 \times 10^6 \times 9.81 \times 50 = 4.9 \times 10^8\ \text{J}$, which is about $4.9 \times 10^8 / 3.6 \times 10^6 = 136\ \text{kWh}$.
 5. The Mediterranean and Red Sea water levels are close, so ships can pass through a sea-level channel without lifting. Locks are needed only where the water on one side is higher or lower than on the other, as at Panama.
 

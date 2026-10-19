@@ -11,9 +11,9 @@ A power supply turns the electricity from a source into the voltage and current 
 
 A power supply takes electrical energy in at one voltage and delivers it out at another. The ideal supply loses no energy, so input power equals output power. Real supplies lose some energy as heat. The efficiency $\eta$ is the ratio of output power to input power:
 
-$$\eta = \frac{P_{out}}{P_{in}}$$
+$$\eta = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}}$$
 
-where $P_{out}$ and $P_{in}$ are in watts (W), and $\eta$ is dimensionless.
+where $P_{\mathrm{out}}$ and $P_{\mathrm{in}}$ are in watts (W), and $\eta$ is dimensionless.
 
 Converters fall into two groups. Linear regulators drop the extra voltage across a transistor that acts like a variable resistor. Switching converters turn a transistor fully on and fully off many times per second, and store energy in an inductor or capacitor between switching cycles. The switch dissipates little power in either state, so switching converters reach efficiencies of 85 to 95 percent in typical designs.
 
@@ -27,11 +27,11 @@ A linear regulator holds the output voltage by changing the voltage across a pas
 
 The power lost in the regulator is:
 
-$$P_{loss} = (V_{in} - V_{out})\, I_{out}$$
+$$P_{\mathrm{loss}} = (V_{\mathrm{in}} - V_{\mathrm{out}})\, I_{\mathrm{out}}$$
 
 The output is clean and has almost no switching noise. The cost is efficiency. The efficiency is:
 
-$$\eta = \frac{V_{out}}{V_{in}}$$
+$$\eta = \frac{V_{\mathrm{out}}}{V_{\mathrm{in}}}$$
 
 when the quiescent current is small. A 12 V input regulated down to 5 V gives at most 42 percent efficiency, no matter how well the regulator is built.
 
@@ -39,7 +39,7 @@ when the quiescent current is small. A 12 V input regulated down to 5 V gives at
 
 A buck converter lowers the voltage. A switch connects the input to an inductor for a fraction of each cycle, called the duty cycle $D$. When the switch opens, a diode or a second switch keeps the inductor current flowing into the output capacitor. The output voltage is set by the duty cycle:
 
-$$V_{out} = D\, V_{in}$$
+$$V_{\mathrm{out}} = D\, V_{\mathrm{in}}$$
 
 The inductor smooths the current, so the output carries only a small ripple. A capacitor on the output smooths the voltage further.
 
@@ -47,7 +47,7 @@ The inductor smooths the current, so the output carries only a small ripple. A c
 
 A boost converter raises the voltage. The inductor charges from the input while the switch is closed. When the switch opens, the inductor pushes its stored energy through a diode into the output capacitor. The output voltage for an ideal converter is:
 
-$$V_{out} = \frac{V_{in}}{1 - D}$$
+$$V_{\mathrm{out}} = \frac{V_{\mathrm{in}}}{1 - D}$$
 
 A boost converter cannot give a lower output than its input. It also has no direct path from input to output, so a short on the output can draw a large current unless the design limits it.
 
@@ -79,28 +79,28 @@ An inverter turns DC into AC. A switching bridge of transistors connects the DC 
 
 ## Key equations
 
-- Efficiency: $\eta = P_{out} / P_{in}$, dimensionless.
-- Buck output voltage: $V_{out} = D\, V_{in}$, with $D$ dimensionless and between 0 and 1, and $V$ in volts (V).
-- Boost output voltage: $V_{out} = V_{in} / (1 - D)$, in V.
-- Linear regulator loss: $P_{loss} = (V_{in} - V_{out}) I_{out}$, in W, with $I_{out}$ in amperes (A).
-- Inductor ripple current in a buck converter: $\Delta I_L = \dfrac{(V_{in} - V_{out})\, D}{L\, f_{sw}}$, where $L$ is the inductance in henries (H) and $f_{sw}$ is the switching frequency in hertz (Hz). The ripple $\Delta I_L$ is in A peak to peak.
-- Output ripple of a full-wave bridge with a capacitor filter: $\Delta V \approx \dfrac{I_{load}}{2 f_{line} C}$, where $I_{load}$ is in A, $f_{line}$ is the mains frequency in Hz, $C$ is the capacitance in farads (F), and $\Delta V$ is in V peak to peak.
+- Efficiency: $\eta = P_{\mathrm{out}} / P_{\mathrm{in}}$, dimensionless.
+- Buck output voltage: $V_{\mathrm{out}} = D\, V_{\mathrm{in}}$, with $D$ dimensionless and between 0 and 1, and $V$ in volts (V).
+- Boost output voltage: $V_{\mathrm{out}} = V_{\mathrm{in}} / (1 - D)$, in V.
+- Linear regulator loss: $P_{\mathrm{loss}} = (V_{\mathrm{in}} - V_{\mathrm{out}}) I_{\mathrm{out}}$, in W, with $I_{\mathrm{out}}$ in amperes (A).
+- Inductor ripple current in a buck converter: $\Delta I_L = \dfrac{(V_{\mathrm{in}} - V_{\mathrm{out}})\, D}{L\, f_{\mathrm{sw}}}$, where $L$ is the inductance in henries (H) and $f_{\mathrm{sw}}$ is the switching frequency in hertz (Hz). The ripple $\Delta I_L$ is in A peak to peak.
+- Output ripple of a full-wave bridge with a capacitor filter: $\Delta V \approx \dfrac{I_{\mathrm{load}}}{2 f_{\mathrm{line}} C}$, where $I_{\mathrm{load}}$ is in A, $f_{\mathrm{line}}$ is the mains frequency in Hz, $C$ is the capacitance in farads (F), and $\Delta V$ is in V peak to peak.
 
 ## Worked example
 
-**Given:** A 12 V battery bus must supply a 5 V rail at $I_{out} = 2.0$ A. The rail can use either a linear regulator or a buck converter. The buck converter switches at $f_{sw} = 200$ kHz with an inductor of $L = 22\ \mu\text{H}$ and an efficiency of $\eta = 0.90$. Assume ideal components except for the stated efficiency.
+**Given:** A 12 V battery bus must supply a 5 V rail at $I_{\mathrm{out}} = 2.0$ A. The rail can use either a linear regulator or a buck converter. The buck converter switches at $f_{\mathrm{sw}} = 200$ kHz with an inductor of $L = 22\ \mu\text{H}$ and an efficiency of $\eta = 0.90$. Assume ideal components except for the stated efficiency.
 
 **Find:** (a) the duty cycle of the buck converter, (b) its input power and power loss, (c) the peak-to-peak inductor ripple current, and (d) the power lost in a linear regulator for the same job, and its efficiency.
 
 **Solution:**
 
-1. Duty cycle: $D = V_{out} / V_{in} = 5.0 / 12.0 = 0.417$.
-2. Output power: $P_{out} = V_{out} I_{out} = 5.0 \times 2.0 = 10.0\ \text{W}$.
-3. Input power: $P_{in} = P_{out} / \eta = 10.0 / 0.90 = 11.1\ \text{W}$. The converter loses $11.1 - 10.0 = 1.1\ \text{W}$.
+1. Duty cycle: $D = V_{\mathrm{out}} / V_{\mathrm{in}} = 5.0 / 12.0 = 0.417$.
+2. Output power: $P_{\mathrm{out}} = V_{\mathrm{out}} I_{\mathrm{out}} = 5.0 \times 2.0 = 10.0\ \text{W}$.
+3. Input power: $P_{\mathrm{in}} = P_{\mathrm{out}} / \eta = 10.0 / 0.90 = 11.1\ \text{W}$. The converter loses $11.1 - 10.0 = 1.1\ \text{W}$.
 4. Inductor ripple: $\Delta I_L = (12.0 - 5.0)(0.417) / (22\times10^{-6} \times 200\times10^{3}) = 2.92 / 4.4 = 0.66\ \text{A}$ peak to peak.
-5. Linear regulator loss: $P_{loss} = (12.0 - 5.0) \times 2.0 = 14.0\ \text{W}$. Its input power is $10.0 + 14.0 = 24.0\ \text{W}$, so its efficiency is $10.0 / 24.0 = 42\ \%$.
+5. Linear regulator loss: $P_{\mathrm{loss}} = (12.0 - 5.0) \times 2.0 = 14.0\ \text{W}$. Its input power is $10.0 + 14.0 = 24.0\ \text{W}$, so its efficiency is $10.0 / 24.0 = 42\ \%$.
 
-**Answer:** (a) $D = 0.417$. (b) $P_{in} = 11.1\ \text{W}$, with a loss of $1.1\ \text{W}$. (c) $\Delta I_L = 0.66\ \text{A}$. (d) The linear regulator loses $14.0\ \text{W}$ and runs at about 42 percent efficiency.
+**Answer:** (a) $D = 0.417$. (b) $P_{\mathrm{in}} = 11.1\ \text{W}$, with a loss of $1.1\ \text{W}$. (c) $\Delta I_L = 0.66\ \text{A}$. (d) The linear regulator loses $14.0\ \text{W}$ and runs at about 42 percent efficiency.
 
 **Sanity check:** The buck converter loses about 1 W, and the linear regulator loses 14 W for the same load. The linear regulator must dissipate 14 W from a small package, so it needs a heat sink. The ripple of 0.66 A is about one third of the 2 A load. Designers often accept this level to keep the inductor small, and the output capacitor must absorb the ripple.
 
@@ -114,18 +114,18 @@ An inverter turns DC into AC. A switching bridge of transistors connects the DC 
 
 <details><summary>Answers</summary>
 
-1. $P_{loss} = (9.0 - 3.3) \times 0.50 = 2.85\ \text{W}$.
+1. $P_{\mathrm{loss}} = (9.0 - 3.3) \times 0.50 = 2.85\ \text{W}$.
 2. $D = 3.3 / 12 = 0.275$.
 3. $D = 1 - 3.7 / 5.0 = 0.26$.
-4. $P_{in} = 12 \times 3.0 / 0.92 = 39.1\ \text{W}$.
+4. $P_{\mathrm{in}} = 12 \times 3.0 / 0.92 = 39.1\ \text{W}$.
 5. $\Delta V \approx 2.0 / (2 \times 60 \times 0.010) = 1.7\ \text{V}$ peak to peak.
 
 </details>
 
 ## Common mistakes
 
-- Using the buck formula for a boost converter, or the reverse. A buck gives $V_{out} < V_{in}$, and a boost gives $V_{out} > V_{in}$.
-- Assuming a linear regulator is efficient because its output is steady. Its efficiency is $V_{out}/V_{in}$, which drops when the input is much higher than the output.
+- Using the buck formula for a boost converter, or the reverse. A buck gives $V_{\mathrm{out}} < V_{\mathrm{in}}$, and a boost gives $V_{\mathrm{out}} > V_{\mathrm{in}}$.
+- Assuming a linear regulator is efficient because its output is steady. Its efficiency is $V_{\mathrm{out}}/V_{\mathrm{in}}$, which drops when the input is much higher than the output.
 - Forgetting that the rectifier output depends on the mains frequency. A 50 Hz supply has a larger ripple than a 60 Hz supply with the same capacitor.
 - Sizing the inductor for average current only. The peak current, which is the average plus half the ripple, sets the saturation rating.
 - Ignoring light-load efficiency for a battery device, where the converter spends most of its time.

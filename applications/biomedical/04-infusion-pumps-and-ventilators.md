@@ -73,7 +73,7 @@ A ventilator moves gas through a patient circuit. A gas source, a blower or valv
 
 ## How it fails
 
-- Free flow. Gravity or pressure drives fluid uncontrolled when the set is loaded or the door is open. A check valve or anti-free-flow valve prevents it.
+- Free flow. Gravity or pressure drives fluid uncontrolled when the set is loaded or the door is open. An ordinary check valve does not prevent it, because it passes forward flow. A purpose-designed anti-free-flow mechanism, such as a clamp that closes automatically when the set leaves the pump, prevents it. For example, a 1 m fluid head gives about $\rho g h = 1000 \times 9.81 \times 1 \approx 9.8\ \text{kPa}$, which pushes flow forward.
 - Occlusion. A kinked or blocked line raises pressure. The sensor must alarm before the pressure reaches a damaging level.
 - Air in the line. A bubble passes into the line when a container runs empty or a connection leaks. An air sensor stops the pump.
 - Dosing errors. Wrong programming causes an incorrect rate. A drug library with limits on the programmed value reduces this risk.

@@ -25,7 +25,7 @@ Safety means that a design keeps people from harm across the conditions it will 
 
 ### Worked terms
 
-- Safety factor = strength / load. Use the same units for both.
+- $\text{Safety factor} = \text{strength} / \text{load}$. Use the same units for both.
 - Typical values: structural steel yield strength about 250 MPa (36 ksi) for mild steel. Safety factors for building structures are often in the range of 1.5 to 3, depending on the code and the load type.
 
 ### Case: Hyatt Regency walkway collapse (1981)
@@ -57,10 +57,10 @@ The lesson: software is part of the safety system. It needs the same independent
 Safety factor:
 
 $$
-SF = \frac{\sigma_y}{\sigma_{\text{actual}}}
+\mathrm{SF} = \frac{\sigma_y}{\sigma_{\text{actual}}}
 $$
 
-where $SF$ is the safety factor (unitless), $\sigma_y$ is the yield strength of the material (Pa, or psi), and $\sigma_{\text{actual}}$ is the stress in the part under the design load (Pa, or psi). Stress is found from:
+where $\mathrm{SF}$ is the safety factor (unitless), $\sigma_y$ is the yield strength of the material (Pa, or psi), and $\sigma_{\text{actual}}$ is the stress in the part under the design load (Pa, or psi). Stress is found from:
 
 $$
 \sigma = \frac{F}{A}
@@ -80,7 +80,7 @@ where $F$ is the force (N, or lbf) and $A$ is the cross-sectional area (m$^2$, o
 
 1. Area: $A = \pi (d/2)^2 = \pi (0.010\ \text{m})^2 = 3.142 \times 10^{-4}\ \text{m}^2$.
 2. Stress: $\sigma = F / A = 12{,}000 / 3.142 \times 10^{-4} = 3.82 \times 10^{7}\ \text{Pa} = 38.2\ \text{MPa}$.
-3. Safety factor: $SF = 250 / 38.2 = 6.54$.
+3. Safety factor: $\mathrm{SF} = 250 / 38.2 = 6.54$.
 
 **Answer:** The stress is 38.2 MPa (about 5,540 psi). The safety factor against yielding is about 6.5.
 

@@ -38,7 +38,7 @@ Medical imaging makes pictures of the inside of the body without opening it. Eac
 ## Key equations
 
 - X-ray attenuation: $I = I_0 e^{-\mu x}$. Here $I_0$ is incident intensity, $I$ is transmitted intensity (both in the same units), $\mu$ is the linear attenuation coefficient in $\text{cm}^{-1}$, and $x$ is thickness in cm. Assumes a narrow monoenergetic beam, no scatter reaching the detector, and a uniform material.
-- Linear attenuation from mass attenuation: $\mu = \rho \, (\mu/\rho)$. Here $\rho$ is density in $\text{g/cm}^3$ and $\mu/\rho$ is the mass attenuation coefficient in $\text{cm}^2/\text{g}$. Assumes the same material and energy throughout.
+- Linear attenuation from mass attenuation: $\mu = \rho \, (\mu/\rho)$. Here $\rho$ is density in $\text{g}/\text{cm}^3$ and $\mu/\rho$ is the mass attenuation coefficient in $\text{cm}^2/\text{g}$. Assumes the same material and energy throughout.
 - Half-value layer: $\text{HVL} = \ln 2 / \mu$. It is the thickness in cm that halves the intensity. Assumes the same monoenergetic beam as above.
 - Larmor frequency: $f = \dfrac{\gamma}{2\pi} B_0$. Here $f$ is in hertz, $\gamma/2\pi = 42.577\ \text{MHz/T}$ for hydrogen protons (a standard value), and $B_0$ is the static field in tesla. Assumes the spins sit in a uniform static field.
 - Echo depth: $d = c\,t/2$. Here $c$ is the sound speed in m/s, $t$ is the round-trip time in s, and $d$ is depth in m. Assumes a constant sound speed along the path.
@@ -47,7 +47,7 @@ Medical imaging makes pictures of the inside of the body without opening it. Eac
 
 ## Worked example
 
-**Given:** A 10 cm thick slab of water at a beam energy of 100 keV. The typical mass attenuation coefficient of water at 100 keV is $\mu/\rho = 0.1707\ \text{cm}^2/\text{g}$. Water density is $\rho = 1.0\ \text{g/cm}^3$. Assume a narrow monoenergetic beam and no scatter at the detector. A separate 1.5 T MRI scanner is also considered.
+**Given:** A 10 cm thick slab of water at a beam energy of 100 keV. The typical mass attenuation coefficient of water at 100 keV is $\mu/\rho = 0.1707\ \text{cm}^2/\text{g}$. Water density is $\rho = 1.0\ \text{g}/\text{cm}^3$. Assume a narrow monoenergetic beam and no scatter at the detector. A separate 1.5 T MRI scanner is also considered.
 
 **Find:** (a) the fraction of the beam transmitted, (b) the half-value layer of water, and (c) the Larmor frequency of protons at 1.5 T.
 

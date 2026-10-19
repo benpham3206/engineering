@@ -43,9 +43,9 @@ Kinetic energy, with $I$ in kg m$^2$, $\omega$ in rad/s, and $E$ in joules (J):
 
 $$E = \tfrac{1}{2} I \omega^2$$
 
-Speed fluctuation coefficient, with $\omega_{max}$, $\omega_{min}$, and the mean speed $\omega_m$ all in rad/s:
+Speed fluctuation coefficient, with $\omega_{\mathrm{max}}$, $\omega_{\mathrm{min}}$, and the mean speed $\omega_m$ all in rad/s:
 
-$$C_s = \frac{\omega_{max} - \omega_{min}}{\omega_m}$$
+$$C_s = \frac{\omega_{\mathrm{max}} - \omega_{\mathrm{min}}}{\omega_m}$$
 
 Energy fluctuation per cycle, in J:
 
@@ -59,13 +59,13 @@ Hoop stress in a thin rim, with density $\rho$ in kg/m$^3$ and rim speed $v = \o
 
 $$\sigma = \rho v^2$$
 
-Maximum rim speed of a thin ring for an allowable stress $\sigma_{allow}$ (Pa):
+Maximum rim speed of a thin ring for an allowable stress $\sigma_{\mathrm{allow}}$ (Pa):
 
-$$v_{max} = \sqrt{\frac{\sigma_{allow}}{\rho}}$$
+$$v_{\mathrm{max}} = \sqrt{\frac{\sigma_{\mathrm{allow}}}{\rho}}$$
 
 Maximum stress at the centre of a solid disc, with Poisson's ratio $\nu$ (dimensionless, about 0.3 for steel, typical):
 
-$$\sigma_{max} = \frac{3+\nu}{8}\,\rho v^2$$
+$$\sigma_{\mathrm{max}} = \frac{3+\nu}{8}\,\rho v^2$$
 
 Because $(3+\nu)/8$ is about 0.41 for steel, a solid disc can run at about 1.6 times the rim speed of a thin ring at the same stress.
 
@@ -99,7 +99,7 @@ $$P = \frac{\Delta E}{\Delta t}$$
 - **Mass against speed.** Stored energy scales with $I\omega^2$, so speed buys energy more cheaply than mass does. Stress grows with $v^2$, so the rim speed sets the limit.
 - **Smoothness against response.** A heavier flywheel holds speed more steadily, but it responds slowly and adds inertia to every start.
 - **Ring against disc.** A ring stores the most energy for its rim speed. A disc runs faster at the same stress, so it stores more energy per kilogram at the limit.
-- **Usable energy.** Only the energy between $\omega_{min}$ and $\omega_{max}$ can be used, which is $\tfrac{1}{2}I(\omega_{max}^2 - \omega_{min}^2)$. The rest stays in the rotor.
+- **Usable energy.** Only the energy between $\omega_{\mathrm{min}}$ and $\omega_{\mathrm{max}}$ can be used, which is $\tfrac{1}{2}I(\omega_{\mathrm{max}}^2 - \omega_{\mathrm{min}}^2)$. The rest stays in the rotor.
 - **Losses.** Windage and bearing friction drain energy when the rotor spins idle. A vacuum housing or magnetic bearings cut the losses, at extra cost.
 - **Balance.** An unbalanced rotor shakes its mounts and its bearings. A high-speed rotor must be balanced to a stated grade.
 - **Gyroscopic loads.** A large flywheel in a vehicle or ship resists a change in the direction of its axis. The mount must carry that torque.
@@ -129,8 +129,8 @@ Rotating masses that keep turning between pushes are very old. Potters' wheels u
 1. $E = \tfrac{1}{2}(2)(300)^2 = 90\,000$ J, which is 90 kJ.
 2. $\Delta E = \tfrac{1}{2}(2)(300^2 - 240^2) = 32\,400$ J, which is 32.4 kJ.
 3. $\omega_m = 2\pi(500)/60 = 52.36$ rad/s, so $I = 2000/(52.36^2 \times 0.01) = 73.0$ kg m$^2$.
-4. $v_{max} = \sqrt{200\times10^6/7850} = 159.6$ m/s.
-5. $v_{max} = \sqrt{8 \times 200\times10^6/((3.3)(7850))} = 248.5$ m/s.
+4. $v_{\mathrm{max}} = \sqrt{200\times10^6/7850} = 159.6$ m/s.
+5. $v_{\mathrm{max}} = \sqrt{8 \times 200\times10^6/((3.3)(7850))} = 248.5$ m/s.
 
 </details>
 
@@ -139,7 +139,7 @@ Rotating masses that keep turning between pushes are very old. Potters' wheels u
 - Putting rev/min into $\tfrac{1}{2}I\omega^2$. Convert to rad/s first.
 - Taking $C_s$ as the difference between the maximum and minimum speed. It is that difference divided by the mean speed.
 - Assuming a solid disc and a thin ring have the same rim speed limit. The disc factor $(3+\nu)/8$ lets the disc run faster at the same stress.
-- Treating all the stored energy as usable. The speed cannot fall to zero, so only the energy between $\omega_{min}$ and $\omega_{max}$ can be delivered.
+- Treating all the stored energy as usable. The speed cannot fall to zero, so only the energy between $\omega_{\mathrm{min}}$ and $\omega_{\mathrm{max}}$ can be delivered.
 - Checking the rim and skipping the bore and the spoke joints. The cyclic stress at those parts often governs the design.
 
 ## Go deeper

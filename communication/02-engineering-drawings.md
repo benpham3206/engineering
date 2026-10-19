@@ -97,7 +97,7 @@ Use this to review a drawing before release.
 
 1. The top view sits above the front view and the right view sits to the right of it. Hidden edges are dashed.
 2. Each length, width, height, hole size, and hole location appears once. No chain of dimensions closes on itself.
-3. Every field is filled in, the units are stated once, and a default tolerance note such as "+/-0.1 mm unless noted" is present.
+3. Every field is filled in, the units are stated once, and a default tolerance note such as "$\pm 0.1$ mm unless noted" is present.
 4. Common faults: missing units, duplicate dimensions, dimensions to hidden lines, no default tolerance.
 
 </details>

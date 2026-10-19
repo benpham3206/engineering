@@ -21,9 +21,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Materials reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-## Related courses
-
-- MATE 25 - Intro to Materials
-- CE 112 - Mechanics of Materials
-
 See also: [physics](../physics), [manufacturing](../manufacturing), [design](../design)

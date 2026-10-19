@@ -27,7 +27,7 @@ A **diode** is one p-n junction with two terminals: the anode (p side) and the c
 
 A **bipolar junction transistor (BJT)** stacks two junctions. An NPN transistor has a thin p-type base between an n-type emitter and an n-type collector. A small base current controls a large collector current. The collector current is about $\beta$ times the base current. The transistor has three operating regions. In cutoff, the base-emitter junction is off and almost no current flows, so the transistor acts as an open switch. In the active region, the collector current follows the base current, so the transistor acts as an amplifier. In saturation, both junctions are forward biased and the collector-emitter voltage drops to about 0.1 to 0.3 V (typical value), so the transistor acts as a closed switch.
 
-A **MOSFET** (metal-oxide-semiconductor field-effect transistor) has a gate electrode on top of a thin insulating oxide layer. The gate sits above the channel between the source and the drain. When the gate-source voltage passes the threshold voltage $V_{th}$, the channel forms and connects the source to the drain. The gate draws almost no DC current, because the oxide insulates it. The MOSFET is voltage controlled. A BJT is current controlled.
+A **MOSFET** (metal-oxide-semiconductor field-effect transistor) has a gate electrode on top of a thin insulating oxide layer. The gate sits above the channel between the source and the drain. When the gate-source voltage passes the threshold voltage $V_{\mathrm{th}}$, the channel forms and connects the source to the drain. The gate draws almost no DC current, because the oxide insulates it. The MOSFET is voltage controlled. A BJT is current controlled.
 
 ### Main parts
 
@@ -56,11 +56,11 @@ A **MOSFET** (metal-oxide-semiconductor field-effect transistor) has a gate elec
 - Diode (Shockley) equation: $I_D = I_S \left(e^{V_D / (n V_T)} - 1\right)$, where $I_D$ is the diode current in amperes, $V_D$ is the diode voltage in volts, $I_S$ is the saturation current in amperes (a device constant), and $n$ is the ideality factor (dimensionless, typically 1 to 2).
 - Mass action: $n\,p = n_i^2$, where $n$ and $p$ are the electron and hole densities in $\text{cm}^{-3}$, and $n_i$ is the intrinsic density in $\text{cm}^{-3}$.
 - BJT current gain: $I_C = \beta I_B$ and $I_E = I_C + I_B$, where $I_C$, $I_B$, and $I_E$ are the collector, base, and emitter currents in amperes, and $\beta$ is the dimensionless current gain.
-- MOSFET saturation current: $I_D = \tfrac{1}{2} k_n' \dfrac{W}{L} \left(V_{GS} - V_{th}\right)^2$, where $k_n'$ is the process transconductance parameter in $\text{A/V}^2$, $W/L$ is the width-to-length ratio (dimensionless), $V_{GS}$ is the gate-source voltage in volts, and $V_{th}$ is the threshold voltage in volts.
+- MOSFET saturation current: $I_D = \tfrac{1}{2} k_n' \dfrac{W}{L} \left(V_{\mathrm{GS}} - V_{\mathrm{th}}\right)^2$, where $k_n'$ is the process transconductance parameter in $\text{A}/\text{V}^2$, $W/L$ is the width-to-length ratio (dimensionless), $V_{\mathrm{GS}}$ is the gate-source voltage in volts, and $V_{\mathrm{th}}$ is the threshold voltage in volts.
 
 ## Worked example
 
-**Given:** An NPN transistor switches a load. A $12\ \text{V}$ supply feeds a $120\ \Omega$ load connected to the collector. A $5\ \text{V}$ logic signal drives the base through a resistor $R_B$. Assume $V_{BE} = 0.7\ \text{V}$ when on, $V_{CE(sat)} = 0.2\ \text{V}$ (typical value), and a minimum current gain $\beta_{min} = 100$ from the datasheet. The base current is set to $10\ \text{mA}$.
+**Given:** An NPN transistor switches a load. A $12\ \text{V}$ supply feeds a $120\ \Omega$ load connected to the collector. A $5\ \text{V}$ logic signal drives the base through a resistor $R_B$. Assume $V_{\mathrm{BE}} = 0.7\ \text{V}$ when on, $V_{\mathrm{CE}(\mathrm{sat})} = 0.2\ \text{V}$ (typical value), and a minimum current gain $\beta_{\mathrm{min}} = 100$ from the datasheet. The base current is set to $10\ \text{mA}$.
 
 **Find:** (a) the collector current, (b) the base resistor, (c) whether the transistor saturates, and (d) the power dissipated in the transistor.
 
@@ -68,8 +68,8 @@ A **MOSFET** (metal-oxide-semiconductor field-effect transistor) has a gate elec
 
 1. Collector current when fully on: $I_C = \dfrac{12 - 0.2}{120} = 0.0983\ \text{A} = 98.3\ \text{mA}$.
 2. Base resistor: $R_B = \dfrac{5 - 0.7}{0.010} = 430\ \Omega$.
-3. Minimum base current for saturation: $I_{B,min} = \dfrac{I_C}{\beta_{min}} = \dfrac{0.0983}{100} = 0.98\ \text{mA}$. The actual base current of $10\ \text{mA}$ is about ten times that value, so the transistor saturates.
-4. Power in the transistor: $P = V_{CE} I_C = 0.2 \times 0.0983 = 19.7\ \text{mW}$.
+3. Minimum base current for saturation: $I_{B,\mathrm{min}} = \dfrac{I_C}{\beta_{\mathrm{min}}} = \dfrac{0.0983}{100} = 0.98\ \text{mA}$. The actual base current of $10\ \text{mA}$ is about ten times that value, so the transistor saturates.
+4. Power in the transistor: $P = V_{\mathrm{CE}} I_C = 0.2 \times 0.0983 = 19.7\ \text{mW}$.
 5. Power in the base resistor, for comparison: $P_{R_B} = (4.3)^2 / 430 = 43\ \text{mW}$.
 
 **Answer:** (a) $98.3\ \text{mA}$. (b) $430\ \Omega$. (c) Yes, the transistor saturates, with about ten times the base current needed. (d) $19.7\ \text{mW}$ in the transistor.
@@ -79,7 +79,7 @@ A **MOSFET** (metal-oxide-semiconductor field-effect transistor) has a gate elec
 ## Design trade-offs
 
 - **Speed against drive power.** A MOSFET needs charge to move its gate capacitance, but it draws no steady current. A BJT needs continuous base current. A BJT in saturation stores charge in the base, so it turns off slower than a MOSFET.
-- **Voltage rating against on-resistance.** For a given die size, a MOSFET rated for higher voltage has a larger on-resistance $R_{DS(on)}$. More conduction loss is the price of more voltage margin.
+- **Voltage rating against on-resistance.** For a given die size, a MOSFET rated for higher voltage has a larger on-resistance $R_{\mathrm{DS}(\mathrm{on})}$. More conduction loss is the price of more voltage margin.
 - **Forward drop against leakage.** A Schottky diode loses less power in forward bias than a silicon p-n diode, but it leaks more in reverse and has a lower maximum reverse voltage.
 - **Heat against size.** A device must stay below its junction temperature rating. Leakage current in silicon grows quickly with temperature. A roughly doubling every 10 K is a common rule of thumb.
 - **Cost against robustness.** Silicon parts are cheap and well understood. Wide-bandgap parts switch faster and run hotter, but they cost more and need careful layout and gate drive.
@@ -101,10 +101,10 @@ In December 1947, John Bardeen and Walter Brattain at Bell Labs in New Jersey bu
 ## Practice
 
 1. Silicon at 300 K has $n_i = 1.5 \times 10^{10}\ \text{cm}^{-3}$. It is doped with $N_D = 10^{15}\ \text{cm}^{-3}$ donors. Find the hole density $p$.
-2. The NPN switch in the worked example has $R_L = 60\ \Omega$ instead of $120\ \Omega$. Find the collector current and the minimum base current for saturation at $\beta_{min} = 100$.
+2. The NPN switch in the worked example has $R_L = 60\ \Omega$ instead of $120\ \Omega$. Find the collector current and the minimum base current for saturation at $\beta_{\mathrm{min}} = 100$.
 3. At 300 K, the forward voltage of a diode rises by $0.1\ \text{V}$. Assume $n = 1$. By what factor does the diode current rise?
-4. A MOSFET has $k_n' = 200\ \mu\text{A/V}^2$, $W/L = 10$, $V_{th} = 1.5\ \text{V}$, and $V_{GS} = 3.5\ \text{V}$. It operates in saturation. Find $I_D$.
-5. An NPN transistor carries $I_C = 0.5\ \text{A}$ with $V_{CE} = 0.3\ \text{V}$. Find the power it dissipates.
+4. A MOSFET has $k_n' = 200\ \mu\text{A}/\text{V}^2$, $W/L = 10$, $V_{\mathrm{th}} = 1.5\ \text{V}$, and $V_{\mathrm{GS}} = 3.5\ \text{V}$. It operates in saturation. Find $I_D$.
+5. An NPN transistor carries $I_C = 0.5\ \text{A}$ with $V_{\mathrm{CE}} = 0.3\ \text{V}$. Find the power it dissipates.
 
 <details><summary>Answers</summary>
 

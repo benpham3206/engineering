@@ -46,7 +46,7 @@ Hydrostatic pressure at depth $h$:
 
 $$p = \rho g h$$
 
-Assumes the water is at rest and incompressible, and that $p$ is gauge pressure above the free surface. Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg/m}^3$ for fresh water, typical), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $h$ is depth in metres.
+Assumes the water is at rest and incompressible, and that $p$ is gauge pressure above the free surface. Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg}/\text{m}^3$ for fresh water, typical), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $h$ is depth in metres.
 
 Resultant water force per metre of dam length, for a vertical face with water depth $H$:
 
@@ -58,7 +58,7 @@ Weight per metre of dam length for a triangular gravity section:
 
 $$W = \rho_c\, g\, A, \qquad A = \tfrac{1}{2} B H$$
 
-Assumes uniform concrete density and a triangular section with a vertical upstream face. Here $\rho_c$ is the concrete density in kilograms per cubic metre (about $2400\ \text{kg/m}^3$, typical), $A$ is the cross-section area in square metres, and $B$ is the base width in metres.
+Assumes uniform concrete density and a triangular section with a vertical upstream face. Here $\rho_c$ is the concrete density in kilograms per cubic metre (about $2400\ \text{kg}/\text{m}^3$, typical), $A$ is the cross-section area in square metres, and $B$ is the base width in metres.
 
 Moments per metre of dam length, taken about the downstream toe:
 
@@ -68,17 +68,17 @@ Assumes a rigid dam that rotates about the downstream toe, with no uplift and no
 
 The factor of safety against overturning assumes that the weight is the only restoring force, with no uplift, no tailwater, and no earthquake load.
 
-$$FS_{ot} = \frac{M_R}{M_O}$$
+$$\mathrm{FS}_{\mathrm{ot}} = \frac{M_R}{M_O}$$
 
 For a triangular section with a vertical upstream face and no uplift, the two equations combine into one:
 
-$$FS_{ot} = 2\,\frac{\rho_c}{\rho_w}\left(\frac{B}{H}\right)^2$$
+$$\mathrm{FS}_{\mathrm{ot}} = 2\,\frac{\rho_c}{\rho_w}\left(\frac{B}{H}\right)^2$$
 
 Here $\rho_w$ is the water density in kilograms per cubic metre. The ratio $B/H$ is dimensionless.
 
 ## Worked example
 
-**Given:** A gravity dam with a vertical upstream face holds water 30 m deep. The base is 18 m wide. Concrete density is $\rho_c = 2400\ \text{kg/m}^3$, and water density is $\rho_w = 1000\ \text{kg/m}^3$. Assume $g = 9.81\ \text{m/s}^2$ (Earth surface), no uplift, no tailwater, and no earthquake load.
+**Given:** A gravity dam with a vertical upstream face holds water 30 m deep. The base is 18 m wide. Concrete density is $\rho_c = 2400\ \text{kg}/\text{m}^3$, and water density is $\rho_w = 1000\ \text{kg}/\text{m}^3$. Assume $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface), no uplift, no tailwater, and no earthquake load.
 
 **Find:** the water force per metre of dam length, the overturning factor of safety, and the smallest base width that gives a factor of 1.5.
 
@@ -88,12 +88,12 @@ Here $\rho_w$ is the water density in kilograms per cubic metre. The ratio $B/H$
 2. Overturning moment: the lever arm is $H/3 = 10\ \text{m}$, so $M_O = 4.41 \times 10^6 \times 10 = 4.41 \times 10^7\ \text{N m/m}$.
 3. Dam weight: $W = 2400 \times 9.81 \times \tfrac{1}{2} \times 18 \times 30 = 6.36 \times 10^6\ \text{N/m}$.
 4. Resisting moment: the lever arm is $2B/3 = 12\ \text{m}$, so $M_R = 6.36 \times 10^6 \times 12 = 7.63 \times 10^7\ \text{N m/m}$.
-5. Factor of safety: $FS_{ot} = 7.63 \times 10^7 / 4.41 \times 10^7 = 1.73$.
-6. Minimum base width for a factor of 1.5: $B = H\sqrt{FS\,\rho_w / (2\rho_c)} = 30\sqrt{1.5/4.8} = 16.8\ \text{m}$.
+5. Factor of safety: $\mathrm{FS}_{\mathrm{ot}} = 7.63 \times 10^7 / 4.41 \times 10^7 = 1.73$.
+6. Minimum base width for a factor of 1.5: $B = H\sqrt{\mathrm{FS}\,\rho_w / (2\rho_c)} = 30\sqrt{1.5/4.8} = 16.8\ \text{m}$.
 
 **Answer:** The water force is $4.41\ \text{MN/m}$. The overturning factor of safety is $1.73$, so the 18 m base passes a check at 1.5. The minimum base width for that check is $16.8\ \text{m}$.
 
-**Sanity check:** The combined formula gives $FS = 2(2.4)(18/30)^2 = 1.73$, which matches the step-by-step result. The calculation ignores uplift. Uplift lowers the effective weight, so the real factor is smaller and the real base must be wider than $16.8\ \text{m}$. The water force also scales with the square of depth, so doubling the depth to 60 m raises the force four times.
+**Sanity check:** The combined formula gives $\mathrm{FS} = 2(2.4)(18/30)^2 = 1.73$, which matches the step-by-step result. The calculation ignores uplift. Uplift lowers the effective weight, so the real factor is smaller and the real base must be wider than $16.8\ \text{m}$. The water force also scales with the square of depth, so doubling the depth to 60 m raises the force four times.
 
 ## Design trade-offs
 
@@ -121,11 +121,11 @@ Egyptian builders constructed the Sadd el-Kafara dam, one of the oldest known la
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. Find the gauge pressure at 12 m depth in fresh water.
 2. Find the water force per metre of dam length on a vertical face with water 8 m deep.
-3. A dam is 20 m high with a 14 m base and concrete density $2400\ \text{kg/m}^3$. Find its overturning factor of safety, with no uplift.
+3. A dam is 20 m high with a 14 m base and concrete density $2400\ \text{kg}/\text{m}^3$. Find its overturning factor of safety, with no uplift.
 4. The same 20 m dam must reach a factor of safety of 2.0. Find the minimum base width.
 5. Find the water force per metre of dam length for water 40 m deep, and the height above the base where it acts.
 
@@ -133,7 +133,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (
 
 1. $p = 1000 \times 9.81 \times 12 = 1.18 \times 10^5\ \text{Pa}$, which is $118\ \text{kPa}$.
 2. $F_H = \tfrac{1}{2}(1000)(9.81)(8)^2 = 3.14 \times 10^5\ \text{N/m}$, which is $314\ \text{kN/m}$.
-3. $FS = 2(2400/1000)(14/20)^2 = 2.35$.
+3. $\mathrm{FS} = 2(2400/1000)(14/20)^2 = 2.35$.
 4. $B = 20\sqrt{2.0 \times 1000 / (2 \times 2400)} = 20\sqrt{0.4167} = 12.9\ \text{m}$.
 5. $F_H = \tfrac{1}{2}(1000)(9.81)(40)^2 = 7.85 \times 10^6\ \text{N/m}$, which is $7.85\ \text{MN/m}$. It acts at $H/3 = 13.3\ \text{m}$ above the base.
 

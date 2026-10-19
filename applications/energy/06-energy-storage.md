@@ -46,15 +46,15 @@ All values are typical, and designs vary widely.
 
 ## Key equations
 
-Energy stored by raising mass $m$ in kilograms through height $h$ in metres, with $g = 9.81\ \text{m/s}^2$ (Earth surface):
+Energy stored by raising mass $m$ in kilograms through height $h$ in metres, with $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface):
 
 $$E = m g h$$
 
-For water with density $\rho = 1000\ \text{kg/m}^3$ and volume $V$ in cubic metres, the stored energy is $E = \rho g h V$ in joules. Convert to kilowatt-hours by dividing by $3.6 \times 10^{6}$.
+For water with density $\rho = 1000\ \text{kg}/\text{m}^3$ and volume $V$ in cubic metres, the stored energy is $E = \rho g h V$ in joules. Convert to kilowatt-hours by dividing by $3.6 \times 10^{6}$.
 
-Energy returned by a store, with round-trip efficiency $\eta_{rt}$ (dimensionless):
+Energy returned by a store, with round-trip efficiency $\eta_{\mathrm{rt}}$ (dimensionless):
 
-$$E_{out} = \eta_{rt} E_{in}$$
+$$E_{\mathrm{out}} = \eta_{\mathrm{rt}} E_{\mathrm{in}}$$
 
 Rotational kinetic energy of a flywheel, with moment of inertia $I$ in kg m$^2$ and angular speed $\omega$ in rad/s:
 
@@ -62,9 +62,9 @@ $$E = \tfrac{1}{2} I \omega^2$$
 
 For a solid disk of mass $m$ and radius $r$, $I = \tfrac{1}{2} m r^2$.
 
-Battery energy, with nominal voltage $V_{nom}$ in volts and capacity $Q$ in ampere-hours:
+Battery energy, with nominal voltage $V_{\mathrm{nom}}$ in volts and capacity $Q$ in ampere-hours:
 
-$$E = V_{nom} Q\ \text{(in watt-hours)}$$
+$$E = V_{\mathrm{nom}} Q\ \text{(in watt-hours)}$$
 
 C-rate, the ratio of charge or discharge current $I$ to the nominal capacity $Q$ in ampere-hours. A 1C rate empties a fully charged battery in one hour:
 
@@ -76,16 +76,16 @@ $$t = \frac{E}{P}\ \text{hours}$$
 
 ## Worked example
 
-**Given:** A pumped hydro scheme uses an upper reservoir of $V = 1.0 \times 10^{6}\ \text{m}^3$ of water with 500 m of head above the lower reservoir. The turbine rating is 200 MW. The round-trip efficiency is 0.80. Water density is $1000\ \text{kg/m}^3$, and $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Given:** A pumped hydro scheme uses an upper reservoir of $V = 1.0 \times 10^{6}\ \text{m}^3$ of water with 500 m of head above the lower reservoir. The turbine rating is 200 MW. The round-trip efficiency is 0.80. Water density is $1000\ \text{kg}/\text{m}^3$, and $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Find:** (a) the potential energy the reservoir holds, in GWh, (b) the energy the grid receives on discharge, in GWh, (c) the time the turbine runs at full power on one full reservoir, and (d) the grid energy needed to refill the reservoir.
 
 **Solution:**
 
 1. Potential energy: $E = \rho g h V = 1000 \times 9.81 \times 500 \times 1.0 \times 10^{6} = 4.905 \times 10^{12}\ \text{J}$. In kilowatt-hours, that is $4.905 \times 10^{12} / 3.6 \times 10^{6} = 1.36 \times 10^{6}\ \text{kWh}$, or 1.36 GWh.
-2. Energy delivered: $E_{out} = 0.80 \times 1.36\ \text{GWh} = 1.09\ \text{GWh}$.
+2. Energy delivered: $E_{\mathrm{out}} = 0.80 \times 1.36\ \text{GWh} = 1.09\ \text{GWh}$.
 3. Run time: $t = 1090\ \text{MWh} / 200\ \text{MW} = 5.45\ \text{h}$.
-4. Refill energy: $E_{in} = 1.36 / 0.80 = 1.70\ \text{GWh}$.
+4. Refill energy: $E_{\mathrm{in}} = 1.36 / 0.80 = 1.70\ \text{GWh}$.
 
 **Answer:** (a) 1.36 GWh. (b) 1.09 GWh. (c) About 5.5 hours at full power. (d) About 1.70 GWh from the grid.
 
@@ -114,7 +114,7 @@ Gaston Planté in France built the first practical rechargeable lead-acid batter
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A battery stores 50 MWh. With a round-trip efficiency of 0.90, find the energy returned, in MWh.
 2. A 2 MW battery stores 4 MWh. Find its duration in hours.
@@ -124,7 +124,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (
 
 <details><summary>Answers</summary>
 
-1. $E_{out} = 0.90 \times 50 = 45\ \text{MWh}$.
+1. $E_{\mathrm{out}} = 0.90 \times 50 = 45\ \text{MWh}$.
 2. $t = 4\ \text{MWh} / 2\ \text{MW} = 2\ \text{h}$.
 3. $E = 1000 \times 9.81 \times 300 \times 2.0 \times 10^{5} = 5.89 \times 10^{11}\ \text{J}$, which is $163.5\ \text{MWh}$.
 4. $I = \tfrac{1}{2} \times 500 \times 0.5^2 = 62.5\ \text{kg m}^2$ and $\omega = 2\pi \times 10\,000 / 60 = 1047\ \text{rad/s}$. Then $E = \tfrac{1}{2} \times 62.5 \times 1047^2 = 3.43 \times 10^{7}\ \text{J}$, which is 9.5 kWh.

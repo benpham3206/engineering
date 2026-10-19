@@ -59,9 +59,9 @@ $$\text{SNR} \approx 6.02\,n + 1.76\ \text{dB}$$
 - RMS quantization noise: $2.441\ \text{mV} / \sqrt{12} = 0.705\ \text{mV}$
 - Ideal SNR: $6.02 \times 12 + 1.76 = 74.0\ \text{dB}$
 
-**Answer:** (a) $f_s = 20$ kHz. (b) A filter corner near 5 kHz passes the 2.4 kHz harmonic and must attenuate content above 10 kHz. (c) LSB = 2.44 mV; quantization noise is 0.705 mV RMS.
+**Answer:** (a) $f_s = 20$ kHz. (b) A filter corner near 5 kHz passes the 2.4 kHz harmonic and must attenuate content above 10 kHz. (c) $\mathrm{LSB} = 2.44$ mV; quantization noise is 0.705 mV RMS.
 
-**Sanity check:** The sample rate gives about 8 samples per cycle at 2.4 kHz and 25 per cycle at 800 Hz, a comfortable margin over the 2-sample minimum. The LSB at 2.44 mV is well below the 0.1 V range of a typical vibration signal at that gain, so quantization is not the limit. The filter corner (5 kHz) sits above the signal (2.4 kHz) and well below the frequency that folds onto it (20 - 5 = 15 kHz).
+**Sanity check:** The sample rate gives about 8 samples per cycle at 2.4 kHz and 25 per cycle at 800 Hz, a comfortable margin over the 2-sample minimum. The LSB at 2.44 mV is well below the 0.1 V range of a typical vibration signal at that gain, so quantization is not the limit. The filter corner (5 kHz) sits above the signal (2.4 kHz) and well below the frequency that folds onto it ($20 - 5 = 15$ kHz).
 
 ## Practice
 

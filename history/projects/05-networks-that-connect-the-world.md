@@ -73,7 +73,7 @@ How it changed the world. Civilian positioning and precise timing now support av
 
 The problem. Copper cables carried only a limited number of telephone calls and lost signal over long distances. Engineers needed a medium with far more bandwidth and lower loss.
 
-The engineering. Light travels through a glass fiber by total internal reflection, which confines the light to the core. Silica fiber has a refractive index near 1.47, so light moves at about 2.04 x 10^8 m/s inside it. Erbium-doped fiber amplifiers boost the light without converting it to electricity, which made long undersea spans practical. The first transatlantic fiber cable, TAT-8, opened in 1988.
+The engineering. Light travels through a glass fiber by total internal reflection, which confines the light to the core. Silica fiber has a refractive index near 1.47, so light moves at about $2.04 \times 10^8\ \mathrm{m/s}$ inside it. Erbium-doped fiber amplifiers boost the light without converting it to electricity, which made long undersea spans practical. The first transatlantic fiber cable, TAT-8, opened in 1988.
 
 The scale. TAT-8 carried tens of thousands of telephone circuits. Today, the global network of undersea cables exceeds 1 million km in length, and it carries most intercontinental internet traffic.
 
@@ -116,7 +116,7 @@ Interstate distance conversion. Converting a length from miles to kilometres use
 
 ## Worked example
 
-**Given:** A GPS receiver's clock is off by 10 ns. The receiver is at a location where the satellite geometry gives a geometric dilution of one. The orbit of each satellite has a clock that drifts by about 38 microseconds per day relative to the ground clock after relativistic correction.
+**Given:** A GPS receiver's clock is off by 10 ns. The receiver is at a location where the satellite geometry gives a geometric dilution of one. The orbit of each satellite has a clock that would drift by about 38 microseconds per day relative to the ground clock if the relativistic effects were left uncorrected.
 
 **Find:** (a) the range error caused by the 10 ns timing error, and (b) the range error that accumulates in one day if the satellite clock drift is left uncorrected.
 

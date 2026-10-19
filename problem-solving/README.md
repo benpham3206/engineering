@@ -21,10 +21,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Problem solving reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-## Related courses
-
-- ENGR 10 - Intro to Engineering
-- ME 30 - Computer Applications
-- ME 130 - Applied Engineering Analysis
-
 See also: [math](../math), [physics](../physics), [philosophy](../philosophy)

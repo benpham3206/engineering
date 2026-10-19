@@ -25,7 +25,7 @@ Newton worked in England, mostly at Cambridge and later in London. His *Principi
 
 ### Gottfried Wilhelm Leibniz, 1646 to 1716
 
-Leibniz worked in Hanover and other German courts. He published calculus in 1684 with the notation $dx$ for a small change and the integral sign $\int$. That notation is the one students use today. Engineers use it in every textbook, spreadsheet, and solver that handles rates and areas. See [Single-variable calculus](../../math/03-single-variable-calculus.md).
+Leibniz worked in Hanover and other German courts. He published differential calculus in 1684 with the notation $dx$ for a small change, and he introduced the integral sign $\int$ in print in 1686. That notation is the one students use today. Engineers use it in every textbook, spreadsheet, and solver that handles rates and areas. See [Single-variable calculus](../../math/03-single-variable-calculus.md).
 
 ### The Bernoullis: Jakob, Johann, and Daniel
 
@@ -70,7 +70,7 @@ Noether was born in Erlangen and worked at Göttingen in Germany. In 1918 she pr
 | 1678 | Robert Hooke | Hooke's law of elasticity, $F = kx$ | [Mechanical properties](../../materials/03-mechanical-properties.md) |
 | 1656 | Christiaan Huygens | First pendulum clock | [Clocks and watches](../../applications/everyday/07-clocks-and-watches.md) |
 | 1687 | Isaac Newton | *Principia*: laws of motion and universal gravitation | [Particle dynamics](../../physics/02-particle-dynamics.md) |
-| 1684 | Gottfried Leibniz | Calculus notation, $dx$ and $\int$ | [Single-variable calculus](../../math/03-single-variable-calculus.md) |
+| 1684 | Gottfried Leibniz | Calculus notation, $dx$ (the integral sign $\int$ followed in 1686) | [Single-variable calculus](../../math/03-single-variable-calculus.md) |
 | 1713 | Jakob Bernoulli | *Ars Conjectandi*, law of large numbers | [Probability and statistics](../../math/07-probability-and-statistics.md) |
 | 1738 | Daniel Bernoulli | *Hydrodynamica*, Bernoulli's principle | [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md) |
 | 1744 | Leonhard Euler | Critical load for column buckling | [Bending and buckling](../../physics/05-bending-and-buckling.md) |
@@ -99,9 +99,9 @@ where $\dot q$ is heat flux in watts per square metre (W/m$^2$), $k$ is thermal 
 
 Euler's critical buckling load for a slender column:
 
-$$P_{cr} = \frac{\pi^2 E I}{(KL)^2}$$
+$$P_{\text{cr}} = \frac{\pi^2 E I}{(KL)^2}$$
 
-where $P_{cr}$ is the critical load in newtons (N), $E$ is the elastic modulus in pascals (Pa), $I$ is the second moment of area in metres to the fourth power (m$^4$), $L$ is the column length in metres (m), and $K$ is the effective length factor (dimensionless).
+where $P_{\text{cr}}$ is the critical load in newtons (N), $E$ is the elastic modulus in pascals (Pa), $I$ is the second moment of area in metres to the fourth power (m$^4$), $L$ is the column length in metres (m), and $K$ is the effective length factor (dimensionless).
 
 Navier-Stokes equations for incompressible flow:
 
@@ -118,12 +118,12 @@ where $\rho$ is density in kg/m$^3$, $\mathbf{v}$ is velocity in m/s, $p$ is pre
 **Solution:**
 
 1. Second moment of area: $I = \pi d^4 / 64 = \pi (0.050)^4 / 64 = 3.07 \times 10^{-7}\ \text{m}^4$.
-2. Critical load: $P_{cr} = \pi^2 E I / (KL)^2 = \pi^2 (200\times10^9)(3.07\times10^{-7}) / (1.0 \times 3.0)^2 = 6.73 \times 10^4\ \text{N}$, which is 67.3 kN.
+2. Critical load: $P_{\text{cr}} = \pi^2 E I / (KL)^2 = \pi^2 (200\times10^9)(3.07\times10^{-7}) / (1.0 \times 3.0)^2 = 6.73 \times 10^4\ \text{N}$, which is 67.3 kN.
 3. Area: $A = \pi d^2 / 4 = 1.963 \times 10^{-3}\ \text{m}^2$.
-4. Critical stress: $\sigma_{cr} = P_{cr} / A = 67.3 \times 10^3 / 1.963 \times 10^{-3} = 3.43 \times 10^7\ \text{Pa}$, which is 34.3 MPa.
+4. Critical stress: $\sigma_{\text{cr}} = P_{\text{cr}} / A = 67.3 \times 10^3 / 1.963 \times 10^{-3} = 3.43 \times 10^7\ \text{Pa}$, which is 34.3 MPa.
 5. Radius of gyration: $r = \sqrt{I/A} = 0.0125\ \text{m}$, so $KL/r = 3.0 / 0.0125 = 240$.
 
-**Answer:** (a) $P_{cr} = 67.3\ \text{kN}$. (b) $\sigma_{cr} = 34.3\ \text{MPa}$. (c) $KL/r = 240$.
+**Answer:** (a) $P_{\text{cr}} = 67.3\ \text{kN}$. (b) $\sigma_{\text{cr}} = 34.3\ \text{MPa}$. (c) $KL/r = 240$.
 
 **Sanity check:** The critical stress of 34.3 MPa is well below the yield strength of mild steel, which is about 250 MPa (typical). That fits a slender column that fails by buckling, not by yielding. If the column were fixed at one end and free at the other, $K = 2$ and the load drops by a factor of four to 16.8 kN.
 
@@ -133,7 +133,7 @@ Euler's buckling result is still the first check on any slender member, from a b
 
 ## Practice
 
-1. A steel column is 2.0 m long, pinned at both ends, with a diameter of 30 mm. Take $E = 200\ \text{GPa}$ and find $P_{cr}$ in kilonewtons.
+1. A steel column is 2.0 m long, pinned at both ends, with a diameter of 30 mm. Take $E = 200\ \text{GPa}$ and find $P_{\text{cr}}$ in kilonewtons.
 2. A spring has stiffness $k = 400\ \text{N/m}$. It stretches by 0.050 m. Find the force in newtons.
 3. A brick wall is 0.20 m thick, with thermal conductivity $k = 0.80\ \text{W/(m K)}$. The inside is 20 K warmer than the outside. For 1.0 m$^2$ of wall, find the heat flow in watts, using $q = kA\,\Delta T / L$.
 4. Water flows at 0.50 m/s in a horizontal pipe, then speeds up to 3.0 m/s at a narrow section. The density is 1000 kg/m$^3$. Use Bernoulli's principle to find the pressure drop in pascals, ignoring friction.
@@ -141,7 +141,7 @@ Euler's buckling result is still the first check on any slender member, from a b
 
 <details><summary>Answers</summary>
 
-1. $P_{cr} = 19.6\ \text{kN}$
+1. $P_{\text{cr}} = 19.6\ \text{kN}$
 2. $F = 20\ \text{N}$
 3. $q = 80\ \text{W}$
 4. $\Delta p = 4375\ \text{Pa}$, which is about 4.4 kPa

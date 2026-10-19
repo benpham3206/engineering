@@ -22,13 +22,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Math reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-## Related courses
-
-- AP Calculus AB
-- MATH 31 - Calculus II
-- MATH 32 - Calculus III
-- MATH 33A - Ordinary Differential Equations for Engineering
-- ME 30 - Computer Applications
-- ME 130 - Applied Engineering Analysis
-
 See also: [physics](../physics), [tools](../tools), [courses](../courses)

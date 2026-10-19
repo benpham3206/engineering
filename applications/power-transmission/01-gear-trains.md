@@ -36,16 +36,16 @@ A single spur stage usually gives a ratio of about 3:1 to 6:1 in ordinary machin
 
 ## Key equations
 
-Total ratio of a train with stages $k = 1, 2, \ldots$, where $N_{in,k}$ is the number of teeth on the driver of stage $k$ and $N_{out,k}$ is the number on its driven gear:
+Total ratio of a train with stages $k = 1, 2, \ldots$, where $N_{\mathrm{in},k}$ is the number of teeth on the driver of stage $k$ and $N_{\mathrm{out},k}$ is the number on its driven gear:
 
 $$
-i = \prod_k i_k = \prod_k \frac{N_{out,k}}{N_{in,k}}
+i = \prod_k i_k = \prod_k \frac{N_{\mathrm{out},k}}{N_{\mathrm{in},k}}
 $$
 
 Output speed and output torque, with $n$ in rpm, $T$ in N$\cdot$m, and the overall efficiency $\eta$ dimensionless:
 
 $$
-n_{out} = \frac{n_{in}}{i}, \qquad T_{out} = \eta\, i\, T_{in}
+n_{\mathrm{out}} = \frac{n_{\mathrm{in}}}{i}, \qquad T_{\mathrm{out}} = \eta\, i\, T_{\mathrm{in}}
 $$
 
 The overall efficiency is the product of the mesh efficiencies, $\eta = \prod_k \eta_k$. A clean spur mesh has $\eta_k$ of about 0.98 (typical).
@@ -53,7 +53,7 @@ The overall efficiency is the product of the mesh efficiencies, $\eta = \prod_k 
 Power, with $\omega = 2\pi n / 60$ in rad/s and $P$ in W:
 
 $$
-P = T\,\omega, \qquad P_{out} = \eta\, P_{in}
+P = T\,\omega, \qquad P_{\mathrm{out}} = \eta\, P_{\mathrm{in}}
 $$
 
 Helical gears, with normal module $m_n$ in mm, helix angle $\psi$, normal pressure angle $\phi_n$, and tooth count $N$:
@@ -73,16 +73,16 @@ $$
 Worm drive with $z$ starts, axial pitch $p_x$ in mm, worm pitch diameter $d_w$ in mm, and friction coefficient $\mu$:
 
 $$
-i = \frac{N_{wheel}}{z}, \qquad \tan\lambda = \frac{z\,p_x}{\pi\, d_w}, \qquad \eta = \frac{\tan\lambda}{\tan(\lambda + \varphi)}, \qquad \tan\varphi = \mu
+i = \frac{N_{\mathrm{wheel}}}{z}, \qquad \tan\lambda = \frac{z\,p_x}{\pi\, d_w}, \qquad \eta = \frac{\tan\lambda}{\tan(\lambda + \varphi)}, \qquad \tan\varphi = \mu
 $$
 
 The lead angle is $\lambda$, and the friction angle is $\varphi$. The drive is self-locking when $\lambda < \varphi$, which is a common rule.
 
 ## Worked example
 
-**Given.** A motor turns at $n_{in} = 1800$ rpm and delivers $T_{in} = 2.0$ N$\cdot$m. The train has two spur stages. Stage 1 has a pinion of 18 teeth and a gear of 54 teeth. Stage 2 has a pinion of 20 teeth and a gear of 60 teeth. Each mesh has $\eta_k = 0.98$.
+**Given.** A motor turns at $n_{\mathrm{in}} = 1800$ rpm and delivers $T_{\mathrm{in}} = 2.0$ N$\cdot$m. The train has two spur stages. Stage 1 has a pinion of 18 teeth and a gear of 54 teeth. Stage 2 has a pinion of 20 teeth and a gear of 60 teeth. Each mesh has $\eta_k = 0.98$.
 
-**Find.** The total ratio, the output speed, the output torque, and the output power when the input power is $P_{in}$.
+**Find.** The total ratio, the output speed, the output torque, and the output power when the input power is $P_{\mathrm{in}}$.
 
 **Assumptions.** The mesh efficiency is 0.98 for each stage. The shafts are rigid, and the losses are only the mesh losses.
 
@@ -90,15 +90,15 @@ The lead angle is $\lambda$, and the friction angle is $\varphi$. The drive is s
 
 Step 1. Total ratio: $i = \dfrac{54}{18} \times \dfrac{60}{20} = 3.0 \times 3.0 = 9.000$.
 
-Step 2. Output speed: $n_{out} = 1800 / 9.000 = 200.0$ rpm.
+Step 2. Output speed: $n_{\mathrm{out}} = 1800 / 9.000 = 200.0$ rpm.
 
 Step 3. Overall efficiency: $\eta = 0.98^2 = 0.9604$.
 
-Step 4. Output torque: $T_{out} = 0.9604 \times 9.000 \times 2.0 = 17.29$ N$\cdot$m.
+Step 4. Output torque: $T_{\mathrm{out}} = 0.9604 \times 9.000 \times 2.0 = 17.29$ N$\cdot$m.
 
-Step 5. Input power: $\omega_{in} = 1800 \times 2\pi / 60 = 188.5$ rad/s, so $P_{in} = 2.0 \times 188.5 = 377.0$ W.
+Step 5. Input power: $\omega_{\mathrm{in}} = 1800 \times 2\pi / 60 = 188.5$ rad/s, so $P_{\mathrm{in}} = 2.0 \times 188.5 = 377.0$ W.
 
-Step 6. Output power: $\omega_{out} = 200.0 \times 2\pi / 60 = 20.94$ rad/s, so $P_{out} = 17.29 \times 20.94 = 362.1$ W.
+Step 6. Output power: $\omega_{\mathrm{out}} = 200.0 \times 2\pi / 60 = 20.94$ rad/s, so $P_{\mathrm{out}} = 17.29 \times 20.94 = 362.1$ W.
 
 **Answer.** Ratio 9.000. Output speed 200 rpm. Output torque 17.29 N$\cdot$m. Output power 362.1 W, which is $0.9604$ of the 377.0 W input.
 
@@ -139,8 +139,8 @@ The Antikythera mechanism, a bronze device recovered from a shipwreck off the Gr
 
 <details><summary>Answers</summary>
 
-1. $n_{out} = 900 \times 20 / 60 = 300$ rpm.
-2. $T_{out} = 0.98 \times 5 \times 4 = 19.6$ N$\cdot$m.
+1. $n_{\mathrm{out}} = 900 \times 20 / 60 = 300$ rpm.
+2. $T_{\mathrm{out}} = 0.98 \times 5 \times 4 = 19.6$ N$\cdot$m.
 3. $m_t = 2.5 / \cos 25^\circ = 2.758$ mm.
 4. Yes. $\lambda < \varphi$ means the wheel cannot drive the worm.
 

@@ -41,7 +41,7 @@ $$
 n = \frac{S_y}{\sigma}
 $$
 
-where $S_y$ is yield strength (Pa or MPa) and $\sigma$ is the governing stress (same unit). For brittle materials use $S_{ut}$ or $S_{uc}$ in place of $S_y$ and state it.
+where $S_y$ is yield strength (Pa or MPa) and $\sigma$ is the governing stress (same unit). For brittle materials use $S_{\text{ut}}$ or $S_{\text{uc}}$ in place of $S_y$ and state it.
 
 Choose $n$ from how well the inputs are known. Specific values come from the governing code, client, or industry; the table gives direction only.
 
@@ -66,7 +66,7 @@ $$
 Von Mises equivalent stress in plane stress:
 
 $$
-\sigma_{vm} = \sqrt{\sigma_x^2 - \sigma_x \sigma_y + \sigma_y^2 + 3\tau_{xy}^2}
+\sigma_{\text{vm}} = \sqrt{\sigma_x^2 - \sigma_x \sigma_y + \sigma_y^2 + 3\tau_{xy}^2}
 $$
 
 Sorted principal stresses $\sigma_1 \ge \sigma_2 \ge \sigma_3$. Maximum shear:
@@ -77,14 +77,14 @@ $$
 
 | Theory | Material class | Failure condition | Use when | Limit |
 |---|---|---|---|---|
-| Maximum normal stress (Rankine) | Brittle (cast iron, glass, ceramics) | $\sigma_1 \ge S_{ut}$ or $\sigma_3 \le -S_{uc}$ | Brittle, tension governs | Ignores shear; no interaction between modes |
+| Maximum normal stress (Rankine) | Brittle (cast iron, glass, ceramics) | $\sigma_1 \ge S_{\text{ut}}$ or $\sigma_3 \le -S_{\text{uc}}$ | Brittle, tension governs | Ignores shear; no interaction between modes |
 | Tresca (maximum shear) | Ductile | $\sigma_1 - \sigma_3 \ge S_y$, so $n = S_y/(\sigma_1 - \sigma_3)$ | Ductile, quick and conservative check | Underpredicts the yield load by up to about 15 percent (conservative) |
-| Von Mises (distortion energy) | Ductile | $\sigma_{vm} \ge S_y$, so $n = S_y/\sigma_{vm}$ | Ductile metals, general default | Yield only; not for brittle |
-| Mohr-Coulomb | Brittle, unequal tension and compression strength | $\sigma_1/S_{ut} - \sigma_3/S_{uc} \ge 1$ (compression $\sigma_3$ negative) | Rock, soil, cast iron, concrete-like | Needs both strengths; not for ductile metals |
+| Von Mises (distortion energy) | Ductile | $\sigma_{\text{vm}} \ge S_y$, so $n = S_y/\sigma_{\text{vm}}$ | Ductile metals, general default | Yield only; not for brittle |
+| Mohr-Coulomb | Brittle, unequal tension and compression strength | $\sigma_1/S_{\text{ut}} - \sigma_3/S_{\text{uc}} \ge 1$ (compression $\sigma_3$ negative) | Rock, soil, cast iron, concrete-like | Needs both strengths; not for ductile metals |
 
 - Tresca and von Mises differ by up to about 15 percent in plane stress. They agree in uniaxial tension. In pure shear Tresca gives an equivalent stress of $2\tau$ and von Mises gives $\sqrt{3}\,\tau$, about 15 percent apart.
-- Worked check (von Mises): $\sigma_x = 120$, $\sigma_y = 40$, $\tau_{xy} = 30$ MPa gives $\sigma_{vm} = 117.9$ MPa. With $S_y = 350$ MPa, $n = 2.97$.
-- Worked check (Mohr-Coulomb): $\sigma_1 = 100$, $\sigma_3 = -200$ MPa, $S_{ut} = 600$, $S_{uc} = 800$ MPa gives bracket $= 0.1667 + 0.25 = 0.4167$, so $n = 2.40$.
+- Worked check (von Mises): $\sigma_x = 120$, $\sigma_y = 40$, $\tau_{xy} = 30$ MPa gives $\sigma_{\text{vm}} = 117.9$ MPa. With $S_y = 350$ MPa, $n = 2.97$.
+- Worked check (Mohr-Coulomb): $\sigma_1 = 100$, $\sigma_3 = -200$ MPa, $S_{\text{ut}} = 600$, $S_{\text{uc}} = 800$ MPa gives bracket $= 0.1667 + 0.25 = 0.4167$, so $n = 2.40$.
 - Holds when: loading is static and the material behaves as its class. Breaks when: loads cycle (use fatigue), temperature is high (creep), or the part is near a notch and is brittle.
 
 ## Fatigue
@@ -98,7 +98,7 @@ $$
 Rotating-beam endurance limit of the test specimen (steel, typical):
 
 $$
-S_e' = \begin{cases} 0.5\,S_{ut} & S_{ut} \le 1400\ \text{MPa} \\ 700\ \text{MPa} & S_{ut} > 1400\ \text{MPa} \end{cases}
+S_e' = \begin{cases} 0.5\,S_{\text{ut}} & S_{\text{ut}} \le 1400\ \text{MPa} \\ 700\ \text{MPa} & S_{\text{ut}} > 1400\ \text{MPa} \end{cases}
 $$
 
 Marin factors, applied to the specimen value to get the part endurance limit:
@@ -109,25 +109,25 @@ $$
 
 | Factor | Name | Typical basis (textbook typical) |
 |---|---|---|
-| $k_a$ | Surface | $k_a = a\,S_{ut}^{\,b}$ with $S_{ut}$ in MPa. Typical $(a, b)$: ground $(1.58, -0.085)$; machined or cold drawn $(4.51, -0.265)$; hot rolled $(57.7, -0.718)$; as forged $(272, -0.995)$ |
-| $k_b$ | Size | Rotating round, $d$ in mm: $1.24\,d^{-0.107}$ for $2.79 \le d \le 51$; $1.51\,d^{-0.157}$ for $51 < d \le 254$. Use $1$ for non-round or axial |
+| $k_a$ | Surface | $k_a = a\,S_{\text{ut}}^{\,b}$ with $S_{\text{ut}}$ in MPa. Typical $(a, b)$: ground $(1.58, -0.085)$; machined or cold drawn $(4.51, -0.265)$; hot rolled $(57.7, -0.718)$; as forged $(272, -0.995)$ |
+| $k_b$ | Size | Rotating round, $d$ in mm: $1.24\,d^{-0.107}$ for $2.79 \le d \le 51$; $1.51\,d^{-0.157}$ for $51 < d \le 254$. Use $1$ for axial. For non-round bending, use an equivalent diameter $d_e$ in the same formulas (rectangle: $d_e = 0.808\sqrt{bh}$) |
 | $k_c$ | Load | Bending $1.0$; axial $0.85$; torsion $0.59$ |
-| $k_d$ | Temperature | $1.0$ up to about 450 C for steel; derate above, from a data source |
+| $k_d$ | Temperature | $1.0$ at room temperature; derate at elevated temperature (a common textbook polynomial gives about $0.85$ for steel at 450 C), from a data source |
 | $k_e$ | Reliability | 50 %: 1.000; 90 %: 0.897; 95 %: 0.868; 99 %: 0.814; 99.9 %: 0.753; 99.99 %: 0.702 |
 | $k_f$ | Miscellaneous | $1.0$ by default; apply for corrosion, plating, residual stress, or cold-work effects, from a source |
 
-- Holds when: steel with $S_{ut}$ known; Marin factors are multiplicative. Breaks when: non-steel (aluminum has no endurance limit in the same sense; use its life curve), corrosion, or unknown surface.
-- Worked example (ground, $d = 25$ mm, $S_{ut} = 600$ MPa, 95 % reliability): $k_a = 0.917$, $k_b = 0.879$, $S_e = 210$ MPa.
+- Holds when: steel with $S_{\text{ut}}$ known; Marin factors are multiplicative. Breaks when: non-steel (aluminum has no endurance limit in the same sense; use its life curve), corrosion, or unknown surface.
+- Worked example (ground, $d = 25$ mm, $S_{\text{ut}} = 600$ MPa, 95 % reliability): $k_a = 0.917$, $k_b = 0.879$, $S_e = 210$ MPa.
 
-Fatigue failure lines, with mean stress $\sigma_m$, alternating $\sigma_a$, endurance $S_e$, ultimate $S_{ut}$, yield $S_y$, factor $n$:
+Fatigue failure lines, with mean stress $\sigma_m$, alternating $\sigma_a$, endurance $S_e$, ultimate $S_{\text{ut}}$, yield $S_y$, factor $n$:
 
 | Line | Equation for $n$ | Character |
 |---|---|---|
-| Goodman | $\dfrac{1}{n} = \dfrac{\sigma_a}{S_e} + \dfrac{\sigma_m}{S_{ut}}$ | Conservative for ductile metals; simple |
+| Goodman | $\dfrac{1}{n} = \dfrac{\sigma_a}{S_e} + \dfrac{\sigma_m}{S_{\text{ut}}}$ | Conservative for ductile metals; simple |
 | Soderberg | $\dfrac{1}{n} = \dfrac{\sigma_a}{S_e} + \dfrac{\sigma_m}{S_y}$ | Most conservative; no yield check needed |
-| Gerber | $n\,\dfrac{\sigma_a}{S_e} + \left(n\,\dfrac{\sigma_m}{S_{ut}}\right)^2 = 1$ | Fits ductile data best; can be non-conservative |
+| Gerber | $n\,\dfrac{\sigma_a}{S_e} + \left(n\,\dfrac{\sigma_m}{S_{\text{ut}}}\right)^2 = 1$ | Fits ductile data best; can be non-conservative |
 
-- Worked example: $\sigma_a = 100$, $\sigma_m = 50$, $S_e = 209.9$, $S_{ut} = 600$, $S_y = 400$ MPa. Goodman $n = 1.79$; Soderberg $n = 1.66$; Gerber $n = 2.04$.
+- Worked example: $\sigma_a = 100$, $\sigma_m = 50$, $S_e = 209.9$, $S_{\text{ut}} = 600$, $S_y = 400$ MPa. Goodman $n = 1.79$; Soderberg $n = 1.66$; Gerber $n = 2.04$.
 - Compressive mean stress is often set to zero in simple checks. State the choice; check the code.
 - Yield check: the line $\sigma_a + \sigma_m = S_y$ must also hold for the peak stress when yielding can occur.
 - Holds when: the cycle is stable and the stress state is known at the critical point. Breaks when: the surface is damaged, load sequence matters (for example overload or variable amplitude), or the part is non-metallic.
@@ -157,8 +157,8 @@ $$
 
 Linear stack, gap $g = L - \sum a_i$ (sign of each term follows its direction in the chain):
 
-- Worst case: $T_{wc} = \sum_i \lvert t_i \rvert$. Guarantees the fit; conservative.
-- RSS: $T_{rss} = \sqrt{\sum_i t_i^2}$. A statistical estimate. Valid only for independent, stable, centered processes. Mean shift adds to it and is not in this formula.
+- Worst case: $T_{\text{wc}} = \sum_i \lvert t_i \rvert$. Guarantees the fit; conservative.
+- RSS: $T_{\text{rss}} = \sqrt{\sum_i t_i^2}$. A statistical estimate. Valid only for independent, stable, centered processes. Mean shift adds to it and is not in this formula.
 - Clearance: $C_{\min} = H_{\min} - S_{\max}$, $C_{\max} = H_{\max} - S_{\min}$ for hole $H$ and shaft $S$. Negative clearance is interference.
 
 - Worked: $L = 60.00 \pm 0.15$, $a = 25.00 \pm 0.05$, $b = 30.00 \pm 0.08$ mm gives nominal gap $5.00$ mm, worst case $\pm 0.28$ mm, RSS $\pm 0.177$ mm.
@@ -254,7 +254,7 @@ Hole basis uses H (lower deviation zero) with a shaft letter. Limits come from I
 | H7/k6 | Transition | Snug; can have a slight gap or slight interference | Locating, held by light tapping |
 | H7/p6 | Interference | Light press; needs a press or thermal assembly | Permanent location, no key |
 
-- Shaft letters: $a$ to $h$ give clearance with H; $j$ to $n$ give transition; $p$ to $zc$ give interference.
+- Shaft letters: $a$ to $h$ give clearance with $H$; $j$ to $n$ give transition; $p$ to $\text{zc}$ give interference.
 - Holds when: the fit is between features of the same nominal size, at room temperature, with the tolerance grades stated. Breaks when: materials have different thermal expansion or the press force is not checked.
 
 ## Fasteners
@@ -262,7 +262,7 @@ Hole basis uses H (lower deviation zero) with a shaft letter. Limits come from I
 Preload and bolt sizing:
 
 $$
-F_i = 0.75\,S_p\,A_t \qquad \text{(reused joint; $0.9\,S_p A_t$ is often used for a permanent joint)}
+F_i = 0.75\,S_p\,A_t \qquad \text{(reused joint; }0.9\,S_p A_t\text{ is often used for a permanent joint)}
 $$
 
 where $S_p$ is proof strength (MPa) and $A_t$ is tensile stress area (mm$^2$). Use $A_t$, not the nominal area.
@@ -388,8 +388,8 @@ K_w = \frac{4C_s - 1}{4C_s - 4} + \frac{0.615}{C_s}, \qquad \tau = K_w\,\frac{8\
 $$
 
 - Example: $C_s = 8$ gives $K_w = 1.184$.
-- Series springs (same force): $\dfrac{1}{k_{eq}} = \sum \dfrac{1}{k_i}$. For $n$ identical springs in series, $k_{eq} = k/n$.
-- Parallel springs (same deflection): $k_{eq} = \sum k_i$. For $n$ identical springs in parallel, $k_{eq} = n\,k$.
+- Series springs (same force): $\dfrac{1}{k_{\text{eq}}} = \sum \dfrac{1}{k_i}$. For $n$ identical springs in series, $k_{\text{eq}} = k/n$.
+- Parallel springs (same deflection): $k_{\text{eq}} = \sum k_i$. For $n$ identical springs in parallel, $k_{\text{eq}} = n\,k$.
 - Worked: $d = 2$ mm, $D = 16$ mm, $N_a = 10$, $G = 79$ GPa gives $k = 3.86$ N/mm.
 - Holds when: linear, helical, round wire, deflection well below solid height and below the elastic limit. Breaks when: the spring is compressed to solid, stressed past its elastic limit (set and loss of free length), or near resonance.
 - Check the deflection against solid height and the elastic limit, not only the rate.
@@ -438,7 +438,7 @@ Before releasing a dimensioned design:
 - Stress from $F/A$ for a 1 kN axial load on a 10 mm round bar: $A = 78.5$ mm$^2$, so $\sigma = 12.7$ MPa. Expect results of this order for light loads.
 - Steel modulus $E \approx 200$ GPa (typical); $G \approx 79$ GPa (typical); Poisson ratio about 0.3 (typical). Aluminum $E \approx 70$ GPa (typical).
 - Steel yield strength is a few hundred MPa for common grades (typical). A computed stress above yield in a ductile part means yielding or a unit error.
-- Unit check: 1 MPa = 1 N/mm$^2$; 1 in = 25.4 mm exactly; 1 ksi $\approx$ 6.9 MPa; 1 MPa $\approx$ 145 psi.
+- Unit check: $1\ \text{MPa} = 1\ \text{N/mm}^2$; $1\ \text{in} = 25.4\ \text{mm}$ exactly; 1 ksi $\approx$ 6.9 MPa; 1 MPa $\approx$ 145 psi.
 - Shaft torque units: entering $T$ in N$\cdot$m where N$\cdot$mm is required makes $d$ about ten times too small, because $d \propto T^{1/3}$ and a factor 1000 in $T$ is a factor 10 in $d$.
 - Bearing life: doubling the load gives one eighth the life (ball).
 - Stack-up: the RSS value is always below the worst-case value for the same tolerances.

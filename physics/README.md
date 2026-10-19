@@ -30,18 +30,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 - [Thermal-fluids reference](reference-thermofluids.md): thermodynamics, fluid mechanics, heat transfer
 - [Fields, waves, and space reference](reference-fields-waves-space.md): constants, electromagnetism, waves, optics, orbits, planetary data
 
-## Related courses
-
-- AP Physics 1
-- AP Physics C - Mechanics
-- PHYS 51 - General Physics II: Electricity & Magnetism
-- PHYS 52 - General Physics III: Waves, Light, Heat
-- CE 95 - Theory & Applications of Statics
-- CE 112 - Mechanics of Materials
-- ME 101 - Dynamics
-- ME 111 - Fluid Mechanics
-- ME 113 - Thermodynamics
-- ME 114 - Heat Transfer
-- ME 147 - Dynamic Systems Vibration and Control
-
 See also: [math](../math), [materials](../materials), [units](../units), [courses](../courses)

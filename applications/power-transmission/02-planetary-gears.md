@@ -65,7 +65,7 @@ $$
 T_c = \eta\, \frac{\omega_s}{\omega_c}\, T_s
 $$
 
-Power is $P = T\omega$ with $P$ in W, so $P_{out} = \eta P_{in}$ for the same two-member power flow.
+Power is $P = T\omega$ with $P$ in W, so $P_{\mathrm{out}} = \eta P_{\mathrm{in}}$ for the same two-member power flow.
 
 Three fixed-member cases, with $N_s = 24$, $N_p = 12$, $N_r = 48$, and sun input $\omega_s = 1$ (or ring input $\omega_r = 1$ in case C). Each case satisfies the relative speed relation with the ring ratio $-N_r / N_s = -2$.
 
@@ -93,9 +93,9 @@ Step 3. Carrier speed: $n_c = 1500 / 3.0 = 500$ rpm, which is $\omega_c = 52.36$
 
 Step 4. Output torque: $T_c = 0.97 \times 3.0 \times 10 = 29.1$ N$\cdot$m.
 
-Step 5. Input power: $\omega_s = 1500 \times 2\pi / 60 = 157.1$ rad/s, so $P_{in} = 10 \times 157.1 = 1571$ W.
+Step 5. Input power: $\omega_s = 1500 \times 2\pi / 60 = 157.1$ rad/s, so $P_{\mathrm{in}} = 10 \times 157.1 = 1571$ W.
 
-Step 6. Output power: $P_{out} = 29.1 \times 52.36 = 1524$ W, which is $0.97 \times 1571$ W.
+Step 6. Output power: $P_{\mathrm{out}} = 29.1 \times 52.36 = 1524$ W, which is $0.97 \times 1571$ W.
 
 **Answer.** Carrier speed 500 rpm. Output torque 29.1 N$\cdot$m. Output power about 1524 W.
 

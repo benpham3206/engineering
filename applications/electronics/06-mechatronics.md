@@ -32,12 +32,12 @@ modern machines, from printers to cars, are built this way.
 
 ## Key equations
 
-- PWM average voltage: $V_{avg} = D \cdot V_{supply}$, where $D$ is duty cycle (0 to 1, dimensionless)
-  and $V_{supply}$ is volts (V).
-- ADC step size (least significant bit, LSB): $V_{LSB} = \dfrac{V_{ref}}{2^n}$, where $V_{ref}$ is the
+- PWM average voltage: $V_{\mathrm{avg}} = D \cdot V_{\mathrm{supply}}$, where $D$ is duty cycle (0 to 1, dimensionless)
+  and $V_{\mathrm{supply}}$ is volts (V).
+- ADC step size (least significant bit, LSB): $V_{\mathrm{LSB}} = \dfrac{V_{\mathrm{ref}}}{2^n}$, where $V_{\mathrm{ref}}$ is the
   reference voltage (V) and $n$ is the number of bits.
-- ADC reading to voltage: $V_{in} = \text{code} \cdot \dfrac{V_{ref}}{2^n}$.
-- Voltage divider for a sensor: $V_{out} = V_{s} \dfrac{R_{sensor}}{R_{sensor} + R_{fixed}}$.
+- ADC reading to voltage: $V_{\mathrm{in}} = \text{code} \cdot \dfrac{V_{\mathrm{ref}}}{2^n}$.
+- Voltage divider for a sensor: $V_{\mathrm{out}} = V_{s} \dfrac{R_{\mathrm{sensor}}}{R_{\mathrm{sensor}} + R_{\mathrm{fixed}}}$.
 
 ## Worked example
 
@@ -50,9 +50,9 @@ voltage if the same $12\ \text{V}$ motor is driven at a $25$ percent duty cycle.
 
 **Solution:**
 
-1. (a) Step size: $V_{LSB} = 5 / 2^{10} = 5 / 1024 = 4.88\ \text{mV}$ per count.
-2. (b) Measured voltage: $V_{in} = 512 \times 4.88\ \text{mV} = 2.50\ \text{V}$.
-3. (c) PWM average: $V_{avg} = 0.25 \times 12\ \text{V} = 3.00\ \text{V}$.
+1. (a) Step size: $V_{\mathrm{LSB}} = 5 / 2^{10} = 5 / 1024 = 4.88\ \text{mV}$ per count.
+2. (b) Measured voltage: $V_{\mathrm{in}} = 512 \times 4.88\ \text{mV} = 2.50\ \text{V}$.
+3. (c) PWM average: $V_{\mathrm{avg}} = 0.25 \times 12\ \text{V} = 3.00\ \text{V}$.
 
 **Answer:** (a) $4.88\ \text{mV}$ per count. (b) $2.50\ \text{V}$. (c) $3.00\ \text{V}$.
 

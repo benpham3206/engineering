@@ -100,13 +100,13 @@ You do not need to build web apps to work with them, but you will use them: a su
 
 ## Key equations
 
-The worked example uses one engineering check. The **margin of safety** $MS$ (dimensionless) compares an allowable load $A$ (N) with an applied preload $P$ (N):
+The worked example uses one engineering check. The **margin of safety** $\mathrm{MS}$ (dimensionless) compares an allowable load $A$ (N) with an applied preload $P$ (N):
 
-$$MS = \frac{A - P}{P}$$
+$$\mathrm{MS} = \frac{A - P}{P}$$
 
 - $P$ is the preload in newtons (N) that the bolt carries after tightening.
 - $A$ is the allowable preload in N from the design rule or the bolt specification.
-- $MS \ge 0$ means the preload is within the allowable. $MS < 0$ means it is over the limit.
+- $\mathrm{MS} \ge 0$ means the preload is within the allowable. $\mathrm{MS} < 0$ means it is over the limit.
 
 The formula is simple on purpose. The lesson is in how the code is organized and tested.
 
@@ -213,9 +213,9 @@ B3  margin = +0.189  PASS
 
 **Answer:**
 
-- B1: $MS = (25000 - 20000)/20000 = 0.250$, passes.
-- B2: $MS = (25000 - 31000)/31000 = -0.194$, fails. The preload is 24 percent over the allowable.
-- B3: $MS = (22000 - 18500)/18500 = 0.189$, passes.
+- B1: $\mathrm{MS} = (25000 - 20000)/20000 = 0.250$, passes.
+- B2: $\mathrm{MS} = (25000 - 31000)/31000 = -0.194$, fails. The preload is 24 percent over the allowable.
+- B3: $\mathrm{MS} = (22000 - 18500)/18500 = 0.189$, passes.
 
 **Sanity check:** B1's margin is exactly 0.25 because 20000 is 0.8 of 25000 and the margin is $1/0.8 - 1$. That matches the printed value. B2 is over the allowable, so its margin must be negative, and it is. The three signs agree with the comparison in the code.
 
@@ -235,9 +235,9 @@ Each task is a hands-on exercise. Do them in a folder with a Git repository, and
 
 Numbers and checks to compare against. A good answer includes the work, not only the number.
 
-1. Margin about +0.042 (1000/24000 = 0.0417), passes. A good answer predicts the sign before running.
+1. Margin about $+0.042$ ($1000/24000 = 0.0417$), passes. A good answer predicts the sign before running.
 2. Margin 0.000, and the code should report a pass under the `<=` rule. A good answer states the rule it chose and why.
-3. For `preload_kN` = 20.0, the margin is 0.250 when the allowable is 25.0 kN. A good answer shows the conversion factor (1000) and the hand value.
+3. For `preload_kN` $= 20.0$, the margin is 0.250 when the allowable is 25.0 kN. A good answer shows the conversion factor (1000) and the hand value.
 4. The commit should list the script, test, CSV, and README, and nothing from `.venv` or `__pycache__`. A good answer shows the `git status` output.
 5. The test should fail with the swapped formula and pass again after restoring it. A good answer keeps the bad version out of the commit.
 

@@ -339,8 +339,8 @@ Good requirements are testable (a test can pass or fail them) and unambiguous (t
 | The fan should be quiet. | No number, no condition. | The fan shall not exceed 40 dB(A) at 1 m, at 25 degC, at rated speed, as verified by TP-07. |
 | The app will load fast. | "Fast" is vague; "will" is not a requirement. | The page shall display its first content within 2.0 s on a 10 Mbit/s link, as verified by TP-11. |
 | The battery must last a long time. | "Long time" has no value. | The battery shall power the device for at least 8 h of continuous operation at 25 degC, as verified by TP-03. |
-| The bolts should be tight enough. | No torque, no tolerance, no method. | The bolts shall be tightened to 12 N m +/- 1 N m, as verified by torque audit of 10 joints. |
-| The part must be small and light. | Two undefined adjectives. | The part shall have a mass of no more than 0.5 kg and fit within a 100 mm x 60 mm x 40 mm envelope. |
+| The bolts should be tight enough. | No torque, no tolerance, no method. | The bolts shall be tightened to 12 N m $\pm 1$ N m, as verified by torque audit of 10 joints. |
+| The part must be small and light. | Two undefined adjectives. | The part shall have a mass of no more than 0.5 kg and fit within a $100\ \mathrm{mm} \times 60\ \mathrm{mm} \times 40\ \mathrm{mm}$ envelope. |
 | The system shall be user-friendly. | No measure, no user group. | 90 % of first-time users shall complete setup in under 5 min, as verified by usability test UT-01 with 10 users. |
 
 Test each requirement with these questions:
@@ -387,7 +387,7 @@ Rules: keep line weights consistent across the sheet, with thick for visible edg
 | Drawing number and revision | Revision letter changes with any change to the part |
 | Material and finish | Specification, grade, and treatment |
 | Units | Millimeters or inches, stated once |
-| Default tolerance | For example, "+/-0.1 mm unless noted" |
+| Default tolerance | For example, "$\pm 0.1$ mm unless noted" |
 | Scale | For example 1:2, or "NTS" (not to scale) |
 | Projection symbol | First-angle or third-angle |
 | Drawn by, checked by, date | Names and dates for each |
@@ -415,14 +415,14 @@ Rules: keep line weights consistent across the sheet, with thick for visible edg
 | Rule | Correct | Incorrect |
 |---|---|---|
 | Space between number and unit symbol | 25 mm, 2.0 kN | 25mm, 2.0kN |
-| Exception: plane angles | 30°, 15′ | 30 °, 30 deg |
+| Exception: plane angles | 30°, $15^{\prime}$ | 30 °, 30 deg |
 | Exception: percent | 40 % (SI style) | 40% (informal, accepted in many documents) |
 | Temperature | 25 °C (space before the symbol) | 25C, 25 degC in formal documents |
 | No plural unit symbols | 10 kg, 3 m | 10 kgs, 3 ms |
 | No period after a symbol, unless at sentence end | 5 mm | 5 mm. |
 | Unit symbols are case-sensitive | kg, N, Pa, mm, MPa | Kg, n, mpa, Mm for millimeter |
-| Compound units with a product | N m, or N·m | Nm (can be read as nanometers in some fonts or contexts) |
-| Compound units with a quotient | m/s, or m s^-1 | m per s |
+| Compound units with a product | N m, or $\mathrm{N}\cdot\mathrm{m}$ | Nm (can be read as nanometers in some fonts or contexts) |
+| Compound units with a quotient | $\mathrm{m/s}$, or $\mathrm{m}\,\mathrm{s}^{-1}$ | m per s |
 | Symbols are not abbreviations | 2 h, not 2 hrs or 2 hours | |
 | Names are lowercase in text | newton, pascal | Newton in running text |
 
@@ -434,16 +434,16 @@ Use prefixes in steps of 1000 for engineering values.
 
 | Prefix | Symbol | Factor | Typical use |
 |---|---|---|---|
-| giga | G | 10^9 | GPa (elastic modulus of stiff materials, typical) |
-| mega | M | 10^6 | MPa (stress), MW (power) |
-| kilo | k | 10^3 | kN, km, kg (kg is the base unit with a prefix) |
-| milli | m | 10^-3 | mm, mA, ms |
-| micro | µ | 10^-6 | µm (surface roughness, typical) |
-| nano | n | 10^-9 | nm |
+| giga | G | $10^9$ | GPa (elastic modulus of stiff materials, typical) |
+| mega | M | $10^6$ | MPa (stress), MW (power) |
+| kilo | k | $10^3$ | kN, km, kg (kg is the base unit with a prefix) |
+| milli | m | $10^{-3}$ | mm, mA, ms |
+| micro | $\mu$ | $10^{-6}$ | µm (surface roughness, typical) |
+| nano | n | $10^{-9}$ | nm |
 
 Rules:
 
-- Use capital M for mega and lowercase m for milli. Confusing these gives errors of a factor of a thousand.
+- Use capital M for mega and lowercase m for milli. Confusing these gives errors of a factor of one billion (mega is $10^6$, milli is $10^{-3}$).
 - Avoid hecto, deka, deci, and centi in engineering text, except cm for specific cases where it is the accepted unit.
 - Choose the prefix so the number falls between 0.1 and 1000 (for example 0.25 kN rather than 250 N, or 250 N if that is clearer; be consistent within a table).
 - Do not combine two prefixes (write 1 µm, not 1 mµm).
@@ -459,13 +459,13 @@ Rules:
 | Situation | Rule |
 |---|---|
 | Reporting a measured value | Report to the precision of the measurement. A 0.1 mm gauge gives 12.3 mm, not 12.345 mm. |
-| Uncertainty | Give it to one or two significant figures; match the decimal place of the value. Write 12.34 +/- 0.05 mm. |
+| Uncertainty | Give it to one or two significant figures; match the decimal place of the value. Write $12.34 \pm 0.05$ mm. |
 | Calculations | Carry extra digits through the calculation. Round only the final result. |
-| Trailing zeros | Significant only if a decimal point is written: 1200 has 2 significant figures; 1200. has 4; 1.200 x 10^3 has 4. Use scientific notation to remove doubt. |
+| Trailing zeros | Significant only if a decimal point is written: 1200 has 2 significant figures; 1200. has 4; $1.200 \times 10^3$ has 4. Use scientific notation to remove doubt. |
 | Exact counts and defined values | Have unlimited significant figures (for example 12 holes, or the defined value of the speed of light). |
 | Percent | Give to the precision of the underlying data. "Yield 92 %" not "92.0348 %". |
 
-Sanity check on the mass of a bar: 10 mm x 10 mm x 1 m of aluminum (density about 2700 kg/m^3, typical) has a volume of 1 x 10^-4 m^3 and a mass of about 0.27 kg. Two significant figures are the most this estimate supports.
+Sanity check on the mass of a bar: $10\ \mathrm{mm} \times 10\ \mathrm{mm} \times 1\ \mathrm{m}$ of aluminum (density about $2700\ \mathrm{kg/m^3}$, typical) has a volume of $1 \times 10^{-4}\ \mathrm{m}^3$ and a mass of about 0.27 kg. Two significant figures are the most this estimate supports.
 
 ## 7. Figures, tables, and plots
 
@@ -642,6 +642,6 @@ Named standards and books. Paid items are listed by name only. No free links are
 - NIST Special Publication 811, Guide for the Use of the International System of Units (SI). Free from NIST; locate the current edition by name.
 - Strunk and White, The Elements of Style. Paid, widely available.
 - Edward R. Tufte, The Visual Display of Quantitative Information. Paid; classic on honest graphics.
-- Roy Garner, Garner's Modern English Usage. Paid; usage and plain-word guidance.
+- Bryan A. Garner, Garner's Modern English Usage. Paid; usage and plain-word guidance.
 - Chicago Manual of Style. Paid; citation and style conventions.
 - Plain Writing Act of 2010 (United States) and the Plain Language Action and Information Network (PLAIN) guidance. Free; locate by name.

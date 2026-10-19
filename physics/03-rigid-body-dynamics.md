@@ -10,9 +10,9 @@ Rigid body dynamics extends particle dynamics to bodies that have size and shape
 ## Core ideas
 
 - A **rigid body** keeps its shape while it moves. Every point on it moves in a way that is linked to every other point.
-- **Planar motion** means all points move in parallel planes. For this lesson, the body moves in the x-y plane and rotates about an axis perpendicular to it, the z axis.
-- **Angular position** $\theta$ is measured in radians (rad). **Angular velocity** $\omega = d\theta/dt$ is in rad/s, and **angular acceleration** $\alpha = d\omega/dt$ is in rad/s^2.
-- **Mass moment of inertia** $I$ measures how hard it is to change a body's rotation. It depends on the mass and how far that mass sits from the axis. Its SI unit is kilogram meter squared (kg m^2), and its US customary unit is slug foot squared (slug ft^2).
+- **Planar motion** means all points move in parallel planes. For this lesson, the body moves in the $x$-$y$ plane and rotates about an axis perpendicular to it, the $z$ axis.
+- **Angular position** $\theta$ is measured in radians (rad). **Angular velocity** $\omega = d\theta/dt$ is in rad/s, and **angular acceleration** $\alpha = d\omega/dt$ is in $\mathrm{rad/s^2}$.
+- **Mass moment of inertia** $I$ measures how hard it is to change a body's rotation. It depends on the mass and how far that mass sits from the axis. Its SI unit is kilogram meter squared ($\mathrm{kg\,m^2}$), and its US customary unit is slug foot squared ($\mathrm{slug\,ft^2}$).
 - **Center of mass** $G$ is the average position of the body's mass. For many bodies, you can treat the whole mass as acting at $G$ when you write the translation equation.
 - **Rolling without slipping** means the contact point on a wheel has zero velocity relative to the surface. For a wheel of radius $r$ rolling on a flat surface, the center speed and angular speed are linked by $v = \omega r$, and $a = \alpha r$.
 - **Kinetic energy** of a rigid body in planar motion has two parts: translation of the center of mass and rotation about it.
@@ -30,11 +30,11 @@ Translation of the center of mass, with $G$ as the center:
 
 $$\sum F_x = m\,a_{Gx} \qquad \sum F_y = m\,a_{Gy}$$
 
-Rotation about the center of mass, for a rigid body rotating about the z axis through $G$:
+Rotation about the center of mass, for a rigid body rotating about the $z$ axis through $G$:
 
 $$\sum M_G = I_G\,\alpha$$
 
-Here $F$ is force in newtons (N), $m$ is mass in kilograms (kg), $a_G$ is acceleration of the center of mass in m/s^2, $M_G$ is moment about $G$ in newton meters (N m), $I_G$ is the moment of inertia about $G$ in kg m^2, and $\alpha$ is angular acceleration in rad/s^2.
+Here $F$ is force in newtons (N), $m$ is mass in kilograms (kg), $a_G$ is acceleration of the center of mass in $\mathrm{m/s^2}$, $M_G$ is moment about $G$ in newton meters (N m), $I_G$ is the moment of inertia about $G$ in $\mathrm{kg\,m^2}$, and $\alpha$ is angular acceleration in $\mathrm{rad/s^2}$.
 
 Rotational kinetic energy about the center of mass:
 
@@ -50,7 +50,7 @@ $$v_G = \omega r \qquad a_G = \alpha r$$
 
 ## Worked example
 
-**Given:** A uniform solid disk has mass $m = 10$ kg and radius $r = 0.3$ m. It rests on a horizontal floor. A horizontal force $F = 50$ N pulls on its center, so the disk rolls without slipping. Take $g = 9.81$ m/s^2 (Earth surface).
+**Given:** A uniform solid disk has mass $m = 10$ kg and radius $r = 0.3$ m. It rests on a horizontal floor. A horizontal force $F = 50$ N pulls on its center, so the disk rolls without slipping. Take $g = 9.81$ $\mathrm{m/s^2}$ (Earth surface).
 
 **Find:** The acceleration $a_G$ of the center, the friction force at the contact point, and the smallest coefficient of static friction $\mu_s$ that prevents slipping.
 
@@ -90,22 +90,22 @@ Smallest coefficient to prevent slipping, with normal force $N = mg = (10)(9.81)
 
 $$\mu_s \ge \frac{16.67}{98.1} = 0.170$$
 
-**Answer:** $a_G \approx 3.33$ m/s^2 to the right. The friction force is about 16.7 N to the left. The floor must provide $\mu_s \ge 0.17$.
+**Answer:** $a_G \approx 3.33$ $\mathrm{m/s^2}$ to the right. The friction force is about 16.7 N to the left. The floor must provide $\mu_s \ge 0.17$.
 
-**Sanity check:** The disk accelerates at two thirds of $F/m = 5$ m/s^2 (a one-third reduction), because the disk's rotational inertia takes part of the force. For a hollow hoop, the result would be $F/(2m)$, a smaller acceleration, which fits because more of the mass sits far from the axis. The friction force of 16.7 N is well under the 98.1 N normal force, so a floor with a moderate coefficient of friction can keep the disk from slipping. A floor with a much smaller coefficient would let it slip.
+**Sanity check:** The disk accelerates at two thirds of $F/m = 5$ $\mathrm{m/s^2}$ (a one-third reduction), because the disk's rotational inertia takes part of the force. For a hollow hoop, the result would be $F/(2m)$, a smaller acceleration, which fits because more of the mass sits far from the axis. The friction force of 16.7 N is well under the 98.1 N normal force, so a floor with a moderate coefficient of friction can keep the disk from slipping. A floor with a much smaller coefficient would let it slip.
 
 ## Practice
 
-1. A thin hoop of mass 2 kg and radius 0.5 m rotates about its center. Find its moment of inertia about its center, in kg m^2.
-2. A uniform rod of mass 3 kg and length 2 m rotates about one end. Find its moment of inertia about that end, in kg m^2.
-3. A net moment of 6 N m acts on a body with $I_G = 0.5$ kg m^2 about its center. Find the angular acceleration, in rad/s^2.
-4. A uniform solid disk with $I_G = 0.45$ kg m^2 spins at 10 rad/s about its center. Find its rotational kinetic energy, in joules.
+1. A thin hoop of mass 2 kg and radius 0.5 m rotates about its center. Find its moment of inertia about its center, in $\mathrm{kg\,m^2}$.
+2. A uniform rod of mass 3 kg and length 2 m rotates about one end. Find its moment of inertia about that end, in $\mathrm{kg\,m^2}$.
+3. A net moment of 6 N m acts on a body with $I_G = 0.5$ $\mathrm{kg\,m^2}$ about its center. Find the angular acceleration, in $\mathrm{rad/s^2}$.
+4. A uniform solid disk with $I_G = 0.45$ $\mathrm{kg\,m^2}$ spins at 10 rad/s about its center. Find its rotational kinetic energy, in joules.
 
 <details><summary>Answers</summary>
 
-1. 0.5 kg m^2
-2. 4 kg m^2
-3. 12 rad/s^2
+1. 0.5 $\mathrm{kg\,m^2}$
+2. 4 $\mathrm{kg\,m^2}$
+3. 12 $\mathrm{rad/s^2}$
 4. 22.5 J
 
 </details>

@@ -19,7 +19,7 @@ The motion and the force follow these steps:
 2. The thread flank pushes on the nut's thread along the helix angle.
 3. The nut moves along the axis by the lead for each turn, and it carries the axial load.
 4. Friction on the flanks opposes the sliding, so part of the input torque is lost as heat.
-5. On a vertical axis, the load pulls the nut back down the screw. Whether the screw turns back depends on friction. A plain lead screw holds the load, while a ball screw has so little friction that the load turns the screw.
+5. On a vertical axis, the load pulls the nut back down the screw. Whether the screw turns back depends on friction. A plain lead screw with a shallow lead angle can hold the load, but a steep lead or low friction lets it back-drive. A ball screw has so little friction that the load turns the screw.
 
 ### Main parts
 

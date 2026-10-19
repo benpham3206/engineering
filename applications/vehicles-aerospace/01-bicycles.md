@@ -43,7 +43,7 @@ Steering depends on the geometry of the fork. Trail is the distance along the gr
 
 Assumes the chain does not slip on the teeth. The gear ratio compares the number of teeth on the chainring and the cog. $N$ is a tooth count, so $G$ is dimensionless:
 
-$$G = \frac{N_{ring}}{N_{cog}}$$
+$$G = \frac{N_{\mathrm{ring}}}{N_{\mathrm{cog}}}$$
 
 The crank turns at a cadence measured in revolutions per minute. The crank angular speed in radians per second, and the wheel angular speed, are:
 
@@ -53,9 +53,9 @@ The wheel rolls without slip, and $r$ is the effective rolling radius. The bicyc
 
 $$v = \omega_w r$$
 
-Assumes a flat road, a constant coefficient, and a tyre that rolls without slipping. Rolling resistance is a force in newtons. Here $C_{rr}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface):
+Assumes a flat road, a constant coefficient, and a tyre that rolls without slipping. Rolling resistance is a force in newtons. Here $C_{\mathrm{rr}}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface):
 
-$$F_{rr} = C_{rr}\, m\, g$$
+$$F_{\mathrm{rr}} = C_{\mathrm{rr}}\, m\, g$$
 
 Assumes still air and a constant drag coefficient, with $v$ equal to the speed over the ground. Air drag in newtons depends on the air density $\rho_a$ in kilograms per cubic metre, the speed $v$ in metres per second, and $C_dA$, the drag coefficient times the frontal area in square metres. A typical road position has $C_dA$ near $0.35\ \text{m}^2$:
 
@@ -67,11 +67,11 @@ $$F_g = m g \sin\theta$$
 
 Assumes steady speed, so the acceleration and kinetic energy terms vanish, and a constant drivetrain efficiency. The power the rider delivers at the wheel, in watts, is the total resistance force times the speed. The input power at the pedals is larger because the drivetrain loses some energy. Here $\eta$ is the drivetrain efficiency, which is about 0.97 for a clean chain (typical):
 
-$$P_{wheel} = (F_{rr} + F_d + F_g)\, v, \qquad P_{in} = \frac{P_{wheel}}{\eta}$$
+$$P_{\mathrm{wheel}} = (F_{\mathrm{rr}} + F_d + F_g)\, v, \qquad P_{\mathrm{in}} = \frac{P_{\mathrm{wheel}}}{\eta}$$
 
 ## Worked example
 
-**Given:** The rider pedals at 90 rpm, the chainring has 50 teeth, and the cog has 11 teeth. The wheel radius is $r = 0.335\ \text{m}$. The total mass is $m = 85\ \text{kg}$, with $C_{rr} = 0.004$, $\rho_a = 1.2\ \text{kg/m}^3$, and $C_dA = 0.35\ \text{m}^2$. The drivetrain efficiency is $\eta = 0.97$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Given:** The rider pedals at 90 rpm, the chainring has 50 teeth, and the cog has 11 teeth. The wheel radius is $r = 0.335\ \text{m}$. The total mass is $m = 85\ \text{kg}$, with $C_{\mathrm{rr}} = 0.004$, $\rho_a = 1.2\ \text{kg}/\text{m}^3$, and $C_dA = 0.35\ \text{m}^2$. The drivetrain efficiency is $\eta = 0.97$. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Find:** the speed at 90 rpm, the rider power needed at 10 m/s on a flat road, and the rider power needed at 5 m/s up a 5 percent grade.
 
@@ -86,14 +86,14 @@ Speed:
 
 Flat road at 10 m/s:
 
-5. Rolling resistance: $F_{rr} = 0.004 \times 85 \times 9.81 = 3.34\ \text{N}$.
+5. Rolling resistance: $F_{\mathrm{rr}} = 0.004 \times 85 \times 9.81 = 3.34\ \text{N}$.
 6. Air drag: $F_d = \tfrac{1}{2}(1.2)(0.35)(10)^2 = 21.0\ \text{N}$.
 7. Wheel power: $P = (3.34 + 21.0)(10) = 243\ \text{W}$. Input power: $243/0.97 = 251\ \text{W}$.
 
 Grade at 5 m/s:
 
 8. The 5 percent grade gives $\tan\theta = 0.05$, so $\sin\theta = 0.0499$. Gravity force: $F_g = 85 \times 9.81 \times 0.0499 = 41.6\ \text{N}$.
-9. Resistance at 5 m/s: $F_{rr} = 3.34\ \text{N}$ and $F_d = \tfrac{1}{2}(1.2)(0.35)(5)^2 = 5.25\ \text{N}$.
+9. Resistance at 5 m/s: $F_{\mathrm{rr}} = 3.34\ \text{N}$ and $F_d = \tfrac{1}{2}(1.2)(0.35)(5)^2 = 5.25\ \text{N}$.
 10. Wheel power: $P = (41.6 + 3.34 + 5.25)(5) = 251\ \text{W}$. Input power: $251/0.97 = 259\ \text{W}$.
 
 **Answer:** The speed is $14.4\ \text{m/s}$, or $51.7\ \text{km/h}$. On a flat road at $10\ \text{m/s}$, the rider supplies $243\ \text{W}$ at the wheel and $251\ \text{W}$ at the pedals. Climbing a 5 percent grade at $5\ \text{m/s}$ needs $251\ \text{W}$ at the wheel and $259\ \text{W}$ at the pedals.
@@ -126,19 +126,19 @@ Karl Drais built the draisine in Mannheim in 1817. It had two wheels and a steer
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A chainring has 52 teeth and the cog has 13 teeth. Find the gear ratio.
-2. The rider pedals at 80 rpm in a 50/16 gear, and the wheel radius is 0.335 m. Find the speed.
-3. An 80 kg rider on a bicycle with $C_{rr} = 0.005$ and $C_dA = 0.40\ \text{m}^2$ rides on the flat at 8 m/s. Find the wheel power and the input power, with $\eta = 0.97$ and $\rho_a = 1.2\ \text{kg/m}^3$.
+2. The rider pedals at 80 rpm in a $50/16$ gear, and the wheel radius is 0.335 m. Find the speed.
+3. An 80 kg rider on a bicycle with $C_{\mathrm{rr}} = 0.005$ and $C_dA = 0.40\ \text{m}^2$ rides on the flat at 8 m/s. Find the wheel power and the input power, with $\eta = 0.97$ and $\rho_a = 1.2\ \text{kg}/\text{m}^3$.
 4. How much average power does an 80 kg rider need to climb 300 m vertically in one hour, ignoring drag and drivetrain losses?
-5. At what cadence in a 50/11 gear does the rider reach $14.35\ \text{m/s}$ with a 0.335 m wheel radius?
+5. At what cadence in a $50/11$ gear does the rider reach $14.35\ \text{m/s}$ with a 0.335 m wheel radius?
 
 <details><summary>Answers</summary>
 
 1. $G = 52/13 = 4.0$.
 2. $\omega_c = 2\pi(80)/60 = 8.38\ \text{rad/s}$, $\omega_w = 8.38 \times 50/16 = 26.2\ \text{rad/s}$, and $v = 26.2 \times 0.335 = 8.77\ \text{m/s}$.
-3. $F_{rr} = 0.005 \times 80 \times 9.81 = 3.92\ \text{N}$ and $F_d = \tfrac{1}{2}(1.2)(0.40)(8)^2 = 15.4\ \text{N}$. The wheel power is $(3.92 + 15.4)(8) = 154\ \text{W}$, and the input power is $154/0.97 = 159\ \text{W}$.
+3. $F_{\mathrm{rr}} = 0.005 \times 80 \times 9.81 = 3.92\ \text{N}$ and $F_d = \tfrac{1}{2}(1.2)(0.40)(8)^2 = 15.4\ \text{N}$. The wheel power is $(3.92 + 15.4)(8) = 154\ \text{W}$, and the input power is $154/0.97 = 159\ \text{W}$.
 4. The energy is $mgh = 80 \times 9.81 \times 300 = 2.35 \times 10^5\ \text{J}$. Over 3600 s, the average power is $65.4\ \text{W}$.
 5. $\omega_w = 14.35/0.335 = 42.8\ \text{rad/s}$, $\omega_c = 42.8 \times 11/50 = 9.42\ \text{rad/s}$, and the cadence is $9.42 \times 60/(2\pi) = 90\ \text{rpm}$.
 

@@ -46,7 +46,7 @@ returning to where you started, the net change in potential is zero.
 - **Parallel** resistors share the same voltage. The reciprocal of the total resistance equals the
   sum of the reciprocals.
 
-Two resistors in parallel: $R_{eq} = \dfrac{R_1 R_2}{R_1 + R_2}$.
+Two resistors in parallel: $R_{\mathrm{eq}} = \dfrac{R_1 R_2}{R_1 + R_2}$.
 
 ### Voltage divider
 
@@ -56,10 +56,10 @@ Two resistors in series across a source split the voltage in proportion to their
 
 - Ohm's law: $V = I R$, where $V$ is volts (V), $I$ is amperes (A), and $R$ is ohms ($\Omega$).
 - Power: $P = V I = I^2 R = V^2 / R$, where $P$ is watts (W).
-- KCL: $\sum I_{in} = \sum I_{out}$ at a node.
-- KVL: $\sum V_{rises} = \sum V_{drops}$ around a loop.
-- Series: $R_{eq} = R_1 + R_2 + \cdots$
-- Parallel: $\dfrac{1}{R_{eq}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots$
+- KCL: $\sum I_{\mathrm{in}} = \sum I_{\mathrm{out}}$ at a node.
+- KVL: $\sum V_{\mathrm{rises}} = \sum V_{\mathrm{drops}}$ around a loop.
+- Series: $R_{\mathrm{eq}} = R_1 + R_2 + \cdots$
+- Parallel: $\dfrac{1}{R_{\mathrm{eq}}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \cdots$
 - Voltage divider: $V_2 = V_s \dfrac{R_2}{R_1 + R_2}$
 
 ## Worked example
@@ -72,8 +72,8 @@ $R_2 = 6.8\ \text{k}\Omega$. Assume the battery is ideal and the wires have no r
 **Solution:**
 
 1. The two resistors are in series, so the total resistance is
-   $R_{eq} = 3300 + 6800 = 10100\ \Omega$.
-2. Current from Ohm's law: $I = V_s / R_{eq} = 9 / 10100 = 8.91 \times 10^{-4}\ \text{A}$,
+   $R_{\mathrm{eq}} = 3300 + 6800 = 10100\ \Omega$.
+2. Current from Ohm's law: $I = V_s / R_{\mathrm{eq}} = 9 / 10100 = 8.91 \times 10^{-4}\ \text{A}$,
    which is $0.891\ \text{mA}$.
 3. Voltage across $R_2$: $V_2 = I R_2 = 8.91 \times 10^{-4} \times 6800 = 6.06\ \text{V}$.
 4. Check with KVL: the drop across $R_1$ is $0.891\ \text{mA} \times 3300\ \Omega = 2.94\ \text{V}$.

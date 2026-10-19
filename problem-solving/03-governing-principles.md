@@ -128,8 +128,8 @@ principles agree.
 
 **Sanity check:** 20 m is roughly a six-story building (about 3 m per floor). A fall that
 long taking about 2 s is plausible. A speed of about 20 m/s is about 70 km/h, which is a fast
-city-road speed, so the result is in the right range. Air drag would reduce both numbers, so
-the real values would be a little lower.
+city-road speed, so the result is in the right range. Air drag would lower the impact speed and lengthen the fall time, so
+the real speed would be a little lower and the real time a little longer.
 
 ## Practice
 

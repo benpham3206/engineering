@@ -9,7 +9,7 @@ Particle dynamics studies how forces change the motion of a body. Engineers use 
 
 ## Core ideas
 
-- **Position** $x$ is where the particle is. **Velocity** $v = dx/dt$ is how fast position changes. **Acceleration** $a = dv/dt$ is how fast velocity changes. Use meters (m), meters per second (m/s), and meters per second squared (m/s^2), or feet, feet per second, and feet per second squared in US customary units.
+- **Position** $x$ is where the particle is. **Velocity** $v = dx/dt$ is how fast position changes. **Acceleration** $a = dv/dt$ is how fast velocity changes. Use meters (m), meters per second (m/s), and meters per second squared ($\mathrm{m/s^2}$), or feet, feet per second, and feet per second squared in US customary units.
 - **Kinematics** describes motion without asking what causes it. For constant acceleration, the three standard equations connect position, velocity, acceleration, and time.
 - **Kinetics** connects force to motion. Newton's second law says the net force on a particle equals its mass times its acceleration. Mass is in kilograms (kg) in SI units or slugs in US customary units.
 - **Work** is the energy transferred by a force along a displacement. For a constant force, work equals the force component along the motion times the distance.
@@ -37,7 +37,7 @@ Impulse-momentum theorem:
 
 $$\int_{t_1}^{t_2} \sum F\, dt = m v_2 - m v_1$$
 
-Here $F$ is force in newtons (N), $m$ is mass in kilograms (kg), $a$ is acceleration in m/s^2, $t$ is time in seconds (s), $W$ is work in joules (J), and $K$ is kinetic energy in J. One newton equals one kilogram meter per second squared, and one joule equals one newton meter.
+Here $F$ is force in newtons (N), $m$ is mass in kilograms (kg), $a$ is acceleration in $\mathrm{m/s^2}$, $t$ is time in seconds (s), $W$ is work in joules (J), and $K$ is kinetic energy in J. One newton equals one kilogram meter per second squared, and one joule equals one newton meter.
 
 ## Worked example
 
@@ -65,9 +65,9 @@ $$a = \frac{25^2 - 15^2}{2(200)} = \frac{400}{400} = 1.0\ \text{m/s}^2$$
 
 Then Newton's second law gives $F = ma = (1500)(1.0) = 1500$ N, which matches.
 
-**Answer:** The net forward force is $F = 1500$ N, and the acceleration is $a = 1.0$ m/s^2.
+**Answer:** The net forward force is $F = 1500$ N, and the acceleration is $a = 1.0$ $\mathrm{m/s^2}$.
 
-**Sanity check:** An acceleration of 1.0 m/s^2 is about a tenth of gravity, a plausible value for a car. The two methods agree. The speed goes from 15 to 25 m/s, which is an increase of 10 m/s over 200 m, and an average speed of 20 m/s would take 10 s. A constant acceleration of 1.0 m/s^2 for 10 s gives a change of 10 m/s, so the numbers are consistent.
+**Sanity check:** An acceleration of 1.0 $\mathrm{m/s^2}$ is about a tenth of gravity, a plausible value for a car. The two methods agree. The speed goes from 15 to 25 m/s, which is an increase of 10 m/s over 200 m, and an average speed of 20 m/s would take 10 s. A constant acceleration of 1.0 $\mathrm{m/s^2}$ for 10 s gives a change of 10 m/s, so the numbers are consistent.
 
 ## Practice
 

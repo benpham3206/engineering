@@ -60,11 +60,11 @@ Single Cardan joint with joint angle $\theta$ between the shaft axes, input angl
 
 $$\tan\psi = \cos\theta\,\tan\varphi$$
 
-$$\frac{\omega_{out}}{\omega_{in}} = \frac{\cos\theta}{1 - \sin^2\theta\,\sin^2\varphi}$$
+$$\frac{\omega_{\mathrm{out}}}{\omega_{\mathrm{in}}} = \frac{\cos\theta}{1 - \sin^2\theta\,\sin^2\varphi}$$
 
 With a constant input speed, the output speed reaches its maximum at $\varphi = 90^\circ$ and its minimum at $\varphi = 0^\circ$:
 
-$$\omega_{max} = \frac{\omega_{in}}{\cos\theta}, \qquad \omega_{min} = \omega_{in}\cos\theta, \qquad \frac{\omega_{max}}{\omega_{min}} = \frac{1}{\cos^2\theta}$$
+$$\omega_{\mathrm{max}} = \frac{\omega_{\mathrm{in}}}{\cos\theta}, \qquad \omega_{\mathrm{min}} = \omega_{\mathrm{in}}\cos\theta, \qquad \frac{\omega_{\mathrm{max}}}{\omega_{\mathrm{min}}} = \frac{1}{\cos^2\theta}$$
 
 Two equal joints, with the yokes on the middle shaft lying in one plane, cancel the output speed fluctuation. The middle shaft still fluctuates, but the output does not.
 
@@ -78,12 +78,12 @@ Two equal joints, with the yokes on the middle shaft lying in one plane, cancel 
 
 **Solution:**
 
-1. Input angular speed: $\omega_{in} = 2\pi(1500)/60 = 157.08$ rad/s.
-2. Torque: $T = P/\omega_{in} = 5000/157.08 = 31.83$ N m.
+1. Input angular speed: $\omega_{\mathrm{in}} = 2\pi(1500)/60 = 157.08$ rad/s.
+2. Torque: $T = P/\omega_{\mathrm{in}} = 5000/157.08 = 31.83$ N m.
 3. Cosine of the joint angle: $\cos 20^\circ = 0.9397$.
-4. Minimum output speed: $\omega_{min} = 1500 \times 0.9397 = 1409.5$ rev/min.
-5. Maximum output speed: $\omega_{max} = 1500 / 0.9397 = 1596.3$ rev/min.
-6. Ratio: $\omega_{max}/\omega_{min} = 1/\cos^2 20^\circ = 1.1325$.
+4. Minimum output speed: $\omega_{\mathrm{min}} = 1500 \times 0.9397 = 1409.5$ rev/min.
+5. Maximum output speed: $\omega_{\mathrm{max}} = 1500 / 0.9397 = 1596.3$ rev/min.
+6. Ratio: $\omega_{\mathrm{max}}/\omega_{\mathrm{min}} = 1/\cos^2 20^\circ = 1.1325$.
 
 **Answer:** (a) $31.8$ N m. (b) The output speed swings between $1410$ and $1596$ rev/min. (c) The ratio is $1.13$.
 
@@ -120,7 +120,7 @@ The name honors Gerolamo Cardano, an Italian mathematician who described the joi
 <details><summary>Answers</summary>
 
 1. $\omega = 2\pi(1000)/60 = 104.72$ rad/s, so $T = 2000/104.72 = 19.1$ N m.
-2. $\omega_{max} = 1200/\cos 15^\circ = 1242$ rev/min.
+2. $\omega_{\mathrm{max}} = 1200/\cos 15^\circ = 1242$ rev/min.
 3. $1/\cos^2 25^\circ = 1.217$.
 4. $J = \pi(0.025)^4/32 = 3.83 \times 10^{-8}$ m$^4$, so $\theta = (50)(0.50)/(79\times10^9 \times 3.83\times10^{-8}) = 0.00825$ rad, which is $0.47^\circ$.
 

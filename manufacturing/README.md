@@ -23,9 +23,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Manufacturing reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-## Related courses
-
-- ME 41 - Machine Shop Operations and Safety
-- ME 192 - Robotics and Manufacturing Systems
-
 See also: [design](../design), [materials](../materials), [measurement](../measurement)

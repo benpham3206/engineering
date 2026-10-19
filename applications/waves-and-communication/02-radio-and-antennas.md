@@ -45,11 +45,11 @@ Friis free-space equation, with received power $P_r$ and transmitted power $P_t$
 
 $$P_r = P_t\, G_t\, G_r \left(\frac{\lambda}{4\pi d}\right)^2$$
 
-The same link in decibels, with powers in dBm, gains in dBi, and free-space loss $L_{fs}$ in dB:
+The same link in decibels, with powers in dBm, gains in dBi, and free-space loss $L_{\mathrm{fs}}$ in dB:
 
-$$P_r\,(\text{dBm}) = P_t\,(\text{dBm}) + G_t\,(\text{dBi}) + G_r\,(\text{dBi}) - L_{fs}\,(\text{dB})$$
+$$P_r\,(\text{dBm}) = P_t\,(\text{dBm}) + G_t\,(\text{dBi}) + G_r\,(\text{dBi}) - L_{\mathrm{fs}}\,(\text{dB})$$
 
-$$L_{fs} = 20\log_{10}\!\left(\frac{d}{\text{km}}\right) + 20\log_{10}\!\left(\frac{f}{\text{MHz}}\right) + 32.44$$
+$$L_{\mathrm{fs}} = 20\log_{10}\!\left(\frac{d}{\text{km}}\right) + 20\log_{10}\!\left(\frac{f}{\text{MHz}}\right) + 32.44$$
 
 Shannon capacity, with bandwidth $B$ in hertz and signal-to-noise ratio $S/N$ as a plain ratio (not decibels):
 
@@ -65,7 +65,7 @@ $$C = B\log_2\!\left(1 + \frac{S}{N}\right)$$
 
 1. $\lambda = (2.998 \times 10^8) / (2.4 \times 10^9) = 0.1249\ \text{m}$, or 12.5 cm.
 2. The ideal half-wave dipole is $\lambda/2 = 6.25\ \text{cm}$. The practical dipole is $0.95 \times 6.25 = 5.9\ \text{cm}$.
-3. $L_{fs} = 20\log_{10}(0.1) + 20\log_{10}(2400) + 32.44 = -20 + 67.60 + 32.44 = 80.04\ \text{dB}$.
+3. $L_{\mathrm{fs}} = 20\log_{10}(0.1) + 20\log_{10}(2400) + 32.44 = -20 + 67.60 + 32.44 = 80.04\ \text{dB}$.
 4. $P_r = 20 + 2 + 2 - 80.04 = -56.0\ \text{dBm}$. Converting, $10^{-5.6}\ \text{mW} = 2.5\ \text{nW}$.
 
 **Answer:** (a) 12.5 cm. (b) 6.25 cm ideal, 5.9 cm practical. (c) 80 dB. (d) $-56$ dBm, which is 2.5 nW.

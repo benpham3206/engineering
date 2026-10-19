@@ -46,10 +46,10 @@ Enthalpy $h$ and entropy $s$ are in kilojoules per kilogram and kilojoules per k
 - Pump work: $w_p = v_f (P_2 - P_1)$, where $v_f$ is the specific volume of the liquid in cubic metres per kilogram and $P$ is in kilopascals. The result is in kilojoules per kilogram.
 - Turbine work: $w_t = h_3 - h_4$, where $h_3$ is the steam enthalpy at the turbine inlet and $h_4$ is the enthalpy at the exit.
 - Turbine isentropic efficiency: $\eta_T = \dfrac{h_3 - h_4}{h_3 - h_{4s}}$, dimensionless, where $h_{4s}$ is the exit enthalpy for an ideal, isentropic expansion.
-- Steam quality for a wet mixture: $x = \dfrac{s - s_f}{s_{fg}}$, dimensionless, where $s_f$ and $s_{fg}$ are the entropy of saturated liquid and the entropy change on vaporization.
-- Rankine efficiency: $\eta = \dfrac{w_t - w_p}{q_{in}}$, dimensionless, where $q_{in} = h_3 - h_2$ is the heat added in the boiler, with $h_2$ the enthalpy of the feedwater entering the boiler.
-- Net power: $\dot W = \dot m \, w_{net}$, where $\dot m$ is the steam mass flow in kilograms per second and $w_{net}$ is in kilojoules per kilogram. The power is in kilowatts.
-- Heat rate: $HR = 3600 / \eta$, in kilojoules per kilowatt hour.
+- Steam quality for a wet mixture: $x = \dfrac{s - s_f}{s_{\mathrm{fg}}}$, dimensionless, where $s_f$ and $s_{\mathrm{fg}}$ are the entropy of saturated liquid and the entropy change on vaporization.
+- Rankine efficiency: $\eta = \dfrac{w_t - w_p}{q_{\mathrm{in}}}$, dimensionless, where $q_{\mathrm{in}} = h_3 - h_2$ is the heat added in the boiler, with $h_2$ the enthalpy of the feedwater entering the boiler.
+- Net power: $\dot W = \dot m \, w_{\mathrm{net}}$, where $\dot m$ is the steam mass flow in kilograms per second and $w_{\mathrm{net}}$ is in kilojoules per kilogram. The power is in kilowatts.
+- Heat rate: $\mathrm{HR} = 3600 / \eta$, in kilojoules per kilowatt hour.
 - Carnot limit: $\eta_C = 1 - T_C / T_H$, dimensionless, where $T_H$ and $T_C$ are the hot and cold temperatures in kelvin.
 
 ## Worked example
@@ -57,7 +57,7 @@ Enthalpy $h$ and entropy $s$ are in kilojoules per kilogram and kilojoules per k
 **Given:** A boiler delivers steam at 4.0 MPa and 400 °C ($T_H = 673.15\ \text{K}$). The condenser holds the steam at 10 kPa. The turbine and pump are isentropic, and the plant produces 50 MW of net power. Typical steam table values are:
 
 - At 4.0 MPa and 400 °C: $h_3 = 3213.6\ \text{kJ/kg}$, $s_3 = 6.7690\ \text{kJ/(kg K)}$.
-- Saturated liquid at 10 kPa: $h_f = 191.83\ \text{kJ/kg}$, $v_f = 0.00101\ \text{m}^3/\text{kg}$, $s_f = 0.6492\ \text{kJ/(kg K)}$, $h_{fg} = 2392.8\ \text{kJ/kg}$, $s_{fg} = 7.5009\ \text{kJ/(kg K)}$.
+- Saturated liquid at 10 kPa: $h_f = 191.83\ \text{kJ/kg}$, $v_f = 0.00101\ \text{m}^3/\text{kg}$, $s_f = 0.6492\ \text{kJ/(kg K)}$, $h_{\mathrm{fg}} = 2392.8\ \text{kJ/kg}$, $s_{\mathrm{fg}} = 7.5009\ \text{kJ/(kg K)}$.
 
 **Find:** (a) the pump work, (b) the turbine work, (c) the thermal efficiency, (d) the steam flow rate, and (e) the heat rate.
 
@@ -67,11 +67,11 @@ Enthalpy $h$ and entropy $s$ are in kilojoules per kilogram and kilojoules per k
 2. Exit quality for the isentropic expansion: $x = (6.7690 - 0.6492) / 7.5009 = 0.816$.
 3. Exit enthalpy: $h_{4s} = 191.83 + 0.816 \times 2392.8 = 2144.1\ \text{kJ/kg}$.
 4. Turbine work: $w_t = 3213.6 - 2144.1 = 1069.5\ \text{kJ/kg}$.
-5. Heat input: $q_{in} = 3213.6 - 195.86 = 3017.7\ \text{kJ/kg}$.
-6. Net work: $w_{net} = 1069.5 - 4.03 = 1065.5\ \text{kJ/kg}$.
+5. Heat input: $q_{\mathrm{in}} = 3213.6 - 195.86 = 3017.7\ \text{kJ/kg}$.
+6. Net work: $w_{\mathrm{net}} = 1069.5 - 4.03 = 1065.5\ \text{kJ/kg}$.
 7. Thermal efficiency: $\eta = 1065.5 / 3017.7 = 0.353$.
 8. Steam flow: $\dot m = 50\,000\ \text{kW} / 1065.5\ \text{kJ/kg} = 46.9\ \text{kg/s}$.
-9. Heat rate: $HR = 3600 / 0.353 = 10\,200\ \text{kJ/kWh}$.
+9. Heat rate: $\mathrm{HR} = 3600 / 0.353 = 10\,200\ \text{kJ/kWh}$.
 
 **Answer:** (a) 4.03 kJ/kg. (b) 1070 kJ/kg. (c) 35.3 percent. (d) 46.9 kg/s. (e) About 10 200 kJ/kWh.
 
@@ -114,7 +114,7 @@ Thomas Newcomen built an atmospheric steam engine in England about 1712, and it 
 1. $\eta_C = 1 - 300/600 = 0.50$, or 50 percent.
 2. $w_p = 0.001 \times (5000 - 10) = 4.99\ \text{kJ/kg}$, or about 5.0 kJ/kg.
 3. $\dot m = 200\,000\ \text{kW} / 1000\ \text{kJ/kg} = 200\ \text{kg/s}$.
-4. $HR = 3600 / 0.40 = 9000\ \text{kJ/kWh}$.
+4. $\mathrm{HR} = 3600 / 0.40 = 9000\ \text{kJ/kWh}$.
 5. Any two of these: heat enters the water over a range of temperatures, so the average heat-addition temperature is below the top temperature. The pump and turbine lose energy to irreversibility. Wet steam at the turbine exit lowers the turbine's isentropic efficiency.
 
 </details>

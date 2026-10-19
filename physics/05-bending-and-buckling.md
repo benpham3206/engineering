@@ -49,13 +49,13 @@ Assumptions behind the formulas in this lesson:
 
 Symbols and units:
 
-- $M$: bending moment (N·m, or lbf·ft)
+- $M$: bending moment ($\mathrm{N\cdot m}$, or $\mathrm{lbf\cdot ft}$)
 - $V$: internal shear force (N, or lbf)
 - $y$: distance from the neutral axis (m, or in)
 - $\sigma$: bending stress (Pa, or psi)
-- $I$: second moment of area (m⁴, or in⁴)
+- $I$: second moment of area ($\mathrm{m^4}$, or $\mathrm{in^4}$)
 - $c$: distance from the neutral axis to the outermost fiber (m, or in)
-- $S$: section modulus (m³, or in³)
+- $S$: section modulus ($\mathrm{m^3}$, or $\mathrm{in^3}$)
 - $b$, $h$: width and depth of a rectangular section (m, or in)
 - $d$: diameter of a solid circular section (m, or in)
 - $w$: uniform load per unit length (N/m, or lbf/ft)
@@ -63,9 +63,9 @@ Symbols and units:
 - $L$: span or column length (m, or in)
 - $v_{\max}$: maximum deflection (m, or in)
 - $E$: Young's modulus (Pa, or psi)
-- $P_{cr}$: critical buckling load (N, or lbf)
+- $P_{\mathrm{cr}}$: critical buckling load (N, or lbf)
 - $K$: effective length factor (dimensionless)
-- $A$: cross-sectional area (m², or in²)
+- $A$: cross-sectional area ($\mathrm{m^2}$, or $\mathrm{in^2}$)
 - $r$: radius of gyration (m, or in)
 
 Flexure formula:
@@ -86,7 +86,7 @@ $$v_{\max,\,\text{UDL}} = \frac{5\,w L^4}{384\,E I}, \qquad v_{\max,\,\text{mids
 
 Euler's critical load for a column with effective length factor $K$:
 
-$$P_{cr} = \frac{\pi^2 E I}{(K L)^2}$$
+$$P_{\mathrm{cr}} = \frac{\pi^2 E I}{(K L)^2}$$
 
 Radius of gyration and slenderness:
 
@@ -111,25 +111,25 @@ $$r = \sqrt{\frac{I}{A}}, \qquad \text{slenderness} = \frac{K L}{r}$$
 4. Maximum deflection:
    $$v_{\max} = \frac{5\,w L^4}{384\,E I} = \frac{5 \times 10\,000 \times 4.0^4}{384 \times 200 \times 10^{9} \times 6.667 \times 10^{-5}} = 2.50 \times 10^{-3}\ \text{m} = 2.50\ \text{mm}$$
 
-**Answer.** $M_{\max} = 20.0$ kN·m, $\sigma_{\max} = 30.0$ MPa, and $v_{\max} = 2.50$ mm.
+**Answer.** $M_{\max} = 20.0$ $\mathrm{kN\cdot m}$, $\sigma_{\max} = 30.0$ MPa, and $v_{\max} = 2.50$ mm.
 
 **Sanity check.**
 
 - The bending stress of 30 MPa is well below the typical mild steel yield of about 250 MPa.
 - The span-to-deflection ratio is $L / v_{\max} = 4000 / 2.5 = 1600$. That is far stiffer than the common $L/360$ floor guideline, which would allow about 11.1 mm here.
-- The moment of 20 kN·m is consistent with the total load of $10 \times 4 = 40$ kN. The moment at midspan is one eighth of $wL^2$, which matches the simply supported shape.
+- The moment of 20 $\mathrm{kN\cdot m}$ is consistent with the total load of $10 \times 4 = 40$ kN. The moment at midspan is one eighth of $wL^2$, which matches the simply supported shape.
 
 ## Practice
 
-1. A simply supported beam of span 3.0 m carries a point load of 5 kN at midspan. It has the same 100 mm by 200 mm rectangular section and $E = 200$ GPa. Find the maximum moment in kN·m, the maximum bending stress in MPa, and the maximum deflection in mm.
-2. A rectangular section is 50 mm wide and 100 mm deep. Find its second moment of area in mm⁴ and its section modulus in cm³.
+1. A simply supported beam of span 3.0 m carries a point load of 5 kN at midspan. It has the same 100 mm by 200 mm rectangular section and $E = 200$ GPa. Find the maximum moment in $\mathrm{kN\cdot m}$, the maximum bending stress in MPa, and the maximum deflection in mm.
+2. A rectangular section is 50 mm wide and 100 mm deep. Find its second moment of area in $\mathrm{mm^4}$ and its section modulus in $\mathrm{cm^3}$.
 3. A pinned-pinned steel column is a solid circular rod with diameter 25 mm and length 1.8 m. It has $E = 200$ GPa. Find the Euler critical load in kN and the critical stress in MPa.
 4. The same rod as problem 3 is fixed at both ends, so $K = 0.5$. Find the new critical load in kN.
 
 <details><summary>Answers</summary>
 
-1. 3.75 kN·m; 5.6 MPa; 0.211 mm
-2. 4.17 × 10^6 mm⁴; 83.3 cm³
+1. 3.75 $\mathrm{kN\cdot m}$; 5.6 MPa; 0.211 mm
+2. $4.17 \times 10^6\ \mathrm{mm^4}$; 83.3 $\mathrm{cm^3}$
 3. 11.7 kN; 23.8 MPa
 4. 46.7 kN
 

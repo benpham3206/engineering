@@ -15,7 +15,7 @@ much of the engine's power arrives at the road.
 
 ### How it works
 
-A gear pair changes speed and torque. The gear ratio is $G = N_{out}/N_{in}$, where $N$ is the tooth count.
+A gear pair changes speed and torque. The gear ratio is $G = N_{\mathrm{out}}/N_{\mathrm{in}}$, where $N$ is the tooth count.
 A pair with more teeth on the output side turns the output slower and gives it more torque. Power stays
 the same apart from losses, so torque times speed is nearly constant through the gears. A transmission is a
 set of gear pairs. A driver picks one pair at a time, or the transmission changes pairs by itself.
@@ -60,27 +60,27 @@ together, which gives full traction off road and makes steering harder on dry pa
 
 Gear ratio, with $N$ the tooth count and $\omega$ the angular speed in radians per second (rad/s):
 
-$$G = \frac{N_{out}}{N_{in}} = \frac{\omega_{in}}{\omega_{out}}$$
+$$G = \frac{N_{\mathrm{out}}}{N_{\mathrm{in}}} = \frac{\omega_{\mathrm{in}}}{\omega_{\mathrm{out}}}$$
 
 Output torque and output speed through a gear train with overall ratio $G$ and efficiency $\eta$ (no units),
-with input torque $T_{in}$ in newton metres (N m):
+with input torque $T_{\mathrm{in}}$ in newton metres (N m):
 
-$$T_{out} = \eta\, G\, T_{in}, \qquad \omega_{out} = \frac{\omega_{in}}{G}$$
+$$T_{\mathrm{out}} = \eta\, G\, T_{\mathrm{in}}, \qquad \omega_{\mathrm{out}} = \frac{\omega_{\mathrm{in}}}{G}$$
 
-Vehicle speed, with tire radius $r$ in metres (m) and the rotational speed of the wheel $\omega_{wheel}$ in rad/s,
+Vehicle speed, with tire radius $r$ in metres (m) and the rotational speed of the wheel $\omega_{\mathrm{wheel}}$ in rad/s,
 where the total ratio is the gearbox ratio times the final drive ratio:
 
-$$v = \omega_{wheel}\, r, \qquad \omega_{wheel} = \frac{\omega_{engine}}{G_{gearbox}\, G_{final}}$$
+$$v = \omega_{\mathrm{wheel}}\, r, \qquad \omega_{\mathrm{wheel}} = \frac{\omega_{\mathrm{engine}}}{G_{\mathrm{gearbox}}\, G_{\mathrm{final}}}$$
 
-Open differential, with input torque $T_{in}$ on the carrier and output torques $T_L$ and $T_R$ on the wheels:
+Open differential, with input torque $T_{\mathrm{in}}$ on the carrier and output torques $T_L$ and $T_R$ on the wheels:
 
-$$T_L = T_R = \frac{T_{in}}{2}$$
+$$T_L = T_R = \frac{T_{\mathrm{in}}}{2}$$
 
-The speed relation is $\omega_L + \omega_R = 2\,\omega_{carrier}$, where $\omega_L$ and $\omega_R$ are the wheel speeds.
+The speed relation is $\omega_L + \omega_R = 2\,\omega_{\mathrm{carrier}}$, where $\omega_L$ and $\omega_R$ are the wheel speeds.
 
 Torque converter stall ratio, the torque multiplication at zero output speed:
 
-$$K_0 = \frac{T_{turbine}}{T_{pump}}$$
+$$K_0 = \frac{T_{\mathrm{turbine}}}{T_{\mathrm{pump}}}$$
 
 Typical converters have $K_0$ between about 1.8 and 2.5, and the ratio falls toward 1 as the converter
 approaches lock-up (typical values).
@@ -88,7 +88,7 @@ approaches lock-up (typical values).
 ## Worked example
 
 **Given:** A car has a manual gearbox with first gear ratio $3.5$ and a final drive ratio of $3.9$. The
-engine delivers $T_{engine} = 150\ \text{N m}$ at $4000\ \text{rpm}$ in first gear. The driveline efficiency
+engine delivers $T_{\mathrm{engine}} = 150\ \text{N m}$ at $4000\ \text{rpm}$ in first gear. The driveline efficiency
 is $\eta = 0.92$, and the tire radius is $r = 0.33\ \text{m}$.
 
 **Find:** (a) the torque at the driven axle, (b) the tire force on the road, and (c) the vehicle speed.
@@ -96,10 +96,10 @@ is $\eta = 0.92$, and the tire radius is $r = 0.33\ \text{m}$.
 **Solution:**
 
 1. Total ratio: $G = 3.5 \times 3.9 = 13.65$.
-2. Axle torque: $T_{axle} = \eta\, G\, T_{engine} = 0.92 \times 13.65 \times 150 = 1884\ \text{N m}$.
-3. Tire force, total at the two driven wheels: $F = T_{axle}/r = 1884 / 0.33 = 5708\ \text{N}$.
+2. Axle torque: $T_{\mathrm{axle}} = \eta\, G\, T_{\mathrm{engine}} = 0.92 \times 13.65 \times 150 = 1884\ \text{N m}$.
+3. Tire force, total at the two driven wheels: $F = T_{\mathrm{axle}}/r = 1884 / 0.33 = 5708\ \text{N}$.
    With an open differential, each wheel gets half, about $2854\ \text{N}$.
-4. Wheel speed: $\omega_{wheel} = (4000 \times 2\pi/60)/13.65 = 30.7\ \text{rad/s}$, which is $293\ \text{rpm}$.
+4. Wheel speed: $\omega_{\mathrm{wheel}} = (4000 \times 2\pi/60)/13.65 = 30.7\ \text{rad/s}$, which is $293\ \text{rpm}$.
 5. Vehicle speed: $v = 30.7 \times 0.33 = 10.1\ \text{m/s}$, which is $36.5\ \text{km/h}$.
 
 **Answer:** (a) $1884\ \text{N m}$ at the axle. (b) $5.71\ \text{kN}$ total at the two driven wheels. (c) $36.5\ \text{km/h}$ at $4000\ \text{rpm}$ in first gear.
@@ -107,7 +107,7 @@ is $\eta = 0.92$, and the tire radius is $r = 0.33\ \text{m}$.
 **Sanity check:** Torque rose by $13.65 \times 0.92 = 12.6$ times, and speed fell by $13.65$ times. The product
 of torque and speed at the axle is less than the engine's product, because the $0.92$ efficiency removes the
 difference as heat. The tire force of $5.7\ \text{kN}$ on a car of about $1500\ \text{kg}$ is roughly $0.39$ times
-the weight at $g = 9.81\ \text{m/s}^2$ (Earth surface), which is a plausible first-gear launch.
+the weight at $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface), which is a plausible first-gear launch.
 
 ## Design trade-offs
 
@@ -162,11 +162,11 @@ Netherlands introduced a belt-driven CVT, the Variomatic, in 1958.
 <details><summary>Answers</summary>
 
 1. $G = 50/20 = 2.5$. Output speed $= 3000/2.5 = 1200\ \text{rpm}$. Output torque $= 2.5 \times 40 = 100\ \text{N m}$.
-2. $\omega_{engine} = 3000 \times 2\pi/60 = 314.2\ \text{rad/s}$. $\omega_{wheel} = 314.2/4.0 = 78.5\ \text{rad/s}$.
+2. $\omega_{\mathrm{engine}} = 3000 \times 2\pi/60 = 314.2\ \text{rad/s}$. $\omega_{\mathrm{wheel}} = 314.2/4.0 = 78.5\ \text{rad/s}$.
    $v = 78.5 \times 0.30 = 23.6\ \text{m/s} = 84.8\ \text{km/h}$.
 3. The slipping wheel limits both wheels to $30\ \text{N m}$, because an open differential forces equal torque
    on both sides. The total is $2 \times 30 = 60\ \text{N m}$.
-4. $T_{turbine} = K_0 \times T_{pump} = 2.0 \times 200 = 400\ \text{N m}$.
+4. $T_{\mathrm{turbine}} = K_0 \times T_{\mathrm{pump}} = 2.0 \times 200 = 400\ \text{N m}$.
 5. Output power $= 0.90 \times 80 = 72\ \text{kW}$. Power lost $= 80 - 72 = 8\ \text{kW}$.
 
 </details>

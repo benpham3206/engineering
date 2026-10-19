@@ -115,7 +115,7 @@ Default tolerances: `solve_ivp` (RK45) and `ode45` both default to a relative to
 ### Initial value ODEs
 
 - Problem: $y' = f(t, y)$, $y(t_0) = y_0$. Example: $y' = -ky$, $y = e^{-kt}$, with $k$ in s$^{-1}$ and $t$ in s.
-- Default method: explicit Runge-Kutta 4(5), Dormand-Prince (`RK45`, `ode45`). Local error per step scales as $h^5$, global error as $h^4$.
+- Default method: explicit Runge-Kutta 4(5), Dormand-Prince (`RK45`, `ode45`). It steps with the fifth-order solution (local error $O(h^6)$, global error $O(h^5)$) and uses the embedded fourth-order solution to estimate the error and set the step size.
 - **Holds when:** $f$ is smooth and the solution is not stiff.
 - **Breaks when:**
   - The problem is stiff (fast decay alongside slow dynamics). Use an implicit method: `BDF` or `Radau` in SciPy, `ode15s` in MATLAB and Octave. Explicit methods then need tiny steps.
@@ -127,7 +127,7 @@ Default tolerances: `solve_ivp` (RK45) and `ode45` both default to a relative to
 ### Numerical integration
 
 - Definite integral: $\int_a^b f(x)\,dx$. `quad` uses adaptive Gauss-Kronrod rules and returns an error estimate.
-- Trapezoid rule error: $E \le \dfrac{(b-a)\,h^2}{12}\max|f''|$, with step $h$ (units of x). Simpson's rule error scales as $h^4$.
+- Trapezoid rule error: $E \le \dfrac{(b-a)\,h^2}{12}\max|f''|$, with step $h$ (units of $x$). Simpson's rule error scales as $h^4$.
 - **Holds when:** the integrand is smooth on a finite interval, or has a known endpoint singularity.
 - **Breaks when:** the integrand is oscillatory, has an interior singularity, or the step is too coarse for its features. Split the interval at the singularity.
 - Check: $\int_0^1 x^2\,dx = 1/3$ returned $0.3333333333$. $\int_0^1 x^{-1/2}\,dx = 2$ returned $2.0000000000000$ with error $\approx 6 \times 10^{-15}$.
@@ -135,15 +135,15 @@ Default tolerances: `solve_ivp` (RK45) and `ode45` both default to a relative to
 
 ### Least-squares curve fitting
 
-- Linear model: minimize $\sum_i (y_i - p_1 x_i - p_0)^2$. Units of $p_1$ are units of y over units of x, and $p_0$ has the units of y.
+- Linear model: minimize $\sum_i (y_i - p_1 x_i - p_0)^2$. Units of $p_1$ are units of $y$ over units of $x$, and $p_0$ has the units of $y$.
 - Nonlinear model, such as $y = a e^{bx}$: minimize the same sum over $a$ and $b$ with an iterative solver (`curve_fit` uses Levenberg-Marquardt for unbounded problems).
 - Check: the run gave a straight-line fit with slope 1.99 and intercept 1.04 on the test data, and an exponential fit with $a = 1.995$ and $c = 0.501$ on its own test data.
 - **Holds when:** the model is right, errors are independent with roughly equal scatter, and you have more points than parameters. Standard errors from `pcov` assume this.
 - **Breaks when:**
-  - You linearize $y = ae^{bx}$ by taking $\ln y$. This weights small y values too heavily and biases $a$. Fit the nonlinear form directly.
+  - You linearize $y = ae^{bx}$ by taking $\ln y$. This weights small $y$ values too heavily and biases $a$. Fit the nonlinear form directly.
   - The starting guess `p0` is poor. The solver may converge to a local minimum or not at all.
   - Points are fewer than parameters, or you extrapolate far outside the data.
-- **Rule:** plot residuals against x. A pattern means the model is wrong, however high $R^2$ looks. Basis: residuals should be patternless. Limit: a random scatter alone does not prove the model.
+- **Rule:** plot residuals against $x$. A pattern means the model is wrong, however high $R^2$ looks. Basis: residuals should be patternless. Limit: a random scatter alone does not prove the model.
 - **Rule:** report parameters with their standard errors from the covariance matrix. Basis: a fit without uncertainty is incomplete. Limit: standard errors assume the noise model above.
 
 ### Fourier transform (FFT)
@@ -275,7 +275,7 @@ Resolution values are typical. Check the stated accuracy of the tool you own.
 - **Units:** a steel cube 10 mm on a side has volume $10^{-6}$ m$^3$, so mass is $7850 \times 10^{-6} = 7.85\times10^{-3}$ kg, or 7.85 g. Typical density basis.
 - **Tolerance stack:** the root-sum-square total is never larger than the worst-case total.
 - **Area scaling:** doubling a round diameter quadruples its area. Stress from the same force falls to one quarter.
-- **Surface speed:** a 1/4 in drill at 300 sfm needs about 4580 RPM, from $N = 12V/(\pi D)$ with $V$ in ft/min and $D$ in in.
+- **Surface speed:** a $1/4$ in drill at 300 sfm needs about 4580 RPM, from $N = 12V/(\pi D)$ with $V$ in ft/min and $D$ in in.
 - **Earth values are one case.** Where gravity, temperature, or pressure matter, write the general form first (for example $W = mg$ with $g$ for the local body) and then substitute a value.
 
 ## Further reference

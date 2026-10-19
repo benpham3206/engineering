@@ -12,12 +12,12 @@ Electricity and magnetism explain how motors, generators, sensors, and every ele
 - **Electric charge** is a property of matter that causes electric forces. Its SI unit is the coulomb (C). Like charges repel and opposite charges attract. The elementary charge, carried by a single electron or proton, is about $1.602 \times 10^{-19}$ C.
 - **Electric field** ($\vec{E}$) is the force per unit charge that a test charge would feel at a point. Its units are newtons per coulomb (N/C), which equal volts per meter (V/m).
 - **Electric potential** ($V$) is energy per unit charge. Its unit is the volt (V). A voltage is a difference in potential between two points.
-- **Current** ($I$) is the rate of charge flow, measured in amperes (A), where 1 A = 1 C/s. Conventional current is taken as the direction positive charge would move.
+- **Current** ($I$) is the rate of charge flow, measured in amperes (A), where $1\ \mathrm{A} = 1\ \mathrm{C/s}$. Conventional current is taken as the direction positive charge would move.
 - **Resistance** ($R$) is how strongly a material opposes current. Its unit is the ohm ($\Omega$). Wire and copper have very low resistance. Heaters and some sensors have high resistance by design.
 - **Ohm's law** says that for many conductors, voltage equals current times resistance.
 - **Series and parallel.** In a series circuit, the same current flows through every element, and resistances add. In a parallel circuit, every element sees the same voltage, and the reciprocals of resistances add.
 - **Power** is the rate of energy transfer. In a resistor, $P = VI$, measured in watts (W).
-- **Magnetic field** ($\vec{B}$) describes how a magnet or current pushes on moving charges. Its SI unit is the tesla (T). In US customary texts, the gauss is also used, where 1 T = 10,000 G.
+- **Magnetic field** ($\vec{B}$) describes how a magnet or current pushes on moving charges. Its SI unit is the tesla (T). In US customary texts, the gauss is also used, where $1\ \mathrm{T} = 10{,}000\ \mathrm{G}$.
 - **Magnetic force on a moving charge** is perpendicular to both the velocity and the field. A charge moving parallel to the field feels no force.
 - **Magnetic force on a wire** carrying current in a field is perpendicular to both the wire and the field.
 - **Magnetic flux** ($\Phi_B$) is the field passing through a loop, measured in webers (Wb). A changing flux induces a voltage around the loop. This is electromagnetic induction.
@@ -46,7 +46,7 @@ Symbols and units:
 - $F$: force (N, or lbf)
 - $q$, $q_1$, $q_2$: electric charges (C)
 - $r$: distance between charges, or from a charge to a point (m, or ft)
-- $k$: Coulomb constant, $k \approx 8.99 \times 10^{9}$ N·m²/C² (equal to $1/(4\pi\varepsilon_0)$)
+- $k$: Coulomb constant, $k \approx 8.99 \times 10^{9}$ $\mathrm{N\cdot m^2/C^2}$ (equal to $1/(4\pi\varepsilon_0)$)
 - $\vec{E}$: electric field (N/C, or V/m)
 - $V$: voltage or potential difference (V)
 - $I$: current (A)
@@ -56,7 +56,7 @@ Symbols and units:
 - $B$: magnetic field magnitude (T, or G)
 - $\theta$: angle between two vectors (rad or degrees)
 - $\ell$: length of a wire inside the field (m, or ft)
-- $A$: area of a loop (m², or ft²)
+- $A$: area of a loop ($\mathrm{m^2}$, or $\mathrm{ft^2}$)
 - $\Phi_B$: magnetic flux (Wb)
 - $N$: number of turns in a coil (dimensionless)
 - $\mathcal{E}$: induced emf (V)
@@ -91,7 +91,7 @@ $$\mathcal{E} = -N\,\frac{d\Phi_B}{dt}$$
 
 ## Worked example
 
-**Problem.** A coil has $N = 200$ turns. Each turn has area $A = 0.010$ m², and the field is perpendicular to the coil. The magnetic field increases uniformly from 0 to 0.50 T in 0.10 s.
+**Problem.** A coil has $N = 200$ turns. Each turn has area $A = 0.010$ $\mathrm{m^2}$, and the field is perpendicular to the coil. The magnetic field increases uniformly from 0 to 0.50 T in 0.10 s.
 
 **Find.** The magnitude of the induced emf while the field is changing.
 
@@ -119,7 +119,7 @@ $$\mathcal{E} = -N\,\frac{d\Phi_B}{dt}$$
 1. Two point charges, $+2.0\ \mu\text{C}$ and $+5.0\ \mu\text{C}$, sit 0.30 m apart in air. Find the magnitude of the electrostatic force in newtons and state whether it attracts or repels.
 2. A 9.0 V battery is connected in series to a 3.0 $\Omega$ resistor and a 6.0 $\Omega$ resistor. Find the current in amperes and the voltage across the 6.0 $\Omega$ resistor.
 3. A straight wire 0.40 m long carries 2.0 A and is perpendicular to a uniform 0.15 T magnetic field. Find the magnetic force on the wire in newtons.
-4. A coil has 100 turns and area $0.0050$ m². The field perpendicular to it changes by 0.20 T in 0.040 s. Find the magnitude of the induced emf in volts.
+4. A coil has 100 turns and area $0.0050$ $\mathrm{m^2}$. The field perpendicular to it changes by 0.20 T in 0.040 s. Find the magnitude of the induced emf in volts.
 
 <details><summary>Answers</summary>
 

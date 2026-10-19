@@ -52,17 +52,17 @@ $$m = \frac{I\,t\,M}{n\,F}$$
 
 Cell voltage and electrical power, with $V$ in volts and $I$ in amperes:
 
-$$P_{el} = V I$$
+$$P_{\mathrm{el}} = V I$$
 
 Efficiency on the lower heating value (LHV) basis. The constant 1.25 V equals the LHV energy of one mole of hydrogen, 241.8 kJ/mol, divided by $2F$:
 
-$$\eta_{LHV} = \frac{V_{cell}}{1.25\ \text{V}}$$
+$$\eta_{\mathrm{LHV}} = \frac{V_{\mathrm{cell}}}{1.25\ \text{V}}$$
 
 Hydrogen energy content on the LHV basis is about 120 MJ/kg, or 33.3 kWh/kg. The higher heating value (HHV) is about 142 MJ/kg, or 39.4 kWh/kg. Both are typical values.
 
-Electrolyzer hydrogen output, with $\eta_{LHV}$ the electrolyzer efficiency on the LHV basis and $E_{in}$ the electric energy input in kilowatt-hours:
+Electrolyzer hydrogen output, with $\eta_{\mathrm{LHV}}$ the electrolyzer efficiency on the LHV basis and $E_{\mathrm{in}}$ the electric energy input in kilowatt-hours:
 
-$$m_{H_2} = \frac{\eta_{LHV}\,E_{in}}{33.3\ \text{kWh/kg}}$$
+$$m_{H_2} = \frac{\eta_{\mathrm{LHV}}\,E_{\mathrm{in}}}{33.3\ \text{kWh/kg}}$$
 
 Gas storage, with $\rho$ the gas density in kg/m$^3$ and $m$ the mass in kg:
 
@@ -70,13 +70,13 @@ $$V = \frac{m}{\rho}$$
 
 ## Worked example
 
-**Given:** A 1 MW PEM electrolyzer runs for one hour at full power with an LHV efficiency of 0.65. The hydrogen goes into a tank at 700 bar. Hydrogen at 700 bar has a typical density of $40\ \text{kg/m}^3$.
+**Given:** A 1 MW PEM electrolyzer runs for one hour at full power with an LHV efficiency of 0.65. The hydrogen goes into a tank at 700 bar. Hydrogen at 700 bar has a typical density of $40\ \text{kg}/\text{m}^3$.
 
 **Find:** (a) the mass of hydrogen produced in one hour, and (b) the tank volume needed to store it.
 
 **Solution:**
 
-1. Electric energy input: $E_{in} = 1000\ \text{kW} \times 1\ \text{h} = 1000\ \text{kWh}$.
+1. Electric energy input: $E_{\mathrm{in}} = 1000\ \text{kW} \times 1\ \text{h} = 1000\ \text{kWh}$.
 2. Hydrogen mass: $m = 0.65 \times 1000 / 33.3 = 19.5\ \text{kg}$.
 3. Tank volume: $V = 19.5 / 40 = 0.49\ \text{m}^3$, which is 490 litres.
 

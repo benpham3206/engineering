@@ -41,9 +41,9 @@ The satellite clocks themselves run at a different rate than clocks on the groun
 
 ## Key equations
 
-Pseudorange for satellite $i$, with $t_{rx}$ the receiver time, $t_{tx,i}$ the satellite transmit time in seconds, $c = 2.998 \times 10^8$ m/s, and $\rho_i$ in metres:
+Pseudorange for satellite $i$, with $t_{\mathrm{rx}}$ the receiver time, $t_{\mathrm{tx},i}$ the satellite transmit time in seconds, $c = 2.998 \times 10^8$ m/s, and $\rho_i$ in metres:
 
-$$\rho_i = c\,(t_{rx} - t_{tx,i})$$
+$$\rho_i = c\,(t_{\mathrm{rx}} - t_{\mathrm{tx},i})$$
 
 This assumes the signal travels at $c$ the whole way, so the ionosphere and troposphere delays are ignored here, and it treats the time stamps as exact apart from the clock errors.
 
@@ -93,9 +93,9 @@ Gravity effect: $\Delta f/f = (GM/c^2)(1/R - 1/r) = +45.72\ \mu\text{s}$ per day
 
 Net effect: $+45.72 - 7.21 = +38.5\ \mu\text{s}$ per day. The satellite clock runs fast by about 38.5 $\mu$s per day compared with a ground clock.
 
-**Part B: timing error as distance.** A timing error of 1 ns in a pseudorange gives a range error of $d = c\,\delta t = 2.998\times10^8 \times 1\times10^{-9} = 0.30$ m. Without correction, the 38.5 $\mu$s daily drift gives a range error of $2.998\times10^8 \times 38.5\times10^{-6} = 11\,542$ m, which is about 11.5 km per day of drift.
+**Part B: timing error as distance.** A timing error of 1 ns in a pseudorange gives a range error of $d = c\,\delta t = 2.998\times10^8 \times 1\times10^{-9} = 0.30$ m. A clock bias of 38.5 $\mu$s gives a pseudorange bias of $2.998\times10^8 \times 38.5\times10^{-6} = 11\,542$ m, which is about 11.5 km. A bias common to all satellites is absorbed by the receiver clock unknown, so it does not move the position by itself. But the satellite clocks must still agree with each other, or the pseudoranges become inconsistent and position errors build up, by roughly this size per day of uncorrected drift.
 
-**Answers:** (A) orbital speed about 3874 m/s; the motion effect is $-7.2\ \mu$s per day, the gravity effect is $+45.7\ \mu$s per day, and the net effect is $+38.5\ \mu$s per day. (B) 1 ns is 0.30 m, and an uncorrected 38.5 $\mu$s per day drift is about 11.5 km of position error per day.
+**Answers:** (A) orbital speed about 3874 m/s; the motion effect is $-7.2\ \mu$s per day, the gravity effect is $+45.7\ \mu$s per day, and the net effect is $+38.5\ \mu$s per day. (B) 1 ns is 0.30 m, and an uncorrected 38.5 $\mu$s per day satellite clock drift is a pseudorange error of about 11.5 km per day, which becomes a comparable position error because it is not common to the receiver clock.
 
 **Sanity check:** The orbital speed of 3.9 km/s and the gravity effect matching the known order of tens of microseconds per day both fit the expected values. A 1 ns error being about 30 cm also matches the familiar rule of thumb that light covers 30 cm in a nanosecond.
 

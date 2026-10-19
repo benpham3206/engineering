@@ -13,7 +13,7 @@ physics says it should.
 
 ## Core ideas
 
-- A **dimension** is the physical kind of a quantity: length (L), mass (M), time (T), and so
+- A **dimension** is the physical kind of a quantity: length ($L$), mass ($M$), time ($T$), and so
   on. Units are a choice of scale within a dimension (meter, foot).
 - **Dimensional analysis** means writing the dimensions of every symbol and checking each side
   of an equation.
@@ -32,10 +32,10 @@ electric current. The complete list is on the [NIST SI page](https://www.nist.go
 
 Derived units you will meet often:
 
-- Force: newton (N) = kg $\cdot$ m/s$^2$
-- Energy: joule (J) = N $\cdot$ m = kg $\cdot$ m$^2$/s$^2$
-- Power: watt (W) = J/s
-- Pressure: pascal (Pa) = N/m$^2$
+- Force: newton ($\text{N}$) $= \text{kg} \cdot \text{m/s}^2$
+- Energy: joule ($\text{J}$) $= \text{N} \cdot \text{m} = \text{kg} \cdot \text{m}^2/\text{s}^2$
+- Power: watt ($\text{W}$) $= \text{J/s}$
+- Pressure: pascal ($\text{Pa}$) $= \text{N/m}^2$
 
 ### Steps to check a formula
 
@@ -72,11 +72,11 @@ The result is in watts, as required.
 
 ## Worked example
 
-**Problem.** A single-pane window is 1.5 m$^2$ in area and 4.0 mm thick. Inside is 20 K warmer
-than outside. Estimate the heat loss through the glass, and check the formula with units and
+**Problem.** A single-pane window is 1.5 m$^2$ in area and 4.0 mm thick. The inner glass surface is 20 K warmer
+than the outer glass surface. Estimate the heat loss through the glass, and check the formula with units and
 limits.
 
-**Given:** $A = 1.5\ \text{m}^2$, $L = 4.0\ \text{mm} = 0.0040\ \text{m}$, $\Delta T = 20\ \text{K}$,
+**Given:** $A = 1.5\ \text{m}^2$, $L = 4.0\ \text{mm} = 0.0040\ \text{m}$, $\Delta T = 20\ \text{K}$ (across the glass, surface to surface),
 $k = 0.8\ \text{W/(m}\cdot\text{K)}$ (typical value for glass).
 
 **Find:** $Q$ in W.
@@ -102,9 +102,10 @@ temperature difference loses no heat, so the formula passes.
 
 **Answer:** $Q \approx 6.0 \times 10^3\ \text{W}$ (6 kW) through the glass.
 
-**Sanity check:** 6 kW is about four small space heaters running at 1.5 kW each. A single pane
-losing that much on a cold night is plausible. Real windows also lose heat by air leaks and radiation, so
-the total is larger.
+**Sanity check:** 6 kW is about four small space heaters running at 1.5 kW each. That is large for
+one pane, and it is valid only because the two glass surfaces are assumed to be 20 K apart. In a real window
+most of the room-to-outdoor temperature difference falls across the air films at the glass surfaces, so the
+temperature difference across the glass is much smaller and the real loss is far lower.
 
 ## Practice
 

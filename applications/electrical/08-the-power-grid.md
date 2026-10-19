@@ -41,11 +41,11 @@ Transmission lines form a meshed network, so power can reach a load through more
 
 ### Distribution
 
-A step-down substation lowers the voltage to a medium level, typically 4 kV to 35 kV. Feeders carry the power through neighbourhoods. A distribution transformer on a pole or a pad lowers it again to the customer voltage. A single-phase household supply in North America is 120/240 V split phase, and most homes in Europe and Australia receive a 230 V single-phase supply.
+A step-down substation lowers the voltage to a medium level, typically 4 kV to 35 kV. Feeders carry the power through neighbourhoods. A distribution transformer on a pole or a pad lowers it again to the customer voltage. A single-phase household supply in North America is $120/240$ V split phase, and most homes in Europe and Australia receive a 230 V single-phase supply.
 
 ### Three-phase power
 
-A three-phase generator produces three voltages, each 120 degrees apart. The total power delivered to a balanced load is constant at every instant, while a single-phase supply delivers power that pulses twice per cycle. Industrial motors and large loads use three-phase power because the motor torque stays smooth and the motor starts without help. Line-to-line voltage $V_{LL}$ and line-to-neutral voltage $V_{LN}$ differ by $\sqrt{3}$.
+A three-phase generator produces three voltages, each 120 degrees apart. The total power delivered to a balanced load is constant at every instant, while a single-phase supply delivers power that pulses twice per cycle. Industrial motors and large loads use three-phase power because the motor torque stays smooth and the motor starts without help. Line-to-line voltage $V_{\mathrm{LL}}$ and line-to-neutral voltage $V_{\mathrm{LN}}$ differ by $\sqrt{3}$.
 
 ### Protection
 
@@ -73,10 +73,10 @@ Under-frequency relays shed load when the frequency falls, so the generators can
 
 ## Key equations
 
-- Three-phase real power: $P = \sqrt{3}\, V_{LL}\, I_L \cos\phi$, where $P$ is in watts (W), $V_{LL}$ is the line-to-line voltage in volts (V), $I_L$ is the line current in amperes (A), and $\cos\phi$ is the power factor (dimensionless).
-- Line-to-neutral voltage in a balanced system: $V_{LN} = V_{LL} / \sqrt{3}$. A 400 V line-to-line supply gives about 231 V line to neutral.
-- Resistive loss in a three-phase line: $P_{loss} = 3 I_L^2 R$, where $R$ is the resistance of one conductor in ohms ($\Omega$).
-- Percentage loss: $\%\text{ loss} = 100\, P_{loss} / P$.
+- Three-phase real power: $P = \sqrt{3}\, V_{\mathrm{LL}}\, I_L \cos\phi$, where $P$ is in watts (W), $V_{\mathrm{LL}}$ is the line-to-line voltage in volts (V), $I_L$ is the line current in amperes (A), and $\cos\phi$ is the power factor (dimensionless).
+- Line-to-neutral voltage in a balanced system: $V_{\mathrm{LN}} = V_{\mathrm{LL}} / \sqrt{3}$. A 400 V line-to-line supply gives about 231 V line to neutral.
+- Resistive loss in a three-phase line: $P_{\mathrm{loss}} = 3 I_L^2 R$, where $R$ is the resistance of one conductor in ohms ($\Omega$).
+- Percentage loss: $\%\text{ loss} = 100\, P_{\mathrm{loss}} / P$.
 - Synchronous speed: $n = 120 f / p$, where $n$ is in rpm, $f$ is in Hz, and $p$ is the number of poles.
 - Transformer voltage ratio: $V_s / V_p = N_s / N_p$, where $V$ is in V and $N$ is the number of turns, which is dimensionless.
 
@@ -88,10 +88,10 @@ Under-frequency relays shed load when the frequency falls, so the generators can
 
 **Solution:**
 
-1. Line current at 500 kV: $I_L = P / (\sqrt{3}\, V_{LL} \cos\phi) = 500\times10^6 / (1.732 \times 500\times10^3 \times 0.95) = 608\ \text{A}$.
-2. Resistive loss at 500 kV: $P_{loss} = 3 I_L^2 R = 3 \times 608^2 \times 2.0 = 2.2\times10^6\ \text{W}$, which is 2.2 MW, or $0.44\ \%$ of 500 MW.
+1. Line current at 500 kV: $I_L = P / (\sqrt{3}\, V_{\mathrm{LL}} \cos\phi) = 500\times10^6 / (1.732 \times 500\times10^3 \times 0.95) = 608\ \text{A}$.
+2. Resistive loss at 500 kV: $P_{\mathrm{loss}} = 3 I_L^2 R = 3 \times 608^2 \times 2.0 = 2.2\times10^6\ \text{W}$, which is 2.2 MW, or $0.44\ \%$ of 500 MW.
 3. Line current at 138 kV: $I_L = 500\times10^6 / (1.732 \times 138\times10^3 \times 0.95) = 2202\ \text{A}$.
-4. Resistive loss at 138 kV: $P_{loss} = 3 \times 2202^2 \times 2.0 = 2.9\times10^7\ \text{W}$, which is 29 MW, or $5.8\ \%$ of 500 MW.
+4. Resistive loss at 138 kV: $P_{\mathrm{loss}} = 3 \times 2202^2 \times 2.0 = 2.9\times10^7\ \text{W}$, which is 29 MW, or $5.8\ \%$ of 500 MW.
 
 **Answer:** (a) $608\ \text{A}$ at 500 kV and $2202\ \text{A}$ at 138 kV. (b) At 500 kV the loss is about 2.2 MW, or 0.44 percent. At 138 kV the loss is about 29 MW, or 5.8 percent.
 
@@ -128,7 +128,7 @@ Thomas Edison's Pearl Street Station in New York began supplying direct current 
 
 <details><summary>Answers</summary>
 
-1. $V_{LN} = 400 / \sqrt{3} = 231\ \text{V}$.
+1. $V_{\mathrm{LN}} = 400 / \sqrt{3} = 231\ \text{V}$.
 2. $n = 120 \times 50 / 4 = 1500\ \text{rpm}$.
 3. $I_L = 15\,000 / (\sqrt{3} \times 400 \times 0.85) = 25.5\ \text{A}$.
 4. $I_L = 100\times10^6 / (\sqrt{3} \times 230\times10^3 \times 0.98) = 256\ \text{A}$. The loss is $3 \times 256^2 \times 1.0 = 197\ \text{kW}$, which is about 0.2 percent of the load.
@@ -138,7 +138,7 @@ Thomas Edison's Pearl Street Station in New York began supplying direct current 
 
 ## Common mistakes
 
-- Using the phase voltage in the three-phase power formula. The formula $\sqrt{3}\, V_{LL} I_L \cos\phi$ needs the line-to-line voltage.
+- Using the phase voltage in the three-phase power formula. The formula $\sqrt{3}\, V_{\mathrm{LL}} I_L \cos\phi$ needs the line-to-line voltage.
 - Assuming the grid frequency is the same in every country. Europe uses 50 Hz, and North America uses 60 Hz. A motor rated for one frequency runs at the wrong speed on the other.
 - Thinking that the household voltage is the same everywhere. Households in North America get 120 V single phase, and most of Europe gets 230 V.
 - Comparing loss at two voltages without holding the conductor fixed. The loss falls with the square of the current, so a small change in voltage gives a large change in loss.

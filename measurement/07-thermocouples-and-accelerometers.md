@@ -34,7 +34,7 @@ $$a\ [\text{g}] = \frac{V_{\text{out}}\ [\text{mV}]}{s\ [\text{mV/g}]} \qquad a\
 
 **Given:** A type K thermocouple reads 2.05 mV. The cold junction (at the meter terminals) is at 20.0 °C. Separately, a 100 mV/g accelerometer reads 350 mV.
 
-**Find:** (a) the hot junction temperature, and (b) the acceleration in g and in m/s².
+**Find:** (a) the hot junction temperature, and (b) the acceleration in g and in $\mathrm{m/s^2}$.
 
 **Assumptions:** The linear sensitivity of 41 $\mu$V/°C applies over the measured range. For a precise value you would use a reference table, which is noted below. Cold junction temperature is measured accurately.
 
@@ -55,12 +55,12 @@ $$a\ [\text{g}] = \frac{V_{\text{out}}\ [\text{mV}]}{s\ [\text{mV/g}]} \qquad a\
 ## Practice
 
 1. A type K thermocouple reads 3.28 mV with a cold junction at 25 °C, using 41 $\mu$V/°C. Find the hot junction temperature.
-2. A 50 mV/g accelerometer reads 127 mV. Find the acceleration in g and in m/s².
+2. A 50 mV/g accelerometer reads 127 mV. Find the acceleration in g and in $\mathrm{m/s^2}$.
 
 <details><summary>Answers</summary>
 
 1. 105 °C
-2. 2.54 g; 24.9 m/s²
+2. 2.54 g; 24.9 $\mathrm{m/s^2}$
 
 </details>
 
@@ -69,7 +69,7 @@ $$a\ [\text{g}] = \frac{V_{\text{out}}\ [\text{mV}]}{s\ [\text{mV/g}]} \qquad a\
 - Reading the thermocouple voltage as temperature. You must add the cold junction temperature.
 - Forgetting cold junction compensation, which shifts the answer by the full reference error.
 - Using the linear sensitivity far from room temperature, where the error grows. Use a reference table for wide ranges.
-- Mixing up g with m/s². $1\ \text{g} = 9.80665\ \text{m/s}^2$ is a unit, not a dimensionless ratio.
+- Mixing up g with $\mathrm{m/s^2}$. $1\ \text{g} = 9.80665\ \text{m/s}^2$ is a unit, not a dimensionless ratio.
 - Trusting a piezoelectric accelerometer for steady acceleration. It cannot measure a constant force, such as gravity alone.
 
 ## Go deeper

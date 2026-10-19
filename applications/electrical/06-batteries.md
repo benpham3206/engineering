@@ -49,21 +49,21 @@ Nickel-metal hydride cells were common in earlier hybrid vehicles (typical). Alk
 
 Stored energy:
 
-$$E = V_{nom}\, C$$
+$$E = V_{\mathrm{nom}}\, C$$
 
-Here $E$ is the energy in watt-hours (Wh), $V_{nom}$ is the nominal voltage in volts, and $C$ is the rated capacity in amp-hours (Ah).
+Here $E$ is the energy in watt-hours (Wh), $V_{\mathrm{nom}}$ is the nominal voltage in volts, and $C$ is the rated capacity in amp-hours (Ah).
 
 C-rate, the discharge current as a multiple of capacity:
 
-$$I = C_{rate}\, C$$
+$$I = C_{\mathrm{rate}}\, C$$
 
-Here $I$ is the current in amps, and $C_{rate}$ is the C-rate (dimensionless). A 1C current empties the rated capacity in about one hour. A 0.2C current takes about five hours.
+Here $I$ is the current in amps, and $C_{\mathrm{rate}}$ is the C-rate (dimensionless). A 1C current empties the rated capacity in about one hour. A 0.2C current takes about five hours.
 
 Run time at constant load power:
 
-$$t = \frac{E_{usable}}{P}$$
+$$t = \frac{E_{\mathrm{usable}}}{P}$$
 
-Here $t$ is the run time in hours, $P$ is the load power in watts, and $E_{usable}$ is the usable energy in watt-hours. Usable energy equals the stored energy times the depth of discharge, a fraction between 0 and 1.
+Here $t$ is the run time in hours, $P$ is the load power in watts, and $E_{\mathrm{usable}}$ is the usable energy in watt-hours. Usable energy equals the stored energy times the depth of discharge, a fraction between 0 and 1.
 
 Specific energy:
 
@@ -73,9 +73,9 @@ Here $e_m$ is specific energy in watt-hours per kilogram (Wh/kg), and $m$ is the
 
 Round-trip energy efficiency:
 
-$$\eta = \frac{E_{out}}{E_{in}}$$
+$$\eta = \frac{E_{\mathrm{out}}}{E_{\mathrm{in}}}$$
 
-Here $E_{out}$ is the energy delivered by the battery and $E_{in}$ is the energy put in during charging, both in watt-hours.
+Here $E_{\mathrm{out}}$ is the energy delivered by the battery and $E_{\mathrm{in}}$ is the energy put in during charging, both in watt-hours.
 
 ## Worked example
 
@@ -89,7 +89,7 @@ Here $E_{out}$ is the energy delivered by the battery and $E_{in}$ is the energy
 
 1. Stored energy: $E = 12 \times 100 = 1200\ \text{Wh}$, which is 1.2 kWh.
 2. Discharge current: $I = P / V = 240 / 12 = 20\ \text{A}$. The C-rate is $20 / 100 = 0.2\text{C}$.
-3. Usable energy at 50 percent depth: $E_{usable} = 0.5 \times 1200 = 600\ \text{Wh}$. Run time: $t = 600 / 240 = 2.5\ \text{h}$.
+3. Usable energy at 50 percent depth: $E_{\mathrm{usable}} = 0.5 \times 1200 = 600\ \text{Wh}$. Run time: $t = 600 / 240 = 2.5\ \text{h}$.
 4. Specific energy: $e_m = 1200 / 30 = 40\ \text{Wh/kg}$.
 5. Full-depth run time: $t = 1200 / 240 = 5.0\ \text{h}$.
 
@@ -154,7 +154,7 @@ Alessandro Volta described his voltaic pile, the first electrochemical cell, in 
 
 1. 1200 Wh, from $E = 12 \times 100$.
 2. 11.1 Wh, from $E = 3.7 \times 3.0$.
-3. 0.2C, and 5 h, from $C_{rate} = 10 / 50$ and $t = 50 / 10$.
+3. 0.2C, and 5 h, from $C_{\mathrm{rate}} = 10 / 50$ and $t = 50 / 10$.
 4. 192 Wh/kg, from $e_m = 4800 / 25$. This is a pack-level figure, which is lower than the cell-level value.
 5. Yes. The load needs $240 \times 2 = 480\ \text{Wh}$. The usable energy is $0.5 \times 1200 = 600\ \text{Wh}$, which is larger than 480 Wh.
 

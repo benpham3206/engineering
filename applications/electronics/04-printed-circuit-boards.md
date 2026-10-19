@@ -15,7 +15,7 @@ A typical board starts as a core of glass-reinforced epoxy laminate, usually FR-
 
 Multilayer boards stack several copper layers with insulating layers between them. Inner layers often hold ground and power planes, which are large copper sheets. Planes carry return current with low resistance and give signals a short return path. Copper weight describes the foil thickness. One ounce of copper per square foot is about 35 µm thick (nominal value), and 2 oz is about 70 µm.
 
-The laminate matters too. FR-4 has a glass transition temperature Tg of roughly 130 to 180 °C (typical range), above which it softens and expands more. Higher-Tg materials cost more and tolerate lead-free reflow soldering better.
+The laminate matters too. FR-4 has a glass transition temperature $T_g$ of roughly 130 to 180 °C (typical range), above which it softens and expands more. Higher-$T_g$ materials cost more and tolerate lead-free reflow soldering better.
 
 ### Main parts
 
@@ -45,14 +45,14 @@ The laminate matters too. FR-4 has a glass transition temperature Tg of roughly 
 - Temperature dependence of copper: $\rho(T) = \rho_{20}\left[1 + \alpha (T - 20\ \text{°C})\right]$, where $\alpha = 0.00393\ \text{K}^{-1}$ (typical value for copper).
 - Ohm's law for the trace voltage drop: $V = I R$, where $V$ is in volts and $I$ is in amperes.
 - Joule heating: $P = I^2 R$, where $P$ is the power in watts that heats the trace.
-- Temperature rise from a thermal resistance: $\Delta T = P R_{th}$, where $\Delta T$ is the rise in kelvin above ambient and $R_{th}$ is the thermal resistance from the trace to ambient in K/W.
+- Temperature rise from a thermal resistance: $\Delta T = P R_{\mathrm{th}}$, where $\Delta T$ is the rise in kelvin above ambient and $R_{\mathrm{th}}$ is the thermal resistance from the trace to ambient in K/W.
 - Trace cross-section: $A = w t$, in square metres.
 
 The current capacity of a trace is set by the temperature rise it can tolerate. IPC-2152, the 2009 standard for determining current-carrying capacity in printed board design, gives the relation between current, trace cross-section, internal or external position, and the board's thermal environment. It replaced the older IPC-2221 current charts. Use the standard's own equations or curves for a design decision. The worked example below uses a stated thermal resistance instead of a value from the standard.
 
 ## Worked example
 
-**Given:** A 0.5 mm wide, 50 mm long trace of 1 oz copper (35 µm thick) on the outer layer of a board carries $I = 2\ \text{A}$. Assume the ambient temperature is 20 °C, copper resistivity is $\rho_{20} = 1.68 \times 10^{-8}\ \Omega\,\text{m}$, and $\alpha = 0.00393\ \text{K}^{-1}$. Assume a thermal resistance from trace to ambient of $R_{th} = 80\ \text{K/W}$. This value is an assumption chosen for the example, not a number taken from IPC-2152.
+**Given:** A 0.5 mm wide, 50 mm long trace of 1 oz copper (35 µm thick) on the outer layer of a board carries $I = 2\ \text{A}$. Assume the ambient temperature is 20 °C, copper resistivity is $\rho_{20} = 1.68 \times 10^{-8}\ \Omega\,\text{m}$, and $\alpha = 0.00393\ \text{K}^{-1}$. Assume a thermal resistance from trace to ambient of $R_{\mathrm{th}} = 80\ \text{K/W}$. This value is an assumption chosen for the example, not a number taken from IPC-2152.
 
 **Find:** (a) the trace resistance at 20 °C, (b) the steady temperature of the trace, and (c) the voltage drop along the trace at that temperature.
 
@@ -106,7 +106,7 @@ Paul Eisler, an Austrian engineer working in England, built a radio with printed
 2. $V = IR = 1 \times 0.192 = 0.192\ \text{V}$.
 3. $R = 0.048\ \Omega$, so $P = I^2 R = 0.25 \times 0.048 = 0.012\ \text{W}$, or 12 mW.
 4. Resistance is inversely proportional to width. Half the resistance needs twice the width: $w = 1.0\ \text{mm}$.
-5. $P = \Delta T / R_{th} = 10 / 80 = 0.125\ \text{W}$.
+5. $P = \Delta T / R_{\mathrm{th}} = 10 / 80 = 0.125\ \text{W}$.
 
 </details>
 

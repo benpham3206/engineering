@@ -63,7 +63,7 @@ Flow in an open channel, such as an aqueduct, follows the Manning equation in SI
 
 $$V = \frac{1}{n} R_h^{2/3} S^{1/2}$$
 
-Here $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient (dimensionless, typical value 0.013 for smooth stone or mortar lining), $R_h$ is the hydraulic radius in metres (m), and $S$ is the channel slope, a ratio of drop to length with no units. The hydraulic radius is the flow area $A$ divided by the wetted perimeter $P$:
+Here $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient (units s/m$^{1/3}$, typical value 0.013 for smooth stone or mortar lining), $R_h$ is the hydraulic radius in metres (m), and $S$ is the channel slope, a ratio of drop to length with no units. The hydraulic radius is the flow area $A$ divided by the wetted perimeter $P$:
 
 $$R_h = \frac{A}{P}$$
 

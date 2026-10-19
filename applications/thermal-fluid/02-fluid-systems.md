@@ -13,7 +13,7 @@ mass is conserved, energy is conserved along a streamline, and friction takes en
 
 - **Fluid**: a substance that flows and takes the shape of its container. Liquids are nearly
   incompressible, and gases are compressible. This lesson treats water as incompressible.
-- **Density** $\rho$ (kg/m$^3$): mass per unit volume. Water is about $1000\ \text{kg/m}^3$.
+- **Density** $\rho$ (kg/m$^3$): mass per unit volume. Water is about $1000\ \text{kg}/\text{m}^3$.
 - **Pressure** $p$ (pascals, Pa): force per unit area. Hydrostatic pressure grows with depth.
 - **Volume flow rate** $Q$ (m$^3$/s): the volume of fluid passing a point per second.
 - **Velocity** $v$ (m/s): the average speed of the fluid across a pipe.
@@ -26,8 +26,8 @@ mass is conserved, energy is conserved along a streamline, and friction takes en
   pump can lift the fluid, equal to the energy it adds per unit weight.
 - **Friction and head loss**: fluid rubbing on a pipe wall loses energy. The loss depends on pipe length,
   diameter, velocity, and wall roughness.
-- **Laminar and turbulent flow**: the Reynolds number $Re = \rho v D / \mu$ tells you which. Low $Re$ is
-  smooth, layered flow, and high $Re$ is mixed, turbulent flow. Above about 4000 in a pipe, the flow is
+- **Laminar and turbulent flow**: the Reynolds number $\mathrm{Re} = \rho v D / \mu$ tells you which. Low $\mathrm{Re}$ is
+  smooth, layered flow, and high $\mathrm{Re}$ is mixed, turbulent flow. Above about 4000 in a pipe, the flow is
   usually turbulent.
 - **Pump power**: the pump must add energy at the rate of flow times head. Its efficiency $\eta$ says how
   much of its input power reaches the fluid.
@@ -39,16 +39,16 @@ mass is conserved, energy is conserved along a streamline, and friction takes en
 - Bernoulli (no friction), in pascals: $p_1 + \tfrac{1}{2}\rho v_1^2 + \rho g z_1 = p_2 + \tfrac{1}{2}\rho v_2^2 + \rho g z_2$,
   where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface) and $z$ is height in metres.
 - Pump power (hydraulic): $P = \rho g Q H$, in watts, where $H$ is head in metres.
-- Shaft (input) power: $P_{in} = \rho g Q H / \eta$.
-- Reynolds number: $Re = \rho v D / \mu$, with dynamic viscosity $\mu$ in Pa s. For water at about 20 C,
-  $\mu / \rho \approx 1.0 \times 10^{-6}\ \text{m}^2/\text{s}$ (typical value), so $Re \approx v D / (1.0 \times 10^{-6})$.
+- Shaft (input) power: $P_{\mathrm{in}} = \rho g Q H / \eta$.
+- Reynolds number: $\mathrm{Re} = \rho v D / \mu$, with dynamic viscosity $\mu$ in Pa s. For water at about 20 C,
+  $\mu / \rho \approx 1.0 \times 10^{-6}\ \text{m}^2/\text{s}$ (typical value), so $\mathrm{Re} \approx v D / (1.0 \times 10^{-6})$.
 - Darcy-Weisbach head loss: $h_f = f \dfrac{L}{D} \dfrac{v^2}{2g}$, with $f$ the friction factor (dimensionless)
   and $L$ the pipe length in metres.
 
 ## Worked example
 
-**Given:** A pump moves water at $Q = 0.005\ \text{m}^3/\text{s}$ (5 L/s) against a head of $H = 15\ \text{m}$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
-Water density is $\rho = 1000\ \text{kg/m}^3$, and the pump efficiency is $\eta = 0.60$. A second pipe
+**Given:** A pump moves water at $Q = 0.005\ \text{m}^3/\text{s}$ (5 L/s) against a head of $H = 15\ \text{m}$. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
+Water density is $\rho = 1000\ \text{kg}/\text{m}^3$, and the pump efficiency is $\eta = 0.60$. A second pipe
 of diameter $D = 0.025\ \text{m}$ carries water at $v = 1.0\ \text{m/s}$.
 
 **Find:** (a) the hydraulic power delivered to the water, (b) the input power the motor must supply,
@@ -57,10 +57,10 @@ and (c) the Reynolds number in the $25\ \text{mm}$ pipe.
 **Solution:**
 
 1. Hydraulic power: $P = \rho g Q H = 1000 \times 9.81 \times 0.005 \times 15 = 736\ \text{W}$.
-2. Input power: $P_{in} = 736 / 0.60 = 1226\ \text{W}$, which is about $1.23\ \text{kW}$.
-3. Reynolds number: $Re = v D / (1.0\times10^{-6}) = 1.0 \times 0.025 / 1.0\times10^{-6} = 25\,000$.
+2. Input power: $P_{\mathrm{in}} = 736 / 0.60 = 1226\ \text{W}$, which is about $1.23\ \text{kW}$.
+3. Reynolds number: $\mathrm{Re} = v D / (1.0\times10^{-6}) = 1.0 \times 0.025 / 1.0\times10^{-6} = 25\,000$.
 
-**Answer:** (a) $736\ \text{W}$. (b) $1.23\ \text{kW}$. (c) $Re = 25\,000$, which is turbulent.
+**Answer:** (a) $736\ \text{W}$. (b) $1.23\ \text{kW}$. (c) $\mathrm{Re} = 25\,000$, which is turbulent.
 
 **Sanity check:** Efficiency means the input must be larger than the hydraulic power. $1226 > 736$, so
 that holds. The Reynolds number of $25\,000$ is well above 4000, so turbulent flow is expected for a

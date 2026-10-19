@@ -27,12 +27,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Design reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-## Related courses
-
-- ME 20 - Design & Graphics
-- ME 154 - Mechanical Engineering Design
-- ME 190 - Mechatronics Design
-- ME 195A - Senior Design Project I
-- ME 195B - Senior Design Project II
-
 See also: [manufacturing](../manufacturing), [materials](../materials), [reverse-engineering](../reverse-engineering)

@@ -14,7 +14,7 @@ A shaft carries torque from a motor or handle to the parts that do work, such as
 - **Shaft sizing** chooses a diameter so that the shear stress stays below an allowable value found from the material and the factor of safety.
 - **Stress concentration.** Keyways, shoulders, and small fillets raise the local stress. This lesson ignores them, so real shafts need extra margin or a formal stress concentration factor.
 - **Bearings** carry radial load (perpendicular to the shaft) and sometimes thrust load (along the shaft). Ball and roller bearings are the common types.
-- **Bearing life** is the number of revolutions (or hours) a bearing runs before a set fraction fails, usually 10 percent. It is called the L10 life.
+- **Bearing life** is the number of revolutions (or hours) a bearing runs before a set fraction fails, usually 10 percent. It is called the $L_{10}$ life.
 - **Runout and fits.** The shaft seat for a bearing needs low runout. Select fits by which ring sees rotating load (that ring gets the interference fit), load magnitude, temperature, internal clearance, and which ring must float axially. This ties to [04 Tolerancing and stack-up](04-tolerancing-and-stack-up.md) and [05 GD&T symbols and frames](05-gdt-symbols-and-frames.md).
 
 ## Key equations
@@ -43,7 +43,7 @@ $$
 n = \frac{0.5\,S_y}{\tau}
 $$
 
-Basic L10 life of a ball bearing with dynamic load rating $C$ and equivalent load $P$, in millions of revolutions:
+Basic $L_{10}$ life of a ball bearing with dynamic load rating $C$ and equivalent load $P$, in millions of revolutions:
 
 $$
 L_{10} = \left(\frac{C}{P}\right)^3
@@ -87,7 +87,7 @@ Step 5. Actual factor of safety: $n = \dfrac{0.5 \times 350}{65.2} = 2.68$.
 
 ## Worked example: bearing life
 
-A ball bearing has a dynamic load rating $C = 20$ kN. Its equivalent load is $P = 5$ kN, and it runs at 1500 rpm. Find the L10 life in millions of revolutions and in hours.
+A ball bearing has a dynamic load rating $C = 20$ kN. Its equivalent load is $P = 5$ kN, and it runs at 1500 rpm. Find the $L_{10}$ life in millions of revolutions and in hours.
 
 **Solution.**
 
@@ -95,7 +95,7 @@ $L_{10} = \left(\dfrac{20}{5}\right)^3 = 4^3 = 64$ million revolutions.
 
 $L_h = \dfrac{10^6 \times 64}{60 \times 1500} = \dfrac{64 \times 10^6}{90\,000} = 711$ h.
 
-**Answer.** L10 life is 64 million revolutions, about 711 hours at 1500 rpm.
+**Answer.** $L_{10}$ life is 64 million revolutions, about 711 hours at 1500 rpm.
 
 **Sanity check.** If the load doubles, the life falls by a factor of $2^3 = 8$. That is why load estimates matter so much in bearing selection.
 
@@ -111,7 +111,7 @@ $L_h = \dfrac{10^6 \times 64}{60 \times 1500} = \dfrac{64 \times 10^6}{90\,000} 
 ## Practice
 
 1. A solid shaft carries 150 N$\cdot$m with allowable shear 60 MPa. Find the minimum diameter in mm to two decimals.
-2. A ball bearing has $C = 12$ kN and $P = 4$ kN. It runs at 1200 rpm. Find the L10 life in hours.
+2. A ball bearing has $C = 12$ kN and $P = 4$ kN. It runs at 1200 rpm. Find the $L_{10}$ life in hours.
 3. A solid shaft of diameter 30 mm carries 150 N$\cdot$m. Find the torsional shear stress in MPa to two decimals.
 4. A roller bearing has $C/P = 3$ and runs at 600 rpm. Find L10 in million revolutions, to two decimals.
 

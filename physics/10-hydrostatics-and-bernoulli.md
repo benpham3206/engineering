@@ -1,8 +1,9 @@
 # Hydrostatics and Bernoulli
 
 **Type:** lesson
+**Verify:** strict
 
-Fluids push, float, and speed up or slow down in predictable ways. Hydrostatics explains why pressure grows with depth and why things float. Bernoulli's equation links pressure and speed along a flow line, and it is the first tool engineers use to size pumps, nozzles, dams, and pipes.
+Hydrostatics is the study of fluids at rest, and Bernoulli's equation is the energy balance for a fluid moving along a flow line. Fluids push, float, and speed up or slow down in predictable ways. Hydrostatics explains why pressure grows with depth and why things float. Bernoulli's equation links pressure and speed along a flow line, and it is the first tool engineers use to size pumps, nozzles, dams, and pipes.
 
 **Prerequisites:** [Statics](01-statics.md), [Particle dynamics](02-particle-dynamics.md) (energy and Newton's second law)
 **Time:** 6-8 h
@@ -58,7 +59,7 @@ Bernoulli does not give you the flow rate. It tells you how pressure and speed t
 
 ## Key equations
 
-Symbols: $p$ = pressure (Pa), $\rho$ = density (kg/m$^3$), $g$ = local gravitational acceleration (9.81 m/s$^2$ or 32.2 ft/s$^2$ at Earth's surface), $h$ = depth or height (m), $V$ = velocity (m/s), $z$ = elevation above a reference (m), $p_\text{atm}$ = atmospheric pressure, 101 325 Pa at sea level (14.7 psi).
+Symbols: $p$ = pressure (Pa), $\rho$ = density (kg/m$^3$), $g$ = local gravitational acceleration (9.81 m/s$^2$ or 32.2 ft/s$^2$ at Earth's surface), $h$ = depth or height (m), $V$ = velocity (m/s), $z$ = elevation above a reference (m), $p_\text{atm}$ = atmospheric pressure, 101 325 Pa for the standard atmosphere at sea level on Earth (14.7 psi).
 
 Hydrostatic pressure at depth $h$ below a free surface:
 
@@ -122,10 +123,41 @@ $$
 
 **Sanity check:** Speed went up by a factor of 4, since $V_2/V_1 = (D_1/D_2)^2 = 4$. The pressure drop should be on the order of $\rho V_2^2 / 2 \approx 13$ kPa, which matches 12.2 kPa.
 
+<details><summary>Verification</summary>
+
+```verify
+D1 = q(0.10, "m")
+D2 = q(0.05, "m")
+Q = q(0.010, "m^3/s")
+rho = q(1000, "kg/m^3", of="water.density.nominal")
+given("0.5")
+A1 = pi * D1**2 / 4
+A2 = pi * D2**2 / 4
+expect(A1, "7.854e-3 m^2")
+expect(A2, "1.963e-3 m^2")
+V1 = Q / A1
+V2 = Q / A2
+expect(V1, "1.273 m/s")
+expect(V2, "5.093 m/s")
+expect(V2**2, "25.94 m^2/s^2")
+expect(V1**2, "1.621 m^2/s^2")
+expect(V2**2 - V1**2, "24.32 m^2/s^2")
+expect(0.5 * rho, "500 kg/m^3")
+dp = 0.5 * rho * (V2**2 - V1**2)
+expect(dp, "1.216e4 Pa")
+expect(dp, "12.2 kPa")
+expect(dp, "1.8 psi")
+expect(V2 / V1, "4")
+expect(0.5 * rho * V2**2, "13 kPa")
+check(dp < 0.5 * rho * V2**2, "the drop is below the narrow-section dynamic pressure")
+```
+
+</details>
+
 ## Practice
 
 1. Find the gauge pressure in fresh water 10.0 m below the free surface. Give the answer in kPa.
-2. Find the absolute pressure at the same depth, with $p_\text{atm} = 101.3$ kPa. Give the answer in kPa.
+2. Find the absolute pressure at the same depth, with $p_\text{atm} = 101.3$ kPa (the standard atmosphere on Earth). Give the answer in kPa.
 3. Water drains from a hole 5.00 m below the free surface of an open tank. Find the exit speed in m/s, ignoring losses.
 4. A wood block of density 500 kg/m$^3$ and volume 0.0100 m$^3$ floats in fresh water. Find the submerged volume in m$^3$.
 5. In the worked example, the narrow section diameter is halved again to 0.025 m with the same flow rate. Find the new pressure drop between the 0.10 m and 0.025 m sections in kPa.
@@ -137,6 +169,20 @@ $$
 3. 9.90 m/s
 4. 0.00500 m$^3$
 5. 206.7 kPa
+
+```verify
+g = q(9.81, "m/s^2", of="g_standard")
+rho = q(1000, "kg/m^3", of="water.density.nominal")
+patm = q(101.3, "kPa", of="p_standard")
+expect(rho * g * q(10.0, "m"), "98.1 kPa", ans=1)
+expect(patm + rho * g * q(10.0, "m"), "199.4 kPa", ans=2)
+expect(sqrt(2 * g * q(5.00, "m")), "9.90 m/s", ans=3)
+expect(q(500, "kg/m^3") / rho * q(0.0100, "m^3"), "0.00500 m^3", ans=4)
+Q = q(0.010, "m^3/s")
+V1 = Q / (pi * q(0.10, "m")**2 / 4)
+V3 = Q / (pi * q(0.025, "m")**2 / 4)
+expect(0.5 * rho * (V3**2 - V1**2), "206.7 kPa", ans=5)
+```
 
 </details>
 

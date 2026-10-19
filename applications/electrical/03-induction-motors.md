@@ -51,17 +51,17 @@ The rotor frequency is the slip times the supply frequency, in hertz:
 
 $$f_r = s\, f$$
 
-Power flow through the motor: the air-gap power $P_{ag}$ (W) crosses from stator to rotor. Of that, $s P_{ag}$ is lost as rotor copper loss, and the rest, $(1 - s) P_{ag}$, becomes mechanical power:
+Power flow through the motor: the air-gap power $P_{\mathrm{ag}}$ (W) crosses from stator to rotor. Of that, $s P_{\mathrm{ag}}$ is lost as rotor copper loss, and the rest, $(1 - s) P_{\mathrm{ag}}$, becomes mechanical power:
 
-$$P_{cu,r} = s\, P_{ag} \qquad P_{mech} = (1 - s)\, P_{ag}$$
+$$P_{\mathrm{cu},r} = s\, P_{\mathrm{ag}} \qquad P_{\mathrm{mech}} = (1 - s)\, P_{\mathrm{ag}}$$
 
 Torque from air-gap power, with $\omega_s = 2\pi n_s / 60$ in rad/s:
 
-$$T = \frac{P_{ag}}{\omega_s}$$
+$$T = \frac{P_{\mathrm{ag}}}{\omega_s}$$
 
-The torque-speed curve is often approximated by the Kloss formula, where $T_{max}$ is the peak torque (N m) and $s_m$ is the slip at peak torque (dimensionless):
+The torque-speed curve is often approximated by the Kloss formula, where $T_{\mathrm{max}}$ is the peak torque (N m) and $s_m$ is the slip at peak torque (dimensionless):
 
-$$T \approx \frac{2 T_{max}}{s / s_m + s_m / s}$$
+$$T \approx \frac{2 T_{\mathrm{max}}}{s / s_m + s_m / s}$$
 
 The Kloss formula is an approximation. Manufacturers publish the exact curve, and the approximation is useful for a first estimate.
 
@@ -71,7 +71,7 @@ $$\frac{V}{f} = \text{constant}$$
 
 ## Worked example
 
-**Given:** A four-pole induction motor runs on a $50\ \text{Hz}$ supply. Its rated output is $P_{mech} = 7.5\ \text{kW}$ at full load, its efficiency at that point is $\eta = 0.90$, and its full-load speed is $n = 1450\ \text{rpm}$.
+**Given:** A four-pole induction motor runs on a $50\ \text{Hz}$ supply. Its rated output is $P_{\mathrm{mech}} = 7.5\ \text{kW}$ at full load, its efficiency at that point is $\eta = 0.90$, and its full-load speed is $n = 1450\ \text{rpm}$.
 
 **Find:** (a) the synchronous speed, (b) the slip, (c) the shaft torque, (d) the air-gap power and rotor copper loss, and (e) the speed on a drive at $25\ \text{Hz}$, if the slip stays the same.
 
@@ -79,14 +79,14 @@ $$\frac{V}{f} = \text{constant}$$
 
 1. Synchronous speed: $n_s = 120 \times 50 / 4 = 1500\ \text{rpm}$.
 2. Slip: $s = (1500 - 1450) / 1500 = 0.0333$, or 3.3 percent.
-3. Shaft speed in rad/s: $\omega_m = 1450 \times 2\pi / 60 = 151.8\ \text{rad/s}$. Shaft torque: $T = P_{mech} / \omega_m = 7500 / 151.8 = 49.4\ \text{N m}$.
-4. Air-gap power: $P_{ag} = P_{mech} / (1 - s) = 7500 / (1 - 0.0333) = 7759\ \text{W}$. Rotor copper loss: $P_{cu,r} = s P_{ag} = 0.0333 \times 7759 = 259\ \text{W}$.
-5. Electrical input: $P_{in} = P_{mech} / \eta = 7500 / 0.90 = 8333\ \text{W}$. The stator copper, iron, and windage losses are $8333 - 7500 - 259 = 575\ \text{W}$.
+3. Shaft speed in rad/s: $\omega_m = 1450 \times 2\pi / 60 = 151.8\ \text{rad/s}$. Shaft torque: $T = P_{\mathrm{mech}} / \omega_m = 7500 / 151.8 = 49.4\ \text{N m}$.
+4. Air-gap power: $P_{\mathrm{ag}} = P_{\mathrm{mech}} / (1 - s) = 7500 / (1 - 0.0333) = 7759\ \text{W}$. Rotor copper loss: $P_{\mathrm{cu},r} = s P_{\mathrm{ag}} = 0.0333 \times 7759 = 259\ \text{W}$.
+5. Electrical input: $P_{\mathrm{in}} = P_{\mathrm{mech}} / \eta = 7500 / 0.90 = 8333\ \text{W}$. The stator copper, iron, and windage losses are $8333 - 7500 - 259 = 575\ \text{W}$.
 6. Drive at 25 Hz: $n_s = 120 \times 25 / 4 = 750\ \text{rpm}$. With slip held at 0.0333, the speed is $750 \times (1 - 0.0333) = 725\ \text{rpm}$. This assumes the load torque, and so the slip, stays the same. Real slip changes with torque and with the voltage setting, so this is an estimate.
 
-**Answer:** (a) $n_s = 1500\ \text{rpm}$. (b) $s = 0.033$, or 3.3 percent. (c) $T = 49.4\ \text{N m}$. (d) $P_{ag} = 7.76\ \text{kW}$ and $P_{cu,r} = 259\ \text{W}$. (e) about $725\ \text{rpm}$ at $25\ \text{Hz}$.
+**Answer:** (a) $n_s = 1500\ \text{rpm}$. (b) $s = 0.033$, or 3.3 percent. (c) $T = 49.4\ \text{N m}$. (d) $P_{\mathrm{ag}} = 7.76\ \text{kW}$ and $P_{\mathrm{cu},r} = 259\ \text{W}$. (e) about $725\ \text{rpm}$ at $25\ \text{Hz}$.
 
-**Sanity check:** The rotor frequency at full load is $f_r = 0.0333 \times 50 = 1.67\ \text{Hz}$, which is small, as expected for a motor that runs close to synchronous speed. The power flow closes: $P_{ag} = P_{mech} + P_{cu,r} = 7500 + 259 = 7759\ \text{W}$. A 7.5 kW motor at 90 percent efficiency sits in the usual range for premium motors (typical).
+**Sanity check:** The rotor frequency at full load is $f_r = 0.0333 \times 50 = 1.67\ \text{Hz}$, which is small, as expected for a motor that runs close to synchronous speed. The power flow closes: $P_{\mathrm{ag}} = P_{\mathrm{mech}} + P_{\mathrm{cu},r} = 7500 + 259 = 7759\ \text{W}$. A 7.5 kW motor at 90 percent efficiency sits in the usual range for premium motors (typical).
 
 ## Design trade-offs
 

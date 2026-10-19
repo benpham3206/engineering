@@ -30,7 +30,7 @@ A lookup sheet for units, SI rules, uncertainty, significant figures, sensors, t
 | luminous intensity | candela (cd) | light power at 540 THz scaled by a fixed efficacy | $K_{\text{cd}} = 683$ lm/W |
 
 - Standard gravity $g_0 = 9.80665$ m/s$^2$ is a defined constant, not a base unit. Local gravity differs (about 9.78 to 9.83 m/s$^2$ at sea level across Earth; typical).
-- Dimension symbols: L (length), M (mass), T (time), I (current), $\Theta$ (temperature), N (amount), J (luminous intensity).
+- Dimension symbols: $L$ (length), $M$ (mass), $T$ (time), $I$ (current), $\Theta$ (temperature), $N$ (amount), $J$ (luminous intensity).
 
 ### 1.2 Named SI derived units
 
@@ -91,15 +91,15 @@ Exact means set by definition. Derived means computed from exact pieces. Each va
 | length | 1 statute mile | m | 1609.344 | exact |
 | area | 1 in$^2$ | mm$^2$ | 645.16 | exact (25.4$^2$) |
 | mass | 1 lb (avoirdupois) | kg | 0.45359237 | exact |
-| mass | 1 slug | kg | 14.593903 | derived (32.174049 lb x 0.45359237 kg) |
-| force | 1 lbf | N | 4.4482216152605 | exact (lb x $g_0$) |
+| mass | 1 slug | kg | 14.593903 | derived ($32.174049\ \mathrm{lb} \times 0.45359237\ \mathrm{kg}$) |
+| force | 1 lbf | N | 4.4482216152605 | exact ($\mathrm{lb} \times g_0$) |
 | pressure | 1 psi (lbf/in$^2$) | Pa | 6894.757 | derived (lbf / in$^2$) |
 | pressure | 1 ksi | MPa | 6.894757 | derived |
 | pressure | 1 lbf/ft$^2$ | Pa | 47.880259 | derived |
 | pressure | 1 atm | Pa | 101325 | exact |
 | pressure | 1 bar | Pa | 100000 | exact |
 | pressure | 1 torr (mmHg) | Pa | 133.322368 | derived (atm / 760) |
-| energy | 1 ft lbf | J | 1.3558179 | derived (ft x lbf) |
+| energy | 1 ft lbf | J | 1.3558179 | derived ($\mathrm{ft} \times \mathrm{lbf}$) |
 | energy | 1 BTU (IT) | J | 1055.05585 | exact (international table) |
 | energy | 1 BTU (thermochemical) | J | 1054.350264 | exact (thermochemical) |
 | energy | 1 kWh | J | $3.6 \times 10^6$ | exact |
@@ -122,7 +122,7 @@ Exact means set by definition. Derived means computed from exact pieces. Each va
 
 ### 1.5 SI writing style (NIST SP 811, own summary)
 
-- Unit symbols are upright (roman) and never take a plural "s". Quantity symbols (m for mass, $T$ for temperature) are italic.
+- Unit symbols are upright (roman) and never take a plural "s". Quantity symbols ($m$ for mass, $T$ for temperature) are italic.
 - Write unit symbols in lowercase unless the unit is named after a person (N, Pa, J, W, A, K, V, Hz, $\Omega$).
 - Leave a space between the number and the unit symbol: 25 mm, 20 °C. Plane angles are the exception: 90°.
 - Put no space between a prefix and its unit symbol: 5 mm, not 5 m m. Use one prefix only: write nm, not m$\mu$m.
@@ -136,7 +136,7 @@ Exact means set by definition. Derived means computed from exact pieces. Each va
 
 ### 1.6 Dimensional checks
 
-- Both sides of an equation must have the same dimensions. $E_k = \tfrac{1}{2} m v^2$ has dimensions M (L T$^{-1}$)$^2$ = M L$^2$ T$^{-2}$, which is the joule.
+- Both sides of an equation must have the same dimensions. $E_k = \tfrac{1}{2} m v^2$ has dimensions $M (L T^{-1})^2 = M L^2 T^{-2}$, which is the joule.
 - Trig functions, exponentials, and logarithms take dimensionless arguments.
 - Adding quantities with different dimensions is always an error.
 
@@ -190,7 +190,7 @@ $$\%\text{ error} = \frac{\bar{x} - x_{\text{ref}}}{x_{\text{ref}}} \times 100\%
 | 2 | 95.4 % (commonly quoted as 95 %) |
 | 3 | 99.7 % |
 
-- $k = 2$ gives about 95 % only when the uncertainty has many degrees of freedom. For small $N$, use a Student t factor with the effective degrees of freedom (Welch-Satterthwaite formula). Standard practice in metrology requires stating which $k$ is used.
+- $k = 2$ gives about 95 % only when the uncertainty has many degrees of freedom. For small $N$, use a Student $t$ factor with the effective degrees of freedom (Welch-Satterthwaite formula). Standard practice in metrology requires stating which $k$ is used.
 
 ### 2.4 Typical uncertainty sources (typical)
 
@@ -211,7 +211,7 @@ $$u_c(y) = \sqrt{\sum_{i=1}^{n} c_i^2\, u^2(x_i)}$$
 
 If inputs are correlated, add $2\sum_{i<j} c_i c_j\, u(x_i, x_j)$ inside the root, with $u(x_i, x_j)$ the covariance.
 
-Worst-case linear bound, for comparison (always larger than RSS):
+Linear sum, for comparison (always larger than RSS). It is not a guaranteed error bound, because a standard uncertainty is a standard deviation, not a limit. A true worst-case bound needs hard limits $a_i$ on each input in place of $u(x_i)$:
 
 $$\Delta_{\max} = \sum_{i=1}^{n} |c_i|\, u(x_i)$$
 
@@ -238,7 +238,7 @@ $$\left(\frac{u_y}{|y|}\right)^2 = \sum_i \left(p_i \frac{u(x_i)}{|x_i|}\right)^
 - Zeros between nonzero digits are significant (1002 has 4).
 - Leading zeros are not significant (0.0042 has 2).
 - Trailing zeros after a decimal point are significant (2.50 has 3).
-- Trailing zeros in an integer with no decimal point are ambiguous. Write them in scientific notation (1.2 x $10^4$).
+- Trailing zeros in an integer with no decimal point are ambiguous. Write them in scientific notation ($1.2 \times 10^4$).
 - Exact numbers (counted items, defined conversions) do not limit significant figures.
 - Multiplication and division: keep the fewest significant figures of the inputs.
 - Addition and subtraction: keep the fewest decimal places of the inputs.
@@ -251,7 +251,7 @@ $$\left(\frac{u_y}{|y|}\right)^2 = \sum_i \left(p_i \frac{u(x_i)}{|x_i|}\right)^
 3. Round the value to the same decimal place as the rounded uncertainty.
 4. Write $x \pm u$ with units, $k$ and coverage if expanded, $N$, and the method.
 
-Example: $\rho = 2.6308$ g/cm$^3$ with $u = 0.0253$ g/cm$^3$ becomes $\rho = 2.631 \pm 0.025$ g/cm$^3$ (2.631 rounded to the thousandths place, matching u rounded to 0.025).
+Example: $\rho = 2.6308$ g/cm$^3$ with $u = 0.0253$ g/cm$^3$ becomes $\rho = 2.631 \pm 0.025$ g/cm$^3$ (2.631 rounded to the thousandths place, matching $u$ rounded to 0.025).
 
 ### Holds when / breaks when
 
@@ -283,7 +283,7 @@ Example: $\rho = 2.6308$ g/cm$^3$ with $u = 0.0253$ g/cm$^3$ becomes $\rho = 2.6
 | Quantity | Sensor types | Typical range | Typical accuracy | Main error sources |
 |---|---|---|---|---|
 | Temperature | thermocouple (section 7.1) | -200 to 1800 °C, by type | about 1.5 to 2.5 °C, or 0.4 to 0.75 %, near room temperature (standard tolerance) | cold junction, extension wire mismatch, inhomogeneity, oxidation drift |
-| Temperature | platinum RTD (Pt100) | -200 to 850 °C | about 0.3 °C near 0 °C (class A) | self-heating, lead resistance, strain on element |
+| Temperature | platinum RTD (Pt100) | -200 to 850 °C | about 0.15 °C near 0 °C (class A; class B is 0.3 °C) | self-heating, lead resistance, strain on element |
 | Temperature | NTC thermistor | -50 to 150 °C | 0.1 to 1 °C over a narrow span | nonlinearity, self-heating, aging |
 | Pressure | strain-gauge diaphragm, piezoresistive, capacitive | mbar to 1000 bar | 0.1 to 0.5 % of full scale | zero and span temperature shift, hysteresis, overpressure, mounting stress |
 | Force, load | strain-gauge load cell | 1 N to 1 MN | about 0.02 to 0.1 % of full scale | creep, off-axis and eccentric loading, temperature, hysteresis |
@@ -306,7 +306,7 @@ Example: $\rho = 2.6308$ g/cm$^3$ with $u = 0.0253$ g/cm$^3$ becomes $\rho = 2.6
 
 Strain (dimensionless): $\varepsilon = \Delta L / L$, with $1\ \mu\varepsilon = 10^{-6}$.
 
-Gauge resistance change: $\dfrac{\Delta R}{R} = GF\,\varepsilon$, with $GF$ dimensionless (about 2 for metal foil; semiconductor gauges are much higher, typically 50 to 150).
+Gauge resistance change: $\dfrac{\Delta R}{R} = \mathrm{GF}\,\varepsilon$, with $\mathrm{GF}$ dimensionless (about 2 for metal foil; semiconductor gauges are much higher, typically 50 to 150).
 
 Uniaxial linear-elastic stress (Hooke's law): $\sigma = E\,\varepsilon$, with $E$ the modulus in Pa (steel about 200 GPa, typical; aluminum about 70 GPa, typical).
 
@@ -314,15 +314,15 @@ Quarter bridge, one active arm $R + \Delta R$, three fixed arms $R$, excitation 
 
 $$V_{\text{out}} = V_{\text{ex}}\left[\frac{R+\Delta R}{2R+\Delta R} - \frac{1}{2}\right] = V_{\text{ex}}\,\frac{\Delta R}{4R + 2\Delta R}$$
 
-Small-strain quarter bridge: $V_{\text{out}} \approx V_{\text{ex}}\,GF\,\varepsilon / 4$. Invert: $\varepsilon \approx 4 V_{\text{out}} / (GF\, V_{\text{ex}})$.
+Small-strain quarter bridge: $V_{\text{out}} \approx V_{\text{ex}}\,\mathrm{GF}\,\varepsilon / 4$. Invert: $\varepsilon \approx 4 V_{\text{out}} / (\mathrm{GF}\, V_{\text{ex}})$.
 
-Half bridge with two active arms carrying opposite strain sense (for example bending): $V_{\text{out}} \approx V_{\text{ex}}\,GF\,\varepsilon / 2$.
+Half bridge with two active arms carrying opposite strain sense (for example bending): $V_{\text{out}} \approx V_{\text{ex}}\,\mathrm{GF}\,\varepsilon / 2$.
 
-Full bridge with four active arms in the same bending pattern: $V_{\text{out}} \approx V_{\text{ex}}\,GF\,\varepsilon$.
+Full bridge with four active arms in the same bending pattern: $V_{\text{out}} \approx V_{\text{ex}}\,\mathrm{GF}\,\varepsilon$.
 
 Balance condition: $R_1 / R_2 = R_3 / R_4$ gives $V_{\text{out}} = 0$ at zero strain. Balance is an output condition, not an excitation-free state.
 
-Quarter-bridge approximation error: exact / approximate = $1/(1 + \Delta R / 2R)$, so the error of the approximation is about $-GF\,\varepsilon/2$. At $GF\,\varepsilon = 10^{-3}$ this is -0.05 %.
+Quarter-bridge approximation error: $\text{exact} / \text{approximate} = 1/(1 + \Delta R / 2R)$, so the error of the approximation is about $-\mathrm{GF}\,\varepsilon/2$. At $\mathrm{GF}\,\varepsilon = 10^{-3}$ this is -0.05 %.
 
 Thermal apparent strain (approximate, sign convention varies by gauge): $\varepsilon_{\text{app}} \approx (\alpha_{\text{specimen}} - \alpha_{\text{gauge}})\,\Delta T$, with $\alpha$ in 1/K. Cancel it with a dummy gauge on an unstrained piece of the same material, or with a gauge whose $\alpha$ matches the specimen.
 
@@ -333,9 +333,9 @@ Transverse sensitivity: a gauge responds a little to strain across its grid, so 
 | Item | Typical value |
 |---|---|
 | Gauge resistance | 120, 350, or 1000 $\Omega$ |
-| Metal foil $GF$ | about 2 |
+| Metal foil $\mathrm{GF}$ | about 2 |
 | Excitation | 2 to 10 V |
-| Output at 1000 $\mu\varepsilon$, quarter bridge, 5 V excitation, $GF = 2$ | 2.5 mV |
+| Output at 1000 $\mu\varepsilon$, quarter bridge, 5 V excitation, $\mathrm{GF} = 2$ | 2.5 mV |
 | Output resolution needed for 10 $\mu\varepsilon$ on the same setup | about 25 $\mu$V |
 
 ### 6.3 Wiring
@@ -345,8 +345,8 @@ Transverse sensitivity: a gauge responds a little to strain across its grid, so 
 
 ### Holds when / breaks when
 
-- Holds for $GF\,\varepsilon \ll 1$, uniform strain over the grid, linear elastic material, stable excitation, negligible self-heating, and matched fixed resistors.
-- Breaks when the gauge yields or creeps, when temperature gradients are large, when the grid is partly on a free edge or a weld, or when gauge $GF$ does not match the batch used for calibration.
+- Holds for $\mathrm{GF}\,\varepsilon \ll 1$, uniform strain over the grid, linear elastic material, stable excitation, negligible self-heating, and matched fixed resistors.
+- Breaks when the gauge yields or creeps, when temperature gradients are large, when the grid is partly on a free edge or a weld, or when gauge $\mathrm{GF}$ does not match the batch used for calibration.
 
 ## 7. Thermocouples and accelerometers
 
@@ -382,7 +382,7 @@ Undamped second-order response: the output-to-input ratio is $1/(1 - r^2)$, with
 | Ratio $r = f/f_n$ | Amplitude error (undamped) |
 |---|---|
 | 0.2 | +4.2 % |
-| 1/3 | +12.5 % |
+| $1/3$ | +12.5 % |
 | 0.5 | +33 % |
 
 - Rule of thumb: use the sensor only up to about one fifth of the mounted resonance for an error near 4 % (basis: the undamped response above; the real error depends on damping).
@@ -408,7 +408,7 @@ Undamped second-order response: the output-to-input ratio is $1/(1 - r^2)$, with
 - LSB: $\text{LSB} = V_{\text{span}} / 2^n$. Span is the full range (a $\pm 5$ V range has $V_{\text{span}} = 10$ V).
 - Quantization error: uniform within $\pm \text{LSB}/2$. RMS value: $\text{LSB}/\sqrt{12}$.
 - Ideal SNR for a full-scale sine: $\text{SNR} \approx 6.02\,n + 1.76$ dB. Real converters give fewer effective bits than their nominal $n$.
-- Settling of a step to within 1 LSB through a first-order RC input: $t \approx \tau\ln(2^{n+1})$. For 12 bits, $t \approx 9.0\,\tau$.
+- Settling of a full-span step to within 1 LSB through a first-order RC input: $t \approx n\,\tau\ln 2$. For 12 bits, $t \approx 8.3\,\tau$. To within half an LSB: $t \approx \tau\ln(2^{n+1})$, which is $9.0\,\tau$ for 12 bits.
 
 | Bits $n$ | Codes | LSB at 10 V span | RMS quantization error | Ideal SNR |
 |---|---|---|---|---|
@@ -496,7 +496,7 @@ $$u(b) = \frac{s_r}{\sqrt{\sum (x_i - \bar{x})^2}} \qquad u(a) = s_r\sqrt{\frac{
 
 - [ ] Bridge balanced at zero load; output drift with time checked.
 - [ ] Excitation stable and known.
-- [ ] Gauge $GF$ and resistance match the calibration.
+- [ ] Gauge $\mathrm{GF}$ and resistance match the calibration.
 - [ ] Lead configuration chosen (three or four wire where possible).
 - [ ] Dummy gauge or temperature plan in place for thermal apparent strain.
 
@@ -519,13 +519,13 @@ $$u(b) = \frac{s_r}{\sqrt{\sum (x_i - \bar{x})^2}} \qquad u(a) = s_r\sqrt{\frac{
 - Dimensions: both sides of every equation match.
 - 1 in $\approx$ 25.4 mm; 1 ft $\approx$ 0.305 m; 1 in$^2$ $\approx$ 645 mm$^2$.
 - 1 lbf $\approx$ 4.45 N; 1 psi $\approx$ 6.9 kPa; 1 atm $\approx$ 101 kPa.
-- 1 hp $\approx$ 746 W; 1 kWh = 3.6 MJ; 1 BTU $\approx$ 1055 J.
-- Standard gravity: 1 g = 9.81 m/s$^2$ (9.80665 exact). A static MEMS axis should read about 1 g.
-- Strain: 1000 $\mu\varepsilon$ with $GF = 2$ gives $\Delta R/R = 0.2$ %, and a quarter bridge at 5 V gives about 2.5 mV.
+- 1 hp $\approx$ 746 W; $1\ \mathrm{kWh} = 3.6\ \mathrm{MJ}$; 1 BTU $\approx$ 1055 J.
+- Standard gravity: $1\ \mathrm{g} = 9.81\ \mathrm{m/s^2}$ (9.80665 exact). A static MEMS axis should read about 1 g.
+- Strain: 1000 $\mu\varepsilon$ with $\mathrm{GF} = 2$ gives $\Delta R/R = 0.2$ %, and a quarter bridge at 5 V gives about 2.5 mV.
 - Thermocouple: about 41 $\mu$V/°C for type K; 1 mV is about 24 °C.
 - Averaging: $N$ readings reduce $u$ by $\sqrt{N}$. Quadrupling $N$ halves $u$.
 - Sampling: a 12-bit ADC on 10 V has an LSB of about 2.44 mV.
-- Settling: 12 bits to 1 LSB needs about 9 time constants.
+- Settling: 12 bits to 1 LSB needs about 8.3 time constants (9.0 for half an LSB).
 - Uncertainty larger than the value means the result is not useful at that level.
 - A result that is outside the stated range or in the wrong sign is an error until shown otherwise.
 

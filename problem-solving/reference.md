@@ -32,23 +32,23 @@ Use these eight steps in order. Each step has one output you can point to.
 
 ## Units and limits
 
-### Buckingham pi theorem
+### Buckingham $\pi$ theorem
 
 Use it to find the form of a relationship before you know the equation.
 
 - Variables: list every quantity that plays a role, $n$ in total.
-- Base dimensions: count the independent ones, $k$ (usually mass M, length L, time T, and temperature, electric current, or amount when needed).
-- Result: the relationship is equivalent to $n - k$ dimensionless groups, called pi groups. Write it as $f(\Pi_1, \Pi_2, \dots) = 0$.
-- Choose $k$ repeating variables that together carry all base dimensions and are independent of each other. Each pi group is one remaining variable multiplied by powers of the repeating variables, with exponents chosen so the group is dimensionless.
+- Base dimensions: count the independent ones, $k$ (usually mass $M$, length $L$, time $T$, and temperature, electric current, or amount when needed).
+- Result: the relationship is equivalent to $n - k$ dimensionless groups, called $\pi$ groups. Write it as $f(\Pi_1, \Pi_2, \dots) = 0$.
+- Choose $k$ repeating variables that together carry all base dimensions and are independent of each other. Each $\pi$ group is one remaining variable multiplied by powers of the repeating variables, with exponents chosen so the group is dimensionless.
 
 **Worked example: simple pendulum.** Period $T$ (s) of a bob of mass $m$ (kg) on a string of length $L$ (m), in local gravity $g$ (m/s$^2$), released from angle $\theta_0$ (rad, dimensionless).
 
-- Variables: $n = 5$ ($T, m, L, g, \theta_0$). Base dimensions: $k = 3$ (M, L, T).
+- Variables: $n = 5$ ($T, m, L, g, \theta_0$). Base dimensions: $k = 3$ ($M$, $L$, $T$).
 - Pi groups: $n - k = 2$.
-- Repeating variables: $m$ (M), $L$ (L), $g$ (LT$^{-2}$). They are independent and cover M, L, and T.
+- Repeating variables: $m$ ($M$), $L$ ($L$), $g$ ($LT^{-2}$). They are independent and cover $M$, $L$, and $T$.
 - $\Pi_1 = T\,L^{-1/2}\,g^{1/2} = T\sqrt{g/L}$. Dimensionless, since $T \cdot \sqrt{\text{s}^{-2}} = 1$.
 - $\Pi_2 = \theta_0$.
-- Result: $T\sqrt{g/L} = f(\theta_0)$, so $T = \sqrt{L/g}\,f(\theta_0)$.
+- Result: $T\sqrt{g/L} = F(\theta_0)$, so $T = \sqrt{L/g}\,F(\theta_0)$. Writing $F = 2\pi f$ gives $T = 2\pi\sqrt{L/g}\,f(\theta_0)$ with $f \to 1$ at small angle.
 - The mass does not appear. Dimensional analysis alone says so, and an experiment with different bobs confirms it.
 - Exact form: $f(\theta_0) = \dfrac{2}{\pi}K\!\left(\sin\tfrac{\theta_0}{2}\right)$, where $K$ is the complete elliptic integral of the first kind (modulus form). Small-angle form: $f \approx 1 + \theta_0^2/16$.
 
@@ -69,13 +69,13 @@ C_d = \frac{F}{\tfrac{1}{2}\rho v^2 D^2}, \qquad \text{Re} = \frac{\rho v D}{\mu
 $$
 
 - Holds when: the body shape is geometrically similar between tests, and the only forces are drag and inertia or viscosity. Compressibility enters as $v$ approaches the speed of sound (a common rule-of-thumb threshold is Mach 0.3).
-- Breaks when: shape changes, surface roughness matters, or compressibility or free-surface effects are present. Each one adds a missing pi group.
-- Typical: a smooth sphere has $C_d \approx 0.47$ over a wide subcritical range of Re (typical, roughly $10^3$ to $10^5$). A car at 30 m/s with $C_d A = 0.66\ \text{m}^2$ in air of density $1.2\ \text{kg/m}^3$ feels about $356\ \text{N}$ of drag. Overcoming that drag takes about $10.7\ \text{kW}$ of power (typical).
+- Breaks when: shape changes, surface roughness matters, or compressibility or free-surface effects are present. Each one adds a missing $\pi$ group.
+- Typical: a smooth sphere has $C_d \approx 0.47$ over a wide subcritical range of $\text{Re}$ (typical, roughly $10^3$ to $10^5$). A car at 30 m/s with $C_d A = 0.66\ \text{m}^2$ in air of density $1.2\ \text{kg/m}^3$ feels about $356\ \text{N}$ of drag. Overcoming that drag takes about $10.7\ \text{kW}$ of power (typical).
 
 **Holds when:** the list of variables is complete. Dimensional analysis cannot find a variable you forgot. It only finds the form of the answer from the list you give it.
 **Breaks when:** a variable is left out (for example, air resistance missing from a pendulum with a heavy bob at high speed), or the physics has a regime change inside the test range.
 
-**Rule of thumb:** before running an experiment, write the pi groups. Each group is one axis of the plot. Fewer axes means fewer runs.
+**Rule of thumb:** before running an experiment, write the $\pi$ groups. Each group is one axis of the plot. Fewer axes means fewer runs.
 
 ### Limiting-case checks
 
@@ -261,9 +261,9 @@ $$
 
 For each function, list failure modes. Rate each on three scales, each from 1 (best) to 10 (worst):
 
-- Severity S: how bad the effect is on the user or system.
-- Occurrence O: how likely the cause is.
-- Detection D: how unlikely the failure is to be caught before it reaches the user. High number means hard to detect.
+- Severity $S$: how bad the effect is on the user or system.
+- Occurrence $O$: how likely the cause is.
+- Detection $D$: how unlikely the failure is to be caught before it reaches the user. High number means hard to detect.
 
 $$
 \text{RPN} = S \times O \times D \qquad (1 \le \text{RPN} \le 1000)
@@ -370,8 +370,8 @@ With weights cost 0.40, performance 0.35, risk 0.25, A scores 3.9 and B scores 3
 These are classic, named works. Paid works are listed by name only.
 
 - George Polya, *How to Solve It* (1945): the problem-solving steps used in the method above.
-- Edward Buckingham, "On Physically Similar Systems" (1914), the original pi theorem paper. Also Grigory Barenblatt, *Scaling* (Cambridge University Press, 2003), for scaling and dimensional analysis.
-- Ralph Langhaar, *Dimensional Analysis and Theory of Models* (1951), a standard reference for pi groups.
+- Edward Buckingham, "On Physically Similar Systems" (1914), the original $\pi$ theorem paper. Also Grigory Barenblatt, *Scaling* (Cambridge University Press, 2003), for scaling and dimensional analysis.
+- Henry L. Langhaar, *Dimensional Analysis and Theory of Models* (1951), a standard reference for $\pi$ groups.
 - Enrico Fermi and the Fermi-problem tradition; Lawrence Weinstein and John Adam, *Guesstimation* (Princeton University Press, 2008) for worked estimation problems.
 - Kaoru Ishikawa, *Guide to Quality Control* (Asian Productivity Organization), the origin of the fishbone diagram.
 - IEC 60812, *Failure modes and effects analysis (FMEA and FMECA)*: the international standard for FMEA method.

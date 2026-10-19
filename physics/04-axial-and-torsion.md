@@ -9,7 +9,7 @@ Stress and strain describe what happens inside a material when you pull, push, o
 
 ## Core ideas
 
-- **Stress** is force divided by the area it acts on, measured on a cut through the material. Its SI unit is the pascal (Pa), where 1 Pa = 1 N/m². Engineers usually write megapascals (MPa), where 1 MPa = 10^6 Pa. In US customary units, stress is in pounds per square inch (psi) or kips per square inch (ksi).
+- **Stress** is force divided by the area it acts on, measured on a cut through the material. Its SI unit is the pascal (Pa), where $1\ \mathrm{Pa} = 1\ \mathrm{N/m^2}$. Engineers usually write megapascals (MPa), where $1\ \mathrm{MPa} = 10^6\ \mathrm{Pa}$. In US customary units, stress is in pounds per square inch (psi) or kips per square inch (ksi).
 - **Normal stress** ($\sigma$) acts perpendicular to the cut. Axial loading creates normal stress. Tension is positive and compression is negative.
 - **Shear stress** ($\tau$) acts parallel to the cut. Torsion creates shear stress.
 - **Strain** is a change in length divided by the original length. It has no units. Normal strain is $\varepsilon = \delta / L$, where $\delta$ is the change in length and $L$ is the original length.
@@ -19,7 +19,7 @@ Stress and strain describe what happens inside a material when you pull, push, o
 - **Torsion** is twisting about the long axis of a shaft. In a solid circular shaft, shear stress is zero at the center and largest at the outer surface.
 - **Shear modulus** ($G$) links shear stress to shear strain. Typical steel has $G$ about 80 GPa.
 - **Shear strain** ($\gamma$) is the angle a square element distorts, in radians. For a shaft, it grows with distance from the axis and with the angle of twist.
-- **Poisson's ratio** ($\nu$) is the ratio of lateral strain to axial strain. Most metals have $\nu$ near 0.3. A bar that stretches also gets thinner.
+- **Poisson's ratio** ($\nu$) is minus the ratio of lateral strain to axial strain, $\nu = -\varepsilon_{\text{lateral}}/\varepsilon_{\text{axial}}$, so it is positive for most materials. Most metals have $\nu$ near 0.3. A bar that stretches also gets thinner.
 - **Factor of safety** is the strength of a material divided by the stress it actually sees in use. A factor of 1.4 means the working stress is about 70 percent of the strength.
 
 Reading a stress-strain curve:
@@ -46,14 +46,14 @@ Symbols and units:
 - $\sigma$: normal stress (Pa, or psi)
 - $\tau$: shear stress (Pa, or psi)
 - $P$: axial force (N, or lbf)
-- $A$: cross-sectional area (m², or in²)
+- $A$: cross-sectional area ($\mathrm{m^2}$, or $\mathrm{in^2}$)
 - $\delta$: change in length (m, or in)
 - $L$: original length (m, or in)
 - $\varepsilon$: normal strain (dimensionless)
 - $E$: Young's modulus (Pa, or psi)
-- $T$: applied torque (N·m, or lbf·ft)
+- $T$: applied torque ($\mathrm{N\cdot m}$, or $\mathrm{lbf\cdot ft}$)
 - $r$: distance from the shaft axis (m, or in)
-- $J$: polar second moment of area (m⁴, or in⁴)
+- $J$: polar second moment of area ($\mathrm{m^4}$, or $\mathrm{in^4}$)
 - $\theta$: angle of twist (rad)
 - $G$: shear modulus (Pa, or psi)
 - $d$, $D$: solid or outer diameter, and inner diameter for a hollow shaft (m)
@@ -135,13 +135,13 @@ $$J = \frac{\pi}{32}\left(D_o^4 - D_i^4\right) = \frac{\pi}{32}\left(0.050^4 - 0
 
 Maximum shear stress, at the outer surface ($c = D_o/2 = 0.025$ m):
 
-$$\tau_{max} = \frac{T c}{J} = \frac{1200 \times 0.025}{3.62 \times 10^{-7}} = 82.8\ \text{MPa}$$
+$$\tau_{\mathrm{max}} = \frac{T c}{J} = \frac{1200 \times 0.025}{3.62 \times 10^{-7}} = 82.8\ \text{MPa}$$
 
 Angle of twist:
 
 $$\phi = \frac{T L}{G J} = \frac{1200 \times 1.5}{80 \times 10^9 \times 3.62 \times 10^{-7}} = 0.0621\ \text{rad} = 3.56^\circ$$
 
-**Answer.** $\tau_{max} \approx 82.8$ MPa and $\phi \approx 3.56^\circ$.
+**Answer.** $\tau_{\mathrm{max}} \approx 82.8$ MPa and $\phi \approx 3.56^\circ$.
 
 **Sanity check.**
 
@@ -153,13 +153,13 @@ $$\phi = \frac{T L}{G J} = \frac{1200 \times 1.5}{80 \times 10^9 \times 3.62 \ti
 1. A solid steel rod, 20 mm in diameter, carries 10 kN in tension. Find the normal stress in MPa.
 2. The same rod is 1.5 m long, with $E = 200$ GPa, and carries 10 kN. Find the elongation in mm.
 3. An aluminum rod, 15 mm in diameter, carries 20 kN. Find the normal stress in MPa. Then, with $E = 70$ GPa, find the strain.
-4. A solid steel shaft has diameter 50 mm and length 1.0 m. It carries a torque of 800 N·m, with $G = 80$ GPa. Find the maximum shear stress in MPa and the angle of twist in radians.
+4. A solid steel shaft has diameter 50 mm and length 1.0 m. It carries a torque of 800 $\mathrm{N\cdot m}$, with $G = 80$ GPa. Find the maximum shear stress in MPa and the angle of twist in radians.
 
 <details><summary>Answers</summary>
 
 1. 31.8 MPa
 2. 0.239 mm
-3. 113 MPa; strain 1.62 × 10^-3
+3. 113 MPa; strain $1.62 \times 10^{-3}$
 4. 32.6 MPa; 0.0163 rad
 
 </details>

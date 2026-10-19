@@ -59,20 +59,20 @@ $$
 Induced drag, which comes from the lift itself, and total drag.
 
 $$
-C_{D,i} = \frac{C_L^2}{\pi\, e\, AR} \qquad C_D = C_{D,0} + C_{D,i} \qquad AR = \frac{b^2}{S}
+C_{D,i} = \frac{C_L^2}{\pi\, e\, \mathrm{AR}} \qquad C_D = C_{D,0} + C_{D,i} \qquad \mathrm{AR} = \frac{b^2}{S}
 $$
 
-- $C_{D,i}$ is induced drag coefficient. $C_{D,0}$ is zero-lift drag coefficient, which covers form drag and skin friction. $e$ is the Oswald efficiency factor, typically 0.7 to 0.85 (typical value). $AR$ is aspect ratio (dimensionless). $b$ is wingspan (m).
+- $C_{D,i}$ is induced drag coefficient. $C_{D,0}$ is zero-lift drag coefficient, which covers form drag and skin friction. $e$ is the Oswald efficiency factor, typically 0.7 to 0.85 (typical value). $\mathrm{AR}$ is aspect ratio (dimensionless). $b$ is wingspan (m).
 - Assumptions: subsonic, steady flow. The factor $e$ folds the real lift distribution into one number, and $e = 1$ would be the elliptical lift distribution, which is the lowest induced drag for a given span and lift.
 
 Thin-airfoil lift slope, valid below the stall.
 
 $$
-C_L \approx 2\pi\alpha
+C_L \approx 2\pi(\alpha - \alpha_{L=0})
 $$
 
-- $\alpha$ is angle of attack in radians. A real wing gives a little less lift than this ideal value.
-- Assumptions: thin airfoil, inviscid and incompressible flow, small angle of attack, and flow attached below the stall.
+- $\alpha$ is angle of attack in radians. $\alpha_{L=0}$ is the zero-lift angle, which is zero for a symmetric airfoil (then $C_L \approx 2\pi\alpha$) and negative for a cambered airfoil. A real wing gives a little less lift than this ideal value.
+- Assumptions: thin airfoil (symmetric or cambered, through $\alpha_{L=0}$), inviscid and incompressible flow, small angle of attack, and flow attached below the stall.
 
 Power required in level flight.
 
@@ -85,7 +85,7 @@ $$
 
 ## Worked example
 
-**Given.** A 1000 kg light aircraft flies at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Its maximum lift coefficient is $C_{L,\max} = 1.5$. The design target is a stall speed of 25 m/s. In cruise, the aircraft flies at 50 m/s with $C_{D,0} = 0.030$, aspect ratio $AR = 8$, and $e = 0.80$.
+**Given.** A 1000 kg light aircraft flies at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Its maximum lift coefficient is $C_{L,\max} = 1.5$. The design target is a stall speed of 25 m/s. In cruise, the aircraft flies at 50 m/s with $C_{D,0} = 0.030$, aspect ratio $\mathrm{AR} = 8$, and $e = 0.80$.
 
 **Find.** (a) the wing area, (b) the span, (c) the cruise drag and the power required, and (d) the lift-to-drag ratio.
 
@@ -98,7 +98,7 @@ $$
 $$
 S = \frac{2W}{\rho V_s^2 C_{L,\max}} = \frac{2 \times 9807}{1.225 \times 25^2 \times 1.5} = 17.08\ \text{m}^2
 $$
-3. Span: $b = \sqrt{AR\, S} = \sqrt{8 \times 17.08} = 11.69$ m.
+3. Span: $b = \sqrt{\mathrm{AR}\, S} = \sqrt{8 \times 17.08} = 11.69$ m.
 4. Cruise lift coefficient, so that lift equals weight at 50 m/s:
 $$
 C_L = \frac{2W}{\rho V^2 S} = \frac{2 \times 9807}{1.225 \times 50^2 \times 17.08} = 0.375
@@ -142,7 +142,7 @@ Otto Lilienthal made hundreds of glider flights in Germany in the 1890s. The Wri
 1. A 1200 kg aircraft has a wing area of 18 m$^2$ and $C_{L,\max} = 1.6$ at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Find the stall speed in m/s.
 2. An aircraft with $S = 18$ m$^2$ flies at 60 m/s at sea level with $C_L = 0.40$. Find the lift in kN.
 3. Using thin-airfoil theory, find $C_L$ at $\alpha = 4^\circ$.
-4. A wing has $C_L = 0.50$, $AR = 9$, and $e = 0.80$. Find the induced drag coefficient.
+4. A wing has $C_L = 0.50$, $\mathrm{AR} = 9$, and $e = 0.80$. Find the induced drag coefficient.
 5. An aircraft in level flight at 40 m/s has a drag of 800 N. Find the power required in kW.
 
 <details><summary>Answers</summary>

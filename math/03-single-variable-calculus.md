@@ -55,7 +55,7 @@ Symbols: $f$ is any function, $h$ is a small step, $x$ is position (m) unless st
 
 **Answer:** $\delta = 3.2\ \mathrm{mm}$ downward.
 
-**Sanity check:** The beam is 2 m long and 100 mm deep. A tip deflection of about 1/600 of the span is small, so the small-deflection assumption holds. Doubling $L$ would multiply $\delta$ by 8, which is the $L^3$ behavior you expect for a cantilever.
+**Sanity check:** The beam is 2 m long and 100 mm deep. A tip deflection of about $1/600$ of the span is small, so the small-deflection assumption holds. Doubling $L$ would multiply $\delta$ by 8, which is the $L^3$ behavior you expect for a cantilever.
 
 ## Practice
 

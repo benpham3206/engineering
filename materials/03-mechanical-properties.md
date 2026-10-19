@@ -54,7 +54,7 @@ In the elastic range, Hooke's law links them:
 
 $$\sigma = E\, \varepsilon$$
 
-where $E$ is Young's modulus (Pa or GPa, with 1 GPa = $10^9$ Pa). In US customary units, $E$ is often given in ksi or Msi (psi = lb/in$^2$, 1 ksi = 1000 psi).
+where $E$ is Young's modulus (Pa or GPa, with $1\ \mathrm{GPa} = 10^9\ \mathrm{Pa}$). In US customary units, $E$ is often given in ksi or Msi ($\mathrm{psi} = \mathrm{lb/in^2}$, $1\ \mathrm{ksi} = 1000\ \mathrm{psi}$).
 
 ### Typical property values
 
@@ -95,7 +95,7 @@ These are typical textbook values at room temperature. Real values depend on all
 
 1. A 5 mm diameter rod carries 4 kN. What is the stress in MPa? (Area $= 1.963 \times 10^{-5}$ m$^2$.)
 2. A 100 mm long aluminum bar stretches 0.10 mm under load. What is its strain?
-3. Using the strain from Problem 2 and a stress of 138 MPa, find the modulus in GPa.
+3. Using the strain from Problem 2 and a stress of 69 MPa, find the modulus in GPa.
 4. Which has higher toughness, a material with high strength and low ductility, or one with moderate strength and high ductility? Explain in one sentence.
 5. Using the table, which listed metal has the largest yield margin over a 200 MPa design stress, and what is that margin?
 
@@ -103,7 +103,7 @@ These are typical textbook values at room temperature. Real values depend on all
 
 1. about 204 MPa
 2. 0.001
-3. 138 GPa
+3. 69 GPa
 4. Moderate strength with high ductility (it absorbs more energy before breaking; the area under the curve is larger)
 5. Ti-6Al-4V, margin 680 MPa (880 minus 200)
 

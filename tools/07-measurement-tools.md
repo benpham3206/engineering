@@ -13,7 +13,7 @@ Every design number depends on a measurement, and every measurement has an error
 - **Accuracy** is how close the reading is to the true value. A tool can have fine resolution and poor accuracy if it is out of calibration.
 - **Repeatability** is how much repeated readings differ.
 - A **caliper** measures outside, inside, and depth dimensions. A **micrometer** measures smaller lengths with finer steps, typically 0.01 mm or 0.001 in.
-- Always record units with the reading. Convert with 1 in = 25.4 mm.
+- Always record units with the reading. Convert with $1\ \text{in} = 25.4\ \text{mm}$.
 - A **tolerance** is the allowed variation in a dimension, such as $\pm 0.05$ mm.
 - A **stack-up** adds tolerances of parts that line up in one direction. Two methods are common: worst case (add all the errors) and root-sum-square (RSS, the square root of the sum of squares). RSS assumes independent errors.
 

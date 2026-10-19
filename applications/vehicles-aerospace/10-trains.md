@@ -58,18 +58,18 @@ During brake build-up, the train travels at constant speed before braking takes 
 
 ## Worked example
 
-**Given:** A 400 t train runs at 120 km/h on dry rail. It brakes at a service deceleration of $a = 0.9\ \text{m/s}^2$, which is an assumed design value. The brake build-up delay is $t_d = 3\ \text{s}$, also an assumed value. The adhesion coefficient for dry rail is $\mu = 0.25$, a typical value.
+**Given:** A 400 t train runs at 120 km/h on dry rail. It brakes at a service deceleration of $a = 0.9\ \text{m}/\text{s}^2$, which is an assumed design value. The brake build-up delay is $t_d = 3\ \text{s}$, also an assumed value. The adhesion coefficient for dry rail is $\mu = 0.25$, a typical value.
 
 **Find:** (a) the braking force, (b) the adhesion needed to hold that deceleration, and (c) the total stopping distance from the moment the driver applies the brakes.
 
-**Assumptions:** Level track. Constant deceleration after brake build-up. Mass constant during braking. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Assumptions:** Level track. Constant deceleration after brake build-up. Mass constant during braking. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Solution:**
 
 1. Speed: $v = 120 / 3.6 = 33.3\ \text{m/s}$.
 2. Braking force: $F = m a = 400\,000 \times 0.9 = 360\ \text{kN}$.
 3. Adhesion needed: $\mu_{\text{req}} = a / g = 0.9 / 9.81 = 0.092$.
-4. Adhesion available: $\mu_{\max} g = 0.25 \times 9.81 = 2.45\ \text{m/s}^2$, which is well above $0.9\ \text{m/s}^2$.
+4. Adhesion available: $\mu_{\max} g = 0.25 \times 9.81 = 2.45\ \text{m}/\text{s}^2$, which is well above $0.9\ \text{m}/\text{s}^2$.
 5. Braking distance: $s = v^2 / (2a) = 33.3^2 / (2 \times 0.9) = 617\ \text{m}$.
 6. Build-up distance: $s_d = 33.3 \times 3 = 100\ \text{m}$.
 7. Total stopping distance: $617 + 100 = 717\ \text{m}$.
@@ -97,16 +97,16 @@ During brake build-up, the train travels at constant speed before braking takes 
 
 ## History
 
-George and Robert Stephenson's locomotive Rocket won the Rainhill Trials in 1829 for the Liverpool and Manchester Railway. Stephenson's early lines used a track width of 1435 mm, which became the standard gauge. George Westinghouse patented the automatic air brake in 1869, and it made stopping long trains safe. Werner von Siemens built an electric locomotive that ran at the Berlin Trades Exhibition in 1879, which showed that electric traction could work on a railway.
+George and Robert Stephenson's locomotive Rocket won the Rainhill Trials in 1829 for the Liverpool and Manchester Railway. Stephenson's early lines used a track width of 1435 mm, which became the standard gauge. George Westinghouse patented an air brake in 1869 and the automatic, fail-safe version in the early 1870s, and it made stopping long trains safe. Werner von Siemens built an electric locomotive that ran at the Berlin Trades Exhibition in 1879, which showed that electric traction could work on a railway.
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A 200 t train runs at 25 m/s. Find its kinetic energy in megajoules. Use $E = \tfrac{1}{2} m v^2$.
 2. A train has 1.5 MN on its driven axles, and $\mu = 0.30$. Find the maximum tractive force in kilonewtons.
-3. A train at 160 km/h brakes at $0.8\ \text{m/s}^2$ with no delay. Find the braking distance in metres.
-4. A train of mass 400 t brakes at $0.9\ \text{m/s}^2$ on wet rail with $\mu = 0.10$. Is the deceleration within the adhesion limit? Show your check.
+3. A train at 160 km/h brakes at $0.8\ \text{m}/\text{s}^2$ with no delay. Find the braking distance in metres.
+4. A train of mass 400 t brakes at $0.9\ \text{m}/\text{s}^2$ on wet rail with $\mu = 0.10$. Is the deceleration within the adhesion limit? Show your check.
 5. Explain why a derailment on a curve depends on speed, cant, and wheel profile together, and name one measure that reduces each risk.
 
 <details><summary>Answers</summary>

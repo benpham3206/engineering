@@ -59,7 +59,7 @@ Here $B$ is the flux density in teslas (T), $A$ is the coil area in square metre
 
 Peak and root-mean-square (rms) values:
 
-$$E_{max} = N B A \omega, \qquad E_{rms} = \frac{E_{max}}{\sqrt{2}}$$
+$$E_{\mathrm{max}} = N B A \omega, \qquad E_{\mathrm{rms}} = \frac{E_{\mathrm{max}}}{\sqrt{2}}$$
 
 Synchronous speed and frequency:
 
@@ -75,15 +75,15 @@ Here $E$ is the rms EMF per phase in volts, $N$ is the number of turns per phase
 
 Electrical output power, DC form and three-phase form:
 
-$$P_{out} = V I \qquad P_{out} = \sqrt{3}\, V_L I_L \cos\phi$$
+$$P_{\mathrm{out}} = V I \qquad P_{\mathrm{out}} = \sqrt{3}\, V_L I_L \cos\phi$$
 
 Here $V$ and $I$ are volts and amps, $V_L$ and $I_L$ are the line voltage and line current, and $\cos\phi$ is the power factor (dimensionless).
 
 Efficiency and shaft torque:
 
-$$\eta = \frac{P_{out}}{P_{in}} \qquad T = \frac{P_{in}}{\omega}$$
+$$\eta = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}} \qquad T = \frac{P_{\mathrm{in}}}{\omega}$$
 
-Here $\eta$ is efficiency (dimensionless), $P_{in}$ is the shaft input power in watts, $T$ is torque in newton metres (N m), and $\omega = 2\pi n / 60$ is the shaft speed in rad/s.
+Here $\eta$ is efficiency (dimensionless), $P_{\mathrm{in}}$ is the shaft input power in watts, $T$ is torque in newton metres (N m), and $\omega = 2\pi n / 60$ is the shaft speed in rad/s.
 
 ## Worked example
 
@@ -95,10 +95,10 @@ Here $\eta$ is efficiency (dimensionless), $P_{in}$ is the shaft input power in 
 
 **Solution:**
 
-1. Alternator speed: $n_{alt} = 2.5 \times 2000 = 5000\ \text{rpm}$.
+1. Alternator speed: $n_{\mathrm{alt}} = 2.5 \times 2000 = 5000\ \text{rpm}$.
 2. Output frequency: $f = p\,n/120 = 12 \times 5000 / 120 = 500\ \text{Hz}$.
-3. Electrical output: $P_{out} = V I = 14.0 \times 70 = 980\ \text{W}$.
-4. Shaft input: $P_{in} = P_{out}/\eta = 980 / 0.60 = 1633\ \text{W}$. This is about 1.63 kW, or about 2.2 hp.
+3. Electrical output: $P_{\mathrm{out}} = V I = 14.0 \times 70 = 980\ \text{W}$.
+4. Shaft input: $P_{\mathrm{in}} = P_{\mathrm{out}}/\eta = 980 / 0.60 = 1633\ \text{W}$. This is about 1.63 kW, or about 2.2 hp.
 5. Engine speed in rad/s: $\omega = 2\pi \times 2000 / 60 = 209.4\ \text{rad/s}$. Torque: $T = 1633 / 209.4 = 7.80\ \text{N m}$.
 
 **Answer:** (a) 5000 rpm. (b) 500 Hz. (c) 980 W. (d) 1.63 kW. (e) 7.80 N m.
@@ -155,7 +155,7 @@ Michael Faraday demonstrated electromagnetic induction in 1831 in England. Hippo
 2. Peak EMF 75 V, rms EMF 53.0 V.
 3. 500 rpm, from $n = 120 f / p = 120 \times 50 / 12$.
 4. 2664 V rms per phase, about 2.66 kV.
-5. 2258 W, from $P_{out} = 13.8 \times 90 = 1242\ \text{W}$ and $P_{in} = 1242 / 0.55$.
+5. 2258 W, from $P_{\mathrm{out}} = 13.8 \times 90 = 1242\ \text{W}$ and $P_{\mathrm{in}} = 1242 / 0.55$.
 
 </details>
 

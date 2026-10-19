@@ -252,7 +252,7 @@ Holds when: the matrix is symmetric for real eigenvalues and orthogonal eigenvec
 - Relative error bound, first order: $\dfrac{\lVert\delta\mathbf{x}\rVert}{\lVert\mathbf{x}\rVert} \lesssim \kappa(\mathbf{A})\,\dfrac{\lVert\delta\mathbf{b}\rVert}{\lVert\mathbf{b}\rVert}$.
 - Rule of thumb: you lose about $\log_{10}\kappa$ significant digits. In double precision (about 16 digits), $\kappa = 10^{12}$ leaves about 4 digits.
 - Hilbert matrices $H_{ij} = 1/(i+j-1)$ (computed in 2-norm): $\kappa \approx 19$ at $n=2$, $5.2\times10^2$ at $n=3$, $1.6\times10^4$ at $n=4$, $1.5\times10^{10}$ at $n=8$. Use them as a stress test.
-- Matrix norms: 1-norm = max column sum of absolute values; $\infty$-norm = max row sum; 2-norm = largest singular value.
+- Matrix norms: 1-norm $=$ max column sum of absolute values; $\infty$-norm $=$ max row sum; 2-norm $=$ largest singular value.
 - Work: LU with partial pivoting about $\tfrac{2}{3}n^3$ flops; Cholesky about $\tfrac{1}{3}n^3$ flops for symmetric positive definite.
 
 Holds when: the rule of thumb is for first-order perturbation. Breaks when: the problem is nonlinear, or the solver is iterative (its convergence depends on the spectrum, not just $\kappa$). A large $\kappa$ can come from bad scaling of units (mixing mm and m), so nondimensionalize first.
@@ -266,7 +266,7 @@ Classification: order (highest derivative), linear or nonlinear, homogeneous or 
 $$y' + p(t)\,y = q(t)$$
 
 - Integrating factor $\mu(t) = \exp\!\left(\int p\,dt\right)$. Solution: $y = \dfrac{1}{\mu}\left[\int \mu\,q\,dt + C\right]$.
-- Constant $p \ne 0$: $y = \dfrac{q}{p} + C e^{-pt}$. Time constant $\tau = 1/p$.
+- Constant $p \ne 0$ and constant $q$: $y = \dfrac{q}{p} + C e^{-pt}$. Time constant $\tau = 1/p$.
 - Separable $y' = g(t)h(y)$: $\int \dfrac{dy}{h(y)} = \int g(t)\,dt$.
 
 Newton's law of cooling (lumped capacity), $T_a$ ambient, $k$ in 1/s:
@@ -314,7 +314,7 @@ Holds when: linear stiffness, linear viscous damping, a lumped mass, and small m
 
 ### Systems of ODEs
 
-- $\mathbf{M}\ddot{\mathbf{x}} + \mathbf{C}\dot{\mathbf{x}} + \mathbf{K}\mathbf{x} = \mathbf{f}(t)$. For proportional damping, modes decouple. Otherwise solve as a first-order system $\dot{\mathbf{z}} = \mathbf{A}\mathbf{z}$ with $\mathbf{z} = (\mathbf{x}, \dot{\mathbf{x}})$.
+- $\mathbf{M}\ddot{\mathbf{x}} + \mathbf{C}\dot{\mathbf{x}} + \mathbf{K}\mathbf{x} = \mathbf{f}(t)$. For proportional damping, modes decouple. Otherwise solve as a first-order system $\dot{\mathbf{z}} = \mathbf{A}\mathbf{z} + \mathbf{b}(t)$ with $\mathbf{z} = (\mathbf{x}, \dot{\mathbf{x}})$, $\mathbf{A} = \begin{pmatrix} \mathbf{0} & \mathbf{I} \\ -\mathbf{M}^{-1}\mathbf{K} & -\mathbf{M}^{-1}\mathbf{C} \end{pmatrix}$, and $\mathbf{b} = (\mathbf{0}, \mathbf{M}^{-1}\mathbf{f}(t))$.
 - Stability of $\dot{\mathbf{z}} = \mathbf{A}\mathbf{z}$: stable (decaying) if every eigenvalue of $\mathbf{A}$ has negative real part.
 
 ## Laplace transform
@@ -327,7 +327,7 @@ Properties:
 - Derivatives: $\mathcal{L}\{f'\} = sF - f(0)$; $\mathcal{L}\{f''\} = s^2F - s f(0) - f'(0)$
 - First shift: $\mathcal{L}\{e^{at}f(t)\} = F(s - a)$
 - Time shift: $\mathcal{L}\{f(t-a)u(t-a)\} = e^{-as}F(s)$
-- Convolution: $\mathcal{L}\{(f*g)(t)\} = F(s)G(s)$, with $(f*g)(t) = \int_0^t f(\tau)g(t-\tau)\,d\tau$
+- Convolution: $\mathcal{L}\{(f\ast g)(t)\} = F(s)G(s)$, with $(f\ast g)(t) = \int_0^t f(\tau)g(t-\tau)\,d\tau$
 - Initial value: $f(0^+) = \lim_{s\to\infty} sF(s)$. Final value: $\lim_{t\to\infty} f(t) = \lim_{s\to 0} sF(s)$, only if that limit exists (all poles in the left half-plane, except a simple pole at 0).
 
 Table (typical; $u(t)$ unit step, $\delta$ Dirac delta):
@@ -397,7 +397,7 @@ Convergence and coefficient decay:
 
 Holds when: the process is stable and the variable is close to symmetric and light-tailed. Breaks when: the tail is heavy (fatigue life, wind gusts, failure of rare events), where $z$-based tails underestimate risk by orders of magnitude. A $6\sigma$ normal tail is a model prediction, not a measured frequency.
 
-### Z and t critical values (typical)
+### $Z$ and $t$ critical values (typical)
 
 Two-sided, normal ($z$):
 
@@ -411,7 +411,7 @@ One-sided, normal ($z$):
 |---|---|---|---|---|---|
 | $z$ | 1.2816 | 1.6449 | 1.9600 | 2.3263 | 3.0902 |
 
-Two-sided, Student $t$ at 95% and 99% (df = degrees of freedom $n-1$):
+Two-sided, Student $t$ at 95% and 99% ($\mathrm{df}$ $=$ degrees of freedom $n-1$):
 
 | df | 1 | 2 | 4 | 9 | 29 | $\infty$ |
 |---|---|---|---|---|---|---|
@@ -454,7 +454,7 @@ Uncertainty propagation (combining measurement errors through a formula) is cove
 
 ### Numerical integration
 
-| Rule | Global error order | Error = exact minus approximation (composite, step $h$) |
+| Rule | Global error order | Error $=$ exact minus approximation (composite, step $h$) |
 |---|---|---|
 | Midpoint | 2 | $\dfrac{(b-a)h^2}{24}f''(\xi)$ |
 | Trapezoid | 2 | $-\dfrac{(b-a)h^2}{12}f''(\xi)$ |
@@ -474,7 +474,7 @@ Holds when: $f$ is smooth enough for the error term's derivative to exist and be
 | Midpoint (RK2) and Heun | 2 | Real-axis limit $-2 \le z \le 0$ (conditionally stable) |
 | Backward Euler | 1 | A-stable: stable for all $\operatorname{Re} z \le 0$ |
 | Trapezoidal (Crank-Nicolson) | 2 | A-stable. Can ring on stiff problems with large steps |
-| RK4 | 4 (local error $O(h^5)$) | Real-axis limit $z \ge -2.785$. Imaginary-axis limit $\lvert\omega h\rvert \le 2\sqrt{2} \approx 2.83$ |
+| RK4 | 4 (local error $O(h^5)$) | Real-axis limit $-2.785 \le z \le 0$. Imaginary-axis limit $\lvert\omega h\rvert \le 2\sqrt{2} \approx 2.83$ |
 
 - Explicit stiffness limit: for an explicit method, $h \le z_{\max}/\lvert\lambda_{\max}\rvert$, where $z_{\max}$ is the stability limit above (2 for Euler, 2.785 for RK4). The fastest mode sets the step, not the slowest.
 - Order check: halving $h$ reduces the global error by about $2^p$. Observed order $p = \log_2\!\left(E(h)/E(h/2)\right)$.

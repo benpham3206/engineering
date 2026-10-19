@@ -9,7 +9,7 @@ Between about 500 and 1600, engineers in Europe, the Islamic world, and China tu
 
 ## Core ideas
 
-Ancient builders had levers, pulleys, screws, and water channels. Medieval builders added a new source of power: they harnessed flowing water and wind to run machines continuously, without muscles or animals. A water wheel turns for hours on a stream that a person would need a team of workers to match.
+Ancient builders had levers, pulleys, screws, water channels, and early water wheels. Medieval builders greatly expanded the use of flowing water and added wind to run machines continuously, without muscles or animals. A water wheel turns for hours on a stream that a person would need a team of workers to match.
 
 The water wheel spread across Europe. The Domesday survey of England in 1086 recorded about 5,600 water mills. Mills ground grain, but they also drove fulling hammers for cloth, forge hammers, bellows, and later saw blades. Windmills followed. The earliest windmills in the Islamic world appear in records from eastern Persia by about the 900s. Windmills reached western Europe around the 1100s and spread through the Low Countries and England.
 
@@ -19,7 +19,7 @@ Gothic cathedrals rose in France and England from the 1100s on. Builders used po
 
 The Islamic world kept and extended Greek and Indian mathematics and mechanics. The Banu Musa brothers wrote a book of mechanical devices in Baghdad about 850. Al-Jazari completed *The Book of Knowledge of Ingenious Mechanical Devices* in 1206 at the Artuqid court in Diyarbakir, in what is now southeastern Turkey. It describes water-raising machines, a water clock shaped like an elephant, and crank and connecting-rod mechanisms.
 
-In Song dynasty China, engineers built large mechanical instruments. Su Song and his team completed an astronomical clock tower at Kaifeng in 1088. A water wheel drove an armillary sphere, a star chart that turned once a day, and wooden figures that struck bells and gongs at set hours. The tower used an escapement that released the drive in steps. Bi Sheng developed movable type from baked clay about 1040, and the Song court printed with it. Woodblock printing remained more common in China, and movable type was used on a smaller scale.
+In Song dynasty China, engineers built large mechanical instruments. Su Song and his team built an astronomical clock tower at Kaifeng, starting in 1088 and finishing in the early 1090s. A water wheel drove an armillary sphere, a star chart that turned once a day, and wooden figures that struck bells and gongs at set hours. The tower used an escapement that released the drive in steps. Bi Sheng developed movable type from baked clay about 1040, and the Song court printed with it. Woodblock printing remained more common in China, and movable type was used on a smaller scale.
 
 In Europe, Johannes Gutenberg combined a screw-press, metal movable type, and oil-based ink in Mainz, around 1440. The press made many identical pages fast. The Gutenberg Bible, printed in the mid-1450s, was an early large product. The press changed engineering documentation too. Drawings and tables could be copied accurately, so knowledge moved faster between workshops.
 
@@ -32,7 +32,7 @@ Leonardo da Vinci, active from about 1470 to 1519, filled notebooks with drawing
 | Year | Invention | Who and where | Why it mattered |
 |------|-----------|---------------|-----------------|
 | About 850 | Book of mechanical devices | Banu Musa brothers, Baghdad | Collected automatic and hydraulic devices in one written source |
-| 1088 | Astronomical clock tower | Su Song and team, Kaifeng, Song China | A water-driven clock with a stepped escapement and a rotating star chart |
+| 1088 | Astronomical clock tower begun (finished early 1090s) | Su Song and team, Kaifeng, Song China | A water-driven clock with a stepped escapement and a rotating star chart |
 | 1206 | Book of Knowledge of Ingenious Mechanical Devices | Al-Jazari, Diyarbakir | Described crank and connecting-rod mechanisms and water-raising machines in detail |
 | About 1040 | Movable type from clay | Bi Sheng, China | Showed that movable type could be made and used for printing |
 | Late 1200s to 1300s | Mechanical clock with verge escapement | Western Europe | Gave towns a timekeeper driven by a weight instead of water or sun |

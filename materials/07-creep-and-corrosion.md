@@ -74,7 +74,7 @@ where $F = 96\,485$ C/mol is the Faraday constant and $\rho$ is the density (g/c
 
 **Answer:** (a) about 0.091 g/(cm$^2$ year). (b) about 0.12 mm/year.
 
-**Sanity check:** Iron wall loss of about 0.1 mm per year means a 3 mm plate lasts about 26 years under this uniform attack (3 / 0.116). That is the right order of magnitude for mild steel in mild water, so the result is plausible. Pitting would make the local loss much deeper.
+**Sanity check:** Iron wall loss of about 0.1 mm per year means a 3 mm plate lasts about 26 years under this uniform attack ($3 / 0.116$). That is the right order of magnitude for mild steel in mild water, so the result is plausible. Pitting would make the local loss much deeper.
 
 ## Practice
 

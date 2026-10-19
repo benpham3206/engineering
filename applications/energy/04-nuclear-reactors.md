@@ -62,15 +62,15 @@ $$E_m = \frac{m}{M} N_A E_f = \frac{1}{0.23504} \times 6.022 \times 10^{23} \tim
 
 Thermal power, with $\dot{N}_f$ the fission rate in fissions per second:
 
-$$P_{th} = \dot{N}_f E_f$$
+$$P_{\mathrm{th}} = \dot{N}_f E_f$$
 
 Electric power, with $\eta$ the thermal efficiency (dimensionless):
 
-$$P_e = \eta P_{th}$$
+$$P_e = \eta P_{\mathrm{th}}$$
 
 Heat rejected to the environment, in watts:
 
-$$Q_{rej} = P_{th} - P_e$$
+$$Q_{\mathrm{rej}} = P_{\mathrm{th}} - P_e$$
 
 Reactivity, with $k$ the effective neutron multiplication factor (dimensionless):
 
@@ -86,10 +86,10 @@ Here $k = 1$ means critical, $k > 1$ means the power rises, and $k < 1$ means th
 
 **Solution:**
 
-1. Thermal power: $P_{th} = P_e / \eta = 1.00 \times 10^{9} / 0.33 = 3.03 \times 10^{9}\ \text{W}$.
-2. Heat rejected: $Q_{rej} = 3.03\ \text{GW} - 1.00\ \text{GW} = 2.03\ \text{GW}$.
-3. Energy in one year at 90 percent capacity: $E_{yr} = 0.90 \times 3.03 \times 10^{9} \times 3.156 \times 10^{7} = 8.61 \times 10^{16}\ \text{J}$.
-4. Mass fissioned: $m = E_{yr} / E_m = 8.61 \times 10^{16} / 8.21 \times 10^{13} = 1.05 \times 10^{3}\ \text{kg}$.
+1. Thermal power: $P_{\mathrm{th}} = P_e / \eta = 1.00 \times 10^{9} / 0.33 = 3.03 \times 10^{9}\ \text{W}$.
+2. Heat rejected: $Q_{\mathrm{rej}} = 3.03\ \text{GW} - 1.00\ \text{GW} = 2.03\ \text{GW}$.
+3. Energy in one year at 90 percent capacity: $E_{\mathrm{yr}} = 0.90 \times 3.03 \times 10^{9} \times 3.156 \times 10^{7} = 8.61 \times 10^{16}\ \text{J}$.
+4. Mass fissioned: $m = E_{\mathrm{yr}} / E_m = 8.61 \times 10^{16} / 8.21 \times 10^{13} = 1.05 \times 10^{3}\ \text{kg}$.
 
 **Answer:** (a) 3.03 GW. (b) 2.03 GW. (c) About 1.05 tonnes of U-235 per year.
 
@@ -129,7 +129,7 @@ In December 1938, Otto Hahn and Fritz Strassmann in Berlin found barium among th
 
 <details><summary>Answers</summary>
 
-1. $Q_{rej} = 1.00/0.33 - 1.00 = 2.03\ \text{GW}$.
+1. $Q_{\mathrm{rej}} = 1.00/0.33 - 1.00 = 2.03\ \text{GW}$.
 2. $8.21 \times 10^{13} / 3.0 \times 10^{7} = 2.74 \times 10^{6}\ \text{kg}$, about 2.7 million kilograms of coal.
 3. $1 \times 10^{6} / 3.20 \times 10^{-11} = 3.12 \times 10^{16}$ fissions per second.
 4. Energy per day is $1 \times 10^{6} \times 86\,400 = 8.64 \times 10^{10}\ \text{J}$. Mass is $8.64 \times 10^{10} / 8.21 \times 10^{13} = 1.05 \times 10^{-3}\ \text{kg}$, which is about 1.05 g.

@@ -28,7 +28,7 @@ Exact SI defining constants (2019 redefinition; exact by definition, so no uncer
 | $e$ | Elementary charge | $1.602176634 \times 10^{-19}$ | C |
 | $k_B$ | Boltzmann constant | $1.380649 \times 10^{-23}$ | J/K |
 | $N_A$ | Avogadro constant | $6.02214076 \times 10^{23}$ | mol$^{-1}$ |
-| $K_{cd}$ | Luminous efficacy at 540 THz | 683 | lm/W |
+| $K_{\mathrm{cd}}$ | Luminous efficacy at 540 THz | 683 | lm/W |
 
 Other constants used in this sheet:
 
@@ -89,13 +89,13 @@ $$\oint_C \vec{B} \cdot d\vec{\ell} = \mu_0 I_{\text{enc}}$$
 
 $$\mathcal{E} = -N \frac{d\Phi_B}{dt}, \qquad \Phi_B = \int \vec{B} \cdot d\vec{A}$$
 
-- $\mathcal{E}$: induced emf (V). $\Phi_B$: flux (Wb = T m$^2$). $N$: number of turns.
-- Motional emf of a rod of length $\ell$ moving at $v$ across a field $B$: $\mathcal{E} = B \ell v$ (for $\vec{v} \perp \vec{B}$ and $\vec{v} \perp$ rod).
+- $\mathcal{E}$: induced emf (V). $\Phi_B$: flux (Wb $=$ T m$^2$). $N$: number of turns.
+- Motional emf of a rod of length $\ell$ moving at $v$ across a field $B$: $\mathcal{E} = B \ell v$ (for $\vec{v}$, $\vec{B}$, and the rod mutually perpendicular; in general $\mathcal{E} = (\vec{v} \times \vec{B}) \cdot \vec{\ell}$).
 - Lenz's law sets the sign: the induced current opposes the change in flux.
 
 **Holds when:** the circuit is a closed loop and the field is quasi-static.
 
-**Breaks when:** the loop changes shape and the field changes at the same time, so both terms must be kept; or the radiation wavelength is comparable to the loop size.
+**Breaks when:** the flux through the circuit is ambiguous (sliding contacts or a path that changes with the motion), where you should use the Lorentz force on the moving charges instead; or the radiation wavelength is comparable to the loop size.
 
 ### Lorentz force
 
@@ -148,9 +148,9 @@ Example: a solenoid with $n = 1000$ turns per meter and $I = 2.0$ A has $B = \mu
 
 $$U_C = \frac{1}{2} C V^2 = \frac{Q^2}{2C}, \qquad U_L = \frac{1}{2} L I^2$$
 
-$$u_E = \frac{1}{2} \varepsilon E^2 \ \text{(J/m}^3\text{)}, \qquad u_B = \frac{B^2}{2\mu_0} \ \text{(J/m}^3\text{)}$$
+$$u_E = \frac{1}{2} \varepsilon E^2 \ \text{(J/m}^3\text{)}, \qquad u_B = \frac{B^2}{2\mu} \ \text{(J/m}^3\text{)}$$
 
-- $U$: energy (J). $u_E$, $u_B$: energy densities.
+- $U$: energy (J). $u_E$, $u_B$: energy densities. $\mu = \mu_r\mu_0$ is the permeability of the material ($\mu_0$ in vacuum).
 - Total energy stored in a field: $U = \int u \, dV$.
 
 **Holds when:** linear dielectrics and magnetic materials.
@@ -175,9 +175,9 @@ $$V = IR, \qquad P = VI = I^2 R = \frac{V^2}{R}$$
 
 For a step input $V_0$ at $t = 0$:
 
-$$\tau_{RC} = RC, \qquad v_C(t) = V_0 \left(1 - e^{-t/\tau_{RC}}\right)$$
+$$\tau_{\mathrm{RC}} = RC, \qquad v_C(t) = V_0 \left(1 - e^{-t/\tau_{\mathrm{RC}}}\right)$$
 
-$$\tau_{RL} = \frac{L}{R}, \qquad i_L(t) = \frac{V_0}{R} \left(1 - e^{-t/\tau_{RL}}\right)$$
+$$\tau_{\mathrm{RL}} = \frac{L}{R}, \qquad i_L(t) = \frac{V_0}{R} \left(1 - e^{-t/\tau_{\mathrm{RL}}}\right)$$
 
 - $\tau$: time constant (s). After $5\tau$ the response is within 1 percent of its final value.
 - Discharge: $v_C = V_0 e^{-t/\tau}$ and $i_L = (V_0 / R) e^{-t/\tau}$ once the source is removed.
@@ -188,7 +188,7 @@ Example: $R = 1.0$ k$\Omega$ and $C = 1.0$ $\mu$F give $\tau = 1.0$ ms. $L = 10$
 
 **Breaks when:** parasitic inductance or capacitance dominates; the source has finite rise time; the element saturates.
 
-### Impedance of R, L, C (phasor form, $e^{j\omega t}$)
+### Impedance of $R$, $L$, $C$ (phasor form, $e^{j\omega t}$)
 
 | Element | Impedance | Magnitude | Phase of $V$ relative to $I$ |
 |---|---|---|---|
@@ -312,7 +312,7 @@ $$\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}, \qquad m = -\frac{d_i}{d_o}$$
 
 **Holds when:** paraxial rays (small angles), thin lens (thickness much less than $f$).
 
-**Breaks when:** the lens is thick (use principal planes), rays are steep (spherical and chromatic aberration), or the object is inside the focal length (virtual image).
+**Breaks when:** the lens is thick (use principal planes), rays are steep (spherical and chromatic aberration), or the sign convention is ignored: an object inside the focal length gives a negative $d_i$ (virtual image), which the equation handles correctly.
 
 ### Diffraction limit
 
@@ -372,29 +372,29 @@ Example: from a 300 km circular orbit to geostationary altitude, $\Delta v_1 = 2
 
 **Holds when:** burns are impulsive (instantaneous), the orbits are coplanar and nearly circular, and the transfer is between two-body orbits.
 
-**Breaks when:** burns take a significant fraction of the orbit (use finite-burn or gravity-loss estimates); the plane must change (add an inclination change, which is expensive); the transfer uses a third body (gravity assist, bi-elliptic transfers, low-energy transfers); the target is not circular.
+**Breaks when:** burns take a significant fraction of the orbit (use finite-burn or gravity-loss estimates); the plane must change (add an inclination change, which is expensive); the transfer uses a third body (gravity assist, low-energy transfers); the target is not circular.
 
 ### Rocket equation and specific impulse
 
-$$\Delta v = v_e \ln\frac{m_0}{m_f} = I_{sp} g_0 \ln\frac{m_0}{m_f}$$
+$$\Delta v = v_e \ln\frac{m_0}{m_f} = I_{\mathrm{sp}} g_0 \ln\frac{m_0}{m_f}$$
 
-$$I_{sp} = \frac{v_e}{g_0} \qquad \text{(s)}$$
+$$I_{\mathrm{sp}} = \frac{v_e}{g_0} \qquad \text{(s)}$$
 
 - $\Delta v$: change in velocity (m/s). $v_e$: effective exhaust velocity (m/s). $m_0$, $m_f$: initial and final mass, including propellant (kg).
-- $I_{sp}$: specific impulse (s). Thrust per unit propellant weight flow. Higher is more efficient.
+- $I_{\mathrm{sp}}$: specific impulse (s). Thrust per unit propellant weight flow. Higher is more efficient.
 - Mass ratio $m_0/m_f$ grows exponentially with $\Delta v$. Doubling $\Delta v$ squares the mass ratio.
 
 Typical specific impulse (vacuum, approximate):
 
-| Propulsion | $I_{sp}$ (s, typical) |
+| Propulsion | $I_{\mathrm{sp}}$ (s, typical) |
 |---|---|
-| Cold gas thruster | 50 to 80 |
+| Cold gas thruster | 50 to 80 for nitrogen; up to about 165 for helium |
 | Monopropellant hydrazine | 200 to 230 |
 | Liquid bipropellant (LOX/kerosene, LOX/LH$_2$) | about 300 to 360 (kerosene); about 390 to 460 (LH$_2$) |
 | Solid rocket motor | 240 to 280 |
 | Electric (Hall thruster, ion) | 1500 to 4000 |
 
-Example: $I_{sp} = 450$ s and a mass ratio of 3 give $\Delta v = 4.85$ km/s.
+Example: $I_{\mathrm{sp}} = 450$ s and a mass ratio of 3 give $\Delta v = 4.85$ km/s.
 
 **Holds when:** the exhaust velocity is constant, thrust acts along the velocity, and the burn is short compared with the orbit.
 
@@ -429,7 +429,7 @@ Typical values using mean radii. Surface gravity is $g = GM / R_{\text{mean}}^2$
 
 - Earth's computed $g = 9.82$ m/s$^2$ at the mean radius differs from the defined 9.80665 m/s$^2$ because the real Earth is oblate and rotates. Use a local measured value or a geodetic model for real work.
 - All $g$ values here are $GM/R^2$ at the mean radius, with no rotation. For Jupiter and Saturn the radius is measured at the 1 bar pressure level, because they have no solid surface.
-- Gas giants are strongly oblate, so the equatorial radius gives a lower value: $GM/R_{eq}^2$ is about 24.79 m/s$^2$ on Jupiter ($R_{eq}$ = 71 492 km) and 10.44 m/s$^2$ on Saturn (60 268 km). Their fast rotation lowers the effective value at the equator further, to about 22.6 and 8.8 m/s$^2$.
+- Gas giants are strongly oblate, so the equatorial radius gives a lower value: $GM/R_{\mathrm{eq}}^2$ is about 24.79 m/s$^2$ on Jupiter ($R_{\mathrm{eq}}$ $=$ 71 492 km) and 10.44 m/s$^2$ on Saturn (60 268 km). Their fast rotation lowers the effective value at the equator further, to about 22.6 and 8.8 m/s$^2$.
 - Titan and Europa values are typical published mean-radius values, not exact.
 
 ## Checklists
@@ -477,14 +477,14 @@ Orders of magnitude to catch wrong answers:
 | LEO period | about 90 min |
 | GEO period | about 24 h |
 | Earth escape speed | about 11 km/s |
-| Mass ratio for a 4 km/s $\Delta v$ with $I_{sp} = 350$ s | about 3.2 (so propellant is about 70 percent of initial mass) |
+| Mass ratio for a 4 km/s $\Delta v$ with $I_{\mathrm{sp}} = 350$ s | about 3.2 (so propellant is about 70 percent of initial mass) |
 | Doubling sound intensity | $+3$ dB |
 | Wall outlet current for a 1 kW load at 120 V | about 8.3 A |
 
 Quick tests:
 
 - If a result for a capacitor or inductor is in ohms with no frequency, it is wrong.
-- If a rocket $\Delta v$ comes out larger than $I_{sp} g_0 \ln(\text{mass ratio})$, you added terms that do not belong.
+- If a rocket $\Delta v$ comes out larger than $I_{\mathrm{sp}} g_0 \ln(\text{mass ratio})$, you added terms that do not belong.
 - If a wavelength in water is longer than in air for the same frequency, the index was inverted ($n = c/v$, so higher $n$ means shorter $\lambda$).
 - If the circular speed at a given radius is larger than the escape speed, the formula was typed wrong ($v_e = \sqrt{2} v_c$).
 - Energy stored in a capacitor should be $\frac{1}{2} C V^2$, which is a few microjoules for a 1 $\mu$F capacitor at 3 V.

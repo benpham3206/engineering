@@ -111,26 +111,30 @@ sits in parallel with the start contact, so either one keeps the coil on. The st
 series, so pressing stop breaks the path.
 
 ```
-  Start   Stop (NC)    Motor
---| |----+----|/|------( )--
+  Start   Stop (wired NC)  Motor
+--| |----+----| |------( )--
          |
   Motor  |
 --| |----+
 ```
 
 In this rung, pressing Start turns on the Motor coil, and the Motor contact seals the circuit. Pressing
-Stop opens the path and turns the coil off. The stop contact is normally closed, so a broken stop
-wire also stops the motor. This fails safe.
+Stop opens the path and turns the coil off. The stop button is wired as a normally closed switch, so
+its input reads 1 when healthy and 0 when pressed or when the wire breaks. The rung examines that
+input with a normally open instruction (true when the input is 1), so a pressed button or a broken
+stop wire both turn the coil off. This fails safe. Using a normally closed instruction here would
+block the motor when healthy and let a broken wire run it, which is unsafe.
 
-A PLC scans the rung once per cycle. An output set in one rung can be read by the next rung on the next
-scan, so outputs can lag by one scan. This matters for fast sensor signals.
+A PLC scans the rung once per cycle. A later rung can read an output bit set by an earlier rung in the same
+scan, but the physical output terminals update only at the end of the scan, so real outputs can lag by
+up to one scan. This matters for fast sensor signals.
 
 ## Worked example
 
 **Given:** A belt conveyor carries a load of linear density $\lambda = 12\ \text{kg/m}$ at a speed
 $v = 0.50\ \text{m/s}$. The belt runs $L = 20\ \text{m}$ horizontally, then lifts the load
 $h = 5\ \text{m}$. The rolling resistance coefficient is $\mu_r = 0.03$, and the drive efficiency is
-$\eta = 0.80$. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+$\eta = 0.80$. Use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Find:** (a) the throughput, (b) the friction force on the horizontal section, (c) the drive pulley
 speed in rpm, and (d) the input power.
@@ -221,7 +225,7 @@ drawing, so electricians could read the program.
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A drive pulley of diameter $0.15\ \text{m}$ turns at $40\ \text{rpm}$. Find the belt speed in m/s.
 2. A load of $8\ \text{kg/m}$ moves at $0.40\ \text{m/s}$. Find the throughput in kg/s and in t/h.

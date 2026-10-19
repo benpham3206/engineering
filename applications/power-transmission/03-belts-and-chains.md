@@ -75,7 +75,7 @@ $$
 A V-belt groove with half-angle $\beta/2$ raises the effective friction coefficient by the wedge factor:
 
 $$
-\mu_{eff} = \frac{\mu}{\sin(\beta/2)}
+\mu_{\mathrm{eff}} = \frac{\mu}{\sin(\beta/2)}
 $$
 
 Chain pitch diameter for a sprocket with $N$ teeth and pitch $p$ in mm:
@@ -124,7 +124,7 @@ Step 4. Wrap on the small pulley: $\theta = \pi - 2\arcsin(0.150 / 1.000) = 2.84
 
 Step 5. Tension difference: $T_1 - T_2 = P / v = 5000 / 11.39 = 439$ N.
 
-Step 6. Capstan check for a flat belt with $\mu = 0.30$ on that wrap: $T_1 / T_2 = e^{0.30 \times 2.841} = 2.34$. A V-belt in a 38-degree groove has $\mu_{eff} = 0.30 / \sin 19^\circ = 0.92$, which is 3.07 times the flat-belt friction.
+Step 6. Capstan check for a flat belt with $\mu = 0.30$ on that wrap: $T_1 / T_2 = e^{0.30 \times 2.841} = 2.34$. A V-belt in a 38-degree groove has $\mu_{\mathrm{eff}} = 0.30 / \sin 19^\circ = 0.92$, which is 3.07 times the flat-belt friction.
 
 **Answer.** Driven speed 710.5 rpm. Belt speed 11.39 m/s. Belt length 1.718 m. Wrap 162.8 degrees. Tension difference 439 N.
 
@@ -180,7 +180,7 @@ Leather flat belts drove factory machinery through overhead line shafts across t
 - Using the outside diameter of a sprocket instead of the pitch diameter from $p / \sin(180^\circ/N)$.
 - Assuming the chain speed is constant. The polygon effect makes the speed rise and fall within each tooth.
 - Using a flat-belt friction value for a V-belt. The wedge raises the effective friction, so a V-belt grips harder at the same tension.
-- Writing a chain length that is odd. A roller chain must close on an inner link, so the link count is even.
+- Writing a chain length that is odd. A roller chain normally closes on an inner link, so an even link count is preferred. An odd count needs an offset (half) link, which is weaker.
 
 ## Go deeper
 

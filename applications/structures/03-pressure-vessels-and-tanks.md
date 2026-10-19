@@ -44,7 +44,7 @@ For a thin-walled sphere: $\sigma = \dfrac{pr}{2t}$, which equals the longitudin
 
 For a thick-walled cylinder with inner radius $r_i$ and outer radius $r_o$ in m, under internal pressure only, the largest hoop stress occurs at the inner surface (Lamé):
 
-$$\sigma_{\theta,max} = p\,\frac{r_o^2 + r_i^2}{r_o^2 - r_i^2}$$
+$$\sigma_{\theta,\mathrm{max}} = p\,\frac{r_o^2 + r_i^2}{r_o^2 - r_i^2}$$
 
 For a storage tank of liquid with density $\rho$ in kg/m$^3$, depth $h$ in m, and radius $R$ in m, the hoop stress at depth $h$ is:
 
@@ -99,7 +99,7 @@ Denis Papin built a steam digester, an early pressure cooker, in 1679, and he sh
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A cylinder has an inside radius of 0.5 m, a wall thickness of 8 mm, and an internal pressure of 1.5 MPa. Find the hoop stress and the longitudinal stress.
 2. A tank is filled with water to a depth of 8 m. Find the gauge pressure at the bottom in kPa.
@@ -112,7 +112,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (
 1. $\sigma_h = pr/t = 1.5\times10^6 \times 0.5 / 0.008 = 93.8\ \text{MPa}$. $\sigma_L = \sigma_h / 2 = 46.9\ \text{MPa}$.
 2. $p = \rho g h = 1000 \times 9.81 \times 8 = 78.5\ \text{kPa}$.
 3. $\sigma = pr/(2t) = 1.0\times10^6 \times 1.0 / (2 \times 0.010) = 50\ \text{MPa}$.
-4. $\sigma_{\theta,max} = 40 \times (0.4^2 + 0.3^2) / (0.4^2 - 0.3^2) = 40 \times 0.25 / 0.07 = 143\ \text{MPa}$. The thin-wall formula gives $pr_i/t = 40 \times 0.3 / 0.1 = 120\ \text{MPa}$, which is 16 percent below the true value.
+4. $\sigma_{\theta,\mathrm{max}} = 40 \times (0.4^2 + 0.3^2) / (0.4^2 - 0.3^2) = 40 \times 0.25 / 0.07 = 143\ \text{MPa}$. The thin-wall formula gives $pr_i/t = 40 \times 0.3 / 0.1 = 120\ \text{MPa}$, which is 16 percent below the true value.
 5. The liquid pressure $\rho g h$ grows with depth. The bottom ring carries the largest hoop stress, so it needs the most thickness.
 
 </details>

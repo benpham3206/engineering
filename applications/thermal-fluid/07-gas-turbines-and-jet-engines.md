@@ -47,14 +47,14 @@ Symbols are in SI units unless marked dimensionless.
 - Ideal Brayton efficiency: $\eta = 1 - r_p^{-(\gamma-1)/\gamma}$, where $r_p$ is the pressure ratio (dimensionless) and $\gamma = 1.4$ is the ratio of specific heats for air (typical value, dimensionless).
 - Compressor work per kilogram of air: $w_c = c_p (T_2 - T_1)$, where $c_p = 1.005\ \text{kJ/(kg K)}$ is the specific heat of air at constant pressure (typical value) and the temperatures are in kelvin.
 - Turbine work per kilogram of air: $w_t = c_p (T_3 - T_4)$.
-- Net work and heat input: $w_{net} = w_t - w_c$ and $q_{in} = c_p (T_3 - T_2)$, both in kilojoules per kilogram.
+- Net work and heat input: $w_{\mathrm{net}} = w_t - w_c$ and $q_{\mathrm{in}} = c_p (T_3 - T_2)$, both in kilojoules per kilogram.
 - Thrust: $F = \dot m (V_e - V_0) + (p_e - p_0) A_e$, where $F$ is in newtons, $\dot m$ is the air mass flow in kilograms per second, $V_e$ is the exit velocity in metres per second, $V_0$ is the flight speed in metres per second, $p_e$ and $p_0$ are the exit and ambient pressures in pascals, and $A_e$ is the exit area in square metres.
 - Propulsive efficiency: $\eta_p = \dfrac{2 V_0}{V_e + V_0}$, dimensionless.
 - Thrust specific fuel consumption: $\text{TSFC} = \dot m_f / F$, where $\dot m_f$ is the fuel mass flow in kilograms per second, so TSFC is in kilograms per newton second.
 
 ## Worked example
 
-**Given:** Ambient air at $T_1 = 288\ \text{K}$ enters the compressor. The pressure ratio is $r_p = 12$, and the turbine inlet temperature is $T_3 = 1400\ \text{K}$. The air mass flow is $\dot m = 25\ \text{kg/s}$. Take $c_p = 1.005\ \text{kJ/(kg K)}$, $\gamma = 1.4$, and a fuel lower heating value of $LHV = 43\ \text{MJ/kg}$ (typical value for jet fuel). Assume ideal, isentropic compression and expansion.
+**Given:** Ambient air at $T_1 = 288\ \text{K}$ enters the compressor. The pressure ratio is $r_p = 12$, and the turbine inlet temperature is $T_3 = 1400\ \text{K}$. The air mass flow is $\dot m = 25\ \text{kg/s}$. Take $c_p = 1.005\ \text{kJ/(kg K)}$, $\gamma = 1.4$, and a fuel lower heating value of $\mathrm{LHV} = 43\ \text{MJ/kg}$ (typical value for jet fuel). Assume ideal, isentropic compression and expansion.
 
 **Find:** (a) the temperatures $T_2$ and $T_4$, (b) the compressor and turbine work, (c) the net work and the net power, (d) the thermal efficiency, and (e) the fuel flow.
 
@@ -65,14 +65,14 @@ Symbols are in SI units unless marked dimensionless.
 3. Turbine exit: $T_4 = T_3 / 12^{0.2857} = 1400 / 2.034 = 688.3\ \text{K}$.
 4. Compressor work: $w_c = 1.005 \times (585.8 - 288) = 299.3\ \text{kJ/kg}$.
 5. Turbine work: $w_t = 1.005 \times (1400 - 688.3) = 715.2\ \text{kJ/kg}$.
-6. Net work: $w_{net} = 715.2 - 299.3 = 416.0\ \text{kJ/kg}$. Net power: $25 \times 416.0 = 10\,400\ \text{kW}$, or 10.4 MW.
-7. Heat input: $q_{in} = 1.005 \times (1400 - 585.8) = 818.3\ \text{kJ/kg}$.
+6. Net work: $w_{\mathrm{net}} = 715.2 - 299.3 = 416.0\ \text{kJ/kg}$. Net power: $25 \times 416.0 = 10\,400\ \text{kW}$, or 10.4 MW.
+7. Heat input: $q_{\mathrm{in}} = 1.005 \times (1400 - 585.8) = 818.3\ \text{kJ/kg}$.
 8. Thermal efficiency: $\eta = 416.0 / 818.3 = 0.508$, which matches $1 - 12^{-0.2857} = 0.508$.
-9. Fuel flow: $\dot m_f = \dot m \, q_{in} / LHV = 25 \times 818.3 \times 10^{3} / (43 \times 10^{6}) = 0.476\ \text{kg/s}$, which is about 1700 kg/h. The fuel-to-air ratio is $q_{in} / LHV = 0.019$.
+9. Fuel flow: $\dot m_f = \dot m \, q_{\mathrm{in}} / \mathrm{LHV} = 25 \times 818.3 \times 10^{3} / (43 \times 10^{6}) = 0.476\ \text{kg/s}$, which is about 1700 kg/h. The fuel-to-air ratio is $q_{\mathrm{in}} / \mathrm{LHV} = 0.019$.
 
-**Answer:** (a) $T_2 = 586\ \text{K}$, $T_4 = 688\ \text{K}$. (b) $w_c = 299\ \text{kJ/kg}$, $w_t = 715\ \text{kJ/kg}$. (c) $w_{net} = 416\ \text{kJ/kg}$, net power 10.4 MW. (d) $\eta = 0.508$, or 50.8 percent. (e) About 0.48 kg/s of fuel.
+**Answer:** (a) $T_2 = 586\ \text{K}$, $T_4 = 688\ \text{K}$. (b) $w_c = 299\ \text{kJ/kg}$, $w_t = 715\ \text{kJ/kg}$. (c) $w_{\mathrm{net}} = 416\ \text{kJ/kg}$, net power 10.4 MW. (d) $\eta = 0.508$, or 50.8 percent. (e) About 0.48 kg/s of fuel.
 
-**Sanity check:** The heat rejected is $c_p (T_4 - T_1) = 1.005 \times (688.3 - 288) = 402.3\ \text{kJ/kg}$. Then $q_{in} - q_{out} = 818.3 - 402.3 = 416.0\ \text{kJ/kg}$, which equals $w_{net}$, so the energy balance closes. The efficiency of 0.508 is below the Carnot limit between 1400 K and 288 K, which is $1 - 288/1400 = 0.79$.
+**Sanity check:** The heat rejected is $c_p (T_4 - T_1) = 1.005 \times (688.3 - 288) = 402.3\ \text{kJ/kg}$. Then $q_{\mathrm{in}} - q_{\mathrm{out}} = 818.3 - 402.3 = 416.0\ \text{kJ/kg}$, which equals $w_{\mathrm{net}}$, so the energy balance closes. The efficiency of 0.508 is below the Carnot limit between 1400 K and 288 K, which is $1 - 288/1400 = 0.79$.
 
 ## Design trade-offs
 

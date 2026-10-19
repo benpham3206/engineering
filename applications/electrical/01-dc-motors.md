@@ -45,15 +45,15 @@ where $V$ is the armature supply voltage (V), $I$ is the armature current (A), $
 
 The two constants come from the motor's construction:
 
-$$K_t = K_e = \frac{Z\, p\, \Phi}{2\pi a}$$
+$$K_t = K_e = \frac{Z\, p\, \Phi}{\pi a}$$
 
 Here $Z$ is the number of armature conductors (dimensionless), $p$ is the number of pole pairs (dimensionless), $\Phi$ is the magnetic flux per pole (Wb, which equals V s), and $a$ is the number of parallel current paths in the armature (dimensionless). The units check: V s divided by rad equals N m/A. Because the two constants share one flux term, a motor with a weaker field has a lower $K_e$ and a lower $K_t$.
 
 Power and losses:
 
-$$P_{elec} = V I \qquad P_{mech} = T \omega \qquad P_{cu} = I^2 R$$
+$$P_{\mathrm{elec}} = V I \qquad P_{\mathrm{mech}} = T \omega \qquad P_{\mathrm{cu}} = I^2 R$$
 
-where $P_{elec}$ is the electrical input power (W), $P_{mech}$ is the mechanical power (W), and $P_{cu}$ is the copper loss (W). The efficiency is $\eta = P_{mech} / P_{elec}$, dimensionless.
+where $P_{\mathrm{elec}}$ is the electrical input power (W), $P_{\mathrm{mech}}$ is the mechanical power (W), and $P_{\mathrm{cu}}$ is the copper loss (W). The efficiency is $\eta = P_{\mathrm{mech}} / P_{\mathrm{elec}}$, dimensionless.
 
 Field weakening changes the flux. When $\Phi$ falls, $K_e$ falls in proportion, and the ideal no-load speed $V / K_e$ rises. The same current then produces less torque.
 
@@ -65,12 +65,12 @@ Field weakening changes the flux. When $\Phi$ falls, $K_e$ falls in proportion, 
 
 **Solution:**
 
-1. Stall current: $I_{stall} = V / R = 24 / 0.80 = 30.0\ \text{A}$. Stall torque: $T_{stall} = K_t I_{stall} = 0.030 \times 30.0 = 0.90\ \text{N m}$.
+1. Stall current: $I_{\mathrm{stall}} = V / R = 24 / 0.80 = 30.0\ \text{A}$. Stall torque: $T_{\mathrm{stall}} = K_t I_{\mathrm{stall}} = 0.030 \times 30.0 = 0.90\ \text{N m}$.
 2. Total torque the motor must make: $T = T_L + T_f = 0.120 + 0.010 = 0.130\ \text{N m}$. Current: $I = T / K_t = 0.130 / 0.030 = 4.33\ \text{A}$. Speed: $\omega = (V - I R) / K_e = (24 - 4.33 \times 0.80) / 0.030 = (24 - 3.47) / 0.030 = 684\ \text{rad/s}$. In rpm, $684 \times 60 / (2\pi) = 6536\ \text{rpm}$.
-3. Electrical input: $P_{elec} = 24 \times 4.33 = 104.0\ \text{W}$. Copper loss: $I^2 R = 4.33^2 \times 0.80 = 15.0\ \text{W}$. Friction loss: $T_f \omega = 0.010 \times 684 = 6.8\ \text{W}$. Output power at the load: $T_L \omega = 0.120 \times 684 = 82.1\ \text{W}$. Efficiency: $82.1 / 104.0 = 0.79$, or 79 percent.
-4. PWM target: at $\omega = 300\ \text{rad/s}$, the current is still $I = 4.33\ \text{A}$ because the torque is unchanged. Back-EMF: $K_e \omega = 0.030 \times 300 = 9.00\ \text{V}$. Required average voltage: $V_{avg} = I R + K_e \omega = 4.33 \times 0.80 + 9.00 = 3.47 + 9.00 = 12.47\ \text{V}$. Duty cycle: $D = V_{avg} / V = 12.47 / 24 = 0.52$, or 52 percent.
+3. Electrical input: $P_{\mathrm{elec}} = 24 \times 4.33 = 104.0\ \text{W}$. Copper loss: $I^2 R = 4.33^2 \times 0.80 = 15.0\ \text{W}$. Friction loss: $T_f \omega = 0.010 \times 684 = 6.8\ \text{W}$. Output power at the load: $T_L \omega = 0.120 \times 684 = 82.1\ \text{W}$. Efficiency: $82.1 / 104.0 = 0.79$, or 79 percent.
+4. PWM target: at $\omega = 300\ \text{rad/s}$, the current is still $I = 4.33\ \text{A}$ because the torque is unchanged. Back-EMF: $K_e \omega = 0.030 \times 300 = 9.00\ \text{V}$. Required average voltage: $V_{\mathrm{avg}} = I R + K_e \omega = 4.33 \times 0.80 + 9.00 = 3.47 + 9.00 = 12.47\ \text{V}$. Duty cycle: $D = V_{\mathrm{avg}} / V = 12.47 / 24 = 0.52$, or 52 percent.
 
-**Answer:** (a) $I_{stall} = 30.0\ \text{A}$ and $T_{stall} = 0.90\ \text{N m}$. (b) $\omega = 684\ \text{rad/s}$, which is $6536\ \text{rpm}$. (c) $79$ percent. (d) $D \approx 0.52$.
+**Answer:** (a) $I_{\mathrm{stall}} = 30.0\ \text{A}$ and $T_{\mathrm{stall}} = 0.90\ \text{N m}$. (b) $\omega = 684\ \text{rad/s}$, which is $6536\ \text{rpm}$. (c) $79$ percent. (d) $D \approx 0.52$.
 
 **Sanity check:** The losses close the power balance: $104.0 - 15.0 - 6.8 = 82.2\ \text{W}$, which matches $82.1\ \text{W}$ within rounding. The stall current of 30 A is about 7 times the running current of 4.3 A, which is why a motor driver must limit current at start-up. A duty cycle of 52 percent gives a 12.5 V average, and the motor sees that average only if its winding inductance smooths the switching pulses, as the mechatronics lesson describes.
 
@@ -108,7 +108,7 @@ Michael Faraday showed continuous rotation from electromagnetic force in London 
 
 1. $I = T / K_t = 0.050 / 0.020 = 2.5\ \text{A}$.
 2. $\omega = V / K_e = 12 / 0.020 = 600\ \text{rad/s}$, which is $5730\ \text{rpm}$.
-3. $I_{stall} = 24 / 2.0 = 12\ \text{A}$, and $T_{stall} = 0.050 \times 12 = 0.60\ \text{N m}$.
+3. $I_{\mathrm{stall}} = 24 / 2.0 = 12\ \text{A}$, and $T_{\mathrm{stall}} = 0.050 \times 12 = 0.60\ \text{N m}$.
 4. $I = (6 - 0.010 \times 300) / 1.0 = 3\ \text{A}$.
 5. Flux halves, so $K_e$ halves to $0.0060\ \text{V s/rad}$. The ideal no-load speed is $\omega = 12 / 0.0060 = 2000\ \text{rad/s}$.
 

@@ -51,21 +51,21 @@ Plants also differ by how they use water. A run-of-river plant has little storag
 
 Hydraulic power, the power available in the flow, in watts:
 
-$$P_{hyd} = \rho g Q H$$
+$$P_{\mathrm{hyd}} = \rho g Q H$$
 
 where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $Q$ is the volume flow rate in cubic metres per second (m$^3$/s), and $H$ is the net head in metres (m).
 
 Turbine output, in watts:
 
-$$P_{out} = \eta \rho g Q H$$
+$$P_{\mathrm{out}} = \eta \rho g Q H$$
 
 where $\eta$ is the turbine-generator efficiency (dimensionless). Large modern plants reach $\eta$ of about 0.85 to 0.95 (typical range).
 
 Net head, in metres:
 
-$$H = H_{gross} - h_{loss}$$
+$$H = H_{\mathrm{gross}} - h_{\mathrm{loss}}$$
 
-where $H_{gross}$ is the height difference between the reservoir surface and the tailwater, and $h_{loss}$ is the head lost to friction and bends in the penstock.
+where $H_{\mathrm{gross}}$ is the height difference between the reservoir surface and the tailwater, and $h_{\mathrm{loss}}$ is the head lost to friction and bends in the penstock.
 
 Energy stored in a volume of water $V$ at head $H$, in joules:
 
@@ -75,13 +75,13 @@ where $V$ is the volume in cubic metres (m$^3$). Dividing by 3.6 million convert
 
 Ideal jet speed from a Pelton nozzle, in metres per second, before nozzle losses:
 
-$$v_{jet} = \sqrt{2 g H}$$
+$$v_{\mathrm{jet}} = \sqrt{2 g H}$$
 
 Friction and bends in the penstock lower this speed in practice.
 
 ## Worked example
 
-**Given:** A plant takes water from a reservoir with a gross head of $H_{gross} = 100\ \text{m}$. Losses in the penstock total $h_{loss} = 0\ \text{m}$ for this estimate. The flow is $Q = 10\ \text{m}^3/\text{s}$. The turbine-generator efficiency is $\eta = 0.90$. Water density is $\rho = 1000\ \text{kg/m}^3$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Given:** A plant takes water from a reservoir with a gross head of $H_{\mathrm{gross}} = 100\ \text{m}$. Losses in the penstock total $h_{\mathrm{loss}} = 0\ \text{m}$ for this estimate. The flow is $Q = 10\ \text{m}^3/\text{s}$. The turbine-generator efficiency is $\eta = 0.90$. Water density is $\rho = 1000\ \text{kg}/\text{m}^3$. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Find:** (a) the electrical output, and (b) the annual energy if the plant runs at a capacity factor of 0.5.
 
@@ -89,10 +89,10 @@ Friction and bends in the penstock lower this speed in practice.
 
 **Solution:**
 
-1. Output power: $P_{out} = \eta \rho g Q H = 0.90 \times 1000 \times 9.81 \times 10 \times 100 = 8.83 \times 10^6\ \text{W}$, which is $8.83\ \text{MW}$.
-2. Annual energy: $E = P \times 8760\ \text{h} \times CF = 8.83\ \text{MW} \times 8760\ \text{h} \times 0.5 = 38\,700\ \text{MWh}$, which is $38.7\ \text{GWh}$.
+1. Output power: $P_{\mathrm{out}} = \eta \rho g Q H = 0.90 \times 1000 \times 9.81 \times 10 \times 100 = 8.83 \times 10^6\ \text{W}$, which is $8.83\ \text{MW}$.
+2. Annual energy: $E = P \times 8760\ \text{h} \times \mathrm{CF} = 8.83\ \text{MW} \times 8760\ \text{h} \times 0.5 = 38\,700\ \text{MWh}$, which is $38.7\ \text{GWh}$.
 
-**Answer:** (a) $P_{out} = 8.83\ \text{MW}$. (b) $E = 38.7\ \text{GWh}$ per year.
+**Answer:** (a) $P_{\mathrm{out}} = 8.83\ \text{MW}$. (b) $E = 38.7\ \text{GWh}$ per year.
 
 **Sanity check:** The power is less than the hydraulic power, $\rho g Q H = 9.81\ \text{MW}$, because the efficiency is 0.90. Each cubic metre of water per second at $100\ \text{m}$ head gives about $9.8\ \text{MW}$ before losses. The energy per year is plausible for a plant of this size. Doubling the head would double the power, while doubling the flow would also double it, so both numbers matter.
 
@@ -122,7 +122,7 @@ Lester Pelton developed the impulse wheel that bears his name in California in t
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A plant has a head of $50\ \text{m}$, a flow of $4\ \text{m}^3/\text{s}$, and efficiency $0.85$. Find the output in megawatts.
 2. A plant must deliver $2\ \text{MW}$ at a head of $40\ \text{m}$ with efficiency $0.90$. Find the required flow in cubic metres per second.

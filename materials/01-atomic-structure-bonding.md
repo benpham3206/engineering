@@ -38,7 +38,7 @@ $$U = -\frac{k\, e^2}{r}$$
 
 where:
 
-- $U$ is the potential energy of the pair (joules, J, or electron volts, eV, with 1 eV = $1.602 \times 10^{-19}$ J)
+- $U$ is the potential energy of the pair (joules, J, or electron volts, eV, with $1\ \mathrm{eV} = 1.602 \times 10^{-19}\ \mathrm{J}$)
 - $k = 8.988 \times 10^{9}$ N m$^2$/C$^2$ is Coulomb's constant
 - $e = 1.602 \times 10^{-19}$ C is the elementary charge (one proton or electron)
 - $r$ is the distance between the two ion centers (metres, m)
@@ -49,7 +49,7 @@ Electronegativity difference is a rough guide to bond character. A large differe
 
 ## Worked example
 
-**Given:** A sodium ion (Na+, charge +e) and a chloride ion (Cl-, charge -e) have their centers 0.25 nm apart.
+**Given:** A sodium ion ($\mathrm{Na}^{+}$, charge $+e$) and a chloride ion ($\mathrm{Cl}^{-}$, charge $-e$) have their centers 0.25 nm apart.
 
 **Find:** The Coulomb energy of this isolated ion pair, in eV.
 
@@ -69,7 +69,7 @@ Electronegativity difference is a rough guide to bond character. A large differe
 ## Practice
 
 1. How many valence electrons do aluminum (Al, group 13), silicon (Si, group 14), and oxygen (O, group 16) have?
-2. Two ions of charge +e and -e are 0.30 nm apart. Find the Coulomb energy in eV. Use the same method as the worked example.
+2. Two ions of charge $+e$ and $-e$ are 0.30 nm apart. Find the Coulomb energy in eV. Use the same method as the worked example.
 3. If the separation in Problem 2 doubles, what is the new energy in eV?
 4. Pauling electronegativity values are Mg 1.31, Si 1.90, and O 3.44. Which bond, Mg-O or Si-O, is more ionic? Give the difference for each.
 5. Explain in two sentences why copper can be bent into a wire but a glass rod cannot.

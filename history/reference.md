@@ -35,7 +35,7 @@ Lookup sheet for the main events, eras, and ideas in the history lessons, for an
 | About 850 | Banu Musa brothers write a book of mechanical devices | Baghdad | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
 | About 1040 | Bi Sheng develops movable type from baked clay | China | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
 | 1086 | Domesday survey records about 5,600 water mills | England | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
-| 1088 | Su Song and his team complete an astronomical clock tower with a stepped escapement | Kaifeng, Song China | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
+| 1088 | Su Song and his team begin an astronomical clock tower (finished early 1090s) with a stepped escapement | Kaifeng, Song China | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
 | 1088 | Shen Kuo records the magnetic needle compass and magnetic north | Song China | [Scientific revolution and the measurement of time and place](04-scientific-revolution.md) |
 | 1206 | Al-Jazari completes his book of ingenious mechanical devices | Diyarbakir | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
 | 1284 | Choir of Beauvais Cathedral collapses when its vaults exceed what the piers can carry | Beauvais Cathedral | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
@@ -55,7 +55,7 @@ Lookup sheet for the main events, eras, and ideas in the history lessons, for an
 | 1800 | Volta builds the voltaic pile | Italy | [The electrical age](06-electrical-age.md) |
 | 1820 | Ørsted shows a current deflects a compass needle | Copenhagen | [The electrical age](06-electrical-age.md) |
 | 1825 | Erie Canal opens on 26 October | New York | [Canals and railways](projects/02-canals-and-railways.md) |
-| 1829 | Stephenson's Rocket wins the Rainhill Trials | Lancashire | [The industrial revolution](05-industrial-revolution.md) |
+| 1829 | Rocket, built by Robert Stephenson and Company, wins the Rainhill Trials | Lancashire | [The industrial revolution](05-industrial-revolution.md) |
 | 1830 | Liverpool and Manchester Railway opens | England | [The industrial revolution](05-industrial-revolution.md) |
 | 1831 | Faraday shows electromagnetic induction | London | [The electrical age](06-electrical-age.md) |
 | 1844 | Morse sends the first public long-distance telegraph message | Washington to Baltimore | [The electrical age](06-electrical-age.md) |
@@ -95,7 +95,7 @@ Lookup sheet for the main events, eras, and ideas in the history lessons, for an
 | 1956 | Federal-Aid Highway Act authorizes the Interstate system | United States | [Networks that connect the world](projects/05-networks-that-connect-the-world.md) |
 | 1957 | Sputnik 1 launched on an R-7 rocket | Soviet Union | [War, nuclear, and space](08-war-nuclear-and-space.md) |
 | 1958 | Kilby builds the first integrated circuit | Texas Instruments, Dallas | [Semiconductors and computing](09-semiconductors-and-computing.md) |
-| 1959 | Noyce builds a planar silicon integrated circuit | Fairchild Semiconductor, California | [Semiconductors and computing](09-semiconductors-and-computing.md) |
+| 1959 | Noyce designs a planar silicon integrated circuit (first working chips follow in 1960) | Fairchild Semiconductor, California | [Semiconductors and computing](09-semiconductors-and-computing.md) |
 | 1963 | Sutherland shows Sketchpad | MIT | [The modern era](10-the-modern-era.md) |
 | 1969 | First ARPANET link, UCLA to the Stanford Research Institute, in October | United States | [The modern era](10-the-modern-era.md) |
 | 1969 | Apollo 11 lands on the Moon on 20 July | The Moon | [War, nuclear, and space](08-war-nuclear-and-space.md) |

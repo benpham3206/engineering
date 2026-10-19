@@ -98,7 +98,7 @@ which scientists widely condemned. See
 
 Kilby worked at Texas Instruments in Dallas, Texas, and Noyce at Fairchild Semiconductor in California.
 Kilby demonstrated the first integrated circuit in September 1958, built on germanium. In 1959 Noyce
-developed a planar silicon integrated circuit at Fairchild, a design that could be manufactured by
+designed a planar silicon integrated circuit at Fairchild (working chips followed in 1960), a design that could be manufactured by
 photolithography. Noyce later co-founded Intel in 1968. Every chip today combines many transistors on a
 single piece of silicon. See
 [Semiconductors, diodes, and transistors](../../applications/electronics/03-semiconductors-diodes-and-transistors.md)
@@ -154,7 +154,7 @@ how Apollo's software handled overloads. See
 | 1955 and 1964 | Kelly Johnson | U-2 and SR-71 aircraft at Lockheed Skunk Works | High-altitude and high-speed aircraft design; [aircraft and wings](../../applications/vehicles-aerospace/05-aircraft-and-wings.md) |
 | 1957 | Sergei Korolev | R-7 rocket launches Sputnik 1 on 4 October 1957 | Launch vehicles and satellites; [spacecraft and satellites](../../applications/vehicles-aerospace/08-spacecraft-and-satellites.md) |
 | 1958 | Jack Kilby | First integrated circuit at Texas Instruments | Every modern chip; [semiconductors](../../applications/electronics/03-semiconductors-diodes-and-transistors.md) |
-| 1959 | Robert Noyce | Planar silicon integrated circuit at Fairchild | Chips made by photolithography; [printed circuit boards](../../applications/electronics/04-printed-circuit-boards.md) |
+| 1959 | Robert Noyce | Planar silicon integrated circuit design at Fairchild | Chips made by photolithography; [printed circuit boards](../../applications/electronics/04-printed-circuit-boards.md) |
 | 1962 | Katherine Johnson | Orbit calculations for John Glenn's Friendship 7 flight | Spaceflight trajectory design; [spacecraft and satellites](../../applications/vehicles-aerospace/08-spacecraft-and-satellites.md) |
 | 1969 | Fazlur Rahman Khan | Tube structure for the John Hancock Center, Chicago | Tall-building frames; [buildings and skyscrapers](../../applications/structures/02-buildings-and-skyscrapers.md) |
 | 1969 | Margaret Hamilton | Apollo guidance software that handled overloads during the Apollo 11 landing | Flight and embedded software; [digital logic and computers](../../applications/electronics/07-digital-logic-and-computers.md) |

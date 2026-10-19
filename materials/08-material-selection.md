@@ -54,7 +54,7 @@ Typical values from [Mechanical properties](03-mechanical-properties.md). The in
 
 Notes on the table:
 
-- Glass has the highest $E/\rho$ and $E^{1/2}/\rho$ in this list, but it is brittle and has no yield. It cannot be chosen on stiffness alone.
+- Glass has the highest $E/\rho$ in this list, and only wood (along the grain) beats it on $E^{1/2}/\rho$, but glass is brittle and has no yield. It cannot be chosen on stiffness alone.
 - Wood is strongly directional. Its numbers apply only along the grain, and real design uses grade-specific data.
 - The $\sigma_y$ indices are not given for brittle materials because they do not have a yield point. Use fracture data for them instead.
 
@@ -82,9 +82,9 @@ $$\frac{m_1}{m_2} = \frac{\rho_1 / E_1^{1/2}}{\rho_2 / E_2^{1/2}}$$
 
 **Solution:**
 
-1. Aluminum index: $\rho_{Al} / E_{Al}^{1/2} = 2.70 / \sqrt{69} = 2.70 / 8.307 = 0.3250$.
+1. Aluminum index: $\rho_{\mathrm{Al}} / E_{\mathrm{Al}}^{1/2} = 2.70 / \sqrt{69} = 2.70 / 8.307 = 0.3250$.
 2. Steel index: $\rho_{s} / E_{s}^{1/2} = 7.87 / \sqrt{205} = 7.87 / 14.318 = 0.5496$.
-3. Ratio: $m_{Al}/m_{s} = 0.3250 / 0.5496 = 0.591$.
+3. Ratio: $m_{\mathrm{Al}}/m_{s} = 0.3250 / 0.5496 = 0.591$.
 
 **Answer:** The aluminum beam has about 59 percent of the steel beam's mass. It needs a larger cross-section to match stiffness, but the lower density more than makes up for it.
 
@@ -96,7 +96,7 @@ $$\frac{m_1}{m_2} = \frac{\rho_1 / E_1^{1/2}}{\rho_2 / E_2^{1/2}}$$
 2. For a stiffness-limited tie, which is higher, $E/\rho$ for 1018 steel or for Ti-6Al-4V?
 3. For a stiffness-limited square beam, find the mass ratio of Ti-6Al-4V to 1018 steel at the same stiffness and length. Use $\rho/E^{1/2}$.
 4. For a strength-limited tie, which has the higher $\sigma_y/\rho$, 6061-T6 aluminum or 1018 steel?
-5. Glass has the highest stiff-beam index in the table. Give one reason it may still be a poor choice for a beam.
+5. Glass has a high stiff-beam index in the table (second only to wood). Give one reason it may still be a poor choice for a beam.
 
 <details><summary>Answers</summary>
 

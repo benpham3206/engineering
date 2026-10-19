@@ -1,8 +1,9 @@
 # Pumps
 
 **Type:** lesson
+**Verify:** strict
 
-A pump adds energy to a liquid so that it flows through pipes, up a tower, or into a pressurized system. Engineers pick a pump by matching its curve to the system it serves, and a poor match wastes energy or destroys the pump.
+A pump is a machine that adds energy to a liquid so that it flows through pipes, up a tower, or into a pressurized system. Engineers pick a pump by matching its curve to the system it serves, and a poor match wastes energy or destroys the pump.
 
 **Prerequisites:** [Fluid systems](02-fluid-systems.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md)
 **Time:** 6-8 h
@@ -88,6 +89,34 @@ Gear, lobe, and vane pumps suit viscous fluids and steady metering. Piston and p
 
 **Sanity check:** Slowing the pump by 20 percent cut the power to 0.512 of its full-speed value. The head fell to 0.64 of its value, which matches the square law. The affinity laws assume constant efficiency, so the real power at the new speed may differ by a few percent.
 
+<details><summary>Verification</summary>
+
+```verify
+N1 = q(1450, "rev/min")
+Q1 = q(0.020, "m^3/s")
+H1 = q(25, "m")
+eta = q(0.72, "")
+rho = q(1000, "kg/m^3", of="water.density.nominal")
+N2 = q(1160, "rev/min")
+g = q(9.81, "m/s^2", of="g_standard")
+Ph = rho * g * Q1 * H1
+expect(Ph, "4905 W")
+P1 = Ph / eta
+expect(P1, "6812 W")
+expect(P1, "6.81 kW")
+r = N2 / N1
+expect(r, "0.80")
+expect(r * Q1, "0.016 m^3/s")
+expect(r**2 * H1, "16.0 m")
+expect(r**3 * P1, "3488 W")
+expect(r**3 * P1, "3.49 kW")
+expect(1 - r, "20 %")
+expect(r**3, "0.512")
+expect(r**2, "0.64")
+```
+
+</details>
+
 ## Design trade-offs
 
 Efficiency is the first concern, because a pump runs for years and its energy use often costs more than the pump itself. Choosing a pump whose best efficiency point sits near the normal duty point saves more energy than any other single choice.
@@ -112,7 +141,7 @@ Material choice trades cost against corrosion and abrasion. Cast iron and bronze
 
 ## History
 
-Archimedes and the Alexandrian engineer Ctesibius both described water-lifting machines in the third century BC. The screw of Archimedes lifts water by turning, and Ctesibius built a force pump with a piston. Denis Papin described a centrifugal pump in about 1689. Centrifugal pumps became common in the late nineteenth century, when electric motors and steam engines could drive them at high speed. Their design rules matured through the twentieth century.
+Archimedes, who lived from about 287 to 212 BC, is credited with the water screw, which lifts water as a helix turns inside a sloping tube [src](../../data/claims/history.md#archimedes-water-screw). A centrifugal pump needs a shaft turning fast enough for the square law of rim speed to give useful head, so it became practical only once engines and electric motors could drive it at high speed.
 
 ## Practice
 
@@ -120,7 +149,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (
 
 1. A pump moves $Q = 0.012\ \text{m}^3/\text{s}$ of water against $H = 18\ \text{m}$ with $\eta = 0.70$. Find the shaft power in watts.
 2. A pump runs at 1450 rev/min and delivers $Q = 0.020\ \text{m}^3/\text{s}$ against $H = 25\ \text{m}$. Find the flow and head when it runs at 1000 rev/min, and find the ratio of its new shaft power to its old one.
-3. A pump sits $2.5\ \text{m}$ above the surface of a tank of water at 20 C. The atmosphere presses at $101.3\ \text{kPa}$, the vapour pressure is $2.34\ \text{kPa}$, and the suction line loses $0.8\ \text{m}$. Find $NPSH_a$. The manufacturer gives $NPSH_r = 3.0\ \text{m}$. Find the margin.
+3. A pump sits $2.5\ \text{m}$ above the surface of a tank of water at 20 C. The atmosphere presses at $101.3\ \text{kPa}$ (the standard atmosphere on Earth), the vapour pressure is $2.34\ \text{kPa}$, and the suction line loses $0.8\ \text{m}$. Find $NPSH_a$. The manufacturer gives $NPSH_r = 3.0\ \text{m}$. Find the margin.
 4. A pump makes $H_1 = 30\ \text{m}$ with a full-diameter impeller. The impeller is trimmed by 10 percent in diameter at the same speed. Find the new head, using the approximate trim law.
 5. A gear pump displaces $12\ \text{cm}^3$ per revolution and runs at 1200 rev/min. Find its theoretical flow in litres per second.
 
@@ -128,9 +157,35 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (
 
 1. $P_{shaft} = 1000 \times 9.81 \times 0.012 \times 18 / 0.70 = 3027\ \text{W}$, which is about $3.03\ \text{kW}$.
 2. $Q_2 = 0.020 \times 1000/1450 = 0.0138\ \text{m}^3/\text{s}$. $H_2 = 25 \times (1000/1450)^2 = 11.9\ \text{m}$. The power ratio is $(1000/1450)^3 = 0.33$.
-3. $NPSH_a = (101\,325 - 2340)/(1000 \times 9.81) - 2.5 - 0.8 = 6.8\ \text{m}$. The margin is $6.8 - 3.0 = 3.8\ \text{m}$, so the design is safe.
+3. $NPSH_a = (101\,300 - 2340)/(1000 \times 9.81) - 2.5 - 0.8 = 6.8\ \text{m}$. The margin is $6.8 - 3.0 = 3.8\ \text{m}$, so the design is safe.
 4. $H_2 = 30 \times 0.90^2 = 24.3\ \text{m}$. Flow falls to 0.90 of its value, and power falls to $0.90^3 = 0.73$ of its value.
 5. $Q = 12 \times 10^{-6}\ \text{m}^3 \times 20\ \text{rev/s} = 2.4 \times 10^{-4}\ \text{m}^3/\text{s} = 0.24\ \text{L/s}$.
+
+```verify
+g = q(9.81, "m/s^2", of="g_standard")
+rho = q(1000, "kg/m^3", of="water.density.nominal")
+P = rho * g * q(0.012, "m^3/s") * q(18, "m") / q(0.70, "")
+expect(P, "3027 W", ans=1)
+expect(P, "3.03 kW", ans=1)
+r = q(1000, "rev/min") / q(1450, "rev/min")
+expect(r * q(0.020, "m^3/s"), "0.0138 m^3/s", ans=2)
+expect(r**2 * q(25, "m"), "11.9 m", ans=2)
+expect(r**3, "0.33", ans=2)
+pa = q(101300, "Pa", of="p_standard", rel=0.001)
+pv = q(2340, "Pa", of="water.psat.20C", rel=0.001)
+npsh = (pa - pv) / (rho * g) - q(2.5, "m") - q(0.8, "m")
+expect(npsh, "6.8 m", ans=3)
+expect(npsh - q(3.0, "m"), "3.8 m", ans=3)
+check(npsh > q(3.0, "m"), "NPSHa exceeds NPSHr")
+trim = q(0.90, "")
+expect(q(30, "m") * trim**2, "24.3 m", ans=4)
+expect(trim**3, "0.73", ans=4)
+Vd = q(12, "cm^3/rev")
+N = q(1200, "rev/min")
+expect(N, "20 rev/s", ans=5)
+expect(Vd * N, "2.4e-4 m^3/s", ans=5)
+expect(Vd * N, "0.24 L/s", ans=5)
+```
 
 </details>
 

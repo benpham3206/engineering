@@ -17,7 +17,7 @@ Measuring a part tells you its real size, which is the starting point for any re
   - Thread pitch gauge: a set of blades, each marked with a pitch. You match the blade to the thread teeth.
   - Steel rule: useful for lengths, but limited to about 0.5 mm reliable reading.
 - Use two measurements for anything that matters. Measure the same feature twice from different directions, and check that the two readings agree.
-- Measure in both units if the part could be metric or inch. A reading of 3.25 in is 82.55 mm (1 in = 25.4 mm exactly).
+- Measure in both units if the part could be metric or inch. A reading of 3.25 in is 82.55 mm ($1\ \text{in} = 25.4\ \text{mm}$ exactly).
 - **Wear** shows up as a loss of material on surfaces that rub, such as bearing bores, gear teeth, and threads. Measure the worn surface, then find a surface that was not in contact, such as a shoulder or a hidden face, to estimate the original size.
 - **Bolt circle diameter (BCD)** is the diameter of an imaginary circle that passes through the centers of a ring of holes. You cannot measure it directly across the middle, so you measure the distance between two adjacent holes and calculate it.
 - **Thread pitch** is the distance from one thread crest to the next. You can measure it by counting turns over a known length.
@@ -26,7 +26,7 @@ Measuring a part tells you its real size, which is the starting point for any re
 
 - Standard fasteners come in sizes you can match against a table. A measured thread diameter of 7.9 mm likely means an M8 thread that has worn a little, not a 7.9 mm design.
 - Round numbers are common in design: 25, 30, 50, 100, 110 mm. If a measurement lands within a fraction of a millimeter of one of these, check it as the nominal size first.
-- A measured size that fits a standard value like 1/4 in or M6 is a strong clue. Test that idea before you accept it.
+- A measured size that fits a standard value like $1/4$ in or M6 is a strong clue. Test that idea before you accept it.
 
 ## Key equations
 
@@ -64,9 +64,9 @@ $$D = \frac{64.7}{0.587785} = 110.07 \text{ mm}$$
 
 $$p = \frac{10.0}{8} = 1.25 \text{ mm}$$
 
-(c) A 110 mm bolt circle is a common five-arm crank size. A 1.25 mm pitch matches the coarse pitch of an M8 thread (M8 x 1.25).
+(c) A 110 mm bolt circle is a common five-arm crank size. A 1.25 mm pitch matches the coarse pitch of an M8 thread ($\mathrm{M8} \times 1.25$).
 
-**Answer:** The bolt circle diameter is about 110 mm, and the thread is most likely M8 x 1.25.
+**Answer:** The bolt circle diameter is about 110 mm, and the thread is most likely $\mathrm{M8} \times 1.25$.
 
 **Sanity check:** At radius 55 mm, the chord should be $2 \times 55 \times 0.587785 = 64.66$ mm, which matches the reading to within 0.05 mm, the caliper accuracy.
 

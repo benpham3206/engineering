@@ -50,22 +50,22 @@ rate, so fins and large surfaces are used.
 
 ## Key equations
 
-- Heat rate: $\dot{Q} = U A \Delta T_{lm}$, where $\dot{Q}$ is in watts (W), $U$ is the overall heat transfer
-  coefficient in W/(m$^2$ K), $A$ is the heat transfer area in square metres (m$^2$), and $\Delta T_{lm}$ is the
+- Heat rate: $\dot{Q} = U A \Delta T_{\mathrm{lm}}$, where $\dot{Q}$ is in watts (W), $U$ is the overall heat transfer
+  coefficient in W/(m$^2$ K), $A$ is the heat transfer area in square metres (m$^2$), and $\Delta T_{\mathrm{lm}}$ is the
   log mean temperature difference in kelvin (K).
-- Log mean temperature difference: $\Delta T_{lm} = \dfrac{\Delta T_1 - \Delta T_2}{\ln(\Delta T_1 / \Delta T_2)}$,
+- Log mean temperature difference: $\Delta T_{\mathrm{lm}} = \dfrac{\Delta T_1 - \Delta T_2}{\ln(\Delta T_1 / \Delta T_2)}$,
   where $\Delta T_1$ and $\Delta T_2$ are the temperature differences between the two fluids at the two ends of
   the exchanger, in kelvin (K).
 - Heat capacity rate: $C = \dot{m}\, c_p$, where $\dot{m}$ is the mass flow in kg/s and $c_p$ is the specific
-  heat in J/(kg K). The smaller of the two values, $C_{min}$, sets the maximum heat rate.
-- Maximum heat rate: $\dot{Q}_{max} = C_{min}\,(T_{h,in} - T_{c,in})$, in watts (W).
-- Effectiveness: $\varepsilon = \dot{Q} / \dot{Q}_{max}$, a dimensionless number between 0 and 1.
-- Number of transfer units: $NTU = \dfrac{UA}{C_{min}}$, dimensionless.
-- Capacity ratio: $C_r = C_{min} / C_{max}$, dimensionless.
-- Counterflow effectiveness: $\varepsilon = \dfrac{1 - \exp[-NTU(1 - C_r)]}{1 - C_r \exp[-NTU(1 - C_r)]}$.
-- Fouling: $\dfrac{1}{U} = \dfrac{1}{U_{clean}} + R_f$, where $R_f$ is the fouling resistance in m$^2$ K/W.
+  heat in J/(kg K). The smaller of the two values, $C_{\mathrm{min}}$, sets the maximum heat rate.
+- Maximum heat rate: $\dot{Q}_{\mathrm{max}} = C_{\mathrm{min}}\,(T_{h,\mathrm{in}} - T_{c,\mathrm{in}})$, in watts (W).
+- Effectiveness: $\varepsilon = \dot{Q} / \dot{Q}_{\mathrm{max}}$, a dimensionless number between 0 and 1.
+- Number of transfer units: $\mathrm{NTU} = \dfrac{UA}{C_{\mathrm{min}}}$, dimensionless.
+- Capacity ratio: $C_r = C_{\mathrm{min}} / C_{\mathrm{max}}$, dimensionless.
+- Counterflow effectiveness: $\varepsilon = \dfrac{1 - \exp[-\mathrm{NTU}(1 - C_r)]}{1 - C_r \exp[-\mathrm{NTU}(1 - C_r)]}$.
+- Fouling: $\dfrac{1}{U} = \dfrac{1}{U_{\mathrm{clean}}} + R_f$, where $R_f$ is the fouling resistance in m$^2$ K/W.
 
-For a counterflow exchanger with $C_r = 1$, the effectiveness formula reduces to $NTU / (1 + NTU)$.
+For a counterflow exchanger with $C_r = 1$, the effectiveness formula reduces to $\mathrm{NTU} / (1 + \mathrm{NTU})$.
 
 ## Worked example
 
@@ -84,21 +84,21 @@ the range. The fouling resistance acts on the same area as $U$.
 **Solution:**
 
 1. Heat rate from the hot side: $\dot{Q} = 0.10 \times 4190 \times (90 - 50) = 16\,760\ \text{W}$, or 16.76 kW.
-2. Cold outlet: $T_{c,out} = 20 + 16\,760 / (0.12 \times 4190) = 53.3\ \text{C}$.
-3. Temperature differences at the ends: $\Delta T_1 = 90 - 53.3 = 36.7\ \text{K}$ and $\Delta T_2 = 50 - 20 =
-   30.0\ \text{K}$. Then $\Delta T_{lm} = (36.7 - 30.0) / \ln(36.7 / 30.0) = 33.2\ \text{K}$.
-4. Area: $A = \dot{Q} / (U \Delta T_{lm}) = 16\,760 / (800 \times 33.2) = 0.631\ \text{m}^2$.
-5. Capacity rates: $C_h = 419\ \text{W/K}$ and $C_c = 503\ \text{W/K}$. So $C_{min} = 419\ \text{W/K}$, and $C_r =
-   0.833$.
-6. Maximum heat rate: $\dot{Q}_{max} = 419 \times (90 - 20) = 29\,330\ \text{W}$. Effectiveness: $\varepsilon =
-   16\,760 / 29\,330 = 0.571$.
-7. NTU: $UA / C_{min} = 800 \times 0.631 / 419 = 1.20$. Check with the counterflow formula: $\varepsilon = 0.571$,
+2. Cold outlet: $T_{c,\mathrm{out}} = 20 + 16\,760 / (0.12 \times 4190) = 53.3\ \text{C}$.
+3. Temperature differences at the ends: $\Delta T_1 = 90 - 53.3 = 36.7\ \text{K}$ and $\Delta T_2 = 50 - 20 =$
+   $30.0\ \text{K}$. Then $\Delta T_{\mathrm{lm}} = (36.7 - 30.0) / \ln(36.7 / 30.0) = 33.2\ \text{K}$.
+4. Area: $A = \dot{Q} / (U \Delta T_{\mathrm{lm}}) = 16\,760 / (800 \times 33.2) = 0.631\ \text{m}^2$.
+5. Capacity rates: $C_h = 419\ \text{W/K}$ and $C_c = 503\ \text{W/K}$. So $C_{\mathrm{min}} = 419\ \text{W/K}$, and $C_r =$
+   $0.833$.
+6. Maximum heat rate: $\dot{Q}_{\mathrm{max}} = 419 \times (90 - 20) = 29\,330\ \text{W}$. Effectiveness: $\varepsilon =$
+   $16\,760 / 29\,330 = 0.571$.
+7. NTU: $UA / C_{\mathrm{min}} = 800 \times 0.631 / 419 = 1.20$. Check with the counterflow formula: $\varepsilon = 0.571$,
    which matches step 6.
-8. Fouling: $1/U = 1/800 + 0.0002 = 0.00145$, so $U = 690\ \text{W/(m}^2\text{K)}$. The new area is $16\,760 /
-   (690 \times 33.2) = 0.732\ \text{m}^2$, which is 16 percent more.
+8. Fouling: $1/U = 1/800 + 0.0002 = 0.00145$, so $U = 690\ \text{W/(m}^2\text{K)}$. The new area is $16\,760 /$
+   $(690 \times 33.2) = 0.732\ \text{m}^2$, which is 16 percent more.
 
-**Answer:** (a) $\dot{Q} = 16.8\ \text{kW}$. (b) $T_{c,out} = 53.3\ \text{C}$. (c) $\Delta T_{lm} = 33.2\ \text{K}$.
-(d) $A = 0.631\ \text{m}^2$. (e) $\varepsilon = 0.571$ and $NTU = 1.20$. (f) With fouling, $A = 0.732\ \text{m}^2$.
+**Answer:** (a) $\dot{Q} = 16.8\ \text{kW}$. (b) $T_{c,\mathrm{out}} = 53.3\ \text{C}$. (c) $\Delta T_{\mathrm{lm}} = 33.2\ \text{K}$.
+(d) $A = 0.631\ \text{m}^2$. (e) $\varepsilon = 0.571$ and $\mathrm{NTU} = 1.20$. (f) With fouling, $A = 0.732\ \text{m}^2$.
 
 **Sanity check:** The heat rate is below the maximum of 29.3 kW, as it must be. The cold stream gains
 $0.12 \times 4190 \times 33.33 = 16.76$ kW, the same as the hot stream loses. Fouling raises the area needed,
@@ -146,23 +146,23 @@ theory of heat conduction in 1822, and it gave engineers the basic equation for 
 Sadi Carnot's 1824 work on heat engines set the limits on how much of the heat can become work.
 ## Practice
 
-1. An exchanger has $U = 500\ \text{W/(m}^2\text{K)}$, $A = 2.0\ \text{m}^2$, and $\Delta T_{lm} = 20\ \text{K}$.
+1. An exchanger has $U = 500\ \text{W/(m}^2\text{K)}$, $A = 2.0\ \text{m}^2$, and $\Delta T_{\mathrm{lm}} = 20\ \text{K}$.
    Find $\dot{Q}$.
-2. A counterflow exchanger has $C_{min} = 200\ \text{W/K}$, hot inlet at $90\ \text{C}$, cold inlet at $20\ \text{C}$,
+2. A counterflow exchanger has $C_{\mathrm{min}} = 200\ \text{W/K}$, hot inlet at $90\ \text{C}$, cold inlet at $20\ \text{C}$,
    and $\varepsilon = 0.75$. Find $\dot{Q}$.
 3. A clean exchanger has $U = 1000\ \text{W/(m}^2\text{K)}$, and fouling adds $R_f = 0.0005\ \text{m}^2\text{K/W}$. Find
    the fouled $U$.
 4. The two ends of an exchanger have temperature differences of $40\ \text{K}$ and $10\ \text{K}$. Find
-   $\Delta T_{lm}$.
-5. An exchanger has $UA = 5000\ \text{W/K}$ and $C_{min} = 2000\ \text{W/K}$. Find the NTU.
+   $\Delta T_{\mathrm{lm}}$.
+5. An exchanger has $UA = 5000\ \text{W/K}$ and $C_{\mathrm{min}} = 2000\ \text{W/K}$. Find the NTU.
 
 <details><summary>Answers</summary>
 
 1. $\dot{Q} = 500 \times 2.0 \times 20 = 20\,000\ \text{W}$, or 20 kW
 2. $\dot{Q} = 0.75 \times 200 \times (90 - 20) = 10\,500\ \text{W}$, or 10.5 kW
 3. $U = 1 / (1/1000 + 0.0005) = 667\ \text{W/(m}^2\text{K)}$
-4. $\Delta T_{lm} = (40 - 10) / \ln(40/10) = 21.6\ \text{K}$
-5. $NTU = 5000 / 2000 = 2.5$
+4. $\Delta T_{\mathrm{lm}} = (40 - 10) / \ln(40/10) = 21.6\ \text{K}$
+5. $\mathrm{NTU} = 5000 / 2000 = 2.5$
 
 </details>
 
@@ -170,7 +170,7 @@ Sadi Carnot's 1824 work on heat engines set the limits on how much of the heat c
 
 - Using the arithmetic mean temperature difference instead of the log mean for a sizing calculation. The
   arithmetic mean is only a rough check when the two ends differ by a small amount.
-- Mixing up $C_{min}$ and $C_{max}$ in the effectiveness calculation. The smaller capacity rate sets the
+- Mixing up $C_{\mathrm{min}}$ and $C_{\mathrm{max}}$ in the effectiveness calculation. The smaller capacity rate sets the
   maximum heat rate.
 - Adding fouling as a multiplier on $U$. It adds to the resistance: $1/U$ rises by $R_f$.
 - Treating the overall $U$ as the same on both sides. A gas-side coefficient is often far lower than a

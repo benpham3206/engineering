@@ -1,6 +1,7 @@
 # Mechanics reference
 
 **Type:** reference
+**Verify:** strict
 
 Lookup sheet for statics, rigid-body dynamics, stress and strain, beams, columns, vibration, and second-order control, for an engineer who needs a formula, a value, or a check in the middle of a job.
 
@@ -24,7 +25,7 @@ Lookup sheet for statics, rigid-body dynamics, stress and strain, beams, columns
 - Draw one body, every external force and moment on it, and the reaction at every support.
 - For a rigid body in 2D: $\sum F_x = 0$, $\sum F_y = 0$, $\sum M_O = 0$ (3 equations). For a particle, only the two force equations.
 - For 3D rigid bodies: 6 equations, $\sum \mathbf{F} = 0$ and $\sum \mathbf{M} = 0$.
-- A 2D body with 3 unknown reactions is statically determinate. More unknowns means statically indeterminate; compatibility is then needed.
+- A 2D body with 3 independent reactions that fully restrain it (not all parallel and not all through one point) is statically determinate. Counting unknowns alone is not enough: three parallel rollers give 3 unknowns but cannot stop sideways motion. More unknowns means statically indeterminate; compatibility is then needed.
 
 Holds when: the body is rigid and at rest or moving at constant velocity, and the loads are known.
 Breaks when: the body deforms significantly (use compatibility and stiffness), or it is accelerating (use Newton's second law).
@@ -83,6 +84,26 @@ Worked check. A triangle truss has a pin at A $(0, 0)$, a roller at B $(4, 0)$ m
 Holds when: the truss is statically determinate ($m + r = 2j$ for a planar pin-jointed truss, with $m$ members, $j$ joints, and $r$ support reactions; $r = 3$ for a pin plus a roller) and loads are at joints.
 Breaks when: members are welded or bolted with rigidity (secondary bending), loads act between joints, or compression members buckle (check the column table below).
 
+<details><summary>Verification</summary>
+
+```verify
+F = q(10, "kN")
+R = F / 2
+expect(R, "5 kN")
+dx = q(2, "m")
+dy = q(3, "m")
+L = sqrt(dx**2 + dy**2)
+expect(L**2, "13 m^2")
+expect(L, "3.606 m")
+F_ac = -R * L / dy
+expect(F_ac, "-6.009 kN")
+F_ab = -F_ac * dx / L
+expect(F_ab, "3.333 kN")
+check(abs(R * dx - F_ab * dy) < q(1e-9, "kN m"), "moment about C closes")
+```
+
+</details>
+
 ### Friction
 
 Coulomb model:
@@ -109,11 +130,20 @@ $$T_{\text{high}} = T_{\text{low}}\, e^{\mu\theta}$$
 Holds when: dry sliding with a single $\mu$, impending or full slip, and no lubrication.
 Breaks when: lubricated, at microscopic adhesion (very clean or very flat surfaces), at high speed (friction varies with velocity), or when temperature or wear changes $\mu$.
 
+<details><summary>Verification</summary>
+
+```verify
+expect(exp(q(0.3, "") * pi), "2.566")
+expect(exp(q(0.2, "") * 2 * pi), "3.514")
+```
+
+</details>
+
 ## Section properties
 
-Area $A$ (m^2), centroid, and second moments of area $I$ (m^4) about the centroidal axis. Polar moment $J$ (m^4) is about the centroid for circular shafts.
+Area $A$ (m$^{2}$), centroid, and second moments of area $I$ (m$^{4}$) about the centroidal axis. Polar moment $J$ (m$^{4}$) is about the centroid for circular shafts.
 
-| Section | $A$ | $I$ about centroid | $S = I/c$ (m^3) | Other |
+| Section | $A$ | $I$ about centroid | $S = I/c$ (m$^{3}$) | Other |
 |---|---|---|---|---|
 | Rectangle, width $b$, depth $h$ (bending about axis parallel to $b$) | $bh$ | $\dfrac{bh^3}{12}$ | $\dfrac{bh^2}{6}$ | Centroid at $h/2$ from base |
 | Rectangle about its base edge | $bh$ | $\dfrac{bh^3}{3}$ | | Parallel axis at base |
@@ -132,11 +162,28 @@ I-beam approximation (idealized section: two rectangular flanges of width $b$ an
 
 $$I_x = \frac{bH^3 - (b - t_w)h^3}{12} \qquad A \approx 2bt_f + t_w h$$
 
-- Example: $H = 200$ mm, $b = 100$ mm, $t_f = 10$ mm, $t_w = 6$ mm. Then $h = 180$ mm, $I_x = 2.10 \times 10^7$ mm^4 ($2098$ cm^4), $A = 3080$ mm^2.
+- Example: $H = 200$ mm, $b = 100$ mm, $t_f = 10$ mm, $t_w = 6$ mm. Then $h = 180$ mm, $I_x = 2.10 \times 10^7$ mm$^{4}$ ($2098$ cm$^{4}$), $A = 3080$ mm$^{2}$.
 - Root fillets and rolled tolerances are ignored. Use catalog values for a real rolled shape.
 
 Holds when: the shape is idealized and the flanges are rectangular.
 Breaks when: the section is thin-walled and open (use shear flow and torsion constant), or the real shape has fillets and tapers that are not small.
+
+<details><summary>Verification</summary>
+
+```verify
+H = q(200, "mm")
+b = q(100, "mm")
+tf = q(10, "mm")
+tw = q(6, "mm")
+h = H - 2 * tf
+expect(h, "180 mm")
+Ix = (b * H**3 - (b - tw) * h**3) / 12
+expect(Ix, "2.10e7 mm^4")
+expect(Ix, "2098 cm^4")
+expect(2 * b * tf + tw * h, "3080 mm^2")
+```
+
+</details>
 
 ## Dynamics
 
@@ -146,7 +193,7 @@ Constant acceleration in one direction:
 
 $$v = v_0 + at \qquad x = x_0 + v_0 t + \tfrac{1}{2}at^2 \qquad v^2 = v_0^2 + 2a(x - x_0)$$
 
-Here $x$ (m), $v$ (m/s), $a$ (m/s^2), $t$ (s).
+Here $x$ (m), $v$ (m/s), $a$ (m/s$^{2}$), $t$ (s).
 
 Holds when: acceleration is constant along the path.
 Breaks when: acceleration varies (integrate), or motion is curved (use normal and tangential components).
@@ -166,7 +213,7 @@ With non-conservative work (friction, damping):
 
 $$K_1 + U_1 + W_{\text{nc}} = K_2 + U_2$$
 
-- Gravity near a surface: $U = mgh$, with $g$ the local gravitational acceleration. Earth: $g = 9.81$ m/s^2 (typical).
+- Gravity near a surface: $U = mgh$, with $g$ the local gravitational acceleration. Earth: $g = 9.81$ m/s$^{2}$ (typical).
 - Spring: $U = \tfrac{1}{2}kx^2$.
 
 Holds when: forces are known and the work of each force is computable.
@@ -185,7 +232,7 @@ Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $
 
 ### Rotation
 
-- Angular position $\theta$ (rad), velocity $\omega$ (rad/s), acceleration $\alpha$ (rad/s^2).
+- Angular position $\theta$ (rad), velocity $\omega$ (rad/s), acceleration $\alpha$ (rad/s$^{2}$).
 - Rolling without slip on a surface: $v_G = \omega r$, $a_G = \alpha r$.
 - Rotational kinetic energy about the centre: $K_{\text{rot}} = \tfrac{1}{2}I_G \omega^2$.
 - Total planar kinetic energy: $K = \tfrac{1}{2}m v_G^2 + \tfrac{1}{2}I_G \omega^2$.
@@ -194,11 +241,29 @@ Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $
 Holds when: planar motion, rigid body, rolling without slip where stated.
 Breaks when: 3D rotation (inertia becomes a tensor and $\omega$ and angular momentum may not align), or slipping (friction work changes the rolling relation).
 
-Worked result. A 10 kg solid disk of radius 0.3 m, pulled with a horizontal 50 N force at its centre and rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ m/s^2. It needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor with $N = 98.1$ N.
+Worked result. A 10 kg solid disk of radius 0.3 m, pulled with a horizontal 50 N force at its centre and rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ m/s$^{2}$. It needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor on Earth with $N = 98.1$ N.
+
+<details><summary>Verification</summary>
+
+```verify
+m = q(10, "kg")
+r = q(0.3, "m")
+F = q(50, "N")
+I = m * r**2 / 2
+a = F / (m + I / r**2)
+expect(a, "3.33 m/s^2")
+f = F - m * a
+expect(f, "16.7 N")
+N = m * q(9.81, "m/s^2", of="g_standard")
+expect(N, "98.1 N")
+expect(f / N, "0.17")
+```
+
+</details>
 
 ### Mass moments of inertia (typical formulas, body mass $m$)
 
-| Body | Axis | $I$ (kg m^2) |
+| Body | Axis | $I$ (kg m$^{2}$) |
 |---|---|---|
 | Thin rod, length $L$ | Through centre, perpendicular to rod | $\dfrac{mL^2}{12}$ |
 | Thin rod, length $L$ | Through one end, perpendicular to rod | $\dfrac{mL^2}{3}$ |
@@ -232,6 +297,14 @@ Typical elastic properties (metals, room temperature; standard textbook values):
 - Shear modulus: $G = \dfrac{E}{2(1 + \nu)}$. Steel $G \approx 77$ GPa.
 - Hooke's law (linear elastic): $\sigma = E\varepsilon$, $\tau = G\gamma$.
 
+<details><summary>Verification</summary>
+
+```verify
+expect(q(200, "GPa") / (2 * (1 + q(0.30, ""))), "77 GPa")
+```
+
+</details>
+
 Holds when: linear elastic (stress below yield; the 0.2 percent offset yield is the stress that leaves 0.2 percent permanent strain after unloading; total strain at that stress also includes the elastic part $\sigma_y/E$), small strain, uniform material.
 Breaks when: stress exceeds yield, the material is anisotropic (composites, wood, rolled sheets), the part is above its creep temperature, or the strain is large.
 
@@ -255,6 +328,21 @@ $$\tau = \frac{Tr}{J} \qquad \tau_{\max} = \frac{Tc}{J} \qquad \phi = \frac{TL}{
 Holds when: circular cross section, linear elastic, torque applied at ends.
 Breaks when: non-circular sections (warping, use torsion constant $J_t$ and different formulas), thin-walled open sections, or yielding.
 
+<details><summary>Verification</summary>
+
+```verify
+D = q(50, "mm")
+di = q(40, "mm")
+T = q(1.2, "kN m")
+L = q(1.5, "m")
+G = q(80, "GPa")
+J = pi * (D**4 - di**4) / 32
+expect(T * (D / 2) / J, "82.8 MPa")
+expect(T * L / (G * J), "3.56 deg")
+```
+
+</details>
+
 ### Bending and transverse shear
 
 Flexure (normal stress):
@@ -267,7 +355,7 @@ Transverse shear stress (beams):
 
 $$\tau = \frac{VQ}{Ib}$$
 
-- $V$ shear force (N), $Q = \int y\, dA$ first moment of area above the cut (m^3), $b$ width at the cut (m).
+- $V$ shear force (N), $Q = \int y\, dA$ first moment of area above the cut (m$^{3}$), $b$ width at the cut (m).
 - Rectangle: $\tau_{\max} = \dfrac{3V}{2A}$ at the neutral axis.
 - Circle: $\tau_{\max} = \dfrac{4V}{3A}$.
 
@@ -292,6 +380,19 @@ $$\sigma = \frac{pr}{2t}$$
 Holds when: $t/r \le 0.1$, internal pressure only, no end-cap or nozzle effects.
 Breaks when: thick walls (use Lame equations), local stresses at nozzles, supports, and head-to-shell joints, and external pressure (buckling governs).
 
+<details><summary>Verification</summary>
+
+```verify
+p = q(2, "MPa")
+r = q(500, "mm")
+t = q(10, "mm")
+expect(p * r / t, "100 MPa")
+expect(p * r / (2 * t), "50 MPa")
+check(t / r <= 0.1, "thin-wall rule holds")
+```
+
+</details>
+
 ### Mohr's circle and principal stresses
 
 Plane stress with normal stresses $\sigma_x$, $\sigma_y$ and shear $\tau_{xy}$:
@@ -310,6 +411,26 @@ $$\tan 2\theta_p = \frac{2\tau_{xy}}{\sigma_x - \sigma_y}$$
 Holds when: plane stress (one principal stress is zero or negligible).
 Breaks when: 3D stress (use all three principal stresses), or when the Mohr circle is drawn with the wrong $\tau$ sign convention.
 
+<details><summary>Verification</summary>
+
+```verify
+sx = q(80, "MPa")
+sy = q(20, "MPa")
+txy = q(30, "MPa")
+avg = (sx + sy) / 2
+R = sqrt(((sx - sy) / 2)**2 + txy**2)
+expect(avg, "50 MPa")
+expect(R, "42.43 MPa")
+expect(avg + R, "92.43 MPa")
+expect(avg - R, "7.57 MPa")
+th = atan(2 * txy / (sx - sy)) / 2
+expect(th, "22.5 deg")
+s_th = avg + (sx - sy) / 2 * cos(2 * th) + txy * sin(2 * th)
+expect(s_th, "92.43 MPa")
+```
+
+</details>
+
 ### Combined loading and failure criteria
 
 - Superpose normal stresses from axial, bending, and pressure at each point: $\sigma = \dfrac{P}{A} \pm \dfrac{Mc}{I}$.
@@ -324,9 +445,25 @@ $$\sigma_{vm} = \sqrt{\sigma_x^2 - \sigma_x\sigma_y + \sigma_y^2 + 3\tau_{xy}^2}
 Holds when: ductile material, static load, yield is the failure mode.
 Breaks when: brittle materials (use maximum normal stress or Mohr-Coulomb), fatigue (use a fatigue criterion such as Goodman or Soderberg), or buckling and fracture-mechanics failures.
 
+<details><summary>Verification</summary>
+
+```verify
+sx = q(80, "MPa")
+sy = q(20, "MPa")
+txy = q(30, "MPa")
+vm = sqrt(sx**2 - sx * sy + sy**2 + 3 * txy**2)
+expect(vm, "88.9 MPa")
+R = sqrt(((sx - sy) / 2)**2 + txy**2)
+s1 = (sx + sy) / 2 + R
+tresca = s1 - q(0, "MPa")
+check(tresca > vm, "Tresca equivalent stress is the larger, so the more conservative")
+```
+
+</details>
+
 ## Beams
 
-Deflection and moment formulas for prismatic beams, linear elastic, small slope. $E$ in Pa, $I$ in m^4, $L$ in m.
+Deflection and moment formulas for prismatic beams, linear elastic, small slope. $E$ in Pa, $I$ in m$^{4}$, $L$ in m.
 
 | Case | Max moment | Location | Max deflection | Location |
 |---|---|---|---|---|
@@ -343,13 +480,29 @@ Deflection and moment formulas for prismatic beams, linear elastic, small slope.
 Holds when: linear elastic, small deflections, slender beams, and the support conditions match the table.
 Breaks when: the beam is short (add shear deflection), the support is not ideal (a real pin or fixed support may partly rotate), or the deflection is large (geometric nonlinearity).
 
+<details><summary>Verification</summary>
+
+```verify
+L = q(4, "m")
+w = q(10, "kN/m")
+b = q(100, "mm")
+h = q(200, "mm")
+E = q(200, "GPa")
+M = w * L**2 / 8
+expect(M, "20 kN m")
+expect(M / (b * h**2 / 6), "30 MPa")
+expect(5 * w * L**4 / (384 * E * (b * h**3 / 12)), "2.50 mm")
+```
+
+</details>
+
 ## Column buckling
 
 Euler critical load for a straight, slender, elastic column with effective length $KL$:
 
 $$P_{cr} = \frac{\pi^2 EI}{(KL)^2} \qquad \sigma_{cr} = \frac{\pi^2 E}{(KL/r)^2} \qquad r = \sqrt{\frac{I}{A}}$$
 
-Here $P_{cr}$ is in N, $E$ in Pa, $I$ the smallest second moment of area in m^4, $L$ in m, $r$ the radius of gyration in m.
+Here $P_{cr}$ is in N, $E$ in Pa, $I$ the smallest second moment of area in m$^{4}$, $L$ in m, $r$ the radius of gyration in m.
 
 | End condition | $K$ (ideal) | Shape of buckled column |
 |---|---|---|
@@ -367,6 +520,38 @@ $$\sigma_{cr} = \sigma_y - \frac{\sigma_y^2}{4\pi^2 E}\left(\frac{KL}{r}\right)^
 
 Holds when: the column is straight, centrally loaded, slender ($KL/r$ above the tangency value), elastic, with ideal end conditions.
 Breaks when: stocky columns (use inelastic or empirical column curves), eccentric loading (secant formula), imperfections, or real end conditions that are partly restrained (use a $K$ between the ideal values, and be conservative).
+
+<details><summary>Verification</summary>
+
+```verify
+x = q(4.4934, "")
+check(abs(tan(x) - x) < 0.001, "4.4934 is the first root of tan x = x, the fixed-pinned eigenvalue")
+expect(pi / x, "0.699")
+d = q(25, "mm")
+L = q(1.8, "m")
+E = q(200, "GPa")
+sy = q(250, "MPa")
+I = pi * d**4 / 64
+A = pi * d**2 / 4
+P = pi**2 * E * I / L**2
+expect(P, "11.7 kN")
+expect(P / q(0.7, "")**2, "23.8 kN")
+expect(P / q(0.5, "")**2, "46.7 kN")
+expect(P / q(2.0, "")**2, "2.92 kN")
+expect(P / A, "23.8 MPa")
+expect(pi * sqrt(E / sy), "89")
+s_t = sqrt(2 * pi**2 * E / sy)
+expect(s_t, "126")
+s = q(89, "")
+expect(pi**2 * E / s**2, "249 MPa")
+expect(sy - sy**2 / (4 * pi**2 * E) * s**2, "187 MPa")
+expect(q(4.71, "") * sqrt(E / sy), "133")
+slender = L / sqrt(I / A)
+expect(slender, "288")
+check(slender > s_t, "the example rod is Euler-governed")
+```
+
+</details>
 
 ## Vibrations
 
@@ -406,6 +591,25 @@ $$TR = \sqrt{\frac{1 + (2\zeta r)^2}{(1 - r^2)^2 + (2\zeta r)^2}}$$
 Holds when: linear spring and viscous damper, single degree of freedom, small motion, steady state (transients gone).
 Breaks when: nonlinear stiffness or damping (amplitude-dependent frequency), dry (Coulomb) friction, multiple modes near each other, or time-varying mass or stiffness.
 
+<details><summary>Verification</summary>
+
+```verify
+m = q(2, "kg")
+k = q(800, "N/m")
+c = q(8, "N s/m")
+wn = sqrt(k / m)
+z = c / (2 * sqrt(k * m))
+expect(wn, "20 rad/s")
+expect(z, "0.10")
+expect(wn * sqrt(1 - z**2), "19.9 rad/s")
+expect(2 * pi * z / sqrt(1 - z**2), "0.6315")
+r = q(0.5, "")
+expect(sqrt((1 + (2 * z * 2)**2) / ((1 - 2**2)**2 + (2 * z * 2)**2)), "0.356")
+expect(sqrt((1 + (2 * z * r)**2) / ((1 - r**2)**2 + (2 * z * r)**2)), "1.328")
+```
+
+</details>
+
 ## Second-order step metrics
 
 Standard second-order system with unity DC gain:
@@ -438,6 +642,51 @@ Overshoot for common damping ratios (computed):
 Holds when: the closed loop is well approximated by a second-order system (dominant poles, no zeros nearby, linear).
 Breaks when: a zero is near the poles (it adds overshoot), there is dead time or a third pole nearby, or the system is nonlinear (saturation, friction). The overshoot formula is only for a step input.
 
+<details><summary>Verification</summary>
+
+The simulated times are checked by evaluating the exact underdamped step response $y(t) = 1 - e^{-\zeta\omega_n t}\left(\cos\omega_d t + \frac{\zeta}{\sqrt{1-\zeta^2}}\sin\omega_d t\right)$ at each stated time.
+
+```verify
+given("100", "90")
+z1 = q(0.1, "")
+expect(exp(-z1 * pi / sqrt(1 - z1**2)), "72.9 %")
+expect(pi / sqrt(1 - z1**2), "3.16")
+expect((pi - acos(z1)) / sqrt(1 - z1**2), "1.68")
+z3 = q(0.3, "")
+expect(exp(-z3 * pi / sqrt(1 - z3**2)), "37.2 %")
+expect(pi / sqrt(1 - z3**2), "3.29")
+expect((pi - acos(z3)) / sqrt(1 - z3**2), "1.97")
+z5 = q(0.5, "")
+expect(exp(-z5 * pi / sqrt(1 - z5**2)), "16.3 %")
+expect(pi / sqrt(1 - z5**2), "3.63")
+expect((pi - acos(z5)) / sqrt(1 - z5**2), "2.42")
+z7 = q(0.707, "")
+expect(exp(-z7 * pi / sqrt(1 - z7**2)), "4.3 %")
+expect(pi / sqrt(1 - z7**2), "4.44")
+expect((pi - acos(z7)) / sqrt(1 - z7**2), "3.33")
+wn = q(10, "rad/s")
+wd = wn * sqrt(1 - z3**2)
+expect(pi / wd, "0.329 s")
+expect((pi - acos(z3)) / wd, "0.197 s")
+t10 = q(0.0472644, "s")
+t90 = q(0.1793984, "s")
+y10 = 1 - exp(-z3 * wn * t10) * (cos(wd * t10) + z3 / sqrt(1 - z3**2) * sin(wd * t10))
+y90 = 1 - exp(-z3 * wn * t90) * (cos(wd * t90) + z3 / sqrt(1 - z3**2) * sin(wd * t90))
+check(abs(y10 - 0.1) < 0.00001 and abs(y90 - 0.9) < 0.00001, "t10 and t90 are the 10 and 90 percent crossings")
+expect(t90 - t10, "0.132 s")
+expect(4 / (z3 * wn), "1.33 s")
+expect(3 / (z3 * wn), "1.0 s")
+ts2 = q(1.123, "s")
+ts5 = q(1.0137, "s")
+y2 = 1 - exp(-z3 * wn * ts2) * (cos(wd * ts2) + z3 / sqrt(1 - z3**2) * sin(wd * ts2))
+y5 = 1 - exp(-z3 * wn * ts5) * (cos(wd * ts5) + z3 / sqrt(1 - z3**2) * sin(wd * ts5))
+check(abs(y2 - 1.02) < 0.0001 and abs(y5 - 1.05) < 0.0001, "the settling times sit on the 2 and 5 percent band edges")
+expect(ts2, "1.12 s")
+expect(ts5, "1.01 s")
+```
+
+</details>
+
 ## PID effects
 
 Ideal PID: $u(t) = K_p e + K_i \int e\,dt + K_d\,\dfrac{de}{dt}$, error $e = r - y$.
@@ -454,6 +703,19 @@ Holds when: the plant is linear and roughly second-order or first-order, the mea
 Breaks when: derivative acts on noisy measurement (filter it), integral windup occurs at actuator saturation (clamp or back-calculate), or the loop has significant dead time (the PID gains that work on paper will oscillate in the real plant).
 
 Example (first-order plant, $K = 2$, $\tau = 0.5$ s, P-only, unity feedback, $K_p = 4$): closed-loop gain $K_{cl} = 0.889$, steady error $e_{ss} = 1/(1 + K_pK) = 0.111$, closed-loop time constant $\tau/(1 + K_pK) = 0.0556$ s. A P-only loop leaves steady error for a step; adding $K_i$ removes it.
+
+<details><summary>Verification</summary>
+
+```verify
+K = q(2, "")
+tau = q(0.5, "s")
+Kp = q(4, "")
+expect(Kp * K / (1 + Kp * K), "0.889")
+expect(1 / (1 + Kp * K), "0.111")
+expect(tau / (1 + Kp * K), "0.0556 s")
+```
+
+</details>
 
 ## Checklists
 
@@ -490,16 +752,34 @@ Vibration and control:
 
 ## Sanity checks
 
-- Earth gravity is about 9.81 m/s^2 (typical, varies from about 9.78 to 9.83 with latitude and altitude). Use $g$ local for other bodies.
-- $1$ MPa $= 10^6$ N/m^2. In US units, 1 MPa is about 145 psi.
+- Earth gravity is about 9.81 m/s$^{2}$ (typical, varies from about 9.78 to 9.83 with latitude and altitude). Use $g$ local for other bodies.
+- $1$ MPa $= 10^6$ N/m$^{2}$. In US units, 1 MPa is about 145 psi.
 - Steel at 200 MPa carries strain $200 \times 10^6 / 200 \times 10^9 = 1 \times 10^{-3}$. That is 1 mm per metre.
 - Kinetic energy of 1 kg at 1 m/s is 0.5 J. A 1 kg object at 10 m/s carries 50 J.
-- Stress on a 1 cm^2 area of 1 MPa corresponds to 100 N of force.
+- Stress on a 1 cm$^{2}$ area of 1 MPa corresponds to 100 N of force.
 - Shear yield of a ductile metal is about 0.58 times its tensile yield (von Mises, $\sigma_y/\sqrt{3}$). Tresca gives 0.5.
 - For mild steel, a column with $KL/r$ above about 126 is Euler-governed. Below that, use the Johnson parabola, because Euler overpredicts the load.
 - Damping ratio of most structures is roughly 0.01 to 0.05 (typical), so resonance peaks are large unless damping is added.
 - An overshoot above 50 percent corresponds to $\zeta$ below about 0.2 for a second-order loop.
 - A deflection that scales as $L^4$ doubles by a factor 16 if the span doubles. Check whether your answer does.
+
+<details><summary>Verification</summary>
+
+```verify
+expect(u("MPa"), "145 psi")
+expect(q(200, "MPa") / q(200, "GPa"), "1e-3")
+expect(q(200, "MPa") / q(200, "GPa") * q(1, "m"), "1 mm")
+expect(0.5 * q(1, "kg") * q(1, "m/s")**2, "0.5 J")
+expect(0.5 * q(1, "kg") * q(10, "m/s")**2, "50 J")
+expect(u("MPa") * u("cm^2"), "100 N")
+expect(1 / sqrt(3), "0.58")
+expect(sqrt(2 * pi**2 * q(200, "GPa") / q(250, "MPa")), "126")
+expect(q(2, "")**4, "16")
+zeta = -log(0.5) / sqrt(pi**2 + log(0.5)**2)
+expect(zeta, "0.2")
+```
+
+</details>
 
 ## Further reference
 

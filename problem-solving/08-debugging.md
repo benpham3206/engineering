@@ -65,7 +65,7 @@ factor of 2 is often a missing or extra factor.
 
 ## Worked example
 
-**Problem.** A student computes the heat loss through a window and reports $Q = 600\ \text{W}$.
+**Problem.** A student computes the heat conducted through a window pane, with $\Delta T$ the temperature difference across the glass, and reports $Q = 600\ \text{W}$.
 A reference calculation for the same pane gives about 6000 W. Find the cause and fix it.
 
 **Given:** $A = 1.5\ \text{m}^2$, $\Delta T = 20\ \text{K}$, $k = 0.8\ \text{W/(m}\cdot\text{K)}$,

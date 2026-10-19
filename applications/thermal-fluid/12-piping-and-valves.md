@@ -67,7 +67,7 @@ $$\Delta p = \rho \, a \, \Delta v \qquad \text{or, as head,} \qquad \Delta h = 
 
 Here $\Delta p$ is the surge pressure rise in Pa, $\Delta v$ is the change in velocity in m/s, $\Delta h$ is the surge head in m, and $g = 9.81$ m/s$^2$ (Earth surface). The equation assumes the closure is rapid, meaning the closing time $t_c$ is no longer than the round trip of the wave:
 
-$$t_c \le t_{crit} = \frac{2L}{a}$$
+$$t_c \le t_{\mathrm{crit}} = \frac{2L}{a}$$
 
 Here $L$ is the pipe length from the valve to the source in m. Friction and reflections are neglected, so the result is a first estimate for the valve end.
 
@@ -88,9 +88,9 @@ Here $v$ is the initial velocity in m/s, and $t_c$ is the closing time in s.
 **Solution:**
 
 1. $D = \sqrt{4 \times 0.01571 / (\pi \times 2.0)} = 0.100$ m.
-2. $Re = v D / \nu = 2.0 \times 0.100 / (1.0 \times 10^{-6}) = 2.0 \times 10^{5}$.
+2. $\mathrm{Re} = v D / \nu = 2.0 \times 0.100 / (1.0 \times 10^{-6}) = 2.0 \times 10^{5}$.
 
-**Answer:** $D = 0.100$ m (a 100 mm pipe). The flow is turbulent, since $Re$ is far above 4000.
+**Answer:** $D = 0.100$ m (a 100 mm pipe). The flow is turbulent, since $\mathrm{Re}$ is far above 4000.
 
 **Part B, water hammer.**
 
@@ -106,7 +106,7 @@ Here $v$ is the initial velocity in m/s, and $t_c$ is the closing time in s.
 4. Surge head: $\Delta h = 1343 \times 2.0 / 9.81 = 274$ m.
 5. Peak pressure: $0.5 + 2.69 = 3.19$ MPa, which is below the 4.0 MPa rating.
 
-**Answer:** The wave speed is 1343 m/s. The surge is 2.69 MPa, or 274 m of head. The peak pressure is 3.19 MPa, so the pipe holds with a margin of 4.0 / 3.19 = 1.25.
+**Answer:** The wave speed is 1343 m/s. The surge is 2.69 MPa, or 274 m of head. The peak pressure is 3.19 MPa, so the pipe holds with a margin of $4.0 / 3.19 = 1.25$.
 
 **Sanity check:** One megapascal of water pressure is about 102 m of head, so 2.69 MPa is about 274 m. That matches step 4. If the valve closes in 3.0 s instead, the Michaud estimate gives $2 \times 1000 \times 1000 \times 2.0 / 3.0 = 1.33$ MPa, about half the rapid-closure surge. Closing time controls the surge.
 
@@ -134,7 +134,7 @@ Denis Papin fitted a safety valve to a steam digester in the late 1600s, which m
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. Water flows at 1.5 m/s in a pipe of diameter 0.050 m. Find the volume flow $Q$ in m$^3$/s.
 2. A fully open ball valve has $K = 0.1$. Water flows through it at $v = 2.0$ m/s. Find the pressure loss in pascals.

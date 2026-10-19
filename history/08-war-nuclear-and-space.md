@@ -17,7 +17,7 @@ Good radar needs short wavelengths. Short wavelengths allow small antennas that 
 
 ### Jet engines
 
-A jet engine is a gas turbine that makes thrust from its exhaust. It compresses air, mixes in fuel and burns it, and expands the hot gas through a turbine. The turbine drives the compressor, and the fast exhaust leaves the nozzle as thrust. Frank Whittle patented a jet engine design in Britain in 1930, and his first engine ran in April 1937. Hans von Ohain, working for Heinkel in Germany, flew the He 178 on 27 August 1939, which was the first jet-powered flight. A Whittle engine powered the Gloster E.28/39 in 1941. The Messerschmitt Me 262 entered service with the German air force in 1944.
+A jet engine is a gas turbine that makes thrust from its exhaust. It compresses air, mixes in fuel and burns it, and expands the hot gas through a turbine. The turbine drives the compressor, and the fast exhaust leaves the nozzle as thrust. Frank Whittle patented a jet engine design in Britain in 1930, and his first engine ran in April 1937. Hans von Ohain designed the engine for the Heinkel He 178, and test pilot Erich Warsitz flew it on 27 August 1939, the first jet-powered flight. A Whittle engine powered the Gloster E.28/39 in 1941. The Messerschmitt Me 262 entered service with the German air force in 1944.
 
 ### Nuclear power
 
@@ -42,7 +42,7 @@ Konrad Zuse completed the Z3 in Berlin in 1941. It was a programmable computer b
 | 1903 | Rocket equation | Konstantin Tsiolkovsky, Russia | Gave the basic physics of how much speed a rocket can gain from its propellant. |
 | 1926 | First liquid-fuel rocket | Robert Goddard, Auburn, Massachusetts | Showed that liquid propellants could drive a rocket. |
 | 1935 | Radar detection of an aircraft | Robert Watson-Watt and Arnold Wilkins, Daventry, England | Showed that radio echoes could find aircraft at long range. |
-| 1939 | First jet-powered flight, He 178 | Hans von Ohain, Heinkel, Germany | Proved that a jet engine could fly an aircraft. |
+| 1939 | First jet-powered flight, He 178 | Hans von Ohain (engine), Erich Warsitz (pilot), Heinkel, Germany | Proved that a jet engine could fly an aircraft. |
 | 1940 | Cavity magnetron | John Randall and Harry Boot, Birmingham, England | Made high-power, short-wavelength radar small enough for aircraft and ships. |
 | 1941 | Z3 programmable computer | Konrad Zuse, Berlin | An early working programmable digital computer. |
 | 1942 | Chicago Pile-1 | Enrico Fermi and team, University of Chicago | First self-sustaining nuclear chain reaction. |
@@ -58,7 +58,7 @@ The rocket equation gives the ideal speed change a rocket can achieve:
 
 $$\Delta v = v_e \ln\frac{m_0}{m_f}$$
 
-Here $\Delta v$ is the speed change in metres per second (m/s), $v_e$ is the effective exhaust speed in m/s, $m_0$ is the starting mass in kilograms (kg), and $m_f$ is the mass after the propellant burns, in kg. The exhaust speed is $v_e = I_{sp} g_0$, where $I_{sp}$ is specific impulse in seconds (s) and $g_0 = 9.81\ \text{m/s}^2$ is standard gravity (Earth's surface value). The equation ignores gravity and drag, so it gives an upper limit.
+Here $\Delta v$ is the speed change in metres per second (m/s), $v_e$ is the effective exhaust speed in m/s, $m_0$ is the starting mass in kilograms (kg), and $m_f$ is the mass after the propellant burns, in kg. The exhaust speed is $v_e = I_{\text{sp}} g_0$, where $I_{\text{sp}}$ is specific impulse in seconds (s) and $g_0 = 9.81\ \text{m/s}^2$ is standard gravity (Earth's surface value). The equation ignores gravity and drag, so it gives an upper limit.
 
 The radar range equation gives the maximum range of a radar that detects a target at a given power:
 
@@ -92,10 +92,10 @@ Computing grew from wartime problems. Ballistic tables, code breaking, and nucle
 
 ## Practice
 
-1. A rocket stage has $I_{sp} = 300$ s and a mass ratio of 4. Find its ideal speed change in m/s. Use $g_0 = 9.81\ \text{m/s}^2$ (standard gravity).
+1. A rocket stage has $I_{\text{sp}} = 300$ s and a mass ratio of 4. Find its ideal speed change in m/s. Use $g_0 = 9.81\ \text{m/s}^2$ (standard gravity).
 2. A radar increases its transmitted power by a factor of 16, and nothing else changes. By what factor does its maximum range change?
 3. Short answer: why did the cavity magnetron matter for radar?
-4. Using $\Delta v = 9.4$ km/s and $I_{sp} = 263$ s, find the mass ratio that a single-stage rocket to orbit would need. Use $g_0 = 9.81\ \text{m/s}^2$ (standard gravity).
+4. Using $\Delta v = 9.4$ km/s and $I_{\text{sp}} = 263$ s, find the mass ratio that a single-stage rocket to orbit would need. Use $g_0 = 9.81\ \text{m/s}^2$ (standard gravity).
 5. Short answer: name two design tasks every nuclear reactor must handle to stay safe.
 
 <details><summary>Answers</summary>

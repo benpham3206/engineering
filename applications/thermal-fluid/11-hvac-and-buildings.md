@@ -55,9 +55,9 @@ Here $\rho$ is air density in kg/m$^3$ (about 1.2 kg/m$^3$ near 20 C at sea leve
 
 Latent heat to evaporate or condense water:
 
-$$\dot{Q}_{\text{lat}} = \dot{m}_w \, h_{fg}$$
+$$\dot{Q}_{\text{lat}} = \dot{m}_w \, h_{\mathrm{fg}}$$
 
-Here $\dot{m}_w$ is the mass flow of water vapor in kg/s, and $h_{fg}$ is the latent heat of vaporization of water in J/kg (about $2.45 \times 10^6$ J/kg near 20 C, typical).
+Here $\dot{m}_w$ is the mass flow of water vapor in kg/s, and $h_{\mathrm{fg}}$ is the latent heat of vaporization of water in J/kg (about $2.45 \times 10^6$ J/kg near 20 C, typical).
 
 Humidity ratio, the mass of water per mass of dry air:
 
@@ -67,11 +67,11 @@ Here $W$ is in kg/kg, $p_v$ is the partial pressure of the water vapor in Pa, an
 
 Relative humidity:
 
-$$\phi = \frac{p_v}{p_{sat}(T)}$$
+$$\phi = \frac{p_v}{p_{\mathrm{sat}}(T)}$$
 
-Here $\phi$ is a fraction from 0 to 1, and $p_{sat}(T)$ is the saturation pressure at temperature $T$. The Tetens form approximates it between about 0 C and 50 C:
+Here $\phi$ is a fraction from 0 to 1, and $p_{\mathrm{sat}}(T)$ is the saturation pressure at temperature $T$. The Tetens form approximates it between about 0 C and 50 C:
 
-$$p_{sat}(T) \approx 610.78 \exp\!\left(\frac{17.27\,T}{T + 237.3}\right) \ \text{Pa}, \qquad T \text{ in C}$$
+$$p_{\mathrm{sat}}(T) \approx 610.78 \exp\!\left(\frac{17.27\,T}{T + 237.3}\right) \ \text{Pa}, \qquad T \text{ in C}$$
 
 Air velocity in a duct:
 
@@ -126,7 +126,7 @@ Roman baths used hypocausts, which warmed floors and walls with hot air from a f
 1. A wall of area 10 m$^2$ has $U = 0.50$ W/(m$^2$ K). Indoor air is 20 C, and outdoor air is 0 C. Find the heat flow through the wall in watts.
 2. A rectangular duct is 0.30 m by 0.20 m, and it carries 0.20 m$^3$/s of air. Find the air velocity in m/s.
 3. Outdoor air at 0 C is heated to 10 C at a flow of 0.050 m$^3$/s. Use $\rho = 1.2$ kg/m$^3$ and $c_p = 1005$ J/(kg K). Find the heating power in watts.
-4. Air at 20 C and 50 percent relative humidity is at sea-level pressure, 101 325 Pa. Use $p_{sat}(20\ \text{C}) \approx 2338$ Pa. Find the humidity ratio in kg/kg.
+4. Air at 20 C and 50 percent relative humidity is at sea-level pressure, 101 325 Pa. Use $p_{\mathrm{sat}}(20\ \text{C}) \approx 2338$ Pa. Find the humidity ratio in kg/kg.
 
 <details><summary>Answers</summary>
 

@@ -49,7 +49,7 @@ $$S \approx L + \frac{8 d^2}{3 L}$$
 
 The catenary applies when the cable's own weight is the load. It assumes level supports, a cable that does not stretch, and a uniform weight per metre of cable with no other load. Here $w$ is the weight per metre of cable in N/m. The sag, length, and support tension are:
 
-$$d = \frac{T_H}{w}\left(\cosh\frac{wL}{2T_H} - 1\right), \qquad S = \frac{2T_H}{w}\sinh\frac{wL}{2T_H}, \qquad T_{max} = T_H \cosh\frac{wL}{2T_H}$$
+$$d = \frac{T_H}{w}\left(\cosh\frac{wL}{2T_H} - 1\right), \qquad S = \frac{2T_H}{w}\sinh\frac{wL}{2T_H}, \qquad T_{\mathrm{max}} = T_H \cosh\frac{wL}{2T_H}$$
 
 Here $\cosh$ and $\sinh$ are the hyperbolic cosine and sine, which are dimensionless. The shape formula for the catenary is $y(x) = \dfrac{T_H}{w}\left(\cosh\dfrac{wx}{T_H} - 1\right)$, measured from the lowest point.
 
@@ -57,7 +57,7 @@ Wind drag on a tower or cable assumes steady wind, uniform flow over the member,
 
 $$F = \tfrac{1}{2}\rho_a v^2 C_d A$$
 
-Here $F$ is in newtons, $\rho_a$ is the air density in kilograms per cubic metre (about $1.2\ \text{kg/m}^3$ at sea level, typical), $v$ is wind speed in metres per second, $C_d$ is the dimensionless drag coefficient, and $A$ is the projected area in square metres.
+Here $F$ is in newtons, $\rho_a$ is the air density in kilograms per cubic metre (about $1.2\ \text{kg}/\text{m}^3$ at sea level, typical), $v$ is wind speed in metres per second, $C_d$ is the dimensionless drag coefficient, and $A$ is the projected area in square metres.
 
 ## Worked example
 
@@ -120,7 +120,7 @@ Galileo studied hanging chains in his 1638 book *Two New Sciences* and wrongly c
 
 1. $d = 50 \times 200^2 / (8 \times 20\,000) = 12.5\ \text{m}$. The length is $S \approx 200 + 8(12.5)^2/(3 \times 200) = 202.08\ \text{m}$.
 2. $F = \tfrac{1}{2}(1.2)(25)^2(1.2)(30) = 1.35 \times 10^4\ \text{N}$, which is $13.5\ \text{kN}$.
-3. $T_{max} = 10\,000\cosh(0.1) = 1.005 \times 10^4\ \text{N}$, which is $10.05\ \text{kN}$.
+3. $T_{\mathrm{max}} = 10\,000\cosh(0.1) = 1.005 \times 10^4\ \text{N}$, which is $10.05\ \text{kN}$.
 4. Horizontal component: $10 \cos 45^\circ = 7.07\ \text{kN}$. Vertical component: $10 \sin 45^\circ = 7.07\ \text{kN}$.
 
 </details>

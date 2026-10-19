@@ -22,11 +22,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Failure cases and decision frameworks](reference.md): famous failures, the patterns they share, risk matrices, and when to stop work
 
-## Related courses
-
-- AP World History
-- ENGR 10 - Intro to Engineering
-- ENGR 195A - Global and Social Issues in Engineering I
-- ENGR 195B - Global and Social Issues in Engineering II
-
 See also: [problem-solving](../problem-solving)

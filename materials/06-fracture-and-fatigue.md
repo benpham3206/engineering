@@ -13,19 +13,19 @@ Most structures do not fail because the first load is too big. They fail because
 - A **stress concentration** is a spot where the stress is much higher than the average, such as near a sharp corner or hole. Flaws and sharp corners act as stress concentrators.
 - **Brittle fracture** happens with little plastic deformation. The crack runs fast, and the part breaks suddenly. Ceramics, glass, and some cold steels fail this way.
 - **Ductile fracture** happens after significant yielding. The part necks, tears, and absorbs energy. Most structural metals at room temperature fail this way.
-- **Fracture toughness** ($K_{IC}$) is the material's resistance to crack growth. A high value means the material tolerates bigger flaws.
+- **Fracture toughness** ($K_{\mathrm{IC}}$) is the material's resistance to crack growth. A high value means the material tolerates bigger flaws.
 
 ### Fracture mechanics in plain words
 
 - The **stress intensity factor** $K$ measures how strongly the stress near a crack tip is amplified. It depends on the applied stress, the crack size, and the part geometry.
-- A crack grows when $K$ reaches $K_{IC}$. So, for a given material and stress, there is a **critical crack size**. Cracks smaller than this are safe, and cracks larger than this grow.
+- A crack grows when $K$ reaches $K_{\mathrm{IC}}$. So, for a given material and stress, there is a **critical crack size**. Cracks smaller than this are safe, and cracks larger than this grow.
 - This is why inspection matters. A part can be safe with small flaws and fail with the same stress on a large one.
 
 ### Fatigue
 
 - **Fatigue** is failure under repeated or fluctuating stress, often at stress levels well below the yield strength.
 - Fatigue has three stages: crack **initiation** (often at a surface scratch or pore), slow crack **propagation** over many cycles, and sudden **final fracture** when the remaining section is too small.
-- Fatigue life is often shown as an S-N curve, a plot of stress amplitude against the number of cycles to failure. Many steels and titanium alloys have an endurance limit, a stress below which they last indefinitely. Aluminum alloys usually do not have a clear endurance limit.
+- Fatigue life is often shown as an $S$-$N$ curve, a plot of stress amplitude against the number of cycles to failure. Many steels and titanium alloys have an endurance limit, a stress below which they last indefinitely. Aluminum alloys usually do not have a clear endurance limit.
 - Surface finish, corrosion, residual stress, and notches all lower fatigue life a lot.
 
 ## Key equations
@@ -41,9 +41,9 @@ where:
 - $\sigma$ is the applied stress (MPa)
 - $a$ is the crack length (m)
 
-Fracture occurs when $K = K_{IC}$. Solving for the critical crack length gives
+Fracture occurs when $K = K_{\mathrm{IC}}$. Solving for the critical crack length gives
 
-$$a_c = \frac{1}{\pi}\left(\frac{K_{IC}}{Y \sigma}\right)^2$$
+$$a_c = \frac{1}{\pi}\left(\frac{K_{\mathrm{IC}}}{Y \sigma}\right)^2$$
 
 Fatigue stress range and ratio, for a cyclic load that swings between $\sigma_{\max}$ and $\sigma_{\min}$:
 
@@ -53,7 +53,7 @@ where $\sigma_a$ is the stress amplitude (MPa) and $R$ is the stress ratio (dime
 
 ## Worked example
 
-**Given:** An edge crack of length $a = 2$ mm sits in a wide steel plate under a tensile stress of $\sigma = 200$ MPa. Geometry factor $Y = 1.12$. The fracture toughness of this steel is $K_{IC} = 40$ MPa $\sqrt{\text{m}}$.
+**Given:** An edge crack of length $a = 2$ mm sits in a wide steel plate under a tensile stress of $\sigma = 200$ MPa. Geometry factor $Y = 1.12$. The fracture toughness of this steel is $K_{\mathrm{IC}} = 40$ MPa $\sqrt{\text{m}}$.
 
 **Find:** (a) the stress intensity factor $K$, and (b) whether the crack will grow.
 
@@ -74,7 +74,7 @@ where $\sigma_a$ is the stress amplitude (MPa) and $R$ is the stress ratio (dime
 ## Practice
 
 1. Find $K$ for $Y = 1.12$, $\sigma = 150$ MPa, and $a = 2$ mm. Use the worked example method.
-2. Using $K_{IC} = 40$ MPa $\sqrt{\text{m}}$, $Y = 1.12$, and $\sigma = 200$ MPa, find the critical crack length in mm.
+2. Using $K_{\mathrm{IC}} = 40$ MPa $\sqrt{\text{m}}$, $Y = 1.12$, and $\sigma = 200$ MPa, find the critical crack length in mm.
 3. A part cycles between $\sigma_{\max} = 300$ MPa and $\sigma_{\min} = 100$ MPa. Find the stress amplitude $\sigma_a$ in MPa and the ratio $R$.
 4. Why can a fatigue crack form in a part whose peak stress is below the yield strength?
 5. Name the three stages of fatigue failure in order.

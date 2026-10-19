@@ -54,7 +54,7 @@ $$\%\text{ error} = \frac{\bar{x} - x_{\text{true}}}{x_{\text{true}}} \times 100
 
 **Answer:** $\bar{x} = 25.097\ \text{mm}$, $u(\bar{x}) = 0.007\ \text{mm}$. The mean agrees with the certified 25.10 mm.
 
-**Sanity check:** The full spread of single readings is 25.13 - 25.06 = 0.07 mm, and $s = 0.022$ mm. The uncertainty of the mean (0.007 mm) is smaller than the spread of single readings, as expected when averaging ten readings.
+**Sanity check:** The full spread of single readings is $25.13 - 25.06 = 0.07$ mm, and $s = 0.022$ mm. The uncertainty of the mean (0.007 mm) is smaller than the spread of single readings, as expected when averaging ten readings.
 
 ## Practice
 

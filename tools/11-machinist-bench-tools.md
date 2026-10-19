@@ -95,8 +95,8 @@ The rule gives a usable starting size. Commercial tap drill charts publish the e
 ## Worked example
 
 **Given:**
-- An M6 x 1.0 thread (major diameter 6.0 mm, pitch 1.0 mm).
-- An M10 x 1.5 thread (major diameter 10.0 mm, pitch 1.5 mm).
+- An $\mathrm{M6} \times 1.0$ thread (major diameter 6.0 mm, pitch 1.0 mm).
+- An $\mathrm{M10} \times 1.5$ thread (major diameter 10.0 mm, pitch 1.5 mm).
 - A 1/4-20 thread (major diameter 0.25 in, 20 threads per inch).
 
 **Find:** The tap drill for each thread. Give the metric drills in mm and the 1/4-20 drill in inches.
@@ -128,20 +128,20 @@ M10x1.5 tap drill = 8.5 mm
 ```
 
 **Answer:**
-- M6 x 1.0: tap drill 5.0 mm.
-- M10 x 1.5: tap drill 8.5 mm.
+- $\mathrm{M6} \times 1.0$: tap drill 5.0 mm.
+- $\mathrm{M10} \times 1.5$: tap drill 8.5 mm.
 - 1/4-20: the rule gives 0.200 in. The common chart value is a #7 drill, 0.201 in. Use the #7 drill as a typical value. It is the drill you will find on the shop shelf.
 
 **Sanity check:** The rule removes one pitch from the diameter. Each metric thread has a pitch of 1.0 mm, so the drill is 1.0 mm smaller in diameter, which is 0.5 mm smaller in radius. That matches a thread that is a little under full depth, which is what the tap needs. The 1/4-20 value of 0.200 in is within 0.001 in of the #7 chart value, so the rule and the chart agree.
 
-A note on engagement: shops describe this rule as giving about 75 percent thread. Percent thread is measured against a full thread height of $0.6495P$, so for M6 x 1.0 it is $(6.0 - 5.0)/(2 \times 0.6495 \times 1.0) \approx 77$ percent. That is close to the strength of a full thread while making the tap far less likely to break. For a critical thread, use the chart value for the thread you are cutting.
+A note on engagement: shops describe this rule as giving about 75 percent thread. Percent thread is measured against a full thread height of $0.6495P$, so for $\mathrm{M6} \times 1.0$ it is $(6.0 - 5.0)/(2 \times 0.6495 \times 1.0) \approx 77$ percent. That is close to the strength of a full thread while making the tap far less likely to break. For a critical thread, use the chart value for the thread you are cutting.
 
 ## Practice
 
-1. Find the tap drill for an M8 x 1.25 thread, in mm.
-2. Find the tap drill for an M12 x 1.75 thread, in mm.
+1. Find the tap drill for an $\mathrm{M8} \times 1.25$ thread, in mm.
+2. Find the tap drill for an $\mathrm{M12} \times 1.75$ thread, in mm.
 3. Find the tap drill for a 3/8-16 thread, in inches, using the rule $D - 1/N$.
-4. Convert the M6 x 1.0 tap drill of 5.0 mm to inches, to four decimal places.
+4. Convert the $\mathrm{M6} \times 1.0$ tap drill of 5.0 mm to inches, to four decimal places.
 5. A hacksaw blade has 24 TPI. The work is a tube wall 0.125 in thick. How many teeth are in contact with the work, and does the blade meet the rule of at least three?
 
 <details><summary>Answers</summary>

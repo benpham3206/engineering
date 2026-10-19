@@ -8,7 +8,7 @@ Heat moves whenever there is a temperature difference. Engineers use that fact t
 
 ## Core ideas
 
-- **Heat** ($Q$, or $q$ for a rate) is energy that moves because of a temperature difference. Heat transfer rate is measured in watts (W = J/s).
+- **Heat** ($Q$, or $q$ for a rate) is energy that moves because of a temperature difference. Heat transfer rate is measured in watts ($\mathrm{W} = \mathrm{J/s}$).
 - **Heat flux** $q''$ is heat rate per unit area (W/m$^2$). It is often easier to work with than the total rate.
 - There are three modes:
   - **Conduction**: energy moves through a solid or stationary fluid by molecular motion and electron motion. Metals conduct well. Foam and air conduct poorly.
@@ -62,7 +62,7 @@ This method is quick. Use it first before attempting a full solution with differ
 
 ## Key equations
 
-Symbols: $q$ = heat rate (W), $q''$ = heat flux (W/m$^2$), $k$ = thermal conductivity (W/m K), $A$ = area (m$^2$), $L$ = thickness (m), $h$ = convection coefficient (W/m$^2$ K), $\varepsilon$ = emissivity (dimensionless), $\sigma$ = Stefan-Boltzmann constant, $5.670 \times 10^{-8}$ W/m$^2$ K$^4$, $T$ and $T_\text{sur}$ = absolute temperatures (K), $\Delta T$ = temperature difference (K), $R$ = thermal resistance (K/W).
+Symbols: $q$ $=$ heat rate (W), $q''$ $=$ heat flux (W/m$^2$), $k$ $=$ thermal conductivity (W/m K), $A$ $=$ area (m$^2$), $L$ $=$ thickness (m), $h$ $=$ convection coefficient (W/m$^2$ K), $\varepsilon$ $=$ emissivity (dimensionless), $\sigma$ $=$ Stefan-Boltzmann constant, $5.670 \times 10^{-8}$ W/m$^2$ K$^4$, $T$ and $T_\text{sur}$ $=$ absolute temperatures (K), $\Delta T$ $=$ temperature difference (K), $R$ $=$ thermal resistance (K/W).
 
 Fourier's law for conduction through a plane wall:
 

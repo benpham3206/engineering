@@ -49,19 +49,19 @@ $$
 - $T$ is thrust (N), which equals weight in hover. $\rho$ is air density (kg/m$^3$, about 1.225 at sea level on Earth). $A$ is the total rotor disk area (m$^2$). $v_h$ is the hover induced velocity (m/s). $P_{\text{ideal}}$ is the ideal induced power (W), the least power that the rotor can use for this thrust.
 - Assumptions: ideal actuator disk, uniform inflow across the disk, hover (no forward or vertical speed), steady and incompressible flow, air at rest far upstream, and no profile drag, swirl, or tip losses. Real rotors need more power than $P_{\text{ideal}}$.
 
-Actual shaft power with a figure of merit $FM$, a measure of how close the rotor comes to the ideal.
+Actual shaft power with a figure of merit $\mathrm{FM}$, a measure of how close the rotor comes to the ideal.
 
 $$
-P = \frac{P_{\text{ideal}}}{FM}
+P = \frac{P_{\text{ideal}}}{\mathrm{FM}}
 $$
 
-- $FM$ is the figure of merit (dimensionless). Well-designed helicopter rotors reach about 0.7 to 0.8 (typical values). Small drone rotors often reach 0.5 to 0.7 (typical values).
-- Assumptions: $FM$ is a single empirical factor, assumed constant over the hover condition, that lumps together the profile drag, swirl, and tip losses that the ideal model omits. Its value must come from measurement or a more detailed model.
+- $\mathrm{FM}$ is the figure of merit (dimensionless). Well-designed helicopter rotors reach about 0.7 to 0.8 (typical values). Small drone rotors often reach 0.5 to 0.7 (typical values).
+- Assumptions: $\mathrm{FM}$ is a single empirical factor, assumed constant over the hover condition, that lumps together the profile drag, swirl, and tip losses that the ideal model omits. Its value must come from measurement or a more detailed model.
 
 Disk loading, the thrust per unit disk area, which sets the hover power.
 
 $$
-\frac{T}{A} \quad \text{(N/m}^2\text{)}
+\frac{T}{A} \quad \text{(N}/\text{m}^2\text{)}
 $$
 
 - Assumptions: thrust spread uniformly over the disk area $A$. Disk loading is a design ratio, not a measured quantity.
@@ -77,7 +77,7 @@ $$
 
 ## Worked example
 
-**Given.** A 2.0 kg quadcopter has four rotors, each 0.254 m in diameter, so each has radius $R = 0.127$ m. It hovers at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Assume $FM = 0.70$.
+**Given.** A 2.0 kg quadcopter has four rotors, each 0.254 m in diameter, so each has radius $R = 0.127$ m. It hovers at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Assume $\mathrm{FM} = 0.70$.
 
 **Find.** (a) the thrust needed, (b) the total disk area and disk loading, (c) the ideal hover power and the shaft power, and (d) the power per rotor.
 
@@ -95,7 +95,7 @@ $$
 $$
 P_{\text{ideal}} = T v_h = 19.61 \times 6.28 = 123\ \text{W}
 $$
-The shaft power at $FM = 0.70$ is $P = 123 / 0.70 = 176$ W.
+The shaft power at $\mathrm{FM} = 0.70$ is $P = 123 / 0.70 = 176$ W.
 5. Power per rotor: $176 / 4 = 44$ W.
 
 **Answer.** (a) $T = 19.6$ N. (b) $A = 0.203$ m$^2$ and $T/A = 96.8$ N/m$^2$. (c) $P_{\text{ideal}} = 123$ W and shaft power $P = 176$ W. (d) About 44 W per rotor.

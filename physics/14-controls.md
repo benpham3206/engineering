@@ -15,7 +15,7 @@ A control system measures an output, compares it with a desired value, and chang
 - **Unity feedback** means the measured output is fed straight back and subtracted from the reference, with no filter in the loop.
 - A **transfer function** $G(s)$ describes a linear system in the Laplace variable $s$. It is the ratio of output to input when all starting conditions are zero. You can read the time response, and the stability, from the poles of $G(s)$.
 - A **step response** is the output when the reference jumps from 0 to 1 at $t = 0$. It is the standard test for speed, overshoot and final error.
-- **Steady-state error** $e_{ss}$ is the error left after the transient has died out. A P controller often leaves a steady error. An integral term removes it.
+- **Steady-state error** $e_{\mathrm{ss}}$ is the error left after the transient has died out. A P controller often leaves a steady error. An integral term removes it.
 - A **PID controller** adds three actions: proportional (now), integral (the past sum of error), and derivative (the rate of change of error). Its standard form is
 
 $$u(t) = K_p e(t) + K_i \int_0^t e(\tau)\,d\tau + K_d \frac{de(t)}{dt}$$
@@ -39,17 +39,17 @@ $$T(s) = \frac{Y(s)}{R(s)} = \frac{K_p K}{\tau s + 1 + K_p K}$$
 
 This is still first order. Rewrite it as
 
-$$T(s) = \frac{K_{cl}}{\tau_{cl}s + 1}, \qquad K_{cl} = \frac{K_p K}{1 + K_p K}, \qquad \tau_{cl} = \frac{\tau}{1 + K_p K}$$
+$$T(s) = \frac{K_{\mathrm{cl}}}{\tau_{\mathrm{cl}}s + 1}, \qquad K_{\mathrm{cl}} = \frac{K_p K}{1 + K_p K}, \qquad \tau_{\mathrm{cl}} = \frac{\tau}{1 + K_p K}$$
 
 Step response to a unit step, $R(s) = 1/s$:
 
-$$y(t) = K_{cl}\left(1 - e^{-t/\tau_{cl}}\right)$$
+$$y(t) = K_{\mathrm{cl}}\left(1 - e^{-t/\tau_{\mathrm{cl}}}\right)$$
 
 Steady-state error for a unit step (the error is $1 - y(\infty)$):
 
-$$e_{ss} = \frac{1}{1 + K_p K}$$
+$$e_{\mathrm{ss}} = \frac{1}{1 + K_p K}$$
 
-A larger $K_p K$ shrinks both the steady error and the closed-loop time constant. The 2 percent settling time of a first-order response is about $4\tau_{cl}$.
+A larger $K_p K$ shrinks both the steady error and the closed-loop time constant. The 2 percent settling time of a first-order response is about $4\tau_{\mathrm{cl}}$.
 
 ## Worked example
 
@@ -57,24 +57,24 @@ A larger $K_p K$ shrinks both the steady error and the closed-loop time constant
 
 **Given.** $K = 2.0$, $\tau = 0.50$ s, $K_p = 4.0$, unit step reference.
 
-**Find.** $K_{cl}$, $e_{ss}$, $\tau_{cl}$, $y(\tau_{cl})$, $t_{2\%}$.
+**Find.** $K_{\mathrm{cl}}$, $e_{\mathrm{ss}}$, $\tau_{\mathrm{cl}}$, $y(\tau_{\mathrm{cl}})$, $t_{2\%}$.
 
 **Assumptions.** The plant is linear and first order. The sensor is perfect and has unity gain. The actuator is ideal.
 
 **Solution.**
 
 1. Product of gains: $K_p K = 4.0 \cdot 2.0 = 8.0$.
-2. Closed-loop gain: $K_{cl} = 8.0/(1+8.0) = 0.889$.
-3. Steady-state error: $e_{ss} = 1/(1+8.0) = 0.111$, which is 11.1 percent of the step.
-4. Closed-loop time constant: $\tau_{cl} = 0.50/9.0 = 0.0556$ s.
-5. Output at $t = \tau_{cl}$: $y = 0.889(1 - e^{-1}) = 0.889 \cdot 0.632 = 0.562$.
-6. 2 percent settling time: about $4\tau_{cl} = 0.222$ s.
+2. Closed-loop gain: $K_{\mathrm{cl}} = 8.0/(1+8.0) = 0.889$.
+3. Steady-state error: $e_{\mathrm{ss}} = 1/(1+8.0) = 0.111$, which is 11.1 percent of the step.
+4. Closed-loop time constant: $\tau_{\mathrm{cl}} = 0.50/9.0 = 0.0556$ s.
+5. Output at $t = \tau_{\mathrm{cl}}$: $y = 0.889(1 - e^{-1}) = 0.889 \cdot 0.632 = 0.562$.
+6. 2 percent settling time: about $4\tau_{\mathrm{cl}} = 0.222$ s.
 
 **Answer.**
 
-- $K_{cl} = 0.889$
-- $e_{ss} = 0.111$ (about 11 percent)
-- $\tau_{cl} = 0.0556$ s
+- $K_{\mathrm{cl}} = 0.889$
+- $e_{\mathrm{ss}} = 0.111$ (about 11 percent)
+- $\tau_{\mathrm{cl}} = 0.0556$ s
 - $y(0.0556\ \text{s}) = 0.562$
 - Settling to within 2 percent takes about 0.22 s.
 
@@ -107,16 +107,16 @@ closed-loop tau 0.0556
 y at t=0.0556 0.5619
 ```
 
-The 10-90 rise time, $0.122$ s, matches $2.197\,\tau_{cl} = 0.122$ s.
+The 10-90 rise time, $0.122$ s, matches $2.197\,\tau_{\mathrm{cl}} = 0.122$ s.
 
 **Sanity check.** The output stops at 0.889, not 1.0, so a P-only loop leaves a steady error. Raising $K_p$ to 19 (so $K_p K = 38$) would cut the error to about 2.6 percent, and the closed-loop time constant would drop again. The price in a real system is that a plant with dead time or resonance would become unstable first. This first-order model does not show that, so treat its gain limits with care.
 
 ## Practice
 
-1. A plant has $K = 1.0$ and $\tau = 2.0$ s. It is closed with unity feedback and $K_p = 9.0$. Find $e_{ss}$ for a unit step.
-2. For the same loop as problem 1, find $\tau_{cl}$ in seconds.
-3. Using the same loop, find $y$ at $t = \tau_{cl}$.
-4. The same plant now has $K_p = 19.0$. Find $e_{ss}$.
+1. A plant has $K = 1.0$ and $\tau = 2.0$ s. It is closed with unity feedback and $K_p = 9.0$. Find $e_{\mathrm{ss}}$ for a unit step.
+2. For the same loop as problem 1, find $\tau_{\mathrm{cl}}$ in seconds.
+3. Using the same loop, find $y$ at $t = \tau_{\mathrm{cl}}$.
+4. The same plant now has $K_p = 19.0$. Find $e_{\mathrm{ss}}$.
 5. Give the 2 percent settling time for the loop in problem 1, in seconds.
 
 <details><summary>Answers</summary>
@@ -134,7 +134,7 @@ The 10-90 rise time, $0.122$ s, matches $2.197\,\tau_{cl} = 0.122$ s.
 - Forgetting the feedback. The closed-loop gain is $K_p K/(1+K_p K)$, not $K_p K$. The $1+$ is the feedback term.
 - Using the open-loop time constant $\tau$ for the closed loop. Feedback changes the time constant to $\tau/(1+K_p K)$.
 - Reading steady-state error from a transient. Check the final value after the response has settled.
-- Expecting a P controller to remove error completely. For a first-order plant with a step input it cannot, because the output only reaches $K_{cl}$.
+- Expecting a P controller to remove error completely. For a first-order plant with a step input it cannot, because the output only reaches $K_{\mathrm{cl}}$.
 - Adding integral or derivative gain without checking stability. Each term changes the closed-loop poles.
 
 ## Go deeper

@@ -20,10 +20,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Communication reference](reference.md): copyable templates for reports, memos, reviews, incident reports, and requirements, plus drawing and unit conventions
 
-## Related courses
-
-- AP English Language & Composition
-- ME 20 - Design & Graphics
-- ENGR 100W - Engineering Reports
-
 See also: [design](../design), [measurement](../measurement)

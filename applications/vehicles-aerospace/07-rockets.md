@@ -49,10 +49,10 @@ $$
 Specific impulse, a measure of how efficiently a propellant makes thrust.
 
 $$
-I_{sp} = \frac{F}{\dot m\, g_0} \qquad v_e = I_{sp}\, g_0 \text{ when } p_e = p_a
+I_{\mathrm{sp}} = \frac{F}{\dot m\, g_0} \qquad v_e = I_{\mathrm{sp}}\, g_0 \text{ when } p_e = p_a
 $$
 
-- $I_{sp}$ is specific impulse (s). $g_0 = 9.80665$ m/s$^2$ is standard gravity. The second form applies only when the pressure term in the thrust equation is zero.
+- $I_{\mathrm{sp}}$ is specific impulse (s). $g_0 = 9.80665$ m/s$^2$ is standard gravity. The second form applies only when the pressure term in the thrust equation is zero.
 - Assumptions: the pressure term is zero for the second form, and the flow is steady. For the first form, the thrust and mass flow are both measured over the same period.
 
 Choked mass flow through the throat, with an ideal gas.
@@ -128,14 +128,14 @@ $$
 $$
 F_{\text{vac}} = 100 \times 2838 + (0.10\times10^6)(0.230) = 306.8\ \text{kN}
 $$
-$I_{sp,\text{vac}} = 306\,800 / (100 \times 9.80665) = 313$ s.
+$I_{\mathrm{sp},\text{vac}} = 306\,800 / (100 \times 9.80665) = 313$ s.
 6. Thrust at sea level, with $p_a = 101\,325$ Pa:
 $$
 F_{\text{sl}} = 100 \times 2838 + (0.10\times10^6 - 101\,325)(0.230) = 283.5\ \text{kN}
 $$
-$I_{sp,\text{sl}} = 283\,500 / 980.665 = 289$ s.
+$I_{\mathrm{sp},\text{sl}} = 283\,500 / 980.665 = 289$ s.
 
-**Answer.** (a) $A_t = 0.0253$ m$^2$, a throat diameter of about 0.18 m. (b) $v_e = 2838$ m/s. (c) $M_e = 3.21$ and $A_e = 0.230$ m$^2$, an exit diameter of about 0.54 m. (d) Vacuum: $F = 307$ kN and $I_{sp} = 313$ s. Sea level: $F = 283$ kN and $I_{sp} = 289$ s.
+**Answer.** (a) $A_t = 0.0253$ m$^2$, a throat diameter of about 0.18 m. (b) $v_e = 2838$ m/s. (c) $M_e = 3.21$ and $A_e = 0.230$ m$^2$, an exit diameter of about 0.54 m. (d) Vacuum: $F = 307$ kN and $I_{\mathrm{sp}} = 313$ s. Sea level: $F = 283$ kN and $I_{\mathrm{sp}} = 289$ s.
 
 **Sanity check.** Vacuum specific impulse of 313 s is in the range of kerosene and oxygen engines. The sea-level value is lower because the exit pressure sits slightly below ambient, so the engine is overexpanded there and loses thrust. Real engines run below these ideal values because of friction, heat loss, and incomplete mixing.
 
@@ -162,16 +162,16 @@ Konstantin Tsiolkovsky published the basis of rocket theory in 1903. Robert Godd
 
 ## Practice
 
-1. An engine has $I_{sp} = 300$ s. Find the exhaust velocity in m/s.
-2. A vacuum engine has $\dot m = 50$ kg/s and $v_e = 2900$ m/s. Find the thrust in kN.
+1. An engine has $I_{\mathrm{sp}} = 300$ s. Find the effective exhaust velocity $I_{\mathrm{sp}} g_0$ in m/s. This equals the physical exit velocity only when $p_e = p_a$.
+2. An engine has $\dot m = 50$ kg/s and an effective exhaust velocity $I_{\mathrm{sp}} g_0 = 2900$ m/s, which already includes any exit-pressure thrust. Find the thrust in kN.
 3. A throat carries $\dot m = 20$ kg/s at $p_c = 5.0$ MPa and $T_c = 3300$ K, with $R = 350$ J/(kg K) and $\gamma = 1.2$. Find the throat area in cm$^2$.
-4. An engine makes 100 kN of thrust at $I_{sp} = 280$ s. Find the mass flow rate in kg/s.
+4. An engine makes 100 kN of thrust at $I_{\mathrm{sp}} = 280$ s. Find the mass flow rate in kg/s.
 5. A nozzle has an area ratio of 16 and $\gamma = 1.2$. Find the exit Mach number.
 
 <details><summary>Answers</summary>
 
-1. $v_e = 300 \times 9.80665 = 2942$ m/s
-2. $F = 50 \times 2900 = 145\,000$ N, which is 145 kN
+1. $I_{\mathrm{sp}} g_0 = 300 \times 9.80665 = 2942$ m/s (effective exhaust velocity)
+2. $F = \dot m \times I_{\mathrm{sp}} g_0 = 50 \times 2900 = 145\,000$ N, which is 145 kN
 3. $\Gamma = 0.6485$, so $A_t = 20 \times \sqrt{350 \times 3300} / (5.0\times10^6 \times 0.6485) = 6.63\times10^{-3}$ m$^2$, which is 66.3 cm$^2$
 4. $\dot m = 100\,000 / (280 \times 9.80665) = 36.4$ kg/s
 5. $M_e = 3.60$

@@ -96,7 +96,7 @@ right order of magnitude. The lesson Sanity-check the answer covers this habit i
 ## Practice
 
 1. A bag has mass 12 kg. Write its weight in newtons using $g = 9.81\ \text{m/s}^2$ (Earth surface).
-2. Convert a length of 2.5 ft to meters. Use 1 ft = 0.3048 m.
+2. Convert a length of 2.5 ft to meters. Use $1\ \text{ft} = 0.3048\ \text{m}$.
 3. Convert a speed of 30 m/s to km/h.
 
 <details><summary>Answers</summary>

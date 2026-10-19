@@ -74,7 +74,7 @@ A small desk lamp has a clamp base, a flexible arm, and a plastic head. The owne
 3. Remove the two screws in the base cover. Photograph the open base, then log both screws as type M3 length about 10 mm, quantity 2, from step 3.
 4. Look for a spring in the arm. The arm holds its shape by friction, so no stored spring energy was found. Note this in the log.
 5. Undo the head's clip housing. Log each clip and its direction of release. The clips release toward the arm, so the head comes off along the arm axis.
-6. Write the exploded parts list. There are 11 parts in total: base, cover, two screws, arm tube, cable, socket, two clips, head shell, shade, and one gasket.
+6. Write the exploded parts list. There are 12 parts in total: base, cover, two screws, arm tube, cable, socket, two clips, head shell, shade, and one gasket.
 
 Result: the head is held by two clips and one gasket, with no hidden screws. A new shade can be fitted if its clip position matches.
 

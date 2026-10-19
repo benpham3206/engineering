@@ -14,7 +14,7 @@ Machining is a family of processes that remove material with a cutting tool. Mil
 - **Drilling**: a twist drill spins and feeds straight into the work. Drilling is usually a fast, simple operation, but chips must clear the hole, and the drill must be kept straight.
 - **Boring and reaming**: boring enlarges and finishes an existing hole with a single-point tool. Reaming gives a smooth, accurate hole size. Both come after drilling.
 - **Conventional and climb milling**: in conventional milling the cutter teeth move against the feed. In climb milling they move with the feed. Climb milling usually gives a better finish, but it needs a rigid machine and no backlash in the table screw.
-- **Coordinate system**: CNC machines use axes X, Y, and Z. The program moves the tool to coordinates on each axis.
+- **Coordinate system**: CNC machines use axes $X$, $Y$, and $Z$. The program moves the tool to coordinates on each axis.
 
 A CNC program is usually a list of blocks, each with a command code. Common codes include:
 
@@ -71,7 +71,7 @@ $$f_m = 0.08 \times 3 \times 7958 = 1910 \text{ mm/min}$$
 
 1. Turning
 2. Milling (face mill)
-3. A straight feed cut to X = 50 at 300 units per minute
+3. A straight feed cut to $X = 50$ at 300 units per minute
 4. 600 mm/min
 5. To check the tool path and offsets for crashes before the tool or part is at risk.
 

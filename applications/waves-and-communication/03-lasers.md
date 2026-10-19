@@ -64,11 +64,11 @@ $$L_c = \frac{\lambda^2}{\Delta\lambda}$$
 **Solution:**
 
 1. The spot radius is $r = 0.05\ \text{mm} = 5.0 \times 10^{-5}\ \text{m}$, so $A = \pi r^2 = 7.85 \times 10^{-9}\ \text{m}^2$.
-2. $I = 1000 / (7.85 \times 10^{-9}) = 1.27 \times 10^{11}\ \text{W/m}^2 = 1.27 \times 10^7\ \text{W/cm}^2$.
+2. $I = 1000 / (7.85 \times 10^{-9}) = 1.27 \times 10^{11}\ \text{W}/\text{m}^2 = 1.27 \times 10^7\ \text{W}/\text{cm}^2$.
 3. $E = (6.626 \times 10^{-34})(2.998 \times 10^8) / (1064 \times 10^{-9}) = 1.87 \times 10^{-19}\ \text{J}$, which is 1.17 eV.
 4. The photon rate is $1000 / (1.87 \times 10^{-19}) = 5.36 \times 10^{21}\ \text{s}^{-1}$.
 
-**Answer:** (a) $1.27 \times 10^7\ \text{W/cm}^2$. (b) $1.87 \times 10^{-19}\ \text{J}$. (c) $5.36 \times 10^{21}$ photons per second.
+**Answer:** (a) $1.27 \times 10^7\ \text{W}/\text{cm}^2$. (b) $1.87 \times 10^{-19}\ \text{J}$. (c) $5.36 \times 10^{21}$ photons per second.
 
 **Sanity check:** Intensity, not power, decides what the beam does to a material. Halving the spot diameter quadruples the intensity. The photon energy of 1.17 eV is in the near-infrared, which is invisible, so a cutting laser gives no visible warning. The photon rate is huge, but the energy per photon is small, so the total power, not the photon count, sets the heating.
 
@@ -114,7 +114,7 @@ Einstein described stimulated emission in 1917. Charles Townes and Arthur Schawl
 
    <details><summary>Answers</summary>
 
-   $A = \pi (0.1\ \text{mm})^2 = 3.14 \times 10^{-8}\ \text{m}^2$, so $I = 2000 / 3.14 \times 10^{-8} = 6.4 \times 10^{10}\ \text{W/m}^2 = 6.4 \times 10^6\ \text{W/cm}^2$.
+   $A = \pi (0.1\ \text{mm})^2 = 3.14 \times 10^{-8}\ \text{m}^2$, so $I = 2000 / 3.14 \times 10^{-8} = 6.4 \times 10^{10}\ \text{W}/\text{m}^2 = 6.4 \times 10^6\ \text{W}/\text{cm}^2$.
 
    </details>
 

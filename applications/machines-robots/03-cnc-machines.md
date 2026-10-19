@@ -33,10 +33,10 @@ Each move in a program passes through these steps:
 
 ### Variants
 
-- **Knee mill or bed mill:** the table moves in X and Y, and the head or knee moves in Z.
+- **Knee mill or bed mill:** the table moves in $X$ and $Y$, and the head or knee moves in $Z$.
 - **Gantry mill:** a bridge moves over a fixed bed. It suits large parts.
 - **Machining center:** a mill with an automatic tool changer.
-- **CNC lathe:** two linear axes, Z along the spindle and X across it. The spindle is the rotary axis.
+- **CNC lathe:** two linear axes, $Z$ along the spindle and $X$ across it. The spindle is the rotary axis.
 - **Five-axis machine:** two rotary axes added to the three linear axes. The rotary axes sit on the table (trunnion type) or in the head. They change the tool orientation.
 
 ## Key equations
@@ -73,7 +73,7 @@ Assumptions: the member is uniform in temperature, it expands freely (no constra
 
 ## Worked example
 
-**Given:** The X axis has a ball screw with lead $L = 0.010\ \text{m}$. A servo encoder gives $n_c = 10\,000$ counts per revolution after quadrature decoding, and the motor drives the screw directly (1:1). The cutting force along X is $F = 1500\ \text{N}$, the screw efficiency is $\eta = 0.90$, and the feed speed is $v = 0.050\ \text{m/s}$ (3000 mm/min).
+**Given:** The $X$ axis has a ball screw with lead $L = 0.010\ \text{m}$. A servo encoder gives $n_c = 10\,000$ counts per revolution after quadrature decoding, and the motor drives the screw directly (1:1). The cutting force along $X$ is $F = 1500\ \text{N}$, the screw efficiency is $\eta = 0.90$, and the feed speed is $v = 0.050\ \text{m/s}$ (3000 mm/min).
 
 **Find:** (a) the position resolution, (b) the motor speed, (c) the torque, and (d) the mechanical power.
 
@@ -100,7 +100,7 @@ Assumptions: the member is uniform in temperature, it expands freely (no constra
 
 ## How it fails
 
-- **Backlash:** a gap in the nut or gearing lets the table move before the screw does. The sign is a position error that flips when the direction reverses. Preloaded nuts, linear scales, and backlash compensation in the controller reduce it.
+- **Backlash:** a gap in the nut or gearing means that on reversal the screw turns through the gap before the table moves. The sign is a position error that flips when the direction reverses. Preloaded nuts, linear scales, and backlash compensation in the controller reduce it.
 - **Lost steps:** a stepper loses position when the load exceeds its torque at the current speed. The sign is a position shift after a heavy cut. A servo with an encoder detects the error and corrects it, and a stall alarm stops the axis.
 - **Thermal drift:** parts and frames grow as the machine warms. The sign is that the first part measures differently from the fifth. A warm-up cycle and temperature sensors on the frame help.
 - **Servo oscillation:** loop gains set too high for the structure's resonance make the axis hum or shake at a fixed frequency. Gain tuning and notch filters fix it.

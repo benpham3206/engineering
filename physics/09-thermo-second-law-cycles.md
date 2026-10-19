@@ -43,7 +43,7 @@ The first law says energy is conserved. The second law says some energy conversi
 ### Refrigerators and heat pumps
 
 - A **refrigerator** moves heat from a cold space to a warmer one, using work. Its performance is measured by the **coefficient of performance** $\text{COP}_R = Q_L/W$.
-- A **heat pump** does the same job, but its goal is heating the warm side. Its coefficient is $\text{COP}_{HP} = Q_H/W$.
+- A **heat pump** does the same job, but its goal is heating the warm side. Its coefficient is $\text{COP}_{\mathrm{HP}} = Q_H/W$.
 
 ### Ideal cycles
 

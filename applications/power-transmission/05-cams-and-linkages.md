@@ -70,11 +70,11 @@ $$s(\theta) = \frac{h}{2}\left(1 - \cos\frac{\pi\theta}{\beta}\right)$$
 
 Peak follower velocity in metres per second (m/s) and peak acceleration in metres per second squared (m/s$^2$):
 
-$$v_{max} = \frac{\pi h \omega}{2\beta}, \qquad a_{max} = \frac{\pi^2 h \omega^2}{2\beta^2}$$
+$$v_{\mathrm{max}} = \frac{\pi h \omega}{2\beta}, \qquad a_{\mathrm{max}} = \frac{\pi^2 h \omega^2}{2\beta^2}$$
 
-Pressure angle $\phi$ for a radial roller follower with base circle radius $r_b$ in metres:
+Pressure angle $\phi$ for a radial roller follower with prime circle radius $r_p$ in metres. The prime circle is the base circle radius plus the roller radius, $r_p = r_{\mathrm{base}} + r_{\mathrm{roller}}$:
 
-$$\tan\phi = \frac{ds/d\theta}{r_b + s}$$
+$$\tan\phi = \frac{ds/d\theta}{r_p + s}$$
 
 The pressure angle is the angle between the follower force and the follower motion. A larger angle means
 more side load on the follower, and more friction and binding.
@@ -83,7 +83,7 @@ more side load on the follower, and more friction and binding.
 
 **Given:** A cam drives a radial roller follower through a rise of $h = 20\ \text{mm}$ during a cam
 rotation of $\beta = 120^\circ$, with simple harmonic motion. The cam turns at $300\ \text{rpm}$, and its
-base circle radius is $r_b = 30\ \text{mm}$.
+prime circle radius (base circle plus roller radius) is $r_p = 30\ \text{mm}$.
 
 **Find:** (a) the peak follower velocity, (b) the peak follower acceleration, and (c) the peak pressure angle.
 
@@ -91,13 +91,13 @@ base circle radius is $r_b = 30\ \text{mm}$.
 
 1. Angular speed: $\omega = 300 \times 2\pi / 60 = 31.4\ \text{rad/s}$.
 2. Convert the rise and the angle: $h = 0.020\ \text{m}$ and $\beta = 2.094\ \text{rad}$.
-3. Peak velocity: $v_{max} = \dfrac{\pi \times 0.020 \times 31.4}{2 \times 2.094} = 0.471\ \text{m/s}$.
-4. Peak acceleration: $a_{max} = \dfrac{\pi^2 \times 0.020 \times 31.4^2}{2 \times 2.094^2} = 22.2\ \text{m/s}^2$.
+3. Peak velocity: $v_{\mathrm{max}} = \dfrac{\pi \times 0.020 \times 31.4}{2 \times 2.094} = 0.471\ \text{m/s}$.
+4. Peak acceleration: $a_{\mathrm{max}} = \dfrac{\pi^2 \times 0.020 \times 31.4^2}{2 \times 2.094^2} = 22.2\ \text{m}/\text{s}^2$.
 5. Pressure angle: the slope $ds/d\theta$ peaks at $h\pi/(2\beta) = 0.0150\ \text{m/rad}$, and the
    pressure angle is largest where the ratio of slope to radius peaks. Evaluating the expression over
    the rise gives a peak of $\phi = 21.2^\circ$ at about $50^\circ$ of cam rotation.
 
-**Answer:** (a) $v_{max} = 0.471\ \text{m/s}$. (b) $a_{max} = 22.2\ \text{m/s}^2$. (c) $\phi_{max} = 21.2^\circ$.
+**Answer:** (a) $v_{\mathrm{max}} = 0.471\ \text{m/s}$. (b) $a_{\mathrm{max}} = 22.2\ \text{m}/\text{s}^2$. (c) $\phi_{\mathrm{max}} = 21.2^\circ$.
 
 **Sanity check:** The peak velocity equals $h\omega$ times $\pi/(2\beta)$. Here $h\omega = 0.628\ \text{m/s}$
 and $\pi/(2\beta) = 0.75$, so the product is $0.471\ \text{m/s}$. A pressure angle of about $21^\circ$ sits
@@ -159,8 +159,8 @@ rocking beam into straight-line motion. Franz Grashof published the criterion fo
    crank that rotates fully.
 2. Stroke $= 2r = 100\ \text{mm}$.
 3. $x = 0.040\cos 90^\circ + \sqrt{0.160^2 - (0.040\sin 90^\circ)^2} = \sqrt{0.0240} = 0.155\ \text{m}$, or $155\ \text{mm}$.
-4. $\omega = 600 \times 2\pi/60 = 62.8\ \text{rad/s}$. With $\beta = \pi/2$, $v_{max} = h\omega = 0.015 \times 62.8 = 0.942\ \text{m/s}$.
-   $a_{max} = 2h\omega^2 = 2 \times 0.015 \times 62.8^2 = 118\ \text{m/s}^2$.
+4. $\omega = 600 \times 2\pi/60 = 62.8\ \text{rad/s}$. With $\beta = \pi/2$, $v_{\mathrm{max}} = h\omega = 0.015 \times 62.8 = 0.942\ \text{m/s}$.
+   $a_{\mathrm{max}} = 2h\omega^2 = 2 \times 0.015 \times 62.8^2 = 118\ \text{m}/\text{s}^2$.
 5. The shortest link is $s = 40$ and the longest is $l = 100$. Then $s + l = 140$ and $p + q = 50 + 60 = 110$.
    Since $140 > 110$, the linkage is not Grashof. No link can rotate fully, so it is a triple-rocker.
 
@@ -173,7 +173,7 @@ rocking beam into straight-line motion. Franz Grashof published the criterion fo
 - Taking the stroke as the crank radius. The stroke is twice the radius.
 - Assuming the slider's peak speed happens at $90^\circ$. For a slider-crank, the peak speed occurs at a
   crank angle that depends on the rod ratio $L/r$.
-- Using SHM for a fast cam without checking $a_{max}$. Acceleration grows with the square of the speed, and
+- Using SHM for a fast cam without checking $a_{\mathrm{max}}$. Acceleration grows with the square of the speed, and
   it sets the spring force and the follower load.
 - Forgetting that the pressure angle is measured from the follower motion, not from the cam surface.
 

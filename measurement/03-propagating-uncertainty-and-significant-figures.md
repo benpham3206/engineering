@@ -15,7 +15,7 @@ Most results are calculated from several measured quantities, and each one carri
 - RSS is smaller than a worst-case sum, which adds all errors in the same direction. The worst case is useful as a bound but usually too pessimistic for a best estimate.
 - **Significant figures** (sig figs) are the digits you actually know. For a result, keep digits that the uncertainty supports. A common rule: round the uncertainty to one or two significant figures, then round the value to the same decimal place.
 - For multiplication and division, the result keeps the same number of sig figs as the input with the fewest. For addition and subtraction, the result keeps the same number of decimal places as the input with the fewest.
-- Exact numbers, such as counting 4 holes or the definition 1 in = 25.4 mm, do not limit sig figs.
+- Exact numbers, such as counting 4 holes or the definition $1\ \mathrm{in} = 25.4\ \mathrm{mm}$, do not limit sig figs.
 
 ## Key equations
 
@@ -30,7 +30,7 @@ Useful special cases:
 - Sum or difference, $f = a \pm b$: $\quad u_f = \sqrt{u_a^2 + u_b^2}$
 - Product or quotient, $f = a b$ or $f = a/b$: $\quad \left(\dfrac{u_f}{|f|}\right)^2 = \left(\dfrac{u_a}{a}\right)^2 + \left(\dfrac{u_b}{b}\right)^2$
 
-Worst-case bound for a product, for comparison: $\quad \Delta_{\text{max}} = |b|\,u_a + |a|\,u_b$
+Linear sum for a product, for comparison (not a guaranteed bound, since $u$ is a standard deviation, not a hard limit): $\quad \Delta_{\text{max}} = |b|\,u_a + |a|\,u_b$
 
 ## Worked example
 
@@ -46,7 +46,7 @@ Worst-case bound for a product, for comparison: $\quad \Delta_{\text{max}} = |b|
 - Relative uncertainties: $u_L / L = 0.2/120 = 0.00167$ and $u_W / W = 0.1/45 = 0.00222$
 - RSS of relative terms: $\sqrt{0.00167^2 + 0.00222^2} = 0.00278$, which is 0.278%
 - Absolute uncertainty: $u_A = 0.00278 \times 5400 = 15.0\ \text{mm}^2$
-- Worst-case bound for comparison: $W u_L + L u_W = 45.0 \times 0.2 + 120.0 \times 0.1 = 21\ \text{mm}^2$. The RSS value (15 mm²) is smaller, as expected.
+- Worst-case bound for comparison: $W u_L + L u_W = 45.0 \times 0.2 + 120.0 \times 0.1 = 21\ \text{mm}^2$. The RSS value (15 $\mathrm{mm^2}$) is smaller, as expected.
 
 **Solution (b):**
 
@@ -58,7 +58,7 @@ Worst-case bound for a product, for comparison: $\quad \Delta_{\text{max}} = |b|
 
 **Answer:** (a) $A = 5400 \pm 15\ \text{mm}^2$. (b) $\rho = 2.631 \pm 0.025\ \text{g/cm}^3$.
 
-**Sanity check:** The density uncertainty is dominated by the volume, which has the larger relative uncertainty (0.96% against 0.04%). Without the mass term the relative uncertainty is still 0.962%, so the mass barely matters and the volume is the weak link. Water is 1.00 g/cm³, so 2.63 is a plausible metal-like density.
+**Sanity check:** The density uncertainty is dominated by the volume, which has the larger relative uncertainty (0.96% against 0.04%). Without the mass term the relative uncertainty is still 0.962%, so the mass barely matters and the volume is the weak link. Water is 1.00 $\mathrm{g/cm^3}$, so 2.63 is a plausible metal-like density.
 
 ## Practice
 

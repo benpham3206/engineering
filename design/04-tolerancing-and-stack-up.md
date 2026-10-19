@@ -48,13 +48,13 @@ $$
 Worst-case stack-up for a linear chain of $n$ dimensions with tolerances $t_i$:
 
 $$
-T_{wc} = \sum_{i=1}^{n} |t_i|
+T_{\text{wc}} = \sum_{i=1}^{n} |t_i|
 $$
 
 Root-sum-square (RSS) stack-up, which assumes independent random variation and is usually a statistical estimate:
 
 $$
-T_{rss} = \sqrt{\sum_{i=1}^{n} t_i^2}
+T_{\text{rss}} = \sqrt{\sum_{i=1}^{n} t_i^2}
 $$
 
 Clearance between a hole of size $H$ and a shaft of size $S$:
@@ -88,11 +88,11 @@ The gap is $g = L - (a + b)$.
 
 Nominal gap: $g = 60.00 - (25.00 + 30.00) = 5.00$ mm.
 
-Worst-case tolerance: $T_{wc} = 0.15 + 0.05 + 0.08 = 0.28$ mm.
+Worst-case tolerance: $T_{\text{wc}} = 0.15 + 0.05 + 0.08 = 0.28$ mm.
 
 So $g$ is between $5.00 - 0.28 = 4.72$ mm and $5.00 + 0.28 = 5.28$ mm.
 
-RSS tolerance: $T_{rss} = \sqrt{0.15^2 + 0.05^2 + 0.08^2} = \sqrt{0.0314} = 0.177$ mm.
+RSS tolerance: $T_{\text{rss}} = \sqrt{0.15^2 + 0.05^2 + 0.08^2} = \sqrt{0.0314} = 0.177$ mm.
 
 So with RSS, $g$ is between $4.82$ mm and $5.18$ mm.
 

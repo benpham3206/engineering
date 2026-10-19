@@ -67,7 +67,7 @@ Summarized in plain words from common codes of ethics for engineers (for example
 
 ## Risk matrix
 
-Risk score = likelihood score x severity score. Choose the scores from the definitions below, then read the band.
+$\text{Risk score} = \text{likelihood score} \times \text{severity score}$. Choose the scores from the definitions below, then read the band.
 
 Likelihood (over the life of the product or activity):
 
@@ -89,7 +89,7 @@ Severity (consequence to people and the mission):
 | 4 | Severe | Permanent injury or multiple injuries; major loss |
 | 5 | Catastrophic | Death or multiple deaths; loss of the system |
 
-Matrix (score = L x S):
+Matrix ($\text{score} = L \times S$):
 
 | Likelihood \ Severity | 1 Negligible | 2 Minor | 3 Serious | 4 Severe | 5 Catastrophic |
 |---|---|---|---|---|---|
@@ -198,9 +198,9 @@ When a concern is raised:
 
 ## Sanity checks
 
-- Unit conversions: 1 lbf = 4.4482216152605 N (exact by definition); so 1 lbf s = 4.448 N s. 1 in = 25.4 mm exactly. A result off by a factor near 4.45 or 25.4 is likely a units mismatch.
+- Unit conversions: $1\ \mathrm{lbf} = 4.4482216152605\ \mathrm{N}$ (exact by definition); so $1\ \mathrm{lbf}\,\mathrm{s} = 4.448\ \mathrm{N}\,\mathrm{s}$. $1\ \mathrm{in} = 25.4\ \mathrm{mm}$ exactly. A result off by a factor near 4.45 or 25.4 is likely a units mismatch.
 - Integer range: a signed 16-bit integer holds at most 32767. Any physical quantity converted into it must be checked against that limit before conversion.
-- Safety factor: a value below 1 means the load exceeds the strength (strength / load = 0.8 means failure). A value near 1 with an uncertain load is not margin.
+- Safety factor: a value below 1 means the load exceeds the strength ($\text{strength} / \text{load} = 0.8$ means failure). A value near 1 with an uncertain load is not margin.
 - Redundancy: if two "independent" sensors read the same wrong value, ask whether they share a mount, a power source, or the same software.
 - Test result: if a test passes exactly on the first try, ask whether the pass criteria were set after seeing the data.
 - Recorded anomalies: if the same anomaly has appeared in three or more flights, tests, or shifts without a closed cause, it is a trend, not noise.

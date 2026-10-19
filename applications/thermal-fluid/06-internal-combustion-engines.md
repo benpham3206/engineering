@@ -44,15 +44,15 @@ The ideal air-standard Otto cycle has four processes: isentropic compression, co
 Symbols are in SI units unless marked dimensionless.
 
 - Displacement of one cylinder: $V_d = \dfrac{\pi}{4} B^2 S$, where $B$ is the bore in metres, $S$ is the stroke in metres, and $V_d$ is in cubic metres.
-- Power from brake mean effective pressure: $P = \dfrac{p_{mep} \, V_{d,total} \, N}{c}$, where $p_{mep}$ is the brake mean effective pressure in pascals, $V_{d,total}$ is the total displacement in cubic metres, $N$ is the crankshaft speed in revolutions per second, $c = 2$ for a four-stroke engine or $c = 1$ for a two-stroke engine, and $P$ is in watts.
+- Power from brake mean effective pressure: $P = \dfrac{p_{\mathrm{mep}} \, V_{d,\mathrm{total}} \, N}{c}$, where $p_{\mathrm{mep}}$ is the brake mean effective pressure in pascals, $V_{d,\mathrm{total}}$ is the total displacement in cubic metres, $N$ is the crankshaft speed in revolutions per second, $c = 2$ for a four-stroke engine or $c = 1$ for a two-stroke engine, and $P$ is in watts.
 - Torque: $T = \dfrac{P}{2\pi N}$, with $T$ in newton metres and $P$ in watts.
-- Ideal Otto efficiency: $\eta_{Otto} = 1 - r^{1-\gamma}$, where $r$ is the compression ratio (dimensionless) and $\gamma \approx 1.4$ is the ratio of specific heats for air (typical value, dimensionless).
-- Ideal Diesel efficiency: $\eta_{Diesel} = 1 - \dfrac{1}{r^{\gamma-1}} \cdot \dfrac{r_c^{\gamma} - 1}{\gamma (r_c - 1)}$, where $r_c$ is the cut-off ratio (dimensionless), the ratio of cylinder volume at the end of fuel injection to the volume at its start.
-- Brake thermal efficiency: $\eta_b = \dfrac{P}{\dot m_f \, LHV}$, where $\dot m_f$ is the fuel mass flow in kilograms per second and $LHV$ is the lower heating value of the fuel in joules per kilogram.
+- Ideal Otto efficiency: $\eta_{\mathrm{Otto}} = 1 - r^{1-\gamma}$, where $r$ is the compression ratio (dimensionless) and $\gamma \approx 1.4$ is the ratio of specific heats for air (typical value, dimensionless).
+- Ideal Diesel efficiency: $\eta_{\mathrm{Diesel}} = 1 - \dfrac{1}{r^{\gamma-1}} \cdot \dfrac{r_c^{\gamma} - 1}{\gamma (r_c - 1)}$, where $r_c$ is the cut-off ratio (dimensionless), the ratio of cylinder volume at the end of fuel injection to the volume at its start.
+- Brake thermal efficiency: $\eta_b = \dfrac{P}{\dot m_f \, \mathrm{LHV}}$, where $\dot m_f$ is the fuel mass flow in kilograms per second and $\mathrm{LHV}$ is the lower heating value of the fuel in joules per kilogram.
 
 ## Worked example
 
-**Given:** A four-cylinder four-stroke engine with a bore of $B = 86\ \text{mm}$ and a stroke of $S = 86\ \text{mm}$. It runs at $N_{rpm} = 4000\ \text{rpm}$ with a brake mean effective pressure of $p_{mep} = 1.0\ \text{MPa}$. The brake thermal efficiency is $\eta_b = 0.30$, and the gasoline lower heating value is $LHV = 44\ \text{MJ/kg}$ (typical value).
+**Given:** A four-cylinder four-stroke engine with a bore of $B = 86\ \text{mm}$ and a stroke of $S = 86\ \text{mm}$. It runs at $N_{\mathrm{rpm}} = 4000\ \text{rpm}$ with a brake mean effective pressure of $p_{\mathrm{mep}} = 1.0\ \text{MPa}$. The brake thermal efficiency is $\eta_b = 0.30$, and the gasoline lower heating value is $\mathrm{LHV} = 44\ \text{MJ/kg}$ (typical value).
 
 **Find:** (a) the total displacement, (b) the power, (c) the torque, and (d) the fuel use in kilograms per hour.
 

@@ -78,7 +78,7 @@ equations below.
 
 - Refrigeration COP: $\mathrm{COP}_R = \dfrac{\dot{Q}_L}{\dot{W}_c}$, where $\dot{Q}_L$ is the heat rate
   removed from the cold space in watts (W) and $\dot{W}_c$ is the compressor power in watts (W).
-- Heat pump COP for the same cycle: $\mathrm{COP}_{HP} = \dfrac{\dot{Q}_H}{\dot{W}_c} = \mathrm{COP}_R + 1$,
+- Heat pump COP for the same cycle: $\mathrm{COP}_{\mathrm{HP}} = \dfrac{\dot{Q}_H}{\dot{W}_c} = \mathrm{COP}_R + 1$,
   where $\dot{Q}_H$ is the heat rate delivered to the warm space in watts (W).
 - Energy balance on the cycle: $\dot{Q}_H = \dot{Q}_L + \dot{W}_c$.
 - Evaporator heat rate: $\dot{Q}_L = \dot{m}\,(h_1 - h_4)$, where $\dot{m}$ is the refrigerant mass flow in
@@ -87,9 +87,9 @@ equations below.
 - Condenser heat rate: $\dot{Q}_H = \dot{m}\,(h_2 - h_3)$, with $h_3$ the enthalpy of liquid leaving the
   condenser.
 - Throttling: $h_4 = h_3$. The expansion device keeps enthalpy constant.
-- Carnot upper bound: $\mathrm{COP}_{R,max} = \dfrac{T_L}{T_H - T_L}$, with $T_L$ the cold temperature and
+- Carnot upper bound: $\mathrm{COP}_{R,\mathrm{max}} = \dfrac{T_L}{T_H - T_L}$, with $T_L$ the cold temperature and
   $T_H$ the warm temperature, both in kelvin (K).
-- SEER to COP: $\mathrm{COP} = \dfrac{\mathrm{SEER}}{3.412}$, because 1 W = 3.412 Btu/h.
+- SEER to COP: $\mathrm{COP} = \dfrac{\mathrm{SEER}}{3.412}$, because $1\ \text{W} = 3.412\ \text{Btu/h}$.
 
 The enthalpy values in the worked example are typical saturated R-134a properties, taken from standard
 refrigerant property tables in the IIR reference state, where saturated liquid at 0 C has
@@ -115,8 +115,8 @@ the Carnot bound are $T_L = 273.15\ \text{K}$ and $T_H = 313.15\ \text{K}$.
 2. Evaporator heat rate: $\dot{Q}_L = 0.010 \times 142.2 = 1.422\ \text{kW}$.
 3. COP: $\mathrm{COP}_R = 1.422 / 0.50 = 2.84$.
 4. Heat rejected: $\dot{Q}_H = \dot{Q}_L + \dot{W}_c = 1.422 + 0.50 = 1.922\ \text{kW}$.
-5. Check with the condenser balance. The compressor exit enthalpy is $h_2 = h_1 + \dot{W}_c/\dot{m} =
-   398.6 + 50.0 = 448.6\ \text{kJ/kg}$, so $\dot{Q}_H = 0.010 \times (448.6 - 256.4) = 1.922\ \text{kW}$.
+5. Check with the condenser balance. The compressor exit enthalpy is $h_2 = h_1 + \dot{W}_c/\dot{m} =$
+   $398.6 + 50.0 = 448.6\ \text{kJ/kg}$, so $\dot{Q}_H = 0.010 \times (448.6 - 256.4) = 1.922\ \text{kW}$.
 6. Carnot COP: $273.15 / (313.15 - 273.15) = 6.83$. The actual COP is $2.84 / 6.83 = 0.42$ of the Carnot
    value.
 
@@ -188,7 +188,7 @@ Carnot's 1824 analysis of ideal heat engines set the limit that still bounds the
 1. $\mathrm{COP}_R = 300 / 100 = 3.0$
 2. $\mathrm{COP}_R = 1.0 / 0.40 = 2.5$, and $\dot{Q}_H = 1.0 + 0.40 = 1.4\ \text{kW}$
 3. $\mathrm{COP} = 14 / 3.412 = 4.10$
-4. $\mathrm{COP}_{R,max} = 255.15 / (298.15 - 255.15) = 5.93$
+4. $\mathrm{COP}_{R,\mathrm{max}} = 255.15 / (298.15 - 255.15) = 5.93$
 5. $\dot{Q}_L = 0.020 \times (398.6 - 256.4) = 2.84\ \text{kW}$
 
 </details>

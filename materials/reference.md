@@ -28,7 +28,7 @@ Crystal structures of common metals (room temperature):
 
 | Structure | Examples | Atoms per cell | Atomic packing factor | Ductility note |
 |---|---|---|---|---|
-| BCC | alpha Fe, Cr, W | 2 | 0.68 | Strong, can be brittle at low T |
+| BCC | alpha Fe, Cr, W | 2 | 0.68 | Strong, can be brittle at low $T$ |
 | FCC | Al, Cu, Ni, austenitic steel | 4 | 0.74 | Usually ductile |
 | HCP | Ti (alpha), Mg, Zn | 6 (hcp cell) | 0.74 | Few slip systems, often less ductile |
 
@@ -106,7 +106,7 @@ Hardness is resistance to local indentation. No hardness scale is an absolute me
 | Scale | Indenter and load | What it suits | Notes |
 |---|---|---|---|
 | Rockwell C (HRC) | Diamond cone, 150 kgf major load | Hardened and tempered steel | Depth-based. Typical for shop checks on heat-treated parts |
-| Rockwell B (HRB) | 1/16 in ball, 100 kgf | Annealed steel, aluminum, copper alloys | Soft materials |
+| Rockwell B (HRB) | $1/16$ in ball, 100 kgf | Annealed steel, aluminum, copper alloys | Soft materials |
 | Brinell (HBW) | Tungsten carbide ball, large load | Castings, forgings, coarse structures | Averages over many grains. Good for coarse or non-uniform materials |
 | Vickers (HV) | Diamond pyramid, selectable load | Any metal, thin sections, weld zones, microhardness | One scale at all loads. Load-dependent at low loads |
 | Knoop (HK) | Elongated diamond pyramid | Thin coatings, brittle materials | Gives an elongated indent for direction-sensitive readings |
@@ -158,12 +158,12 @@ The indices hold when the constraint and objective match the index, the section 
 |---|---|---|
 | Yielding (permanent set) | $\sigma_y$ | $\sigma_{\max} \le \sigma_y / N$, with $N$ the design factor |
 | Ductile overload | $\sigma_u$, ductility | Net section stress below $\sigma_u$ with margin |
-| Brittle fracture | $K_{IC}$, flaw size | Largest flaw below $a_c$ (see fracture section) |
-| Fatigue | Endurance limit or S-N curve, notch factor, surface | Stress amplitude under the fatigue limit, or life from S-N |
+| Brittle fracture | $K_{\mathrm{IC}}$, flaw size | Largest flaw below $a_c$ (see fracture section) |
+| Fatigue | Endurance limit or $S$-$N$ curve, notch factor, surface | Stress amplitude under the fatigue limit, or life from $S$-$N$ |
 | Creep rupture | Creep rate, activation energy, rupture time | Temperature below creep regime, or rupture life above design life |
 | Buckling | $E$ and section stiffness $I$, not $\sigma_y$ | $P_{\text{cr}} = \dfrac{\pi^2 E I}{(K_e L)^2}$, with $K_e$ the effective length factor |
 | Wear | Hardness, lubrication, surface contact stress | Contact pressure against hardness and lubrication regime |
-| Stress corrosion cracking | $K_{ISCC}$, environment, tensile stress | Stress and environment both present, below yield |
+| Stress corrosion cracking | $K_{\mathrm{ISCC}}$, environment, tensile stress | Stress and environment both present, below yield |
 | Galvanic, pitting, crevice corrosion | Electrode potential, chloride, geometry | See corrosion section |
 | Thermal shock | $\sigma_f/(E\,\alpha)$ | Thermal stress against fracture strength |
 | Low temperature brittleness (BCC steel) | Notch toughness vs temperature | Impact toughness at the lowest service temperature |
@@ -175,32 +175,32 @@ Notes: buckling depends on stiffness and geometry, not strength. A stiff, strong
 
 - Stress intensity factor for a crack of length $a$ under stress $\sigma$: $K = Y\,\sigma\,\sqrt{\pi a}$. Units: MPa $\sqrt{\text{m}}$ with $\sigma$ in MPa and $a$ in m.
 - Geometry factor $Y$: about 1.12 for an edge crack in a wide plate. Use 1.0 for a through crack in an infinite plate.
-- Fracture occurs when $K = K_{IC}$. Critical crack length: $a_c = \dfrac{1}{\pi}\left(\dfrac{K_{IC}}{Y\sigma}\right)^2$.
+- Fracture occurs when $K = K_{\mathrm{IC}}$. Critical crack length: $a_c = \dfrac{1}{\pi}\left(\dfrac{K_{\mathrm{IC}}}{Y\sigma}\right)^2$.
 - The formula holds for linear elastic behavior, plane strain, and a crack small compared with the part. It breaks for ductile metals with large plastic zones (use J-integral or COD methods) and for very thin sections.
-- Plane strain validity (ASTM E399 criterion): crack length and thickness both at least $2.5\,(K_{IC}/\sigma_y)^2$. Thinner sections need a different test or fail the validity check.
-- Example (6061-T6, $K_{IC} \approx 30$ MPa $\sqrt{\text{m}}$, $\sigma_y = 276$ MPa): minimum valid thickness is about 30 mm. Critical edge crack at $\sigma = 138$ MPa (half yield) and $Y = 1.12$ is about 12 mm.
-- Example (soda-lime glass, $K_{IC} \approx 0.75$ MPa $\sqrt{\text{m}}$, $\sigma = 50$ MPa, $Y = 1.12$): critical edge crack is about 0.06 mm, which shows how little flaw glass tolerates.
+- Plane strain validity (ASTM E399 criterion): crack length and thickness both at least $2.5\,(K_{\mathrm{IC}}/\sigma_y)^2$. Thinner sections need a different test or fail the validity check.
+- Example (6061-T6, $K_{\mathrm{IC}} \approx 30$ MPa $\sqrt{\text{m}}$, $\sigma_y = 276$ MPa): minimum valid thickness is about 30 mm. Critical edge crack at $\sigma = 138$ MPa (half yield) and $Y = 1.12$ is about 12 mm.
+- Example (soda-lime glass, $K_{\mathrm{IC}} \approx 0.75$ MPa $\sqrt{\text{m}}$, $\sigma = 50$ MPa, $Y = 1.12$): critical edge crack is about 0.06 mm, which shows how little flaw glass tolerates.
 
 Typical fracture toughness (MPa $\sqrt{\text{m}}$, typical):
 
-| Material | $K_{IC}$ |
+| Material | $K_{\mathrm{IC}}$ |
 |---|---|
 | Soda-lime glass | about 0.75 |
 | Alumina | about 4 |
 | 6061-T6 aluminum | about 30 |
 | Ti-6Al-4V | about 50-100 |
 
-- Strength and toughness are separate. High yield strength does not mean high $K_{IC}$.
+- Strength and toughness are separate. High yield strength does not mean high $K_{\mathrm{IC}}$.
 - Crack growth under cyclic load follows the Paris law form $da/dN = C\,(\Delta K)^m$, with $C$ and $m$ material constants. The law holds only in the stable growth region.
 
 ## Fatigue basics
 
 - Stress amplitude $\sigma_a = \dfrac{\sigma_{\max} - \sigma_{\min}}{2}$. Stress ratio $R = \sigma_{\min}/\sigma_{\max}$.
 - Fatigue occurs in three stages: crack initiation (usually at a surface or inclusion), slow propagation, and final fracture.
-- Steels (wrought, rotating beam test rule of thumb): endurance limit $S_e' \approx 0.5\,S_{ut}$ for $S_{ut} \le 1400$ MPa, and $S_e' \approx 700$ MPa for higher strength. It holds for smooth, polished specimens in air at room temperature. It breaks for notched, corroded, large, or hot parts.
+- Steels (wrought, rotating beam test rule of thumb): endurance limit $S_e' \approx 0.5\,S_{\mathrm{ut}}$ for $S_{\mathrm{ut}} \le 1400$ MPa, and $S_e' \approx 700$ MPa for higher strength. It holds for smooth, polished specimens in air at room temperature. It breaks for notched, corroded, large, or hot parts.
 - Marin factors reduce the endurance limit for the real part: surface finish, size, loading mode, temperature, reliability, and miscellaneous effects. Apply them multiplicatively to $S_e'$.
 - Aluminum alloys and most non-ferrous metals have no clear endurance limit. Design to a stated finite life, commonly $10^8$ or $5 \times 10^8$ cycles.
-- Mean stress: modified Goodman relation $\dfrac{\sigma_a}{S_e} + \dfrac{\sigma_m}{S_{ut}} = 1$. It holds for ductile metals. It breaks for brittle materials and for compressive mean stress, which is usually kinder.
+- Mean stress: modified Goodman relation $\dfrac{\sigma_a}{S_e} + \dfrac{\sigma_m}{S_{\mathrm{ut}}} = 1$. It holds for ductile metals. It breaks for brittle materials and for compressive mean stress, which is usually kinder.
 - Stress concentration: $\sigma_{\max} = K_t\,\sigma_{\text{nominal}}$. Fatigue notch factor $K_f$ is lower than $K_t$ for notch-sensitive materials. Use $K_f$ for fatigue.
 - Surface finish, corrosion, residual stress (shot peening helps), and notches can each cut fatigue life a lot.
 
@@ -208,9 +208,9 @@ Typical fracture toughness (MPa $\sqrt{\text{m}}$, typical):
 
 - Creep is time-dependent deformation under constant stress. Three stages: primary (decelerating), secondary (steady-state), and tertiary (accelerating to rupture).
 - Regime rule: creep matters when the absolute temperature is above about 0.3 to 0.5 of the absolute melting temperature $T_m$ (in kelvin). It holds for metals and many ceramics. Polymers creep at much lower temperature, so use the glass transition temperature $T_g$ as the reference.
-- Worked check: aluminum ($T_m \approx 933$ K) reaches $0.4\,T_m$ at about 373 K (100 C), so creep matters above about 100 C and room-temperature creep is negligible for design. Lead ($T_m \approx 601$ K) is at about 0.49 $T_m$ at room temperature, so lead creeps at room temperature.
+- Worked check: aluminum ($T_m \approx 933$ K) reaches $0.4\,T_m$ at about 373 K (100 C), so creep matters above about 100 C. Room-temperature creep is usually small for structural aluminum, but it can matter for sustained high stress, such as clamped aluminum conductors. Lead ($T_m \approx 601$ K) is at about 0.49 $T_m$ at room temperature, so lead creeps at room temperature.
 - Steady-state creep rate: $\dot{\varepsilon} = A\,\sigma^{n}\exp\!\left(-\dfrac{Q}{RT}\right)$, with $\dot{\varepsilon}$ in 1/s, $\sigma$ in MPa, $n$ the stress exponent (often 3 to 8 for metals), $Q$ the activation energy (J/mol), $R = 8.314$ J/(mol K), and $T$ in kelvin.
-- Temperature ratio at the same stress: $\dfrac{\dot{\varepsilon}_2}{\dot{\varepsilon}_1} = \exp\!\left[\dfrac{Q}{R}\left(\dfrac{1}{T_1} - \dfrac{1}{T_2}\right)\right]$. Example: with $Q = 200$ kJ/mol, raising T from 900 K to 1000 K increases the creep rate by about 14.5 times.
+- Temperature ratio at the same stress: $\dfrac{\dot{\varepsilon}_2}{\dot{\varepsilon}_1} = \exp\!\left[\dfrac{Q}{R}\left(\dfrac{1}{T_1} - \dfrac{1}{T_2}\right)\right]$. Example: with $Q = 200$ kJ/mol, raising $T$ from 900 K to 1000 K increases the creep rate by about 14.5 times.
 - It breaks when the model is applied with Celsius instead of kelvin, when the microstructure changes (overaging, phase transformation), or when multiaxial stress or oxidation dominate.
 - Design responses: higher melting point material, precipitate-strengthened alloys, lower stress, lower temperature, and wall thickness allowance for creep life.
 
@@ -289,12 +289,12 @@ Before releasing a design:
 
 - Stiffness: steel about 200 GPa, aluminum about 70 GPa, titanium about 110 GPa, most polymers 1 to 4 GPa. A polymer reading of 200 GPa is a unit error.
 - Density: most metals 2000 to 9000 kg/m$^3$, polymers about 900 to 1600 kg/m$^3$. A value near 1000 for steel means a missing or wrong unit.
-- Poisson's ratio: 0 to 0.5 for isotropic materials. Above 0.5 means an error.
+- Poisson's ratio: usually 0.2 to 0.4 for common materials; stable isotropic materials lie between -1 and 0.5 (negative values are rare, found in auxetic materials). Above 0.5 means an error.
 - Yield strain for metals: $\sigma_y / E$, usually about 0.001 to 0.005. Steel at 370 MPa gives about 0.0018.
 - Yield below ultimate: for ductile materials $\sigma_y < \sigma_u$. Equal values mean brittle or a bad entry.
 - Fracture toughness: metals 20 to 200 MPa $\sqrt{\text{m}}$, ceramics and glass about 1 to 5. A ceramic at 50 is suspect.
 - Critical crack length: a few mm to a few cm for metals at half yield. A critical crack of 1 m for an ordinary part is suspect.
-- Creep: with absolute temperature (kelvin), creep is significant above about 0.4 $T_m$. A room-temperature creep failure of aluminum is not plausible. Lead creeping at room temperature is plausible.
+- Creep: with absolute temperature (kelvin), creep is significant above about 0.4 $T_m$. A room-temperature creep failure of an aluminum structural part is unlikely, though aluminum conductors under sustained clamping load can creep. Lead creeping at room temperature is plausible.
 - Galvanic corrosion: rates of 0.1 mm/year are typical for mild steel in mild water. Rates above 1 mm/year are a strong warning, not a normal value.
 - Hall-Petch: halving grain diameter raises the $k_y d^{-1/2}$ term by about 41 percent ($\sqrt{2}$). The total yield change is smaller because $\sigma_0$ does not change.
 

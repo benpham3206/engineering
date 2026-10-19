@@ -38,14 +38,14 @@ The light bounces down the fiber, and each reflection keeps it inside. The fiber
 - Snell's law, with angles $\theta$ in radians or degrees and refractive indices $n$ dimensionless: $n_1 \sin\theta_1 = n_2 \sin\theta_2$.
 - Critical angle: $\theta_c = \arcsin(n_2 / n_1)$.
 - Numerical aperture, dimensionless: $\mathrm{NA} = \sqrt{n_1^2 - n_2^2}$. When light enters from air, with $n_0 = 1$, the acceptance half-angle is $\theta_a = \arcsin(\mathrm{NA})$.
-- Attenuation, with $\alpha$ in dB/km and $L$ in km: $P_{out} = P_{in} \cdot 10^{-\alpha L / 10}$.
+- Attenuation, with $\alpha$ in dB/km and $L$ in km: $P_{\mathrm{out}} = P_{\mathrm{in}} \cdot 10^{-\alpha L / 10}$.
 - Power level, with $P$ in watts: $P\,(\text{dBm}) = 10 \log_{10}(P / 1\ \text{mW})$.
-- Link budget margin, in dB: $M = P_{tx} - P_{rx,\min} - L_{total}$, where $P_{rx,\min}$ is the receiver sensitivity.
+- Link budget margin, in dB: $M = P_{\mathrm{tx}} - P_{\mathrm{rx},\min} - L_{\mathrm{total}}$, where $P_{\mathrm{rx},\min}$ is the receiver sensitivity.
 - Propagation delay, with $t$ in seconds and $L$ in metres: $t = L\,n / c$, where $c = 3.00 \times 10^8\ \text{m/s}$.
 
 ## Worked example
 
-**Given:** An 80 km single-mode link at 1550 nm. The fiber loss is $\alpha = 0.2$ dB/km (typical). The link has four connectors at 0.5 dB each and twenty splices at 0.05 dB each. The transmitter sends $P_{tx} = 0$ dBm, which is 1.0 mW. The receiver needs at least $P_{rx,\min} = -30$ dBm. The core index is $n = 1.468$.
+**Given:** An 80 km single-mode link at 1550 nm. The fiber loss is $\alpha = 0.2$ dB/km (typical). The link has four connectors at 0.5 dB each and twenty splices at 0.05 dB each. The transmitter sends $P_{\mathrm{tx}} = 0$ dBm, which is 1.0 mW. The receiver needs at least $P_{\mathrm{rx},\min} = -30$ dBm. The core index is $n = 1.468$.
 
 **Find:** (a) the total loss, (b) the received power, (c) the link margin, and (d) the propagation delay.
 

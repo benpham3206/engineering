@@ -25,7 +25,7 @@ For a linear system with $n$ unknowns:
 
 $$A\mathbf{x} = \mathbf{b}$$
 
-Here $A$ is an $n \times n$ coefficient matrix, $\mathbf{x}$ is the unknown vector, and $\mathbf{b}$ is the known right-hand side. Units follow the rows of $\mathbf{b}$. If $\mathbf{b}$ is a force in N, then $\mathbf{x}$ is in N as well, and $A$ is dimensionless.
+Here $A$ is an $n \times n$ coefficient matrix, $\mathbf{x}$ is the unknown vector, and $\mathbf{b}$ is the known right-hand side. Each entry $A_{ij}$ has the units of $b_i$ per unit of $x_j$. If $A$ is dimensionless, $\mathbf{x}$ has the units of $\mathbf{b}$. For a stiffness system $K\mathbf{u} = \mathbf{F}$, $K$ is in N/m, $\mathbf{u}$ in m, and $\mathbf{F}$ in N.
 
 ## Worked example
 

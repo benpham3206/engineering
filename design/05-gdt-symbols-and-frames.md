@@ -36,7 +36,7 @@ Choose datums from how the part is mounted or mated. A datum should be the surfa
 An FCF is read left to right. It has up to five compartments:
 
 1. The **characteristic symbol**, such as position or flatness.
-2. The **tolerance value**, a number with a diameter symbol (Ø) if the zone is cylindrical. The value is the full width of the zone.
+2. The **tolerance value**, a number with a diameter symbol ($\text{Ø}$) if the zone is cylindrical. The value is the full width of the zone.
 3. An optional **material condition modifier** in a circle, such as M for maximum material condition (MMC).
 4. The **primary datum**, then optionally a **secondary** and **tertiary** datum, separated by compartments.
 

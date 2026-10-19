@@ -23,17 +23,17 @@ sensor signal conditioning.
   Its output tries to make the two input voltages equal, which is the basis of its behavior.
 - **Ideal op-amp assumptions**: infinite input resistance, zero output resistance, and infinite open
   loop gain. These are good enough for most first designs, as long as there is negative feedback.
-- **Inverting amplifier**: the signal goes into the minus input through a resistor $R_{in}$, and a
+- **Inverting amplifier**: the signal goes into the minus input through a resistor $R_{\mathrm{in}}$, and a
   feedback resistor $R_f$ connects the output back to the minus input. The gain is
-  $-R_f / R_{in}$. The minus sign means the output is flipped in polarity.
+  $-R_f / R_{\mathrm{in}}$. The minus sign means the output is flipped in polarity.
 
 ## Key equations
 
 - Time constant: $\tau = R C$, where $R$ is ohms ($\Omega$), $C$ is farads (F), and $\tau$ is seconds.
 - Charging from zero to $V_s$ through $R$: $V_C(t) = V_s \left(1 - e^{-t/\tau}\right)$.
 - Time to reach a voltage $V_x$ when charging from zero: $t = -\tau \ln\left(1 - \dfrac{V_x}{V_s}\right)$.
-- Inverting amplifier gain: $A_v = -\dfrac{R_f}{R_{in}}$ (dimensionless).
-- Output voltage: $V_{out} = A_v V_{in}$.
+- Inverting amplifier gain: $A_v = -\dfrac{R_f}{R_{\mathrm{in}}}$ (dimensionless).
+- Output voltage: $V_{\mathrm{out}} = A_v V_{\mathrm{in}}$.
 
 ## Worked example
 
@@ -72,8 +72,8 @@ is reached in roughly $0.7\tau$, and $0.326 / 0.47 = 0.69$, which agrees.
 1. Find $\tau$ for $R = 1\ \text{k}\Omega$ and $C = 100\ \mu\text{F}$.
 2. An RC circuit with $\tau = 0.1\ \text{s}$ is charged from a $5\ \text{V}$ source. Find the voltage
    after one time constant.
-3. An inverting amplifier has $R_{in} = 4.7\ \text{k}\Omega$ and $R_f = 47\ \text{k}\Omega$. Find the gain.
-4. Using the amplifier from problem 3, find $V_{out}$ for $V_{in} = 0.5\ \text{V}$.
+3. An inverting amplifier has $R_{\mathrm{in}} = 4.7\ \text{k}\Omega$ and $R_f = 47\ \text{k}\Omega$. Find the gain.
+4. Using the amplifier from problem 3, find $V_{\mathrm{out}}$ for $V_{\mathrm{in}} = 0.5\ \text{V}$.
 5. How long does it take to reach $3\ \text{V}$ from zero in the RC circuit of problem 2, with a
    $5\ \text{V}$ source?
 

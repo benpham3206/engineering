@@ -41,7 +41,7 @@ A condenser microphone uses a thin diaphragm close to a fixed plate. The two for
 - Motional emf in a microphone or in the back-emf of a speaker, with coil velocity $v$ in metres per second: $e = B\,l\,v$.
 - Sound pressure level, in decibels, with rms pressure $p$ in pascals and the reference pressure $p_0 = 20\ \mu\text{Pa}$: $L_p = 20 \log_{10}(p / p_0)$.
 - Acoustic intensity of a plane wave, in W/m$^2$: $I = p^2 / (\rho c)$, where $\rho = 1.2$ kg/m$^3$ is the density of air and $c = 343$ m/s is the speed of sound in air at about 20 °C (typical). The product $\rho c$ is about $412$ Pa s/m.
-- Acoustic efficiency, dimensionless: $\eta = P_{acoustic} / P_{electrical}$.
+- Acoustic efficiency, dimensionless: $\eta = P_{\mathrm{acoustic}} / P_{\mathrm{electrical}}$.
 
 Doubling the pressure raises the level by $20 \log_{10} 2 = 6.0$ dB. Doubling the acoustic power raises it by $10 \log_{10} 2 = 3.0$ dB.
 

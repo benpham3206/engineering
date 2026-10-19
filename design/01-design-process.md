@@ -85,7 +85,7 @@ Without a note, the reason for a dimension such as 14.3 mm is lost. A short note
 A team must design a clamp that holds a 20 mm (0.79 in) thick workpiece in a bench vise while a hole is drilled.
 
 - **Need.** Hold the workpiece steady during drilling, so the hole is in the right place.
-- **Requirements.** Clamping force of at least 300 N (67 lbf). Opens to at least 25 mm (1 in). Total mass under 0.5 kg (1.1 lb). Costs under US$15 in parts.
+- **Requirements.** Clamping force of at least 300 N (67 lbf). Opens to at least 25 mm (1 in). Total mass under 0.5 kg (1.1 lb). Costs under US\$15 in parts.
 - **Concepts.** (1) A C-clamp from a purchased part. (2) A cam lever clamp. (3) A toggle clamp.
 - **Trade study.** Weights: force 5, cost 3, mass 2, ease of use 4. The team scores each concept and finds the toggle clamp has the highest weighted total, but only if it meets the 25 mm opening. The toggle clamp opens to 22 mm, so it fails a hard requirement, and the team removes it. The team chooses the cam lever clamp.
 - **Risk.** The lever might slip under vibration. The test plan is to drill 20 holes with the clamp and check the workpiece for movement.
@@ -101,7 +101,7 @@ A team must design a clamp that holds a 20 mm (0.79 in) thick workpiece in a ben
 <details><summary>Answers</summary>
 
 1. Any measurable requirement with a metric and a pass value, for example "holds 15 kg (33 lb) with 2 mm (0.08 in) maximum sag."
-2. Concept A: 4 x 4 + 2 x 3 = 22. Concept B: 4 x 2 + 2 x 5 = 18. Concept A is higher.
+2. Concept A: $4 \times 4 + 2 \times 3 = 22$. Concept B: $4 \times 2 + 2 \times 5 = 18$. Concept A is higher.
 3. No.
 4. Answers vary. A good answer names a specific uncertainty, such as grind consistency or handle strength.
 

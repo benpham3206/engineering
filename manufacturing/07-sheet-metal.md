@@ -30,9 +30,9 @@ Design tips:
 
 The bend allowance for a bend of angle $\theta$ with inside radius $R$, thickness $T$, and K-factor $K$ is:
 
-$$BA = \theta \cdot \frac{\pi}{180} \cdot (R + K\,T)$$
+$$\text{BA} = \theta \cdot \frac{\pi}{180} \cdot (R + K\,T)$$
 
-Units: $\theta$ is in degrees. $R$ and $T$ must be in the same length unit (mm in SI, inches in US form), and $BA$ comes out in that same unit. $K$ is a dimensionless fraction. The factor $\pi/180$ converts degrees to radians, so the result is an arc length.
+Units: $\theta$ is in degrees. $R$ and $T$ must be in the same length unit (mm in SI, inches in US form), and $\text{BA}$ comes out in that same unit. $K$ is a dimensionless fraction. The factor $\pi/180$ converts degrees to radians, so the result is an arc length.
 
 ## Worked example
 
@@ -51,7 +51,7 @@ $$R + K\,T = 3 + 0.66 = 3.66 \text{ mm}$$
 3. Angle in radians:
 $$90 \times \frac{\pi}{180} = \frac{\pi}{2} = 1.5708$$
 4. Bend allowance:
-$$BA = 1.5708 \times 3.66 = 5.749 \text{ mm}$$
+$$\text{BA} = 1.5708 \times 3.66 = 5.749 \text{ mm}$$
 
 **Answer:** The bend allowance is about 5.75 mm.
 
@@ -60,7 +60,7 @@ $$BA = 1.5708 \times 3.66 = 5.749 \text{ mm}$$
 ## Practice
 
 1. A 90 degree bend has $R = 5$ mm, $T = 3$ mm, and $K = 0.4$. What is the bend allowance in mm? Round to two decimal places.
-2. A 90 degree bend in 1/8 in (0.125 in) sheet has $R = 0.25$ in and $K = 0.33$. What is the bend allowance in inches? Round to three decimal places.
+2. A 90 degree bend in $1/8$ in (0.125 in) sheet has $R = 0.25$ in and $K = 0.33$. What is the bend allowance in inches? Round to three decimal places.
 3. Why is a sharp bend radius risky for a brittle metal?
 4. Which way does the material inside the bend go during forming: squeezed or stretched?
 5. Name one reason to keep holes away from bend lines.

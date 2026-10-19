@@ -44,19 +44,19 @@ The air cannot stop completely behind the rotor. If it did, it would block the f
 
 Kinetic power in the wind, in watts, for air with cross-sectional area $A$ in square metres (m$^2$) moving at speed $v$ in metres per second (m/s):
 
-$$P_{wind} = \frac{1}{2} \rho A v^3$$
+$$P_{\mathrm{wind}} = \frac{1}{2} \rho A v^3$$
 
-where $\rho$ is the air density in kilograms per cubic metre (kg/m$^3$). At sea level on Earth and 15 °C, $\rho \approx 1.225\ \text{kg/m}^3$ (standard value). The swept area of a rotor of diameter $D$ in metres is $A = \pi D^2 / 4$.
+where $\rho$ is the air density in kilograms per cubic metre (kg/m$^3$). At sea level on Earth and 15 °C, $\rho \approx 1.225\ \text{kg}/\text{m}^3$ (standard value). The swept area of a rotor of diameter $D$ in metres is $A = \pi D^2 / 4$.
 
 Turbine output, in watts, with power coefficient $C_p$:
 
-$$P_{turbine} = \frac{1}{2} \rho A v^3 \, C_p$$
+$$P_{\mathrm{turbine}} = \frac{1}{2} \rho A v^3 \, C_p$$
 
 where $C_p$ is the fraction of the wind power the rotor extracts (dimensionless).
 
 Betz limit, the largest possible power coefficient for an ideal actuator disk:
 
-$$C_{p,max} = \frac{16}{27} \approx 0.593$$
+$$C_{p,\mathrm{max}} = \frac{16}{27} \approx 0.593$$
 
 Tip speed ratio, a dimensionless measure of rotor speed:
 
@@ -66,15 +66,15 @@ where $\omega$ is the rotor angular speed in radians per second (rad/s) and $R$ 
 
 Capacity factor, a dimensionless ratio of actual energy to the energy at full rated power for a year:
 
-$$CF = \frac{E}{P_{rated} \times 8760\ \text{h}}$$
+$$\mathrm{CF} = \frac{E}{P_{\mathrm{rated}} \times 8760\ \text{h}}$$
 
-where $E$ is the annual energy in watt-hours (Wh) or kilowatt-hours (kWh), $P_{rated}$ is the rated power in the same unit scale, and 8760 is the number of hours in a year.
+where $E$ is the annual energy in watt-hours (Wh) or kilowatt-hours (kWh), $P_{\mathrm{rated}}$ is the rated power in the same unit scale, and 8760 is the number of hours in a year.
 
 Derivation of the Betz limit. Let $a$ be the axial induction factor (dimensionless), the fractional slowdown of the air at the rotor. The air at the rotor moves at $v(1-a)$, and the wake far behind moves at $v(1-2a)$. The power extracted is $P = 2\rho A v^3 a (1-a)^2$. Setting $dP/da = 0$ gives $a = 1/3$. Then $P = \frac{8}{27} \rho A v^3$, and $C_p = P / (\frac{1}{2} \rho A v^3) = \frac{16}{27}$.
 
 ## Worked example
 
-**Given:** A turbine with rotor diameter $D = 80\ \text{m}$. The wind speed is $v = 10\ \text{m/s}$ at hub height. Air density is $\rho = 1.225\ \text{kg/m}^3$ (standard value). A second turbine has rated power $P_{rated} = 3\ \text{MW}$ and produces $E = 7\ \text{GWh}$ in a year.
+**Given:** A turbine with rotor diameter $D = 80\ \text{m}$. The wind speed is $v = 10\ \text{m/s}$ at hub height. Air density is $\rho = 1.225\ \text{kg}/\text{m}^3$ (standard value). A second turbine has rated power $P_{\mathrm{rated}} = 3\ \text{MW}$ and produces $E = 7\ \text{GWh}$ in a year.
 
 **Find:** (a) the power in the wind through the rotor, (b) the largest power any rotor could extract at this speed, and (c) the capacity factor of the second turbine.
 
@@ -83,11 +83,11 @@ Derivation of the Betz limit. Let $a$ be the axial induction factor (dimensionle
 **Solution:**
 
 1. Swept area: $A = \pi (80)^2 / 4 = 5027\ \text{m}^2$.
-2. Wind power: $P_{wind} = \frac{1}{2} (1.225)(5027)(10)^3 = 3.08 \times 10^6\ \text{W}$, which is $3.08\ \text{MW}$.
-3. Betz maximum: $P_{max} = \frac{16}{27} \times 3.08\ \text{MW} = 1.82\ \text{MW}$.
-4. Capacity factor: $CF = \frac{7 \times 10^6\ \text{kWh}}{3000\ \text{kW} \times 8760\ \text{h}} = 0.266$.
+2. Wind power: $P_{\mathrm{wind}} = \frac{1}{2} (1.225)(5027)(10)^3 = 3.08 \times 10^6\ \text{W}$, which is $3.08\ \text{MW}$.
+3. Betz maximum: $P_{\mathrm{max}} = \frac{16}{27} \times 3.08\ \text{MW} = 1.82\ \text{MW}$.
+4. Capacity factor: $\mathrm{CF} = \frac{7 \times 10^6\ \text{kWh}}{3000\ \text{kW} \times 8760\ \text{h}} = 0.266$.
 
-**Answer:** (a) $3.08\ \text{MW}$ in the wind. (b) At most $1.82\ \text{MW}$ can be extracted. (c) $CF = 0.266$, or 26.6 percent.
+**Answer:** (a) $3.08\ \text{MW}$ in the wind. (b) At most $1.82\ \text{MW}$ can be extracted. (c) $\mathrm{CF} = 0.266$, or 26.6 percent.
 
 **Sanity check:** The Betz maximum is less than the wind power, as expected. A capacity factor of 0.266 means the turbine averages about a quarter of its rated output over the year. That is typical for onshore wind (typical range 0.25 to 0.45). Doubling the wind speed would raise the wind power by $2^3 = 8$ times, which shows why siting matters so much.
 
@@ -118,16 +118,16 @@ Poul la Cour in Denmark used wind turbines to generate electricity in the 1890s.
 ## Practice
 
 1. A turbine produces power in proportion to $v^3$. Find the ratio of wind power at $12\ \text{m/s}$ to wind power at $6\ \text{m/s}$.
-2. A rotor has diameter $50\ \text{m}$. The wind speed is $9\ \text{m/s}$ and the air density is $1.225\ \text{kg/m}^3$. Find the wind power through the rotor in kilowatts.
+2. A rotor has diameter $50\ \text{m}$. The wind speed is $9\ \text{m/s}$ and the air density is $1.225\ \text{kg}/\text{m}^3$. Find the wind power through the rotor in kilowatts.
 3. Using the result from problem 2, find the largest power a rotor could extract at that speed, in kilowatts.
 4. A $2\ \text{MW}$ turbine produces $3.5\ \text{GWh}$ in a year. Find its capacity factor.
 
 <details><summary>Answers</summary>
 
 1. $(12/6)^3 = 8$.
-2. $P_{wind} = \frac{1}{2}(1.225)(\pi \cdot 25^2)(9^3) = 877\ \text{kW}$.
-3. $P_{max} = \frac{16}{27} \times 877 = 520\ \text{kW}$.
-4. $CF = \frac{3.5 \times 10^6\ \text{kWh}}{2000\ \text{kW} \times 8760\ \text{h}} = 0.20$.
+2. $P_{\mathrm{wind}} = \frac{1}{2}(1.225)(\pi \cdot 25^2)(9^3) = 877\ \text{kW}$.
+3. $P_{\mathrm{max}} = \frac{16}{27} \times 877 = 520\ \text{kW}$.
+4. $\mathrm{CF} = \frac{3.5 \times 10^6\ \text{kWh}}{2000\ \text{kW} \times 8760\ \text{h}} = 0.20$.
 
 </details>
 

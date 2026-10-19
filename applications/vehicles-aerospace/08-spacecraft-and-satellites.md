@@ -39,11 +39,11 @@ Attitude control keeps the antennas, cameras, and solar arrays pointed where the
 
 ## Key equations
 
-The solar constant $S$ is the solar power per unit area at a given distance from the Sun. At 1 AU, the Earth's mean distance from the Sun, a typical value is $S_0 \approx 1361\ \text{W/m}^2$. Farther out, the flux falls with the square of the distance:
+The solar constant $S$ is the solar power per unit area at a given distance from the Sun. At 1 AU, the Earth's mean distance from the Sun, a typical value is $S_0 \approx 1361\ \text{W}/\text{m}^2$. Farther out, the flux falls with the square of the distance:
 
 $$S(r) = S_0 \left(\frac{1\ \text{AU}}{r}\right)^2$$
 
-where $r$ is the distance from the Sun in astronomical units. A spacecraft at 1.52 AU, the distance of Mars, sees about $589\ \text{W/m}^2$. The values in this lesson use 1 AU unless stated otherwise.
+where $r$ is the distance from the Sun in astronomical units. A spacecraft at 1.52 AU, the distance of Mars, sees about $589\ \text{W}/\text{m}^2$. The values in this lesson use 1 AU unless stated otherwise.
 
 For a flat plate facing the Sun, the absorbed power per unit area is $\alpha S$, where $\alpha$ is the solar absorptance (dimensionless). The plate emits thermal radiation at the Stefan-Boltzmann rate:
 
@@ -63,7 +63,7 @@ where $A$ is the array area in square metres (m$^2$), $\eta$ is the cell efficie
 
 ## Worked example
 
-**Given:** A flat plate in orbit at 1 AU has solar absorptance $\alpha = 0.25$ and infrared emittance $\varepsilon = 0.85$, typical of a white thermal coating. The plate faces the Sun squarely. It radiates from both faces, has no internal heat source, and gets no Earth albedo or Earth infrared. Solar constant $S_0 = 1361\ \text{W/m}^2$.
+**Given:** A flat plate in orbit at 1 AU has solar absorptance $\alpha = 0.25$ and infrared emittance $\varepsilon = 0.85$, typical of a white thermal coating. The plate faces the Sun squarely. It radiates from both faces, has no internal heat source, and gets no Earth albedo or Earth infrared. Solar constant $S_0 = 1361\ \text{W}/\text{m}^2$.
 
 **Find:** (a) the equilibrium temperature of the plate at 1 AU, (b) the equilibrium temperature at 1.52 AU, and (c) the solar array area for a 500 W load with cell efficiency $\eta = 0.30$, end-of-life factor $f_{\text{deg}} = 0.80$, and incidence $\cos\theta = 0.95$ at both distances.
 
@@ -71,9 +71,9 @@ where $A$ is the array area in square metres (m$^2$), $\eta$ is the cell efficie
 
 **Solution:**
 
-1. Absorbed flux at 1 AU: $\alpha S_0 = 0.25 \times 1361 = 340\ \text{W/m}^2$.
+1. Absorbed flux at 1 AU: $\alpha S_0 = 0.25 \times 1361 = 340\ \text{W}/\text{m}^2$.
 2. Balance with two radiating faces: $T = (340 / (2 \times 0.85 \times 5.670 \times 10^{-8}))^{1/4} = 244\ \text{K}$, which is $-29\ ^\circ\text{C}$.
-3. Solar constant at 1.52 AU: $S = 1361 / 1.52^2 = 589\ \text{W/m}^2$.
+3. Solar constant at 1.52 AU: $S = 1361 / 1.52^2 = 589\ \text{W}/\text{m}^2$.
 4. Balance at 1.52 AU: $T = (0.25 \times 589 / (2 \times 0.85 \times 5.670 \times 10^{-8}))^{1/4} = 198\ \text{K}$, which is $-75\ ^\circ\text{C}$.
 5. Array area at 1 AU: $A = 500 / (0.30 \times 1361 \times 0.80 \times 0.95) = 1.61\ \text{m}^2$.
 6. Array area at 1.52 AU: $A = 500 / (0.30 \times 589 \times 0.80 \times 0.95) = 3.72\ \text{m}^2$.
@@ -113,7 +113,7 @@ The Soviet Union launched Sputnik 1 on 4 October 1957, the first artificial sate
 
 <details><summary>Answers</summary>
 
-1. $S = 1361 / 4 = 340\ \text{W/m}^2$
+1. $S = 1361 / 4 = 340\ \text{W}/\text{m}^2$
 2. $P = 1361 \times 0.50 = 680\ \text{W}$
 3. $T = (1361 / 5.670 \times 10^{-8})^{1/4} \approx 394\ \text{K}$, which is about 121 $^\circ$C
 4. $A = 1000 / (0.28 \times 1361 \times 0.75) \approx 3.5\ \text{m}^2$

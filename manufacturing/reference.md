@@ -20,17 +20,17 @@ Lookup sheet for the working engineer who needs a formula, a typical value, a ru
 
 | Process | Typical materials | Typical tolerance (typical) | Typical Ra, um (typical) | Economic batch (typical) |
 |---|---|---|---|---|
-| CNC turning | metals, plastics | +/- 0.025 mm | 0.8 to 3.2 | one-off to medium |
-| CNC milling | metals, plastics | +/- 0.025 mm | 0.8 to 3.2 | one-off to medium |
-| Precision grinding | hardened steel, carbide, ceramics | +/- 0.005 mm | 0.2 to 0.8 | small to high |
-| Sand casting | iron, steel, aluminum, bronze | +/- 0.5 to 1.5 mm on small castings | 6.3 to 25 | small |
-| Investment casting | steel, nickel alloys, aluminum, titanium | +/- 0.1 mm on first 25 mm | 1.6 to 3.2 | small to medium |
-| Die casting | aluminum, zinc, magnesium | +/- 0.1 mm | not quoted here | high |
-| Injection molding | thermoplastics | +/- 0.05 to 0.1 mm on small features | 0.05 to 1.6 (set by mold finish) | high (about 5,000+) |
-| Closed-die forging | steel, aluminum, titanium | +/- 0.25 to 0.5 mm | not quoted here | medium to high |
-| Sheet metal laser cut | steel, aluminum, stainless | +/- 0.1 mm | not quoted here | one-off to medium |
-| Sheet metal stamping | steel, aluminum, copper alloys | +/- 0.1 mm | not quoted here | high |
-| Fused deposition (FDM) | thermoplastics | +/- 0.2 to 0.5 mm | not quoted; layer lines visible | one-off to small |
+| CNC turning | metals, plastics | $\pm$ 0.025 mm | 0.8 to 3.2 | one-off to medium |
+| CNC milling | metals, plastics | $\pm$ 0.025 mm | 0.8 to 3.2 | one-off to medium |
+| Precision grinding | hardened steel, carbide, ceramics | $\pm$ 0.005 mm | 0.2 to 0.8 | small to high |
+| Sand casting | iron, steel, aluminum, bronze | $\pm$ 0.5 to 1.5 mm on small castings | 6.3 to 25 | small |
+| Investment casting | steel, nickel alloys, aluminum, titanium | $\pm$ 0.1 mm on first 25 mm | 1.6 to 3.2 | small to medium |
+| Die casting | aluminum, zinc, magnesium | $\pm$ 0.1 mm | not quoted here | high |
+| Injection molding | thermoplastics | $\pm$ 0.05 to 0.1 mm on small features | 0.05 to 1.6 (set by mold finish) | high (about 5,000+) |
+| Closed-die forging | steel, aluminum, titanium | $\pm$ 0.25 to 0.5 mm | not quoted here | medium to high |
+| Sheet metal laser cut | steel, aluminum, stainless | $\pm$ 0.1 mm | not quoted here | one-off to medium |
+| Sheet metal stamping | steel, aluminum, copper alloys | $\pm$ 0.1 mm | not quoted here | high |
+| Fused deposition (FDM) | thermoplastics | $\pm$ 0.2 to 0.5 mm | not quoted; layer lines visible | one-off to small |
 
 - Batch bands are coarse on purpose. Tooling cost, setup time, and cycle time set the real break-even point.
 - **Holds when:** the part is within the process envelope for size and feature. **Breaks when:** the feature is smaller than the process resolves, or the tolerance is tighter than the process holds without a secondary operation.
@@ -59,7 +59,7 @@ Turning material removal rate, where $f$ is feed per revolution (mm/rev) and $V$
 
 $$\text{MRR} = a_p\, f\, V$$
 
-Cutting power from specific cutting energy $k_c$ (N/mm$^2$, which equals J/mm$^3$):
+Cutting power from specific cutting energy $k_c$ (J/mm$^3$; note that 1 J/mm$^3$ equals 1000 N/mm$^2$):
 
 $$P_c = k_c\, \text{MRR}$$
 
@@ -226,19 +226,19 @@ Units: $F$ in N when $\tau_{\text{allow}}$ is in N/mm$^2$ and $a$, $L$ in mm. Ta
 
 ### Bend allowance
 
-$$BA = \theta\,\frac{\pi}{180}\,(R + K\,T)$$
+$$\text{BA} = \theta\,\frac{\pi}{180}\,(R + K\,T)$$
 
 Units: $\theta$ in degrees. $R$ and $T$ in the same unit. $K$ dimensionless, between 0 and 1. Typical air-bending $K$ is about 0.3 to 0.5 (typical); use the shop or die chart.
 
 ### Bend deduction and flat length
 
-Outside setback $OSSB = (R + T)\tan(\theta/2)$ for each bend, so
+Outside setback $\mathrm{OSSB} = (R + T)\tan(\theta/2)$ for each bend, so
 
-$$BD = 2\,(R + T)\tan\!\left(\frac{\theta}{2}\right) - BA$$
+$$\text{BD} = 2\,(R + T)\tan\!\left(\frac{\theta}{2}\right) - \text{BA}$$
 
-$$L_{\text{flat}} = \sum L_{\text{outside flanges}} - BD$$
+$$L_{\text{flat}} = \sum L_{\text{outside flanges}} - \text{BD}$$
 
-- Worked check ($R = 3$ mm, $T = 2$ mm, $\theta = 90$ degrees, $K = 0.33$): $BA = 5.749$ mm, $BD = 4.251$ mm.
+- Worked check ($R = 3$ mm, $T = 2$ mm, $\theta = 90$ degrees, $K = 0.33$): $\text{BA} = 5.749$ mm, $\text{BD} = 4.251$ mm.
 - **Holds when:** air bending with consistent tooling and material. **Breaks when:** bottom bending, coining, or a different grain direction changes $K$. Use a measured sample.
 
 ### Minimum bend radius (rule of thumb)
@@ -285,19 +285,19 @@ $$L_{\text{flat}} = \sum L_{\text{outside flanges}} - BD$$
 
 - Ra is the arithmetic average deviation from the mean line, in um. Rz is the average of the largest peaks and valleys over a sample length. Both are maximum limits on the drawing. A surface rougher than the specified maximum Ra or Rz is nonconforming. Rougher surfaces come from worse process or tool wear, so check against the limit.
 - Typical Ra by process: see the process selection table.
-- **Holds when:** the surface is measured over the sample length the standard requires. **Breaks when:** the reading is taken across lay or on a damaged area.
+- **Holds when:** the surface is measured over the sample length the standard requires. **Breaks when:** the reading is taken parallel to the lay (which understates roughness; measure across the lay) or on a damaged area.
 
 ## Statistical process control
 
 - Process capability (short-term, when $\sigma$ is estimated from within-subgroup variation):
 
-$$C_p = \frac{USL - LSL}{6\sigma} \qquad C_{pk} = \frac{\min(USL - \mu,\; \mu - LSL)}{3\sigma}$$
+$$C_p = \frac{\text{USL} - \text{LSL}}{6\sigma} \qquad C_{\text{pk}} = \frac{\min(\text{USL} - \mu,\; \mu - \text{LSL})}{3\sigma}$$
 
-Units: all in the same unit. $\mu$ is the process mean and $\sigma$ the process standard deviation. $USL$ and $LSL$ are the upper and lower spec limits.
+Units: all in the same unit. $\mu$ is the process mean and $\sigma$ the process standard deviation. $\text{USL}$ and $\text{LSL}$ are the upper and lower spec limits.
 
-- $C_p$ ignores centering. $C_{pk}$ includes centering and is the one to report with the process mean.
-- Worked check: $USL = 10.5$, $LSL = 9.5$, $\mu = 10.1$, $\sigma = 0.1$ gives $C_p = 1.67$, $C_{pk} = 1.33$.
-- Typical acceptance thresholds: $C_{pk} \ge 1.33$ for an existing process; $\ge 1.67$ for critical characteristics; $\ge 2.0$ for six sigma-level performance. These are commonly used industry targets, not universal law.
+- $C_p$ ignores centering. $C_{\text{pk}}$ includes centering and is the one to report with the process mean.
+- Worked check: $\text{USL} = 10.5$, $\text{LSL} = 9.5$, $\mu = 10.1$, $\sigma = 0.1$ gives $C_p = 1.67$, $C_{\text{pk}} = 1.33$.
+- Typical acceptance thresholds: $C_{\text{pk}} \ge 1.33$ for an existing process; $\ge 1.67$ for critical characteristics; $\ge 2.0$ for six sigma-level performance. These are commonly used industry targets, not universal law.
 - **Holds when:** the process is stable (in control) and the data are close to normal. **Breaks when:** the process drifts, has a bimodal distribution, or the $\sigma$ estimate is from too few samples.
 
 ### Control charts
@@ -323,7 +323,7 @@ $$\text{OEE} = A \times P \times Q$$
 - $A = \dfrac{\text{run time}}{\text{planned time}}$, $P = \dfrac{\text{actual output}}{\text{ideal output}}$, $Q = \dfrac{\text{good parts}}{\text{total parts}}$. Each ratio is between 0 and 1.
 - Worked check (lesson): $A = 0.90$, $P = 0.85$, $Q = 0.98$ gives OEE $= 0.750$.
 - A commonly quoted benchmark for discrete manufacturing is 85 percent (typical, not a law).
-- **Holds when:** the ideal rate is a proven best speed, and time is measured the same way. **Breaks when:** the ideal rate is a theoretical number, which makes P look artificially low.
+- **Holds when:** the ideal rate is a proven best speed, and time is measured the same way. **Breaks when:** the ideal rate is a theoretical number, which makes $P$ look artificially low.
 
 ### Takt time and cycle time
 
@@ -372,20 +372,20 @@ Before releasing a welded joint:
 Before trusting a capability claim:
 
 - Process is in control on a control chart.
-- Compute Cpk with the process mean. Cp alone does not show centering.
+- Compute $C_{\text{pk}}$ with the process mean. $C_p$ alone does not show centering.
 - Sample size and subgrouping are stated.
 
 ## Sanity checks
 
-- Spindle speed: at 300 SFM, a 1/2 in cutter should run near 2300 rpm. A 10 mm tool at 90 m/min runs near 2900 rpm.
+- Spindle speed: at 300 SFM, a $1/2$ in cutter should run near 2300 rpm. A 10 mm tool at 90 m/min runs near 2900 rpm.
 - Feed rate: feed rate is $f_z \times z \times N$. Double the flutes doubles the feed rate at the same chip load.
 - MRR: a 10 mm by 10 mm pass at 1900 mm/min removes about 190,000 mm$^3$/min. If the answer is off by 1000, check the units.
 - Cutting power: MRR in mm$^3$/s times $k_c$ in J/mm$^3$ gives W. A few kW for a modest slot in aluminum is plausible; tens of kW for a small end mill is not.
 - Drill cone: depth of a 118 degree point is about 0.3 times the diameter. A 10 mm drill's point adds about 3 mm.
-- Bend allowance: the arc length of a 90 degree bend is about 1.57 times the radius to the neutral axis. Check that $BA$ is less than the outside arc.
+- Bend allowance: the arc length of a 90 degree bend is about 1.57 times the radius to the neutral axis. Check that $\text{BA}$ is less than the outside arc.
 - Fillet throat: must be less than the leg. $0.707 \times$ leg is the right order of magnitude.
 - Shrink: a 200 mm casting length adds about 2.6 mm to the pattern at 1.3 percent. A tolerance smaller than the shrink is a red flag.
-- Cpk: $C_{pk} \le C_p$ always. Equality holds only when the mean sits exactly at the spec center. A $C_{pk}$ above $C_p$ means a calculation error.
+- $C_{\text{pk}}$: $C_{\text{pk}} \le C_p$ always. Equality holds only when the mean sits exactly at the spec center. A $C_{\text{pk}}$ above $C_p$ means a calculation error.
 - Stack-up: RSS total is always less than or equal to the worst-case total for the same tolerances.
 - Layer count: a 40 mm part at 0.2 mm has 200 layers. At 0.1 mm it has 400.
 - OEE: the product must be smaller than the smallest of its three factors.

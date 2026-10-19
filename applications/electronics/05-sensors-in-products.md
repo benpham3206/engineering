@@ -54,13 +54,13 @@ where $R$ is the thermistor resistance in ohms ($\Omega$), $T$ is its temperatur
 
 Voltage divider with a thermistor to ground:
 
-$$V_{out} = V_s \frac{R}{R + R_f}$$
+$$V_{\mathrm{out}} = V_s \frac{R}{R + R_f}$$
 
-where $V_{out}$ and $V_s$ are volts (V), and $R_f$ is the fixed resistor in ohms.
+where $V_{\mathrm{out}}$ and $V_s$ are volts (V), and $R_f$ is the fixed resistor in ohms.
 
-ADC code for an $n$-bit converter with reference voltage $V_{ref}$ in volts:
+ADC code for an $n$-bit converter with reference voltage $V_{\mathrm{ref}}$ in volts:
 
-$$N = \operatorname{round}\left(\frac{V_{out}}{V_{ref}} \, 2^n\right)$$
+$$N = \operatorname{round}\left(\frac{V_{\mathrm{out}}}{V_{\mathrm{ref}}} \, 2^n\right)$$
 
 Hall voltage for a current $I$ in amperes through a plate of thickness $t$ in metres, in a field $B$ in tesla (T):
 
@@ -91,11 +91,11 @@ where $h = 6.626 \times 10^{-34}$ J s is Planck's constant and $c = 2.998 \times
 **Solution:**
 
 1. (a) The temperatures are $T = 318.15$ K and $T_0 = 298.15$ K. Then $1/T - 1/T_0 = -2.11 \times 10^{-4}$ K$^{-1}$. The exponent is $3950 \times (-2.11 \times 10^{-4}) = -0.833$, and $R = 10\ \text{k}\Omega \times e^{-0.833} = 4.35\ \text{k}\Omega$.
-2. (b) $V_{out} = 3.3\ \text{V} \times \dfrac{4348}{4348 + 10000} = 1.00\ \text{V}$.
+2. (b) $V_{\mathrm{out}} = 3.3\ \text{V} \times \dfrac{4348}{4348 + 10000} = 1.00\ \text{V}$.
 3. (c) $N = \dfrac{1.00}{3.3} \times 4096 = 1241$.
-4. (d) The ADC step is $3.3\ \text{V} / 4096 = 0.806$ mV. Differentiating the divider with the beta model gives $dV_{out}/dT \approx -27.2$ mV/K at 45 °C. One count is $0.806 / 27.2 = 0.030$ K.
+4. (d) The ADC step is $3.3\ \text{V} / 4096 = 0.806$ mV. Differentiating the divider with the beta model gives $dV_{\mathrm{out}}/dT \approx -27.2$ mV/K at 45 °C. One count is $0.806 / 27.2 = 0.030$ K.
 
-**Answer:** (a) $R \approx 4.35\ \text{k}\Omega$. (b) $V_{out} = 1.00\ \text{V}$. (c) $N = 1241$. (d) About $0.03$ K per count.
+**Answer:** (a) $R \approx 4.35\ \text{k}\Omega$. (b) $V_{\mathrm{out}} = 1.00\ \text{V}$. (c) $N = 1241$. (d) About $0.03$ K per count.
 
 **Sanity check:** At 25 °C the thermistor equals the fixed resistor, so the output is $3.3 / 2 = 1.65$ V. The output falls to 1.00 V at 45 °C, so the average slope over those 20 K is $0.65\ \text{V} / 20\ \text{K} = 32$ mV/K. That is steeper than the local slope at 45 °C, which fits a curve that flattens as it warms.
 
@@ -121,7 +121,7 @@ Edwin Hall discovered the Hall effect in 1879 while he was a graduate student at
 
 ## Practice
 
-1. A MEMS accelerometer has a proof mass $m = 0.5$ mg and a suspension stiffness $k = 5\ \text{N/m}$. Find the displacement at 1 g (Earth surface, $9.81\ \text{m/s}^2$).
+1. A MEMS accelerometer has a proof mass $m = 0.5$ mg and a suspension stiffness $k = 5\ \text{N/m}$. Find the displacement at 1 g (Earth surface, $9.81\ \text{m}/\text{s}^2$).
 2. The thermistor in the worked example has $R_0 = 10\ \text{k}\Omega$ at 25 °C and $B = 3950$ K. Find its resistance at 85 °C.
 3. A Hall element carries 5 mA and has a carrier density of $10^{22}$ m$^{-3}$ and a thickness of 0.2 mm. Find the Hall voltage at 10 mT. Then find it at 20 mT, and say how the output changes with the field.
 4. Find the energy of a 500 nm photon in electronvolts. Can silicon, with a bandgap of about 1.1 eV, detect it?
@@ -129,7 +129,7 @@ Edwin Hall discovered the Hall effect in 1879 while he was a graduate student at
 
 <details><summary>Answers</summary>
 
-1. $x = m a / k = (5 \times 10^{-7}\ \text{kg})(9.81\ \text{m/s}^2) / (5\ \text{N/m}) = 9.8 \times 10^{-7}$ m, which is $0.98\ \mu\text{m}$.
+1. $x = m a / k = (5 \times 10^{-7}\ \text{kg})(9.81\ \text{m}/\text{s}^2) / (5\ \text{N/m}) = 9.8 \times 10^{-7}$ m, which is $0.98\ \mu\text{m}$.
 2. $R \approx 1.09\ \text{k}\Omega$.
 3. At 10 mT, $V_H = 0.156$ mV. At 20 mT, $V_H = 0.31$ mV. The output doubles because $V_H$ is proportional to $B$.
 4. $E = 2.48$ eV. Yes, silicon detects it, because the photon energy is well above the 1.1 eV bandgap.

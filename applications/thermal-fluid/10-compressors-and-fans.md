@@ -51,17 +51,17 @@ Reciprocating compressors handle small to medium flow at high pressure, and they
 ## Key equations
 
 - Isentropic outlet temperature: $T_{2s} = T_1 (p_2/p_1)^{(\gamma-1)/\gamma}$, with $T$ in K, $p$ in Pa, and $\gamma$ dimensionless (1.4 for air).
-- Isentropic power: $P_{is} = \dot m\, c_p (T_{2s} - T_1)$, with $\dot m$ in kg/s and $c_p = 1005\ \text{J/(kg K)}$ for air (typical).
-- Actual shaft power: $P = P_{is}/\eta_{is}$, with $\eta_{is}$ dimensionless.
-- Actual outlet temperature: $T_2 = T_1 + (T_{2s} - T_1)/\eta_{is}$.
-- Isothermal ideal power: $P_{iso} = \dot m\, R T_1 \ln(p_2/p_1)$, with $R = 287\ \text{J/(kg K)}$ for air (typical).
+- Isentropic power: $P_{\mathrm{is}} = \dot m\, c_p (T_{2s} - T_1)$, with $\dot m$ in kg/s and $c_p = 1005\ \text{J/(kg K)}$ for air (typical).
+- Actual shaft power: $P = P_{\mathrm{is}}/\eta_{\mathrm{is}}$, with $\eta_{\mathrm{is}}$ dimensionless.
+- Actual outlet temperature: $T_2 = T_1 + (T_{2s} - T_1)/\eta_{\mathrm{is}}$.
+- Isothermal ideal power: $P_{\mathrm{iso}} = \dot m\, R T_1 \ln(p_2/p_1)$, with $R = 287\ \text{J/(kg K)}$ for air (typical).
 - Fan laws at fixed geometry: $Q \propto N$, $\Delta p \propto \rho N^2$, $P \propto \rho N^3$, with $N$ in rev/min and $\rho$ in kg/m$^3$.
-- Fan air power: $P_{air} = Q\, \Delta p$, in W, with $Q$ in m$^3$/s and $\Delta p$ in Pa. Shaft power is $P_{air}/\eta$.
+- Fan air power: $P_{\mathrm{air}} = Q\, \Delta p$, in W, with $Q$ in m$^3$/s and $\Delta p$ in Pa. Shaft power is $P_{\mathrm{air}}/\eta$.
 - Choked leak through an orifice: $\dot m = C_d A p_0 \sqrt{\gamma/(R T_0)} \left(\dfrac{2}{\gamma+1}\right)^{(\gamma+1)/(2(\gamma-1))}$, with $C_d$ dimensionless (about 0.6 for a sharp hole), $A$ in m$^2$, $p_0$ in Pa, and $T_0$ in K.
 
 ## Worked example
 
-**Given:** A compressor draws air at $p_1 = 101.3\ \text{kPa}$ and $T_1 = 293\ \text{K}$. It delivers $\dot m = 0.05\ \text{kg/s}$ at $p_2 = 700\ \text{kPa}$ absolute. The isentropic efficiency is $\eta_{is} = 0.80$. Air has $\gamma = 1.4$, $c_p = 1005\ \text{J/(kg K)}$, and $R = 287\ \text{J/(kg K)}$.
+**Given:** A compressor draws air at $p_1 = 101.3\ \text{kPa}$ and $T_1 = 293\ \text{K}$. It delivers $\dot m = 0.05\ \text{kg/s}$ at $p_2 = 700\ \text{kPa}$ absolute. The isentropic efficiency is $\eta_{\mathrm{is}} = 0.80$. Air has $\gamma = 1.4$, $c_p = 1005\ \text{J/(kg K)}$, and $R = 287\ \text{J/(kg K)}$.
 
 **Find:** (a) the isentropic outlet temperature, (b) the actual shaft power, (c) the actual outlet temperature, and (d) the isothermal ideal power for comparison.
 
@@ -69,10 +69,10 @@ Reciprocating compressors handle small to medium flow at high pressure, and they
 
 1. Pressure ratio: $r = 700 / 101.3 = 6.91$.
 2. Isentropic outlet temperature: $T_{2s} = 293 \times 6.91^{0.286} = 509\ \text{K}$, which is about $236\ \text{C}$.
-3. Isentropic power: $P_{is} = 0.05 \times 1005 \times (509 - 293) = 10\,850\ \text{W}$.
+3. Isentropic power: $P_{\mathrm{is}} = 0.05 \times 1005 \times (509 - 293) = 10\,850\ \text{W}$.
 4. Actual shaft power: $P = 10\,850 / 0.80 = 13\,570\ \text{W}$, which is about $13.6\ \text{kW}$.
 5. Actual outlet temperature: $T_2 = 293 + (509 - 293)/0.80 = 563\ \text{K}$, which is about $290\ \text{C}$.
-6. Isothermal ideal power: $P_{iso} = 0.05 \times 287 \times 293 \times \ln(6.91) = 8130\ \text{W}$, which is about $8.1\ \text{kW}$.
+6. Isothermal ideal power: $P_{\mathrm{iso}} = 0.05 \times 287 \times 293 \times \ln(6.91) = 8130\ \text{W}$, which is about $8.1\ \text{kW}$.
 
 **Answer:** (a) $509\ \text{K}$. (b) $13.6\ \text{kW}$. (c) $563\ \text{K}$. (d) $8.1\ \text{kW}$.
 
@@ -114,7 +114,7 @@ Compressed air powered rock drills in the Mont Cenis tunnel through the Alps in 
 2. A fan turns at 900 rev/min and delivers $Q = 1.5\ \text{m}^3/\text{s}$. Find the flow at 1350 rev/min.
 3. The same fan produces $\Delta p = 200\ \text{Pa}$ at 900 rev/min. Find the pressure rise at 1350 rev/min, and find the ratio of its shaft power at the two speeds.
 4. A $2\ \text{mm}$ hole is open in a line at $700\ \text{kPa}$ absolute and $293\ \text{K}$. Use $C_d = 0.6$ and find the leak mass flow. Then state what happens to the flow if the hole doubles in diameter.
-5. A compressor needs $4.0\ \text{kW}$ of isentropic power and runs at $\eta_{is} = 0.75$. Find its actual shaft power.
+5. A compressor needs $4.0\ \text{kW}$ of isentropic power and runs at $\eta_{\mathrm{is}} = 0.75$. Find its actual shaft power.
 
 <details><summary>Answers</summary>
 

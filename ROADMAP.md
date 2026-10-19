@@ -1,5 +1,7 @@
 # Roadmap
 
+A second track maps the same lessons onto the SJSU mechanical engineering course sequence: [SJSU mechanical engineering track](tracks/sjsu-mechanical-engineering.md).
+
 This is one path through the repo for someone learning from scratch. It takes four years and follows the order of a mechanical engineering degree. Working engineers can skip it and use the reference sheets in each folder.
 
 Each semester is about 15 weeks at 15-20 hours a week. Go faster or slower as you need. The order matters more than the pace.

@@ -33,7 +33,7 @@ Every file is one of three types, marked at the top:
 
 The README in each folder is a map of that folder, not a lesson.
 
-If you are **learning**, follow the [roadmap](ROADMAP.md): four years of lessons and projects, laid out like a mechanical engineering degree.
+If you are **learning**, follow the [roadmap](ROADMAP.md): four years of lessons and projects, laid out like a mechanical engineering degree. To follow the SJSU mechanical engineering course sequence instead, use the [SJSU track](tracks/sjsu-mechanical-engineering.md).
 
 If you are **working**, go straight to the reference sheets in the table below.
 

@@ -41,7 +41,7 @@ Light reaching the sensor depends on the aperture, which is the opening that the
 - Relative light: the light reaching the sensor scales as $1/N^2$. Each full stop multiplies $N$ by $\sqrt{2}$ and halves the light.
 - Horizontal field of view, with sensor width $s$ in millimetres: $\theta = 2\arctan\!\left(\dfrac{s}{2f}\right)$.
 - Hyperfocal distance, in millimetres, with circle of confusion $c$ in millimetres (0.03 mm for full-frame sensors, typical): $H = \dfrac{f^2}{N c} + f$. Focusing at $H$ keeps everything from $H/2$ to infinity acceptably sharp.
-- Pixel pitch, with sensor width $s$ in millimetres and $n_{px}$ pixels across: $p = s / n_{px}$.
+- Pixel pitch, with sensor width $s$ in millimetres and $n_{\mathrm{px}}$ pixels across: $p = s / n_{\mathrm{px}}$.
 
 ## Worked example
 
@@ -66,7 +66,7 @@ Light reaching the sensor depends on the aperture, which is the opening that the
 - **Focal length.** A wide lens sees more of the scene but makes subjects smaller. A telephoto lens sees less, needs more distance, and is larger and heavier.
 - **Aperture.** A wide aperture (low $N$) gathers more light and gives a shallow depth of field. It also makes the lens bigger, more expensive, and harder to correct for edge sharpness.
 - **Sensor size.** A larger sensor gathers more light per pixel and gives lower noise in dim scenes. It also needs a larger lens to cover the same field of view.
-- **Noise.** Light arrives as photons, and photon counts vary randomly. With $N_{ph}$ photons in a pixel, the signal-to-noise ratio is about $\sqrt{N_{ph}}$. Ten thousand photons give a signal-to-noise ratio of about 100, and a pixel with four times the area collects four times the photons.
+- **Noise.** Light arrives as photons, and photon counts vary randomly. With $N_{\mathrm{ph}}$ photons in a pixel, the signal-to-noise ratio is about $\sqrt{N_{\mathrm{ph}}}$. Ten thousand photons give a signal-to-noise ratio of about 100, and a pixel with four times the area collects four times the photons.
 - **Resolution.** More pixels on the same sensor make each pixel smaller and collect less light. The lens must also resolve the finer detail, and at small apertures diffraction limits the sharpness.
 
 ## How it fails

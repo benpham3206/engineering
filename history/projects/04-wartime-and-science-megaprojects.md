@@ -29,7 +29,7 @@ The engineering. Three main sites carried the work. At Oak Ridge, Tennessee, eng
 
 The scale. About 130,000 people worked on the project at its peak. Its cost was about 2 billion dollars in 1945 dollars.
 
-What went wrong. Two scientists died in criticality accidents at Los Alamos. Harry Daghlian died in 1945 after a reactor-core assembly went critical, and Louis Slotin died in 1946 after a similar accident. Radioactive releases and waste from the Hanford reactors contaminated land and water for decades, and cleanup of the underground waste tanks continues.
+What went wrong. Two scientists died in criticality accidents at Los Alamos. Harry Daghlian died in 1945 after a plutonium core surrounded by neutron-reflecting blocks went critical, and Louis Slotin died in 1946 after a similar accident. Radioactive releases and waste from the Hanford reactors contaminated land and water for decades, and cleanup of the underground waste tanks continues.
 
 The human cost. The atomic bombs killed tens of thousands of people in Hiroshima and Nagasaki within months, and many more died later from injuries and radiation. Estimates vary. The conventional firebombing of Tokyo in March 1945 killed roughly 100,000 people, by most estimates.
 
@@ -63,7 +63,7 @@ How it changed the world. The station has hosted continuous crews for more than 
 
 The problem. Particle physicists needed higher collision energies to test the Standard Model and to search for the Higgs boson. Higher energies require stronger bending magnets or a larger ring, and the ring had to fit under the Franco-Swiss border near Geneva.
 
-The engineering. The Large Hadron Collider at CERN is a ring of superconducting magnets about 27 km in circumference, buried about 100 m underground. The dipole magnets bend the beams and run at about 1.9 K, colder than outer space, so the niobium-titanium coils carry current with no resistance. The design field is about 8.3 T at 7 TeV per beam. Since 2015, the beams have run at 6.5 TeV. Over a thousand dipole magnets steer the two counter-rotating proton beams.
+The engineering. The Large Hadron Collider at CERN is a ring of superconducting magnets about 27 km in circumference, buried about 100 m underground. The dipole magnets bend the beams and run at about 1.9 K, colder than outer space, so the niobium-titanium coils carry current with no resistance. The design field is about 8.3 T at 7 TeV per beam. From 2015 to 2018 the beams ran at 6.5 TeV, and since 2022 they have run at 6.8 TeV. Over a thousand dipole magnets steer the two counter-rotating proton beams.
 
 The scale. The ring has about 27 km of circumference, more than a thousand dipole magnets, and a cryogenic system that holds the magnets near 1.9 K. Each beam stores hundreds of megajoules of energy, enough to melt a substantial amount of metal if it were released in an uncontrolled way.
 
@@ -130,8 +130,8 @@ where $v$ is the orbital speed in metres per second, $\mu = 3.986 \times 10^{14}
 **Solution:**
 
 1. Circular speed in the parking orbit: $r_1 = 6371 + 185 = 6556$ km, so $v_c = \sqrt{\mu_E / r_1} = 7.80$ km/s.
-2. TLI: the transfer-ellipse perigee speed is $\sqrt{\mu_E\,(2/r_1 - 2/(r_1 + r_2))}$ with $r_2 = 384\,400$ km. Subtracting $v_c$ gives $\Delta v_{TLI} = 3.137$ km/s.
-3. LOI: the Moon's periapsis radius is $r_p = 1737.4 + 100 = 1837.4$ km. The circular speed there is $\sqrt{\mu_M / r_p} = 1.634$ km/s. The hyperbolic periapsis speed is $\sqrt{v_\infty^2 + 2\mu_M / r_p} = 2.445$ km/s. So $\Delta v_{LOI} = 2.445 - 1.634 = 0.811$ km/s.
+2. TLI: the transfer-ellipse perigee speed is $\sqrt{\mu_E\,(2/r_1 - 2/(r_1 + r_2))}$ with $r_2 = 384\,400$ km. Subtracting $v_c$ gives $\Delta v_{\text{TLI}} = 3.137$ km/s.
+3. LOI: the Moon's periapsis radius is $r_p = 1737.4 + 100 = 1837.4$ km. The circular speed there is $\sqrt{\mu_M / r_p} = 1.634$ km/s. The hyperbolic periapsis speed is $\sqrt{v_\infty^2 + 2\mu_M / r_p} = 2.445$ km/s. So $\Delta v_{\text{LOI}} = 2.445 - 1.634 = 0.811$ km/s.
 4. Descent: the first burn drops from the 100 km circle onto the descent ellipse, $\Delta v = 0.023$ km/s. The surface periapsis speed on that ellipse is 1.703 km/s, and the landing burn cancels it. Total descent is $0.023 + 1.703 = 1.726$ km/s.
 5. Ascent: the surface burn of 1.703 km/s raises the vehicle onto the ellipse, and a circularizing burn of 0.023 km/s finishes the orbit. Total ascent is 1.726 km/s.
 6. Sum: $3.137 + 0.811 + 1.726 + 1.726 = 7.400$ km/s.

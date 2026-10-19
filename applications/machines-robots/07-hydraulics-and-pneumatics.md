@@ -112,7 +112,7 @@ pascals. A typical bulk modulus for mineral oil is about $1.6 \times 10^9$ Pa:
 $$E = \frac{\Delta p^2\,V}{2K}$$
 
 Energy stored by a raised load of mass $m$ in kilograms (kg) at height $h$ in metres (m), assuming
-the load is held still and the local gravity is $g = 9.81\ \text{m/s}^2$:
+the load is held still and the local gravity is $g = 9.81\ \text{m}/\text{s}^2$:
 
 $$E = m\,g\,h$$
 
@@ -153,7 +153,7 @@ piston faster but with less force.
 an ideal jet speed of $\sqrt{2 \times 20 \times 10^6 / 870} = 214\ \text{m/s}$. The real jet is slower
 because of losses, but it still penetrates skin. One litre of oil at $10\ \text{MPa}$ stores
 $\Delta p^2 V / (2K) = (10^7)^2 \times 10^{-3} / (2 \times 1.6 \times 10^9) = 31\ \text{J}$. A
-$2000\ \text{kg}$ load held $2\ \text{m}$ high stores $m g h = 2000 \times 9.81 \times 2 = 39\ \text{kJ}$ (with $g = 9.81\ \text{m/s}^2$ at Earth's surface).
+$2000\ \text{kg}$ load held $2\ \text{m}$ high stores $m g h = 2000 \times 9.81 \times 2 = 39\ \text{kJ}$ (with $g = 9.81\ \text{m}/\text{s}^2$ at Earth's surface).
 A held load is a larger hazard than the oil in the line.
 
 ## Design trade-offs
@@ -232,14 +232,14 @@ followed the same pattern.
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A cylinder has bore $D = 0.100\ \text{m}$ and runs at $p = 15\ \text{MPa}$. Find the extend force.
 2. The same cylinder with bore $0.063\ \text{m}$ receives $Q = 20\ \text{L/min}$. Find the extend
    speed in mm/s.
 3. A pump delivers $25\ \text{L/min}$ at $15\ \text{MPa}$ with efficiency $\eta = 0.90$. Find the
    hydraulic power and the input power.
-4. A pinhole leak is at $\Delta p = 25\ \text{MPa}$ in oil of density $870\ \text{kg/m}^3$. Find the
+4. A pinhole leak is at $\Delta p = 25\ \text{MPa}$ in oil of density $870\ \text{kg}/\text{m}^3$. Find the
    ideal jet speed.
 5. A cylinder with bore $0.080\ \text{m}$ lifts a $2000\ \text{kg}$ load with no friction. Find the
    pressure needed, in MPa.

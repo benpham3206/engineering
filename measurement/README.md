@@ -20,11 +20,4 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 
 - [Measurement reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-## Related courses
-
-- ME 106 - Fundamentals of Mechatronics Engineering
-- ME 115 - Thermal Engineering Lab
-- ME 120 - Experimental Methods
-- ME 284 - Sensor and Actuator Integration
-
 See also: [units](../units), [math](../math), [communication](../communication)

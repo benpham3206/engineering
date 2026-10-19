@@ -55,11 +55,11 @@ A motor with 4 pole pairs at 3000 rpm needs 200 Hz of electrical excitation, eve
 
 For a stepper, the full step angle is $\theta_s = 360 / N_s$ degrees, where $N_s$ is the number of full steps per revolution (dimensionless). With microstepping at $M$ divisions per full step, the microstep angle is $\theta_m = \theta_s / M$. The pulse rate that the driver needs at speed $n$ rpm is:
 
-$$f_{pulse} = \frac{N_s\, M\, n}{60}$$
+$$f_{\mathrm{pulse}} = \frac{N_s\, M\, n}{60}$$
 
-where $f_{pulse}$ is in pulses per second (Hz).
+where $f_{\mathrm{pulse}}$ is in pulses per second (Hz).
 
-Efficiency and losses: $P_{elec} = V I$, $P_{mech} = T \omega$, $P_{cu} = I^2 R$, and $\eta = P_{mech} / P_{elec}$.
+Efficiency and losses: $P_{\mathrm{elec}} = V I$, $P_{\mathrm{mech}} = T \omega$, $P_{\mathrm{cu}} = I^2 R$, and $\eta = P_{\mathrm{mech}} / P_{\mathrm{elec}}$.
 
 ## Worked example
 
@@ -72,10 +72,10 @@ Efficiency and losses: $P_{elec} = V I$, $P_{mech} = T \omega$, $P_{cu} = I^2 R$
 1. Current: $I = T / K_t = 0.30 / 0.080 = 3.75\ \text{A}$.
 2. Speed: $\omega = (V - I R) / K_e = (24 - 3.75 \times 0.50) / 0.080 = 276.6\ \text{rad/s}$. In rpm, $276.6 \times 60 / (2\pi) = 2641\ \text{rpm}$.
 3. Electrical frequency: $f_e = 4 \times 2641 / 60 = 176\ \text{Hz}$.
-4. Mechanical output: $P_{mech} = 0.30 \times 276.6 = 83.0\ \text{W}$. Electrical input: $P_{elec} = 24 \times 3.75 = 90.0\ \text{W}$.
+4. Mechanical output: $P_{\mathrm{mech}} = 0.30 \times 276.6 = 83.0\ \text{W}$. Electrical input: $P_{\mathrm{elec}} = 24 \times 3.75 = 90.0\ \text{W}$.
 5. Efficiency: $83.0 / 90.0 = 0.922$, or 92.2 percent.
 
-**Answer:** (a) $I = 3.75\ \text{A}$. (b) $2641\ \text{rpm}$, which is $277\ \text{rad/s}$. (c) $176\ \text{Hz}$. (d) $P_{mech} = 83.0\ \text{W}$ and $P_{elec} = 90.0\ \text{W}$. (e) $92.2$ percent.
+**Answer:** (a) $I = 3.75\ \text{A}$. (b) $2641\ \text{rpm}$, which is $277\ \text{rad/s}$. (c) $176\ \text{Hz}$. (d) $P_{\mathrm{mech}} = 83.0\ \text{W}$ and $P_{\mathrm{elec}} = 90.0\ \text{W}$. (e) $92.2$ percent.
 
 **Sanity check:** The losses close the balance: copper loss is $I^2 R = 3.75^2 \times 0.50 = 7.0\ \text{W}$, and $90.0 - 7.0 = 83.0\ \text{W}$. The efficiency of 92 percent is in the range of good BLDC drives (typical). The electrical frequency is four times the mechanical rotation frequency of 44 Hz, which matches $4 \times 2641 / 60$.
 
@@ -107,9 +107,9 @@ Brushless motors became practical in the 1960s, when transistors could switch th
 
 1. A stepper has 200 full steps per revolution and runs at 1 rev/s with 16 microsteps per full step. Find the pulse rate in microsteps per second.
 2. A BLDC motor has 6 pole pairs and runs at 1000 rpm. Find its electrical frequency.
-3. A 1.8 degree stepper runs at 1/8 microstepping. Find the microstep angle.
+3. A 1.8 degree stepper runs at $\frac{1}{8}$ microstepping. Find the microstep angle.
 4. A BLDC motor with 4 pole pairs runs at 1500 rpm. Find its electrical frequency and the number of electrical cycles per shaft revolution.
-5. A 0.9 degree stepper runs at 1/16 microstepping. Find the microstep angle.
+5. A 0.9 degree stepper runs at $\frac{1}{16}$ microstepping. Find the microstep angle.
 
 <details><summary>Answers</summary>
 

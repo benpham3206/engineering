@@ -79,7 +79,7 @@ $$F = W \frac{h}{L} = 600 \times \frac{1.2}{4.0} = 180\ \text{N}$$
 
 The mechanical advantage is the load divided by the force:
 
-$$MA = \frac{W}{F} = \frac{600}{180} = 3.33$$
+$$\mathrm{MA} = \frac{W}{F} = \frac{600}{180} = 3.33$$
 
 The angle of the slope is:
 

@@ -15,7 +15,7 @@ Archimedes' principle says a body in a fluid feels an upward buoyant force equal
 
 Stability is about rotation, not sinking. Two forces act on the hull. The weight acts at the center of gravity $G$. The buoyant force acts at the center of buoyancy $B$, which is the centroid of the submerged volume. When the ship heels, the shape of the submerged volume changes, and $B$ moves toward the low side. The buoyant force and the weight then form a couple that rights the ship if $G$ sits below the metacenter $M$. The metacenter is the point where the line of action of buoyancy crosses the centerline at small heel angles.
 
-The metacentric height $GM$ is the distance from $G$ up to $M$. A positive $GM$ means the ship rights itself after a small heel. A negative $GM$ means it capsizes. Designers aim for a $GM$ large enough to resist heeling from wind, waves, and cargo, but not so large that the ship snaps back violently and stresses its structure.
+The metacentric height $\mathrm{GM}$ is the distance from $G$ up to $M$. A positive $\mathrm{GM}$ means the ship rights itself after a small heel. A negative $\mathrm{GM}$ means it capsizes. Designers aim for a $\mathrm{GM}$ large enough to resist heeling from wind, waves, and cargo, but not so large that the ship snaps back violently and stresses its structure.
 
 Propulsion overcomes the hull resistance. Water resistance grows with speed, so most of the power goes into overcoming drag at high speed. A propeller converts engine torque into thrust by accelerating water backward.
 
@@ -42,51 +42,51 @@ Buoyant force on a body in water, in newtons (N):
 
 $$F_B = \rho g V$$
 
-where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $V$ is the displaced volume in cubic metres (m$^3$). Typical seawater density is $\rho \approx 1025\ \text{kg/m}^3$, and fresh water is about $1000\ \text{kg/m}^3$.
+where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $V$ is the displaced volume in cubic metres (m$^3$). Typical seawater density is $\rho \approx 1025\ \text{kg}/\text{m}^3$, and fresh water is about $1000\ \text{kg}/\text{m}^3$.
 
 For a ship in equilibrium, $F_B = \Delta g$, where $\Delta$ is the displacement mass in kilograms.
 
 The metacentric height is:
 
-$$GM = KB + BM - KG$$
+$$\mathrm{GM} = \mathrm{KB} + \mathrm{BM} - \mathrm{KG}$$
 
-where $KB$ is the height of the center of buoyancy above the keel in metres (m), $KG$ is the height of the center of gravity above the keel in metres, and $BM$ is the distance from $B$ up to the metacenter in metres. For a ship with a rectangular waterplane of length $L$ and breadth $B_w$, $BM$ is:
+where $\mathrm{KB}$ is the height of the center of buoyancy above the keel in metres (m), $\mathrm{KG}$ is the height of the center of gravity above the keel in metres, and $\mathrm{BM}$ is the distance from $B$ up to the metacenter in metres. For a ship with a rectangular waterplane of length $L$ and breadth $B_w$, $\mathrm{BM}$ is:
 
-$$BM = \frac{I}{V} = \frac{L B_w^3}{12 V}$$
+$$\mathrm{BM} = \frac{I}{V} = \frac{L B_w^3}{12 V}$$
 
-where $I = L B_w^3 / 12$ is the second moment of the waterplane area about the centerline, in metres to the fourth power (m$^4$). For a box-shaped hull of draft $T$, the center of buoyancy sits at $KB = T / 2$.
+where $I = L B_w^3 / 12$ is the second moment of the waterplane area about the centerline, in metres to the fourth power (m$^4$). For a box-shaped hull of draft $T$, the center of buoyancy sits at $\mathrm{KB} = T / 2$.
 
 For a small transverse weight shift $w$ moved a distance $d$ across the deck, the heel angle $\theta$ in radians is approximately:
 
-$$\theta \approx \frac{w \, d}{\Delta \, GM}$$
+$$\theta \approx \frac{w \, d}{\Delta \, \mathrm{GM}}$$
 
-where $w$ is the moved weight in newtons, $d$ is the transverse distance in metres, $\Delta$ is the displacement in newtons, and $GM$ is in metres. This is valid for small angles, roughly up to 10 degrees.
+where $w$ is the moved weight in newtons, $d$ is the transverse distance in metres, $\Delta$ is the displacement in newtons, and $\mathrm{GM}$ is in metres. This is valid for small angles, roughly up to 10 degrees.
 
 ## Worked example
 
-**Given:** A box-shaped barge is 60 m long, 12 m wide, and has a draft of 3 m in seawater with $\rho = 1025\ \text{kg/m}^3$. Its center of gravity sits at $KG = 3.2\ \text{m}$ above the keel. A 20 t cargo load is shifted 4 m across the deck.
+**Given:** A box-shaped barge is 60 m long, 12 m wide, and has a draft of 3 m in seawater with $\rho = 1025\ \text{kg}/\text{m}^3$. Its center of gravity sits at $\mathrm{KG} = 3.2\ \text{m}$ above the keel. A 20 t cargo load is shifted 4 m across the deck.
 
-**Find:** (a) the metacentric height $GM$, and (b) the heel angle caused by the shifted cargo.
+**Find:** (a) the metacentric height $\mathrm{GM}$, and (b) the heel angle caused by the shifted cargo.
 
-**Assumptions:** Rectangular hull with a flat keel. Constant water density. Shifted cargo is a point weight. No free-surface effect. Small angles, so the linear heel formula applies. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Assumptions:** Rectangular hull with a flat keel. Constant water density. Shifted cargo is a point weight. No free-surface effect. Small angles, so the linear heel formula applies. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Solution:**
 
 1. Displaced volume: $V = L B_w T = 60 \times 12 \times 3 = 2160\ \text{m}^3$.
 2. Displacement: $\Delta = \rho V = 1025 \times 2160 = 2.214 \times 10^{6}\ \text{kg}$, which is a weight of $21.7\ \text{MN}$.
-3. Center of buoyancy: $KB = T / 2 = 1.5\ \text{m}$.
+3. Center of buoyancy: $\mathrm{KB} = T / 2 = 1.5\ \text{m}$.
 4. Second moment of waterplane area: $I = L B_w^3 / 12 = 60 \times 12^3 / 12 = 8640\ \text{m}^4$.
-5. Metacentric radius: $BM = I / V = 8640 / 2160 = 4.0\ \text{m}$.
-6. Metacentric height: $GM = KB + BM - KG = 1.5 + 4.0 - 3.2 = 2.3\ \text{m}$.
+5. Metacentric radius: $\mathrm{BM} = I / V = 8640 / 2160 = 4.0\ \text{m}$.
+6. Metacentric height: $\mathrm{GM} = \mathrm{KB} + \mathrm{BM} - \mathrm{KG} = 1.5 + 4.0 - 3.2 = 2.3\ \text{m}$.
 7. Weight shifted: $w = 20\,000 \times 9.81 = 196\ \text{kN}$. Heel: $\theta \approx \dfrac{196\,000 \times 4}{21.7\ \text{MN} \times 2.3\ \text{m}} = 0.0157\ \text{rad}$, which is $0.9^\circ$.
 
-**Answer:** (a) $GM = 2.3\ \text{m}$. (b) The heel angle is about $0.9^\circ$.
+**Answer:** (a) $\mathrm{GM} = 2.3\ \text{m}$. (b) The heel angle is about $0.9^\circ$.
 
-**Sanity check:** $GM$ is positive, so the barge is stable. A heel of under one degree is small, which fits a $2.3$ m metacentric height on a $12$ m beam. If $KG$ rose by $0.5$ m, $GM$ would fall to $1.8$ m, and the same cargo would heel the barge by about $1.1^\circ$. Stability falls as $KG$ rises, so high loads cost margin.
+**Sanity check:** $\mathrm{GM}$ is positive, so the barge is stable. A heel of under one degree is small, which fits a $2.3$ m metacentric height on a $12$ m beam. If $\mathrm{KG}$ rose by $0.5$ m, $\mathrm{GM}$ would fall to $1.8$ m, and the same cargo would heel the barge by about $1.1^\circ$. Stability falls as $\mathrm{KG}$ rises, so high loads cost margin.
 
 ## Design trade-offs
 
-- **Stability against comfort**: a large $GM$ resists heeling, but it gives a short, stiff roll that throws cargo and passengers around. Passenger ships aim for a moderate value.
+- **Stability against comfort**: a large $\mathrm{GM}$ resists heeling, but it gives a short, stiff roll that throws cargo and passengers around. Passenger ships aim for a moderate value.
 - **Beam against resistance**: a wide hull has a large waterplane and high stability, but it adds wetted surface and drag. Long, narrow hulls are fast but less stable.
 - **Draft against port access**: a deep draft increases displacement and carrying capacity, but it limits harbors and channels.
 - **Propeller size against noise and vibration**: a large, slow propeller is efficient, but a small, fast one causes cavitation, noise, and hull vibration.
@@ -95,7 +95,7 @@ where $w$ is the moved weight in newtons, $d$ is the transverse distance in metr
 
 ## How it fails
 
-- **Capsize from low stability**: a high $KG$, free water in a tank, or cargo that shifts reduces $GM$. Free-surface effect is a common cause, because liquid moving in a partly full tank shifts the center of gravity.
+- **Capsize from low stability**: a high $\mathrm{KG}$, free water in a tank, or cargo that shifts reduces $\mathrm{GM}$. Free-surface effect is a common cause, because liquid moving in a partly full tank shifts the center of gravity.
 - **Flooding**: a breach in the hull admits water. Bulkheads, watertight doors, and pumps limit the flooding. Ships need enough margin that a damaged compartment still leaves them afloat and stable.
 - **Overloading**: exceeding the design draft or load line reduces freeboard and margin. Load line marks and loading computers prevent it.
 - **Cavitation**: low pressure at a propeller blade forms vapor bubbles that collapse on the blade. This erodes the blade surface, causes noise, and lowers thrust.
@@ -108,30 +108,30 @@ Archimedes described the principle of buoyancy in the third century BC. Pierre B
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
-1. A box-shaped hull has length 40 m, breadth 10 m, and draft 2 m in seawater with $\rho = 1025\ \text{kg/m}^3$. Find its displaced volume in cubic metres.
-2. The same hull has $KG = 1.8\ \text{m}$. Find $KB$, $BM$, and $GM$.
+1. A box-shaped hull has length 40 m, breadth 10 m, and draft 2 m in seawater with $\rho = 1025\ \text{kg}/\text{m}^3$. Find its displaced volume in cubic metres.
+2. The same hull has $\mathrm{KG} = 1.8\ \text{m}$. Find $\mathrm{KB}$, $\mathrm{BM}$, and $\mathrm{GM}$.
 3. A submarine has a displaced volume of $3000\ \text{m}^3$ in seawater. Find the buoyant force in meganewtons (MN).
-4. The barge in the worked example has $GM = 2.3\ \text{m}$ and a displacement of $21.7\ \text{MN}$. A 10 t weight moves 3 m across the deck. Find the heel angle in degrees.
-5. Explain why a ship with $GM$ slightly above zero can still feel stiff in rough seas, and why a very large $GM$ is not always better.
+4. The barge in the worked example has $\mathrm{GM} = 2.3\ \text{m}$ and a displacement of $21.7\ \text{MN}$. A 10 t weight moves 3 m across the deck. Find the heel angle in degrees.
+5. Explain why a ship with $\mathrm{GM}$ slightly above zero can still feel stiff in rough seas, and why a very large $\mathrm{GM}$ is not always better.
 
 <details><summary>Answers</summary>
 
 1. $V = 40 \times 10 \times 2 = 800\ \text{m}^3$
-2. $KB = 1.0\ \text{m}$, $BM = I / V = (40 \times 10^3 / 12) / 800 = 4.17\ \text{m}$, and $GM = 1.0 + 4.17 - 1.8 = 3.37\ \text{m}$
+2. $\mathrm{KB} = 1.0\ \text{m}$, $\mathrm{BM} = I / V = (40 \times 10^3 / 12) / 800 = 4.17\ \text{m}$, and $\mathrm{GM} = 1.0 + 4.17 - 1.8 = 3.37\ \text{m}$
 3. $F_B = 1025 \times 9.81 \times 3000 = 30.2\ \text{MN}$
 4. $w = 10\,000 \times 9.81 = 98.1\ \text{kN}$. Then $\theta \approx 98\,100 \times 3 / (2.172 \times 10^{7} \times 2.3) = 0.0059\ \text{rad}$, which is about $0.3^\circ$.
-5. A small positive $GM$ keeps the ship upright but gives a slow, soft roll. A very large $GM$ gives a fast, stiff roll that loads the hull and cargo harder and throws passengers around.
+5. A small positive $\mathrm{GM}$ keeps the ship upright but gives a slow, soft roll. A very large $\mathrm{GM}$ gives a fast, stiff roll that loads the hull and cargo harder and throws passengers around.
 
 </details>
 
 ## Common mistakes
 
 - Forgetting the cube on the breadth in the waterplane inertia. For a rectangle, $I = L B_w^3 / 12$.
-- Measuring $KG$ from the waterline instead of the keel. The metacentric formula needs all heights from the same datum.
-- Ignoring free-surface effect when a tank is partly full. Liquid moving in a tank lowers the effective $GM$.
-- Assuming a larger $GM$ is always safer. Excess $GM$ makes a ship roll stiffly and can overstress the structure and its fittings.
+- Measuring $\mathrm{KG}$ from the waterline instead of the keel. The metacentric formula needs all heights from the same datum.
+- Ignoring free-surface effect when a tank is partly full. Liquid moving in a tank lowers the effective $\mathrm{GM}$.
+- Assuming a larger $\mathrm{GM}$ is always safer. Excess $\mathrm{GM}$ makes a ship roll stiffly and can overstress the structure and its fittings.
 - Using the hull's freshwater draft in seawater. Seawater is denser, so the same ship floats higher.
 
 ## Go deeper

@@ -35,7 +35,7 @@ The Jacobian links joint speeds to tool speed. Controllers use it to move the to
 
 ## Key equations
 
-Symbols: $L_1$, $L_2$ are link lengths (m). $\theta_1$, $\theta_2$ are joint angles (rad). $(x, y)$ is the tip position (m). $m_1$, $m_2$ are link masses (kg). $m_p$ is the payload mass (kg). $g$ is the local gravitational acceleration ($9.81\ \text{m/s}^2$ at Earth's surface). $\tau$ is joint torque (N m). $N$ is the gear ratio (dimensionless). $\eta$ is gearbox efficiency (dimensionless). $\omega$ is angular speed (rad/s).
+Symbols: $L_1$, $L_2$ are link lengths (m). $\theta_1$, $\theta_2$ are joint angles (rad). $(x, y)$ is the tip position (m). $m_1$, $m_2$ are link masses (kg). $m_p$ is the payload mass (kg). $g$ is the local gravitational acceleration ($9.81\ \text{m}/\text{s}^2$ at Earth's surface). $\tau$ is joint torque (N m). $N$ is the gear ratio (dimensionless). $\eta$ is gearbox efficiency (dimensionless). $\omega$ is angular speed (rad/s).
 
 Forward kinematics for a planar two-link arm. Assumes rigid links of fixed length, two revolute joints, and a base at the origin:
 
@@ -61,9 +61,9 @@ $$\tau_2 = g\Big[m_2 \tfrac{L_2}{2}\cos(\theta_1+\theta_2) + m_p L_2 \cos(\theta
 
 Each term is a mass times $g$ times its horizontal distance from the joint, in N m. Assumes static equilibrium (no acceleration, no friction), uniform links with centres at their midpoints, a point payload at the tip, and a horizontal shoulder axis so gravity acts in the arm's plane.
 
-Motor and gearbox, for a joint with output torque $\tau_{joint}$ (N m) and output speed $\omega_{joint}$ (rad/s). Assumes a constant efficiency $\eta$ over the operating range and ignores gearbox inertia, backlash, and motor back-EMF losses:
+Motor and gearbox, for a joint with output torque $\tau_{\mathrm{joint}}$ (N m) and output speed $\omega_{\mathrm{joint}}$ (rad/s). Assumes a constant efficiency $\eta$ over the operating range and ignores gearbox inertia, backlash, and motor back-EMF losses:
 
-$$\tau_{motor} = \frac{\tau_{joint}}{N\,\eta}, \qquad \omega_{motor} = N\,\omega_{joint}$$
+$$\tau_{\mathrm{motor}} = \frac{\tau_{\mathrm{joint}}}{N\,\eta}, \qquad \omega_{\mathrm{motor}} = N\,\omega_{\mathrm{joint}}$$
 
 Backlash of angle $\Delta\theta$ (rad) at a joint with link length $L$ (m) moves the tip by about $e \approx L\,\Delta\theta$. Assumes the link is rigid and the small-angle approximation holds, so $\Delta\theta$ is well below 1 rad.
 
@@ -75,7 +75,7 @@ Assumes each joint frame is set by the standard DH convention, with all four par
 
 ## Worked example
 
-**Given:** A two-link arm in a vertical plane. $L_1 = 0.40\ \text{m}$, $L_2 = 0.30\ \text{m}$. Link masses $m_1 = 2.0\ \text{kg}$ (uniform, centre at the midpoint) and $m_2 = 1.0\ \text{kg}$. Payload $m_p = 1.5\ \text{kg}$ at the tip. The target tip point is $(0.45, 0.35)\ \text{m}$. Assumptions: static loads only, no friction, Earth surface gravity ($g = 9.81\ \text{m/s}^2$), and a horizontal shoulder axis. The gearbox ratio and efficiency are chosen in step 6.
+**Given:** A two-link arm in a vertical plane. $L_1 = 0.40\ \text{m}$, $L_2 = 0.30\ \text{m}$. Link masses $m_1 = 2.0\ \text{kg}$ (uniform, centre at the midpoint) and $m_2 = 1.0\ \text{kg}$. Payload $m_p = 1.5\ \text{kg}$ at the tip. The target tip point is $(0.45, 0.35)\ \text{m}$. Assumptions: static loads only, no friction, Earth surface gravity ($g = 9.81\ \text{m}/\text{s}^2$), and a horizontal shoulder axis. The gearbox ratio and efficiency are chosen in step 6.
 
 **Find:** (a) both inverse kinematics solutions and which is elbow-up, (b) the shoulder torque at the target and in the worst pose, and (c) the motor and gearbox for the shoulder.
 
@@ -88,7 +88,7 @@ Assumes each joint frame is set by the standard DH convention, with all four par
    Both solutions return the tip to $(0.450, 0.350)\ \text{m}$.
 4. At the target, the shoulder torque is $11.05\ \text{N m}$ in elbow-up and $14.66\ \text{N m}$ in elbow-down. The elbow torque is $5.87\ \text{N m}$ in elbow-up and $1.06\ \text{N m}$ in elbow-down.
 5. Worst pose: the arm is fully horizontal, so $\theta_1 = \theta_2 = 0$. The shoulder torque is $g(m_1 L_1/2 + m_2(L_1 + L_2/2) + m_p(L_1 + L_2)) = 9.81(0.40 + 0.55 + 1.05) = 9.81 \times 2.00 = 19.62\ \text{N m}$. The elbow torque there is $9.81(0.15 + 0.45) = 5.89\ \text{N m}$.
-6. Sizing with a safety factor $SF = 1.5$, a gear ratio $N = 50$, and efficiency $\eta = 0.80$:
+6. Sizing with a safety factor $\mathrm{SF} = 1.5$, a gear ratio $N = 50$, and efficiency $\eta = 0.80$:
    Joint torque $= 1.5 \times 19.62 = 29.43\ \text{N m}$.
    Motor torque $= 29.43 / (50 \times 0.80) = 0.736\ \text{N m}$.
    A joint speed of $60^\circ/\text{s} = 1.047\ \text{rad/s}$ needs a motor speed of $50 \times 1.047 = 52.4\ \text{rad/s}$, which is $500\ \text{rpm}$.
@@ -142,7 +142,7 @@ George Devol filed a patent for a programmable article transfer machine in 1954.
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. Two links with $L_1 = L_2 = 0.50\ \text{m}$. Find both inverse kinematics solutions for the tip at $(0.50, 0.50)\ \text{m}$.
 2. A horizontal two-link arm has $L_1 = 0.30\ \text{m}$, $L_2 = 0.20\ \text{m}$, $m_1 = 1.0\ \text{kg}$, $m_2 = 0.5\ \text{kg}$, and no payload. Find the shoulder torque in the fully extended pose.

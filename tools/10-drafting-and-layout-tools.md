@@ -39,14 +39,14 @@ A steel rule is a straight, rigid bar with marks on one or both edges. It is the
 
 A **scale** is a special ruler where one unit on the scale stands for a larger or smaller length on the real object. Scales let you draw a large part on a small sheet. Three types are common:
 
-- **Architect's scale.** Marks are in feet and inches. The common scale 1/4 in = 1 ft means that every quarter inch on paper stands for one foot of real length. Other common scales are 1/8 in = 1 ft and 3/8 in = 1 ft.
+- **Architect's scale.** Marks are in feet and inches. The common scale $1/4\ \text{in} = 1\ \text{ft}$ means that every quarter inch on paper stands for one foot of real length. Other common scales are $1/8\ \text{in} = 1\ \text{ft}$ and $3/8\ \text{in} = 1\ \text{ft}$.
 - **Engineer's scale.** Marks are in decimal inches. A scale marked 10 has ten divisions per inch, and a scale marked 40 has forty. Use it for mechanical parts that are dimensioned in decimal inches.
-- **Metric scale.** Marks are in millimetres. The common reduction scales are 1:2, 1:5, 1:10, 1:20, 1:50, and 1:100. A full-size scale is 1:1.
+- **Metric scale.** Marks are in millimetres. The common reduction scales are $1:2$, $1:5$, $1:10$, $1:20$, $1:50$, and $1:100$. A full-size scale is $1:1$.
 
 Read a scale with care:
 
-- A ratio scale such as 1:2 means the drawing is one part in two parts real size. A line 84 mm long on the part is drawn 42 mm long on paper.
-- The scale that reads 1:10 gives real lengths directly when you use its marked edge. Check the label on the edge before you read a value.
+- A ratio scale such as $1:2$ means the drawing is one part in two parts real size. A line 84 mm long on the part is drawn 42 mm long on paper.
+- The scale that reads $1:10$ gives real lengths directly when you use its marked edge. Check the label on the edge before you read a value.
 - Use the scale's own edge. Do not use the end of the scale as a zero point unless the scale has a clear zero mark there. Many scales start a short distance from the end.
 
 Steel rules are also used alone for straight lines and for checking lengths. Hold the rule on the surface and draw against the edge with the pencil leaning slightly away from the direction of travel.
@@ -84,7 +84,7 @@ Five constructions are common and worth practicing until they are automatic:
 - **Bisecting a line.** Set the compass to more than half the line length. Draw an arc from each end, on both sides of the line. The two arcs cross at two points. The line through those two points is the perpendicular bisector, and it cuts the line into two equal halves.
 - **Bisecting an angle.** Place the needle at the vertex and draw an arc that crosses both sides of the angle. Then draw two arcs from those crossing points, with the same radius, so they cross inside the angle. A line from the vertex through that crossing point bisects the angle.
 - **Dividing a line into equal parts.** Draw the line. From one end, draw a second line at any small angle. Use dividers to step off equal spaces along the second line, for example 5 spaces. Join the last step to the other end of the original line. Draw parallel lines from each step to the original line with a triangle. The original line is now divided into equal parts.
-- **Constructing a regular hexagon.** Draw a circle with radius R. Without changing the compass radius, step it around the circle. Six steps land on six points, which are the corners of a regular hexagon. In a regular hexagon the side length equals the circle radius.
+- **Constructing a regular hexagon.** Draw a circle with radius $R$. Without changing the compass radius, step it around the circle. Six steps land on six points, which are the corners of a regular hexagon. In a regular hexagon the side length equals the circle radius.
 
 ### Circle and ellipse templates, and French curves
 
@@ -159,7 +159,7 @@ Scale conversion from a drawing to real size is:
 
 $$L_{\text{real}} = L_{\text{drawing}} \times k$$
 
-where $L_{\text{drawing}}$ is the length on paper, $k$ is the scale factor (for example $k = 2$ for a 1:2 scale), and $L_{\text{real}}$ is the real length. Use the same unit for both lengths.
+where $L_{\text{drawing}}$ is the length on paper, $k$ is the scale factor (for example $k = 2$ for a $1:2$ scale), and $L_{\text{real}}$ is the real length. Use the same unit for both lengths.
 
 For isometric sketching, a length $L$ along an isometric axis appears in the sketch with horizontal run:
 
@@ -213,8 +213,8 @@ chord < arc: True
 
 1. Find the chord between adjacent holes for eight equal holes on a 100 mm bolt circle. Give your answer in mm to two decimals.
 2. Find the chord between adjacent holes for twelve equal holes on a 100 mm bolt circle. Give your answer in mm to two decimals.
-3. A wall is 36 ft long. It is drawn at 1/4 in = 1 ft. How long is the wall on paper, in inches? Give your answer to two decimals.
-4. A room is 3.6 m long. It is drawn at 1:50 in metric. How long is the room on paper, in mm?
+3. A wall is 36 ft long. It is drawn at $1/4\ \text{in} = 1\ \text{ft}$. How long is the wall on paper, in inches? Give your answer to two decimals.
+4. A room is 3.6 m long. It is drawn at $1:50$ in metric. How long is the room on paper, in mm?
 5. An isometric sketch shows a cube with 25 mm edges. How long is the horizontal run of one edge in the sketch, in mm, to two decimals?
 
 <details><summary>Answers</summary>

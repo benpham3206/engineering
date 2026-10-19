@@ -21,7 +21,7 @@ Euclid taught mathematics in Alexandria. His *Elements* starts from a few defini
 
 ### Archimedes, 287 to 212 BCE, Syracuse, Sicily
 
-Archimedes worked in Syracuse, a Greek city on Sicily. He studied the lever, the pulley, and the screw, and he explained why a body in a fluid loses weight equal to the fluid it pushes aside. This is Archimedes' principle. He also used regular polygons with 96 sides to bound pi between 3 10/71 and 3 1/7. Ship designers, hydrometer makers, and pump engineers still use the buoyancy principle, and the lever and screw are basic machines in every hydraulic and mechanical system.
+Archimedes worked in Syracuse, a Greek city on Sicily. He studied the lever, the pulley, and the screw, and he explained why a body in a fluid loses weight equal to the fluid it pushes aside. This is Archimedes' principle. He also used regular polygons with 96 sides to bound $\pi$ between $3\tfrac{10}{71}$ and $3\tfrac{1}{7}$. Ship designers, hydrometer makers, and pump engineers still use the buoyancy principle, and the lever and screw are basic machines in every hydraulic and mechanical system.
 
 ### Hero of Alexandria, 1st century CE, Alexandria, Egypt
 
@@ -53,7 +53,7 @@ Al-Jazari served the Artuqid rulers as an engineer and built water-powered machi
 
 ### Su Song, 1020 to 1101, Kaifeng, Song dynasty China
 
-Su Song led the team that built an astronomical clock tower in Kaifeng, finished in 1088. The tower used a water wheel to turn a model of the heavens and to strike bells on the hour. It used an escapement and a chain drive to control the motion. The tower is gone, but Su Song's book describes its design. The escapement idea later appears in mechanical clocks.
+Su Song led the team that built an astronomical clock tower in Kaifeng, begun in 1088 and finished in the early 1090s. The tower used a water wheel to turn a model of the heavens and to strike bells on the hour. It used an escapement and a chain drive to control the motion. The tower is gone, but Su Song's book describes its design. The escapement idea later appears in mechanical clocks.
 
 ## Key inventions
 
@@ -61,27 +61,27 @@ Su Song led the team that built an astronomical clock tower in Kaifeng, finished
 |---|---|---|---|
 | About 2650 BCE | Imhotep | Step Pyramid of Djoser, an early large stone structure | Step Pyramid, Saqqara, Egypt |
 | About 325 to 265 BCE | Euclid | *Elements*, geometry built from axioms | Taught worldwide; copies in libraries |
-| 3rd century BCE | Archimedes | Buoyancy principle, lever and screw, pi bounds | Buoyancy used in hydrometers and ship design; the Archimedes Palimpsest is in the Walters Art Museum, Baltimore |
+| 3rd century BCE | Archimedes | Buoyancy principle, lever and screw, $\pi$ bounds | Buoyancy used in hydrometers and ship design; the Archimedes Palimpsest is in the Walters Art Museum, Baltimore |
 | 1st century CE | Hero of Alexandria | *Pneumatica*, steam aeolipile and pressure devices | Greek and Arabic manuscripts; replicas built for teaching |
 | Late 1st century BCE | Vitruvius | *De architectura*, ten books on building | Manuscript copies and modern translations |
 | 132 CE | Zhang Heng | Seismoscope with a ball-release mechanism | Original lost; modern replicas |
 | 628 CE | Brahmagupta | Rules for arithmetic with zero and negative numbers | Used in all modern arithmetic |
 | About 820 | Al-Khwarizmi | Systematic method for solving equations | Source of the words algebra and algorithm |
 | About 1020 | Ibn al-Haytham | *Book of Optics* | Lens and camera optics |
-| 1088 | Su Song | Water-powered astronomical clock tower, Kaifeng | Tower gone; his book describes the design |
+| 1088 | Su Song | Begins water-powered astronomical clock tower, Kaifeng | Tower gone; his book describes the design |
 | 1206 | Al-Jazari | *Book of Knowledge of Ingenious Mechanical Devices* | Manuscript copies; crank and cam mechanisms |
 
 ## Key equations
 
 Archimedes' principle says a body in a fluid feels an upward buoyant force equal to the weight of the fluid it displaces:
 
-$$F_b = \rho_f \, g \, V_{sub}$$
+$$F_b = \rho_f \, g \, V_{\text{sub}}$$
 
-where $F_b$ is the buoyant force in newtons (N), $\rho_f$ is the fluid density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $V_{sub}$ is the volume of fluid displaced in cubic metres (m$^3$).
+where $F_b$ is the buoyant force in newtons (N), $\rho_f$ is the fluid density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $V_{\text{sub}}$ is the volume of fluid displaced in cubic metres (m$^3$).
 
 A floating body sinks until the displaced fluid weighs as much as the body. The fraction of the body underwater is:
 
-$$\frac{V_{sub}}{V} = \frac{\rho_o}{\rho_f}$$
+$$\frac{V_{\text{sub}}}{V} = \frac{\rho_o}{\rho_f}$$
 
 where $V$ is the body's total volume in m$^3$ and $\rho_o$ is the body's density in kg/m$^3$. Typical values are $\rho_f = 1000\ \text{kg/m}^3$ for fresh water and $\rho_o = 2700\ \text{kg/m}^3$ for aluminium.
 
@@ -115,7 +115,7 @@ $$W = m g = (1.00)(9.81) = 9.81\ \text{N}$$
 
 The spring scale reads the weight minus the buoyant force:
 
-$$W_{app} = W - F_b = 9.81 - 3.63 = 6.18\ \text{N}$$
+$$W_{\text{app}} = W - F_b = 9.81 - 3.63 = 6.18\ \text{N}$$
 
 ### Answer
 
@@ -137,7 +137,7 @@ Archimedes' principle is still the first tool for buoyancy, from ship hulls to s
 
 3. Calculation. A wooden block with density 600 kg/m$^3$ and volume 0.020 m$^3$ floats in fresh water. Find the fraction submerged, the submerged volume, and the block's weight. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
-4. Calculation. Archimedes bounded pi between $3\tfrac{10}{71}$ and $3\tfrac{1}{7}$. Find the two decimal values and the gap between them.
+4. Calculation. Archimedes bounded $\pi$ between $3\tfrac{10}{71}$ and $3\tfrac{1}{7}$. Find the two decimal values and the gap between them.
 
 5. Short answer. Describe how the rotation of Archimedes' screw lifts water. Name the machine it belongs to in the simple machine list.
 

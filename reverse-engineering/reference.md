@@ -32,12 +32,12 @@ Designation $M d \times p$, where $d$ is the nominal major diameter in millimete
 | M8 | 1.25 | M24 | 3.00 |
 | M10 | 1.50 | | |
 
-- Fine-pitch metric threads (for example M8 x 1.0) exist. Read the designation; a bare "M8" means coarse.
+- Fine-pitch metric threads (for example $\mathrm{M8} \times 1.0$) exist. Read the designation; a bare "M8" means coarse.
 - Holds when: the thread is standard and undamaged. Breaks when: the part has a custom or rolled thread, or the thread is badly worn or mis-chased.
 
 ### UNC threads (Unified National Coarse, typical)
 
-Designation $n\text{-}TPI$ for numbered sizes or $f\text{-}TPI$ for fractional sizes, where TPI is threads per inch. Pitch in millimeters is:
+Designation $n\text{-}\mathrm{TPI}$ for numbered sizes or $f\text{-}\mathrm{TPI}$ for fractional sizes, where TPI is threads per inch. Pitch in millimeters is:
 
 $$p_{\text{mm}} = \frac{25.4}{\text{TPI}}$$
 
@@ -49,15 +49,15 @@ $$p_{\text{mm}} = \frac{25.4}{\text{TPI}}$$
 | #8 | 32 | 0.794 | 0.164 | 4.166 |
 | #10 | 24 | 1.058 | 0.190 | 4.826 |
 | #12 | 24 | 1.058 | 0.216 | 5.486 |
-| 1/4 | 20 | 1.270 | 0.250 | 6.350 |
-| 5/16 | 18 | 1.411 | 0.3125 | 7.938 |
-| 3/8 | 16 | 1.588 | 0.375 | 9.525 |
-| 7/16 | 14 | 1.814 | 0.4375 | 11.112 |
-| 1/2 | 13 | 1.954 | 0.500 | 12.700 |
-| 9/16 | 12 | 2.117 | 0.5625 | 14.288 |
-| 5/8 | 11 | 2.309 | 0.625 | 15.875 |
-| 3/4 | 10 | 2.540 | 0.750 | 19.050 |
-| 7/8 | 9 | 2.822 | 0.875 | 22.225 |
+| $1/4$ | 20 | 1.270 | 0.250 | 6.350 |
+| $5/16$ | 18 | 1.411 | 0.3125 | 7.938 |
+| $3/8$ | 16 | 1.588 | 0.375 | 9.525 |
+| $7/16$ | 14 | 1.814 | 0.4375 | 11.112 |
+| $1/2$ | 13 | 1.954 | 0.500 | 12.700 |
+| $9/16$ | 12 | 2.117 | 0.5625 | 14.288 |
+| $5/8$ | 11 | 2.309 | 0.625 | 15.875 |
+| $3/4$ | 10 | 2.540 | 0.750 | 19.050 |
+| $7/8$ | 9 | 2.822 | 0.875 | 22.225 |
 | 1 | 8 | 3.175 | 1.000 | 25.400 |
 
 - Holds when: the thread is coarse and standard. Breaks when: the thread is fine (UNF), or the part uses a non-standard form.
@@ -68,7 +68,7 @@ $$p_{\text{mm}} = \frac{25.4}{\text{TPI}}$$
 - Measure the outside major diameter across the crests with a caliper or micrometer, at a clean, unworn section.
 - Compare with the tables above. Metric major diameters are close to whole millimeters (6.00, 8.00). Inch major diameters are close to 0.0625 in steps and convert to 6.35, 7.94, 9.53 mm and so on.
 - Use a pitch gauge with blades marked in TPI and in mm. Match the blade to the crests with no visible gap. The blade is the better test for pitch; the diameter is the better test for system.
-- Watch for conflicts. M8 x 1.25 and 1/4-20 UNC both have a pitch near 1.25 to 1.27 mm. The major diameter (8.00 mm against 6.35 mm) separates them easily.
+- Watch for conflicts. $\mathrm{M8} \times 1.25$ and 1/4-20 UNC both have a pitch near 1.25 to 1.27 mm. The major diameter (8.00 mm against 6.35 mm) separates them easily.
 - Holds when: the thread is not plated, stripped, or heavily corroded. Breaks when: the thread is damaged, or the measured major diameter is near a size where wear could mislead you. Use two readings from different crests.
 - Lead for multi-start threads: $L = n_s \, p$, where $L$ is lead in millimeters, $n_s$ is the number of starts, and $p$ is pitch in millimeters. Pitch counting on a multi-start thread gives the wrong pitch unless you use lead.
 
@@ -110,7 +110,7 @@ where $p$ is pitch in millimeters, $L$ is the measured length in millimeters, an
 | Torx (T) | Six-lobed star | Common in automotive and electronics; sizes T5 to T60 are typical |
 | Torx Plus (IP) | Star with rounded lobes | Not interchangeable with Torx |
 | Square (Robertson, R) | Square recess with taper | Common in some North American trades |
-| Security Torx | Torx recess with center pin | Needs a pinned driver |
+| Security Torx | Torx recess with center pin | Needs a driver with a center hole |
 | Tri-wing | Three-point recess | Common in consumer electronics |
 
 - Holds when: the drive is undamaged. Breaks when: a previous user has damaged the recess; the recess then looks like a different drive.
@@ -251,7 +251,7 @@ Holds when: the part is solid and homogeneous. Breaks when: the part is porous (
 - Metric fastener sizes: M1.6, M2, M2.5, M3, M4, M5, M6, M8, M10, M12, M14, M16, M20, M24.
 - Common round design numbers: 10, 12, 15, 20, 25, 30, 40, 50, 60, 80, 100 mm.
 - Preferred numbers (ISO 3, R10 series, rounded values): 1.00, 1.25, 1.60, 2.00, 2.50, 3.15, 4.00, 5.00, 6.30, 8.00, 10.0. Each step is about 25 percent larger than the one before. Use the rounded table; the raw formula $10^{n/10}$ gives approximate values only.
-- Inch sizes: fractions in 1/64 in steps are common in older US drawings; decimal inch is common in some industries.
+- Inch sizes: fractions in $1/64$ in steps are common in older US drawings; decimal inch is common in some industries.
 - Rule of thumb: if the measured value is within about 0.1 mm of a standard value and the wear direction agrees, treat the standard value as the first candidate. Test it against a second feature.
 
 Holds when: the design uses standard fasteners and preferred sizes. Breaks when: the designer chose a custom size for a fit, or the part was made to a non-metric standard.

@@ -97,8 +97,8 @@ Atoms per cell: simple cubic 1, BCC 2, FCC 4.
 
 ## Common mistakes
 
-- Counting a corner atom as fully inside the cell. Each corner atom is shared by eight cells, so it counts as 1/8.
-- Forgetting that a face atom is shared by two cells, so it counts as 1/2.
+- Counting a corner atom as fully inside the cell. Each corner atom is shared by eight cells, so it counts as $1/8$.
+- Forgetting that a face atom is shared by two cells, so it counts as $1/2$.
 - Mixing up nanometres, angstroms, and metres. Convert everything to metres before cubing $a$.
 - Assuming all metals are equally ductile because they are all metals. Crystal structure matters a lot.
 - Thinking defects are always bad. Carbon in iron and dislocations in metal are the reason steel can be shaped and strengthened.

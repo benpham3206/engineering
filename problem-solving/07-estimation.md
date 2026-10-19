@@ -96,7 +96,7 @@ t = \frac{Q}{P} = \frac{1.884 \times 10^7}{1500}\ \text{s} = 12\,560\ \text{s} =
 $$
 
 **Answer:** about 19 MJ, or about 5 kWh, which at a 1.5 kW heater takes roughly 3.5 hours.
-Real bath heating uses a boiler or a mixed hot-cold supply, so the actual energy is smaller
+Real bath heating also loses heat to the tank, pipes, and room, so the energy drawn is somewhat larger
 than this, but the order of magnitude is right.
 
 **Sanity check:** a home uses roughly tens of kWh per day for everything. A single bath at 5 kWh
@@ -133,7 +133,7 @@ and 8 kWh for a typical bath.
 
 ## Go deeper
 
-- [University Physics Volume 1](https://openstax.org/details/books/university-physics-volume-1) by OpenStax: the thermal physics chapters cover specific heat and energy balance.
+- [University Physics Volume 2](https://openstax.org/details/books/university-physics-volume-2) by OpenStax: the thermodynamics chapters cover specific heat and energy balance.
 - [Units and standards](https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards) by OpenStax: SI units and prefixes for converting J, kWh, and MJ.
 - [SI units](https://www.nist.gov/pml/owm/metric-si/si-units) by NIST: the reference for the base and derived units used here.
 - Polya, *How to Solve It* (1945), a printed book with a section on estimating and checking results. No link is given.

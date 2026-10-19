@@ -47,7 +47,7 @@ $$a = \omega^{2} r$$
 
 where $a$ is the acceleration in metres per second squared (m/s$^2$) and $r$ is the drum radius in metres (m).
 
-Spin g-force, with $g = 9.81\ \text{m/s}^2$ (standard gravity):
+Spin g-force, with $g = 9.81\ \text{m}/\text{s}^2$ (standard gravity):
 
 $$G = \frac{\omega^{2} r}{g}$$
 
@@ -61,24 +61,24 @@ where $F$ is the force in newtons (N), $m$ is the unbalanced mass in kilograms (
 
 Energy to evaporate water, assuming all water evaporates and ignoring sensible heat and losses:
 
-$$Q = m_{w}\,h_{fg}$$
+$$Q = m_{w}\,h_{\mathrm{fg}}$$
 
-where $Q$ is the energy in joules (J), $m_{w}$ is the water mass in kilograms (kg), and $h_{fg} \approx 2.26\ \text{MJ/kg}$ is the latent heat of vaporization of water at 100 °C (typical value).
+where $Q$ is the energy in joules (J), $m_{w}$ is the water mass in kilograms (kg), and $h_{\mathrm{fg}} \approx 2.26\ \text{MJ/kg}$ is the latent heat of vaporization of water at 100 °C (typical value).
 
 ## Worked example
 
-**Given:** A drum with radius $r = 0.25\ \text{m}$ spins at $N = 1200\ \text{rpm}$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Given:** A drum with radius $r = 0.25\ \text{m}$ spins at $N = 1200\ \text{rpm}$. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Find:** (a) the centripetal acceleration, (b) the spin g-force, and (c) the force from a 2 kg wet load whose centre sits 0.05 m off the drum axis.
 
 **Solution:**
 
 1. Angular speed: $\omega = 2\pi \times 1200 / 60 = 125.7\ \text{rad/s}$.
-2. Acceleration: $a = 125.7^2 \times 0.25 = 3948\ \text{m/s}^2$.
+2. Acceleration: $a = 125.7^2 \times 0.25 = 3948\ \text{m}/\text{s}^2$.
 3. Spin force: $G = 3948 / 9.81 = 402$, so about 400 times gravity.
 4. Unbalance force: $F = 2 \times 0.05 \times 125.7^2 = 1579\ \text{N}$. The load weighs $2 \times 9.81 = 19.6\ \text{N}$, so the force is about 80 times its weight.
 
-**Answer:** (a) About $3.9 \times 10^3\ \text{m/s}^2$. (b) About $402\ \text{g}$. (c) About $1.6 \times 10^3\ \text{N}$.
+**Answer:** (a) About $3.9 \times 10^3\ \text{m}/\text{s}^2$. (b) About $402\ \text{g}$. (c) About $1.6 \times 10^3\ \text{N}$.
 
 **Sanity check:** Going from 800 rpm to 1200 rpm multiplies $G$ by $(1200/800)^2 = 2.25$. The computed values are $179\ \text{g}$ and $402\ \text{g}$, and $402/179 = 2.25$, which matches.
 
@@ -114,7 +114,7 @@ Early washing machines used hand-cranked drums and wringer rollers before electr
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A drum with radius 0.22 m spins at 1100 rpm. What is the spin g-force?
 2. What is the maximum rpm for 500 g on a drum with radius 0.25 m?

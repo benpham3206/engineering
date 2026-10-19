@@ -56,19 +56,19 @@ $$-2^{n-1} \le N \le 2^{n-1} - 1$$
 
 Negating a two's complement value: $-x = \overline{x} + 1$, where $\overline{x}$ is the bitwise NOT of $x$.
 
-Full adder outputs for inputs $A$, $B$, and carry in $C_{in}$:
+Full adder outputs for inputs $A$, $B$, and carry in $C_{\mathrm{in}}$:
 
-$$S = A \oplus B \oplus C_{in}, \qquad C_{out} = AB + C_{in}(A \oplus B)$$
+$$S = A \oplus B \oplus C_{\mathrm{in}}, \qquad C_{\mathrm{out}} = AB + C_{\mathrm{in}}(A \oplus B)$$
 
-CPU execution time for $N_i$ instructions, average cycles per instruction $CPI$ (dimensionless), and clock frequency $f$ in hertz (Hz):
+CPU execution time for $N_i$ instructions, average cycles per instruction $\mathrm{CPI}$ (dimensionless), and clock frequency $f$ in hertz (Hz):
 
-$$t = \frac{N_i \cdot CPI}{f}$$
+$$t = \frac{N_i \cdot \mathrm{CPI}}{f}$$
 
 where $t$ is in seconds (s).
 
-Maximum clock frequency for a path with clock-to-output delay $t_{cq}$, logic delay $t_{logic}$, and setup time $t_{su}$, each in seconds:
+Maximum clock frequency for a path with clock-to-output delay $t_{\mathrm{cq}}$, logic delay $t_{\mathrm{logic}}$, and setup time $t_{\mathrm{su}}$, each in seconds:
 
-$$f_{max} = \frac{1}{t_{cq} + t_{logic} + t_{su}}$$
+$$f_{\mathrm{max}} = \frac{1}{t_{\mathrm{cq}} + t_{\mathrm{logic}} + t_{\mathrm{su}}}$$
 
 Dynamic power of a digital circuit with activity factor $\alpha$ (dimensionless), switched capacitance $C$ in farads, supply voltage $V$ in volts, and clock frequency $f$ in hertz:
 
@@ -88,10 +88,10 @@ where $P$ is in watts (W).
 
 1. (a) Loads are 40 percent of 500, which is 200 instructions. The other 300 take one cycle each. The total is $200 \times 2 + 300 \times 1 = 700$ cycles.
 2. (b) $t = 700 / (16 \times 10^6\ \text{Hz}) = 43.75\ \mu\text{s}$.
-3. (c) $CPI = 700 / 500 = 1.4$.
+3. (c) $\mathrm{CPI} = 700 / 500 = 1.4$.
 4. (d) $16 \times 10^6 / 700 = 22\,857$ loops per second.
 
-**Answer:** (a) 700 cycles. (b) $43.75\ \mu\text{s}$. (c) $CPI = 1.4$. (d) About $2.29 \times 10^4$ loops per second.
+**Answer:** (a) 700 cycles. (b) $43.75\ \mu\text{s}$. (c) $\mathrm{CPI} = 1.4$. (d) About $2.29 \times 10^4$ loops per second.
 
 **Sanity check:** The average CPI must lie between 1 and 2, because every instruction takes 1 or 2 cycles. The value 1.4 fits. Also, 22,857 loops at 43.75 µs each gives $22\,857 \times 43.75\ \mu\text{s} = 1.00$ s, which confirms the rate.
 
@@ -101,7 +101,7 @@ where $P$ is in watts (W).
 - **Pipelining.** A pipeline splits the fetch, decode, and execute steps into stages that overlap. Each instruction still takes the same number of stages, so latency stays the same. Throughput rises, because a new instruction enters the pipeline on every clock cycle when nothing stalls it. A branch or a memory wait can stall the pipeline.
 - **Memory types.** SRAM is fast and needs six transistors per bit, so it is large and costly per bit. DRAM packs one bit into one transistor and one capacitor, which is dense, but it needs refresh. Flash keeps data without power, but writing it is slow and wears the cell.
 - **Microcontroller or FPGA.** A microcontroller runs software and costs a few dollars in volume. An FPGA runs hardware in parallel and handles fast, repeated tasks, but it costs more and needs a hardware design flow.
-- **Clock margin.** A faster clock leaves less time for each path to settle. Designers choose a clock below $f_{max}$ with a margin for temperature and voltage changes.
+- **Clock margin.** A faster clock leaves less time for each path to settle. Designers choose a clock below $f_{\mathrm{max}}$ with a margin for temperature and voltage changes.
 
 ## How it fails
 

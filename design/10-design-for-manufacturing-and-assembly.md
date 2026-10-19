@@ -14,7 +14,7 @@ A design that works on paper can still be expensive, slow, or error-prone to mak
 - **Part count.** Every extra part adds cost, stock, handling, and a place for error. Combining parts is often the biggest saving.
 - **Self-locating features** such as pins, slots, and chamfers guide a part into place without measurement. A chamfer on a hole entrance is a cheap way to make assembly easier.
 - **Access.** A tool or hand must reach each fastener. A fastener that cannot be reached is a design error, even if it looks fine in CAD.
-- **Process fit.** A feature that is easy in one process can be impossible in another. A sharp inside corner is easy to mill, but a cast or molded part needs a radius, and a deep thin hole is hard to drill.
+- **Process fit.** A feature that is easy in one process can be impossible in another. A sharp inside corner in a milled pocket is impossible, because the round cutter leaves a radius, and a cast or molded part also needs a radius. A deep thin hole is hard to drill.
 - **Standard parts.** Use standard sizes for fasteners, bearings, and stock. A custom part costs more to buy and to check.
 
 ## Rules of thumb

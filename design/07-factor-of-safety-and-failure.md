@@ -50,13 +50,13 @@ $$
 Von Mises equivalent stress for plane stress with normal stresses $\sigma_x$, $\sigma_y$ and shear $\tau_{xy}$:
 
 $$
-\sigma_{vm} = \sqrt{\sigma_x^2 - \sigma_x \sigma_y + \sigma_y^2 + 3\tau_{xy}^2}
+\sigma_{\text{vm}} = \sqrt{\sigma_x^2 - \sigma_x \sigma_y + \sigma_y^2 + 3\tau_{xy}^2}
 $$
 
 Factor of safety using von Mises (ductile):
 
 $$
-n = \frac{S_y}{\sigma_{vm}}
+n = \frac{S_y}{\sigma_{\text{vm}}}
 $$
 
 Principal stresses for plane stress:
@@ -99,13 +99,13 @@ A point in a machine frame has $\sigma_x = 120$ MPa, $\sigma_y = 40$ MPa, and $\
 
 **Solution.**
 
-$\sigma_{vm} = \sqrt{120^2 - 120 \times 40 + 40^2 + 3 \times 30^2} = \sqrt{13\,900} = 117.9$ MPa.
+$\sigma_{\text{vm}} = \sqrt{120^2 - 120 \times 40 + 40^2 + 3 \times 30^2} = \sqrt{13\,900} = 117.9$ MPa.
 
 $n = \dfrac{350}{117.9} = 2.97$.
 
 **Answer.** Von Mises stress 117.9 MPa, FoS 2.97.
 
-**Sanity check.** The von Mises stress (117.9 MPa) is close to the largest normal stress (120 MPa), which is reasonable because the shear adds to the effect while the 40 MPa stress partly offsets it. Check the principal stresses from the equation above: they are 130 and 30 MPa, so the Tresca shear is $(130 - 30)/2 = 50$ MPa. The two criteria give different numbers, and the difference is expected.
+**Sanity check.** The von Mises stress (117.9 MPa) is close to the largest normal stress (120 MPa), which is reasonable because the shear adds to the effect while the 40 MPa stress partly offsets it. Check the principal stresses from the equation above: they are 130 and 30 MPa, and the third principal stress is zero in plane stress, so the Tresca maximum shear is $(130 - 0)/2 = 65$ MPa. The two criteria give different numbers, and the difference is expected.
 
 ## Checklist
 

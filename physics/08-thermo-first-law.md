@@ -15,7 +15,7 @@ Thermodynamics is the study of energy and how it moves between heat and work. En
 - An **open system** (also called a control volume) has mass flowing in and out. A turbine, a compressor, and a nozzle are open systems.
 - A **property** describes the state of a system, such as pressure, temperature, volume, or internal energy. A **state** is a set of values for all the properties at one moment.
 - **Pressure** $P$ is force per unit area, in pascals (Pa). One standard atmosphere is about $101{,}325$ Pa, or 14.7 psi.
-- **Specific volume** $v$ is volume per unit mass, in cubic meters per kilogram (m³/kg). Density is its inverse.
+- **Specific volume** $v$ is volume per unit mass, in cubic meters per kilogram ($\mathrm{m^3/kg}$). Density is its inverse.
 - A property that depends only on the state is called a **state function**. Pressure, temperature, and internal energy are state functions. Work and heat are not.
 
 ### The ideal gas model
@@ -69,7 +69,7 @@ W = P\,\Delta V = m\,R\,\Delta T
 $$
 
 - $P$ is the constant pressure (Pa).
-- $\Delta V$ is the change in volume (m³).
+- $\Delta V$ is the change in volume ($\mathrm{m^3}$).
 - The second form uses the ideal gas law for a fixed mass at constant pressure.
 
 Steady-flow energy balance for an open system with one inlet and one outlet, with negligible kinetic and potential energy changes:
@@ -103,7 +103,7 @@ $$
 \rho = \frac{P}{R\,T}
 $$
 
-- $\rho$ is the density (kg/m³).
+- $\rho$ is the density ($\mathrm{kg/m^3}$).
 
 ## Worked example
 
@@ -144,7 +144,7 @@ $$
 
 1. $28.7$ kJ
 2. $Q = 100.5$ kJ, $\Delta U = 71.8$ kJ
-3. $1.16$ kg/m³
+3. $1.16$ $\mathrm{kg/m^3}$
 4. $603$ kW
 5. $475$ K
 

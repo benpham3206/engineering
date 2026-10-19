@@ -134,13 +134,13 @@ seconds (s).
 
 $$\mathcal{E} = -N \frac{d\Phi_B}{dt}$$
 
-The flux through a coil of area $A$ (m$^2$) in a field $B$ (T) is $\Phi_B = BA\cos\theta$, where
+The flux through a coil of area $A$ (m$^2$) in a field $B$ (T) is $\Phi_B = B A\cos\theta$, where
 $\theta$ is the angle in radians (rad) between the field and the coil's normal. A coil that spins at a
 constant angular speed $\omega$ (rad/s) has $\theta = \omega t$. The voltage then becomes
 
 $$\mathcal{E}(t) = N B A \omega \sin(\omega t)$$
 
-The peak voltage is $\mathcal{E}_{peak} = N B A \omega$. The angular speed relates to the frequency
+The peak voltage is $\mathcal{E}_{\text{peak}} = N B A \omega$. The angular speed relates to the frequency
 $f$ in hertz (Hz) by $\omega = 2\pi f$.
 
 ## Worked example
@@ -157,7 +157,7 @@ resistance, so the voltage is the open-circuit EMF.
 
 The angular speed is $\omega = 2\pi \times 50 = 314.16$ rad/s.
 
-The peak EMF is $\mathcal{E}_{peak} = 200 \times 0.5 \times 0.01 \times 314.16 = 314.2$ V.
+The peak EMF is $\mathcal{E}_{\text{peak}} = 200 \times 0.5 \times 0.01 \times 314.16 = 314.2$ V.
 
 The RMS value is $314.2 / \sqrt{2} = 222.1$ V.
 
@@ -186,7 +186,7 @@ is the first step in improving it.
 
 <details><summary>Answers</summary>
 
-1. $\omega = 2\pi \times 60 = 376.99$ rad/s, so $\mathcal{E}_{peak} = 500 \times 0.3 \times 0.02 \times 376.99 = 1131$ V,
+1. $\omega = 2\pi \times 60 = 376.99$ rad/s, so $\mathcal{E}_{\text{peak}} = 500 \times 0.3 \times 0.02 \times 376.99 = 1131$ V,
    or about 1.13 kV.
 2. Peak EMF is proportional to $\omega$, so the peak falls by half to $1131 / 2 = 565.5$ V,
    or about 566 V.

@@ -19,7 +19,7 @@ Steering works through a linkage. The driver turns the steering wheel, a rack or
 
 - **Coil spring:** a steel spring that carries the static weight of the body. Its stiffness $k$ sets the ride frequency.
 - **Damper (shock absorber):** a piston moves through oil, and small valves in the piston set the damping force. Its damping coefficient $c$ sets how fast each oscillation dies.
-- **Anti-roll bar:** a torsion bar that links the two wheels on one axle. It resists body roll in a corner, and it can stiffen the axle without making the ride harder over single bumps.
+- **Anti-roll bar:** a torsion bar that links the two wheels on one axle. It resists body roll in a corner, and it adds roll stiffness without adding much stiffness in equal-wheel heave. It does add stiffness when only one wheel hits a bump, because the bar then twists.
 - **Control arms and links:** hold the wheel in place while it moves up and down. Their geometry sets camber change and roll center height.
 - **Steering rack or steering box:** converts the rotation of the steering wheel into a sideways motion of the tie rods.
 - **Tie rods and steering arms:** carry the force to the wheel hubs. The tie rod length sets the toe, which is the angle of the wheel as seen from above.
@@ -38,26 +38,26 @@ Steering works through a linkage. The driver turns the steering wheel, a rack or
 The ride and damping equations assume a linear spring and a linear viscous damper, small deflections, and a quarter-car model with one corner and no coupling to the other wheels. The Ackermann relation assumes rigid links, no tire slip, and small steering angles, so it gives the ideal geometry and not the real angles under load.
 
 - **Ride frequency (quarter-car model):** $f_n = \dfrac{1}{2\pi} \sqrt{\dfrac{k}{m_s}}$, in Hz, where $k$ is the spring rate of one corner in N/m and $m_s$ is the sprung mass of that corner in kg. Typical passenger cars have $f_n$ from 1.0 to 1.5 Hz.
-- **Critical damping:** $c_{crit} = 2\sqrt{k \, m_s}$, in N s/m.
-- **Damping ratio:** $\zeta = c / c_{crit}$, dimensionless. Most road cars use $\zeta$ from 0.2 to 0.4, which gives a few bounces after a bump.
+- **Critical damping:** $c_{\mathrm{crit}} = 2\sqrt{k \, m_s}$, in N s/m.
+- **Damping ratio:** $\zeta = c / c_{\mathrm{crit}}$, dimensionless. Most road cars use $\zeta$ from 0.2 to 0.4, which gives a few bounces after a bump.
 - **Wheel hop frequency:** $f_w = \dfrac{1}{2\pi} \sqrt{\dfrac{k_t}{m_u}}$, in Hz, where $k_t$ is the tire stiffness in N/m and $m_u$ is the unsprung mass (wheel, hub, brake, and part of the links) in kg. Typical values are 10 to 15 Hz.
 - **Static deflection:** $\delta = m_s \, g / k$, in m, where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). The spring compresses by this much under the static load.
-- **Ideal Ackermann relation:** $\cot\delta_{out} - \cot\delta_{in} = t / L$, where $\delta_{in}$ and $\delta_{out}$ are the inner and outer wheel angles in radians, $t$ is the track width in m, and $L$ is the wheelbase in m. The inner wheel has the larger angle.
-- **Steering ratio:** $R_s = \theta_{wheel} / \delta_{road}$, dimensionless, where $\theta_{wheel}$ is the steering wheel angle and $\delta_{road}$ is the road wheel angle, both in the same unit. A ratio of 15:1 means that a 15 degree turn of the steering wheel turns the road wheels 1 degree.
+- **Ideal Ackermann relation:** $\cot\delta_{\mathrm{out}} - \cot\delta_{\mathrm{in}} = t / L$, where $\delta_{\mathrm{in}}$ and $\delta_{\mathrm{out}}$ are the inner and outer wheel angles in radians, $t$ is the track width in m, and $L$ is the wheelbase in m. The inner wheel has the larger angle.
+- **Steering ratio:** $R_s = \theta_{\mathrm{wheel}} / \delta_{\mathrm{road}}$, dimensionless, where $\theta_{\mathrm{wheel}}$ is the steering wheel angle and $\delta_{\mathrm{road}}$ is the road wheel angle, both in the same unit. A ratio of 15:1 means that a 15 degree turn of the steering wheel turns the road wheels 1 degree.
 
 ## Worked example
 
-**Given:** A quarter-car model of one front corner has a sprung mass $m_s = 400\ \text{kg}$, a spring rate $k = 30\ \text{kN/m}$, and a damping coefficient $c = 2078\ \text{N s/m}$. The unsprung mass is $m_u = 40\ \text{kg}$, and the tire stiffness is $k_t = 200\ \text{kN/m}$. The car has a wheelbase $L = 2.7\ \text{m}$ and a track $t = 1.5\ \text{m}$. The inner front wheel turns to $\delta_{in} = 25^\circ$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
+**Given:** A quarter-car model of one front corner has a sprung mass $m_s = 400\ \text{kg}$, a spring rate $k = 30\ \text{kN/m}$, and a damping coefficient $c = 2078\ \text{N s/m}$. The unsprung mass is $m_u = 40\ \text{kg}$, and the tire stiffness is $k_t = 200\ \text{kN/m}$. The car has a wheelbase $L = 2.7\ \text{m}$ and a track $t = 1.5\ \text{m}$. The inner front wheel turns to $\delta_{\mathrm{in}} = 25^\circ$. Gravity is $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 **Find:** (a) the ride frequency, (b) the damping ratio, (c) the wheel hop frequency, (d) the static deflection of the spring, and (e) the outer wheel angle.
 
 **Solution:**
 
 1. Ride frequency: $f_n = \dfrac{1}{2\pi}\sqrt{30000 / 400} = 1.38\ \text{Hz}$.
-2. Critical damping: $c_{crit} = 2\sqrt{30000 \times 400} = 6928\ \text{N s/m}$. Damping ratio: $\zeta = 2078 / 6928 = 0.30$.
+2. Critical damping: $c_{\mathrm{crit}} = 2\sqrt{30000 \times 400} = 6928\ \text{N s/m}$. Damping ratio: $\zeta = 2078 / 6928 = 0.30$.
 3. Wheel hop: $f_w = \dfrac{1}{2\pi}\sqrt{200000 / 40} = 11.25\ \text{Hz}$.
 4. Static deflection: $\delta = 400 \times 9.81 / 30000 = 0.131\ \text{m}$, which is 131 mm.
-5. Outer wheel angle: $\cot\delta_{out} = \cot 25^\circ + 1.5 / 2.7 = 2.1445 + 0.5556 = 2.7001$, so $\delta_{out} = \arctan(1 / 2.7001) = 20.3^\circ$.
+5. Outer wheel angle: $\cot\delta_{\mathrm{out}} = \cot 25^\circ + 1.5 / 2.7 = 2.1445 + 0.5556 = 2.7001$, so $\delta_{\mathrm{out}} = \arctan(1 / 2.7001) = 20.3^\circ$.
 
 **Answer:** (a) 1.38 Hz. (b) $\zeta = 0.30$. (c) 11.3 Hz. (d) 131 mm. (e) 20.3 degrees.
 
@@ -91,7 +91,7 @@ Ackermann steering geometry takes its name from Rudolph Ackermann, who held an E
 
 ## Practice
 
-Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface).
 
 1. A corner has a spring rate $k = 25\ \text{kN/m}$ and a sprung mass of 350 kg. Find the ride frequency in Hz.
 2. For the corner in problem 1, find the critical damping coefficient in N s/m.
@@ -103,7 +103,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (
 
 1. $1.35\ \text{Hz}$, from $\dfrac{1}{2\pi}\sqrt{25000 / 350} = 1.345\ \text{Hz}$.
 2. $5916\ \text{N s/m}$, from $2\sqrt{25000 \times 350} = 5916\ \text{N s/m}$.
-3. $23.6^\circ$, from $\cot\delta_{out} = \cot 30^\circ + 1.4 / 2.5 = 1.7321 + 0.5600 = 2.2921$, so $\delta_{out} = \arctan(1 / 2.2921) = 23.6^\circ$.
+3. $23.6^\circ$, from $\cot\delta_{\mathrm{out}} = \cot 30^\circ + 1.4 / 2.5 = 1.7321 + 0.5600 = 2.2921$, so $\delta_{\mathrm{out}} = \arctan(1 / 2.2921) = 23.6^\circ$.
 4. $131\ \text{mm}$, from $400 \times 9.81 / 30000 = 0.131\ \text{m}$.
 5. $48^\circ$, from $720 / 15 = 48^\circ$.
 

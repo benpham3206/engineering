@@ -4,7 +4,7 @@
 
 Vibration is motion that repeats around an equilibrium position. Engineers care because almost every structure, machine and vehicle shakes, and a part that is driven near its natural frequency can grow large enough to crack or fail.
 
-**Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Oscillations, waves, light, and heat](07-waves-light-heat.md), [Differential equations](../math/06-differential-equations.md) (solving m x'' + c x' + k x = F)
+**Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Oscillations, waves, light, and heat](07-waves-light-heat.md), [Differential equations](../math/06-differential-equations.md) (solving $m x'' + c x' + k x = F$)
 **Time:** 8-12 h
 
 ## Core ideas
@@ -21,7 +21,7 @@ The equation of motion for a damped, forced spring-mass system is
 
 $$m\ddot{x} + c\dot{x} + kx = F(t)$$
 
-where $x$ is displacement (m), $\dot{x}$ is velocity (m/s), $\ddot{x}$ is acceleration (m/s^2), $m$ is mass (kg), $c$ is damping coefficient (N·s/m), $k$ is stiffness (N/m), and $F(t)$ is the applied force (N).
+where $x$ is displacement (m), $\dot{x}$ is velocity (m/s), $\ddot{x}$ is acceleration ($\mathrm{m/s^2}$), $m$ is mass (kg), $c$ is damping coefficient ($\mathrm{N\cdot s/m}$), $k$ is stiffness (N/m), and $F(t)$ is the applied force (N).
 
 ## Key equations
 
@@ -33,9 +33,9 @@ Units: $\omega_n$ in rad/s, $f_n$ in Hz (1/s).
 
 Damping ratio:
 
-$$\zeta = \frac{c}{2\sqrt{km}} = \frac{c}{c_{cr}}, \qquad c_{cr} = 2\sqrt{km}$$
+$$\zeta = \frac{c}{2\sqrt{km}} = \frac{c}{c_{\mathrm{cr}}}, \qquad c_{\mathrm{cr}} = 2\sqrt{km}$$
 
-Units: $c_{cr}$ is the critical damping coefficient (N·s/m). $\zeta$ has no units.
+Units: $c_{\mathrm{cr}}$ is the critical damping coefficient ($\mathrm{N\cdot s/m}$). $\zeta$ has no units.
 
 Damped natural frequency (only meaningful when $\zeta < 1$):
 
@@ -49,7 +49,7 @@ Here $X$ is the steady amplitude (m) and $r$ is the frequency ratio (dimensionle
 
 At resonance ($r = 1$), $M = 1/(2\zeta)$. The exact peak of the amplitude curve for lightly damped systems is at $r = \sqrt{1-2\zeta^2}$, with peak magnification
 
-$$M_{peak} = \frac{1}{2\zeta\sqrt{1-\zeta^2}}$$
+$$M_{\mathrm{peak}} = \frac{1}{2\zeta\sqrt{1-\zeta^2}}$$
 
 Logarithmic decrement (for free decay of an underdamped system), the natural log of the ratio of successive peak amplitudes:
 
@@ -59,9 +59,9 @@ A lightly damped structure has $\zeta$ much less than 1. The worked example belo
 
 ## Worked example
 
-**Problem.** A machine mount is modeled as a 2.0 kg mass on a spring with $k = 800$ N/m and a damper with $c = 8.0$ N·s/m. A steady harmonic force of amplitude $F_0 = 5.0$ N drives the mass at frequency $\omega = \omega_n$. Find the natural frequency, damping ratio, damped frequency, and the steady amplitude at this driving frequency. Also find the peak amplitude over all driving frequencies.
+**Problem.** A machine mount is modeled as a 2.0 kg mass on a spring with $k = 800$ N/m and a damper with $c = 8.0$ $\mathrm{N\cdot s/m}$. A steady harmonic force of amplitude $F_0 = 5.0$ N drives the mass at frequency $\omega = \omega_n$. Find the natural frequency, damping ratio, damped frequency, and the steady amplitude at this driving frequency. Also find the peak amplitude over all driving frequencies.
 
-**Given.** $m = 2.0$ kg, $k = 800$ N/m, $c = 8.0$ N·s/m, $F_0 = 5.0$ N.
+**Given.** $m = 2.0$ kg, $k = 800$ N/m, $c = 8.0$ $\mathrm{N\cdot s/m}$, $F_0 = 5.0$ N.
 
 **Find.** $\omega_n$, $f_n$, $\zeta$, $\omega_d$, $X$ at $r = 1$, and the peak amplitude.
 
@@ -71,12 +71,12 @@ A lightly damped structure has $\zeta$ much less than 1. The worked example belo
 
 1. Natural angular frequency: $\omega_n = \sqrt{800/2.0} = \sqrt{400} = 20.0$ rad/s.
 2. Natural frequency: $f_n = 20.0/(2\pi) = 3.183$ Hz.
-3. Critical damping: $c_{cr} = 2\sqrt{800 \cdot 2.0} = 80$ N·s/m.
+3. Critical damping: $c_{\mathrm{cr}} = 2\sqrt{800 \cdot 2.0} = 80$ $\mathrm{N\cdot s/m}$.
 4. Damping ratio: $\zeta = 8.0/80 = 0.10$.
 5. Damped frequency: $\omega_d = 20.0\sqrt{1-0.1^2} = 19.90$ rad/s.
 6. Static deflection: $X_0 = 5.0/800 = 6.25$ mm.
 7. At $r = 1$, $M = 1/(2 \cdot 0.10) = 5.0$, so $X = 5.0 \cdot 6.25\ \text{mm} = 31.25$ mm.
-8. Exact peak: $M_{peak} = 1/(2 \cdot 0.10 \cdot \sqrt{0.99}) = 5.025$. Peak amplitude $X_{peak} = 5.025 \cdot 6.25 = 31.41$ mm, at $r = \sqrt{0.98} = 0.990$.
+8. Exact peak: $M_{\mathrm{peak}} = 1/(2 \cdot 0.10 \cdot \sqrt{0.99}) = 5.025$. Peak amplitude $X_{\mathrm{peak}} = 5.025 \cdot 6.25 = 31.41$ mm, at $r = \sqrt{0.98} = 0.990$.
 
 **Answer.**
 
@@ -91,10 +91,10 @@ A lightly damped structure has $\zeta$ much less than 1. The worked example belo
 ## Practice
 
 1. A 4.0 kg mass sits on a spring with $k = 1000$ N/m, with no damping. Find $f_n$ in Hz.
-2. The same mass and spring now have $c = 20$ N·s/m. Find $\zeta$.
+2. The same mass and spring now have $c = 20$ $\mathrm{N\cdot s/m}$. Find $\zeta$.
 3. A static force of 50 N is applied to the spring from problem 1. Find the static deflection in mm.
 4. For the system in problem 2, find $\omega_d$ in rad/s.
-5. Find the exact peak magnification $M_{peak}$ for a system with $\zeta = 0.05$.
+5. Find the exact peak magnification $M_{\mathrm{peak}}$ for a system with $\zeta = 0.05$.
 
 <details><summary>Answers</summary>
 

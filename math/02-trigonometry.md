@@ -9,7 +9,7 @@ Trigonometry turns angles into lengths and back again. Engineers use it to split
 
 ## Core ideas
 
-- An angle can be measured in degrees (360 per full turn) or radians (2 pi per full turn). Calculators and Python's math functions use radians by default. Convert with $\theta_{\text{rad}} = \theta_{\text{deg}} \cdot \pi / 180$.
+- An angle can be measured in degrees (360 per full turn) or radians ($2\pi$ per full turn). Calculators and Python's math functions use radians by default. Convert with $\theta_{\text{rad}} = \theta_{\text{deg}} \cdot \pi / 180$.
 - In a right triangle, the three sides have names relative to an angle $\theta$: the opposite side, the adjacent side, and the hypotenuse (the longest side, opposite the right angle).
 - SOH-CAH-TOA is the memory aid: $\sin\theta = \text{opposite}/\text{hypotenuse}$, $\cos\theta = \text{adjacent}/\text{hypotenuse}$, $\tan\theta = \text{opposite}/\text{adjacent}$.
 - A force $F$ at an angle $\theta$ from the horizontal has components $F_x = F\cos\theta$ and $F_y = F\sin\theta$. This is the most common use in statics.

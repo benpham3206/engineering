@@ -90,7 +90,7 @@ Kitchen appliances carry electrical, thermal, and mechanical hazards. Designers 
 
 ## History
 
-Charles Strite patented a pop-up toaster in 1919, and the Waters Genter Company built the first commercial version. Earlier toasters held bread against a wire grid by hand. The spring-loaded carriage and the timed release made toast without supervision.
+Charles Strite filed a patent for a pop-up toaster in 1919, and the Waters Genter Company built the first commercial version. Earlier toasters held bread against a wire grid by hand. The spring-loaded carriage and the timed release made toast without supervision.
 
 Induction heating was used in industry before it reached home kitchens. Furnaces used induction to melt and harden metal in the early twentieth century. Home induction cooktops came later, after cheap power electronics made the high-frequency supply small enough.
 

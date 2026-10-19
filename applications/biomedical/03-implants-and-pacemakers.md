@@ -106,7 +106,7 @@ In 1958, Åke Senning and Rune Elmqvist implanted an early pacemaker at the Karo
 2. $P = 7.5\ \mu\text{W}$
 3. $E_b = 0.5 \times 3.0 \times 3600 = 5400\ \text{J}$
 4. $t = 5400 / 20\times10^{-6} = 2.7\times10^{8}\ \text{s} = 8.6$ years, under ideal constant-draw assumptions
-5. $110 / 17 = 6.5$. The stem is about 6.5 times stiffer than the bone, so it carries more of the load than the bone does, which is the origin of stress shielding.
+5. $110 / 17 = 6.5$. The material is about 6.5 times stiffer than the bone. Structural stiffness is $EA/L$, so it also depends on cross-sectional area. For a stem and bone of similar area, the stem carries more of the load than the bone does, which is the origin of stress shielding.
 
 </details>
 

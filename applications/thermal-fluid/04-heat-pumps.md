@@ -61,13 +61,13 @@ heat pump for a design temperature, and the balance point depends on that choice
 
 ## Key equations
 
-- Heating COP: $\mathrm{COP}_{HP} = \dfrac{\dot{Q}_H}{\dot{W}_c}$, where $\dot{Q}_H$ is the heat delivered to
+- Heating COP: $\mathrm{COP}_{\mathrm{HP}} = \dfrac{\dot{Q}_H}{\dot{W}_c}$, where $\dot{Q}_H$ is the heat delivered to
   the building in watts (W) and $\dot{W}_c$ is the electrical input in watts (W).
-- Relation to cooling COP: $\mathrm{COP}_{HP} = \mathrm{COP}_R + 1$ for the same cycle, where $\mathrm{COP}_R$ is
+- Relation to cooling COP: $\mathrm{COP}_{\mathrm{HP}} = \mathrm{COP}_R + 1$ for the same cycle, where $\mathrm{COP}_R$ is
   the cooling COP.
-- Carnot heating limit: $\mathrm{COP}_{HP,max} = \dfrac{T_H}{T_H - T_L}$, where $T_H$ is the building
+- Carnot heating limit: $\mathrm{COP}_{\mathrm{HP},\mathrm{max}} = \dfrac{T_H}{T_H - T_L}$, where $T_H$ is the building
   temperature and $T_L$ the source temperature, both in kelvin (K).
-- Electrical input: $\dot{W}_c = \dot{Q}_H / \mathrm{COP}_{HP}$.
+- Electrical input: $\dot{W}_c = \dot{Q}_H / \mathrm{COP}_{\mathrm{HP}}$.
 - Electric resistance heater: $\dot{W} = \dot{Q}_H$, so its COP is 1.
 - Seasonal performance factor (SPF): the total heat delivered over a season divided by the total electrical
   energy used. It is the honest figure for a whole winter, because COP changes with temperature.
@@ -86,10 +86,10 @@ building loses the heat through its envelope, and the heat pump delivers the who
 
 **Solution:**
 
-1. Convert temperatures to kelvin: $T_H = 20 + 273.15 = 293.15\ \text{K}$, and $T_L = -5 + 273.15 =
-   268.15\ \text{K}$.
+1. Convert temperatures to kelvin: $T_H = 20 + 273.15 = 293.15\ \text{K}$, and $T_L = -5 + 273.15 =$
+   $268.15\ \text{K}$.
 2. Electrical power: $\dot{W}_c = 8.0 / 2.5 = 3.2\ \text{kW}$.
-3. Carnot limit: $\mathrm{COP}_{max} = 293.15 / (293.15 - 268.15) = 11.7$.
+3. Carnot limit: $\mathrm{COP}_{\mathrm{max}} = 293.15 / (293.15 - 268.15) = 11.7$.
 4. Fraction of Carnot reached: $2.5 / 11.7 = 0.21$.
 5. Resistance heater power: $\dot{W} = 8.0\ \text{kW}$, since its COP is 1.
 6. Saving: $8.0 - 3.2 = 4.8\ \text{kW}$, which is $4.8 / 8.0 = 60$ percent of the resistance heater's input.
@@ -153,9 +153,9 @@ supplied the cycle that heat pumps still use. Sadi Carnot's 1824 limit on heat e
 
 <details><summary>Answers</summary>
 
-1. $\mathrm{COP}_{HP} = 3.2 + 1 = 4.2$
+1. $\mathrm{COP}_{\mathrm{HP}} = 3.2 + 1 = 4.2$
 2. $\dot{W}_c = 6.0 / 3.0 = 2.0\ \text{kW}$
-3. $\mathrm{COP}_{max} = 293.15 / (293.15 - 263.15) = 9.8$
+3. $\mathrm{COP}_{\mathrm{max}} = 293.15 / (293.15 - 263.15) = 9.8$
 4. $\dot{W}_c = 12 / 4.0 = 3.0\ \text{kW}$
 
 </details>

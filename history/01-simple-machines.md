@@ -93,11 +93,11 @@ Here $F_L$ is the load force in N, $F_E$ is the effort force in N, $d_E$ is the 
 
 Actual mechanical advantage with friction:
 
-$$\text{MA} = \frac{F_L}{F_E} = \eta \, \text{IMA}$$
+$$\mathrm{MA} = \frac{F_L}{F_E} = \eta \, \text{IMA}$$
 
 Here $\eta$ is the efficiency of the machine, a number between 0 and 1 with no units. Work and efficiency:
 
-$$W_{in} = F_E \, d_E, \qquad W_{out} = F_L \, d_L, \qquad \eta = \frac{W_{out}}{W_{in}}$$
+$$W_{\text{in}} = F_E \, d_E, \qquad W_{\text{out}} = F_L \, d_L, \qquad \eta = \frac{W_{\text{out}}}{W_{\text{in}}}$$
 
 Work $W$ is in joules (J). Lever balance for an ideal lever, with the moments in newton metres (N m):
 
@@ -105,11 +105,11 @@ $$F_E \, d_E = F_L \, d_L$$
 
 Compound machines, with $k$ stages:
 
-$$\text{IMA}_{total} = \prod_{i=1}^{k} \text{IMA}_i, \qquad \eta_{total} = \prod_{i=1}^{k} \eta_i$$
+$$\text{IMA}_{\text{total}} = \prod_{i=1}^{k} \text{IMA}_i, \qquad \eta_{\text{total}} = \prod_{i=1}^{k} \eta_i$$
 
 ## Worked example
 
-**Given:** A winch lifts a load of $W = 1000\ \text{N}$, which is the weight of about 102 kg at $g = 9.81\ \text{m/s}^2$ (Earth surface). The winch handle has a radius $R = 0.30\ \text{m}$, and the drum has a radius $r = 0.050\ \text{m}$. A block and tackle with $n = 4$ supporting rope segments connects the drum to the load. The load rises $h = 2.0\ \text{m}$. Typical efficiencies are $\eta_{winch} = 0.80$ and $\eta_{pulley} = 0.90$.
+**Given:** A winch lifts a load of $W = 1000\ \text{N}$, which is the weight of about 102 kg at $g = 9.81\ \text{m/s}^2$ (Earth surface). The winch handle has a radius $R = 0.30\ \text{m}$, and the drum has a radius $r = 0.050\ \text{m}$. A block and tackle with $n = 4$ supporting rope segments connects the drum to the load. The load rises $h = 2.0\ \text{m}$. Typical efficiencies are $\eta_{\text{winch}} = 0.80$ and $\eta_{\text{pulley}} = 0.90$.
 
 **Find:** (a) the ideal effort, (b) the actual effort, (c) the distance the handle moves, and (d) the input work and the output work.
 
@@ -117,12 +117,12 @@ $$\text{IMA}_{total} = \prod_{i=1}^{k} \text{IMA}_i, \qquad \eta_{total} = \prod
 
 **Solution:**
 
-1. Winch IMA: $\text{IMA}_{winch} = R / r = 0.30 / 0.050 = 6.0$.
-2. Block and tackle IMA: $\text{IMA}_{pulley} = n = 4$.
-3. Total ideal IMA: $\text{IMA}_{total} = 6.0 \times 4 = 24$.
-4. Ideal effort: $F_{ideal} = W / \text{IMA}_{total} = 1000 / 24 = 41.7\ \text{N}$.
+1. Winch IMA: $\text{IMA}_{\text{winch}} = R / r = 0.30 / 0.050 = 6.0$.
+2. Block and tackle IMA: $\text{IMA}_{\text{pulley}} = n = 4$.
+3. Total ideal IMA: $\text{IMA}_{\text{total}} = 6.0 \times 4 = 24$.
+4. Ideal effort: $F_{\text{ideal}} = W / \text{IMA}_{\text{total}} = 1000 / 24 = 41.7\ \text{N}$.
 5. Overall efficiency: $\eta = 0.80 \times 0.90 = 0.72$.
-6. Actual effort: $F_E = W / (\text{IMA}_{total} \, \eta) = 1000 / (24 \times 0.72) = 57.9\ \text{N}$.
+6. Actual effort: $F_E = W / (\text{IMA}_{\text{total}} \, \eta) = 1000 / (24 \times 0.72) = 57.9\ \text{N}$.
 7. Rope pulled off the drum: $n h = 4 \times 2.0 = 8.0\ \text{m}$.
 8. Drum turns: $8.0 / (2\pi \times 0.050) = 25.5$ turns.
 9. Handle travel per turn: $2\pi \times 0.30 = 1.885\ \text{m}$. Total handle travel: $25.5 \times 1.885 = 48.0\ \text{m}$.
@@ -131,7 +131,7 @@ $$\text{IMA}_{total} = \prod_{i=1}^{k} \text{IMA}_i, \qquad \eta_{total} = \prod
 
 **Answer:** (a) The ideal effort is 41.7 N. (b) The actual effort is 57.9 N. (c) The handle moves 48.0 m. (d) The input work is 2.78 kJ, and the output work is 2.00 kJ.
 
-**Sanity check:** The handle travel equals $\text{IMA}_{total} \times h = 24 \times 2.0 = 48\ \text{m}$, which matches step 9. The ratio of output work to input work, $2000 / 2778 = 0.72$, matches the overall efficiency in step 5. The operator pulls about 58 N, which is a modest force, and the price is a long pull of 48 m.
+**Sanity check:** The handle travel equals $\text{IMA}_{\text{total}} \times h = 24 \times 2.0 = 48\ \text{m}$, which matches step 9. The ratio of output work to input work, $2000 / 2778 = 0.72$, matches the overall efficiency in step 5. The operator pulls about 58 N, which is a modest force, and the price is a long pull of 48 m.
 
 ## Lessons for engineers today
 

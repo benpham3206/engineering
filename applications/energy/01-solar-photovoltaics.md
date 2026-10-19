@@ -46,54 +46,54 @@ The current-voltage curve of a cell is the basis for all of its sizing. A cell d
 
 Power at the maximum power point, in watts:
 
-$$P_{max} = V_{mp} \, I_{mp}$$
+$$P_{\mathrm{max}} = V_{\mathrm{mp}} \, I_{\mathrm{mp}}$$
 
-where $V_{mp}$ is the voltage at maximum power in volts (V) and $I_{mp}$ is the current at maximum power in amperes (A).
+where $V_{\mathrm{mp}}$ is the voltage at maximum power in volts (V) and $I_{\mathrm{mp}}$ is the current at maximum power in amperes (A).
 
 Fill factor, a dimensionless measure of how square the curve is:
 
-$$FF = \frac{P_{max}}{V_{oc} \, I_{sc}}$$
+$$\mathrm{FF} = \frac{P_{\mathrm{max}}}{V_{\mathrm{oc}} \, I_{\mathrm{sc}}}$$
 
-where $V_{oc}$ is the open-circuit voltage in volts (V) and $I_{sc}$ is the short-circuit current in amperes (A). A good module has a fill factor near 0.75 to 0.80 (typical value).
+where $V_{\mathrm{oc}}$ is the open-circuit voltage in volts (V) and $I_{\mathrm{sc}}$ is the short-circuit current in amperes (A). A good module has a fill factor near 0.75 to 0.80 (typical value).
 
 Efficiency, a dimensionless ratio:
 
-$$\eta = \frac{P_{max}}{G \, A}$$
+$$\eta = \frac{P_{\mathrm{max}}}{G \, A}$$
 
-where $G$ is the incident irradiance in watts per square metre (W/m$^2$) and $A$ is the module area in square metres (m$^2$). The standard test condition is $G = 1000\ \text{W/m}^2$ at a cell temperature of 25 °C.
+where $G$ is the incident irradiance in watts per square metre (W/m$^2$) and $A$ is the module area in square metres (m$^2$). The standard test condition is $G = 1000\ \text{W}/\text{m}^2$ at a cell temperature of 25 °C.
 
 Array peak power, in watts peak (Wp):
 
-$$P_{pk} = N \, A \, G_{STC} \, \eta$$
+$$P_{\mathrm{pk}} = N \, A \, G_{\mathrm{STC}} \, \eta$$
 
-where $N$ is the number of modules (dimensionless), $A$ is the area of one module in m$^2$, $G_{STC} = 1000\ \text{W/m}^2$, and $\eta$ is the module efficiency.
+where $N$ is the number of modules (dimensionless), $A$ is the area of one module in m$^2$, $G_{\mathrm{STC}} = 1000\ \text{W}/\text{m}^2$, and $\eta$ is the module efficiency.
 
 Daily energy yield, in kilowatt-hours per day:
 
-$$E_{day} = P_{pk} \, H_{psh} \, PR$$
+$$E_{\mathrm{day}} = P_{\mathrm{pk}} \, H_{\mathrm{psh}} \, \mathrm{PR}$$
 
-where $P_{pk}$ is the peak power in kilowatts (kW), $H_{psh}$ is the peak sun hours per day in hours (h/day), and $PR$ is the performance ratio, a dimensionless factor for losses in wiring, inverter, dust, and temperature (typical value 0.75 to 0.85).
+where $P_{\mathrm{pk}}$ is the peak power in kilowatts (kW), $H_{\mathrm{psh}}$ is the peak sun hours per day in hours (h/day), and $\mathrm{PR}$ is the performance ratio, a dimensionless factor for losses in wiring, inverter, dust, and temperature (typical value 0.75 to 0.85).
 
 Temperature correction, in watts:
 
-$$P(T_c) = P_{STC} \left[ 1 + \gamma (T_c - 25) \right]$$
+$$P(T_c) = P_{\mathrm{STC}} \left[ 1 + \gamma (T_c - 25) \right]$$
 
-where $P_{STC}$ is the rated power in watts (W), $T_c$ is the cell temperature in degrees Celsius (°C), and $\gamma$ is the power temperature coefficient in per degree Celsius (per °C). For crystalline silicon, $\gamma \approx -0.35\ \%/^\circ\text{C}$ (typical value).
+where $P_{\mathrm{STC}}$ is the rated power in watts (W), $T_c$ is the cell temperature in degrees Celsius (°C), and $\gamma$ is the power temperature coefficient in per degree Celsius (per °C). For crystalline silicon, $\gamma \approx -0.35\ \%/^\circ\text{C}$ (typical value).
 
 ## Worked example
 
-**Given:** An array of $N = 20$ modules. Each module has area $A = 1.7\ \text{m}^2$ and efficiency $\eta = 0.21$. The site receives $H_{psh} = 4.5\ \text{h/day}$ of peak sun on average, and the performance ratio is $PR = 0.80$ (assumed, covering inverter, wiring, and soiling losses).
+**Given:** An array of $N = 20$ modules. Each module has area $A = 1.7\ \text{m}^2$ and efficiency $\eta = 0.21$. The site receives $H_{\mathrm{psh}} = 4.5\ \text{h/day}$ of peak sun on average, and the performance ratio is $\mathrm{PR} = 0.80$ (assumed, covering inverter, wiring, and soiling losses).
 
 **Find:** (a) the array peak power and (b) the daily energy yield.
 
-**Assumptions:** The modules sit at the standard irradiance of $1000\ \text{W/m}^2$ for the peak rating. The yield uses the average peak sun hours for the site.
+**Assumptions:** The modules sit at the standard irradiance of $1000\ \text{W}/\text{m}^2$ for the peak rating. The yield uses the average peak sun hours for the site.
 
 **Solution:**
 
-1. Peak power: $P_{pk} = N A G_{STC} \eta = 20 \times 1.7 \times 1000 \times 0.21 = 7140\ \text{W}$, which is $7.14\ \text{kW}$.
-2. Daily energy: $E_{day} = 7.14\ \text{kW} \times 4.5\ \text{h/day} \times 0.80 = 25.7\ \text{kWh/day}$.
+1. Peak power: $P_{\mathrm{pk}} = N A G_{\mathrm{STC}} \eta = 20 \times 1.7 \times 1000 \times 0.21 = 7140\ \text{W}$, which is $7.14\ \text{kW}$.
+2. Daily energy: $E_{\mathrm{day}} = 7.14\ \text{kW} \times 4.5\ \text{h/day} \times 0.80 = 25.7\ \text{kWh/day}$.
 
-**Answer:** (a) $P_{pk} = 7.14\ \text{kW}$. (b) $E_{day} = 25.7\ \text{kWh/day}$.
+**Answer:** (a) $P_{\mathrm{pk}} = 7.14\ \text{kW}$. (b) $E_{\mathrm{day}} = 25.7\ \text{kWh/day}$.
 
 **Sanity check:** Over a year, $25.7 \times 365 = 9380\ \text{kWh}$. Divided by the $7.14\ \text{kW}$ rating, that gives about $1310\ \text{kWh}$ per kilowatt of peak power per year. Sunny sites often reach that range, so the result is plausible. A site with half the sun hours would produce about half the energy.
 
@@ -122,17 +122,17 @@ In 1839, Alexandre-Edmond Becquerel observed the photovoltaic effect in France. 
 
 ## Practice
 
-1. A module with rated power $300\ \text{W}$ has area $1.6\ \text{m}^2$. Find its efficiency at $G = 1000\ \text{W/m}^2$.
+1. A module with rated power $300\ \text{W}$ has area $1.6\ \text{m}^2$. Find its efficiency at $G = 1000\ \text{W}/\text{m}^2$.
 2. A $4\ \text{kW}$ array gets $4.5\ \text{h/day}$ of peak sun. Its performance ratio is $0.80$. Find the daily energy in kWh.
 3. A $300\ \text{W}$ module has $\gamma = -0.35\ \%/^\circ\text{C}$. Its cells reach $65\ ^\circ\text{C}$. Find its power at that temperature.
-4. A module has $I_{sc} = 10\ \text{A}$, $V_{oc} = 38\ \text{V}$, and fill factor $FF = 0.80$. Find $P_{max}$.
+4. A module has $I_{\mathrm{sc}} = 10\ \text{A}$, $V_{\mathrm{oc}} = 38\ \text{V}$, and fill factor $\mathrm{FF} = 0.80$. Find $P_{\mathrm{max}}$.
 
 <details><summary>Answers</summary>
 
 1. $\eta = 300 / (1.6 \times 1000) = 0.1875$, or 18.75 percent.
-2. $E_{day} = 4 \times 4.5 \times 0.80 = 14.4\ \text{kWh/day}$.
+2. $E_{\mathrm{day}} = 4 \times 4.5 \times 0.80 = 14.4\ \text{kWh/day}$.
 3. $P = 300 \times [1 + (-0.0035)(65 - 25)] = 300 \times 0.86 = 258\ \text{W}$.
-4. $P_{max} = FF \times V_{oc} \times I_{sc} = 0.80 \times 38 \times 10 = 304\ \text{W}$.
+4. $P_{\mathrm{max}} = \mathrm{FF} \times V_{\mathrm{oc}} \times I_{\mathrm{sc}} = 0.80 \times 38 \times 10 = 304\ \text{W}$.
 
 </details>
 
@@ -142,7 +142,7 @@ In 1839, Alexandre-Edmond Becquerel observed the photovoltaic effect in France. 
 - Using the rated power as the average output. The average over a day is a fraction of the peak, set by sun hours, tilt, and losses.
 - Ignoring temperature. A hot roof lowers output, and a cold, clear day can raise it above the rating.
 - Assuming a shaded panel loses only its shaded share. One shaded cell in a series string can cut the output of the whole string unless bypass diodes are present.
-- Treating peak sun hours as clock hours. One peak sun hour is one hour at $1000\ \text{W/m}^2$, not one hour of daylight.
+- Treating peak sun hours as clock hours. One peak sun hour is one hour at $1000\ \text{W}/\text{m}^2$, not one hour of daylight.
 
 ## Go deeper
 

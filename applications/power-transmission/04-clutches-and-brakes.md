@@ -72,10 +72,10 @@ Here $n$ counts the friction faces (two for a single disc with linings on both s
 newton metres (N m), and $\mu$ is dimensionless. Uniform wear is the usual assumption for a worn-in
 clutch. Uniform pressure is the usual assumption for a new one.
 
-Power dissipated while the surfaces slip, in watts, with $\omega_{rel}$ the relative angular speed in
+Power dissipated while the surfaces slip, in watts, with $\omega_{\mathrm{rel}}$ the relative angular speed in
 radians per second (rad/s):
 
-$$P = T\,\omega_{rel}$$
+$$P = T\,\omega_{\mathrm{rel}}$$
 
 Energy absorbed by a brake that stops a vehicle of mass $m$ in kilograms (kg) at speed $v$ in metres per
 second (m/s):
