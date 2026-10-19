@@ -1,17 +1,25 @@
-Topics:
+# math
 
-Algebra
+Math is the notation engineering uses. Most of the work here is knowing which tool fits the problem and checking that the answer makes sense.
 
-Trigonometry
+**Prerequisites:** none. This is the foundation for the other folders. High-school algebra is assumed. Start with [Algebra](01-algebra.md).
 
-Calculus
+## Lessons
 
-Linear Algebra
+- [Algebra](01-algebra.md)
+- [Trigonometry](02-trigonometry.md)
+- [Calculus: limits, derivatives, integrals, series](03-single-variable-calculus.md)
+- [Multivariable calculus: partial derivatives, gradients, multiple integrals, vector calculus](04-multivariable-calculus.md)
+- [Linear algebra: matrices, systems of equations, eigenvalues](05-linear-algebra.md)
+- [Differential equations: first-order, second-order, systems, Laplace transforms](06-differential-equations.md)
+- [Probability and statistics](07-probability-and-statistics.md)
+- [Numerical methods: root finding, integration, ODE solvers, error](08-numerical-methods.md)
+- [Software solvers: MATLAB, Python, spreadsheets, calculators](09-software-solvers.md)
 
-Differential Equations
+## Reference
 
-Probability
+For quick lookup while working. Each sheet opens with the principles of the field.
 
-Numerical Methods
+- [Math reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
 
-Software Solvers
+See also: [physics](../physics), [tools](../tools), [courses](../courses)

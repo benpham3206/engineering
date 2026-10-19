@@ -1,0 +1,37 @@
+name: verify
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run the verifier
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          # The strict ratchet covers files added after the verifier existed.
+          # Files from before it are migrated in waves and report debt instead.
+          added=""
+          if [ -n "$BASE_REF" ]; then
+            base=$(git merge-base "origin/$BASE_REF" HEAD)
+            intro=$(git log --diff-filter=A --format=%H -- verify.py | tail -1)
+            if [ -n "$intro" ] && ! git merge-base --is-ancestor "$intro" "$base"; then
+              base="$intro"
+            fi
+            added=$(git diff --name-only --diff-filter=A "$base" HEAD -- '*.md')
+          fi
+          python verify.py --require-strict $added
