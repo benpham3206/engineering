@@ -2,7 +2,10 @@
 
 **Type:** lesson
 
-A dam is a barrier that holds back water and turns a river or valley into a reservoir. An engineer must make sure the dam stays in place under the push of the water, its own weight, uplift, floods, and earthquakes, because a failed dam can release the whole reservoir downstream.
+A **dam** is a barrier that holds back water and turns a river or valley into a reservoir.
+
+> [!WARNING]
+> An engineer must make sure the dam stays in place under the push of the water, its own weight, uplift, floods, and earthquakes, because a failed dam can release the whole reservoir downstream.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md)
 **Time:** 6-8 h
@@ -19,7 +22,7 @@ The steps run as follows:
 
 1. Water pressure at depth $h$ is $p = \rho g h$. Pressure rises in a straight line from zero at the surface to a maximum at the base.
 2. The pressure adds up to one horizontal force per metre of dam length. That force acts at height $H/3$ above the base, which is a depth of $2H/3$ below the free surface.
-3. The dam's weight pushes down through its centre of mass. Multiplied by its lever arm about the downstream toe, the weight resists tipping. Uplift from water under the base pushes up and reduces the net resisting force.
+3. The dam's weight pushes down through its centre of mass. Multiplied by its lever arm about the downstream toe, the weight resists tipping. **Uplift** from water under the base pushes up and reduces the net resisting force.
 4. The base spreads the load into the rock or soil. The stress at the base must stay below what the foundation can carry.
 
 ### Main parts
@@ -42,7 +45,7 @@ The steps run as follows:
 
 ## Key equations
 
-Hydrostatic pressure at depth $h$:
+**Hydrostatic pressure** at depth $h$:
 
 $$p = \rho g h$$
 
@@ -52,7 +55,7 @@ Resultant water force per metre of dam length, for a vertical face with water de
 
 $$F_H = \tfrac{1}{2}\rho g H^2$$
 
-Assumes still water, a vertical upstream face, and a dam that does not move under load. Here $F_H$ is in newtons per metre (N/m), and $H$ is the water depth in metres. The center of pressure acts horizontally at height $H/3$ above the base, which is a depth of $2H/3$ below the free surface.
+Assumes still water, a vertical upstream face, and a dam that does not move under load. Here $F_H$ is in newtons per metre (N/m), and $H$ is the water depth in metres. The **center of pressure** acts horizontally at height $H/3$ above the base, which is a depth of $2H/3$ below the free surface.
 
 Weight per metre of dam length for a triangular gravity section:
 

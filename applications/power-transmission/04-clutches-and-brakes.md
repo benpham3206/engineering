@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A clutch is a device that connects and disconnects two rotating shafts, and a brake is a device that slows or holds a shaft. Engineers size them for torque capacity, which sets the largest torque that can pass before the surfaces slip, and for heat, because every joule of slipping energy turns into temperature rise in the parts. Both work by pressing two surfaces together so that friction transmits torque.
+A **clutch** is a device that connects and disconnects two rotating shafts, and a **brake** is a device that slows or holds a shaft. Engineers size them for **torque capacity**, which sets the largest torque that can pass before the surfaces slip, and for heat, because every joule of slipping energy turns into temperature rise in the parts. Both work by pressing two surfaces together so that friction transmits torque.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Heat transfer](../../physics/12-heat-transfer.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6 to 8 h
@@ -11,16 +11,16 @@ A clutch is a device that connects and disconnects two rotating shafts, and a br
 
 ### How it works
 
-Friction between two surfaces resists sliding. The friction force is $F_f = \mu N$, where $N$ is the
-normal force pressing the surfaces together in newtons (N), and $\mu$ is the coefficient of friction,
-which has no units. A clutch uses a clamp force to press a friction lining against a rotating face.
+Friction between two surfaces resists sliding. The **friction force** is $F_f = \mu N$, where $N$ is the
+normal force pressing the surfaces together in newtons (N), and $\mu$ is the **coefficient of friction**,
+which has no units. A clutch uses a **clamp force** to press a friction lining against a rotating face.
 The friction force acts at a radius, so it produces a torque. The torque is the largest one the clutch
 can carry before it slips.
 
 A clutch goes through two phases. While the two sides turn at different speeds, the lining slips, and
 friction turns the energy of the speed difference into heat. Once the speeds match, the surfaces stick
-and carry the full torque with no slip. The kinetic friction coefficient governs the slipping phase.
-The static coefficient is higher and governs the locked phase.
+and carry the full torque with no slip. The **kinetic friction coefficient** governs the slipping phase.
+The **static coefficient** is higher and governs the locked phase.
 
 A brake works the same way, except one side is fixed to the frame. The brake takes the kinetic energy
 of the moving parts and turns it into heat in the rotor or drum. Stopping a car is a heat transfer
@@ -47,7 +47,7 @@ problem as much as a friction problem.
 - An electromagnetic clutch uses a coil to pull the plates together. A controller can engage it remotely.
 - A disc brake has an exposed rotor that sheds heat well and resists fade. Most car wheels use it.
 - A drum brake has an enclosed drum. A leading shoe pulls itself into the drum, which is called
-  self-energizing, so it needs less actuating force. The enclosure traps heat.
+  **self-energizing**, so it needs less actuating force. The enclosure traps heat.
 - A band brake tightens a steel band around a drum. Hoists and older machinery use it.
 
 ## Key equations

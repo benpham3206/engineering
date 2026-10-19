@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Medical imaging is the set of methods that make pictures of the inside of the body without opening it. Doctors use these pictures to find disease and guide treatment, so the accuracy and safety of each method matter to every patient.
+**Medical imaging** is the set of methods that make pictures of the inside of the body without opening it. Doctors use these pictures to find disease and guide treatment, so the accuracy and safety of each method matter to every patient.
 
 Each modality uses a different physical signal, such as X-ray attenuation, radio-frequency signals from spinning protons, or echoes of sound, and engineers must understand that signal to size the hardware and control the risks.
 
@@ -15,9 +15,9 @@ Each modality uses a different physical signal, such as X-ray attenuation, radio
 
 **X-ray imaging and CT.** An X-ray tube sends photons through the body. Tissues absorb and scatter photons in proportion to their density and atomic makeup, so a detector behind the body records a shadow of the transmitted intensity. CT takes many such projections from different angles and reconstructs a cross-section of the body from them.
 
-**Ultrasound.** A piezoelectric transducer turns a short voltage pulse into a pressure wave. The wave travels into tissue and reflects at boundaries between tissues. The same transducer listens for the echoes. The time between a pulse and its echo gives the depth of the boundary, and the echo strength shows how strongly the boundary reflects. The Doppler effect measures the frequency shift from moving blood.
+**Ultrasound.** A **piezoelectric transducer** turns a short voltage pulse into a pressure wave. The wave travels into tissue and reflects at boundaries between tissues. The same transducer listens for the echoes. The time between a pulse and its echo gives the depth of the boundary, and the echo strength shows how strongly the boundary reflects. The **Doppler effect** measures the frequency shift from moving blood.
 
-**MRI.** A strong static magnetic field, usually 1.5 T or 3 T, aligns the spins of hydrogen protons in the body. A radio-frequency pulse at the Larmor frequency tips those spins. As they relax, they emit a radio signal that receiver coils detect. Gradient coils add small, linear changes to the field, so each position in the body has a different frequency and phase. A Fourier transform of the recorded signal gives the image.
+**MRI.** A strong static magnetic field, usually 1.5 T or 3 T, aligns the spins of hydrogen protons in the body. A radio-frequency pulse at the **Larmor frequency** tips those spins. As they relax, they emit a radio signal that receiver coils detect. Gradient coils add small, linear changes to the field, so each position in the body has a different frequency and phase. A **Fourier transform** of the recorded signal gives the image.
 
 ### Main parts
 
@@ -39,9 +39,9 @@ Each modality uses a different physical signal, such as X-ray attenuation, radio
 
 ## Key equations
 
-- X-ray attenuation: $I = I_0 e^{-\mu x}$. Here $I_0$ is incident intensity, $I$ is transmitted intensity (both in the same units), $\mu$ is the linear attenuation coefficient in $\text{cm}^{-1}$, and $x$ is thickness in cm. Assumes a narrow monoenergetic beam, no scatter reaching the detector, and a uniform material.
+- X-ray attenuation: $I = I_0 e^{-\mu x}$. Here $I_0$ is incident intensity, $I$ is transmitted intensity (both in the same units), $\mu$ is the **linear attenuation coefficient** in $\text{cm}^{-1}$, and $x$ is thickness in cm. Assumes a narrow monoenergetic beam, no scatter reaching the detector, and a uniform material.
 - Linear attenuation from mass attenuation: $\mu = \rho \, (\mu/\rho)$. Here $\rho$ is density in $\text{g}/\text{cm}^3$ and $\mu/\rho$ is the mass attenuation coefficient in $\text{cm}^2/\text{g}$. Assumes the same material and energy throughout.
-- Half-value layer: $\text{HVL} = \ln 2 / \mu$. It is the thickness in cm that halves the intensity. Assumes the same monoenergetic beam as above.
+- **Half-value layer (HVL)**: $\text{HVL} = \ln 2 / \mu$. It is the thickness in cm that halves the intensity. Assumes the same monoenergetic beam as above.
 - Larmor frequency: $f = \dfrac{\gamma}{2\pi} B_0$. Here $f$ is in hertz, $\gamma/2\pi = 42.577\ \text{MHz/T}$ for hydrogen protons (a standard value), and $B_0$ is the static field in tesla. Assumes the spins sit in a uniform static field.
 - Echo depth: $d = c\,t/2$. Here $c$ is the sound speed in m/s, $t$ is the round-trip time in s, and $d$ is depth in m. Assumes a constant sound speed along the path.
 - Ultrasound two-way attenuation: $A = 2\,\alpha\, f\, d$, in dB. Here $\alpha$ is the attenuation coefficient in $\text{dB/(cm MHz)}$, $f$ is frequency in MHz, and $d$ is depth in cm. Assumes attenuation is linear in frequency and depth, which is a common approximation.
@@ -79,8 +79,11 @@ Each modality uses a different physical signal, such as X-ray attenuation, radio
 - Detector and electronics faults. Dead pixels and drift cause artifacts and wrong dose readings.
 - Ultrasound cable and element damage. A cracked cable or a dead transducer element creates lines or dropouts in the image.
 - MRI quench. A superconducting magnet can lose superconductivity, and the stored energy boils off helium. Warning signs include a rising helium pressure or a magnet temperature alarm. A vent pipe carries the boil-off out of the room.
-- Projectile hazard. A strong static field pulls ferromagnetic objects toward the magnet.
-- Radio-frequency heating. Energy absorbed in tissue or implants raises temperature. Limits on specific absorption rate (SAR) control this.
+
+> [!WARNING]
+> Projectile hazard. A strong static field pulls ferromagnetic objects toward the magnet.
+
+- Radio-frequency heating. Energy absorbed in tissue or implants raises temperature. Limits on **specific absorption rate (SAR)** control this.
 - Ionizing exposure above design. Repeated or high-dose X-ray and CT scans add to the cumulative dose.
 
 **Risk management.** ISO 14971 governs these hazards, with severity and probability estimated for each one, and residual risk verified after controls. The hierarchy of controls applies as follows.

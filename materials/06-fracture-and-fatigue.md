@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Fracture is the breaking of a material when a crack grows until the remaining material can no longer carry the load, and fatigue is the cracking that builds up when repeated loading grows a crack over many cycles. Engineers must know both because most structures fail not from one load that is too big but from a crack that grows, so a part can fail at a load well below its rated strength.
+**Fracture** is the breaking of a material when a crack grows until the remaining material can no longer carry the load, and fatigue is the cracking that builds up when repeated loading grows a crack over many cycles. Engineers must know both because most structures fail not from one load that is too big but from a crack that grows, so a part can fail at a load well below its rated strength.
 
 **Prerequisites:** [Mechanical properties](03-mechanical-properties.md), [Metals, polymers, ceramics, composites](05-material-classes.md)
 **Time:** 8-10 h
@@ -19,13 +19,14 @@ Fracture is the breaking of a material when a crack grows until the remaining ma
 
 - The **stress intensity factor** $K$ measures how strongly the stress near a crack tip is amplified. It depends on the applied stress, the crack size, and the part geometry.
 - A crack grows when $K$ reaches $K_{\mathrm{IC}}$. So, for a given material and stress, there is a **critical crack size**. Cracks smaller than this are safe, and cracks larger than this grow.
-- This is why inspection matters. A part can be safe with small flaws and fail with the same stress on a large one.
+- > [!WARNING]
+> This is why inspection matters. A part can be safe with small flaws and fail with the same stress on a large one.
 
 ### Fatigue
 
 - **Fatigue** is failure under repeated or fluctuating stress, often at stress levels well below the yield strength.
 - Fatigue has three stages: crack **initiation** (often at a surface scratch or pore), slow crack **propagation** over many cycles, and sudden **final fracture** when the remaining section is too small.
-- Fatigue life is often shown as an $S$-$N$ curve, a plot of stress amplitude against the number of cycles to failure. Many steels and titanium alloys have an endurance limit, a stress below which they last indefinitely. Aluminum alloys usually do not have a clear endurance limit.
+- Fatigue life is often shown as an $S$-$N$ curve, a plot of stress amplitude against the number of cycles to failure. Many steels and titanium alloys have an **endurance limit**, a stress below which they last indefinitely. Aluminum alloys usually do not have a clear endurance limit.
 - Surface finish, corrosion, residual stress, and notches all lower fatigue life a lot.
 
 ## Key equations

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-CAD, or computer-aided design, is the use of software to model parts, put them together into assemblies, and produce drawings. Engineers rely on it because one model can drive the drawings, the analysis, and the manufacturing files, so a change made once stays consistent everywhere. A good CAD model stays correct when anyone opens it and changes one dimension. A bad model breaks the moment one thing moves.
+**CAD (computer-aided design)** is the use of software to model parts, put them together into assemblies, and produce drawings. Engineers rely on it because one model can drive the drawings, the analysis, and the manufacturing files, so a change made once stays consistent everywhere. A good CAD model stays correct when anyone opens it and changes one dimension. A bad model breaks the moment one thing moves.
 
 **Prerequisites:** [Design process](01-design-process.md), [Engineering graphics](02-engineering-graphics.md)
 **Time:** 6-10 h
@@ -12,7 +12,7 @@ CAD, or computer-aided design, is the use of software to model parts, put them t
 - **Parametric modeling** builds a shape from sketches and features, where each dimension is a parameter. Changing a parameter updates the whole model. Most mechanical CAD uses this approach.
 - **Direct modeling** pushes and pulls faces without a history. It is fast for quick changes but harder to edit systematically.
 - **Part.** One solid body made from a sequence of features. A part is what a machine shop makes or buys.
-- **Assembly.** A collection of parts placed in their final relative positions. Mates (also called constraints) define how parts touch, slide, or rotate relative to each other.
+- **Assembly.** A collection of parts placed in their final relative positions. **Mates** (also called constraints) define how parts touch, slide, or rotate relative to each other.
 - **Drawing.** A set of views, sections, and dimensions generated from a part or assembly. A drawing is what goes to the shop. Views in the drawing update when the model changes.
 - **Feature tree.** The ordered list of features in a part. It shows what was made first, second, and so on.
 
@@ -20,7 +20,7 @@ CAD, or computer-aided design, is the use of software to model parts, put them t
 
 A sketch is a flat profile drawn on a plane, then used to make a 3D feature. The habits below prevent most problems.
 
-- **Fully define the sketch.** Every line should be fixed by dimensions or relations (horizontal, tangent, coincident). A sketch that can still move is called under-defined. Under-defined sketches change unexpectedly when parents change.
+- **Fully define the sketch.** Every line should be fixed by dimensions or relations (horizontal, tangent, coincident). A sketch that can still move is called **under-defined**. Under-defined sketches change unexpectedly when parents change.
 - **Use relations first, then dimensions.** Relations keep geometry in the right shape. Dimensions set the size.
 - **Dimension the design intent.** If a hole must be 10 mm from an edge, dimension it from that edge, not from some arbitrary origin.
 - **Do not over-define.** A sketch with conflicting constraints will refuse to solve. Remove the redundant one.
@@ -41,7 +41,7 @@ Order matters. Put the big shapes first and the small details later. Put pattern
 ## Parameters and design intent
 
 - Keep the driving dimensions in one place, such as a parameter table or a configuration file.
-- Give features clear names, such as "mounting holes" rather than "Cut-Extrude7".
+- Give features clear names, such as "mounting holes" rather than `Cut-Extrude7`.
 - Build from a reference: a datum plane or an origin that matches how the part mounts or locates.
 
 ## Assemblies

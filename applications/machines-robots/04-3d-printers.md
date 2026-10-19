@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A 3D printer is a motion system that places a nozzle, a light beam, or a powder layer at each point of a part, one layer at a time. Its accuracy comes from the drive ratio of its axes, the stiffness of its frame, and how well it controls heat. An engineer who designs, buys, or repairs a printer needs the mechanics and the thermal balance, not only the printed shape.
+A **3D printer** is a motion system that places a nozzle, a light beam, or a powder layer at each point of a part, one layer at a time. Its accuracy comes from the drive ratio of its axes, the stiffness of its frame, and how well it controls heat. An engineer who designs, buys, or repairs a printer needs the mechanics and the thermal balance, not only the printed shape.
 
 **Prerequisites:** [Additive manufacturing](../../manufacturing/04-additive-manufacturing.md), [Brushless and stepper motors](../electrical/02-brushless-and-stepper-motors.md), [Heat transfer](../../physics/12-heat-transfer.md), [Mechatronics](../electronics/06-mechatronics.md)
 **Time:** 8-10 h
@@ -17,7 +17,7 @@ A single move passes through these steps:
 
 1. The controller reads the next move and computes the target position for each axis.
 2. It converts the distance into a count of steps for each motor, at a step rate set by the speed.
-3. The motor drivers energize the motor coils in sequence, so the rotor steps. Microstepping splits each full step into smaller steps.
+3. The motor drivers energize the motor coils in sequence, so the rotor steps. **Microstepping** splits each full step into smaller steps.
 4. Belts, lead screws, or rods carry the motion to the toolhead or the bed.
 5. A thermistor reads the temperature, and the controller sets heater power from that reading.
 
@@ -42,7 +42,7 @@ A single move passes through these steps:
 
 ## Key equations
 
-Linear travel per microstep on a belt drive, with belt pitch $p$ in metres (m), pulley teeth $z$ (dimensionless), full steps per revolution $n_s$ (dimensionless), and microsteps per full step $m$ (dimensionless):
+Linear travel per microstep on a belt drive, with **belt pitch** $p$ in metres (m), pulley teeth $z$ (dimensionless), full steps per revolution $n_s$ (dimensionless), and microsteps per full step $m$ (dimensionless):
 
 $$\delta x = \frac{p\, z}{n_s\, m}$$
 
@@ -54,13 +54,13 @@ $$\delta z = \frac{L}{n_s\, m}$$
 
 Assumptions: no backlash in the nut, and no lead error along the screw.
 
-Step rate for a commanded speed $v$ in metres per second (m/s):
+**Step rate** for a commanded speed $v$ in metres per second (m/s):
 
 $$f = \frac{v}{\delta x}$$
 
 Here $f$ is in steps per second (Hz). Assumptions: constant speed, with acceleration ignored.
 
-Steady heat loss from a heated surface of area $A$ in square metres (m$^2$) to air at a temperature difference $\Delta T$ in kelvin (K), with heat transfer coefficient $h$ in watts per square metre kelvin (W/(m$^2$ K)):
+Steady heat loss from a heated surface of area $A$ in square metres (m$^2$) to air at a temperature difference $\Delta T$ in kelvin (K), with **heat transfer coefficient** $h$ in watts per square metre kelvin (W/(m$^2$ K)):
 
 $$P = h A \Delta T$$
 
@@ -112,7 +112,8 @@ Assumptions: the surface is at a uniform temperature, the air is still, and $h$ 
 4. Administrative controls: a written start-up check, a rule against leaving a heater unattended, and a dust-cleaning schedule.
 5. Personal protective equipment: gloves for handling hot parts, and a respirator or filter where the process releases fine particles.
 
-**Lockout and tagout for service:** before any work on the axes, heaters, or powder chamber, turn off the printer at its supply. Lock the switch with a personal lock, attach a tag with the name of the person working, and confirm the machine does not start by trying the controls. Discharge stored energy, such as a raised $Z$ stage or a hot heater, and wait for the bed to cool. Remove the lock only after the person who placed it is finished.
+> [!WARNING]
+> **Lockout and tagout for service:** before any work on the axes, heaters, or powder chamber, turn off the printer at its supply. Lock the switch with a personal lock, attach a tag with the name of the person working, and confirm the machine does not start by trying the controls. Discharge stored energy, such as a raised $Z$ stage or a hot heater, and wait for the bed to cool. Remove the lock only after the person who placed it is finished.
 
 ## History
 

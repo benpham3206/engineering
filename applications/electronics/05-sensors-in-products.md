@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A sensor is a part that turns a physical quantity, such as acceleration, temperature, or a magnetic field, into an electrical signal that a product can read. Engineers need to understand these sensors because the accuracy a user sees depends on the sensor and on every electronic stage that follows it.
+A **sensor** is a part that turns a physical quantity, such as acceleration, temperature, or a magnetic field, into an electrical signal that a product can read. Engineers need to understand these sensors because the accuracy a user sees depends on the sensor and on every electronic stage that follows it.
 
 A phone, car, or appliance reads the world through a small set of sensors. Accelerometers, thermistors, Hall-effect sensors, and image sensors cover most of what these products measure. Engineers pick a sensor for its signal, its power draw, and how well it survives the product's environment.
 
@@ -11,17 +11,17 @@ A phone, car, or appliance reads the world through a small set of sensors. Accel
 
 ## Core ideas
 
-- A product sensor is one stage in a signal chain. The chain runs from the physical effect to the sensing element, then to an analog front end that amplifies and filters the signal, then to an analog-to-digital converter (ADC), and finally to firmware that calibrates and acts on the number.
+- A product sensor is one stage in a **signal chain**. The chain runs from the physical effect to the sensing element, then to an analog front end that amplifies and filters the signal, then to an analog-to-digital converter (ADC), and finally to firmware that calibrates and acts on the number.
 - Each stage adds noise, offset, and power draw. The error a reader sees is the sum of every stage, so the sensing element alone does not set the accuracy.
-- Most sensors in consumer products are MEMS parts (micro-electromechanical systems). A MEMS sensor is a tiny silicon structure made with the same kind of process used for chips. MEMS parts are cheap, small, and low in power, which is why they appear in phones and cars.
+- Most sensors in consumer products are MEMS parts (micro-electromechanical systems). A **MEMS sensor** is a tiny silicon structure made with the same kind of process used for chips. MEMS parts are cheap, small, and low in power, which is why they appear in phones and cars.
 - Four sensing effects cover most products. Capacitance changes in accelerometers and pressure sensors. Resistance changes with temperature in thermistors. The Hall effect responds to magnetic fields. Photons create charge in image sensors.
 - The factory usually calibrates each part. It stores offset and gain corrections in memory, and the firmware applies them at run time.
 
 ### How it works
 
-**Accelerometer.** A MEMS accelerometer etches a small silicon block, the proof mass, on thin silicon springs. The surrounding frame is fixed to the product. When the product accelerates, the proof mass lags behind by Newton's second law and moves relative to the frame. Fixed plates and plates on the proof mass form capacitors. As the gap changes, the capacitance changes, and the readout circuit turns that change into a voltage or a digital number.
+**Accelerometer.** A MEMS accelerometer etches a small silicon block, the **proof mass**, on thin silicon springs. The surrounding frame is fixed to the product. When the product accelerates, the proof mass lags behind by Newton's second law and moves relative to the frame. Fixed plates and plates on the proof mass form capacitors. As the gap changes, the capacitance changes, and the readout circuit turns that change into a voltage or a digital number.
 
-An accelerometer measures specific force, not acceleration in the everyday sense. A phone lying flat on a table reads about 9.81 m/s$^2$ upward on its vertical axis at Earth's surface, because the table pushes up on it. Only a phone in free fall reads zero. Typical phone accelerometers have ranges of $\pm 2$ g to $\pm 16$ g.
+An accelerometer measures **specific force**, not acceleration in the everyday sense. A phone lying flat on a table reads about 9.81 m/s$^2$ upward on its vertical axis at Earth's surface, because the table pushes up on it. Only a phone in free fall reads zero. Typical phone accelerometers have ranges of $\pm 2$ g to $\pm 16$ g.
 
 **Thermistor.** A negative-temperature-coefficient (NTC) thermistor is a ceramic made from metal oxides. Its resistance falls as temperature rises, because more charge carriers become free to move. Its resistance follows an exponential curve in $1/T$. In a product, the thermistor forms one leg of a voltage divider with a fixed resistor. The ADC reads the midpoint voltage. Battery packs, chargers, kettles, and engine coolant sensors use this arrangement.
 
@@ -40,11 +40,11 @@ An accelerometer measures specific force, not acceleration in the everyday sense
 
 ### Variants
 
-- **Accelerometers.** Capacitive MEMS parts dominate phones and cars because they are stable and low in power. Piezoresistive parts, which change resistance under strain, appear in some pressure and high-shock sensors.
+- Accelerometers. Capacitive MEMS parts dominate phones and cars because they are stable and low in power. Piezoresistive parts, which change resistance under strain, appear in some pressure and high-shock sensors.
 - **Gyroscopes.** A vibrating MEMS structure measures rotation. Coriolis forces shift the vibration when the part turns, and the shift gives the rotation rate.
-- **Thermistors and RTDs.** NTC thermistors are cheap and sensitive, and they suit a limited range such as 0 to 100 °C. Platinum resistance temperature detectors (RTDs) are more linear and stable, and industrial equipment uses them over wider ranges.
-- **Hall sensors.** Linear parts measure field strength. Switch parts give a yes-or-no answer and are simpler to use for lid, position, and speed detection.
-- **Image sensors.** CMOS sensors dominate phones and cameras. CCD sensors, which move charge across the chip to one output, appear in some scientific and astronomy cameras.
+- Thermistors and RTDs. NTC thermistors are cheap and sensitive, and they suit a limited range such as 0 to 100 °C. Platinum resistance temperature detectors (RTDs) are more linear and stable, and industrial equipment uses them over wider ranges.
+- Hall sensors. Linear parts measure field strength. Switch parts give a yes-or-no answer and are simpler to use for lid, position, and speed detection.
+- Image sensors. CMOS sensors dominate phones and cameras. CCD sensors, which move charge across the chip to one output, appear in some scientific and astronomy cameras.
 
 ## Key equations
 
@@ -150,6 +150,6 @@ Edwin Hall discovered the Hall effect in 1879 while he was a graduate student at
 ## Go deeper
 
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/) by MIT: circuit design for sensor front ends and amplifiers.
-- [University Physics Volume 2, Chapter 11](https://openstax.org/books/university-physics-volume-2/pages/11-introduction) by OpenStax: magnetic forces on charges, including the Hall effect in section 11.6.
+- [*University Physics Volume 2*, Chapter 11](https://openstax.org/books/university-physics-volume-2/pages/11-introduction) by OpenStax: magnetic forces on charges, including the Hall effect in section 11.6.
 - Related lessons: [Mechatronics](06-mechatronics.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Accelerometers and thermocouples](../../measurement/07-thermocouples-and-accelerometers.md), [Data acquisition and sampling](../../measurement/08-data-acquisition-and-sampling.md), [Brushless and stepper motors](../electrical/02-brushless-and-stepper-motors.md), [Cars](../vehicles-aerospace/02-cars.md), and [Cameras and lenses](../waves-and-communication/05-cameras-and-lenses.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

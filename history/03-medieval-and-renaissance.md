@@ -2,20 +2,20 @@
 
 **Type:** lesson
 
-Medieval and renaissance engineering is the period from about 500 to 1600 when engineers in Europe, the Islamic world, and China learned to turn moving water, wind, and springs into steady power. Engineers today should know it because the mills, clocks, cathedrals, and printing presses built then still shape modern design, from the water wheel as a turbine ancestor to the clock as a timing regulator and the printing press as the first mass production of a document.
+**Medieval and renaissance engineering** is the period from about 500 to 1600 when engineers in Europe, the Islamic world, and China learned to turn moving water, wind, and springs into steady power. Engineers today should know it because the mills, clocks, cathedrals, and printing presses built then still shape modern design, from the water wheel as a turbine ancestor to the clock as a timing regulator and the printing press as the first mass production of a document.
 
 **Prerequisites:** [Simple machines](01-simple-machines.md), [Ancient engineering](02-ancient-engineering.md), [Hydrostatics and Bernoulli](../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 2-3 h
 
 ## Core ideas
 
-Ancient builders had levers, pulleys, screws, water channels, and early water wheels. Medieval builders greatly expanded the use of flowing water and added wind to run machines continuously, without muscles or animals. A water wheel turns for hours on a stream that a person would need a team of workers to match.
+Ancient builders had levers, pulleys, screws, water channels, and early water wheels. Medieval builders greatly expanded the use of flowing water and added wind to run machines continuously, without muscles or animals. A **water wheel** turns for hours on a stream that a person would need a team of workers to match.
 
 The water wheel spread across Europe. The Domesday survey of England in 1086 recorded about 5,600 water mills. Mills ground grain, but they also drove fulling hammers for cloth, forge hammers, bellows, and later saw blades. Windmills followed. The earliest windmills in the Islamic world appear in records from eastern Persia by about the 900s. Windmills reached western Europe around the 1100s and spread through the Low Countries and England.
 
-Mechanical clocks appeared in Europe in the late 1200s and 1300s. Early clocks used a falling weight to drive a gear train, and an escapement that released the gears one tooth at a time. The verge and foliot escapement was an early version. Its errors were often a quarter hour or more per day, far from the seconds per day of later clocks. Most early clocks were built for cathedrals and town squares.
+Mechanical clocks appeared in Europe in the late 1200s and 1300s. Early clocks used a falling weight to drive a gear train, and an **escapement** that released the gears one tooth at a time. The verge and foliot escapement was an early version. Its errors were often a quarter hour or more per day, far from the seconds per day of later clocks. Most early clocks were built for cathedrals and town squares.
 
-Gothic cathedrals rose in France and England from the 1100s on. Builders used pointed arches, ribbed vaults, and flying buttresses. The buttress carried the outward push of the vault to a pier outside the wall. This let walls hold large windows. Builders learned by trial and error. The choir of Beauvais Cathedral collapsed in 1284 after its vaults were pushed beyond what the piers could carry, and the failure taught later builders to add more support.
+Gothic cathedrals rose in France and England from the 1100s on. Builders used pointed arches, ribbed vaults, and **flying buttresses**. The buttress carried the outward push of the vault to a pier outside the wall. This let walls hold large windows. Builders learned by trial and error. The choir of Beauvais Cathedral collapsed in 1284 after its vaults were pushed beyond what the piers could carry, and the failure taught later builders to add more support.
 
 The Islamic world kept and extended Greek and Indian mathematics and mechanics. The Banu Musa brothers wrote a book of mechanical devices in Baghdad about 850. Al-Jazari completed *The Book of Knowledge of Ingenious Mechanical Devices* in 1206 at the Artuqid court in Diyarbakir, in what is now southeastern Turkey. It describes water-raising machines, a water clock shaped like an elephant, and crank and connecting-rod mechanisms.
 
@@ -45,7 +45,7 @@ The power of a water wheel depends on the mass of water that falls each second a
 
 $$P = \rho \, g \, Q \, H \, \eta$$
 
-Here $P$ is the shaft power in watts (W), $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), with a typical value of $1000\ \text{kg/m}^3$ for fresh water, $g$ is gravitational acceleration in metres per second squared (m/s$^2$), with $g = 9.81\ \text{m/s}^2$ at Earth's surface, $Q$ is the volume flow rate of water in cubic metres per second (m$^3$/s), $H$ is the head, or height the water falls through, in metres (m), and $\eta$ is the wheel efficiency, a number between 0 and 1. Overshot wheels reached efficiencies around 0.7 to 0.8. Undershot wheels, which the water pushed from below, were often 0.2 to 0.4 efficient.
+Here $P$ is the **shaft power** in watts (W), $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), with a typical value of $1000\ \text{kg/m}^3$ for fresh water, $g$ is gravitational acceleration in metres per second squared (m/s$^2$), with $g = 9.81\ \text{m/s}^2$ at Earth's surface, $Q$ is the volume flow rate of water in cubic metres per second (m$^3$/s), $H$ is the **head**, or height the water falls through, in metres (m), and $\eta$ is the wheel efficiency, a number between 0 and 1. Overshot wheels reached efficiencies around 0.7 to 0.8. Undershot wheels, which the water pushed from below, were often 0.2 to 0.4 efficient.
 
 The lever and pulley relations from [simple machines](01-simple-machines.md) still apply to the gear trains that connected the wheel to the stone or the hammer.
 
@@ -102,15 +102,15 @@ Water wheels, windmills, and mechanical clocks each spread from a few workshops 
 
 ## Common mistakes
 
-- **Myth: medieval people believed the Earth was flat.** Educated Europeans knew the Earth was a sphere. Many textbooks and scholars wrote about it from the 1200s on.
-- **Myth: the Middle Ages produced no engineering.** Water mills, windmills, mechanical clocks, and Gothic cathedrals were all built in this period, many of them well ahead of anything before them.
-- **Mistake: treating Gutenberg as the sole inventor of printing.** Movable type was developed earlier in China and Korea. Gutenberg's contribution was a practical European system.
-- **Mistake: assuming a water wheel gives its full flow power.** Real wheels lose energy to turbulence, friction, and leakage. Use an efficiency between about 0.2 and 0.8, depending on the type.
-- **Mistake: reading early mechanical clocks as accurate to seconds.** Their errors were often a quarter hour or more per day.
+- Myth: medieval people believed the Earth was flat. Educated Europeans knew the Earth was a sphere. Many textbooks and scholars wrote about it from the 1200s on.
+- Myth: the Middle Ages produced no engineering. Water mills, windmills, mechanical clocks, and Gothic cathedrals were all built in this period, many of them well ahead of anything before them.
+- Mistake: treating Gutenberg as the sole inventor of printing. Movable type was developed earlier in China and Korea. Gutenberg's contribution was a practical European system.
+- Mistake: assuming a water wheel gives its full flow power. Real wheels lose energy to turbulence, friction, and leakage. Use an efficiency between about 0.2 and 0.8, depending on the type.
+- Mistake: reading early mechanical clocks as accurate to seconds. Their errors were often a quarter hour or more per day.
 
 ## Go deeper
 
-- [De Re Metallica (Project Gutenberg)](https://www.gutenberg.org/ebooks/38015). Georg Agricola's 1556 mining and metallurgy book, translated into English by Herbert and Lou Henry Hoover. It shows water-powered mining machinery in detail.
+- [*De Re Metallica* (Project Gutenberg)](https://www.gutenberg.org/ebooks/38015). Georg Agricola's 1556 mining and metallurgy book, translated into English by Herbert and Lou Henry Hoover. It shows water-powered mining machinery in detail.
 - [MIT OpenCourseWare](https://ocw.mit.edu/). Free course notes and lectures from MIT, useful for the physics behind the machines in this lesson.
 - [Science History Institute](https://www.sciencehistory.org/). Free collections and articles on the history of chemistry, materials, and engineering.
 - [Library of Congress](https://www.loc.gov/). Digitized books and prints that include medieval and early modern technical works.

@@ -4,25 +4,25 @@
 
 Safety and risk are the two ideas engineers use to judge whether a design can harm people. Engineers need them to decide what is acceptably safe before anyone uses the product.
 
-Safety means that a design keeps people from harm across the conditions it will meet. Risk is the chance of harm multiplied by how bad the harm would be.
+**Safety** means that a design keeps people from harm across the conditions it will meet. **Risk** is the chance of harm multiplied by how bad the harm would be.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md), [Learning from history and failure](02-engineering-history.md), [Axial and torsion](../physics/04-axial-and-torsion.md), [Factor of safety and failure](../design/07-factor-of-safety-and-failure.md)
 **Time:** 5-8 h
 
 ## Core ideas
 
-- A hazard is a condition that could cause harm, such as a heavy load, high voltage, or a fast-moving part. A risk is the combination of how likely a hazard is to cause harm and how severe the harm would be.
+- A **hazard** is a condition that could cause harm, such as a heavy load, high voltage, or a fast-moving part. A risk is the combination of how likely a hazard is to cause harm and how severe the harm would be.
 - Safety is designed in. Good designers find hazards early, remove them when possible, guard against the rest, and warn users about what remains.
 - A common order of protection, from strongest to weakest:
   - Eliminate the hazard (remove the source).
   - Substitute a less hazardous material or process.
   - Engineering controls (guards, barriers, interlocks, ventilation, automatic shutoffs).
   - Administrative controls (procedures, training, warnings, labels, alarms, scheduling).
-  - Personal protective equipment (PPE) such as glasses, gloves, and hearing protection.
+  - **Personal protective equipment (PPE)** such as glasses, gloves, and hearing protection.
   The weakest layers depend most on human behavior, so they fail most often in practice.
-- Safety factor is the ratio of the strength of a part to the load it will carry. A part with a capacity of 10 kN carrying a load of 5 kN has a safety factor of 2. Safety factors cover uncertain loads, material variation, and manufacturing error.
-- Defense in depth means stacking independent protections, so one failure does not cause harm by itself.
-- Failure modes and effects analysis (FMEA) is a method where the team lists each part or step, asks how it could fail, what the effect would be, and how likely and detectable the failure is. The result ranks what to fix first.
+- **Safety factor** is the ratio of the strength of a part to the load it will carry. A part with a capacity of 10 kN carrying a load of 5 kN has a safety factor of 2. Safety factors cover uncertain loads, material variation, and manufacturing error.
+- **Defense in depth** means stacking independent protections, so one failure does not cause harm by itself.
+- **Failure modes and effects analysis (FMEA)** is a method where the team lists each part or step, asks how it could fail, what the effect would be, and how likely and detectable the failure is. The result ranks what to fix first.
 - Risk is never zero. Engineers set an acceptable level, and that decision belongs to people and society, not to the designer alone. Engineers must report risks honestly so that the decision is informed.
 
 ### Worked terms
@@ -120,8 +120,8 @@ Answers are key points a good answer covers. See each question above.
 
 ## Go deeper
 
-- [Hyatt Regency walkways collapse investigation (NBS BSS 143)](https://www.nist.gov/publications/investigation-kansas-city-hyatt-regency-walkways-collapse-nbs-bss-143) by NIST: the official federal investigation; the full report PDF is linked from this page.
-- [An Investigation of the Therac-25 Accidents](https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html) by Nancy Leveson and Clark Turner, reprinted by MIT: the full article in readable form, first of three parts.
+- [*Hyatt Regency walkways collapse investigation (NBS BSS 143)*](https://www.nist.gov/publications/investigation-kansas-city-hyatt-regency-walkways-collapse-nbs-bss-143) by NIST: the official federal investigation; the full report PDF is linked from this page.
+- [*An Investigation of the Therac-25 Accidents*](https://web.mit.edu/6.033/2004/wwwdocs/papers/Therac_1.html) by Nancy Leveson and Clark Turner, reprinted by MIT: the full article in readable form, first of three parts.
 - [NIST Disaster and Failure Studies](https://www.nist.gov/topics/disaster-failure-studies) by NIST: federal investigations of structural and building failures.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials on reliability and safety engineering.
 - [Philosophy failure cases](reference.md): the lookup sheet for this topic.

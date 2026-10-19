@@ -2,7 +2,10 @@
 
 **Type:** lesson
 
-Towers and cables are tall supports and the cables that brace them, which together carry wind, ice, and weight into the ground with very little material. Getting a cable's sag or tension wrong can leave a line too close to the ground or pull an anchor out of its footing.
+**Towers and cables** are tall supports and the cables that brace them, which together carry wind, ice, and weight into the ground with very little material.
+
+> [!WARNING]
+> Getting a cable's sag or tension wrong can leave a line too close to the ground or pull an anchor out of its footing.
 
 An engineer must predict how far a cable sags and how much tension it carries, because the sag sets clearances and the tension sets the size of every anchor.
 
@@ -41,7 +44,7 @@ Wind pushes on every tower and cable through drag. The drag force grows with the
 
 ## Key equations
 
-The parabolic approximation applies when the load is spread evenly along the horizontal projection of the cable. It assumes level supports, a cable that does not stretch, and a sag small compared with the span. Here $q$ is the load per metre of horizontal span in N/m, $L$ is the span in metres, $T_H$ is the horizontal tension in newtons, and $d$ is the sag in metres, measured at midspan with level supports.
+The **parabolic approximation** applies when the load is spread evenly along the horizontal projection of the cable. It assumes level supports, a cable that does not stretch, and a sag small compared with the span. Here $q$ is the load per metre of horizontal span in N/m, $L$ is the span in metres, $T_H$ is the horizontal tension in newtons, and $d$ is the sag in metres, measured at midspan with level supports.
 
 $$d = \frac{q L^2}{8 T_H}$$
 
@@ -49,7 +52,7 @@ The parabola has the shape $y(x) = \dfrac{q\,x\,(L - x)}{2 T_H}$, measured from 
 
 $$S \approx L + \frac{8 d^2}{3 L}$$
 
-The catenary applies when the cable's own weight is the load. It assumes level supports, a cable that does not stretch, and a uniform weight per metre of cable with no other load. Here $w$ is the weight per metre of cable in N/m. The sag, length, and support tension are:
+The **catenary** applies when the cable's own weight is the load. It assumes level supports, a cable that does not stretch, and a uniform weight per metre of cable with no other load. Here $w$ is the weight per metre of cable in N/m. The sag, length, and support tension are:
 
 $$d = \frac{T_H}{w}\left(\cosh\frac{wL}{2T_H} - 1\right), \qquad S = \frac{2T_H}{w}\sinh\frac{wL}{2T_H}, \qquad T_{\mathrm{max}} = T_H \cosh\frac{wL}{2T_H}$$
 

@@ -33,7 +33,7 @@ Creep and corrosion are two slow failure modes that often decide how long a part
 
 ## Key equations
 
-Steady-state creep rate is often modeled with an Arrhenius-type law:
+Steady-state creep rate is often modeled with an **Arrhenius-type law**:
 
 $$\dot{\varepsilon} = A\, \sigma^{n} \exp\!\left(-\frac{Q}{R T}\right)$$
 
@@ -51,7 +51,7 @@ For two temperatures at the same stress, the ratio of creep rates is
 
 $$\frac{\dot{\varepsilon}_2}{\dot{\varepsilon}_1} = \exp\!\left[\frac{Q}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)\right]$$
 
-Corrosion mass loss rate from Faraday's law, for a uniform corrosion current density $i$ (A/cm$^2$) on a metal of molar mass $M$ (g/mol) and valence $n$:
+Corrosion mass loss rate from **Faraday's law**, for a uniform corrosion current density $i$ (A/cm$^2$) on a metal of molar mass $M$ (g/mol) and valence $n$:
 
 $$\text{mass rate} = \frac{i\, M}{n\, F}, \qquad \text{penetration rate} = \frac{\text{mass rate}}{\rho}$$
 

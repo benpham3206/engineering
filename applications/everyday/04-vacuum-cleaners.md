@@ -2,9 +2,9 @@
 
 **Type:** lesson
 
-A vacuum cleaner is an appliance that uses a fan to pull dusty air through a hose and a filter. A cleaner that moves too little air or lacks suction fails its user even when its motor is powerful, so the balance between the two matters.
+A **vacuum cleaner** is an appliance that uses a fan to pull dusty air through a hose and a filter. A cleaner that moves too little air or lacks suction fails its user even when its motor is powerful, so the balance between the two matters.
 
-The suction at the nozzle is the pressure difference the fan creates. The useful output is the air power, which is the airflow times the pressure difference, and most of the electrical input is lost in the motor and fan. Engineers who size fans, hoses, cyclones, and filters use these relations to predict performance and to pick a filter that traps the dust that matters.
+The **suction** at the nozzle is the pressure difference the fan creates. The useful output is the **air power**, which is the airflow times the pressure difference, and most of the electrical input is lost in the motor and fan. Engineers who size fans, hoses, cyclones, and filters use these relations to predict performance and to pick a filter that traps the dust that matters.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md)
 **Time:** 3-4 h
@@ -40,7 +40,7 @@ Volume flow rate through a hose of uniform diameter:
 
 $$Q = v\,A, \qquad A = \frac{\pi D^{2}}{4}$$
 
-where $Q$ is the volume flow rate in cubic metres per second (m$^3$/s), $v$ is the mean velocity in metres per second (m/s), $A$ is the cross-section area in square metres (m$^2$), and $D$ is the hose inner diameter in metres (m).
+where $Q$ is the **volume flow rate** in cubic metres per second (m$^3$/s), $v$ is the mean velocity in metres per second (m/s), $A$ is the cross-section area in square metres (m$^2$), and $D$ is the hose inner diameter in metres (m).
 
 Air power, the useful output of the fan:
 
@@ -60,7 +60,7 @@ $$p_{v} = \tfrac{1}{2}\rho v^{2}$$
 
 where $p_{v}$ is in pascals (Pa). This assumes the flow is steady and incompressible.
 
-Fan affinity laws, for a fan at speed $N$ with air density held constant:
+**Fan affinity laws**, for a fan at speed $N$ with air density held constant:
 
 $$\frac{Q_2}{Q_1} = \frac{N_2}{N_1}, \qquad \frac{\Delta P_2}{\Delta P_1} = \left(\frac{N_2}{N_1}\right)^{2}, \qquad \frac{P_2}{P_1} = \left(\frac{N_2}{N_1}\right)^{3}$$
 
@@ -147,7 +147,7 @@ Electric vacuum cleaners appeared in the early twentieth century. Hubert Cecil B
 
 ## Go deeper
 
-- [OpenStax University Physics Volume 1, fluid mechanics](https://openstax.org/books/university-physics-volume-1/pages/14-introduction): pressure, density, and flow for air and fluids.
+- [*OpenStax University Physics Volume 1*, fluid mechanics](https://openstax.org/books/university-physics-volume-1/pages/14-introduction): pressure, density, and flow for air and fluids.
 - [Thermofluids reference sheet](../../physics/reference-thermofluids.md): pipe flow, pressure loss, and fan relations.
 - [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md): continuity and pipe losses, the same physics the hose follows.
 - [Compressors and fans](../../applications/thermal-fluid/10-compressors-and-fans.md): fan laws and fan design in more depth.

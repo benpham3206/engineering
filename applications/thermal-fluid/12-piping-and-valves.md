@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Piping and valves are the pipes, fittings, and valves that carry water, steam, oil, gas, and chemicals from one place to another and start, stop, or regulate the flow. An engineer sizes the pipe so the pressure loss stays acceptable, and sizes the valves and relief devices so that a sudden stop or an overpressure does not break the system.
+**Piping and valves** are the pipes, fittings, and valves that carry water, steam, oil, gas, and chemicals from one place to another and start, stop, or regulate the flow. An engineer sizes the pipe so the pressure loss stays acceptable, and sizes the valves and relief devices so that a sudden stop or an overpressure does not break the system.
 
 **Prerequisites:** [Fluid systems](02-fluid-systems.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 6-10 h
@@ -13,7 +13,10 @@ Piping and valves are the pipes, fittings, and valves that carry water, steam, o
 
 A pipe carries a volume flow $Q$ from a source to a load. Continuity fixes the mean velocity from the diameter. Friction at the wall takes pressure along every metre of pipe. Each fitting and valve adds a local loss, because it narrows or turns the flow.
 
-A valve that closes faster than a pressure wave can travel the pipe stops the moving liquid in a short time. The liquid's momentum then becomes a pressure spike at the valve. Engineers call this water hammer. The spike can reach many times the normal working pressure.
+A valve that closes faster than a pressure wave can travel the pipe stops the moving liquid in a short time. The liquid's momentum then becomes a pressure spike at the valve. Engineers call this **water hammer**.
+
+> [!WARNING]
+> The spike can reach many times the normal working pressure.
 
 Pumps add energy to the flow, and a pump that stops or trips also changes the flow suddenly. Surge protection devices absorb the momentum change so that the pressure rise stays within the pipe rating.
 
@@ -37,7 +40,7 @@ Pumps add energy to the flow, and a pump that stops or trips also changes the fl
 
 ## Key equations
 
-Continuity, the basis of pipe sizing:
+**Continuity**, the basis of pipe sizing:
 
 $$Q = A v = \frac{\pi D^2}{4} v \qquad \Rightarrow \qquad D = \sqrt{\frac{4Q}{\pi v}}$$
 
@@ -49,19 +52,19 @@ $$\Delta p_f = f \, \frac{L}{D} \, \frac{\rho v^2}{2}, \qquad h_f = \frac{\Delta
 
 Here $\Delta p_f$ is the pressure drop in Pa, $f$ is the friction factor (dimensionless), $L$ is the pipe length in m, $\rho$ is the fluid density in kg/m$^3$, and $h_f$ is the head loss in m. For water, $\rho \approx 1000$ kg/m$^3$ (typical).
 
-Local loss through a valve or fitting:
+**Local loss** through a valve or fitting:
 
 $$\Delta p_m = K \, \frac{\rho v^2}{2}$$
 
 Here $K$ is the loss coefficient (dimensionless). Typical values run from about 0.1 for a full-bore ball valve to about 10 for a globe valve.
 
-Wave speed in a pipe with elastic walls:
+**Wave speed** in a pipe with elastic walls:
 
 $$a = \frac{\sqrt{K_b / \rho}}{\sqrt{1 + \dfrac{K_b D}{E e}}}$$
 
 Here $a$ is the pressure wave speed in m/s, $K_b$ is the bulk modulus of water (about $2.2 \times 10^9$ Pa, typical), $E$ is the elastic modulus of the pipe wall in Pa (about $2.0 \times 10^{11}$ Pa for steel, typical), and $e$ is the wall thickness in m.
 
-Joukowsky equation, the pressure rise from a sudden change in velocity:
+**Joukowsky equation**, the pressure rise from a sudden change in velocity:
 
 $$\Delta p = \rho \, a \, \Delta v \qquad \text{or, as head,} \qquad \Delta h = \frac{a \, \Delta v}{g}$$
 
@@ -71,7 +74,7 @@ $$t_c \le t_{\mathrm{crit}} = \frac{2L}{a}$$
 
 Here $L$ is the pipe length from the valve to the source in m. Friction and reflections are neglected, so the result is a first estimate for the valve end.
 
-Slow closure, the Michaud estimate, for $t_c > 2L/a$:
+**Slow closure**, the Michaud estimate, for $t_c > 2L/a$:
 
 $$\Delta p \approx \frac{2 \rho L v}{t_c}$$
 
@@ -162,7 +165,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 14](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: Bernoulli's equation, fluid dynamics, and viscosity, the base for pipe flow and losses.
+- [*University Physics Volume 1*, Chapter 14](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: Bernoulli's equation, fluid dynamics, and viscosity, the base for pipe flow and losses.
 - [NIST Chemistry WebBook, fluid properties](https://webbook.nist.gov/chemistry/fluid/): density, viscosity, and other property data for water at the temperature of your system.
 - Related lessons: [Fluid systems](02-fluid-systems.md), [Pumps](09-pumps.md), [Compressors and fans](10-compressors-and-fans.md), [HVAC and buildings](11-hvac-and-buildings.md), [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md), [Toilets and plumbing](../everyday/06-toilets-and-plumbing.md), [Pressure vessels and tanks](../structures/03-pressure-vessels-and-tanks.md).
 - Related fundamentals: [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md), [Units and dimensional analysis](../../measurement/01-units-and-dimensional-analysis.md).

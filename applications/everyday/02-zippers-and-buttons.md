@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Zippers and buttons are fasteners that hold a garment closed. Fasteners sit on garments that are opened and closed many times, so each part must be sized to survive that repeated use.
+Zippers and buttons are **fasteners** that hold a garment closed. Fasteners sit on garments that are opened and closed many times, so each part must be sized to survive that repeated use.
 
 A zipper joins two rows of teeth that interlock when a slider pushes them together and separate when it pulls them apart. A button or snap holds a garment closed through a shank or a spring socket that yields and then grips. Engineers who size fasteners need the tooth count, the load shared by the teeth, and the stiffness of the snap spring.
 
@@ -13,9 +13,9 @@ A zipper joins two rows of teeth that interlock when a slider pushes them togeth
 
 ### How it works
 
-A zipper has two tape strips, each carrying a row of teeth. The teeth are metal or molded plastic elements spaced at a fixed pitch. A slider rides along the tapes. Its wedge-shaped channel forces the two rows of teeth together, so each tooth on one side slips into a gap on the other side. Pulling the slider the other way opens the teeth again.
+A zipper has two tape strips, each carrying a row of teeth. The teeth are metal or molded plastic elements spaced at a fixed **pitch**. A slider rides along the tapes. Its wedge-shaped channel forces the two rows of teeth together, so each tooth on one side slips into a gap on the other side. Pulling the slider the other way opens the teeth again.
 
-A snap fastener has a stud and a socket. Pressing the stud into the socket deflects a set of spring fingers outward, and the fingers snap back to grip the stud. A sewn button uses a shank, a loop of thread or fabric that passes through a buttonhole and resists pull-out.
+A snap fastener has a stud and a socket. Pressing the stud into the socket deflects a set of **spring fingers** outward, and the fingers snap back to grip the stud. A sewn button uses a shank, a loop of thread or fabric that passes through a buttonhole and resists pull-out.
 
 ### Main parts
 
@@ -54,7 +54,7 @@ Stiffness of a snap spring finger modelled as a cantilever with a point load at 
 
 $$k = \frac{E\,b\,t^{3}}{4\,L^{3}}$$
 
-where $k$ is the stiffness in newtons per metre (N/m), $E$ is the Young's modulus in pascals (Pa), $b$ is the finger width in metres (m), $t$ is the finger thickness in metres (m), and $L$ is the finger length in metres (m). The model assumes a rectangular cross section, a linear elastic material, small deflection, and a load applied at the tip.
+where $k$ is the stiffness in newtons per metre (N/m), $E$ is the **Young's modulus** in pascals (Pa), $b$ is the finger width in metres (m), $t$ is the finger thickness in metres (m), and $L$ is the finger length in metres (m). The model assumes a rectangular cross section, a linear elastic material, small deflection, and a load applied at the tip.
 
 Root bending stress in the same cantilever at deflection $\delta$ (metres):
 
@@ -97,7 +97,8 @@ where $\sigma$ is the bending stress in pascals (Pa) and $\delta$ is the tip def
 
 ## Hierarchy of controls for small-part hazards
 
-Small buttons, snaps, and zipper sliders pose a choking hazard for young children.
+> [!WARNING]
+> Small buttons, snaps, and zipper sliders pose a choking hazard for young children.
 
 - **Elimination**: omit detachable small parts from clothing made for children under three.
 - **Substitution**: use large sewn-in closures or fabric ties in place of small snaps or buttons.
@@ -107,7 +108,7 @@ Small buttons, snaps, and zipper sliders pose a choking hazard for young childre
 
 ## History
 
-The first zipper patent in the United States went to Whitcomb Judson in 1893 for a clasp locker, a hook-and-eye design that was hard to use reliably. Gideon Sundback improved the design in 1913 with interlocking stamped teeth, which is close to the modern zipper. The name "zipper" came into use about 1923, when the B.F. Goodrich company used it for rubber boots. Buttons are older than zippers. Shell buttons with holes have been found in the Indus Valley from the third millennium BCE.
+The first zipper patent in the United States went to Whitcomb Judson in 1893 for a clasp locker, a hook-and-eye design that was hard to use reliably. Gideon Sundback improved the design in 1913 with interlocking stamped teeth, which is close to the modern zipper. The name *zipper* came into use about 1923, when the B.F. Goodrich company used it for rubber boots. Buttons are older than zippers. Shell buttons with holes have been found in the Indus Valley from the third millennium BCE.
 
 ## Practice
 
@@ -135,7 +136,7 @@ The first zipper patent in the United States went to Whitcomb Judson in 1893 for
 
 ## Go deeper
 
-- [Applications of Newton's laws, OpenStax University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/6-introduction): friction and the forces on a sliding part, relevant to the slider.
+- [Applications of Newton's laws, *OpenStax University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/6-introduction): friction and the forces on a sliding part, relevant to the slider.
 - [Mechanics reference sheet](../../physics/reference-mechanics.md): beam and cantilever relations.
 - [Materials reference sheet](../../materials/reference.md): modulus, yield strength, and fatigue values for fastener materials.
 - Related lessons: [Locks and keys](01-locks-and-keys.md), [Mechanical properties](../../materials/03-mechanical-properties.md).

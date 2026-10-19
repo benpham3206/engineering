@@ -44,6 +44,7 @@ When a dated practice changes, update the claim and the text, and check that the
 | [README.md](README.md) | Front door: what this is, how to start, the folder table |
 | [LEVELS.md](LEVELS.md) | The level 0 to 5 ladder, exit tests, and the time layers |
 | [ROADMAP.md](ROADMAP.md) | The general learning track |
+| [FORMULAS.md](FORMULAS.md) | The formula spine: routes by level and the one owner sheet of each formula family |
 | [tracks/](tracks/) | School-specific tracks over the same lessons |
 | [courses](courses) | The owner's course sequence, the input to the SJSU track |
 | `math/`, `physics/`, `materials/`, `design/`, `manufacturing/`, `measurement/` | Fundamentals |
@@ -51,8 +52,8 @@ When a dated practice changes, update the claim and the text, and check that the
 | `applications/<domain>/` | How engineered things work, in 12 domains |
 | `history/`, `history/people/`, `history/projects/` | Eras, people, and great projects |
 | `reverse-engineering/`, `tools/` | Taking things apart; the tools of the trade |
-| [data/](data/README.md) | Canonical units, constants, properties, sources, and claims |
-| [verify.py](verify.py), [VERIFICATION.md](VERIFICATION.md) | The verifier and its specification |
+| [data/](data/README.md) | Canonical units, notation, constants, properties, sources, and claims |
+| [verify.py](verify.py), [VERIFICATION.md](VERIFICATION.md), `tests/` | The verifier, its specification, and its tests and fixtures |
 
 ### Two learning tracks, one set of lessons
 
@@ -146,14 +147,29 @@ Every sentence or table row with a year, century, date, death count, or first-of
 **Verify:** strict
 <One sentence: what this covers and who it is for.>
 ## Principles          5 to 10 truths of the field that never expire
-## <Topic sections>    in lesson order. For each: equations with SI units;
-                       "Holds when:" and "Breaks when:"; typical values in tables
+## <Topic sections>    in lesson order. Each heading that holds a display equation
+                       is one formula entry (below); typical values in tables
                        labelled typical; rules of thumb with basis and limit;
                        a verify block for every example
 ## Checklists          what a practitioner runs before trusting a result
 ## Sanity checks       orders of magnitude and quick tests
 ## Further reference   classic books and standards by name; free ones with a URL
 ```
+
+A formula entry is the text under one heading, up to the next heading. It holds, in this order:
+
+```
+<What the formula gives, in one sentence.>
+$$<the equation>$$
+Variables:
+| Symbol | Meaning | SI unit |      one row per symbol; unit is SI (prefixes allowed) or "dimensionless"
+Holds when: <assumptions, geometry, material behavior, regime>
+Breaks when: <the first ways it fails, and what to use instead>
+Source and basis: <link to the derivation or a registered claim, or "derived from" the principle>
+<example lines, then the verify block>
+```
+
+The verifier enforces the four labelled fields and the SI units in strict sheets ([VERIFICATION.md](VERIFICATION.md#reference-entries)). Use the symbols in [data/notation.md](data/notation.md) in new entries. Physical constants and reusable properties live in `data/`, never inside an entry; an empirical coefficient lives with its one correlation. [FORMULAS.md](FORMULAS.md) names the one sheet that owns each formula family; check it before adding a formula, and link the owner rather than restating it.
 
 The sheet goes further than the lessons. Where a handbook table cannot be reproduced, give its generating formula (for example the ISO 286 tolerance unit, the thread tensile-area formula, or a saturation-pressure correlation), with its source and range of validity.
 
@@ -170,6 +186,21 @@ The sheet goes further than the lessons. Where a handbook table cannot be reprod
 - No filler: no "In this lesson we will", "It is important to note", "In summary". Delete any sentence that restates the heading or the sentence before it.
 - No AI vocabulary when a concrete word works: not crucial, delve, robust, comprehensive, seamless, leverage, utilize, ensure, landscape.
 - No bold-label lists (`- **Label:** text` where the label names what the text says). Bold only defined terms.
+
+### Formatting
+
+Formatting is a reading aid, not decoration. Use each device for one job, consistently:
+
+- **Bold** a technical term once, where it is defined, with its abbreviation if it has one: "**Ideal mechanical advantage (IMA)** is the force ratio a frictionless machine would give." Do not bold it again, and never bold whole sentences for emphasis.
+- *Italics* for titles of books, papers, and reports, for the names of individual ships, locomotives, aircraft, and spacecraft (*Rocket*, *Friendship 7*, *Columbia*), and for a word used as a word. Model and type names stay upright (Model T, Saturn V, SR-71, ENIAC). Variables go in math, never in italics.
+- History lessons carry no hazard alerts. They describe past events, not hazards to the reader.
+- Alerts sit at the top level of the document, never indented inside a list item, where they do not render.
+- `Code` for file names, commands, function names, and literal input.
+- Numbered lists for steps that happen in order. Bullets for unordered items. A table when three or more items are compared on two or more attributes.
+- Math in `$...$`. Units upright with `\text{}`: $9.81\ \text{m/s}^2$.
+- A GitHub alert for the few things a reader must not miss. Use `> [!WARNING]` for a hazard to people or equipment, and `> [!NOTE]` for a limit of validity that changes the answer. At most two per lesson.
+- Short paragraphs, three to five sentences. One idea per paragraph.
+- Link text names the target ("see [Statics](physics/01-statics.md)"), never "click here".
 - No colons as mid-sentence connectors. No vague sources ("experts say", "studies show").
 - Name a mechanism or a number, never a feeling.
 - No notes about your own process ("computed with Python", "fetched this session", TODO). The reader sees only the engineering.
@@ -195,6 +226,8 @@ Nothing merges unless it passes. CI runs the same command on every pull request 
 
 - **Mark a file strict** with `**Verify:** strict` under its type line once it meets every rule. Strict files fail the build on any content finding; other files report it as debt.
 - **Add a verify block** after each worked example, inside each answers block, and after each reference example. Declare inputs with `q(value, "unit")`, round canonical values with `of="key"`, and check every printed result with `expect(expr, "printed value unit")`, adding `ans=N` for answer N. Every printed number of 10 or more and every decimal in those places must be an input or a checked result.
+- **Write reference entries to the contract.** Every display equation in a reference sheet sits in an entry with `Variables:` (SI units), `Holds when:`, `Breaks when:`, and `Source and basis:` lines, as in the reference template above.
+- **Test verifier changes.** `python -m unittest discover -s tests` runs the verifier's own tests and fixtures; CI runs them too.
 - **Use canonical data.** If a value is a constant or property, add or find its row in `data/` and declare it with `of=`. Never type a new value for a fact the table holds.
 - **Cite claims.** Register the claim in `data/claims/<area>.md` with its values, layer, status, sources with locators, and who checked it. Link to it before the sentence's final period: `[src](../data/claims/history.md#key)`.
 - **Read the report.** The coverage section shows what is migrated and the debt by check.

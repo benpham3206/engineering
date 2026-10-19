@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Joining is the making of a connection between two or more parts so they act as one assembly. Every assembly is only as strong as its joints, so a weak or poorly inspected joint can cause a whole machine to fail. The three main families are welding (fusing the base metal, usually with heat), mechanical fastening (bolts, screws, rivets, and pins), and adhesive bonding (glues and epoxies). Each has different strength, cost, inspection, and reversibility. Engineers choose a joint by asking what load it carries, whether it must come apart later, and how it will be checked.
+**Joining** is the making of a connection between two or more parts so they act as one assembly. Every assembly is only as strong as its joints, so a weak or poorly inspected joint can cause a whole machine to fail. The three main families are welding (fusing the base metal, usually with heat), mechanical fastening (bolts, screws, rivets, and pins), and adhesive bonding (glues and epoxies). Each has different strength, cost, inspection, and reversibility. Engineers choose a joint by asking what load it carries, whether it must come apart later, and how it will be checked.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)
 **Time:** 5-7 h
@@ -13,7 +13,7 @@ Joining is the making of a connection between two or more parts so they act as o
 - **Fillet weld**: a triangular weld in a corner joint. Its size is given by the leg length (the two equal sides of the triangle).
 - **Throat**: the shortest distance from the root of the weld to its face. For a standard 45 degree fillet weld, the throat is about 0.707 times the leg length.
 - **Heat-affected zone (HAZ)**: the region next to a weld that is heated but does not melt. Its properties can change, so welded parts can lose strength near the weld.
-- **Bolt**: a threaded fastener that clamps parts together. You usually tighten a bolt to a set preload, which is the clamping force. Preload matters more than the torque number alone.
+- **Bolt**: a threaded fastener that clamps parts together. You usually tighten a bolt to a set **preload**, which is the clamping force. Preload matters more than the torque number alone.
 - **Adhesive**: a material that bonds surfaces by filling and gripping them. Surface preparation (cleaning and roughening) decides most of the bond strength.
 - **Clearance hole**: a hole a little larger than the bolt, so the bolt passes through. A tapped hole has threads cut into it so a bolt screws in directly.
 
@@ -26,7 +26,8 @@ Choosing a joint:
 
 Inspection differs too. A bolt can be torqued and checked. A weld needs visual checks and often ultrasonic or dye penetrant tests. An adhesive joint is hard to inspect after cure, so the process must be controlled.
 
-Hot work (welding, cutting, and brazing) brings fire, fumes, UV light, and burns. OSHA's guidance on welding, cutting, and brazing is listed in lesson 01 and below.
+> [!WARNING]
+> Hot work (welding, cutting, and brazing) brings fire, fumes, UV light, and burns. OSHA's guidance on welding, cutting, and brazing is listed in lesson 01 and below.
 
 ## Key equations
 

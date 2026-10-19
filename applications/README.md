@@ -63,6 +63,7 @@ Circuits, semiconductors, printed circuit boards, sensors, mechatronics, and the
 - [Sensors in products: phones, cars, and appliances](electronics/05-sensors-in-products.md)
 - [Mechatronics: sensors, actuators, and microcontrollers](electronics/06-mechatronics.md)
 - [Digital logic and computers](electronics/07-digital-logic-and-computers.md)
+- [Quantum technologies](electronics/08-quantum-technologies.md)
 
 ### [Machines and robots](machines-robots/README.md)
 
@@ -75,6 +76,7 @@ Machines that move and make things: robot arms, mobile robots, CNC machines, 3D 
 - [Elevators and cranes](machines-robots/05-elevators-and-cranes.md)
 - [Conveyors and automation](machines-robots/06-conveyors-and-automation.md)
 - [Hydraulics and pneumatics](machines-robots/07-hydraulics-and-pneumatics.md)
+- [Velocity kinematics and Jacobians](machines-robots/08-velocity-kinematics-and-jacobians.md)
 
 ### [Structures](structures/README.md)
 

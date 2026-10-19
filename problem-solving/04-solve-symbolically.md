@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Solving symbolically is the practice of keeping letters, not numbers, in the algebra until the end. Engineers need it because a symbolic answer shows how each input affects the result and makes errors easier to spot.
+**Solving symbolically** is the practice of keeping letters, not numbers, in the algebra until the end. Engineers need it because a symbolic answer shows how each input affects the result and makes errors easier to spot.
 
 Carry letters, not numbers, through the algebra for as long as you can. This also lets you
 check units and limits (lesson 05). Plug in numbers only at the end.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A robot arm is a chain of links and joints that moves a tool to a point in space. Engineers use its kinematics to find where the tool goes, and its statics and dynamics to size the motors, gears, and structure that move it.
+A **robot arm** is a chain of links and joints that moves a tool to a point in space. Engineers use its kinematics to find where the tool goes, and its statics and dynamics to size the motors, gears, and structure that move it.
 
 **Prerequisites:** [Trigonometry](../../math/02-trigonometry.md), [Linear algebra](../../math/05-linear-algebra.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Mechatronics](../electronics/06-mechatronics.md), [Single-variable calculus](../../math/03-single-variable-calculus.md)
 **Time:** 12-16 h
@@ -11,19 +11,19 @@ A robot arm is a chain of links and joints that moves a tool to a point in space
 
 ### How it works
 
-A serial manipulator is a chain of rigid links joined by joints. One end, the base, is fixed. The other end carries the tool. Each joint adds one degree of freedom. A tool that must reach any position and orientation in space needs six degrees of freedom.
+A **serial manipulator** is a chain of rigid links joined by joints. One end, the base, is fixed. The other end carries the tool. Each joint adds one degree of freedom. A tool that must reach any position and orientation in space needs six degrees of freedom.
 
-Forward kinematics turns joint values into a tool pose. It is pure geometry, with no forces. Inverse kinematics runs the other way. Given a target pose, it finds joint values that reach it. A planar arm with two links has at most two solutions for a reachable point. The two solutions are called elbow-up and elbow-down.
+**Forward kinematics** turns joint values into a tool pose. It is pure geometry, with no forces. **Inverse kinematics** runs the other way. Given a target pose, it finds joint values that reach it. A planar arm with two links has at most two solutions for a reachable point. The two solutions are called elbow-up and elbow-down.
 
-The Jacobian links joint speeds to tool speed. Controllers use it to move the tool in a straight line. It also links joint torques to the force at the tool. A tool force $\mathbf{F}$ needs joint torques $\boldsymbol{\tau} = J^{T}\mathbf{F}$ to hold it still. Gravity and the payload create these static torques at every joint, and the motors must supply them.
+The **Jacobian** links joint speeds to tool speed. Controllers use it to move the tool in a straight line. It also links joint torques to the force at the tool. A tool force $\mathbf{F}$ needs joint torques $\boldsymbol{\tau} = J^{T}\mathbf{F}$ to hold it still. Gravity and the payload create these static torques at every joint, and the motors must supply them.
 
 ### Main parts
 
 - Links are rigid bars. Their stiffness decides how much the tip sags under load.
-- Revolute joints (R) rotate about one axis. Prismatic joints (P) slide along one axis. Most industrial arms use revolute joints.
+- **Revolute joints (R)** rotate about one axis. **Prismatic joints (P)** slide along one axis. Most industrial arms use revolute joints.
 - Actuators are usually servo motors with an encoder, followed by a gearbox. Planetary gearboxes, harmonic drives, and cycloidal drives are common at the joints.
 - Encoders on the motor side and often on the output side measure each joint angle.
-- The end effector is the tool at the tip: a gripper, a vacuum cup, a welding torch, or a spindle.
+- The **end effector** is the tool at the tip: a gripper, a vacuum cup, a welding torch, or a spindle.
 
 ### Variants
 
@@ -67,7 +67,7 @@ $$\tau_{\mathrm{motor}} = \frac{\tau_{\mathrm{joint}}}{N\,\eta}, \qquad \omega_{
 
 Backlash of angle $\Delta\theta$ (rad) at a joint with link length $L$ (m) moves the tip by about $e \approx L\,\Delta\theta$. Assumes the link is rigid and the small-angle approximation holds, so $\Delta\theta$ is well below 1 rad.
 
-Denavit-Hartenberg (DH) transform between frame $i-1$ and frame $i$, with four parameters per joint: link length $a_i$ (m), link twist $\alpha_i$ (rad), link offset $d_i$ (m), and joint angle $\theta_i$ (rad):
+**Denavit-Hartenberg (DH)** transform between frame $i-1$ and frame $i$, with four parameters per joint: link length $a_i$ (m), link twist $\alpha_i$ (rad), link offset $d_i$ (m), and joint angle $\theta_i$ (rad):
 
 $${}^{i-1}T_i = \begin{bmatrix} \cos\theta_i & -\sin\theta_i\cos\alpha_i & \sin\theta_i\sin\alpha_i & a_i\cos\theta_i \\ \sin\theta_i & \cos\theta_i\cos\alpha_i & -\cos\theta_i\sin\alpha_i & a_i\sin\theta_i \\ 0 & \sin\alpha_i & \cos\alpha_i & d_i \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
 
@@ -170,7 +170,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [Modern Robotics](https://hades.mech.northwestern.edu/index.php/Modern_Robotics) by Kevin Lynch and Frank Park. The site links free preprint PDFs of the updated first edition. It covers kinematics, Jacobians, and dynamics in depth.
+- [*Modern Robotics*](https://hades.mech.northwestern.edu/index.php/Modern_Robotics) by Kevin Lynch and Frank Park. The site links free preprint PDFs of the updated first edition. It covers kinematics, Jacobians, and dynamics in depth.
 - [Introduction to Robotics (2.12)](https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/), MIT OpenCourseWare. Free lectures and notes on planar and spatial kinematics and control.
 - [DC motors](../electrical/01-dc-motors.md) for the torque-speed curve of the joint motor.
 - [Planetary gears](../power-transmission/02-planetary-gears.md) for the gearbox ratio and efficiency used in step 6.

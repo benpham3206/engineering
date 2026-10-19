@@ -25,7 +25,7 @@ How it changed the world. The pyramid shows what a state can organize at scale. 
 
 The problem. Rome grew into a very large city, and wells and the Tiber could not supply enough clean water. The city needed water brought from distant springs.
 
-The engineering. Roman engineers moved water by gravity alone. An aqueduct channel fell gently, usually a few metres per kilometre, so the flow stayed steady. The channel was lined with waterproof mortar. Settling tanks let sediment drop out before the water reached the city. Where a valley was too deep to follow, the channel crossed on a row of arches. Where a valley was narrow and the water had to drop and rise again, builders used an inverted siphon, a pipe under pressure that ran down into the valley and back up. Concrete made of lime, volcanic ash, and rubble filled the arches and vaults.
+The engineering. Roman engineers moved water by gravity alone. An aqueduct channel fell gently, usually a few metres per kilometre, so the flow stayed steady. The channel was lined with waterproof mortar. Settling tanks let sediment drop out before the water reached the city. Where a valley was too deep to follow, the channel crossed on a row of arches. Where a valley was narrow and the water had to drop and rise again, builders used an **inverted siphon**, a pipe under pressure that ran down into the valley and back up. Concrete made of lime, volcanic ash, and rubble filled the arches and vaults.
 
 The scale. The Aqua Appia, begun in 312 BCE by Appius Claudius Caecus, was the first Roman aqueduct, and most of it ran underground. Rome had eleven aqueducts by the early third century CE. The Pont du Gard in southern France carries an aqueduct over a river valley. It is about 49 m high and about 275 m long at the top, and it has three tiers of arches. Hadrian's Pantheon in Rome, completed about 125 CE, has a concrete dome about 43 m across with an open oculus near 9 m across at the top.
 
@@ -49,7 +49,7 @@ How it changed the world. The wall shaped the border, trade, and control of move
 
 The problem. Grain grown in the wet, rice-producing south had to reach the capital in the north. Rivers in China flow mostly west to east, so the route had to link them with canals that climb and descend.
 
-The engineering. Builders joined existing canals and rivers into one waterway. Pound locks, which raise or lower boats between gated chambers, let the canal climb between water levels. Engineers dug new channels where needed and built embankments to hold the water and protect the fields.
+The engineering. Builders joined existing canals and rivers into one waterway. **Pound locks**, which raise or lower boats between gated chambers, let the canal climb between water levels. Engineers dug new channels where needed and built embankments to hold the water and protect the fields.
 
 The scale. The canal is about 1,800 km long at its main route. The Sui dynasty completed the main work about 609 CE. In the 13th century, under the Yuan dynasty, the route was straightened and moved toward Beijing.
 
@@ -61,7 +61,7 @@ How it changed the world. The canal linked the north and the south economically 
 
 The problem. Iran is dry, and many towns sit on plains where rain is scarce and surface water evaporates quickly. Open channels lose water to the sun and wind, and pumping water from deep wells needs energy that early societies did not have.
 
-The engineering. A qanat is a gently sloping tunnel that carries groundwater from a source at the foot of hills to the settlement or fields below. Vertical shafts placed at intervals let workers dig and clean the tunnel. The water flows by gravity, and it stays underground where evaporation is small. The tunnel drops only a small amount over its length, so the water moves slowly and steadily.
+The engineering. A **qanat** is a gently sloping tunnel that carries groundwater from a source at the foot of hills to the settlement or fields below. Vertical shafts placed at intervals let workers dig and clean the tunnel. The water flows by gravity, and it stays underground where evaporation is small. The tunnel drops only a small amount over its length, so the water moves slowly and steadily.
 
 The scale. Qanats have been in use for more than two thousand years, and some networks run many kilometres. UNESCO inscribed the Persian qanat system as a World Heritage Site in 2016.
 
@@ -73,7 +73,7 @@ How it changed the world. The qanat lets a dry region support towns, gardens, an
 
 The problem. Monsoon rain falls heavily in the wet season and very little falls in the dry season. Rice needs water in both, and the capital of the Khmer Empire needed a steady supply for a large population.
 
-The engineering. Builders constructed large earthen reservoirs called barays, along with canals, dikes, and sluices. The West Baray is about 8 km long and about 2 km wide. Embankments held the water, and channels carried it to fields and temples. Tanks and moats stored water near the monuments.
+The engineering. Builders constructed large earthen reservoirs called **barays**, along with canals, dikes, and sluices. The West Baray is about 8 km long and about 2 km wide. Embankments held the water, and channels carried it to fields and temples. Tanks and moats stored water near the monuments.
 
 The scale. The temple complex and its water system were built between about the ninth and twelfth centuries. Airborne laser scanning has since mapped a larger network of roads, canals, and reservoirs than earlier maps showed.
 
@@ -83,11 +83,11 @@ How it changed the world. The baray system supported rice farming and a dense po
 
 ## Key equations
 
-The Manning equation estimates the mean velocity in an open channel that flows under gravity:
+The **Manning equation** estimates the mean velocity in an open channel that flows under gravity:
 
 $$V = \frac{1}{n} R^{2/3} S^{1/2}$$
 
-where $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient in s/m$^{1/3}$ (typically about 0.013 for finished masonry or concrete), $R = A/P$ is the hydraulic radius in metres (m), $A$ is the wetted cross-section area in square metres (m$^2$), $P$ is the wetted perimeter in metres (m), and $S$ is the channel slope, a dimensionless ratio of drop to length.
+where $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient in s/m$^{1/3}$ (typically about 0.013 for finished masonry or concrete), $R = A/P$ is the **hydraulic radius** in metres (m), $A$ is the wetted cross-section area in square metres (m$^2$), $P$ is the **wetted perimeter** in metres (m), and $S$ is the channel slope, a dimensionless ratio of drop to length.
 
 Assumptions for the Manning equation: the flow is steady and uniform, so the depth and velocity do not change along the channel. The channel is prismatic, with the same cross-section along its length. The slope is small, so the water surface runs nearly parallel to the bed. The flow is fully turbulent and rough, so $n$ is constant for the given lining.
 
@@ -179,7 +179,7 @@ Gravity moves water over long distances if the slope is controlled. The aqueduct
 
 ## Go deeper
 
-- [The Ten Books on Architecture, Vitruvius](https://www.gutenberg.org/ebooks/20239), Project Gutenberg eBook 20239. Book VIII covers water sources and how to build channels.
-- [The archaeology of Rome, Part 8: The aqueducts, John Henry Parker](https://www.gutenberg.org/ebooks/73752), Project Gutenberg eBook 73752. A nineteenth-century survey of Roman aqueducts.
+- [*The Ten Books on Architecture*, Vitruvius](https://www.gutenberg.org/ebooks/20239), Project Gutenberg eBook 20239. Book VIII covers water sources and how to build channels.
+- [*The archaeology of Rome, Part 8: The aqueducts*, John Henry Parker](https://www.gutenberg.org/ebooks/73752), Project Gutenberg eBook 73752. A nineteenth-century survey of Roman aqueducts.
 - Reference sheet: [Thermofluids reference](../../physics/reference-thermofluids.md) for open channel and pipe flow.
 - Related lessons: [Ancient engineering](../02-ancient-engineering.md), [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md), [Dams](../../applications/structures/05-dams.md), [Bridges](../../applications/structures/01-bridges.md).

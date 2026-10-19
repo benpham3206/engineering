@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Brushless and stepper motors are two kinds of electric motor: brushless motors replace the brushes with electronic switching, and stepper motors move in fixed angular steps. Engineers use these motors in drones, appliances, disk drives, 3D printers, and machine tools, so they need to understand how the drive electronics and the magnets work together. Brushless DC (BLDC) and permanent magnet synchronous (PMSM) motors remove the brushes, which are the main wear part of a brushed motor, and stepper motors can hold a position without a sensor.
+Brushless and stepper motors are two kinds of electric motor: **brushless motors** replace the brushes with electronic switching, and **stepper motors** move in fixed angular steps. Engineers use these motors in drones, appliances, disk drives, 3D printers, and machine tools, so they need to understand how the drive electronics and the magnets work together. **Brushless DC (BLDC)** and **permanent magnet synchronous (PMSM)** motors remove the brushes, which are the main wear part of a brushed motor, and stepper motors can hold a position without a sensor.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Mechatronics](../electronics/06-mechatronics.md), [DC motors](01-dc-motors.md)
 **Time:** 8-10 h
@@ -18,7 +18,7 @@ A brushless motor has a permanent magnet rotor and a stator with several coils. 
 3. The stator current creates its own field. The two fields pull on each other, and the rotor turns to line up with the stator field.
 4. As the rotor reaches the next position, the controller switches the current to the next pair of coils, so the stator field keeps moving ahead of the rotor.
 
-A BLDC motor with trapezoidal back-EMF uses six switching states per electrical cycle, each lasting 60 electrical degrees. A PMSM with sinusoidal back-EMF is driven with sinusoidal currents, usually by field-oriented control (FOC), which gives smoother torque.
+A BLDC motor with trapezoidal back-EMF uses six switching states per electrical cycle, each lasting 60 electrical degrees. A PMSM with sinusoidal back-EMF is driven with sinusoidal currents, usually by **field-oriented control (FOC)**, which gives smoother torque.
 
 A stepper motor works on a different principle. The stator has several poles, and each pole is energized in a sequence. The rotor, which is a toothed iron core or a magnet, steps to the nearest aligned position each time the energized pole changes. Without an encoder, the controller counts pulses and assumes the rotor has moved one step per pulse.
 
@@ -132,7 +132,7 @@ Brushless motors became practical in the 1960s, when transistors could switch th
 ## Go deeper
 
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/) by MIT: the switching circuits behind motor drives.
-- [University Physics Volume 2, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law, the basis for back-EMF in every motor here.
+- [*University Physics Volume 2*, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law, the basis for back-EMF in every motor here.
 - [Electric Motors](https://www.energy.gov/eere/buildings/electric-motors) by the U.S. Department of Energy: standards that set efficiency limits for motors and drives.
 - Related lessons: [Mechatronics](../electronics/06-mechatronics.md) covers PWM, sensors, and motor drivers. [Feedback control](../../physics/14-controls.md) explains the position and speed loops that servo drives use. Next: [Induction motors](03-induction-motors.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

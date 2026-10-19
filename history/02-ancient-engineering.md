@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Ancient engineering is the work of early civilizations that shaped water, stone, and earth into cities and monuments using simple tools. Engineers today should know it because those builders faced the same trade-offs of materials, labor, water, and upkeep that shape every structure built now. Engineers in Mesopotamia, Egypt, the Indus Valley, Greece, Rome, China, Persia, India, and the Andes built cities, water systems, roads, and monuments with levers, ramps, sledges, gravity, and local stone.
+**Ancient engineering** is the work of early civilizations that shaped water, stone, and earth into cities and monuments using simple tools. Engineers today should know it because those builders faced the same trade-offs of materials, labor, water, and upkeep that shape every structure built now. Engineers in Mesopotamia, Egypt, the Indus Valley, Greece, Rome, China, Persia, India, and the Andes built cities, water systems, roads, and monuments with levers, ramps, sledges, gravity, and local stone.
 
 **Prerequisites:** [Simple machines](01-simple-machines.md), [Algebra](../math/01-algebra.md), [Control volumes and pipe flow](../physics/11-control-volumes-pipe-flow.md)
 **Time:** 4-5 h
@@ -13,7 +13,7 @@ Early engineering began with water. Farmers in the river valleys needed to move 
 
 ### Rivers and early cities, about 3500 to 2000 BCE
 
-Sumerian city-states in Mesopotamia, between the Tigris and Euphrates rivers, dug irrigation canals and built dikes. The earliest wheels in the region date to about 3500 BCE. Farmers lifted water with the shaduf, a counterweighted lever, which Mesopotamia and Egypt both used. Mudbrick and baked brick built temple towers, including the ziggurat at Ur, which dates to about 2100 BCE.
+Sumerian city-states in Mesopotamia, between the Tigris and Euphrates rivers, dug irrigation canals and built dikes. The earliest wheels in the region date to about 3500 BCE. Farmers lifted water with the **shaduf**, a counterweighted lever, which Mesopotamia and Egypt both used. Mudbrick and baked brick built temple towers, including the ziggurat at Ur, which dates to about 2100 BCE.
 
 Egypt depended on the yearly Nile flood. Basin irrigation spread the water across fields. Egyptian builders moved from mudbrick to stone. The step pyramid of Djoser at Saqqara, dating to about 2650 BCE, is credited to the architect Imhotep and is among the first large stone monuments. The Great Pyramid of Giza, built for Khufu about 2560 BCE, uses more than two million stone blocks. Crews hauled blocks on sledges, wetted the sand ahead of the sledges to cut friction, and used ramps of stone and mudbrick to raise the blocks. The workers' settlements found at Giza point to organized, paid labor rather than slavery.
 
@@ -21,7 +21,7 @@ In the Indus Valley, the cities of Harappa and Mohenjo-daro were built between a
 
 ### Tunnels, aqueducts, and irrigation, about 1000 BCE to 250 BCE
 
-Persian engineers built qanats, gently sloping underground channels fed by vertical shafts. Gravity moves the water, so no pump is needed. Qanats appear across Iran and still supply water in some places. Their exact start date is uncertain, but many are more than two thousand years old.
+Persian engineers built **qanats**, gently sloping underground channels fed by vertical shafts. Gravity moves the water, so no pump is needed. Qanats appear across Iran and still supply water in some places. Their exact start date is uncertain, but many are more than two thousand years old.
 
 On the island of Samos, the engineer Eupalinos of Megara dug a tunnel of about one kilometre through a mountain around 530 BCE. Crews dug from both ends and met near the middle. The tunnel carried water to the city of Samos. Herodotus described the tunnel, which makes it one of the earliest engineering works with a written account.
 
@@ -29,11 +29,11 @@ Archimedes worked in Syracuse in the third century BCE. He described the law of 
 
 In Sichuan, China, the Dujiangyan irrigation system dates to about 256 BCE. A stone divider splits the Min River into an inner and an outer channel. The inner channel feeds irrigation, and the outer channel carries floodwater away. The system is traditionally credited to Li Bing and his son, and it still irrigates farmland today.
 
-In Rome, the first aqueduct, the Aqua Appia, opened in 312 BCE under Appius Claudius Caecus. Most Roman aqueducts carried water in channels that fell gently under the pull of gravity. Where a valley had to be crossed, builders used inverted siphons, which push water up the far slope with pressure in closed pipes.
+In Rome, the first aqueduct, the Aqua Appia, opened in 312 BCE under Appius Claudius Caecus. Most Roman aqueducts carried water in channels that fell gently under the pull of gravity. Where a valley had to be crossed, builders used **inverted siphons**, which push water up the far slope with pressure in closed pipes.
 
 ### Concrete, bridges, and monuments, about 50 CE to 610 CE
 
-Roman builders mixed lime, volcanic ash called pozzolana, and rubble to make concrete. The ash reacts with lime and water to form a hard, durable material. The Pont du Gard in southern France, about 50 CE, carries an aqueduct across a river valley on three tiers of arches. The Pantheon in Rome, built under Hadrian about 125 CE, has a concrete dome about 43 metres across with no steel reinforcement. Roman roads used layered stone bases to spread loads and to shed water.
+Roman builders mixed lime, volcanic ash called **pozzolana**, and rubble to make concrete. The ash reacts with lime and water to form a hard, durable material. The Pont du Gard in southern France, about 50 CE, carries an aqueduct across a river valley on three tiers of arches. The Pantheon in Rome, built under Hadrian about 125 CE, has a concrete dome about 43 metres across with no steel reinforcement. Roman roads used layered stone bases to spread loads and to shed water.
 
 In India, the Iron Pillar of Delhi dates to about 400 CE. Its wrought iron resists rust far better than most iron of its time, and it has stood for more than 1500 years with little corrosion. Stepwells in western India stored water and let people reach it at many levels.
 
@@ -63,7 +63,7 @@ Flow in an open channel, such as an aqueduct, follows the Manning equation in SI
 
 $$V = \frac{1}{n} R_h^{2/3} S^{1/2}$$
 
-Here $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient (units s/m$^{1/3}$, typical value 0.013 for smooth stone or mortar lining), $R_h$ is the hydraulic radius in metres (m), and $S$ is the channel slope, a ratio of drop to length with no units. The hydraulic radius is the flow area $A$ divided by the wetted perimeter $P$:
+Here $V$ is the mean velocity in metres per second (m/s), $n$ is the **Manning roughness coefficient** (units s/m$^{1/3}$, typical value 0.013 for smooth stone or mortar lining), $R_h$ is the hydraulic radius in metres (m), and $S$ is the channel slope, a ratio of drop to length with no units. The **hydraulic radius** is the flow area $A$ divided by the wetted perimeter $P$:
 
 $$R_h = \frac{A}{P}$$
 
@@ -127,8 +127,8 @@ Gravity still moves more water than pumps do, and the Roman and Persian systems 
 
 ## Go deeper
 
-- [The Ten Books on Architecture](https://www.gutenberg.org/ebooks/20239) by Vitruvius, Project Gutenberg. Vitruvius describes Roman water supply, building materials, and machines in his treatise.
-- [The Pneumatics of Hero of Alexandria](https://www.gutenberg.org/ebooks/77400), Project Gutenberg. A Greek text on devices built with water, air, and steam.
+- [*The Ten Books on Architecture*](https://www.gutenberg.org/ebooks/20239) by Vitruvius, Project Gutenberg. Vitruvius describes Roman water supply, building materials, and machines in his treatise.
+- [*The Pneumatics of Hero of Alexandria*](https://www.gutenberg.org/ebooks/77400), Project Gutenberg. A Greek text on devices built with water, air, and steam.
 - [Library of Congress](https://www.loc.gov/), a source for free digitized collections on ancient history and the history of technology.
 - Related lessons: [Fluid systems](../applications/thermal-fluid/02-fluid-systems.md), [Hydrostatics and Bernoulli](../physics/10-hydrostatics-and-bernoulli.md), [Dams](../applications/structures/05-dams.md), [Bridges](../applications/structures/01-bridges.md).
 - Next: [Medieval and Renaissance engineering](03-medieval-and-renaissance.md).

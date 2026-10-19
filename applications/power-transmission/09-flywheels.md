@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A flywheel is a rotating mass that stores energy as rotation. Engineers size the flywheel for the energy it must store and limit its rim speed, because a rotor that bursts throws its pieces outward with lethal energy. It smooths the speed of an engine, press, or pump, and it can hold energy for a short time in a grid or vehicle system.
+A **flywheel** is a rotating mass that stores energy as rotation. Engineers size the flywheel for the energy it must store and limit its rim speed, because a rotor that bursts throws its pieces outward with lethal energy. It smooths the speed of an engine, press, or pump, and it can hold energy for a short time in a grid or vehicle system.
 
 **Prerequisites:** [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Mechanical properties](../../materials/03-mechanical-properties.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md)
 **Time:** 4-6 h
@@ -16,7 +16,7 @@ An engine delivers torque in pulses. During the power stroke, the engine torque 
 The energy follows these steps:
 
 1. The engine torque exceeds the load torque for part of each cycle.
-2. The excess energy speeds up the rotor and is stored as kinetic energy, $E = \tfrac{1}{2} I\omega^2$.
+2. The excess energy speeds up the rotor and is stored as **kinetic energy**, $E = \tfrac{1}{2} I\omega^2$.
 3. For the rest of the cycle, the load torque exceeds the engine torque, and the rotor slows. It gives its energy back to the load.
 4. The speed swings between a maximum and a minimum. A larger inertia $I$ or a higher mean speed shrinks the swing for the same energy swing.
 
@@ -43,7 +43,7 @@ Kinetic energy, with $I$ in kg m$^2$, $\omega$ in rad/s, and $E$ in joules (J):
 
 $$E = \tfrac{1}{2} I \omega^2$$
 
-Speed fluctuation coefficient, with $\omega_{\mathrm{max}}$, $\omega_{\mathrm{min}}$, and the mean speed $\omega_m$ all in rad/s:
+**Speed fluctuation coefficient**, with $\omega_{\mathrm{max}}$, $\omega_{\mathrm{min}}$, and the mean speed $\omega_m$ all in rad/s:
 
 $$C_s = \frac{\omega_{\mathrm{max}} - \omega_{\mathrm{min}}}{\omega_m}$$
 
@@ -55,7 +55,7 @@ Inertia needed for a given energy fluctuation:
 
 $$I = \frac{\Delta E}{\omega_m^2\,C_s}$$
 
-Hoop stress in a thin rim, with density $\rho$ in kg/m$^3$ and rim speed $v = \omega R$ in m/s, gives $\sigma$ in pascals (Pa):
+**Hoop stress** in a thin rim, with density $\rho$ in kg/m$^3$ and rim speed $v = \omega R$ in m/s, gives $\sigma$ in pascals (Pa):
 
 $$\sigma = \rho v^2$$
 
@@ -144,7 +144,7 @@ Rotating masses that keep turning between pushes are very old. Potters' wheels u
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 10 introduction](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: rotational motion and the energy of a spinning body.
+- [*University Physics Volume 1*, Chapter 10 introduction](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: rotational motion and the energy of a spinning body.
 - [2.003SC Engineering Dynamics](https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/) by MIT OpenCourseWare: rigid-body rotation and angular momentum.
 - [Shafts and bearings](../../design/08-shafts-and-bearings.md): how the shaft and the bearings carry the rotor.
 - [Energy storage](../energy/06-energy-storage.md): flywheels next to batteries, pumped hydro, and compressed air at grid scale.

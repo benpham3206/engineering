@@ -2,7 +2,10 @@
 
 **Type:** lesson
 
-Rotorcraft and drones are aircraft that lift themselves with spinning blades that push air down, so they can hover and fly at low speed. A craft that cannot hover or stay level will crash, so its design must be proven before it flies.
+**Rotorcraft and drones** are aircraft that lift themselves with spinning blades that push air down, so they can hover and fly at low speed.
+
+> [!WARNING]
+> A craft that cannot hover or stay level will crash, so its design must be proven before it flies.
 
 An engineer sizes the rotor from the hover power, which momentum theory predicts, and designs the control system that keeps the craft stable.
 
@@ -15,7 +18,7 @@ An engineer sizes the rotor from the hover power, which momentum theory predicts
 
 A rotor is a set of spinning blades, each acting as a rotating wing. The blades turn air, and the air pushes back on them, which is thrust. In hover, thrust equals weight.
 
-Momentum theory treats the rotor as an actuator disk, a flat disk of area $A$ that adds momentum to the air passing through it. Air enters the disk from above at almost zero speed and leaves below it at a higher speed. The disk adds a velocity $v_i$ to the air at the disk. Far below the rotor, the wake speed reaches $2v_i$. Momentum conservation links the thrust to this wake speed. Energy conservation links the power to the same speed. The result is a simple formula for the least power a rotor of a given size can use to make a given thrust.
+**Momentum theory** treats the rotor as an **actuator disk**, a flat disk of area $A$ that adds momentum to the air passing through it. Air enters the disk from above at almost zero speed and leaves below it at a higher speed. The disk adds a velocity $v_i$ to the air at the disk. Far below the rotor, the wake speed reaches $2v_i$. Momentum conservation links the thrust to this wake speed. Energy conservation links the power to the same speed. The result is a simple formula for the least power a rotor of a given size can use to make a given thrust.
 
 A rotor with a large disk area moves a large mass of air slowly. A small rotor moves a small mass of air fast. Moving air slowly costs less power for the same thrust, so large rotors are more efficient than small ones. This is the core trade-off in rotorcraft design.
 
@@ -33,7 +36,7 @@ Forward flight changes the picture. At higher speed, the air arrives at the disk
 
 ### Variants
 
-- **Single-rotor helicopter.** One main rotor and a tail rotor. Collective pitch sets the thrust, and cyclic pitch tilts the thrust to move the craft forward, sideways, or back.
+- **Single-rotor helicopter.** One main rotor and a tail rotor. **Collective pitch** sets the thrust, and **cyclic pitch** tilts the thrust to move the craft forward, sideways, or back.
 - **Coaxial helicopter.** Two rotors on one mast turn in opposite directions, so the torques cancel without a tail rotor.
 - **Tandem helicopter.** Two rotors, one at each end of the fuselage, with opposite torques. The Boeing CH-47 Chinook is a tandem design.
 - **Tiltrotor.** Rotors on wing tips that tilt from vertical for hover to horizontal for fast forward flight. The Bell-Boeing V-22 Osprey is an example.
@@ -51,7 +54,7 @@ $$
 - $T$ is thrust (N), which equals weight in hover. $\rho$ is air density (kg/m$^3$, about 1.225 at sea level on Earth). $A$ is the total rotor disk area (m$^2$). $v_h$ is the hover induced velocity (m/s). $P_{\text{ideal}}$ is the ideal induced power (W), the least power that the rotor can use for this thrust.
 - Assumptions: ideal actuator disk, uniform inflow across the disk, hover (no forward or vertical speed), steady and incompressible flow, air at rest far upstream, and no profile drag, swirl, or tip losses. Real rotors need more power than $P_{\text{ideal}}$.
 
-Actual shaft power with a figure of merit $\mathrm{FM}$, a measure of how close the rotor comes to the ideal.
+Actual shaft power with a **figure of merit** $\mathrm{FM}$, a measure of how close the rotor comes to the ideal.
 
 $$
 P = \frac{P_{\text{ideal}}}{\mathrm{FM}}
@@ -60,7 +63,7 @@ $$
 - $\mathrm{FM}$ is the figure of merit (dimensionless). Well-designed helicopter rotors reach about 0.7 to 0.8 (typical values). Small drone rotors often reach 0.5 to 0.7 (typical values).
 - Assumptions: $\mathrm{FM}$ is a single empirical factor, assumed constant over the hover condition, that lumps together the profile drag, swirl, and tip losses that the ideal model omits. Its value must come from measurement or a more detailed model.
 
-Disk loading, the thrust per unit disk area, which sets the hover power.
+**Disk loading**, the thrust per unit disk area, which sets the hover power.
 
 $$
 \frac{T}{A} \quad \text{(N}/\text{m}^2\text{)}
@@ -68,7 +71,7 @@ $$
 
 - Assumptions: thrust spread uniformly over the disk area $A$. Disk loading is a design ratio, not a measured quantity.
 
-Thrust in a multirotor. Each rotor makes thrust proportional to the square of its speed. Here $k_T$ is a thrust coefficient.
+Thrust in a multirotor. Each rotor makes thrust proportional to the square of its speed. Here $k_T$ is a **thrust coefficient**.
 
 $$
 T_{\text{rotor}} = k_T \omega^2

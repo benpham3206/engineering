@@ -21,7 +21,7 @@ A control volume is a fixed region of space drawn around part of a system so tha
 
 ### Mass balance (continuity)
 
-For steady flow through a control volume with one inlet and one outlet, the mass entering each second equals the mass leaving. For incompressible flow in a pipe whose area changes, This becomes a simple rule. Velocity goes up where area goes down. If you halve the diameter, the area drops by a factor of 4, so the speed goes up by a factor of 4.
+For steady flow through a control volume with one inlet and one outlet, the mass entering each second equals the mass leaving. For incompressible flow in a pipe whose area changes, this becomes a simple rule. Velocity goes up where area goes down. If you halve the diameter, the area drops by a factor of 4, so the speed goes up by a factor of 4.
 
 ### Momentum balance (in brief)
 
@@ -171,7 +171,7 @@ $$
 
 ## Go deeper
 
-- [Applied Fluid Mechanics Lab Manual, Experiment 4: Energy Loss in Pipes](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Applied_Fluid_Mechanics_Lab_Manual_(Ahmari_and_Kabir)/01%3A_Lab_Manual/01.4%3A_Experiment_%234%3A_Energy_Loss_in_Pipes) by Habib Ahmari and Shah Md Imran Kabir, LibreTexts: the Darcy-Weisbach equation and friction losses, with a hands-on lab.
+- [*Applied Fluid Mechanics Lab Manual*, Experiment 4: Energy Loss in Pipes](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Applied_Fluid_Mechanics_Lab_Manual_(Ahmari_and_Kabir)/01%3A_Lab_Manual/01.4%3A_Experiment_%234%3A_Energy_Loss_in_Pipes) by Habib Ahmari and Shah Md Imran Kabir, LibreTexts: the Darcy-Weisbach equation and friction losses, with a hands-on lab.
 - [Advanced Fluid Mechanics (2.25, Fall 2013)](https://ocw.mit.edu/courses/2-25-advanced-fluid-mechanics-fall-2013/) by MIT OpenCourseWare: a free MIT course with problem sets and solutions on control volumes and internal flow.
 - Previous: [Hydrostatics and Bernoulli](10-hydrostatics-and-bernoulli.md) covers the frictionless energy balance this lesson extends.
 - [Thermal-fluids reference](reference-thermofluids.md): the lookup sheet for this topic.

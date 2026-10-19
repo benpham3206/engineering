@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Solar photovoltaics, or PV, are arrays of cells that turn sunlight directly into electricity with no moving parts and no heat engine. Engineers need to understand the physics because a solar plant's output depends on how much sunlight its cells receive.
+**Solar photovoltaics, or PV**, are arrays of cells that turn sunlight directly into electricity with no moving parts and no heat engine. Engineers need to understand the physics because a solar plant's output depends on how much sunlight its cells receive.
 
 Engineers size PV arrays by the power a panel makes at a given sunlight level, and they check how much energy a site yields over a day or a year.
 
@@ -32,7 +32,7 @@ Photons with less energy than the band gap pass through without producing curren
 - **Backsheet.** A polymer film on the back that insulates the electrical parts.
 - **Bypass diodes.** Diodes wired across groups of cells. They let current flow around a shaded or broken group, which prevents a hot spot.
 - **Junction box and cables.** The electrical connection to the array.
-- **Inverter.** Converts the DC output of the array to AC for the grid or a building. It also tracks the maximum power point, which keeps the array at its best operating voltage.
+- **Inverter.** Converts the DC output of the array to AC for the grid or a building. It also tracks the **maximum power point**, which keeps the array at its best operating voltage.
 
 ### Variants
 
@@ -52,7 +52,7 @@ $$P_{\mathrm{max}} = V_{\mathrm{mp}} \, I_{\mathrm{mp}}$$
 
 where $V_{\mathrm{mp}}$ is the voltage at maximum power in volts (V) and $I_{\mathrm{mp}}$ is the current at maximum power in amperes (A).
 
-Fill factor, a dimensionless measure of how square the curve is:
+**Fill factor**, a dimensionless measure of how square the curve is:
 
 $$\mathrm{FF} = \frac{P_{\mathrm{max}}}{V_{\mathrm{oc}} \, I_{\mathrm{sc}}}$$
 
@@ -62,7 +62,7 @@ Efficiency, a dimensionless ratio:
 
 $$\eta = \frac{P_{\mathrm{max}}}{G \, A}$$
 
-where $G$ is the incident irradiance in watts per square metre (W/m$^2$) and $A$ is the module area in square metres (m$^2$). The standard test condition is $G = 1000\ \text{W}/\text{m}^2$ at a cell temperature of 25 °C.
+where $G$ is the incident irradiance in watts per square metre (W/m$^2$) and $A$ is the module area in square metres (m$^2$). The **standard test condition** is $G = 1000\ \text{W}/\text{m}^2$ at a cell temperature of 25 °C.
 
 Array peak power, in watts peak (Wp):
 
@@ -74,13 +74,13 @@ Daily energy yield, in kilowatt-hours per day:
 
 $$E_{\mathrm{day}} = P_{\mathrm{pk}} \, H_{\mathrm{psh}} \, \mathrm{PR}$$
 
-where $P_{\mathrm{pk}}$ is the peak power in kilowatts (kW), $H_{\mathrm{psh}}$ is the peak sun hours per day in hours (h/day), and $\mathrm{PR}$ is the performance ratio, a dimensionless factor for losses in wiring, inverter, dust, and temperature (typical value 0.75 to 0.85).
+where $P_{\mathrm{pk}}$ is the peak power in kilowatts (kW), $H_{\mathrm{psh}}$ is the peak sun hours per day in hours (h/day), and $\mathrm{PR}$ is the **performance ratio**, a dimensionless factor for losses in wiring, inverter, dust, and temperature (typical value 0.75 to 0.85).
 
 Temperature correction, in watts:
 
 $$P(T_c) = P_{\mathrm{STC}} \left[ 1 + \gamma (T_c - 25) \right]$$
 
-where $P_{\mathrm{STC}}$ is the rated power in watts (W), $T_c$ is the cell temperature in degrees Celsius (°C), and $\gamma$ is the power temperature coefficient in per degree Celsius (per °C). For crystalline silicon, $\gamma \approx -0.35\ \%/^\circ\text{C}$ (typical value).
+where $P_{\mathrm{STC}}$ is the rated power in watts (W), $T_c$ is the cell temperature in degrees Celsius (°C), and $\gamma$ is the **power temperature coefficient** in per degree Celsius (per °C). For crystalline silicon, $\gamma \approx -0.35\ \%/^\circ\text{C}$ (typical value).
 
 ## Worked example
 

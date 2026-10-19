@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A heat exchanger is a device that moves heat from one fluid to another without mixing them. A heat exchanger that is too small or poorly designed cannot move the heat its system needs. Radiators, car engine coolers,
+A **heat exchanger** is a device that moves heat from one fluid to another without mixing them. A heat exchanger that is too small or poorly designed cannot move the heat its system needs. Radiators, car engine coolers,
 air conditioner coils, boilers, and chemical plants all depend on one. Engineers size an exchanger by
 asking how much heat must move, how hot each stream gets, and how much surface the job needs.
 
@@ -15,7 +15,7 @@ asking how much heat must move, how hot each stream gets, and how much surface t
 
 Heat flows from the hot fluid, through a wall, into the cold fluid. Three resistances sit in series along
 the path: the hot-side convection, the wall conduction, and the cold-side convection. Fouling deposits add
-a fourth. The overall coefficient $U$ combines all of them into one number per unit area.
+a fourth. The **overall coefficient** $U$ combines all of them into one number per unit area.
 
 The temperatures of the two streams change along the exchanger. Heat moves only where one fluid is hotter
 than the other, so the temperature difference between the streams sets the rate. That difference shrinks
@@ -23,24 +23,24 @@ toward the outlet, which is why sizing needs an average temperature difference i
 
 ### Flow arrangements
 
-In parallel flow, both fluids enter at the same end and move in the same direction. The outlet temperatures
+In **parallel flow**, both fluids enter at the same end and move in the same direction. The outlet temperatures
 approach each other, and the cold fluid can never get hotter than the outlet of the hot fluid.
 
-In counterflow, the fluids move in opposite directions. The cold fluid can leave hotter than the hot fluid
+In **counterflow**, the fluids move in opposite directions. The cold fluid can leave hotter than the hot fluid
 leaves, as long as the heat capacities allow it. Counterflow gives the same heat transfer with less area,
 so most designs use it.
 
 ### Main types
 
-Shell-and-tube exchangers hold a bundle of tubes inside a cylindrical shell. One fluid flows through the
+**Shell-and-tube exchangers** hold a bundle of tubes inside a cylindrical shell. One fluid flows through the
 tubes and the other around them, guided by baffles. They handle high pressure and high temperature, and
 they are the standard in oil refineries and chemical plants.
 
-Plate heat exchangers stack thin corrugated plates with gaskets. The corrugations create turbulence at low
+**Plate heat exchangers** stack thin corrugated plates with gaskets. The corrugations create turbulence at low
 flow rates, which raises the heat transfer coefficient. They give a high $U$ in a small volume. Gaskets limit
 their pressure and temperature, and they are common in food and district heating.
 
-Finned-tube exchangers use fins on the outside of tubes to increase the area on the air side. Air has a low
+**Finned-tube exchangers** use fins on the outside of tubes to increase the area on the air side. Air has a low
 convection coefficient, so the fins are essential. Air conditioner condensers, car radiators, and home
 heating coils are finned-tube units.
 
@@ -60,7 +60,7 @@ rate, so fins and large surfaces are used.
   heat in J/(kg K). The smaller of the two values, $C_{\mathrm{min}}$, sets the maximum heat rate.
 - Maximum heat rate: $\dot{Q}_{\mathrm{max}} = C_{\mathrm{min}}\,(T_{h,\mathrm{in}} - T_{c,\mathrm{in}})$, in watts (W).
 - Effectiveness: $\varepsilon = \dot{Q} / \dot{Q}_{\mathrm{max}}$, a dimensionless number between 0 and 1.
-- Number of transfer units: $\mathrm{NTU} = \dfrac{UA}{C_{\mathrm{min}}}$, dimensionless.
+- **Number of transfer units (NTU)**: $\mathrm{NTU} = \dfrac{UA}{C_{\mathrm{min}}}$, dimensionless.
 - Capacity ratio: $C_r = C_{\mathrm{min}} / C_{\mathrm{max}}$, dimensionless.
 - Counterflow effectiveness: $\varepsilon = \dfrac{1 - \exp[-\mathrm{NTU}(1 - C_r)]}{1 - C_r \exp[-\mathrm{NTU}(1 - C_r)]}$.
 - Fouling: $\dfrac{1}{U} = \dfrac{1}{U_{\mathrm{clean}}} + R_f$, where $R_f$ is the fouling resistance in m$^2$ K/W.
@@ -127,8 +127,8 @@ resists corrosion at higher cost.
   while the pump works harder.
 - Corrosion. Pitting or erosion thins the tube or plate wall until it leaks, and mixed streams can
   contaminate each other.
-- Freezing. Water in an exchanger that reaches $0\ \text{C}$ expands and cracks the tubes. Antifreeze and drain
-  valves protect against this.
+- Freezing. Water in an exchanger that reaches $0\ \text{C}$ expands and cracks the tubes. Antifreeze and drain valves protect against this.
+
 - Thermal stress. Large temperature differences between the tubes and the shell cause movement and cracks,
   so floating-head or expansion joints are used.
 - Gasket failure in a plate exchanger leads to leakage between the two fluids.
@@ -180,7 +180,7 @@ Sadi Carnot's 1824 work on heat engines set the limits on how much of the heat c
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 1 (thermodynamics and heat transfer)](https://openstax.org/books/university-physics-volume-2/pages/1-introduction)
+- [*University Physics Volume 2*, Chapter 1 (thermodynamics and heat transfer)](https://openstax.org/books/university-physics-volume-2/pages/1-introduction)
   by OpenStax: the heat transfer mechanisms that set each resistance in the heat exchanger.
 - Next: [Internal combustion engines](06-internal-combustion-engines.md), where the radiator and charge air
   cooler are heat exchangers.

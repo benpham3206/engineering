@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Scientists and mathematicians are the thinkers, active from about 1650 to 1920, who wrote the equations that engineers still use. Engineers today should know them because those equations still size beams, pipes, circuits, and engines in real designs. This lesson covers fourteen people in rough order of their work, and each entry links to the lesson in this repo that uses it.
+**Scientists and mathematicians** are the thinkers, active from about 1650 to 1920, who wrote the equations that engineers still use. Engineers today should know them because those equations still size beams, pipes, circuits, and engines in real designs. This lesson covers fourteen people in rough order of their work, and each entry links to the lesson in this repo that uses it.
 
 **Prerequisites:** [Scientific revolution](../04-scientific-revolution.md), [Single-variable calculus](../../math/03-single-variable-calculus.md), [Bending and buckling](../../physics/05-bending-and-buckling.md), [Heat transfer](../../physics/12-heat-transfer.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 4-6 h
@@ -13,7 +13,7 @@ Each person below gets a short entry. It says when and where the person worked, 
 
 ### Robert Hooke, 1635 to 1703
 
-Hooke worked in London, where he was curator of experiments at the Royal Society. He hid the spring law in an anagram in 1676, then published its meaning, "ut tensio, sic vis" (as the extension, so the force), in 1678. For a spring, force is proportional to extension, so $F = kx$. Engineers use it for springs, the stiffness of bars, and the elastic range of a material, which ends at the proportional limit. See [Mechanical properties](../../materials/03-mechanical-properties.md) and [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md).
+Hooke worked in London, where he was curator of experiments at the Royal Society. He hid the spring law in an anagram in 1676, then published its meaning, "ut tensio, sic vis" (as the extension, so the force), in 1678. For a spring, force is proportional to extension, so $F = kx$. Engineers use it for springs, the stiffness of bars, and the elastic range of a material, which ends at the **proportional limit**. See [Mechanical properties](../../materials/03-mechanical-properties.md) and [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md).
 
 ### Christiaan Huygens, 1629 to 1695
 
@@ -33,7 +33,7 @@ The Bernoulli family were mathematicians from Basel in Switzerland. Jakob Bernou
 
 ### Leonhard Euler, 1707 to 1783
 
-Euler was born in Basel and worked in St Petersburg and Berlin. He was one of the most productive mathematicians ever. In 1744 he published the elastic curve and the critical load at which a slender column buckles. He also wrote the equations of inviscid fluid flow in 1757, and he popularized the notation for $e$, $\pi$, and $f(x)$ that engineers still use. The Euler-Bernoulli beam theory carries his name and Daniel Bernoulli's. Engineers use his buckling formula to design columns, struts, and the legs of machines. See [Bending and buckling](../../physics/05-bending-and-buckling.md) and [Differential equations](../../math/06-differential-equations.md).
+Euler was born in Basel and worked in St Petersburg and Berlin. He was one of the most productive mathematicians ever. In 1744 he published the elastic curve and the **critical load** at which a slender column buckles. He also wrote the equations of inviscid fluid flow in 1757, and he popularized the notation for $e$, $\pi$, and $f(x)$ that engineers still use. The Euler-Bernoulli beam theory carries his name and Daniel Bernoulli's. Engineers use his buckling formula to design columns, struts, and the legs of machines. See [Bending and buckling](../../physics/05-bending-and-buckling.md) and [Differential equations](../../math/06-differential-equations.md).
 
 ### Joseph-Louis Lagrange, 1736 to 1813
 
@@ -49,7 +49,7 @@ Gauss worked at Göttingen in Germany. His *Theoria motus*, published in 1809, s
 
 ### Claude-Louis Navier, 1785 to 1836, and George Gabriel Stokes, 1819 to 1903
 
-Navier was a French engineer who wrote the equations for the motion of viscous fluids in 1822. Stokes was born in Ireland and became a professor at Cambridge. He derived the same equations in 1845 and gave his drag law for a sphere in 1851. Together they form the Navier-Stokes equations, which describe air and water flow. Engineers use them in computational fluid dynamics for aircraft, pumps, and cooling. See [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md) and [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md).
+Navier was a French engineer who wrote the equations for the motion of viscous fluids in 1822. Stokes was born in Ireland and became a professor at Cambridge. He derived the same equations in 1845 and gave his drag law for a sphere in 1851. Together they form the **Navier-Stokes equations**, which describe air and water flow. Engineers use them in computational fluid dynamics for aircraft, pumps, and cooling. See [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md) and [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md).
 
 ### James Clerk Maxwell, 1831 to 1879
 
@@ -61,7 +61,7 @@ Boltzmann was born in Vienna and worked in Austria and Germany. He linked entrop
 
 ### Emmy Noether, 1882 to 1935
 
-Noether was born in Erlangen and worked at Göttingen in Germany. In 1918 she proved Noether's theorem: every continuous symmetry of a physical system gives a conservation law. Time symmetry gives conservation of energy, and space symmetry gives conservation of momentum. Engineers rely on these conservation laws to check simulations and to build energy and momentum balances into every model. See [Particle dynamics](../../physics/02-particle-dynamics.md).
+Noether was born in Erlangen and worked at Göttingen in Germany. In 1918 she proved **Noether's theorem**: every continuous symmetry of a physical system gives a conservation law. Time symmetry gives conservation of energy, and space symmetry gives conservation of momentum. Engineers rely on these conservation laws to check simulations and to build energy and momentum balances into every model. See [Particle dynamics](../../physics/02-particle-dynamics.md).
 
 ## Key inventions
 
@@ -161,5 +161,5 @@ Euler's buckling result is still the first check on any slender member, from a b
 
 - [MacTutor History of Mathematics archive](https://mathshistory.st-andrews.ac.uk/), University of St Andrews: free biographies of mathematicians, including Euler, Fourier, Gauss, and Lagrange.
 - [MacTutor biography of Leonhard Euler](https://mathshistory.st-andrews.ac.uk/Biographies/Euler/), University of St Andrews: his life, work, and buckling and beam results.
-- [Newton's Principia, Motte translation](https://www.gutenberg.org/ebooks/76404), Project Gutenberg: the 1687 work in English, free to read online.
+- [Newton's *Principia*, Motte translation](https://www.gutenberg.org/ebooks/76404), Project Gutenberg: the 1687 work in English, free to read online.
 - Related lessons: [Bending and buckling](../../physics/05-bending-and-buckling.md), [Thermodynamics: second law and cycles](../../physics/09-thermo-second-law-cycles.md), and [Engineers of the industrial age](04-engineers-of-the-industrial-age.md).

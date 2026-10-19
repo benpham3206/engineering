@@ -13,6 +13,7 @@ Circuits, semiconductors, printed circuit boards, sensors, mechatronics, and the
 - [Sensors in products: phones, cars, and appliances](05-sensors-in-products.md)
 - [Mechatronics: sensors, actuators, and microcontrollers](06-mechatronics.md)
 - [Digital logic and computers](07-digital-logic-and-computers.md)
+- [Quantum technologies](08-quantum-technologies.md)
 
 ## Reference
 

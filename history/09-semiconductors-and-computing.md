@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A semiconductor is a material whose ability to carry current can be controlled, and engineers used it to build the transistor and the integrated circuit, the tiny switches that make modern computers possible. Engineers today should know this history because every computer, phone, and controller in use today rests on that shrinking switch, and the scaling trend that followed still sets what engineers can build. Between 1904 and the early 1970s, engineers replaced hot, power-hungry vacuum tubes with the transistor, and then with the integrated circuit, which put many switches on one small chip.
+A **semiconductor** is a material whose ability to carry current can be controlled, and engineers used it to build the transistor and the **integrated circuit**, the tiny switches that make modern computers possible. Engineers today should know this history because every computer, phone, and controller in use today rests on that shrinking switch, and the scaling trend that followed still sets what engineers can build. Between 1904 and the early 1970s, engineers replaced hot, power-hungry vacuum tubes with the transistor, and then with the integrated circuit, which put many switches on one small chip.
 
 **Prerequisites:** [The electrical age](06-electrical-age.md), [Diodes and transistors](../applications/electronics/03-semiconductors-diodes-and-transistors.md), [Digital logic and computers](../applications/electronics/07-digital-logic-and-computers.md), [Algebra](../math/01-algebra.md)
 **Time:** 3-4 h
@@ -11,7 +11,7 @@ A semiconductor is a material whose ability to carry current can be controlled, 
 
 ### Vacuum tubes
 
-A vacuum tube is a sealed glass envelope with the air pumped out. A heated filament releases electrons, and a voltage on a control grid sets how many electrons reach the plate. In 1904, John Ambrose Fleming in London built a two-electrode tube that rectified radio signals. In 1906, Lee de Forest added a third electrode, the grid, and the triode could amplify a signal. Radios, telephones, and early radar all depended on tubes.
+A **vacuum tube** is a sealed glass envelope with the air pumped out. A heated filament releases electrons, and a voltage on a control grid sets how many electrons reach the plate. In 1904, John Ambrose Fleming in London built a two-electrode tube that rectified radio signals. In 1906, Lee de Forest added a third electrode, the grid, and the triode could amplify a signal. Radios, telephones, and early radar all depended on tubes.
 
 Tubes set a hard limit on computing. Each tube needed power to heat its filament, ran hot, and wore out after a few thousand hours. ENIAC, completed in 1945 at the University of Pennsylvania, used about 17,000 tubes. With that many parts, failures were frequent, and the machine needed constant attention. Engineers needed a smaller, cooler, and more reliable switch.
 
@@ -19,7 +19,7 @@ Tubes set a hard limit on computing. Each tube needed power to heat its filament
 
 At Bell Labs in Murray Hill, New Jersey, John Bardeen and Walter Brattain built the first working point-contact transistor in December 1947. A small signal applied to one contact controlled a larger current between two others, and no hot filament was needed. William Shockley described the junction transistor in 1948, and that design became the standard for manufacturing. Bardeen, Brattain, and Shockley shared the 1956 Nobel Prize in Physics.
 
-The transistor works because of how silicon conducts. Pure silicon is a poor conductor. Adding a few atoms of phosphorus gives extra free electrons, which is called n-type material. Adding a few atoms of boron leaves gaps called holes, which is called p-type material. A junction between p-type and n-type material lets current flow in one direction and block it in the other. A third terminal then controls the flow, so the device works as an amplifier or a switch.
+**The transistor** works because of how silicon conducts. Pure silicon is a poor conductor. Adding a few atoms of phosphorus gives extra free electrons, which is called **n-type** material. Adding a few atoms of boron leaves gaps called holes, which is called **p-type** material. A junction between p-type and n-type material lets current flow in one direction and block it in the other. A third terminal then controls the flow, so the device works as an amplifier or a switch.
 
 ### The integrated circuit
 
@@ -31,7 +31,7 @@ In 1971, Intel released the 4004, a 4-bit processor on one chip with about 2,300
 
 ### Moore's law
 
-In 1965, Gordon Moore wrote in *Electronics* magazine that the number of components on a chip had roughly doubled each year, and he expected that pace to continue for a while. In 1975 he revised the pace to about every two years. Later writers called this observation Moore's law, and chip makers used it to plan research and factories for decades.
+In 1965, Gordon Moore wrote in *Electronics* magazine that the number of components on a chip had roughly doubled each year, and he expected that pace to continue for a while. In 1975 he revised the pace to about every two years. Later writers called this observation **Moore's law**, and chip makers used it to plan research and factories for decades.
 
 Smaller transistors switch faster and use less energy per switch. Robert Dennard and his colleagues described this scaling in 1974. For about three decades, shrinking transistors also kept power density roughly constant. Around 2005, the supply voltage could no longer fall as fast as the size did. Power density then rose, and clock speeds stopped climbing quickly. Designers responded with several processor cores on one chip, and they spent extra transistors on caches and specialized units.
 
@@ -49,7 +49,7 @@ Smaller transistors switch faster and use less energy per switch. Robert Dennard
 
 ## Key equations
 
-Dynamic power in a CMOS circuit, which is the power used each time a gate switches:
+**Dynamic power** in a CMOS circuit, which is the power used each time a gate switches:
 
 $$P = \alpha \, C \, V^2 \, f$$
 

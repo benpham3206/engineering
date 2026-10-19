@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Debugging is the process of finding the one step in a chain that causes a wrong answer or failed build, and fixing only that step. Engineers need it because guessing and changing several things at once slows the search and hides the real cause.
+**Debugging** is the process of finding the one step in a chain that causes a wrong answer or failed build, and fixing only that step. Engineers need it because guessing and changing several things at once slows the search and hides the real cause.
 
 When an answer is wrong, or a calculation or build fails, the cause is almost never a
 mystery. Find it by shrinking the problem until you can see which part breaks, then fix only
@@ -18,7 +18,7 @@ that part.
 - A **chain** is the ordered list of steps from inputs to answer: inputs, unit conversions,
   each formula, the final arithmetic. Any link can break.
 - **Isolation** means narrowing the chain until one link is responsible. The methods below do it.
-- **Reproduce first.** Write down the exact inputs that give the bad answer. If you cannot
+- Reproduce first. Write down the exact inputs that give the bad answer. If you cannot
   reproduce it, you cannot tell whether a fix worked.
 
 ### The isolation method

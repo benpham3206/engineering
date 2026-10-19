@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A transformer is a device that changes an alternating voltage up or down by linking two coils through a shared magnetic core. Engineers use transformers at almost every step between a power station and a wall socket, and they design them around the turns ratio, the losses, and the isolation that separates the two windings.
+A **transformer** is a device that changes an alternating voltage up or down by linking two coils through a shared magnetic core. Engineers use transformers at almost every step between a power station and a wall socket, and they design them around the turns ratio, the losses, and the isolation that separates the two windings.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md)
 **Time:** 4-6 h
@@ -17,9 +17,10 @@ The core carries nearly all the flux, so every turn on either winding sees the s
 
 The secondary current creates its own magnetic field, which opposes the change in core flux. To keep the core flux nearly constant, the primary draws the extra current that balances the secondary. The primary current therefore follows the load.
 
-An ideal transformer has no losses, no leakage flux, and an iron core with infinite permeability. In that case the voltage ratio equals the turns ratio, the current ratio is the inverse, and the power in equals the power out.
+An **ideal transformer** has no losses, no leakage flux, and an iron core with infinite permeability. In that case the voltage ratio equals the turns ratio, the current ratio is the inverse, and the power in equals the power out.
 
-A transformer needs a changing flux to work. A steady DC current gives a steady flux, which induces no EMF in the secondary. The primary then behaves like a short circuit and overheats.
+> [!WARNING]
+> A transformer needs a changing flux to work. A steady DC current gives a steady flux, which induces no EMF in the secondary. The primary then behaves like a short circuit and overheats.
 
 The two windings share flux through the core, not a conductor. That gives electrical isolation: the secondary has no direct connection to the primary.
 
@@ -29,7 +30,7 @@ The core is laminated silicon steel. Thin laminations, insulated from each other
 
 The primary winding connects to the supply. The secondary winding connects to the load. Copper or aluminum conductors carry the current, and paper, enamel, oil, or resin insulate them.
 
-A tap changer switches between taps on a winding, which changes the turns ratio and holds the output voltage steady as the load changes.
+A **tap changer** switches between taps on a winding, which changes the turns ratio and holds the output voltage steady as the load changes.
 
 Dry-type transformers rely on air for cooling. Oil-filled transformers use mineral oil or ester fluid in a tank, with radiators, fans, or pumps to move heat away.
 
@@ -39,11 +40,11 @@ Bushings bring the windings out of the tank. A conservator and a breather let th
 
 A power transformer steps voltage up at generating stations and down at substations. A distribution transformer steps voltage down to the level used by homes and small businesses, and it is often mounted on a pole or a pad.
 
-An isolation transformer has a 1:1 turns ratio. It isolates a circuit from its supply, which lowers the risk of shock and reduces noise on the supply line.
+An **isolation transformer** has a 1:1 turns ratio. It isolates a circuit from its supply, which lowers the risk of shock and reduces noise on the supply line.
 
-An autotransformer uses one winding for both sides. It costs less and is more efficient for small voltage changes, but it gives no isolation.
+An **autotransformer** uses one winding for both sides. It costs less and is more efficient for small voltage changes, but it gives no isolation.
 
-Instrument transformers scale current or voltage down to safe levels for meters and protective relays.
+**Instrument transformers** scale current or voltage down to safe levels for meters and protective relays.
 
 Three-phase transformers use three legs on one core, or three single-phase units wired together. Both carry power the same way.
 
@@ -53,7 +54,7 @@ Voltage ratio:
 
 $$\frac{V_1}{V_2} = \frac{N_1}{N_2} = a$$
 
-Here $V_1$ and $V_2$ are the primary and secondary voltages in volts, $N_1$ and $N_2$ are the turn counts (dimensionless), and $a$ is the turns ratio.
+Here $V_1$ and $V_2$ are the primary and secondary voltages in volts, $N_1$ and $N_2$ are the turn counts (dimensionless), and $a$ is the **turns ratio**.
 
 Current ratio for an ideal transformer:
 
@@ -121,7 +122,7 @@ Frequency sets the core size. Flux density is limited by core saturation, so a h
 
 Cooling sets the rating. Oil-filled units carry heat away well and insulate the windings, but they carry a fire risk. Dry-type units avoid oil, but they give less rating per unit volume (typical).
 
-Noise comes from magnetostriction. The core changes length slightly with flux, so it hums at twice the supply frequency: 120 Hz on a 60 Hz grid, and 100 Hz on a 50 Hz grid.
+Noise comes from **magnetostriction**. The core changes length slightly with flux, so it hums at twice the supply frequency: 120 Hz on a 60 Hz grid, and 100 Hz on a 50 Hz grid.
 
 Insulation life sets the thermal limit. A common rule of thumb says that every rise of about 6 to 8 degrees Celsius above the rated temperature roughly halves the insulation life.
 
@@ -129,7 +130,8 @@ Insulation life sets the thermal limit. A common rule of thumb says that every r
 
 Insulation breaks down from lightning or switching surges, or from aging. Warning signs are partial discharge, tracking marks on bushings, and dissolved gases in the oil. Surge arresters and insulation coordination protect the windings.
 
-Overload or blocked cooling overheats the windings. Oil temperature rises, and the unit may smell of burnt insulation. Temperature sensors raise an alarm, and overload relays trip the unit.
+> [!WARNING]
+> Overload or blocked cooling overheats the windings. Oil temperature rises, and the unit may smell of burnt insulation. Temperature sensors raise an alarm, and overload relays trip the unit.
 
 Energizing a transformer at the wrong point of the voltage wave, or with residual core flux, draws a large inrush current, often many times rated current. Differential relays use harmonic restraint so they do not trip on inrush.
 
@@ -137,7 +139,7 @@ A winding short circuit produces large magnetic forces that can deform the windi
 
 Moisture in the oil or paper lowers the dielectric strength. Sealed tanks and breathers with desiccant keep moisture out.
 
-Internal arcing in an oil-filled unit releases gas. A Buchholz relay, which senses gas in the pipe to the conservator, detects this and trips the unit.
+Internal arcing in an oil-filled unit releases gas. A **Buchholz relay**, which senses gas in the pipe to the conservator, detects this and trips the unit.
 
 ## History
 
@@ -171,7 +173,7 @@ Michael Faraday's induction experiments in 1831 established the principle. In th
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 15: AC Circuits](https://openstax.org/books/university-physics-volume-2/pages/15-introduction), OpenStax. Free text covering AC circuits and transformers.
-- [University Physics Volume 2, Chapter 13: Electromagnetic Induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction), OpenStax. Free text covering the induction that drives a transformer.
+- [*University Physics Volume 2*, Chapter 15: AC Circuits](https://openstax.org/books/university-physics-volume-2/pages/15-introduction), OpenStax. Free text covering AC circuits and transformers.
+- [*University Physics Volume 2*, Chapter 13: Electromagnetic Induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction), OpenStax. Free text covering the induction that drives a transformer.
 - Related lessons: [generators and alternators](04-generators-and-alternators.md), [power supplies and converters](07-power-supplies-and-converters.md), [the power grid](08-the-power-grid.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

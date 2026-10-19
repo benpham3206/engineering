@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An internal combustion engine is a machine that burns fuel inside its own cylinders and turns the heat from that burning into shaft work. Engineers use it to size power and torque, to predict fuel use, and to meet emissions limits in cars, trucks, generators, and small tools.
+An **internal combustion engine** is a machine that burns fuel inside its own cylinders and turns the heat from that burning into shaft work. Engineers use it to size power and torque, to predict fuel use, and to meet emissions limits in cars, trucks, generators, and small tools.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 8-12 h
@@ -11,16 +11,16 @@ An internal combustion engine is a machine that burns fuel inside its own cylind
 
 ### How it works
 
-Most engines on the road use a four-stroke cycle. The piston makes four strokes, and the crankshaft turns two revolutions for each power stroke.
+Most engines on the road use a **four-stroke cycle**. The piston makes four strokes, and the crankshaft turns two revolutions for each power stroke.
 
 1. Intake. The intake valve opens and the piston moves down, drawing air (and fuel, in port-injected and carbureted engines) into the cylinder.
-2. Compression. Both valves close and the piston moves up, squeezing the charge. The compression ratio is the ratio of the largest cylinder volume to the smallest.
+2. Compression. Both valves close and the piston moves up, squeezing the charge. The **compression ratio** is the ratio of the largest cylinder volume to the smallest.
 3. Power. The fuel ignites near the top of the stroke. The hot gas pushes the piston down, and the connecting rod turns the crankshaft.
 4. Exhaust. The exhaust valve opens and the piston moves up, pushing the burned gas out.
 
-A spark plug ignites the charge in a spark-ignition engine. A compression-ignition (Diesel) engine injects fuel into air that is hot from compression, and the fuel ignites on its own.
+A spark plug ignites the charge in a **spark-ignition engine**. A **compression-ignition (Diesel) engine** injects fuel into air that is hot from compression, and the fuel ignites on its own.
 
-The ideal air-standard Otto cycle has four processes: isentropic compression, constant-volume heat addition, isentropic expansion, and constant-volume heat rejection. Real engines differ from this cycle because the gas has changing properties, the combustion takes time, heat escapes through the walls, and friction and pumping losses take energy.
+The ideal air-standard **Otto cycle** has four processes: isentropic compression, constant-volume heat addition, isentropic expansion, and constant-volume heat rejection. Real engines differ from this cycle because the gas has changing properties, the combustion takes time, heat escapes through the walls, and friction and pumping losses take energy.
 
 ### Main parts
 
@@ -72,7 +72,7 @@ Symbols are in SI units unless marked dimensionless.
 
 - Compression ratio: a higher ratio raises efficiency, but gasoline engines need fuel with a higher octane rating to avoid knock. Diesels run at higher ratios because they ignite the fuel by compression.
 - Displacement and boost: a smaller engine with a turbocharger can match a larger engine's power and use less fuel at part load. Boost raises peak cylinder pressure, which needs stronger parts.
-- Emissions: the flame temperature drives nitrogen oxide (NOx) formation. A gasoline engine with a three-way catalytic converter needs an air-fuel ratio near 14.7:1 by mass, which is the stoichiometric ratio for gasoline. A diesel runs lean, so it needs separate NOx treatment and a particulate filter.
+- Emissions: the flame temperature drives **nitrogen oxide (NOx)** formation. A gasoline engine with a three-way catalytic converter needs an air-fuel ratio near 14.7:1 by mass, which is the stoichiometric ratio for gasoline. A diesel runs lean, so it needs separate NOx treatment and a particulate filter.
 - Speed: piston speed is limited, typically to about 15 to 20 m/s in road engines, by the inertia loads on the rods and bearings.
 - Heat: roughly a third of the fuel energy leaves in the exhaust and about another third goes to the coolant in a typical gasoline engine (typical values). Better heat recovery and cooling designs trade cost and size against these losses.
 - Noise and vibration: more cylinders run smoother, and balance shafts cancel some of the rocking forces.
@@ -84,7 +84,8 @@ Symbols are in SI units unless marked dimensionless.
 - Low oil pressure: oil starvation destroys bearings within minutes. Engines carry oil-pressure warning lamps and a pump sized for the lowest expected oil level.
 - Timing belt or chain failure: in an interference engine, the valves hit the pistons when the timing fails. Manufacturers set replacement intervals for this reason.
 - Misfire: a bad spark plug, a clogged injector, or a weak coil leaves unburned fuel. The fuel can overheat and damage the catalytic converter.
-- Safety: exhaust carries carbon monoxide, which is lethal in a closed space, so engines should not run in an enclosed garage. Fuel systems carry pressure relief and vent systems, and fuel tanks have filler and vapor controls.
+- Safety: Exhaust carries carbon monoxide, which is lethal in a closed space, so engines should not run in an enclosed garage. Fuel systems carry pressure relief and vent systems, and fuel tanks have filler and vapor controls.
+
 
 ## History
 
@@ -116,7 +117,7 @@ Nicolaus Otto and Eugen Langen built a practical four-stroke gas engine in Colog
 
 ## Go deeper
 
-- [University Physics Volume 2, section 4.2, Heat Engines](https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines) by OpenStax: how a heat engine turns heat into work and defines its efficiency.
-- [University Physics Volume 2, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: why no engine can convert all its heat into work.
+- [*University Physics Volume 2*, section 4.2, Heat Engines](https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines) by OpenStax: how a heat engine turns heat into work and defines its efficiency.
+- [*University Physics Volume 2*, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: why no engine can convert all its heat into work.
 - Related lessons: [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md), [Steam power plants](08-steam-power-plants.md), [Thermal systems](01-thermal-systems.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

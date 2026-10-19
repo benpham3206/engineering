@@ -2,7 +2,9 @@
 
 **Type:** lesson
 
-Vibration is motion that repeats around an equilibrium position. Engineers care because almost every structure, machine and vehicle shakes, and a part that is driven near its natural frequency can grow large enough to crack or fail.
+**Vibration** is motion that repeats around an equilibrium position.
+
+Engineers care because almost every structure, machine and vehicle shakes, and a part that is driven near its natural frequency can grow large enough to crack or fail.
 
 **Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Oscillations, waves, light, and heat](07-waves-light-heat.md), [Differential equations](../math/06-differential-equations.md) (solving $m x'' + c x' + k x = F$)
 **Time:** 8-12 h

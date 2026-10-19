@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Documentation is the written record of a design, including its specifications, test records, change history, and user instructions. Engineers need it because a design without a record of why it looks the way it does is hard to build, operate, maintain, or fix years later.
+**Documentation** is the written record of a design, including its specifications, test records, change history, and user instructions. Engineers need it because a design without a record of why it looks the way it does is hard to build, operate, maintain, or fix years later.
 
 **Prerequisites:** [01-technical-writing.md](01-technical-writing.md) and [02-engineering-drawings.md](02-engineering-drawings.md).
 **Time:** 4-6 h
@@ -100,7 +100,7 @@ Use this to review a document before release.
 
 ## Go deeper
 
-- [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA, a free handbook on requirements, documentation, and technical management. Section 6.0 covers crosscutting technical management.
+- [*NASA Systems Engineering Handbook*](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA, a free handbook on requirements, documentation, and technical management. Section 6.0 covers crosscutting technical management.
 - [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace document types, including memos and technical reports.
-- [NIST e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3.htm) by NIST, a free government handbook that is useful when you record statistical results and need to describe them correctly.
+- [*NIST e-Handbook of Statistical Methods*](https://www.itl.nist.gov/div898/handbook/eda/section3/eda3.htm) by NIST, a free government handbook that is useful when you record statistical results and need to describe them correctly.
 - [Communication reference](reference.md): the lookup sheet for this topic.

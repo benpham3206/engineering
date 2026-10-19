@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A calculator is a device or app that does arithmetic and other math, such as powers, logarithms, and trigonometry, on numbers you enter. Knowing its strengths and limits matters to an engineer because a wrong keystroke gives a confident-looking wrong answer.
+A **calculator** is a device or app that does arithmetic and other math, such as powers, logarithms, and trigonometry, on numbers you enter. Knowing its strengths and limits matters to an engineer because a wrong keystroke gives a confident-looking wrong answer.
 
 It is the fastest tool for a quick number, an exam, or a check on the shop floor. Knowing when to use one, and when to switch to code or a spreadsheet, saves time and prevents a whole class of silent errors.
 
@@ -30,7 +30,7 @@ It is the fastest tool for a quick number, an exam, or a check on the shop floor
 - **Check the angle mode.** Degrees or radians is the most common calculator error in engineering. $\sin(30)$ in radian mode is about $-0.988$, not $0.5$.
 - **Store intermediate results** in memory instead of retyping rounded values. Rounding early changes the final digits. Round once, at the end.
 - **Use parentheses generously.** $a/bc$ is read differently by different calculators. Type $a/(b \cdot c)$.
-- **Know your entry mode.** Algebraic entry evaluates the expression as written. RPN, or reverse Polish notation, is used on many HP calculators. It puts numbers on a stack and applies operators after them. It needs no parentheses and shows every intermediate result. Both work. Pick one and practice it until you do not think about it.
+- **Know your entry mode.** **Algebraic entry** evaluates the expression as written. **RPN**, or reverse Polish notation, is used on many HP calculators. It puts numbers on a stack and applies operators after them. It needs no parentheses and shows every intermediate result. Both work. Pick one and practice it until you do not think about it.
 - **Carry units on paper,** even when the calculator does not. Some calculators can attach units to numbers and convert them; use that if yours does, but check it once by hand.
 - **Write down the inputs and the result** with units. A number on a screen is gone the moment you press clear.
 

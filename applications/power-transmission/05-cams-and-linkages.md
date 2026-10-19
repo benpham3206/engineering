@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Cams and linkages are two ways to turn one motion into another, such as spinning into rocking or spinning into sliding: a linkage uses rigid bars joined by pins, and a cam uses a shaped disc or groove to make a follower move in any pattern the designer chooses. Engineers use both to get motion that a plain gear or belt cannot give, and they check the geometry for locking, binding, and excess force before they build anything.
+**Cams and linkages** are two ways to turn one motion into another, such as spinning into rocking or spinning into sliding: a linkage uses rigid bars joined by pins, and a cam uses a shaped disc or groove to make a follower move in any pattern the designer chooses. Engineers use both to get motion that a plain gear or belt cannot give, and they check the geometry for locking, binding, and excess force before they build anything.
 
 **Prerequisites:** [Trigonometry](../../math/02-trigonometry.md), [Single-variable calculus](../../math/03-single-variable-calculus.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 8 to 10 h
@@ -11,16 +11,16 @@ Cams and linkages are two ways to turn one motion into another, such as spinning
 
 ### How it works
 
-A four-bar linkage has four rigid links joined by four pin joints. One link is fixed to the frame, and
-it is called the ground link. The two links joined to ground are the crank and the rocker, and the
-link between them is the coupler. When one link turns at a constant speed, every point on the
+A **four-bar linkage** has four rigid links joined by four pin joints. One link is fixed to the frame, and
+it is called the **ground link**. The two links joined to ground are the **crank** and the **rocker**, and the
+link between them is the **coupler**. When one link turns at a constant speed, every point on the
 linkage moves in a repeating path. The motion depends only on the link lengths and the starting angle.
 
-A slider-crank replaces one rocker with a slider that moves in a straight guide. The engine piston
+A **slider-crank** replaces one rocker with a slider that moves in a straight guide. The engine piston
 and crank use this arrangement. The crank turns, the connecting rod pushes and pulls, and the piston
 moves back and forth in its bore.
 
-A cam is a rotating shape, or a groove cut into a drum. A follower rides on the cam and moves up and
+A **cam** is a rotating shape, or a groove cut into a drum. A **follower** rides on the cam and moves up and
 down, or side to side, as the cam turns. The follower motion is set directly by the cam profile. The
 profile is the path the follower must trace, so the design problem is to shape the cam so that the
 follower moves the way the job needs.
@@ -126,8 +126,9 @@ under the common design guideline of about $30^\circ$ for translating followers 
   the motion.
 - Fatigue of links. Each link carries alternating loads, and cracks start at holes and fillets.
 
-Safety measures include guards around pinch points, lubrication at the cam contact, hardened cam
-surfaces, and a check of the whole motion cycle for locking before the mechanism runs.
+> [!WARNING]
+> Safety measures include guards around pinch points, lubrication at the cam contact, hardened cam
+> surfaces, and a check of the whole motion cycle for locking before the mechanism runs.
 
 ## History
 

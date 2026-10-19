@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A gas turbine is an engine that compresses air, burns fuel in it, and expands the hot gas through a turbine. Engineers use the Brayton cycle to estimate efficiency and the thrust equation to size engines for aircraft, power plants, and ships. Part of the turbine's work drives the compressor, and the rest either turns a shaft or leaves as a fast jet that pushes the engine forward.
+A **gas turbine** is an engine that compresses air, burns fuel in it, and expands the hot gas through a turbine. Engineers use the Brayton cycle to estimate efficiency and the thrust equation to size engines for aircraft, power plants, and ships. Part of the turbine's work drives the compressor, and the rest either turns a shaft or leaves as a fast jet that pushes the engine forward.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 8-12 h
@@ -19,7 +19,7 @@ Air flows through five stages in order.
 4. Expansion. The hot gas passes through one or more turbine stages. The turbine extracts enough work to drive the compressor, and the remaining energy goes to the shaft or the nozzle.
 5. Exhaust. The nozzle expands the remaining gas and accelerates it out of the engine.
 
-The ideal Brayton cycle has four processes: isentropic compression, constant-pressure heat addition, isentropic expansion, and constant-pressure heat rejection. The cycle describes the air as a closed loop, which is an idealization. Real engines take in fresh air, so the cycle is a model of the gas path, not a literal loop.
+The ideal **Brayton cycle** has four processes: isentropic compression, constant-pressure heat addition, isentropic expansion, and constant-pressure heat rejection. The cycle describes the air as a closed loop, which is an idealization. Real engines take in fresh air, so the cycle is a model of the gas path, not a literal loop.
 
 The engine type sets where the useful work goes. A turbojet sends all of the leftover energy into the exhaust, so it produces thrust only. A turbofan uses the turbine to drive a large fan that moves air around the core, so most of its thrust comes from the fan air. A turboprop or turboshaft uses the turbine to drive a propeller or rotor through a gearbox, and an industrial turbine drives a generator.
 
@@ -35,7 +35,7 @@ The engine type sets where the useful work goes. A turbojet sends all of the lef
 ### Variants
 
 - Turbojet: a simple engine with no fan. It is used on early jet aircraft and on some missiles. Its exhaust is fast and noisy, so it is inefficient at low speed.
-- Low-bypass turbofan: a small fan with a bypass ratio of about 0.5 to 2 (typical values). It suits fighters, which need high thrust at high speed.
+- Low-bypass turbofan: a small fan with a **bypass ratio** of about 0.5 to 2 (typical values). It suits fighters, which need high thrust at high speed.
 - High-bypass turbofan: a large fan with a bypass ratio of about 9 to 12 on modern large airliners (typical values). Its slower exhaust is quieter and uses less fuel per unit of thrust.
 - Turboprop and turboshaft: turbines that drive a propeller or a helicopter rotor through a reduction gearbox.
 - Industrial and marine gas turbines: turbines that drive generators or ship propulsion. Power plants also run gas turbines as the top half of a combined cycle, with a steam plant on the exhaust. See [Steam power plants](08-steam-power-plants.md).
@@ -48,9 +48,9 @@ Symbols are in SI units unless marked dimensionless.
 - Compressor work per kilogram of air: $w_c = c_p (T_2 - T_1)$, where $c_p = 1.005\ \text{kJ/(kg K)}$ is the specific heat of air at constant pressure (typical value) and the temperatures are in kelvin.
 - Turbine work per kilogram of air: $w_t = c_p (T_3 - T_4)$.
 - Net work and heat input: $w_{\mathrm{net}} = w_t - w_c$ and $q_{\mathrm{in}} = c_p (T_3 - T_2)$, both in kilojoules per kilogram.
-- Thrust: $F = \dot m (V_e - V_0) + (p_e - p_0) A_e$, where $F$ is in newtons, $\dot m$ is the air mass flow in kilograms per second, $V_e$ is the exit velocity in metres per second, $V_0$ is the flight speed in metres per second, $p_e$ and $p_0$ are the exit and ambient pressures in pascals, and $A_e$ is the exit area in square metres.
-- Propulsive efficiency: $\eta_p = \dfrac{2 V_0}{V_e + V_0}$, dimensionless.
-- Thrust specific fuel consumption: $\text{TSFC} = \dot m_f / F$, where $\dot m_f$ is the fuel mass flow in kilograms per second, so TSFC is in kilograms per newton second.
+- **Thrust**: $F = \dot m (V_e - V_0) + (p_e - p_0) A_e$, where $F$ is in newtons, $\dot m$ is the air mass flow in kilograms per second, $V_e$ is the exit velocity in metres per second, $V_0$ is the flight speed in metres per second, $p_e$ and $p_0$ are the exit and ambient pressures in pascals, and $A_e$ is the exit area in square metres.
+- **Propulsive efficiency**: $\eta_p = \dfrac{2 V_0}{V_e + V_0}$, dimensionless.
+- **Thrust specific fuel consumption (TSFC)**: $\text{TSFC} = \dot m_f / F$, where $\dot m_f$ is the fuel mass flow in kilograms per second, so TSFC is in kilograms per newton second.
 
 ## Worked example
 
@@ -90,8 +90,10 @@ Symbols are in SI units unless marked dimensionless.
 - Turbine blade creep and overtemperature: at high temperature, blade metal stretches slowly until it fails. Warning signs are a rising exhaust gas temperature at the same power. Designers add cooling, coatings, and temperature limits, and they track blade life by operating hours and cycles.
 - Foreign object damage: birds, ice, or stones in the inlet can strike fan or compressor blades. Fan cases and inlet screens reduce the risk.
 - High-cycle fatigue: blades that vibrate at a resonant frequency crack from the cyclic stress. Designers tune blade frequencies away from the running speeds, and inspection finds cracks early.
-- Uncontained rotor failure: a broken disk or blade can break through the casing. Certification rules require a containment ring around the fan and turbine, and aircraft carry fire and overspeed protection.
 - Bearing or oil failure: chip detectors in the oil system catch metal debris before a bearing seizes, and oil system warnings alert the crew.
+
+> [!WARNING]
+> Uncontained rotor failure: a broken disk or blade can break through the casing. Certification rules require a containment ring around the fan and turbine, and aircraft carry fire and overspeed protection.
 
 ## History
 
@@ -124,6 +126,6 @@ Frank Whittle in England patented a jet engine design in 1930, and his first eng
 ## Go deeper
 
 - [Turbine Engine Thermodynamic Cycle, Brayton Cycle](https://www.grc.nasa.gov/www/k-12/airplane/brayton.html) by NASA Glenn Research Center: the gas turbine cycle, with T-s and p-V diagrams.
-- [University Physics Volume 2, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: why the efficiency of any engine has a limit.
+- [*University Physics Volume 2*, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: why the efficiency of any engine has a limit.
 - Related lessons: [Internal combustion engines](06-internal-combustion-engines.md), [Steam power plants](08-steam-power-plants.md), [Aircraft and wings](../vehicles-aerospace/05-aircraft-and-wings.md), [Rockets](../vehicles-aerospace/07-rockets.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Technical writing is the craft of putting facts in an order a busy reader can use, with enough detail to check them. Engineers need it because most engineering work reaches people as writing, and a test result that nobody can read has the same value as no test at all.
+**Technical writing** is the craft of putting facts in an order a busy reader can use, with enough detail to check them. Engineers need it because most engineering work reaches people as writing, and a test result that nobody can read has the same value as no test at all.
 
 **Prerequisites:** none
 **Time:** 4-6 h
@@ -10,7 +10,7 @@ Technical writing is the craft of putting facts in an order a busy reader can us
 ## Core ideas
 
 - **Know the reader first.** Ask who will read the document, what they already know, and what decision they need to make. A manager wants the answer on page one. A reviewer wants the method so they can check it.
-- **Lead with the point.** Engineers call this "bottom line up front" (BLUF). State the result or recommendation in the first paragraph, then give the support.
+- **Lead with the point.** Engineers call this **"bottom line up front" (BLUF)**. State the result or recommendation in the first paragraph, then give the support.
 - **One idea per paragraph.** A paragraph has a topic sentence and then evidence. If you cannot name the topic sentence, split or cut the paragraph.
 - **Plain words.** Use "about 2 mm thick" rather than "approximately dimensionally significant." Define any acronym the first time you use it.
 - **Separate facts from opinions.** Write "the bracket deflected 1.2 mm under the 50 N load" as a fact. Write "the bracket seems stiff enough" as an opinion, and say what it is based on.
@@ -71,7 +71,7 @@ Below are outlines you can copy. Replace the bracketed text with your own conten
 
 ### Design review slide outline
 
-The full guidance for slides is in [03-presentations.md](03-presentations.md).
+The full guidance for slides is in [`03-presentations.md`](03-presentations.md).
 
 1. Title slide: project, design revision, presenter, date.
 2. Problem statement: the need, in one sentence, and the main requirements.
@@ -111,6 +111,6 @@ The full guidance for slides is in [03-presentations.md](03-presentations.md).
 
 - [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering memos, technical reports, and other workplace genres.
 - [Purdue OWL: Writing Report Abstracts](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/technical_reports_and_report_abstracts/index.html) by Purdue University, covering how to write informational and descriptive abstracts.
-- [OpenStax Writing Guide with Handbook](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University): free general writing textbook covering the writing process and revision.
+- [*OpenStax Writing Guide with Handbook*](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University): free general writing textbook covering the writing process and revision.
 - [Purdue OWL](https://owl.purdue.edu/owl/purdue_owl.html) by Purdue University, the full writing resource index, including general writing and grammar.
 - [Communication reference](reference.md): the lookup sheet for this topic.

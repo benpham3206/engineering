@@ -12,7 +12,11 @@ Every part is made from a material and shaped by a process. The material affects
 
 - Start with a guess, then test it. Most identifications come from two or three clues that agree, not from one clue alone.
 - **Ferromagnetic** metals, such as iron and most carbon steels, are attracted to a magnet. Aluminum, copper, brass, and most plastics are not. This is a quick sort, not a grade test. Some stainless steels are only weakly magnetic.
-- A **spark test** holds a sample against a grinding wheel and watches the sparks. Carbon steel gives long streams with small bursts called forks. Stainless steel and cast iron give different patterns. Treat this as a rough guide, and always wear eye protection and a guard.
+- A **spark test** holds a sample against a grinding wheel and watches the sparks. Carbon steel gives long streams with small bursts called forks. Stainless steel and cast iron give different patterns.
+
+> [!WARNING]
+> Treat this as a rough guide, and always wear eye protection and a guard.
+
 - **Density** is mass per unit volume. Measure the mass on a scale and the volume by displacement in water (Archimedes' principle). Density separates materials that look alike, such as aluminum and zinc, or plastics with different fillers.
 - Process clues come from how the surface was formed:
   - **Parting line:** a thin seam where two mold halves met. It points to molding (injection molding, die casting, or sand casting).
@@ -97,6 +101,6 @@ $$\rho = \frac{53.4}{6.8} = 7.85 \text{ g/cm}^3$$
 
 - [Materials Science bookshelf](https://eng.libretexts.org/Bookshelves/Materials_Science) by LibreTexts: a free starting point for material properties and polymers.
 - [Mechanical Engineering bookshelf](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering) by LibreTexts: free material on machining and design for manufacture.
-- [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: free units and measurement material to support density calculations.
+- [*University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: free units and measurement material to support density calculations.
 - [SI units and the metric system](https://www.nist.gov/pml/owm/metric-si) by NIST: the official guide to the units used in density.
 - [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

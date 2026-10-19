@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Design intent is the reason an engineer made each choice: why this material, why this wall thickness, why this hole is here and not there. Measuring and modeling tell you what a part is. Design intent tells you why it is that way, and that is what you need to change it, repair it, or design something better.
+**Design intent** is the reason an engineer made each choice: why this material, why this wall thickness, why this hole is here and not there. Measuring and modeling tell you what a part is. Design intent tells you why it is that way, and that is what you need to change it, repair it, or design something better.
 **Prerequisites:** [Teardowns](01-teardowns.md), [Measuring existing parts](02-measuring-existing-parts.md), [Recreating parts in CAD](03-recreating-parts-in-cad.md), [Statics](../physics/01-statics.md)
 **Time:** 4-8 h
 
@@ -82,6 +82,6 @@ A desktop stapler has a flat base, a spring-loaded body, a hinged top, and a sma
 
 - [Design and manufacturing topics in Mechanical Engineering](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering) by LibreTexts: free books that cover design and machine elements.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library to browse for statics and load paths.
-- [e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/) by NIST and SEMATECH: free reference on evidence and variation, useful when you weigh how strong a clue is.
+- [*e-Handbook of Statistical Methods*](https://www.itl.nist.gov/div898/handbook/) by NIST and SEMATECH: free reference on evidence and variation, useful when you weigh how strong a clue is.
 - See also the [design folder](../design/README.md) for how designers make these choices on purpose.
 - [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

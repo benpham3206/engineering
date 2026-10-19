@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-The electrical age is the period from about 1800 to 1900 when engineers learned to make steady electric current, use it in motors and lamps, and send it along wires. Engineers today should know it because the choice of alternating current for long-distance power still shapes the power grid and the electrical equipment in homes.
+**The electrical age** is the period from about 1800 to 1900 when engineers learned to make steady electric current, use it in motors and lamps, and send it along wires. Engineers today should know it because the choice of alternating current for long-distance power still shapes the power grid and the electrical equipment in homes.
 
 **Prerequisites:** [Scientific revolution](04-scientific-revolution.md), [Industrial revolution](05-industrial-revolution.md), [Electricity and magnetism](../physics/06-electricity-and-magnetism.md)
 **Time:** 2-3 h
@@ -11,11 +11,11 @@ The electrical age is the period from about 1800 to 1900 when engineers learned 
 
 ### A steady current from a battery
 
-Before 1800, electricity came from static charge and from brief sparks. Alessandro Volta, in Italy, built a voltaic pile in 1800. The pile stacked discs of zinc and silver or copper with cloth soaked in brine between them. It gave a steady current for the first time, and experimenters could repeat their work with it. Volta announced the pile in a letter to the Royal Society in London that same year.
+Before 1800, electricity came from static charge and from brief sparks. Alessandro Volta, in Italy, built a **voltaic pile** in 1800. The pile stacked discs of zinc and silver or copper with cloth soaked in brine between them. It gave a steady current for the first time, and experimenters could repeat their work with it. Volta announced the pile in a letter to the Royal Society in London that same year.
 
 ### Current makes a magnet, and a magnet makes current
 
-In 1820, Hans Christian Ørsted in Copenhagen showed that a current in a wire deflects a compass needle. Within a few years, researchers built electromagnets and simple motors. In 1831, Michael Faraday in London showed that a changing magnetic field induces a voltage in a nearby coil. This is electromagnetic induction. Every generator, transformer, and induction motor depends on it.
+In 1820, Hans Christian Ørsted in Copenhagen showed that a current in a wire deflects a compass needle. Within a few years, researchers built electromagnets and simple motors. In 1831, Michael Faraday in London showed that a changing magnetic field induces a voltage in a nearby coil. This is **electromagnetic induction**. Every generator, transformer, and induction motor depends on it.
 
 ### Theory and the telegraph
 
@@ -23,7 +23,7 @@ James Clerk Maxwell wrote the field equations of electromagnetism in the 1860s. 
 
 ### Light and the first power stations
 
-Thomas Edison's team at Menlo Park, New Jersey, made a carbon filament lamp in 1879. A lamp needs a supply, so Edison built a central station. Pearl Street Station in New York began serving customers in 1882. It used direct current, which is hard to change in voltage. Lines of direct current also lose much of their power as heat, so a DC system had to stay close to its customers.
+Thomas Edison's team at Menlo Park, New Jersey, made a carbon filament lamp in 1879. A lamp needs a supply, so Edison built a central station. Pearl Street Station in New York began serving customers in 1882. It used **direct current (DC)**, which is hard to change in voltage. Lines of direct current also lose much of their power as heat, so a DC system had to stay close to its customers.
 
 ### The contest between direct and alternating current
 
@@ -31,7 +31,7 @@ In the 1880s, companies competed over which system would power cities. Edison's 
 
 ### Alternating current wins
 
-Alternating current can change voltage with a transformer, which works only with a changing magnetic flux. Transformers let engineers send power at high voltage and use it at low voltage. William Stanley Jr. demonstrated a transformer-based AC lighting system in Great Barrington, Massachusetts, in 1886. Nikola Tesla patented practical polyphase AC motors in 1888, and George Westinghouse's company licensed the system. The Adams Power Plant at Niagara Falls began generating in 1895, and it sent AC power to distant users. The worked example below shows why high voltage reduces line losses.
+**Alternating current (AC)** can change voltage with a **transformer**, which works only with a changing magnetic flux. Transformers let engineers send power at high voltage and use it at low voltage. William Stanley Jr. demonstrated a transformer-based AC lighting system in Great Barrington, Massachusetts, in 1886. Nikola Tesla patented practical polyphase AC motors in 1888, and George Westinghouse's company licensed the system. The Adams Power Plant at Niagara Falls began generating in 1895, and it sent AC power to distant users. The worked example below shows why high voltage reduces line losses.
 
 ### Radio
 
@@ -130,8 +130,8 @@ Here $P_{\text{loss}}$ is the loss in watts (W), $I$ is the current in amperes (
 
 ## Go deeper
 
-- [Experimental Researches in Electricity, Volume 1](https://www.gutenberg.org/ebooks/14986), Michael Faraday, free on Project Gutenberg. Faraday's own record of his induction experiments.
-- [The inventions, researches and writings of Nikola Tesla](https://www.gutenberg.org/ebooks/39272), edited by Thomas Commerford Martin, free on Project Gutenberg. Tesla's papers and patents on AC systems.
+- [*Experimental Researches in Electricity, Volume 1*](https://www.gutenberg.org/ebooks/14986), Michael Faraday, free on Project Gutenberg. Faraday's own record of his induction experiments.
+- [*The inventions, researches and writings of Nikola Tesla*](https://www.gutenberg.org/ebooks/39272), edited by Thomas Commerford Martin, free on Project Gutenberg. Tesla's papers and patents on AC systems.
 - [Physics II: Electricity and Magnetism](https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/), MIT OpenCourseWare, free. A university course that covers induction and the field equations.
 - Related lessons: [Electricity and magnetism](../physics/06-electricity-and-magnetism.md), [Transformers](../applications/electrical/05-transformers.md), [The power grid](../applications/electrical/08-the-power-grid.md), and [Radio and antennas](../applications/waves-and-communication/02-radio-and-antennas.md).
 - [History of engineering reference](reference.md): the lookup sheet for this topic.

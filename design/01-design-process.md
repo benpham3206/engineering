@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Design is the work of turning a need into something that works, can be built, and can be explained. Engineers use a repeatable process so that decisions are traceable and mistakes are caught early, when they are cheap to fix.
+**Design** is the work of turning a need into something that works, can be built, and can be explained. Engineers use a repeatable process so that decisions are traceable and mistakes are caught early, when they are cheap to fix.
 
 **Prerequisites:** none
 **Time:** 3-5 h
@@ -15,7 +15,7 @@ Engineering design is rarely a straight line. It is a loop: you learn something,
 - **Requirements.** Measurable statements that define what "works" means. A requirement is a test you can check. "Holds 30 kg (66 lb) without permanent bending" is a requirement. "Feels sturdy" is not, until it is measured.
 - **Constraints.** Limits you cannot break, such as budget, size, power source, or legal rules. Constraints are different from requirements because they limit the design space rather than describe a goal.
 - **Concepts.** Several different ways to meet the requirements. Good teams generate more than one idea before choosing. The first idea is usually not the best.
-- **Selection.** A structured comparison of concepts against the requirements. A decision matrix is a common tool: list criteria, give each a weight, score each concept, and multiply.
+- **Selection.** A structured comparison of concepts against the requirements. A **decision matrix** is a common tool: list criteria, give each a weight, score each concept, and multiply.
 - **Embodiment and detail design.** Turning the chosen concept into real geometry, materials, and dimensions. This is where [CAD](03-cad.md), drawings, and [tolerances](04-tolerancing-and-stack-up.md) come in.
 - **Prototype and test.** Building something real, or a model of it, and measuring it against the requirements.
 - **Iteration.** Using test results to change the design. Each loop should answer a specific question.
@@ -30,7 +30,7 @@ Write requirements so that a second engineer could test them without asking you 
 
 ## Trade studies
 
-Most design decisions are trade-offs. Making a part stronger often makes it heavier or more expensive. A trade study makes the trade-off visible.
+Most design decisions are trade-offs. Making a part stronger often makes it heavier or more expensive. A **trade study** makes the trade-off visible.
 
 - Pick the criteria that matter most (cost, mass, strength, ease of assembly, reliability).
 - Weight each criterion from 1 to 5, with 5 meaning very important.
@@ -41,7 +41,7 @@ The highest total is not always the right answer. If one concept fails a hard re
 
 ## Iteration and risk
 
-Early in a project, changes are cheap. A sketch costs minutes. A cast part costs weeks. Designers try to find the biggest risks first, then test them. A risk is a thing that could fail badly and that you do not yet know how to handle.
+Early in a project, changes are cheap. A sketch costs minutes. A cast part costs weeks. Designers try to find the biggest risks first, then test them. A **risk** is a thing that could fail badly and that you do not yet know how to handle.
 
 - Ask, "What is the riskiest assumption in this design?"
 - Build the smallest test that can prove or disprove it.
@@ -49,7 +49,7 @@ Early in a project, changes are cheap. A sketch costs minutes. A cast part costs
 
 ## Design reviews
 
-A design review is a planned meeting where the design is checked against the requirements before the next stage starts. Reviews are sometimes called gates. They stop a weak design from advancing without a check.
+A **design review** is a planned meeting where the design is checked against the requirements before the next stage starts. Reviews are sometimes called gates. They stop a weak design from advancing without a check.
 
 - Hold a review at the end of each major stage, such as after concepts, after detail design, and after the first prototype test.
 - Bring the requirements list, the decisions made so far, and the test results.

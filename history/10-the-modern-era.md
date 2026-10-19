@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-The modern era is the period from about 1970 onward, when engineers gained tools that changed how they design, test, and build: computer simulation, satellite navigation, networked data, additive manufacturing, and modern batteries and solar cells. Engineers today should know it because these tools form their working environment, and each one brings a new way to fail, such as trusting a precise-looking simulation.
+**The modern era** is the period from about 1970 onward, when engineers gained tools that changed how they design, test, and build: computer simulation, satellite navigation, networked data, additive manufacturing, and modern batteries and solar cells. Engineers today should know it because these tools form their working environment, and each one brings a new way to fail, such as trusting a precise-looking simulation.
 
 **Prerequisites:** [Semiconductors and computing](09-semiconductors-and-computing.md), [War, nuclear, and space](08-war-nuclear-and-space.md), [Principles that last](../philosophy/07-principles-that-last.md), [Linear algebra](../math/05-linear-algebra.md), [Numerical methods](../math/08-numerical-methods.md)
 **Time:** 3-4 h
@@ -11,29 +11,29 @@ The modern era is the period from about 1970 onward, when engineers gained tools
 
 ### Computer-aided design and simulation
 
-In 1963, Ivan Sutherland showed Sketchpad at MIT. A user drew lines and shapes on a screen with a light pen, and the computer stored them as objects that could be copied and changed. Sketchpad was the ancestor of computer-aided design, which replaced the drafting table with a model that could be measured, shared, and revised.
+In 1963, Ivan Sutherland showed Sketchpad at MIT. A user drew lines and shapes on a screen with a light pen, and the computer stored them as objects that could be copied and changed. Sketchpad was the ancestor of **computer-aided design**, which replaced the drafting table with a model that could be measured, shared, and revised.
 
-Analysis followed the drawing. In 1956, M. J. Turner and his colleagues at Boeing published a matrix method for the stiffness of aircraft structures. Ray Clough named the approach finite element analysis in 1960. The method cuts a structure into small pieces, writes a force-displacement relation for each one, and solves the combined set with a computer. Problems too large for hand calculation became routine. The answer is only as good as the model, though, and a model with the wrong boundary conditions gives a clean-looking wrong answer.
+Analysis followed the drawing. In 1956, M. J. Turner and his colleagues at Boeing published a matrix method for the stiffness of aircraft structures. Ray Clough named the approach **finite element analysis** in 1960. The method cuts a structure into small pieces, writes a force-displacement relation for each one, and solves the combined set with a computer. Problems too large for hand calculation became routine. The answer is only as good as the model, though, and a model with the wrong boundary conditions gives a clean-looking wrong answer.
 
 ### Networks and the internet
 
-The first ARPANET link carried a message between the University of California, Los Angeles and the Stanford Research Institute in October 1969. The network used packet switching, which splits data into small blocks that can take different routes. In 1983, ARPANET switched to the TCP/IP protocols designed by Vint Cerf and Bob Kahn. That common protocol became the base of the internet.
+The first ARPANET link carried a message between the University of California, Los Angeles and the Stanford Research Institute in October 1969. The network used **packet switching**, which splits data into small blocks that can take different routes. In 1983, ARPANET switched to the TCP/IP protocols designed by Vint Cerf and Bob Kahn. That common protocol became the base of the internet.
 
 The World Wide Web is a separate layer that runs on the internet. Tim Berners-Lee proposed it at CERN in Geneva in 1989, and a working web was public by 1991. For engineers, the network changed daily work. Test data, design files, standards, and firmware now move between sites in seconds, and a team on three continents can review the same model.
 
 ### Satellite navigation
 
-The Global Positioning System is a United States satellite system. The first satellite launched in 1978, and the system was declared fully operational in 1995. A receiver finds its position by timing signals from several satellites. Each signal gives a distance, and the receiver solves for three position coordinates and its own clock error, so it needs signals from four satellites.
+The **Global Positioning System** is a United States satellite system. The first satellite launched in 1978, and the system was declared fully operational in 1995. A receiver finds its position by timing signals from several satellites. Each signal gives a distance, and the receiver solves for three position coordinates and its own clock error, so it needs signals from four satellites.
 
 GPS depends on relativity. Clocks in orbit run faster than clocks on the ground by about 38 microseconds per day. Without a correction, the position error would grow by kilometres each day. Engineers who design timing systems now treat relativity as a normal input, not as a curiosity.
 
 ### Additive manufacturing
 
-In 1986, Chuck Hull patented stereolithography, a process that cures a liquid resin layer by layer with ultraviolet light. Hull also co-founded 3D Systems. Additive manufacturing builds a part from thin layers, so it can make shapes that a cutter cannot reach. Its limits are speed, surface finish, and the strength of the layer bonds, and those limits decide which parts it should make.
+In 1986, Chuck Hull patented **stereolithography**, a process that cures a liquid resin layer by layer with ultraviolet light. Hull also co-founded 3D Systems. **Additive manufacturing** builds a part from thin layers, so it can make shapes that a cutter cannot reach. Its limits are speed, surface finish, and the strength of the layer bonds, and those limits decide which parts it should make.
 
 ### Batteries and solar cells
 
-Bell Labs built a silicon solar cell in 1954 with an efficiency of about 6 percent. Solar cells improved steadily after that, and they are now a common source of electricity. Batteries followed a similar path. In 2019, the Nobel Prize in Chemistry went to John Goodenough, M. Stanley Whittingham, and Akira Yoshino for the lithium-ion battery, which stores the energy in phones, laptops, and electric vehicles.
+Bell Labs built a silicon solar cell in 1954 with an efficiency of about 6 percent. Solar cells improved steadily after that, and they are now a common source of electricity. Batteries followed a similar path. In 2019, the Nobel Prize in Chemistry went to John Goodenough, M. Stanley Whittingham, and Akira Yoshino for the **lithium-ion battery**, which stores the energy in phones, laptops, and electric vehicles.
 
 ## Key inventions
 

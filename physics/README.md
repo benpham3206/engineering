@@ -21,6 +21,9 @@ How the physical world behaves, and the models engineers use to predict it.
 - [Vibrations](13-vibrations.md)
 - [Feedback control](14-controls.md)
 - [Orbital mechanics and rockets](15-orbital-mechanics-and-rockets.md)
+- [Circuit analysis methods](16-circuit-analysis-methods.md)
+- [AC circuits, phasors, and power](17-ac-circuits-phasors-and-power.md)
+- [Modern physics and quantum mechanics](18-modern-physics-and-quantum.md)
 
 ## Reference
 

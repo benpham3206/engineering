@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Drafting and layout tools are the hand instruments that engineers and machinists have used for centuries to put lines, arcs, and angles on paper and on metal. CAD does most of this work today, but a sketch on the back of an envelope or a scribed line on a steel bar still matters when a computer is not nearby, when a part must be marked by hand, or when you need to check a CAD result with your own eyes.
+**Drafting and layout tools** are the hand instruments that engineers and machinists have used for centuries to put lines, arcs, and angles on paper and on metal. CAD does most of this work today, but a sketch on the back of an envelope or a scribed line on a steel bar still matters when a computer is not nearby, when a part must be marked by hand, or when you need to check a CAD result with your own eyes.
 
 **Prerequisites:** [Measurement tools](07-measurement-tools.md) for reading rules, calipers, and tolerances. [Engineering graphics](../design/02-engineering-graphics.md) for views, line types, and drawing conventions. [Trigonometry](../math/02-trigonometry.md) for the bolt circle chord.
 **Time:** 8-12 h to learn the tools, plus regular practice at a bench or drafting table
@@ -106,7 +106,7 @@ Check the square head against a known flat surface and against the blade. A squa
 
 ## Layout on metal
 
-Layout is the work of marking exact lines and points on a part before cutting, drilling, or milling it. Good layout starts with a flat, true reference and uses the same datum for every mark.
+**Layout** is the work of marking exact lines and points on a part before cutting, drilling, or milling it. Good layout starts with a flat, true reference and uses the same datum for every mark.
 
 - **Surface plate.** A flat, heavy plate of granite or cast iron. It is the reference surface for all layout work on metal. Keep it clean and cover it when not in use.
 - **Layout fluid.** A thin coat of dye or blue fluid on the metal. It makes a scribed line easy to see. Let it dry before scribing. Wipe off the layout fluid after use.
@@ -125,7 +125,7 @@ Check the center by repeating the process with a third line. All three lines sho
 
 ## Hand sketching for design
 
-A sketch is a fast drawing used to think, not to dimension. Engineers sketch to explore shape, check proportion, and show an idea to a teammate. A sketch that is not to scale is still useful if the proportions are right.
+A **sketch** is a fast drawing used to think, not to dimension. Engineers sketch to explore shape, check proportion, and show an idea to a teammate. A sketch that is not to scale is still useful if the proportions are right.
 
 ### Proportion
 
@@ -135,7 +135,7 @@ A sketch is a fast drawing used to think, not to dimension. Engineers sketch to 
 
 ### Isometric sketching
 
-An isometric sketch shows three faces of a part at once. Draw three axes from one point: a vertical line, and two lines at 30 degrees from horizontal, one to the left and one to the right. Draw the edges of the object along these three directions. Edges that are not parallel to an axis need their endpoints located first, then joined.
+An **isometric sketch** shows three faces of a part at once. Draw three axes from one point: a vertical line, and two lines at 30 degrees from horizontal, one to the left and one to the right. Draw the edges of the object along these three directions. Edges that are not parallel to an axis need their endpoints located first, then joined.
 
 A line along an isometric axis is drawn at an angle of 30 degrees, so its horizontal part is shorter than the full line. The horizontal part equals the length times $\cos 30^\circ \approx 0.866$. Use this ratio as a check when you sketch a cube. For a quick sketch, matching proportions by eye is enough.
 
@@ -143,7 +143,7 @@ Use isometric grid paper if you have it. Draw the grid first, and place the obje
 
 ## Key equations
 
-For $n$ equal holes spaced evenly on a circle of diameter $D$ (in mm), the straight-line distance between two adjacent hole centers, the chord $c$, is:
+For $n$ equal holes spaced evenly on a circle of diameter $D$ (in mm), the straight-line distance between two adjacent hole centers, the **chord** $c$, is:
 
 $$c = D \sin\left(\frac{180^\circ}{n}\right)$$
 
@@ -237,8 +237,8 @@ chord < arc: True
 
 ## Go deeper
 
-- [NIST Special Publication 811](https://www.nist.gov/pml/special-publication-811) by NIST: the SI guide for consistent units and conversions, useful when you convert between mm and inches on a scale.
-- [Mechanical Drawing Self-Taught](https://www.gutenberg.org/ebooks/23319) by Joshua Rose, on Project Gutenberg: an older, public-domain manual on hand drafting instruments and constructions. Free to read and download.
+- [*NIST Special Publication 811*](https://www.nist.gov/pml/special-publication-811) by NIST: the SI guide for consistent units and conversions, useful when you convert between mm and inches on a scale.
+- [*Mechanical Drawing Self-Taught*](https://www.gutenberg.org/ebooks/23319) by Joshua Rose, on Project Gutenberg: an older, public-domain manual on hand drafting instruments and constructions. Free to read and download.
 - [OSHA](https://www.osha.gov/) by the U.S. Occupational Safety and Health Administration: the home page for workplace safety rules. Search it for hand tool and machine guarding guidance when you work with scribers, punches, and layout tools in a shop.
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: a free course library. Search it for design and manufacturing courses that cover drawing and layout in more depth.
 - [Tools reference](reference.md): the lookup sheet for this topic.

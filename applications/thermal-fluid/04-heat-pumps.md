@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A heat pump is a machine that moves heat from a cold source, such as outdoor air or the ground, into a warm building. Engineers use heat pumps because one delivers more heat than the electricity it consumes, so it heats a building with less energy than a resistance heater.
+A **heat pump** is a machine that moves heat from a cold source, such as outdoor air or the ground, into a warm building. Engineers use heat pumps because one delivers more heat than the electricity it consumes, so it heats a building with less energy than a resistance heater.
 
 It uses the same refrigeration cycle as an air conditioner, run in the other direction.
 
@@ -20,17 +20,17 @@ that heat into the building. An expansion valve then drops the pressure, and the
 The heat delivered to the building is the heat taken from the source plus the compressor work. Work
 adds energy, so the delivered heat is larger than the work used.
 
-In cooling mode, a reversing valve swaps the roles of the two coils. The indoor coil becomes the
+In cooling mode, a **reversing valve** swaps the roles of the two coils. The indoor coil becomes the
 evaporator and the outdoor coil becomes the condenser. Many heat pumps can cool a house in summer and heat
 it in winter for this reason.
 
 ### Air-source and ground-source
 
-An air-source heat pump takes heat from outdoor air. It is cheap to install and common in mild climates.
+An **air-source heat pump** takes heat from outdoor air. It is cheap to install and common in mild climates.
 Its COP falls as the outdoor air gets colder, because the evaporator must boil the refrigerant at a
 lower temperature and the compressor has to lift the refrigerant through a larger pressure gap.
 
-A ground-source (geothermal) heat pump takes heat from a loop of buried pipe carrying water or antifreeze
+A **ground-source (geothermal) heat pump** takes heat from a loop of buried pipe carrying water or antifreeze
 solution. Below a few metres, ground temperature stays close to the annual average air temperature for
 the site. The loop works at a steadier temperature than outside air, so the COP changes less through the
 winter. The cost is in drilling or trenching the loop.
@@ -55,7 +55,7 @@ weather. A ground-source unit has no outdoor coil to frost.
 ### Balance point
 
 A heat pump's heating capacity falls as the outdoor temperature drops, while the building's heat loss rises.
-The outdoor temperature where the two meet is the balance point. Below it, the heat pump cannot keep up
+The outdoor temperature where the two meet is the **balance point**. Below it, the heat pump cannot keep up
 alone, and a backup electric heater or a fossil-fuel furnace makes up the difference. Designers size the
 heat pump for a design temperature, and the balance point depends on that choice.
 
@@ -69,7 +69,7 @@ heat pump for a design temperature, and the balance point depends on that choice
   temperature and $T_L$ the source temperature, both in kelvin (K).
 - Electrical input: $\dot{W}_c = \dot{Q}_H / \mathrm{COP}_{\mathrm{HP}}$.
 - Electric resistance heater: $\dot{W} = \dot{Q}_H$, so its COP is 1.
-- Seasonal performance factor (SPF): the total heat delivered over a season divided by the total electrical
+- **Seasonal performance factor (SPF)**: the total heat delivered over a season divided by the total electrical
   energy used. It is the honest figure for a whole winter, because COP changes with temperature.
 
 ## Worked example
@@ -173,7 +173,7 @@ supplied the cycle that heat pumps still use. Sadi Carnot's 1824 limit on heat e
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 4 (second law of thermodynamics)](https://openstax.org/books/university-physics-volume-2/pages/4-introduction)
+- [*University Physics Volume 2*, Chapter 4 (second law of thermodynamics)](https://openstax.org/books/university-physics-volume-2/pages/4-introduction)
   by OpenStax: heat engines and refrigerators, and the limits on their performance.
 - Next: [Heat exchangers](05-heat-exchangers.md), for the coils that move heat between refrigerant and air or
   water.

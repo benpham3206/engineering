@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Additive manufacturing (AM), commonly called 3D printing, is the family of processes that builds a part one thin layer at a time, adding material only where the part needs it. Engineers use it because it makes shapes that are hard or impossible to machine. Its layer-by-layer build also brings its own limits on strength, surface finish, and speed. An engineer who designs for AM must design for the way the part is built, not only for its final shape.
+**Additive manufacturing (AM)**, commonly called 3D printing, is the family of processes that builds a part one thin layer at a time, adding material only where the part needs it. Engineers use it because it makes shapes that are hard or impossible to machine. Its layer-by-layer build also brings its own limits on strength, surface finish, and speed. An engineer who designs for AM must design for the way the part is built, not only for its final shape.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)
 **Time:** 4-6 h

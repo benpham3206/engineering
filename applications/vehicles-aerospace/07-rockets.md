@@ -2,7 +2,10 @@
 
 **Type:** lesson
 
-A rocket is a vehicle that carries its own fuel and oxidizer, so it works in a vacuum. A rocket that is too heavy cannot leave the ground, and one that fails in flight can destroy its payload.
+A **rocket** is a vehicle that carries its own fuel and oxidizer, so it works in a vacuum.
+
+> [!WARNING]
+> A rocket that is too heavy cannot leave the ground, and one that fails in flight can destroy its payload.
 
 An engineer who designs one must size the engine, the nozzle, the propellant tanks, and the structure that holds them, and each choice trades performance against mass and risk.
 
@@ -39,7 +42,7 @@ The propellant supply has its own system. In a pressure-fed engine, tank pressur
 
 ## Key equations
 
-Thrust of a nozzle, from the momentum of the exhaust and the pressure at the exit.
+**Thrust** of a nozzle, from the momentum of the exhaust and the pressure at the exit.
 
 $$
 F = \dot m\, v_e + (p_e - p_a)\, A_e
@@ -48,7 +51,7 @@ $$
 - $F$ is thrust (N). $\dot m$ is propellant mass flow rate (kg/s). $v_e$ is exhaust velocity at the nozzle exit (m/s). $p_e$ is exit pressure (Pa). $p_a$ is ambient pressure (Pa), zero in vacuum and 101 325 Pa at sea level on Earth. $A_e$ is nozzle exit area (m$^2$).
 - Assumptions: steady flow, uniform conditions across the exit plane, one-dimensional flow, and no external forces on the gas after it leaves the nozzle.
 
-Specific impulse, a measure of how efficiently a propellant makes thrust.
+**Specific impulse**, a measure of how efficiently a propellant makes thrust.
 
 $$
 I_{\mathrm{sp}} = \frac{F}{\dot m\, g_0} \qquad v_e = I_{\mathrm{sp}}\, g_0 \text{ when } p_e = p_a
@@ -66,7 +69,7 @@ $$
 - $A_t$ is throat area (m$^2$). $p_c$ is chamber pressure (Pa). $R$ is the specific gas constant (J/(kg K)), equal to the universal gas constant 8314.46 J/(kmol K) divided by the molar mass in kg/kmol. $T_c$ is chamber temperature (K). $\gamma$ is the ratio of specific heats (dimensionless).
 - Assumptions: ideal gas with constant $\gamma$, isentropic flow from chamber to throat, no friction or heat loss, and the throat flow exactly at Mach 1.
 
-Exit velocity for an ideal nozzle expansion.
+**Exit velocity** for an ideal nozzle expansion.
 
 $$
 v_e = \sqrt{\frac{2\gamma}{\gamma-1}\, R\, T_c \left[1 - \left(\frac{p_e}{p_c}\right)^{\frac{\gamma-1}{\gamma}}\right]}
@@ -74,7 +77,7 @@ $$
 
 - Assumptions: ideal gas with constant $\gamma$, isentropic expansion, no friction, and frozen composition (no further reactions in the nozzle). Real engines lose some speed to these effects, so this value is an upper bound.
 
-Area ratio and exit Mach number, from isentropic flow.
+**Area ratio** and exit Mach number, from isentropic flow.
 
 $$
 \frac{A_e}{A_t} = \frac{1}{M_e}\left[\frac{2}{\gamma+1}\left(1 + \frac{\gamma-1}{2} M_e^2\right)\right]^{\frac{\gamma+1}{2(\gamma-1)}}
@@ -83,7 +86,7 @@ $$
 - $M_e$ is the Mach number at the exit (dimensionless). The equation applies in the supersonic branch, where $M_e > 1$.
 - Assumptions: isentropic, ideal gas with constant $\gamma$, and one-dimensional flow.
 
-Structural mass fraction of a stage, which sets how much of the stage is structure.
+**Structural mass fraction** of a stage, which sets how much of the stage is structure.
 
 $$
 \varepsilon = \frac{m_s}{m_s + m_p}
@@ -92,7 +95,7 @@ $$
 - $m_s$ is the stage's dry structure mass (kg), without propellant. $m_p$ is the propellant mass (kg). $\varepsilon$ is dimensionless.
 - Assumptions: the engine mass is included in $m_s$, and the propellant is all usable.
 
-Solid propellant burn rate, an empirical law.
+Solid propellant **burn rate**, an empirical law.
 
 $$
 r = a\, p_c^{\,n}

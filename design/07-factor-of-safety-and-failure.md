@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A factor of safety (FoS) is the ratio of a part's strength to the stress it must carry in service, a margin that covers unknown loads, material variation, and manufacturing error. Engineers need it because no load, material, or process is ever exactly as predicted. A part fails when the stress in it is too high for the material. Engineers do not design to the edge of failure.
+A **factor of safety (FoS)** is the ratio of a part's strength to the stress it must carry in service, a margin that covers unknown loads, material variation, and manufacturing error. Engineers need it because no load, material, or process is ever exactly as predicted. A part fails when the stress in it is too high for the material. Engineers do not design to the edge of failure.
 **Prerequisites:** [Design process](01-design-process.md), [Statics](../physics/01-statics.md), [Axial and torsion](../physics/04-axial-and-torsion.md), [Mechanical properties](../materials/03-mechanical-properties.md)
 **Time:** 6-10 h
 
@@ -12,7 +12,7 @@ A factor of safety (FoS) is the ratio of a part's strength to the stress it must
 - **Yield strength** $S_y$ is the stress at which a ductile material starts to deform permanently. Typical steel values are a few hundred megapascals.
 - **Ultimate strength** $S_u$ is the highest stress the material reaches before breaking in a tension test.
 - **Ductile** materials, such as most structural steels, yield and stretch before breaking. **Brittle** materials, such as cast iron and glass, break with little warning.
-- **Factor of safety** is the ratio of a material's strength to the stress in the part. A design with FoS 2 can carry twice the stress before the chosen strength limit is reached.
+- Factor of safety is the ratio of a material's strength to the stress in the part. A design with FoS 2 can carry twice the stress before the chosen strength limit is reached.
 - **Failure criterion** is the rule that combines several stresses into one number to compare with a strength. Simple parts use one stress. Real parts often need a criterion.
 
 ## Choosing a factor of safety
@@ -41,13 +41,13 @@ $$
 n = \frac{S_y}{\sigma}
 $$
 
-Maximum shear stress for a plane state with principal stresses $\sigma_1$ and $\sigma_3$ (Tresca criterion):
+Maximum shear stress for a plane state with principal stresses $\sigma_1$ and $\sigma_3$ (**Tresca criterion**):
 
 $$
 \tau_{\max} = \frac{\sigma_1 - \sigma_3}{2}
 $$
 
-Von Mises equivalent stress for plane stress with normal stresses $\sigma_x$, $\sigma_y$ and shear $\tau_{xy}$:
+**Von Mises equivalent stress** for plane stress with normal stresses $\sigma_x$, $\sigma_y$ and shear $\tau_{xy}$:
 
 $$
 \sigma_{\text{vm}} = \sqrt{\sigma_x^2 - \sigma_x \sigma_y + \sigma_y^2 + 3\tau_{xy}^2}
@@ -142,6 +142,6 @@ $n = \dfrac{350}{117.9} = 2.97$.
 ## Go deeper
 
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: a free hub that includes mechanics of materials and stress analysis.
-- [OpenStax University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax at Rice University: free physics text for forces, equilibrium, and the basics behind stress.
+- [*OpenStax University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax at Rice University: free physics text for forces, equilibrium, and the basics behind stress.
 - [NIST, Metric (SI) program](https://www.nist.gov/pml/owm/metric-si) by NIST: official SI unit guidance, useful for keeping MPa, N, and mm consistent.
 - [Design reference](reference.md): the lookup sheet for this topic.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An RC circuit is a resistor and a capacitor working together. Its voltage changes over time along an exponential curve. An op-amp is a small amplifier chip that, with two resistors, sets its
+An **RC circuit** is a resistor and a capacitor working together. Its voltage changes over time along an exponential curve. An op-amp is a small amplifier chip that, with two resistors, sets its
 gain. Engineers use RC circuits for timing, filtering, and smoothing, and op-amps for
 sensor signal conditioning.
 
@@ -65,7 +65,9 @@ is reached in roughly $0.7\tau$, and $0.326 / 0.47 = 0.69$, which agrees.
 - **Op-amp oscillation.** Capacitive loads, long input leads, and high gain can add phase lag so the feedback turns positive and the circuit rings or oscillates. The sign is a high-frequency buzz on the output. A small series resistor at the output, a small feedback capacitor, and a decoupling capacitor close to each supply pin prevent it.
 - **Input offset and bias current.** A tiny input offset voltage or bias current times a large gain gives a large output error. The sign is a nonzero output with zero input. Use low-offset amplifiers or a trim.
 - **Noise pickup and ground loops.** Two ground connections at different potentials drive current through a shared path and inject hum into small signals, and long high-impedance inputs pick up electromagnetic interference. Shielded twisted cable, a single-point ground, and short input leads reduce both.
-- **Charged capacitor shock.** A large capacitor stays charged after power-off. Eliminate the hazard by discharging it, add a bleeder resistor as an engineering control, and use procedures and PPE after that. Under lockout/tagout, isolate and lock the supply, discharge stored energy, and prove zero voltage with a meter before touching the circuit.
+
+> [!WARNING]
+> **Charged capacitor shock.** A large capacitor stays charged after power-off. Eliminate the hazard by discharging it, add a bleeder resistor as an engineering control, and use procedures and PPE after that. Under lockout/tagout, isolate and lock the supply, discharge stored energy, and prove zero voltage with a meter before touching the circuit.
 
 ## Practice
 
@@ -100,10 +102,10 @@ is reached in roughly $0.7\tau$, and $0.326 / 0.47 = 0.69$, which agrees.
 
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
   by MIT: transient response and op-amp lectures with problem sets.
-- [Electronics, Wikibooks](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: the
+- [*Electronics*, Wikibooks](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: the
   transient analysis chapter covers RC circuits, and the chapter on operational amplifiers covers
   inverting amplifiers.
-- [University Physics Volume 2, Chapter 10](https://openstax.org/books/university-physics-volume-2/pages/10-introduction)
+- [*University Physics Volume 2*, Chapter 10](https://openstax.org/books/university-physics-volume-2/pages/10-introduction)
   by OpenStax: resistors and circuit analysis, a good base before RC circuits.
 - Previous: [Lesson 01, circuit basics](01-circuit-basics.md).
 - Next: [Lesson 03, mechatronics](06-mechatronics.md).

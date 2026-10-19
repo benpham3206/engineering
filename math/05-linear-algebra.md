@@ -2,18 +2,18 @@
 
 **Type:** lesson
 
-Linear algebra is the branch of mathematics that organizes many equations into one matrix equation, $\mathbf{K}\mathbf{u} = \mathbf{F}$. Engineers use it to solve truss and frame structures, circuit networks, and multi-degree-of-freedom vibration, and eigenvalues tell you natural frequencies and the stability of a system.
+**Linear algebra** is the branch of mathematics that organizes many equations into one matrix equation, $\mathbf{K}\mathbf{u} = \mathbf{F}$. Engineers use it to solve truss and frame structures, circuit networks, and multi-degree-of-freedom vibration, and eigenvalues tell you natural frequencies and the stability of a system.
 
 **Prerequisites:** [Algebra](01-algebra.md)
 **Time:** 30-40 h
 
 ## Core ideas
 
-- A vector is an ordered list of numbers. A matrix is a rectangular grid of numbers. A matrix times a vector gives a new vector.
+- A **vector** is an ordered list of numbers. A **matrix** is a rectangular grid of numbers. A matrix times a vector gives a new vector.
 - A system of linear equations, such as $2x + y = 5$ and $x - y = 1$, can be written as $\mathbf{A}\mathbf{x} = \mathbf{b}$. Solving it means finding $\mathbf{x}$.
-- The determinant $\det(\mathbf{A})$ is a single number that tells you whether $\mathbf{A}$ can be inverted. If $\det(\mathbf{A}) = 0$, the system has no unique solution. For a $2 \times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$, the determinant is $ad - bc$.
-- Gaussian elimination is the standard hand method: use row operations to reach an upper-triangular form, then back-substitute. Software uses a close relative (LU decomposition).
-- An eigenvector $\mathbf{v}$ of a square matrix $\mathbf{A}$ is a direction that the matrix only stretches, not rotates. The stretch factor $\lambda$ is the eigenvalue: $\mathbf{A}\mathbf{v} = \lambda\mathbf{v}$.
+- The **determinant** $\det(\mathbf{A})$ is a single number that tells you whether $\mathbf{A}$ can be inverted. If $\det(\mathbf{A}) = 0$, the system has no unique solution. For a $2 \times 2$ matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$, the determinant is $ad - bc$.
+- **Gaussian elimination** is the standard hand method: use row operations to reach an upper-triangular form, then back-substitute. Software uses a close relative (LU decomposition).
+- An **eigenvector** $\mathbf{v}$ of a square matrix $\mathbf{A}$ is a direction that the matrix only stretches, not rotates. The stretch factor $\lambda$ is the **eigenvalue**: $\mathbf{A}\mathbf{v} = \lambda\mathbf{v}$.
 - Eigenvalues give natural frequencies in vibration. For a system with mass matrix $\mathbf{M}$ and stiffness matrix $\mathbf{K}$, the natural frequencies $\omega$ satisfy $\det(\mathbf{K} - \omega^2\mathbf{M}) = 0$.
 - Stiffness matrices in structures are symmetric. Symmetric matrices have real eigenvalues, which is why natural frequencies come out real.
 - Structural rule of thumb: the stiffness matrix is built from element stiffnesses, and forces are the right-hand side. Fix the supports (remove rows and columns for fixed degrees of freedom) before solving.

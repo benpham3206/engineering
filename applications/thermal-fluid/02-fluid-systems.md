@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A fluid system is a set of pipes, ducts, and pumps that moves water, air, or oil from one place to another. A fluid system sized wrongly delivers too little flow or wastes pump power. Engineers size the pipe,
+A **fluid system** is a set of pipes, ducts, and pumps that moves water, air, or oil from one place to another. A fluid system sized wrongly delivers too little flow or wastes pump power. Engineers size the pipe,
 choose the pump, and check that the pressure stays in range. Three ideas cover most of the work:
 mass is conserved, energy is conserved along a streamline, and friction takes energy away.
 
@@ -70,6 +70,7 @@ water pipe at this speed.
 
 - **Cavitation.** When the local pressure drops below the vapor pressure, bubbles form and collapse against metal. The signs are a gravel noise, vibration, and pitted impellers. Keep the net positive suction head available above what the pump requires, with a margin, by raising the supply level, lowering suction losses, or reducing the temperature.
 - **Water hammer.** A valve that closes quickly stops a moving column of liquid, and the pressure spike can burst pipes or break supports. The signs are a bang and shaking pipes. Close valves slowly, add surge tanks or accumulators, and fit relief valves.
+
 - **Leaks.** Gaskets, seals, and threaded joints wear, corrode, and loosen. The sign is a drip, a stain, or a falling pressure. Choose compatible materials, tighten to specification, and inspect on schedule. A small leak can grow, so find it early.
 - **Erosion and corrosion.** High velocity, solids, and bubbles wear the pipe wall, especially at elbows and throttle points. Chemical attack thins the wall as well. The sign is thin walls on inspection. Limit the velocity, use harder or lined materials, and add a corrosion allowance.
 - **Blockage and clogging.** Debris, scale, or a closed valve restricts the flow, so the pressure drop rises and the flow falls. A strainer upstream of pumps and valves catches debris, and a differential pressure gauge across it shows when it needs cleaning.
@@ -77,6 +78,7 @@ water pipe at this speed.
 - **Overpressure.** A closed valve, a blocked line, or heating of trapped liquid raises pressure past the pipe rating. A relief valve set below the maximum allowable working pressure protects the system, and it must discharge to a safe place.
 - **Freezing.** Water expands when it freezes and splits pipes. Insulation, heat tracing, drains, and antifreeze prevent it.
 - **Stored pressure and spilled fluid.** A pressurized line can release a jet that injures or injects fluid through skin. Eliminate the hazard by depressurizing, substitute lower pressure or a safer fluid, add guards, relief valves, and shielding as engineering controls, then use procedures and training, and wear eye and face protection last. For maintenance, apply lockout/tagout: close and lock the isolation valves, bleed the pressure, drain the line, and verify zero pressure at a gauge before opening any joint.
+
 
 ## Practice
 
@@ -112,9 +114,9 @@ water pipe at this speed.
 
 ## Go deeper
 
-- [Fluid Mechanics, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors:
+- [*Fluid Mechanics*, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors:
   an open text on fluid statics and turbulent flow.
-- [University Physics Volume 1, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction)
+- [*University Physics Volume 1*, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction)
   by OpenStax: fluids, Pascal's principle, buoyancy, Bernoulli's equation, and viscosity.
 - Next: [Lesson 07, projects](../projects/01-project-ladder.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A build project is a hands-on exercise in which you make a piece of hardware and then measure and test it. Projects matter to engineers because they show whether a theory predicts what real hardware does, and a gap between the two is useful information.
+A **build project** is a hands-on exercise in which you make a piece of hardware and then measure and test it. Projects matter to engineers because they show whether a theory predicts what real hardware does, and a gap between the two is useful information.
 
 The ladder below starts with a
 first-year bench exercise and ends with a capstone. Each rung uses the skills from the rungs below it,
@@ -19,8 +19,10 @@ and each one has a clear goal and a check you can run yourself.
   works. "A good bridge" does not.
 - **Keep a log.** Record the date, the design change, the measured result, and the predicted result.
   Engineers reuse logs more than they reuse their memory.
-- **Safety first.** Check current limits, keep batteries and motors away from loose hair and clothing,
-  and wear eye protection for cutting, catapults, and fans.
+
+> [!WARNING]
+> **Safety first.** Check current limits, keep batteries and motors away from loose hair and clothing, and wear eye protection for cutting, catapults, and fans.
+
 - **One change at a time.** Change one variable per test, so you know what caused the result.
 
 ## The ladder

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Propagation of uncertainty is the method for finding how the uncertainties of measured inputs combine into the uncertainty of a result. Engineers need it, because a result is only as trustworthy as the uncertainties it was built from.
+**Propagation of uncertainty** is the method for finding how the uncertainties of measured inputs combine into the uncertainty of a result. Engineers need it, because a result is only as trustworthy as the uncertainties it was built from.
 
 Most results are calculated from several measured quantities, and each one carries its own uncertainty. Significant figures are the simpler rule for writing the result so it does not claim more precision than you have.
 
@@ -13,7 +13,7 @@ Most results are calculated from several measured quantities, and each one carri
 
 - An **input** is a measured quantity such as length $L$ or voltage $V$. Each input has a standard uncertainty $u(x)$.
 - A **result** is a function of the inputs, such as area $A = L \times W$. Its uncertainty comes from how the input uncertainties feed through the function.
-- If the inputs are **uncorrelated** (their errors do not depend on each other), their effects add in quadrature, which means the square root of the sum of squares. This is the root-sum-square (RSS) rule. NIST TN 1297 calls it the law of propagation of uncertainty and gives it as the standard way to combine uncertainty components.
+- If the inputs are **uncorrelated** (their errors do not depend on each other), their effects add in quadrature, which means the square root of the sum of squares. This is the **root-sum-square (RSS)** rule. NIST TN 1297 calls it the law of propagation of uncertainty and gives it as the standard way to combine uncertainty components.
 - RSS is smaller than a worst-case sum, which adds all errors in the same direction. The worst case is useful as a bound but usually too pessimistic for a best estimate.
 - **Significant figures** (sig figs) are the digits you actually know. For a result, keep digits that the uncertainty supports. A common rule: round the uncertainty to one or two significant figures, then round the value to the same decimal place.
 - For multiplication and division, the result keeps the same number of sig figs as the input with the fewest. For addition and subtraction, the result keeps the same number of decimal places as the input with the fewest.
@@ -86,7 +86,7 @@ Linear sum for a product, for comparison (not a guaranteed bound, since $u$ is a
 
 ## Go deeper
 
-- [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: section 5 and Appendix A give the RSS propagation law.
-- [University Physics Volume 1, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: significant figures and estimates in a physics context.
+- [*Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)*](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: section 5 and Appendix A give the RSS propagation law.
+- [*University Physics Volume 1*, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: significant figures and estimates in a physics context.
 - [Introduction to Probability and Statistics (18.05)](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/) by MIT OpenCourseWare: variance and the algebra behind independent-error addition.
 - [Measurement reference](reference.md): the lookup sheet for this topic.

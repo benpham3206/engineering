@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A mobile robot is a machine that moves itself across floors, yards, or warehouses. An engineer who designs one must get its position and path right, because a robot that loses track of where it is cannot do its job safely.
+A **mobile robot** is a machine that moves itself across floors, yards, or warehouses. An engineer who designs one must get its position and path right, because a robot that loses track of where it is cannot do its job safely.
 
 A mobile robot must know where it is, decide where to go, and drive its wheels to get there. This lesson covers the kinematics of the common wheeled base, how wheel encoders give odometry, the sensors that correct odometry, and the basic steps of navigation.
 
@@ -13,19 +13,19 @@ A mobile robot must know where it is, decide where to go, and drive its wheels t
 
 ### How it works
 
-A differential-drive robot has two driven wheels on a common axle and, usually, one or two passive casters. Each wheel turns at its own speed. When both wheels turn at the same speed, the robot drives straight. When one wheel is faster, the robot turns about a point on the axle line. The turning point sits on the axle, so the robot can also spin in place when the wheels turn in opposite directions.
+A **differential-drive robot** has two driven wheels on a common axle and, usually, one or two passive casters. Each wheel turns at its own speed. When both wheels turn at the same speed, the robot drives straight. When one wheel is faster, the robot turns about a point on the axle line. The turning point sits on the axle, so the robot can also spin in place when the wheels turn in opposite directions.
 
-Odometry estimates the robot's pose, which is its position and heading, from wheel motion. Each encoder counts wheel rotation. Those counts become wheel arc lengths, and the arc lengths become a change in pose. Odometry is accurate over short distances. Its errors add up with every step, because nothing in the sum corrects them.
+**Odometry** estimates the robot's **pose**, which is its position and heading, from wheel motion. Each encoder counts wheel rotation. Those counts become wheel arc lengths, and the arc lengths become a change in pose. Odometry is accurate over short distances. Its errors add up with every step, because nothing in the sum corrects them.
 
-Navigation adds three questions to odometry. Where am I? That is localization. What path leads to the goal? That is path planning. How do I drive the path while avoiding obstacles? That is control and obstacle avoidance. Localization usually fuses odometry with absolute measurements, such as a map match from a lidar scan.
+Navigation adds three questions to odometry. Where am I? That is **localization**. What path leads to the goal? That is **path planning**. How do I drive the path while avoiding obstacles? That is control and obstacle avoidance. Localization usually fuses odometry with absolute measurements, such as a map match from a lidar scan.
 
 ### Main parts
 
 - Drive wheels with motors and gearboxes. The motor torque must overcome rolling resistance, acceleration, and slopes. See [DC motors](../electrical/01-dc-motors.md) for torque and speed.
 - Encoders on each wheel or each motor shaft. A quadrature encoder reports both the count and the direction of rotation.
-- An inertial measurement unit (IMU) with a gyroscope and an accelerometer. The gyroscope measures turn rate, which helps heading estimates.
+- An **inertial measurement unit (IMU)** with a gyroscope and an accelerometer. The gyroscope measures turn rate, which helps heading estimates.
 - Range sensors: ultrasonic sensors, infrared distance sensors, bump switches, and cliff sensors.
-- Lidar, which scans a plane with a rotating laser and returns distances to nearby surfaces.
+- **Lidar**, which scans a plane with a rotating laser and returns distances to nearby surfaces.
 - A camera, which gives images for recognition and visual landmarks.
 - A controller that runs the odometry, the navigation software, and the motor loops.
 
@@ -129,7 +129,7 @@ print(x, y, th, ds/dt, dth/dt, ds/dth)   # 0.0201, 0.0001, 0.0101, 0.2011, 0.100
 
 ## History
 
-William Grey Walter built small light-seeking tortoise robots in Bristol, England, around 1948 and 1949. They used simple analog circuits, and they were among the first autonomous wheeled robots. The Stanford Research Institute built Shakey between about 1966 and 1972. Shakey used a camera, range sensors, and a planner to act in a room, and it is often cited as an early complete sense-plan-act system. The DARPA Grand Challenge in 2004 and 2005 drove a wave of outdoor autonomous vehicles, and the 2005 race was won by Stanford's Stanley. The consumer robot vacuum appeared in the early 2000s, and it brought wheeled odometry and bump sensing to millions of homes.
+William Grey Walter built small light-seeking tortoise robots in Bristol, England, around 1948 and 1949. They used simple analog circuits, and they were among the first autonomous wheeled robots. The Stanford Research Institute built *Shakey* between about 1966 and 1972. *Shakey* used a camera, range sensors, and a planner to act in a room, and it is often cited as an early complete sense-plan-act system. The DARPA Grand Challenge in 2004 and 2005 drove a wave of outdoor autonomous vehicles, and the 2005 race was won by Stanford's *Stanley*. The consumer robot vacuum appeared in the early 2000s, and it brought wheeled odometry and bump sensing to millions of homes.
 
 ## Practice
 
@@ -159,7 +159,7 @@ William Grey Walter built small light-seeking tortoise robots in Bristol, Englan
 
 ## Go deeper
 
-- [Robotics](https://en.wikibooks.org/wiki/Robotics), Wikibooks. Open text on robot sensors, localization, mapping, and trajectory planning, under a Creative Commons licence.
+- [*Robotics*](https://en.wikibooks.org/wiki/Robotics), Wikibooks. Open text on robot sensors, localization, mapping, and trajectory planning, under a Creative Commons licence.
 - [Introduction to Robotics (2.12)](https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/), MIT OpenCourseWare. Free lectures on planar kinematics and motion planning.
 - [Sensors in products](../electronics/05-sensors-in-products.md) for how encoders, IMUs, and range sensors work.
 - [Robot arms](01-robot-arms.md) for the kinematics of the manipulator arm, which shares the same ideas of frames and Jacobians.

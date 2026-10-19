@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-Principles that last are the laws of physics and the habits of good engineers that stay true across decades and generations. Engineers return to them because tools and materials keep changing while these do not.
+**Principles that last** are the laws of physics and the habits of good engineers that stay true across decades and generations. Engineers return to them because tools and materials keep changing while these do not.
 
 Tools change every few years. Materials change every few decades. These principles held for the people who built aqueducts, and they hold for the people building rockets now.
 
@@ -27,7 +27,7 @@ Tools change every few years. Materials change every few decades. These principl
 ## Design for the real world
 
 - **Simple beats clever.** Every part you remove can never fail, never wear, and never cost anything.
-- **Margins exist because you are uncertain.** A factor of safety is a measure of what you do not know about loads, materials, and use. Do not spend it on convenience.
+- **Margins exist because you are uncertain.** A **factor of safety** is a measure of what you do not know about loads, materials, and use. Do not spend it on convenience.
 - **Design for how it will fail.** Everything fails eventually. Good designs fail slowly, visibly, and safely, and give warning first.
 - **Design for the people who build, use, and fix it.** A design that cannot be made, inspected, or repaired is not finished.
 - **Changes need the same rigor as the original.** Many famous failures were not in the original design but in a small change that nobody re-analyzed.
@@ -59,7 +59,7 @@ Before you release a design, a calculation, or a report, ask:
 
 ## Example
 
-In 1999, the Mars Climate Orbiter was lost because one team's software produced thruster impulse in pound-force seconds while the navigation software expected newton seconds. The physics was right. The engineers were capable. A unit was missing from an interface, and nobody checked the number a second way. Nearly every principle on this page would have caught it: units on every number, an independent check, and honest reporting of the small trajectory discrepancies that appeared before the loss.
+In 1999, the *Mars Climate Orbiter* was lost because one team's software produced thruster impulse in pound-force seconds while the navigation software expected newton seconds. The physics was right. The engineers were capable. A unit was missing from an interface, and nobody checked the number a second way. Nearly every principle on this page would have caught it: units on every number, an independent check, and honest reporting of the small trajectory discrepancies that appeared before the loss.
 
 ## Practice
 
@@ -85,4 +85,4 @@ In 1999, the Mars Climate Orbiter was lost because one team's software produced 
 
 - [Failure cases and decision frameworks](reference.md): the failures behind these principles, in one table.
 - [Safety and risk](03-safety-and-risk.md) and [Ethics and professional responsibility](04-ethics-and-professional-responsibility.md) in this folder.
-- [Report of the Presidential Commission on the Space Shuttle Challenger Accident](https://www.nasa.gov/history/rogersrep/genindex.htm) by NASA, Volume 1: the official findings. Richard Feynman's appendix on reliability ends with one of the most quoted lines in engineering, about reality taking precedence over public relations.
+- [*Report of the Presidential Commission on the Space Shuttle Challenger Accident*](https://www.nasa.gov/history/rogersrep/genindex.htm) by NASA, Volume 1: the official findings. Richard Feynman's appendix on reliability ends with one of the most quoted lines in engineering, about reality taking precedence over public relations.

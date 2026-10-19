@@ -2,14 +2,14 @@
 
 **Type:** lesson
 
-A software solver is a program that does the arithmetic for an engineering model once you have written its equations. Engineers use solvers to handle calculations too large to do by hand. The hard part is still setting up the problem correctly, checking units, and knowing whether the answer is reasonable. This lesson shows how to hand the earlier lessons' problems to Python with NumPy and SciPy, and what to check afterward.
+A **software solver** is a program that does the arithmetic for an engineering model once you have written its equations. Engineers use solvers to handle calculations too large to do by hand. The hard part is still setting up the problem correctly, checking units, and knowing whether the answer is reasonable. This lesson shows how to hand the earlier lessons' problems to Python with NumPy and SciPy, and what to check afterward.
 
 **Prerequisites:** [Linear algebra](05-linear-algebra.md), [Numerical methods](08-numerical-methods.md), [Differential equations](06-differential-equations.md)
 **Time:** 10-20 h (plus setup)
 
 ## Core ideas
 
-- Python is free and widely used in engineering. NumPy provides arrays and linear algebra. SciPy provides integration, root finding, optimization, ODE solvers, and statistics.
+- **Python** is free and widely used in engineering. **NumPy** provides arrays and linear algebra. **SciPy** provides integration, root finding, optimization, ODE solvers, and statistics.
 - Install with `pip install numpy scipy`. Check the versions you have, because function names occasionally change between releases.
 - A solver is only as good as the model you give it. Write the equations on paper first, list the units, and only then type them in.
 - Keep units in comments or variable names, for example `F_N` for newtons and `L_m` for meters. Most engineering software errors are unit errors.

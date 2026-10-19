@@ -3,7 +3,7 @@
 **Type:** lesson
 **Verify:** strict
 
-A pump is a machine that adds energy to a liquid so that it flows through pipes, up a tower, or into a pressurized system. Engineers pick a pump by matching its curve to the system it serves, and a poor match wastes energy or destroys the pump.
+A **pump** is a machine that adds energy to a liquid so that it flows through pipes, up a tower, or into a pressurized system. Engineers pick a pump by matching its curve to the system it serves, and a poor match wastes energy or destroys the pump.
 
 **Prerequisites:** [Fluid systems](02-fluid-systems.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md)
 **Time:** 6-8 h
@@ -12,7 +12,7 @@ A pump is a machine that adds energy to a liquid so that it flows through pipes,
 
 ### How it works
 
-A pump moves liquid by one of two principles. A centrifugal pump spins an impeller. Liquid enters near the center, the vanes throw it outward, and it leaves the rim at high speed. A volute or diffuser then slows the liquid, and the lost kinetic energy turns into pressure. A positive displacement pump traps a fixed volume of liquid and pushes it forward. Gears, pistons, diaphragms, and peristaltic rollers all work this way.
+A pump moves liquid by one of two principles. A **centrifugal pump** spins an impeller. Liquid enters near the center, the vanes throw it outward, and it leaves the rim at high speed. A volute or diffuser then slows the liquid, and the lost kinetic energy turns into pressure. A **positive displacement pump** traps a fixed volume of liquid and pushes it forward. Gears, pistons, diaphragms, and peristaltic rollers all work this way.
 
 For a centrifugal pump, the head the impeller can add depends on the speed of the rim. The rim speed is $u = \omega r$, where $\omega$ is the shaft speed in rad/s and $r$ is the impeller radius in metres. The ideal head rises with the square of rim speed, so doubling the shaft speed quadruples the ideal head. Real head is lower because of friction, slip in the vanes, and leakage.
 
@@ -20,9 +20,9 @@ A positive displacement pump delivers a flow set almost entirely by its speed. E
 
 ### Pump curves and the operating point
 
-A pump curve plots head against flow at one speed. For a centrifugal pump, head falls as flow rises. Efficiency rises from zero at zero flow to a peak, then falls. The peak is the best efficiency point, and the pump should run near it.
+A pump curve plots head against flow at one speed. For a centrifugal pump, head falls as flow rises. Efficiency rises from zero at zero flow to a peak, then falls. The peak is the **best efficiency point**, and the pump should run near it.
 
-The system has its own curve. Static lift $z$ is the height the liquid must climb, and friction adds a loss that grows with the square of flow:
+The system has its own curve. **Static lift** $z$ is the height the liquid must climb, and friction adds a loss that grows with the square of flow:
 
 $$H_{sys} = z + k Q^2$$
 
@@ -30,9 +30,9 @@ Here $k$ in s$^2$/m$^5$ lumps the pipe length, diameter, and fittings into one n
 
 ### Cavitation and NPSH
 
-Cavitation happens when the local pressure in the liquid falls below its vapour pressure. Vapour bubbles form, then collapse violently in higher-pressure regions. The collapse causes noise, vibration, pitting of the impeller, and a drop in head.
+**Cavitation** happens when the local pressure in the liquid falls below its vapour pressure. Vapour bubbles form, then collapse violently in higher-pressure regions. The collapse causes noise, vibration, pitting of the impeller, and a drop in head.
 
-The net positive suction head available is the head that the system gives at the pump inlet above the vapour pressure:
+The **net positive suction head available** ($NPSH_a$) is the head that the system gives at the pump inlet above the vapour pressure:
 
 $$NPSH_a = \frac{p_a - p_v}{\rho g} + z_s - h_{fs}$$
 
@@ -40,7 +40,7 @@ Here $p_a$ is the pressure on the liquid surface in pascals, $p_v$ is the vapour
 
 ### Affinity laws
 
-Affinity laws predict how a pump changes when its speed or impeller changes, with the same liquid and the same efficiency:
+**Affinity laws** predict how a pump changes when its speed or impeller changes, with the same liquid and the same efficiency:
 
 $$\frac{Q_2}{Q_1} = \frac{N_2}{N_1}, \qquad \frac{H_2}{H_1} = \left(\frac{N_2}{N_1}\right)^2, \qquad \frac{P_2}{P_1} = \left(\frac{N_2}{N_1}\right)^3$$
 
@@ -135,7 +135,8 @@ Material choice trades cost against corrosion and abrasion. Cast iron and bronze
 
 **Dry running.** A pump with no liquid overheats its mechanical seal in seconds. Level switches and a run dry interlock prevent it.
 
-**Overpressure in positive displacement pumps.** These pumps push against any blockage. A relief valve on the discharge, sized for the pump, limits the pressure. Without one, a pipe or the pump casing can burst.
+> [!WARNING]
+> **Overpressure in positive displacement pumps.** These pumps push against any blockage. A relief valve on the discharge, sized for the pump, limits the pressure. Without one, a pipe or the pump casing can burst.
 
 **Air and vapour entrainment.** Air drawn through a suction leak or a vortex at a low tank level reduces the flow and causes cavitation. Vortex breakers and sealed suction lines prevent it.
 
@@ -199,8 +200,8 @@ expect(Vd * N, "0.24 L/s", ans=5)
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: fluid pressure, buoyancy, and Bernoulli's equation, the physics behind head and suction pressure.
-- [Fluid Mechanics, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors: an open text on fluid statics and control-volume analysis.
+- [*University Physics Volume 1*, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: fluid pressure, buoyancy, and Bernoulli's equation, the physics behind head and suction pressure.
+- [*Fluid Mechanics*, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors: an open text on fluid statics and control-volume analysis.
 - Related: [Fluid systems](02-fluid-systems.md) for the power and head basics, and [Compressors and fans](10-compressors-and-fans.md) for the same affinity logic applied to gas.
 - Related: [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md) for pumps as they drive machine actuators.
 - [Applications reference](../reference.md): the lookup sheet for this topic.

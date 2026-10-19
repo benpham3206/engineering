@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-The scientific revolution is the period from about 1600 to 1700 when scientists began to describe motion, falling bodies, and the heavens with measurements and mathematics rather than reasoning mainly from older authorities. Engineers today should know it because it gave them the pendulum clock, the balance spring, and the telescope, which made measurement repeatable. The longitude problem at sea forced a precise clock to be built, and that clock is still the model for reliable timing.
+The **scientific revolution** is the period from about 1600 to 1700 when scientists began to describe motion, falling bodies, and the heavens with measurements and mathematics rather than reasoning mainly from older authorities. Engineers today should know it because it gave them the pendulum clock, the balance spring, and the telescope, which made measurement repeatable. The longitude problem at sea forced a precise clock to be built, and that clock is still the model for reliable timing.
 
 **Prerequisites:** [Medieval and renaissance engineering](03-medieval-and-renaissance.md), [Trigonometry](../math/02-trigonometry.md), [Vibrations](../physics/13-vibrations.md)
 **Time:** 3-4 h
@@ -37,11 +37,11 @@ Measurement also spread to astronomy. Ole Rømer used the timing of eclipses of 
 
 ## Key equations
 
-The period of a simple pendulum for small swings is
+The period of a **simple pendulum** for small swings is
 
 $$T = 2\pi \sqrt{\frac{L}{g}}$$
 
-where $T$ is the period in seconds (s), $L$ is the length from pivot to bob centre in metres (m), and $g$ is gravitational acceleration in metres per second squared (m/s$^2$). The standard value is $g = 9.81\ \text{m/s}^2$, but $g$ changes with latitude, from about 9.78 at the equator to about 9.83 at the poles (typical values). A pendulum of fixed length therefore runs slightly differently at different places.
+where $T$ is the **period** in seconds (s), $L$ is the length from pivot to bob centre in metres (m), and $g$ is **gravitational acceleration** in metres per second squared (m/s$^2$). The standard value is $g = 9.81\ \text{m/s}^2$, but $g$ changes with latitude, from about 9.78 at the equator to about 9.83 at the poles (typical values). A pendulum of fixed length therefore runs slightly differently at different places.
 
 For larger swings, the period grows with amplitude. For a swing of half-angle $\theta_0$ in radians, the period is approximately
 
@@ -49,7 +49,7 @@ $$T \approx T_0 \left(1 + \frac{\theta_0^2}{16}\right)$$
 
 where $T_0$ is the small-swing period from the first equation. This correction is small for swings under a few degrees, which is why clock makers kept the arc small.
 
-Longitude is the angle east or west of a reference meridian. The Earth turns $360^\circ$ in 24 hours, so an offset in local time corresponds to an angle:
+**Longitude** is the angle east or west of a reference meridian. The Earth turns $360^\circ$ in 24 hours, so an offset in local time corresponds to an angle:
 
 $$\Delta\lambda = 15^\circ \times \Delta t_{\text{h}}$$
 
@@ -127,11 +127,11 @@ Galileo's work in Padua and Pisa set the pattern for measurement-based physics. 
 
 ## Common mistakes
 
-- **Myth: Galileo invented the pendulum clock.** Galileo noticed the constant period of a pendulum and proposed a clock. Huygens built the first working pendulum clock in 1656.
-- **Mistake: using Earth's $g = 9.81\ \text{m/s}^2$ everywhere.** Gravity varies with latitude by about half a percent. A precise clock must be calibrated at its location.
-- **Mistake: treating a clock error as a time error only.** A clock error in time becomes a position error at sea, at 15 degrees per hour of longitude.
-- **Mistake: assuming Newton worked alone.** The *Principia* built on Kepler, Galileo, Huygens, Hooke, and others, and Newton's debts to them are well documented.
-- **Mistake: assuming the pendulum period depends on the mass of the bob.** For an ideal simple pendulum, the period depends only on length and $g$.
+- Myth: Galileo invented the pendulum clock. Galileo noticed the constant period of a pendulum and proposed a clock. Huygens built the first working pendulum clock in 1656.
+- Mistake: using Earth's $g = 9.81\ \text{m/s}^2$ everywhere. Gravity varies with latitude by about half a percent. A precise clock must be calibrated at its location.
+- Mistake: treating a clock error as a time error only. A clock error in time becomes a position error at sea, at 15 degrees per hour of longitude.
+- Mistake: assuming Newton worked alone. The *Principia* built on Kepler, Galileo, Huygens, Hooke, and others, and Newton's debts to them are well documented.
+- Mistake: assuming the pendulum period depends on the mass of the bob. For an ideal simple pendulum, the period depends only on length and $g$.
 
 ## Go deeper
 

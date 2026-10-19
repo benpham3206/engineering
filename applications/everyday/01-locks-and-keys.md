@@ -2,9 +2,9 @@
 
 **Type:** lesson
 
-A lock is a mechanism that keeps a door, box, or machine closed until the right key or code releases it. Locks guard property and people, so their design must hold up against anyone who tries to open them without the key.
+A **lock** is a mechanism that keeps a door, box, or machine closed until the right key or code releases it. Locks guard property and people, so their design must hold up against anyone who tries to open them without the key.
 
-A pin tumbler lock stops the plug from turning until every pin stack sits at exactly the right height. The key sets those heights, and the number of possible heights sets how many keys a lock can have. An engineer who understands the counting can judge how much a lock resists guessing, and how much it resists picking, drilling, and bumping.
+A **pin tumbler lock** stops the plug from turning until every pin stack sits at exactly the right height. The key sets those heights, and the number of possible heights sets how many keys a lock can have. An engineer who understands the counting can judge how much a lock resists guessing, and how much it resists picking, drilling, and bumping.
 
 **Prerequisites:** [Algebra](../../math/01-algebra.md), [Probability and statistics](../../math/07-probability-and-statistics.md), [Tolerancing and stack-up](../../design/04-tolerancing-and-stack-up.md), [Axial and torsion](../../physics/04-axial-and-torsion.md)
 **Time:** 3-4 h
@@ -13,11 +13,11 @@ A pin tumbler lock stops the plug from turning until every pin stack sits at exa
 
 ### How it works
 
-A pin tumbler lock has a plug that rotates inside a fixed shell. Along the plug's length sits a row of pin stacks. Each stack has a key pin on the bottom and a driver pin on top, with a spring pushing the driver pin down.
+A pin tumbler lock has a plug that rotates inside a fixed shell. Along the plug's length sits a row of pin stacks. Each stack has a **key pin** on the bottom and a **driver pin** on top, with a spring pushing the driver pin down.
 
 With no key inserted, each stack crosses the boundary between plug and shell. The driver pin blocks the plug from turning. When the correct key is inserted, its cuts lift each key pin so that the boundary between key pin and driver pin lands exactly on the shear line, the gap between plug and shell. Every boundary sits on the shear line at once, so nothing crosses it and the plug turns.
 
-The key cut depth sets each pin height. A deeper cut lifts the key pin less, and a shallower cut lifts it more. Real locks use a small set of cut depths, typically around ten, spaced a few tenths of a millimetre apart.
+The key **cut depth** sets each pin height. A deeper cut lifts the key pin less, and a shallower cut lifts it more. Real locks use a small set of cut depths, typically around ten, spaced a few tenths of a millimetre apart.
 
 ### Main parts
 

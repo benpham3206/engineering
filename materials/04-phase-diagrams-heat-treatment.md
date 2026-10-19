@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A phase diagram is a map of which internal structure an alloy has at each temperature and composition, and heat treatment is the controlled heating and cooling that sets that structure on purpose. Engineers need both because the final structure sets the strength and toughness of the part.
+A **phase diagram** is a map of which internal structure an alloy has at each temperature and composition, and **heat treatment** is the controlled heating and cooling that sets that structure on purpose. Engineers need both because the final structure sets the strength and toughness of the part.
 
 **Prerequisites:** [Crystal structures and defects](02-crystal-structures-defects.md), [Mechanical properties](03-mechanical-properties.md), [Algebra](../math/01-algebra.md)
 **Time:** 8-10 h
@@ -11,7 +11,7 @@ A phase diagram is a map of which internal structure an alloy has at each temper
 
 - A **phase** is a region of a material with uniform structure and composition, such as liquid, a solid solution, or a compound.
 - A **component** is a chemical species that makes up the system, such as copper and nickel in a Cu-Ni alloy.
-- A **phase diagram** plots the stable phases against temperature and composition, at a fixed pressure (usually 1 atm).
+- A phase diagram plots the stable phases against temperature and composition, at a fixed pressure (usually 1 atm).
 - A **solid solution** has one crystal structure with two elements mixed in it. A **eutectic** is a composition that melts at a single lowest temperature and freezes into two solid phases together.
 - A **microstructure** is the arrangement of phases and grains you see under a microscope. Two alloys with the same composition can have different microstructures if they were cooled differently.
 
@@ -23,7 +23,7 @@ A phase diagram is a map of which internal structure an alloy has at each temper
 
 ### The lever rule
 
-In a two-phase region, the mass fraction of each phase is found by the lever rule. Draw a horizontal tie line through the alloy's composition. The fraction of one phase is the length of the arm on the opposite side, divided by the full tie line length.
+In a two-phase region, the mass fraction of each phase is found by the **lever rule**. Draw a horizontal tie line through the alloy's composition. The fraction of one phase is the length of the arm on the opposite side, divided by the full tie line length.
 
 ### Iron-carbon and steel
 

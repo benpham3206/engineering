@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Speakers and microphones are devices that convert between electrical signals and sound pressure. A badly matched speaker or microphone can make a sound system useless, so the choice must be made with care.
+**Speakers and microphones** are devices that convert between electrical signals and sound pressure. A badly matched speaker or microphone can make a sound system useless, so the choice must be made with care.
 
 Engineers need the force, motion, and pressure relations to size a speaker driver, pick a microphone, and set a level that is loud enough without distortion or hearing damage.
 
@@ -13,9 +13,9 @@ Engineers need the force, motion, and pressure relations to size a speaker drive
 
 ### How it works
 
-A dynamic loudspeaker has a coil of wire, the voice coil, sitting in the gap of a magnet. A current $I$ in the coil produces a force on it. The force is perpendicular to both the magnetic field and the wire. Because the coil is attached to a cone, the cone moves in and out and pushes the air. The moving air carries the pressure wave away as sound.
+A dynamic loudspeaker has a coil of wire, the **voice coil**, sitting in the gap of a magnet. A current $I$ in the coil produces a force on it. The force is perpendicular to both the magnetic field and the wire. Because the coil is attached to a cone, the cone moves in and out and pushes the air. The moving air carries the pressure wave away as sound.
 
-A dynamic microphone reverses the process. Sound pressure moves a diaphragm, which moves a coil in a magnet, and the moving coil produces a voltage. Both devices are transducers, because each converts one form of energy into another.
+A dynamic microphone reverses the process. Sound pressure moves a diaphragm, which moves a coil in a magnet, and the moving coil produces a voltage. Both devices are **transducers**, because each converts one form of energy into another.
 
 A condenser microphone uses a thin diaphragm close to a fixed plate. The two form a capacitor. Sound changes the gap, which changes the capacitance, and a bias voltage turns that change into a signal.
 
@@ -38,12 +38,12 @@ A condenser microphone uses a thin diaphragm close to a fixed plate. The two for
 
 ## Key equations
 
-- Lorentz force on the voice coil, with $B$ in tesla, wire length $l$ in metres, current $I$ in amperes, and force $F$ in newtons: $F = B\,l\,I$.
+- **Lorentz force** on the voice coil, with $B$ in tesla, wire length $l$ in metres, current $I$ in amperes, and force $F$ in newtons: $F = B\,l\,I$.
 - Newton's second law for the moving assembly, with mass $m$ in kilograms and acceleration $a$ in metres per second squared: $a = F / m$.
-- Motional emf in a microphone or in the back-emf of a speaker, with coil velocity $v$ in metres per second: $e = B\,l\,v$.
-- Sound pressure level, in decibels, with rms pressure $p$ in pascals and the reference pressure $p_0 = 20\ \mu\text{Pa}$: $L_p = 20 \log_{10}(p / p_0)$.
+- **Motional emf** in a microphone or in the back-emf of a speaker, with coil velocity $v$ in metres per second: $e = B\,l\,v$.
+- **Sound pressure level**, in decibels, with rms pressure $p$ in pascals and the reference pressure $p_0 = 20\ \mu\text{Pa}$: $L_p = 20 \log_{10}(p / p_0)$.
 - Acoustic intensity of a plane wave, in W/m$^2$: $I = p^2 / (\rho c)$, where $\rho = 1.2$ kg/m$^3$ is the density of air and $c = 343$ m/s is the speed of sound in air at about 20 °C (typical). The product $\rho c$ is about $412$ Pa s/m.
-- Acoustic efficiency, dimensionless: $\eta = P_{\mathrm{acoustic}} / P_{\mathrm{electrical}}$.
+- **Acoustic efficiency**, dimensionless: $\eta = P_{\mathrm{acoustic}} / P_{\mathrm{electrical}}$.
 
 Doubling the pressure raises the level by $20 \log_{10} 2 = 6.0$ dB. Doubling the acoustic power raises it by $10 \log_{10} 2 = 3.0$ dB.
 
@@ -79,7 +79,9 @@ Doubling the pressure raises the level by $20 \log_{10} 2 = 6.0$ dB. Doubling th
 - **Demagnetization.** Heat weakens a magnet. A coil that runs too hot for too long can cut the field permanently.
 - **Microphone wind noise and pop.** Moving air hits the diaphragm and creates a low rumble. A foam or mesh windscreen reduces it.
 - **Feedback.** A microphone near a speaker picks up the amplified sound, which loops and howls. Placement and gain limits fix it.
-- **Hearing damage.** NIOSH recommends a limit of 85 dBA over an eight-hour day as a protection level. Playing sound above that level for long periods risks permanent hearing loss.
+
+> [!WARNING]
+> **Hearing damage.** NIOSH recommends a limit of 85 dBA over an eight-hour day as a protection level. Playing sound above that level for long periods risks permanent hearing loss.
 
 ## History
 
@@ -113,8 +115,8 @@ Alexander Graham Bell patented the telephone in 1876, and its transmitter and re
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 17: sound waves, intensity, and the Doppler effect](https://openstax.org/books/university-physics-volume-1/pages/17-introduction) by OpenStax. Free, with the sound background used here.
-- [University Physics Volume 2, Chapter 11: magnetic force on a current-carrying conductor](https://openstax.org/books/university-physics-volume-2/pages/11-introduction) by OpenStax. Free, covering the force behind the voice coil.
-- [University Physics Volume 2, Chapter 13: electromagnetic induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax. Free, covering the emf that a moving coil produces.
+- [*University Physics Volume 1*, Chapter 17: sound waves, intensity, and the Doppler effect](https://openstax.org/books/university-physics-volume-1/pages/17-introduction) by OpenStax. Free, with the sound background used here.
+- [*University Physics Volume 2*, Chapter 11: magnetic force on a current-carrying conductor](https://openstax.org/books/university-physics-volume-2/pages/11-introduction) by OpenStax. Free, covering the force behind the voice coil.
+- [*University Physics Volume 2*, Chapter 13: electromagnetic induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax. Free, covering the emf that a moving coil produces.
 - Related lessons: [Circuit basics](../electronics/01-circuit-basics.md), which covers the amplifier circuits that drive speakers, and [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

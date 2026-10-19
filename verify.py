@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 TYPES = {"lesson", "reference", "philosophy", "data", "track"}
 ROOT_META = {"README.md", "ROADMAP.md", "AGENTS.md", "CLAUDE.md", "VERIFICATION.md", "LEVELS.md"}
+SKIP_DIRS = {"tests"}  # verifier test fixtures, some broken on purpose; tests/ runs them
 
 # Severity: gate fails anywhere; content fails in strict files and is debt elsewhere; advice never fails.
 GATE, CONTENT, ADVICE = "gate", "content", "advice"
@@ -668,6 +669,7 @@ AS_OF = re.compile(r"\(?as of (\d{4})\)?", re.I)
 APPROX = re.compile(r"(?i)\b(about|around|circa|c\.|approximately|roughly)\s")
 SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z*(\[])")
 PLAIN_MATH = re.compile(r"[A-Za-z0-9)\]]\^-?[A-Za-z0-9({]|\bsqrt\(|[\u0391-\u03a9\u03b1-\u03c9\u2264\u2265\u2248\u00b1\u00f7\u221a\u221e\u222b\u2211\u2202\u00d7\u2260]")
+LABEL_LINE = re.compile(r"^\*\*[A-Za-z][A-Za-z ,()-]*:\*\*")
 DEFINITION = re.compile(r"\b(is|are|was|were|means|refers to|describes)\b")
 EXAMPLE_LINE = re.compile(r"\b(Example|Worked check|Worked result)\b|\(computed\)")
 
@@ -767,7 +769,7 @@ def check_doc(doc, docs, data, out, stats, prereqs):
             add(0, "template", CONTENT, f"missing section ## {s}")
     if k in ("lesson", "device", "history", "philosophy"):
         first = next((l for n, l in enumerate(doc.lines[1:], 1) if l.strip() and n not in doc.code
-                      and not l.startswith(("**", "#", "<", "|", "-"))), "")
+                      and not LABEL_LINE.match(l) and not l.startswith(("#", "<", "|", "-", ">"))), "")
         if not DEFINITION.search(SENT_SPLIT.split(first)[0] if first else ""):
             add(0, "definition", CONTENT, "first sentence after the title must say what the topic is")
 
@@ -792,6 +794,7 @@ def check_doc(doc, docs, data, out, stats, prereqs):
 
     if k == "reference":
         check_reference_examples(doc, data, add, stats)
+        check_formula_entries(doc, data, add, stats)
 
     # blocks outside the places above still run
     for start, end, src in doc.blocks:
@@ -945,6 +948,118 @@ def check_reference_examples(doc, data, add, stats):
             stats.add("expects", len(blk.expects))
         scope = [t for m, l in doc.prose(a, b) for t in tokens(l)]
         presence(doc, blk, scope, add)
+
+
+FIELD_LABELS = ("Holds when:", "Breaks when:", "Source and basis:")
+VARIABLES_LABEL = "Variables:"
+UNIT_HEADER = re.compile(r"(?i)^si units?$")
+LIST_UNIT = re.compile(r"\[([^\[\]]+)\]\s*$")
+DIMENSIONLESS = {"dimensionless", "1"}
+DERIVED = re.compile(r"(?i)\bderived from\b")
+
+
+def unit_text(cell):
+    """A unit as written in a variables table ($\\text{N m}$, m$^{4}$, kg/m^3) in verifier syntax."""
+    s = cell.strip().replace("$", "")
+    s = re.sub(r"\\(?:text|mathrm)\{([^}]*)\}", r"\1", s)
+    for a, b in (("\\,", " "), ("\\ ", " "), ("\\cdot", " "), ("\u00b7", " "), ("\u00b5", "u"), ("\u03bc", "u"),
+                 ("\u2212", "-")):
+        s = s.replace(a, b)
+    s = re.sub(r"\^\{([^}]*)\}", r"^\1", s).replace("{", "").replace("}", "")
+    return " ".join(s.split())
+
+
+def unit_problem(cell, units):
+    """None if cell names an SI unit (optionally prefixed) or says dimensionless; else the reason."""
+    s = unit_text(cell)
+    if not s:
+        return "empty SI unit"
+    if s.lower() in DIMENSIONLESS:
+        return None
+    try:
+        qv = units.parse(s)
+    except VerifyError:
+        return f"unit {cell.strip()!r} is not defined in data/units.md"
+    exp = math.log10(qv.v) if qv.v > 0 else 0.5
+    if abs(exp - round(exp)) > 1e-9:
+        return f"unit {cell.strip()!r} is not SI (it is {qv.v:.6g} times the SI unit)"
+    return None
+
+
+def entries(doc):
+    """(start, end) of each heading's own text, up to the next heading of any level, plus the preamble."""
+    starts = [0] + [n for n, _, _ in doc.headings]
+    ends = [n for n, _, _ in doc.headings] + [len(doc.lines)]
+    return [(a, b) for a, b in zip(starts, ends) if a < b]
+
+
+def variables_problems(doc, a, b, units):
+    lines = [(n, l) for n, l in doc.prose(a, b)]
+    label = next((k for k, (n, l) in enumerate(lines) if l.startswith(VARIABLES_LABEL)), None)
+    if label is None:
+        return ["no Variables: table or list naming each symbol with its SI unit"]
+    rest = [(n, l) for n, l in lines[label + 1:]]
+    while rest and not rest[0][1].strip():
+        rest.pop(0)
+    out = []
+    if rest and rest[0][1].startswith("|"):
+        rows = []
+        for n, l in rest:
+            if not l.startswith("|"):
+                break
+            rows.append((n, [c.strip() for c in l.strip().strip("|").replace(r"\|", "\x00").split("|")]))
+        header = rows[0][1]
+        col = next((k for k, c in enumerate(header) if UNIT_HEADER.match(c)), None)
+        body = [(n, cells) for n, cells in rows[1:] if not all(re.fullmatch(r":?-+:?", c) for c in cells)]
+        if col is None:
+            return ["Variables: table has no SI unit column"]
+        if not body:
+            return ["Variables: table has no rows"]
+        for n, cells in body:
+            if not cells[0].strip():
+                out.append(f"line {n + 1}: variables row has no symbol")
+            p = unit_problem(cells[col] if col < len(cells) else "", units)
+            if p:
+                out.append(f"line {n + 1}: {p}")
+        return out
+    items = []
+    for n, l in rest:
+        if not l.startswith("- "):
+            break
+        items.append((n, l))
+    if not items:
+        return ["Variables: must be followed by a table or a bullet list"]
+    for n, l in items:
+        m = LIST_UNIT.search(l)
+        if not m:
+            out.append(f"line {n + 1}: variables item does not end with its SI unit in brackets, as [Pa]")
+            continue
+        p = unit_problem(m.group(1), units)
+        if p:
+            out.append(f"line {n + 1}: {p}")
+    return out
+
+
+def check_formula_entries(doc, data, add, stats):
+    """Each heading's text that holds display math must carry the reference-entry contract fields."""
+    for a, b in entries(doc):
+        eqs = [n for n, l in doc.prose(a, b) if n in doc.math or "$$" in l]
+        if not eqs:
+            continue
+        stats.add("formula-entries")
+        problems = variables_problems(doc, a, b, data.units)
+        prose = doc.prose(a, b)
+        for label in FIELD_LABELS:
+            hit = next((l for n, l in prose if l.startswith(label)), None)
+            if hit is None or not hit[len(label):].strip():
+                problems.append(f"no {label} line")
+            elif label == "Source and basis:" and not (LINK.search(hit) or DERIVED.search(hit)):
+                problems.append("Source and basis: gives no link to a derivation or claim and no 'derived from'")
+        title = next((t for n, _, t in doc.headings if n == a), "preamble")
+        for p in problems:
+            add(eqs[0], "formula-entry", CONTENT, f"section {title!r}: {p}")
+        if not problems:
+            stats.add("formula-entries-complete")
 
 
 def check_scans(doc, data, add, stats):
@@ -1107,7 +1222,8 @@ def main(argv=None):
 
     out = []
     data = Data(out)
-    files = sorted(p for p in ROOT.rglob("*.md") if ".git" not in p.parts)
+    files = sorted(p for p in ROOT.rglob("*.md")
+                   if ".git" not in p.parts and p.relative_to(ROOT).parts[0] not in SKIP_DIRS)
     docs = {p.resolve(): Doc(p) for p in files}
     stats, prereqs = Stats(), {}
     for p, doc in docs.items():
@@ -1161,6 +1277,8 @@ def main(argv=None):
     print(f"  practice answers        {pct(c.get('answers-verified', 0), c.get('answers', 0))} numeric answers verified")
     print(f"  printed numbers         {pct(c.get('numbers-checked', 0), c.get('numbers', 0))} in examples and answers")
     print(f"  verify blocks           {c.get('blocks', 0)} blocks, {c.get('expects', 0)} expects passing")
+    print(f"  formula entries         {pct(c.get('formula-entries-complete', 0), c.get('formula-entries', 0))} "
+          f"complete (reference sections with display math)")
     print(f"  dated or first-of claims {pct(c.get('claims-cited', 0), c.get('claims-found', 0))} cited (history scopes)")
     print(f"  citations               {c.get('citations', 0)} ({c.get('citations-verified', 0)} to checked claims)")
     print(f"  claims registry         {len(data.claims)} claims: " +

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Atomic structure is the arrangement of protons, neutrons, and electrons inside an atom, and bonding is the way atoms hold on to one another. Engineers need both because the stiffness, strength, and softness of every material come from these bonds. An engineer who knows why steel is stiff and rubber is soft can predict how a part will behave before building it.
+**Atomic structure** is the arrangement of protons, neutrons, and electrons inside an atom, and **bonding** is the way atoms hold on to one another. Engineers need both because the stiffness, strength, and softness of every material come from these bonds. An engineer who knows why steel is stiff and rubber is soft can predict how a part will behave before building it.
 
 **Prerequisites:** none
 **Time:** 6-8 h
@@ -10,10 +10,10 @@ Atomic structure is the arrangement of protons, neutrons, and electrons inside a
 ## Core ideas
 
 - An atom has a small, dense nucleus of protons and neutrons, surrounded by electrons.
-- The number of protons is the atomic number (Z). It sets which element you have.
-- Electrons sit in shells and subshells. Only the outermost ones, the valence electrons, take part in bonding.
+- The number of protons is the **atomic number (Z)**. It sets which element you have.
+- Electrons sit in shells and subshells. Only the outermost ones, the **valence electrons**, take part in bonding.
 - The periodic table groups elements by valence electron count. Elements in the same column tend to behave alike.
-- Electronegativity is a number that describes how strongly an atom pulls shared electrons toward itself. Fluorine and oxygen have high values. Sodium and magnesium have low values.
+- **Electronegativity** is a number that describes how strongly an atom pulls shared electrons toward itself. Fluorine and oxygen have high values. Sodium and magnesium have low values.
 
 Atoms bond because the combined system has lower energy than the separate atoms. Atoms reach a stable arrangement by sharing, giving up, or pooling their valence electrons. The bond type decides most of the material's basic character.
 
@@ -32,7 +32,7 @@ Atoms bond because the combined system has lower energy than the separate atoms.
 
 ## Key equations
 
-The attraction between two opposite charges is given by Coulomb's law. For an ion pair, the potential energy is
+The attraction between two opposite charges is given by **Coulomb's law**. For an ion pair, the potential energy is
 
 $$U = -\frac{k\, e^2}{r}$$
 
@@ -94,7 +94,7 @@ Electronegativity difference is a rough guide to bond character. A large differe
 
 ## Go deeper
 
-- [Chemistry 2e](https://openstax.org/books/chemistry-2e/pages/1-introduction) by OpenStax: free college chemistry textbook. Chapters 6 to 8 cover electron structure, periodic trends, and chemical bonding.
+- [*Chemistry 2e*](https://openstax.org/books/chemistry-2e/pages/1-introduction) by OpenStax: free college chemistry textbook. Chapters 6 to 8 cover electron structure, periodic trends, and chemical bonding.
 - [Introduction to Solid-State Chemistry](https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/) by MIT OpenCourseWare: how bonding and structure explain why solids behave as they do.
 - [Fundamentals of Materials Science](https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/) by MIT OpenCourseWare: structure, energetics, and bonding in engineering materials.
 - [Physics folder](../physics/README.md): forces and energy background that helps with Coulomb's law.

@@ -35,7 +35,7 @@ The README in each folder is a map of that folder, not a lesson.
 
 If you are **learning**, follow the [roadmap](ROADMAP.md): four years of lessons and projects, laid out like a mechanical engineering degree. To follow the SJSU mechanical engineering course sequence instead, use the [SJSU track](tracks/sjsu-mechanical-engineering.md).
 
-If you are **working**, go straight to the reference sheets in the table below.
+If you are **working**, go straight to the reference sheets in the table below, or start from the [formula spine](FORMULAS.md), which routes every level from arithmetic to advanced engineering to the sheet that owns each formula.
 
 ## Contents
 
@@ -52,6 +52,7 @@ If you are **working**, go straight to the reference sheets in the table below.
 | [problem-solving](problem-solving) | A repeatable method for new problems | [sheet](problem-solving/reference.md) |
 | [applications](applications) | How engineered things work, from refrigerators and gears to robots, rockets, and medical devices | [sheet](applications/reference.md) |
 | [history](history) | Engineering from the simple machines to semiconductors: eras, people, and great projects | [timeline](history/reference.md), [people](history/reference-people.md), [projects](history/reference-projects.md) |
+| [simulation](simulation) | Finite element analysis and computer models of physical systems, and how to check them | planned |
 | [reverse-engineering](reverse-engineering) | Taking things apart to learn how they work | [sheet](reverse-engineering/reference.md) |
 | [tools](tools) | Software, calculators, drafting, shop, and machinist tools | [sheet](tools/reference.md) |
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Checking units and limiting cases is the practice of testing a formula with dimensional analysis and with an extreme input value. Engineers need it because these two quick tests catch many wrong formulas before anyone trusts them.
+**Checking units and limiting cases** is the practice of testing a formula with dimensional analysis and with an extreme input value. Engineers need it because these two quick tests catch many wrong formulas before anyone trusts them.
 
 The first test is dimensional
 analysis. Every term in an equation must have the same units, and the final result must have

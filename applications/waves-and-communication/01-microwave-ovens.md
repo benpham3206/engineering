@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A microwave oven is a kitchen appliance that heats food with a 2.45 GHz electromagnetic wave. An engineer who designs or repairs one must get the heating pattern right, because uneven heating leaves cold spots in food.
+A **microwave oven** is a kitchen appliance that heats food with a 2.45 GHz electromagnetic wave. An engineer who designs or repairs one must get the heating pattern right, because uneven heating leaves cold spots in food.
 
 Water molecules in the food absorb energy from that wave and turn it into heat. An engineer needs the physics of the magnetron, the metal cavity, and the standing wave pattern, because those set how evenly food heats and how well the oven keeps the energy inside.
 
@@ -15,7 +15,7 @@ Water molecules in the food absorb energy from that wave and turn it into heat. 
 
 The oven moves energy through a chain of steps. A transformer and a high-voltage capacitor raise the mains voltage to a few kilovolts. The magnetron converts that electrical power into a microwave field at 2.45 GHz. A waveguide carries the field into the metal cavity, where the walls reflect it until the field fills the box as a standing wave pattern. Food in the cavity absorbs part of the field.
 
-Heating happens by dielectric loss. A water molecule has a permanent electric dipole, so the field pulls on it and tries to turn it. The field reverses about 2.45 billion times per second. The molecule cannot keep up, and its motion is damped by its neighbors. That damping turns energy into heat. Dissolved salt adds a second effect: ions drift back and forth in the field and heat the liquid.
+Heating happens by **dielectric loss**. A water molecule has a permanent electric dipole, so the field pulls on it and tries to turn it. The field reverses about 2.45 billion times per second. The molecule cannot keep up, and its motion is damped by its neighbors. That damping turns energy into heat. Dissolved salt adds a second effect: ions drift back and forth in the field and heat the liquid.
 
 The field loses strength as it enters food. Most of the heating happens in the outer one to two centimeters. The center warms afterward, by conduction from the outside.
 
@@ -48,7 +48,7 @@ Power absorbed per unit volume, in W/m$^3$, with $\varepsilon_0 = 8.85 \times 10
 
 $$p = 2\pi f\, \varepsilon_0\, \varepsilon''\, E^2$$
 
-Penetration depth, the distance over which the power falls to $1/e$:
+**Penetration depth**, the distance over which the power falls to $1/e$:
 
 $$d_p = \frac{\lambda_0}{2\pi\sqrt{2\varepsilon'}}\left[\sqrt{1+\left(\frac{\varepsilon''}{\varepsilon'}\right)^2}-1\right]^{-1/2}$$
 
@@ -56,7 +56,7 @@ Heat needed to warm food, with mass $m$ in kg, specific heat $c_p$ in J/(kg K), 
 
 $$Q = m\, c_p\, \Delta T$$
 
-Relaxation frequency of water, with relaxation time $\tau$ in seconds:
+**Relaxation frequency** of water, with relaxation time $\tau$ in seconds:
 
 $$f_r = \frac{1}{2\pi\tau}$$
 
@@ -79,7 +79,7 @@ $$f_r = \frac{1}{2\pi\tau}$$
 
 ## Design trade-offs
 
-- **Frequency.** 2.45 GHz magnetrons are cheap and produced in large numbers. The frequency sits in the industrial, scientific, and medical (ISM) band from 2.400 to 2.500 GHz. A lower frequency such as 915 MHz penetrates deeper but needs a bigger cavity.
+- **Frequency.** 2.45 GHz magnetrons are cheap and produced in large numbers. The frequency sits in the **industrial, scientific, and medical (ISM) band** from 2.400 to 2.500 GHz. A lower frequency such as 915 MHz penetrates deeper but needs a bigger cavity.
 - **Power and efficiency.** A typical home oven draws about 1.7 kW from the wall to make 1.0 kW of microwave output. That is about 59 percent overall, and the rest becomes waste heat in the magnetron and power supply.
 - **Even heating.** A stirrer, a turntable, or both spread the field. Mechanical parts add cost and wear, so some ovens use only one.
 - **Leakage and shielding.** The door screen must block microwaves while letting people see food. Gaps in the seal add cost and leak energy, so the design keeps every gap far smaller than the wavelength.
@@ -90,7 +90,9 @@ $$f_r = \frac{1}{2\pi\tau}$$
 - **Running empty.** With no food to absorb the power, most of it reflects back to the magnetron. Repeated reflection can damage the magnetron.
 - **Metal in the cavity.** Sharp metal edges concentrate the field and cause arcing. The warning sign is sparking.
 - **Superheated liquid.** Water heated in a smooth cup can rise above its boiling point and erupt when disturbed. The FDA reports serious scalds from this. Stirring the liquid partway through heating and heating in short bursts reduce the risk.
-- **Stored high voltage.** The high-voltage capacitor stays charged after unplugging. Only a trained technician should open the case.
+
+> [!WARNING]
+> **Stored high voltage.** The high-voltage capacitor stays charged after unplugging. Only a trained technician should open the case.
 
 ## History
 
@@ -140,7 +142,7 @@ Randall and Boot at the University of Birmingham developed the cavity magnetron 
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 16.5, The electromagnetic spectrum](https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum) by OpenStax. Where microwaves sit among the other electromagnetic waves.
+- [*University Physics Volume 2*, Chapter 16.5, The electromagnetic spectrum](https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum) by OpenStax. Where microwaves sit among the other electromagnetic waves.
 - [Microwave Ovens](https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens) by the U.S. Food and Drug Administration. Leakage limits and consumer safety guidance.
 - Next: [Radio and antennas](02-radio-and-antennas.md), which uses the same wave equations at lower frequencies.
 - [Applications reference](../reference.md): the lookup sheet for this topic.

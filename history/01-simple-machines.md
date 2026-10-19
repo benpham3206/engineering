@@ -2,20 +2,20 @@
 
 **Type:** lesson
 
-The six simple machines are the basic mechanical parts from which nearly every machine is built. Each one trades distance for force, and the ideal mechanical advantage tells an engineer exactly how much force it saves before friction takes its share.
+The six **simple machines** are the basic mechanical parts from which nearly every machine is built. Each one trades distance for force, and the ideal mechanical advantage tells an engineer exactly how much force it saves before friction takes its share.
 
 **Prerequisites:** none
 **Time:** 4-5 h
 
 ## Core ideas
 
-Every simple machine follows one rule. A machine cannot create energy, so when it multiplies force, it must move the point where the force acts over a longer distance. Force times distance stays the same, minus friction. Ideal mechanical advantage (IMA) is the ratio of the output force to the input force with no losses. It also equals the ratio of the input distance to the output distance.
+Every simple machine follows one rule. A machine cannot create energy, so when it multiplies force, it must move the point where the force acts over a longer distance. Force times distance stays the same, minus friction. **Ideal mechanical advantage (IMA)** is the ratio of the output force to the input force with no losses. It also equals the ratio of the input distance to the output distance.
 
 The six machines are the lever, the wheel and axle, the pulley, the inclined plane, the wedge, and the screw. Greek writers described these machines, and the six-machine list used today took shape from those sources during the Renaissance. Each machine below comes with its ideal mechanical advantage formula and a short sketch in words.
 
 ### Lever
 
-Picture a rigid bar that turns about a fixed point, called the fulcrum. The effort pushes on one end, and the load sits on the other end. The effort arm is the distance from the fulcrum to the effort. The load arm is the distance from the fulcrum to the load.
+Picture a rigid bar that turns about a fixed point, called the **fulcrum**. The effort pushes on one end, and the load sits on the other end. The **effort arm** is the distance from the fulcrum to the effort. The **load arm** is the distance from the fulcrum to the load.
 
 $$\text{IMA} = \frac{d_E}{d_L}$$
 
@@ -61,7 +61,7 @@ Here $L$ is the length of the slope on the long side in metres and $t$ is the th
 
 ### Screw
 
-Picture an inclined plane wrapped around a cylinder. Turning the screw by one full turn moves it forward by one pitch, the distance between neighbouring threads. A turning handle supplies the effort at a radius from the screw axis.
+Picture an inclined plane wrapped around a cylinder. Turning the screw by one full turn moves it forward by one **pitch**, the distance between neighbouring threads. A turning handle supplies the effort at a radius from the screw axis.
 
 $$\text{IMA} = \frac{2\pi R}{p}$$
 
@@ -69,9 +69,9 @@ Here $R$ is the handle radius in metres and $p$ is the pitch in metres. A handle
 
 ### Compound machines
 
-A compound machine connects two or more simple machines so the output of one feeds the input of the next. The ideal mechanical advantages multiply. Each stage multiplies the distance ratio of the stage before it, so the total ideal advantage is the product of the stage values.
+A **compound machine** connects two or more simple machines so the output of one feeds the input of the next. The ideal mechanical advantages multiply. Each stage multiplies the distance ratio of the stage before it, so the total ideal advantage is the product of the stage values.
 
-Friction makes the real advantage smaller. Each stage has an efficiency, the output work divided by the input work for that stage. The overall efficiency is the product of the stage efficiencies. A winch that drives a block and tackle gives the clearest example of this, and the worked example below shows the numbers.
+Friction makes the real advantage smaller. Each stage has an **efficiency**, the output work divided by the input work for that stage. The overall efficiency is the product of the stage efficiencies. A winch that drives a block and tackle gives the clearest example of this, and the worked example below shows the numbers.
 
 ## Key inventions
 
@@ -81,7 +81,7 @@ Friction makes the real advantage smaller. Each stage has an efficiency, the out
 | Date uncertain | Shaduf, a counterweighted lever for raising water | Mesopotamia and Egypt | Lifted water to fields with little effort. |
 | Third century BCE | Law of the lever and the compound pulley | Archimedes, Syracuse | Gave the first rigorous account of mechanical advantage. |
 | Third century BCE, traditionally | Screw for raising water | Attributed to Archimedes, Syracuse | Raised water continuously with a turning screw. |
-| First century CE | Written descriptions of machines and devices | Hero of Alexandria, Alexandria | The text of his Pneumatics survives and describes working devices in detail. |
+| First century CE | Written descriptions of machines and devices | Hero of Alexandria, Alexandria | The text of his *Pneumatics* survives and describes working devices in detail. |
 
 ## Key equations
 
@@ -165,8 +165,8 @@ The formulas stay the same in every machine, from a bicycle crank to a hydraulic
 
 ## Go deeper
 
-- [The Pneumatics of Hero of Alexandria](https://www.gutenberg.org/ebooks/77400), Project Gutenberg. Hero wrote about the first century CE, and the text describes working devices.
-- [The Ten Books on Architecture](https://www.gutenberg.org/ebooks/20239) by Vitruvius, Project Gutenberg. Book X of the treatise covers lifting machines.
+- [*The Pneumatics of Hero of Alexandria*](https://www.gutenberg.org/ebooks/77400), Project Gutenberg. Hero wrote about the first century CE, and the text describes working devices.
+- [*The Ten Books on Architecture*](https://www.gutenberg.org/ebooks/20239) by Vitruvius, Project Gutenberg. Book X of the treatise covers lifting machines.
 - [MIT OpenCourseWare](https://ocw.mit.edu/), free course materials from MIT, including engineering courses on mechanics.
 - Related lessons: [Statics](../physics/01-statics.md), [Elevators and cranes](../applications/machines-robots/05-elevators-and-cranes.md), [Conveyors and automation](../applications/machines-robots/06-conveyors-and-automation.md).
 - Next: [Ancient engineering](02-ancient-engineering.md).

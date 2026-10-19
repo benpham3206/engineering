@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Wind turbines are machines that take kinetic energy from moving air and turn it into electricity. A turbine's output is set by the wind speed and the size of its rotor, so every design starts from those two numbers.
+**Wind turbines** are machines that take kinetic energy from moving air and turn it into electricity. A turbine's output is set by the wind speed and the size of its rotor, so every design starts from those two numbers.
 
 Engineers need to understand them because the power in the wind rises with the cube of the wind speed, and no rotor can capture all of it.
 
@@ -23,7 +23,7 @@ The steps run in order:
 4. The generator makes alternating current. Power electronics convert it to the frequency and voltage of the grid.
 5. A controller adjusts the blade pitch and the yaw angle. It keeps the rotor facing the wind and limits the power in strong gusts.
 
-The air cannot stop completely behind the rotor. If it did, it would block the flow and the rotor would extract no power. The limit on how much power a rotor can take from the wind is the Betz limit, derived below.
+The air cannot stop completely behind the rotor. If it did, it would block the flow and the rotor would extract no power. The limit on how much power a rotor can take from the wind is the **Betz limit**, derived below.
 
 ### Main parts
 
@@ -48,7 +48,7 @@ Kinetic power in the wind, in watts, for air with cross-sectional area $A$ in sq
 
 $$P_{\mathrm{wind}} = \frac{1}{2} \rho A v^3$$
 
-where $\rho$ is the air density in kilograms per cubic metre (kg/m$^3$). At sea level on Earth and 15 °C, $\rho \approx 1.225\ \text{kg}/\text{m}^3$ (standard value). The swept area of a rotor of diameter $D$ in metres is $A = \pi D^2 / 4$.
+where $\rho$ is the air density in kilograms per cubic metre (kg/m$^3$). At sea level on Earth and 15 °C, $\rho \approx 1.225\ \text{kg}/\text{m}^3$ (standard value). The **swept area** of a rotor of diameter $D$ in metres is $A = \pi D^2 / 4$.
 
 Turbine output, in watts, with power coefficient $C_p$:
 
@@ -60,19 +60,19 @@ Betz limit, the largest possible power coefficient for an ideal actuator disk:
 
 $$C_{p,\mathrm{max}} = \frac{16}{27} \approx 0.593$$
 
-Tip speed ratio, a dimensionless measure of rotor speed:
+**Tip speed ratio**, a dimensionless measure of rotor speed:
 
 $$\lambda = \frac{\omega R}{v}$$
 
 where $\omega$ is the rotor angular speed in radians per second (rad/s) and $R$ is the rotor radius in metres (m). Modern turbines run at $\lambda$ of about 6 to 9 (typical value).
 
-Capacity factor, a dimensionless ratio of actual energy to the energy at full rated power for a year:
+**Capacity factor**, a dimensionless ratio of actual energy to the energy at full rated power for a year:
 
 $$\mathrm{CF} = \frac{E}{P_{\mathrm{rated}} \times 8760\ \text{h}}$$
 
 where $E$ is the annual energy in watt-hours (Wh) or kilowatt-hours (kWh), $P_{\mathrm{rated}}$ is the rated power in the same unit scale, and 8760 is the number of hours in a year.
 
-Derivation of the Betz limit. Let $a$ be the axial induction factor (dimensionless), the fractional slowdown of the air at the rotor. The air at the rotor moves at $v(1-a)$, and the wake far behind moves at $v(1-2a)$. The power extracted is $P = 2\rho A v^3 a (1-a)^2$. Setting $dP/da = 0$ gives $a = 1/3$. Then $P = \frac{8}{27} \rho A v^3$, and $C_p = P / (\frac{1}{2} \rho A v^3) = \frac{16}{27}$.
+Derivation of the Betz limit. Let $a$ be the **axial induction factor** (dimensionless), the fractional slowdown of the air at the rotor. The air at the rotor moves at $v(1-a)$, and the wake far behind moves at $v(1-2a)$. The power extracted is $P = 2\rho A v^3 a (1-a)^2$. Setting $dP/da = 0$ gives $a = 1/3$. Then $P = \frac{8}{27} \rho A v^3$, and $C_p = P / (\frac{1}{2} \rho A v^3) = \frac{16}{27}$.
 
 ## Worked example
 

@@ -2,7 +2,10 @@
 
 **Type:** lesson
 
-Ships and submarines are vessels that float on water or travel beneath its surface. A vessel that is poorly balanced can capsize at sea, which is why its shape must be designed with care.
+**Ships and submarines** are vessels that float on water or travel beneath its surface.
+
+> [!WARNING]
+> A vessel that is poorly balanced can capsize at sea, which is why its shape must be designed with care.
 
 A ship floats because the water it pushes aside weighs as much as the ship. It stays upright because its shape and weight distribution keep its center of buoyancy in the right place. Naval architects size hulls, check stability, and choose propulsion, and each of these choices changes the others.
 
@@ -13,11 +16,11 @@ A ship floats because the water it pushes aside weighs as much as the ship. It s
 
 ### How it works
 
-Archimedes' principle says a body in a fluid feels an upward buoyant force equal to the weight of the fluid it displaces. A ship sinks until the displaced water weighs the same as the ship. This is the displacement. For a ship in equilibrium, the buoyant force equals the weight, and the two forces act along the same vertical line.
+**Archimedes' principle** says a body in a fluid feels an upward buoyant force equal to the weight of the fluid it displaces. A ship sinks until the displaced water weighs the same as the ship. This is the **displacement**. For a ship in equilibrium, the buoyant force equals the weight, and the two forces act along the same vertical line.
 
-Stability is about rotation, not sinking. Two forces act on the hull. The weight acts at the center of gravity $G$. The buoyant force acts at the center of buoyancy $B$, which is the centroid of the submerged volume. When the ship heels, the shape of the submerged volume changes, and $B$ moves toward the low side. The buoyant force and the weight then form a couple that rights the ship if $G$ sits below the metacenter $M$. The metacenter is the point where the line of action of buoyancy crosses the centerline at small heel angles.
+Stability is about rotation, not sinking. Two forces act on the hull. The weight acts at the **center of gravity** $G$. The buoyant force acts at the **center of buoyancy** $B$, which is the centroid of the submerged volume. When the ship heels, the shape of the submerged volume changes, and $B$ moves toward the low side. The buoyant force and the weight then form a couple that rights the ship if $G$ sits below the metacenter $M$. The **metacenter** is the point where the line of action of buoyancy crosses the centerline at small heel angles.
 
-The metacentric height $\mathrm{GM}$ is the distance from $G$ up to $M$. A positive $\mathrm{GM}$ means the ship rights itself after a small heel. A negative $\mathrm{GM}$ means it capsizes. Designers aim for a $\mathrm{GM}$ large enough to resist heeling from wind, waves, and cargo, but not so large that the ship snaps back violently and stresses its structure.
+The **metacentric height** $\mathrm{GM}$ is the distance from $G$ up to $M$. A positive $\mathrm{GM}$ means the ship rights itself after a small heel. A negative $\mathrm{GM}$ means it capsizes. Designers aim for a $\mathrm{GM}$ large enough to resist heeling from wind, waves, and cargo, but not so large that the ship snaps back violently and stresses its structure.
 
 Propulsion overcomes the hull resistance. Water resistance grows with speed, so most of the power goes into overcoming drag at high speed. A propeller converts engine torque into thrust by accelerating water backward.
 
@@ -106,7 +109,7 @@ where $w$ is the moved weight in newtons, $d$ is the transverse distance in metr
 
 ## History
 
-Archimedes described the principle of buoyancy in the third century BC. Pierre Bouguer studied ship stability in the 18th century and developed the metacenter as the key stability point. David Bushnell built the Turtle in 1775, an early one-person submarine, and used it against a British warship in New York Harbor in 1776. Ships grew from wood to iron and then steel during the 19th century, which allowed larger, stronger hulls and watertight compartments.
+Archimedes described the principle of buoyancy in the third century BC. Pierre Bouguer studied ship stability in the 18th century and developed the metacenter as the key stability point. David Bushnell built the *Turtle* in 1775, an early one-person submarine, and used it against a British warship in New York Harbor in 1776. Ships grew from wood to iron and then steel during the 19th century, which allowed larger, stronger hulls and watertight compartments.
 
 ## Practice
 
@@ -138,7 +141,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook covering fluid statics and buoyancy. It is licensed CC BY-NC-SA.
+- [*University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook covering fluid statics and buoyancy. It is licensed CC BY-NC-SA.
 - [MIT OpenCourseWare](https://ocw.mit.edu/): free lecture notes, exams, and videos from MIT, with no registration required. Search for courses on ship hydrostatics and naval architecture.
 - Related: [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md), [Pumps](../thermal-fluid/09-pumps.md), [Pressure vessels and tanks](../structures/03-pressure-vessels-and-tanks.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

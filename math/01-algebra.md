@@ -2,21 +2,21 @@
 
 **Type:** lesson
 
-Algebra is the branch of mathematics that uses letters for unknown numbers and rules for solving equations. Engineers use it to rearrange formulas, solve for a required size or load, and check units before they trust a result.
+**Algebra** is the branch of mathematics that uses letters for unknown numbers and rules for solving equations. Engineers use it to rearrange formulas, solve for a required size or load, and check units before they trust a result.
 
 **Prerequisites:** none. High-school arithmetic and basic fractions are assumed.
 **Time:** 8-12 h
 
 ## Core ideas
 
-- A variable is a symbol for a number you do not know yet, or a number that can change.
-- An equation says two expressions are equal. Solving it means finding the values that make it true.
+- A **variable** is a symbol for a number you do not know yet, or a number that can change.
+- An **equation** says two expressions are equal. Solving it means finding the values that make it true.
 - Algebra works because whatever you do to one side, you do to the other. Add, subtract, multiply, or divide both sides by the same thing (except zero).
-- A function is a rule that takes an input and gives exactly one output. In engineering, the input is often a load, time, or temperature and the output is a stress, a deflection, or a temperature.
+- A **function** is a rule that takes an input and gives exactly one output. In engineering, the input is often a load, time, or temperature and the output is a stress, a deflection, or a temperature.
 - Units are algebra too. If you multiply newtons by meters, the result is joules. A formula that does not balance its units is wrong, even if the arithmetic is right.
 - Rearranging a formula is a skill of its own. A formula like $S = \frac{bh^2}{6}$ can be solved for $h$ once you isolate the squared term and take a square root.
-- A linear equation has the form $y = mx + c$. Its graph is a straight line, and $m$ is the slope (rate of change).
-- A quadratic equation has the form $ax^2 + bx + c = 0$. It can have two, one, or no real roots.
+- A **linear equation** has the form $y = mx + c$. Its graph is a straight line, and $m$ is the slope (rate of change).
+- A **quadratic equation** has the form $ax^2 + bx + c = 0$. It can have two, one, or no real roots.
 
 ## Key equations
 
@@ -82,7 +82,7 @@ A second, linear example: a spring reads 12 N at 10 mm of stretch and 30 N at 25
 
 ## Go deeper
 
-- [College Algebra 2e](https://openstax.org/books/college-algebra-2e/pages/1-introduction-to-prerequisites) by OpenStax: free textbook, chapter 1 reviews the prerequisites.
+- [*College Algebra 2e*](https://openstax.org/books/college-algebra-2e/pages/1-introduction-to-prerequisites) by OpenStax: free textbook, chapter 1 reviews the prerequisites.
 - [Algebra notes](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Paul's Online Math Notes: worked examples on equations, inequalities, and functions.
 - Next: [Trigonometry](02-trigonometry.md), which needs these skills for angles and right triangles.
 - [Math reference](reference.md): the lookup sheet for this topic.

@@ -20,6 +20,8 @@ Study order:
   - [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md): gear geometry, bolt preload, spring rate
 - [Design for manufacturing and assembly](10-design-for-manufacturing-and-assembly.md)
 - [Mechatronic systems](11-mechatronic-systems.md): sensors, actuators, control loops
+- [Bolted and welded joints](12-bolted-and-welded-joints.md): joint stiffness, preload sharing, weld groups, joint fatigue
+- [Lubrication and tribology](13-lubrication-and-tribology.md): friction, wear, lubrication regimes, journal bearings
 
 ## Reference
 

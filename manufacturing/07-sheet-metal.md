@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Sheet metal is thin, flat metal that is cut, bent, punched, and sometimes welded into 3D parts such as enclosures, brackets, ducts, and panels. Engineers use it because it is a common, low-cost way to make light parts in quantity, and a designer must plan the bends to get them right. The key challenge is that a bend changes the length of the material. If you add up the flat outside dimensions, the flat blank is wrong, so you need a rule for how much material the bend uses. That rule is bend allowance.
+**Sheet metal** is thin, flat metal that is cut, bent, punched, and sometimes welded into 3D parts such as enclosures, brackets, ducts, and panels. Engineers use it because it is a common, low-cost way to make light parts in quantity, and a designer must plan the bends to get them right. The key challenge is that a bend changes the length of the material. If you add up the flat outside dimensions, the flat blank is wrong, so you need a rule for how much material the bend uses. That rule is bend allowance.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Machining speeds and feeds](02-machining-speeds-and-feeds.md) (for the unit habits), [Algebra](../math/01-algebra.md)
 **Time:** 4-6 h
@@ -85,7 +85,7 @@ $$\text{BA} = 1.5708 \times 3.66 = 5.749 \text{ mm}$$
 
 ## Go deeper
 
-- [OpenStax University Physics Volume 1, Chapter 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax (Rice University): units and dimensional checks, useful for converting between mm and inches.
+- [OpenStax *University Physics Volume 1*, Chapter 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax (Rice University): units and dimensional checks, useful for converting between mm and inches.
 - [NIST: SI units](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST: the SI base units and how to express lengths consistently.
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: solving and rearranging simple formulas.
 - [Manufacturing reference](reference.md): the lookup sheet for this topic.

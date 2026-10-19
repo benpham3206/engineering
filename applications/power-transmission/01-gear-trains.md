@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A gear train is a set of meshing gears that passes power from one shaft to another, and the tooth count sets the speed and torque at the output. Designers pick the tooth form, the number of stages, and the losses, and each choice changes noise, size, and how the drive wears out.
+A **gear train** is a set of meshing gears that passes power from one shaft to another, and the tooth count sets the speed and torque at the output. Designers pick the tooth form, the number of stages, and the losses, and each choice changes noise, size, and how the drive wears out.
 
 **Prerequisites:** [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 4-6 h
@@ -13,7 +13,7 @@ A gear train is a set of meshing gears that passes power from one shaft to anoth
 
 A gear train is a chain of meshing gears. The driver's teeth push on the driven gear's teeth at the pitch circles, and the force they exchange sets the torque on each shaft. The basic speed ratio and the pitch formulas are in the [gears lesson](../../design/09-gears-fasteners-and-springs.md). This lesson adds the tooth forms, the stages, and the losses that the ideal ratio leaves out.
 
-The ratio of a train is the product of the ratios of its stages. A two-stage train with ratios 3 and 3 has a total ratio of 9. The output turns nine times slower than the input and carries nine times the torque, minus the losses. Power is conserved except for losses, so the output power is the input power times the efficiency.
+The **ratio** of a train is the product of the ratios of its stages. A two-stage train with ratios 3 and 3 has a total ratio of 9. The output turns nine times slower than the input and carries nine times the torque, minus the losses. Power is conserved except for losses, so the output power is the input power times the **efficiency**.
 
 An idler gear placed between two gears reverses the rotation direction without changing the ratio. Designers use idlers when the output must turn the same way as the input and the shafts cannot sit on the same axis.
 
@@ -124,7 +124,10 @@ For a worm with two starts, $p_x = 2\pi$ mm, and a 40 mm worm pitch diameter, th
 - **Wear and backlash growth.** Wear opens the clearance between teeth over time. The warning sign is a rattle or a rising play in a positioning axis.
 - **Misalignment.** A shaft that deflects or a housing that flexes puts the load on one edge of each tooth. Check the shaft deflection, as described in the [shafts lesson](../../design/08-shafts-and-bearings.md).
 
-Safety measures include oil or grease lubrication, sealed housings, guards around exposed gears, and torque limiters that slip before a gear breaks. A worm wheel of bronze is often specified because the bronze wears gently against steel and resists scuffing.
+> [!WARNING]
+> Safety measures include oil or grease lubrication, sealed housings, guards around exposed gears, and torque limiters that slip before a gear breaks.
+
+A worm wheel of bronze is often specified because the bronze wears gently against steel and resists scuffing.
 
 ## History
 
@@ -156,7 +159,7 @@ The Antikythera mechanism, a bronze device recovered from a shipwreck off the Gr
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 10 (rotational motion)](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: moment of inertia, torque, and power for rotating shafts, the physics behind every gear train.
+- [*University Physics Volume 1*, Chapter 10 (rotational motion)](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: moment of inertia, torque, and power for rotating shafts, the physics behind every gear train.
 - [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md): the module, pitch diameter, and center distance formulas that this lesson builds on.
 - [Planetary gears](02-planetary-gears.md): the same ratio idea with three moving members and the Willis equation.
 - [Belts and chains](03-belts-and-chains.md): the other way to pass power between shafts, with no teeth meshing.

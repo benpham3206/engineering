@@ -2,21 +2,22 @@
 
 **Type:** lesson
 
-Free engineering software is the set of no-cost programs that do the same jobs as paid engineering tools, such as CAD, simulation, spreadsheets, and programming. Knowing which free options exist lets a student or new engineer learn and work without a license budget.
+**Free engineering software** is the set of no-cost programs that do the same jobs as paid engineering tools, such as CAD, simulation, spreadsheets, and programming. Knowing which free options exist lets a student or new engineer learn and work without a license budget.
 
 You do not need expensive licenses to learn or do real engineering work. For almost every paid tool used in industry there is a free one that is capable enough for coursework, personal projects, and a lot of professional work. This lesson is a map of those tools, grouped by job.
 
-> **Dated material (as of 2026).** Software names, licenses, and free-plan terms change. The categories, the habits in Core ideas, and the open file formats will last much longer than any tool listed here. When a tool disappears, look for its replacement by job, not by name.
+> [!NOTE]
+> Dated material (as of 2026). Software names, licenses, and free-plan terms change. The categories, the habits in Core ideas, and the open file formats will last much longer than any tool listed here. When a tool disappears, look for its replacement by job, not by name.
 
 **Prerequisites:** none. Read [Starter kit](01-starter-kit.md) first if you have not set anything up yet.
 **Time:** 2-3 h to read and install the core set, then ongoing
 
 ## Core ideas
 
-- **Free does not always mean open source.** Open-source tools (FreeCAD, KiCad, OpenFOAM) are free for any use, forever. Free plans of commercial tools (Onshape, Fusion, SimScale, Ansys Student) have limits: non-commercial use only, public files, model size caps, or yearly renewal. Read the terms before you put real work in them.
-- **Learn the concept, not the button.** Every parametric CAD tool has sketches, constraints, features, and assemblies. Every FEA tool has geometry, mesh, material, loads, boundary conditions, solve, and post-process. Skills move between tools far better than people expect.
-- **Prefer open file formats.** Save neutral copies of your work: STEP for 3D CAD, DXF for 2D, STL or 3MF for printing, CSV for data, PDF for drawings and reports. A file you can only open in one program is a file you can lose.
-- **Pick one tool per job and get good at it.** Installing ten CAD programs teaches you less than building twenty parts in one.
+- Free does not always mean **open source**. Open-source tools (FreeCAD, KiCad, OpenFOAM) are free for any use, forever. Free plans of commercial tools (Onshape, Fusion, SimScale, Ansys Student) have limits: non-commercial use only, public files, model size caps, or yearly renewal. Read the terms before you put real work in them.
+- Learn the concept, not the button. Every parametric CAD tool has sketches, constraints, features, and assemblies. Every FEA tool has geometry, mesh, material, loads, boundary conditions, solve, and post-process. Skills move between tools far better than people expect.
+- Prefer open file formats. Save neutral copies of your work: STEP for 3D CAD, DXF for 2D, STL or 3MF for printing, CSV for data, PDF for drawings and reports. A file you can only open in one program is a file you can lose.
+- Pick one tool per job and get good at it. Installing ten CAD programs teaches you less than building twenty parts in one.
 
 ## The catalog
 

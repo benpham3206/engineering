@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A starter kit is the short list of tools and software that a self-taught engineer can get started with on a tight budget. Choosing it with care keeps your money and time on learning instead of on equipment you never open.
+A **starter kit** is the short list of tools and software that a self-taught engineer can get started with on a tight budget. Choosing it with care keeps your money and time on learning instead of on equipment you never open.
 
 Most of the list is free. The paid items are optional and you can skip them until a course or project needs them.
 

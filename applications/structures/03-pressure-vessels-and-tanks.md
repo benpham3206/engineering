@@ -2,7 +2,10 @@
 
 **Type:** lesson
 
-Pressure vessels and tanks are closed containers that hold gas or liquid, a pressure vessel at a pressure different from its surroundings. An engineer who designs one must size the wall so its stress stays within an allowable limit and test the finished vessel before use, because a vessel that fails under pressure can burst and injure people nearby.
+**Pressure vessels and tanks** are closed containers that hold gas or liquid, a pressure vessel at a pressure different from its surroundings.
+
+> [!WARNING]
+> An engineer who designs one must size the wall so its stress stays within an allowable limit and test the finished vessel before use, because a vessel that fails under pressure can burst and injure people nearby.
 
 A storage tank holds liquid at close to atmospheric pressure, and the liquid's weight loads its walls.
 
@@ -13,9 +16,9 @@ A storage tank holds liquid at close to atmospheric pressure, and the liquid's w
 
 ### How it works
 
-Internal pressure pushes outward on every part of the wall. In a cylinder, that push tries to split the wall along its length, which creates a stress around the circumference called the hoop stress. The same pressure also pulls the ends apart, which creates a smaller stress along the length. The wall must resist both. Because the hoop stress is larger, it usually sets the thickness.
+Internal pressure pushes outward on every part of the wall. In a cylinder, that push tries to split the wall along its length, which creates a stress around the circumference called the **hoop stress**. The same pressure also pulls the ends apart, which creates a smaller stress along the length. The wall must resist both. Because the hoop stress is larger, it usually sets the thickness.
 
-A thin wall has a thickness small compared with its radius, typically less than about one-tenth of the radius. In a thin wall, the stress is nearly uniform through the thickness, and simple formulas give accurate answers. A thick wall needs a different analysis, because the stress changes from the inner surface to the outer surface.
+A **thin wall** has a thickness small compared with its radius, typically less than about one-tenth of the radius. In a thin wall, the stress is nearly uniform through the thickness, and simple formulas give accurate answers. A thick wall needs a different analysis, because the stress changes from the inner surface to the outer surface.
 
 A storage tank works differently. The liquid pressure is $\rho g h$, and it grows with depth. The bottom ring carries the largest hoop stress, so the wall is thickest at the bottom and thinner toward the top.
 
@@ -71,7 +74,7 @@ where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surfa
 
 **Answer:** The plate must be at least $13.8\ \text{mm}$ thick, so a $14\ \text{mm}$ plate is chosen. The hoop stress is $85.7\ \text{MPa}$.
 
-**Sanity check:** The ratio $t / r = 0.014 / 0.6 = 0.023$ is well under 0.1, so the thin-wall formula is valid. The corrosion allowance is metal expected to be lost, so check the end-of-life wall too: $14 - 2 = 12$ mm gives $\sigma_h = 2.0\times10^6 \times 0.6 / 0.012 = 100$ MPa, against a weld-reduced allowable of $SE = 120 \times 0.85 = 102$ MPa. The margin at end of life is about 2 percent, which is what the design intended. The 85.7 MPa on the new wall is not spare margin. The longitudinal stress is half the hoop stress, which is $43\ \text{MPa}$, as expected for a closed cylinder.
+**Sanity check:** The ratio $t / r = 0.014 / 0.6 = 0.023$ is well under 0.1, so the thin-wall formula is valid. The **corrosion allowance** is metal expected to be lost, so check the end-of-life wall too: $14 - 2 = 12$ mm gives $\sigma_h = 2.0\times10^6 \times 0.6 / 0.012 = 100$ MPa, against a weld-reduced allowable of $SE = 120 \times 0.85 = 102$ MPa. The margin at end of life is about 2 percent, which is what the design intended. The 85.7 MPa on the new wall is not spare margin. The longitudinal stress is half the hoop stress, which is $43\ \text{MPa}$, as expected for a closed cylinder.
 
 ## Design trade-offs
 
@@ -124,11 +127,11 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 - Using the diameter in the hoop stress formula instead of the radius. The formula needs $r$, and a diameter doubles the answer.
 - Applying the thin-wall formula to a thick wall. Check $t/r$ first. Above about 0.1, use the thick-wall analysis.
 - Forgetting the corrosion allowance and the joint efficiency. The nominal plate thickness alone often falls short of the code requirement.
-- Using gauge pressure in one place and absolute pressure in another. Stress from internal pressure uses gauge pressure, the difference from the surroundings.
+- Using gauge pressure in one place and absolute pressure in another. Stress from internal pressure uses **gauge pressure**, the difference from the surroundings.
 - Assuming a hydrostatic test proves the vessel is safe for all time. The test checks the vessel at one moment, and corrosion, fatigue, and cracks develop later.
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: pressure, hydrostatic pressure, and fluid behavior in tanks.
+- [*University Physics Volume 1*, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: pressure, hydrostatic pressure, and fluid behavior in tanks.
 - Related lessons: [Fluid systems](../thermal-fluid/02-fluid-systems.md), [Piping and valves](../thermal-fluid/12-piping-and-valves.md), [Bridges](01-bridges.md), [Buildings and skyscrapers](02-buildings-and-skyscrapers.md), [Dams](05-dams.md).
 - Background on stress: [Axial and torsion](../../physics/04-axial-and-torsion.md) and [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md).

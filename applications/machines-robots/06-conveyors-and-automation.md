@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Conveyors and automation are the belts, rollers, and control logic that move and sort material along a production line. An engineer who designs a line must get the drive and control logic right, because an undersized drive or a poor fault response stops the whole line.
+**Conveyors and automation** are the belts, rollers, and control logic that move and sort material along a production line. An engineer who designs a line must get the drive and control logic right, because an undersized drive or a poor fault response stops the whole line.
 
 An engineer sizes the drive for speed, throughput, and power, and designs the control logic so that a fault stops the line safely.
 
@@ -77,7 +77,7 @@ belt speed $v$:
 
 $$\dot{m} = \lambda v$$
 
-Rolling resistance force for total load weight $W = m g$ in newtons (N), with the rolling resistance
+**Rolling resistance** force for total load weight $W = m g$ in newtons (N), with the rolling resistance
 coefficient $\mu_r$ (dimensionless, typical value about 0.03 for a belt on steel rollers). The formula
 assumes a level section with no slope and a load that rolls, not slides:
 
@@ -98,15 +98,15 @@ $$P_{\text{in}} = \frac{P_{\text{horiz}} + P_{\text{lift}}}{\eta}$$
 
 ## Ladder logic basics
 
-Ladder logic draws a control circuit as rungs between two vertical power rails. The PLC scans each
+**Ladder logic** draws a control circuit as rungs between two vertical power rails. The PLC scans each
 rung from left to right, top to bottom. Four elements make up nearly every rung.
 
-- Normally open contact: it is true when its input is on, and false when its input is off.
-- Normally closed contact: it is true when its input is off, and false when its input is on.
+- **Normally open contact**: it is true when its input is on, and false when its input is off.
+- **Normally closed contact**: it is true when its input is off, and false when its input is on.
 - Coil: an output. It turns on when the conditions to its left are true.
 - Timer and counter: a timer turns on its output after a set delay, and a counter counts events.
 
-A seal-in circuit keeps a motor running after the start button is released. The motor's own contact
+A **seal-in circuit** keeps a motor running after the start button is released. The motor's own contact
 sits in parallel with the start contact, so either one keeps the coil on. The stop contact sits in
 series, so pressing stop breaks the path.
 
@@ -258,7 +258,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [Robotics, Wikibooks](https://en.wikibooks.org/wiki/Robotics) by Wikibooks contributors: sensors and
+- [*Robotics*, Wikibooks](https://en.wikibooks.org/wiki/Robotics) by Wikibooks contributors: sensors and
   actuators, which drive the conveyor and the automation layer.
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
   by MIT: circuit fundamentals behind the sensor and control wiring.

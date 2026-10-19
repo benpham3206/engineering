@@ -2,19 +2,19 @@
 
 **Type:** lesson
 
-Numerical methods are step-by-step procedures that replace an exact answer with a sequence of approximations that you can carry out, check, and stop when the error is small enough. Many engineering equations cannot be solved by hand, so engineers use numerical methods for root finding, integrals without closed forms, and differential equations solved over time.
+**Numerical methods** are step-by-step procedures that replace an exact answer with a sequence of approximations that you can carry out, check, and stop when the error is small enough. Many engineering equations cannot be solved by hand, so engineers use numerical methods for root finding, integrals without closed forms, and differential equations solved over time.
 
 **Prerequisites:** [Single-variable calculus](03-single-variable-calculus.md), [Differential equations](06-differential-equations.md), [Linear algebra](05-linear-algebra.md)
 **Time:** 30-40 h
 
 ## Core ideas
 
-- A root is a value $x$ where $f(x) = 0$. Root finding searches for it.
-- Bisection is the safest root method. Keep an interval $[a, b]$ where $f(a)$ and $f(b)$ have opposite signs, then halve it. It always converges, but slowly: each step gains about one binary digit of accuracy.
-- Newton's method uses the tangent line. Starting from a guess $x_0$, the next guess is $x_{n+1} = x_n - f(x_n)/f'(x_n)$. It converges very fast near the root, but can fail if the starting guess is poor or $f'$ is near zero.
-- Numerical integration replaces an integral with a weighted sum. The trapezoidal rule uses straight segments. Simpson's rule uses parabolas and is more accurate for the same number of points.
-- Truncation error comes from the method itself, for example from replacing a curve with a straight line. Round-off error comes from storing numbers with finite digits. Both matter, and you should know which one dominates.
-- Euler's method solves $y' = f(t, y)$ by stepping forward with $y_{n+1} = y_n + h\,f(t_n, y_n)$. It is simple and first-order accurate: halving the step size roughly halves the error. Higher-order methods such as Runge-Kutta are better in practice.
+- A **root** is a value $x$ where $f(x) = 0$. Root finding searches for it.
+- **Bisection** is the safest root method. Keep an interval $[a, b]$ where $f(a)$ and $f(b)$ have opposite signs, then halve it. It always converges, but slowly: each step gains about one binary digit of accuracy.
+- **Newton's method** uses the tangent line. Starting from a guess $x_0$, the next guess is $x_{n+1} = x_n - f(x_n)/f'(x_n)$. It converges very fast near the root, but can fail if the starting guess is poor or $f'$ is near zero.
+- Numerical integration replaces an integral with a weighted sum. The **trapezoidal rule** uses straight segments. Simpson's rule uses parabolas and is more accurate for the same number of points.
+- **Truncation error** comes from the method itself, for example from replacing a curve with a straight line. **Round-off error** comes from storing numbers with finite digits. Both matter, and you should know which one dominates.
+- **Euler's method** solves $y' = f(t, y)$ by stepping forward with $y_{n+1} = y_n + h\,f(t_n, y_n)$. It is simple and first-order accurate: halving the step size roughly halves the error. Higher-order methods such as Runge-Kutta are better in practice.
 - Convergence check: refine the step or the grid and see whether the answer changes. If halving $h$ changes the answer by less than your tolerance, you can trust it.
 
 ## Key equations

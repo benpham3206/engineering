@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A laser is an optical amplifier inside a resonator. It emits a narrow, nearly parallel beam of light at one wavelength, and the light waves stay in step with each other. An engineer needs stimulated emission and beam behavior to choose a laser for cutting, measuring, or communication, and to handle one without injury.
+A **laser** is an optical amplifier inside a resonator. It emits a narrow, nearly parallel beam of light at one wavelength, and the light waves stay in step with each other. An engineer needs stimulated emission and beam behavior to choose a laser for cutting, measuring, or communication, and to handle one without injury.
 
 **Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md)
 **Time:** 4-6 h
@@ -11,9 +11,9 @@ A laser is an optical amplifier inside a resonator. It emits a narrow, nearly pa
 
 ### How it works
 
-An atom can sit in an excited energy level. It can drop to a lower level on its own, which is spontaneous emission, and it emits a photon at random. A photon that passes near an excited atom can also trigger it to drop and emit a second photon. The new photon matches the first in direction, frequency, and phase. This is stimulated emission.
+An atom can sit in an excited energy level. It can drop to a lower level on its own, which is **spontaneous emission**, and it emits a photon at random. A photon that passes near an excited atom can also trigger it to drop and emit a second photon. The new photon matches the first in direction, frequency, and phase. This is **stimulated emission**.
 
-Normally most atoms sit in the lower level, and they absorb more light than they emit. A pump, which is electrical or optical energy, must move more atoms into the upper level than the lower one. This condition is called population inversion. In that state, stimulated emission beats absorption, and the medium amplifies light.
+Normally most atoms sit in the lower level, and they absorb more light than they emit. A pump, which is electrical or optical energy, must move more atoms into the upper level than the lower one. This condition is called **population inversion**. In that state, stimulated emission beats absorption, and the medium amplifies light.
 
 Two mirrors form an optical cavity around the gain medium. Light bounces back and forth through the medium and grows with each pass. One mirror transmits a small fraction of the light, and that fraction is the output beam. When the gain exceeds the losses, the laser starts emitting.
 
@@ -43,7 +43,7 @@ Half-angle divergence of a Gaussian beam, with waist radius $w_0$ in metres (the
 
 $$\theta = \frac{\lambda}{\pi w_0}$$
 
-Rayleigh range, the distance over which the beam radius grows by $\sqrt{2}$:
+**Rayleigh range**, the distance over which the beam radius grows by $\sqrt{2}$:
 
 $$z_R = \frac{\pi w_0^2}{\lambda}$$
 
@@ -51,7 +51,7 @@ Intensity at a focused spot, with power $P$ in watts and spot area $A$ in m$^2$,
 
 $$I = \frac{P}{A}$$
 
-Coherence length, with bandwidth $\Delta\lambda$ in metres. It sets how far apart two points on the beam can be and still interfere:
+**Coherence length**, with bandwidth $\Delta\lambda$ in metres. It sets how far apart two points on the beam can be and still interfere:
 
 $$L_c = \frac{\lambda^2}{\Delta\lambda}$$
 
@@ -85,7 +85,10 @@ $$L_c = \frac{\lambda^2}{\Delta\lambda}$$
 - **Dirty or damaged optics.** Dust and scratches absorb light and heat up. The optic can crack, and output drops. Warning signs are falling power and scorch marks. Cleaning on a schedule and power monitors catch the problem early.
 - **Back reflection into a diode.** Light reflected from the work travels back into a laser diode and can damage it. Optical isolators block the return path.
 - **Overheating.** Insufficient cooling raises the medium's temperature. Diode wavelength shifts, and output falls. Temperature sensors and interlocks stop the laser before damage.
-- **Eye injury.** Direct and specular reflections can injure the eye. Invisible wavelengths such as 1064 nm and 10.6 $\mu$m give no visible warning. Enclosures, interlocks, and goggles rated for the wavelength exist because of this.
+
+> [!WARNING]
+> **Eye injury.** Direct and specular reflections can injure the eye. Invisible wavelengths such as 1064 nm and 10.6 $\mu$m give no visible warning. Enclosures, interlocks, and goggles rated for the wavelength exist because of this.
+
 - **Gradual aging.** Diode output falls slowly over thousands of hours. Power monitoring lets operators replace a laser before the job suffers.
 
 ## History
@@ -136,7 +139,7 @@ Einstein described stimulated emission in 1917. Charles Townes and Arthur Schawl
 
 ## Go deeper
 
-- [University Physics Volume 3, Chapter 8.6, Lasers](https://openstax.org/books/university-physics-volume-3/pages/8-6-lasers) by OpenStax. Stimulated emission, population inversion, and laser applications.
+- [*University Physics Volume 3*, Chapter 8.6, Lasers](https://openstax.org/books/university-physics-volume-3/pages/8-6-lasers) by OpenStax. Stimulated emission, population inversion, and laser applications.
 - [Frequently Asked Questions About Lasers](https://www.fda.gov/radiation-emitting-products/laser-products-and-instruments/frequently-asked-questions-about-lasers) by the U.S. Food and Drug Administration. Hazard classes and laser safety guidance.
 - Related: [Radio and antennas](02-radio-and-antennas.md), which uses the same wavelength and energy ideas at radio frequencies.
 - [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Shop safety is the first skill in manufacturing because every other skill depends on it. A machine that can cut metal can also cut a hand, pull in a sleeve, or throw a chip into an eye. An engineer who designs parts also needs to know how they get made safely.
+**Shop safety** is the first skill in manufacturing because every other skill depends on it. A machine that can cut metal can also cut a hand, pull in a sleeve, or throw a chip into an eye. An engineer who designs parts also needs to know how they get made safely.
 
 **Prerequisites:** none
 **Time:** 3-5 h
@@ -23,9 +23,11 @@ Most shop injuries come from a small set of causes:
 - Stored energy: springs, hydraulic pressure, raised weights, and charged capacitors.
 - Noise, fumes, dust, and hot surfaces that cause slow damage you do not feel at once.
 
-Guards are fixed barriers or interlocked covers that keep hands and parts out of the danger zone. A guard you remove "for a quick look" is a broken control. Interlocks stop a machine when a guard opens. Emergency stops must be reachable without reaching into the hazard.
+> [!WARNING]
+> **Guards** are fixed barriers or interlocked covers that keep hands and parts out of the danger zone. A guard you remove "for a quick look" is a broken control. **Interlocks** stop a machine when a guard opens. Emergency stops must be reachable without reaching into the hazard.
 
-Noise is a good example of a slow hazard. OSHA sets an action level of 85 decibels averaged over an 8-hour day, above which a hearing conservation program is required. Hearing loss does not hurt, so people skip protection. Use earplugs whenever the machine is running.
+> [!WARNING]
+> Noise is a good example of a slow hazard. OSHA sets an **action level** of 85 decibels averaged over an 8-hour day, above which a hearing conservation program is required. Hearing loss does not hurt, so people skip protection. Use earplugs whenever the machine is running.
 
 ## Checklist
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A sanity check is a quick test of whether a result could be true. Engineers need it because it catches most arithmetic slips, misplaced decimal points, and sign errors before a number is reported.
+A **sanity check** is a quick test of whether a result could be true. Engineers need it because it catches most arithmetic slips, misplaced decimal points, and sign errors before a number is reported.
 
 A sanity check does not prove the answer is right. Three quick checks cover most cases: order of magnitude, sign, and physical intuition.
 

@@ -2,22 +2,22 @@
 
 **Type:** lesson
 
-A power supply is a device that turns the electricity from a source into the voltage and current that a device needs. Engineers need to know which converter fits a job, because the choice sets the efficiency, the heat, and the size. Phone chargers, laptop adapters, and the boards inside appliances all convert power, and most of them do it with switches rather than resistors.
+A **power supply** is a device that turns the electricity from a source into the voltage and current that a device needs. Engineers need to know which converter fits a job, because the choice sets the efficiency, the heat, and the size. Phone chargers, laptop adapters, and the boards inside appliances all convert power, and most of them do it with switches rather than resistors.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [RC circuits and op-amp basics](../electronics/02-rc-circuits-and-op-amps.md), [Semiconductors](../electronics/03-semiconductors-diodes-and-transistors.md)
 **Time:** 8-10 h
 
 ## Core ideas
 
-A power supply takes electrical energy in at one voltage and delivers it out at another. The ideal supply loses no energy, so input power equals output power. Real supplies lose some energy as heat. The efficiency $\eta$ is the ratio of output power to input power:
+A power supply takes electrical energy in at one voltage and delivers it out at another. The ideal supply loses no energy, so input power equals output power. Real supplies lose some energy as heat. The **efficiency** $\eta$ is the ratio of output power to input power:
 
 $$\eta = \frac{P_{\mathrm{out}}}{P_{\mathrm{in}}}$$
 
 where $P_{\mathrm{out}}$ and $P_{\mathrm{in}}$ are in watts (W), and $\eta$ is dimensionless.
 
-Converters fall into two groups. Linear regulators drop the extra voltage across a transistor that acts like a variable resistor. Switching converters turn a transistor fully on and fully off many times per second, and store energy in an inductor or capacitor between switching cycles. The switch dissipates little power in either state, so switching converters reach efficiencies of 85 to 95 percent in typical designs.
+Converters fall into two groups. Linear regulators drop the extra voltage across a transistor that acts like a variable resistor. **Switching converters** turn a transistor fully on and fully off many times per second, and store energy in an inductor or capacitor between switching cycles. The switch dissipates little power in either state, so switching converters reach efficiencies of 85 to 95 percent in typical designs.
 
-A rectifier turns alternating current (AC) into direct current (DC). An inverter does the reverse: it turns DC into AC at a chosen frequency.
+A **rectifier** turns alternating current (AC) into direct current (DC). An **inverter** does the reverse: it turns DC into AC at a chosen frequency.
 
 ## How it works
 
@@ -37,7 +37,7 @@ when the quiescent current is small. A 12 V input regulated down to 5 V gives at
 
 ### Buck converter (step down)
 
-A buck converter lowers the voltage. A switch connects the input to an inductor for a fraction of each cycle, called the duty cycle $D$. When the switch opens, a diode or a second switch keeps the inductor current flowing into the output capacitor. The output voltage is set by the duty cycle:
+A buck converter lowers the voltage. A switch connects the input to an inductor for a fraction of each cycle, called the **duty cycle** $D$. When the switch opens, a diode or a second switch keeps the inductor current flowing into the output capacitor. The output voltage is set by the duty cycle:
 
 $$V_{\mathrm{out}} = D\, V_{\mathrm{in}}$$
 
@@ -49,7 +49,8 @@ A boost converter raises the voltage. The inductor charges from the input while 
 
 $$V_{\mathrm{out}} = \frac{V_{\mathrm{in}}}{1 - D}$$
 
-A boost converter cannot give a lower output than its input. It also has no direct path from input to output, so a short on the output can draw a large current unless the design limits it.
+> [!WARNING]
+> A boost converter cannot give a lower output than its input. It also has no direct path from input to output, so a short on the output can draw a large current unless the design limits it.
 
 ### Rectifier
 
@@ -153,7 +154,7 @@ Early power supplies used vibrating contacts and motor-generator sets, and vacuu
 
 ## Go deeper
 
-- [OpenStax University Physics Volume 2, Chapter 10](https://openstax.org/books/university-physics-volume-2/pages/10-introduction), free text on electric circuits, resistors, and Kirchhoff's rules.
-- [OpenStax University Physics Volume 2, Chapter 14](https://openstax.org/books/university-physics-volume-2/pages/14-introduction), free text on alternating current and RLC circuits.
+- [OpenStax *University Physics Volume 2*, Chapter 10](https://openstax.org/books/university-physics-volume-2/pages/10-introduction), free text on electric circuits, resistors, and Kirchhoff's rules.
+- [OpenStax *University Physics Volume 2*, Chapter 14](https://openstax.org/books/university-physics-volume-2/pages/14-introduction), free text on alternating current and RLC circuits.
 - Related lessons: [Circuit basics](../electronics/01-circuit-basics.md), [RC circuits and op-amps](../electronics/02-rc-circuits-and-op-amps.md), [Transformers](05-transformers.md), [Batteries](06-batteries.md), and [The power grid](08-the-power-grid.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

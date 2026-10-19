@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A fabrication drawing is the set of instructions a machine shop, sheet metal shop, or welding shop builds a part from. The goal is that the people in the shop never need to call the designer. An engineer cares because every unanswered question on a drawing becomes a phone call, a guess, or a wrong part.
+A **fabrication drawing** is the set of instructions a machine shop, sheet metal shop, or welding shop builds a part from. The goal is that the people in the shop never need to call the designer. An engineer cares because every unanswered question on a drawing becomes a phone call, a guess, or a wrong part.
 
 **Prerequisites:** [02-engineering-drawings.md](02-engineering-drawings.md) (title block, views, line types), [../design/02-engineering-graphics.md](../design/02-engineering-graphics.md) (orthographic views and sections), [../design/05-gdt-symbols-and-frames.md](../design/05-gdt-symbols-and-frames.md) (datums and feature control frames), [../design/reference.md](../design/reference.md) (fastener and thread reference), and [Trigonometry](../math/02-trigonometry.md) (bend allowance angles)
 **Time:** 6-10 h
@@ -13,7 +13,7 @@ A fabrication drawing is the set of instructions a machine shop, sheet metal sho
 - **Build from the drawing alone.** A good test is to hand the drawing to someone who has never seen the part and ask them to quote and make it. Every question they ask is a gap on the drawing.
 - **Say each thing once, in the right place.** Material goes in the title block or the notes, not scattered over the views. Each feature has one size and one location.
 - **Read it in the shop's order.** A fabricator usually reads the title block first, then the material and stock size, then the general notes, then the views, then the dimensions and callouts. The drawing should work in that order.
-- **Basic drawing rules still apply.** Views, line types, and title block rules are in [02-engineering-drawings.md](02-engineering-drawings.md). This lesson adds what the shop needs on top of them.
+- **Basic drawing rules still apply.** Views, line types, and title block rules are in [`02-engineering-drawings.md`](02-engineering-drawings.md). This lesson adds what the shop needs on top of them.
 
 ### Checklist: what every fabrication drawing needs
 
@@ -34,10 +34,10 @@ Keep the title block and notes complete, but do not repeat the same fact in five
 
 Dimensioning for the shop asks a different question than dimensioning for the designer. The designer asks, "What size must this be for the function?" The machinist asks, "Where do I put the edge of the tool, and what do I measure to check it?"
 
-- **Dimension from datums the machinist uses.** A datum is the face, edge, or bore that the part is held against in the vise, fixture, or brake. Dimension from those surfaces, not from a random edge. The datum structure should match the setup order. The GD&T meaning of datums is in [05-gdt-symbols-and-frames.md](../design/05-gdt-symbols-and-frames.md).
-- **Mark functional dimensions.** A functional dimension controls fit, alignment, or function, such as a bore that takes a bearing. Give it a tight tolerance and make it easy to inspect. Dimensions that do not affect function can use the general tolerance.
-- **Avoid closed chains.** A closed chain is a loop of dimensions that all meet at the same point, for example a row of holes with a total length and each spacing given. The shop cannot hold all of them, and the stack-up of the tolerances may not close. Leave one dimension in the chain off, or dimension every feature from the same datum.
-- **Use reference dimensions carefully.** A reference dimension is marked "(REF)" and shows a size for information only. The shop does not cut to it. Use it for a total length that is the sum of other dimensions, so the reader can check the math, but never let the shop build to a reference value.
+- **Dimension from datums the machinist uses.** A **datum** is the face, edge, or bore that the part is held against in the vise, fixture, or brake. Dimension from those surfaces, not from a random edge. The datum structure should match the setup order. The GD&T meaning of datums is in [`05-gdt-symbols-and-frames.md`](../design/05-gdt-symbols-and-frames.md).
+- **Mark functional dimensions.** A **functional dimension** controls fit, alignment, or function, such as a bore that takes a bearing. Give it a tight tolerance and make it easy to inspect. Dimensions that do not affect function can use the general tolerance.
+- **Avoid closed chains.** A **closed chain** is a loop of dimensions that all meet at the same point, for example a row of holes with a total length and each spacing given. The shop cannot hold all of them, and the stack-up of the tolerances may not close. Leave one dimension in the chain off, or dimension every feature from the same datum.
+- **Use reference dimensions carefully.** A **reference dimension** is marked "(REF)" and shows a size for information only. The shop does not cut to it. Use it for a total length that is the sum of other dimensions, so the reader can check the math, but never let the shop build to a reference value.
 - Do not repeat a hole diameter in two views.
 
 ### Hole callouts and hole tables
@@ -48,13 +48,13 @@ Holes are the most common source of shop questions. A complete hole callout give
 - **Blind hole.** A diameter and a depth, for example "$\text{Ø}5.0 \times 8$ DEEP." If the depth matters, state whether it is the drilled depth or the full depth including the point. Precise depth also requires the drill point angle.
 - **Counterbore.** A pocket for a socket head screw head. Give the through diameter, the counterbore diameter, the counterbore depth, and the symbol that marks a counterbore. Check the fastener head size before you set the number.
 - **Countersink.** A cone that lets a flat head screw sit flush. Give the through diameter, the countersink diameter at the surface, and the included angle. For most flat head screws the angle is 90 degrees, but check the fastener data.
-- **Tapped hole.** A thread size, pitch, and class, for example "$\mathrm{M6} \times 1.0\text{-6H}$." Give the thread depth and the drilled depth separately, because the tap drill goes deeper than the thread. The metric thread designation and tolerance classes follow ISO 965. The tap drill is the hole diameter you drill before tapping.
+- **Tapped hole.** A thread size, pitch, and class, for example "$\mathrm{M6} \times 1.0\text{-6H}$." Give the thread depth and the drilled depth separately, because the tap drill goes deeper than the thread. The metric thread designation and tolerance classes follow ISO 965. The **tap drill** is the hole diameter you drill before tapping.
 - **Hole table.** When there are many holes, put them in a table. One row per hole type, with columns for the ID, the quantity, the feature and size, the depth, and the $x$ and $y$ position from the datums. Each hole gets a letter or number that matches a label on the view.
 
 Rules of thumb for holes:
 
 - Prefer standard drill and tap sizes. A shop will not stop for a special drill.
-- Keep the thread depth at least about one and a half times the diameter in aluminum and similar soft materials. The reference sheet in [../design/reference.md](../design/reference.md) gives the same rule for fasteners.
+- Keep the thread depth at least about one and a half times the diameter in aluminum and similar soft materials. The reference sheet in [`../design/reference.md`](../design/reference.md) gives the same rule for fasteners.
 - A through tapped hole in a thin plate gives little thread. Check the engagement before you release the drawing.
 
 ### General notes block
@@ -87,12 +87,12 @@ Sheet metal parts are cut flat and then bent. The drawing has to describe both t
 - **Bend lines.** Each bend is shown as a labeled line on the flat pattern. The label usually gives the bend angle.
 - **Bend direction.** State whether each bend goes up or down, measured from a view you name. A bend that goes the wrong way ruins the part.
 - **Bend radius.** The inside radius of the bend. A common default is a radius equal to the material thickness, but the shop's tooling decides what is practical. State the radius on the drawing.
-- **K-factor.** The K-factor locates the neutral axis, the layer in the sheet that does not stretch or compress during a bend. It is a ratio between 0 and 0.5 that depends on the material, the radius, and the tooling. Put the K-factor or the bend allowance table on the drawing, or state that the shop's own table governs.
+- **K-factor.** The K-factor locates the **neutral axis**, the layer in the sheet that does not stretch or compress during a bend. It is a ratio between 0 and 0.5 that depends on the material, the radius, and the tooling. Put the K-factor or the bend allowance table on the drawing, or state that the shop's own table governs.
 - **Hole-to-bend and edge-to-bend spacing.** Holes and slots near a bend move when the part is bent. Give the minimum distance the shop expects, or ask the shop for its rule before you dimension close to a bend.
 
 #### Bend allowance formula
 
-Bend allowance is the length of the neutral axis through the bend. It is used to build the flat pattern.
+**Bend allowance** is the length of the neutral axis through the bend. It is used to build the flat pattern.
 
 $$
 \mathrm{BA} = \theta\,(R + K\,T)
@@ -104,7 +104,7 @@ Worked check of the form: a 90 degree bend with $R = 2.0$ mm, $K = 0.40$, and $T
 
 ### Weldment drawings
 
-A weldment is a welded assembly built from cut and formed pieces. The drawing shows the pieces, the joints, and the welds.
+A **weldment** is a welded assembly built from cut and formed pieces. The drawing shows the pieces, the joints, and the welds.
 
 - **Cut list.** A table of every piece to be cut, with its length, quantity, material, and any angle or end cut. The cutting shop uses it directly.
 - **Weld symbols.** Welds are shown with a standard symbol on a reference line, not drawn as a picture. The full symbol set is in AWS A2.4. In words, the common parts of a weld symbol are these:
@@ -227,7 +227,8 @@ General notes:
 
 **Sanity check.** Walk the reader through the drawing as a machinist. Hold the plate against datum A and datum B. Can every hole be found from those two edges? Is there a tap drill for each hole? Is the bore size readable? Can the reader make the part without asking a question?
 
-**Problem found by the check.** The M6 holes go through a 6 mm plate. Aluminum needs about 1.5 times the diameter in thread engagement, which is 9 mm. A 6 mm through thread gives only 1.0 times the diameter, so the threads may strip under load. The drawing must not release as is. The designer must choose one of three fixes and write it down: thicken the plate to 9 mm or more, add a thread insert, or accept the lower engagement with a stated load limit.
+> [!WARNING]
+> **Problem found by the check.** The M6 holes go through a 6 mm plate. Aluminum needs about 1.5 times the diameter in thread engagement, which is 9 mm. A 6 mm through thread gives only 1.0 times the diameter, so the threads may strip under load. The drawing must not release as is. The designer must choose one of three fixes and write it down: thicken the plate to 9 mm or more, add a thread insert, or accept the lower engagement with a stated load limit.
 
 ## Practice
 

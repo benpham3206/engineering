@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Mechatronics is the combination of mechanical parts, electronics, and software. A microcontroller
+**Mechatronics** is the combination of mechanical parts, electronics, and software. A microcontroller
 reads sensors, decides what to do, and drives actuators such as motors, valves, and lights. Most
 modern machines, from printers to cars, are built this way.
 
@@ -19,10 +19,10 @@ modern machines, from printers to cars, are built this way.
   timers. Typical boards run at a few megahertz to a few hundred megahertz.
 - **Digital I/O**: a pin is either high (near the supply voltage, often 3.3 V or 5 V) or low (near
   0 V). Digital outputs switch things on and off.
-- **Analog input**: an analog-to-digital converter (ADC) measures a voltage and returns a number. A
+- **Analog input**: an **analog-to-digital converter (ADC)** measures a voltage and returns a number. A
   10-bit ADC returns integers from 0 to 1023.
 - **PWM** (pulse-width modulation): a digital output switches on and off at a set frequency. The fraction of
-  time it is on is the duty cycle. The average voltage seen by the load is the supply voltage times
+  time it is on is the **duty cycle**. The average voltage seen by the load is the supply voltage times
   the duty cycle. PWM is how a microcontroller controls motor speed or LED brightness.
 - **Motor driver**: a power circuit that lets a small microcontroller switch a motor that needs
   more current than the pin can supply. The microcontroller sends logic signals, and the driver
@@ -69,7 +69,9 @@ reference, or $2.5\ \text{V}$. That matches. A $25$ percent duty cycle should gi
 - **Driver and supply overload.** A pin that supplies more than its rated current fails, and a supply with too little margin browns out the controller. The sign is random resets. Drive loads through a transistor or driver rated for the current, and use a separate or well-decoupled supply.
 - **Software hang and brownout.** A stuck program or a low supply voltage leaves outputs in an unknown state. A watchdog timer resets the controller, a brownout detector holds it in reset, and outputs should default to a safe state.
 - **Connector and cable fatigue.** Cables that flex at a moving joint break their conductors inside the insulation. The sign is an intermittent fault that follows motion. Use flex-rated cable, strain relief, and locking connectors.
-- **Moving and stored energy hazards.** A machine can start, trap, or crush, and springs, raised loads, and batteries hold energy. Eliminate the hazard by designing it out, substitute lower force and voltage, add guards and interlocks, an emergency stop and a safe-torque-off function, then administrative controls and PPE. For maintenance, apply lockout/tagout: isolate and lock each energy source, release or block stored energy, and verify zero energy by trying to start the machine and by measuring.
+
+> [!WARNING]
+> **Moving and stored energy hazards.** A machine can start, trap, or crush, and springs, raised loads, and batteries hold energy. Eliminate the hazard by designing it out, substitute lower force and voltage, add guards and interlocks, an emergency stop and a safe-torque-off function, then administrative controls and PPE. For maintenance, apply lockout/tagout: isolate and lock each energy source, release or block stored energy, and verify zero energy by trying to start the machine and by measuring.
 
 ## Practice
 
@@ -106,7 +108,7 @@ reference, or $2.5\ \text{V}$. That matches. A $25$ percent duty cycle should gi
 
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
   by MIT: circuit design for sensors and digital logic.
-- [Electronics, Wikibooks](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors:
+- [*Electronics*, Wikibooks](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors:
   background on digital logic and amplifiers that sensor interfaces use.
 - [NIST, SI prefixes](https://www.nist.gov/pml/owm/metric-si-prefixes) by NIST: standard unit prefixes
   for millivolts, microfarads, and kilohms.

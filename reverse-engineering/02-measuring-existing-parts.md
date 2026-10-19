@@ -100,8 +100,8 @@ $$p = \frac{10.0}{8} = 1.25 \text{ mm}$$
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: covers units, standards, unit conversion, and significant figures.
+- [*University Physics Volume 1*, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: covers units, standards, unit conversion, and significant figures.
 - [SI units and the metric system](https://www.nist.gov/pml/owm/metric-si) by NIST: the official U.S. government guide to SI units and the seven base units.
-- [e-Handbook of Statistical Methods, Measurement Process Characterization](https://www.itl.nist.gov/div898/handbook/mpc/mpc.htm) by NIST and SEMATECH: explains measurement error, bias, and variation.
+- [*e-Handbook of Statistical Methods*, Measurement Process Characterization](https://www.itl.nist.gov/div898/handbook/mpc/mpc.htm) by NIST and SEMATECH: explains measurement error, bias, and variation.
 - [Mechanical Engineering bookshelf](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering) by LibreTexts: a free starting point for tolerances and machine elements.
 - [Reverse-engineering reference](reference.md): the lookup sheet for this topic.

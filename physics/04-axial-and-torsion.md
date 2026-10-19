@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Axial loading and torsion are the pulling, pushing, and twisting of a rod, cable, or shaft, and stress and strain are the measures of the force and deformation inside the material when that happens. Engineers use them to check that a rod, cable, or shaft is strong enough and stiff enough before anything gets built.
+**Axial loading** and torsion are the pulling, pushing, and twisting of a rod, cable, or shaft, and stress and strain are the measures of the force and deformation inside the material when that happens. Engineers use them to check that a rod, cable, or shaft is strong enough and stiff enough before anything gets built.
 
 **Prerequisites:** [Statics](01-statics.md) (free-body diagrams and equilibrium)
 **Time:** 6-8 h
@@ -177,7 +177,7 @@ Units tip: work in SI inside the formulas, then convert at the end. A quick chec
 
 ## Go deeper
 
-- [Mechanics of Materials (Roylance)](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_%28Roylance%29) by David Roylance, MIT OpenCourseWare, via Engineering LibreTexts: a free, openly licensed textbook. Start with the tensile response and stress and strain chapters.
+- [*Mechanics of Materials* (Roylance)](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_%28Roylance%29) by David Roylance, MIT OpenCourseWare, via Engineering LibreTexts: a free, openly licensed textbook. Start with the tensile response and stress and strain chapters.
 - [Chapter 8: Beam Bending, Buckling, and Torsion](https://eng.libretexts.org/Courses/California_State_Polytechnic_University_Humboldt/Mechanical_Behavior_of_Material/Chapter_8:_Beam_Bending,_Buckling,_and_Torsion) by Cal Poly Humboldt, via Engineering LibreTexts: a free treatment of the torsion angle of twist, with the same notation used in this lesson.
 - Next lesson: [Bending and buckling](05-bending-and-buckling.md), which applies the same ideas to beams and columns.
 - [Mechanics reference](reference-mechanics.md): the lookup sheet for this topic.

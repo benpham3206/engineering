@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Lead screws and ball screws are threaded rods that turn rotary motion into linear motion through a nut, and a ball screw uses steel balls that roll in the thread groove, which cuts friction. Engineers choose these screws for precise positions and large thrust, and they must check efficiency, back-driving, and the speed at which a long screw whirls.
+**Lead screws** and **ball screws** are threaded rods that turn rotary motion into linear motion through a nut, and a ball screw uses steel balls that roll in the thread groove, which cuts friction. Engineers choose these screws for precise positions and large thrust, and they must check efficiency, back-driving, and the speed at which a long screw whirls.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md) (friction and moments), [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md) (thread geometry and bolt preload), [Bending and buckling](../../physics/05-bending-and-buckling.md), [Mechatronic systems](../../design/11-mechatronic-systems.md) (lead and encoder counts), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 5-7 h
@@ -11,7 +11,7 @@ Lead screws and ball screws are threaded rods that turn rotary motion into linea
 
 ### How it works
 
-The screw turns in its supports, and the nut moves along it. The nut is usually held against rotation by a carriage or a guide. The thread acts as an inclined plane wrapped around a cylinder. One full turn moves the nut by the lead, which is the distance the nut travels per revolution.
+The screw turns in its supports, and the nut moves along it. The nut is usually held against rotation by a carriage or a guide. The thread acts as an inclined plane wrapped around a cylinder. One full turn moves the nut by the **lead**, which is the distance the nut travels per revolution.
 
 The motion and the force follow these steps:
 
@@ -23,7 +23,7 @@ The motion and the force follow these steps:
 
 ### Main parts
 
-- **Screw.** A threaded shaft with a trapezoidal (Acme) or square thread on a lead screw. A ball screw has a ground thread groove, called a raceway.
+- **Screw.** A threaded shaft with a trapezoidal (Acme) or square thread on a lead screw. A ball screw has a ground thread groove, called a **raceway**.
 - **Nut.** A bronze, plastic, or steel nut on a lead screw. A ball nut carries the balls and a return path that moves them back to the start of the raceway.
 - **Balls.** Hardened steel balls roll in the raceway and recirculate through the nut.
 - **Supports and bearings.** End bearings take the thrust and fix the screw axially. The length between supports sets the critical speed.
@@ -60,7 +60,7 @@ Axial thrust from an input torque $T$:
 
 $$F = \frac{2\pi\,\eta\,T}{L}$$
 
-Self-locking for a square thread, meaning the load cannot turn the screw under static conditions:
+**Self-locking** for a square thread, meaning the load cannot turn the screw under static conditions:
 
 $$\tan\lambda \le \mu$$
 

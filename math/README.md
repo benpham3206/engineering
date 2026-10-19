@@ -15,6 +15,7 @@ Math is the notation engineering uses. Most of the work here is knowing which to
 - [Probability and statistics](07-probability-and-statistics.md)
 - [Numerical methods: root finding, integration, ODE solvers, error](08-numerical-methods.md)
 - [Software solvers: MATLAB, Python, spreadsheets, calculators](09-software-solvers.md)
+- [Partial differential equations and Fourier series](10-pdes-and-fourier-series.md)
 
 ## Reference
 

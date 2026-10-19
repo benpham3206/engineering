@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Kitchen appliances are the heaters, motors, and controls that prepare food by turning electrical energy into heat or motion. People use these machines every day, so a kitchen appliance must be safe to touch, quick to use, and cheap to run.
+**Kitchen appliances** are the heaters, motors, and controls that prepare food by turning electrical energy into heat or motion. People use these machines every day, so a kitchen appliance must be safe to touch, quick to use, and cheap to run.
 
 Engineers size the heating element, the motor, and the controls to meet those goals. Four appliances cover most of the physics: the kettle, the toaster, the blender, and the induction cooktop.
 
@@ -13,15 +13,15 @@ Engineers size the heating element, the motor, and the controls to meet those go
 
 ### How it works
 
-A resistive heater turns electrical power into heat. A current $I$ through a resistance $R$ dissipates power $P = I^2 R$, and every joule of that power appears as heat in the element. The kettle and the toaster both work this way. The heat then moves into the water or the bread by conduction and convection.
+A **resistive heater** turns electrical power into heat. A current $I$ through a resistance $R$ dissipates power $P = I^2 R$, and every joule of that power appears as heat in the element. The kettle and the toaster both work this way. The heat then moves into the water or the bread by conduction and convection.
 
-A kettle heats 1 L of water from room temperature to boiling in a few minutes. The element sits in a metal base plate or in the water itself. A thermostat or steam-operated switch turns the element off when the water boils. A bimetallic strip bends with heat and opens the circuit at a set temperature.
+A kettle heats 1 L of water from room temperature to boiling in a few minutes. The element sits in a metal base plate or in the water itself. A thermostat or steam-operated switch turns the element off when the water boils. A **bimetallic strip** bends with heat and opens the circuit at a set temperature.
 
 A toaster passes current through a nickel-chromium wire until the wire glows and heats the bread on both sides. A spring-loaded carriage holds the bread down. A timer or a bimetallic strip releases a latch when the toast is done, and the spring lifts the carriage. Browning comes from Maillard reactions and caramelization, which need surface temperatures well above the boiling point of water.
 
-A blender uses a universal motor, a series-wound motor that runs on AC or DC. Blade speeds reach tens of metres per second at the tips. The motor spins the blade shaft at tens of thousands of revolutions per minute, typically about 20 000 rpm in a kitchen blender.
+A blender uses a **universal motor**, a series-wound motor that runs on AC or DC. Blade speeds reach tens of metres per second at the tips. The motor spins the blade shaft at tens of thousands of revolutions per minute, typically about 20 000 rpm in a kitchen blender.
 
-An induction cooktop passes high-frequency alternating current, typically tens of kilohertz, through a coil under a glass ceramic top. The changing magnetic field induces eddy currents in the base of a magnetic pan. The pan's electrical resistance turns those currents into heat. The glass stays cool because the heat forms in the pan itself.
+An induction cooktop passes high-frequency alternating current, typically tens of kilohertz, through a coil under a glass ceramic top. The changing magnetic field induces **eddy currents** in the base of a magnetic pan. The pan's electrical resistance turns those currents into heat. The glass stays cool because the heat forms in the pan itself.
 
 ### Main parts
 
@@ -82,7 +82,10 @@ A kettle rated at $1500\ \text{W}$ with $\eta = 0.80$ takes $279\ \text{s}$, abo
 
 ## Safety and the hierarchy of controls
 
-Kitchen appliances carry electrical, thermal, and mechanical hazards. Designers and users apply these controls in order, starting with the most effective.
+> [!WARNING]
+> Kitchen appliances carry electrical, thermal, and mechanical hazards.
+
+Designers and users apply these controls in order, starting with the most effective.
 
 - **Elimination.** Remove the hazard entirely. A cordless kettle with a sealed base removes the risk of a cord pulled into water. A blender cannot drop its blades, because cutting is its purpose, so the blender relies on the lower controls.
 - **Substitution.** Replace a hazard with a lower one. Induction heating removes the open flame of a gas burner and the hot glowing coil of a resistance cooktop. The surface stays cooler where no pan sits.
@@ -124,7 +127,7 @@ Fred Waring's company introduced the Waring Blendor in 1937. The high-speed blen
 
 ## Go deeper
 
-- [OpenStax University Physics Volume 2, Chapter 3](https://openstax.org/books/university-physics-volume-2/pages/3-introduction): free textbook on heat, specific heat, and energy transfer.
+- [*OpenStax University Physics Volume 2*, Chapter 3](https://openstax.org/books/university-physics-volume-2/pages/3-introduction): free textbook on heat, specific heat, and energy transfer.
 
 Related lessons and reference sheets in this repo:
 

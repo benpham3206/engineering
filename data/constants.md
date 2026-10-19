@@ -22,6 +22,9 @@ The seven defining constants of the SI are exact by definition and do not depend
 | t_celsius_zero | kelvin temperature of 0 degrees Celsius | 273.15 | K | exact (definition of the Celsius scale) | bipm-si-9 | section 2.3.1, Celsius temperature |
 | g_standard | standard acceleration of gravity (Earth convention) | 9.80665 | m/s^2 | exact (conventional) | codata-2022 | value page "gn" |
 | p_standard | standard atmosphere (Earth convention) | 101325 | Pa | exact (conventional) | codata-2022 | value page "stdatm" |
+| m_electron | electron mass | 9.1093837139e-31 | kg | 0.0000000028e-31 | codata-2022 | value page "me" |
+| gm_earth | geocentric gravitational parameter GM of Earth (Earth value) | 3.98600435507e14 | m^3/s^2 | as published, 12 digits | jpl-astro-par | Planetary Masses table, row "Earth", 398600.435507 km^3/s^2, from ephemeris DE440 |
+| r_earth_mean | volumetric mean radius of Earth (Earth value) | 6371.000 | km | as published, to 1 m | nasa-earth-factsheet | row "Volumetric mean radius (km)" |
 
 Prose scans. `v` is the captured number, in the scan's unit. `Context` must also match the line for the scan to apply, and `Unless` skips the line. `Planet: yes` means the line must also say Earth or standard.
 

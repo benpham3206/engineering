@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Heating, ventilation, and air conditioning, known as HVAC, are the systems that heat, cool, and bring fresh air into a building. An engineer who sizes them must balance heat losses, moisture, and airflow to keep occupants comfortable and safe.
+**Heating, ventilation, and air conditioning**, known as HVAC, are the systems that heat, cool, and bring fresh air into a building. An engineer who sizes them must balance heat losses, moisture, and airflow to keep occupants comfortable and safe.
 
 A building needs heat in winter, cooling in summer, and fresh air all year.
 
@@ -19,7 +19,7 @@ Engineers size equipment for the peak load, the largest heating or cooling deman
 
 Air carries the heat. A fan pushes supply air through ducts to each room. Return air flows back to the unit, passes over coils that heat or cool it, and mixes with fresh outdoor air. The fan must overcome the resistance of filters, coils, and ducts, so fan power depends on duct design as much as on the heat load.
 
-Moisture adds a second problem. Air holds water vapor, and the relative humidity is the ratio of the vapor pressure to the saturation pressure at the same temperature. When air cools below its dew point, water condenses out. That is why a cooling coil drips, and it is also how an air conditioner removes humidity.
+Moisture adds a second problem. Air holds water vapor, and the **relative humidity** is the ratio of the vapor pressure to the saturation pressure at the same temperature. When air cools below its dew point, water condenses out. That is why a cooling coil drips, and it is also how an air conditioner removes humidity.
 
 ### Main parts
 
@@ -39,7 +39,7 @@ Moisture adds a second problem. Air holds water vapor, and the relative humidity
 - Hydronic systems: hot or chilled water flows through radiators, baseboards, floor loops, or fan coils. Water carries far more heat per unit volume than air, so the pipes stay small.
 - Packaged rooftop units: one outdoor unit holds the fan, coil, and compressor for a commercial space.
 - Split and mini-split systems: an outdoor unit connects to one or more indoor units through refrigerant lines. They need no ducts. See [Refrigeration and air conditioning](03-refrigeration-and-air-conditioning.md).
-- Variable air volume (VAV): the system varies the airflow to each zone to hold its temperature, instead of supplying a fixed flow.
+- **Variable air volume (VAV)**: the system varies the airflow to each zone to hold its temperature, instead of supplying a fixed flow.
 
 ## Key equations
 
@@ -49,19 +49,19 @@ $$\dot{Q} = U A \, \Delta T$$
 
 Here $\dot{Q}$ is heat flow in watts (W), $U$ is the overall heat transfer coefficient in W/(m$^2$ K), $A$ is the area in m$^2$, and $\Delta T$ is the temperature difference in kelvin (K). A difference in kelvin equals a difference in degrees Celsius.
 
-Sensible heat to warm or cool ventilation air:
+**Sensible heat** to warm or cool ventilation air:
 
 $$\dot{Q} = \rho \, \dot{V} \, c_p \, \Delta T$$
 
 Here $\rho$ is air density in kg/m$^3$ (about 1.2 kg/m$^3$ near 20 C at sea level on Earth, typical), $\dot{V}$ is the volume flow of air in m$^3$/s, and $c_p$ is the specific heat of air in J/(kg K) (about 1005 J/(kg K), typical).
 
-Latent heat to evaporate or condense water:
+**Latent heat** to evaporate or condense water:
 
 $$\dot{Q}_{\text{lat}} = \dot{m}_w \, h_{\mathrm{fg}}$$
 
 Here $\dot{m}_w$ is the mass flow of water vapor in kg/s, and $h_{\mathrm{fg}}$ is the latent heat of vaporization of water in J/kg (about $2.45 \times 10^6$ J/kg near 20 C, typical).
 
-Humidity ratio, the mass of water per mass of dry air:
+**Humidity ratio**, the mass of water per mass of dry air:
 
 $$W = 0.622 \, \frac{p_v}{P - p_v}$$
 
@@ -114,10 +114,12 @@ Here $v$ is the mean air velocity in m/s, and $A$ is the duct cross-section in m
 - Undersized equipment: rooms stay cold on the design day. The usual cause is a load calculation that leaves out ventilation or air leakage. The warning sign is a system that runs at full output all day and still falls short.
 - Oversized equipment: short cycling. The unit switches on and off every few minutes, humidity stays high, and wear rises. The warning sign is frequent starts.
 - Frozen evaporator coil: a blocked filter, closed dampers, or low refrigerant charge cuts the airflow over the coil, and the coil drops below 0 C. The warning sign is ice on the coil and weak airflow. Airflow sensors and freeze protection stop the compressor before the damage builds.
-- Carbon monoxide: a cracked heat exchanger or a blocked flue sends combustion gas into the building. Safety measures include a flue that holds draft, a sealed combustion chamber in modern furnaces, carbon monoxide alarms, and yearly inspection.
 - Legionella: warm water in cooling towers and humidifiers can carry the bacteria that cause Legionnaires' disease. A 1976 outbreak in Philadelphia was linked to a building's cooling system. Water treatment and regular cleaning reduce the risk.
 - Poor ventilation: carbon dioxide and humidity build up. High humidity encourages mold. The safeguard is a minimum outdoor air rate and humidity control.
 - Duct leakage: unsealed joints pull air from attics and crawl spaces and leave rooms far from the unit underheated. The warning signs are dust in the house and uneven room temperatures.
+
+> [!WARNING]
+> Carbon monoxide: a cracked heat exchanger or a blocked flue sends combustion gas into the building. Safety measures include a flue that holds draft, a sealed combustion chamber in modern furnaces, carbon monoxide alarms, and yearly inspection.
 
 ## History
 
@@ -149,7 +151,7 @@ Roman baths used hypocausts, which warmed floors and walls with hot air from a f
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 14](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: fluids, pressure, Bernoulli's equation, and viscosity. These underlie air flow in ducts.
+- [*University Physics Volume 1*, Chapter 14](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: fluids, pressure, Bernoulli's equation, and viscosity. These underlie air flow in ducts.
 - [NIST Chemistry WebBook, fluid properties](https://webbook.nist.gov/chemistry/fluid/): thermophysical property data for water and other fluids, useful for checking values in psychrometric and hydronic calculations.
 - Related lessons: [Thermal systems](01-thermal-systems.md), [Refrigeration and air conditioning](03-refrigeration-and-air-conditioning.md), [Heat pumps](04-heat-pumps.md), [Heat exchangers](05-heat-exchangers.md), [Compressors and fans](10-compressors-and-fans.md), [Piping and valves](12-piping-and-valves.md).
 - Related fundamentals: [Heat transfer](../../physics/12-heat-transfer.md), [Units and dimensional analysis](../../measurement/01-units-and-dimensional-analysis.md), [Safety and risk](../../philosophy/03-safety-and-risk.md).

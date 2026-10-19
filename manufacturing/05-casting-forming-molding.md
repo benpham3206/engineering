@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Casting, forming, and molding are the three main ways to shape material without cutting it away. Engineers need to know them because each process sets the cost, size, and finish of the part it makes. Casting pours molten metal into a mold. Forming pushes solid metal into shape with force, as in forging, stamping, and rolling. Molding shapes plastic or other materials in a cavity, as in injection molding. Each process is best at a certain volume and part size. Each also leaves its own shrinkage, grain, or parting-line features that a designer must account for.
+Casting, forming, and molding are the three main ways to shape material without cutting it away. Engineers need to know them because each process sets the cost, size, and finish of the part it makes. Casting pours molten metal into a mold. **Forming** pushes solid metal into shape with force, as in forging, stamping, and rolling. **Molding** shapes plastic or other materials in a cavity, as in injection molding. Each process is best at a certain volume and part size. Each also leaves its own shrinkage, grain, or parting-line features that a designer must account for.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md)
 **Time:** 5-7 h

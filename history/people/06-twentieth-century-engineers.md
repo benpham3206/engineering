@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Twentieth-century engineers are the people who built the theory, machines, and systems behind aircraft, rockets, computers, transistors, and communication codes. Engineers today should know them because these inventions are still in daily use. Several of them also had controversial records, and those are covered briefly
+**Twentieth-century engineers** are the people who built the theory, machines, and systems behind aircraft, rockets, computers, transistors, and communication codes. Engineers today should know them because these inventions are still in daily use. Several of them also had controversial records, and those are covered briefly
 and factually.
 
 **Prerequisites:** [War, nuclear, and space](../08-war-nuclear-and-space.md), [Semiconductors and computing](../09-semiconductors-and-computing.md), [Algebra](../../math/01-algebra.md)
@@ -14,7 +14,7 @@ and factually.
 
 Von Karman was born in Budapest in 1881 and worked in Germany before moving to the California Institute
 of Technology in 1930. He described the alternating vortex pattern shed behind a bluff body in 1911 and
-1912, now called the Karman vortex street. He co-founded Aerojet in 1942 and helped start the rocket
+1912, now called the **Karman vortex street**. He co-founded Aerojet in 1942 and helped start the rocket
 group that became the Jet Propulsion Laboratory. Engineers use vortex shedding to check bridges,
 chimneys, and cables for wind-driven vibration. See
 [Towers and cables](../../applications/structures/06-towers-and-cables.md) and
@@ -31,7 +31,7 @@ Flight Center is named after him. See [Rockets](../../applications/vehicles-aero
 ### Sergei Korolev
 
 Korolev worked as the chief designer of the Soviet space program. His identity was kept secret until
-his death in 1966. His team's R-7 rocket launched Sputnik 1 on 4 October 1957, and a derivative of the
+his death in 1966. His team's R-7 rocket launched *Sputnik 1* on 4 October 1957, and a derivative of the
 R-7 launched Yuri Gagarin on 12 April 1961. Modern launch vehicles still use the staged, liquid-fueled
 design that his teams refined. See [Spacecraft and satellites](../../applications/vehicles-aerospace/08-spacecraft-and-satellites.md).
 
@@ -50,7 +50,7 @@ designs are historically important, and his wartime record is a serious part of 
 
 Turing was born in London in 1912 and worked at Bletchley Park during the Second World War. In 1936 he
 published a paper defining a theoretical machine that reads and writes symbols on a tape, now called the
-Turing machine. The paper defined what it means for a method to be computable. After the war he designed
+**Turing machine**. The paper defined what it means for a method to be computable. After the war he designed
 the Automatic Computing Engine at the National Physical Laboratory in London. He died in 1954. The
 theory of computation, which asks what a machine can and cannot compute, starts from his model. See
 [Digital logic and computers](../../applications/electronics/07-digital-logic-and-computers.md).
@@ -58,7 +58,7 @@ theory of computation, which asks what a machine can and cannot compute, starts 
 ### John von Neumann
 
 Von Neumann was born in Budapest in 1903 and worked in the United States at Princeton and the Institute
-for Advanced Study. In 1945 he wrote the "First Draft of a Report on the EDVAC," which describes a
+for Advanced Study. In 1945 he wrote *First Draft of a Report on the EDVAC*, which describes a
 computer that stores its program and data in the same memory. The design came out of the ENIAC team,
 including J. Presper Eckert and John Mauchly, but the report bore von Neumann's name. Nearly every
 computer built since then follows this stored-program architecture. See
@@ -68,7 +68,7 @@ computer built since then follows this stored-program architecture. See
 
 Shannon was born in Gaylord, Michigan, in 1916. In 1937 his MIT master's thesis showed that Boolean
 algebra can describe relay switching circuits, which made digital logic design possible. In 1948 he
-published "A Mathematical Theory of Communication," which defined information and channel capacity. His
+published *A Mathematical Theory of Communication*, which defined information and **channel capacity**. His
 formula sets the highest rate at which a noisy channel can carry error-free data. Modems, Wi-Fi, and
 cellular standards use error-correcting codes that approach this limit. See
 [Radio and antennas](../../applications/waves-and-communication/02-radio-and-antennas.md) and
@@ -113,7 +113,7 @@ and [Aircraft structures](../../applications/structures/04-aircraft-structures.m
 ### Fazlur Rahman Khan
 
 Khan was born in 1929 in Dhaka, in what is now Bangladesh. He worked at Skidmore, Owings and Merrill in
-Chicago and developed the tube structural system, in which the outer walls of a tall building act as a
+Chicago and developed the **tube structural system**, in which the outer walls of a tall building act as a
 rigid frame. The John Hancock Center, completed in 1969, and the Willis Tower, completed in 1973, use
 this approach. He died in 1982. Tall buildings still use tube and bundled-tube systems. See
 [Buildings and skyscrapers](../../applications/structures/02-buildings-and-skyscrapers.md).
@@ -122,7 +122,7 @@ this approach. He died in 1982. Tall buildings still use tube and bundled-tube s
 
 Johnson was born in 1918 in West Virginia and worked at the NACA and then NASA Langley Research Center
 in Virginia. She calculated trajectories for early American spaceflight, including the 1962 orbital
-flight of John Glenn in Friendship 7. She also worked on Apollo mission calculations. She died in 2020.
+flight of John Glenn in *Friendship 7*. She also worked on Apollo mission calculations. She died in 2020.
 Spaceflight still depends on trajectory calculations of the kind she did by hand and with mechanical
 calculators. See [Spacecraft and satellites](../../applications/vehicles-aerospace/08-spacecraft-and-satellites.md).
 

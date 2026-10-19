@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-Engineering ethics is the set of duties an engineer owes to the public, employers, clients, and the profession. Engineers care because their work can affect many people who never see the design, and because professional licensing gives them authority that carries responsibility.
+**Engineering ethics** is the set of duties an engineer owes to the public, employers, clients, and the profession. Engineers care because their work can affect many people who never see the design, and because professional licensing gives them authority that carries responsibility.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md), [Safety and risk](03-safety-and-risk.md)
 **Time:** 4-6 h
@@ -10,14 +10,14 @@ Engineering ethics is the set of duties an engineer owes to the public, employer
 ## Core ideas
 
 - Ethics is about what you should do when your duties pull in different directions. Engineering ethics asks how to balance the safety of the public with the wishes of a boss or client, the schedule, and the budget.
-- Most professions with licenses have a code of ethics. The NSPE Code of Ethics for Engineers, from the National Society of Professional Engineers in the United States, is one well-known example. In my own words, its core ideas are:
+- Most professions with licenses have a **code of ethics**. The NSPE Code of Ethics for Engineers, from the National Society of Professional Engineers in the United States, is one well-known example. In my own words, its core ideas are:
   - Put the safety, health, and welfare of the public first, above the wishes of employers and clients.
   - Work only in areas where you have the training and experience to do the work well, and say so when you do not.
   - Tell the truth in public statements, and give objective, honest reports.
   - Act as a faithful agent or trustee for employers and clients, and protect their confidential information, but never at the cost of public safety.
   - Avoid deception, conflicts of interest, and improper gifts or payments that affect your judgment.
   - Keep your own conduct honest and professional, so the profession keeps public trust.
-- Professional duty is not optional for licensed engineers. A licensed engineer who signs a design takes personal responsibility for it.
+- **Professional duty** is not optional for licensed engineers. A licensed engineer who signs a design takes personal responsibility for it.
 - Ethical problems often come with pressure: a deadline, a cost target, a manager who wants a different answer. Ethics is practiced in those moments, not in the abstract.
 - The usual steps when a concern arises:
   - Identify the facts and who could be harmed.
@@ -28,7 +28,7 @@ Engineering ethics is the set of duties an engineer owes to the public, employer
 
 ### Case: Space Shuttle Challenger (1986)
 
-On January 28, 1986, the Space Shuttle Challenger broke apart 73 seconds after launch. All seven crew members died. The Presidential Commission (the Rogers Commission) investigated.
+On January 28, 1986, the *Space Shuttle Challenger* broke apart 73 seconds after launch. All seven crew members died. The Presidential Commission (the Rogers Commission) investigated.
 
 What the commission's report found:
 
@@ -43,7 +43,7 @@ Two Boeing 737 MAX airliners crashed in 2018 (Lion Air Flight 610, in Indonesia)
 
 Accident investigations and later congressional and regulatory reviews found that:
 
-- A flight control function called MCAS (Maneuvering Characteristics Augmentation System) could push the nose down based on data from one angle-of-attack sensor.
+- A flight control function called **MCAS (Maneuvering Characteristics Augmentation System)** could push the nose down based on data from one angle-of-attack sensor.
 - The system's behavior and its role were not fully described to pilots, and the design was certified with less scrutiny than the aircraft needed.
 - Information about the system did not always flow clearly between the manufacturer, the regulator, and the airline.
 
@@ -80,7 +80,7 @@ The example shows that the duty is not to be right in every argument. It is to m
    - Key points: the public safety, health, and welfare come first, above employer or client wishes.
 2. An engineer is told to remove a safety margin to meet a budget. What should they do first?
    - Key points: document the concern, explain the risk in writing, propose alternatives, and escalate if needed; do not silently comply.
-3. Why did the Challenger investigation focus on decision-making, not just the seal?
+3. Why did the *Challenger* investigation focus on decision-making, not just the seal?
    - Key points: concerns existed before launch, and the process did not weigh them properly; technical risk must reach the decision makers.
 4. Why do licensed engineers take on personal responsibility for a signed design?
    - Key points: the license grants authority to the public, and the signature is a claim that the work is competent and safe.
@@ -107,6 +107,6 @@ Answers are key points a good answer covers. See each question above.
 ## Go deeper
 
 - [NSPE Code of Ethics for Engineers](https://www.nspe.org/resources/ethics/code-ethics) by the National Society of Professional Engineers: the full code and its related guidance. The landing page is free; the full text is linked from it.
-- [Report of the Presidential Commission on the Space Shuttle Challenger Accident](https://www.nasa.gov/history/rogersrep/genindex.htm) by NASA, from the Rogers Commission (1986): the official investigation. The chapter on the cause is at [Chapter IV](https://www.nasa.gov/history/rogersrep/v1ch4.htm).
+- [*Report of the Presidential Commission on the Space Shuttle Challenger Accident*](https://www.nasa.gov/history/rogersrep/genindex.htm) by NASA, from the Rogers Commission (1986): the official investigation. The chapter on the cause is at [Chapter IV](https://www.nasa.gov/history/rogersrep/v1ch4.htm).
 - [MIT OpenCourseWare](https://ocw.mit.edu/) by MIT: free course materials. Search for engineering ethics or professional practice courses.
 - [Philosophy failure cases](reference.md): the lookup sheet for this topic.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An optical fiber is a thin glass or plastic strand that guides light along its length, often for many kilometres. Engineers need to understand it because fiber carries most long-distance internet and telephone traffic, and its loss and dispersion set how far and how fast a link can run.
+An **optical fiber** is a thin glass or plastic strand that guides light along its length, often for many kilometres. Engineers need to understand it because fiber carries most long-distance internet and telephone traffic, and its loss and dispersion set how far and how fast a link can run.
 
 **Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6-8 h
@@ -11,9 +11,9 @@ An optical fiber is a thin glass or plastic strand that guides light along its l
 
 ### How it works
 
-A fiber has a core with a high refractive index $n_1$, surrounded by cladding with a lower index $n_2$. The refractive index is the ratio $n = c/v$, where $c$ is the speed of light in vacuum and $v$ is the speed in the material. Silica glass has $n$ near 1.46 to 1.48, so the difference between core and cladding is small.
+A fiber has a core with a high refractive index $n_1$, surrounded by cladding with a lower index $n_2$. The **refractive index** is the ratio $n = c/v$, where $c$ is the speed of light in vacuum and $v$ is the speed in the material. Silica glass has $n$ near 1.46 to 1.48, so the difference between core and cladding is small.
 
-Light that meets the core-cladding boundary at a shallow angle reflects back into the core. This is total internal reflection. It happens when the angle of incidence is larger than the critical angle $\theta_c$. Light at a steeper angle leaks out of the core and is lost.
+Light that meets the core-cladding boundary at a shallow angle reflects back into the core. This is **total internal reflection**. It happens when the angle of incidence is larger than the critical angle $\theta_c$. Light at a steeper angle leaks out of the core and is lost.
 
 The light bounces down the fiber, and each reflection keeps it inside. The fiber can curve, and the light follows the curve because it still meets the wall at a shallow angle.
 
@@ -36,8 +36,8 @@ The light bounces down the fiber, and each reflection keeps it inside. The fiber
 ## Key equations
 
 - Snell's law, with angles $\theta$ in radians or degrees and refractive indices $n$ dimensionless: $n_1 \sin\theta_1 = n_2 \sin\theta_2$.
-- Critical angle: $\theta_c = \arcsin(n_2 / n_1)$.
-- Numerical aperture, dimensionless: $\mathrm{NA} = \sqrt{n_1^2 - n_2^2}$. When light enters from air, with $n_0 = 1$, the acceptance half-angle is $\theta_a = \arcsin(\mathrm{NA})$.
+- **Critical angle**: $\theta_c = \arcsin(n_2 / n_1)$.
+- **Numerical aperture (NA)**, dimensionless: $\mathrm{NA} = \sqrt{n_1^2 - n_2^2}$. When light enters from air, with $n_0 = 1$, the acceptance half-angle is $\theta_a = \arcsin(\mathrm{NA})$.
 - Attenuation, with $\alpha$ in dB/km and $L$ in km: $P_{\mathrm{out}} = P_{\mathrm{in}} \cdot 10^{-\alpha L / 10}$.
 - Power level, with $P$ in watts: $P\,(\text{dBm}) = 10 \log_{10}(P / 1\ \text{mW})$.
 - Link budget margin, in dB: $M = P_{\mathrm{tx}} - P_{\mathrm{rx},\min} - L_{\mathrm{total}}$, where $P_{\mathrm{rx},\min}$ is the receiver sensitivity.
@@ -76,7 +76,9 @@ The light bounces down the fiber, and each reflection keeps it inside. The fiber
 - **Dirty or damaged connectors.** Dust on an end face scatters light and adds loss and back-reflection. Cleaning with a lint-free wipe and a fiber cleaner fixes most cases.
 - **Dispersion.** Pulses overlap at the receiver, and bit errors rise. Single-mode fiber and dispersion-compensating modules limit this.
 - **Physical damage.** Digging equipment cuts cables. Buried routes use markers, and cable ducts protect the fiber.
-- **Eye damage.** Infrared light at 1550 nm is invisible, and a live fiber end can damage an eye. Laser safety classes and the rule against looking into a fiber end exist for this reason.
+
+> [!WARNING]
+> **Eye damage.** Infrared light at 1550 nm is invisible, and a live fiber end can damage an eye. Laser safety classes and the rule against looking into a fiber end exist for this reason.
 
 ## History
 
@@ -110,7 +112,7 @@ Charles K. Kao and George A. Hockham proposed in 1966 that glass fiber with loss
 
 ## Go deeper
 
-- [University Physics Volume 3, Chapter 1: light, reflection, refraction, and total internal reflection](https://openstax.org/books/university-physics-volume-3/pages/1-introduction) by OpenStax. Free, with a full treatment of the physics used here.
+- [*University Physics Volume 3*, Chapter 1: light, reflection, refraction, and total internal reflection](https://openstax.org/books/university-physics-volume-3/pages/1-introduction) by OpenStax. Free, with a full treatment of the physics used here.
 - [Optics, course 2.71](https://ocw.mit.edu/courses/2-71-optics-spring-2009/) by MIT OpenCourseWare. Free lecture materials on optical science with engineering applications.
 - Related lessons: [Lasers](03-lasers.md), which covers the light source, and [Radio and antennas](02-radio-and-antennas.md), which covers the other main way to send a signal without a wire.
 - [Applications reference](../reference.md): the lookup sheet for this topic.

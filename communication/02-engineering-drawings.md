@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An engineering drawing is the set of instructions a machinist, inspector, or supplier uses to make a part. Engineers must make it exact, because any dimension or note left off forces the maker to guess. It has to say the same thing to everyone who reads it, so it follows strict conventions for layout, lines, and dimensions. For how to model and draw parts in CAD and how to use geometric dimensioning and tolerancing, see [the design folder](../design/README.md).
+An **engineering drawing** is the set of instructions a machinist, inspector, or supplier uses to make a part. Engineers must make it exact, because any dimension or note left off forces the maker to guess. It has to say the same thing to everyone who reads it, so it follows strict conventions for layout, lines, and dimensions. For how to model and draw parts in CAD and how to use geometric dimensioning and tolerancing, see [the design folder](../design/README.md).
 
 **Prerequisites:** none. Helpful first: [01-technical-writing.md](01-technical-writing.md) for the habit of stating things precisely.
 **Time:** 8-12 h
@@ -43,7 +43,7 @@ The title block is usually in the lower-right corner. Common entries:
 - **Center line:** a thin line made of long and short dashes. It marks the axis of a hole, shaft, or symmetric feature.
 - **Dimension line:** a thin continuous line with arrowheads at each end, placed between extension lines.
 - **Extension line:** a thin line that leaves a gap from the object and extends past the dimension line.
-- **Section line (cutting plane):** a thick line with arrows at its ends showing the direction of view. Cross-hatching inside a section shows cut material.
+- **Section line (cutting plane):** a thick line with arrows at its ends showing the direction of view. **Cross-hatching** inside a section shows cut material.
 - **Phantom line:** a thin line with a long dash followed by two short dashes. It shows an alternate position or an adjacent part.
 
 Line weights should be consistent: thick for visible edges, thin for everything else.
@@ -53,7 +53,7 @@ Line weights should be consistent: thick for visible edges, thin for everything 
 - Give each feature a size and a location. A hole needs its diameter, its position relative to a datum or edge, and its depth if it is not through.
 - Dimension each feature once. Repeated dimensions create conflicts when someone changes one value and forgets the other.
 - Place dimensions on the view that shows the feature most clearly. Keep them outside the outline where you can.
-- Do not use a dimension that the reader must add or subtract to find a size. Give the size directly, unless it is a reference dimension, which is marked "(REF)".
+- Do not use a dimension that the reader must add or subtract to find a size. Give the size directly, unless it is a **reference dimension**, which is marked "(REF)".
 - Put the units in the title block and do not repeat them on every dimension.
 - Include tolerances where the fit matters. A plus-minus value on every dimension is not required, but the default tolerance note must be present.
 - Give a datum or reference edge for location dimensions, so the reader knows what each distance is measured from.

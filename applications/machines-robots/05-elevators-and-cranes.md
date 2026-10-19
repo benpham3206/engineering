@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Elevators and cranes are lifting machines that move loads with ropes, drums, and motors, and both depend on a load balancing around a support point. An engineer who sizes or inspects one must check each rated limit, because a failed rope or brake can drop a load.
+Elevators and cranes are **lifting machines** that move loads with ropes, drums, and motors, and both depend on a load balancing around a support point. An engineer who sizes or inspects one must check each rated limit, because a failed rope or brake can drop a load.
 
 An elevator must hold its car safely even if the drive fails. A crane must stay upright when it lifts a load on the end of a boom.
 
@@ -22,7 +22,7 @@ The movement of a traction elevator follows these steps:
 3. When the car stops, an electrically released brake on the motor shaft holds the sheave.
 4. If the car overspeeds, the governor trips the safety gear, which grips the guide rails and stops the car.
 
-A crane lifts a load by winding rope onto or off a drum. The boom sets the radius from the tipping line to the load. The load creates an overturning moment about the tipping line, and the crane's own weight and counterweight create a restoring moment in the opposite direction. The crane stays upright while the restoring moment exceeds the overturning moment by the margin the load chart allows.
+A crane lifts a load by winding rope onto or off a drum. The boom sets the radius from the tipping line to the load. The load creates an **overturning moment** about the tipping line, and the crane's own weight and counterweight create a **restoring moment** in the opposite direction. The crane stays upright while the restoring moment exceeds the overturning moment by the margin the load chart allows.
 
 ### Main parts
 
@@ -32,7 +32,7 @@ A crane lifts a load by winding rope onto or off a drum. The boom sets the radiu
 - **Governor and safety gear:** the governor detects overspeed. The safety gear grips the guide rails and stops the car.
 - **Buffers:** springs or hydraulic buffers at the bottom of the hoistway absorb the energy of a car that overruns the lowest landing.
 - **Crane outriggers or counterweight:** outriggers widen the base, and a counterweight adds restoring moment.
-- **Boom and winch:** the boom sets the radius, and the winch lifts the load. A load-moment indicator warns the operator when the load approaches the rated limit.
+- **Boom and winch:** the boom sets the radius, and the winch lifts the load. A **load-moment indicator** warns the operator when the load approaches the rated limit.
 
 ### Variants
 
@@ -116,7 +116,8 @@ Assumptions: the crane tips about one line, the restoring masses act at their st
 4. Administrative controls: a signed lift plan, a rule against lifting above the chart, and a schedule of rope and brake inspection.
 5. Personal protective equipment: hard hats, high-visibility clothing, and gloves for rigging. PPE protects people, and it does not replace the controls above.
 
-**Lockout and tagout for service:** before a technician works in the hoistway, machine room, or on a crane drive, the technician isolates the supply at the main disconnect and locks it with a personal lock. The technician attaches a tag with the name and date, tests the controls to confirm the drive does not run, and discharges stored energy. Where the car or boom could move under gravity, the technician blocks it with a mechanical stop before work starts. The lock comes off only by the person who fitted it, after the work and the checks are complete.
+> [!WARNING]
+> **Lockout and tagout for service:** before a technician works in the hoistway, machine room, or on a crane drive, the technician isolates the supply at the main disconnect and locks it with a personal lock. The technician attaches a tag with the name and date, tests the controls to confirm the drive does not run, and discharges stored energy. Where the car or boom could move under gravity, the technician blocks it with a mechanical stop before work starts. The lock comes off only by the person who fitted it, after the work and the checks are complete.
 
 ## History
 
@@ -152,7 +153,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [OpenStax, University Physics Volume 1, Conditions for Static Equilibrium](https://openstax.org/books/university-physics-volume-1/pages/12-1-conditions-for-static-equilibrium) by OpenStax: a free text on torque balance, the basis of tipping analysis.
+- [OpenStax, *University Physics Volume 1*, Conditions for Static Equilibrium](https://openstax.org/books/university-physics-volume-1/pages/12-1-conditions-for-static-equilibrium) by OpenStax: a free text on torque balance, the basis of tipping analysis.
 - [MIT OpenCourseWare, Design and Manufacturing I (2.007)](https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/) by MIT: a free course on machine design.
 - Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) and [Design reference](../../design/reference.md).
 - Related lessons: [Statics](../../physics/01-statics.md), [Clutches and brakes](../power-transmission/04-clutches-and-brakes.md), [Towers and cables](../structures/06-towers-and-cables.md), and [Robot arms](01-robot-arms.md).

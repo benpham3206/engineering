@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-Global and social impact is the effect that engineering has on how people live, work, and get essential services across regions and social groups. Engineers need to understand it because the people who gain or lose from a project are often not the people who make the design choices.
+**Global and social impact** is the effect that engineering has on how people live, work, and get essential services across regions and social groups. Engineers need to understand it because the people who gain or lose from a project are often not the people who make the design choices.
 
 Engineering changes how people live, work, travel, get water and power, and communicate, and it does so unevenly across regions and social groups.
 
@@ -11,12 +11,12 @@ Engineering changes how people live, work, travel, get water and power, and comm
 
 ## Core ideas
 
-- Every project has stakeholders: the people who use it, the people who live near it, the people who pay for it, the people who maintain it, and the people it displaces or affects in other ways.
+- Every project has **stakeholders**: the people who use it, the people who live near it, the people who pay for it, the people who maintain it, and the people it displaces or affects in other ways.
 - Impact is not only the intended result. A new road can bring jobs and also noise, pollution, and displacement. A cheap water pump can help a village and also create a maintenance problem if no one can repair it.
 - Access matters. A technology that only works with reliable power, a particular language, or expensive parts may leave out the people who need it most.
 - Engineers often make decisions about who benefits. Choices about where a plant is built, which routes a road takes, or what standard a product meets all distribute benefits and burdens.
 - A useful habit is to ask who is included in the design process. If the answer is only the designer and the client, the design is missing information.
-- The United Nations Sustainable Development Goals (SDGs) are a shared framework of 17 goals for global progress. Several bear directly on engineering: clean water and sanitation (goal 6), affordable energy (goal 7), industry, innovation and infrastructure (goal 9), sustainable cities and communities (goal 11), and climate action (goal 13). The full list is on the official UN site.
+- The United Nations **Sustainable Development Goals (SDGs)** are a shared framework of 17 goals for global progress. Several bear directly on engineering: clean water and sanitation (goal 6), affordable energy (goal 7), industry, innovation and infrastructure (goal 9), sustainable cities and communities (goal 11), and climate action (goal 13). The full list is on the official UN site.
 - Context changes the right answer. A solution that fits a dense city may not fit a rural area. Engineers must learn the local conditions, including climate, culture, economy, and maintenance capacity.
 
 ### Engineering in its social context

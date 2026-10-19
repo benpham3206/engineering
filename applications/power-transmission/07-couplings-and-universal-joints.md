@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A coupling is a device that joins two shafts so that torque passes from one to the other. Real shafts never line up exactly, so the coupling must accept some misalignment without binding, wearing out, or pushing side loads into the bearings.
+A **coupling** is a device that joins two shafts so that torque passes from one to the other. Real shafts never line up exactly, so the coupling must accept some misalignment without binding, wearing out, or pushing side loads into the bearings.
 
 **Prerequisites:** [Axial and torsion](../../physics/04-axial-and-torsion.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 5-7 h
@@ -10,10 +10,10 @@ A coupling is a device that joins two shafts so that torque passes from one to t
 ## Core ideas
 
 - **Torque and speed.** A coupling carries torque $T$ (N m) at a shared angular speed $\omega$ (rad/s). The power through it is $P = T\omega$ (W). For a given power, the torque rises as the speed falls.
-- **Misalignment.** Parallel offset moves one shaft sideways from the other. Angular misalignment tilts one shaft against the other. Axial misalignment changes the gap between the shaft ends. Most installations have all three in small amounts, and they grow as the machine heats up and the base settles.
+- **Misalignment.** **Parallel offset** moves one shaft sideways from the other. **Angular misalignment** tilts one shaft against the other. **Axial misalignment** changes the gap between the shaft ends. Most installations have all three in small amounts, and they grow as the machine heats up and the base settles.
 - **Rigid couplings.** A rigid coupling, such as a clamp or flange coupling, has no flexible element. It is stiff and has no backlash, but it needs close alignment. Any misalignment bends each shaft once per revolution and loads the bearings.
 - **Flexible couplings.** A flexible coupling adds a compliant element, such as an elastomer spider, a bellows, or a disc pack. The element bends or shears to take up misalignment. The cost is lower torsional stiffness, and the element wears or ages.
-- **Universal joints.** A universal joint, also called a Cardan joint, connects two shafts at an angle through a cross-shaped spider between two yokes. It handles much larger angles than a flexible coupling. Its output speed rises and falls twice per revolution when the shafts are at an angle.
+- **Universal joints.** A universal joint, also called a **Cardan joint**, connects two shafts at an angle through a cross-shaped spider between two yokes. It handles much larger angles than a flexible coupling. Its output speed rises and falls twice per revolution when the shafts are at an angle.
 - **Constant velocity joints.** A CV joint keeps the output speed equal to the input speed at any angle within its range. Ball-type and tripod designs are common in front-wheel-drive axles. They cost more than a Cardan joint and need a sealed boot to hold grease.
 
 ### How it works
@@ -54,7 +54,7 @@ Twist of a uniform shaft of length $L$ (m) with shear modulus $G$ (Pa) and polar
 
 $$\theta = \frac{T L}{G J}, \qquad k_t = \frac{G J}{L}$$
 
-Here $\theta$ is the angle of twist in radians and $k_t$ is torsional stiffness in N m/rad. Steel has a shear modulus of about $79$ GPa (typical).
+Here $\theta$ is the angle of twist in radians and $k_t$ is **torsional stiffness** in N m/rad. Steel has a shear modulus of about $79$ GPa (typical).
 
 Single Cardan joint with joint angle $\theta$ between the shaft axes, input angle $\varphi$, and output angle $\psi$:
 
@@ -108,7 +108,7 @@ Two equal joints, with the yokes on the middle shaft lying in one plane, cancel 
 
 ## History
 
-The name honors Gerolamo Cardano, an Italian mathematician who described the joint in the 1500s. Robert Hooke studied the same joint in the 1600s, so it is also called a Hooke's joint. Alfred Rzeppa patented a ball-type constant velocity joint in the 1920s, and that design still carries his name.
+The name honors Gerolamo Cardano, an Italian mathematician who described the joint in the 1500s. Robert Hooke studied the same joint in the 1600s, so it is also called a **Hooke's joint**. Alfred Rzeppa patented a ball-type constant velocity joint in the 1920s, and that design still carries his name.
 
 ## Practice
 
@@ -136,7 +136,7 @@ The name honors Gerolamo Cardano, an Italian mathematician who described the joi
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 10 introduction](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: fixed-axis rotation, torque, and rotational motion.
+- [*University Physics Volume 1*, Chapter 10 introduction](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: fixed-axis rotation, torque, and rotational motion.
 - [2.003SC Engineering Dynamics](https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/) by MIT OpenCourseWare: rigid-body rotation in planar motion.
 - [Lead screws and ball screws](08-lead-screws-and-ball-screws.md): the next lesson, on linear motion from rotation.
 - [Mechatronic systems](../../design/11-mechatronic-systems.md): why the coupling sits between the motor encoder and the load.

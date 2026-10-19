@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-GPS is a satellite navigation system that finds a receiver's position by timing radio signals from satellites that carry atomic clocks. A 1 ns timing error becomes a 0.30 m position error, and clock effects from relativity add about 38 $\mu$s per day that must be corrected, so an engineer must understand the clocks and corrections behind it.
+**GPS** is a satellite navigation system that finds a receiver's position by timing radio signals from satellites that carry atomic clocks. A 1 ns timing error becomes a 0.30 m position error, and clock effects from relativity add about 38 $\mu$s per day that must be corrected, so an engineer must understand the clocks and corrections behind it.
 
 Positioning accuracy depends on clocks, orbits, the atmosphere, and the receiver's geometry.
 
@@ -13,7 +13,7 @@ Positioning accuracy depends on clocks, orbits, the atmosphere, and the receiver
 
 ### How it works
 
-Each GPS satellite broadcasts its position and the exact time the signal left it. The receiver compares that time with its own clock and multiplies the difference by the speed of light. The result is the distance to the satellite, called a pseudorange. The receiver's clock is not perfect, so every pseudorange contains the same unknown clock error.
+Each GPS satellite broadcasts its position and the exact time the signal left it. The receiver compares that time with its own clock and multiplies the difference by the speed of light. The result is the distance to the satellite, called a **pseudorange**. The receiver's clock is not perfect, so every pseudorange contains the same unknown clock error.
 
 With four satellites, the receiver solves for four unknowns: its position $x$, $y$, $z$, and its clock error $\delta t$. Each satellite gives one equation. The receiver knows where the satellites are, so the position comes from the intersection of spheres around the satellites. Three satellites fix position if the clock error is known. The fourth satellite removes the clock error.
 
@@ -116,9 +116,9 @@ Net effect: $+45.72 - 7.21 = +38.5\ \mu\text{s}$ per day. The satellite clock ru
 - Clock drift and orbit error: the satellite clock drifts between corrections, and the orbit model is imperfect. Ground corrections keep these errors small, but they grow between uploads.
 - Uncorrected relativity: the 38.5 $\mu$s daily offset would grow to about 11.5 km per day. The system corrects it before launch and in software.
 - Jamming and spoofing: a weak GPS signal is easy to block or fake. Warning signs include sudden jumps in position, a clock that disagrees with time servers, and a sudden loss of satellites.
-- Geometry: satellites clustered in one part of the sky spread out the error. Receivers report a dilution of precision (DOP) value to show the geometry quality.
+- Geometry: satellites clustered in one part of the sky spread out the error. Receivers report a **dilution of precision (DOP)** value to show the geometry quality.
 
-Safety measures include receiver autonomous integrity monitoring (RAIM), which checks whether the satellites agree, and augmentation systems such as WAAS and EGNOS, which broadcast correction and integrity messages for aircraft.
+Safety measures include **receiver autonomous integrity monitoring (RAIM)**, which checks whether the satellites agree, and augmentation systems such as WAAS and EGNOS, which broadcast correction and integrity messages for aircraft.
 
 ## History
 

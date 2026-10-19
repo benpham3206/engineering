@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Energy storage is a set of technologies that hold energy from one time and return it at another, so supply can follow demand. Engineers need storage because the energy a grid receives rarely matches the energy it needs at the same moment, and storage decides whether the grid stays stable.
+**Energy storage** is a set of technologies that hold energy from one time and return it at another, so supply can follow demand. Engineers need storage because the energy a grid receives rarely matches the energy it needs at the same moment, and storage decides whether the grid stays stable.
 
 Engineers use storage to smooth the output of solar and wind plants, to cover peak demand, and to keep a grid stable within seconds. Each technology stores energy in a different form, and the size of the store depends on both how much energy it holds and how fast it can deliver it.
 
@@ -20,7 +20,7 @@ Every store follows the same cycle. Energy goes in, the store holds it in some f
 - **Duration** is the energy capacity divided by the power rating. A 2 MW store holding 4 MWh runs for 2 hours at full power.
 - **Round-trip efficiency** is the energy returned divided by the energy put in. A store with 80 percent round-trip efficiency returns 80 percent of what it took.
 
-Grid storage falls into two groups. Short-duration stores, from seconds to about four hours, hold frequency and cover short peaks. Long-duration stores, from about four hours to days, shift solar output from noon into the evening.
+Grid storage falls into two groups. **Short-duration stores**, from seconds to about four hours, hold frequency and cover short peaks. **Long-duration stores**, from about four hours to days, shift solar output from noon into the evening.
 
 Batteries store energy in chemical bonds that change as ions move between electrodes. Pumped hydro stores it as the potential energy of water raised uphill. Compressed air stores it as pressure in a cavern or tank. Thermal storage keeps energy as heat in a material such as molten salt or water. Flywheels store it as the rotational kinetic energy of a spinning mass.
 
@@ -28,7 +28,7 @@ Batteries store energy in chemical bonds that change as ions move between electr
 
 - **Battery cells and management system.** Cells in modules and racks, with a battery management system that limits voltage and temperature and balances the cells.
 - **Pumps and turbines.** Reversible pump-turbines move water between reservoirs and generate power on release. Motor-generators connect to the grid.
-- **Reservoirs and penstocks.** An upper and lower reservoir, linked by a pipe called a penstock, with a height difference called head.
+- **Reservoirs and penstocks.** An upper and lower reservoir, linked by a pipe called a penstock, with a height difference called **head**.
 - **Compressors and expanders.** Compressors drive air into a cavern or tank. Expanders run the air through a turbine as it flows back out.
 - **Heat exchangers and tanks.** Hot and cold storage tanks, pumps, and steam generators for thermal stores.
 - **Rotor and bearings.** A steel or composite rotor spinning in a vacuum on magnetic or low-friction bearings.
@@ -68,7 +68,7 @@ Battery energy, with nominal voltage $V_{\mathrm{nom}}$ in volts and capacity $Q
 
 $$E = V_{\mathrm{nom}} Q\ \text{(in watt-hours)}$$
 
-C-rate, the ratio of charge or discharge current $I$ to the nominal capacity $Q$ in ampere-hours. A 1C rate empties a fully charged battery in one hour:
+**C-rate**, the ratio of charge or discharge current $I$ to the nominal capacity $Q$ in ampere-hours. A 1C rate empties a fully charged battery in one hour:
 
 $$C\text{-rate} = \frac{I}{Q}$$
 
@@ -146,7 +146,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 - [Pumped storage hydropower, U.S. Department of Energy](https://www.energy.gov/eere/water/pumped-storage-hydropower): how two reservoirs at different heights store and return energy.
 - [Energy storage, U.S. Department of Energy](https://www.energy.gov/oe/energy-storage): an overview of grid storage technologies and roles.
-- [Work and energy, OpenStax University Physics Volume 1, Chapter 7](https://openstax.org/books/university-physics-volume-1/pages/7-introduction): the kinetic energy and work concepts behind the flywheel equation.
+- [Work and energy, OpenStax *University Physics Volume 1*, Chapter 7](https://openstax.org/books/university-physics-volume-1/pages/7-introduction): the kinetic energy and work concepts behind the flywheel equation.
 - [Batteries](../electrical/06-batteries.md): cell chemistry, C-rate, and thermal runaway in more depth.
 - [Solar photovoltaics](01-solar-photovoltaics.md) and [wind turbines](02-wind-turbines.md): the variable sources that storage smooths.
 - [Hydroelectric power](03-hydroelectric-power.md): turbines and head in more detail.

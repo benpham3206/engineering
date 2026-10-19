@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Trigonometry is the branch of mathematics that relates the angles of a triangle to the lengths of its sides. Engineers use it to split a force into horizontal and vertical parts, find the length of a brace, and describe anything that repeats, such as vibration and AC power.
+**Trigonometry** is the branch of mathematics that relates the angles of a triangle to the lengths of its sides. Engineers use it to split a force into horizontal and vertical parts, find the length of a brace, and describe anything that repeats, such as vibration and AC power.
 
 **Prerequisites:** [Algebra](01-algebra.md)
 **Time:** 8-10 h
@@ -10,10 +10,10 @@ Trigonometry is the branch of mathematics that relates the angles of a triangle 
 ## Core ideas
 
 - An angle can be measured in degrees (360 per full turn) or radians ($2\pi$ per full turn). Calculators and Python's math functions use radians by default. Convert with $\theta_{\text{rad}} = \theta_{\text{deg}} \cdot \pi / 180$.
-- In a right triangle, the three sides have names relative to an angle $\theta$: the opposite side, the adjacent side, and the hypotenuse (the longest side, opposite the right angle).
+- In a right triangle, the three sides have names relative to an angle $\theta$: the **opposite side**, the **adjacent side**, and the **hypotenuse** (the longest side, opposite the right angle).
 - SOH-CAH-TOA is the memory aid: $\sin\theta = \text{opposite}/\text{hypotenuse}$, $\cos\theta = \text{adjacent}/\text{hypotenuse}$, $\tan\theta = \text{opposite}/\text{adjacent}$.
 - A force $F$ at an angle $\theta$ from the horizontal has components $F_x = F\cos\theta$ and $F_y = F\sin\theta$. This is the most common use in statics.
-- For triangles that are not right triangles, use the law of cosines and the law of sines. They connect sides and angles in any triangle.
+- For triangles that are not right triangles, use the **law of cosines** and the **law of sines**. They connect sides and angles in any triangle.
 - Sine and cosine are periodic. They repeat every $2\pi$ radians. That makes them the natural description of vibration, rotation, and AC current.
 - Identities such as $\sin^2\theta + \cos^2\theta = 1$ let you simplify expressions. Use them when a formula has both sine and cosine.
 

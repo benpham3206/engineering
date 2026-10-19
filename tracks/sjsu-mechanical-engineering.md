@@ -18,7 +18,7 @@ Each course lists the lessons and reference sheets that cover it, in the order t
 - [Technical writing](../communication/01-technical-writing.md)
 - [Figures, tables, and plots](../communication/05-figures-tables-plots.md)
 
-Not covered yet: rhetorical analysis and argument essays.
+- [Argument and persuasion](../communication/08-argument-and-persuasion.md)
 
 ### AP Physics 1
 - [Statics](../physics/01-statics.md)
@@ -48,7 +48,7 @@ Not covered yet: rhetorical analysis and argument essays.
 - [The modern era](../history/10-the-modern-era.md)
 - [History reference](../history/reference.md)
 
-Not covered yet: political, economic, and non-engineering world history.
+Outside this repo: political, economic, and non-engineering world history. The engineering side is in [history](../history/README.md).
 
 ## Year 1
 
@@ -118,7 +118,8 @@ Not covered yet: political, economic, and non-engineering world history.
 - [Fields, waves, and space reference](../physics/reference-fields-waves-space.md)
 - [Waves and communication applications](../applications/waves-and-communication/README.md)
 
-Not covered yet: modern physics and quantum topics.
+- [Modern physics and quantum mechanics](../physics/18-modern-physics-and-quantum.md)
+- [Quantum technologies](../applications/electronics/08-quantum-technologies.md)
 
 ### MATE 25 - Intro to Materials
 - [Atomic structure and bonding](../materials/01-atomic-structure-bonding.md)
@@ -155,7 +156,8 @@ Not covered yet: modern physics and quantum topics.
 - [Transformers](../applications/electrical/05-transformers.md)
 - [Differential equations](../math/06-differential-equations.md)
 
-Not covered yet: phasor analysis of AC circuits, Thevenin and Norton equivalents, and three-phase circuits.
+- [Circuit analysis methods](../physics/16-circuit-analysis-methods.md)
+- [AC circuits, phasors, and power](../physics/17-ac-circuits-phasors-and-power.md)
 
 ### CE 112 - Mechanics of Materials
 - [Axial loading and torsion](../physics/04-axial-and-torsion.md)
@@ -247,7 +249,8 @@ Not covered yet: phasor analysis of AC circuits, Thevenin and Norton equivalents
 - [Sanity-check the answer](../problem-solving/06-sanity-check-the-answer.md)
 - [Math reference](../math/reference.md)
 
-Not covered yet: partial differential equations, Fourier series, and finite-element methods.
+- [Partial differential equations and Fourier series](../math/10-pdes-and-fourier-series.md)
+- [Finite element method](../simulation/01-finite-element-method.md)
 
 ### ME 154 - Mechanical Engineering Design
 - [Design process](../design/01-design-process.md)
@@ -265,7 +268,8 @@ Not covered yet: partial differential equations, Fourier series, and finite-elem
 - [Clutches and brakes](../applications/power-transmission/04-clutches-and-brakes.md)
 - [Design reference](../design/reference.md)
 
-Not covered yet: welded and bolted joint design in depth (joint stiffness, fatigue of welds), and lubrication and tribology. Bearing life is in Shafts and bearings.
+- [Bolted and welded joints](../design/12-bolted-and-welded-joints.md)
+- [Lubrication and tribology](../design/13-lubrication-and-tribology.md)
 
 ### ME 192 - Robotics and Manufacturing Systems
 - [Robot arms](../applications/machines-robots/01-robot-arms.md)
@@ -279,7 +283,8 @@ Not covered yet: welded and bolted joint design in depth (joint stiffness, fatig
 - [Sheet metal](../manufacturing/07-sheet-metal.md)
 - [Manufacturing reference](../manufacturing/reference.md)
 
-Not covered yet: Jacobians and velocity kinematics beyond the two-link arm, and production-line planning and balancing.
+- [Velocity kinematics and Jacobians](../applications/machines-robots/08-velocity-kinematics-and-jacobians.md)
+- [Production lines and line balancing](../manufacturing/10-production-lines-and-line-balancing.md)
 
 ## Year 4
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Rigid body dynamics is the study of how bodies with size and shape move and rotate under forces. Engineers use it for wheels, gears, flywheels, rotating shafts, and any part that spins up or slows down. This lesson covers planar motion, where the body moves and rotates in a single plane.
+**Rigid body dynamics** is the study of how bodies with size and shape move and rotate under forces. Engineers use it for wheels, gears, flywheels, rotating shafts, and any part that spins up or slows down. This lesson covers planar motion, where the body moves and rotates in a single plane.
 
 **Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Statics](01-statics.md) (moments and free-body diagrams), [Single-variable calculus](../math/03-single-variable-calculus.md) (moment of inertia as an integral)
 **Time:** 10-14 h

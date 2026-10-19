@@ -13,7 +13,7 @@ Canals and railways are the transport routes, built between 1825 and 1916, that 
 
 The problem. In the early 1800s, goods moved between the Atlantic coast and the interior of North America mostly by wagon over rough roads. Overland freight was slow and expensive, and the Appalachian mountains blocked the easiest route west from New York.
 
-The engineering. The state of New York built a canal about 584 km long from the Hudson River at Albany to Lake Erie at Buffalo. The route followed the gentle ground between the Mohawk Valley and the lake, and it climbed the ridges with a flight of locks. Engineers used a simple survey level and hand tools. The original canal had 83 locks, and each lock raised or lowered boats between gated chambers by a fixed step. Aqueducts carried the canal over rivers, and dams fed it water from streams.
+The engineering. The state of New York built a canal about 584 km long from the Hudson River at Albany to Lake Erie at Buffalo. The route followed the gentle ground between the Mohawk Valley and the lake, and it climbed the ridges with a flight of locks. Engineers used a simple survey level and hand tools. The original canal had 83 locks, and each **lock** raised or lowered boats between gated chambers by a fixed step. Aqueducts carried the canal over rivers, and dams fed it water from streams.
 
 The scale. Construction ran from 1817 to 1825, and the canal opened on October 26, 1825. It was about 363 miles long, and at the time it was one of the largest public works in the United States.
 
@@ -25,13 +25,13 @@ How it changed the world. Freight that cost about \$100 a ton to move overland f
 
 The problem. Ships from Europe to India and East Asia sailed around the Cape of Good Hope in Africa. That route added thousands of kilometres and weeks of sailing. A direct water route across the Isthmus of Suez would shorten the trip.
 
-The engineering. The canal is a sea-level channel about 193 km long with no locks, which means the Mediterranean and Red Sea levels are close enough that the water does not need to be lifted. Dredgers cut through sand, clay, and rock. Engineers built in a desert, using freshwater channels and workers' camps. Ships pass through in convoys that meet at passing bays.
+The engineering. The canal is a **sea-level channel** about 193 km long with no locks, which means the Mediterranean and Red Sea levels are close enough that the water does not need to be lifted. Dredgers cut through sand, clay, and rock. Engineers built in a desert, using freshwater channels and workers' camps. Ships pass through in convoys that meet at passing bays.
 
 The scale. Construction ran from 1859 to 1869, and the canal opened on November 17, 1869. The French diplomat Ferdinand de Lesseps promoted the canal and led the company that built it. The canal shortened the sea route from Europe to Asia by thousands of kilometres.
 
 What went wrong. Egyptian laborers worked under a forced labor system that the company and the government arranged. Conditions were harsh, and disease and accidents killed many workers. Estimates of the death toll vary widely, and the figures are disputed. The canal was closed during the Six-Day War of 1967 and reopened in 1975. Egypt nationalized the canal in 1956, which triggered a crisis that involved Britain, France, and Israel.
 
-How it changed the world. Trade between Europe and Asia shifted toward steamships using the canal. In 2015 Egypt opened a second channel alongside the original route, which doubled capacity at certain points. In March 2021 the container ship Ever Given ran aground across the channel for about six days and blocked traffic until refloating.
+How it changed the world. Trade between Europe and Asia shifted toward steamships using the canal. In 2015 Egypt opened a second channel alongside the original route, which doubled capacity at certain points. In March 2021 the container ship *Ever Given* ran aground across the channel for about six days and blocked traffic until refloating.
 
 ### The Panama Canal
 
@@ -75,7 +75,7 @@ The force that a train must overcome on a grade comes from the component of weig
 
 $$F_{\text{grade}} = m g \sin\theta \approx m g G$$
 
-where $F_{\text{grade}}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $\theta$ is the angle of the slope, and $G$ is the grade, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
+where $F_{\text{grade}}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $\theta$ is the angle of the slope, and $G$ is the **grade**, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
 
 Assumptions: the track is straight, the grade is constant, the train moves at constant speed, and rolling resistance and air drag are ignored. The estimate gives only the part of the force due to gravity.
 
@@ -156,15 +156,15 @@ Route choice sets the cost. A canal or railway that avoids steep grades and deep
 ## Common mistakes
 
 - The Panama Canal was built only by the French. The French company failed in the 1880s, and the United States completed the canal in 1914.
-- The Suez Canal was the first canal to close. It was closed during the 1967 war and again during later conflicts, and the 2021 blockage by the Ever Given was not the first.
+- The Suez Canal was the first canal to close. It was closed during the 1967 war and again during later conflicts, and the 2021 blockage by the *Ever Given* was not the first.
 - The first transcontinental railroad was built by one company. Two companies built from opposite ends and met at Promontory Summit, Utah.
 - Railways set standard time by law in 1883. The railroads adopted time zones in 1883, and federal law followed later.
 - Locks lift ships using pumps. They fill and empty by gravity from a higher water level, and pumps are used only where a water supply needs extra help.
 
 ## Go deeper
 
-- [The Great American Canals, Volume 2: The Erie Canal, Archer Butler Hulbert](https://www.gutenberg.org/ebooks/41008), Project Gutenberg eBook 41008. A history of the Erie Canal.
-- [The Panama Canal and Its Makers, Vaughan Cornish](https://www.gutenberg.org/ebooks/37671), Project Gutenberg eBook 37671. An early account of the canal's construction.
-- [Lives of the Engineers: The Locomotive, George and Robert Stephenson, Samuel Smiles](https://www.gutenberg.org/ebooks/27710), Project Gutenberg eBook 27710. Biographies of the railway pioneers.
+- [*The Great American Canals, Volume 2: The Erie Canal*, Archer Butler Hulbert](https://www.gutenberg.org/ebooks/41008), Project Gutenberg eBook 41008. A history of the Erie Canal.
+- [*The Panama Canal and Its Makers*, Vaughan Cornish](https://www.gutenberg.org/ebooks/37671), Project Gutenberg eBook 37671. An early account of the canal's construction.
+- [*Lives of the Engineers: The Locomotive, George and Robert Stephenson*, Samuel Smiles](https://www.gutenberg.org/ebooks/27710), Project Gutenberg eBook 27710. Biographies of the railway pioneers.
 - Reference sheet: [Mechanics reference](../../physics/reference-mechanics.md) for forces on slopes and energy.
 - Related lessons: [Trains](../../applications/vehicles-aerospace/10-trains.md), [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md), [Industrial revolution](../05-industrial-revolution.md), [Engineers of the industrial age](../people/04-engineers-of-the-industrial-age.md).

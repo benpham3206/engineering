@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-CAD, short for computer-aided design, is software that builds 3D models of parts and assemblies on a computer and produces drawings and mass properties. Engineers use it to test a design before anything is cut or cast, so a mistake shows up on screen instead of in metal.
+**CAD**, short for computer-aided design, is software that builds 3D models of parts and assemblies on a computer and produces drawings and mass properties. Engineers use it to test a design before anything is cut or cast, so a mistake shows up on screen instead of in metal.
 
 SolidWorks is a paid, widely used parametric CAD program, so many employers and courses expect it. You can learn the same ideas in free tools, and the skills carry over.
 
@@ -16,7 +16,7 @@ SolidWorks is a paid, widely used parametric CAD program, so many employers and 
 - An **extrude** pulls a sketch into 3D to a given depth. A **cut** removes material. A **fillet** rounds an edge.
 - A **feature tree** lists the steps in order. A later step can depend on an earlier one, so rebuild errors often come from ordering.
 - An **assembly** places parts together with **mates** (such as coincident faces or concentric holes).
-- Mass properties give volume, mass, and center of gravity. They depend on the density you assign to the material.
+- **Mass properties** give volume, mass, and center of gravity. They depend on the density you assign to the material.
 
 Free alternatives:
 
@@ -95,6 +95,6 @@ volume = 0.00012000000000000003 m^3, mass = 0.32400000000000007 kg
 
 - [FreeCAD](https://www.freecad.org/) by the FreeCAD project: free open-source parametric CAD. Start with its download and tutorial pages.
 - [Onshape pricing](https://www.onshape.com/en/pricing) by Onshape: the free plan terms and the public-document rule.
-- [NIST Special Publication 811](https://www.nist.gov/pml/special-publication-811) by NIST: the SI guide for consistent units in models and drawings.
+- [*NIST Special Publication 811*](https://www.nist.gov/pml/special-publication-811) by NIST: the SI guide for consistent units in models and drawings.
 - Related: [Measurement tools](07-measurement-tools.md), [shop tools](08-shop-tools.md), [design folder](../design/README.md).
 - [Tools reference](reference.md): the lookup sheet for this topic.

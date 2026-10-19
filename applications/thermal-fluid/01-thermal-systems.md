@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A thermal system is any arrangement of parts that adds, removes, or moves heat so that a device or building stays within its safe temperature range. Engineers who ignore heat flow build parts that overheat, fail, or waste energy.
+A **thermal system** is any arrangement of parts that adds, removes, or moves heat so that a device or building stays within its safe temperature range. Engineers who ignore heat flow build parts that overheat, fail, or waste energy.
 
 A processor needs a heat sink, a building needs insulation, and a heat exchanger moves heat from hot
 fluid to cold fluid. The same few ideas cover all three.
@@ -75,10 +75,12 @@ the full $20\ \text{K}$.
 - **Fouling.** Scale, dirt, or biological film builds on a heat exchanger surface and adds a thermal resistance. The sign is a rising outlet temperature or a falling heat transfer at the same flow. Design with a fouling allowance, filter the fluid, treat the water, and clean on schedule.
 - **Contact resistance growth.** The joint between a chip and a heat sink relies on thermal paste or a pad. Paste dries out and pumps out, and fasteners relax, so the interface resistance rises. The sign is a part running hotter over time. Use the correct mounting pressure and replace the interface material at service.
 - **Thermal runaway.** Some devices, including transistors, batteries, and heaters with positive feedback, make more heat as they get hotter. The temperature then climbs until the part fails. Current limiting, temperature sensing, and a thermal cutoff stop it, and the heat path must be sized for the worst case.
+
 - **Overheating.** Blocked vents, dust, a failed fan, or a hot ambient raise the temperature past the design limit. The sign is thermal throttling, a shutdown, or discolored parts. Derate the power, add a thermal fuse or cutoff, and keep airflow paths clear.
 - **Insulation moisture.** Wet insulation conducts heat much better than dry insulation, and it causes corrosion under the insulation. The sign is damp or stained cladding and condensation. A vapor barrier, sealed joints, and inspection reduce it.
 - **Thermal expansion and cycling.** Parts of different materials expand by different amounts, so joints and bonds crack after repeated cycles. The sign is a crack or a loose joint. Allow room for expansion with a sliding support or an expansion loop, and match materials.
 - **Burns and scalds.** Hot surfaces and steam cause burns, and pressurized hot fluid can discharge suddenly. Eliminate the hazard by removing the heat source, substitute a lower temperature, add insulation, guards, and relief valves, then use warning signs and procedures, and finally gloves and face protection. For maintenance, apply lockout/tagout on heat and fluid sources, let the system cool, release the pressure, and verify zero energy with a gauge and a temperature check.
+
 
 ## Practice
 
@@ -115,9 +117,9 @@ the full $20\ \text{K}$.
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 1 (thermodynamics, heat transfer)](https://openstax.org/books/university-physics-volume-2/pages/1-introduction)
+- [*University Physics Volume 2*, Chapter 1 (thermodynamics, heat transfer)](https://openstax.org/books/university-physics-volume-2/pages/1-introduction)
   by OpenStax: heat transfer by conduction, convection, and radiation, with worked examples.
-- [University Physics Volume 2, Chapter 3 (temperature and heat)](https://openstax.org/books/university-physics-volume-2/pages/3-introduction)
+- [*University Physics Volume 2*, Chapter 3 (temperature and heat)](https://openstax.org/books/university-physics-volume-2/pages/3-introduction)
   by OpenStax: the definitions of heat and temperature that this lesson builds on.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library that includes heat
   transfer textbooks.

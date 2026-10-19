@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Toilets and plumbing are the fixtures and pipes that remove waste with a short burst of water and keep sewer gas out of a building. A fault in one fixture can flood a room or let sewer gas into it, so these systems must work every time.
+Toilets and **plumbing** are the fixtures and pipes that remove waste with a short burst of water and keep sewer gas out of a building. A fault in one fixture can flood a room or let sewer gas into it, so these systems must work every time.
 
 Engineers size the tank, the trap, and the vent so that each flush clears the bowl and the trap keeps its water seal. Water pressure in a building comes from the utility supply or a pump, and every fixture must work at the pressure it receives.
 
@@ -13,9 +13,9 @@ Engineers size the tank, the trap, and the vent so that each flush clears the bo
 
 ### How it works
 
-A gravity flush uses the height of stored water. The tank sits above the bowl. When the flush valve opens, water drops into the bowl through the rim jets, and the bowl fills. The water pushes into the trap, which is a U-shaped pipe. When the water in the trap reaches the top of the bend, the trap starts to siphon. The siphon pulls the bowl and the trap empty, and it does so with less water than a plain drain would need.
+A **gravity flush** uses the height of stored water. The tank sits above the bowl. When the flush valve opens, water drops into the bowl through the rim jets, and the bowl fills. The water pushes into the trap, which is a U-shaped pipe. When the water in the trap reaches the top of the bend, the trap starts to **siphon**. The siphon pulls the bowl and the trap empty, and it does so with less water than a plain drain would need.
 
-The trap holds a water seal, typically about 50 mm (2 in) deep in building codes. That seal blocks sewer gas from rising into the room. A vent pipe connects the drain system to outdoor air. The vent keeps the air pressure in the drain near atmospheric pressure. Without a vent, a large flow can pull the seal out of the trap.
+The trap holds a **water seal**, typically about 50 mm (2 in) deep in building codes. That seal blocks sewer gas from rising into the room. A vent pipe connects the drain system to outdoor air. The vent keeps the air pressure in the drain near atmospheric pressure. Without a vent, a large flow can pull the seal out of the trap.
 
 Water pressure depends on height. Water at rest at depth $h$ below a free surface has gauge pressure $\rho g h$. A tank 3 m above the bowl gives about 29 kPa at the bowl, and a fixture 6 m above the supply meter sees about 59 kPa less than the meter pressure.
 
@@ -70,10 +70,13 @@ Assumptions for every equation below: the water is incompressible at 1000 kg/m$^
 
 ## Safety and the hierarchy of controls
 
-Plumbing hazards include sewer gas, contaminated drinking water, scalding, and flooding. The controls apply in this order.
+> [!WARNING]
+> Plumbing hazards include sewer gas, contaminated drinking water, scalding, and flooding.
+
+The controls apply in this order.
 
 - **Elimination.** Remove the hazard. A gravity toilet with no tank needs no tank water. A composting toilet removes the water-borne waste stream, although it adds handling of solid waste.
-- **Substitution.** Replace a hazard with a lower one. A thermostatic mixing valve replaces an unregulated hot supply, so the outlet temperature stays near a safe set point.
+- **Substitution.** Replace a hazard with a lower one. A **thermostatic mixing valve** replaces an unregulated hot supply, so the outlet temperature stays near a safe set point.
 - **Engineering controls.** Build the protection in. Examples are the trap seal, the vent, the anti-siphon fill valve whose inlet sits above the overflow line, the backflow preventer or air gap that stops fixture water from reaching the drinking supply, and the pressure regulator.
 - **Administrative controls.** Set rules for work and use. Plumbers follow the local code, a licensed inspector checks the work, and owners do not connect unlicensed fixtures.
 - **Personal protective equipment.** Gloves and eye protection protect the worker during repair and cleaning. They are the last line and apply only after the layers above.
@@ -91,7 +94,7 @@ Plumbing hazards include sewer gas, contaminated drinking water, scalding, and f
 
 Sir John Harington described a water closet with a flush valve in 1596. Alexander Cumming patented an S-shaped trap in London in 1775, and the trap seal became a standard way to keep gas out of the room. Joseph Bazalgette designed London's main sewer system after the Great Stink of 1858, a public health crisis that pushed the city to rebuild its drainage.
 
-Thomas Crapper was a sanitary plumber in London in the late nineteenth century, and he held patents for toilet parts. He did not invent the flush toilet, and the word "crap" does not come from his name.
+Thomas Crapper was a sanitary plumber in London in the late nineteenth century, and he held patents for toilet parts. He did not invent the flush toilet, and the word *crap* does not come from his name.
 
 ## Practice
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Speeds and feeds are the cutting settings that decide how fast a tool turns, how fast it moves into the material, and how much material it removes in a given time. A machinist must set them correctly because wrong values break tools and make parts that miss their size. Machining removes material from a block of stock with a cutting tool, so you can shape it into a part. Three numbers control how fast that happens: spindle speed (how fast the tool or part turns), feed rate (how fast the tool moves into the material), and material removal rate (how much material comes out per minute).
+**Speeds and feeds** are the cutting settings that decide how fast a tool turns, how fast it moves into the material, and how much material it removes in a given time. A machinist must set them correctly because wrong values break tools and make parts that miss their size. **Machining** removes material from a block of stock with a cutting tool, so you can shape it into a part. Three numbers control how fast that happens: spindle speed (how fast the tool or part turns), feed rate (how fast the tool moves into the material), and material removal rate (how much material comes out per minute).
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Algebra](../math/01-algebra.md)
 **Time:** 6-8 h
@@ -95,6 +95,6 @@ $$\text{MRR} = 0.25 \times 0.5 \times 18.34 = 2.29 \text{ in}^3/\text{min}$$
 ## Go deeper
 
 - [Paul's Online Math Notes: Algebra](https://tutorial.math.lamar.edu/classes/alg/alg.aspx) by Paul Dawkins, Lamar University: solving equations and rearranging formulas, which you need to move between US and SI.
-- [OpenStax University Physics Volume 1, Chapter 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax (Rice University): units, unit conversion, and the habit of checking dimensions.
+- [OpenStax *University Physics Volume 1*, Chapter 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax (Rice University): units, unit conversion, and the habit of checking dimensions.
 - [NIST: SI units](https://www.nist.gov/pml/weights-and-measures/si-units) by NIST: the official SI base units and how they are used, including the meter and millimeter.
 - [Manufacturing reference](reference.md): the lookup sheet for this topic.

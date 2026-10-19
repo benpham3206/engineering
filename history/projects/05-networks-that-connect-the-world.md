@@ -13,9 +13,9 @@ Networks that connect the world are the shared systems that carry power, message
 
 The problem. In the 1850s, a message between Europe and North America traveled by ship and took about ten days. Engineers wanted a wire under the Atlantic Ocean that could carry messages in minutes.
 
-The engineering. The cable connected Valentia Island, Ireland, to Trinity Bay, Newfoundland, a route of about 3200 km. Its copper conductor sat inside gutta-percha insulation and steel armour. William Thomson, later Lord Kelvin, developed the mirror galvanometer that could detect faint signals and analyzed how signals slow down along a long cable. His analysis showed that the delay grows with the square of the cable length, so long cables need slow signalling or better design.
+The engineering. The cable connected Valentia Island, Ireland, to Trinity Bay, Newfoundland, a route of about 3200 km. Its copper conductor sat inside gutta-percha insulation and steel armour. William Thomson, later Lord Kelvin, developed the **mirror galvanometer** that could detect faint signals and analyzed how signals slow down along a long cable. His analysis showed that the delay grows with the square of the cable length, so long cables need slow signalling or better design.
 
-The scale. The first cable in 1858 carried a message of roughly 100 words, which took about 16 hours to send. The cable failed within about three weeks after an operator applied excessive voltage. The Great Eastern steamship laid a durable cable in 1866, and that cable worked reliably.
+The scale. The first cable in 1858 carried a message of roughly 100 words, which took about 16 hours to send. The cable failed within about three weeks after an operator applied excessive voltage. The *Great Eastern* steamship laid a durable cable in 1866, and that cable worked reliably.
 
 What went wrong. The 1858 failure came from an operator who used too high a voltage, which broke down the insulation. Engineers also learned that the cable's electrical behavior differed from what the early designers had assumed, and the lesson shaped later cable design.
 
@@ -49,7 +49,7 @@ How it changed the world. The system changed freight shipping, suburban growth, 
 
 The problem. In the late 1960s, the U.S. Department of Defense wanted to share costly research computers across distant sites. Circuit switching tied up a whole line for each conversation, and that approach did not suit bursty computer traffic.
 
-The engineering. ARPANET used packet switching. Messages split into packets, and each packet found its own route through a network of interface message processors. The first four nodes were at UCLA, the Stanford Research Institute, UC Santa Barbara, and the University of Utah. The links ran at 50 kbit/s. The network did not start as a nuclear survivability system, though the redundancy of packet routing was an influence on early designers. In 1974, Vint Cerf and Robert Kahn published the design of the Transmission Control Protocol. The network switched to the TCP/IP suite on 1 January 1983.
+The engineering. ARPANET used **packet switching**. Messages split into packets, and each packet found its own route through a network of interface message processors. The first four nodes were at UCLA, the Stanford Research Institute, UC Santa Barbara, and the University of Utah. The links ran at 50 kbit/s. The network did not start as a nuclear survivability system, though the redundancy of packet routing was an influence on early designers. In 1974, Vint Cerf and Robert Kahn published the design of the **Transmission Control Protocol**. The network switched to the TCP/IP suite on 1 January 1983.
 
 The scale. The 1988 Morris worm infected about 6000 machines, roughly ten percent of the internet at that time. Today, more than 5 billion people use the internet.
 
@@ -73,7 +73,7 @@ How it changed the world. Civilian positioning and precise timing now support av
 
 The problem. Copper cables carried only a limited number of telephone calls and lost signal over long distances. Engineers needed a medium with far more bandwidth and lower loss.
 
-The engineering. Light travels through a glass fiber by total internal reflection, which confines the light to the core. Silica fiber has a refractive index near 1.47, so light moves at about $2.04 \times 10^8\ \mathrm{m/s}$ inside it. Erbium-doped fiber amplifiers boost the light without converting it to electricity, which made long undersea spans practical. The first transatlantic fiber cable, TAT-8, opened in 1988.
+The engineering. Light travels through a glass fiber by **total internal reflection**, which confines the light to the core. Silica fiber has a refractive index near 1.47, so light moves at about $2.04 \times 10^8\ \mathrm{m/s}$ inside it. **Erbium-doped fiber amplifiers** boost the light without converting it to electricity, which made long undersea spans practical. The first transatlantic fiber cable, TAT-8, opened in 1988.
 
 The scale. TAT-8 carried tens of thousands of telephone circuits. Today, the global network of undersea cables exceeds 1 million km in length, and it carries most intercontinental internet traffic.
 
@@ -98,7 +98,7 @@ Propagation delay in a medium. The one-way time for a signal over a path is
 
 $$t = \frac{L}{v}, \qquad v = \frac{c}{n}$$
 
-where $t$ is the delay in seconds, $L$ is the path length in metres, $v$ is the signal speed in metres per second, $c = 2.998 \times 10^8$ m/s is the speed of light in vacuum, and $n$ is the refractive index of the medium, which is dimensionless. The equation assumes a uniform medium, a straight path, and no processing delay. For silica fiber, $n \approx 1.47$.
+where $t$ is the delay in seconds, $L$ is the path length in metres, $v$ is the signal speed in metres per second, $c = 2.998 \times 10^8$ m/s is the speed of light in vacuum, and $n$ is the **refractive index** of the medium, which is dimensionless. The equation assumes a uniform medium, a straight path, and no processing delay. For silica fiber, $n \approx 1.47$.
 
 Range from timing error. A receiver that measures a travel time with error $\Delta t$ places the satellite at a distance error of
 
@@ -197,7 +197,7 @@ Assuming the internet and the World Wide Web are the same system. The web runs o
 
 ## Go deeper
 
-[OpenStax, University Physics Volume 3](https://openstax.org/books/university-physics-volume-3/pages/1-introduction) covers optics, including total internal reflection, which guides light in fiber.
+[OpenStax, *University Physics Volume 3*](https://openstax.org/books/university-physics-volume-3/pages/1-introduction) covers optics, including total internal reflection, which guides light in fiber.
 
 [NIST, Time and Frequency Division](https://www.nist.gov/pml/time-and-frequency-division) maintains the U.S. standard for frequency and time, and it links to GPS time transfer services.
 

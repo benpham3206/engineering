@@ -113,7 +113,7 @@ $$\sin x \approx x - \frac{x^3}{6}, \qquad \cos x \approx 1 - \frac{x^2}{2}, \qq
 | $\arctan x$ | $1/(1 + x^2)$ |
 | $\sinh x$ | $\cosh x$ |
 | $\cosh x$ | $\sinh x$ |
-| $\tanh x$ | $\operatorname{sech}^2 x$ |
+| $\tanh x$ | $1 - \tanh^2 x$ (also written $\mathrm{sech}^2\,x$) |
 
 Rules: sum, product $(fg)' = f'g + fg'$, quotient $(f/g)' = (f'g - fg')/g^2$, chain $\dfrac{d}{dx} f(g(x)) = f'(g(x))\,g'(x)$.
 
