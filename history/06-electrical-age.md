@@ -4,7 +4,7 @@
 
 From about 1800 to 1900, engineers learned to make electric current, use it in motors and lamps, and send it along wires. The period ended with alternating current carrying power over long distances, and that choice still shapes the power grid and the electrical equipment in homes.
 
-**Prerequisites:** [Scientific revolution](04-scientific-revolution.md), [Industrial revolution](05-industrial-revolution.md)
+**Prerequisites:** [Scientific revolution](04-scientific-revolution.md), [Industrial revolution](05-industrial-revolution.md), [Electricity and magnetism](../physics/06-electricity-and-magnetism.md)
 **Time:** 2-3 h
 
 ## Core ideas

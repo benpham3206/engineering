@@ -6,7 +6,7 @@ Most wrong engineering answers start with a problem that was never fully stated.
 write an equation, you need to know what you have, what you want, and what you are assuming.
 Engineers call this step scoping, and it takes less time than the mistakes it prevents.
 
-**Prerequisites:** none, but basic algebra helps. See the [math](../math/README.md) folder.
+**Prerequisites:** none, but [Algebra](../math/01-algebra.md) helps.
 **Time:** 2-3 h
 
 ## Core ideas
@@ -83,19 +83,19 @@ Each cable makes an angle $\theta$ with the horizontal bar. Find the tension $T$
 
 **Goal:** Find $T$ for each cable at $\theta = 60^\circ$.
 
-**Solution step (scoping only):** The weight is $W = mg = 50 \times 9.81 = 490.5\ \text{N}$.
-Two cables share it, so each cable supplies roughly half the vertical support. Lessons 02 to 04
+**Solution step (scoping only):** The weight on Earth is $W = mg = 50 \times 9.81 = 490.5\ \text{N}$.
+Two cables share it, so each cable supplies roughly half the vertical support. The next lessons
 turn this list into an answer.
 
 **Answer (from the list so far):** Unknown $T$ in N. Expected size: a few hundred newtons.
 
 **Sanity check:** The sign weighs about 490 N, so the cables together must hold about 490 N
 upward. Each cable must carry some share of that. A value near 250 N to 300 N per cable is the
-right order of magnitude. Lesson 06 covers this habit in detail.
+right order of magnitude. The lesson Sanity-check the answer covers this habit in detail.
 
 ## Practice
 
-1. A bag has mass 12 kg. Write its weight in newtons using $g = 9.81\ \text{m/s}^2$.
+1. A bag has mass 12 kg. Write its weight in newtons using $g = 9.81\ \text{m/s}^2$ (Earth surface).
 2. Convert a length of 2.5 ft to meters. Use 1 ft = 0.3048 m.
 3. Convert a speed of 30 m/s to km/h.
 

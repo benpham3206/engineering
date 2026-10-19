@@ -4,7 +4,7 @@
 
 Belts and chains carry power between two shafts that sit some distance apart, so the drive needs no gears on the shafts. Designers pick the belt type, set the tension, and check the wrap and the speed ratio, because those set how much power the drive can carry without slipping. Flat, V, and timing belts and roller chains each suit different loads, speeds, and center distances.
 
-**Prerequisites:** [Statics](../../physics/01-statics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md)
+**Prerequisites:** [Statics](../../physics/01-statics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 4-6 h
 
 ## Core ideas

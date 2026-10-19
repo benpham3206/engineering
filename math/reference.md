@@ -461,7 +461,7 @@ Uncertainty propagation (combining measurement errors through a formula) is cove
 | Simpson | 4 | $-\dfrac{(b-a)h^4}{180}f^{(4)}(\xi)$ |
 | Gauss-Legendre, $n$ points | $2n$ (exact for polynomials of degree $\le 2n-1$) | Nodes are not equally spaced |
 
-- Check: $\int_0^1 e^{-x^2}\,dx = 0.7468241$. Trapezoid errors are $-3.84\times10^{-3}$ at $n=4$ and $-9.59\times10^{-4}$ at $n=8$ (ratio 4, order 2). Simpson errors are $3.1\times10^{-5}$ at $n=4$ and $2.0\times10^{-6}$ at $n=8$ (ratio about 16, order 4).
+- Check: $\int_0^1 e^{-x^2}\,dx = 0.7468241$. Trapezoid errors are $+3.84\times10^{-3}$ at $n=4$ and $+9.59\times10^{-4}$ at $n=8$ (ratio 4, order 2). Simpson errors are $-3.1\times10^{-5}$ at $n=4$ and $-2.0\times10^{-6}$ at $n=8$ (ratio about 16, order 4).
 - Trapezoid overestimates when $f'' > 0$ (convex) and underestimates when $f'' < 0$.
 
 Holds when: $f$ is smooth enough for the error term's derivative to exist and be bounded. Breaks when: $f$ has a kink or singularity inside the interval (refine locally or use a method for singular integrands).

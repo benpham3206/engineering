@@ -4,7 +4,7 @@
 
 A car turns stored energy into motion, and the tires push on the road to move it. Engineers size the engine, the gearbox, and the brakes from one balance: the force at the tires must match the resistance the car meets. This lesson covers the drivetrain layout, the road load that the car must overcome, and the braking distance that friction allows.
 
-**Prerequisites:** [Statics](../../physics/01-statics.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
+**Prerequisites:** [Statics](../../physics/01-statics.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6-8 h
 
 ## Core ideas
@@ -40,7 +40,7 @@ The equations below assume steady speed unless an equation includes acceleration
 - **Wheel torque:** $T_w = F_{tire} \, r$, where $T_w$ is in N m and $F_{tire}$ is the tire force in N.
 - **Engine torque:** $T_e = T_w / (G \, \eta_{dt})$, where $\eta_{dt}$ is the drivetrain efficiency, typically 0.90 to 0.95 for a manual or automatic gearbox with a final drive.
 - **Power:** $P = T \, \omega$, in W, with torque in N m and angular speed in rad/s. At the wheels, $P_w = F_{road} \, v$.
-- **Rolling resistance:** $F_{rr} = C_{rr} \, m \, g$, where $C_{rr}$ is the rolling resistance coefficient (dimensionless, typically 0.008 to 0.012 on asphalt), $m$ is mass in kg, and $g = 9.81\ \text{m/s}^2$.
+- **Rolling resistance:** $F_{rr} = C_{rr} \, m \, g$, where $C_{rr}$ is the rolling resistance coefficient (dimensionless, typically 0.008 to 0.012 on asphalt), $m$ is mass in kg, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface).
 - **Aerodynamic drag:** $F_d = \tfrac{1}{2} \rho \, C_d \, A \, v^2$, where $\rho$ is the air density in kg/m$^3$ (typically 1.20 at 20 C at sea level), $C_d$ is the drag coefficient (dimensionless, typically 0.25 to 0.35 for production cars), and $A$ is the frontal area in m$^2$.
 - **Road grade:** $F_g = m \, g \sin\theta$, where $\theta$ is the road angle. A 6 percent grade means $\tan\theta = 0.06$.
 - **Total road load:** $F_{road} = F_{rr} + F_d + F_g + m a$, where $a$ is the acceleration in m/s$^2$.
@@ -50,7 +50,7 @@ The equations below assume steady speed unless an equation includes acceleration
 
 ## Worked example
 
-**Given:** A 1500 kg car with $C_{rr} = 0.012$, $C_d = 0.30$, $A = 2.2\ \text{m}^2$, and $\rho = 1.20\ \text{kg/m}^3$. The tire radius is $r = 0.33\ \text{m}$. The overall ratio is $G = 3.5$, and the drivetrain efficiency is $\eta_{dt} = 0.92$. The car cruises at 100 km/h, which is $v = 27.78\ \text{m/s}$, on a level road with no wind.
+**Given:** A 1500 kg car with $C_{rr} = 0.012$, $C_d = 0.30$, $A = 2.2\ \text{m}^2$, and $\rho = 1.20\ \text{kg/m}^3$. The tire radius is $r = 0.33\ \text{m}$. The overall ratio is $G = 3.5$, and the drivetrain efficiency is $\eta_{dt} = 0.92$. The car cruises at 100 km/h, which is $v = 27.78\ \text{m/s}$, on a level road with no wind. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the road load force, (b) the wheel power, (c) the engine speed and engine torque, and (d) the braking distance from 100 km/h with $\mu = 0.9$.
 
@@ -98,6 +98,8 @@ Servicing a brake system uses lockout and tagout. Isolate every energy source by
 Karl Benz built a three-wheeled Motorwagen in Mannheim, Germany, and received a German patent for it in 1886. Gottlieb Daimler and Wilhelm Maybach developed a fast, lightweight engine in Cannstatt about the same time. Henry Ford introduced the Model T in 1908, and his Highland Park plant began a moving assembly line in 1913. The line cut the time to build a car and made the car affordable for many families.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A car has a wheel radius of 0.30 m and travels at 20 m/s. Find the wheel speed in rpm.
 2. A 1200 kg car rolls on asphalt with $C_{rr} = 0.010$ on a level road. Find the rolling resistance force in N.

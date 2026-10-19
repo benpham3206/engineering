@@ -4,7 +4,7 @@
 
 A vacuum cleaner moves air through a hose and a filter, and the suction at the nozzle is the pressure difference the fan creates. The useful output is the air power, which is the airflow times the pressure difference, and most of the electrical input is lost in the motor and fan. Engineers who size fans, hoses, cyclones, and filters use these relations to predict performance and to pick a filter that traps the dust that matters.
 
-**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../../applications/thermal-fluid/02-fluid-systems.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md)
+**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md)
 **Time:** 3-4 h
 
 ## Core ideas

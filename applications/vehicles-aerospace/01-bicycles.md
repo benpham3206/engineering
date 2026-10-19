@@ -4,7 +4,7 @@
 
 A bicycle turns the rider's leg power into speed through a chain, gears, and two wheels. Engineers use the same physics to size gears, estimate how much power a rider needs on a hill, and design a frame that steers stably.
 
-**Prerequisites:** [Particle dynamics and energy](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Trigonometry](../../math/02-trigonometry.md)
+**Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 4-6 h
 
 ## Core ideas
@@ -53,7 +53,7 @@ The wheel rolls without slip, and $r$ is the effective rolling radius. The bicyc
 
 $$v = \omega_w r$$
 
-Assumes a flat road, a constant coefficient, and a tyre that rolls without slipping. Rolling resistance is a force in newtons. Here $C_{rr}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g = 9.81\ \text{m/s}^2$:
+Assumes a flat road, a constant coefficient, and a tyre that rolls without slipping. Rolling resistance is a force in newtons. Here $C_{rr}$ is the dimensionless rolling resistance coefficient, about 0.004 for a road tyre on smooth asphalt (typical), $m$ is the total mass of rider and bicycle in kilograms, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface):
 
 $$F_{rr} = C_{rr}\, m\, g$$
 
@@ -71,7 +71,7 @@ $$P_{wheel} = (F_{rr} + F_d + F_g)\, v, \qquad P_{in} = \frac{P_{wheel}}{\eta}$$
 
 ## Worked example
 
-**Given:** The rider pedals at 90 rpm, the chainring has 50 teeth, and the cog has 11 teeth. The wheel radius is $r = 0.335\ \text{m}$. The total mass is $m = 85\ \text{kg}$, with $C_{rr} = 0.004$, $\rho_a = 1.2\ \text{kg/m}^3$, and $C_dA = 0.35\ \text{m}^2$. The drivetrain efficiency is $\eta = 0.97$.
+**Given:** The rider pedals at 90 rpm, the chainring has 50 teeth, and the cog has 11 teeth. The wheel radius is $r = 0.335\ \text{m}$. The total mass is $m = 85\ \text{kg}$, with $C_{rr} = 0.004$, $\rho_a = 1.2\ \text{kg/m}^3$, and $C_dA = 0.35\ \text{m}^2$. The drivetrain efficiency is $\eta = 0.97$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** the speed at 90 rpm, the rider power needed at 10 m/s on a flat road, and the rider power needed at 5 m/s up a 5 percent grade.
 
@@ -125,6 +125,8 @@ Bicycle standards set safety requirements for brakes, frame strength, and fasten
 Karl Drais built the draisine in Mannheim in 1817. It had two wheels and a steering handlebar, but no pedals, and the rider pushed it along with the feet. In the 1860s, Pierre Michaux and his sons in Paris added pedals and cranks to the front wheel. Large-front-wheel machines, often called high-wheelers, were popular in the 1870s and 1880s. John Kemp Starley's Rover safety bicycle of 1885 used a chain drive to the rear wheel and two wheels of equal size. In 1888, John Boyd Dunlop developed a practical pneumatic tyre in Belfast, which made rides far more comfortable on rough roads.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A chainring has 52 teeth and the cog has 13 teeth. Find the gear ratio.
 2. The rider pedals at 80 rpm in a 50/16 gear, and the wheel radius is 0.335 m. Find the speed.

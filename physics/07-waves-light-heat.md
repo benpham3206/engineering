@@ -3,7 +3,7 @@
 **Type:** lesson
 
 Oscillations, waves, and light show up in almost every machine: springs and suspensions, sound and vibration in structures, sensors that use light, and the temperature and heat that decide how a part behaves.
-**Prerequisites:** [02-particle-dynamics.md](02-particle-dynamics.md) (forces and Newton's second law)
+**Prerequisites:** [Particle dynamics](02-particle-dynamics.md) (forces and Newton's second law), [Trigonometry](../math/02-trigonometry.md) (sinusoids)
 **Time:** 8-12 h
 
 ## Core ideas

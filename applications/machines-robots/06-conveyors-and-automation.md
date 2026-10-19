@@ -6,11 +6,7 @@ A conveyor moves material along a fixed path with a belt or rollers, and automat
 starts, stops, and where each item goes. An engineer sizes the drive for speed, throughput, and
 power, and designs the control logic so that a fault stops the line safely.
 
-**Prerequisites:** [Mechatronics](../electronics/06-mechatronics.md),
-[Sensors in products](../electronics/05-sensors-in-products.md),
-[Digital logic and computers](../electronics/07-digital-logic-and-computers.md),
-[Gear trains](../power-transmission/01-gear-trains.md),
-[Statics](../../physics/01-statics.md)
+**Prerequisites:** [Mechatronics](../electronics/06-mechatronics.md), [Sensors in products](../electronics/05-sensors-in-products.md), [Digital logic and computers](../electronics/07-digital-logic-and-computers.md), [Gear trains](../power-transmission/01-gear-trains.md), [Statics](../../physics/01-statics.md)
 **Time:** 8-12 h
 
 ## Core ideas
@@ -134,7 +130,7 @@ scan, so outputs can lag by one scan. This matters for fast sensor signals.
 **Given:** A belt conveyor carries a load of linear density $\lambda = 12\ \text{kg/m}$ at a speed
 $v = 0.50\ \text{m/s}$. The belt runs $L = 20\ \text{m}$ horizontally, then lifts the load
 $h = 5\ \text{m}$. The rolling resistance coefficient is $\mu_r = 0.03$, and the drive efficiency is
-$\eta = 0.80$. Use $g = 9.81\ \text{m/s}^2$.
+$\eta = 0.80$. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the throughput, (b) the friction force on the horizontal section, (c) the drive pulley
 speed in rpm, and (d) the input power.
@@ -224,6 +220,8 @@ drawing, so electricians could read the program.
 - Design control logic to fail safe: a broken wire or lost power should stop the machine.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A drive pulley of diameter $0.15\ \text{m}$ turns at $40\ \text{rpm}$. Find the belt speed in m/s.
 2. A load of $8\ \text{kg/m}$ moves at $0.40\ \text{m/s}$. Find the throughput in kg/s and in t/h.

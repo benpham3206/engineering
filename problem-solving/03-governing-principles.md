@@ -7,7 +7,7 @@ Most engineering problems use only a few: force balance, Newton's second law, co
 energy, and conservation of mass or heat. The skill is picking the right ones, not memorizing
 every formula.
 
-**Prerequisites:** [Define the problem](01-define-the-problem.md), [Draw it](02-draw-it.md)
+**Prerequisites:** [Define the problem](01-define-the-problem.md), [Draw it](02-draw-it.md), [Statics](../physics/01-statics.md), [Particle dynamics](../physics/02-particle-dynamics.md)
 **Time:** 4-6 h
 
 ## Core ideas
@@ -57,7 +57,7 @@ mgh = \tfrac{1}{2}mv^2
 $$
 
 Here $h$ is the drop height in meters (m), $v$ is speed in meters per second (m/s), and $g$ is
-gravity at $9.81\ \text{m/s}^2$. The mass cancels, so the speed does not depend on mass. That
+gravity (9.81 $\text{m/s}^2$ at Earth's surface). The mass cancels, so the speed does not depend on mass. That
 is a useful result, and you should check it, not assume it.
 
 ### Choosing principles for a falling object
@@ -96,14 +96,14 @@ Each symbol:
 - $\theta$ is the angle of each cable to horizontal (degrees)
 - $W = mg$ is weight (N)
 - $a$ is acceleration ($\text{m/s}^2$)
-- $h$ is height (m), $v$ is speed (m/s), $g = 9.81\ \text{m/s}^2$
+- $h$ is height (m), $v$ is speed (m/s), $g = 9.81\ \text{m/s}^2$ (Earth surface)
 
 ## Worked example
 
 **Problem.** A ball is dropped from rest from a height of 20 m. Ignore air drag. Find (a) its
 speed just before it hits the ground and (b) the time the fall takes.
 
-**Given:** $h = 20\ \text{m}$, starting speed $v_0 = 0$, $g = 9.81\ \text{m/s}^2$.
+**Given:** $h = 20\ \text{m}$, starting speed $v_0 = 0$, $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** $v$ in m/s and $t$ in seconds (s).
 

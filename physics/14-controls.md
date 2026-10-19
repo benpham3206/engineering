@@ -4,7 +4,7 @@
 
 A control system measures an output, compares it with a desired value, and changes an input to close the gap. Engineers use feedback to hold a temperature, keep a drone level, or position a robot arm, even when the plant changes or a disturbance pushes on it.
 
-**Prerequisites:** [13-vibrations.md](13-vibrations.md), [02-particle-dynamics.md](02-particle-dynamics.md)
+**Prerequisites:** [Vibrations](13-vibrations.md), [Particle dynamics](02-particle-dynamics.md), [Differential equations](../math/06-differential-equations.md) (Laplace transforms and transfer functions)
 **Time:** 8-12 h
 
 ## Core ideas

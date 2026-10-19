@@ -4,7 +4,7 @@
 
 Statics is the study of bodies that do not move. Engineers use it to find the forces in cables, trusses, frames, and supports before they size anything, because a part that carries too much load fails. Every later topic in this folder builds on the free-body diagram and the equilibrium equations below.
 
-**Prerequisites:** none in this folder. You should be comfortable with high-school algebra and basic trigonometry (sine, cosine, tangent).
+**Prerequisites:** [Algebra](../math/01-algebra.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 8-12 h
 
 ## Core ideas
@@ -75,7 +75,7 @@ $$T_1 = 622.3 \times \frac{\cos 60^\circ}{\cos 40^\circ} \approx 406.2\ \text{N}
 
 ## Practice
 
-1. A 50 kg block sits on a horizontal floor with $\mu_s = 0.4$. Find the largest horizontal pull P, in newtons, before the block starts to slide. Use $g = 9.81\ \text{m/s}^2$.
+1. A 50 kg block sits on a horizontal floor with $\mu_s = 0.4$. Find the largest horizontal pull P, in newtons, before the block starts to slide. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 2. A 500 N load hangs from two symmetric cables. Each cable makes 45 degrees with the horizontal. Find the tension in each cable, in newtons.
 3. A simply supported beam 10 m long carries a 12 kN point load at its midspan. Find the magnitude of each support reaction, in newtons. Neglect the beam's own weight.
 

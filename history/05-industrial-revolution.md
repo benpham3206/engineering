@@ -4,7 +4,7 @@
 
 Between about 1760 and 1840, British engineers began replacing work done by muscle, water, and wood with steam engines, iron parts, and machines that cut metal to measured sizes. These changes made factories, railways, and steamships practical. They also set habits that engineers still use. Measure the part, standardize its size, and build it to a tolerance.
 
-**Prerequisites:** [Scientific revolution](04-scientific-revolution.md)
+**Prerequisites:** [Scientific revolution](04-scientific-revolution.md), [Thermodynamics: properties, work, heat, and the first law](../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../physics/09-thermo-second-law-cycles.md)
 **Time:** 2-3 h
 
 ## Core ideas
@@ -27,7 +27,7 @@ Engines needed accurate cylinders and pistons, and the existing tools could not 
 
 ### Railways and steel
 
-Early railways needed locomotives that ran reliably and rails that lasted. George Stephenson's *Rocket* won the Rainhill Trials in Lancashire in 1829. The Liverpool and Manchester Railway opened in 1830 and used steam locomotives for passengers and freight. Iron rails wore out quickly under heavy trains. Henry Bessemer patented a converter in 1856 that blew air through molten pig iron and made steel in bulk. Cheap steel then went into rails, ships, and bridges.
+Early railways needed locomotives that ran reliably and rails that lasted. The *Rocket*, designed by Robert Stephenson with his father George and built by Robert Stephenson and Company, won the Rainhill Trials in Lancashire in 1829. The Liverpool and Manchester Railway opened in 1830 and used steam locomotives for passengers and freight. Iron rails wore out quickly under heavy trains. Henry Bessemer patented a converter in 1856 that blew air through molten pig iron and made steel in bulk. Cheap steel then went into rails, ships, and bridges.
 
 ### How it spread
 

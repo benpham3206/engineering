@@ -4,7 +4,7 @@
 
 A fuel cell turns hydrogen and oxygen into electricity and water with no combustion and no moving parts. Hydrogen also stores energy from solar or wind power when an electrolyzer splits water and a fuel cell later turns the gas back into electricity. Engineers need the cell physics, the catalyst limits, and the storage pressures to size these systems.
 
-**Prerequisites:** [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [First law of thermodynamics](../../physics/08-thermo-first-law.md), [Mechanical properties](../../materials/03-mechanical-properties.md)
+**Prerequisites:** [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Mechanical properties](../../materials/03-mechanical-properties.md)
 **Time:** 8-10 h
 
 ## Core ideas

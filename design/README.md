@@ -2,7 +2,7 @@
 
 Turning a need into something that works, can be built, and can be explained.
 
-**Prerequisites:** [math](../math/README.md) (algebra and trigonometry), [physics](../physics/README.md) (forces and motion), and [materials](../materials/README.md) (stress basics). Start with lesson 01.
+**Prerequisites:** none for the first three lessons ([Design process](01-design-process.md), [Engineering graphics](02-engineering-graphics.md), and [CAD](03-cad.md)), so they can start in the first semester. The later lessons need [math](../math/README.md) (algebra and trigonometry), [physics](../physics/README.md) (forces and motion), and [materials](../materials/README.md) (stress basics).
 
 ## Lessons
 

@@ -4,7 +4,7 @@
 
 Particle dynamics studies how forces change the motion of a body. Engineers use it to predict how a car stops, how a projectile lands, and how a machine part speeds up. This lesson treats the body as a particle, a point with mass, and uses three tools: Newton's second law, work and energy, and impulse and momentum.
 
-**Prerequisites:** [Statics](01-statics.md) (free-body diagrams and force components).
+**Prerequisites:** [Statics](01-statics.md) (free-body diagrams and force components), [Single-variable calculus](../math/03-single-variable-calculus.md) (velocity and acceleration as rates, impulse and work as integrals)
 **Time:** 10-14 h
 
 ## Core ideas
@@ -73,7 +73,7 @@ Then Newton's second law gives $F = ma = (1500)(1.0) = 1500$ N, which matches.
 
 1. A 1200 kg car moves at 20 m/s. Find its kinetic energy, in kilojoules.
 2. A 4 kg object starts from rest and is pushed by a constant net force of 12 N. How long, in seconds, does it take to reach 9 m/s?
-3. A 0.5 kg ball is dropped from rest from a height of 5 m. Ignoring air resistance, find its speed just before it hits the ground, in m/s. Use $g = 9.81\ \text{m/s}^2$.
+3. A 0.5 kg ball is dropped from rest from a height of 5 m. Ignoring air resistance, find its speed just before it hits the ground, in m/s. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 4. A 0.2 kg ball moving at +20 m/s bounces straight back at -20 m/s. Find the impulse delivered to the ball, in N s. Take the positive direction as the direction of the initial velocity.
 
 <details><summary>Answers</summary>

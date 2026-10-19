@@ -4,7 +4,7 @@
 
 Energy storage holds energy from one time and returns it at another, so supply can follow demand. Engineers use storage to smooth the output of solar and wind plants, to cover peak demand, and to keep a grid stable within seconds. Each technology stores energy in a different form, and the size of the store depends on both how much energy it holds and how fast it can deliver it.
 
-**Prerequisites:** [First law of thermodynamics](../../physics/08-thermo-first-law.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
+**Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 8-10 h
 
 ## Core ideas
@@ -46,7 +46,7 @@ All values are typical, and designs vary widely.
 
 ## Key equations
 
-Energy stored by raising mass $m$ in kilograms through height $h$ in metres, with $g = 9.81\ \text{m/s}^2$:
+Energy stored by raising mass $m$ in kilograms through height $h$ in metres, with $g = 9.81\ \text{m/s}^2$ (Earth surface):
 
 $$E = m g h$$
 
@@ -76,7 +76,7 @@ $$t = \frac{E}{P}\ \text{hours}$$
 
 ## Worked example
 
-**Given:** A pumped hydro scheme uses an upper reservoir of $V = 1.0 \times 10^{6}\ \text{m}^3$ of water with 500 m of head above the lower reservoir. The turbine rating is 200 MW. The round-trip efficiency is 0.80. Water density is $1000\ \text{kg/m}^3$, and $g = 9.81\ \text{m/s}^2$.
+**Given:** A pumped hydro scheme uses an upper reservoir of $V = 1.0 \times 10^{6}\ \text{m}^3$ of water with 500 m of head above the lower reservoir. The turbine rating is 200 MW. The round-trip efficiency is 0.80. Water density is $1000\ \text{kg/m}^3$, and $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the potential energy the reservoir holds, in GWh, (b) the energy the grid receives on discharge, in GWh, (c) the time the turbine runs at full power on one full reservoir, and (d) the grid energy needed to refill the reservoir.
 
@@ -113,6 +113,8 @@ $$t = \frac{E}{P}\ \text{hours}$$
 Gaston Planté in France built the first practical rechargeable lead-acid battery in 1859. Sony began selling lithium-ion batteries in 1991. Pumped hydro grew through the twentieth century and remains the largest form of grid storage worldwide. The Huntorf plant in Germany began operating as a compressed air store in 1978, and it is one of the early large examples of this technology. Flywheels have smoothed machine speeds for centuries, and modern flywheels use composite rotors and magnetic bearings.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A battery stores 50 MWh. With a round-trip efficiency of 0.90, find the energy returned, in MWh.
 2. A 2 MW battery stores 4 MWh. Find its duration in hours.

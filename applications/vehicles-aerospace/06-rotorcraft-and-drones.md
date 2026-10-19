@@ -4,7 +4,7 @@
 
 A rotorcraft lifts itself by spinning blades that push air down, so it can hover and fly at low speed. An engineer sizes the rotor from the hover power, which momentum theory predicts, and designs the control system that keeps the craft stable.
 
-**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Controls](../../physics/14-controls.md)
+**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Feedback control](../../physics/14-controls.md)
 **Time:** 6-8 h
 
 ## Core ideas
@@ -46,7 +46,7 @@ $$
 T = 2\rho A v_i^2 \qquad v_h = \sqrt{\frac{T}{2\rho A}} \qquad P_{\text{ideal}} = T v_h = \frac{T^{3/2}}{\sqrt{2\rho A}}
 $$
 
-- $T$ is thrust (N), which equals weight in hover. $\rho$ is air density (kg/m$^3$, about 1.225 at sea level). $A$ is the total rotor disk area (m$^2$). $v_h$ is the hover induced velocity (m/s). $P_{\text{ideal}}$ is the ideal induced power (W), the least power that the rotor can use for this thrust.
+- $T$ is thrust (N), which equals weight in hover. $\rho$ is air density (kg/m$^3$, about 1.225 at sea level on Earth). $A$ is the total rotor disk area (m$^2$). $v_h$ is the hover induced velocity (m/s). $P_{\text{ideal}}$ is the ideal induced power (W), the least power that the rotor can use for this thrust.
 - Assumptions: ideal actuator disk, uniform inflow across the disk, hover (no forward or vertical speed), steady and incompressible flow, air at rest far upstream, and no profile drag, swirl, or tip losses. Real rotors need more power than $P_{\text{ideal}}$.
 
 Actual shaft power with a figure of merit $FM$, a measure of how close the rotor comes to the ideal.
@@ -77,7 +77,7 @@ $$
 
 ## Worked example
 
-**Given.** A 2.0 kg quadcopter has four rotors, each 0.254 m in diameter, so each has radius $R = 0.127$ m. It hovers at sea level, where $\rho = 1.225$ kg/m$^3$. Assume $FM = 0.70$.
+**Given.** A 2.0 kg quadcopter has four rotors, each 0.254 m in diameter, so each has radius $R = 0.127$ m. It hovers at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Assume $FM = 0.70$.
 
 **Find.** (a) the thrust needed, (b) the total disk area and disk loading, (c) the ideal hover power and the shaft power, and (d) the power per rotor.
 

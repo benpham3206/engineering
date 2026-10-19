@@ -4,7 +4,7 @@
 
 A microwave oven heats food with a 2.45 GHz electromagnetic wave. Water molecules in the food absorb energy from that wave and turn it into heat. An engineer needs the physics of the magnetron, the metal cavity, and the standing wave pattern, because those set how evenly food heats and how well the oven keeps the energy inside.
 
-**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Waves, light, and heat](../../physics/07-waves-light-heat.md)
+**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md)
 **Time:** 4-6 h
 
 ## Core ideas

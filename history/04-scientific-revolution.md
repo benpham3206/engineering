@@ -4,7 +4,7 @@
 
 From about 1600 to 1700, scientists began to describe motion, falling bodies, and the heavens with measurements and mathematics. Engineers gained the tools that made those measurements repeatable: the pendulum clock, the balance spring, and the telescope. The longitude problem at sea forced a precise clock to be built, and that clock is still the model for reliable timing.
 
-**Prerequisites:** [Medieval and renaissance engineering](03-medieval-and-renaissance.md)
+**Prerequisites:** [Medieval and renaissance engineering](03-medieval-and-renaissance.md), [Trigonometry](../math/02-trigonometry.md), [Vibrations](../physics/13-vibrations.md)
 **Time:** 3-4 h
 
 ## Core ideas
@@ -57,7 +57,7 @@ where $\Delta t_{\text{h}}$ is the time difference in hours. One degree of longi
 
 ## Worked example
 
-**Given:** A pendulum clock uses a bob on a rod of length $L = 0.994\ \text{m}$ at a place where $g = 9.81\ \text{m/s}^2$. The clock swings with a half-angle of $\theta_0 = 3^\circ$.
+**Given:** A pendulum clock uses a bob on a rod of length $L = 0.994\ \text{m}$ at a place on Earth where $g = 9.81\ \text{m/s}^2$. The clock swings with a half-angle of $\theta_0 = 3^\circ$.
 
 **Find:** (a) the small-swing period, (b) the extra time lost per day from the amplitude correction, and (c) why a pendulum clock improved timekeeping.
 
@@ -111,7 +111,7 @@ Galileo's work in Padua and Pisa set the pattern for measurement-based physics. 
 
 ## Practice
 
-1. A pendulum has length $L = 0.25\ \text{m}$. Find its small-swing period in seconds. Use $g = 9.81\ \text{m/s}^2$.
+1. A pendulum has length $L = 0.25\ \text{m}$. Find its small-swing period in seconds. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 2. If the length of a pendulum is multiplied by 4, what happens to the period?
 3. A ship's clock drifts 5 s per day. After 20 days, find the longitude error in degrees and in kilometres at the equator.
 4. Explain why a pendulum clock keeps its arc to a few degrees, using the amplitude correction.
@@ -128,7 +128,7 @@ Galileo's work in Padua and Pisa set the pattern for measurement-based physics. 
 ## Common mistakes
 
 - **Myth: Galileo invented the pendulum clock.** Galileo noticed the constant period of a pendulum and proposed a clock. Huygens built the first working pendulum clock in 1656.
-- **Mistake: using $g = 9.81\ \text{m/s}^2$ everywhere.** Gravity varies with latitude by about half a percent. A precise clock must be calibrated at its location.
+- **Mistake: using Earth's $g = 9.81\ \text{m/s}^2$ everywhere.** Gravity varies with latitude by about half a percent. A precise clock must be calibrated at its location.
 - **Mistake: treating a clock error as a time error only.** A clock error in time becomes a position error at sea, at 15 degrees per hour of longitude.
 - **Mistake: assuming Newton worked alone.** The *Principia* built on Kepler, Galileo, Huygens, Hooke, and others, and Newton's debts to them are well documented.
 - **Mistake: assuming the pendulum period depends on the mass of the bob.** For an ideal simple pendulum, the period depends only on length and $g$.

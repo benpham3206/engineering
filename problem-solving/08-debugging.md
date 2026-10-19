@@ -81,7 +81,7 @@ $$
 
 The bad answer reproduces, so the cause is in the inputs or the formula.
 
-**Step 2, known case.** Lesson 05 gives the correct answer for $L = 0.0040\ \text{m}$:
+**Step 2, known case.** The earlier lesson Check units and limiting cases gives the correct answer for $L = 0.0040\ \text{m}$:
 $Q = 6000\ \text{W}$. Run it with the same formula. It gives 6000 W, so the formula and
 arithmetic are correct. The bug is in the input.
 
@@ -108,7 +108,7 @@ units test and the limit test.
    reported heat loss wrong?
 2. A student computes $v = 2gh$ for $h = 20\ \text{m}$ and forgets the square root. What value
    do they get, in m$^2$/s$^2$?
-3. A student uses $g = 9.8$ instead of $9.81$ for $h = 20\ \text{m}$. The speed changes by how
+3. A student on Earth uses $g = 9.8$ instead of $9.81$ for $h = 20\ \text{m}$. The speed changes by how
    much, in m/s? Give the difference of $\sqrt{2gh}$ for the two values.
 
 <details><summary>Answers</summary>

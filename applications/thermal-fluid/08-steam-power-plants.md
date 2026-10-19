@@ -4,7 +4,7 @@
 
 A steam power plant heats water into steam, expands the steam through a turbine that turns a generator, and condenses the steam back into water to repeat the loop. Steam plants generate much of the world's electricity, so their efficiency, water use, and reliability shape the cost of power. The ideal loop is the Rankine cycle, and engineers use it to size boilers, turbines, condensers, and cooling systems.
 
-**Prerequisites:** [First law of thermodynamics](../../physics/08-thermo-first-law.md), [Second law and cycles](../../physics/09-thermo-second-law-cycles.md), [Thermal systems](01-thermal-systems.md)
+**Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Thermal systems](01-thermal-systems.md)
 **Time:** 8-12 h
 
 ## Core ideas

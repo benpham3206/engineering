@@ -6,7 +6,7 @@ Before you report a number, ask whether it could be true. A sanity check does no
 answer is right, but it catches most arithmetic slips, misplaced decimal points, and sign
 errors. Three quick checks cover most cases: order of magnitude, sign, and physical intuition.
 
-**Prerequisites:** [Check units and limiting cases](05-units-and-limiting-cases.md)
+**Prerequisites:** [Check units and limiting cases](05-units-and-limiting-cases.md), [Particle dynamics](../physics/02-particle-dynamics.md)
 **Time:** 2-3 h
 
 ## Core ideas
@@ -42,7 +42,7 @@ $$
 W \approx 10\ \text{N per kg}
 $$
 
-This is $mg$ with $g$ rounded from $9.81\ \text{m/s}^2$ to $10\ \text{m/s}^2$. It is good to
+This is $mg$ with Earth's surface $g$ rounded from $9.81\ \text{m/s}^2$ to $10\ \text{m/s}^2$. It is good to
 within 2 %, which is enough for a sanity check.
 
 For a freely falling object from rest, a quick speed estimate is:
@@ -62,7 +62,7 @@ the impact speed as $v = 198\ \text{m/s}$. Check the answer, then state the corr
 
 **Find:** the impact speed $v$ in m/s, and whether the reported value is plausible.
 
-**Assumptions:** no air drag; gravity is $9.81\ \text{m/s}^2$.
+**Assumptions:** no air drag; gravity is Earth's surface value, $9.81\ \text{m/s}^2$.
 
 **Step 1, quick estimate.** $v \approx \sqrt{2 \times 10 \times 20} = \sqrt{400} = 20\ \text{m/s}$.
 The estimate is about 20 m/s.
@@ -86,7 +86,7 @@ below that. Intuition says the 198 m/s value is wrong, and the estimate agrees.
 
 ## Practice
 
-1. Estimate the weight of a 3.0 kg backpack in newtons, then compute it with $g = 9.81$.
+1. Estimate the weight of a 3.0 kg backpack in newtons, then compute it with $g = 9.81\ \text{m/s}^2$ (Earth surface).
    Give the careful value.
 2. A window pane has $A = 3.0\ \text{m}^2$, $\Delta T = 20\ \text{K}$, $L = 0.0040\ \text{m}$, and
    $k = 0.8\ \text{W/(m}\cdot\text{K)}$. Find $Q$ in W.

@@ -4,7 +4,7 @@
 
 A spacecraft has no air to carry heat away and no grid to plug into. It must make its own electrical power, keep its electronics within a narrow temperature band, and point its antennas and sensors with precision. Engineers design these three systems together, because each one changes the mass, area, and heat load of the others.
 
-**Prerequisites:** [Heat transfer](../../physics/12-heat-transfer.md), [Waves, light, and heat](../../physics/07-waves-light-heat.md), [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md)
+**Prerequisites:** [Heat transfer](../../physics/12-heat-transfer.md), [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 8-12 h
 
 ## Core ideas

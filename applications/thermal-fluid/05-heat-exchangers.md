@@ -6,8 +6,7 @@ A heat exchanger moves heat from one fluid to another without mixing them. Radia
 air conditioner coils, boilers, and chemical plants all depend on one. Engineers size an exchanger by
 asking how much heat must move, how hot each stream gets, and how much surface the job needs.
 
-**Prerequisites:** [Thermal systems](01-thermal-systems.md), [Fluid systems](02-fluid-systems.md),
-[Heat transfer](../../physics/12-heat-transfer.md), [Mathematics folder](../../math/README.md)
+**Prerequisites:** [Thermal systems](01-thermal-systems.md), [Fluid systems](02-fluid-systems.md), [Heat transfer](../../physics/12-heat-transfer.md), [Algebra](../../math/01-algebra.md)
 **Time:** 8-12 h
 
 ## Core ideas

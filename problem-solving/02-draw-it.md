@@ -7,7 +7,7 @@ because a picture shows which forces exist, which way they point, and where the 
 A free-body diagram is the most useful sketch in mechanics. It shows one object and every
 force acting on it.
 
-**Prerequisites:** [Define the problem](01-define-the-problem.md)
+**Prerequisites:** [Define the problem](01-define-the-problem.md), [Statics](../physics/01-statics.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 2-4 h
 
 ## Core ideas
@@ -72,7 +72,7 @@ The knot where the cables meet is the object that carries the load. Its FBD has 
 - $T$ along cable 2, pointing up and out at the same angle
 - $W$ straight down from the sign
 
-The knot is in equilibrium, so the arrows must balance. Lesson 03 writes this balance as
+The knot is in equilibrium, so the arrows must balance. The lesson Pick the governing principles writes this balance as
 equations.
 
 ## Key equations
@@ -90,7 +90,7 @@ Each cable's vertical component is $T\sin\theta$ when $\theta$ is measured from 
 **Problem.** A box of mass $m = 5.0\ \text{kg}$ sits on a flat floor. Draw its free-body diagram
 and list the forces.
 
-**Given:** mass $m = 5.0\ \text{kg}$, gravity $g = 9.81\ \text{m/s}^2$, flat horizontal floor,
+**Given:** mass $m = 5.0\ \text{kg}$, gravity $g = 9.81\ \text{m/s}^2$ (Earth surface), flat horizontal floor,
 no push or pull applied sideways.
 
 **Find:** the forces acting on the box, and their directions.

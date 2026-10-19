@@ -4,7 +4,7 @@
 
 A phone, car, or appliance reads the world through a small set of sensors. Accelerometers, thermistors, Hall-effect sensors, and image sensors cover most of what these products measure. Engineers pick a sensor for its signal, its power draw, and how well it survives the product's environment.
 
-**Prerequisites:** [Sensors and transducers](../../measurement/05-sensors-and-transducers.md), [Circuit basics](01-circuit-basics.md), [RC circuits and op-amps](02-rc-circuits-and-op-amps.md), [Semiconductors, diodes, and transistors](03-semiconductors-diodes-and-transistors.md)
+**Prerequisites:** [Sensors and transducers](../../measurement/05-sensors-and-transducers.md), [Circuit basics](01-circuit-basics.md), [RC circuits and op-amp basics](02-rc-circuits-and-op-amps.md), [Semiconductors](03-semiconductors-diodes-and-transistors.md)
 **Time:** 6-8 h
 
 ## Core ideas
@@ -19,7 +19,7 @@ A phone, car, or appliance reads the world through a small set of sensors. Accel
 
 **Accelerometer.** A MEMS accelerometer etches a small silicon block, the proof mass, on thin silicon springs. The surrounding frame is fixed to the product. When the product accelerates, the proof mass lags behind by Newton's second law and moves relative to the frame. Fixed plates and plates on the proof mass form capacitors. As the gap changes, the capacitance changes, and the readout circuit turns that change into a voltage or a digital number.
 
-An accelerometer measures specific force, not acceleration in the everyday sense. A phone lying flat on a table reads about 9.81 m/s$^2$ upward on its vertical axis, because the table pushes up on it. Only a phone in free fall reads zero. Typical phone accelerometers have ranges of $\pm 2$ g to $\pm 16$ g.
+An accelerometer measures specific force, not acceleration in the everyday sense. A phone lying flat on a table reads about 9.81 m/s$^2$ upward on its vertical axis at Earth's surface, because the table pushes up on it. Only a phone in free fall reads zero. Typical phone accelerometers have ranges of $\pm 2$ g to $\pm 16$ g.
 
 **Thermistor.** A negative-temperature-coefficient (NTC) thermistor is a ceramic made from metal oxides. Its resistance falls as temperature rises, because more charge carriers become free to move. Its resistance follows an exponential curve in $1/T$. In a product, the thermistor forms one leg of a voltage divider with a fixed resistor. The ADC reads the midpoint voltage. Battery packs, chargers, kettles, and engine coolant sensors use this arrangement.
 
@@ -121,7 +121,7 @@ Edwin Hall discovered the Hall effect in 1879 while he was a graduate student at
 
 ## Practice
 
-1. A MEMS accelerometer has a proof mass $m = 0.5$ mg and a suspension stiffness $k = 5\ \text{N/m}$. Find the displacement at 1 g.
+1. A MEMS accelerometer has a proof mass $m = 0.5$ mg and a suspension stiffness $k = 5\ \text{N/m}$. Find the displacement at 1 g (Earth surface, $9.81\ \text{m/s}^2$).
 2. The thermistor in the worked example has $R_0 = 10\ \text{k}\Omega$ at 25 °C and $B = 3950$ K. Find its resistance at 85 °C.
 3. A Hall element carries 5 mA and has a carrier density of $10^{22}$ m$^{-3}$ and a thickness of 0.2 mm. Find the Hall voltage at 10 mT. Then find it at 20 mT, and say how the output changes with the field.
 4. Find the energy of a 500 nm photon in electronvolts. Can silicon, with a bandgap of about 1.1 eV, detect it?

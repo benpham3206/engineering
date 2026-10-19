@@ -7,10 +7,7 @@ into rocking or spinning into sliding. A cam uses a shaped disc or groove to mak
 any pattern the designer chooses. Engineers use both to get motion that a plain gear or belt cannot
 give, and they check the geometry for locking, binding, and excess force before they build anything.
 
-**Prerequisites:** [Trigonometry](../../math/02-trigonometry.md),
-[Single-variable calculus](../../math/03-single-variable-calculus.md),
-[Particle dynamics](../../physics/02-particle-dynamics.md),
-[Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
+**Prerequisites:** [Trigonometry](../../math/02-trigonometry.md), [Single-variable calculus](../../math/03-single-variable-calculus.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 8 to 10 h
 
 ## Core ideas

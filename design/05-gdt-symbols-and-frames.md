@@ -6,7 +6,7 @@ Geometric Dimensioning and Tolerancing (GD&T) is a symbolic language for describ
 
 The rules are written in the ASME Y14.5 standard, which is paid. Read it through a library or your employer. The ideas in this lesson are the common core that the standard describes.
 
-**Prerequisites:** [02 Engineering graphics](02-engineering-graphics.md), [04 Tolerancing and stack-up](04-tolerancing-and-stack-up.md)
+**Prerequisites:** [Engineering graphics](02-engineering-graphics.md), [Tolerancing and stack-up](04-tolerancing-and-stack-up.md)
 **Time:** 8-12 h
 
 ## Core ideas

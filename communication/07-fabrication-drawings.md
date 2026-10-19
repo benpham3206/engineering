@@ -4,7 +4,7 @@
 
 A fabrication drawing is the set of instructions a machine shop, sheet metal shop, or welding shop builds a part from. The goal is that the people in the shop never need to call the designer. An engineer cares because every unanswered question on a drawing becomes a phone call, a guess, or a wrong part.
 
-**Prerequisites:** [02-engineering-drawings.md](02-engineering-drawings.md) (title block, views, line types), [../design/02-engineering-graphics.md](../design/02-engineering-graphics.md) (orthographic views and sections), [../design/05-gdt-symbols-and-frames.md](../design/05-gdt-symbols-and-frames.md) (datums and feature control frames), [../design/reference.md](../design/reference.md) (fastener and thread reference)
+**Prerequisites:** [02-engineering-drawings.md](02-engineering-drawings.md) (title block, views, line types), [../design/02-engineering-graphics.md](../design/02-engineering-graphics.md) (orthographic views and sections), [../design/05-gdt-symbols-and-frames.md](../design/05-gdt-symbols-and-frames.md) (datums and feature control frames), [../design/reference.md](../design/reference.md) (fastener and thread reference), and [Trigonometry](../math/02-trigonometry.md) (bend allowance angles)
 **Time:** 6-10 h
 
 ## Core ideas

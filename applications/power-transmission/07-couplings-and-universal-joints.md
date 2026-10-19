@@ -4,7 +4,7 @@
 
 A coupling joins two shafts so that torque passes from one to the other. Real shafts never line up exactly, so the coupling must accept some misalignment without binding, wearing out, or pushing side loads into the bearings.
 
-**Prerequisites:** [Axial and torsion](../../physics/04-axial-and-torsion.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md)
+**Prerequisites:** [Axial and torsion](../../physics/04-axial-and-torsion.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 5-7 h
 
 ## Core ideas

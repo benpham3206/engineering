@@ -4,7 +4,7 @@
 
 Most engineering metals and many ceramics are crystalline. Their atoms repeat in a regular pattern, and the pattern decides how dense the material is, how it deforms, and where it is weak. Real crystals also contain flaws, and those flaws often control strength.
 
-**Prerequisites:** [Atomic structure and bonding](01-atomic-structure-bonding.md)
+**Prerequisites:** [Atomic structure and bonding](01-atomic-structure-bonding.md), [Algebra](../math/01-algebra.md)
 **Time:** 6-8 h
 
 ## Core ideas

@@ -6,7 +6,7 @@ Mechatronics is the combination of mechanical parts, electronics, and software. 
 reads sensors, decides what to do, and drives actuators such as motors, valves, and lights. Most
 modern machines, from printers to cars, are built this way.
 
-**Prerequisites:** [Circuit basics](01-circuit-basics.md), [RC circuits and op-amps](02-rc-circuits-and-op-amps.md)
+**Prerequisites:** [Circuit basics](01-circuit-basics.md), [RC circuits and op-amp basics](02-rc-circuits-and-op-amps.md)
 **Time:** 10-14 h
 
 ## Core ideas

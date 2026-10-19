@@ -50,7 +50,7 @@ For a storage tank of liquid with density $\rho$ in kg/m$^3$, depth $h$ in m, an
 
 $$\sigma_h = \frac{\rho g h R}{t}$$
 
-where $g = 9.81\ \text{m/s}^2$. The bottom ring has the largest value, so $h$ is the full liquid depth.
+where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). The bottom ring has the largest value, so $h$ is the full liquid depth.
 
 ## Worked example
 
@@ -69,7 +69,7 @@ where $g = 9.81\ \text{m/s}^2$. The bottom ring has the largest value, so $h$ is
 
 **Answer:** The plate must be at least $13.8\ \text{mm}$ thick, so a $14\ \text{mm}$ plate is chosen. The hoop stress is $85.7\ \text{MPa}$.
 
-**Sanity check:** The ratio $t / r = 0.014 / 0.6 = 0.023$ is well under 0.1, so the thin-wall formula is valid. The hoop stress of $85.7\ \text{MPa}$ sits below the allowable of $120\ \text{MPa}$, and the difference is the margin from the weld and the corrosion allowance. The longitudinal stress is half the hoop stress, which is $43\ \text{MPa}$, as expected for a closed cylinder.
+**Sanity check:** The ratio $t / r = 0.014 / 0.6 = 0.023$ is well under 0.1, so the thin-wall formula is valid. The corrosion allowance is metal expected to be lost, so check the end-of-life wall too: $14 - 2 = 12$ mm gives $\sigma_h = 2.0\times10^6 \times 0.6 / 0.012 = 100$ MPa, against a weld-reduced allowable of $SE = 120 \times 0.85 = 102$ MPa. The margin at end of life is about 2 percent, which is what the design intended. The 85.7 MPa on the new wall is not spare margin. The longitudinal stress is half the hoop stress, which is $43\ \text{MPa}$, as expected for a closed cylinder.
 
 ## Design trade-offs
 
@@ -98,6 +98,8 @@ Warning signs include leaks at welds or nozzles, bulging in the shell, rust that
 Denis Papin built a steam digester, an early pressure cooker, in 1679, and he showed that sealed steam could do useful work. Steam boilers in the 1800s were often built with poor materials and no code, and explosions killed many people. The American Society of Mechanical Engineers was founded in 1880, and it published the first edition of its boiler and pressure vessel code in 1914. Today, the code sets the rules for design, fabrication, inspection, and testing in many countries.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A cylinder has an inside radius of 0.5 m, a wall thickness of 8 mm, and an internal pressure of 1.5 MPa. Find the hoop stress and the longitudinal stress.
 2. A tank is filled with water to a depth of 8 m. Find the gauge pressure at the bottom in kPa.

@@ -4,7 +4,7 @@
 
 A printed circuit board (PCB) is a laminated sheet that holds copper traces and connects the parts on it. Almost every electronic product uses one, and its layout sets how well the product carries current, handles noise, dissipates heat, and survives assembly. An engineer who understands layers, trace current, and layout rules can avoid the failures that show up only after the board is built.
 
-**Prerequisites:** [Circuit basics](01-circuit-basics.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Heat transfer](../../physics/12-heat-transfer.md), [Material classes](../../materials/05-material-classes.md)
+**Prerequisites:** [Circuit basics](01-circuit-basics.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Heat transfer](../../physics/12-heat-transfer.md), [Metals, polymers, ceramics, composites](../../materials/05-material-classes.md)
 **Time:** 8-12 h
 
 ## Core ideas

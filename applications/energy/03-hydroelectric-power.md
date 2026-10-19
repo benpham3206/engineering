@@ -53,7 +53,7 @@ Hydraulic power, the power available in the flow, in watts:
 
 $$P_{hyd} = \rho g Q H$$
 
-where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g = 9.81\ \text{m/s}^2$ is the gravitational acceleration, $Q$ is the volume flow rate in cubic metres per second (m$^3$/s), and $H$ is the net head in metres (m).
+where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $Q$ is the volume flow rate in cubic metres per second (m$^3$/s), and $H$ is the net head in metres (m).
 
 Turbine output, in watts:
 
@@ -81,7 +81,7 @@ Friction and bends in the penstock lower this speed in practice.
 
 ## Worked example
 
-**Given:** A plant takes water from a reservoir with a gross head of $H_{gross} = 100\ \text{m}$. Losses in the penstock total $h_{loss} = 0\ \text{m}$ for this estimate. The flow is $Q = 10\ \text{m}^3/\text{s}$. The turbine-generator efficiency is $\eta = 0.90$. Water density is $\rho = 1000\ \text{kg/m}^3$.
+**Given:** A plant takes water from a reservoir with a gross head of $H_{gross} = 100\ \text{m}$. Losses in the penstock total $h_{loss} = 0\ \text{m}$ for this estimate. The flow is $Q = 10\ \text{m}^3/\text{s}$. The turbine-generator efficiency is $\eta = 0.90$. Water density is $\rho = 1000\ \text{kg/m}^3$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the electrical output, and (b) the annual energy if the plant runs at a capacity factor of 0.5.
 
@@ -121,6 +121,8 @@ The safety measures that exist because of these failures include spillways sized
 Lester Pelton developed the impulse wheel that bears his name in California in the 1870s. James B. Francis designed a reaction turbine at Lowell, Massachusetts, in 1849, and the Francis turbine remains a common design. Viktor Kaplan in Austria developed the adjustable-blade propeller turbine in the 1910s. The Vulcan Street Plant in Appleton, Wisconsin, opened in 1882 and was one of the first hydroelectric plants to supply customers. Pumped-storage plants came later, as electric grids grew and needed storage.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A plant has a head of $50\ \text{m}$, a flow of $4\ \text{m}^3/\text{s}$, and efficiency $0.85$. Find the output in megawatts.
 2. A plant must deliver $2\ \text{MW}$ at a head of $40\ \text{m}$ with efficiency $0.90$. Find the required flow in cubic metres per second.

@@ -4,7 +4,7 @@
 
 A rocket carries its own oxidizer or oxidizer and fuel, so it works in vacuum. An engineer who designs one must size the engine, the nozzle, the propellant tanks, and the structure that holds them, and each choice trades performance against mass and risk.
 
-**Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics II: second law and cycles](../../physics/09-thermo-second-law-cycles.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
+**Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
 **Time:** 8-10 h
 
 ## Core ideas
@@ -43,7 +43,7 @@ $$
 F = \dot m\, v_e + (p_e - p_a)\, A_e
 $$
 
-- $F$ is thrust (N). $\dot m$ is propellant mass flow rate (kg/s). $v_e$ is exhaust velocity at the nozzle exit (m/s). $p_e$ is exit pressure (Pa). $p_a$ is ambient pressure (Pa), zero in vacuum and 101 325 Pa at sea level. $A_e$ is nozzle exit area (m$^2$).
+- $F$ is thrust (N). $\dot m$ is propellant mass flow rate (kg/s). $v_e$ is exhaust velocity at the nozzle exit (m/s). $p_e$ is exit pressure (Pa). $p_a$ is ambient pressure (Pa), zero in vacuum and 101 325 Pa at sea level on Earth. $A_e$ is nozzle exit area (m$^2$).
 - Assumptions: steady flow, uniform conditions across the exit plane, one-dimensional flow, and no external forces on the gas after it leaves the nozzle.
 
 Specific impulse, a measure of how efficiently a propellant makes thrust.

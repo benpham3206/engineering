@@ -3,7 +3,7 @@
 **Type:** lesson
 
 Heat moves whenever there is a temperature difference. Engineers use that fact to keep buildings warm, electronics cool, and engines within their material limits.
-**Prerequisites:** [Waves, light, and heat](07-waves-light-heat.md), [Thermodynamics: first law](08-thermo-first-law.md)
+**Prerequisites:** [Oscillations, waves, light, and heat](07-waves-light-heat.md), [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md)
 **Time:** 8-10 h
 
 ## Core ideas

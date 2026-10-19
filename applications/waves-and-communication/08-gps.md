@@ -4,7 +4,7 @@
 
 GPS finds a receiver's position by measuring how long radio signals take to arrive from satellites with atomic clocks. Engineers need to understand it because a 1 ns timing error becomes a 0.30 m position error, and clock effects from relativity add about 38 $\mu$s per day that must be corrected. Positioning accuracy depends on clocks, orbits, the atmosphere, and the receiver's geometry.
 
-**Prerequisites:** [Waves, light, and heat](../../physics/07-waves-light-heat.md), [Radio and antennas](02-radio-and-antennas.md), [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md), [Algebra](../../math/01-algebra.md)
+**Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Radio and antennas](02-radio-and-antennas.md), [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md), [Algebra](../../math/01-algebra.md)
 **Time:** 6-8 h
 
 ## Core ideas

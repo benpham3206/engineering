@@ -4,7 +4,7 @@
 
 Electricity and magnetism explain how motors, generators, sensors, and every electronic circuit work. Engineers use these ideas to size wiring, design power supplies, and predict how a coil or magnet will respond to a changing current.
 
-**Prerequisites:** none (basic algebra is enough)
+**Prerequisites:** [Algebra](../math/01-algebra.md), [Trigonometry](../math/02-trigonometry.md), [Single-variable calculus](../math/03-single-variable-calculus.md) (Faraday's law uses a rate of change of flux)
 **Time:** 8-10 h
 
 ## Core ideas

@@ -7,9 +7,7 @@ by pressing two surfaces together so that friction transmits torque. Engineers s
 capacity, which sets the largest torque that can pass before the surfaces slip, and for heat, because
 every joule of slipping energy turns into temperature rise in the parts.
 
-**Prerequisites:** [Statics](../../physics/01-statics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md),
-[Axial and torsion](../../physics/04-axial-and-torsion.md), [Heat transfer](../../physics/12-heat-transfer.md),
-[Trigonometry](../../math/02-trigonometry.md)
+**Prerequisites:** [Statics](../../physics/01-statics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Heat transfer](../../physics/12-heat-transfer.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6 to 8 h
 
 ## Core ideas

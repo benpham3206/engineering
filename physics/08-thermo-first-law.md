@@ -3,7 +3,7 @@
 **Type:** lesson
 
 Thermodynamics is the study of energy and how it moves between heat and work. Engines, compressors, turbines, refrigerators, and power plants all depend on it.
-**Prerequisites:** [07-waves-light-heat.md](07-waves-light-heat.md) (temperature, heat, and specific heat)
+**Prerequisites:** [Oscillations, waves, light, and heat](07-waves-light-heat.md) (temperature, heat, and specific heat)
 **Time:** 8-12 h
 
 ## Core ideas

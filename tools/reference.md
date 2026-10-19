@@ -137,7 +137,7 @@ Default tolerances: `solve_ivp` (RK45) and `ode45` both default to a relative to
 
 - Linear model: minimize $\sum_i (y_i - p_1 x_i - p_0)^2$. Units of $p_1$ are units of y over units of x, and $p_0$ has the units of y.
 - Nonlinear model, such as $y = a e^{bx}$: minimize the same sum over $a$ and $b$ with an iterative solver (`curve_fit` uses Levenberg-Marquardt for unbounded problems).
-- Check: the run gave a straight-line fit with slope 1.99 and intercept 1.04 on the test data, and an exponential fit with $a = 1.995$ and $b = 0.501$ on its own test data.
+- Check: the run gave a straight-line fit with slope 1.99 and intercept 1.04 on the test data, and an exponential fit with $a = 1.995$ and $c = 0.501$ on its own test data.
 - **Holds when:** the model is right, errors are independent with roughly equal scatter, and you have more points than parameters. Standard errors from `pcov` assume this.
 - **Breaks when:**
   - You linearize $y = ae^{bx}$ by taking $\ln y$. This weights small y values too heavily and biases $a$. Fit the nonlinear form directly.
@@ -211,7 +211,7 @@ Resolution values are typical. Check the stated accuracy of the tool you own.
 | Outside diameter, precise | Outside micrometer (vernier or digital) | 0.01 mm graduation; 0.001 mm vernier or digital | Not using the ratchet stop; gripping the frame so hand heat expands it; one reading on an out-of-round part |
 | Inside diameter | Bore gauge, or telescoping gauge read with a micrometer | Set to a master ring; the micrometer sets the resolution | Measuring with caliper inside jaws at an angle, which reads less than the true diameter |
 | Depth of a hole or step | Depth gauge or caliper depth rod | 0.01 mm | Rod not square to the surface |
-| Flatness or runout | Dial indicator on a surface plate or spindle | 0.01 mm | Plunger not perpendicular to the surface; the cosine error makes the reading too small |
+| Flatness or runout | Dial indicator on a surface plate or spindle | 0.01 mm | Plunger not perpendicular to the surface; a tilted plunger reads too large (true value is the reading times $\cos\theta$). A lever-type test indicator with its stylus off parallel reads too small |
 | Angle | Protractor, bevel protractor, or sine bar with gauge blocks | About 1 degree (protractor); finer with a sine bar | Trusting a protractor to fractions of a degree |
 | Pass or fail for a hole or thread | Plug gauge or thread gauge | Pass or fail only | Forcing a gauge through; using a worn gauge |
 | Reference for setting comparators | Gauge blocks, reference rings | Set by grade; use the certificate | Wringing blocks with dirt on the faces; storing them unprotected |

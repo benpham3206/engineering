@@ -6,7 +6,7 @@ Carry letters, not numbers, through the algebra for as long as you can. A symbol
 shows how each input affects the result, lets you check units and limits (lesson 05), and
 catches errors before the arithmetic hides them. Plug in numbers only at the end.
 
-**Prerequisites:** [Define the problem](01-define-the-problem.md), [Pick the governing principles](03-governing-principles.md)
+**Prerequisites:** [Define the problem](01-define-the-problem.md), [Pick the governing principles](03-governing-principles.md), [Algebra](../math/01-algebra.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 3-5 h
 
 ## Core ideas
@@ -51,7 +51,7 @@ $$
 v = \sqrt{2gh}, \qquad t = \sqrt{\frac{2h}{g}}
 $$
 
-Symbols: $T$ tension (N), $m$ mass (kg), $g = 9.81\ \text{m/s}^2$, $\theta$ angle to horizontal,
+Symbols: $T$ tension (N), $m$ mass (kg), $g = 9.81\ \text{m/s}^2$ (Earth surface), $\theta$ angle to horizontal,
 $h$ height (m), $v$ speed (m/s), $t$ time (s).
 
 ## Worked example

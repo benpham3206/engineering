@@ -4,7 +4,7 @@
 
 Orbital mechanics predicts how a spacecraft moves under gravity, and rocket equations predict how much propellant it takes to change that motion. Together they tell an engineer whether a mission is possible and how large the rocket must be.
 
-**Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md)
+**Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 10-14 h
 
 ## Core ideas
@@ -77,7 +77,7 @@ $$
 \Delta v = v_e \ln\frac{m_0}{m_f} \qquad v_e = I_{sp}\, g_0 \qquad \text{propellant fraction} = 1 - \frac{m_f}{m_0}
 $$
 
-- $v_e$ is exhaust speed relative to the rocket (m/s). $I_{sp}$ is specific impulse (s). $g_0 = 9.80665$ m/s². The propellant fraction is a unitless share of the starting mass.
+- $v_e$ is exhaust speed relative to the rocket (m/s). $I_{sp}$ is specific impulse (s). $g_0 = 9.80665$ m/s² is standard gravity, a fixed constant in the $I_{sp}$ definition. The propellant fraction is a unitless share of the starting mass.
 
 ## Worked example
 
@@ -86,10 +86,10 @@ $$
 **Given:**
 
 - $\mu_\oplus = 3.986004418 \times 10^{14}$ m³/s²
-- $R_\oplus = 6378$ km
+- $R_\oplus = 6378$ km (equatorial radius; the mean radius is 6371 km)
 - Starting altitude $h_1 = 400$ km, so $r_1 = 6378 + 400 = 6778$ km
 - GEO radius $r_2 = 42\,164$ km (a standard value, about 35 786 km altitude)
-- $I_{sp} = 300$ s, $g_0 = 9.80665$ m/s²
+- $I_{sp} = 300$ s, $g_0 = 9.80665$ m/s² (standard gravity)
 
 **Find:** the total delta-v $\Delta v$, the mass ratio $m_0/m_f$, and the propellant mass fraction.
 
@@ -165,7 +165,7 @@ $$
 
 ## Practice
 
-1. Find the circular orbit speed at 800 km altitude above Earth. Use $\mu_\oplus$ and $R_\oplus = 6378$ km. Give the answer in km/s.
+1. Find the circular orbit speed at 800 km altitude above Earth. Use $\mu_\oplus$ and $R_\oplus = 6378$ km (equatorial). Give the answer in km/s.
 2. A rocket has $\Delta v = 2000$ m/s and exhaust speed $v_e = 3000$ m/s. Find the propellant mass fraction.
 3. Find the period of a circular orbit at 400 km altitude. Give the answer in minutes.
 4. Find the specific orbital energy of the 400 km circular orbit. Give the answer in MJ/kg.

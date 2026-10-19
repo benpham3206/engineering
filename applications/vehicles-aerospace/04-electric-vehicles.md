@@ -4,7 +4,7 @@
 
 An electric vehicle (EV) drives its wheels with one or more electric motors, and a battery pack stores the energy. An engineer who understands an EV can size the motor for a given speed and grade, choose a pack for a target range, and predict how much energy regenerative braking returns. The range estimate works from the same road load that sets the power of any car.
 
-**Prerequisites:** [Cars](02-cars.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Thermodynamics II](../../physics/09-thermo-second-law-cycles.md), [DC motors](../electrical/01-dc-motors.md), [Batteries](../electrical/06-batteries.md)
+**Prerequisites:** [Cars](02-cars.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [DC motors](../electrical/01-dc-motors.md), [Batteries](../electrical/06-batteries.md)
 **Time:** 6-8 h
 
 ## Core ideas
@@ -41,7 +41,7 @@ The power and range equations assume steady speed on a level road, no wind, and 
 - **Motor speed from road speed:** $\omega_m = (v / r) \, G$, where $v$ is the car speed in m/s, $r$ is the tire radius in m, and $G$ is the reduction gear ratio, dimensionless.
 - **Battery power:** $P_{batt} = P_w / \eta_{dt} + P_{aux}$, in W, where $P_w = F_{road} \, v$ is the wheel power, $\eta_{dt}$ is the battery-to-wheel efficiency (the product of inverter, motor, and gear efficiencies), and $P_{aux}$ is the power for heating, lights, and electronics in W.
 - **Drivetrain efficiency:** $\eta_{dt} = \eta_{inv} \, \eta_{mot} \, \eta_{gear}$, dimensionless. Typical values are 0.95, 0.92, and 0.98.
-- **Road load:** $F_{road} = C_{rr} \, m \, g + \tfrac{1}{2} \rho \, C_d \, A \, v^2$, in N, with rolling resistance from the tire, $m$ the mass in kg, and $g = 9.81\ \text{m/s}^2$. $C_{rr}$ and $C_d$ are dimensionless, $\rho$ is the air density in kg/m$^3$, and $A$ is the frontal area in m$^2$. See [Cars](02-cars.md) for the derivation.
+- **Road load:** $F_{road} = C_{rr} \, m \, g + \tfrac{1}{2} \rho \, C_d \, A \, v^2$, in N, with rolling resistance from the tire, $m$ the mass in kg, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). $C_{rr}$ and $C_d$ are dimensionless, $\rho$ is the air density in kg/m$^3$, and $A$ is the frontal area in m$^2$. See [Cars](02-cars.md) for the derivation.
 - **Energy per distance:** $e = P_{batt} / v$, in J/m. To express it in Wh/km, divide the value in J/m by 3.6, because $1\ \text{Wh/km} = 3.6\ \text{J/m}$.
 - **Range:** $R = E_{use} / e$, in km, where $E_{use}$ is the usable pack energy in Wh. Usable energy is the nominal pack energy times the fraction the BMS allows you to use.
 - **Battery C-rate:** $C = I / Q$, dimensionless, where $I$ is the current in A and $Q$ is the rated capacity in Ah. A discharge at 1C empties the pack in one hour.
@@ -53,7 +53,7 @@ The power and range equations assume steady speed on a level road, no wind, and 
 
 **Find:** the energy use per km and the range at 50, 100, and 130 km/h.
 
-**Assumptions:** The values for $C_{rr}$, $C_d$, $A$, and $\eta_{dt}$ are typical for a midsize EV. Real range depends on temperature, cabin heating, wind, and driving style, so this is a steady-speed estimate only.
+**Assumptions:** The values for $C_{rr}$, $C_d$, $A$, and $\eta_{dt}$ are typical for a midsize EV. Real range depends on temperature, cabin heating, wind, and driving style, so this is a steady-speed estimate only. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Solution at 100 km/h ($v = 27.78\ \text{m/s}$):**
 

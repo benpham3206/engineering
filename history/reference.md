@@ -28,9 +28,9 @@ Lookup sheet for the main events, eras, and ideas in the history lessons, for an
 | 312 BCE | Aqua Appia, Rome's first aqueduct, opens | Rome | [Ancient engineering](02-ancient-engineering.md) |
 | About 256 BCE | Dujiangyan irrigation system, traditionally credited to Li Bing and his son | Sichuan, China | [Ancient engineering](02-ancient-engineering.md) |
 | 221 BCE | The Qin unify China and join earlier walls into one line | China | [Ancient monuments and waterworks](projects/01-ancient-monuments-and-waterworks.md) |
-| 132 CE | Zhang Heng builds a seismoscope | Eastern Han China | [Ancient and medieval minds](people/01-ancient-and-medieval-minds.md) |
 | About 50 CE | Pont du Gard carries an aqueduct on three tiers of arches | Southern France | [Ancient engineering](02-ancient-engineering.md) |
 | About 125 CE | Pantheon dome, a concrete dome about 43 m across with no steel | Rome | [Ancient engineering](02-ancient-engineering.md) |
+| 132 CE | Zhang Heng builds a seismoscope | Eastern Han China | [Ancient and medieval minds](people/01-ancient-and-medieval-minds.md) |
 | 605 to 610 CE | Grand Canal links river systems in the Sui dynasty | China | [Ancient engineering](02-ancient-engineering.md) |
 | About 850 | Banu Musa brothers write a book of mechanical devices | Baghdad | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
 | About 1040 | Bi Sheng develops movable type from baked clay | China | [Medieval and renaissance engineering](03-medieval-and-renaissance.md) |
@@ -120,7 +120,7 @@ Lookup sheet for the main events, eras, and ideas in the history lessons, for an
 | [The industrial revolution](05-industrial-revolution.md) | About 1760 to 1840 | Steam from coal | Coke-smelted iron, cast iron, steel from 1856 | Newcomen and Watt engines, screw-cutting lathe, Rocket locomotive |
 | [The electrical age](06-electrical-age.md) | About 1800 to 1900 | Electric current from batteries and generators, including hydroelectric power at Niagara Falls | Zinc and silver or copper discs, carbon filament, copper wire | Voltaic pile, telegraph, Pearl Street Station, AC transformer system, induction motor, radio |
 | [Flight, cars, and mass production](07-flight-cars-and-mass-production.md) | About 1876 to about 1914 | Gasoline and diesel fuel | Interchangeable parts, standard threads | Four-stroke engine, Motorwagen, diesel engine, Wright Flyer, Model T on a moving line |
-| [War, nuclear, and space](08-war-nuclear-and-space.md) | About 1935 to 1957 | Nuclear fission, liquid rocket fuel, and fuel burned in gas turbines | Electromechanical relays and thousands of electrical parts | Radar, jet engine, Chicago Pile-1, V-2, R-7, Saturn V, Z3, ENIAC |
+| [War, nuclear, and space](08-war-nuclear-and-space.md) | About 1935 to 1969 | Nuclear fission, liquid rocket fuel, and fuel burned in gas turbines | Electromechanical relays and thousands of electrical parts | Radar, jet engine, Chicago Pile-1, V-2, R-7, Saturn V, Z3, ENIAC |
 | [Semiconductors and computing](09-semiconductors-and-computing.md) | 1904 to the early 1970s | Electric power for tubes, then low-power solid-state devices | Glass vacuum tubes, silicon, germanium, phosphorus and boron doping | Vacuum tube, transistor, integrated circuit, microprocessor |
 | [The modern era](10-the-modern-era.md) | About 1970 onward | Batteries and solar cells | Silicon, lithium-ion cells, liquid resin | Sketchpad and finite element analysis, ARPANET and the internet, GPS, stereolithography printers |
 

@@ -4,7 +4,7 @@
 
 A laser is an optical amplifier inside a resonator. It emits a narrow, nearly parallel beam of light at one wavelength, and the light waves stay in step with each other. An engineer needs stimulated emission and beam behavior to choose a laser for cutting, measuring, or communication, and to handle one without injury.
 
-**Prerequisites:** [Waves, light, and heat](../../physics/07-waves-light-heat.md), [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md)
+**Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md)
 **Time:** 4-6 h
 
 ## Core ideas

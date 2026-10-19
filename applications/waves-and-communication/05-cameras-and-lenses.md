@@ -4,7 +4,7 @@
 
 A camera uses a lens to form a sharp image of a scene on an image sensor. The lens sets the image size, the sharpness, and the brightness. Engineers need these relations to pick a lens for a given field of view, working distance, and light level.
 
-**Prerequisites:** [Waves, light, and heat](../../physics/07-waves-light-heat.md), [Trigonometry](../../math/02-trigonometry.md)
+**Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6-8 h
 
 ## Core ideas

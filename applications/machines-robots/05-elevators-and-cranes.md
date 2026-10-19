@@ -49,7 +49,7 @@ $$\frac{T_1}{T_2} = e^{\mu \theta}$$
 
 Assumptions: the rope is about to slip, the friction is uniform around the wrap, and the rope is inextensible.
 
-Motor power for an elevator at steady speed. $m_c$ is the car mass, $m_L$ the rated load, and $m_{cw}$ the counterweight, all in kilograms (kg). $g$ is gravitational acceleration, $9.81\ \text{m/s}^2$. $v$ is the car speed in metres per second (m/s), and $\eta$ is the drive efficiency (dimensionless):
+Motor power for an elevator at steady speed. $m_c$ is the car mass, $m_L$ the rated load, and $m_{cw}$ the counterweight, all in kilograms (kg). $g$ is the local gravitational acceleration ($9.81\ \text{m/s}^2$ at Earth's surface). $v$ is the car speed in metres per second (m/s), and $\eta$ is the drive efficiency (dimensionless):
 
 $$P = \frac{(m_c + m_L - m_{cw})\, g\, v}{\eta}$$
 
@@ -121,6 +121,8 @@ Assumptions: the crane tips about one line, the restoring masses act at their st
 Elisha Otis demonstrated a safety brake for a hoist at the New York Crystal Palace in 1854. In the demonstration, he cut the rope of a raised platform, and a brake stopped it. His first passenger elevator went into the E. V. Haughwout store in New York in 1857. The safety principle still governs elevators today, and the governor and safety gear are its direct descendants.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. An elevator car has a mass of 1000 kg, the counterweight is 1400 kg, the rated load is 1000 kg, and the car travels at 2.5 m/s. The drive efficiency is 0.75. Find the motor power at full load.
 2. A traction sheave has a wrap angle of $\pi$ rad and an effective friction coefficient $\mu = 0.15$. The heavy-side tension is 2000 N. Find the light-side tension at the point of slip.

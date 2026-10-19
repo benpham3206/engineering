@@ -4,7 +4,7 @@
 
 Between 1825 and 1916, canals and railways turned slow, costly overland and sea routes into corridors that carried goods every day. The projects in this lesson cut through land, lifted ships and trains over hills, and linked oceans and continents. Engineers still use the same basic tools to plan long routes, including grade control, cut-and-fill earthworks, water control, and freight costing.
 
-**Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Ancient monuments and waterworks](01-ancient-monuments-and-waterworks.md), [Trains](../../applications/vehicles-aerospace/10-trains.md)
+**Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Ancient monuments and waterworks](01-ancient-monuments-and-waterworks.md), [Trains](../../applications/vehicles-aerospace/10-trains.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
 **Time:** 4-6 h
 
 ## Core ideas
@@ -75,7 +75,7 @@ The force that a train must overcome on a grade comes from the component of weig
 
 $$F_{grade} = m g \sin\theta \approx m g G$$
 
-where $F_{grade}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g = 9.81\ \text{m/s}^2$ is the gravitational acceleration, $\theta$ is the angle of the slope, and $G$ is the grade, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
+where $F_{grade}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $\theta$ is the angle of the slope, and $G$ is the grade, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
 
 Assumptions: the track is straight, the grade is constant, the train moves at constant speed, and rolling resistance and air drag are ignored. The estimate gives only the part of the force due to gravity.
 
@@ -93,7 +93,7 @@ where $V$ is the volume of water in cubic metres (m$^3$), $A_{chamber}$ is the c
 
 ## Worked example
 
-**Given:** A 1000 t freight train, so $m = 1.0 \times 10^6\ \text{kg}$, climbs a 1 km section with a constant grade of 1 percent. Assume the train travels at 20 m/s on the climb, and ignore rolling resistance and air drag for this estimate.
+**Given:** A 1000 t freight train, so $m = 1.0 \times 10^6\ \text{kg}$, climbs a 1 km section with a constant grade of 1 percent. Assume the train travels at 20 m/s on the climb, and ignore rolling resistance and air drag for this estimate. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the grade force the locomotives must overcome, (b) the energy needed to raise the train 10 m, and (c) the average power from the grade alone.
 
@@ -138,7 +138,7 @@ Route choice sets the cost. A canal or railway that avoids steep grades and deep
 ## Practice
 
 1. The Erie Canal is 363 miles long. Convert its length to kilometres, using 1 mile = 1.609 km.
-2. A 500 t train climbs a 2 percent grade. Find the grade force in kilonewtons, using $g = 9.81\ \text{m/s}^2$.
+2. A 500 t train climbs a 2 percent grade. Find the grade force in kilonewtons, using $g = 9.81\ \text{m/s}^2$ (Earth surface).
 3. The Panama Canal lifts ships 26 m across three lock flights of equal height. Find the lift per flight in metres.
 4. Find the energy needed to raise a 1000 t train by 50 m, in kilowatt hours.
 5. Explain in two or three sentences why the Suez Canal does not need locks.

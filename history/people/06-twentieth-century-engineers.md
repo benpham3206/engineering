@@ -7,8 +7,7 @@ work produced the aircraft, rockets, computers, transistors, and communication c
 still use every day. Several of them also had controversial records, and those are covered briefly
 and factually.
 
-**Prerequisites:** [War, nuclear, and space](../08-war-nuclear-and-space.md),
-[Semiconductors and computing](../09-semiconductors-and-computing.md)
+**Prerequisites:** [War, nuclear, and space](../08-war-nuclear-and-space.md), [Semiconductors and computing](../09-semiconductors-and-computing.md), [Algebra](../../math/01-algebra.md)
 **Time:** 3-4 h
 
 ## Core ideas

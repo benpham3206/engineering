@@ -4,7 +4,7 @@
 
 Data acquisition (DAQ) is the chain that turns a sensor's analog voltage into numbers a computer can store. Each step, from conditioning the signal to choosing a sample rate and bit depth, limits what the data can show. Get the sampling wrong and the data can show frequencies that are not in the physical system at all.
 
-**Prerequisites:** [05 - Sensors and transducers](05-sensors-and-transducers.md), [07 - Thermocouples and accelerometers](07-thermocouples-and-accelerometers.md)
+**Prerequisites:** [Sensors and transducers](05-sensors-and-transducers.md), [Thermocouples and accelerometers](07-thermocouples-and-accelerometers.md), [Oscillations, waves, light, and heat](../physics/07-waves-light-heat.md) (frequency), [Trigonometry](../math/02-trigonometry.md) (sine waves)
 **Time:** 6-8 h
 
 ## Core ideas

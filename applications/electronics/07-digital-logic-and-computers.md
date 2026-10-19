@@ -4,7 +4,7 @@
 
 A computer is billions of transistors, and each one is either on or off. Logic gates, memory cells, and a clock turn those two states into arithmetic, storage, and decisions. An engineer who understands the path from a gate to a running program can read a microcontroller datasheet, find a timing problem, and choose the right memory.
 
-**Prerequisites:** [Circuit basics](01-circuit-basics.md), [Semiconductors, diodes, and transistors](03-semiconductors-diodes-and-transistors.md), [Algebra](../../math/01-algebra.md)
+**Prerequisites:** [Circuit basics](01-circuit-basics.md), [Semiconductors](03-semiconductors-diodes-and-transistors.md), [Algebra](../../math/01-algebra.md)
 **Time:** 8-12 h
 
 ## Core ideas

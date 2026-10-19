@@ -4,7 +4,7 @@
 
 In the 1400s and 1500s, Europeans joined mathematics, art, mining, and mechanics into single careers. Engineers of this period built domes, studied machines on paper, wrote the first full guide to mining, and began to test motion and strength with numbers. This lesson profiles five people from that period and shows where their work is found today.
 
-**Prerequisites:** [Ancient and medieval minds](01-ancient-and-medieval-minds.md), [Simple machines](../01-simple-machines.md), [Statics](../../physics/01-statics.md)
+**Prerequisites:** [Ancient and medieval minds](01-ancient-and-medieval-minds.md), [Simple machines](../01-simple-machines.md), [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
 **Time:** 6-8 h
 
 ## Core ideas
@@ -55,7 +55,7 @@ Galileo's law of falling bodies describes motion from rest with uniform accelera
 
 $$d = \tfrac{1}{2} g t^2$$
 
-where $d$ is the distance in metres (m), $t$ is the time in seconds (s), and $g = 9.81\ \text{m/s}^2$.
+where $d$ is the distance in metres (m), $t$ is the time in seconds (s), and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface).
 
 ## Worked example
 
@@ -101,9 +101,9 @@ These five people show three habits that still matter. Brunelleschi built a dome
 
 1. Calculation. A 800 N load sits on a frictionless ramp 5.0 m long that rises 1.5 m. Find the force needed to hold it, using Stevin's relation.
 
-2. Calculation. Find the gauge pressure at 10 m depth in fresh water, in kilopascals. Then add standard atmospheric pressure of 101.3 kPa to find the absolute pressure.
+2. Calculation. Find the gauge pressure at 10 m depth in fresh water, in kilopascals. Then add standard atmospheric pressure of 101.3 kPa to find the absolute pressure. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
-3. Calculation. A stone is dropped from rest from a height of 20 m. Using $d = \tfrac{1}{2} g t^2$, find the time to fall.
+3. Calculation. A stone is dropped from rest from a height of 20 m. Using $d = \tfrac{1}{2} g t^2$, find the time to fall. Use Earth's surface $g$, $9.81\ \text{m/s}^2$.
 
 4. Short answer. Stevin showed that pressure at the bottom of a vessel depends on depth, not on vessel shape. Explain why this matters for the design of a dam.
 

@@ -38,7 +38,7 @@ For a column carrying tributary area $A_t$ in m$^2$ over $n$ floors, with dead l
 - Service axial load: $P = n\,A_t\,(q_D + q_L)$, in N.
 - Factored axial load using the load combination $1.2D + 1.6L$: $P_u = n\,A_t\,(1.2\,q_D + 1.6\,q_L)$, in N.
 
-Wind pressure on a face: $q = \tfrac{1}{2}\rho V^2$, where $\rho = 1.225\ \text{kg/m}^3$ is the density of air at sea level (typical) and $V$ is the design wind speed in m/s. Base moment from a uniform lateral load $F$ in N on a building of height $h$ in m: $M_{base} = F h / 2$, in N m.
+Wind pressure on a face: $q = \tfrac{1}{2}\rho V^2$, where $\rho = 1.225\ \text{kg/m}^3$ is the density of air at sea level on Earth (typical) and $V$ is the design wind speed in m/s. Base moment from a uniform lateral load $F$ in N on a building of height $h$ in m: $M_{base} = F h / 2$, in N m.
 
 Column axial stress: $\sigma = P/A$, in Pa, where $A$ is the column cross-section in m$^2$.
 

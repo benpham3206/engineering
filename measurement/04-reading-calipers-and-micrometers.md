@@ -4,7 +4,7 @@
 
 Calipers and micrometers measure lengths such as shaft diameters and plate thicknesses with resolution down to hundredths of a millimeter. Reading them correctly is a skill, and most errors come from misreading the scales rather than from the tool itself.
 
-**Prerequisites:** [01 - Units and dimensional analysis](01-units-and-dimensional-analysis.md), [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md)
+**Prerequisites:** [Units and dimensional analysis](01-units-and-dimensional-analysis.md), [Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md)
 **Time:** 3-5 h (plus practice on a real tool)
 
 ## Core ideas
@@ -27,7 +27,7 @@ Micrometer reading, where $S$ is the sleeve value in mm (including 0.5 if the ha
 
 $$L = S + t \times 0.01\ \text{mm}$$
 
-Standard uncertainty from resolution $\delta$, using the same approach as lesson 02:
+Standard uncertainty from resolution $\delta$, using the same approach as the precision, accuracy, and uncertainty lesson:
 
 $$u = \frac{\delta}{2\sqrt{3}}$$
 

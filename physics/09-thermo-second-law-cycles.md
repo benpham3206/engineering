@@ -4,7 +4,7 @@
 
 The first law says energy is conserved. The second law says some energy conversions are impossible, and it sets the best efficiency any engine can reach.
 
-**Prerequisites:** [08-thermo-first-law.md](08-thermo-first-law.md) (work, heat, the first law, and ideal gas air)
+**Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md) (work, heat, the first law, and ideal gas air), [Single-variable calculus](../math/03-single-variable-calculus.md) (entropy as an integral, natural logarithm)
 **Time:** 8-12 h
 
 ## Core ideas

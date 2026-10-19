@@ -4,7 +4,7 @@
 
 A robot arm is a chain of links and joints that moves a tool to a point in space. Engineers use its kinematics to find where the tool goes, and its statics and dynamics to size the motors, gears, and structure that move it.
 
-**Prerequisites:** [Trigonometry](../../math/02-trigonometry.md), [Linear algebra](../../math/05-linear-algebra.md), [Statics](../../physics/01-statics.md), [Rigid-body dynamics](../../physics/03-rigid-body-dynamics.md), [Mechatronics](../electronics/06-mechatronics.md)
+**Prerequisites:** [Trigonometry](../../math/02-trigonometry.md), [Linear algebra](../../math/05-linear-algebra.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Mechatronics](../electronics/06-mechatronics.md), [Single-variable calculus](../../math/03-single-variable-calculus.md)
 **Time:** 12-16 h
 
 ## Core ideas
@@ -35,7 +35,7 @@ The Jacobian links joint speeds to tool speed. Controllers use it to move the to
 
 ## Key equations
 
-Symbols: $L_1$, $L_2$ are link lengths (m). $\theta_1$, $\theta_2$ are joint angles (rad). $(x, y)$ is the tip position (m). $m_1$, $m_2$ are link masses (kg). $m_p$ is the payload mass (kg). $g$ is gravitational acceleration, $9.81\ \text{m/s}^2$. $\tau$ is joint torque (N m). $N$ is the gear ratio (dimensionless). $\eta$ is gearbox efficiency (dimensionless). $\omega$ is angular speed (rad/s).
+Symbols: $L_1$, $L_2$ are link lengths (m). $\theta_1$, $\theta_2$ are joint angles (rad). $(x, y)$ is the tip position (m). $m_1$, $m_2$ are link masses (kg). $m_p$ is the payload mass (kg). $g$ is the local gravitational acceleration ($9.81\ \text{m/s}^2$ at Earth's surface). $\tau$ is joint torque (N m). $N$ is the gear ratio (dimensionless). $\eta$ is gearbox efficiency (dimensionless). $\omega$ is angular speed (rad/s).
 
 Forward kinematics for a planar two-link arm. Assumes rigid links of fixed length, two revolute joints, and a base at the origin:
 
@@ -75,7 +75,7 @@ Assumes each joint frame is set by the standard DH convention, with all four par
 
 ## Worked example
 
-**Given:** A two-link arm in a vertical plane. $L_1 = 0.40\ \text{m}$, $L_2 = 0.30\ \text{m}$. Link masses $m_1 = 2.0\ \text{kg}$ (uniform, centre at the midpoint) and $m_2 = 1.0\ \text{kg}$. Payload $m_p = 1.5\ \text{kg}$ at the tip. The target tip point is $(0.45, 0.35)\ \text{m}$. Assumptions: static loads only, no friction, and a horizontal shoulder axis. The gearbox ratio and efficiency are chosen in step 6.
+**Given:** A two-link arm in a vertical plane. $L_1 = 0.40\ \text{m}$, $L_2 = 0.30\ \text{m}$. Link masses $m_1 = 2.0\ \text{kg}$ (uniform, centre at the midpoint) and $m_2 = 1.0\ \text{kg}$. Payload $m_p = 1.5\ \text{kg}$ at the tip. The target tip point is $(0.45, 0.35)\ \text{m}$. Assumptions: static loads only, no friction, Earth surface gravity ($g = 9.81\ \text{m/s}^2$), and a horizontal shoulder axis. The gearbox ratio and efficiency are chosen in step 6.
 
 **Find:** (a) both inverse kinematics solutions and which is elbow-up, (b) the shoulder torque at the target and in the worst pose, and (c) the motor and gearbox for the shoulder.
 
@@ -97,7 +97,7 @@ The Python used for steps 2 to 6:
 
 ```python
 import math
-g, L1, L2, m1, m2, mp = 9.81, 0.40, 0.30, 2.0, 1.0, 1.5
+g, L1, L2, m1, m2, mp = 9.81, 0.40, 0.30, 2.0, 1.0, 1.5  # g is Earth surface gravity
 x, y = 0.45, 0.35
 c2 = (x*x + y*y - L1**2 - L2**2) / (2*L1*L2)
 t2 = math.acos(c2)
@@ -141,6 +141,8 @@ Industrial robot cells follow the hierarchy of controls, in this order. Eliminat
 George Devol filed a patent for a programmable article transfer machine in 1954. The first industrial robot arm, Unimate, was installed at a General Motors plant in Ewing Township, New Jersey, in 1961. Jacques Denavit and Richard Hartenberg published their linkage notation in 1955. Victor Scheinman's Stanford arm, built around 1969, was an electric arm with six degrees of freedom that made computer control practical. Modern arms still use DH parameters or a close variant.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. Two links with $L_1 = L_2 = 0.50\ \text{m}$. Find both inverse kinematics solutions for the tip at $(0.50, 0.50)\ \text{m}$.
 2. A horizontal two-link arm has $L_1 = 0.30\ \text{m}$, $L_2 = 0.20\ \text{m}$, $m_1 = 1.0\ \text{kg}$, $m_2 = 0.5\ \text{kg}$, and no payload. Find the shoulder torque in the fully extended pose.

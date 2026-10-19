@@ -4,13 +4,13 @@
 
 Fluids push, float, and speed up or slow down in predictable ways. Hydrostatics explains why pressure grows with depth and why things float. Bernoulli's equation links pressure and speed along a flow line, and it is the first tool engineers use to size pumps, nozzles, dams, and pipes.
 
-**Prerequisites:** [Statics](01-statics.md), [Particle dynamics and energy](02-particle-dynamics.md)
+**Prerequisites:** [Statics](01-statics.md), [Particle dynamics](02-particle-dynamics.md) (energy and Newton's second law)
 **Time:** 6-8 h
 
 ## Core ideas
 
 - A **fluid** is a substance that deforms continuously when a shear force acts on it. Liquids and gases are both fluids.
-- **Density** ($\rho$) is mass per unit volume. Typical value for fresh water: $\rho = 1000\ \text{kg/m}^3$. Typical value for air at sea level: $\rho \approx 1.2\ \text{kg/m}^3$.
+- **Density** ($\rho$) is mass per unit volume. Typical value for fresh water: $\rho = 1000\ \text{kg/m}^3$. Typical value for air at sea level on Earth: $\rho \approx 1.2\ \text{kg/m}^3$.
 - **Pressure** ($p$) is force per unit area, acting equally in all directions at a point in a fluid at rest. SI unit: pascal (Pa = N/m$^2$). US customary: psi (lbf/in$^2$). 1 psi = 6895 Pa.
 - **Gauge pressure** is pressure measured relative to the local atmosphere. **Absolute pressure** is measured relative to a perfect vacuum. Absolute = gauge + atmospheric. Most tire and tank gauges read gauge pressure.
 - **Hydrostatic** means the fluid is at rest. Inside a resting fluid, pressure rises with depth and does not change sideways at the same depth.
@@ -58,7 +58,7 @@ Bernoulli does not give you the flow rate. It tells you how pressure and speed t
 
 ## Key equations
 
-Symbols: $p$ = pressure (Pa), $\rho$ = density (kg/m$^3$), $g$ = gravitational acceleration, 9.81 m/s$^2$ (32.2 ft/s$^2$), $h$ = depth or height (m), $V$ = velocity (m/s), $z$ = elevation above a reference (m), $p_\text{atm}$ = atmospheric pressure, 101 325 Pa at sea level (14.7 psi).
+Symbols: $p$ = pressure (Pa), $\rho$ = density (kg/m$^3$), $g$ = local gravitational acceleration (9.81 m/s$^2$ or 32.2 ft/s$^2$ at Earth's surface), $h$ = depth or height (m), $V$ = velocity (m/s), $z$ = elevation above a reference (m), $p_\text{atm}$ = atmospheric pressure, 101 325 Pa at sea level (14.7 psi).
 
 Hydrostatic pressure at depth $h$ below a free surface:
 
@@ -90,7 +90,7 @@ $$
 V = \sqrt{2 g h}
 $$
 
-Continuity for incompressible flow in a pipe of area $A$ (introduced here, used in lesson 11):
+Continuity for incompressible flow in a pipe of area $A$ (introduced here, used in the control volumes and pipe flow lesson):
 
 $$
 A_1 V_1 = A_2 V_2

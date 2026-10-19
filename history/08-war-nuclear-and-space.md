@@ -58,7 +58,7 @@ The rocket equation gives the ideal speed change a rocket can achieve:
 
 $$\Delta v = v_e \ln\frac{m_0}{m_f}$$
 
-Here $\Delta v$ is the speed change in metres per second (m/s), $v_e$ is the effective exhaust speed in m/s, $m_0$ is the starting mass in kilograms (kg), and $m_f$ is the mass after the propellant burns, in kg. The exhaust speed is $v_e = I_{sp} g_0$, where $I_{sp}$ is specific impulse in seconds (s) and $g_0 = 9.81\ \text{m/s}^2$. The equation ignores gravity and drag, so it gives an upper limit.
+Here $\Delta v$ is the speed change in metres per second (m/s), $v_e$ is the effective exhaust speed in m/s, $m_0$ is the starting mass in kilograms (kg), and $m_f$ is the mass after the propellant burns, in kg. The exhaust speed is $v_e = I_{sp} g_0$, where $I_{sp}$ is specific impulse in seconds (s) and $g_0 = 9.81\ \text{m/s}^2$ is standard gravity (Earth's surface value). The equation ignores gravity and drag, so it gives an upper limit.
 
 The radar range equation gives the maximum range of a radar that detects a target at a given power:
 
@@ -92,10 +92,10 @@ Computing grew from wartime problems. Ballistic tables, code breaking, and nucle
 
 ## Practice
 
-1. A rocket stage has $I_{sp} = 300$ s and a mass ratio of 4. Find its ideal speed change in m/s.
+1. A rocket stage has $I_{sp} = 300$ s and a mass ratio of 4. Find its ideal speed change in m/s. Use $g_0 = 9.81\ \text{m/s}^2$ (standard gravity).
 2. A radar increases its transmitted power by a factor of 16, and nothing else changes. By what factor does its maximum range change?
 3. Short answer: why did the cavity magnetron matter for radar?
-4. Using $\Delta v = 9.4$ km/s and $I_{sp} = 263$ s, find the mass ratio that a single-stage rocket to orbit would need. Use $g_0 = 9.81\ \text{m/s}^2$.
+4. Using $\Delta v = 9.4$ km/s and $I_{sp} = 263$ s, find the mass ratio that a single-stage rocket to orbit would need. Use $g_0 = 9.81\ \text{m/s}^2$ (standard gravity).
 5. Short answer: name two design tasks every nuclear reactor must handle to stay safe.
 
 <details><summary>Answers</summary>

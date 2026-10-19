@@ -4,7 +4,7 @@
 
 Rigid body dynamics extends particle dynamics to bodies that have size and shape, so they can rotate as well as move. Engineers use it for wheels, gears, flywheels, rotating shafts, and any part that spins up or slows down. This lesson covers planar motion, where the body moves and rotates in a single plane.
 
-**Prerequisites:** [Particle dynamics](02-particle-dynamics.md) and [Statics](01-statics.md) (moments and free-body diagrams).
+**Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Statics](01-statics.md) (moments and free-body diagrams), [Single-variable calculus](../math/03-single-variable-calculus.md) (moment of inertia as an integral)
 **Time:** 10-14 h
 
 ## Core ideas
@@ -50,7 +50,7 @@ $$v_G = \omega r \qquad a_G = \alpha r$$
 
 ## Worked example
 
-**Given:** A uniform solid disk has mass $m = 10$ kg and radius $r = 0.3$ m. It rests on a horizontal floor. A horizontal force $F = 50$ N pulls on its center, so the disk rolls without slipping. Take $g = 9.81$ m/s^2.
+**Given:** A uniform solid disk has mass $m = 10$ kg and radius $r = 0.3$ m. It rests on a horizontal floor. A horizontal force $F = 50$ N pulls on its center, so the disk rolls without slipping. Take $g = 9.81$ m/s^2 (Earth surface).
 
 **Find:** The acceleration $a_G$ of the center, the friction force at the contact point, and the smallest coefficient of static friction $\mu_s$ that prevents slipping.
 

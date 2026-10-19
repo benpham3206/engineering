@@ -4,7 +4,7 @@
 
 Compressors and fans move gas. A fan moves air with a small pressure rise, and a compressor raises the pressure enough to store or drive tools. Both turn shaft power into flow and pressure, and both waste energy when they are oversized, leaky, or run against the wrong resistance.
 
-**Prerequisites:** [Fluid systems](02-fluid-systems.md), [First law of thermodynamics](../../physics/08-thermo-first-law.md), [Thermodynamics and cycles](../../physics/09-thermo-second-law-cycles.md)
+**Prerequisites:** [Fluid systems](02-fluid-systems.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 6-8 h
 
 ## Core ideas

@@ -53,7 +53,7 @@ The lift equation gives the lift force on a wing in steady flight:
 
 $$L = \tfrac{1}{2}\,\rho\, v^2\, S\, C_L$$
 
-Here $L$ is lift in newtons (N), $\rho$ is air density in kilograms per cubic metre (kg/m$^3$), $v$ is airspeed in metres per second (m/s), $S$ is wing area in square metres (m$^2$), and $C_L$ is the lift coefficient, which has no units. Standard sea-level air at 15 °C has $\rho \approx 1.225\ \text{kg/m}^3$ (typical value).
+Here $L$ is lift in newtons (N), $\rho$ is air density in kilograms per cubic metre (kg/m$^3$), $v$ is airspeed in metres per second (m/s), $S$ is wing area in square metres (m$^2$), and $C_L$ is the lift coefficient, which has no units. Standard sea-level air on Earth at 15 °C has $\rho \approx 1.225\ \text{kg/m}^3$ (typical value).
 
 The ideal Otto cycle gives an upper limit on engine efficiency:
 
@@ -65,7 +65,7 @@ Here $\eta$ is efficiency (no units), $r$ is the compression ratio (no units), a
 
 The Wright Flyer of 1903 weighed about 340 kg with the pilot. This is a rounded figure used here. Its wing area was about 47 m$^2$. Take a steady, level flight at an airspeed of 13 m/s, about 30 mph, with sea-level air at $\rho = 1.225\ \text{kg/m}^3$. Find the lift coefficient the wing must reach.
 
-The assumptions are these. Lift balances weight in steady, level flight. One lift coefficient applies across the whole wing. Thrust and drag do not enter the lift balance, and the air is still.
+The assumptions are these. Lift balances weight in steady, level flight. One lift coefficient applies across the whole wing. Thrust and drag do not enter the lift balance, and the air is still. Gravity is Earth's surface value, $g = 9.81\ \text{m/s}^2$.
 
 The weight is $W = mg = 340 \times 9.81 = 3335\ \text{N}$. Setting $L = W$ and solving the lift equation for $C_L$ gives
 

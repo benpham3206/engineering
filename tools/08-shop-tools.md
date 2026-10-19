@@ -6,7 +6,7 @@ Shop tools cut, drill, bend, and finish material. Basic shop skill is hands-on a
 
 Do not use a machine you have not been trained on. Use the school or community shop, or a qualified instructor. Read the [OSHA machine guarding overview](https://www.osha.gov/machine-guarding), which says any part of a machine that could injure a worker must be guarded.
 
-**Prerequisites:** [Measurement tools](07-measurement-tools.md), [Python](02-python.md) (for speed calculations)
+**Prerequisites:** [Measurement tools](07-measurement-tools.md), [Python](02-python.md) (for speed calculations), [Machining speeds and feeds](../manufacturing/02-machining-speeds-and-feeds.md)
 **Time:** 10-20 h of supervised practice, plus reading
 
 ## Core ideas

@@ -4,7 +4,7 @@
 
 Engineers in Mesopotamia, Egypt, the Indus Valley, Greece, Rome, China, Persia, India, and the Andes built cities, water systems, roads, and monuments with levers, ramps, sledges, gravity, and local stone. Their work shows the same trade-offs engineers face today: materials, labor, water, and the cost of keeping a structure working for centuries.
 
-**Prerequisites:** [Simple machines](01-simple-machines.md)
+**Prerequisites:** [Simple machines](01-simple-machines.md), [Algebra](../math/01-algebra.md), [Control volumes and pipe flow](../physics/11-control-volumes-pipe-flow.md)
 **Time:** 4-5 h
 
 ## Core ideas

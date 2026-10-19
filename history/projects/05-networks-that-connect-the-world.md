@@ -4,7 +4,7 @@
 
 Six projects built the networks that carry power, messages, people, and time across the planet. Each one replaced a slow or local system with a shared one that engineers could scale, and each one still depends on choices made in its first decades. Engineers today work inside these networks, so they need to know their physical limits.
 
-**Prerequisites:** [Electrical age](../06-electrical-age.md), [Semiconductors and computing](../09-semiconductors-and-computing.md), [Waves, light, and heat](../../physics/07-waves-light-heat.md)
+**Prerequisites:** [Electrical age](../06-electrical-age.md), [Semiconductors and computing](../09-semiconductors-and-computing.md), [Waves, light, and heat](../../physics/07-waves-light-heat.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md)
 **Time:** 3 hours
 
 ## Core ideas

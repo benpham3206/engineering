@@ -25,15 +25,16 @@ Four-band code, digits and multiplier in ohms, then tolerance.
 | Black | 0 | $10^0$ | none |
 | Brown | 1 | $10^1$ | 1 percent |
 | Red | 2 | $10^2$ | 2 percent |
-| Orange | 3 | $10^3$ | none |
-| Yellow | 4 | $10^4$ | none |
+| Orange | 3 | $10^3$ | 0.05 percent |
+| Yellow | 4 | $10^4$ | 0.02 percent |
 | Green | 5 | $10^5$ | 0.5 percent |
 | Blue | 6 | $10^6$ | 0.25 percent |
 | Violet | 7 | $10^7$ | 0.1 percent |
-| Gray | 8 | $10^8$ | none |
+| Gray | 8 | $10^8$ | 0.01 percent (0.05 percent in older editions) |
 | White | 9 | $10^9$ | none |
 | Gold | none | $10^{-1}$ | 5 percent |
 | Silver | none | $10^{-2}$ | 10 percent |
+| No band | none | none | 20 percent |
 
 - Four band: value = (digit 1 digit 2) times multiplier. Five band: (digits 1 to 3) times multiplier, then tolerance.
 - Example: yellow, violet, red, gold = $47 \times 10^2\ \Omega = 4.7\ \text{k}\Omega$, 5 percent.
@@ -223,7 +224,7 @@ Holds when: the gear train is rigid and efficiency is roughly constant over the 
 7. Check winding temperature with the datasheet thermal resistance and the worst ambient.
 8. Apply a torque safety factor (1.5 to 2 is common practice). Increase it when the load or friction is uncertain.
 
-Worked check: a 2 kg mass lifted by a 0.10 m radius drum needs $T = 2 \times 9.81 \times 0.10 = 1.96$ N m at the drum. Through a 20:1 gearbox at 85 percent, the motor needs $1.96 / (20 \times 0.85) = 0.115$ N m, before inertia and friction are added.
+Worked check, on Earth: a 2 kg mass lifted by a 0.10 m radius drum needs $T = 2 \times 9.81 \times 0.10 = 1.96$ N m at the drum. Through a 20:1 gearbox at 85 percent, the motor needs $1.96 / (20 \times 0.85) = 0.115$ N m, before inertia and friction are added.
 
 Holds when: the duty profile is known and the motor data is at the operating temperature. Breaks when: loads are unknown, the duty is continuous at high torque with poor cooling, or the motor is oversized so it runs at very low efficiency.
 

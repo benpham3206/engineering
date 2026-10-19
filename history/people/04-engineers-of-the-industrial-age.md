@@ -4,7 +4,7 @@
 
 From about 1750 to 1900, engineers turned science and craft into machines, bridges, railways, and steel on a scale no earlier society had reached. This lesson covers thirteen people, from John Smeaton to Gustave Eiffel. Each entry says when and where the person worked, what they built, and which lesson in this repo uses that work.
 
-**Prerequisites:** [Industrial revolution](../05-industrial-revolution.md)
+**Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 3-5 h
 
 ## Core ideas
@@ -31,7 +31,7 @@ Stephenson was born in Wylam, Northumberland, in England. He built the locomotiv
 
 ### Robert Stephenson, 1803 to 1859
 
-Robert was born in Willington, England, and worked with his father on early railways. He designed the *Rocket* with his father, and he built the Liverpool and Manchester Railway, which opened in 1830. He later built the Britannia Bridge over the Menai Strait, completed in 1850, which used wrought-iron tubes to carry trains. Engineers still use box and tubular girders for long spans that carry trains. See [Bridges](../../applications/structures/01-bridges.md) and [Trains](../../applications/vehicles-aerospace/10-trains.md).
+Robert was born in Willington, England, and worked with his father on early railways. He designed the *Rocket* with his father, and Robert Stephenson and Company built it. His father was chief engineer of the Liverpool and Manchester Railway, which opened in 1830. He later built the Britannia Bridge over the Menai Strait, completed in 1850, which used wrought-iron tubes to carry trains. Engineers still use box and tubular girders for long spans that carry trains. See [Bridges](../../applications/structures/01-bridges.md) and [Trains](../../applications/vehicles-aerospace/10-trains.md).
 
 ### Isambard Kingdom Brunel, 1806 to 1859
 
@@ -71,7 +71,7 @@ Eiffel was born in Dijon, France, and ran a large iron-structures firm near Pari
 | 1805 | Thomas Telford | Pontcysyllte Aqueduct | [Canals and railways](../projects/02-canals-and-railways.md) |
 | 1824 | Sadi Carnot | *Reflections on the Motive Power of Fire* and the efficiency limit | [Second law and cycles](../../physics/09-thermo-second-law-cycles.md) |
 | 1825 | George Stephenson | *Locomotion* on the Stockton and Darlington Railway | [Trains](../../applications/vehicles-aerospace/10-trains.md) |
-| 1829 | Robert Stephenson | *Rocket* wins the Rainhill Trials | [Trains](../../applications/vehicles-aerospace/10-trains.md) |
+| 1829 | Robert and George Stephenson | *Rocket* wins the Rainhill Trials | [Trains](../../applications/vehicles-aerospace/10-trains.md) |
 | 1841 | Joseph Whitworth | Standard screw thread with a 55 degree angle | [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md) |
 | 1843 | Isambard Kingdom Brunel | SS *Great Britain*, iron hull and screw propeller | [Ships and submarines](../../applications/vehicles-aerospace/09-ships-and-submarines.md) |
 | 1856 | Henry Bessemer | Bessemer process for cheap steel | [Material classes](../../materials/05-material-classes.md) |

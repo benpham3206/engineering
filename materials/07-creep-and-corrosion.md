@@ -4,7 +4,7 @@
 
 Two slow failure modes often decide how long a part lasts. Creep is the slow deformation of a material under steady load, mostly at high temperature. Corrosion is the chemical or electrochemical attack that eats a material away. Both work over months or years, so they are easy to miss in short tests.
 
-**Prerequisites:** [Mechanical properties](03-mechanical-properties.md), [Failure: fracture and fatigue](06-fracture-and-fatigue.md)
+**Prerequisites:** [Mechanical properties](03-mechanical-properties.md), [Failure: fracture and fatigue](06-fracture-and-fatigue.md), [Algebra](../math/01-algebra.md) (exponentials and logarithms)
 **Time:** 6-8 h
 
 ## Core ideas

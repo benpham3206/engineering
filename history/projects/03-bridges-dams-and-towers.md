@@ -4,7 +4,7 @@
 
 From the 1880s to the 2010s, engineers built bridges, dams, and towers that set records for span, height, and power. Each one forced advances in steel and concrete, foundations, wind and seismic design, and construction safety. This lesson covers eight projects and the engineering each one needed.
 
-**Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Electrical age](../06-electrical-age.md), [Canals and railways](02-canals-and-railways.md)
+**Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Electrical age](../06-electrical-age.md), [Canals and railways](02-canals-and-railways.md), [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 5-7 h
 
 ## Core ideas
@@ -132,7 +132,7 @@ Assumptions for both equations: the cable is perfectly flexible and carries no b
 1. Horizontal tension: $H = w L^2 / (8 h) = 60\,000 \times 1280^2 / (8 \times 143) = 8.59 \times 10^7\ \text{N}$, which is 85.9 MN.
 2. Vertical component at the tower: $w L / 2 = 60\,000 \times 1280 / 2 = 3.84 \times 10^7\ \text{N}$, which is 38.4 MN.
 3. Tension at the tower top for both cables: $T = \sqrt{(85.9)^2 + (38.4)^2}\ \text{MN} = 94.1\ \text{MN}$.
-4. Per cable: $94.1 / 2 = 47.1\ \text{MN}$. That is about 4,800 tonne-force, since $47.1 \times 10^6 / 9.81 = 4.8 \times 10^6\ \text{kg}$.
+4. Per cable: $94.1 / 2 = 47.1\ \text{MN}$. That is about 4,800 tonne-force, since $47.1 \times 10^6 / 9.81 = 4.8 \times 10^6\ \text{kg}$ at Earth's surface gravity.
 
 **Answer:** (a) $H = 85.9\ \text{MN}$. (b) $38.4\ \text{MN}$. (c) $T = 94.1\ \text{MN}$. (d) About $47\ \text{MN}$ per cable.
 

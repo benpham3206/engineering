@@ -6,9 +6,7 @@ Hydraulic and pneumatic systems move loads by sending a pressurized fluid throug
 cylinders. An engineer sizes the cylinder for force, the pump and valves for speed, and designs against
 the stored energy and high-pressure jets that make these systems dangerous.
 
-**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md),
-[Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md),
-[Fluid systems](../thermal-fluid/02-fluid-systems.md)
+**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md)
 **Time:** 8-12 h
 
 ## Core ideas
@@ -155,7 +153,7 @@ piston faster but with less force.
 an ideal jet speed of $\sqrt{2 \times 20 \times 10^6 / 870} = 214\ \text{m/s}$. The real jet is slower
 because of losses, but it still penetrates skin. One litre of oil at $10\ \text{MPa}$ stores
 $\Delta p^2 V / (2K) = (10^7)^2 \times 10^{-3} / (2 \times 1.6 \times 10^9) = 31\ \text{J}$. A
-$2000\ \text{kg}$ load held $2\ \text{m}$ high stores $m g h = 2000 \times 9.81 \times 2 = 39\ \text{kJ}$.
+$2000\ \text{kg}$ load held $2\ \text{m}$ high stores $m g h = 2000 \times 9.81 \times 2 = 39\ \text{kJ}$ (with $g = 9.81\ \text{m/s}^2$ at Earth's surface).
 A held load is a larger hazard than the oil in the line.
 
 ## Design trade-offs
@@ -233,6 +231,8 @@ followed the same pattern.
 - A hydraulic leak can be lethal even when it looks small.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A cylinder has bore $D = 0.100\ \text{m}$ and runs at $p = 15\ \text{MPa}$. Find the extend force.
 2. The same cylinder with bore $0.063\ \text{m}$ receives $Q = 20\ \text{L/min}$. Find the extend

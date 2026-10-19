@@ -4,7 +4,7 @@
 
 Safety means that a design keeps people from harm across the conditions it will meet. Risk is the chance of harm multiplied by how bad the harm would be. Engineers care because they decide what is acceptably safe, and those decisions are made long before anyone uses the product.
 
-**Prerequisites:** [What engineering is](01-what-engineering-is.md), [Learning from history and failure](02-engineering-history.md)
+**Prerequisites:** [What engineering is](01-what-engineering-is.md), [Learning from history and failure](02-engineering-history.md), [Axial and torsion](../physics/04-axial-and-torsion.md), [Factor of safety and failure](../design/07-factor-of-safety-and-failure.md)
 **Time:** 5-8 h
 
 ## Core ideas

@@ -8,7 +8,7 @@ the units of the quantity you want. The second is the limiting case. Push one in
 extreme value (zero, very large, or a special angle) and check whether the answer does what
 physics says it should.
 
-**Prerequisites:** [Solve symbolically before plugging in numbers](04-solve-symbolically.md)
+**Prerequisites:** [Solve symbolically before plugging in numbers](04-solve-symbolically.md), [Units and dimensional analysis](../measurement/01-units-and-dimensional-analysis.md), [Heat transfer](../physics/12-heat-transfer.md)
 **Time:** 3-4 h
 
 ## Core ideas

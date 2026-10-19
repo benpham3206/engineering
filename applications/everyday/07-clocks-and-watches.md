@@ -29,7 +29,7 @@ Pendulum clocks come as longcase (grandfather) clocks, mantel clocks, and wall c
 
 ## Key equations
 
-Assumptions for the equations below: the pendulum is a point mass on a light, rigid rod, the swing is small (below about 15 degrees) so the sine of the angle is close to the angle, and gravity is uniform at $g = 9.81\ \text{m/s}^2$ (typical sea-level value; it varies from about 9.78 to 9.83 with latitude). The hairspring is an ideal linear torsion spring, and friction is neglected in the period calculation.
+Assumptions for the equations below: the pendulum is a point mass on a light, rigid rod, the swing is small (below about 15 degrees) so the sine of the angle is close to the angle, and gravity is uniform at $g = 9.81\ \text{m/s}^2$ (Earth surface, typical sea-level value; it varies from about 9.78 to 9.83 with latitude). The hairspring is an ideal linear torsion spring, and friction is neglected in the period calculation.
 
 - Pendulum period: $T = 2\pi \sqrt{L / g}$, where $T$ is the period in seconds (s), $L$ is the length from pivot to bob centre in metres (m), and $g$ is gravity in m/s$^2$. The period does not depend on the bob mass.
 - Balance wheel period: $T = 2\pi \sqrt{I / \kappa}$, where $I$ is the wheel's moment of inertia in kg m$^2$ and $\kappa$ is the hairspring's torsional stiffness in N m/rad. The assumption is that the spring is linear and the amplitude is small.
@@ -38,7 +38,7 @@ Assumptions for the equations below: the pendulum is a point mass on a light, ri
 
 ## Worked example
 
-**Given:** A seconds pendulum swings with a full period of $T = 2.0\ \text{s}$ at $g = 9.81\ \text{m/s}^2$. A quartz watch has a rate error of $\varepsilon = 20$ ppm.
+**Given:** A seconds pendulum swings with a full period of $T = 2.0\ \text{s}$ at $g = 9.81\ \text{m/s}^2$ (Earth surface). A quartz watch has a rate error of $\varepsilon = 20$ ppm.
 
 **Find:** (a) the length of the pendulum, (b) the clock error per day, and (c) the error in 30 days.
 
@@ -85,7 +85,7 @@ Pierre and Jacques Curie discovered piezoelectricity in 1880. The effect later m
 
 ## Practice
 
-1. Find the length of a pendulum with a full period of $1.0\ \text{s}$ at $g = 9.81\ \text{m/s}^2$.
+1. Find the length of a pendulum with a full period of $1.0\ \text{s}$ at $g = 9.81\ \text{m/s}^2$ (Earth surface).
 2. A crystal of $32\,768\ \text{Hz}$ feeds a binary divider. How many stages reach $2\ \text{Hz}$?
 3. A clock gains 3 s per day. Find its rate error in ppm.
 4. A steel pendulum rod warms by 10 K, with $\alpha = 12 \times 10^{-6}$ per kelvin. Find the change in period and the clock error per day, assuming the rod lengthens and the period rises by half the fractional change in length.

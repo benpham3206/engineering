@@ -7,7 +7,7 @@ quantity such as "how much energy heats a bath?" and answers it by breaking the 
 parts, using values you know or can look up, and rounding aggressively. The result is an order
 of magnitude with a range, and you write down every assumption so a reader can check or change it.
 
-**Prerequisites:** [Sanity-check the answer](06-sanity-check-the-answer.md)
+**Prerequisites:** [Sanity-check the answer](06-sanity-check-the-answer.md), [Thermodynamics: properties, work, heat, and the first law](../physics/08-thermo-first-law.md)
 **Time:** 4-6 h
 
 ## Core ideas

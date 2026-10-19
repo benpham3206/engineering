@@ -65,7 +65,7 @@ Joukowsky equation, the pressure rise from a sudden change in velocity:
 
 $$\Delta p = \rho \, a \, \Delta v \qquad \text{or, as head,} \qquad \Delta h = \frac{a \, \Delta v}{g}$$
 
-Here $\Delta p$ is the surge pressure rise in Pa, $\Delta v$ is the change in velocity in m/s, $\Delta h$ is the surge head in m, and $g = 9.81$ m/s$^2$. The equation assumes the closure is rapid, meaning the closing time $t_c$ is no longer than the round trip of the wave:
+Here $\Delta p$ is the surge pressure rise in Pa, $\Delta v$ is the change in velocity in m/s, $\Delta h$ is the surge head in m, and $g = 9.81$ m/s$^2$ (Earth surface). The equation assumes the closure is rapid, meaning the closing time $t_c$ is no longer than the round trip of the wave:
 
 $$t_c \le t_{crit} = \frac{2L}{a}$$
 
@@ -94,7 +94,7 @@ Here $v$ is the initial velocity in m/s, and $t_c$ is the closing time in s.
 
 **Part B, water hammer.**
 
-**Given:** The same pipe is $L = 1000$ m long and made of steel with $E = 2.0 \times 10^{11}$ Pa and wall thickness $e = 5$ mm. Water has $K_b = 2.2 \times 10^{9}$ Pa. A valve at the downstream end closes in $t_c = 0.5$ s. The steady pressure is 0.5 MPa, and the pipe is rated for 4.0 MPa.
+**Given:** The same pipe is $L = 1000$ m long and made of steel with $E = 2.0 \times 10^{11}$ Pa and wall thickness $e = 5$ mm. Water has $K_b = 2.2 \times 10^{9}$ Pa. A valve at the downstream end closes in $t_c = 0.5$ s. The steady pressure is 0.5 MPa, and the pipe is rated for 4.0 MPa. Use $g = 9.81$ m/s$^2$ (Earth surface).
 
 **Find:** The wave speed, the surge pressure, the surge head, and whether the pipe survives.
 
@@ -133,6 +133,8 @@ Here $v$ is the initial velocity in m/s, and $t_c$ is the closing time in s.
 Denis Papin fitted a safety valve to a steam digester in the late 1600s, which makes it one of the earliest pressure relief devices. Nikolai Zhukovsky, also written Joukowsky, developed the theory of water hammer in the late 1890s, and his name is attached to the pressure-rise equation used here. The first edition of the ASME Boiler and Pressure Vessel Code, issued in 1914, set rules for boilers and their safety valves in the United States.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. Water flows at 1.5 m/s in a pipe of diameter 0.050 m. Find the volume flow $Q$ in m$^3$/s.
 2. A fully open ball valve has $K = 0.1$. Water flows through it at $v = 2.0$ m/s. Find the pressure loss in pascals.

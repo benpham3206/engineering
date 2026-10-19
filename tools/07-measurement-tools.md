@@ -4,7 +4,7 @@
 
 Every design number depends on a measurement, and every measurement has an error. Measurement tools include rules, calipers, micrometers, gauges, and digital readouts. Learn to read them correctly, estimate the uncertainty, and combine errors in a stack of parts.
 
-**Prerequisites:** [Starter kit](01-starter-kit.md). Also [algebra and functions](../math/README.md). The [measurement folder](../measurement/README.md) covers error and uncertainty in depth.
+**Prerequisites:** [Starter kit](01-starter-kit.md), [Algebra](../math/01-algebra.md), [Precision, accuracy, and uncertainty](../measurement/02-precision-accuracy-and-uncertainty.md), and [Propagating uncertainty and significant figures](../measurement/03-propagating-uncertainty-and-significant-figures.md) (for the tolerance stack-up example).
 **Time:** 4-8 h for reading tools and stacking tolerances
 
 ## Core ideas

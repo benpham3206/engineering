@@ -46,7 +46,7 @@ Hydrostatic pressure at depth $h$:
 
 $$p = \rho g h$$
 
-Assumes the water is at rest and incompressible, and that $p$ is gauge pressure above the free surface. Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg/m}^3$ for fresh water, typical), $g = 9.81\ \text{m/s}^2$, and $h$ is depth in metres.
+Assumes the water is at rest and incompressible, and that $p$ is gauge pressure above the free surface. Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg/m}^3$ for fresh water, typical), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $h$ is depth in metres.
 
 Resultant water force per metre of dam length, for a vertical face with water depth $H$:
 
@@ -78,7 +78,7 @@ Here $\rho_w$ is the water density in kilograms per cubic metre. The ratio $B/H$
 
 ## Worked example
 
-**Given:** A gravity dam with a vertical upstream face holds water 30 m deep. The base is 18 m wide. Concrete density is $\rho_c = 2400\ \text{kg/m}^3$, and water density is $\rho_w = 1000\ \text{kg/m}^3$. Assume $g = 9.81\ \text{m/s}^2$, no uplift, no tailwater, and no earthquake load.
+**Given:** A gravity dam with a vertical upstream face holds water 30 m deep. The base is 18 m wide. Concrete density is $\rho_c = 2400\ \text{kg/m}^3$, and water density is $\rho_w = 1000\ \text{kg/m}^3$. Assume $g = 9.81\ \text{m/s}^2$ (Earth surface), no uplift, no tailwater, and no earthquake load.
 
 **Find:** the water force per metre of dam length, the overturning factor of safety, and the smallest base width that gives a factor of 1.5.
 
@@ -120,6 +120,8 @@ The safety measures that exist because of these failures include filters and dra
 Egyptian builders constructed the Sadd el-Kafara dam, one of the oldest known large dams. A flood damaged it soon after it was built. Roman engineers built masonry dams with a gravity profile, including the Proserpina dam at Merida in Spain. Concrete gravity and arch dams became common in the 1800s and early 1900s. Hoover Dam was built across the Colorado River from 1931 to 1936, and its scale made it a landmark of concrete construction.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. Find the gauge pressure at 12 m depth in fresh water.
 2. Find the water force per metre of dam length on a vertical face with water 8 m deep.

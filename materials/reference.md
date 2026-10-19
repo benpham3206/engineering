@@ -9,7 +9,7 @@ A lookup sheet for choosing, checking, and failing-analysing engineering materia
 - Processing sets structure, structure sets properties, and properties set performance. Change the processing and the same composition can behave very differently.
 - Stiffness comes from bonding and changes little with microstructure. Strength, toughness, and fatigue life depend strongly on microstructure and flaws.
 - Real parts contain flaws. Fracture happens when a crack reaches its critical size, not when the average stress reaches a limit.
-- Temperature changes most properties. Above roughly 0.3 to 0.5 of the melting temperature (in kelvin), creep and time-dependent failure matter.
+- Temperature changes most properties. Above about 0.4 of the melting temperature (in kelvin), creep and time-dependent failure matter. For very long service lives, screen from about 0.3.
 - Corrosion is electrochemistry. No electrolyte, or no electron path between the two sites, means no galvanic corrosion.
 - Table values are typical, not guaranteed. Design to specified minimums from the supplier or code, with the actual condition, temperature, and environment.
 - Any single property is not a material choice. Rank candidates by a performance index built from the constraints and the objective.
@@ -208,7 +208,7 @@ Typical fracture toughness (MPa $\sqrt{\text{m}}$, typical):
 
 - Creep is time-dependent deformation under constant stress. Three stages: primary (decelerating), secondary (steady-state), and tertiary (accelerating to rupture).
 - Regime rule: creep matters when the absolute temperature is above about 0.3 to 0.5 of the absolute melting temperature $T_m$ (in kelvin). It holds for metals and many ceramics. Polymers creep at much lower temperature, so use the glass transition temperature $T_g$ as the reference.
-- Worked check: aluminum ($T_m \approx 933$ K) creeps at about 280 K to 470 K, which is about 7 C to 195 C. Lead ($T_m \approx 601$ K) is at about 0.49 $T_m$ at room temperature, so lead creeps at room temperature.
+- Worked check: aluminum ($T_m \approx 933$ K) reaches $0.4\,T_m$ at about 373 K (100 C), so creep matters above about 100 C and room-temperature creep is negligible for design. Lead ($T_m \approx 601$ K) is at about 0.49 $T_m$ at room temperature, so lead creeps at room temperature.
 - Steady-state creep rate: $\dot{\varepsilon} = A\,\sigma^{n}\exp\!\left(-\dfrac{Q}{RT}\right)$, with $\dot{\varepsilon}$ in 1/s, $\sigma$ in MPa, $n$ the stress exponent (often 3 to 8 for metals), $Q$ the activation energy (J/mol), $R = 8.314$ J/(mol K), and $T$ in kelvin.
 - Temperature ratio at the same stress: $\dfrac{\dot{\varepsilon}_2}{\dot{\varepsilon}_1} = \exp\!\left[\dfrac{Q}{R}\left(\dfrac{1}{T_1} - \dfrac{1}{T_2}\right)\right]$. Example: with $Q = 200$ kJ/mol, raising T from 900 K to 1000 K increases the creep rate by about 14.5 times.
 - It breaks when the model is applied with Celsius instead of kelvin, when the microstructure changes (overaging, phase transformation), or when multiaxial stress or oxidation dominate.

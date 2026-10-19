@@ -4,7 +4,7 @@
 
 An experiment tests a question under controlled conditions. Good design decides what you change, what you hold still, how many times you repeat, and how you guard against bias. A well-designed experiment can answer a question with a modest number of runs. A poorly designed one wastes time even when the measurements are precise.
 
-**Prerequisites:** [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [03 - Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md)
+**Prerequisites:** [Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md), [Probability and statistics](../math/07-probability-and-statistics.md)
 **Time:** 6-8 h
 
 ## Core ideas

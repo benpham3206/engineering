@@ -4,7 +4,7 @@
 
 No part is made to an exact size. A tolerance is the allowed variation in a dimension. Tolerancing sets the limits that keep a part working, and stack-up adds up the variation of several parts that must fit together. Geometric tolerances (GD&T) are covered in the next two lessons.
 
-**Prerequisites:** [02 Engineering graphics](02-engineering-graphics.md), [01 Design process](01-design-process.md), and the algebra section of [math](../math/README.md)
+**Prerequisites:** [Engineering graphics](02-engineering-graphics.md), [Design process](01-design-process.md), [Algebra](../math/01-algebra.md), [Probability and statistics](../math/07-probability-and-statistics.md) (for the RSS method)
 **Time:** 5-8 h
 
 ## Core ideas

@@ -4,7 +4,7 @@
 
 Kitchen appliances turn electrical energy into heat or motion inside a box that people touch every day. Engineers size the heating element, the motor, and the controls so that the appliance is fast, safe, and cheap to run. Four appliances cover most of the physics: the kettle, the toaster, the blender, and the induction cooktop.
 
-**Prerequisites:** [Thermal systems](../thermal-fluid/01-thermal-systems.md), [Thermo first law](../../physics/08-thermo-first-law.md), [Circuit basics](../electronics/01-circuit-basics.md), [DC motors](../electrical/01-dc-motors.md)
+**Prerequisites:** [Thermal systems](../thermal-fluid/01-thermal-systems.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Circuit basics](../electronics/01-circuit-basics.md), [DC motors](../electrical/01-dc-motors.md)
 **Time:** 4-6 h
 
 ## Core ideas

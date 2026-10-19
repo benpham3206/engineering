@@ -4,7 +4,7 @@
 
 A calculator is the fastest tool for a quick number, an exam, or a check on the shop floor. Knowing when to use one, and when to switch to code or a spreadsheet, saves time and prevents a whole class of silent errors.
 
-**Prerequisites:** [Algebra](../math/README.md) and basic trigonometry.
+**Prerequisites:** [Algebra](../math/01-algebra.md) and [Trigonometry](../math/02-trigonometry.md). [Axial and torsion](../physics/04-axial-and-torsion.md) helps with the worked example.
 **Time:** 2-4 h, then practice until it is automatic
 
 ## Core ideas
@@ -73,7 +73,7 @@ There are no calculator-specific equations, but two habits are worth writing as 
 ## Practice
 
 1. Set your calculator to radians and compute $\sin(30)$. Then set it to degrees and compute it again. Write down both.
-2. A stone falls from rest for 2.5 s with $g = 9.81$ m/s$^2$. Find the distance fallen, estimating first.
+2. A stone falls from rest for 2.5 s with $g = 9.81$ m/s$^2$ (Earth surface). Find the distance fallen, estimating first.
 3. How long does an object take to fall 10 m from rest on Earth?
 4. A 120 N force acts at 35 degrees above horizontal. Find its horizontal component.
 5. Find the equivalent resistance of 220 ohm and 330 ohm in parallel, using memory for the intermediate values.

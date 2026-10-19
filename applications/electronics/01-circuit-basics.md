@@ -6,7 +6,7 @@ Circuit analysis is the bookkeeping that tells you the voltage and current at ev
 circuit. Almost every electronic device, from a phone charger to a motor controller, is built
 from a handful of rules that you can apply with algebra.
 
-**Prerequisites:** [Math fundamentals](../../math/README.md) (algebra, solving linear equations)
+**Prerequisites:** [Algebra](../../math/01-algebra.md)
 **Time:** 6-10 h
 
 ## Core ideas

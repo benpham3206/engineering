@@ -3,7 +3,7 @@
 **Type:** lesson
 
 Every part is made from a material and shaped by a process. The material affects strength, weight, and cost, and the process affects the shape the designer could make. Careful observation and a few simple tests can tell you a lot.
-**Prerequisites:** [Teardowns](01-teardowns.md), [Measuring existing parts](02-measuring-existing-parts.md)
+**Prerequisites:** [Teardowns](01-teardowns.md), [Measuring existing parts](02-measuring-existing-parts.md), [Mechanical properties](../materials/03-mechanical-properties.md), [Metals, polymers, ceramics, composites](../materials/05-material-classes.md)
 **Time:** 8-12 h
 
 ## Core ideas

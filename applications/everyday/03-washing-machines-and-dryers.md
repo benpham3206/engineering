@@ -4,7 +4,7 @@
 
 A washing machine spins a drum fast enough to throw water out of clothes, and a dryer heats air to evaporate the rest. The spin g-force grows with the square of the drum speed and with the drum radius, and an unbalanced load turns that force into shaking. Engineers who size drums, motors, and suspensions need these relations and the safety measures they demand.
 
-**Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid-body dynamics](../../physics/03-rigid-body-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Heat transfer](../../physics/12-heat-transfer.md)
+**Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 3-4 h
 
 ## Core ideas
@@ -67,7 +67,7 @@ where $Q$ is the energy in joules (J), $m_{w}$ is the water mass in kilograms (k
 
 ## Worked example
 
-**Given:** A drum with radius $r = 0.25\ \text{m}$ spins at $N = 1200\ \text{rpm}$.
+**Given:** A drum with radius $r = 0.25\ \text{m}$ spins at $N = 1200\ \text{rpm}$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the centripetal acceleration, (b) the spin g-force, and (c) the force from a 2 kg wet load whose centre sits 0.05 m off the drum axis.
 
@@ -113,6 +113,8 @@ where $Q$ is the energy in joules (J), $m_{w}$ is the water mass in kilograms (k
 Early washing machines used hand-cranked drums and wringer rollers before electric motors took over. Spin-dry drums came into common use in the early twentieth century, when the centrifugal principle was applied to water removal. Clothes dryers followed the same path, and both appliances spread widely in homes after electric power reached most households. Exact dates and inventors vary by country, so treat any single date as approximate.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A drum with radius 0.22 m spins at 1100 rpm. What is the spin g-force?
 2. What is the maximum rpm for 500 g on a drum with radius 0.25 m?

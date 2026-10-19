@@ -4,7 +4,7 @@
 
 A building needs heat in winter, cooling in summer, and fresh air all year. HVAC systems move heat and air to keep occupants comfortable and safe, and an engineer who sizes them must balance heat losses, moisture, and airflow.
 
-**Prerequisites:** [Thermal systems](01-thermal-systems.md), [The first law of thermodynamics](../../physics/08-thermo-first-law.md), [Heat transfer](../../physics/12-heat-transfer.md)
+**Prerequisites:** [Thermal systems](01-thermal-systems.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 8-12 h
 
 ## Core ideas
@@ -51,7 +51,7 @@ Sensible heat to warm or cool ventilation air:
 
 $$\dot{Q} = \rho \, \dot{V} \, c_p \, \Delta T$$
 
-Here $\rho$ is air density in kg/m$^3$ (about 1.2 kg/m$^3$ near 20 C, typical), $\dot{V}$ is the volume flow of air in m$^3$/s, and $c_p$ is the specific heat of air in J/(kg K) (about 1005 J/(kg K), typical).
+Here $\rho$ is air density in kg/m$^3$ (about 1.2 kg/m$^3$ near 20 C at sea level on Earth, typical), $\dot{V}$ is the volume flow of air in m$^3$/s, and $c_p$ is the specific heat of air in J/(kg K) (about 1005 J/(kg K), typical).
 
 Latent heat to evaporate or condense water:
 
@@ -63,7 +63,7 @@ Humidity ratio, the mass of water per mass of dry air:
 
 $$W = 0.622 \, \frac{p_v}{P - p_v}$$
 
-Here $W$ is in kg/kg, $p_v$ is the partial pressure of the water vapor in Pa, and $P$ is the total pressure in Pa (about $101\,325$ Pa at sea level, typical).
+Here $W$ is in kg/kg, $p_v$ is the partial pressure of the water vapor in Pa, and $P$ is the total pressure in Pa (about $101\,325$ Pa at sea level on Earth, typical).
 
 Relative humidity:
 
@@ -81,7 +81,7 @@ Here $v$ is the mean air velocity in m/s, and $A$ is the duct cross-section in m
 
 ## Worked example
 
-**Given:** A winter room of 20 m$^2$ (4 m by 5 m, 2.5 m ceiling). Indoor design temperature is 21 C, and outdoor design temperature is -5 C, so $\Delta T = 26$ K. The exterior wall is 12 m$^2$ with $U = 0.35$ W/(m$^2$ K). The window is 4 m$^2$ with $U = 2.8$ W/(m$^2$ K). Outdoor ventilation air is 30 L/s, or $\dot{V} = 0.030$ m$^3$/s. Air density is 1.2 kg/m$^3$, and $c_p = 1005$ J/(kg K).
+**Given:** A winter room of 20 m$^2$ (4 m by 5 m, 2.5 m ceiling). Indoor design temperature is 21 C, and outdoor design temperature is -5 C, so $\Delta T = 26$ K. The exterior wall is 12 m$^2$ with $U = 0.35$ W/(m$^2$ K). The window is 4 m$^2$ with $U = 2.8$ W/(m$^2$ K). Outdoor ventilation air is 30 L/s, or $\dot{V} = 0.030$ m$^3$/s. Air density is 1.2 kg/m$^3$ (sea level on Earth), and $c_p = 1005$ J/(kg K).
 
 **Find:** The peak heating load.
 

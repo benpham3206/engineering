@@ -3,7 +3,7 @@
 **Type:** lesson
 
 Gears change speed and torque between shafts. Fasteners clamp parts together, and their job is to hold a preload that does not loosen. Springs store energy and give a force that changes with length. These three machine elements appear in almost every machine, and each has a few formulas that a designer uses over and over.
-**Prerequisites:** [07 Factor of safety and failure](07-factor-of-safety-and-failure.md), [08 Shafts and bearings](08-shafts-and-bearings.md)
+**Prerequisites:** [Factor of safety and failure](07-factor-of-safety-and-failure.md), [Shafts and bearings](08-shafts-and-bearings.md), [Axial and torsion](../physics/04-axial-and-torsion.md)
 **Time:** 8-12 h
 
 ## Core ideas

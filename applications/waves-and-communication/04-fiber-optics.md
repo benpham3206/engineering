@@ -4,7 +4,7 @@
 
 An optical fiber is a thin glass or plastic strand that guides light along its length, often for many kilometres. Engineers need to understand it because fiber carries most long-distance internet and telephone traffic, and its loss and dispersion set how far and how fast a link can run.
 
-**Prerequisites:** [Waves, light, and heat](../../physics/07-waves-light-heat.md), [Trigonometry](../../math/02-trigonometry.md)
+**Prerequisites:** [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 6-8 h
 
 ## Core ideas

@@ -4,7 +4,7 @@
 
 A nuclear reactor turns the energy released when heavy atoms split into heat, and that heat makes steam for a turbine. Engineers need to understand reactors because the design work comes down to two balances: the neutron balance that keeps the chain reaction steady, and the heat balance that keeps the fuel cool in every operating state.
 
-**Prerequisites:** [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md), [First law of thermodynamics](../../physics/08-thermo-first-law.md), [Second law and cycles](../../physics/09-thermo-second-law-cycles.md), [Heat transfer](../../physics/12-heat-transfer.md)
+**Prerequisites:** [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 8-10 h
 
 ## Core ideas

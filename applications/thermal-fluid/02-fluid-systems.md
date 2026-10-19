@@ -6,7 +6,7 @@ A fluid system moves water, air, or oil through pipes, ducts, and pumps. Enginee
 choose the pump, and check that the pressure stays in range. Three ideas cover most of the work:
 mass is conserved, energy is conserved along a streamline, and friction takes energy away.
 
-**Prerequisites:** [Thermal systems](01-thermal-systems.md), [Mathematics folder](../../math/README.md)
+**Prerequisites:** [Thermal systems](01-thermal-systems.md), [Algebra](../../math/01-algebra.md)
 **Time:** 10-14 h
 
 ## Core ideas
@@ -37,7 +37,7 @@ mass is conserved, energy is conserved along a streamline, and friction takes en
 - Continuity: $Q = A_1 v_1 = A_2 v_2$, where $A$ is the pipe cross-section in square metres (m$^2$).
 - Circular pipe area: $A = \pi D^2 / 4$, with $D$ the diameter in metres.
 - Bernoulli (no friction), in pascals: $p_1 + \tfrac{1}{2}\rho v_1^2 + \rho g z_1 = p_2 + \tfrac{1}{2}\rho v_2^2 + \rho g z_2$,
-  where $g = 9.81\ \text{m/s}^2$ and $z$ is height in metres.
+  where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface) and $z$ is height in metres.
 - Pump power (hydraulic): $P = \rho g Q H$, in watts, where $H$ is head in metres.
 - Shaft (input) power: $P_{in} = \rho g Q H / \eta$.
 - Reynolds number: $Re = \rho v D / \mu$, with dynamic viscosity $\mu$ in Pa s. For water at about 20 C,
@@ -47,7 +47,7 @@ mass is conserved, energy is conserved along a streamline, and friction takes en
 
 ## Worked example
 
-**Given:** A pump moves water at $Q = 0.005\ \text{m}^3/\text{s}$ (5 L/s) against a head of $H = 15\ \text{m}$.
+**Given:** A pump moves water at $Q = 0.005\ \text{m}^3/\text{s}$ (5 L/s) against a head of $H = 15\ \text{m}$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 Water density is $\rho = 1000\ \text{kg/m}^3$, and the pump efficiency is $\eta = 0.60$. A second pipe
 of diameter $D = 0.025\ \text{m}$ carries water at $v = 1.0\ \text{m/s}$.
 

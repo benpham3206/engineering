@@ -4,7 +4,7 @@
 
 A power supply turns the electricity from a source into the voltage and current that a device needs. Phone chargers, laptop adapters, and the boards inside appliances all convert power, and most of them do it with switches rather than resistors. Engineers need to know which converter fits a job, because the choice sets the efficiency, the heat, and the size.
 
-**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [RC circuits and op-amps](../electronics/02-rc-circuits-and-op-amps.md), [Semiconductors, diodes, and transistors](../electronics/03-semiconductors-diodes-and-transistors.md)
+**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [RC circuits and op-amp basics](../electronics/02-rc-circuits-and-op-amps.md), [Semiconductors](../electronics/03-semiconductors-diodes-and-transistors.md)
 **Time:** 8-10 h
 
 ## Core ideas

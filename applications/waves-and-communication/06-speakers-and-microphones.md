@@ -4,7 +4,7 @@
 
 A loudspeaker turns an electrical signal into sound pressure, and a microphone does the reverse. Engineers need the force, motion, and pressure relations to size a speaker driver, pick a microphone, and set a level that is loud enough without distortion or hearing damage.
 
-**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Waves, light, and heat](../../physics/07-waves-light-heat.md)
+**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md)
 **Time:** 6-8 h
 
 ## Core ideas
@@ -54,7 +54,7 @@ Doubling the pressure raises the level by $20 \log_{10} 2 = 6.0$ dB. Doubling th
 **Solution:**
 
 1. Force: $F = B\,l\,I = 1.0 \times 8.0 \times 2.0 = 16$ N.
-2. Acceleration: $a = F / m = 16 / 0.010 = 1600$ m/s$^2$. This is about $1600 / 9.81 = 163$ times the acceleration of gravity.
+2. Acceleration: $a = F / m = 16 / 0.010 = 1600$ m/s$^2$. This is about $1600 / 9.81 = 163$ times the acceleration of gravity at Earth's surface.
 3. Sound pressure level: $L_p = 20 \log_{10}\!\left(\dfrac{0.10}{20 \times 10^{-6}}\right) = 20 \log_{10}(5000) = 74.0$ dB.
 
 **Answer:** (a) 16 N. (b) 1600 m/s$^2$. (c) 74 dB.

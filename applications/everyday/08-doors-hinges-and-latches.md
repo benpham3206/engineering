@@ -39,13 +39,13 @@ Assumptions for the equations below: the door is a rigid plate, the hinges are f
 
 - Moment: $M = F d$, where $M$ is the moment in newton metres (N m), $F$ is the force in newtons (N), and $d$ is the perpendicular distance from the hinge line to the line of action of the force, in metres (m).
 - Hinge reaction from a moment: $R = F d / s$, where $R$ is the sideways reaction at each of two hinges in N, and $s$ is the spacing between the two hinges in metres. The assumption is that the two hinges share the moment as a couple and that the vertical force from the door's weight is handled separately.
-- Door weight: $W = m g$, where $m$ is the door mass in kilograms (kg) and $g = 9.81\ \text{m/s}^2$ (typical sea-level value).
+- Door weight: $W = m g$, where $m$ is the door mass in kilograms (kg) and $g = 9.81\ \text{m/s}^2$ (Earth surface, typical sea-level value).
 - Kinetic energy of a closing door: $E_k = \tfrac{1}{2} m v^2$, where $v$ is the speed of the door's free edge in m/s. The assumption is that the door rotates about its hinge, so the energy here is the energy of the whole door treated as a point mass at the edge, which overstates the true value. This is a simple upper estimate.
 - Spring energy: $E = \tfrac{1}{2} k x^2$, where $k$ is the spring stiffness in N/m and $x$ is the compression in metres. The assumption is that the spring is linear.
 
 ## Worked example
 
-**Given:** A door has a mass of $m = 30\ \text{kg}$ and a width of $0.90\ \text{m}$. Two hinges sit $s = 1.5\ \text{m}$ apart on the hinge side. A person pushes the handle at the far edge, which is $d = 0.90\ \text{m}$ from the hinge line, with a force of $F = 100\ \text{N}$. The door closes at $v = 1.0\ \text{m/s}$ at the free edge.
+**Given:** A door has a mass of $m = 30\ \text{kg}$ and a width of $0.90\ \text{m}$. Two hinges sit $s = 1.5\ \text{m}$ apart on the hinge side. A person pushes the handle at the far edge, which is $d = 0.90\ \text{m}$ from the hinge line, with a force of $F = 100\ \text{N}$. The door closes at $v = 1.0\ \text{m/s}$ at the free edge. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the sideways reaction at each hinge, (b) the weight of the door, and (c) the kinetic energy of the door closing.
 
@@ -94,7 +94,7 @@ Hinged doors have turned on pivots and hinges for thousands of years, and early 
 
 ## Practice
 
-1. A door has a mass of 25 kg. Find its weight in newtons at $g = 9.81\ \text{m/s}^2$.
+1. A door has a mass of 25 kg. Find its weight in newtons at $g = 9.81\ \text{m/s}^2$ (Earth surface).
 2. Two hinges sit 1.2 m apart. A person pushes with 80 N at 0.80 m from the hinge line. Find the sideways reaction at each hinge.
 3. A 25 kg door closes at 0.80 m/s. Find its kinetic energy, using the simple point-mass estimate.
 4. A closer spring has $k = 800\ \text{N/m}$ and compresses by 25 mm. Find the stored energy.

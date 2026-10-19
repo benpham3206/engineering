@@ -4,7 +4,7 @@
 
 An aircraft stays up because its wings make lift, and its engines pay for the drag that the wings and body create. An engineer sizes the wing to set the stall speed, the cruise drag, and the power the engine must supply.
 
-**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid-body dynamics](../../physics/03-rigid-body-dynamics.md)
+**Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 8-10 h
 
 ## Core ideas
@@ -44,7 +44,7 @@ $$
 L = \tfrac{1}{2}\rho V^2 S\, C_L \qquad D = \tfrac{1}{2}\rho V^2 S\, C_D
 $$
 
-- $L$ is lift (N). $D$ is drag (N). $\rho$ is air density (kg/m$^3$, about 1.225 at sea level). $V$ is airspeed (m/s). $S$ is wing area (m$^2$). $C_L$ and $C_D$ are the lift and drag coefficients (dimensionless).
+- $L$ is lift (N). $D$ is drag (N). $\rho$ is air density (kg/m$^3$, about 1.225 at sea level on Earth). $V$ is airspeed (m/s). $S$ is wing area (m$^2$). $C_L$ and $C_D$ are the lift and drag coefficients (dimensionless).
 - Assumptions: steady flight, subsonic and incompressible air, and $C_L$ and $C_D$ both referenced to the same wing area $S$.
 
 Stall speed, where lift equals weight at the maximum lift coefficient.
@@ -85,7 +85,7 @@ $$
 
 ## Worked example
 
-**Given.** A 1000 kg light aircraft flies at sea level, where $\rho = 1.225$ kg/m$^3$. Its maximum lift coefficient is $C_{L,\max} = 1.5$. The design target is a stall speed of 25 m/s. In cruise, the aircraft flies at 50 m/s with $C_{D,0} = 0.030$, aspect ratio $AR = 8$, and $e = 0.80$.
+**Given.** A 1000 kg light aircraft flies at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Its maximum lift coefficient is $C_{L,\max} = 1.5$. The design target is a stall speed of 25 m/s. In cruise, the aircraft flies at 50 m/s with $C_{D,0} = 0.030$, aspect ratio $AR = 8$, and $e = 0.80$.
 
 **Find.** (a) the wing area, (b) the span, (c) the cruise drag and the power required, and (d) the lift-to-drag ratio.
 
@@ -139,7 +139,7 @@ Otto Lilienthal made hundreds of glider flights in Germany in the 1890s. The Wri
 
 ## Practice
 
-1. A 1200 kg aircraft has a wing area of 18 m$^2$ and $C_{L,\max} = 1.6$ at sea level, where $\rho = 1.225$ kg/m$^3$. Find the stall speed in m/s.
+1. A 1200 kg aircraft has a wing area of 18 m$^2$ and $C_{L,\max} = 1.6$ at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Find the stall speed in m/s.
 2. An aircraft with $S = 18$ m$^2$ flies at 60 m/s at sea level with $C_L = 0.40$. Find the lift in kN.
 3. Using thin-airfoil theory, find $C_L$ at $\alpha = 4^\circ$.
 4. A wing has $C_L = 0.50$, $AR = 9$, and $e = 0.80$. Find the induced drag coefficient.

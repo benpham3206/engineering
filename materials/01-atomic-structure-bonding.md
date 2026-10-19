@@ -90,7 +90,7 @@ Electronegativity difference is a rough guide to bond character. A large differe
 - Forgetting the sign of bond energy. A bound pair has negative energy relative to separated ions.
 - Using the single-pair Coulomb energy as the energy of a whole crystal. Real solids have many neighbors, so the total energy is different.
 - Assuming "ionic" or "covalent" is a sharp category. Most real bonds are a mix, and the electronegativity difference only gives a guide.
-- Calling a metal "strong because it is stiff." Stiffness and strength are different properties. Lesson 03 explains the difference.
+- Calling a metal "strong because it is stiff." Stiffness and strength are different properties. The mechanical properties lesson explains the difference.
 
 ## Go deeper
 

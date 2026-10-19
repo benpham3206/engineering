@@ -117,7 +117,7 @@ Use these to catch wrong answers in seconds. All values are typical, not exact.
 - 1 kg weighs about 10 N on Earth ($9.81$ rounded to $10$; within 2 %).
 - 1 L of water is about 1 kg.
 - 1 kWh is 3.6 MJ. A 100 W device running for 1 h uses 0.1 kWh.
-- Air at sea level: about $10^5\ \text{Pa}$ (1 atm is $1.013 \times 10^5\ \text{Pa}$).
+- Air at sea level on Earth: about $10^5\ \text{Pa}$ (1 atm is $1.013 \times 10^5\ \text{Pa}$).
 - 1 m/s is about 3.6 km/h, so 10 m/s is about 36 km/h.
 
 ### Energy density
@@ -359,8 +359,8 @@ With weights cost 0.40, performance 0.35, risk 0.25, A scores 3.9 and B scores 3
 
 - A 50 kg mass weighs about 500 N; a force of 50 kN (about 5 t of mass) is the weight of a small truck, not a person.
 - A 100 W lamp running for 10 h uses 1 kWh (3.6 MJ). Convert to cost with your local tariff, not a remembered one.
-- A kilogram of fuel holds about 40 to 50 MJ; a kilogram of battery holds about 1 MJ. Gasoline is roughly 50 times the battery by mass.
-- Air at sea level is about $10^5$ Pa. Water at 10 m depth adds about $10^5$ Pa, so pressure doubles at about 10 m of water.
+- A kilogram of fuel holds about 40 to 50 MJ; a kilogram of lithium-ion cells holds about 0.7 MJ (200 Wh/kg). Gasoline is roughly 60 times the battery by mass.
+- Air at sea level on Earth is about $10^5$ Pa. Water at 10 m depth adds about $10^5$ Pa, so pressure doubles at about 10 m of water.
 - A stress or pressure of $10^6$ Pa (1 MPa) is about 10 atm, a common pneumatic pressure.
 - A speed of 200 m/s is the speed of a jet, not a car. A speed of 2000 m/s is about 7000 km/h.
 - A 1 GW power station delivers about $8.6 \times 10^{13}$ J per day (computed). A quantity that comes out near that figure for one city needs a careful check.

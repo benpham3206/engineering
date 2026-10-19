@@ -3,7 +3,7 @@
 **Type:** lesson
 
 A part fails when the stress in it is too high for the material. Engineers do not design to the edge of failure. They design with a factor of safety (FoS), a margin that covers unknown loads, material variation, and manufacturing error.
-**Prerequisites:** [01 Design process](01-design-process.md), and the force and equilibrium lessons in [physics](../physics/README.md) and the stress-strain basics in [materials](../materials/README.md)
+**Prerequisites:** [Design process](01-design-process.md), [Statics](../physics/01-statics.md), [Axial and torsion](../physics/04-axial-and-torsion.md), [Mechanical properties](../materials/03-mechanical-properties.md)
 **Time:** 6-10 h
 
 ## Core ideas

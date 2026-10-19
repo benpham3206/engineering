@@ -52,7 +52,7 @@ The braking distance at constant deceleration $a$ from speed $v$ is:
 
 $$s = \frac{v^2}{2 a}$$
 
-where $s$ is the distance in metres, $v$ is the speed in metres per second (m/s), and $a$ is the deceleration in m/s$^2$. Adhesion limits the deceleration. The required adhesion coefficient is $\mu_{\text{req}} = a / g$, where $g = 9.81\ \text{m/s}^2$.
+where $s$ is the distance in metres, $v$ is the speed in metres per second (m/s), and $a$ is the deceleration in m/s$^2$. Adhesion limits the deceleration. The required adhesion coefficient is $\mu_{\text{req}} = a / g$, where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface).
 
 During brake build-up, the train travels at constant speed before braking takes full effect. That distance is $s_d = v t_d$, where $t_d$ is the delay in seconds.
 
@@ -62,7 +62,7 @@ During brake build-up, the train travels at constant speed before braking takes 
 
 **Find:** (a) the braking force, (b) the adhesion needed to hold that deceleration, and (c) the total stopping distance from the moment the driver applies the brakes.
 
-**Assumptions:** Level track. Constant deceleration after brake build-up. Mass constant during braking.
+**Assumptions:** Level track. Constant deceleration after brake build-up. Mass constant during braking. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Solution:**
 
@@ -100,6 +100,8 @@ During brake build-up, the train travels at constant speed before braking takes 
 George and Robert Stephenson's locomotive Rocket won the Rainhill Trials in 1829 for the Liverpool and Manchester Railway. Stephenson's early lines used a track width of 1435 mm, which became the standard gauge. George Westinghouse patented the automatic air brake in 1869, and it made stopping long trains safe. Werner von Siemens built an electric locomotive that ran at the Berlin Trades Exhibition in 1879, which showed that electric traction could work on a railway.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A 200 t train runs at 25 m/s. Find its kinetic energy in megajoules. Use $E = \tfrac{1}{2} m v^2$.
 2. A train has 1.5 MN on its driven axles, and $\mu = 0.30$. Find the maximum tractive force in kilonewtons.

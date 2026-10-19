@@ -614,7 +614,7 @@ Before releasing a design:
 - Gas temperatures: a Celsius temperature in a gas or radiation equation gives a wrong answer by a large factor. Confirm kelvin.
 - Air speed of sound: about 340 to 345 m/s near room temperature. If you get a value far from this, check $T$ and $R$.
 - Air density at 300 K and 100 kPa: about 1.16 kg/m$^3$. Water density: about 1000 kg/m$^3$. A factor of 10 off means a unit error.
-- Water column: about 9.8 kPa per metre of depth. Atmospheric pressure is about 10.3 m of water.
+- Water column: about 9.8 kPa per metre of depth on Earth. Atmospheric pressure is about 10.3 m of water.
 - Water heat capacity: about 4.2 kJ/(kg K). Warming 1 kg of water by 10 K takes about 42 kJ.
 - Convection: the $h$ for water is roughly 25 to 50 times the $h$ for air at the same flow. A water film is much less of a resistance than an air film.
 - Conduction: 10 m$^2$ of 0.20 m concrete at $k = 1.0$ W/(m K) with a 15 K difference carries 750 W.

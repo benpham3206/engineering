@@ -359,9 +359,13 @@ Here $P_{cr}$ is in N, $E$ in Pa, $I$ the smallest second moment of area in m^4,
 | Fixed-free (cantilever column) | 2.0 | Quarter sine wave |
 
 - Example: solid rod, $d = 25$ mm, $L = 1.8$ m, $E = 200$ GPa. $P_{cr}$ = 11.7 kN (pinned), 23.8 kN (fixed-pinned), 46.7 kN (fixed-fixed), 2.92 kN (cantilever). The critical stress for the pinned case is 23.8 MPa.
-- Transition slenderness below which Euler does not apply (column yields first): $(KL/r)_t = \pi\sqrt{E/\sigma_y}$. Steel ($E = 200$ GPa, $\sigma_y = 250$ MPa) gives about 89. The example rod has $KL/r = 288$, so Euler applies.
+- Euler stress equals yield at $KL/r = \pi\sqrt{E/\sigma_y}$, about 89 for steel ($E = 200$ GPa, $\sigma_y = 250$ MPa). That is not where Euler becomes safe. Real columns carry residual stress and small crookedness, so below the tangency point $(KL/r)_t = \sqrt{2\pi^2 E/\sigma_y}$ (about 126 for this steel) use the Johnson parabola instead:
 
-Holds when: the column is straight, centrally loaded, slender ($KL/r$ above the transition value), elastic, with ideal end conditions.
+$$\sigma_{cr} = \sigma_y - \frac{\sigma_y^2}{4\pi^2 E}\left(\frac{KL}{r}\right)^2 \qquad \text{for } \frac{KL}{r} < \sqrt{\frac{2\pi^2 E}{\sigma_y}}$$
+
+- At $KL/r = 89$ for this steel, Euler gives 249 MPa and Johnson gives 187 MPa, so Euler overpredicts the capacity by about a third. Steel building codes use their own column curves with a similar limit (about 133 for this steel). The example rod has $KL/r = 288$, so Euler applies.
+
+Holds when: the column is straight, centrally loaded, slender ($KL/r$ above the tangency value), elastic, with ideal end conditions.
 Breaks when: stocky columns (use inelastic or empirical column curves), eccentric loading (secant formula), imperfections, or real end conditions that are partly restrained (use a $K$ between the ideal values, and be conservative).
 
 ## Vibrations
@@ -492,7 +496,7 @@ Vibration and control:
 - Kinetic energy of 1 kg at 1 m/s is 0.5 J. A 1 kg object at 10 m/s carries 50 J.
 - Stress on a 1 cm^2 area of 1 MPa corresponds to 100 N of force.
 - Shear yield of a ductile metal is about 0.58 times its tensile yield (von Mises, $\sigma_y/\sqrt{3}$). Tresca gives 0.5.
-- For steel, a column with $KL/r$ above about 89 (the transition value) is Euler-governed; below it, Euler overpredicts the load.
+- For mild steel, a column with $KL/r$ above about 126 is Euler-governed. Below that, use the Johnson parabola, because Euler overpredicts the load.
 - Damping ratio of most structures is roughly 0.01 to 0.05 (typical), so resonance peaks are large unless damping is added.
 - An overshoot above 50 percent corresponds to $\zeta$ below about 0.2 for a second-order loop.
 - A deflection that scales as $L^4$ doubles by a factor 16 if the span doubles. Check whether your answer does.

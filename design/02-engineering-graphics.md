@@ -4,7 +4,7 @@
 
 Engineering graphics is the language of drawings. A sketch or drawing must show a three-dimensional part in flat views so that someone else can make it without guessing. Engineers use it to think, to communicate, and to write down exactly what a part is.
 
-**Prerequisites:** [01 Design process](01-design-process.md)
+**Prerequisites:** [Design process](01-design-process.md)
 **Time:** 6-10 h
 
 ## Core ideas

@@ -4,7 +4,7 @@
 
 No part is made exactly to its drawing dimension. Tolerances state how far a size may vary, fits describe how two mating parts fit together given those variations, and surface finish describes the texture of the surface. An engineer who writes tolerances that are too tight adds cost, and one who writes them too loose gets parts that do not assemble or do not work. Full standard tables are in the handbooks that the shop uses.
 
-**Prerequisites:** [Machining speeds and feeds](02-machining-speeds-and-feeds.md), [Machining processes](03-machining-processes.md)
+**Prerequisites:** [Machining speeds and feeds](02-machining-speeds-and-feeds.md), [Machining processes](03-machining-processes.md), [Tolerancing and stack-up](../design/04-tolerancing-and-stack-up.md)
 **Time:** 6-8 h
 
 ## Core ideas
@@ -55,7 +55,7 @@ Units: $R_{\max}$ comes out in mm. Multiply by 1000 to get micrometers. This is 
 
 ## Worked example
 
-**Given:** A hole has limits 25.000 mm and 25.021 mm. A shaft has limits 24.980 mm and 24.993 mm. (These are example values, not standard ISO table values.)
+**Given:** A hole has limits 25.000 mm and 25.021 mm. A shaft has limits 24.980 mm and 24.993 mm. (These are the ISO 286 limits for a 25 mm H7/g6 fit: hole 0 to +21 micrometres, shaft -7 to -20 micrometres.)
 
 **Find:** The maximum and minimum clearance, and the fit type.
 

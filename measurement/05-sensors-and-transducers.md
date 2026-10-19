@@ -4,7 +4,7 @@
 
 A sensor turns a physical quantity such as temperature, force, or position into something you can measure. A transducer is the broader term for any device that converts energy from one form to another, and most sensors are transducers. Engineers use them to feed a machine information about the physical world it operates in.
 
-**Prerequisites:** [01 - Units and dimensional analysis](01-units-and-dimensional-analysis.md), [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md)
+**Prerequisites:** [Units and dimensional analysis](01-units-and-dimensional-analysis.md), [Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md)
 **Time:** 4-6 h
 
 ## Core ideas

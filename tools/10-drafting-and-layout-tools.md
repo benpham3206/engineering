@@ -4,7 +4,7 @@
 
 Drafting and layout tools are the hand instruments that engineers and machinists have used for centuries to put lines, arcs, and angles on paper and on metal. CAD does most of this work today, but a sketch on the back of an envelope or a scribed line on a steel bar still matters when a computer is not nearby, when a part must be marked by hand, or when you need to check a CAD result with your own eyes.
 
-**Prerequisites:** [Measurement tools](07-measurement-tools.md) for reading rules, calipers, and tolerances. [Engineering graphics](../design/02-engineering-graphics.md) for views, line types, and drawing conventions. Basic trigonometry from [the math folder](../math/README.md).
+**Prerequisites:** [Measurement tools](07-measurement-tools.md) for reading rules, calipers, and tolerances. [Engineering graphics](../design/02-engineering-graphics.md) for views, line types, and drawing conventions. [Trigonometry](../math/02-trigonometry.md) for the bolt circle chord.
 **Time:** 8-12 h to learn the tools, plus regular practice at a bench or drafting table
 
 ## Core ideas

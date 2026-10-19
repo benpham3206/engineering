@@ -4,7 +4,7 @@
 
 An implant is a device placed inside the body for years. Passive implants, such as joint replacements, carry load, and active implants, such as pacemakers, also store and deliver energy. Engineers must design both kinds to survive body fluids, repeated loading, and a sealed environment where a failure cannot be repaired without surgery.
 
-**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Metals, polymers, ceramics, composites](../../materials/05-material-classes.md), [Failure: fracture and fatigue](../../materials/06-fracture-and-fatigue.md), [Failure: creep and corrosion](../../materials/07-creep-and-corrosion.md), [Circuit basics](../electronics/01-circuit-basics.md), [Batteries](../electrical/06-batteries.md)
+**Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Metals, polymers, ceramics, composites](../../materials/05-material-classes.md), [Failure: fracture and fatigue](../../materials/06-fracture-and-fatigue.md), [Failure: creep and corrosion](../../materials/07-creep-and-corrosion.md), [Circuit basics](../electronics/01-circuit-basics.md)
 **Time:** 6-8 h
 
 ## Core ideas

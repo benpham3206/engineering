@@ -71,7 +71,7 @@ Gear, lobe, and vane pumps suit viscous fluids and steady metering. Piston and p
 
 ## Worked example
 
-**Given:** A centrifugal pump runs at $N_1 = 1450$ rev/min and delivers $Q_1 = 0.020\ \text{m}^3/\text{s}$ of water against $H_1 = 25\ \text{m}$. Its efficiency is $\eta = 0.72$. Water density is $\rho = 1000\ \text{kg/m}^3$. The motor slows the pump to $N_2 = 1160$ rev/min, and the efficiency stays at 0.72.
+**Given:** A centrifugal pump runs at $N_1 = 1450$ rev/min and delivers $Q_1 = 0.020\ \text{m}^3/\text{s}$ of water against $H_1 = 25\ \text{m}$. Its efficiency is $\eta = 0.72$. Water density is $\rho = 1000\ \text{kg/m}^3$. The motor slows the pump to $N_2 = 1160$ rev/min, and the efficiency stays at 0.72. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the shaft power at full speed, (b) the flow, head, and shaft power at the new speed.
 
@@ -115,6 +115,8 @@ Material choice trades cost against corrosion and abrasion. Cast iron and bronze
 Archimedes and the Alexandrian engineer Ctesibius both described water-lifting machines in the third century BC. The screw of Archimedes lifts water by turning, and Ctesibius built a force pump with a piston. Denis Papin described a centrifugal pump in about 1689. Centrifugal pumps became common in the late nineteenth century, when electric motors and steam engines could drive them at high speed. Their design rules matured through the twentieth century.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A pump moves $Q = 0.012\ \text{m}^3/\text{s}$ of water against $H = 18\ \text{m}$ with $\eta = 0.70$. Find the shaft power in watts.
 2. A pump runs at 1450 rev/min and delivers $Q = 0.020\ \text{m}^3/\text{s}$ against $H = 25\ \text{m}$. Find the flow and head when it runs at 1000 rev/min, and find the ratio of its new shaft power to its old one.

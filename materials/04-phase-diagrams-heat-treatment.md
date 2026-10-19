@@ -4,7 +4,7 @@
 
 An alloy can have different internal structures at different temperatures and compositions. A phase diagram is the map that shows which structure is stable where. Heat treatment uses that map to set the final structure on purpose, and the structure sets the strength and toughness of the part.
 
-**Prerequisites:** [Crystal structures and defects](02-crystal-structures-defects.md), [Mechanical properties](03-mechanical-properties.md)
+**Prerequisites:** [Crystal structures and defects](02-crystal-structures-defects.md), [Mechanical properties](03-mechanical-properties.md), [Algebra](../math/01-algebra.md)
 **Time:** 8-10 h
 
 ## Core ideas

@@ -4,7 +4,7 @@
 
 Measuring a part tells you its real size, which is the starting point for any rebuild. Parts that have been used are worn, so a measurement shows the current size, not the size the designer intended. Good reverse engineering means choosing the right tool, reading it correctly, and working backward from the measured size to the likely nominal (intended) size and to a standard fastener or thread where one fits.
 
-**Prerequisites:** [Teardowns](01-teardowns.md)
+**Prerequisites:** [Teardowns](01-teardowns.md), [Trigonometry](../math/02-trigonometry.md), [Reading calipers and micrometers](../measurement/04-reading-calipers-and-micrometers.md)
 **Time:** 6-10 h
 
 ## Core ideas

@@ -8,9 +8,7 @@ engine's power band to the vehicle's speed and load, and they set the differenti
 against steering and wear. Both parts follow simple ratio and torque rules, and efficiency decides how
 much of the engine's power arrives at the road.
 
-**Prerequisites:** [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md),
-[Axial and torsion](../../physics/04-axial-and-torsion.md),
-[Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md)
+**Prerequisites:** [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md)
 **Time:** 8 to 10 h
 
 ## Core ideas
@@ -109,7 +107,7 @@ is $\eta = 0.92$, and the tire radius is $r = 0.33\ \text{m}$.
 **Sanity check:** Torque rose by $13.65 \times 0.92 = 12.6$ times, and speed fell by $13.65$ times. The product
 of torque and speed at the axle is less than the engine's product, because the $0.92$ efficiency removes the
 difference as heat. The tire force of $5.7\ \text{kN}$ on a car of about $1500\ \text{kg}$ is roughly $0.39$ times
-the weight at $g = 9.81\ \text{m/s}^2$, which is a plausible first-gear launch.
+the weight at $g = 9.81\ \text{m/s}^2$ (Earth surface), which is a plausible first-gear launch.
 
 ## Design trade-offs
 

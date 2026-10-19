@@ -6,7 +6,7 @@ Position is the most used geometric tolerance, and it is the one most often misr
 
 The rules come from ASME Y14.5, a paid standard. This lesson describes the common practice in plain words. Check the standard for any case that is not covered here.
 
-**Prerequisites:** [04 Tolerancing and stack-up](04-tolerancing-and-stack-up.md), [05 GD&T symbols and frames](05-gdt-symbols-and-frames.md)
+**Prerequisites:** [Tolerancing and stack-up](04-tolerancing-and-stack-up.md), [GD&T symbols and frames](05-gdt-symbols-and-frames.md)
 **Time:** 8-12 h
 
 ## Core ideas

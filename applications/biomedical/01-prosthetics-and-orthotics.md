@@ -49,7 +49,7 @@ Inside the socket, the residual limb presses against a soft liner. The socket sp
 
 ## Worked example
 
-**Given:** An adult of mass $m = 75\ \text{kg}$ walks at a steady speed. The peak vertical ground reaction force is $1.2 W$, a typical value for walking. The typical peak net ankle plantarflexor moment in late stance is $1.5\ \text{N m/kg}$. Assume the quasi-static, sagittal-plane model above and $g = 9.81\ \text{m/s}^2$.
+**Given:** An adult of mass $m = 75\ \text{kg}$ walks at a steady speed. The peak vertical ground reaction force is $1.2 W$, a typical value for walking. The typical peak net ankle plantarflexor moment in late stance is $1.5\ \text{N m/kg}$. Assume the quasi-static, sagittal-plane model above and $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the peak ankle moment, (b) the moment arm that the ground force needs, and (c) a check of (a) using a moment arm of $0.13\ \text{m}$.
 
@@ -97,7 +97,7 @@ Some of the oldest known prostheses are simple wood and leather devices. A woode
 ## Practice
 
 1. A person of mass $60\ \text{kg}$ has a peak net ankle moment of $1.5\ \text{N m/kg}$. Find the moment in newton metres.
-2. Find the body weight in newtons of a person of mass $75\ \text{kg}$. Use $g = 9.81\ \text{m/s}^2$.
+2. Find the body weight in newtons of a person of mass $75\ \text{kg}$. Use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 3. A ground force of $800\ \text{N}$ acts $0.12\ \text{m}$ forward of the ankle joint center. Find the moment.
 4. A socket applies $500\ \text{N}$ over a uniform contact area of $0.0025\ \text{m}^2$. Find the average pressure in kilopascals.
 5. A linear keel has stiffness $20\ \text{kN/m}$ and compresses $10\ \text{mm}$. Find the stored energy in joules, assuming linear elastic behavior.

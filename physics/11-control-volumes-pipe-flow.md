@@ -29,7 +29,7 @@ Momentum balances tell you the net force a flow puts on a bend, nozzle, or pipe 
 
 ### Energy balance and head loss
 
-Bernoulli's equation from lesson 10 holds only for frictionless flow. A real pipe adds a head-loss term. For steady, incompressible flow between two sections of a pipe:
+Bernoulli's equation from the hydrostatics and Bernoulli lesson holds only for frictionless flow. A real pipe adds a head-loss term. For steady, incompressible flow between two sections of a pipe:
 
 - Start from the Bernoulli balance.
 - Add the friction loss $h_f$ and any pump head $h_p$ or turbine head $h_t$ that sits between the sections.
@@ -72,7 +72,7 @@ Each fitting adds a loss:
 
 ## Key equations
 
-Symbols: $Q$ = volume flow rate (m$^3$/s), $\dot m$ = mass flow rate (kg/s), $A$ = area (m$^2$), $V$ = mean velocity (m/s), $\rho$ = density (kg/m$^3$), $D$ = pipe diameter (m), $\mu$ = dynamic viscosity (Pa s), $L$ = pipe length (m), $g$ = 9.81 m/s$^2$ (32.2 ft/s$^2$), $\varepsilon$ = wall roughness (m), $h_f$ = friction head loss (m), $f$ = Darcy friction factor (dimensionless), $K$ = minor loss coefficient (dimensionless).
+Symbols: $Q$ = volume flow rate (m$^3$/s), $\dot m$ = mass flow rate (kg/s), $A$ = area (m$^2$), $V$ = mean velocity (m/s), $\rho$ = density (kg/m$^3$), $D$ = pipe diameter (m), $\mu$ = dynamic viscosity (Pa s), $L$ = pipe length (m), $g$ = local gravitational acceleration (9.81 m/s$^2$ or 32.2 ft/s$^2$ at Earth's surface), $\varepsilon$ = wall roughness (m), $h_f$ = friction head loss (m), $f$ = Darcy friction factor (dimensionless), $K$ = minor loss coefficient (dimensionless).
 
 Volume and mass flow rate:
 
@@ -124,7 +124,7 @@ $$
 
 **Find:** $V$, $Re$, $f$, $h_f$, and $\Delta p$ along the pipe.
 
-**Assumptions:** steady, fully developed, incompressible flow. Horizontal pipe, so the pressure drop is entirely due to friction. Minor losses ignored for this section.
+**Assumptions:** steady, fully developed, incompressible flow. Gravity is the Earth surface value, $g = 9.81$ m/s$^2$. Horizontal pipe, so the pressure drop is entirely due to friction. Minor losses ignored for this section.
 
 **Solution:**
 

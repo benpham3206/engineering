@@ -4,7 +4,7 @@
 
 Between about 500 and 1600, engineers in Europe, the Islamic world, and China turned moving water, wind, and springs into steady power. They built mills, clocks, cathedrals, and printing presses. Each of these machines still shows up in modern design: the water wheel as a turbine ancestor, the clock as a timing regulator, the printing press as the first mass production of a document.
 
-**Prerequisites:** [Simple machines](01-simple-machines.md), [Ancient engineering](02-ancient-engineering.md)
+**Prerequisites:** [Simple machines](01-simple-machines.md), [Ancient engineering](02-ancient-engineering.md), [Hydrostatics and Bernoulli](../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 2-3 h
 
 ## Core ideas
@@ -45,7 +45,7 @@ The power of a water wheel depends on the mass of water that falls each second a
 
 $$P = \rho \, g \, Q \, H \, \eta$$
 
-Here $P$ is the shaft power in watts (W), $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), with a typical value of $1000\ \text{kg/m}^3$ for fresh water, $g$ is gravitational acceleration in metres per second squared (m/s$^2$), with $g = 9.81\ \text{m/s}^2$ at typical latitudes, $Q$ is the volume flow rate of water in cubic metres per second (m$^3$/s), $H$ is the head, or height the water falls through, in metres (m), and $\eta$ is the wheel efficiency, a number between 0 and 1. Overshot wheels reached efficiencies around 0.7 to 0.8. Undershot wheels, which the water pushed from below, were often 0.2 to 0.4 efficient.
+Here $P$ is the shaft power in watts (W), $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), with a typical value of $1000\ \text{kg/m}^3$ for fresh water, $g$ is gravitational acceleration in metres per second squared (m/s$^2$), with $g = 9.81\ \text{m/s}^2$ at Earth's surface, $Q$ is the volume flow rate of water in cubic metres per second (m$^3$/s), $H$ is the head, or height the water falls through, in metres (m), and $\eta$ is the wheel efficiency, a number between 0 and 1. Overshot wheels reached efficiencies around 0.7 to 0.8. Undershot wheels, which the water pushed from below, were often 0.2 to 0.4 efficient.
 
 The lever and pulley relations from [simple machines](01-simple-machines.md) still apply to the gear trains that connected the wheel to the stone or the hammer.
 
@@ -86,7 +86,7 @@ Water wheels, windmills, and mechanical clocks each spread from a few workshops 
 
 ## Practice
 
-1. A water wheel has $Q = 0.4\ \text{m}^3/\text{s}$, $H = 2.5\ \text{m}$, and $\eta = 0.60$. Find the shaft power in kilowatts. Use $\rho = 1000\ \text{kg/m}^3$ and $g = 9.81\ \text{m/s}^2$.
+1. A water wheel has $Q = 0.4\ \text{m}^3/\text{s}$, $H = 2.5\ \text{m}$, and $\eta = 0.60$. Find the shaft power in kilowatts. Use $\rho = 1000\ \text{kg/m}^3$ and $g = 9.81\ \text{m/s}^2$ (Earth surface).
 2. A block and tackle has four supporting ropes and a rope efficiency of 0.80. It lifts a load of 800 N. Find the effort force in newtons.
 3. In one sentence, explain why a water wheel is a better source of power for a mill than a horse that must rest and eat.
 4. Why did Gothic builders place flying buttresses outside the walls instead of thickening the walls?

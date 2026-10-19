@@ -78,7 +78,7 @@ $$
 | Theory | Material class | Failure condition | Use when | Limit |
 |---|---|---|---|---|
 | Maximum normal stress (Rankine) | Brittle (cast iron, glass, ceramics) | $\sigma_1 \ge S_{ut}$ or $\sigma_3 \le -S_{uc}$ | Brittle, tension governs | Ignores shear; no interaction between modes |
-| Tresca (maximum shear) | Ductile | $\sigma_1 - \sigma_3 \ge S_y$, so $n = S_y/(\sigma_1 - \sigma_3)$ | Ductile, quick and conservative check | Overpredicts load for many ductile metals |
+| Tresca (maximum shear) | Ductile | $\sigma_1 - \sigma_3 \ge S_y$, so $n = S_y/(\sigma_1 - \sigma_3)$ | Ductile, quick and conservative check | Underpredicts the yield load by up to about 15 percent (conservative) |
 | Von Mises (distortion energy) | Ductile | $\sigma_{vm} \ge S_y$, so $n = S_y/\sigma_{vm}$ | Ductile metals, general default | Yield only; not for brittle |
 | Mohr-Coulomb | Brittle, unequal tension and compression strength | $\sigma_1/S_{ut} - \sigma_3/S_{uc} \ge 1$ (compression $\sigma_3$ negative) | Rock, soil, cast iron, concrete-like | Needs both strengths; not for ductile metals |
 

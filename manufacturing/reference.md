@@ -364,7 +364,7 @@ Before releasing a molded part:
 
 Before releasing a welded joint:
 
-- Weld symbol shows type, size (throat-based), length, pitch, and side.
+- Weld symbol shows type, size (the fillet leg; strength is checked on the throat, 0.707 times the leg), length, pitch, and side.
 - Fillet strength is checked against the governing code value.
 - Heat-affected zone is considered in the load path.
 - Inspection method is named (visual, dye penetrant, ultrasonic).

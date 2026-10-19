@@ -6,9 +6,7 @@ Projects turn the theory into hardware that you can measure and test. The ladder
 first-year bench exercise and ends with a capstone. Each rung uses the skills from the rungs below it,
 and each one has a clear goal and a check you can run yourself.
 
-**Prerequisites:** [Circuit basics](../electronics/01-circuit-basics.md), [RC circuits and op-amps](../electronics/02-rc-circuits-and-op-amps.md),
-[Mechatronics](../electronics/06-mechatronics.md), [Robotics](../machines-robots/01-robot-arms.md), [Thermal systems](../thermal-fluid/01-thermal-systems.md),
-[Fluid systems](../thermal-fluid/02-fluid-systems.md)
+**Prerequisites:** [Circuit basics](../electronics/01-circuit-basics.md), [Mechatronics](../electronics/06-mechatronics.md), [Robot arms](../machines-robots/01-robot-arms.md), [Thermal systems](../thermal-fluid/01-thermal-systems.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md)
 **Time:** 40-80 h across all rungs (each project 4-12 h)
 
 ## Core ideas

@@ -42,7 +42,7 @@ Buoyant force on a body in water, in newtons (N):
 
 $$F_B = \rho g V$$
 
-where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g = 9.81\ \text{m/s}^2$ is the gravitational acceleration, and $V$ is the displaced volume in cubic metres (m$^3$). Typical seawater density is $\rho \approx 1025\ \text{kg/m}^3$, and fresh water is about $1000\ \text{kg/m}^3$.
+where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $V$ is the displaced volume in cubic metres (m$^3$). Typical seawater density is $\rho \approx 1025\ \text{kg/m}^3$, and fresh water is about $1000\ \text{kg/m}^3$.
 
 For a ship in equilibrium, $F_B = \Delta g$, where $\Delta$ is the displacement mass in kilograms.
 
@@ -68,7 +68,7 @@ where $w$ is the moved weight in newtons, $d$ is the transverse distance in metr
 
 **Find:** (a) the metacentric height $GM$, and (b) the heel angle caused by the shifted cargo.
 
-**Assumptions:** Rectangular hull with a flat keel. Constant water density. Shifted cargo is a point weight. No free-surface effect. Small angles, so the linear heel formula applies.
+**Assumptions:** Rectangular hull with a flat keel. Constant water density. Shifted cargo is a point weight. No free-surface effect. Small angles, so the linear heel formula applies. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Solution:**
 
@@ -107,6 +107,8 @@ where $w$ is the moved weight in newtons, $d$ is the transverse distance in metr
 Archimedes described the principle of buoyancy in the third century BC. Pierre Bouguer studied ship stability in the 18th century and developed the metacenter as the key stability point. David Bushnell built the Turtle in 1775, an early one-person submarine, and used it against a British warship in New York Harbor in 1776. Ships grew from wood to iron and then steel during the 19th century, which allowed larger, stronger hulls and watertight compartments.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A box-shaped hull has length 40 m, breadth 10 m, and draft 2 m in seawater with $\rho = 1025\ \text{kg/m}^3$. Find its displaced volume in cubic metres.
 2. The same hull has $KG = 1.8\ \text{m}$. Find $KB$, $BM$, and $GM$.

@@ -7,9 +7,7 @@ refrigerant that boils at low pressure, absorbs heat, is squeezed to high pressu
 Engineers use the same vapor-compression cycle in kitchens, offices, cars, and cold stores, so it is
 worth understanding once.
 
-**Prerequisites:** [Thermodynamics I](../../physics/08-thermo-first-law.md),
-[Thermodynamics II](../../physics/09-thermo-second-law-cycles.md),
-[Thermal systems](01-thermal-systems.md), [Mathematics folder](../../math/README.md)
+**Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Thermal systems](01-thermal-systems.md), [Algebra](../../math/01-algebra.md)
 **Time:** 8-10 h
 
 ## Core ideas

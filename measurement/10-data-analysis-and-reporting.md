@@ -4,7 +4,7 @@
 
 Raw readings become useful only after you summarize them, fit a model to them, and report the result with its uncertainty. This lesson covers the core tools: the mean and standard deviation, a straight-line fit by least squares, residuals to check the fit, and a reporting format that another engineer can check.
 
-**Prerequisites:** [02 - Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [03 - Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md), [09 - Experiment design](09-experiment-design.md)
+**Prerequisites:** [Precision, accuracy, and uncertainty](02-precision-accuracy-and-uncertainty.md), [Propagating uncertainty and significant figures](03-propagating-uncertainty-and-significant-figures.md), [Experiment design](09-experiment-design.md), [Probability and statistics](../math/07-probability-and-statistics.md) (least-squares fits)
 **Time:** 8-10 h
 
 ## Core ideas
@@ -14,7 +14,7 @@ Raw readings become useful only after you summarize them, fit a model to them, a
 - A **residual** is the difference between a data point and the fitted line: $r_i = y_i - (a + b x_i)$. Plot residuals to check the fit. Random scatter around zero is good. A curve or trend in the residuals means the straight line is the wrong model.
 - The **coefficient of determination** $R^2$ is the fraction of the variation in $y$ explained by the line. It is useful, but a high $R^2$ does not prove the model is right. Look at the residuals too.
 - The **standard uncertainties** of the slope and intercept come from the scatter of the residuals and the spread of the $x$ values. Report them alongside $a$ and $b$.
-- A **result** is reported as value $\pm$ standard uncertainty, with units, the number of readings, and a short statement of the method. Use the sig figs rules from lesson 03.
+- A **result** is reported as value $\pm$ standard uncertainty, with units, the number of readings, and a short statement of the method. Use the sig figs rules from the propagating uncertainty and significant figures lesson.
 - Keep the raw data. Anyone should be able to reproduce your fit from the table.
 
 ## Key equations

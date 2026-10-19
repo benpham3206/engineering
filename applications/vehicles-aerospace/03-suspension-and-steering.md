@@ -4,7 +4,7 @@
 
 A suspension keeps the tires on the road while the body carries the load and absorbs bumps. A steering system turns the front wheels so that the car follows the driver's chosen path. Engineers tune the spring and damper for ride comfort and grip, and they set the steering geometry so that the inner and outer wheels turn through the right angles in a corner.
 
-**Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Statics](../../physics/01-statics.md)
+**Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Statics](../../physics/01-statics.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 5-7 h
 
 ## Core ideas
@@ -41,13 +41,13 @@ The ride and damping equations assume a linear spring and a linear viscous dampe
 - **Critical damping:** $c_{crit} = 2\sqrt{k \, m_s}$, in N s/m.
 - **Damping ratio:** $\zeta = c / c_{crit}$, dimensionless. Most road cars use $\zeta$ from 0.2 to 0.4, which gives a few bounces after a bump.
 - **Wheel hop frequency:** $f_w = \dfrac{1}{2\pi} \sqrt{\dfrac{k_t}{m_u}}$, in Hz, where $k_t$ is the tire stiffness in N/m and $m_u$ is the unsprung mass (wheel, hub, brake, and part of the links) in kg. Typical values are 10 to 15 Hz.
-- **Static deflection:** $\delta = m_s \, g / k$, in m, where $g = 9.81\ \text{m/s}^2$. The spring compresses by this much under the static load.
+- **Static deflection:** $\delta = m_s \, g / k$, in m, where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). The spring compresses by this much under the static load.
 - **Ideal Ackermann relation:** $\cot\delta_{out} - \cot\delta_{in} = t / L$, where $\delta_{in}$ and $\delta_{out}$ are the inner and outer wheel angles in radians, $t$ is the track width in m, and $L$ is the wheelbase in m. The inner wheel has the larger angle.
 - **Steering ratio:** $R_s = \theta_{wheel} / \delta_{road}$, dimensionless, where $\theta_{wheel}$ is the steering wheel angle and $\delta_{road}$ is the road wheel angle, both in the same unit. A ratio of 15:1 means that a 15 degree turn of the steering wheel turns the road wheels 1 degree.
 
 ## Worked example
 
-**Given:** A quarter-car model of one front corner has a sprung mass $m_s = 400\ \text{kg}$, a spring rate $k = 30\ \text{kN/m}$, and a damping coefficient $c = 2078\ \text{N s/m}$. The unsprung mass is $m_u = 40\ \text{kg}$, and the tire stiffness is $k_t = 200\ \text{kN/m}$. The car has a wheelbase $L = 2.7\ \text{m}$ and a track $t = 1.5\ \text{m}$. The inner front wheel turns to $\delta_{in} = 25^\circ$.
+**Given:** A quarter-car model of one front corner has a sprung mass $m_s = 400\ \text{kg}$, a spring rate $k = 30\ \text{kN/m}$, and a damping coefficient $c = 2078\ \text{N s/m}$. The unsprung mass is $m_u = 40\ \text{kg}$, and the tire stiffness is $k_t = 200\ \text{kN/m}$. The car has a wheelbase $L = 2.7\ \text{m}$ and a track $t = 1.5\ \text{m}$. The inner front wheel turns to $\delta_{in} = 25^\circ$. Gravity is $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 **Find:** (a) the ride frequency, (b) the damping ratio, (c) the wheel hop frequency, (d) the static deflection of the spring, and (e) the outer wheel angle.
 
@@ -90,6 +90,8 @@ Lockout and tagout for suspension work means the following. Isolate the car by r
 Ackermann steering geometry takes its name from Rudolph Ackermann, who held an English patent for it in about 1818. The geometry is also credited to Georg Lankensperger, a carriage maker in Munich, who used it in horse-drawn carriages. Robert William Thomson patented a pneumatic tire in 1845, and John Boyd Dunlop patented a pneumatic bicycle tire in Belfast in 1888. The coil spring and the leaf spring carried carriages long before the car, and the damper followed as cars grew faster.
 
 ## Practice
+
+Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m/s}^2$ (Earth surface).
 
 1. A corner has a spring rate $k = 25\ \text{kN/m}$ and a sprung mass of 350 kg. Find the ride frequency in Hz.
 2. For the corner in problem 1, find the critical damping coefficient in N s/m.

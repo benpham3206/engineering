@@ -109,7 +109,7 @@ $$\text{IMA}_{total} = \prod_{i=1}^{k} \text{IMA}_i, \qquad \eta_{total} = \prod
 
 ## Worked example
 
-**Given:** A winch lifts a load of $W = 1000\ \text{N}$, which is the weight of about 102 kg at $g = 9.81\ \text{m/s}^2$. The winch handle has a radius $R = 0.30\ \text{m}$, and the drum has a radius $r = 0.050\ \text{m}$. A block and tackle with $n = 4$ supporting rope segments connects the drum to the load. The load rises $h = 2.0\ \text{m}$. Typical efficiencies are $\eta_{winch} = 0.80$ and $\eta_{pulley} = 0.90$.
+**Given:** A winch lifts a load of $W = 1000\ \text{N}$, which is the weight of about 102 kg at $g = 9.81\ \text{m/s}^2$ (Earth surface). The winch handle has a radius $R = 0.30\ \text{m}$, and the drum has a radius $r = 0.050\ \text{m}$. A block and tackle with $n = 4$ supporting rope segments connects the drum to the load. The load rises $h = 2.0\ \text{m}$. Typical efficiencies are $\eta_{winch} = 0.80$ and $\eta_{pulley} = 0.90$.
 
 **Find:** (a) the ideal effort, (b) the actual effort, (c) the distance the handle moves, and (d) the input work and the output work.
 
