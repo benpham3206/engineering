@@ -45,11 +45,11 @@ $$\rho = \frac{n\, M}{V_c\, N_A}$$
 
 where:
 
-- $\rho$ is the density (kg/m$^3$)
+- $\rho$ is the density ($\text{kg/m}^3$)
 - $n$ is the number of atoms in one unit cell (dimensionless)
 - $M$ is the molar mass of the element (kg/mol)
-- $V_c = a^3$ is the volume of the unit cell (m$^3$) for a cubic cell
-- $N_A = 6.022 \times 10^{23}$ mol$^{-1}$ is Avogadro's number
+- $V_c = a^3$ is the volume of the unit cell ($\text{m}^3$) for a cubic cell
+- $N_A = 6.022 \times 10^{23}$ $\text{mol}^{-1}$ is Avogadro's number
 
 Atomic packing factor is
 
@@ -63,33 +63,33 @@ Atoms per cell: simple cubic 1, BCC 2, FCC 4.
 
 **Given:** Alpha iron is BCC with lattice parameter $a = 0.2866$ nm. The molar mass of iron is $M = 55.85$ g/mol.
 
-**Find:** The density of iron, in kg/m$^3$.
+**Find:** The density of iron, in $\text{kg/m}^3$.
 
-**Assumptions:** Pure iron at room temperature, perfect lattice, no vacancies. Typical value for comparison: about 7870 kg/m$^3$.
+**Assumptions:** Pure iron at room temperature, perfect lattice, no vacancies. Typical value for comparison: about 7870 $\text{kg/m}^3$.
 
 **Solution:**
 
-1. Convert units: $a = 0.2866 \times 10^{-9}$ m, so $V_c = a^3 = 2.354 \times 10^{-29}$ m$^3$. $M = 0.05585$ kg/mol.
+1. Convert units: $a = 0.2866 \times 10^{-9}$ m, so $V_c = a^3 = 2.354 \times 10^{-29}$ $\text{m}^3$. $M = 0.05585$ kg/mol.
 2. BCC has $n = 2$ atoms per cell.
-3. $\rho = \dfrac{2 \times 0.05585}{(2.354 \times 10^{-29})(6.022 \times 10^{23})} = 7879$ kg/m$^3$.
+3. $\rho = \dfrac{2 \times 0.05585}{(2.354 \times 10^{-29})(6.022 \times 10^{23})} = 7879$ $\text{kg/m}^3$.
 
-**Answer:** $\rho \approx 7.88 \times 10^{3}$ kg/m$^3$.
+**Answer:** $\rho \approx 7.88 \times 10^{3}$ $\text{kg/m}^3$.
 
-**Sanity check:** This is close to the typical value of 7870 kg/m$^3$. The difference is well under 1 percent, which is expected for a textbook lattice parameter. A density near 2700 or 20000 kg/m$^3$ would signal an error in the atom count or the unit conversion.
+**Sanity check:** This is close to the typical value of 7870 $\text{kg/m}^3$. The difference is well under 1 percent, which is expected for a textbook lattice parameter. A density near 2700 or 20000 $\text{kg/m}^3$ would signal an error in the atom count or the unit conversion.
 
 ## Practice
 
 1. How many atoms belong to one FCC unit cell? (Count corner and face atoms, with each shared correctly.)
 2. What is the APF of a simple cubic lattice, where each cell has one atom? Use $r = a/2$.
-3. Copper is FCC with $a = 0.3615$ nm and $M = 63.55$ g/mol. Find its density in kg/m$^3$.
+3. Copper is FCC with $a = 0.3615$ nm and $M = 63.55$ g/mol. Find its density in $\text{kg/m}^3$.
 4. Name two strengthening methods that work by blocking dislocation motion.
-5. A metal's grain size drops from 100 $\mu$m to 10 $\mu$m. Does the number of grain boundaries per unit length go up or down?
+5. A metal's grain size drops from 100 $\mu\text{m}$ to 10 $\mu\text{m}$. Does the number of grain boundaries per unit length go up or down?
 
 <details><summary>Answers</summary>
 
 1. 4
 2. about 0.52
-3. about 8935 kg/m$^3$
+3. about 8935 $\text{kg/m}^3$
 4. Any two of: grain refinement, solid solution alloying, cold work, precipitates
 5. Up (ten times more boundaries per unit length)
 

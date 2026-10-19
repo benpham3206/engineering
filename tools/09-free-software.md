@@ -221,7 +221,7 @@ Every step uses a free tool, and every step is the same workflow an engineer fol
 <details><summary>Answers</summary>
 
 1. The STEP file should reopen in a second tool (for example, FreeCAD if you used Onshape) with the hole intact.
-2. About 997 kg/m$^3$, from `CoolProp.CoolProp.PropsSI('D', 'T', 298.15, 'P', 101325, 'Water')`.
+2. About 997 $\text{kg/m}^3$, from `CoolProp.CoolProp.PropsSI('D', 'T', 298.15, 'P', 101325, 'Water')`.
 3. About 6.67 V, since $10\ \text{V} \times 2/(1 + 2) = 6.67\ \text{V}$.
 4. Open-ended. You are done when you can redo the tutorial without the instructions.
 

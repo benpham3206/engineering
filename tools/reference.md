@@ -116,7 +116,7 @@ Default tolerances: `solve_ivp` (RK45) and `ode45` both default to a relative to
 
 ### Initial value ODEs
 
-- Problem: $y' = f(t, y)$, $y(t_0) = y_0$. Example: $y' = -ky$, $y = e^{-kt}$, with $k$ in s$^{-1}$ and $t$ in s.
+- Problem: $y' = f(t, y)$, $y(t_0) = y_0$. Example: $y' = -ky$, $y = e^{-kt}$, with $k$ in $\text{s}^{-1}$ and $t$ in s.
 - Default method: explicit Runge-Kutta 4(5), Dormand-Prince (`RK45`, `ode45`). It steps with the fifth-order solution (local error $O(h^6)$, global error $O(h^5)$) and uses the embedded fourth-order solution to estimate the error and set the step size.
 - **Holds when:** $f$ is smooth and the solution is not stiff.
 - **Breaks when:**
@@ -274,7 +274,7 @@ Resolution values are typical. Check the stated accuracy of the tool you own.
 - **Integral:** the error estimate should be below your target, and two methods should agree.
 - **Fit:** residuals should show no trend. A fit with fewer points than parameters is not a fit.
 - **FFT:** the peak should land where you predicted. Any peak above $f_s/2$ is an alias. Summed power in the time and frequency domains should match (Parseval's theorem).
-- **Units:** a steel cube 10 mm on a side has volume $10^{-6}$ m$^3$, so mass is $7850 \times 10^{-6} = 7.85\times10^{-3}$ kg, or 7.85 g. Typical density basis.
+- **Units:** a steel cube 10 mm on a side has volume $10^{-6}$ $\text{m}^3$, so mass is $7850 \times 10^{-6} = 7.85\times10^{-3}$ kg, or 7.85 g. Typical density basis.
 - **Tolerance stack:** the root-sum-square total is never larger than the worst-case total.
 - **Area scaling:** doubling a round diameter quadruples its area. Stress from the same force falls to one quarter.
 - **Surface speed:** a $1/4$ in drill at 300 sfm needs about 4580 RPM, from $N = 12V/(\pi D)$ with $V$ in ft/min and $D$ in in.

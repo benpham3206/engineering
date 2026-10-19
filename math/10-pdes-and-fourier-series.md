@@ -45,7 +45,7 @@ Separation works for linear PDEs on simple shapes (an interval, rectangle, disk)
 
 ## Key equations
 
-Symbols: $u$ = unknown field (temperature in K for heat, displacement in m for a string); $x$ = position (m); $t$ = time (s); $\alpha$ = thermal diffusivity, $k/(\rho c_p)$ (m$^2$/s); $c$ = wave speed (m/s); $L$ = length of the rod or string (m); $n$ = mode number (1, 2, 3, ...); $F_T$ = string tension (N); $\mu$ = mass per unit length (kg/m).
+Symbols: $u$ = unknown field (temperature in K for heat, displacement in m for a string); $x$ = position (m); $t$ = time (s); $\alpha$ = thermal diffusivity, $k/(\rho c_p)$ ($\text{m}^2$/s); $c$ = wave speed (m/s); $L$ = length of the rod or string (m); $n$ = mode number (1, 2, 3, ...); $F_T$ = string tension (N); $\mu$ = mass per unit length (kg/m).
 
 Heat, wave, and Laplace equations in one or more space dimensions:
 
@@ -95,9 +95,9 @@ $$
 
 ## Worked example
 
-**Cooling of a rod.** A rod of length $L = 0.50$ m has thermal diffusivity $\alpha = 1.0 \times 10^{-4}$ m$^2$/s (a typical value for a good metal conductor). It starts at a uniform temperature 100 K above the temperature of its two ends, which are held at the lower temperature. The sides are insulated. Find the temperature rise above the ends at the center after 300 s.
+**Cooling of a rod.** A rod of length $L = 0.50$ m has thermal diffusivity $\alpha = 1.0 \times 10^{-4}$ $\text{m}^2$/s (a typical value for a good metal conductor). It starts at a uniform temperature 100 K above the temperature of its two ends, which are held at the lower temperature. The sides are insulated. Find the temperature rise above the ends at the center after 300 s.
 
-**Given:** $L = 0.50$ m, $\alpha = 1.0\times 10^{-4}$ m$^2$/s, $u_0 = 100$ K (excess over the ends), $t = 300$ s, $x = L/2$.
+**Given:** $L = 0.50$ m, $\alpha = 1.0\times 10^{-4}$ $\text{m}^2$/s, $u_0 = 100$ K (excess over the ends), $t = 300$ s, $x = L/2$.
 
 **Find:** $u(L/2, 300\ \text{s})$.
 
@@ -106,7 +106,7 @@ $$
 **Solution:**
 
 1. Measured above the end temperature, the ends satisfy $u = 0$ and the start is $u = u_0$, so the sine series applies with $b_n = 4u_0/(n\pi)$ for odd $n$. The first coefficient is $b_1 = 4u_0/\pi = 127.3$ K.
-2. The first decay rate is $\alpha\pi^2/L^2 = 3.948\times 10^{-3}$ s$^{-1}$. After 300 s the exponent is $1.184$, so the first mode has fallen to $e^{-1.184} = 0.3059$.
+2. The first decay rate is $\alpha\pi^2/L^2 = 3.948\times 10^{-3}$ $\text{s}^{-1}$. After 300 s the exponent is $1.184$, so the first mode has fallen to $e^{-1.184} = 0.3059$.
 3. At the center $\sin(n\pi/2)$ is $+1$ for $n = 1$ and $-1$ for $n = 3$. First term: $127.3 \times 0.3059 = 38.95$ K.
 4. The third term has the opposite sign and size 0.001 K. It is negligible, and higher terms are smaller still.
 
@@ -140,7 +140,7 @@ check(b1 * f1 < u0, "the center is cooler than the start and warmer than the end
 ## Practice
 
 1. A square wave of height $\pm 1$ has the sine series $\sum b_n \sin(n\pi x/L)$ with $b_n = 4/(n\pi)$ for odd $n$. Find $b_1$.
-2. A rod of length 0.20 m has $\alpha = 1.0\times 10^{-4}$ m$^2$/s and both ends held at the reference temperature. Find the time constant $\tau = L^2/(\alpha\pi^2)$ in seconds.
+2. A rod of length 0.20 m has $\alpha = 1.0\times 10^{-4}$ $\text{m}^2$/s and both ends held at the reference temperature. Find the time constant $\tau = L^2/(\alpha\pi^2)$ in seconds.
 3. A string of length 0.65 m has tension 70 N and mass per length $4.0\times 10^{-4}$ kg/m. Find its fundamental frequency $f_1$ in Hz.
 4. For the string in problem 3, find the wave speed $c$ in m/s and the frequency of the second harmonic in Hz.
 5. In the worked example, how long does the first mode need to fall to 1 percent of its initial size? Use the first decay rate only, because higher modes have already decayed faster. Give the answer in seconds. Decide first which of the three equations models the problem.

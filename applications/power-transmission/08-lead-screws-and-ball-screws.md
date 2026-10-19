@@ -68,11 +68,11 @@ Speed and power, with $v$ in m/s and $\omega$ in rad/s:
 
 $$v = \frac{\omega L}{2\pi}, \qquad P = T\omega$$
 
-First critical speed of a solid steel screw of root diameter $d_r$ (m), supported at both ends with a span $l$ (m), modulus $E$ (Pa), and density $\rho$ (kg/m$^3$):
+First critical speed of a solid steel screw of root diameter $d_r$ (m), supported at both ends with a span $l$ (m), modulus $E$ (Pa), and density $\rho$ ($\text{kg/m}^3$):
 
 $$\omega_c = \frac{\pi^2}{l^2}\sqrt{\frac{EI}{\rho A}} = \frac{\pi^2 d_r}{4 l^2}\sqrt{\frac{E}{\rho}}$$
 
-Here $I = \pi d_r^4/64$ (m$^4$) and $A = \pi d_r^2/4$ (m$^2$). Steel has $E = 200$ GPa and $\rho = 7850$ kg/m$^3$ (typical). The formula assumes simple supports, so the critical speed is lower than for a screw with fixed ends.
+Here $I = \pi d_r^4/64$ ($\text{m}^4$) and $A = \pi d_r^2/4$ ($\text{m}^2$). Steel has $E = 200$ GPa and $\rho = 7850$ $\text{kg/m}^3$ (typical). The formula assumes simple supports, so the critical speed is lower than for a screw with fixed ends.
 
 ## Worked example
 
@@ -123,7 +123,7 @@ Screw threads on machines were hard to make accurately for centuries, and a lead
 2. A single-start screw has a mean diameter of 30 mm and a lead of 5 mm. Find the helix angle.
 3. A ball screw with an 8 mm lead and efficiency $\eta = 0.90$ receives 10 N m of input torque. Find the axial thrust in newtons.
 4. A square-thread screw has a mean diameter of 20 mm and a lead of 2 mm. The friction coefficient is $\mu = 0.10$. Is the screw self-locking?
-5. A solid steel screw has a root diameter of 16 mm and is supported at both ends over a span of 1.0 m. Use $E = 200$ GPa and $\rho = 7850$ kg/m$^3$ (typical). Find the first critical speed in rev/min.
+5. A solid steel screw has a root diameter of 16 mm and is supported at both ends over a span of 1.0 m. Use $E = 200$ GPa and $\rho = 7850$ $\text{kg/m}^3$ (typical). Find the first critical speed in rev/min.
 
 <details><summary>Answers</summary>
 

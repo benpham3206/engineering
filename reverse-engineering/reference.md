@@ -144,7 +144,7 @@ where $p$ is pitch in millimeters, $L$ is the measured length in millimeters, an
 
 ### Plastics: flame and float (typical, use a fume hood or open air, small sample, no PVC nearby)
 
-| Plastic | Flame behavior | Smell | Density (g/cm$^3$, typical) | Floats in water? |
+| Plastic | Flame behavior | Smell | Density ($\text{g/cm}^3$, typical) | Floats in water? |
 |---------|----------------|-------|------------------------------|------------------|
 | PE (HDPE, LDPE) | Melts, drips, keeps burning, blue base | Candle or paraffin | 0.92 to 0.97 | Yes |
 | PP | Melts, drips, blue base | Candle or paraffin | 0.90 | Yes |
@@ -162,10 +162,10 @@ where $p$ is pitch in millimeters, $L$ is the measured length in millimeters, an
 
 ### Material family from the test results
 
-- Magnetic plus density near 7.85 g/cm$^3$ suggests steel. Density near 7.2 g/cm$^3$ with dark cut edge suggests cast iron.
-- Non-magnetic plus density near 2.7 g/cm$^3$ suggests aluminum. Near 8.9 g/cm$^3$ suggests copper or bronze. Near 8.5 g/cm$^3$ suggests brass.
-- Non-magnetic plus density near 4.4 g/cm$^3$ suggests titanium alloy.
-- Density below 1 g/cm$^3$ and floats suggests PE, PP, or some foamed plastics.
+- Magnetic plus density near 7.85 $\text{g/cm}^3$ suggests steel. Density near 7.2 $\text{g/cm}^3$ with dark cut edge suggests cast iron.
+- Non-magnetic plus density near 2.7 $\text{g/cm}^3$ suggests aluminum. Near 8.9 $\text{g/cm}^3$ suggests copper or bronze. Near 8.5 $\text{g/cm}^3$ suggests brass.
+- Non-magnetic plus density near 4.4 $\text{g/cm}^3$ suggests titanium alloy.
+- Density below 1 $\text{g/cm}^3$ and floats suggests PE, PP, or some foamed plastics.
 
 ## Process identification
 
@@ -197,9 +197,9 @@ where $p$ is pitch in millimeters, $L$ is the measured length in millimeters, an
 
 ## Density of common materials (typical)
 
-Density is $\rho = m / V$ in g/cm$^3$. Values are standard textbook typical values; alloy, filler, and porosity shift them.
+Density is $\rho = m / V$ in $\text{g/cm}^3$. Values are standard textbook typical values; alloy, filler, and porosity shift them.
 
-| Material | Density (g/cm$^3$) |
+| Material | Density ($\text{g/cm}^3$) |
 |----------|--------------------|
 | Lead | 11.3 |
 | Copper (pure) | 8.96 |
@@ -228,7 +228,7 @@ Density is $\rho = m / V$ in g/cm$^3$. Values are standard textbook typical valu
 | Polyethylene, low density (LDPE) | 0.92 |
 | Oak (dry) | 0.75 |
 
-Weight check: $m = \rho V$, with $V$ in cm$^3$ and $\rho$ in g/cm$^3$. Convert mm$^3$ to cm$^3$ by dividing by 1000.
+Weight check: $m = \rho V$, with $V$ in $\text{cm}^3$ and $\rho$ in $\text{g/cm}^3$. Convert $\text{mm}^3$ to $\text{cm}^3$ by dividing by 1000.
 
 Holds when: the part is solid and homogeneous. Breaks when: the part is porous (castings, sintered parts), hollow, foamed, or contains an inserted part.
 
@@ -358,8 +358,8 @@ This is general information, not legal advice. Laws differ by country and by pro
 ## Sanity checks
 
 - One cubic centimeter of steel weighs about 7.85 g. One cubic centimeter of aluminum weighs about 2.7 g.
-- A 10 mm diameter steel sphere has volume $\frac{4}{3}\pi (5)^3 \approx 524$ mm$^3$ and mass about 4.1 g.
-- One liter of water is one kilogram, so water density is 1 g/cm$^3$. Plastics that float are below 1.
+- A 10 mm diameter steel sphere has volume $\frac{4}{3}\pi (5)^3 \approx 524$ $\text{mm}^3$ and mass about 4.1 g.
+- One liter of water is one kilogram, so water density is 1 $\text{g/cm}^3$. Plastics that float are below 1.
 - One inch is exactly 25.4 mm. A 1 inch bolt has a major diameter of 25.4 mm.
 - The M8 coarse pitch (1.25 mm) and the 1/4-20 UNC pitch (1.27 mm) are close. Use the diameter to choose.
 - For a bolt circle of radius $R$ with $n$ holes, the adjacent-hole chord is $2R\sin(180^\circ/n)$. For $R = 55$ mm and $n = 5$, the chord is about 64.66 mm. For $n = 6$, it is 55.00 mm (the chord equals the radius).

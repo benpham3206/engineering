@@ -40,7 +40,7 @@ Volume flow rate through a hose of uniform diameter:
 
 $$Q = v\,A, \qquad A = \frac{\pi D^{2}}{4}$$
 
-where $Q$ is the **volume flow rate** in cubic metres per second (m$^3$/s), $v$ is the mean velocity in metres per second (m/s), $A$ is the cross-section area in square metres (m$^2$), and $D$ is the hose inner diameter in metres (m).
+where $Q$ is the **volume flow rate** in cubic metres per second ($\text{m}^3$/s), $v$ is the mean velocity in metres per second (m/s), $A$ is the cross-section area in square metres ($\text{m}^2$), and $D$ is the hose inner diameter in metres (m).
 
 Air power, the useful output of the fan:
 
@@ -70,7 +70,7 @@ Centripetal acceleration of a particle moving on a circle of radius $r$ in a cyc
 
 $$a = \frac{v_t^{2}}{r}$$
 
-where $a$ is in metres per second squared (m/s$^2$), $v_t$ is in metres per second (m/s), and $r$ is in metres (m). This is the idealized acceleration that drives dust outward.
+where $a$ is in metres per second squared ($\text{m/s}^2$), $v_t$ is in metres per second (m/s), and $r$ is in metres (m). This is the idealized acceleration that drives dust outward.
 
 ## Worked example
 
@@ -126,7 +126,7 @@ Electric vacuum cleaners appeared in the early twentieth century. Hubert Cecil B
 1. A cleaner has airflow $Q = 0.02\ \text{m}^3/\text{s}$ and suction $\Delta P = 4\ \text{kPa}$. Find the air power.
 2. A fan speeds up 20%. By what percentage does its power rise, assuming the affinity laws?
 3. The airflow in question 1 passes a 25 mm hose. What is the velocity?
-4. A cyclone has a tangential speed of 20 m/s at a radius of 0.05 m. What is the centripetal acceleration, in m/s$^2$ and in multiples of $g$?
+4. A cyclone has a tangential speed of 20 m/s at a radius of 0.05 m. What is the centripetal acceleration, in $\text{m/s}^2$ and in multiples of $g$?
 
 <details><summary>Answers</summary>
 

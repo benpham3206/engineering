@@ -231,10 +231,10 @@ check(R < Rcrit, "below critical resistance")
 
 ## Practice
 
-1. A 2 k$\Omega$ resistor charges a 100 $\mu$F capacitor from a 12 V source, starting at 0 V. Find the time for the capacitor to reach 9 V, in s.
+1. A 2 $\text{k}\Omega$ resistor charges a 100 $\mu\text{F}$ capacitor from a 12 V source, starting at 0 V. Find the time for the capacitor to reach 9 V, in s.
 2. A 50 mH inductor with 25 $\Omega$ in series is connected to a 10 V source at $t = 0$, starting with no current. Find the current at $t = 3$ ms, in A.
 3. A 10 V source in series with 2 $\Omega$ feeds a node. From that node a 4 $\Omega$ resistor goes to ground, and a 3 A current source pushes current into the node. Find the node voltage in V by any method, then check it a second way.
-4. An ideal inverting amplifier has $R_{in} = 10\ \text{k}\Omega$ and $R_f = 47\ \text{k}\Omega$. Find the output voltage for a 0.50 V input, in V, and the output for a non-inverting amplifier with the same two resistors ($R_f$ the feedback, 10 k$\Omega$ to ground) and the same input.
+4. An ideal inverting amplifier has $R_{in} = 10\ \text{k}\Omega$ and $R_f = 47\ \text{k}\Omega$. Find the output voltage for a 0.50 V input, in V, and the output for a non-inverting amplifier with the same two resistors ($R_f$ the feedback, 10 $\text{k}\Omega$ to ground) and the same input.
 5. Two meshes share a 3 $\Omega$ resistor. Mesh 1 holds a 10 V source and a 5 $\Omega$ resistor. Mesh 2 holds a 2 $\Omega$ resistor and a dependent voltage source that drops $2 i_x$ volts in the direction of $i_2$, where $i_x = i_1$ is the current in the 5 $\Omega$ resistor. Find $i_2$ in A.
 
 <details><summary>Answers</summary>

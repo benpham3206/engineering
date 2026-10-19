@@ -38,14 +38,14 @@ Gravity loads flow downward. Each floor slab carries its load to beams. The beam
 
 ## Key equations
 
-For a column carrying tributary area $A_t$ in m$^2$ over $n$ floors, with dead load $q_D$ and live load $q_L$, both in Pa:
+For a column carrying tributary area $A_t$ in $\text{m}^2$ over $n$ floors, with dead load $q_D$ and live load $q_L$, both in Pa:
 
 - Service axial load: $P = n\,A_t\,(q_D + q_L)$, in N.
 - Factored axial load using the load combination $1.2D + 1.6L$: $P_u = n\,A_t\,(1.2\,q_D + 1.6\,q_L)$, in N.
 
 Wind pressure on a face: $q = \tfrac{1}{2}\rho V^2$, where $\rho = 1.225\ \text{kg}/\text{m}^3$ is the density of air at sea level on Earth (typical) and $V$ is the design wind speed in m/s. Base moment from a uniform lateral load $F$ in N on a building of height $h$ in m: $M_{\mathrm{base}} = F h / 2$, in N m.
 
-Column axial stress: $\sigma = P/A$, in Pa, where $A$ is the column cross-section in m$^2$.
+Column axial stress: $\sigma = P/A$, in Pa, where $A$ is the column cross-section in $\text{m}^2$.
 
 **Interstorey drift**: the sideways displacement of one floor relative to the floor below, $u_i - u_{i-1}$, divided by that storey's height. The overall **drift ratio** is the top displacement $\Delta$ divided by the building height $H$. Designers compare these ratios to limits, often about $H/400$ to $H/500$ for wind (typical, depends on the code and use).
 
@@ -67,7 +67,7 @@ Column axial stress: $\sigma = P/A$, in Pa, where $A$ is the column cross-sectio
 
 **Answer:** The service load is $3888\ \text{kN}$ (about $3.9\ \text{MN}$). The factored load is $5314\ \text{kN}$ (about $5.3\ \text{MN}$). The designer sizes the column for the factored load.
 
-**Sanity check:** The ratio of factored to service load is $5314 / 3888 = 1.37$. The combination weights dead load by 1.2 and live load by 1.6, so the ratio falls between 1.2 and 1.6, and 1.37 fits. At a working stress of 150 MPa (typical), a 3.9 MN service load needs a steel area of about 260 cm$^2$, which is a realistic column size for a building of this height.
+**Sanity check:** The ratio of factored to service load is $5314 / 3888 = 1.37$. The combination weights dead load by 1.2 and live load by 1.6, so the ratio falls between 1.2 and 1.6, and 1.37 fits. At a working stress of 150 MPa (typical), a 3.9 MN service load needs a steel area of about 260 $\text{cm}^2$, which is a realistic column size for a building of this height.
 
 ## Design trade-offs
 
@@ -96,7 +96,7 @@ Early tall buildings used load-bearing masonry walls, and thick lower walls limi
 
 ## Practice
 
-1. A column supports a tributary area of 40 m$^2$ over 10 floors. The dead load is 4.0 kPa per floor and the live load is 2.0 kPa per floor. Find the service axial load.
+1. A column supports a tributary area of 40 $\text{m}^2$ over 10 floors. The dead load is 4.0 kPa per floor and the live load is 2.0 kPa per floor. Find the service axial load.
 2. For the column in problem 1, find the factored axial load using $1.2D + 1.6L$.
 3. A 150 m tower sways at its top by 300 mm under wind. Find the drift ratio $\Delta / H$ and compare it with a limit of $H/500$.
 4. A building is twice as tall. Its lateral stiffness per unit height stays the same, and it carries a uniform wind load. How many times larger does the top sway become? Assume a cantilever-like model.

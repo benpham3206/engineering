@@ -26,7 +26,7 @@ The system has its own curve. **Static lift** $z$ is the height the liquid must 
 
 $$H_{sys} = z + k Q^2$$
 
-Here $k$ in s$^2$/m$^5$ lumps the pipe length, diameter, and fittings into one number. The pump runs where its curve crosses the system curve. Closing a valve moves the system curve up, so the operating point moves to lower flow and higher head.
+Here $k$ in $\text{s}^2/\text{m}^5$ lumps the pipe length, diameter, and fittings into one number. The pump runs where its curve crosses the system curve. Closing a valve moves the system curve up, so the operating point moves to lower flow and higher head.
 
 ### Cavitation and NPSH
 
@@ -65,8 +65,8 @@ Gear, lobe, and vane pumps suit viscous fluids and steady metering. Piston and p
 
 - Hydraulic power: $P = \rho g Q H$ in W, from the fluid systems lesson.
 - Shaft power: $P_{shaft} = \rho g Q H / \eta$ in W, where $\eta$ is dimensionless efficiency.
-- Positive displacement flow: $Q = V_d N$, with $V_d$ in m$^3$ per revolution and $N$ in rev/s.
-- System curve: $H_{sys} = z + k Q^2$, with $z$ in m, $k$ in s$^2$/m$^5$, and $Q$ in m$^3$/s.
+- Positive displacement flow: $Q = V_d N$, with $V_d$ in $\text{m}^3$ per revolution and $N$ in rev/s.
+- System curve: $H_{sys} = z + k Q^2$, with $z$ in m, $k$ in $\text{s}^2/\text{m}^5$, and $Q$ in $\text{m}^3$/s.
 - Net positive suction head available: $NPSH_a = (p_a - p_v)/(\rho g) + z_s - h_{fs}$, in m.
 - Affinity laws for speed: $Q \propto N$, $H \propto N^2$, $P \propto N^3$, with $N$ in rev/min.
 

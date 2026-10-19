@@ -64,7 +64,7 @@ The radar range equation gives the maximum range of a radar that detects a targe
 
 $$R_{\max} = \left[\frac{P_t\, G^2\, \lambda^2\, \sigma}{(4\pi)^3\, P_{\min}}\right]^{1/4}$$
 
-Here $R_{\max}$ is the maximum range in metres (m), $P_t$ is transmitted power in watts (W), $G$ is antenna gain (no units), $\lambda$ is wavelength in m, $\sigma$ is the target's radar cross section in square metres (m$^2$), and $P_{\min}$ is the smallest echo power the receiver can detect, in W. Range grows with the fourth root of power, so the radar must gain 16 times the power to double its range.
+Here $R_{\max}$ is the maximum range in metres (m), $P_t$ is transmitted power in watts (W), $G$ is antenna gain (no units), $\lambda$ is wavelength in m, $\sigma$ is the target's radar cross section in square metres ($\text{m}^2$), and $P_{\min}$ is the smallest echo power the receiver can detect, in W. Range grows with the fourth root of power, so the radar must gain 16 times the power to double its range.
 
 ## Worked example
 

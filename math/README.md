@@ -21,6 +21,10 @@ Math is the notation engineering uses. Most of the work here is knowing which to
 
 For quick lookup while working. Each sheet opens with the principles of the field.
 
-- [Math reference](reference.md): the working engineer's lookup sheet for this folder: equations with their limits, typical values, rules of thumb, and checklists
+- [Math foundations reference](reference-foundations.md): arithmetic, fractions, powers, rearranging equations, graphs, geometry, right-triangle trigonometry, and complex numbers, for a reader starting from zero
+- [Calculus reference](reference-calculus.md): limits, derivatives, integrals, series, multivariable and vector calculus, the integral theorems, and constrained optimization
+- [Linear algebra and differential equations reference](reference-linear-algebra-differential-equations.md): matrices, factorizations, least squares, eigenvalues, ODEs, state space, Laplace and Fourier transforms, and PDE types
+- [Probability, statistics, and numerical methods reference](reference-probability-numerical-methods.md): probability rules, distributions, estimation, regression, root finding, interpolation, quadrature, ODE solvers, and error and stability
+- [Math reference](reference.md): the original combined sheet, kept while its sections move to the sheets above
 
 See also: [physics](../physics), [tools](../tools), [courses](../courses)

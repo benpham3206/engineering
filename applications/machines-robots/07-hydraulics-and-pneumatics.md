@@ -13,8 +13,8 @@
   reaches every wall. A small piston pushing on oil creates a pressure that acts on a large piston.
 - **Pressure** $p$ (pascals, Pa): force per unit area. The formulas here use **gauge pressure**, which
   is measured above atmospheric pressure.
-- **Flow** $Q$ (m$^3$/s): volume of fluid delivered per second. Shop practice uses litres per minute.
-  One litre per minute is $1.667 \times 10^{-5}$ m$^3$/s.
+- **Flow** $Q$ ($\text{m}^3$/s): volume of fluid delivered per second. Shop practice uses litres per minute.
+  One litre per minute is $1.667 \times 10^{-5}$ $\text{m}^3$/s.
 - **Force sets pressure, flow sets speed.** A cylinder's force depends on pressure and piston area.
   Its speed depends on flow and piston area. Friction and leakage change both.
 - **Stored energy.** Oil under pressure, a held load, and a charged accumulator each store energy
@@ -70,7 +70,7 @@ appears, the flow is steady, friction and leakage are zero unless a line says ot
 pressures are gauge pressures.
 
 Pressure and force, with $p$ in pascals (Pa), $F$ in newtons (N), and $A$ the piston area in square
-metres (m$^2$):
+metres ($\text{m}^2$):
 
 $$p = \frac{F}{A}$$
 
@@ -86,7 +86,7 @@ Cylinder force on the bore side (friction ignored):
 
 $$F_{\text{extend}} = p\,A \qquad F_{\text{retract}} = p\,A_a$$
 
-Cylinder speed, with $v$ in metres per second (m/s) and $Q$ in cubic metres per second (m$^3$/s):
+Cylinder speed, with $v$ in metres per second (m/s) and $Q$ in cubic metres per second ($\text{m}^3$/s):
 
 $$v = \frac{Q}{A} \qquad\text{or}\qquad v = \frac{Q}{A_a} \text{ on the retract stroke}$$
 
@@ -100,11 +100,11 @@ $$P_{\text{in}} = \frac{p\,Q}{\eta}$$
 
 Ideal jet speed from a small leak, assuming no friction and no losses at the orifice (so the result
 is an upper bound), with pressure drop $\Delta p$ in pascals, oil density $\rho$ in kilograms per
-cubic metre (kg/m$^3$), and jet speed $v_j$ in m/s. A typical density for hydraulic oil is 870 kg/m$^3$:
+cubic metre ($\text{kg/m}^3$), and jet speed $v_j$ in m/s. A typical density for hydraulic oil is 870 $\text{kg/m}^3$:
 
 $$v_j = \sqrt{\frac{2\,\Delta p}{\rho}}$$
 
-Energy stored in compressed oil of volume $V$ in cubic metres (m$^3$), with bulk modulus $K$ in
+Energy stored in compressed oil of volume $V$ in cubic metres ($\text{m}^3$), with bulk modulus $K$ in
 pascals. A typical bulk modulus for mineral oil is about $1.6 \times 10^9$ Pa:
 
 $$E = \frac{\Delta p^2\,V}{2K}$$
@@ -258,7 +258,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 - Using the bore area for the retract stroke. The retract force uses the annulus area, which is
   smaller because the rod takes up part of the bore.
 - Treating litres per minute as cubic metres per second without converting. One litre per minute is
-  $1.667 \times 10^{-5}$ m$^3$/s.
+  $1.667 \times 10^{-5}$ $\text{m}^3$/s.
 - Calling a small injection leak harmless. The jet at high pressure is fast enough to penetrate skin.
 - Assuming a raised load stays up when the pump stops. A leaking valve lets it drop, unless a
   load-holding valve prevents that.

@@ -10,6 +10,8 @@ How engineers predict behavior with computers, and how they check that the predi
 
 ## Reference
 
-Reference sheets for finite element analysis, computational fluid dynamics, and verification and validation are planned.
+- [Finite element analysis reference](reference-finite-element-analysis.md): weak forms, shape functions, element matrices, integration, assembly, boundary conditions, dynamics, convergence, and locking
+- [Computational fluid dynamics reference](reference-computational-fluid-dynamics.md): conservation equations, finite-volume discretization, time-step limits, pressure-velocity coupling, near-wall resolution, and turbulence-model boundaries
+- [Verification and validation reference](reference-verification-validation.md): code and solution verification, grid convergence, Richardson extrapolation, the grid convergence index, and validation comparison
 
 See also: [math](../math), [physics](../physics), [tools](../tools)

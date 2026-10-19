@@ -46,7 +46,7 @@ $$
 L = \tfrac{1}{2}\rho V^2 S\, C_L \qquad D = \tfrac{1}{2}\rho V^2 S\, C_D
 $$
 
-- $L$ is lift (N). $D$ is drag (N). $\rho$ is air density (kg/m$^3$, about 1.225 at sea level on Earth). $V$ is airspeed (m/s). $S$ is wing area (m$^2$). $C_L$ and $C_D$ are the lift and drag coefficients (dimensionless).
+- $L$ is lift (N). $D$ is drag (N). $\rho$ is air density ($\text{kg/m}^3$, about 1.225 at sea level on Earth). $V$ is airspeed (m/s). $S$ is wing area ($\text{m}^2$). $C_L$ and $C_D$ are the lift and drag coefficients (dimensionless).
 - Assumptions: steady flight, subsonic and incompressible air, and $C_L$ and $C_D$ both referenced to the same wing area $S$.
 
 **Stall speed**, where lift equals weight at the maximum lift coefficient.
@@ -55,7 +55,7 @@ $$
 V_s = \sqrt{\frac{2W}{\rho\, S\, C_{L,\max}}}
 $$
 
-- $V_s$ is stall speed (m/s). $W = mg$ is weight (N), with $m$ in kg and $g = 9.81$ m/s$^2$ near Earth's surface. $C_{L,\max}$ is the maximum lift coefficient (dimensionless). The stall speed rises with the square root of the load factor $n$ in a turn, because lift must equal $nW$.
+- $V_s$ is stall speed (m/s). $W = mg$ is weight (N), with $m$ in kg and $g = 9.81$ $\text{m/s}^2$ near Earth's surface. $C_{L,\max}$ is the maximum lift coefficient (dimensionless). The stall speed rises with the square root of the load factor $n$ in a turn, because lift must equal $nW$.
 - Assumptions: steady, unaccelerated flight at the stall point, a load factor of 1 (level flight) unless the text says otherwise, and $C_{L,\max}$ set for the configuration in use.
 
 **Induced drag**, which comes from the lift itself, and total drag.
@@ -87,7 +87,7 @@ $$
 
 ## Worked example
 
-**Given.** A 1000 kg light aircraft flies at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Its maximum lift coefficient is $C_{L,\max} = 1.5$. The design target is a stall speed of 25 m/s. In cruise, the aircraft flies at 50 m/s with $C_{D,0} = 0.030$, aspect ratio $\mathrm{AR} = 8$, and $e = 0.80$.
+**Given.** A 1000 kg light aircraft flies at sea level on Earth, where $\rho = 1.225$ $\text{kg/m}^3$. Its maximum lift coefficient is $C_{L,\max} = 1.5$. The design target is a stall speed of 25 m/s. In cruise, the aircraft flies at 50 m/s with $C_{D,0} = 0.030$, aspect ratio $\mathrm{AR} = 8$, and $e = 0.80$.
 
 **Find.** (a) the wing area, (b) the span, (c) the cruise drag and the power required, and (d) the lift-to-drag ratio.
 
@@ -115,7 +115,7 @@ D = \tfrac{1}{2}\times 1.225 \times 50^2 \times 17.08 \times 0.03699 = 967\ \tex
 $$
 7. Lift-to-drag ratio: $L/D = C_L / C_D = 0.375 / 0.03699 = 10.1$.
 
-**Answer.** (a) $S = 17.1$ m$^2$. (b) $b = 11.7$ m. (c) $D = 967$ N, and the power required is $48.4$ kW (about 65 hp). (d) $L/D = 10.1$.
+**Answer.** (a) $S = 17.1$ $\text{m}^2$. (b) $b = 11.7$ m. (c) $D = 967$ N, and the power required is $48.4$ kW (about 65 hp). (d) $L/D = 10.1$.
 
 **Sanity check.** The cruise lift coefficient of 0.375 sits well below the maximum of 1.5, so the wing has margin before it stalls. A stall speed of 90 km/h is typical for a light aircraft. Lift to drag near 10 is a reasonable value for a light aircraft in cruise. Using the sea-level density at altitude would overstate the lift, so the design must check the density at the cruise altitude too.
 
@@ -141,8 +141,8 @@ Otto Lilienthal made hundreds of glider flights in Germany in the 1890s. The Wri
 
 ## Practice
 
-1. A 1200 kg aircraft has a wing area of 18 m$^2$ and $C_{L,\max} = 1.6$ at sea level on Earth, where $\rho = 1.225$ kg/m$^3$. Find the stall speed in m/s.
-2. An aircraft with $S = 18$ m$^2$ flies at 60 m/s at sea level with $C_L = 0.40$. Find the lift in kN.
+1. A 1200 kg aircraft has a wing area of 18 $\text{m}^2$ and $C_{L,\max} = 1.6$ at sea level on Earth, where $\rho = 1.225$ $\text{kg/m}^3$. Find the stall speed in m/s.
+2. An aircraft with $S = 18$ $\text{m}^2$ flies at 60 m/s at sea level with $C_L = 0.40$. Find the lift in kN.
 3. Using thin-airfoil theory, find $C_L$ at $\alpha = 4^\circ$.
 4. A wing has $C_L = 0.50$, $\mathrm{AR} = 9$, and $e = 0.80$. Find the induced drag coefficient.
 5. An aircraft in level flight at 40 m/s has a drag of 800 N. Find the power required in kW.

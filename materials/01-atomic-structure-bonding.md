@@ -39,7 +39,7 @@ $$U = -\frac{k\, e^2}{r}$$
 where:
 
 - $U$ is the potential energy of the pair (joules, J, or electron volts, eV, with $1\ \mathrm{eV} = 1.602 \times 10^{-19}\ \mathrm{J}$)
-- $k = 8.988 \times 10^{9}$ N m$^2$/C$^2$ is Coulomb's constant
+- $k = 8.988 \times 10^{9}$ N $\text{m}^2/\text{C}^2$ is Coulomb's constant
 - $e = 1.602 \times 10^{-19}$ C is the elementary charge (one proton or electron)
 - $r$ is the distance between the two ion centers (metres, m)
 

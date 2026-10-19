@@ -13,7 +13,7 @@ Mechanical design is the field of choosing the shape, size, material, and tolera
 - Stress concentration, assembly access, and manufacturing process decide more failures than the nominal formula does.
 - A tolerance is a design choice with a cost. Tighten only where the function needs it.
 - If a result is surprising, check the sanity bounds before checking the algebra.
-- Weight is $W = m\,g$, with $g$ the local gravity. Earth value $g = 9.81$ m/s$^2$ is one case, not the rule.
+- Weight is $W = m\,g$, with $g$ the local gravity. Earth value $g = 9.81$ $\text{m/s}^2$ is one case, not the rule.
 
 ## Design process
 
@@ -265,7 +265,7 @@ $$
 F_i = 0.75\,S_p\,A_t \qquad \text{(reused joint; }0.9\,S_p A_t\text{ is often used for a permanent joint)}
 $$
 
-where $S_p$ is proof strength (MPa) and $A_t$ is tensile stress area (mm$^2$). Use $A_t$, not the nominal area.
+where $S_p$ is proof strength (MPa) and $A_t$ is tensile stress area ($\text{mm}^2$). Use $A_t$, not the nominal area.
 
 Torque-tension (nut factor $K$, typical dry steel about $0.20$; lubricated values are lower):
 
@@ -273,7 +273,7 @@ $$
 T = K\,F_i\,d
 $$
 
-with $T$ in N$\cdot$mm, $F_i$ in N, $d$ in mm. Divide by 1000 for N$\cdot$m.
+with $T$ in $\text{N}\cdot\text{mm}$, $F_i$ in N, $d$ in mm. Divide by 1000 for $\text{N}\cdot\text{m}$.
 
 Joint stiffness split under external load $P$, with bolt stiffness $k_b$ and member stiffness $k_m$:
 
@@ -285,7 +285,7 @@ $$
 - Example: $k_b = 1$, $k_m = 4$ gives $C = 0.2$.
 - Thread engagement rule of thumb: steel nut into steel, about one nominal diameter. Softer materials (aluminum, cast iron, plastics) need longer engagement, commonly 1.5 times the diameter or more. Check thread stripping in softer parts.
 - Holds when: the joint is rigid-body, preload stays (no embedding or relaxation), and the bolt stays in the elastic range. Breaks when: the joint is compliant, vibration causes loosening, or torque is the only control (scatter is large because friction varies).
-- Worked: M10 grade 8.8, $S_p = 580$ MPa, $A_t = 58.0$ mm$^2$, $K = 0.20$. $F_i = 25.2$ kN, $T = 50.5$ N$\cdot$m.
+- Worked: M10 grade 8.8, $S_p = 580$ MPa, $A_t = 58.0$ $\text{mm}^2$, $K = 0.20$. $F_i = 25.2$ kN, $T = 50.5$ $\text{N}\cdot\text{m}$.
 
 ## Shafts
 
@@ -307,13 +307,13 @@ $$
 \theta = \frac{T\,L}{G\,J}
 $$
 
-Static sizing for combined bending and torsion, ductile, ASME elliptic form (use $M$ and $T$ in N$\cdot$mm, $S_y$ in MPa):
+Static sizing for combined bending and torsion in a ductile shaft, using the von Mises distortion-energy criterion (use $M$ and $T$ in $\text{N}\cdot\text{mm}$, $S_y$ in MPa):
 
 $$
 d = \left(\frac{16\,n}{\pi\,S_y}\sqrt{4M^2 + 3T^2}\right)^{1/3}
 $$
 
-- Worked: $M = 150$ N$\cdot$m, $T = 200$ N$\cdot$m, $S_y = 350$ MPa, $n = 2.5$ gives $d = 25.6$ mm (use a standard size at or above).
+- Worked: $M = 150$ $\text{N}\cdot\text{m}$, $T = 200$ $\text{N}\cdot\text{m}$, $S_y = 350$ MPa, $n = 2.5$ gives $d = 25.5$ mm (use a standard size at or above).
 - Tresca alternative for torsion only: $\tau_{\text{allow}} = 0.5\,S_y/n$, $d_{\min} = (16\,T/(\pi\,\tau_{\text{allow}}))^{1/3}$.
 - Stress concentration (keyway, shoulder, fillet, retaining ring groove) is not in these formulas. Apply $K_f$ for fatigue or check the code.
 - Holds when: the shaft is solid, round, loaded steadily, and uniform. Breaks when: the shaft cycles (use fatigue), has notches, or is hollow with a thin wall.
@@ -324,7 +324,7 @@ $$
 \omega_n = \sqrt{\frac{k}{m}}, \qquad k = \frac{48\,E\,I}{L^3}
 $$
 
-with $\omega_n$ in rad/s, $E$ in Pa, $I$ in m$^4$, $L$ in m, $m$ in kg. Operate away from it with margin set by the code or the designer; include shaft mass for better accuracy.
+with $\omega_n$ in rad/s, $E$ in Pa, $I$ in $\text{m}^4$, $L$ in m, $m$ in kg. Operate away from it with margin set by the code or the designer; include shaft mass for better accuracy.
 
 - Holds when: the shaft is uniform and the mass is lumped at midspan. Breaks when: the shaft is stepped, the mass is spread, bearings are soft, or the load is off center.
 
@@ -414,7 +414,7 @@ Part-count reduction is $\dfrac{N_0 - N_1}{N_0}$, with $N_0$ the starting count.
 
 Before trusting a stress result:
 
-- Stress from load and correct area, with units consistent (N and mm$^2$ give MPa).
+- Stress from load and correct area, with units consistent (N and $\text{mm}^2$ give MPa).
 - Strength matches the failure mode (yield for ductile static, ultimate for brittle, endurance for cyclic).
 - Failure theory matches the material class.
 - Factor of safety stated with its basis.
@@ -435,11 +435,11 @@ Before releasing a dimensioned design:
 
 ## Sanity checks
 
-- Stress from $F/A$ for a 1 kN axial load on a 10 mm round bar: $A = 78.5$ mm$^2$, so $\sigma = 12.7$ MPa. Expect results of this order for light loads.
+- Stress from $F/A$ for a 1 kN axial load on a 10 mm round bar: $A = 78.5$ $\text{mm}^2$, so $\sigma = 12.7$ MPa. Expect results of this order for light loads.
 - Steel modulus $E \approx 200$ GPa (typical); $G \approx 79$ GPa (typical); Poisson ratio about 0.3 (typical). Aluminum $E \approx 70$ GPa (typical).
 - Steel yield strength is a few hundred MPa for common grades (typical). A computed stress above yield in a ductile part means yielding or a unit error.
 - Unit check: $1\ \text{MPa} = 1\ \text{N/mm}^2$; $1\ \text{in} = 25.4\ \text{mm}$ exactly; 1 ksi $\approx$ 6.9 MPa; 1 MPa $\approx$ 145 psi.
-- Shaft torque units: entering $T$ in N$\cdot$m where N$\cdot$mm is required makes $d$ about ten times too small, because $d \propto T^{1/3}$ and a factor 1000 in $T$ is a factor 10 in $d$.
+- Shaft torque units: entering $T$ in $\text{N}\cdot\text{m}$ where $\text{N}\cdot\text{mm}$ is required makes $d$ about ten times too small, because $d \propto T^{1/3}$ and a factor 1000 in $T$ is a factor 10 in $d$.
 - Bearing life: doubling the load gives one eighth the life (ball).
 - Stack-up: the RSS value is always below the worst-case value for the same tolerances.
 - Position: the deviation is always the diameter (twice the radial offset), never the radius.

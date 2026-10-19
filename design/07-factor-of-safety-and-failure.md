@@ -65,7 +65,7 @@ $$
 \sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2}
 $$
 
-Units: stress and strength in MPa (megapascals, equal to N/mm$^2$). US customary: psi or ksi (1 MPa is about 145 psi). Force in N (or lbf), area in mm$^2$ (or in$^2$).
+Units: stress and strength in MPa (megapascals, equal to $\text{N/mm}^2$). US customary: psi or ksi (1 MPa is about 145 psi). Force in N (or lbf), area in $\text{mm}^2$ (or $\text{in}^2$).
 
 Typical yield strength used in this lesson: $S_y = 350$ MPa (about 51 ksi). This is a typical value for a plain carbon steel, not a guarantee. Use the data sheet for the real material.
 
@@ -81,7 +81,7 @@ A steel rod of diameter 12 mm is pulled by an axial load of 20 kN. The steel has
 
 **Solution.**
 
-Step 1. Area: $A = \dfrac{\pi (12)^2}{4} = 113.1$ mm$^2$.
+Step 1. Area: $A = \dfrac{\pi (12)^2}{4} = 113.1$ $\text{mm}^2$.
 
 Step 2. Stress: $\sigma = \dfrac{20\,000}{113.1} = 176.8$ MPa.
 
@@ -113,7 +113,7 @@ $n = \dfrac{350}{117.9} = 2.97$.
 - Is the material strength the yield strength for a ductile part, or the ultimate strength for a brittle one?
 - Is FoS stated and justified, not picked by habit?
 - For a part under several stresses, is a failure criterion used instead of one stress?
-- Are units consistent: N and mm$^2$ give MPa?
+- Are units consistent: N and $\text{mm}^2$ give MPa?
 
 ## Practice
 

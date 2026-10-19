@@ -84,11 +84,11 @@ The canonical symbols, sign conventions, and transform conventions for every for
 |---|---|---|---|
 | $\mathbf{F}$, $F$ | Force, and its magnitude | N | |
 | $m$ | Mass | kg | |
-| $\mathbf{a}$, $a$ | Acceleration | m/s$^{2}$ | |
+| $\mathbf{a}$, $a$ | Acceleration | $\text{m/s}^{2}$ | |
 | $\mathbf{v}$, $v$ | Velocity, and speed | m/s | |
-| $g$ | Local gravitational acceleration | m/s$^{2}$ | Name the body; the Earth standard value is a constant in `data/` |
+| $g$ | Local gravitational acceleration | $\text{m/s}^{2}$ | Name the body; the Earth standard value is a constant in `data/` |
 | $\theta$, $\phi$ | Angle, angle of twist | rad | |
-| $\omega$, $\alpha$ | Angular velocity, angular acceleration | rad/s, rad/s$^{2}$ | |
+| $\omega$, $\alpha$ | Angular velocity, angular acceleration | rad/s, $\text{rad/s}^{2}$ | |
 | $M$ | Moment, bending moment | N m | |
 | $\mathcal{T}$ | Torque, where temperature also appears | N m | $T$ is allowed for torque in mechanics entries with no temperature |
 | $\sigma$, $\tau$ | Normal and shear stress | Pa | |
@@ -96,10 +96,10 @@ The canonical symbols, sign conventions, and transform conventions for every for
 | $E$, $G$ | Young's modulus, shear modulus | Pa | |
 | $\nu$ | Poisson's ratio | dimensionless | |
 | $S_y$, $S_u$, $S_e$ | Yield strength, ultimate tensile strength, endurance limit | Pa | Not $\sigma_y$, which is the stress on the $y$ face |
-| $A$ | Area | m$^{2}$ | |
-| $I_A$, $J$ | Second moment of area, polar second moment of area | m$^{4}$ | Plain $I$ is a scoped overload |
-| $I_m$ | Mass moment of inertia | kg m$^{2}$ | Plain $I$ is a scoped overload |
-| $S$ | Elastic section modulus | m$^{3}$ | |
+| $A$ | Area | $\text{m}^{2}$ | |
+| $I_A$, $J$ | Second moment of area, polar second moment of area | $\text{m}^{4}$ | Plain $I$ is a scoped overload |
+| $I_m$ | Mass moment of inertia | kg $\text{m}^{2}$ | Plain $I$ is a scoped overload |
+| $S$ | Elastic section modulus | $\text{m}^{3}$ | |
 | $k_s$ | Spring stiffness | N/m | Plain $k$ is a scoped overload |
 | $c$ | Viscous damping coefficient | N s/m | Also the distance to the extreme fibre in beam entries |
 | $\zeta$ | Damping ratio | dimensionless | |
@@ -107,9 +107,9 @@ The canonical symbols, sign conventions, and transform conventions for every for
 | $\delta$ | Deflection or elongation | m | |
 | $w$ | Distributed load | N/m | |
 | $K_t$ | Stress concentration factor | dimensionless | |
-| $K_I$, $K_{Ic}$ | Mode I stress intensity factor, fracture toughness | Pa m$^{1/2}$ | |
+| $K_I$, $K_{Ic}$ | Mode I stress intensity factor, fracture toughness | Pa $\text{m}^{1/2}$ | |
 | $n_s$ | Factor of safety | dimensionless | |
-| $\rho$ | Density | kg/m$^{3}$ | |
+| $\rho$ | Density | $\text{kg/m}^{3}$ | |
 
 ## Thermal and fluids
 
@@ -117,10 +117,10 @@ The canonical symbols, sign conventions, and transform conventions for every for
 |---|---|---|---|
 | $T$ | Absolute temperature | K | |
 | $p$, $p_g$ | Absolute pressure, gauge pressure | Pa | |
-| $V$, $\dot{V}$ | Volume, volumetric flow rate | m$^{3}$, m$^{3}$/s | Not $Q$ for flow |
+| $V$, $\dot{V}$ | Volume, volumetric flow rate | $\text{m}^{3}$, $\text{m}^{3}$/s | Not $Q$ for flow |
 | $\dot{m}$ | Mass flow rate | kg/s | |
 | $Q$, $\dot{Q}$ | Heat, heat rate | J, W | |
-| $q$, $q''$ | Heat per unit mass, heat flux | J/kg, W/m$^{2}$ | |
+| $q$, $q''$ | Heat per unit mass, heat flux | J/kg, $\text{W/m}^{2}$ | |
 | $W$, $\dot{W}$ | Work, power | J, W | $P$ is also power |
 | $U$, $u$ | Internal energy, specific internal energy | J, J/kg | |
 | $H$, $h$ | Enthalpy, specific enthalpy | J, J/kg | |
@@ -129,9 +129,9 @@ The canonical symbols, sign conventions, and transform conventions for every for
 | $\gamma$ | Heat capacity ratio $c_p/c_v$ | dimensionless | Not $k$ |
 | $R_u$, $R_s$ | Universal and specific gas constant | J/(mol K), J/(kg K) | Never a bare $R$ |
 | $k_{\text{th}}$ | Thermal conductivity | W/(m K) | Plain $k$ is a scoped overload |
-| $h_c$ | Convection coefficient | W/(m$^{2}$ K) | Plain $h$ is a scoped overload |
-| $\alpha_{\text{th}}$ | Thermal diffusivity | m$^{2}$/s | |
-| $\mu$, $\nu_k$ | Dynamic and kinematic viscosity | Pa s, m$^{2}$/s | Plain $\nu$ for kinematic viscosity is a scoped overload |
+| $h_c$ | Convection coefficient | W/($\text{m}^{2}$ K) | Plain $h$ is a scoped overload |
+| $\alpha_{\text{th}}$ | Thermal diffusivity | $\text{m}^{2}$/s | |
+| $\mu$, $\nu_k$ | Dynamic and kinematic viscosity | Pa s, $\text{m}^{2}$/s | Plain $\nu$ for kinematic viscosity is a scoped overload |
 | $z$ | Elevation | m | |
 | $f_D$ | Darcy friction factor | dimensionless | The Fanning factor is $f_D/4$ and is always labelled $f_F$ |
 | $\eta$ | Efficiency | dimensionless | |

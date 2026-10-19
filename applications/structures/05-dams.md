@@ -49,7 +49,7 @@ The steps run as follows:
 
 $$p = \rho g h$$
 
-Assumes the water is at rest and incompressible, and that $p$ is gauge pressure above the free surface. Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg}/\text{m}^3$ for fresh water, typical), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), and $h$ is depth in metres.
+Assumes the water is at rest and incompressible, and that $p$ is gauge pressure above the free surface. Here $p$ is pressure in pascals (Pa), $\rho$ is the water density in kilograms per cubic metre (about $1000\ \text{kg}/\text{m}^3$ for fresh water, typical), $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface), and $h$ is depth in metres.
 
 Resultant water force per metre of dam length, for a vertical face with water depth $H$:
 

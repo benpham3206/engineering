@@ -10,7 +10,7 @@
 ## Core ideas
 
 - A **rigid body** keeps its shape while it moves. Every point on it moves in a way that is linked to every other point.
-- **Planar motion** means all points move in parallel planes. For this lesson, the body moves in the $x$-$y$ plane and rotates about an axis perpendicular to it, the $z$ axis.
+- **Planar motion** means all points move in parallel planes. For this lesson, the body moves in the $x\text{-}y$ plane and rotates about an axis perpendicular to it, the $z$ axis.
 - **Angular position** $\theta$ is measured in radians (rad). **Angular velocity** $\omega = d\theta/dt$ is in rad/s, and **angular acceleration** $\alpha = d\omega/dt$ is in $\mathrm{rad/s^2}$.
 - **Mass moment of inertia** $I$ measures how hard it is to change a body's rotation. It depends on the mass and how far that mass sits from the axis. Its SI unit is kilogram meter squared ($\mathrm{kg\,m^2}$), and its US customary unit is slug foot squared ($\mathrm{slug\,ft^2}$).
 - **Center of mass** $G$ is the average position of the body's mass. For many bodies, you can treat the whole mass as acting at $G$ when you write the translation equation.

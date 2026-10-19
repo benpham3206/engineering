@@ -47,13 +47,13 @@ Conduction through a wall, window, or roof:
 
 $$\dot{Q} = U A \, \Delta T$$
 
-Here $\dot{Q}$ is heat flow in watts (W), $U$ is the overall heat transfer coefficient in W/(m$^2$ K), $A$ is the area in m$^2$, and $\Delta T$ is the temperature difference in kelvin (K). A difference in kelvin equals a difference in degrees Celsius.
+Here $\dot{Q}$ is heat flow in watts (W), $U$ is the overall heat transfer coefficient in W/($\text{m}^2$ K), $A$ is the area in $\text{m}^2$, and $\Delta T$ is the temperature difference in kelvin (K). A difference in kelvin equals a difference in degrees Celsius.
 
 **Sensible heat** to warm or cool ventilation air:
 
 $$\dot{Q} = \rho \, \dot{V} \, c_p \, \Delta T$$
 
-Here $\rho$ is air density in kg/m$^3$ (about 1.2 kg/m$^3$ near 20 C at sea level on Earth, typical), $\dot{V}$ is the volume flow of air in m$^3$/s, and $c_p$ is the specific heat of air in J/(kg K) (about 1005 J/(kg K), typical).
+Here $\rho$ is air density in $\text{kg/m}^3$ (about 1.2 $\text{kg/m}^3$ near 20 C at sea level on Earth, typical), $\dot{V}$ is the volume flow of air in $\text{m}^3$/s, and $c_p$ is the specific heat of air in J/(kg K) (about 1005 J/(kg K), typical).
 
 **Latent heat** to evaporate or condense water:
 
@@ -79,11 +79,11 @@ Air velocity in a duct:
 
 $$v = \frac{\dot{V}}{A}$$
 
-Here $v$ is the mean air velocity in m/s, and $A$ is the duct cross-section in m$^2$.
+Here $v$ is the mean air velocity in m/s, and $A$ is the duct cross-section in $\text{m}^2$.
 
 ## Worked example
 
-**Given:** A winter room of 20 m$^2$ (4 m by 5 m, 2.5 m ceiling). Indoor design temperature is 21 C, and outdoor design temperature is -5 C, so $\Delta T = 26$ K. The exterior wall is 12 m$^2$ with $U = 0.35$ W/(m$^2$ K). The window is 4 m$^2$ with $U = 2.8$ W/(m$^2$ K). Outdoor ventilation air is 30 L/s, or $\dot{V} = 0.030$ m$^3$/s. Air density is 1.2 kg/m$^3$ (sea level on Earth), and $c_p = 1005$ J/(kg K).
+**Given:** A winter room of 20 $\text{m}^2$ (4 m by 5 m, 2.5 m ceiling). Indoor design temperature is 21 C, and outdoor design temperature is -5 C, so $\Delta T = 26$ K. The exterior wall is 12 $\text{m}^2$ with $U = 0.35$ W/($\text{m}^2$ K). The window is 4 $\text{m}^2$ with $U = 2.8$ W/($\text{m}^2$ K). Outdoor ventilation air is 30 L/s, or $\dot{V} = 0.030$ $\text{m}^3$/s. Air density is 1.2 $\text{kg/m}^3$ (sea level on Earth), and $c_p = 1005$ J/(kg K).
 
 **Find:** The peak heating load.
 
@@ -98,7 +98,7 @@ Here $v$ is the mean air velocity in m/s, and $A$ is the duct cross-section in m
 
 **Answer:** The peak heating load is about 1.34 kW.
 
-**Sanity check:** Divided by the floor area, 1341 W over 20 m$^2$ gives 67 W/m$^2$. That is a plausible load for a room in a cold climate. The ventilation term makes up 70 percent of the total. A better window would cut only the 291 W term, so heat recovery on the ventilation air would save more energy than a window upgrade in this room.
+**Sanity check:** Divided by the floor area, 1341 W over 20 $\text{m}^2$ gives 67 $\text{W/m}^2$. That is a plausible load for a room in a cold climate. The ventilation term makes up 70 percent of the total. A better window would cut only the 291 W term, so heat recovery on the ventilation air would save more energy than a window upgrade in this room.
 
 ## Design trade-offs
 
@@ -127,15 +127,15 @@ Roman baths used hypocausts, which warmed floors and walls with hot air from a f
 
 ## Practice
 
-1. A wall of area 10 m$^2$ has $U = 0.50$ W/(m$^2$ K). Indoor air is 20 C, and outdoor air is 0 C. Find the heat flow through the wall in watts.
-2. A rectangular duct is 0.30 m by 0.20 m, and it carries 0.20 m$^3$/s of air. Find the air velocity in m/s.
-3. Outdoor air at 0 C is heated to 10 C at a flow of 0.050 m$^3$/s. Use $\rho = 1.2$ kg/m$^3$ and $c_p = 1005$ J/(kg K). Find the heating power in watts.
+1. A wall of area 10 $\text{m}^2$ has $U = 0.50$ W/($\text{m}^2$ K). Indoor air is 20 C, and outdoor air is 0 C. Find the heat flow through the wall in watts.
+2. A rectangular duct is 0.30 m by 0.20 m, and it carries 0.20 $\text{m}^3$/s of air. Find the air velocity in m/s.
+3. Outdoor air at 0 C is heated to 10 C at a flow of 0.050 $\text{m}^3$/s. Use $\rho = 1.2$ $\text{kg/m}^3$ and $c_p = 1005$ J/(kg K). Find the heating power in watts.
 4. Air at 20 C and 50 percent relative humidity is at sea-level pressure, 101 325 Pa. Use $p_{\mathrm{sat}}(20\ \text{C}) \approx 2338$ Pa. Find the humidity ratio in kg/kg.
 
 <details><summary>Answers</summary>
 
 1. $\dot{Q} = 0.50 \times 10 \times 20 = 100$ W.
-2. $A = 0.30 \times 0.20 = 0.060$ m$^2$, so $v = 0.20 / 0.060 = 3.3$ m/s.
+2. $A = 0.30 \times 0.20 = 0.060$ $\text{m}^2$, so $v = 0.20 / 0.060 = 3.3$ m/s.
 3. $\dot{Q} = 1.2 \times 0.050 \times 1005 \times 10 = 603$ W.
 4. The vapor pressure is $p_v = 0.50 \times 2338 = 1169$ Pa. Then $W = 0.622 \times 1169 / (101\,325 - 1169) = 0.00726$ kg/kg, or 7.3 g of water per kg of dry air.
 

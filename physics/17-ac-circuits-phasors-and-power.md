@@ -121,7 +121,7 @@ A single-phase induction motor load draws 2000 W at a lagging power factor of 0.
 4. $\omega = 2\pi f = 314.2$ rad/s, so $C = Q_c/(\omega V^2) = 50.7\ \mu\text{F}$.
 5. Line current after correction: $I_2 = P/(V\,\text{pf}_2) = 9.153$ A.
 
-**Answer:** Before: 2500 VA, 1500 var, 10.87 A. A capacitor of about 50.7 $\mu$F supplies 842.6 var, and the line current falls to 9.15 A, a drop of about 16 percent.
+**Answer:** Before: 2500 VA, 1500 var, 10.87 A. A capacitor of about 50.7 $\mu\text{F}$ supplies 842.6 var, and the line current falls to 9.15 A, a drop of about 16 percent.
 
 **Sanity check:** The real power stays 2000 W, and 9.153 A is less than 10.87 A as it must be when the power factor rises. The current ratio $I_2/I_1 = \text{pf}_1/\text{pf}_2 = 0.842$, so the drop is 16 percent.
 

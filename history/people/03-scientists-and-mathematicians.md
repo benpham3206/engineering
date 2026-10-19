@@ -95,19 +95,19 @@ Fourier's law of heat conduction:
 
 $$\dot q = -k \frac{dT}{dx}$$
 
-where $\dot q$ is heat flux in watts per square metre (W/m$^2$), $k$ is thermal conductivity in watts per metre kelvin (W/(m K)), and $dT/dx$ is the temperature gradient in kelvin per metre (K/m).
+where $\dot q$ is heat flux in watts per square metre ($\text{W/m}^2$), $k$ is thermal conductivity in watts per metre kelvin (W/(m K)), and $dT/dx$ is the temperature gradient in kelvin per metre (K/m).
 
 Euler's critical buckling load for a slender column:
 
 $$P_{\text{cr}} = \frac{\pi^2 E I}{(KL)^2}$$
 
-where $P_{\text{cr}}$ is the critical load in newtons (N), $E$ is the elastic modulus in pascals (Pa), $I$ is the second moment of area in metres to the fourth power (m$^4$), $L$ is the column length in metres (m), and $K$ is the effective length factor (dimensionless).
+where $P_{\text{cr}}$ is the critical load in newtons (N), $E$ is the elastic modulus in pascals (Pa), $I$ is the second moment of area in metres to the fourth power ($\text{m}^4$), $L$ is the column length in metres (m), and $K$ is the effective length factor (dimensionless).
 
 Navier-Stokes equations for incompressible flow:
 
 $$\rho\left(\frac{\partial \mathbf{v}}{\partial t} + \mathbf{v}\cdot\nabla\mathbf{v}\right) = -\nabla p + \mu\nabla^2\mathbf{v} + \rho\mathbf{g}$$
 
-where $\rho$ is density in kg/m$^3$, $\mathbf{v}$ is velocity in m/s, $p$ is pressure in Pa, $\mu$ is dynamic viscosity in Pa s, and $\mathbf{g}$ is gravitational acceleration in m/s$^2$.
+where $\rho$ is density in $\text{kg/m}^3$, $\mathbf{v}$ is velocity in m/s, $p$ is pressure in Pa, $\mu$ is dynamic viscosity in Pa s, and $\mathbf{g}$ is gravitational acceleration in $\text{m/s}^2$.
 
 ## Worked example
 
@@ -135,8 +135,8 @@ Euler's buckling result is still the first check on any slender member, from a b
 
 1. A steel column is 2.0 m long, pinned at both ends, with a diameter of 30 mm. Take $E = 200\ \text{GPa}$ and find $P_{\text{cr}}$ in kilonewtons.
 2. A spring has stiffness $k = 400\ \text{N/m}$. It stretches by 0.050 m. Find the force in newtons.
-3. A brick wall is 0.20 m thick, with thermal conductivity $k = 0.80\ \text{W/(m K)}$. The inside is 20 K warmer than the outside. For 1.0 m$^2$ of wall, find the heat flow in watts, using $q = kA\,\Delta T / L$.
-4. Water flows at 0.50 m/s in a horizontal pipe, then speeds up to 3.0 m/s at a narrow section. The density is 1000 kg/m$^3$. Use Bernoulli's principle to find the pressure drop in pascals, ignoring friction.
+3. A brick wall is 0.20 m thick, with thermal conductivity $k = 0.80\ \text{W/(m K)}$. The inside is 20 K warmer than the outside. For 1.0 $\text{m}^2$ of wall, find the heat flow in watts, using $q = kA\,\Delta T / L$.
+4. Water flows at 0.50 m/s in a horizontal pipe, then speeds up to 3.0 m/s at a narrow section. The density is 1000 $\text{kg/m}^3$. Use Bernoulli's principle to find the pressure drop in pascals, ignoring friction.
 5. Short answer: A short, thick column fails by yielding, not buckling. Why does the Euler formula not apply to it?
 
 <details><summary>Answers</summary>

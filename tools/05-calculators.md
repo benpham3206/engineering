@@ -58,7 +58,7 @@ There are no calculator-specific equations, but two habits are worth writing as 
 
 **Assumptions:** Pure torsion, solid circular shaft, steady load.
 
-**Estimate first:** $\omega$ is about $1500 \times 6 / 60 \approx 150$ rad/s, so $T \approx 5000/150 \approx 33$ N m. Then $d^3 \approx 16 \times 33 / (3 \times 4 \times 10^7) \approx 4.4 \times 10^{-6}$ m$^3$, so $d$ is about 16 mm.
+**Estimate first:** $\omega$ is about $1500 \times 6 / 60 \approx 150$ rad/s, so $T \approx 5000/150 \approx 33$ N m. Then $d^3 \approx 16 \times 33 / (3 \times 4 \times 10^7) \approx 4.4 \times 10^{-6}$ $\text{m}^3$, so $d$ is about 16 mm.
 
 **Solution on the calculator:**
 
@@ -70,12 +70,12 @@ There are no calculator-specific equations, but two habits are worth writing as 
 
 **Answer:** $d_{\min} \approx 15.9$ mm. Choose the next standard size up, for example 16 mm or larger after applying a factor of safety.
 
-**Sanity check:** The estimate was about 16 mm and the result is 15.9 mm, about 2 percent apart. The units work out: N m divided by Pa gives m$^3$, and the cube root gives m.
+**Sanity check:** The estimate was about 16 mm and the result is 15.9 mm, about 2 percent apart. The units work out: N m divided by Pa gives $\text{m}^3$, and the cube root gives m.
 
 ## Practice
 
 1. Set your calculator to radians and compute $\sin(30)$. Then set it to degrees and compute it again. Write down both.
-2. A stone falls from rest for 2.5 s with $g = 9.81$ m/s$^2$ (Earth surface). Find the distance fallen, estimating first.
+2. A stone falls from rest for 2.5 s with $g = 9.81$ $\text{m/s}^2$ (Earth surface). Find the distance fallen, estimating first.
 3. How long does an object take to fall 10 m from rest on Earth?
 4. A 120 N force acts at 35 degrees above horizontal. Find its horizontal component.
 5. Find the equivalent resistance of 220 ohm and 330 ohm in parallel, using memory for the intermediate values.

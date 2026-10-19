@@ -32,7 +32,7 @@ Section modulus of a solid rectangle of width $b$ (m) and height $h$ (m), used i
 
 $$S = \frac{b\,h^2}{6} \quad [\mathrm{m^3}]$$
 
-Symbols: $S$ is the section modulus in cubic meters (in$^3$ in US customary units), $b$ is width, $h$ is height.
+Symbols: $S$ is the section modulus in cubic meters ($\text{in}^3$ in US customary units), $b$ is width, $h$ is height.
 
 ## Worked example
 

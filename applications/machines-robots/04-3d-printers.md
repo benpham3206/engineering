@@ -60,11 +60,11 @@ $$f = \frac{v}{\delta x}$$
 
 Here $f$ is in steps per second (Hz). Assumptions: constant speed, with acceleration ignored.
 
-Steady heat loss from a heated surface of area $A$ in square metres (m$^2$) to air at a temperature difference $\Delta T$ in kelvin (K), with **heat transfer coefficient** $h$ in watts per square metre kelvin (W/(m$^2$ K)):
+Steady heat loss from a heated surface of area $A$ in square metres ($\text{m}^2$) to air at a temperature difference $\Delta T$ in kelvin (K), with **heat transfer coefficient** $h$ in watts per square metre kelvin (W/($\text{m}^2$ K)):
 
 $$P = h A \Delta T$$
 
-Assumptions: the surface is at a uniform temperature, the air is still, and $h$ is a typical value of about 10 W/(m$^2$ K) for natural convection. Radiation and conduction into the frame are ignored, so real losses are higher.
+Assumptions: the surface is at a uniform temperature, the air is still, and $h$ is a typical value of about 10 W/($\text{m}^2$ K) for natural convection. Radiation and conduction into the frame are ignored, so real losses are higher.
 
 ## Worked example
 

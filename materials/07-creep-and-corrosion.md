@@ -51,34 +51,34 @@ For two temperatures at the same stress, the ratio of creep rates is
 
 $$\frac{\dot{\varepsilon}_2}{\dot{\varepsilon}_1} = \exp\!\left[\frac{Q}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)\right]$$
 
-Corrosion mass loss rate from **Faraday's law**, for a uniform corrosion current density $i$ (A/cm$^2$) on a metal of molar mass $M$ (g/mol) and valence $n$:
+Corrosion mass loss rate from **Faraday's law**, for a uniform corrosion current density $i$ ($\text{A/cm}^2$) on a metal of molar mass $M$ (g/mol) and valence $n$:
 
 $$\text{mass rate} = \frac{i\, M}{n\, F}, \qquad \text{penetration rate} = \frac{\text{mass rate}}{\rho}$$
 
-where $F = 96\,485$ C/mol is the Faraday constant and $\rho$ is the density (g/cm$^3$).
+where $F = 96\,485$ C/mol is the Faraday constant and $\rho$ is the density ($\text{g/cm}^3$).
 
 ## Worked example
 
-**Given:** Iron (molar mass $M = 55.85$ g/mol, valence $n = 2$, density $\rho = 7.87$ g/cm$^3$) corrodes uniformly in water with a corrosion current density of $i = 1.0 \times 10^{-5}$ A/cm$^2$. This value is an assumed example.
+**Given:** Iron (molar mass $M = 55.85$ g/mol, valence $n = 2$, density $\rho = 7.87$ $\text{g/cm}^3$) corrodes uniformly in water with a corrosion current density of $i = 1.0 \times 10^{-5}$ $\text{A/cm}^2$. This value is an assumed example.
 
-**Find:** (a) the mass loss rate in g/(cm$^2$ year), and (b) the penetration rate in mm/year.
+**Find:** (a) the mass loss rate in g/($\text{cm}^2$ year), and (b) the penetration rate in mm/year.
 
-**Assumptions:** Uniform corrosion, all current from iron dissolving as Fe to Fe$^{2+}$, and a constant current over one year.
+**Assumptions:** Uniform corrosion, all current from iron dissolving as Fe to $\text{Fe}^{2+}$, and a constant current over one year.
 
 **Solution:**
 
-1. Mass rate per second: $\dfrac{i M}{n F} = \dfrac{(1.0 \times 10^{-5})(55.85)}{(2)(96\,485)} = 2.90 \times 10^{-9}$ g/(cm$^2$ s).
+1. Mass rate per second: $\dfrac{i M}{n F} = \dfrac{(1.0 \times 10^{-5})(55.85)}{(2)(96\,485)} = 2.90 \times 10^{-9}$ g/($\text{cm}^2$ s).
 2. Seconds per year: $365.25 \times 24 \times 3600 = 3.156 \times 10^{7}$ s.
-3. Mass loss per year: $2.90 \times 10^{-9} \times 3.156 \times 10^{7} = 0.0913$ g/(cm$^2$ year).
+3. Mass loss per year: $2.90 \times 10^{-9} \times 3.156 \times 10^{7} = 0.0913$ g/($\text{cm}^2$ year).
 4. Penetration rate: $0.0913 / 7.87 = 0.0116$ cm/year $= 0.116$ mm/year.
 
-**Answer:** (a) about 0.091 g/(cm$^2$ year). (b) about 0.12 mm/year.
+**Answer:** (a) about 0.091 g/($\text{cm}^2$ year). (b) about 0.12 mm/year.
 
 **Sanity check:** Iron wall loss of about 0.1 mm per year means a 3 mm plate lasts about 26 years under this uniform attack ($3 / 0.116$). That is the right order of magnitude for mild steel in mild water, so the result is plausible. Pitting would make the local loss much deeper.
 
 ## Practice
 
-1. Using the worked example, what is the penetration rate in mm/year if the corrosion current density doubles to $2.0 \times 10^{-5}$ A/cm$^2$?
+1. Using the worked example, what is the penetration rate in mm/year if the corrosion current density doubles to $2.0 \times 10^{-5}$ $\text{A/cm}^2$?
 2. A creep rate at 900 K is $\dot{\varepsilon}_1$. With $Q = 200$ kJ/mol, what is the ratio $\dot{\varepsilon}_2 / \dot{\varepsilon}_1$ when the temperature rises to 1000 K at the same stress? (Use $R = 8.314$ J/(mol K).)
 3. Name the three stages of a typical creep curve in order.
 4. Two metals touch in seawater. Which one will corrode faster, the anode or the cathode?

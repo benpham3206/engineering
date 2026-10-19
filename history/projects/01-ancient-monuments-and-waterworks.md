@@ -87,7 +87,7 @@ The **Manning equation** estimates the mean velocity in an open channel that flo
 
 $$V = \frac{1}{n} R^{2/3} S^{1/2}$$
 
-where $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient in s/m$^{1/3}$ (typically about 0.013 for finished masonry or concrete), $R = A/P$ is the **hydraulic radius** in metres (m), $A$ is the wetted cross-section area in square metres (m$^2$), $P$ is the **wetted perimeter** in metres (m), and $S$ is the channel slope, a dimensionless ratio of drop to length.
+where $V$ is the mean velocity in metres per second (m/s), $n$ is the Manning roughness coefficient in $\text{s/m}^{1/3}$ (typically about 0.013 for finished masonry or concrete), $R = A/P$ is the **hydraulic radius** in metres (m), $A$ is the wetted cross-section area in square metres ($\text{m}^2$), $P$ is the **wetted perimeter** in metres (m), and $S$ is the channel slope, a dimensionless ratio of drop to length.
 
 Assumptions for the Manning equation: the flow is steady and uniform, so the depth and velocity do not change along the channel. The channel is prismatic, with the same cross-section along its length. The slope is small, so the water surface runs nearly parallel to the bed. The flow is fully turbulent and rough, so $n$ is constant for the given lining.
 
@@ -95,7 +95,7 @@ The flow rate follows from continuity, which assumes the water is incompressible
 
 $$Q = A V$$
 
-where $Q$ is the volume flow rate in cubic metres per second (m$^3$/s).
+where $Q$ is the volume flow rate in cubic metres per second ($\text{m}^3$/s).
 
 The slope comes from the total drop and the channel length, and it assumes the drop is uniform along the channel:
 
@@ -120,7 +120,7 @@ where $\Delta z$ is the fall in metres (m) and $L$ is the channel length in metr
 
 **Answer:** $S = 3.4 \times 10^{-4}$ (about 1 in 2940). $V = 0.53\ \text{m/s}$. $Q = 0.32\ \text{m}^3/\text{s}$.
 
-**Sanity check:** A gradient of 1 in 3000 is very gentle, so a velocity of about half a metre per second is plausible for a channel of this size. A flow of 0.32 m$^3$/s is 320 litres per second, a useful supply for a town. Doubling the depth would not double the flow, because the hydraulic radius and the wetted area change together. Real channels also lost water through leaks and sediment, so the delivered flow was below the calculated value.
+**Sanity check:** A gradient of 1 in 3000 is very gentle, so a velocity of about half a metre per second is plausible for a channel of this size. A flow of 0.32 $\text{m}^3$/s is 320 litres per second, a useful supply for a town. Doubling the depth would not double the flow, because the hydraulic radius and the wetted area change together. Real channels also lost water through leaks and sediment, so the delivered flow was below the calculated value.
 
 ## Design trade-offs
 
@@ -154,7 +154,7 @@ Gravity moves water over long distances if the slope is controlled. The aqueduct
 ## Practice
 
 1. A channel drops 10 m over 20 km. Find the slope $S$ and express it as 1 in $N$.
-2. The channel in the worked example is now $0.6\ \text{m}$ wide with water $0.5\ \text{m}$ deep, and the slope is the same $3.4 \times 10^{-4}$. Find $Q$ in m$^3$/s and in m$^3$ per day.
+2. The channel in the worked example is now $0.6\ \text{m}$ wide with water $0.5\ \text{m}$ deep, and the slope is the same $3.4 \times 10^{-4}$. Find $Q$ in $\text{m}^3$/s and in $\text{m}^3$ per day.
 3. A channel carries $0.25\ \text{m}^3/\text{s}$ continuously. How many cubic metres does it deliver in one day?
 4. The aqueduct falls 17 m over 50 km. Express the slope in metres per kilometre.
 5. Explain in two sentences why a Roman aqueduct needed an inverted siphon where a valley was deep, and why it did not use a siphon for the whole route.

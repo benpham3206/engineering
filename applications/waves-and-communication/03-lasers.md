@@ -28,9 +28,9 @@ Two mirrors form an optical cavity around the gain medium. Light bounces back an
 ### Variants
 
 - **Solid state.** Ruby lasers emit at 694 nm. Nd:YAG lasers emit at 1064 nm and are common in cutting and marking.
-- **Gas.** The helium-neon laser emits at 632.8 nm and is used in alignment and measurement. The carbon dioxide (CO$_2$) laser emits at 10.6 $\mu$m and is used for cutting wood, plastic, and some metals.
+- **Gas.** The helium-neon laser emits at 632.8 nm and is used in alignment and measurement. The carbon dioxide ($\text{CO}_2$) laser emits at 10.6 $\mu\text{m}$ and is used for cutting wood, plastic, and some metals.
 - **Semiconductor diodes.** Small and efficient. They power barcode readers, optical storage, and optical fiber links.
-- **Fiber lasers.** A doped optical fiber is the gain medium. They emit near 1 $\mu$m and are used for industrial metal cutting.
+- **Fiber lasers.** A doped optical fiber is the gain medium. They emit near 1 $\mu\text{m}$ and are used for industrial metal cutting.
 - **Dye lasers.** A liquid dye is the gain medium, and the wavelength can be tuned across a wide range.
 
 ## Key equations
@@ -47,7 +47,7 @@ $$\theta = \frac{\lambda}{\pi w_0}$$
 
 $$z_R = \frac{\pi w_0^2}{\lambda}$$
 
-Intensity at a focused spot, with power $P$ in watts and spot area $A$ in m$^2$, assuming a uniform disk:
+Intensity at a focused spot, with power $P$ in watts and spot area $A$ in $\text{m}^2$, assuming a uniform disk:
 
 $$I = \frac{P}{A}$$
 
@@ -59,7 +59,7 @@ $$L_c = \frac{\lambda^2}{\Delta\lambda}$$
 
 **Given:** A 1 kW laser cutter focuses its beam to a spot 0.1 mm in diameter. Assume all the power reaches the spot, and assume the spot is a uniform disk. The wavelength is 1064 nm.
 
-**Find:** (a) the intensity at the spot in W/cm$^2$, (b) the energy of one photon in joules, and (c) the number of photons arriving per second.
+**Find:** (a) the intensity at the spot in $\text{W/cm}^2$, (b) the energy of one photon in joules, and (c) the number of photons arriving per second.
 
 **Solution:**
 
@@ -74,9 +74,9 @@ $$L_c = \frac{\lambda^2}{\Delta\lambda}$$
 
 ## Design trade-offs
 
-- **Wavelength against absorption.** Metals absorb 1 $\mu$m light well, which suits fiber lasers for metal cutting. Organic materials absorb 10.6 $\mu$m light well, which suits CO$_2$ lasers for wood and plastic.
+- **Wavelength against absorption.** Metals absorb 1 $\mu\text{m}$ light well, which suits fiber lasers for metal cutting. Organic materials absorb 10.6 $\mu\text{m}$ light well, which suits $\text{CO}_2$ lasers for wood and plastic.
 - **Beam quality against power.** A tight, low-divergence beam focuses to a small spot. Higher power often comes with a poorer beam, so the choice depends on the job.
-- **Efficiency.** CO$_2$ lasers convert roughly 10 percent of wall power into light (typical value). Diode and fiber lasers are more efficient, so they need less cooling and less electrical power for the same output.
+- **Efficiency.** $\text{CO}_2$ lasers convert roughly 10 percent of wall power into light (typical value). Diode and fiber lasers are more efficient, so they need less cooling and less electrical power for the same output.
 - **Depth of focus against spot size.** A small spot has a short Rayleigh range. The cutting head must stay within a few millimeters of the work for a clean cut.
 - **Cost and size.** Diode lasers are small and cheap. High-power solid-state and gas lasers need larger power supplies and cooling systems.
 
@@ -87,7 +87,7 @@ $$L_c = \frac{\lambda^2}{\Delta\lambda}$$
 - **Overheating.** Insufficient cooling raises the medium's temperature. Diode wavelength shifts, and output falls. Temperature sensors and interlocks stop the laser before damage.
 
 > [!WARNING]
-> **Eye injury.** Direct and specular reflections can injure the eye. Invisible wavelengths such as 1064 nm and 10.6 $\mu$m give no visible warning. Enclosures, interlocks, and goggles rated for the wavelength exist because of this.
+> **Eye injury.** Direct and specular reflections can injure the eye. Invisible wavelengths such as 1064 nm and 10.6 $\mu\text{m}$ give no visible warning. Enclosures, interlocks, and goggles rated for the wavelength exist because of this.
 
 - **Gradual aging.** Diode output falls slowly over thousands of hours. Power monitoring lets operators replace a laser before the job suffers.
 
@@ -113,7 +113,7 @@ Einstein described stimulated emission in 1917. Charles Townes and Arthur Schawl
 
    </details>
 
-3. A 2 kW beam focuses to a spot 0.2 mm in diameter. Find the intensity in W/cm$^2$, assuming a uniform disk.
+3. A 2 kW beam focuses to a spot 0.2 mm in diameter. Find the intensity in $\text{W/cm}^2$, assuming a uniform disk.
 
    <details><summary>Answers</summary>
 

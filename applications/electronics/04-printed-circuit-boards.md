@@ -15,7 +15,7 @@ A typical board starts as a core of glass-reinforced epoxy laminate, usually FR-
 
 Multilayer boards stack several copper layers with insulating layers between them. Inner layers often hold ground and power **planes**, which are large copper sheets. Planes carry return current with low resistance and give signals a short return path. Copper weight describes the foil thickness. One ounce of copper per square foot is about 35 µm thick (nominal value), and 2 oz is about 70 µm.
 
-The laminate matters too. FR-4 has a glass transition temperature $T_g$ of roughly 130 to 180 °C (typical range), above which it softens and expands more. Higher-$T_g$ materials cost more and tolerate lead-free reflow soldering better.
+The laminate matters too. FR-4 has a glass transition temperature $T_g$ of roughly 130 to 180 °C (typical range), above which it softens and expands more. Materials with a higher $T_g$ cost more and tolerate lead-free reflow soldering better.
 
 ### Main parts
 

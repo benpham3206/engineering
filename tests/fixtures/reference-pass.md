@@ -19,7 +19,7 @@ Variables:
 |---|---|---|
 | $\sigma$ | axial normal stress | Pa |
 | $P$ | axial force | kN |
-| $A$ | cross-section area | m$^{2}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 | $\varepsilon$ | strain | dimensionless |
 
 Holds when: the load acts through the centroid of a uniform bar.

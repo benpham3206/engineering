@@ -52,7 +52,7 @@ The **braking distance** at constant deceleration $a$ from speed $v$ is:
 
 $$s = \frac{v^2}{2 a}$$
 
-where $s$ is the distance in metres, $v$ is the speed in metres per second (m/s), and $a$ is the deceleration in m/s$^2$. Adhesion limits the deceleration. The required adhesion coefficient is $\mu_{\text{req}} = a / g$, where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface).
+where $s$ is the distance in metres, $v$ is the speed in metres per second (m/s), and $a$ is the deceleration in $\text{m/s}^2$. Adhesion limits the deceleration. The required adhesion coefficient is $\mu_{\text{req}} = a / g$, where $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface).
 
 During brake build-up, the train travels at constant speed before braking takes full effect. That distance is $s_d = v t_d$, where $t_d$ is the delay in seconds.
 

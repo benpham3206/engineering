@@ -32,7 +32,7 @@ Crystal structures of common metals (room temperature):
 | FCC | Al, Cu, Ni, austenitic steel | 4 | 0.74 | Usually ductile |
 | HCP | Ti (alpha), Mg, Zn | 6 (hcp cell) | 0.74 | Few slip systems, often less ductile |
 
-- Density of a crystal: $\rho = \dfrac{n M}{V_c N_A}$, where $\rho$ is density (kg/m$^3$), $n$ the atoms per cell, $M$ the molar mass (kg/mol), $V_c$ the cell volume (m$^3$), and $N_A = 6.022 \times 10^{23}$ mol$^{-1}$. Check: alpha iron (BCC, $a = 0.2866$ nm) gives about 7880 kg/m$^3$.
+- Density of a crystal: $\rho = \dfrac{n M}{V_c N_A}$, where $\rho$ is density ($\text{kg/m}^3$), $n$ the atoms per cell, $M$ the molar mass (kg/mol), $V_c$ the cell volume ($\text{m}^3$), and $N_A = 6.022 \times 10^{23}$ $\text{mol}^{-1}$. Check: alpha iron (BCC, $a = 0.2866$ nm) gives about 7880 $\text{kg/m}^3$.
 - The formula holds for ideal lattices. It breaks when vacancies, precipitates, or porosity change the density, which is why cast and sintered parts differ from the crystal value.
 - Hall-Petch: $\sigma_y = \sigma_0 + k_y d^{-1/2}$, where $d$ is grain diameter (m), and $\sigma_0$ and $k_y$ are material constants. The relation holds for grains from micrometres down to about tens of nanometres. It breaks at very fine grains, where grain boundary sliding softens the metal.
 - Strengthening mechanisms all work by blocking dislocation motion: grain refinement, solid solution, precipitates, and cold work.
@@ -41,7 +41,7 @@ Crystal structures of common metals (room temperature):
 
 All values are typical at room temperature, in the stated condition. They are not design minimums. Use "n/a" where the material does not yield in a sharp way. "Not listed" means the value was left out because it is not reliable enough to print. "Code-limited" means the service limit is set by a design code, not by the material alone.
 
-| Material (condition) | $\rho$ (kg/m$^3$) | $E$ (GPa) | $\sigma_y$ (MPa) | $\sigma_u$ (MPa) | Elongation (%) | $\alpha$ (10$^{-6}$/K) | $k$ (W/m K) | Max service (C) |
+| Material (condition) | $\rho$ ($\text{kg/m}^3$) | $E$ (GPa) | $\sigma_y$ (MPa) | $\sigma_u$ (MPa) | Elongation (%) | $\alpha$ ($10^{-6}$/K) | $k$ (W/m K) | Max service (C) |
 |---|---|---|---|---|---|---|---|---|
 | Structural steel (A36 type) | 7850 | 200 | 250 | 400-550 | about 20 | about 12 | about 50 | code-limited |
 | 1018 steel (cold drawn) | 7870 | 205 | 370 | 440 | about 15 | about 11.5 | about 51 | code-limited |
@@ -94,8 +94,8 @@ For an isotropic, linear elastic material, only two independent constants are ne
 - Yield strength $\sigma_y$: for metals without a sharp yield, the 0.2 percent offset method. Low-carbon steel shows a flat yield plateau (Luders bands) before work hardening.
 - Ultimate tensile strength $\sigma_u$: the maximum engineering stress. For ductile metals, necking starts here (Considere criterion).
 - Fracture point: the stress and strain where the specimen separates. Engineering values can drop after necking, so true stress is the better measure of local stress.
-- Resilience (elastic energy per unit volume to yield): $U_r = \dfrac{\sigma_y^2}{2E}$ (J/m$^3$). Useful for springs.
-- Toughness: the area under the stress-strain curve to fracture (J/m$^3$).
+- Resilience (elastic energy per unit volume to yield): $U_r = \dfrac{\sigma_y^2}{2E}$ ($\text{J/m}^3$). Useful for springs.
+- Toughness: the area under the stress-strain curve to fracture ($\text{J/m}^3$).
 - Work hardening (Hollomon form, plastic range): $\sigma_t = K\,\varepsilon_t^{\,n}$, where $K$ is the strength coefficient (MPa) and $n$ the strain hardening exponent (dimensionless). The relation holds for uniform plastic flow before necking.
 - Yield-to-tensile ratio: high ratio (near 1) means little work-hardening margin before a load drop; cold-worked and quenched steels often have high ratios.
 
@@ -118,7 +118,7 @@ Hardness is resistance to local indentation. No hardness scale is an absolute me
 
 ## Ashby performance indices
 
-Use the index as a ranking tool, not as a design value. Higher is better when maximizing. Index units follow the input units, so compare only within one table. The table below uses $\rho$ in g/cm$^3$, $E$ in GPa, and $\sigma_y$ in MPa.
+Use the index as a ranking tool, not as a design value. Higher is better when maximizing. Index units follow the input units, so compare only within one table. The table below uses $\rho$ in $\text{g/cm}^3$, $E$ in GPa, and $\sigma_y$ in MPa.
 
 Common design goals, for a light part with fixed length and load:
 
@@ -159,7 +159,7 @@ The indices hold when the constraint and objective match the index, the section 
 | Yielding (permanent set) | $\sigma_y$ | $\sigma_{\max} \le \sigma_y / N$, with $N$ the design factor |
 | Ductile overload | $\sigma_u$, ductility | Net section stress below $\sigma_u$ with margin |
 | Brittle fracture | $K_{\mathrm{IC}}$, flaw size | Largest flaw below $a_c$ (see fracture section) |
-| Fatigue | Endurance limit or $S$-$N$ curve, notch factor, surface | Stress amplitude under the fatigue limit, or life from $S$-$N$ |
+| Fatigue | Endurance limit or $S\text{-}N$ curve, notch factor, surface | Stress amplitude under the fatigue limit, or life from $S\text{-}N$ |
 | Creep rupture | Creep rate, activation energy, rupture time | Temperature below creep regime, or rupture life above design life |
 | Buckling | $E$ and section stiffness $I$, not $\sigma_y$ | $P_{\text{cr}} = \dfrac{\pi^2 E I}{(K_e L)^2}$, with $K_e$ the effective length factor |
 | Wear | Hardness, lubrication, surface contact stress | Contact pressure against hardness and lubrication regime |
@@ -234,7 +234,7 @@ Qualitative ordering in seawater, from most anodic (least noble, corrodes first)
 - Area ratio: a small anode touching a large cathode corrodes fast. A large anode with a small cathode corrodes slowly.
 - Order within the noble group depends on alloy, condition (active or passive), flow, and temperature. Use ASTM G82 data for measured positions.
 
-Corrosion rate (uniform attack, Faraday's law): mass loss rate $= \dfrac{i\,M}{n\,F}$, where $i$ is the current density (A/cm$^2$), $M$ the molar mass (g/mol), $n$ the valence, and $F = 96\,485$ C/mol. Penetration rate $= \dfrac{\text{mass loss rate}}{\rho}$. Example: iron ($M = 55.85$ g/mol, $n = 2$, $\rho = 7.87$ g/cm$^3$) at $i = 10$ $\mu$A/cm$^2$ corrodes at about 0.12 mm/year. For iron, each 1 $\mu$A/cm$^2$ is about 0.012 mm/year. The rule holds for uniform attack only. Pitting and crevice attack can perforate thin walls long before the average loss looks serious.
+Corrosion rate (uniform attack, Faraday's law): mass loss rate $= \dfrac{i\,M}{n\,F}$, where $i$ is the current density ($\text{A/cm}^2$), $M$ the molar mass (g/mol), $n$ the valence, and $F = 96\,485$ C/mol. Penetration rate $= \dfrac{\text{mass loss rate}}{\rho}$. Example: iron ($M = 55.85$ g/mol, $n = 2$, $\rho = 7.87$ $\text{g/cm}^3$) at $i = 10$ $\mu\text{A}/\text{cm}^2$ corrodes at about 0.12 mm/year. For iron, each 1 $\mu\text{A}/\text{cm}^2$ is about 0.012 mm/year. The rule holds for uniform attack only. Pitting and crevice attack can perforate thin walls long before the average loss looks serious.
 
 ## Corrosion protection options
 
@@ -288,7 +288,7 @@ Before releasing a design:
 ## Sanity checks
 
 - Stiffness: steel about 200 GPa, aluminum about 70 GPa, titanium about 110 GPa, most polymers 1 to 4 GPa. A polymer reading of 200 GPa is a unit error.
-- Density: most metals 2000 to 9000 kg/m$^3$, polymers about 900 to 1600 kg/m$^3$. A value near 1000 for steel means a missing or wrong unit.
+- Density: most metals 2000 to 9000 $\text{kg/m}^3$, polymers about 900 to 1600 $\text{kg/m}^3$. A value near 1000 for steel means a missing or wrong unit.
 - Poisson's ratio: usually 0.2 to 0.4 for common materials; stable isotropic materials lie between -1 and 0.5 (negative values are rare, found in auxetic materials). Above 0.5 means an error.
 - Yield strain for metals: $\sigma_y / E$, usually about 0.001 to 0.005. Steel at 370 MPa gives about 0.0018.
 - Yield below ultimate: for ductile materials $\sigma_y < \sigma_u$. Equal values mean brittle or a bad entry.

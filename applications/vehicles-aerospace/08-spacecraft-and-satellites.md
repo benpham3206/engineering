@@ -61,7 +61,7 @@ Solar array area for a steady electrical load $P_{\text{load}}$ in watts:
 
 $$A = \frac{P_{\text{load}}}{\eta \, S \, f_{\text{deg}} \, \cos\theta}$$
 
-where $A$ is the array area in square metres (m$^2$), $\eta$ is the cell efficiency (dimensionless), $f_{\text{deg}}$ is the fraction of beginning-of-life output left at end of life (dimensionless), and $\theta$ is the angle between the Sun and the array normal in degrees.
+where $A$ is the array area in square metres ($\text{m}^2$), $\eta$ is the cell efficiency (dimensionless), $f_{\text{deg}}$ is the fraction of beginning-of-life output left at end of life (dimensionless), and $\theta$ is the angle between the Sun and the array normal in degrees.
 
 ## Worked example
 
@@ -80,7 +80,7 @@ where $A$ is the array area in square metres (m$^2$), $\eta$ is the cell efficie
 5. Array area at 1 AU: $A = 500 / (0.30 \times 1361 \times 0.80 \times 0.95) = 1.61\ \text{m}^2$.
 6. Array area at 1.52 AU: $A = 500 / (0.30 \times 589 \times 0.80 \times 0.95) = 3.72\ \text{m}^2$.
 
-**Answer:** (a) 244 K, about $-29\ ^\circ\text{C}$. (b) 198 K, about $-75\ ^\circ\text{C}$. (c) 1.61 m$^2$ at 1 AU and 3.72 m$^2$ at 1.52 AU.
+**Answer:** (a) 244 K, about $-29\ ^\circ\text{C}$. (b) 198 K, about $-75\ ^\circ\text{C}$. (c) 1.61 $\text{m}^2$ at 1 AU and 3.72 $\text{m}^2$ at 1.52 AU.
 
 **Sanity check:** The farther plate sees $1/2.31$ of the sunlight, so its temperature falls, and the array area grows by the same factor $2.31$. The ratio $3.72 / 1.61 = 2.31$ matches. A plate in full sun with no coating would run far hotter, so the low absorptance is what keeps it cool.
 
@@ -107,8 +107,8 @@ The Soviet Union launched Sputnik 1 on 4 October 1957, the first artificial sate
 
 ## Practice
 
-1. The solar constant at 1 AU is 1361 W/m$^2$. Find the solar flux at 2 AU.
-2. A 0.50 m$^2$ panel faces the Sun squarely at 1 AU. Find the solar power it intercepts.
+1. The solar constant at 1 AU is 1361 $\text{W/m}^2$. Find the solar flux at 2 AU.
+2. A 0.50 $\text{m}^2$ panel faces the Sun squarely at 1 AU. Find the solar power it intercepts.
 3. A black plate with $\alpha = \varepsilon = 1$ faces the Sun at 1 AU and radiates from one face only. Find its equilibrium temperature in kelvin.
 4. A 1 kW load needs an array with cell efficiency 0.28, end-of-life factor 0.75, and normal incidence at 1 AU. Find the array area.
 5. A plate with $\alpha = 0.25$ and $\varepsilon = 0.85$ radiates from both faces at 1.52 AU. Find its equilibrium temperature in kelvin and in degrees Celsius.
@@ -117,7 +117,7 @@ The Soviet Union launched Sputnik 1 on 4 October 1957, the first artificial sate
 
 1. $S = 1361 / 4 = 340\ \text{W}/\text{m}^2$
 2. $P = 1361 \times 0.50 = 680\ \text{W}$
-3. $T = (1361 / 5.670 \times 10^{-8})^{1/4} \approx 394\ \text{K}$, which is about 121 $^\circ$C
+3. $T = (1361 / 5.670 \times 10^{-8})^{1/4} \approx 394\ \text{K}$, which is about 121 $^\circ\text{C}$
 4. $A = 1000 / (0.28 \times 1361 \times 0.75) \approx 3.5\ \text{m}^2$
 5. $T \approx 198\ \text{K}$, which is about $-75\ ^\circ\text{C}$
 

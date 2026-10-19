@@ -44,11 +44,11 @@ Dimensioning for the shop asks a different question than dimensioning for the de
 
 Holes are the most common source of shop questions. A complete hole callout gives the type, the size, the depth if it is not through, and the thread if it is tapped.
 
-- **Through hole.** A diameter with "THRU," for example "$\text{Ø}6.6$ THRU." The hole goes all the way through the part.
-- **Blind hole.** A diameter and a depth, for example "$\text{Ø}5.0 \times 8$ DEEP." If the depth matters, state whether it is the drilled depth or the full depth including the point. Precise depth also requires the drill point angle.
+- **Through hole.** A diameter with "THRU," for example `⌀6.6 THRU`. The hole goes all the way through the part.
+- **Blind hole.** A diameter and a depth, for example `⌀5.0 × 8 DEEP`. If the depth matters, state whether it is the drilled depth or the full depth including the point. Precise depth also requires the drill point angle.
 - **Counterbore.** A pocket for a socket head screw head. Give the through diameter, the counterbore diameter, the counterbore depth, and the symbol that marks a counterbore. Check the fastener head size before you set the number.
 - **Countersink.** A cone that lets a flat head screw sit flush. Give the through diameter, the countersink diameter at the surface, and the included angle. For most flat head screws the angle is 90 degrees, but check the fastener data.
-- **Tapped hole.** A thread size, pitch, and class, for example "$\mathrm{M6} \times 1.0\text{-6H}$." Give the thread depth and the drilled depth separately, because the tap drill goes deeper than the thread. The metric thread designation and tolerance classes follow ISO 965. The **tap drill** is the hole diameter you drill before tapping.
+- **Tapped hole.** A thread size, pitch, and class, for example `M6 × 1.0-6H`. Give the thread depth and the drilled depth separately, because the tap drill goes deeper than the thread. The metric thread designation and tolerance classes follow ISO 965. The **tap drill** is the hole diameter you drill before tapping.
 - **Hole table.** When there are many holes, put them in a table. One row per hole type, with columns for the ID, the quantity, the feature and size, the depth, and the $x$ and $y$ position from the datums. Each hole gets a letter or number that matches a label on the view.
 
 Rules of thumb for holes:
@@ -61,7 +61,7 @@ Rules of thumb for holes:
 
 The notes block is the place for every instruction that the geometry cannot show. Keep it short, numbered, and specific.
 
-- **Break sharp edges.** "Break all sharp edges" is the usual default. If the size matters, state it, for example "$0.5 \times 45$ degrees chamfer where noted."
+- **Break sharp edges.** "Break all sharp edges" is the usual default. If the size matters, state it, for example `0.5 × 45° CHAMFER`, where noted.
 - **Deburr.** Remove burrs from all machined and cut edges and holes.
 - **Default surface finish.** Give one default, for example "Ra 3.2 um unless noted." Call out tighter finishes on the specific surface.
 - **Default tolerances.** Linear, angular, and hole position defaults, in one place.
@@ -168,7 +168,7 @@ where $D$ and $P$ are in millimetres. The tap drill for a common metric coarse t
 - Datum A is the left edge, datum B is the bottom edge. Datum A-B sets the origin.
 - Corner holes are 15 mm from both adjacent edges. This is a design choice, made here for the example.
 - Bore center is at the middle of the plate.
-- Density of 6061 aluminum is about 2.70 g/cm$^3$ (typical value).
+- Density of 6061 aluminum is about 2.70 $\text{g/cm}^3$ (typical value).
 
 **Solution.**
 
@@ -190,7 +190,7 @@ Calculated values:
 - Smallest edge distance for any hole: 15 mm.
 - Nearest hole to the bore center: 96.2 mm.
 - Hole spacing: 170 mm in $x$ and 90 mm in $y$. The corner-to-corner diagonal is 192.4 mm.
-- Net plate volume after holes: $144\,000 - 1885 - 471 = 141\,644$ mm$^3$.
+- Net plate volume after holes: $144\,000 - 1885 - 471 = 141\,644$ $\text{mm}^3$.
 - Mass: $141\,644 \times 2.70 \times 10^{-3} = 382$ g (about 0.38 kg).
 
 **Drawing content.**
@@ -242,7 +242,7 @@ Each item is a review exercise. Read the drawing or description, find what a fab
 <details><summary>What a good answer includes</summary>
 
 1. Material code, stock size, finish, heat treatment, general tolerance note, units, projection symbol, revision entry, quantity. Each entry is specific, for example "Steel, mild, $150 \times 25 \times 6$ mm bar, as cut, no heat treatment, $\pm 0.1$ mm default."
-2. A full callout such as "$\mathrm{M8} \times 1.25\text{-6H}$, tap drill 6.75 mm, depth 10 mm thread and drill depth stated separately." The minor diameter for $\mathrm{M8} \times 1.25$ is 6.65 mm, and the answer must reach that number and say which drill is used.
+2. A full callout such as `M8 × 1.25-6H`, with a 6.75 mm tap drill and a 10 mm thread depth, and the thread and drill depths stated separately. The minor diameter for $\mathrm{M8} \times 1.25$ is 6.65 mm, and the answer must reach that number and say which drill is used.
 3. Bend allowance of 4.08 mm for one 90 degree bend. The drawing must show the flat size, bend lines, bend direction, inside radius, K-factor or the shop's table, and any hole-to-bend spacing.
 4. The three dimensions 25, 75, and 150 are measured from the same datum. Every hole is located by its own dimension from that datum, so there is no missing dimension and no closed chain. The gap from the last hole to the right edge ($175 - 150 = 25$ mm) is derived. Do not add a right-edge dimension for that last hole as well, because it would be redundant; if the shop needs it, show it as a reference dimension in parentheses.
 

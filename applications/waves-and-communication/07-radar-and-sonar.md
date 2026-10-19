@@ -90,7 +90,7 @@ Solution for (b): $\Delta R = c\tau/2 = 3.00\times10^8 \times 1\times10^{-6} / 2
 
 Solution for (c): $f_d = 2 v f_0 / c = 2 \times 30 \times 10\times10^9 / 3.00\times10^8 = 2000$ Hz, or about 2.0 kHz. The sign is positive because the target approaches.
 
-Answers: (a) about 200 $\mu$s, (b) about 150 m, (c) about 2.0 kHz.
+Answers: (a) about 200 $\mu\text{s}$, (b) about 150 m, (c) about 2.0 kHz.
 
 Sanity check: a 30 m/s target has $v/c = 10^{-7}$. Twice that, times the 10 GHz carrier, gives about 2 kHz, which matches the result.
 
@@ -123,11 +123,11 @@ Christian Hülsmeyer showed a radio-echo device for detecting ships in Germany i
 
 ## Practice
 
-1. A radar receives an echo 80 $\mu$s after the pulse is sent. Find the target range in km. Use $c = 3.00\times10^8$ m/s.
-2. A radar uses a 0.5 $\mu$s pulse. Find its range resolution in metres.
+1. A radar receives an echo 80 $\mu\text{s}$ after the pulse is sent. Find the target range in km. Use $c = 3.00\times10^8$ m/s.
+2. A radar uses a 0.5 $\mu\text{s}$ pulse. Find its range resolution in metres.
 3. A sonar in seawater hears an echo 0.8 s after the ping. Find the distance to the reflector in metres. Use 1500 m/s.
 4. A 10 GHz radar sees a target moving toward it at 50 m/s. Find the Doppler shift in hertz.
-5. A 1 $\mu$s pulse radar cannot separate two targets that are 100 m apart. Explain why, and state the smallest separation it can resolve.
+5. A 1 $\mu\text{s}$ pulse radar cannot separate two targets that are 100 m apart. Explain why, and state the smallest separation it can resolve.
 
 <details><summary>Answers</summary>
 
@@ -135,7 +135,7 @@ Christian Hülsmeyer showed a radio-echo device for detecting ships in Germany i
 2. $\Delta R = c\tau/2 = 3.00\times10^8 \times 0.5\times10^{-6} / 2 = 75$ m.
 3. $R = c_w t / 2 = 1500 \times 0.8 / 2 = 600$ m.
 4. $f_d = 2 v f_0 / c = 2 \times 50 \times 10\times10^9 / 3.00\times10^8 \approx 3300$ Hz, or about 3.3 kHz.
-5. The 1 $\mu$s pulse gives $\Delta R = 150$ m. Two targets 100 m apart fall inside one range cell, so their echoes merge into one. The smallest resolvable separation is about 150 m.
+5. The 1 $\mu\text{s}$ pulse gives $\Delta R = 150$ m. Two targets 100 m apart fall inside one range cell, so their echoes merge into one. The smallest resolvable separation is about 150 m.
 
 </details>
 

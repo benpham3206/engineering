@@ -96,8 +96,8 @@ Worked checks:
 
 - Inverting, $R_{\mathrm{in}} = 4.7$ k, $R_f = 47$ k: $A_v = -10$. Non-inverting with the same values: $A_v = 11$.
 - Summing, $R_1 = 10$ k, $R_2 = 20$ k, $R_f = 10$ k, $V_1 = 1$ V, $V_2 = 0.5$ V: $V_{\mathrm{out}} = -10\text{k}(1/10\text{k} \cdot 1 + 1/20\text{k} \cdot 0.5) = -1.25$ V.
-- Integrator, $R = 10$ k, $C = 1\ \mu$F, constant $V_{\mathrm{in}} = 1$ V: output ramps at $-100$ V/s.
-- Differentiator, $R_f = 10$ k, $C = 1\ \mu$F, $dV_{\mathrm{in}}/dt = 1$ V/ms: $V_{\mathrm{out}} = -10$ V.
+- Integrator, $R = 10$ k, $C = 1\ \mu\text{F}$, constant $V_{\mathrm{in}} = 1$ V: output ramps at $-100$ V/s.
+- Differentiator, $R_f = 10$ k, $C = 1\ \mu\text{F}$, $dV_{\mathrm{in}}/dt = 1$ V/ms: $V_{\mathrm{out}} = -10$ V.
 
 Bandwidth and limits:
 
@@ -155,7 +155,7 @@ MOSFET (N-channel, low-side switch):
 
 - The gate is voltage controlled. DC gate current is near zero, but the gate is capacitive: charging $Q_g$ each switching cycle draws average current $I_g \approx Q_g f_{\mathrm{sw}}$.
 - Use a logic-level MOSFET if the gate drive is 3.3 V or 5 V. Check $R_{\mathrm{ds}(\mathrm{on})}$ at your actual $V_{\mathrm{gs}}$ in the datasheet. A part specified only at 10 V may not fully turn on at 3.3 V.
-- On-state loss: $P = I^2 R_{\mathrm{ds}(\mathrm{on})}$. Example: 5 A through 20 m$\Omega$ gives 0.5 W.
+- On-state loss: $P = I^2 R_{\mathrm{ds}(\mathrm{on})}$. Example: 5 A through 20 $\text{m}\Omega$ gives 0.5 W.
 - A series gate resistor (10 to 100 $\Omega$, typical) damps ringing. A gate pulldown (10 k, typical) holds the device off during reset or boot.
 - Voltage rating: a common rule is to keep the drain voltage rating at 1.5 to 2 times the supply for transient margin. Limit: depends on the expected transients; check the application.
 
@@ -191,7 +191,7 @@ Symbols: $V$ supply volts (V), $R$ armature resistance ($\Omega$), $I$ current (
 - Electrical input $P_{\mathrm{elec}} = V I$. Efficiency $\eta = T\omega / (V I)$. Copper loss $I^2 R$.
 - Worked check: $V = 12$ V, $R = 1.5\ \Omega$, $K_t = K_e = 0.02$ SI. $\omega_0 = 600$ rad/s (5730 rpm), $I_s = 8$ A, $T_s = 0.16$ N m, $P_{\mathrm{max}} = 24$ W at $T = 0.08$ N m, $\omega = 300$ rad/s, where $I = 4$ A.
 - Unit conversion: if $K_e$ is given in V per rpm, multiply by 9.549 to get V s/rad. If $K_t$ is given in oz in/A, multiply by 0.00706 for N m/A. In SI, $K_t$ and $K_e$ have the same numerical value for an ideal motor.
-- Time constants: electrical $\tau_e = L/R$; mechanical $\tau_m = J R / (K_t K_e)$, with $J$ the rotor inertia in kg m$^2$.
+- Time constants: electrical $\tau_e = L/R$; mechanical $\tau_m = J R / (K_t K_e)$, with $J$ the rotor inertia in kg $\text{m}^2$.
 
 Holds when: the motor is brushed or brushless DC with a steady supply, at steady speed, away from the stall region. Breaks when: transients matter (use $\tau_e$ and $\tau_m$), friction and cogging are large at low speed, brush drop matters at low voltage, the winding overheats, or PWM ripple changes the average.
 
@@ -216,7 +216,7 @@ Holds when: the gear train is rigid and efficiency is roughly constant over the 
 ## Motor sizing
 
 1. Define the duty cycle: torque and speed for each phase (acceleration, steady run, deceleration, idle).
-2. Compute the output-side torque for each phase: friction $T_f$, gravity $T_g = m g r$ for a lifted load (use $g$ for the local body; Earth: 9.81 m/s$^2$), and inertial $T_a = J_{\mathrm{total}}\,\alpha$.
+2. Compute the output-side torque for each phase: friction $T_f$, gravity $T_g = m g r$ for a lifted load (use $g$ for the local body; Earth: 9.81 $\text{m/s}^2$), and inertial $T_a = J_{\mathrm{total}}\,\alpha$.
 3. Reflect the output torque to the motor: $T_{\mathrm{motor}} = T_{\mathrm{out}} / (N \eta)$, and reflect inertia as above.
 4. Compute the RMS torque over the cycle: $T_{\mathrm{rms}} = \sqrt{\sum T_i^2 t_i / \sum t_i}$. Basis: winding heating goes as current squared. Limit: valid when $K_t$ is constant and speed-dependent losses are small.
 5. Compare $T_{\mathrm{rms}}$ with the continuous torque rating, the peak torque with the peak rating, and the operating speed with no-load speed at the available voltage.
@@ -262,9 +262,9 @@ Holds when: the fluid is the same, the flow is turbulent enough that efficiency 
 ## System curve and operating point
 
 - System head: $H_{\mathrm{sys}}(Q) = H_{\mathrm{static}} + K Q^2$, where $H_{\mathrm{static}}$ is the elevation and pressure difference in metres of fluid, and $K Q^2$ is friction and minor loss head.
-- Friction and minor loss in pipe form: $K = \dfrac{1}{2 g A^2} \left( f \dfrac{L}{D} + \sum K_m \right)$, with $A$ the pipe area (m$^2$) and $K_m$ the minor loss coefficients (dimensionless).
+- Friction and minor loss in pipe form: $K = \dfrac{1}{2 g A^2} \left( f \dfrac{L}{D} + \sum K_m \right)$, with $A$ the pipe area ($\text{m}^2$) and $K_m$ the minor loss coefficients (dimensionless).
 - Operating point: solve $H_{\mathrm{pump}}(Q) = H_{\mathrm{sys}}(Q)$. The pump runs there, not at its best-efficiency point unless the design put it there.
-- Worked check: $H_{\mathrm{static}} = 5$ m. Friction is 10 m at $Q = 0.010$ m$^3$/s, so $K = 10 / (0.010)^2 = 1 \times 10^5$ m per (m$^3$/s)$^2$. Pump curve $H_{\mathrm{pump}} = 30 - 4 \times 10^5 Q^2$ m. Setting them equal gives $Q^2 = 5 \times 10^{-5}$, so $Q = 7.07 \times 10^{-3}$ m$^3$/s (7.1 L/s) and $H = 10$ m. Check: $30 - 4\times10^5 \times 5\times10^{-5} = 10$ m.
+- Worked check: $H_{\mathrm{static}} = 5$ m. Friction is 10 m at $Q = 0.010$ $\text{m}^3$/s, so $K = 10 / (0.010)^2 = 1 \times 10^5$ $\text{m}/(\text{m}^3/\text{s})^2$. Pump curve $H_{\mathrm{pump}} = 30 - 4 \times 10^5 Q^2$ m. Setting them equal gives $Q^2 = 5 \times 10^{-5}$, so $Q = 7.07 \times 10^{-3}$ $\text{m}^3$/s (7.1 L/s) and $H = 10$ m. Check: $30 - 4\times10^5 \times 5\times10^{-5} = 10$ m.
 - A throttling valve adds loss, which raises $K$ and moves the operating point to lower flow and higher head.
 - Parallel pumps add flows at the same head. Series pumps add heads at the same flow.
 
@@ -273,14 +273,14 @@ Holds when: the flow is steady, friction is quadratic in $Q$ (fully turbulent), 
 ## Heat exchangers (LMTD)
 
 - Heat balance: $\dot{Q} = \dot m_h c_{p,h} (T_{h,\mathrm{in}} - T_{h,\mathrm{out}}) = \dot m_c c_{p,c} (T_{c,\mathrm{out}} - T_{c,\mathrm{in}})$. Units: W, with $\dot m$ in kg/s and $c_p$ in J/(kg K).
-- Overall heat transfer coefficient, per area, plane wall: $\dfrac{1}{U} = \dfrac{1}{h_i} + \dfrac{t}{k} + \dfrac{1}{h_o} + R_{\mathrm{foul}}$, with $U$ in W/(m$^2$ K).
+- Overall heat transfer coefficient, per area, plane wall: $\dfrac{1}{U} = \dfrac{1}{h_i} + \dfrac{t}{k} + \dfrac{1}{h_o} + R_{\mathrm{foul}}$, with $U$ in W/($\text{m}^2$ K).
 - Rate equation: $\dot{Q} = U A \, \Delta T_{\mathrm{lm}}$.
 - Log mean temperature difference: $\Delta T_{\mathrm{lm}} = \dfrac{\Delta T_1 - \Delta T_2}{\ln(\Delta T_1 / \Delta T_2)}$, where $\Delta T_1$ and $\Delta T_2$ are the temperature differences at the two ends. If $\Delta T_1 = \Delta T_2$, then $\Delta T_{\mathrm{lm}} = \Delta T$.
 - Counterflow gives a larger LMTD than parallel flow for the same ends, so it needs less area.
-- Worked check: hot 90 to 60 C, cold 20 to 40 C. Counterflow: $\Delta T_1 = 50$, $\Delta T_2 = 40$, $\Delta T_{\mathrm{lm}} = 44.8$ K. Parallel: $\Delta T_1 = 70$, $\Delta T_2 = 20$, $\Delta T_{\mathrm{lm}} = 39.9$ K. For $\dot Q = 10$ kW and $U = 500$ W/(m$^2$ K), counterflow needs $A = 10\,000 / (500 \times 44.8) = 0.45$ m$^2$.
+- Worked check: hot 90 to 60 C, cold 20 to 40 C. Counterflow: $\Delta T_1 = 50$, $\Delta T_2 = 40$, $\Delta T_{\mathrm{lm}} = 44.8$ K. Parallel: $\Delta T_1 = 70$, $\Delta T_2 = 20$, $\Delta T_{\mathrm{lm}} = 39.9$ K. For $\dot Q = 10$ kW and $U = 500$ W/($\text{m}^2$ K), counterflow needs $A = 10\,000 / (500 \times 44.8) = 0.45$ $\text{m}^2$.
 - Crossflow or multipass: multiply $\Delta T_{\mathrm{lm}}$ by a correction factor $F \le 1$ from the standard charts or formulas. Rule of thumb: avoid designs with $F$ below about 0.75. Basis: the temperature cross becomes severe. Limit: depends on the arrangement.
 - Effectiveness-NTU method when outlet temperatures are unknown: $\mathrm{NTU} = UA / C_{\mathrm{min}}$, $C = \dot m c_p$, $\varepsilon = \dot Q / \dot Q_{\mathrm{max}}$, $\dot Q_{\mathrm{max}} = C_{\mathrm{min}}(T_{h,\mathrm{in}} - T_{c,\mathrm{in}})$. Counterflow with $C_r = C_{\mathrm{min}}/C_{\mathrm{max}} < 1$: $\varepsilon = \dfrac{1 - e^{-\mathrm{NTU}(1-C_r)}}{1 - C_r e^{-\mathrm{NTU}(1-C_r)}}$. With $C_r = 1$: $\varepsilon = \mathrm{NTU} / (1 + \mathrm{NTU})$.
-- Typical overall $U$ (rough, typical, check the design data): liquid to liquid 300 to 3000 W/(m$^2$ K); air to liquid with fins 30 to 100 W/(m$^2$ K), set by the air side; gas to gas 10 to 50 W/(m$^2$ K).
+- Typical overall $U$ (rough, typical, check the design data): liquid to liquid 300 to 3000 W/($\text{m}^2$ K); air to liquid with fins 30 to 100 W/($\text{m}^2$ K), set by the air side; gas to gas 10 to 50 W/($\text{m}^2$ K).
 
 Holds when: steady flow, constant $c_p$ and $U$, and no heat loss to surroundings. Breaks when: $U$ changes with temperature or flow, fouling grows over time, phase change occurs (use $\varepsilon = 1 - e^{-\mathrm{NTU}}$ for a fully condensing or boiling side with $C_r \to 0$), or the required cold outlet would pass above the hot outlet in parallel flow (impossible there; counterflow allows the cold outlet to be hotter than the hot outlet, as long as every local temperature difference stays positive).
 
@@ -292,7 +292,7 @@ Holds when: steady flow, constant $c_p$ and $U$, and no heat loss to surrounding
 - Required sink resistance: $\theta_{\mathrm{SA}} \le \dfrac{T_{j,\mathrm{max}} - T_a}{P} - \theta_{\mathrm{JC}} - \theta_{\mathrm{CS}}$.
 - Worked check: $P = 5$ W, $\theta_{\mathrm{JA}} = 20$ K/W, $T_a = 40$ C. $T_j = 40 + 100 = 140$ C. With an example limit $T_{j,\mathrm{max}} = 125$ C, $\theta_{\mathrm{JA}}$ must be at most $(125 - 40)/5 = 17$ K/W. With $\theta_{\mathrm{JC}} = 3$ K/W and $\theta_{\mathrm{CS}} = 0.5$ K/W, the sink must have $\theta_{\mathrm{SA}} \le 13.5$ K/W. Use the actual $T_{j,\mathrm{max}}$ from the datasheet.
 - Margin: keep $T_j$ at least 10 K below the absolute maximum as a rule of thumb. Basis: reliability and parameter drift. Limit: the reliability target sets the real margin.
-- Convection check: a natural-convection surface with $h = 10$ W/(m$^2$ K) and $A = 0.01$ m$^2$ has $R_{\mathrm{conv}} = 1/(hA) = 10$ K/W. Use lesson-level $h$ values only as orders of magnitude: about 5 to 25 W/(m$^2$ K) for natural air, higher for forced air.
+- Convection check: a natural-convection surface with $h = 10$ W/($\text{m}^2$ K) and $A = 0.01$ $\text{m}^2$ has $R_{\mathrm{conv}} = 1/(hA) = 10$ K/W. Use lesson-level $h$ values only as orders of magnitude: about 5 to 25 W/($\text{m}^2$ K) for natural air, higher for forced air.
 - Transients: a pulse shorter than the thermal time constant sees the transient thermal impedance, not $\theta_{\mathrm{JA}}$. Use the datasheet's transient thermal curves.
 
 Holds when: the heat path is a single dominant path, steady state is reached, and the datasheet $\theta$ matches the board. Breaks when: most heat leaves through the board copper, the datasheet was measured on a different board, the load is pulsed, or radiation is large at high temperature.
@@ -318,7 +318,7 @@ Inverse kinematics (two solutions, elbow up and elbow down):
 Jacobian and singularities:
 
 - $J = \begin{bmatrix} -L_1 \sin\theta_1 - L_2 \sin(\theta_1 + \theta_2) & -L_2 \sin(\theta_1 + \theta_2) \\ L_1 \cos\theta_1 + L_2 \cos(\theta_1 + \theta_2) & L_2 \cos(\theta_1 + \theta_2) \end{bmatrix}$
-- $\det J = L_1 L_2 \sin\theta_2$. Singular at $\theta_2 = 0$ (arm straight, maximum reach) and at $\theta_2 = \pi$ (arm folded, minimum reach). The worked check gives $\det J = 0.04243$ m$^2$ from both forms.
+- $\det J = L_1 L_2 \sin\theta_2$. Singular at $\theta_2 = 0$ (arm straight, maximum reach) and at $\theta_2 = \pi$ (arm folded, minimum reach). The worked check gives $\det J = 0.04243$ $\text{m}^2$ from both forms.
 - Velocity: $\dot{\mathbf{x}} = J \dot{\boldsymbol\theta}$. Static joint torque from tip force $\mathbf F$: $\boldsymbol\tau = J^T \mathbf F$, in N m.
 
 Holds when: links are rigid, the arm is planar, and joint offsets are zero. Breaks when: the motion leaves the plane, joints hit limits, backlash or link flex matter, or the path crosses a singularity (joint speeds blow up near $\det J = 0$).

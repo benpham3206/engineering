@@ -75,7 +75,7 @@ The force that a train must overcome on a grade comes from the component of weig
 
 $$F_{\text{grade}} = m g \sin\theta \approx m g G$$
 
-where $F_{\text{grade}}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $\theta$ is the angle of the slope, and $G$ is the **grade**, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
+where $F_{\text{grade}}$ is the grade force in newtons (N), $m$ is the train mass in kilograms (kg), $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface), $\theta$ is the angle of the slope, and $G$ is the **grade**, the rise over the run as a dimensionless ratio. For grades below about 5 percent, $\sin\theta \approx G$.
 
 Assumptions: the track is straight, the grade is constant, the train moves at constant speed, and rolling resistance and air drag are ignored. The estimate gives only the part of the force due to gravity.
 
@@ -89,7 +89,7 @@ For a lock, the water needed to raise a boat depends on the chamber area and the
 
 $$V = A_{\text{chamber}}\, h_{\text{lift}}$$
 
-where $V$ is the volume of water in cubic metres (m$^3$), $A_{\text{chamber}}$ is the chamber's plan area in square metres (m$^2$), and $h_{\text{lift}}$ is the lift in metres (m). Assumptions: the chamber walls are vertical, the chamber area is constant over the lift, and leakage through the gates is neglected.
+where $V$ is the volume of water in cubic metres ($\text{m}^3$), $A_{\text{chamber}}$ is the chamber's plan area in square metres ($\text{m}^2$), and $h_{\text{lift}}$ is the lift in metres (m). Assumptions: the chamber walls are vertical, the chamber area is constant over the lift, and leakage through the gates is neglected.
 
 ## Worked example
 

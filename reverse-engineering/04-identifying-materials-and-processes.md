@@ -31,7 +31,7 @@ Every part is made from a material and shaped by a process. The material affects
 
 ## Key equations
 
-Density, where $\rho$ is density in grams per cubic centimeter (g/cm$^3$), $m$ is mass in grams, and $V$ is volume in cubic centimeters:
+Density, where $\rho$ is density in grams per cubic centimeter ($\text{g/cm}^3$), $m$ is mass in grams, and $V$ is volume in cubic centimeters:
 
 $$\rho = \frac{m}{V}$$
 
@@ -41,11 +41,11 @@ $$V = V_2 - V_1$$
 
 Typical densities (standard textbook values, which vary by alloy and filler):
 
-- Low-carbon steel: about 7.85 g/cm$^3$
-- Aluminum alloy (such as 6061): about 2.70 g/cm$^3$
-- Zinc alloy (die cast): about 6.6 g/cm$^3$
-- Polypropylene (PP): about 0.90 g/cm$^3$
-- Acrylonitrile butadiene styrene (ABS): about 1.04 g/cm$^3$
+- Low-carbon steel: about 7.85 $\text{g/cm}^3$
+- Aluminum alloy (such as 6061): about 2.70 $\text{g/cm}^3$
+- Zinc alloy (die cast): about 6.6 $\text{g/cm}^3$
+- Polypropylene (PP): about 0.90 $\text{g/cm}^3$
+- Acrylonitrile butadiene styrene (ABS): about 1.04 $\text{g/cm}^3$
 
 ## Worked example
 
@@ -65,19 +65,19 @@ Density:
 
 $$\rho = \frac{53.4}{6.8} = 7.85 \text{ g/cm}^3$$
 
-(b) The density matches low-carbon steel (about 7.85 g/cm$^3$). The magnet sticks, which fits a ferromagnetic steel. Aluminum would give about 2.70 g/cm$^3$, which does not match.
+(b) The density matches low-carbon steel (about 7.85 $\text{g/cm}^3$). The magnet sticks, which fits a ferromagnetic steel. Aluminum would give about 2.70 $\text{g/cm}^3$, which does not match.
 
-**Answer:** The density is 7.85 g/cm$^3$, and the bracket is most likely low-carbon steel.
+**Answer:** The density is 7.85 $\text{g/cm}^3$, and the bracket is most likely low-carbon steel.
 
-**Sanity check:** A 6.8 cm$^3$ block of steel should weigh $6.8 \times 7.85 = 53.4$ g. That is exactly the measured mass, so the two agree.
+**Sanity check:** A 6.8 $\text{cm}^3$ block of steel should weigh $6.8 \times 7.85 = 53.4$ g. That is exactly the measured mass, so the two agree.
 
 ## Practice
 
-1. A sample has a mass of 26.8 g and a volume of 9.9 cm$^3$. What is its density in g/cm$^3$, rounded to 2 decimal places?
-2. Water rises from 50.0 mL to 58.4 mL when a part is dropped in. What is the part's volume in cm$^3$?
-3. A part of 8.4 cm$^3$ has a density of 2.70 g/cm$^3$. What is its mass in grams, rounded to 1 decimal place?
-4. A steel part has a volume of 12.0 cm$^3$. What is its mass in grams, using 7.85 g/cm$^3$?
-5. A part has a mass of 6.6 g and a volume of 1.0 cm$^3$. What is its density in g/cm$^3$?
+1. A sample has a mass of 26.8 g and a volume of 9.9 $\text{cm}^3$. What is its density in $\text{g/cm}^3$, rounded to 2 decimal places?
+2. Water rises from 50.0 mL to 58.4 mL when a part is dropped in. What is the part's volume in $\text{cm}^3$?
+3. A part of 8.4 $\text{cm}^3$ has a density of 2.70 $\text{g/cm}^3$. What is its mass in grams, rounded to 1 decimal place?
+4. A steel part has a volume of 12.0 $\text{cm}^3$. What is its mass in grams, using 7.85 $\text{g/cm}^3$?
+5. A part has a mass of 6.6 g and a volume of 1.0 $\text{cm}^3$. What is its density in $\text{g/cm}^3$?
 
 <details><summary>Answers</summary>
 

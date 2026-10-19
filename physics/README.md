@@ -32,5 +32,11 @@ For quick lookup while working. Each sheet opens with the principles of the fiel
 - [Mechanics reference](reference-mechanics.md): statics, sections, dynamics, stress, beams, buckling, vibrations, controls
 - [Thermal-fluids reference](reference-thermofluids.md): thermodynamics, fluid mechanics, heat transfer
 - [Fields, waves, and space reference](reference-fields-waves-space.md): constants, electromagnetism, waves, optics, orbits, planetary data
+- [Solid mechanics reference](reference-solid-mechanics.md): stress and strain tensors, 3D Hooke's law, energy methods, indeterminate members, thin-walled torsion, thick cylinders, plates, shells, and buckling
+- [Vibrations reference](reference-vibrations.md): single and multi-degree-of-freedom response, isolation, modes, continuous systems, absorbers, damping measurement, and rotor critical speed
+- [Controls reference](reference-controls.md): transfer functions, time response, stability, Routh, root locus, Bode and Nyquist, margins, PID, compensation, state space, and sampled-data control
+- [Heat transfer reference](reference-heat-transfer.md): conduction, resistance networks, fins, transient conduction, convection correlations, boiling, radiation, heat exchangers, and mass-transfer analogies
+- [Compressible flow reference](reference-compressible-flow.md): Mach number, stagnation states, nozzles and choking, normal and oblique shocks, Prandtl-Meyer, Fanno, and Rayleigh flow
+- [Orbital mechanics reference](reference-orbital-mechanics.md): two-body orbits, orbital elements, Kepler's equation, maneuvers and transfers, relative motion, perturbations, and the rocket equation
 
 See also: [math](../math), [materials](../materials), [units](../units), [courses](../courses)

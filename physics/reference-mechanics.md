@@ -3,7 +3,7 @@
 **Type:** reference
 **Verify:** strict
 
-Lookup sheet for statics, rigid-body dynamics, stress and strain, beams, columns, vibration, and second-order control, for an engineer who needs a formula, a value, or a check in the middle of a job.
+Lookup sheet for statics, rigid-body dynamics, stress and strain, beams, and columns, for an engineer who needs a formula, a value, or a check in the middle of a job.
 
 ## Principles
 
@@ -16,7 +16,6 @@ Lookup sheet for statics, rigid-body dynamics, stress and strain, beams, columns
 - Superposition is valid for linear, small-deflection problems. Add the effects of separate loads.
 - Compatibility: displacements must fit together at joints and supports.
 - Units and sign conventions must be consistent within one problem. Pick SI, convert once, and state the sign convention.
-- A linear second-order system is set by its natural frequency and damping ratio. Those two numbers predict its response shape.
 
 ## Statics
 
@@ -153,9 +152,9 @@ expect(exp(q(0.2, "") * 2 * pi), "3.514")
 
 ## Section properties
 
-Area $A$ (m$^{2}$), centroid, and second moments of area $I$ (m$^{4}$) about the centroidal axis. Polar moment $J$ (m$^{4}$) is about the centroid for circular shafts.
+Area $A$ ($\text{m}^{2}$), centroid, and second moments of area $I$ ($\text{m}^{4}$) about the centroidal axis. Polar moment $J$ ($\text{m}^{4}$) is about the centroid for circular shafts.
 
-| Section | $A$ | $I$ about centroid | $S = I/c$ (m$^{3}$) | Other |
+| Section | $A$ | $I$ about centroid | $S = I/c$ ($\text{m}^{3}$) | Other |
 |---|---|---|---|---|
 | Rectangle, width $b$, depth $h$ (bending about axis parallel to $b$) | $bh$ | $\dfrac{bh^3}{12}$ | $\dfrac{bh^2}{6}$ | Centroid at $h/2$ from base |
 | Rectangle about its base edge | $bh$ | $\dfrac{bh^3}{3}$ | | Parallel axis at base |
@@ -174,18 +173,18 @@ I-beam approximation (idealized section: two rectangular flanges of width $b$ an
 
 $$I_x = \frac{bH^3 - (b - t_w)h^3}{12} \qquad A \approx 2bt_f + t_w h$$
 
-- Example: $H = 200$ mm, $b = 100$ mm, $t_f = 10$ mm, $t_w = 6$ mm. Then $h = 180$ mm, $I_x = 2.10 \times 10^7$ mm$^{4}$ ($2098$ cm$^{4}$), $A = 3080$ mm$^{2}$.
+- Example: $H = 200$ mm, $b = 100$ mm, $t_f = 10$ mm, $t_w = 6$ mm. Then $h = 180$ mm, $I_x = 2.10 \times 10^7$ $\text{mm}^{4}$ ($2098$ $\text{cm}^{4}$), $A = 3080$ $\text{mm}^{2}$.
 - Root fillets and rolled tolerances are ignored. Use catalog values for a real rolled shape.
 
 Variables:
 
 | Symbol | Meaning | SI unit |
 |---|---|---|
-| $A$, $A_i$ | cross-section area, and the area of part $i$ of a composite | m$^{2}$ |
+| $A$, $A_i$ | cross-section area, and the area of part $i$ of a composite | $\text{m}^{2}$ |
 | $\bar{y}$, $y_i$ | centroid height of the composite, and of part $i$ | m |
-| $I$, $I_c$, $I_x$ | second moment of area about a parallel axis, the centroidal axis, and the strong axis | m$^{4}$ |
-| $J$ | polar second moment of area | m$^{4}$ |
-| $S$ | section modulus $I/c$, with $c$ the distance to the extreme fibre | m$^{3}$ |
+| $I$, $I_c$, $I_x$ | second moment of area about a parallel axis, the centroidal axis, and the strong axis | $\text{m}^{4}$ |
+| $J$ | polar second moment of area | $\text{m}^{4}$ |
+| $S$ | section modulus $I/c$, with $c$ the distance to the extreme fibre | $\text{m}^{3}$ |
 | $d$ | distance between the centroidal axis and the parallel axis; in the section table, a solid circle's diameter | m |
 | $D$, $d_i$ | outer and inner diameter of a hollow circle | m |
 | $b$, $H$, $h$ | width (rectangle or flange), overall depth of the I-beam, depth of a rectangle or clear web depth | m |
@@ -226,7 +225,7 @@ Variables:
 |---|---|---|
 | $x$, $x_0$ | position now and at $t = 0$ | m |
 | $v$, $v_0$ | velocity now and at $t = 0$ | m/s |
-| $a$ | constant acceleration | m/s$^{2}$ |
+| $a$ | constant acceleration | $\text{m/s}^{2}$ |
 | $t$ | time | s |
 
 Holds when: acceleration is constant along the path.
@@ -243,10 +242,10 @@ Variables:
 |---|---|---|
 | $\mathbf{F}$ | external force on the body | N |
 | $m$ | mass | kg |
-| $\mathbf{a}$ | acceleration of the centre of mass | m/s$^{2}$ |
+| $\mathbf{a}$ | acceleration of the centre of mass | $\text{m/s}^{2}$ |
 | $M_G$ | moment about the centre of mass | N m |
-| $I_G$ | mass moment of inertia about the centre of mass | kg m$^{2}$ |
-| $\alpha$ | angular acceleration | rad/s$^{2}$ |
+| $I_G$ | mass moment of inertia about the centre of mass | kg $\text{m}^{2}$ |
+| $\alpha$ | angular acceleration | $\text{rad/s}^{2}$ |
 
 Holds when: inertial frame, $v \ll c$, and the body mass is constant.
 Breaks when: mass changes (rockets: use $F = \dot{m}v$ terms), relativistic speeds, or non-inertial frames without fictitious forces.
@@ -260,7 +259,7 @@ With non-conservative work (friction, damping):
 
 $$K_1 + U_1 + W_{\text{nc}} = K_2 + U_2$$
 
-- Gravity near a surface: $U = mgh$, with $g$ the local gravitational acceleration. Earth: $g = 9.81$ m/s$^{2}$ (typical).
+- Gravity near a surface: $U = mgh$, with $g$ the local gravitational acceleration. Earth: $g = 9.81$ $\text{m/s}^{2}$ (typical).
 - Spring: $U = \tfrac{1}{2}kx^2$.
 
 Variables:
@@ -272,7 +271,7 @@ Variables:
 | $U$, $U_1$, $U_2$ | potential energy, at state 1 and state 2 | J |
 | $m$ | mass | kg |
 | $v$ | speed | m/s |
-| $g$ | local gravitational acceleration | m/s$^{2}$ |
+| $g$ | local gravitational acceleration | $\text{m/s}^{2}$ |
 | $h$ | height above a chosen datum | m |
 | $k$ | spring stiffness | N/m |
 | $x$ | spring stretch from its free length | m |
@@ -307,7 +306,7 @@ Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $
 
 ### Rotation
 
-- Angular position $\theta$ (rad), velocity $\omega$ (rad/s), acceleration $\alpha$ (rad/s$^{2}$).
+- Angular position $\theta$ (rad), velocity $\omega$ (rad/s), acceleration $\alpha$ ($\text{rad/s}^{2}$).
 - Rolling without slip on a surface: $v_G = \omega r$, $a_G = \alpha r$.
 - Rotational kinetic energy about the centre: $K_{\text{rot}} = \tfrac{1}{2}I_G \omega^2$.
 - Total planar kinetic energy: $K = \tfrac{1}{2}m v_G^2 + \tfrac{1}{2}I_G \omega^2$.
@@ -316,7 +315,7 @@ Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $
 Holds when: planar motion, rigid body, rolling without slip where stated.
 Breaks when: 3D rotation (inertia becomes a tensor and $\omega$ and angular momentum may not align), or slipping (friction work changes the rolling relation).
 
-Worked result. A 10 kg solid disk of radius 0.3 m, pulled with a horizontal 50 N force at its centre and rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ m/s$^{2}$. It needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor on Earth with $N = 98.1$ N.
+Worked result. A 10 kg solid disk of radius 0.3 m, pulled with a horizontal 50 N force at its centre and rolling without slip, has $a_G = F / (\tfrac{3}{2}m) = 3.33$ $\text{m/s}^{2}$. It needs friction of 16.7 N, so $\mu_s \ge 0.17$ on a dry floor on Earth with $N = 98.1$ N.
 
 <details><summary>Verification</summary>
 
@@ -338,7 +337,7 @@ expect(f / N, "0.17")
 
 ### Mass moments of inertia (typical formulas, body mass $m$)
 
-| Body | Axis | $I$ (kg m$^{2}$) |
+| Body | Axis | $I$ (kg $\text{m}^{2}$) |
 |---|---|---|
 | Thin rod, length $L$ | Through centre, perpendicular to rod | $\dfrac{mL^2}{12}$ |
 | Thin rod, length $L$ | Through one end, perpendicular to rod | $\dfrac{mL^2}{3}$ |
@@ -386,7 +385,7 @@ Variables:
 |---|---|---|
 | $\sigma$, $\tau$ | normal and shear stress | Pa |
 | $F$, $V$ | normal and shear force on the cut | N |
-| $A$ | area of the cut | m$^{2}$ |
+| $A$ | area of the cut | $\text{m}^{2}$ |
 | $\varepsilon$ | normal strain | dimensionless |
 | $\delta$, $L$ | change in length and original length | m |
 | $\gamma$ | shear strain | rad |
@@ -412,7 +411,7 @@ Variables:
 |---|---|---|
 | $\sigma$ | axial normal stress | Pa |
 | $P$ | axial force | N |
-| $A$ | cross-section area | m$^{2}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 | $\delta$, $L$ | elongation and length | m |
 | $E$ | Young's modulus | Pa |
 
@@ -434,7 +433,7 @@ Variables:
 | $\tau$, $\tau_{\max}$ | shear stress at radius $r$, and at the surface | Pa |
 | $T$ | torque | N m |
 | $r$, $c$ | radius to the point, outer radius | m |
-| $J$ | polar second moment of area | m$^{4}$ |
+| $J$ | polar second moment of area | $\text{m}^{4}$ |
 | $\phi$ | angle of twist | rad |
 | $L$ | shaft length | m |
 | $G$ | shear modulus | Pa |
@@ -470,7 +469,7 @@ Transverse shear stress (beams):
 
 $$\tau = \frac{VQ}{Ib}$$
 
-- $V$ shear force (N), $Q = \int y\, dA$ first moment of area above the cut (m$^{3}$), $b$ width at the cut (m).
+- $V$ shear force (N), $Q = \int y\, dA$ first moment of area above the cut ($\text{m}^{3}$), $b$ width at the cut (m).
 - Rectangle: $\tau_{\max} = \dfrac{3V}{2A}$ at the neutral axis.
 - Circle: $\tau_{\max} = \dfrac{4V}{3A}$.
 
@@ -481,13 +480,13 @@ Variables:
 | $\sigma$, $\sigma_{\max}$ | bending stress at $y$, and at the extreme fibre | Pa |
 | $M$ | bending moment | N m |
 | $y$, $c$ | distance from the neutral axis, to the extreme fibre | m |
-| $I$ | second moment of area about the neutral axis | m$^{4}$ |
-| $S$ | section modulus $I/c$ | m$^{3}$ |
+| $I$ | second moment of area about the neutral axis | $\text{m}^{4}$ |
+| $S$ | section modulus $I/c$ | $\text{m}^{3}$ |
 | $\tau$, $\tau_{\max}$ | transverse shear stress, and its peak | Pa |
 | $V$ | shear force | N |
-| $Q$ | first moment of the area beyond the cut | m$^{3}$ |
+| $Q$ | first moment of the area beyond the cut | $\text{m}^{3}$ |
 | $b$ | width of the section at the cut | m |
-| $A$ | cross-section area | m$^{2}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 
 Holds when: slender beam (span over depth roughly 10 or more), prismatic, plane sections stay plane, linear elastic.
 Breaks when: deep or short beams (shear is significant; use shear deformation or Timoshenko theory), thin-walled sections (shear flow), or stress concentrations at supports and load points.
@@ -605,9 +604,9 @@ Variables:
 | $\tau_{\max}$ | maximum shear stress | Pa |
 | $P$ | axial force | N |
 | $M$ | bending moment | N m |
-| $A$ | cross-section area | m$^{2}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 | $c$ | distance from the neutral axis to the extreme fibre | m |
-| $I$ | second moment of area about the neutral axis | m$^{4}$ |
+| $I$ | second moment of area about the neutral axis | $\text{m}^{4}$ |
 
 Holds when: ductile material, static load, yield is the failure mode.
 Breaks when: brittle materials (use maximum normal stress or Mohr-Coulomb), fatigue (use a fatigue criterion such as Goodman or Soderberg), or buckling and fracture-mechanics failures.
@@ -631,7 +630,7 @@ check(tresca > vm, "Tresca equivalent stress is the larger, so the more conserva
 
 ## Beams
 
-Deflection and moment formulas for prismatic beams, linear elastic, small slope. $E$ in Pa, $I$ in m$^{4}$, $L$ in m.
+Deflection and moment formulas for prismatic beams, linear elastic, small slope. $E$ in Pa, $I$ in $\text{m}^{4}$, $L$ in m.
 
 | Case | Max moment | Location | Max deflection | Location |
 |---|---|---|---|---|
@@ -670,7 +669,7 @@ Euler critical load for a straight, slender, elastic column with effective lengt
 
 $$P_{cr} = \frac{\pi^2 EI}{(KL)^2} \qquad \sigma_{cr} = \frac{\pi^2 E}{(KL/r)^2} \qquad r = \sqrt{\frac{I}{A}}$$
 
-Here $P_{cr}$ is in N, $E$ in Pa, $I$ the smallest second moment of area in m$^{4}$, $L$ in m, $r$ the radius of gyration in m.
+Here $P_{cr}$ is in N, $E$ in Pa, $I$ the smallest second moment of area in $\text{m}^{4}$, $L$ in m, $r$ the radius of gyration in m.
 
 | End condition | $K$ (ideal) | Shape of buckled column |
 |---|---|---|
@@ -693,8 +692,8 @@ Variables:
 | $P_{cr}$ | critical buckling load | N |
 | $\sigma_{cr}$ | critical average stress $P_{cr}/A$ | Pa |
 | $E$ | Young's modulus | Pa |
-| $I$ | smallest second moment of area of the section | m$^{4}$ |
-| $A$ | cross-section area | m$^{2}$ |
+| $I$ | smallest second moment of area of the section | $\text{m}^{4}$ |
+| $A$ | cross-section area | $\text{m}^{2}$ |
 | $K$ | effective-length factor for the end conditions | dimensionless |
 | $L$ | column length | m |
 | $r$ | radius of gyration $\sqrt{I/A}$ | m |
@@ -738,196 +737,15 @@ check(slender > s_t, "the example rod is Euler-governed")
 
 ## Vibrations
 
-Single-degree-of-freedom spring-mass-damper:
-
-$$m\ddot{x} + c\dot{x} + kx = F(t)$$
-
-Natural frequency and damping ratio:
-
-$$\omega_n = \sqrt{\frac{k}{m}} \quad (\text{rad/s}) \qquad f_n = \frac{\omega_n}{2\pi} \quad (\text{Hz}) \qquad \zeta = \frac{c}{c_{cr}} = \frac{c}{2\sqrt{km}}$$
-
-- $\zeta < 1$ underdamped (rings), $\zeta = 1$ critically damped, $\zeta > 1$ overdamped.
-- Damped frequency (underdamped): $\omega_d = \omega_n\sqrt{1 - \zeta^2}$.
-- Example: $m = 2$ kg, $k = 800$ N/m, $c = 8$ N s/m gives $\omega_n = 20$ rad/s, $\zeta = 0.10$, $\omega_d = 19.9$ rad/s.
-
-Logarithmic decrement (free decay, underdamped; $x_n$ and $x_{n+1}$ successive peaks):
-
-$$\delta = \ln\frac{x_n}{x_{n+1}} = \frac{2\pi\zeta}{\sqrt{1 - \zeta^2}} \qquad \zeta = \frac{\delta}{\sqrt{4\pi^2 + \delta^2}}$$
-
-- Example: $\zeta = 0.10$ gives $\delta = 0.6315$.
-
-Steady harmonic response, $F = F_0\cos\omega t$, $X_0 = F_0/k$, $r = \omega/\omega_n$:
-
-$$\frac{X}{X_0} = \frac{1}{\sqrt{(1 - r^2)^2 + (2\zeta r)^2}}$$
-
-- At $r = 1$: $X/X_0 = 1/(2\zeta)$. Exact peak at $r = \sqrt{1 - 2\zeta^2}$ with magnification $\dfrac{1}{2\zeta\sqrt{1 - \zeta^2}}$.
-
-Transmissibility (force transmitted to the support, or displacement transmitted from a moving base; same expression):
-
-$$TR = \sqrt{\frac{1 + (2\zeta r)^2}{(1 - r^2)^2 + (2\zeta r)^2}}$$
-
-- Example: $\zeta = 0.10$, $r = 2$: $TR = 0.356$ (isolation works). $r = 0.5$: $TR = 1.328$ (amplified).
-- Isolation is effective only for $r > \sqrt{2}$. Lower damping helps isolation at high $r$ and hurts it near resonance.
-
-Variables:
-
-| Symbol | Meaning | SI unit |
-|---|---|---|
-| $m$ | mass | kg |
-| $c$, $c_{cr}$ | viscous damping coefficient, and its critical value $2\sqrt{km}$ | N s/m |
-| $k$ | spring stiffness | N/m |
-| $x$, $x_n$, $x_{n+1}$ | displacement, and two successive peaks | m |
-| $F$, $F_0$ | applied force and its amplitude | N |
-| $t$ | time | s |
-| $\omega_n$, $\omega_d$, $\omega$ | natural, damped, and forcing angular frequency | rad/s |
-| $f_n$ | natural frequency in cycles per second | Hz |
-| $\zeta$ | damping ratio | dimensionless |
-| $\delta$ | logarithmic decrement (not a deflection here) | dimensionless |
-| $X$, $X_0$ | steady amplitude, and static deflection $F_0/k$ | m |
-| $r$ | frequency ratio $\omega/\omega_n$ | dimensionless |
-| $TR$ | transmissibility | dimensionless |
-
-Holds when: linear spring and viscous damper, single degree of freedom, small motion, steady state (transients gone).
-Breaks when: nonlinear stiffness or damping (amplitude-dependent frequency), dry (Coulomb) friction, multiple modes near each other, or time-varying mass or stiffness.
-Source and basis: derived from Newton's second law on the mass with a linear spring and a viscous damper; taught in [Vibrations](13-vibrations.md).
-
-<details><summary>Verification</summary>
-
-```verify
-m = q(2, "kg")
-k = q(800, "N/m")
-c = q(8, "N s/m")
-wn = sqrt(k / m)
-z = c / (2 * sqrt(k * m))
-expect(wn, "20 rad/s")
-expect(z, "0.10")
-expect(wn * sqrt(1 - z**2), "19.9 rad/s")
-expect(2 * pi * z / sqrt(1 - z**2), "0.6315")
-r = q(0.5, "")
-expect(sqrt((1 + (2 * z * 2)**2) / ((1 - 2**2)**2 + (2 * z * 2)**2)), "0.356")
-expect(sqrt((1 + (2 * z * r)**2) / ((1 - r**2)**2 + (2 * z * r)**2)), "1.328")
-```
-
-</details>
+For a single-degree-of-freedom system under an applied force, the motion equation is $m\ddot{x} + c\dot{x} + kx = F(t)$; see the [vibrations reference](reference-vibrations.md) for the remaining vibration formulas.
 
 ## Second-order step metrics
 
-Standard second-order system with unity DC gain:
-
-$$G(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2}$$
-
-Step-response metrics for underdamped ($0 < \zeta < 1$):
-
-| Metric | Formula | Notes |
-|---|---|---|
-| Overshoot | $M_p = \exp\!\left(-\dfrac{\zeta\pi}{\sqrt{1 - \zeta^2}}\right)$ | As a fraction of final value; multiply by 100 for percent |
-| Peak time | $t_p = \dfrac{\pi}{\omega_d}$ | First peak |
-| Rise time, 0 to 100 percent | $t_r = \dfrac{\pi - \arccos\zeta}{\omega_d}$ | The 10 to 90 percent rise time is shorter; simulate it if the spec uses that definition |
-| Settling time, 2 percent | $t_s \approx \dfrac{4}{\zeta\omega_n}$ | Envelope estimate |
-| Settling time, 5 percent | $t_s \approx \dfrac{3}{\zeta\omega_n}$ | Envelope estimate |
-
-Overshoot for common damping ratios (computed):
-
-| $\zeta$ | $M_p$ (percent) | $\omega_n t_p$ | $\omega_n t_r$ (0 to 100 percent) |
-|---|---|---|---|
-| 0.1 | 72.9 | 3.16 | 1.68 |
-| 0.3 | 37.2 | 3.29 | 1.97 |
-| 0.5 | 16.3 | 3.63 | 2.42 |
-| 0.707 | 4.3 | 4.44 | 3.33 |
-
-- Example: $\zeta = 0.3$, $\omega_n = 10$ rad/s. $M_p = 37.2$ percent, $t_p = 0.329$ s, $t_r = 0.197$ s (0 to 100 percent). Simulated 10 to 90 percent rise time is 0.132 s. The envelope estimate $4/(\zeta\omega_n) = 1.33$ s for 2 percent settling is conservative; a simulation gives 1.12 s. The 5 percent estimate $3/(\zeta\omega_n) = 1.0$ s agrees with a simulated 1.01 s.
-- $\zeta \approx 0.707$ is a common design target: low overshoot with reasonable speed.
-- At $\zeta = 1$ or more, there is no overshoot; use the real-root time constants instead.
-
-Variables:
-
-| Symbol | Meaning | SI unit |
-|---|---|---|
-| $G(s)$ | transfer function from input to output | dimensionless |
-| $s$ | Laplace variable | 1/s |
-| $\omega_n$, $\omega_d$ | natural and damped angular frequency | rad/s |
-| $\zeta$ | damping ratio | dimensionless |
-| $M_p$ | overshoot as a fraction of the final value | dimensionless |
-| $t_p$, $t_r$, $t_s$ | peak, rise, and settling time | s |
-
-Holds when: the closed loop is well approximated by a second-order system (dominant poles, no zeros nearby, linear).
-Breaks when: a zero is near the poles (it adds overshoot), there is dead time or a third pole nearby, or the system is nonlinear (saturation, friction). The overshoot formula is only for a step input.
-Source and basis: derived from the inverse Laplace transform of the step response; the settling estimates use the envelope $e^{-\zeta\omega_n t}$. Taught in [Controls](14-controls.md).
-
-<details><summary>Verification</summary>
-
-The simulated times are checked by evaluating the exact underdamped step response $y(t) = 1 - e^{-\zeta\omega_n t}\left(\cos\omega_d t + \frac{\zeta}{\sqrt{1-\zeta^2}}\sin\omega_d t\right)$ at each stated time.
-
-```verify
-given("100", "90")
-z1 = q(0.1, "")
-expect(exp(-z1 * pi / sqrt(1 - z1**2)), "72.9 %")
-expect(pi / sqrt(1 - z1**2), "3.16")
-expect((pi - acos(z1)) / sqrt(1 - z1**2), "1.68")
-z3 = q(0.3, "")
-expect(exp(-z3 * pi / sqrt(1 - z3**2)), "37.2 %")
-expect(pi / sqrt(1 - z3**2), "3.29")
-expect((pi - acos(z3)) / sqrt(1 - z3**2), "1.97")
-z5 = q(0.5, "")
-expect(exp(-z5 * pi / sqrt(1 - z5**2)), "16.3 %")
-expect(pi / sqrt(1 - z5**2), "3.63")
-expect((pi - acos(z5)) / sqrt(1 - z5**2), "2.42")
-z7 = q(0.707, "")
-expect(exp(-z7 * pi / sqrt(1 - z7**2)), "4.3 %")
-expect(pi / sqrt(1 - z7**2), "4.44")
-expect((pi - acos(z7)) / sqrt(1 - z7**2), "3.33")
-wn = q(10, "rad/s")
-wd = wn * sqrt(1 - z3**2)
-expect(pi / wd, "0.329 s")
-expect((pi - acos(z3)) / wd, "0.197 s")
-t10 = q(0.0472644, "s")
-t90 = q(0.1793984, "s")
-y10 = 1 - exp(-z3 * wn * t10) * (cos(wd * t10) + z3 / sqrt(1 - z3**2) * sin(wd * t10))
-y90 = 1 - exp(-z3 * wn * t90) * (cos(wd * t90) + z3 / sqrt(1 - z3**2) * sin(wd * t90))
-check(abs(y10 - 0.1) < 0.00001 and abs(y90 - 0.9) < 0.00001, "t10 and t90 are the 10 and 90 percent crossings")
-expect(t90 - t10, "0.132 s")
-expect(4 / (z3 * wn), "1.33 s")
-expect(3 / (z3 * wn), "1.0 s")
-ts2 = q(1.123, "s")
-ts5 = q(1.0137, "s")
-y2 = 1 - exp(-z3 * wn * ts2) * (cos(wd * ts2) + z3 / sqrt(1 - z3**2) * sin(wd * ts2))
-y5 = 1 - exp(-z3 * wn * ts5) * (cos(wd * ts5) + z3 / sqrt(1 - z3**2) * sin(wd * ts5))
-check(abs(y2 - 1.02) < 0.0001 and abs(y5 - 1.05) < 0.0001, "the settling times sit on the 2 and 5 percent band edges")
-expect(ts2, "1.12 s")
-expect(ts5, "1.01 s")
-```
-
-</details>
+See the matching [second-order step metrics](reference-controls.md#second-order-step-metrics) section in the controls reference.
 
 ## PID effects
 
-Ideal PID: $u(t) = K_p e + K_i \int e\,dt + K_d\,\dfrac{de}{dt}$, error $e = r - y$.
-
-Qualitative effects of increasing each gain alone (typical; interactions exist):
-
-| Gain | Rise time | Overshoot | Settling | Steady error | Stability margin | Noise sensitivity |
-|---|---|---|---|---|---|---|
-| $K_p$ up | Faster | Up | Usually faster, then oscillatory | Down (not removed for a type-0 plant) | Down | Slight |
-| $K_i$ up | Slightly faster | Up | Slower (slow tail) | Removed for step input | Down | Slight |
-| $K_d$ up | Slightly slower | Down | Faster if well damped | No direct effect | Up | Up (amplifies noise) |
-
-Holds when: the plant is linear and roughly second-order or first-order, the measurement is clean, and the loop has modest delay.
-Breaks when: derivative acts on noisy measurement (filter it), integral windup occurs at actuator saturation (clamp or back-calculate), or the loop has significant dead time (the PID gains that work on paper will oscillate in the real plant).
-
-Example (first-order plant, $K = 2$, $\tau = 0.5$ s, P-only, unity feedback, $K_p = 4$): closed-loop gain $K_{cl} = 0.889$, steady error $e_{ss} = 1/(1 + K_pK) = 0.111$, closed-loop time constant $\tau/(1 + K_pK) = 0.0556$ s. A P-only loop leaves steady error for a step; adding $K_i$ removes it.
-
-<details><summary>Verification</summary>
-
-```verify
-K = q(2, "")
-tau = q(0.5, "s")
-Kp = q(4, "")
-expect(Kp * K / (1 + Kp * K), "0.889")
-expect(1 / (1 + Kp * K), "0.111")
-expect(tau / (1 + Kp * K), "0.0556 s")
-```
-
-</details>
+See the matching [PID control](reference-controls.md#pid-control) section in the controls reference.
 
 ## Checklists
 
@@ -964,11 +782,11 @@ Vibration and control:
 
 ## Sanity checks
 
-- Earth gravity is about 9.81 m/s$^{2}$ (typical, varies from about 9.78 to 9.83 with latitude and altitude). Use $g$ local for other bodies.
-- $1$ MPa $= 10^6$ N/m$^{2}$. In US units, 1 MPa is about 145 psi.
+- Earth gravity is about 9.81 $\text{m/s}^{2}$ (typical, varies from about 9.78 to 9.83 with latitude and altitude). Use $g$ local for other bodies.
+- $1$ MPa $= 10^6$ $\text{N/m}^{2}$. In US units, 1 MPa is about 145 psi.
 - Steel at 200 MPa carries strain $200 \times 10^6 / 200 \times 10^9 = 1 \times 10^{-3}$. That is 1 mm per metre.
 - Kinetic energy of 1 kg at 1 m/s is 0.5 J. A 1 kg object at 10 m/s carries 50 J.
-- Stress on a 1 cm$^{2}$ area of 1 MPa corresponds to 100 N of force.
+- Stress on a 1 $\text{cm}^{2}$ area of 1 MPa corresponds to 100 N of force.
 - Shear yield of a ductile metal is about 0.58 times its tensile yield (von Mises, $\sigma_y/\sqrt{3}$). Tresca gives 0.5.
 - For mild steel, a column with $KL/r$ above about 126 is Euler-governed. Below that, use the Johnson parabola, because Euler overpredicts the load.
 - Damping ratio of most structures is roughly 0.01 to 0.05 (typical), so resonance peaks are large unless damping is added.

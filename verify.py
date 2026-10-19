@@ -291,7 +291,10 @@ class Units:
         text = (text or "").strip()
         if text in ("", "1"):
             return Q(1.0)
-        num, _, den = text.partition("/")
+        # The unit's own slash splits numerator from denominator; a slash inside
+        # an exponent (Pa m^1/2) belongs to that power and is kept.
+        parts = re.split(r"(?<!\^\d)(?<!\^-\d)/|(?<=\^\d)/(?!\d)|(?<=\^-\d)/(?!\d)", text, maxsplit=1)
+        num, den = parts[0], parts[1] if len(parts) > 1 else ""
         out = Q(1.0)
         for tok in num.replace("*", " ").replace("\u00b7", " ").split():
             if tok != "1":
@@ -668,6 +671,62 @@ DATE_TRIGGER = re.compile(
 AS_OF = re.compile(r"\(?as of (\d{4})\)?", re.I)
 APPROX = re.compile(r"(?i)\b(about|around|circa|c\.|approximately|roughly)\s")
 SENT_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z*(\[])")
+CONTROL = re.compile("[\x00-\x08\x0b\x0c\x0e-\x1f\t]")
+# Long LaTeX command names that are never plain words inside math. A lost
+# backslash turns k\Omega into kOmega, which renders as italic letters.
+BARE_COMMAND = re.compile(
+    r"(alpha|beta|gamma|delta|epsilon|theta|lambda|sigma|omega|varphi"
+    r"|Omega|Delta|Sigma|Gamma|Lambda|Theta|frac|sqrt|times|cdot|infty|partial|nabla)$")
+
+
+def bare_commands(line):
+    """LaTeX command names missing their backslash inside $...$ spans.
+
+    Each letter run is a token; a run that starts with a backslash is a command
+    and is fine (\\dfrac, \\varepsilon). A run without one that ends in a command
+    name (kOmega, arepsilon, frac) lost its backslash.
+    """
+    s = re.sub(r"`[^`]*`", " ", line)
+    out = []
+    for m in re.finditer(r"\$\$?([^$]+)\$\$?", s):
+        body = re.sub(r"\\(?:text|mathrm|operatorname|mathit|mathbf)\{[^}]*\}", " ", m.group(1))
+        for tok in re.finditer(r"(\\?)([A-Za-z]+)", body):
+            if not tok.group(1) and (b := BARE_COMMAND.search(tok.group(2))):
+                out.append(b.group())
+    return out
+
+
+def unrendered_math(line):
+    """Inline $...$ spans that GitHub shows as raw text.
+
+    GitHub renders inline math only when the opening $ follows whitespace, the
+    line start, "(" or "**", and the closing $ is not followed by a letter or
+    digit. So kg/m$^3$ and $F$s stay raw; write $\\text{kg/m}^3$ and $F\\text{s}$.
+    """
+    s = re.sub(r"`[^`]*`", lambda m: " " * len(m.group()), line)
+    bad, i = [], 0
+    while (a := s.find("$", i)) >= 0:
+        if a and s[a - 1] == "\\":
+            i = a + 1
+            continue
+        if s.startswith("$$", a):
+            b = s.find("$$", a + 2)
+            if b < 0:
+                break
+            i = b + 2
+            continue
+        b = a + 1
+        while (b := s.find("$", b)) > 0 and s[b - 1] == "\\":
+            b += 1
+        if b < 0:
+            break
+        pre, post = s[:a], s[b + 1:b + 2]
+        if (pre and not (pre[-1].isspace() or pre[-1] == "(" or pre.endswith("**"))) or post.isalnum():
+            bad.append(line[max(0, a - 12):b + 3])
+        i = b + 1
+    return bad
+
+
 PLAIN_MATH = re.compile(r"[A-Za-z0-9)\]]\^-?[A-Za-z0-9({]|\bsqrt\(|[\u0391-\u03a9\u03b1-\u03c9\u2264\u2265\u2248\u00b1\u00f7\u221a\u221e\u222b\u2211\u2202\u00d7\u2260]")
 LABEL_LINE = re.compile(r"^\*\*[A-Za-z][A-Za-z ,()-]*:\*\*")
 DEFINITION = re.compile(r"\b(is|are|was|were|means|refers to|describes)\b")
@@ -725,6 +784,15 @@ def check_doc(doc, docs, data, out, stats, prereqs):
                     add(n, "anchor", GATE, f"no heading #{anchor} in {rel(dest)}")
         if DASH.search(line):
             add(n, "dash", GATE, "em or en dash")
+        if CONTROL.search(line) and n not in doc.code:
+            add(n, "control", GATE, "control character (often a collapsed escape: \\t in \\text, \\a in \\arctan, "
+                                    "\\v in \\varepsilon, \\f in \\frac, \\b in \\beta)")
+        if n not in doc.code:
+            for name in bare_commands(line):
+                add(n, "math-render", GATE, f"LaTeX command without its backslash in math: {name!r}")
+        if n not in doc.math:
+            for span in unrendered_math(line):
+                add(n, "math-render", GATE, f"inline math GitHub will not render: {span!r}")
         if not is_meta(doc) and doc.path.parent != DATA and doc.path.parent.parent != DATA:
             if PROCESS.search(line):
                 add(n, "process-note", CONTENT, f"process note: {PROCESS.search(line).group()}")

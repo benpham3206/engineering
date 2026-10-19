@@ -24,8 +24,8 @@ $$
 pV = mRT, \qquad pv = RT, \qquad R = \frac{\bar R}{M}, \qquad \bar R = 8.314\,46\ \text{J/(mol K)}
 $$
 
-- $p$ is absolute pressure (Pa). $V$ is volume (m$^3$). $m$ is mass (kg). $T$ is absolute temperature (K).
-- $v$ is specific volume (m$^3$/kg). Density is $\rho = 1/v$ (kg/m$^3$).
+- $p$ is absolute pressure (Pa). $V$ is volume ($\text{m}^3$). $m$ is mass (kg). $T$ is absolute temperature (K).
+- $v$ is specific volume ($\text{m}^3$/kg). Density is $\rho = 1/v$ ($\text{kg/m}^3$).
 - $M$ is molar mass (kg/mol). $R$ is the specific gas constant (J/(kg K)).
 
 **Holds when:** the gas is far from condensation, $p$ is well below the critical pressure, and $T$ is well above the critical temperature. Dry air and most combustion gases at ambient or moderate conditions qualify.
@@ -102,7 +102,7 @@ Device forms (steady flow, one stream in and out):
 | Nozzle | $q = 0$, $w_s = 0$, $\Delta z$ neglected | $V_2 = \sqrt{V_1^2 + 2(h_1 - h_2)}$; ideal gas: $V_2 = \sqrt{V_1^2 + 2c_p(T_1 - T_2)}$ | Speed rises as enthalpy falls. Check for choking (section on compressible flow). |
 | Turbine | $q \approx 0$, KE and PE negligible | $w_t = h_1 - h_2$; ideal gas: $w_t = c_p(T_1 - T_2)$ | Isentropic efficiency $\eta_t = (h_1 - h_2)/(h_1 - h_{2s})$ |
 | Compressor (gas) | $q \approx 0$ or known, KE and PE negligible | $w_c = h_2 - h_1$ | $\eta_c = (h_{2s} - h_1)/(h_2 - h_1)$. Isentropic exit: $T_{2s} = T_1(p_2/p_1)^{(k-1)/k}$. |
-| Pump (liquid) | Incompressible, adiabatic | $\dot W = \dot V\,\Delta p / \eta_p$ | Ideal: $\dot W = \dot V\,\Delta p$. $\Delta p$ in Pa, $\dot V$ in m$^3$/s. |
+| Pump (liquid) | Incompressible, adiabatic | $\dot W = \dot V\,\Delta p / \eta_p$ | Ideal: $\dot W = \dot V\,\Delta p$. $\Delta p$ in Pa, $\dot V$ in $\text{m}^3$/s. |
 | Heat exchanger | No shaft work, KE and PE negligible | $\dot Q = \dot m_h(h_{h,i} - h_{h,o}) = \dot m_c(h_{c,o} - h_{c,i})$ | Size with LMTD or $\varepsilon$-NTU (see heat transfer). |
 | Throttle (valve, orifice) | $q = 0$, $w_s = 0$, KE and PE negligible | $h_1 = h_2$ (isenthalpic) | Ideal gas: $T_2 = T_1$. Real gas can cool or heat (Joule-Thomson). Entropy rises. |
 
@@ -188,9 +188,9 @@ Water at 20 °C, 1 atm (typical):
 
 | Property | Value |
 |---|---|
-| Density $\rho$ | 998 kg/m$^3$ |
+| Density $\rho$ | 998 $\text{kg/m}^3$ |
 | Dynamic viscosity $\mu$ | $1.00 \times 10^{-3}$ Pa s |
-| Kinematic viscosity $\nu$ | $1.00 \times 10^{-6}$ m$^2$/s |
+| Kinematic viscosity $\nu$ | $1.00 \times 10^{-6}$ $\text{m}^2$/s |
 | Specific heat $c_p$ | 4182 J/(kg K) |
 | Thermal conductivity $k$ | 0.60 W/(m K) |
 | Prandtl number $\mathrm{Pr}$ | 7.0 |
@@ -203,16 +203,16 @@ Air at 20 °C, 1 atm (typical):
 
 | Property | Value |
 |---|---|
-| Density $\rho$ | 1.20 kg/m$^3$ |
+| Density $\rho$ | 1.20 $\text{kg/m}^3$ |
 | Dynamic viscosity $\mu$ | $1.81 \times 10^{-5}$ Pa s |
-| Kinematic viscosity $\nu$ | $1.51 \times 10^{-5}$ m$^2$/s |
+| Kinematic viscosity $\nu$ | $1.51 \times 10^{-5}$ $\text{m}^2$/s |
 | Specific heat $c_p$ | 1005 J/(kg K) |
 | Thermal conductivity $k$ | 0.026 W/(m K) |
 | Prandtl number $\mathrm{Pr}$ | 0.71 |
 | Speed of sound | 343 m/s |
 | Volume expansion $\beta$ | $3.4 \times 10^{-3}$ 1/K (ideal gas, $1/T$) |
 
-- ISA sea-level standard air: $p = 101\,325$ Pa, $T = 288.15$ K, $\rho = 1.225$ kg/m$^3$, speed of sound about 340 m/s.
+- ISA sea-level standard air: $p = 101\,325$ Pa, $T = 288.15$ K, $\rho = 1.225$ $\text{kg/m}^3$, speed of sound about 340 m/s.
 - Water viscosity falls by about a factor of 3 from 20 °C to 80 °C. Air viscosity rises slowly with temperature. Never reuse a 20 °C value at another temperature.
 
 **Holds when:** liquids are treated as incompressible, air as an ideal gas, and the temperature is near the stated one.
@@ -224,7 +224,7 @@ $$
 p = p_\text{atm} + \rho g h, \qquad p_\text{gauge} = \rho g h
 $$
 
-- $h$ is depth below the free surface (m). $g$ is local gravitational acceleration (m/s$^2$). Earth: 9.81. Moon: 1.62. Mars: 3.71 (typical).
+- $h$ is depth below the free surface (m). $g$ is local gravitational acceleration ($\text{m/s}^2$). Earth: 9.81. Moon: 1.62. Mars: 3.71 (typical).
 - Rule of thumb: fresh water adds about 9.8 kPa per metre of depth on Earth. 10 m of water is about 98 kPa gauge, so about 1 atm.
 - Manometer: $p_A - p_B = \sum \rho_i g\,h_i$, with each term signed by whether you move up or down through it.
 
@@ -234,7 +234,7 @@ $$
 F = \rho g h_c A, \qquad y_\text{cp} = y_c + \frac{I_{xc}}{y_c A}
 $$
 
-- $y_\text{cp}$ and $y_c$ are distances measured down the plane from the free-surface line, so the center of pressure lies below the centroid. $I_{xc}$ is the second moment of area about the centroid (m$^4$). For vertical depth on a plate inclined at angle $\theta$ from the horizontal, $h_\text{cp} = h_c + \dfrac{I_{xc}\sin^2\theta}{h_c A}$.
+- $y_\text{cp}$ and $y_c$ are distances measured down the plane from the free-surface line, so the center of pressure lies below the centroid. $I_{xc}$ is the second moment of area about the centroid ($\text{m}^4$). For vertical depth on a plate inclined at angle $\theta$ from the horizontal, $h_\text{cp} = h_c + \dfrac{I_{xc}\sin^2\theta}{h_c A}$.
 
 Buoyancy:
 
@@ -276,7 +276,7 @@ Applications and checks:
 
 - Torricelli (free jet from a tank, ideal): $V = \sqrt{2gh}$. A hole 5.0 m below the surface gives 9.9 m/s. Real sharp-edged orifices have a discharge coefficient near 0.6 (typical), so the real flow is lower.
 - Pitot tube (incompressible): $V = \sqrt{2(p_0 - p)/\rho}$, with $p_0$ the stagnation pressure.
-- Venturi in a horizontal line with $\dot V = 0.010$ m$^3$/s, $D_1 = 0.10$ m, $D_2 = 0.05$ m, water: $p_1 - p_2 \approx 12.2$ kPa. Speeds are 1.27 and 5.09 m/s.
+- Venturi in a horizontal line with $\dot V = 0.010$ $\text{m}^3$/s, $D_1 = 0.10$ m, $D_2 = 0.05$ m, water: $p_1 - p_2 \approx 12.2$ kPa. Speeds are 1.27 and 5.09 m/s.
 
 ## Dimensionless numbers
 
@@ -291,7 +291,7 @@ Applications and checks:
 | Grashof $\mathrm{Gr}$ | $g\beta\Delta T L^3/\nu^2$ | Buoyancy over viscous forces | Sets natural-convection strength | Natural convection |
 | Rayleigh $\mathrm{Ra}$ | $\mathrm{Gr} \cdot \mathrm{Pr} = g\beta\Delta T L^3/(\nu\alpha)$ | Buoyancy over diffusion | Vertical plate: laminar up to about $10^9$, turbulent above (typical) | Natural convection |
 
-- $\alpha = k/(\rho c_p)$ is thermal diffusivity (m$^2$/s). $\beta$ is volume expansion coefficient (1/K).
+- $\alpha = k/(\rho c_p)$ is thermal diffusivity ($\text{m}^2$/s). $\beta$ is volume expansion coefficient (1/K).
 - Rules of use: state the reference length $L$ for every group in a correlation. Use the same $L$ for all groups. Hydraulic diameter $D_h = 4A/P$ replaces $D$ for non-circular ducts.
 - Similarity: a scaled test matches a full-size flow only if the governing groups match (for example $\mathrm{Re}$ for viscous flow, $\mathrm{Ma}$ for compressible flow, $\mathrm{Fr}$ for free-surface flow).
 
@@ -403,175 +403,24 @@ Lift:
 
 - Thin-airfoil theory, small angle $\alpha$ in radians: $C_L \approx 2\pi(\alpha - \alpha_{L=0})$, where $\alpha_{L=0}$ is the zero-lift angle (zero for a symmetric airfoil, so $C_L \approx 2\pi\alpha$; negative for a cambered airfoil). For a symmetric airfoil at $\alpha = 5°$ this gives $C_L \approx 0.55$.
 - Stall: typical airfoils stall near $\alpha = 12°$ to $16°$. Maximum lift coefficient is typically 1.0 to 1.6 (typical).
-- Kutta-Joukowski, per unit span: $L' = \rho V \Gamma$, with circulation $\Gamma$ (m$^2$/s).
+- Kutta-Joukowski, per unit span: $L' = \rho V \Gamma$, with circulation $\Gamma$ ($\text{m}^2$/s).
 
 **Holds when:** steady flow, uniform far-field velocity, a stated Reynolds number range, and attached flow.
 **Breaks when:** the flow is transonic or compressible, the body sheds vortices (vortex-induced vibration), the body is near a wall or the ground, or the flow is unsteady. $C_D$ depends strongly on $\mathrm{Re}$, roughness, and the drag crisis.
 
 ## Compressible flow
 
-Speed of sound:
-
-$$
-a = \sqrt{kRT} \ \ (\text{ideal gas}), \qquad a = \sqrt{K/\rho} \ \ (\text{liquid})
-$$
-
-- $K$ is the bulk modulus (Pa). Water: $K \approx 2.2$ GPa, $a \approx 1480$ m/s.
-- Air: 340 m/s at 15 °C, 343 m/s at 20 °C, 331 m/s at 0 °C (all typical).
-
-Stagnation relations (isentropic, ideal gas, constant $k$):
-
-$$
-\frac{T_0}{T} = 1 + \frac{k-1}{2}\mathrm{Ma}^2, \qquad \frac{p_0}{p} = \left(\frac{T_0}{T}\right)^{k/(k-1)}, \qquad \frac{\rho_0}{\rho} = \left(\frac{T_0}{T}\right)^{1/(k-1)}
-$$
-
-- Stagnation temperature rise for air at 100 m/s: $V^2/(2c_p) \approx 5$ K.
-- Worked check: $\mathrm{Ma} = 0.5$ in air gives $T_0/T = 1.05$ and $p_0/p = 1.19$.
-
-Area-Mach relation (isentropic, for designing converging-diverging nozzles):
-
-$$
-\frac{A}{A^*} = \frac{1}{\mathrm{Ma}}\left[\frac{2}{k+1}\left(1 + \frac{k-1}{2}\mathrm{Ma}^2\right)\right]^{(k+1)/(2(k-1))}
-$$
-
-Check: $\mathrm{Ma} = 2$, $k = 1.4$ gives $A/A^* = 1.69$. $A^*$ is the throat area at $\mathrm{Ma} = 1$.
-
-Choked flow (converging nozzle, ideal gas):
-
-- Choking occurs when the back pressure ratio satisfies $p_b/p_0 \le (2/(k+1))^{k/(k-1)}$. For air ($k = 1.4$) this is 0.528.
-- At choke, $\mathrm{Ma} = 1$ at the throat. Values for air ($k = 1.4$): $T^*/T_0 = 0.833$, $\rho^*/\rho_0 = 0.634$.
-- Maximum mass flow: $\dot m_\text{max} = A^* p_0 \sqrt{k/(RT_0)}\,(2/(k+1))^{(k+1)/(2(k-1))}$.
-- Downstream of a choked throat, pressure changes cannot travel upstream. The mass flow does not rise with a lower back pressure.
-
-Normal shock (ideal gas, air, upstream $\mathrm{Ma} = 2$): $p_2/p_1 = 4.5$, downstream $\mathrm{Ma} = 0.577$. Stagnation pressure drops across the shock, and entropy rises.
-
-**Holds when:** isentropic flow, ideal gas, constant $k$, steady, one-dimensional.
-**Breaks when:** shocks are present (use shock relations and total-pressure loss), the gas is hot enough for $k$ to vary, friction or heat addition is significant (use Fanno or Rayleigh flow), or the gas is real.
+See the [compressible flow reference](reference-compressible-flow.md#speed-of-sound-and-mach-number) for compressible-flow relations and their validity limits.
 
 ## Heat transfer
 
-Governing rates:
+See the [heat transfer reference](reference-heat-transfer.md#governing-energy-equation) for conduction, convection, radiation, and heat exchanger relations.
 
-$$
-q = -kA\frac{dT}{dx}, \qquad q = hA(T_s - T_\infty), \qquad q = \varepsilon\sigma A\left(T_s^4 - T_\text{sur}^4\right)
-$$
-
-- $q$ is heat rate (W). $k$ is thermal conductivity (W/(m K)). $h$ is convection coefficient (W/(m$^2$ K)). $\varepsilon$ is emissivity (dimensionless). $\sigma = 5.670\,37 \times 10^{-8}$ W/(m$^2$ K$^4$). Temperatures in kelvin.
-
-Thermal resistances (steady, one-dimensional, $R$ in K/W):
-
-| Element | Plane wall | Cylinder (length $L$) | Sphere |
-|---|---|---|---|
-| Conduction | $L/(kA)$ | $\ln(r_2/r_1)/(2\pi k L)$ | $(1/r_1 - 1/r_2)/(4\pi k)$ |
-| Convection | $1/(hA)$ | $1/(h\,2\pi r L)$ | $1/(h\,4\pi r^2)$ |
-
-- Series elements add. Parallel paths add their conductances.
-- Critical radius of insulation on a cylinder: $r_\text{cr} = k/h$. On a sphere: $r_\text{cr} = 2k/h$. Below the critical radius, adding insulation increases heat loss.
-
-Radiation:
-
-- Linearized radiation coefficient, valid for a modest temperature difference: $h_r = \varepsilon\sigma(T_s + T_\text{sur})(T_s^2 + T_\text{sur}^2)$. Example: $\varepsilon = 0.9$, $T_s = 350$ K, $T_\text{sur} = 300$ K gives $h_r = 7.0$ W/(m$^2$ K) and a flux of 352 W/m$^2$.
-- Two large parallel gray plates: $q/A = \sigma(T_1^4 - T_2^4)/(1/\varepsilon_1 + 1/\varepsilon_2 - 1)$.
-
-Typical emissivities (typical, near room temperature):
-
-| Surface | $\varepsilon$ |
-|---|---|
-| Polished copper | 0.02 to 0.05 |
-| Polished aluminum | 0.04 to 0.06 |
-| Polished stainless steel | 0.1 to 0.3 |
-| Oxidized steel or cast iron | 0.6 to 0.8 |
-| Concrete | 0.85 to 0.95 |
-| Water | 0.95 to 0.96 |
-| Human skin | 0.95 to 0.98 |
-| Black matte paint | 0.9 to 0.98 |
-
-Typical convection coefficients (typical):
-
-| Situation | $h$ (W/(m$^2$ K)) |
-|---|---|
-| Free convection, air | 2 to 25 |
-| Forced convection, air | 25 to 250 |
-| Free convection, water | 100 to 1000 |
-| Forced convection, water | 500 to 10 000 |
-| Boiling water | 2500 to 35 000 |
-| Condensing steam | 5000 to 100 000 |
-
-Fins (straight fin, uniform $h$ and $k$, thin fin):
-
-$$
-m = \sqrt{\frac{hP}{kA_c}}, \qquad q_f = \sqrt{hPkA_c}\,\theta_b \tanh(mL), \qquad \eta_f = \frac{\tanh(mL)}{mL}
-$$
-
-- $P$ is perimeter (m). $A_c$ is cross-section area (m$^2$). $\theta_b = T_b - T_\infty$ is base excess temperature (K).
-- For a convective tip, use the corrected length $L_c = L + t/2$ in place of $L$ (rectangular fin, typical approximation).
-- Fin effectiveness $\varepsilon_f = q_f/(hA_c\theta_b)$. A fin is worth adding as a rule of thumb only when $\varepsilon_f$ is above about 2 (typical rule).
-
-Lumped capacitance (transient, uniform temperature inside a solid):
-
-$$
-\mathrm{Bi} = \frac{hL_c}{k}, \qquad L_c = \frac{V}{A_s}, \qquad \frac{\theta}{\theta_i} = e^{-t/\tau}, \qquad \tau = \frac{\rho V c}{hA_s}
-$$
-
-- Valid when $\mathrm{Bi} \le 0.1$.
-- Example: a 50 mm aluminum cube ($k = 237$ W/(m K), $\rho = 2700$ kg/m$^3$, $c = 900$ J/(kg K)) in air at $h = 20$ W/(m$^2$ K) has $\mathrm{Bi} = 7 \times 10^{-4}$ and $\tau = 1.0 \times 10^3$ s (about 17 min).
-
-Correlations (smooth surfaces, state the validity):
-
-- Laminar, fully developed, circular tube: $\mathrm{Nu}_D = 3.66$ (constant wall temperature), $\mathrm{Nu}_D = 4.36$ (constant heat flux). Valid for $\mathrm{Re}_D < 2300$.
-- Dittus-Boelter, turbulent internal flow:
+Dittus-Boelter, turbulent internal flow:
 
 $$
 \mathrm{Nu}_D = 0.023\,\mathrm{Re}_D^{0.8}\mathrm{Pr}^n, \qquad n = 0.4 \ (\text{fluid heated}), \quad n = 0.3 \ (\text{fluid cooled})
 $$
-
-  Valid for $\mathrm{Re}_D \ge 10^4$, $0.6 \le \mathrm{Pr} \le 160$, $L/D \ge 10$, smooth tube, moderate temperature difference, properties at bulk mean temperature. Example: $\mathrm{Re} = 5 \times 10^4$, $\mathrm{Pr} = 7$, heated water in a 20 mm tube gives $\mathrm{Nu} = 288$ and $h = 8600$ W/(m$^2$ K).
-- Flat plate, laminar, average over length $L$: $\mathrm{Nu}_L = 0.664\,\mathrm{Re}_L^{1/2}\mathrm{Pr}^{1/3}$, for $\mathrm{Pr} \ge 0.6$ and $\mathrm{Re}_L < 5 \times 10^5$.
-- Flat plate, turbulent from the leading edge, average over length: $\mathrm{Nu}_L = 0.037\,\mathrm{Re}_L^{4/5}\mathrm{Pr}^{1/3}$, for $0.6 \le \mathrm{Pr} \le 60$ and $5 \times 10^5 \le \mathrm{Re}_L \le 10^7$ (typical range).
-- Vertical plate, natural convection, Churchill-Chu, for all $\mathrm{Ra}_L \le 10^{12}$:
-
-$$
-\mathrm{Nu}_L = \left\{0.825 + \frac{0.387\,\mathrm{Ra}_L^{1/6}}{\left[1 + (0.492/\mathrm{Pr})^{9/16}\right]^{8/27}}\right\}^2
-$$
-
-  Example: $\mathrm{Ra}_L = 10^9$, $\mathrm{Pr} = 0.71$ gives $\mathrm{Nu}_L = 123$.
-- Cylinder in crossflow, Churchill-Bernstein, valid for $\mathrm{Re}\,\mathrm{Pr} > 0.2$:
-
-$$
-\mathrm{Nu}_D = 0.3 + \frac{0.62\,\mathrm{Re}^{1/2}\mathrm{Pr}^{1/3}}{\left[1 + (0.4/\mathrm{Pr})^{2/3}\right]^{1/4}}\left[1 + \left(\frac{\mathrm{Re}}{282\,000}\right)^{5/8}\right]^{4/5}
-$$
-
-Rules of thumb:
-
-- Turbulent forced convection: $h \propto V^{0.8}$. Doubling velocity raises $h$ by about 1.7 times. Basis: Dittus-Boelter. Limit: turbulent internal or external flow with the same geometry.
-- Compare $h_r$ with $h$ before neglecting radiation. Radiation matters when $h_r$ is comparable to $h$. Near 350 K, $h_r \approx 7$ W/(m$^2$ K) is already comparable to free convection in air.
-- Insulation performance depends on the thermal resistance of the convection films as well as the insulation. A thin film of still air is a large resistance.
-
-Heat exchangers:
-
-$$
-\dot Q = UA\,F\,\Delta T_{\mathrm{lm}}, \qquad \Delta T_{\mathrm{lm}} = \frac{\Delta T_1 - \Delta T_2}{\ln(\Delta T_1/\Delta T_2)}
-$$
-
-- Counterflow: $\Delta T_1 = T_{h,i} - T_{c,o}$, $\Delta T_2 = T_{h,o} - T_{c,i}$. Parallel flow: $\Delta T_1 = T_{h,i} - T_{c,i}$, $\Delta T_2 = T_{h,o} - T_{c,o}$.
-- Example: $\Delta T_1 = 80$ K, $\Delta T_2 = 30$ K gives $\Delta T_{\mathrm{lm}} = 51.0$ K.
-- Correction factor $F \le 1$ for shell-and-tube or crossflow units, taken from charts or correlations. For counterflow and parallel flow, $F = 1$.
-- Overall coefficient: $1/(UA) = 1/(h_i A_i) + R_\text{wall} + 1/(h_o A_o) + R_f$, where $R_f$ is fouling resistance (K/W).
-
-$\varepsilon$-NTU method (use when outlet temperatures are unknown):
-
-$$
-C_r = \frac{C_\min}{C_\max}, \qquad \mathrm{NTU} = \frac{UA}{C_\min}, \qquad \varepsilon = \frac{\dot Q}{\dot Q_\max}, \qquad \dot Q_\max = C_\min(T_{h,i} - T_{c,i})
-$$
-
-- Counterflow: $\varepsilon = \dfrac{1 - e^{-\mathrm{NTU}(1 - C_r)}}{1 - C_r e^{-\mathrm{NTU}(1 - C_r)}}$ for $C_r < 1$. For $C_r = 1$: $\varepsilon = \mathrm{NTU}/(1 + \mathrm{NTU})$.
-- Parallel flow: $\varepsilon = \dfrac{1 - e^{-\mathrm{NTU}(1 + C_r)}}{1 + C_r}$.
-- Condenser or evaporator (phase change, $C_r = 0$): $\varepsilon = 1 - e^{-\mathrm{NTU}}$.
-- Example: $\mathrm{NTU} = 2$, $C_r = 0.5$. Counterflow gives $\varepsilon = 0.775$ and parallel gives 0.633. For the same $\mathrm{NTU}$, counterflow always gives the higher effectiveness.
-
-**Holds when:** steady, one-dimensional, uniform properties in each element, constant $h$ and $U$ over each surface.
-**Breaks when:** $h$ varies strongly (natural convection on long surfaces, boundary-layer development), there is significant radiation at high temperature, the fluid properties change strongly with temperature, or the problem is transient and not lumped.
-
 ## Checklists
 
 Before trusting a thermodynamic result:
@@ -613,15 +462,15 @@ Before releasing a design:
 - Efficiency is between 0 and 1, and below $1 - T_C/T_H$. An answer above Carnot means a temperature was in Celsius, or a sign is wrong.
 - Gas temperatures: a Celsius temperature in a gas or radiation equation gives a wrong answer by a large factor. Confirm kelvin.
 - Air speed of sound: about 340 to 345 m/s near room temperature. If you get a value far from this, check $T$ and $R$.
-- Air density at 300 K and 100 kPa: about 1.16 kg/m$^3$. Water density: about 1000 kg/m$^3$. A factor of 10 off means a unit error.
+- Air density at 300 K and 100 kPa: about 1.16 $\text{kg/m}^3$. Water density: about 1000 $\text{kg/m}^3$. A factor of 10 off means a unit error.
 - Water column: about 9.8 kPa per metre of depth on Earth. Atmospheric pressure is about 10.3 m of water.
 - Water heat capacity: about 4.2 kJ/(kg K). Warming 1 kg of water by 10 K takes about 42 kJ.
 - Convection: the $h$ for water is roughly 25 to 50 times the $h$ for air at the same flow. A water film is much less of a resistance than an air film.
-- Conduction: 10 m$^2$ of 0.20 m concrete at $k = 1.0$ W/(m K) with a 15 K difference carries 750 W.
+- Conduction: 10 $\text{m}^2$ of 0.20 m concrete at $k = 1.0$ W/(m K) with a 15 K difference carries 750 W.
 - Friction: head loss scales with $V^2$. Doubling the flow multiplies the head loss by about 4 for the same pipe.
 - Compressibility: if $\mathrm{Ma} > 0.3$, expect density changes of several percent and check whether the incompressible formulas still hold.
 - Dimensionless groups: $\mathrm{Nu}$ close to 1 means conduction dominates in the fluid. $\mathrm{Bi}$ much below 0.1 means the solid is nearly uniform in temperature.
-- Radiation: at 350 K against 300 K, $h_r \approx 7$ W/(m$^2$ K) is the same order as natural convection in air. Do not drop it on a hot surface.
+- Radiation: at 350 K against 300 K, $h_r \approx 7$ W/($\text{m}^2$ K) is the same order as natural convection in air. Do not drop it on a hot surface.
 - Lift: $C_L \approx 1$ is a common order of magnitude for a wing near takeoff or landing conditions (typical).
 
 ## Further reference

@@ -39,9 +39,9 @@ These indices assume a light part, meaning the objective is mass and the length 
 
 ### Property table for ranking
 
-Typical values from [Mechanical properties](03-mechanical-properties.md). The indices are computed with $\rho$ in g/cm$^3$ and $E$ and $\sigma_y$ in GPa and MPa. Only the ranking matters, so the units are shown for reference.
+Typical values from [Mechanical properties](03-mechanical-properties.md). The indices are computed with $\rho$ in $\text{g/cm}^3$ and $E$ and $\sigma_y$ in GPa and MPa. Only the ranking matters, so the units are shown for reference.
 
-| Material | $\rho$ (g/cm$^3$) | $E$ (GPa) | $\sigma_y$ (MPa) | $E/\rho$ | $E^{1/2}/\rho$ | $\sigma_y/\rho$ |
+| Material | $\rho$ ($\text{g/cm}^3$) | $E$ (GPa) | $\sigma_y$ (MPa) | $E/\rho$ | $E^{1/2}/\rho$ | $\sigma_y/\rho$ |
 |---|---|---|---|---|---|---|
 | 1018 steel | 7.87 | 205 | 370 | 26.0 | 1.82 | 47.0 |
 | 6061-T6 aluminum | 2.70 | 69 | 276 | 25.6 | 3.08 | 102.2 |
@@ -74,7 +74,7 @@ $$\frac{m_1}{m_2} = \frac{\rho_1 / E_1^{1/2}}{\rho_2 / E_2^{1/2}}$$
 
 ## Worked example
 
-**Given:** A square-section beam of length $L$ must have a fixed bending stiffness. Two candidates are 6061-T6 aluminum ($\rho = 2.70$ g/cm$^3$, $E = 69$ GPa) and 1018 steel ($\rho = 7.87$ g/cm$^3$, $E = 205$ GPa).
+**Given:** A square-section beam of length $L$ must have a fixed bending stiffness. Two candidates are 6061-T6 aluminum ($\rho = 2.70$ $\text{g/cm}^3$, $E = 69$ GPa) and 1018 steel ($\rho = 7.87$ $\text{g/cm}^3$, $E = 205$ GPa).
 
 **Find:** The mass of the aluminum beam as a fraction of the steel beam, at the same stiffness and length.
 
@@ -100,7 +100,7 @@ $$\frac{m_1}{m_2} = \frac{\rho_1 / E_1^{1/2}}{\rho_2 / E_2^{1/2}}$$
 
 <details><summary>Answers</summary>
 
-1. about 2.2 (GPa per g/cm$^3$)
+1. about 2.2 (GPa per $\text{g/cm}^3$)
 2. 1018 steel (26.0, against 25.7 for Ti-6Al-4V)
 3. about 0.75
 4. 6061-T6 aluminum (102.2, against 47.0 for steel)

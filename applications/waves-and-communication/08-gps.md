@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-**GPS** is a satellite navigation system that finds a receiver's position by timing radio signals from satellites that carry atomic clocks. A 1 ns timing error becomes a 0.30 m position error, and clock effects from relativity add about 38 $\mu$s per day that must be corrected, so an engineer must understand the clocks and corrections behind it.
+**GPS** is a satellite navigation system that finds a receiver's position by timing radio signals from satellites that carry atomic clocks. A 1 ns timing error becomes a 0.30 m position error, and clock effects from relativity add about 38 $\mu\text{s}$ per day that must be corrected, so an engineer must understand the clocks and corrections behind it.
 
 Positioning accuracy depends on clocks, orbits, the atmosphere, and the receiver's geometry.
 
@@ -63,7 +63,7 @@ $$d = c\,\delta t$$
 
 This assumes the clock error $\delta t$ is a pure time offset in seconds, and it is the distance error the receiver would make in a single pseudorange.
 
-Orbital speed of a circular orbit, with $GM = 3.986 \times 10^{14}$ m$^3$/s$^2$ (typical value for Earth) and $r$ the orbit radius in metres:
+Orbital speed of a circular orbit, with $GM = 3.986 \times 10^{14}$ $\text{m}^3/\text{s}^2$ (typical value for Earth) and $r$ the orbit radius in metres:
 
 $$v = \sqrt{\frac{GM}{r}}$$
 
@@ -85,19 +85,19 @@ Both effects are fractions of the clock rate. Multiply by the number of seconds 
 
 ## Worked example
 
-**Part A: relativity correction.** A GPS satellite is in a circular orbit with radius $r = 26\,560$ km (typical value). Earth's mean radius is $R = 6371$ km (typical value), $GM = 3.986 \times 10^{14}$ m$^3$/s$^2$, and $c = 2.998 \times 10^8$ m/s. Find the orbital speed, the clock rate change from motion, the clock rate change from gravity, and the net change per day.
+**Part A: relativity correction.** A GPS satellite is in a circular orbit with radius $r = 26\,560$ km (typical value). Earth's mean radius is $R = 6371$ km (typical value), $GM = 3.986 \times 10^{14}$ $\text{m}^3/\text{s}^2$, and $c = 2.998 \times 10^8$ m/s. Find the orbital speed, the clock rate change from motion, the clock rate change from gravity, and the net change per day.
 
 Orbital speed: $v = \sqrt{GM/r} = \sqrt{3.986\times10^{14} / 2.656\times10^7} = 3874$ m/s, which is about 3.9 km/s.
 
-Motion effect: $\Delta f/f = -v^2 / (2c^2) = -7.21\ \mu\text{s}$ per day. The satellite clock loses about 7.2 $\mu$s per day.
+Motion effect: $\Delta f/f = -v^2 / (2c^2) = -7.21\ \mu\text{s}$ per day. The satellite clock loses about 7.2 $\mu\text{s}$ per day.
 
-Gravity effect: $\Delta f/f = (GM/c^2)(1/R - 1/r) = +45.72\ \mu\text{s}$ per day. The satellite clock gains about 45.7 $\mu$s per day.
+Gravity effect: $\Delta f/f = (GM/c^2)(1/R - 1/r) = +45.72\ \mu\text{s}$ per day. The satellite clock gains about 45.7 $\mu\text{s}$ per day.
 
-Net effect: $+45.72 - 7.21 = +38.5\ \mu\text{s}$ per day. The satellite clock runs fast by about 38.5 $\mu$s per day compared with a ground clock.
+Net effect: $+45.72 - 7.21 = +38.5\ \mu\text{s}$ per day. The satellite clock runs fast by about 38.5 $\mu\text{s}$ per day compared with a ground clock.
 
-**Part B: timing error as distance.** A timing error of 1 ns in a pseudorange gives a range error of $d = c\,\delta t = 2.998\times10^8 \times 1\times10^{-9} = 0.30$ m. A clock bias of 38.5 $\mu$s gives a pseudorange bias of $2.998\times10^8 \times 38.5\times10^{-6} = 11\,542$ m, which is about 11.5 km. A bias common to all satellites is absorbed by the receiver clock unknown, so it does not move the position by itself. But the satellite clocks must still agree with each other, or the pseudoranges become inconsistent and position errors build up, by roughly this size per day of uncorrected drift.
+**Part B: timing error as distance.** A timing error of 1 ns in a pseudorange gives a range error of $d = c\,\delta t = 2.998\times10^8 \times 1\times10^{-9} = 0.30$ m. A clock bias of 38.5 $\mu\text{s}$ gives a pseudorange bias of $2.998\times10^8 \times 38.5\times10^{-6} = 11\,542$ m, which is about 11.5 km. A bias common to all satellites is absorbed by the receiver clock unknown, so it does not move the position by itself. But the satellite clocks must still agree with each other, or the pseudoranges become inconsistent and position errors build up, by roughly this size per day of uncorrected drift.
 
-**Answers:** (A) orbital speed about 3874 m/s; the motion effect is $-7.2\ \mu$s per day, the gravity effect is $+45.7\ \mu$s per day, and the net effect is $+38.5\ \mu$s per day. (B) 1 ns is 0.30 m, and an uncorrected 38.5 $\mu$s per day satellite clock drift is a pseudorange error of about 11.5 km per day, which becomes a comparable position error because it is not common to the receiver clock.
+**Answers:** (A) orbital speed about 3874 m/s; the motion effect is $-7.2\ \mu\text{s}$ per day, the gravity effect is $+45.7\ \mu\text{s}$ per day, and the net effect is $+38.5\ \mu\text{s}$ per day. (B) 1 ns is 0.30 m, and an uncorrected 38.5 $\mu\text{s}$ per day satellite clock drift is a pseudorange error of about 11.5 km per day, which becomes a comparable position error because it is not common to the receiver clock.
 
 **Sanity check:** The orbital speed of 3.9 km/s and the gravity effect matching the known order of tens of microseconds per day both fit the expected values. A 1 ns error being about 30 cm also matches the familiar rule of thumb that light covers 30 cm in a nanosecond.
 
@@ -114,7 +114,7 @@ Net effect: $+45.72 - 7.21 = +38.5\ \mu\text{s}$ per day. The satellite clock ru
 - Ionospheric delay: the ionosphere slows the signal and adds several metres of error, more at low elevation angles and during solar storms.
 - Multipath: signals reflect off buildings, water, and terrain before they reach the antenna. The reflected path is longer, so it adds error. Careful antenna design and choke rings reduce it.
 - Clock drift and orbit error: the satellite clock drifts between corrections, and the orbit model is imperfect. Ground corrections keep these errors small, but they grow between uploads.
-- Uncorrected relativity: the 38.5 $\mu$s daily offset would grow to about 11.5 km per day. The system corrects it before launch and in software.
+- Uncorrected relativity: the 38.5 $\mu\text{s}$ daily offset would grow to about 11.5 km per day. The system corrects it before launch and in software.
 - Jamming and spoofing: a weak GPS signal is easy to block or fake. Warning signs include sudden jumps in position, a clock that disagrees with time servers, and a sudden loss of satellites.
 - Geometry: satellites clustered in one part of the sky spread out the error. Receivers report a **dilution of precision (DOP)** value to show the geometry quality.
 
@@ -129,7 +129,7 @@ The United States Department of Defense developed GPS, called NAVSTAR GPS, from 
 1. A timing error of 1 ns occurs in a receiver. Find the position error in metres.
 2. A receiver clock is 50 ns off. Find the range error in metres.
 3. A receiver measures a signal transit time of 0.075 s. Find the pseudorange in km, using $c = 2.998 \times 10^8$ m/s.
-4. The special relativity effect alone on a satellite moving at 3874 m/s changes the clock rate by $-v^2/(2c^2)$. Find the change per day in $\mu$s.
+4. The special relativity effect alone on a satellite moving at 3874 m/s changes the clock rate by $-v^2/(2c^2)$. Find the change per day in $\mu\text{s}$.
 5. Explain why a receiver needs four satellites, not three, to find a position in three dimensions.
 
 <details><summary>Answers</summary>
@@ -137,7 +137,7 @@ The United States Department of Defense developed GPS, called NAVSTAR GPS, from 
 1. $d = c\,\delta t = 2.998\times10^8 \times 1\times10^{-9} = 0.30$ m.
 2. $d = 2.998\times10^8 \times 50\times10^{-9} = 14.99$ m, or about 15.0 m.
 3. $\rho = c\,t = 2.998\times10^8 \times 0.075 = 2.248\times10^7$ m, or about 22 480 km.
-4. $-v^2/(2c^2) \times 86\,400$ s $= -7.2\ \mu$s per day.
+4. $-v^2/(2c^2) \times 86\,400$ s $= -7.2\ \mu\text{s}$ per day.
 5. The receiver has four unknowns: three position coordinates and its clock error. Three satellites give three equations, which cannot solve for four unknowns. The fourth satellite supplies the missing equation, so the receiver can solve for the clock error and the position together.
 
 </details>

@@ -55,7 +55,7 @@ Plants also differ by how they use water. A run-of-river plant has little storag
 
 $$P_{\mathrm{hyd}} = \rho g Q H$$
 
-where $\rho$ is the water density in kilograms per cubic metre (kg/m$^3$), $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface), $Q$ is the volume flow rate in cubic metres per second (m$^3$/s), and $H$ is the net head in metres (m).
+where $\rho$ is the water density in kilograms per cubic metre ($\text{kg/m}^3$), $g$ is the local gravitational acceleration (9.81 $\text{m/s}^2$ at Earth's surface), $Q$ is the volume flow rate in cubic metres per second ($\text{m}^3$/s), and $H$ is the net head in metres (m).
 
 Turbine output, in watts:
 
@@ -73,7 +73,7 @@ Energy stored in a volume of water $V$ at head $H$, in joules:
 
 $$E = \rho g V H$$
 
-where $V$ is the volume in cubic metres (m$^3$). Dividing by 3.6 million converts joules to kilowatt-hours.
+where $V$ is the volume in cubic metres ($\text{m}^3$). Dividing by 3.6 million converts joules to kilowatt-hours.
 
 Ideal jet speed from a Pelton nozzle, in metres per second, before nozzle losses:
 

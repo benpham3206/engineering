@@ -59,7 +59,7 @@ This assumes the same thin closed cylinder with end caps that carry the axial lo
 
 The thin-wall formulas hold when the wall is thin compared with the radius, which is $t/r$ below about 0.1.
 
-Bending stress in a stringer or spar cap, with $M$ the bending moment in N m, $y$ the distance from the neutral axis in metres, and $I$ the second moment of area in m$^4$:
+Bending stress in a stringer or spar cap, with $M$ the bending moment in N m, $y$ the distance from the neutral axis in metres, and $I$ the second moment of area in $\text{m}^4$:
 
 $$\sigma = \frac{M\,y}{I}$$
 
@@ -71,7 +71,7 @@ $$\text{MS} = \frac{\sigma_y}{\sigma} - 1$$
 
 This assumes a single static load case, a uniform stress field at the point checked, and that yield is the failure criterion. It does not cover fatigue or buckling.
 
-Crack growth in fatigue, the **Paris law**, with $a$ the crack length in metres, $N$ the number of load cycles, $\Delta K$ the stress intensity range in Pa$\sqrt{\text{m}}$, and $C$ and $m$ material constants:
+Crack growth in fatigue, the **Paris law**, with $a$ the crack length in metres, $N$ the number of load cycles, $\Delta K$ the stress intensity range in $\text{Pa}\sqrt{\text{m}}$, and $C$ and $m$ material constants:
 
 $$\frac{da}{dN} = C\,(\Delta K)^m, \qquad \Delta K = \Delta\sigma\sqrt{\pi a}$$
 

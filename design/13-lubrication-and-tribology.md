@@ -42,7 +42,7 @@ The **specific film thickness** $\lambda$ compares the film to the roughness: $\
 
 ### Viscosity
 
-**Dynamic viscosity** ($\mu_o$, SI unit Pa s) is the shear stress needed per unit velocity gradient. A fluid between a plate moving at speed $U$ and a fixed plate a gap $h$ away carries a shear stress $\tau = \mu_o U / h$ if the velocity varies linearly (simple Couette flow). **Kinematic viscosity** ($\nu$, SI unit m$^2$/s) is $\mu_o/\rho$, which sets how a fluid flows under its own weight. The common unit centistoke is 1 mm$^2$/s.
+**Dynamic viscosity** ($\mu_o$, SI unit Pa s) is the shear stress needed per unit velocity gradient. A fluid between a plate moving at speed $U$ and a fixed plate a gap $h$ away carries a shear stress $\tau = \mu_o U / h$ if the velocity varies linearly (simple Couette flow). **Kinematic viscosity** ($\nu$, SI unit $\text{m}^2$/s) is $\mu_o/\rho$, which sets how a fluid flows under its own weight. The common unit centistoke is 1 $\text{mm}^2$/s.
 
 Viscosity falls steeply as an oil warms. A two-constant model that fits mineral oils well over a limited range is $\mu_o = A \exp(B/T)$, with $T$ in kelvin (an Andrade form, valid for narrow ranges). A bearing that runs hotter than designed has a thinner oil film, and a small increase in temperature moves the bearing left on the Stribeck curve. Viscosity also rises with pressure, which is what makes EHL work.
 
@@ -71,7 +71,7 @@ A large $S$ (high viscosity, high speed, light load) means a thick film and a sh
 
 ## Key equations
 
-Symbols: $F$ = friction force (N), $N_\text{n}$ = normal force (N), $\mu$ = coefficient of friction (dimensionless), $\mu_o$ = dynamic viscosity (Pa s), $U$ = sliding speed (m/s), $h$ = gap (m), $\rho$ = density (kg/m$^3$), $N$ = shaft speed (rev/s, which is 1/s for these formulas), $W$ = bearing load (N), $L$ = bearing length (m), $D$ = journal diameter (m), $r$ = journal radius (m), $c$ = radial clearance (m), $P$ = projected pressure (Pa).
+Symbols: $F$ = friction force (N), $N_\text{n}$ = normal force (N), $\mu$ = coefficient of friction (dimensionless), $\mu_o$ = dynamic viscosity (Pa s), $U$ = sliding speed (m/s), $h$ = gap (m), $\rho$ = density ($\text{kg/m}^3$), $N$ = shaft speed (rev/s, which is 1/s for these formulas), $W$ = bearing load (N), $L$ = bearing length (m), $D$ = journal diameter (m), $r$ = journal radius (m), $c$ = radial clearance (m), $P$ = projected pressure (Pa).
 
 Coulomb friction (dry contact, a first model):
 
@@ -216,7 +216,7 @@ check(m3 < m1 and m3 > m2, "70 C value lies between the measurements")
 ## Practice
 
 1. A steel block pressed with 500 N slides on a dry steel plate with $\mu = 0.15$. Find the friction force in N.
-2. An oil has dynamic viscosity 0.060 Pa s and density 870 kg/m$^3$. Find its kinematic viscosity in mm$^2$/s (centistokes).
+2. An oil has dynamic viscosity 0.060 Pa s and density 870 $\text{kg/m}^3$. Find its kinematic viscosity in $\text{mm}^2$/s (centistokes).
 3. Two plates 0.10 mm apart have oil of viscosity 0.050 Pa s between them. One moves at 2.0 m/s relative to the other. Find the shear stress in kPa.
 4. A bearing film has minimum thickness 0.80 micrometres. The surfaces have root-mean-square roughness 0.40 and 0.30 micrometres. Find $\lambda$ and state the regime.
 5. A bearing's oil warms so that its viscosity halves, while the speed is doubled and the load is unchanged. Find the ratio of the new Sommerfeld number to the old, and say what this implies for the friction coefficient from Petroff's equation.
@@ -224,7 +224,7 @@ check(m3 < m1 and m3 > m2, "70 C value lies between the measurements")
 <details><summary>Answers</summary>
 
 1. 75 N
-2. 69.0 mm$^2$/s
+2. 69.0 $\text{mm}^2$/s
 3. 1.0 kPa
 4. $\lambda = 1.6$, the mixed regime (between 1 and 3).
 5. The ratio is 1.00. Petroff's friction coefficient depends on $\mu_o N/P$, which is unchanged, so $f$ is unchanged at the same $r/c$.
@@ -248,7 +248,7 @@ expect(q(0.5, "") * q(2, ""), "1.00", ans=5)
 
 - Applying $F = \mu N$ with a dry coefficient to a lubricated contact. The friction of a fluid film depends on viscosity, speed, and load, not on a constant $\mu$.
 - Using the viscosity at the supply temperature. The film is hotter, and the viscosity at film temperature, not the reservoir temperature, sets the result.
-- Mixing units for viscosity (Pa s, centipoise, centistoke) and confusing dynamic with kinematic viscosity. Centipoise is $10^{-3}$ Pa s; centistoke is 1 mm$^2$/s.
+- Mixing units for viscosity (Pa s, centipoise, centistoke) and confusing dynamic with kinematic viscosity. Centipoise is $10^{-3}$ Pa s; centistoke is 1 $\text{mm}^2$/s.
 - Using speed in rpm in $S$. The formula needs rev/s, so that the group is dimensionless.
 - Treating Petroff's friction as a design value for a loaded bearing. It assumes a concentric shaft. A loaded shaft runs eccentric, which raises friction and lowers the minimum film.
 

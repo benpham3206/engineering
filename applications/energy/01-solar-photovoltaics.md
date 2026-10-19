@@ -62,13 +62,13 @@ Efficiency, a dimensionless ratio:
 
 $$\eta = \frac{P_{\mathrm{max}}}{G \, A}$$
 
-where $G$ is the incident irradiance in watts per square metre (W/m$^2$) and $A$ is the module area in square metres (m$^2$). The **standard test condition** is $G = 1000\ \text{W}/\text{m}^2$ at a cell temperature of 25 °C.
+where $G$ is the incident irradiance in watts per square metre ($\text{W/m}^2$) and $A$ is the module area in square metres ($\text{m}^2$). The **standard test condition** is $G = 1000\ \text{W}/\text{m}^2$ at a cell temperature of 25 °C.
 
 Array peak power, in watts peak (Wp):
 
 $$P_{\mathrm{pk}} = N \, A \, G_{\mathrm{STC}} \, \eta$$
 
-where $N$ is the number of modules (dimensionless), $A$ is the area of one module in m$^2$, $G_{\mathrm{STC}} = 1000\ \text{W}/\text{m}^2$, and $\eta$ is the module efficiency.
+where $N$ is the number of modules (dimensionless), $A$ is the area of one module in $\text{m}^2$, $G_{\mathrm{STC}} = 1000\ \text{W}/\text{m}^2$, and $\eta$ is the module efficiency.
 
 Daily energy yield, in kilowatt-hours per day:
 

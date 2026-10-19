@@ -42,7 +42,7 @@ $$
 i = \prod_k i_k = \prod_k \frac{N_{\mathrm{out},k}}{N_{\mathrm{in},k}}
 $$
 
-Output speed and output torque, with $n$ in rpm, $T$ in N$\cdot$m, and the overall efficiency $\eta$ dimensionless:
+Output speed and output torque, with $n$ in rpm, $T$ in $\text{N}\cdot\text{m}$, and the overall efficiency $\eta$ dimensionless:
 
 $$
 n_{\mathrm{out}} = \frac{n_{\mathrm{in}}}{i}, \qquad T_{\mathrm{out}} = \eta\, i\, T_{\mathrm{in}}
@@ -62,7 +62,7 @@ $$
 m_t = \frac{m_n}{\cos\psi}, \qquad d = m_t N, \qquad F_t = \frac{2T}{d}, \qquad F_a = F_t \tan\psi, \qquad F_r = \frac{F_t \tan\phi_n}{\cos\psi}
 $$
 
-Here $d$ is in metres when $T$ is in N$\cdot$m and $F_t$ is in N. The forces are tangential $F_t$, axial $F_a$, and radial $F_r$, all in N.
+Here $d$ is in metres when $T$ is in $\text{N}\cdot\text{m}$ and $F_t$ is in N. The forces are tangential $F_t$, axial $F_a$, and radial $F_r$, all in N.
 
 Bevel pair with shaft angle $\Sigma$ and ratio $u = N_2 / N_1$, giving pitch cone angles $\gamma_1$ and $\gamma_2$ in radians or degrees:
 
@@ -80,7 +80,7 @@ The lead angle is $\lambda$, and the friction angle is $\varphi$. The drive is s
 
 ## Worked example
 
-**Given.** A motor turns at $n_{\mathrm{in}} = 1800$ rpm and delivers $T_{\mathrm{in}} = 2.0$ N$\cdot$m. The train has two spur stages. Stage 1 has a pinion of 18 teeth and a gear of 54 teeth. Stage 2 has a pinion of 20 teeth and a gear of 60 teeth. Each mesh has $\eta_k = 0.98$.
+**Given.** A motor turns at $n_{\mathrm{in}} = 1800$ rpm and delivers $T_{\mathrm{in}} = 2.0$ $\text{N}\cdot\text{m}$. The train has two spur stages. Stage 1 has a pinion of 18 teeth and a gear of 54 teeth. Stage 2 has a pinion of 20 teeth and a gear of 60 teeth. Each mesh has $\eta_k = 0.98$.
 
 **Find.** The total ratio, the output speed, the output torque, and the output power when the input power is $P_{\mathrm{in}}$.
 
@@ -94,17 +94,17 @@ Step 2. Output speed: $n_{\mathrm{out}} = 1800 / 9.000 = 200.0$ rpm.
 
 Step 3. Overall efficiency: $\eta = 0.98^2 = 0.9604$.
 
-Step 4. Output torque: $T_{\mathrm{out}} = 0.9604 \times 9.000 \times 2.0 = 17.29$ N$\cdot$m.
+Step 4. Output torque: $T_{\mathrm{out}} = 0.9604 \times 9.000 \times 2.0 = 17.29$ $\text{N}\cdot\text{m}$.
 
 Step 5. Input power: $\omega_{\mathrm{in}} = 1800 \times 2\pi / 60 = 188.5$ rad/s, so $P_{\mathrm{in}} = 2.0 \times 188.5 = 377.0$ W.
 
 Step 6. Output power: $\omega_{\mathrm{out}} = 200.0 \times 2\pi / 60 = 20.94$ rad/s, so $P_{\mathrm{out}} = 17.29 \times 20.94 = 362.1$ W.
 
-**Answer.** Ratio 9.000. Output speed 200 rpm. Output torque 17.29 N$\cdot$m. Output power 362.1 W, which is $0.9604$ of the 377.0 W input.
+**Answer.** Ratio 9.000. Output speed 200 rpm. Output torque 17.29 $\text{N}\cdot\text{m}$. Output power 362.1 W, which is $0.9604$ of the 377.0 W input.
 
-**Sanity check.** The output torque is below the ideal $9 \times 2.0 = 18.0$ N$\cdot$m because of the losses, and the output power is $0.9604 \times 377.0 = 362.1$ W, so the energy balance holds.
+**Sanity check.** The output torque is below the ideal $9 \times 2.0 = 18.0$ $\text{N}\cdot\text{m}$ because of the losses, and the output power is $0.9604 \times 377.0 = 362.1$ W, so the energy balance holds.
 
-For the helical case, take a pinion with $m_n = 2.0$ mm, $\psi = 20$ degrees, $\phi_n = 20$ degrees, $N = 24$ teeth, and a torque of 30 N$\cdot$m. The transverse module is $m_t = 2.128$ mm, the pitch diameter is 51.08 mm, the tangential force is 1174.6 N, the axial thrust is 427.5 N, and the radial force is 455.0 N. The axial thrust is large, so the shaft needs a bearing that carries thrust.
+For the helical case, take a pinion with $m_n = 2.0$ mm, $\psi = 20$ degrees, $\phi_n = 20$ degrees, $N = 24$ teeth, and a torque of 30 $\text{N}\cdot\text{m}$. The transverse module is $m_t = 2.128$ mm, the pitch diameter is 51.08 mm, the tangential force is 1174.6 N, the axial thrust is 427.5 N, and the radial force is 455.0 N. The axial thrust is large, so the shaft needs a bearing that carries thrust.
 
 For a worm with two starts, $p_x = 2\pi$ mm, and a 40 mm worm pitch diameter, the lead angle is $\lambda = 5.71$ degrees. A wheel of 40 teeth gives a ratio of 20. With $\mu = 0.05$, the efficiency is 0.663. With $\mu = 0.10$, the efficiency falls to 0.495, and the lead angle equals the friction angle, which marks the edge of self-locking.
 
@@ -136,14 +136,14 @@ The Antikythera mechanism, a bronze device recovered from a shipwreck off the Gr
 ## Practice
 
 1. A pinion of 20 teeth drives a gear of 60 teeth. The input speed is 900 rpm. Find the output speed.
-2. A gear mesh has a ratio of 5 and a mesh efficiency of 0.98. The input torque is 4 N$\cdot$m. Find the output torque.
+2. A gear mesh has a ratio of 5 and a mesh efficiency of 0.98. The input torque is 4 $\text{N}\cdot\text{m}$. Find the output torque.
 3. A helical pinion has a normal module of 2.5 mm and a helix angle of 25 degrees. Find the transverse module to three decimal places.
 4. A worm lead angle is $\lambda = 4.57$ degrees, and the friction angle is $\varphi = 5.71$ degrees. Is the drive self-locking?
 
 <details><summary>Answers</summary>
 
 1. $n_{\mathrm{out}} = 900 \times 20 / 60 = 300$ rpm.
-2. $T_{\mathrm{out}} = 0.98 \times 5 \times 4 = 19.6$ N$\cdot$m.
+2. $T_{\mathrm{out}} = 0.98 \times 5 \times 4 = 19.6$ $\text{N}\cdot\text{m}$.
 3. $m_t = 2.5 / \cos 25^\circ = 2.758$ mm.
 4. Yes. $\lambda < \varphi$ means the wheel cannot drive the worm.
 

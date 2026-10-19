@@ -107,7 +107,7 @@ Fractional clock error $\varepsilon$ (dimensionless) accumulates a time error $\
 
 **Answer:** at room temperature the qubit is excited half the time, so it carries no usable information. At 20 mK it is in the ground state with a probability of nearly 1, with an excited-state residue of about 6 parts in a million.
 
-**Sanity check:** the gap in temperature units, 0.24 K, is far below 300 K and far above 20 mK, which matches the two outcomes. The 5 GHz gap corresponds to a photon energy of about 21 $\mu$eV, tiny against the roughly 26 meV of thermal energy at 300 K.
+**Sanity check:** the gap in temperature units, 0.24 K, is far below 300 K and far above 20 mK, which matches the two outcomes. The 5 GHz gap corresponds to a photon energy of about 21 $\mu\text{eV}$, tiny against the roughly 26 meV of thermal energy at 300 K.
 
 <details><summary>Verification</summary>
 
@@ -140,7 +140,7 @@ check(P1 > 0.4 and P2 < 1e-4, "room temperature mixes the states and 20 mK leave
 
 ## Design trade-offs
 
-Designers balance the number of qubits against the quality of each. Error rates per gate and coherence times set how many operations a qubit can take part in before the state decays. As an illustration, not a device, a coherence time of 100 $\mu$s with 50 ns gates allows about 2000 operations. Longer programs need error correction.
+Designers balance the number of qubits against the quality of each. Error rates per gate and coherence times set how many operations a qubit can take part in before the state decays. As an illustration, not a device, a coherence time of 100 $\mu\text{s}$ with 50 ns gates allows about 2000 operations. Longer programs need error correction.
 
 Error correction trades qubits for reliability. A logical qubit is built from many physical qubits, and the overhead grows steeply as the physical error rate nears the correction threshold. Lower physical error rates cut that overhead sharply, so improving qubit quality saves more than adding qubits.
 

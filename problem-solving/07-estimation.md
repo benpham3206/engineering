@@ -26,7 +26,7 @@ of magnitude with a range, and you write down every assumption so a reader can c
 - An **assumption** is a stated value that you have not measured. Write it down with its unit,
   and say why you chose it. A reader should be able to swap in a better value.
 - A **typical value** is a number that is representative of common cases, such as the density of
-  water (about 1000 kg/m$^3$). Use these from reliable tables, not from memory alone.
+  water (about 1000 $\text{kg/m}^3$). Use these from reliable tables, not from memory alone.
 - An **order-of-magnitude answer** is correct to within a factor of about 3 to 10. Do not claim
   more precision than the inputs support.
 

@@ -20,7 +20,7 @@ The levels are defined in [LEVELS.md](LEVELS.md).
 For a reader with no background. The goal is to read a formula, put numbers with units into it, and judge whether the answer is the right size.
 
 - Lessons: [Algebra](math/01-algebra.md), [Units and dimensional analysis](measurement/01-units-and-dimensional-analysis.md), and [Estimation](problem-solving/07-estimation.md).
-- Owner sheets: the foundations sheet in math (planned: arithmetic, fractions, ratios, percent, powers of ten, rearranging an equation, reading a graph), the [algebra and logarithms](math/reference.md#algebra-and-logarithms) section of the math sheet, and the [units and limits](problem-solving/reference.md#units-and-limits) section of the problem-solving sheet.
+- Owner sheets: the [math foundations sheet](math/reference-foundations.md) (arithmetic, fractions, ratios, percent, powers of ten, rearranging an equation, reading a graph), and the [units and limits](problem-solving/reference.md#units-and-limits) section of the problem-solving sheet.
 - Habits to build: write the unit beside every number, convert to SI once, and check the size of every answer against something you know.
 
 ## Level 1 mathematics and physics
@@ -34,7 +34,7 @@ For a maker who builds working things and wants to know why they work.
 
 The fundamentals of a four-year engineering degree.
 
-- Mathematics: [calculus](math/reference.md#calculus), [vector calculus](math/reference.md#vector-calculus), [linear algebra](math/reference.md#linear-algebra), [ordinary differential equations](math/reference.md#ordinary-differential-equations), [Laplace transform](math/reference.md#laplace-transform), [Fourier series](math/reference.md#fourier-series), [probability and statistics](math/reference.md#probability-and-statistics), and [numerical methods](math/reference.md#numerical-methods). Planned split: calculus; linear algebra and differential equations; probability and numerical methods.
+- Mathematics: [calculus](math/reference.md#calculus), [vector calculus](math/reference.md#vector-calculus), [linear algebra](math/reference.md#linear-algebra), [ordinary differential equations](math/reference.md#ordinary-differential-equations), [Laplace transform](math/reference.md#laplace-transform), [Fourier series](math/reference.md#fourier-series), [probability and statistics](math/reference.md#probability-and-statistics), and [numerical methods](math/reference.md#numerical-methods). These now live in their own sheets: [calculus](math/reference-calculus.md), [linear algebra and differential equations](math/reference-linear-algebra-differential-equations.md), and [probability and numerical methods](math/reference-probability-numerical-methods.md); the combined math sheet keeps its sections until they become redirects.
 - Solid mechanics: [stress and strain](physics/reference-mechanics.md#stress-and-strain), [beams](physics/reference-mechanics.md#beams), and [column buckling](physics/reference-mechanics.md#column-buckling).
 - Thermal and fluids: [thermodynamics](physics/reference-thermofluids.md#thermodynamics), [second law and entropy](physics/reference-thermofluids.md#second-law-and-entropy), [hydrostatics](physics/reference-thermofluids.md#hydrostatics), [Bernoulli's equation](physics/reference-thermofluids.md#bernoullis-equation), [dimensionless numbers](physics/reference-thermofluids.md#dimensionless-numbers), [pipe flow](physics/reference-thermofluids.md#pipe-flow), and [external flow](physics/reference-thermofluids.md#external-flow-drag-and-lift).
 - Fields and waves: [electricity and magnetism](physics/reference-fields-waves-space.md#electricity-and-magnetism), [waves](physics/reference-fields-waves-space.md#waves), and [optics](physics/reference-fields-waves-space.md#optics).
@@ -45,59 +45,60 @@ The fundamentals of a four-year engineering degree.
 
 Trusted to own a component that ships: deeper analysis, design data, and the limits of every model.
 
-- Heat transfer and compressible flow: the [heat transfer](physics/reference-thermofluids.md#heat-transfer) and [compressible flow](physics/reference-thermofluids.md#compressible-flow) sections today; dedicated heat-transfer and compressible-flow sheets in physics (planned).
-- Vibration and control: the [vibrations](physics/reference-mechanics.md#vibrations), [second-order step metrics](physics/reference-mechanics.md#second-order-step-metrics), and [PID effects](physics/reference-mechanics.md#pid-effects) sections today; dedicated vibrations and controls sheets in physics (planned: modes, stability tests, root locus, frequency response, margins, sampled control).
-- Advanced solid mechanics: a solid-mechanics sheet in physics (planned: tensors, energy methods, thick cylinders, plates, shells).
-- Fracture and fatigue: the [fracture toughness](materials/reference.md#fracture-toughness-and-critical-crack-size), [fatigue basics](materials/reference.md#fatigue-basics), and [design fatigue](design/reference.md#fatigue) sections today; a fracture and fatigue sheet in materials (planned).
-- Machine elements: [fasteners](design/reference.md#fasteners), [shafts](design/reference.md#shafts), [bearings](design/reference.md#bearings), [gears](design/reference.md#gears), and [springs](design/reference.md#springs) today; a machine-design sheet in design (planned).
-- Electrical power: a power sheet in applications/electrical (planned: phasors, three-phase, per-unit, faults).
+- Heat transfer and compressible flow: the [heat transfer sheet](physics/reference-heat-transfer.md) and the [compressible flow sheet](physics/reference-compressible-flow.md).
+- Vibration and control: the [vibrations sheet](physics/reference-vibrations.md) and the [controls sheet](physics/reference-controls.md) (modes, stability tests, root locus, frequency response, margins, sampled control).
+- Advanced solid mechanics: the [solid mechanics sheet](physics/reference-solid-mechanics.md) (tensors, energy methods, thick cylinders, plates, shells).
+- Fracture and fatigue: the [fracture and fatigue sheet](materials/reference-fracture-fatigue.md).
+- Machine elements: the [machine design sheet](design/reference-machine-design.md).
+- Electrical power: the [electrical power sheet](applications/electrical/reference.md) (phasors, three-phase, per-unit, faults).
 - Manufacturing: the [manufacturing sheet](manufacturing/reference.md) for machining, joining, forming, fits, and process statistics.
-- Simulation: finite element, computational fluid dynamics, and verification and validation sheets in simulation (planned).
+- Simulation: the [finite element](simulation/reference-finite-element-analysis.md), [computational fluid dynamics](simulation/reference-computational-fluid-dynamics.md), and [verification and validation](simulation/reference-verification-validation.md) sheets.
 - Applications: the [applications sheet](applications/reference.md) for motors, pumps, heat exchangers, electronics cooling, and robot arms, until those move to domain sheets.
 
 ## Levels 4 and 5 systems and limits
 
 Owning a subsystem, then working from physical limits rather than precedent.
 
-- Reliability: a reliability sheet in design (planned: hazard rates, Weibull, series and parallel systems, availability, fault trees). Today, see the [root cause tools](problem-solving/reference.md#root-cause-tools) in the problem-solving sheet.
-- Orbits and propulsion: the [gravity and orbits](physics/reference-fields-waves-space.md#gravity-and-orbits) section today; an orbital-mechanics sheet in physics (planned).
+- Reliability: the [reliability sheet](design/reference-reliability.md) (hazard rates, Weibull, series and parallel systems, availability, fault trees), with the [root cause tools](problem-solving/reference.md#root-cause-tools) in the problem-solving sheet.
+- Orbits and propulsion: the [orbital mechanics sheet](physics/reference-orbital-mechanics.md).
 - Limit analysis: [orders of magnitude](problem-solving/reference.md#orders-of-magnitude) and [Fermi estimation](problem-solving/reference.md#fermi-estimation) in the problem-solving sheet. A level 5 reader starts every design from the governing limit in its owner sheet (conservation, strength, heat flux, or the rocket equation), then measures how far the design sits from it.
 - Judgment: the [philosophy sheet](philosophy/reference.md) for failure cases and decision frameworks. It owns no formulas.
 
 ## Formula ownership map
 
-One owner per family. A section marked "today" keeps its formulas until its planned sheet exists; then the old section becomes a one-line link to the new owner.
+One owner per family. Where a new owner sheet replaced a section of an older sheet, the old section keeps its text until it is turned into a one-line link to the new owner.
 
 | Family | Owner | Status |
 |---|---|---|
-| Arithmetic, fractions, ratios, powers of ten, graphs | foundations sheet in math | planned |
+| Arithmetic, fractions, ratios, powers of ten, graphs, complex numbers | [math foundations sheet](math/reference-foundations.md) | owner |
 | Algebra, logarithms, trigonometry | [math sheet](math/reference.md#algebra-and-logarithms) | today |
-| Calculus, series, vector calculus | [math sheet](math/reference.md#calculus) | today; calculus sheet planned |
-| Linear algebra, ordinary differential equations, Laplace and Fourier | [math sheet](math/reference.md#linear-algebra) | today; linear algebra and differential equations sheet planned |
-| Probability, statistics, numerical methods | [math sheet](math/reference.md#probability-and-statistics) | today; probability and numerical methods sheet planned |
+| Calculus, series, vector calculus | [calculus sheet](math/reference-calculus.md) | owner |
+| Linear algebra, ordinary differential equations, Laplace and Fourier, PDE types | [linear algebra and differential equations sheet](math/reference-linear-algebra-differential-equations.md) | owner |
+| Probability, statistics, numerical methods | [probability and numerical methods sheet](math/reference-probability-numerical-methods.md) | owner |
 | Units, dimensional analysis, uncertainty, sensors | [measurement sheet](measurement/reference.md) | today |
 | Statics, friction, section properties | [mechanics sheet](physics/reference-mechanics.md#statics) | today |
 | Kinematics, Newton's laws, energy, momentum | [mechanics sheet](physics/reference-mechanics.md#dynamics) | today |
 | Stress, strain, axial, torsion, bending, Mohr's circle, yield criteria | [mechanics sheet](physics/reference-mechanics.md#stress-and-strain) | today |
 | Beam deflection, column buckling | [mechanics sheet](physics/reference-mechanics.md#beams) | today |
-| Tensors, energy methods, thick cylinders, plates, shells | solid-mechanics sheet in physics | planned |
-| Vibration | [mechanics sheet](physics/reference-mechanics.md#vibrations) | today; vibrations sheet planned |
-| Control | [mechanics sheet](physics/reference-mechanics.md#second-order-step-metrics) | today; controls sheet planned |
+| Tensors, energy methods, thick cylinders, plates, shells | [solid mechanics sheet](physics/reference-solid-mechanics.md) | owner |
+| Vibration | [vibrations sheet](physics/reference-vibrations.md) | owner |
+| Control | [controls sheet](physics/reference-controls.md) | owner |
 | Thermodynamics, cycles | [thermofluids sheet](physics/reference-thermofluids.md#thermodynamics) | today |
 | Fluid statics, Bernoulli, pipe and external flow | [thermofluids sheet](physics/reference-thermofluids.md#hydrostatics) | today |
-| Heat transfer | [thermofluids sheet](physics/reference-thermofluids.md#heat-transfer) | today; heat-transfer sheet planned |
-| Compressible flow | [thermofluids sheet](physics/reference-thermofluids.md#compressible-flow) | today; compressible-flow sheet planned |
+| Heat transfer | [heat transfer sheet](physics/reference-heat-transfer.md) | owner |
+| Compressible flow | [compressible flow sheet](physics/reference-compressible-flow.md) | owner |
 | Electrostatics, magnetism, induction, circuits | [fields sheet](physics/reference-fields-waves-space.md#electricity-and-magnetism) | today |
 | Waves, optics | [fields sheet](physics/reference-fields-waves-space.md#waves) | today |
-| Gravitation, orbits, rocket equation | [fields sheet](physics/reference-fields-waves-space.md#gravity-and-orbits) | today; orbital-mechanics sheet planned |
-| Three-phase power, per-unit, transformers, faults | power sheet in applications/electrical | planned |
+| Gravitation, orbits, rocket equation | [orbital mechanics sheet](physics/reference-orbital-mechanics.md) | owner |
+| Three-phase power, per-unit, transformers, faults | [electrical power sheet](applications/electrical/reference.md) | owner |
 | Material properties, elastic constants, selection indices | [materials sheet](materials/reference.md) | today |
-| Fracture mechanics, fatigue, creep | [materials sheet](materials/reference.md#fracture-toughness-and-critical-crack-size) | today; fracture and fatigue sheet planned |
+| Fracture mechanics, fatigue | [fracture and fatigue sheet](materials/reference-fracture-fatigue.md) | owner |
+| Creep | [materials sheet](materials/reference.md) | today |
 | Safety factors, failure theories, tolerancing, fits | [design sheet](design/reference.md) | today |
-| Fasteners, shafts, bearings, gears, springs | [design sheet](design/reference.md#fasteners) | today; machine-design sheet planned |
-| Reliability, availability, fault trees | reliability sheet in design | planned |
+| Fasteners, shafts, bearings, gears, springs | [machine design sheet](design/reference-machine-design.md) | owner |
+| Reliability, availability, fault trees | [reliability sheet](design/reference-reliability.md) | owner |
 | Machining, welding, forming, process statistics | [manufacturing sheet](manufacturing/reference.md) | today |
-| Finite elements, computational fluid dynamics, verification and validation | sheets in simulation | planned |
+| Finite elements, computational fluid dynamics, verification and validation | [FEA](simulation/reference-finite-element-analysis.md), [CFD](simulation/reference-computational-fluid-dynamics.md), and [V&V](simulation/reference-verification-validation.md) sheets | owner |
 | Dimensional analysis, estimation, decision methods | [problem-solving sheet](problem-solving/reference.md) | today |
 | Motors, pumps and fans, heat exchangers, electronics cooling, robot kinematics | [applications sheet](applications/reference.md) | today, until moved to domain sheets |
 | Thread identification, material identification | [reverse-engineering sheet](reverse-engineering/reference.md) | today |

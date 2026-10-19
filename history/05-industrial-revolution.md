@@ -61,7 +61,7 @@ Work per stroke of an atmospheric engine:
 
 $$W = p_{atm} V_s$$
 
-Here $p_{atm}$ is atmospheric pressure, about $101\ \text{kPa}$ for the standard atmosphere at sea level on Earth, and $V_s$ is the **swept volume** in cubic metres (m$^3$). The work $W$ is in joules (J).
+Here $p_{atm}$ is atmospheric pressure, about $101\ \text{kPa}$ for the standard atmosphere at sea level on Earth, and $V_s$ is the **swept volume** in cubic metres ($\text{m}^3$). The work $W$ is in joules (J).
 
 **Horsepower**, the unit that came from comparing engine output with the work that horses did:
 

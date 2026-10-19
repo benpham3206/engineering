@@ -36,11 +36,11 @@ Gravity toilets are the most common in homes. Pressure-assisted toilets use a pr
 
 ## Key equations
 
-Assumptions for every equation below: the water is incompressible at 1000 kg/m$^3$, the fluid is at a steady temperature, gravity is uniform at $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface, true near sea level and mid latitudes), and the flow is steady in each pipe section.
+Assumptions for every equation below: the water is incompressible at 1000 $\text{kg/m}^3$, the fluid is at a steady temperature, gravity is uniform at $g = 9.81\ \text{m}/\text{s}^2$ (Earth surface, true near sea level and mid latitudes), and the flow is steady in each pipe section.
 
-- Static pressure: $p = \rho g h$, where $p$ is gauge pressure in pascals (Pa), $\rho$ is water density in kg/m$^3$, $g$ is gravitational acceleration in m/s$^2$, and $h$ is depth below the free surface in metres (m). The assumption is that the water is at rest.
+- Static pressure: $p = \rho g h$, where $p$ is gauge pressure in pascals (Pa), $\rho$ is water density in $\text{kg/m}^3$, $g$ is gravitational acceleration in $\text{m/s}^2$, and $h$ is depth below the free surface in metres (m). The assumption is that the water is at rest.
 - Pressure change with height: $p_2 = p_1 - \rho g \, \Delta z$, where $\Delta z$ is the height gain in metres. The assumption is that the water is at rest between the two points.
-- Volume flow: $Q = A v$, where $Q$ is volume flow rate in cubic metres per second (m$^3$/s), $A$ is the pipe cross-section in m$^2$, and $v$ is the mean velocity in m/s. The assumption is that the flow is steady and incompressible.
+- Volume flow: $Q = A v$, where $Q$ is volume flow rate in cubic metres per second ($\text{m}^3$/s), $A$ is the pipe cross-section in $\text{m}^2$, and $v$ is the mean velocity in m/s. The assumption is that the flow is steady and incompressible.
 - Trap seal pressure: $\Delta p = \rho g h_s$, where $h_s$ is the seal depth in metres. This gives the pressure that the seal can hold against gas pressure from the drain. The assumption is that the seal is a column of still water.
 
 ## Worked example

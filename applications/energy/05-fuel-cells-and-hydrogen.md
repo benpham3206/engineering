@@ -48,7 +48,7 @@ Each cell runs at about 60 to 80 °C. The membrane must stay wet to conduct prot
 
 ## Key equations
 
-**Faraday's law** gives the hydrogen consumed by a current $I$ in amperes, over time $t$ in seconds. Here $M = 2.016\ \text{g/mol}$ is the molar mass of H$_2$, $n = 2$ is the number of electrons per molecule, and $F = 96\,485\ \text{C/mol}$ is the Faraday constant:
+**Faraday's law** gives the hydrogen consumed by a current $I$ in amperes, over time $t$ in seconds. Here $M = 2.016\ \text{g/mol}$ is the molar mass of $\text{H}_2$, $n = 2$ is the number of electrons per molecule, and $F = 96\,485\ \text{C/mol}$ is the Faraday constant:
 
 $$m = \frac{I\,t\,M}{n\,F}$$
 
@@ -66,7 +66,7 @@ Electrolyzer hydrogen output, with $\eta_{\mathrm{LHV}}$ the electrolyzer effici
 
 $$m_{H_2} = \frac{\eta_{\mathrm{LHV}}\,E_{\mathrm{in}}}{33.3\ \text{kWh/kg}}$$
 
-Gas storage, with $\rho$ the gas density in kg/m$^3$ and $m$ the mass in kg:
+Gas storage, with $\rho$ the gas density in $\text{kg/m}^3$ and $m$ the mass in kg:
 
 $$V = \frac{m}{\rho}$$
 
@@ -82,7 +82,7 @@ $$V = \frac{m}{\rho}$$
 2. Hydrogen mass: $m = 0.65 \times 1000 / 33.3 = 19.5\ \text{kg}$.
 3. Tank volume: $V = 19.5 / 40 = 0.49\ \text{m}^3$, which is 490 litres.
 
-**Answer:** (a) 19.5 kg of hydrogen. (b) About 0.49 m$^3$ of storage at 700 bar.
+**Answer:** (a) 19.5 kg of hydrogen. (b) About 0.49 $\text{m}^3$ of storage at 700 bar.
 
 **Sanity check:** The stored energy is $19.5 \times 33.3 = 650\ \text{kWh}$, which is 65 percent of the 1000 kWh input. That matches the efficiency. A fuel cell running on this hydrogen would return less electricity than went in. Hydrogen is a store with losses, not a source.
 
@@ -93,7 +93,7 @@ Second check, using Faraday's law for a single stack current: a current of 100 A
 - **Platinum loading.** Platinum catalyst is expensive and scarce. Thinner catalyst layers lower the cost but can lose performance, and designers balance the two.
 - **Operating voltage.** Higher cell voltage means higher efficiency but lower current for the same power, which changes the stack size and cost. A PEM cell at 0.6 V gives 48 percent LHV efficiency, and at 0.7 V it gives 56 percent.
 - **Carbon monoxide tolerance.** Platinum catalysts poison in the presence of carbon monoxide, which a hydrogen stream from reformed natural gas can contain. Those systems need a clean-up reactor.
-- **Storage pressure.** Hydrogen has a low density. At atmospheric pressure it holds about 0.09 kg/m$^3$, or about 10.8 MJ/m$^3$. At 700 bar it holds about 40 kg/m$^3$, or about 4.8 GJ/m$^3$. Gasoline holds about 32.6 GJ/m$^3$, so 700 bar hydrogen stores about one seventh of the energy per volume of gasoline. Higher pressure needs thicker tanks, which add weight and cost.
+- **Storage pressure.** Hydrogen has a low density. At atmospheric pressure it holds about 0.09 $\text{kg/m}^3$, or about 10.8 $\text{MJ/m}^3$. At 700 bar it holds about 40 $\text{kg/m}^3$, or about 4.8 $\text{GJ/m}^3$. Gasoline holds about 32.6 $\text{GJ/m}^3$, so 700 bar hydrogen stores about one seventh of the energy per volume of gasoline. Higher pressure needs thicker tanks, which add weight and cost.
 - **Liquid hydrogen.** Liquefying hydrogen at about 20 K raises the density, but cooling the gas consumes a large share of its energy and the boil-off losses are significant.
 - **Metal hydrides and carriers.** Store hydrogen in solids or chemical carriers. These are safer and compact, but they are heavy and need heat to release the gas.
 - **Stack life.** Membranes dry out, catalysts degrade, and start-stop cycles stress the cell. Automotive stacks are designed for several thousand hours of operation.

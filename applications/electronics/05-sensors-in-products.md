@@ -21,7 +21,7 @@ A phone, car, or appliance reads the world through a small set of sensors. Accel
 
 **Accelerometer.** A MEMS accelerometer etches a small silicon block, the **proof mass**, on thin silicon springs. The surrounding frame is fixed to the product. When the product accelerates, the proof mass lags behind by Newton's second law and moves relative to the frame. Fixed plates and plates on the proof mass form capacitors. As the gap changes, the capacitance changes, and the readout circuit turns that change into a voltage or a digital number.
 
-An accelerometer measures **specific force**, not acceleration in the everyday sense. A phone lying flat on a table reads about 9.81 m/s$^2$ upward on its vertical axis at Earth's surface, because the table pushes up on it. Only a phone in free fall reads zero. Typical phone accelerometers have ranges of $\pm 2$ g to $\pm 16$ g.
+An accelerometer measures **specific force**, not acceleration in the everyday sense. A phone lying flat on a table reads about 9.81 $\text{m/s}^2$ upward on its vertical axis at Earth's surface, because the table pushes up on it. Only a phone in free fall reads zero. Typical phone accelerometers have ranges of $\pm 2$ g to $\pm 16$ g.
 
 **Thermistor.** A negative-temperature-coefficient (NTC) thermistor is a ceramic made from metal oxides. Its resistance falls as temperature rises, because more charge carriers become free to move. Its resistance follows an exponential curve in $1/T$. In a product, the thermistor forms one leg of a voltage divider with a fixed resistor. The ADC reads the midpoint voltage. Battery packs, chargers, kettles, and engine coolant sensors use this arrangement.
 
@@ -68,9 +68,9 @@ Hall voltage for a current $I$ in amperes through a plate of thickness $t$ in me
 
 $$V_H = \frac{I B}{n e t}$$
 
-where $n$ is the charge carrier density in m$^{-3}$ and $e = 1.602 \times 10^{-19}$ C is the elementary charge.
+where $n$ is the charge carrier density in $\text{m}^{-3}$ and $e = 1.602 \times 10^{-19}$ C is the elementary charge.
 
-Accelerometer displacement at steady acceleration $a$ (m/s$^2$), for proof mass $m$ in kilograms and suspension stiffness $k$ in newtons per metre:
+Accelerometer displacement at steady acceleration $a$ ($\text{m/s}^2$), for proof mass $m$ in kilograms and suspension stiffness $k$ in newtons per metre:
 
 $$x = \frac{m a}{k}$$
 
@@ -92,7 +92,7 @@ where $h = 6.626 \times 10^{-34}$ J s is Planck's constant and $c = 2.998 \times
 
 **Solution:**
 
-1. (a) The temperatures are $T = 318.15$ K and $T_0 = 298.15$ K. Then $1/T - 1/T_0 = -2.11 \times 10^{-4}$ K$^{-1}$. The exponent is $3950 \times (-2.11 \times 10^{-4}) = -0.833$, and $R = 10\ \text{k}\Omega \times e^{-0.833} = 4.35\ \text{k}\Omega$.
+1. (a) The temperatures are $T = 318.15$ K and $T_0 = 298.15$ K. Then $1/T - 1/T_0 = -2.11 \times 10^{-4}$ $\text{K}^{-1}$. The exponent is $3950 \times (-2.11 \times 10^{-4}) = -0.833$, and $R = 10\ \text{k}\Omega \times e^{-0.833} = 4.35\ \text{k}\Omega$.
 2. (b) $V_{\mathrm{out}} = 3.3\ \text{V} \times \dfrac{4348}{4348 + 10000} = 1.00\ \text{V}$.
 3. (c) $N = \dfrac{1.00}{3.3} \times 4096 = 1241$.
 4. (d) The ADC step is $3.3\ \text{V} / 4096 = 0.806$ mV. Differentiating the divider with the beta model gives $dV_{\mathrm{out}}/dT \approx -27.2$ mV/K at 45 °C. One count is $0.806 / 27.2 = 0.030$ K.
@@ -125,7 +125,7 @@ Edwin Hall discovered the Hall effect in 1879 while he was a graduate student at
 
 1. A MEMS accelerometer has a proof mass $m = 0.5$ mg and a suspension stiffness $k = 5\ \text{N/m}$. Find the displacement at 1 g (Earth surface, $9.81\ \text{m}/\text{s}^2$).
 2. The thermistor in the worked example has $R_0 = 10\ \text{k}\Omega$ at 25 °C and $B = 3950$ K. Find its resistance at 85 °C.
-3. A Hall element carries 5 mA and has a carrier density of $10^{22}$ m$^{-3}$ and a thickness of 0.2 mm. Find the Hall voltage at 10 mT. Then find it at 20 mT, and say how the output changes with the field.
+3. A Hall element carries 5 mA and has a carrier density of $10^{22}$ $\text{m}^{-3}$ and a thickness of 0.2 mm. Find the Hall voltage at 10 mT. Then find it at 20 mT, and say how the output changes with the field.
 4. Find the energy of a 500 nm photon in electronvolts. Can silicon, with a bandgap of about 1.1 eV, detect it?
 5. A 12-bit ADC reads the thermistor divider from the worked example, but the thermistor has an open circuit. What code does the ADC read, and what should the firmware conclude?
 
