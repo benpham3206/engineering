@@ -23,6 +23,7 @@ The software, hardware, and calculators that make engineering work faster.
 15. [Digital fabrication machines](15-digital-fabrication-machines.md): FDM and resin 3D printers, laser cutters, CNC routers, vinyl cutters, and choosing between them
 16. [Hand and power tools](16-hand-and-power-tools.md): the hand tools to own, the common power tools, and the guard or habit that prevents each injury
 17. [Test and inspection instruments](17-test-and-inspection-instruments.md): force and torque gauges, tachometers, infrared thermometers, thermal cameras, sound level meters, borescopes, and hardness and roughness testers
+18. [Makerspaces and machine shops](18-makerspaces-and-machine-shops.md): shared fabrication spaces, access, job submissions, capacity, cost, and safety
 
 ## Reference
 
