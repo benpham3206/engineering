@@ -23,8 +23,15 @@ jobs:
         env:
           BASE_REF: ${{ github.base_ref }}
         run: |
+          # The strict ratchet covers files added after the verifier existed.
+          # Files from before it are migrated in waves and report debt instead.
           added=""
           if [ -n "$BASE_REF" ]; then
-            added=$(git diff --name-only --diff-filter=A "origin/$BASE_REF...HEAD" -- '*.md')
+            base=$(git merge-base "origin/$BASE_REF" HEAD)
+            intro=$(git log --diff-filter=A --format=%H -- verify.py | tail -1)
+            if [ -n "$intro" ] && ! git merge-base --is-ancestor "$intro" "$base"; then
+              base="$intro"
+            fi
+            added=$(git diff --name-only --diff-filter=A "$base" HEAD -- '*.md')
           fi
           python verify.py --require-strict $added
