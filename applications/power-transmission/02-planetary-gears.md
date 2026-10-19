@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A planetary gear train is a gear set that puts a sun gear, planet gears, and a ring gear in one compact unit, so three members can turn at once. It gives high ratios in a small space and forms the core of automatic transmissions, hub gears, and gearmotors. The Willis equation ties the speeds of the three members together, and an engineer uses it to pick the input, output, and fixed member.
+A **planetary gear train** is a gear set that puts a sun gear, planet gears, and a ring gear in one compact unit, so three members can turn at once. It gives high ratios in a small space and forms the core of automatic transmissions, hub gears, and gearmotors. The **Willis equation** ties the speeds of the three members together, and an engineer uses it to pick the input, output, and fixed member.
 
 **Prerequisites:** [Gear trains](01-gear-trains.md), [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md)
 **Time:** 4-6 h
@@ -149,7 +149,7 @@ The Antikythera mechanism, found in 1901 in a shipwreck off the Greek island of 
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 10 (rotational motion)](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: angular speed, torque, and rotational power, the physics behind each member of an epicyclic set.
+- [*University Physics Volume 1*, Chapter 10 (rotational motion)](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: angular speed, torque, and rotational power, the physics behind each member of an epicyclic set.
 - [Gear trains](01-gear-trains.md): the spur, helical, bevel, and worm forms that a planetary set can combine with.
 - [Gears, fasteners, and springs](../../design/09-gears-fasteners-and-springs.md): the pitch-diameter and center-distance formulas that set each planet's place between the sun and ring.
 - [Belts and chains](03-belts-and-chains.md): another way to transmit speed and torque between shafts, with no tooth meshing.

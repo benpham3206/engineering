@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Machinist bench tools are the hand tools and fixtures a machinist uses at a workbench to hold, locate, thread, and finish a part. Engineers who know what these tools can do avoid designs that cost extra time to hold, thread, or finish.
+**Machinist bench tools** are the hand tools and fixtures a machinist uses at a workbench to hold, locate, thread, and finish a part. Engineers who know what these tools can do avoid designs that cost extra time to hold, thread, or finish.
 
 A machinist spends much of the day holding parts, finding edges, cutting threads, and checking holes. The bench tools for those jobs are cheap, and each one has a correct way to use it. As a designer, you need to know what these tools can and cannot do, so you draw parts they can actually make.
 
@@ -13,11 +13,12 @@ A machinist spends much of the day holding parts, finding edges, cutting threads
 
 Read the [measurement lesson](07-measurement-tools.md) and the [shop tools lesson](08-shop-tools.md) first. This lesson does not repeat calipers, micrometers, or the basics of spindle speed. It covers the hand tools and fixtures that hold, locate, thread, and finish a part.
 
-Safety rules come first. Ask your instructor for the shop's rules, which override anything written here. Read the [OSHA machine guarding overview](https://www.osha.gov/machine-guarding), which says that any part of a machine that could injure a worker must be guarded.
+> [!WARNING]
+> Safety rules come first. Ask your instructor for the shop's rules, which override anything written here. Read the [OSHA machine guarding overview](https://www.osha.gov/machine-guarding), which says that any part of a machine that could injure a worker must be guarded.
 
 ### Workholding
 
-Workholding means holding the part so it cannot move while the tool cuts it.
+**Workholding** means holding the part so it cannot move while the tool cuts it.
 
 - **Machine vise.** A vise has a fixed jaw and a movable jaw. It clamps the part against the bottom parallels, which lift the part off the bed so the cutter does not hit the vise.
 - **Soft jaws.** These are jaw inserts, often made of aluminum or another soft metal. You machine them to match the shape of the part, so the clamping force spreads over a larger area and the part does not mark or slip.
@@ -49,7 +50,7 @@ A tapped hole has internal threads. A die cuts external threads on a rod or bolt
 - **Thread gauges.** A go gauge should screw in the whole length of the thread. A no-go gauge should not enter the thread past the first turn. Use them to check the thread after tapping.
 - **Thread repair inserts.** A helical insert is a coil of wire that you screw into a damaged tapped hole. It restores the original thread size. You drill out the old hole, tap a larger thread, and install the insert.
 
-Thread size is a major diameter (outside of the thread) and a pitch (distance between threads). For metric threads, the pitch is in millimeters. For inch threads, the threads per inch (TPI) is the count per inch.
+Thread size is a **major diameter** (outside of the thread) and a **pitch** (distance between threads). For metric threads, the pitch is in millimeters. For inch threads, the **threads per inch (TPI)** is the count per inch.
 
 ### Hole finishing
 
@@ -92,7 +93,8 @@ $$d_{\text{tap}} = D - \frac{1}{N}$$
 
 Here $d_{\text{tap}}$ is the tap drill diameter, $D$ is the thread major diameter, $P$ is the metric pitch in mm, and $N$ is the threads per inch (TPI). Use the same length unit for $D$ and $P$, and for $D$ and $1/N$. For inch threads, $1/N$ is the pitch in inches.
 
-The rule gives a usable starting size. Commercial tap drill charts publish the exact drill for each thread. Use the chart when one exists.
+> [!NOTE]
+> The rule gives a usable starting size. Commercial tap drill charts publish the exact drill for each thread. Use the chart when one exists.
 
 ## Worked example
 
@@ -167,8 +169,8 @@ A note on engagement: shops describe this rule as giving about 75 percent thread
 ## Go deeper
 
 - [OSHA: Machine guarding](https://www.osha.gov/machine-guarding) by the U.S. Department of Labor: the guarding requirement for every machine you run.
-- [NIST Special Publication 811](https://www.nist.gov/pml/special-publication-811) by NIST: the official guide for using SI units, which you need when you convert mm and inches.
-- [Machining](https://en.wikibooks.org/wiki/Machining) on Wikibooks: an open textbook on turning, milling, drilling, grinding, and inspection.
+- [*NIST Special Publication 811*](https://www.nist.gov/pml/special-publication-811) by NIST: the official guide for using SI units, which you need when you convert mm and inches.
+- [*Machining*](https://en.wikibooks.org/wiki/Machining) on Wikibooks: an open textbook on turning, milling, drilling, grinding, and inspection.
 - [Measurement folder](../measurement/README.md): error and uncertainty, for the reading you take with an indicator or gauge.
 - Related: [Measurement tools](07-measurement-tools.md), [Shop tools](08-shop-tools.md), [Manufacturing folder](../manufacturing/README.md).
 - [Tools reference](reference.md): the lookup sheet for this topic.

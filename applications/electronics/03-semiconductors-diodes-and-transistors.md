@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Semiconductors are materials that conduct electricity better than insulators and worse than metals, and diodes and transistors are the parts built from them. Engineers need these parts because almost all modern electronics depends on how they switch current.
+**Semiconductors** are materials that conduct electricity better than insulators and worse than metals, and diodes and transistors are the parts built from them. Engineers need these parts because almost all modern electronics depends on how they switch current.
 
 A diode passes current in one direction, and a transistor uses a small input to control a large current. These two parts sit inside every power supply, motor drive, and processor, so an engineer who knows how they switch can read a datasheet and design a driver that works.
 
@@ -13,14 +13,14 @@ A diode passes current in one direction, and a transistor uses a small input to 
 
 ### How it works
 
-A semiconductor conducts better than an insulator and worse than a metal. Pure silicon has few free charge carriers at room temperature. Adding a small amount of another element, called doping, sets the number of carriers. There are two carrier types. Electrons carry negative charge. Holes are the gaps left by missing electrons, and they behave like mobile positive charges.
+A semiconductor conducts better than an insulator and worse than a metal. Pure silicon has few free charge carriers at room temperature. Adding a small amount of another element, called **doping**, sets the number of carriers. There are two carrier types. Electrons carry negative charge. **Holes** are the gaps left by missing electrons, and they behave like mobile positive charges.
 
 - **n-type silicon** is doped with a group V element such as phosphorus. Each dopant atom donates one extra electron. Electrons are the majority carriers.
 - **p-type silicon** is doped with a group III element such as boron. Each dopant atom accepts an electron, which creates a hole. Holes are the majority carriers.
 
 In any doped sample, the product of the electron and hole densities stays fixed: $n\,p = n_i^2$. In silicon at 300 K, the intrinsic carrier density $n_i$ is about $1.5 \times 10^{10}\ \text{cm}^{-3}$ (typical value).
 
-When a p-type region meets an n-type region, electrons diffuse into the p side and holes diffuse into the n side. They leave behind fixed, charged dopant ions. Those ions create an electric field that opposes further diffusion. The region with no free carriers is the depletion region. Silicon junctions have a built-in voltage of about 0.6 to 0.7 V (typical value).
+When a p-type region meets an n-type region, electrons diffuse into the p side and holes diffuse into the n side. They leave behind fixed, charged dopant ions. Those ions create an electric field that opposes further diffusion. The region with no free carriers is the **depletion region**. Silicon junctions have a built-in voltage of about 0.6 to 0.7 V (typical value).
 
 A **diode** is one p-n junction with two terminals: the anode (p side) and the cathode (n side).
 
@@ -124,12 +124,14 @@ In December 1947, John Bardeen and Walter Brattain at Bell Labs in New Jersey bu
 - Driving a BJT base from a voltage source with no base resistor. The base current is set by the source and the base-emitter voltage, so the current can grow until the transistor overheats.
 - Assuming a transistor with $\beta = 100$ will saturate at any base current. Check the saturation condition with the minimum $\beta$ from the datasheet, not the typical value.
 - Treating a MOSFET gate as an open circuit at high frequency. Switching the gate needs charge, so a fast switch needs a gate driver that can supply the peak current.
-- Forgetting a flyback diode across an inductive load. The load's voltage spike can destroy the switch.
+
+> [!WARNING]
+> Forgetting a flyback diode across an inductive load. The load's voltage spike can destroy the switch.
 
 ## Go deeper
 
 - [MIT OpenCourseWare 6.012, Microelectronic Devices and Circuits](https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/): free lectures and notes on junctions, BJTs, and MOSFETs.
-- [Semiconductor Devices: Theory and Application (Fiore), LibreTexts](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Semiconductor_Devices_-_Theory_and_Application_%28Fiore%29): a free textbook covering diodes, BJTs, and FETs.
+- [*Semiconductor Devices: Theory and Application (Fiore)*, LibreTexts](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Semiconductor_Devices_-_Theory_and_Application_%28Fiore%29): a free textbook covering diodes, BJTs, and FETs.
 - [Transistors, HyperPhysics, Georgia State University](https://hyperphysics.gsu.edu/hbase/Electronic/transis.html): a short overview of the junction transistor.
 - Related lessons: [RC circuits and op-amps](02-rc-circuits-and-op-amps.md), [Printed circuit boards](04-printed-circuit-boards.md), [Digital logic and computers](07-digital-logic-and-computers.md).
 - Previous: [Circuit basics](01-circuit-basics.md).

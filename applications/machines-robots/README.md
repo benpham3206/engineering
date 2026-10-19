@@ -13,6 +13,7 @@ Machines that move and make things: robot arms, mobile robots, CNC machines, 3D 
 - [Elevators and cranes](05-elevators-and-cranes.md)
 - [Conveyors and automation](06-conveyors-and-automation.md)
 - [Hydraulics and pneumatics](07-hydraulics-and-pneumatics.md)
+- [Velocity kinematics and Jacobians](08-velocity-kinematics-and-jacobians.md)
 
 ## Reference
 

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-War, nuclear, and space engineering is the story of the programs, driven largely by war and the cold war that followed, that moved radar, jet engines, nuclear reactors, rockets, and electronic computers from research into working machines between about 1935 and 1957. Many of today's power plants, aircraft, satellites, and computers still rely on the physics, design methods, and safety rules these programs created.
+**War, nuclear, and space engineering** is the story of the programs, driven largely by war and the cold war that followed, that moved radar, jet engines, nuclear reactors, rockets, and electronic computers from research into working machines between about 1935 and 1957. Many of today's power plants, aircraft, satellites, and computers still rely on the physics, design methods, and safety rules these programs created.
 
 **Prerequisites:** [Electrical age](06-electrical-age.md), [Flight, cars, and mass production](07-flight-cars-and-mass-production.md), [Waves, light, and heat](../physics/07-waves-light-heat.md), [Thermodynamics II](../physics/09-thermo-second-law-cycles.md), [Orbital mechanics and rockets](../physics/15-orbital-mechanics-and-rockets.md)
 **Time:** 3-4 h
@@ -11,23 +11,23 @@ War, nuclear, and space engineering is the story of the programs, driven largely
 
 ### Radar
 
-Radar sends radio waves and listens for their echoes. The time delay of an echo gives range, and the direction of the antenna gives bearing. In February 1935, Robert Watson-Watt and Arnold Wilkins showed at Daventry, England, that radio waves reflected from an aircraft could be detected. Britain then built a chain of coastal radar stations, known as Chain Home, before the war.
+**Radar** sends radio waves and listens for their echoes. The time delay of an echo gives range, and the direction of the antenna gives bearing. In February 1935, Robert Watson-Watt and Arnold Wilkins showed at Daventry, England, that radio waves reflected from an aircraft could be detected. Britain then built a chain of coastal radar stations, known as Chain Home, before the war.
 
-Good radar needs short wavelengths. Short wavelengths allow small antennas that make sharp beams, but early transmitters could not make much power at those wavelengths. In 1940, John Randall and Harry Boot at Birmingham University built the cavity magnetron, which produced high power at centimetre wavelengths. That made radar small enough for aircraft and ships. The Massachusetts Institute of Technology's Radiation Laboratory, set up in 1940, developed radar systems on top of the magnetron. Germany and the United States also developed radar, largely in parallel with Britain.
+Good radar needs short wavelengths. Short wavelengths allow small antennas that make sharp beams, but early transmitters could not make much power at those wavelengths. In 1940, John Randall and Harry Boot at Birmingham University built the **cavity magnetron**, which produced high power at centimetre wavelengths. That made radar small enough for aircraft and ships. The Massachusetts Institute of Technology's Radiation Laboratory, set up in 1940, developed radar systems on top of the magnetron. Germany and the United States also developed radar, largely in parallel with Britain.
 
 ### Jet engines
 
-A jet engine is a gas turbine that makes thrust from its exhaust. It compresses air, mixes in fuel and burns it, and expands the hot gas through a turbine. The turbine drives the compressor, and the fast exhaust leaves the nozzle as thrust. Frank Whittle patented a jet engine design in Britain in 1930, and his first engine ran in April 1937. Hans von Ohain designed the engine for the Heinkel He 178, and test pilot Erich Warsitz flew it on 27 August 1939, the first jet-powered flight. A Whittle engine powered the Gloster E.28/39 in 1941. The Messerschmitt Me 262 entered service with the German air force in 1944.
+A **jet engine** is a gas turbine that makes thrust from its exhaust. It compresses air, mixes in fuel and burns it, and expands the hot gas through a turbine. The turbine drives the compressor, and the fast exhaust leaves the nozzle as thrust. Frank Whittle patented a jet engine design in Britain in 1930, and his first engine ran in April 1937. Hans von Ohain designed the engine for the Heinkel He 178, and test pilot Erich Warsitz flew it on 27 August 1939, the first jet-powered flight. A Whittle engine powered the Gloster E.28/39 in 1941. The Me 262 entered service with the German air force in 1944.
 
 ### Nuclear power
 
-On 2 December 1942, Enrico Fermi and a team at the University of Chicago started Chicago Pile-1. It was the first self-sustaining nuclear chain reaction. The pile made almost no power, and control rods kept it at a low, safe output. Reactors then moved toward producing electricity. The Obninsk reactor in the Soviet Union sent electricity to a grid in 1954. In 1957, the Shippingport station in Pennsylvania began producing power as one of the first full-size pressurized water reactors in the United States.
+On 2 December 1942, Enrico Fermi and a team at the University of Chicago started Chicago Pile-1. It was the first **self-sustaining nuclear chain reaction**. The pile made almost no power, and control rods kept it at a low, safe output. Reactors then moved toward producing electricity. The Obninsk reactor in the Soviet Union sent electricity to a grid in 1954. In 1957, the Shippingport station in Pennsylvania began producing power as one of the first full-size pressurized water reactors in the United States.
 
 A reactor must control its chain reaction, remove its heat, and contain its radioactive material. These three tasks still set the basic design of every commercial reactor.
 
 ### Rockets
 
-Konstantin Tsiolkovsky published the rocket equation in 1903. Robert Goddard launched the first liquid-fuel rocket on 16 March 1926 in Auburn, Massachusetts. In Germany, the V-2 rocket was developed at Peenemunde by a team led by Wernher von Braun. It entered use in 1944 as the first long-range ballistic missile. After the war, the Soviet Union used its R-7 rocket to launch Sputnik 1 on 4 October 1957, the first artificial satellite. Yuri Gagarin flew Vostok 1 on 12 April 1961, the first human spaceflight.
+Konstantin Tsiolkovsky published the rocket equation in 1903. Robert Goddard launched the first liquid-fuel rocket on 16 March 1926 in Auburn, Massachusetts. In Germany, the V-2 rocket was developed at Peenemunde by a team led by Wernher von Braun. It entered use in 1944 as the first long-range ballistic missile. After the war, the Soviet Union used its R-7 rocket to launch *Sputnik 1* on 4 October 1957, the first artificial satellite. Yuri Gagarin flew *Vostok 1* on 12 April 1961, the first human spaceflight.
 
 The Saturn V was designed under von Braun at the Marshall Space Flight Center in Huntsville, Alabama. It flew for the first time in November 1967. It had three stages and carried the Apollo spacecraft. Apollo 11 landed on the Moon on 20 July 1969.
 
@@ -49,7 +49,7 @@ Konrad Zuse completed the Z3 in Berlin in 1941. It was a programmable computer b
 | 1944 | V-2 rocket in use | Peenemunde, Germany, under Wernher von Braun's team | The first long-range ballistic missile. |
 | 1945 | ENIAC completed | J. Presper Eckert and John Mauchly, University of Pennsylvania | An early large electronic general-purpose computer. |
 | 1954 | Nuclear power on an electric grid | Obninsk, Soviet Union | Showed that a reactor could supply electricity to a grid. |
-| 1957 | Sputnik 1 | Soviet Union, R-7 rocket | The first artificial satellite. |
+| 1957 | *Sputnik 1* | Soviet Union, R-7 rocket | The first artificial satellite. |
 | 1969 | Apollo 11 lunar landing | NASA, Saturn V launch vehicle | The first crewed landing on the Moon. |
 
 ## Key equations
@@ -58,7 +58,7 @@ The rocket equation gives the ideal speed change a rocket can achieve:
 
 $$\Delta v = v_e \ln\frac{m_0}{m_f}$$
 
-Here $\Delta v$ is the speed change in metres per second (m/s), $v_e$ is the effective exhaust speed in m/s, $m_0$ is the starting mass in kilograms (kg), and $m_f$ is the mass after the propellant burns, in kg. The exhaust speed is $v_e = I_{\text{sp}} g_0$, where $I_{\text{sp}}$ is specific impulse in seconds (s) and $g_0 = 9.81\ \text{m/s}^2$ is standard gravity (Earth's surface value). The equation ignores gravity and drag, so it gives an upper limit.
+Here $\Delta v$ is the speed change in metres per second (m/s), $v_e$ is the effective exhaust speed in m/s, $m_0$ is the starting mass in kilograms (kg), and $m_f$ is the mass after the propellant burns, in kg. The exhaust speed is $v_e = I_{\text{sp}} g_0$, where $I_{\text{sp}}$ is **specific impulse** in seconds (s) and $g_0 = 9.81\ \text{m/s}^2$ is standard gravity (Earth's surface value). The equation ignores gravity and drag, so it gives an upper limit.
 
 The radar range equation gives the maximum range of a radar that detects a target at a given power:
 

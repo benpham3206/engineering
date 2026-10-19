@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Clocks and watches are timekeeping devices that count equal intervals of time. Each timekeeping device trades accuracy, size, and cost, so an engineer must understand how its oscillator, counter, and display work together.
+Clocks and watches are **timekeeping devices** that count equal intervals of time. Each timekeeping device trades accuracy, size, and cost, so an engineer must understand how its oscillator, counter, and display work together.
 
 Every clock needs an oscillator with a steady period, a way to count its cycles, and a way to drive the display. A pendulum clock, a mechanical watch, and a quartz watch solve these three jobs in different ways.
 
@@ -13,11 +13,11 @@ Every clock needs an oscillator with a steady period, a way to count its cycles,
 
 ### How it works
 
-A pendulum clock uses gravity as the restoring force. A bob hangs on a rod and swings. For a small swing, the period depends only on the length of the rod and on gravity. The escapement is the part that converts the swing into discrete steps. Each swing lets one tooth of the escape wheel advance, and the escapement gives the pendulum a small push each cycle to replace the energy lost to friction. The gear train reduces the escape wheel's motion to the speed of the hands. A weight or a spring supplies the energy.
+A pendulum clock uses gravity as the restoring force. A bob hangs on a rod and swings. For a small swing, the period depends only on the length of the rod and on gravity. The **escapement** is the part that converts the swing into discrete steps. Each swing lets one tooth of the escape wheel advance, and the escapement gives the pendulum a small push each cycle to replace the energy lost to friction. The gear train reduces the escape wheel's motion to the speed of the hands. A weight or a spring supplies the energy.
 
-A mechanical watch replaces the pendulum with a balance wheel and a hairspring. The hairspring is a coiled spring that pulls the balance back toward its rest position. The wheel swings back and forth at a fixed rate set by its moment of inertia and the spring stiffness. Many watches run at about 4 Hz, which is 28 800 beats per hour. A mainspring stores the energy, and the lever escapement releases it in small steps.
+A mechanical watch replaces the pendulum with a **balance wheel** and a hairspring. The **hairspring** is a coiled spring that pulls the balance back toward its rest position. The wheel swings back and forth at a fixed rate set by its moment of inertia and the spring stiffness. Many watches run at about 4 Hz, which is 28 800 beats per hour. A mainspring stores the energy, and the lever escapement releases it in small steps.
 
-A quartz watch uses a quartz crystal as the oscillator. The crystal is cut into a tuning-fork shape and mounted in a small package. When an electric field is applied, quartz deforms, which is the piezoelectric effect. The crystal resonates at a frequency set by its dimensions. A small oscillator circuit drives the crystal at that frequency. A chain of binary divider stages reduces the frequency to 1 Hz. A small stepper motor moves the hands once per second.
+A quartz watch uses a **quartz crystal** as the oscillator. The crystal is cut into a tuning-fork shape and mounted in a small package. When an electric field is applied, quartz deforms, which is the **piezoelectric effect**. The crystal resonates at a frequency set by its dimensions. A small oscillator circuit drives the crystal at that frequency. A chain of binary divider stages reduces the frequency to 1 Hz. A small stepper motor moves the hands once per second.
 
 ### Main parts
 
@@ -115,7 +115,7 @@ Pierre and Jacques Curie discovered piezoelectricity in 1880. The effect later m
 
 ## Go deeper
 
-- [OpenStax University Physics Volume 1, Chapter 15](https://openstax.org/books/university-physics-volume-1/pages/15-introduction): free textbook on oscillations, including the simple pendulum.
+- [*OpenStax University Physics Volume 1*, Chapter 15](https://openstax.org/books/university-physics-volume-1/pages/15-introduction): free textbook on oscillations, including the simple pendulum.
 - [NIST Time and Frequency Division](https://www.nist.gov/pml/time-and-frequency-division): the U.S. standards body for time and frequency, which maintains the national time standard.
 - [Reference: mechanics](../../physics/reference-mechanics.md): the rotational and oscillation equations used in the balance wheel and pendulum.
 - [Vibrations](../../physics/13-vibrations.md) for natural frequency and damping in mechanical oscillators.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Renaissance polymaths are the Europeans of the 1400s and 1500s who joined mathematics, art, mining, and mechanics into single careers. Engineers today should know them because their work on domes, machines, mining, and the testing of motion and strength still shows up in engineering methods. This lesson profiles five people from that period and shows where their work is found today.
+**Renaissance polymaths** are the Europeans of the 1400s and 1500s who joined mathematics, art, mining, and mechanics into single careers. Engineers today should know them because their work on domes, machines, mining, and the testing of motion and strength still shows up in engineering methods. This lesson profiles five people from that period and shows where their work is found today.
 
 **Prerequisites:** [Ancient and medieval minds](01-ancient-and-medieval-minds.md), [Simple machines](../01-simple-machines.md), [Statics](../../physics/01-statics.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Particle dynamics](../../physics/02-particle-dynamics.md)
 **Time:** 6-8 h
@@ -25,7 +25,7 @@ Agricola was a German physician and scholar who studied mining. His *De re metal
 
 ### Simon Stevin, 1548 to 1620, Bruges and The Hague
 
-Stevin was a Flemish mathematician and engineer who worked for the Dutch Republic. In 1585 he published a booklet that explained decimal fractions, which made calculation with numbers less than one as simple as whole numbers. In 1586 he published work on statics that includes the inclined plane. He also studied hydrostatics, and he showed that the pressure at the bottom of a vessel depends on depth, not on the shape of the vessel. Modern engineers use decimal arithmetic for every calculation, and hydrostatic pressure governs the design of dams and tanks.
+Stevin was a Flemish mathematician and engineer who worked for the Dutch Republic. In 1585 he published a booklet that explained **decimal fractions**, which made calculation with numbers less than one as simple as whole numbers. In 1586 he published work on statics that includes the inclined plane. He also studied hydrostatics, and he showed that the pressure at the bottom of a vessel depends on depth, not on the shape of the vessel. Modern engineers use decimal arithmetic for every calculation, and hydrostatic pressure governs the design of dams and tanks.
 
 ### Galileo Galilei, 1564 to 1642, Pisa, Padua, and Florence
 
@@ -51,7 +51,7 @@ $$F = W \sin\theta = W \frac{h}{L}$$
 
 where $F$ is the force along the slope in newtons (N), $W$ is the load's weight in N, $h$ is the height the slope rises in metres (m), $L$ is the slope's length in m, and $\theta$ is the angle of the slope. Friction makes the real force larger.
 
-Galileo's law of falling bodies describes motion from rest with uniform acceleration. Near Earth's surface the distance fallen in time $t$ is:
+**Galileo's law of falling bodies** describes motion from rest with uniform acceleration. Near Earth's surface the distance fallen in time $t$ is:
 
 $$d = \tfrac{1}{2} g t^2$$
 

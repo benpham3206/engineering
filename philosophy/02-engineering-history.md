@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-Engineering history is a record of people solving real problems and, often, learning hard lessons from failures. An engineer studies it because the same mistakes repeat when people forget the past, and because many current safety rules exist only because someone was hurt.
+**Engineering history** is a record of people solving real problems and, often, learning hard lessons from failures. An engineer studies it because the same mistakes repeat when people forget the past, and because many current safety rules exist only because someone was hurt.
 
 **Prerequisites:** [What engineering is](01-what-engineering-is.md)
 **Time:** 3-5 h
@@ -13,10 +13,10 @@ Engineering history is a record of people solving real problems and, often, lear
 - Early written rules show that society has always linked builders to safety. The Code of Hammurabi, from about 1750 BCE in ancient Babylon, includes laws that held builders responsible if a house they built collapsed and killed the owner. The idea that the builder answers for the design is very old.
 - Formal engineering grew in the 1700s and 1800s. Mathematics, mechanics, and materials science let designers calculate loads and stresses before building. Professional societies and licensing followed.
 - Each major advance came with new failures. Bridges, boilers, ships, and aircraft all failed in ways that the designers had not expected. Investigations of those failures produced new knowledge.
-- A failure investigation has a standard shape:
+- A **failure investigation** has a standard shape:
   - Gather the facts: what happened, when, and under what conditions.
-  - Find the physical cause, such as a material fault or a force that was not counted.
-  - Find the root cause, meaning the decision or process that allowed the physical cause to happen.
+  - Find the **physical cause**, such as a material fault or a force that was not counted.
+  - Find the **root cause**, meaning the decision or process that allowed the physical cause to happen.
   - Recommend changes to design, testing, rules, or training.
 - Stopping at the broken part is common, but it misses the design, testing, or management decisions that let the part fail.
 
@@ -26,7 +26,7 @@ The Tacoma Narrows Bridge in Washington State opened in July 1940. It was a susp
 
 What the record shows, based on the Washington State Department of Transportation history of the bridge:
 
-- The collapse is attributed mainly to self-excited aeroelastic torsional flutter, a twisting motion in which the deck's own movement changed the wind forces so they fed the motion. This differs from ordinary vortex-shedding resonance, where an outside vortex frequency drives the structure.
+- The collapse is attributed mainly to **self-excited aeroelastic torsional flutter**, a twisting motion in which the deck's own movement changed the wind forces so they fed the motion. This differs from ordinary vortex-shedding resonance, where an outside vortex frequency drives the structure.
 - The deck's design resisted twisting poorly. Its shallow, narrow shape and flexibility let the motion grow until the structure could not survive it.
 - The WSDOT account also notes that a slipped cable band at mid-span had unbalanced the main cables, which started the motion.
 - Expert boards studied the failure. Their work and the later university research changed how bridge engineers account for wind. Wind is now treated as a design load, and wind tunnel testing became standard for long-span bridges.

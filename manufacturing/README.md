@@ -16,6 +16,7 @@ How parts actually get made, and what that means for how they should be designed
 - [Sheet metal](07-sheet-metal.md)
 - [Tolerances, fits, and surface finish](08-tolerances-fits-finish.md)
 - [Automation and robotics](09-automation-robotics.md)
+- [Production lines and line balancing](10-production-lines-and-line-balancing.md)
 
 ## Reference
 

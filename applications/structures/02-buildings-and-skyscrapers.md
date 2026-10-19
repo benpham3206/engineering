@@ -2,7 +2,10 @@
 
 **Type:** lesson
 
-A building is a structure that houses people and their belongings and stands on a frame, walls, and a foundation. An engineer who designs one must make sure every load reaches the ground, because a building that sways too far or settles unevenly becomes unsafe to occupy.
+A **building** is a structure that houses people and their belongings and stands on a frame, walls, and a foundation.
+
+> [!WARNING]
+> An engineer who designs one must make sure every load reaches the ground, because a building that sways too far or settles unevenly becomes unsafe to occupy.
 
 A building must hold up its own weight, the weight of its occupants and contents, and the sideways forces from wind and earthquakes.
 
@@ -15,7 +18,7 @@ A building must hold up its own weight, the weight of its occupants and contents
 
 Gravity loads flow downward. Each floor slab carries its load to beams. The beams carry it to columns, the columns carry it to the foundation, and the foundation spreads it into the soil. Each column in a multi-storey building carries the load from every floor above it, so the axial force grows from the roof down to the base.
 
-Lateral loads push sideways. Wind pushes on the faces of the building, and an earthquake shakes the ground under it, which sets the building moving. Those forces create shear between floors and overturning moments at the base. The frame, the walls, or the core resists them. A tall, slender building must resist sway as well as strength. Sway that is too large cracks the partitions, makes occupants uncomfortable, and in extreme cases damages the structure.
+**Lateral loads** push sideways. Wind pushes on the faces of the building, and an earthquake shakes the ground under it, which sets the building moving. Those forces create shear between floors and overturning moments at the base. The frame, the walls, or the core resists them. A tall, slender building must resist sway as well as strength. Sway that is too large cracks the partitions, makes occupants uncomfortable, and in extreme cases damages the structure.
 
 ### Main parts
 
@@ -44,7 +47,7 @@ Wind pressure on a face: $q = \tfrac{1}{2}\rho V^2$, where $\rho = 1.225\ \text{
 
 Column axial stress: $\sigma = P/A$, in Pa, where $A$ is the column cross-section in m$^2$.
 
-Interstorey drift: the sideways displacement of one floor relative to the floor below, $u_i - u_{i-1}$, divided by that storey's height. The overall drift ratio is the top displacement $\Delta$ divided by the building height $H$. Designers compare these ratios to limits, often about $H/400$ to $H/500$ for wind (typical, depends on the code and use).
+**Interstorey drift**: the sideways displacement of one floor relative to the floor below, $u_i - u_{i-1}$, divided by that storey's height. The overall **drift ratio** is the top displacement $\Delta$ divided by the building height $H$. Designers compare these ratios to limits, often about $H/400$ to $H/500$ for wind (typical, depends on the code and use).
 
 ## Worked example
 
@@ -119,6 +122,6 @@ Early tall buildings used load-bearing masonry walls, and thick lower walls limi
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 12 (static equilibrium and elasticity)](https://openstax.org/books/university-physics-volume-1/pages/12-introduction) by OpenStax: force balance and stress in columns and beams.
+- [*University Physics Volume 1*, Chapter 12 (static equilibrium and elasticity)](https://openstax.org/books/university-physics-volume-1/pages/12-introduction) by OpenStax: force balance and stress in columns and beams.
 - Related lessons: [Bridges](01-bridges.md), [Towers and cables](06-towers-and-cables.md), [Pressure vessels and tanks](03-pressure-vessels-and-tanks.md), [Aircraft structures](04-aircraft-structures.md).
 - Background on the forces: [Statics](../../physics/01-statics.md) and [Bending and buckling](../../physics/05-bending-and-buckling.md).

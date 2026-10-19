@@ -11,25 +11,25 @@ Compressors and fans are machines that move gas by raising its pressure or pushi
 
 ### How it works
 
-A compressor raises gas pressure by reducing the volume that holds the gas. There are three main families.
+A **compressor** raises gas pressure by reducing the volume that holds the gas. There are three main families.
 
-A reciprocating compressor draws gas into a cylinder, traps it, and drives a piston to squeeze it. Valves open only when the pressure difference is right. Each stroke moves a fixed volume, so the flow follows the speed and the cylinder size.
+A **reciprocating compressor** draws gas into a cylinder, traps it, and drives a piston to squeeze it. Valves open only when the pressure difference is right. Each stroke moves a fixed volume, so the flow follows the speed and the cylinder size.
 
-A screw compressor uses two intermeshing rotors. Gas fills the pockets between the lobes at the inlet. As the rotors turn, the pockets move along the axis and shrink, and the gas pressure rises. The flow is smooth, and there are no valves to wear.
+A **screw compressor** uses two intermeshing rotors. Gas fills the pockets between the lobes at the inlet. As the rotors turn, the pockets move along the axis and shrink, and the gas pressure rises. The flow is smooth, and there are no valves to wear.
 
-A dynamic compressor speeds up the gas, then slows it in a diffuser so that the kinetic energy turns into pressure. A centrifugal compressor accelerates gas outward with an impeller. An axial compressor pushes gas along the axis through many rows of blades, and each row adds a small pressure rise. Jet engines use axial compressors for this reason. See [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md).
+A **dynamic compressor** speeds up the gas, then slows it in a diffuser so that the kinetic energy turns into pressure. A centrifugal compressor accelerates gas outward with an impeller. An axial compressor pushes gas along the axis through many rows of blades, and each row adds a small pressure rise. Jet engines use axial compressors for this reason. See [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md).
 
-A fan is a dynamic machine that moves gas at a pressure rise of a few kilopascals or less. Its blades push air along the axis (axial fan) or outward from the center (centrifugal fan). A blower is a centrifugal fan with a higher pressure rise.
+A **fan** is a dynamic machine that moves gas at a pressure rise of a few kilopascals or less. Its blades push air along the axis (axial fan) or outward from the center (centrifugal fan). A **blower** is a centrifugal fan with a higher pressure rise.
 
 ### Compression processes
 
-Three idealized paths bracket a real compressor. An isothermal path keeps the temperature constant, which needs cooling as the gas compresses. An isentropic path has no heat exchange and no friction, so the gas heats the most. A real machine lies between the isothermal limit and the isentropic path, with extra heat from friction.
+Three idealized paths bracket a real compressor. An **isothermal path** keeps the temperature constant, which needs cooling as the gas compresses. An **isentropic path** has no heat exchange and no friction, so the gas heats the most. A real machine lies between the isothermal limit and the isentropic path, with extra heat from friction.
 
 Compressing air rapidly heats it. Air compressed from 293 K to 700 kPa leaves hot enough to damage oil and seals. Multistage compression with intercooling between stages brings the process close to isothermal and saves energy.
 
 ### Fan laws
 
-For one fan with fixed geometry and a fixed gas density, the fan laws give the flow, pressure, and power at a new speed. They are the same ratios as the pump affinity laws, with one addition. Pressure and power also scale with gas density, so a hot fan moves less pressure at the same speed.
+For one fan with fixed geometry and a fixed gas density, the **fan laws** give the flow, pressure, and power at a new speed. They are the same ratios as the pump affinity laws, with one addition. Pressure and power also scale with gas density, so a hot fan moves less pressure at the same speed.
 
 ### Compressed air systems
 
@@ -98,9 +98,11 @@ Leaks waste a large share of the air in many compressed air systems. The leak fo
 
 **Overheating and oil carbonization.** High outlet temperatures burn oil into deposits, which block valves and cause fires. Cooling and high-temperature alarms prevent it.
 
-**Vessel rupture.** A receiver or intercooler can burst if it is overpressured. A relief valve sized for the compressor limits the pressure, and the vessel must meet a pressure code.
+> [!WARNING]
+> **Vessel rupture.** A receiver or intercooler can burst if it is overpressured. A relief valve sized for the compressor limits the pressure, and the vessel must meet a pressure code.
 
-**Air injection injury.** A jet of compressed air can enter the skin and cause serious injury. Never point an air nozzle at a person.
+> [!WARNING]
+> **Air injection injury.** A jet of compressed air can enter the skin and cause serious injury. Never point an air nozzle at a person.
 
 **Fan imbalance.** Dust on the blades or a bent blade shifts the balance, and the vibration grows fast. Bearings then fail. Regular cleaning and balance checks prevent it.
 
@@ -137,7 +139,7 @@ Compressed air powered rock drills in the Mont Cenis tunnel through the Alps in 
 ## Go deeper
 
 - [Compressors, NASA Glenn Research Center K-12 resources](https://www.grc.nasa.gov/www/k-12/airplane/compress.html): axial and centrifugal compressors, and how they raise pressure in jet engines.
-- [Fluid Mechanics, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors: an open text on fluid statics and control-volume analysis, the method used for the flow balances in this lesson.
+- [*Fluid Mechanics*, Wikibooks](https://en.wikibooks.org/wiki/Fluid_Mechanics) by Wikibooks contributors: an open text on fluid statics and control-volume analysis, the method used for the flow balances in this lesson.
 - Related: [Pumps](09-pumps.md) for the same affinity logic applied to liquids, and [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md) for axial compressors in engines.
 - Related: [Hydraulics and pneumatics](../machines-robots/07-hydraulics-and-pneumatics.md) for compressed air driving machine actuators, and [Vacuum cleaners](../everyday/04-vacuum-cleaners.md) for fans and suction.
 - [Applications reference](../reference.md): the lookup sheet for this topic.

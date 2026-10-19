@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A camera is a device that uses a lens to form a sharp image of a scene on an image sensor. Choosing the wrong lens can leave a camera unable to see its subject at the right size, sharpness, and brightness.
+A **camera** is a device that uses a lens to form a sharp image of a scene on an image sensor. Choosing the wrong lens can leave a camera unable to see its subject at the right size, sharpness, and brightness.
 
 The lens sets the image size, the sharpness, and the brightness. Engineers need these relations to pick a lens for a given field of view, working distance, and light level.
 
@@ -37,13 +37,13 @@ Light reaching the sensor depends on the aperture, which is the opening that the
 
 ## Key equations
 
-- Thin-lens equation, with object distance $d_o$ and image distance $d_i$ in millimetres and focal length $f$ in millimetres: $\dfrac{1}{f} = \dfrac{1}{d_o} + \dfrac{1}{d_i}$.
+- **Thin-lens equation**, with object distance $d_o$ and image distance $d_i$ in millimetres and focal length $f$ in millimetres: $\dfrac{1}{f} = \dfrac{1}{d_o} + \dfrac{1}{d_i}$.
 - Magnification, dimensionless: $m = -d_i / d_o$. The negative sign means the image is inverted. The image height is $h_i = m\,h_o$, where $h_o$ is the object height in millimetres.
-- f-number, dimensionless: $N = f / D$, where $D$ is the aperture diameter in millimetres.
+- **f-number**, dimensionless: $N = f / D$, where $D$ is the aperture diameter in millimetres.
 - Relative light: the light reaching the sensor scales as $1/N^2$. Each full stop multiplies $N$ by $\sqrt{2}$ and halves the light.
 - Horizontal field of view, with sensor width $s$ in millimetres: $\theta = 2\arctan\!\left(\dfrac{s}{2f}\right)$.
-- Hyperfocal distance, in millimetres, with circle of confusion $c$ in millimetres (0.03 mm for full-frame sensors, typical): $H = \dfrac{f^2}{N c} + f$. Focusing at $H$ keeps everything from $H/2$ to infinity acceptably sharp.
-- Pixel pitch, with sensor width $s$ in millimetres and $n_{\mathrm{px}}$ pixels across: $p = s / n_{\mathrm{px}}$.
+- **Hyperfocal distance**, in millimetres, with **circle of confusion** $c$ in millimetres (0.03 mm for full-frame sensors, typical): $H = \dfrac{f^2}{N c} + f$. Focusing at $H$ keeps everything from $H/2$ to infinity acceptably sharp.
+- **Pixel pitch**, with sensor width $s$ in millimetres and $n_{\mathrm{px}}$ pixels across: $p = s / n_{\mathrm{px}}$.
 
 ## Worked example
 
@@ -78,7 +78,9 @@ Light reaching the sensor depends on the aperture, which is the opening that the
 - **Flare and ghosting.** Light reflects between glass surfaces and creates bright patches or ghost images. Anti-reflection coatings reduce this.
 - **Clipped highlights.** Too much light saturates the pixels, and bright areas show no detail. Exposure settings and the sensor's dynamic range control this.
 - **Rolling shutter.** Electronic shutters read rows one after another, so fast motion skews. Global shutters avoid this at higher cost.
-- **Sensor damage.** A lens can focus enough sunlight onto the sensor to damage its pixels. Keep the sun out of the frame.
+
+> [!WARNING]
+> **Sensor damage.** A lens can focus enough sunlight onto the sensor to damage its pixels. Keep the sun out of the frame.
 
 ## History
 
@@ -112,7 +114,7 @@ Ibn al-Haytham described the pinhole camera in his *Book of Optics*, written in 
 
 ## Go deeper
 
-- [University Physics Volume 3, Chapter 2: geometric optics, thin lenses, the eye, and the camera](https://openstax.org/books/university-physics-volume-3/pages/2-introduction) by OpenStax. Free, with the thin-lens model and the camera section.
+- [*University Physics Volume 3*, Chapter 2: geometric optics, thin lenses, the eye, and the camera](https://openstax.org/books/university-physics-volume-3/pages/2-introduction) by OpenStax. Free, with the thin-lens model and the camera section.
 - [Optics, course 2.71](https://ocw.mit.edu/courses/2-71-optics-spring-2009/) by MIT OpenCourseWare. Free lecture materials on optical systems and their engineering use.
 - Related lessons: [Sensors in products](../electronics/05-sensors-in-products.md), which covers image sensors in more depth, and [Waves, light, and heat](../../physics/07-waves-light-heat.md), which covers the wave behavior of light.
 - [Applications reference](../reference.md): the lookup sheet for this topic.

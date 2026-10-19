@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Picking the governing principles is the step of choosing the laws and model rules that connect what you know to what you want to find. Engineers need it because the right principles, not memorized formulas, decide whether a problem can be solved.
+**Picking the governing principles** is the step of choosing the laws and model rules that connect what you know to what you want to find. Engineers need it because the right principles, not memorized formulas, decide whether a problem can be solved.
 
 A principle is a law of nature or a rule of the model that ties your knowns to your unknowns.
 Most engineering problems use only a few: force balance, Newton's second law, conservation of
@@ -27,7 +27,7 @@ energy, and conservation of mass or heat.
 
 ### Equilibrium
 
-An object is in equilibrium when it does not accelerate. Then the net force is zero:
+An object is in **equilibrium** when it does not accelerate. Then the net force is zero:
 
 $$
 \sum F_x = 0, \qquad \sum F_y = 0
@@ -38,7 +38,7 @@ equilibrium, so its forces balance.
 
 ### Newton's second law
 
-Newton's second law relates net force to acceleration. It is used when things move:
+**Newton's second law** relates net force to acceleration. It is used when things move:
 
 $$
 \sum F = ma

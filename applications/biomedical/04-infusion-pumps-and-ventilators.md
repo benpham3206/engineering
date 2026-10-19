@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Infusion pumps and ventilators are closed-loop medical devices that deliver fluid or gas in controlled amounts. Their alarms matter, because a fault in flow or pressure can reach the user in seconds.
+**Infusion pumps and ventilators** are closed-loop medical devices that deliver fluid or gas in controlled amounts. Their alarms matter, because a fault in flow or pressure can reach the user in seconds.
 
 An infusion pump delivers a fluid at a set volume rate through tubing, and a ventilator moves gas into and out of a lung model with controlled pressure and flow.
 
@@ -13,14 +13,14 @@ An infusion pump delivers a fluid at a set volume rate through tubing, and a ven
 
 ### How it works
 
-An infusion pump moves fluid in small, precise volumes. A motor drives a lead screw that pushes a syringe plunger, or a rotor squeezes a flexible tube in a peristaltic pump. The pump's controller counts motor steps, and each step displaces a known volume. The flow rate is the volume per step multiplied by the step rate. A pressure sensor detects blockage, and an air sensor detects bubbles in the line. The controller stops the pump and sounds an alarm when either sensor reports a fault.
+An infusion pump moves fluid in small, precise volumes. A motor drives a lead screw that pushes a syringe plunger, or a rotor squeezes a flexible tube in a **peristaltic pump**. The pump's controller counts motor steps, and each step displaces a known volume. The flow rate is the volume per step multiplied by the step rate. A pressure sensor detects blockage, and an air sensor detects bubbles in the line. The controller stops the pump and sounds an alarm when either sensor reports a fault.
 
-A ventilator moves gas through a patient circuit. A gas source, a blower or valves, and a flow sensor set the inspiratory flow. A pressure transducer measures the pressure in the circuit. An exhalation valve opens to let gas leave, and a positive end-expiratory pressure (PEEP) valve holds a set pressure at the end of exhalation. The controller reads the pressure and flow signals and adjusts the valves to follow a set profile. The engineering problem is to deliver a set volume or pressure with known error and to detect a fault before it harms the user.
+A ventilator moves gas through a patient circuit. A gas source, a blower or valves, and a flow sensor set the inspiratory flow. A pressure transducer measures the pressure in the circuit. An exhalation valve opens to let gas leave, and a **positive end-expiratory pressure (PEEP)** valve holds a set pressure at the end of exhalation. The controller reads the pressure and flow signals and adjusts the valves to follow a set profile. The engineering problem is to deliver a set volume or pressure with known error and to detect a fault before it harms the user.
 
 ### Main parts
 
 - Pump drive: a stepper or DC motor, a lead screw or rotor, and a gear train. Position encoders or step counts confirm the displacement.
-- Fluid path: a syringe or tubing set, a check valve, and an anti-free-flow valve that prevents uncontrolled flow when the set is loaded or removed.
+- Fluid path: a syringe or tubing set, a check valve, and an **anti-free-flow valve** that prevents uncontrolled flow when the set is loaded or removed.
 - Sensors: an occlusion pressure sensor, an ultrasonic or optical air-in-line detector, and a drop or position sensor for the plunger.
 - Controller and software: a microcontroller that sets the flow rate, runs the alarm logic, and stores the programmed dose.
 - Ventilator gas path: an oxygen blender, flow valves, a blower or compressed-gas regulator, and a humidifier.
@@ -38,7 +38,7 @@ A ventilator moves gas through a patient circuit. A gas source, a blower or valv
 ## Key equations
 
 - Volume rate and delivered volume: $Q = \dot V$, and $V = Q\,t$. Here $Q$ is the volume flow rate in $\text{m}^3/\text{s}$, $\dot V$ is the same quantity, $t$ is time in seconds, and $V$ is volume in $\text{m}^3$. Assumes a constant flow rate over the interval.
-- Hagen-Poiseuille flow in a tube: $Q = \dfrac{\pi \Delta p\, r^4}{8 \mu L}$. Here $\Delta p$ is the pressure drop in pascals, $r$ is the tube radius in metres, $\mu$ is dynamic viscosity in $\text{Pa s}$, and $L$ is the tube length in metres. Assumes laminar, steady, fully developed flow of a Newtonian incompressible fluid in a rigid, straight, circular tube.
+- **Hagen-Poiseuille flow** in a tube: $Q = \dfrac{\pi \Delta p\, r^4}{8 \mu L}$. Here $\Delta p$ is the pressure drop in pascals, $r$ is the tube radius in metres, $\mu$ is dynamic viscosity in $\text{Pa s}$, and $L$ is the tube length in metres. Assumes laminar, steady, fully developed flow of a Newtonian incompressible fluid in a rigid, straight, circular tube.
 - Ventilator equation of motion for a test lung: $p = \dfrac{V}{C} + R\,Q + \text{PEEP}$. Here $p$ is the airway pressure in $\text{cmH}_2\text{O}$, $V$ is the volume in litres, $C$ is compliance in $\text{L/cmH}_2\text{O}$, $R$ is resistance in $\text{cmH}_2\text{O/(L/s)}$, $Q$ is flow in $\text{L/s}$, and PEEP is the set end-expiratory pressure in $\text{cmH}_2\text{O}$. Assumes linear elastic compliance, linear resistance, and constant flow, which is an approximation for a bench test lung.
 - Unit conversion: $1\ \text{cmH}_2\text{O} = 98.07\ \text{Pa}$, a standard conversion from the water-column definition at standard gravity.
 
@@ -76,7 +76,10 @@ A ventilator moves gas through a patient circuit. A gas source, a blower or valv
 ## How it fails
 
 - Free flow. Gravity or pressure drives fluid uncontrolled when the set is loaded or the door is open. An ordinary check valve does not prevent it, because it passes forward flow. A purpose-designed anti-free-flow mechanism, such as a clamp that closes automatically when the set leaves the pump, prevents it. For example, a 1 m fluid head gives about $\rho g h = 1000 \times 9.81 \times 1 \approx 9.8\ \text{kPa}$, which pushes flow forward.
-- Occlusion. A kinked or blocked line raises pressure. The sensor must alarm before the pressure reaches a damaging level.
+
+> [!WARNING]
+> Occlusion. A kinked or blocked line raises pressure. The sensor must alarm before the pressure reaches a damaging level.
+
 - Air in the line. A bubble passes into the line when a container runs empty or a connection leaks. An air sensor stops the pump.
 - Dosing errors. Wrong programming causes an incorrect rate. A drug library with limits on the programmed value reduces this risk.
 - Leaks and disconnection in the ventilator circuit. A leak lowers the delivered volume, and a disconnection drops the pressure. The controller must alarm on both.

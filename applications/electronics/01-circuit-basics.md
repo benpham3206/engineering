@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Circuit analysis is the bookkeeping that tells you the voltage and current at every part of a
+**Circuit analysis** is the bookkeeping that tells you the voltage and current at every part of a
 circuit. Almost every electronic device, from a phone charger to a motor controller, is built
 from a handful of rules that you can apply with algebra.
 
@@ -23,7 +23,7 @@ from a handful of rules that you can apply with algebra.
 
 ### Ohm's law
 
-For a resistor, voltage and current are proportional. This is Ohm's law. Most of the time you
+For a resistor, voltage and current are proportional. This is **Ohm's law**. Most of the time you
 use it in one of three forms.
 
 - Voltage across a resistor is current times resistance.
@@ -93,7 +93,9 @@ of the 9 V. $6.06 / 9 = 0.67$, which fits.
 - **Solder joint and connector fatigue.** Vibration and repeated heating and cooling crack solder joints and wear connector contacts. The sign is a circuit that works only when tapped or flexed. Strain relief, locking connectors, and clean crimps reduce it.
 - **Contact resistance.** A corroded or loose terminal adds resistance, and $I^2 R$ heating at that spot grows until the connector burns. A discolored terminal is the warning. Torque terminals to specification and inspect them.
 - **Voltage divider loading.** A load connected to a divider output lowers the voltage below the unloaded value. The sign is a reading that sags when the load connects. Keep the load resistance much larger than the divider resistors, or buffer the output.
-- **Electric shock.** Current through the body can stop the heart at levels far below what trips a fuse, so a fuse protects the wire and not the person. Controls in order of strength are: eliminate the hazard by working on de-energized circuits, substitute low voltage (batteries or a limited supply), add engineering controls such as enclosures, insulation, ground-fault protection, and interlocks, apply administrative controls such as procedures and training, and wear PPE such as insulated gloves and eye protection last. For maintenance, apply lockout/tagout: isolate the supply, lock and tag the disconnect, discharge stored energy, then prove zero energy with a tested meter before touching conductors.
+
+> [!WARNING]
+> **Electric shock.** Current through the body can stop the heart at levels far below what trips a fuse, so a fuse protects the wire and not the person. Controls in order of strength are: eliminate the hazard by working on de-energized circuits, substitute low voltage (batteries or a limited supply), add engineering controls such as enclosures, insulation, ground-fault protection, and interlocks, apply administrative controls such as procedures and training, and wear PPE such as insulated gloves and eye protection last. For maintenance, apply lockout/tagout: isolate the supply, lock and tag the disconnect, discharge stored energy, then prove zero energy with a tested meter before touching conductors.
 
 ## Practice
 
@@ -132,11 +134,11 @@ of the 9 V. $6.06 / 9 = 0.67$, which fits.
 
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/)
   by MIT: a full course on circuit analysis with lecture notes and problem sets.
-- [University Physics Volume 2, Chapter 10 (DC circuits)](https://openstax.org/books/university-physics-volume-2/pages/10-introduction)
+- [*University Physics Volume 2*, Chapter 10 (DC circuits)](https://openstax.org/books/university-physics-volume-2/pages/10-introduction)
   by OpenStax: resistance, series and parallel rules, and Kirchhoff's rules with worked examples.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by LibreTexts: a free library of engineering
   textbooks, including electrical circuits.
-- [Electronics, Wikibooks](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors:
+- [*Electronics*, Wikibooks](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors:
   a free open text on electronics fundamentals.
 - Next step: [Lesson 02, RC circuits and op-amps](02-rc-circuits-and-op-amps.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

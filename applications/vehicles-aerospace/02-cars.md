@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A car is a road vehicle that turns stored fuel or battery energy into motion through its tires. An engineer who designs one must get its power and brakes right, because a car that cannot stop in time puts its driver and others at risk.
+A **car** is a road vehicle that turns stored fuel or battery energy into motion through its tires. An engineer who designs one must get its power and brakes right, because a car that cannot stop in time puts its driver and others at risk.
 
 Engineers size the engine, the gearbox, and the brakes from one balance: the force at the tires must match the resistance the car meets. This lesson covers the drivetrain layout, the road load that the car must overcome, and the braking distance that friction allows.
 
@@ -40,10 +40,10 @@ The equations below assume steady speed unless an equation includes acceleration
 - **Wheel speed:** $\omega_w = v / r$, where $\omega_w$ is the wheel angular speed in radians per second, $v$ is the car speed in m/s, and $r$ is the loaded tire radius in m.
 - **Engine speed:** $\omega_e = \omega_w \, G$, where $G$ is the overall ratio (gearbox times final drive), dimensionless.
 - **Wheel torque:** $T_w = F_{\mathrm{tire}} \, r$, where $T_w$ is in N m and $F_{\mathrm{tire}}$ is the tire force in N.
-- **Engine torque:** $T_e = T_w / (G \, \eta_{\mathrm{dt}})$, where $\eta_{\mathrm{dt}}$ is the drivetrain efficiency, typically 0.90 to 0.95 for a manual or automatic gearbox with a final drive.
+- **Engine torque:** $T_e = T_w / (G \, \eta_{\mathrm{dt}})$, where $\eta_{\mathrm{dt}}$ is the **drivetrain efficiency**, typically 0.90 to 0.95 for a manual or automatic gearbox with a final drive.
 - **Power:** $P = T \, \omega$, in W, with torque in N m and angular speed in rad/s. At the wheels, $P_w = F_{\mathrm{road}} \, v$.
 - **Rolling resistance:** $F_{\mathrm{rr}} = C_{\mathrm{rr}} \, m \, g$, where $C_{\mathrm{rr}}$ is the rolling resistance coefficient (dimensionless, typically 0.008 to 0.012 on asphalt), $m$ is mass in kg, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface).
-- **Aerodynamic drag:** $F_d = \tfrac{1}{2} \rho \, C_d \, A \, v^2$, where $\rho$ is the air density in kg/m$^3$ (typically 1.20 at 20 C at sea level), $C_d$ is the drag coefficient (dimensionless, typically 0.25 to 0.35 for production cars), and $A$ is the frontal area in m$^2$.
+- **Aerodynamic drag:** $F_d = \tfrac{1}{2} \rho \, C_d \, A \, v^2$, where $\rho$ is the air density in kg/m$^3$ (typically 1.20 at 20 C at sea level), $C_d$ is the **drag coefficient** (dimensionless, typically 0.25 to 0.35 for production cars), and $A$ is the frontal area in m$^2$.
 - **Road grade:** $F_g = m \, g \sin\theta$, where $\theta$ is the road angle. A 6 percent grade means $\tan\theta = 0.06$.
 - **Total road load:** $F_{\mathrm{road}} = F_{\mathrm{rr}} + F_d + F_g + m a$, where $a$ is the acceleration in m/s$^2$.
 - **Braking deceleration limit:** $a_{\mathrm{max}} = \mu g$, where $\mu$ is the tire-road friction coefficient (dimensionless, about 0.8 to 1.0 on dry asphalt).
@@ -84,7 +84,7 @@ The equations below assume steady speed unless an equation includes acceleration
 ## How it fails
 
 - **Brake fade:** the pads or the disc overheat, and the friction coefficient drops. Warning signs are a soft pedal and longer stops after repeated hard braking. Ventilated discs, larger pads, and brake fluid with a high boiling point reduce the risk.
-- **Loss of traction:** a wet or icy surface drops $\mu$ well below 0.8, so stopping distances grow. Anti-lock braking systems (ABS) keep each wheel near the peak friction point, so the driver keeps steering control during a hard stop.
+- **Loss of traction:** a wet or icy surface drops $\mu$ well below 0.8, so stopping distances grow. **Anti-lock braking systems (ABS)** keep each wheel near the peak friction point, so the driver keeps steering control during a hard stop.
 - **Tire failure:** underinflation raises heat and can cause a tread separation. Tire pressure monitoring and the correct load rating prevent most of these failures.
 - **Driveline wear:** worn CV joints, universal joints, or differential gears make clunks and vibrations. These parts see high torque at large steering angles.
 - **Overheating:** a blocked radiator or failed water pump raises coolant temperature. Temperature gauges and warning lights give the first warning.
@@ -93,7 +93,8 @@ The equations below assume steady speed unless an equation includes acceleration
 
 Brake failure is controlled by the hierarchy of controls, from the most effective to the least. Elimination removes the hazard, for example by avoiding a need for high-speed stops. Substitution replaces a weak part with a better one, such as a brake fluid with a higher boiling point. Engineering controls sit inside the car, and they include dual-circuit hydraulics, ABS, and a parking brake that acts on a separate mechanism. Administrative controls are maintenance intervals, inspection checklists, and driver training. Personal protective equipment is the last layer, and mechanics wear eye protection and gloves when they service brakes.
 
-Servicing a brake system uses lockout and tagout. Isolate every energy source by stopping the engine and removing the key. Release or restrain stored energy by chocking the wheels and releasing the parking brake only after the car is supported. In a conventional hydraulic system, the fluid holds pressure only while the pedal or the booster is loaded, so keep the pedal released while bleeding. Verify a zero-energy state by checking that the car is held on the stands, that the stands are on firm ground, and that the wheels cannot roll, before anyone works under the car.
+> [!WARNING]
+> Servicing a brake system uses lockout and tagout. Isolate every energy source by stopping the engine and removing the key. Release or restrain stored energy by chocking the wheels and releasing the parking brake only after the car is supported. In a conventional hydraulic system, the fluid holds pressure only while the pedal or the booster is loaded, so keep the pedal released while bleeding. Verify a zero-energy state by checking that the car is held on the stands, that the stands are on firm ground, and that the wheels cannot roll, before anyone works under the car.
 
 ## History
 
@@ -130,6 +131,6 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 ## Go deeper
 
 - [Where the energy goes in a gasoline car](https://www.fueleconomy.gov/feg/atv.shtml) by the U.S. Department of Energy: where energy is lost in conventional cars across driving cycles.
-- [University Physics Volume 1, Chapter 5 (Newton's laws of motion)](https://openstax.org/books/university-physics-volume-1/pages/5-introduction) by OpenStax: forces, free-body diagrams, and the basis for the road load balance.
+- [*University Physics Volume 1*, Chapter 5 (Newton's laws of motion)](https://openstax.org/books/university-physics-volume-1/pages/5-introduction) by OpenStax: forces, free-body diagrams, and the basis for the road load balance.
 - Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) for the force and power relations, and [Design reference](../../design/reference.md) for the design vocabulary used in the trade-offs.
 - Related lessons: [Differentials and transmissions](../power-transmission/06-differentials-and-transmissions.md), [Internal combustion engines](../thermal-fluid/06-internal-combustion-engines.md), [Suspension and steering](03-suspension-and-steering.md), [Electric vehicles](04-electric-vehicles.md).

@@ -3,7 +3,7 @@
 **Type:** lesson
 **Verify:** strict
 
-The industrial revolution was the period when British engineers began replacing work done by muscle, water, and wood with steam engines, iron parts, and machines that cut metal to measured sizes. These changes made factories, railways, and steamships practical. They also set habits that engineers still use. Measure the part, standardize its size, and build it to a tolerance.
+The **industrial revolution** was the period when British engineers began replacing work done by muscle, water, and wood with steam engines, iron parts, and machines that cut metal to measured sizes. These changes made factories, railways, and steamships practical. They also set habits that engineers still use. Measure the part, standardize its size, and build it to a tolerance.
 
 **Prerequisites:** [Scientific revolution](04-scientific-revolution.md), [Thermodynamics: properties, work, heat, and the first law](../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../physics/09-thermo-second-law-cycles.md)
 **Time:** 2-3 h
@@ -16,11 +16,11 @@ Coal mines flooded as they went deeper. Pumps driven by horses or water wheels c
 
 ### Watt's separate condenser
 
-James Watt made scientific instruments at the University of Glasgow. In the 1760s he repaired the university's model Newcomen engine and saw the waste clearly [src](../data/claims/history.md#watt-model-repair-1760s). His fix was to condense the steam in a separate vessel, so the main cylinder stayed hot. His patent covering the separate condenser was granted in 1769 [src](../data/claims/history.md#watt-condenser-patent-1769). In 1775 he and Matthew Boulton formally became partners, building and selling engines from Soho, near Birmingham [src](../data/claims/history.md#boulton-watt-partnership-1775). Watt patented a sun and planet gear in 1781, which turned the reciprocating motion into rotation for mills [src](../data/claims/history.md#watt-sun-and-planet-1781). He patented a double-acting engine in 1782, which pushed the piston on both strokes [src](../data/claims/history.md#watt-double-acting-1782). The worked example below shows why keeping the cylinder hot saves fuel.
+James Watt made scientific instruments at the University of Glasgow. In the 1760s he repaired the university's model Newcomen engine and saw the waste clearly [src](../data/claims/history.md#watt-model-repair-1760s). His fix was to condense the steam in a separate vessel, so the main cylinder stayed hot. His patent covering the separate condenser was granted in 1769 [src](../data/claims/history.md#watt-condenser-patent-1769). In 1775 he and Matthew Boulton formally became partners, building and selling engines from Soho, near Birmingham [src](../data/claims/history.md#boulton-watt-partnership-1775). Watt patented a **sun and planet gear** in 1781, which turned the reciprocating motion into rotation for mills [src](../data/claims/history.md#watt-sun-and-planet-1781). He patented a **double-acting engine** in 1782, which pushed the piston on both strokes [src](../data/claims/history.md#watt-double-acting-1782). The worked example below shows why keeping the cylinder hot saves fuel.
 
 ### Iron and coal
 
-Engines and machines needed far more iron than the old charcoal furnaces could supply. Coke, made by heating coal, replaced charcoal as the smelting fuel, and furnaces made iron in larger amounts at lower cost. The Iron Bridge over the Severn at Coalbrookdale, Shropshire, overseen by Abraham Darby III, was completed in 1779 [src](../data/claims/history.md#iron-bridge-1779). It was the first iron bridge, and it showed that iron could carry loads in a new form [src](../data/claims/history.md#iron-bridge-first). Coal also fueled the engines that pumped the mines, so the coal and iron industries grew together.
+Engines and machines needed far more iron than the old charcoal furnaces could supply. **Coke**, made by heating coal, replaced charcoal as the smelting fuel, and furnaces made iron in larger amounts at lower cost. The Iron Bridge over the Severn at Coalbrookdale, Shropshire, overseen by Abraham Darby III, was completed in 1779 [src](../data/claims/history.md#iron-bridge-1779). It was the first iron bridge, and it showed that iron could carry loads in a new form [src](../data/claims/history.md#iron-bridge-first). Coal also fueled the engines that pumped the mines, so the coal and iron industries grew together.
 
 ### Machine tools and interchangeable parts
 
@@ -51,7 +51,7 @@ Engineers moved ideas with drawings, workers, and machines. A machine tool built
 
 ## Key equations
 
-Carnot efficiency, the ideal limit for a heat engine that runs between two temperatures:
+**Carnot efficiency**, the ideal limit for a heat engine that runs between two temperatures:
 
 $$\eta_C = 1 - \frac{T_c}{T_h}$$
 
@@ -61,9 +61,9 @@ Work per stroke of an atmospheric engine:
 
 $$W = p_{atm} V_s$$
 
-Here $p_{atm}$ is atmospheric pressure, about $101\ \text{kPa}$ for the standard atmosphere at sea level on Earth, and $V_s$ is the swept volume in cubic metres (m$^3$). The work $W$ is in joules (J).
+Here $p_{atm}$ is atmospheric pressure, about $101\ \text{kPa}$ for the standard atmosphere at sea level on Earth, and $V_s$ is the **swept volume** in cubic metres (m$^3$). The work $W$ is in joules (J).
 
-Horsepower, the unit that came from comparing engine output with the work that horses did:
+**Horsepower**, the unit that came from comparing engine output with the work that horses did:
 
 $$1\ \text{hp} = 550\ \text{ft lbf/s} = 745.7\ \text{W}$$
 
@@ -161,8 +161,8 @@ check(e1 > e4, "the hotter boiler gives the larger limit")
 
 ## Go deeper
 
-- [Lives of Boulton and Watt](https://www.gutenberg.org/ebooks/52069), Samuel Smiles, free on Project Gutenberg. A biography that describes the Soho partnership and early engines.
-- [Reflections on the motive power of heat](https://www.gutenberg.org/ebooks/78610), Sadi Carnot, free on Project Gutenberg in English translation. The work that introduced the efficiency limit.
-- [University Physics Volume 2, Chapter 1](https://openstax.org/books/university-physics-volume-2/pages/1-introduction), OpenStax, free. Heat, temperature, and the basics of thermodynamics.
+- [*Lives of Boulton and Watt*](https://www.gutenberg.org/ebooks/52069), Samuel Smiles, free on Project Gutenberg. A biography that describes the Soho partnership and early engines.
+- [*Reflections on the motive power of heat*](https://www.gutenberg.org/ebooks/78610), Sadi Carnot, free on Project Gutenberg in English translation. The work that introduced the efficiency limit.
+- [*University Physics Volume 2*, Chapter 1](https://openstax.org/books/university-physics-volume-2/pages/1-introduction), OpenStax, free. Heat, temperature, and the basics of thermodynamics.
 - Related lessons: [Thermal systems](../applications/thermal-fluid/01-thermal-systems.md), [Thermodynamics II](../physics/09-thermo-second-law-cycles.md), [Steam power plants](../applications/thermal-fluid/08-steam-power-plants.md), and [Electrical age](06-electrical-age.md).
 - [History of engineering reference](reference.md): the lookup sheet for this topic.

@@ -11,11 +11,11 @@ A door is a heavy panel that must carry its own weight, resist pushes and wind, 
 
 ### How it works
 
-A hinge is a revolute joint. It constrains the door to rotate about one line, the hinge axis. Two hinges on the same axis keep the door from twisting. When a person pushes the handle, the push creates a moment about the hinge line. The two hinges react to that moment with equal and opposite forces that point sideways, perpendicular to the door face. The hinge that sits under the door also carries the door's weight, and the hinge at the top carries little or none of it.
+A hinge is a **revolute joint**. It constrains the door to rotate about one line, the hinge axis. Two hinges on the same axis keep the door from twisting. When a person pushes the handle, the push creates a moment about the hinge line. The two hinges react to that moment with equal and opposite forces that point sideways, perpendicular to the door face. The hinge that sits under the door also carries the door's weight, and the hinge at the top carries little or none of it.
 
-A latch holds the door shut against the frame. A spring-loaded latch bolt has a beveled face. When the door swings closed, the bevel pushes the bolt back into the latch body, and the spring drives the bolt into the strike plate when the bolt reaches the hole. A deadbolt has no spring. A key or a thumb turn drives a solid bolt into the frame, so the door cannot open by pushing the bolt.
+A latch holds the door shut against the frame. A spring-loaded latch bolt has a beveled face. When the door swings closed, the bevel pushes the bolt back into the latch body, and the spring drives the bolt into the strike plate when the bolt reaches the hole. A **deadbolt** has no spring. A key or a thumb turn drives a solid bolt into the frame, so the door cannot open by pushing the bolt.
 
-A door closer stores energy in a spring while the door opens. As the door swings closed, the spring releases its energy through a hydraulic damper. The damper forces oil through a small orifice. The orifice sets the closing speed, and an adjustable valve changes how fast the door closes near the end of its travel.
+A **door closer** stores energy in a spring while the door opens. As the door swings closed, the spring releases its energy through a **hydraulic damper**. The damper forces oil through a small orifice. The orifice sets the closing speed, and an adjustable valve changes how fast the door closes near the end of its travel.
 
 ### Main parts
 
@@ -120,7 +120,7 @@ Hinged doors have turned on pivots and hinges for thousands of years, and early 
 
 ## Go deeper
 
-- [OpenStax University Physics Volume 1, Chapter 12](https://openstax.org/books/university-physics-volume-1/pages/12-introduction): free textbook on static equilibrium, which covers the moment and force balance used for hinge reactions.
+- [*OpenStax University Physics Volume 1*, Chapter 12](https://openstax.org/books/university-physics-volume-1/pages/12-introduction): free textbook on static equilibrium, which covers the moment and force balance used for hinge reactions.
 - [Reference: mechanics](../../physics/reference-mechanics.md): the moment, force, and energy equations used in this lesson.
 - [Statics](../../physics/01-statics.md) for force and moment balance on a rigid body.
 - [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md) for choosing hinge and latch sizes against the loads.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Statics is the study of bodies that do not move. Engineers use it to find the forces in cables, trusses, frames, and supports before they size anything, because a part that carries too much load fails. Every later topic in this folder builds on the free-body diagram and the equilibrium equations below.
+**Statics** is the study of bodies that do not move. Engineers use it to find the forces in cables, trusses, frames, and supports before they size anything, because a part that carries too much load fails. Every later topic in this folder builds on the free-body diagram and the equilibrium equations below.
 
 **Prerequisites:** [Algebra](../math/01-algebra.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 8-12 h
@@ -97,7 +97,7 @@ $$T_1 = 622.3 \times \frac{\cos 60^\circ}{\cos 40^\circ} \approx 406.2\ \text{N}
 
 ## Go deeper
 
-- [Engineering Statics: Open and Interactive, Chapter 3, Equilibrium of Particles](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/03:_Equilibrium_of_Particles) by Daniel W. Baker and William Haynes, LibreTexts: particle equilibrium in 2D and 3D with worked problems, CC BY-NC-SA 4.0.
-- [Engineering Statics: Open and Interactive, Chapter 5, Rigid Body Equilibrium](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/05:_Rigid_Body_Equilibrium) by Daniel W. Baker and William Haynes, LibreTexts: moments, support reactions, and the three rigid-body equilibrium equations.
+- [*Engineering Statics: Open and Interactive*, Chapter 3, Equilibrium of Particles](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/03:_Equilibrium_of_Particles) by Daniel W. Baker and William Haynes, LibreTexts: particle equilibrium in 2D and 3D with worked problems, CC BY-NC-SA 4.0.
+- [*Engineering Statics: Open and Interactive*, Chapter 5, Rigid Body Equilibrium](https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Engineering_Statics:_Open_and_Interactive_(Baker_and_Haynes)/05:_Rigid_Body_Equilibrium) by Daniel W. Baker and William Haynes, LibreTexts: moments, support reactions, and the three rigid-body equilibrium equations.
 - Next: [Particle dynamics](02-particle-dynamics.md), once you can draw an FBD and solve a 2D equilibrium problem.
 - [Mechanics reference](reference-mechanics.md): the lookup sheet for this topic.

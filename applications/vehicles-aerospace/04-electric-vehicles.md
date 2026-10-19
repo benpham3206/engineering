@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Electric vehicles, or EVs, are cars that drive their wheels with one or more electric motors powered by a battery pack. The battery and motor sit at the center of the design, so a mistake in either one changes the whole car.
+**Electric vehicles, or EVs**, are cars that drive their wheels with one or more electric motors powered by a battery pack. The battery and motor sit at the center of the design, so a mistake in either one changes the whole car.
 
 An engineer who understands an EV can size the motor for a given speed and grade, choose a pack for a target range, and predict how much energy regenerative braking returns. The range estimate works from the same road load that sets the power of any car.
 
@@ -13,13 +13,13 @@ An engineer who understands an EV can size the motor for a given speed and grade
 
 ### How it works
 
-The battery pack supplies direct current (DC) to an inverter. The inverter switches the current into a three-phase alternating current, and the motor turns that current into torque. The motor shaft drives a single-speed reduction gear, which turns the wheels. Power flows the other way during regenerative braking: the wheels turn the motor as a generator, and the inverter sends current back into the pack.
+The battery pack supplies direct current (DC) to an inverter. The inverter switches the current into a three-phase alternating current, and the motor turns that current into torque. The motor shaft drives a single-speed reduction gear, which turns the wheels. Power flows the other way during **regenerative braking**: the wheels turn the motor as a generator, and the inverter sends current back into the pack.
 
-The motor produces torque from the magnetic force between a magnetic field in the rotor and a rotating field in the stator. A permanent-magnet synchronous motor (PMSM) gives high efficiency over a wide speed range. An induction motor needs no magnets, and it has lower efficiency at light load but is robust and cheap. An EV controller adjusts the frequency and current so the motor produces the requested torque at each speed.
+The motor produces torque from the magnetic force between a magnetic field in the rotor and a rotating field in the stator. A **permanent-magnet synchronous motor (PMSM)** gives high efficiency over a wide speed range. An induction motor needs no magnets, and it has lower efficiency at light load but is robust and cheap. An EV controller adjusts the frequency and current so the motor produces the requested torque at each speed.
 
 ### Main parts
 
-- **Battery pack:** lithium-ion cells in modules, with a battery management system (BMS) that watches each cell's voltage and temperature. A typical passenger EV pack holds 40 to 100 kWh.
+- **Battery pack:** lithium-ion cells in modules, with a **battery management system (BMS)** that watches each cell's voltage and temperature. A typical passenger EV pack holds 40 to 100 kWh.
 - **Inverter:** power transistors that switch the DC pack voltage into a controlled AC waveform. Its efficiency is typically 95 to 98 percent.
 - **Traction motor:** converts electric power into torque at the shaft. Its efficiency is typically 90 to 95 percent across most of its range.
 - **Single-speed reduction gear:** a fixed gear ratio, often 8:1 to 12:1, that matches the motor's high speed to the wheel's lower speed.
@@ -45,7 +45,7 @@ The power and range equations assume steady speed on a level road, no wind, and 
 - **Drivetrain efficiency:** $\eta_{\mathrm{dt}} = \eta_{\mathrm{inv}} \, \eta_{\mathrm{mot}} \, \eta_{\mathrm{gear}}$, dimensionless. Typical values are 0.95, 0.92, and 0.98.
 - **Road load:** $F_{\mathrm{road}} = C_{\mathrm{rr}} \, m \, g + \tfrac{1}{2} \rho \, C_d \, A \, v^2$, in N, with rolling resistance from the tire, $m$ the mass in kg, and $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). $C_{\mathrm{rr}}$ and $C_d$ are dimensionless, $\rho$ is the air density in kg/m$^3$, and $A$ is the frontal area in m$^2$. See [Cars](02-cars.md) for the derivation.
 - **Energy per distance:** $e = P_{\mathrm{batt}} / v$, in J/m. To express it in Wh/km, divide the value in J/m by 3.6, because $1\ \text{Wh/km} = 3.6\ \text{J/m}$.
-- **Range:** $R = E_{\mathrm{use}} / e$, in km, where $E_{\mathrm{use}}$ is the usable pack energy in Wh. Usable energy is the nominal pack energy times the fraction the BMS allows you to use.
+- **Range:** $R = E_{\mathrm{use}} / e$, in km, where $E_{\mathrm{use}}$ is the usable pack energy in Wh. **Usable energy** is the nominal pack energy times the fraction the BMS allows you to use.
 - **Battery C-rate:** $C = I / Q$, dimensionless, where $I$ is the current in A and $Q$ is the rated capacity in Ah. A discharge at 1C empties the pack in one hour.
 - **Regenerative energy:** $E_{\mathrm{regen}} = \eta_{\mathrm{regen}} \, \tfrac{1}{2} m v_0^2$, in J, where $\eta_{\mathrm{regen}}$ is the fraction of kinetic energy returned to the pack and $v_0$ is the speed before braking in m/s. Typical values of $\eta_{\mathrm{regen}}$ are 0.5 to 0.7 for the brake energy the motor can recover, and the rest goes to friction brakes and losses.
 
@@ -96,7 +96,10 @@ The same steps at the other speeds give:
 
 ### High-voltage service hazard
 
-A traction pack runs at hundreds of volts, and its capacitors hold charge after the car is off. The hierarchy of controls applies. Elimination means that a repair avoids opening the pack when a module swap or a service-plug isolation is enough. Substitution means using a pack with sealed, pre-tested modules. Engineering controls are the service disconnect plug, interlocks that open the contactors, insulated tools rated for the voltage, and an insulation monitor. Administrative controls are a written procedure, certified high-voltage training, and a second trained person present. Personal protective equipment is rated insulating gloves with a leather protector, a face shield, and insulated footwear.
+> [!WARNING]
+> A traction pack runs at hundreds of volts, and its capacitors hold charge after the car is off.
+
+The hierarchy of controls applies. Elimination means that a repair avoids opening the pack when a module swap or a service-plug isolation is enough. Substitution means using a pack with sealed, pre-tested modules. Engineering controls are the service disconnect plug, interlocks that open the contactors, insulated tools rated for the voltage, and an insulation monitor. Administrative controls are a written procedure, certified high-voltage training, and a second trained person present. Personal protective equipment is rated insulating gloves with a leather protector, a face shield, and insulated footwear.
 
 Lockout and tagout for high-voltage work means the following. Isolate the pack by pulling the service disconnect and taking it out of the car, then lock it in a box and tag it. Release or restrain stored energy by waiting for the DC-link capacitors to discharge, which the service manual gives as a time, and by bleeding them with the approved tool. Verify a zero-energy state by measuring the voltage across the pack terminals and the DC link with a meter rated for the pack voltage, and by confirming zero volts on each conductor before touching it. Never assume the pack is dead because the car is off.
 

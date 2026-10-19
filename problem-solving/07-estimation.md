@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Estimation is the practice of finding the order of magnitude of an answer from known values when exact data is missing. Engineers need it because a rough answer with its assumptions shows quickly whether a detailed analysis is worth doing.
+**Estimation** is the practice of finding the order of magnitude of an answer from known values when exact data is missing. Engineers need it because a rough answer with its assumptions shows quickly whether a detailed analysis is worth doing.
 
 A Fermi problem asks for a
 quantity such as "how much energy heats a bath?" and answers it by breaking the question into
@@ -27,7 +27,7 @@ of magnitude with a range, and you write down every assumption so a reader can c
   and say why you chose it. A reader should be able to swap in a better value.
 - A **typical value** is a number that is representative of common cases, such as the density of
   water (about 1000 kg/m$^3$). Use these from reliable tables, not from memory alone.
-- An **order-of-magnitude** answer is correct to within a factor of about 3 to 10. Do not claim
+- An **order-of-magnitude answer** is correct to within a factor of about 3 to 10. Do not claim
   more precision than the inputs support.
 
 ### Good habits

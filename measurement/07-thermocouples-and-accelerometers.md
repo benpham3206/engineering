@@ -76,8 +76,8 @@ $$a\ [\text{g}] = \frac{V_{\text{out}}\ [\text{mV}]}{s\ [\text{mV/g}]} \qquad a\
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-2/pages/1-introduction) by OpenStax: temperature, thermometers, and thermal expansion, the physical background for thermocouples.
-- [University Physics Volume 2, Chapter 10: Introduction](https://openstax.org/books/university-physics-volume-2/pages/10-introduction) by OpenStax: resistors and circuits, the electrical background for signal conditioning.
+- [*University Physics Volume 2*, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-2/pages/1-introduction) by OpenStax: temperature, thermometers, and thermal expansion, the physical background for thermocouples.
+- [*University Physics Volume 2*, Chapter 10: Introduction](https://openstax.org/books/university-physics-volume-2/pages/10-introduction) by OpenStax: resistors and circuits, the electrical background for signal conditioning.
 
 Look up the reference table for your thermocouple type from the manufacturer or a standards body before using values outside room temperature.
 - [Measurement reference](reference.md): the lookup sheet for this topic.

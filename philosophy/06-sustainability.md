@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-Sustainability is the practice of meeting present needs without damaging the ability of future people to meet theirs. Engineers need it because nearly every design uses materials, energy, and land, and it creates waste when it ends its life.
+**Sustainability** is the practice of meeting present needs without damaging the ability of future people to meet theirs. Engineers need it because nearly every design uses materials, energy, and land, and it creates waste when it ends its life.
 
 Sustainable engineering makes those costs visible and plans for them from the start.
 
@@ -11,10 +11,10 @@ Sustainable engineering makes those costs visible and plans for them from the st
 
 ## Core ideas
 
-- The most widely used definition comes from the 1987 report "Our Common Future," by the World Commission on Environment and Development (the Brundtland Commission). It defines sustainable development as development that meets the needs of the present without compromising the ability of future generations to meet their own needs.
+- The most widely used definition comes from the 1987 report *Our Common Future*, by the World Commission on Environment and Development (the Brundtland Commission). It defines sustainable development as development that meets the needs of the present without compromising the ability of future generations to meet their own needs.
 - Sustainability has three parts that people often discuss together: environmental health, economic viability, and social equity. A design that is green but unaffordable, or cheap but harmful to a community, is not sustainable.
-- A system is a stock and flow problem. Resources come into a product as inputs (materials, energy, water), move through it, and leave as outputs (products, emissions, waste). Sustainable design reduces inputs, keeps materials in use longer, and reduces harmful outputs.
-- Life cycle thinking looks at the whole life of a product:
+- A system is a stock and flow problem. Resources come into a product as **inputs** (materials, energy, water), move through it, and leave as **outputs** (products, emissions, waste). Sustainable design reduces inputs, keeps materials in use longer, and reduces harmful outputs.
+- **Life cycle thinking** looks at the whole life of a product:
   - Raw material extraction and processing.
   - Manufacturing.
   - Transport and distribution.
@@ -29,7 +29,7 @@ Sustainable engineering makes those costs visible and plans for them from the st
 ### Principles that come up often
 
 - Reduce, reuse, recycle: prefer using less, then reusing, then recycling materials, in that order of value.
-- Design for disassembly: a product that can be taken apart can be repaired, upgraded, or recycled more easily.
+- **Design for disassembly**: a product that can be taken apart can be repaired, upgraded, or recycled more easily.
 - Use local resources when they are sound: transport has its own impact, and local supply reduces it.
 - Measure what matters: pick a few metrics you can actually measure, such as energy use, material mass, lifetime, and cost per year of service.
 

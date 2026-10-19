@@ -33,6 +33,13 @@ The SI base units are defined by fixing seven constants of nature (see [constant
 | C | coulomb | 1 | A s | yes | bipm-si-9 | Table 4 |
 | V | volt | 1 | W/A | yes | bipm-si-9 | Table 4 |
 | ohm | ohm | 1 | V/A | yes | bipm-si-9 | Table 4 |
+| S | siemens | 1 | A/V | yes | bipm-si-9 | Table 4 |
+| F | farad | 1 | C/V | yes | bipm-si-9 | Table 4 |
+| Wb | weber | 1 | V s | yes | bipm-si-9 | Table 4 |
+| T | tesla | 1 | Wb/m^2 | yes | bipm-si-9 | Table 4 |
+| H | henry | 1 | Wb/A | yes | bipm-si-9 | Table 4 |
+| VA | volt-ampere, the name used for apparent power | 1 | V A | yes (a watt by dimension) | definition | |
+| var | var, the name used for reactive power | 1 | V A | yes (a watt by dimension) | definition | |
 | L | litre | 0.001 | m^3 | yes | bipm-si-9 | Table 8 |
 | bar | bar | 100000 | Pa | yes | nist-sp811 | Appendix B.8 |
 | atm | standard atmosphere | 101325 | Pa | yes | nist-sp811 | Appendix B.8 |

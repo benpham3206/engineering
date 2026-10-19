@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-The engineering method is a repeatable set of steps for doing engineering work of any size, from choosing a bolt to building a spacecraft. Engineers use it because a repeatable method catches errors that improvised work misses.
+The **engineering method** is a repeatable set of steps for doing engineering work of any size, from choosing a bolt to building a spacecraft. Engineers use it because a repeatable method catches errors that improvised work misses.
 
 It is adapted for physical engineering from an [engineering standard](https://github.com/benpham3206/agent-engineering/blob/main/standards/engineering.md), which states it in full.
 
@@ -21,8 +21,8 @@ It is adapted for physical engineering from an [engineering standard](https://gi
 
 Before starting, ask: is this work low consequence, low uncertainty, and easy to reverse, all three?
 
-- **Yes:** take the fast path. Build it, check it, iterate. A jig for the shop, a test fixture, a first prototype.
-- **No:** take the full path below. A part that carries people, holds pressure, spins fast, flies, or costs a lot to remake.
+- **Yes:** take the **fast path**. Build it, check it, iterate. A jig for the shop, a test fixture, a first prototype.
+- **No:** take the **full path** below. A part that carries people, holds pressure, spins fast, flies, or costs a lot to remake.
 
 A clear goal alone does not open the fast path. Cutting expensive stock, pouring concrete, and releasing a drawing to a supplier are irreversible, so they always get constraints checked and consequences traced first.
 

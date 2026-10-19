@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A bicycle is a two-wheeled vehicle that turns a rider's leg power into speed through a chain and gears. A bicycle that is hard to pedal or hard to steer is useless to its rider, so an engineer must get both right.
+A **bicycle** is a two-wheeled vehicle that turns a rider's leg power into speed through a chain and gears. A bicycle that is hard to pedal or hard to steer is useless to its rider, so an engineer must get both right.
 
 Engineers use the same physics to size gears, estimate how much power a rider needs on a hill, and design a frame that steers stably.
 
@@ -17,9 +17,9 @@ The rider pushes the pedals, which turn the crank. The chainring pulls the chain
 
 Two numbers set the gear: the ratio of chainring teeth to cog teeth, and the wheel radius. A large chainring or a small cog gives a harder gear. Each pedal turn then moves the bicycle farther, but the rider must push harder.
 
-At steady speed, the rider's power balances three resistances. Rolling resistance comes from the tyre deforming on the road. Air drag comes from pushing air aside. A grade adds a force that pulls the bicycle back. Air drag grows with the square of speed, so it dominates at high speed. Power to overcome it grows with the cube of speed.
+At steady speed, the rider's power balances three resistances. **Rolling resistance** comes from the tyre deforming on the road. **Air drag** comes from pushing air aside. A grade adds a force that pulls the bicycle back. Air drag grows with the square of speed, so it dominates at high speed. Power to overcome it grows with the cube of speed.
 
-Steering depends on the geometry of the fork. Trail is the distance along the ground between the tyre's contact point and the point where the steering axis meets the ground. Positive trail makes the front wheel follow the frame and return to straight when the rider lets go, which is why a rider can ride without hands at speed.
+Steering depends on the geometry of the fork. **Trail** is the distance along the ground between the tyre's contact point and the point where the steering axis meets the ground. Positive trail makes the front wheel follow the frame and return to straight when the rider lets go, which is why a rider can ride without hands at speed.
 
 ### Main parts
 
@@ -43,7 +43,7 @@ Steering depends on the geometry of the fork. Trail is the distance along the gr
 
 ## Key equations
 
-Assumes the chain does not slip on the teeth. The gear ratio compares the number of teeth on the chainring and the cog. $N$ is a tooth count, so $G$ is dimensionless:
+Assumes the chain does not slip on the teeth. The **gear ratio** compares the number of teeth on the chainring and the cog. $N$ is a tooth count, so $G$ is dimensionless:
 
 $$G = \frac{N_{\mathrm{ring}}}{N_{\mathrm{cog}}}$$
 
@@ -67,7 +67,7 @@ Assumes a straight slope of constant angle $\theta$. On that grade, the gravity 
 
 $$F_g = m g \sin\theta$$
 
-Assumes steady speed, so the acceleration and kinetic energy terms vanish, and a constant drivetrain efficiency. The power the rider delivers at the wheel, in watts, is the total resistance force times the speed. The input power at the pedals is larger because the drivetrain loses some energy. Here $\eta$ is the drivetrain efficiency, which is about 0.97 for a clean chain (typical):
+Assumes steady speed, so the acceleration and kinetic energy terms vanish, and a constant drivetrain efficiency. The power the rider delivers at the wheel, in watts, is the total resistance force times the speed. The input power at the pedals is larger because the drivetrain loses some energy. Here $\eta$ is the **drivetrain efficiency**, which is about 0.97 for a clean chain (typical):
 
 $$P_{\mathrm{wheel}} = (F_{\mathrm{rr}} + F_d + F_g)\, v, \qquad P_{\mathrm{in}} = \frac{P_{\mathrm{wheel}}}{\eta}$$
 
@@ -157,9 +157,9 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 ## Go deeper
 
 - [Reference sheet: mechanics](../../physics/reference-mechanics.md): forces, power, and rotation in one place.
-- [OpenStax University Physics Volume 1, chapter 6, applications of Newton's laws](https://openstax.org/books/university-physics-volume-1/pages/6-introduction): friction, drag, and terminal speed.
-- [OpenStax University Physics Volume 1, chapter 7, work, energy, and power](https://openstax.org/books/university-physics-volume-1/pages/7-introduction): the work-energy theorem and power.
-- [OpenStax University Physics Volume 1, chapter 10, rotational motion](https://openstax.org/books/university-physics-volume-1/pages/10-introduction): angular speed and moment of inertia for wheels and cranks.
+- [OpenStax *University Physics Volume 1*, chapter 6, applications of Newton's laws](https://openstax.org/books/university-physics-volume-1/pages/6-introduction): friction, drag, and terminal speed.
+- [OpenStax *University Physics Volume 1*, chapter 7, work, energy, and power](https://openstax.org/books/university-physics-volume-1/pages/7-introduction): the work-energy theorem and power.
+- [OpenStax *University Physics Volume 1*, chapter 10, rotational motion](https://openstax.org/books/university-physics-volume-1/pages/10-introduction): angular speed and moment of inertia for wheels and cranks.
 - [Gear trains](../power-transmission/01-gear-trains.md): tooth ratios and efficiency.
 - [Belts and chains](../power-transmission/03-belts-and-chains.md): chain tension, wrap, and speed ratio.
 - [Clutches and brakes](../power-transmission/04-clutches-and-brakes.md): brake heat and torque capacity.

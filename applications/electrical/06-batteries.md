@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A battery is a device that stores chemical energy and releases it as electricity through two reactions at its electrodes. Engineers choose a battery by its energy, power, life, and safety, and lithium-ion cells need careful management because a fault can release heat fast enough to start a fire.
+A **battery** is a device that stores chemical energy and releases it as electricity through two reactions at its electrodes. Engineers choose a battery by its energy, power, life, and safety, and lithium-ion cells need careful management because a fault can release heat fast enough to start a fire.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md)
 **Time:** 4-6 h
@@ -11,13 +11,13 @@ A battery is a device that stores chemical energy and releases it as electricity
 
 ### How it works
 
-A cell has two electrodes in contact with an electrolyte. At the anode, a material gives up electrons, which is oxidation. The electrons flow through the external circuit to the cathode, where a material takes them up, which is reduction. Ions move through the electrolyte to keep the charge balanced inside the cell. Charging drives current the other way and reverses both reactions.
+A cell has two electrodes in contact with an **electrolyte**. At the **anode**, a material gives up electrons, which is oxidation. The electrons flow through the external circuit to the **cathode**, where a material takes them up, which is reduction. Ions move through the electrolyte to keep the charge balanced inside the cell. Charging drives current the other way and reverses both reactions.
 
 A lead-acid cell has a lead anode, a lead dioxide cathode, and an electrolyte of sulfuric acid in water. During discharge, both electrodes turn into lead sulfate, and the acid is used up. The overall reaction is $\text{Pb} + \text{PbO}_2 + 2\,\text{H}_2\text{SO}_4 \rightarrow 2\,\text{PbSO}_4 + 2\,\text{H}_2\text{O}$. Each cell gives about 2.0 V (as of 2026, for this chemistry). Six cells in series give a 12 V battery.
 
-A lithium-ion cell has a graphite anode and a lithium metal oxide cathode, with a lithium salt dissolved in an organic solvent. Lithium ions move in and out of the layered electrode materials, a process called intercalation. The electrode structure changes little, so the cell tolerates many cycles. Common cells give 3.6 to 3.7 V (as of 2026, for cobalt and nickel-based cells). Lithium iron phosphate cells give about 3.2 V (as of 2026).
+A lithium-ion cell has a graphite anode and a lithium metal oxide cathode, with a lithium salt dissolved in an organic solvent. Lithium ions move in and out of the layered electrode materials, a process called **intercalation**. The electrode structure changes little, so the cell tolerates many cycles. Common cells give 3.6 to 3.7 V (as of 2026, for cobalt and nickel-based cells). Lithium iron phosphate cells give about 3.2 V (as of 2026).
 
-Capacity is measured in amp-hours (Ah), the current a cell delivers for one hour. Energy is capacity times voltage, measured in watt-hours (Wh). A 12 V, 100 Ah battery stores 1200 Wh.
+Capacity is measured in **amp-hours (Ah)**, the current a cell delivers for one hour. Energy is capacity times voltage, measured in **watt-hours (Wh)**. A 12 V, 100 Ah battery stores 1200 Wh.
 
 ### Main parts
 
@@ -29,7 +29,7 @@ The separator is a porous membrane that keeps the electrodes apart and lets ions
 
 Lead-acid cases have vents that release hydrogen during overcharge. Vented cells need ventilation for that reason.
 
-A battery management system, or BMS, measures each cell's voltage, the pack current, and the temperature. It limits charge and discharge, and it balances the cells in a series pack. Most lithium packs need one. Lead-acid packs usually need a charge controller instead.
+A **battery management system, or BMS**, measures each cell's voltage, the pack current, and the temperature. It limits charge and discharge, and it balances the cells in a series pack. Most lithium packs need one. Lead-acid packs usually need a charge controller instead.
 
 Protective devices include fuses, contactors that disconnect the pack, and cell spacers or thermal barriers that slow heat spread between cells.
 
@@ -122,7 +122,8 @@ The lightest chemistry is not always the safest. A design must weigh energy dens
 
 ## How it fails
 
-Overcharging a flooded lead-acid cell splits water into hydrogen and oxygen. The electrolyte level falls, and the gas can ignite. Warning signs are a need to top up water often and a swollen or hot case. A charge controller limits the voltage, and the battery needs ventilation.
+> [!WARNING]
+> Overcharging a flooded lead-acid cell splits water into hydrogen and oxygen. The electrolyte level falls, and the gas can ignite. Warning signs are a need to top up water often and a swollen or hot case. A charge controller limits the voltage, and the battery needs ventilation.
 
 Sulfation happens when a lead-acid battery sits discharged for a long time. Large lead sulfate crystals form and reduce the capacity. Warning signs are falling capacity and slow charge acceptance. Keeping the battery charged and limiting depth of discharge prevent it.
 
@@ -130,7 +131,8 @@ Overcharging a lithium cell plates metal and can oxidize the cathode, which gene
 
 Over-discharging a lithium cell dissolves copper from the anode current collector. The copper can later deposit and short the cell. An undervoltage cutoff in the BMS prevents this.
 
-Thermal runaway starts with a short, heat, or damage. The protective film inside the anode breaks down and releases heat. The electrolyte decomposes, and the cathode can release oxygen, which feeds the fire. Warning signs are a swollen cell, rising temperature, hissing, and smoke. Measures include BMS cutoffs, temperature sensors, thermal barriers between cells, vents, separators that shut down, and fire-resistant enclosures.
+> [!WARNING]
+> **Thermal runaway** starts with a short, heat, or damage. The protective film inside the anode breaks down and releases heat. The electrolyte decomposes, and the cathode can release oxygen, which feeds the fire. Warning signs are a swollen cell, rising temperature, hissing, and smoke. Measures include BMS cutoffs, temperature sensors, thermal barriers between cells, vents, separators that shut down, and fire-resistant enclosures.
 
 Crushing or piercing a cell can short its electrodes through the separator. Pack enclosures and crash protection reduce this risk.
 

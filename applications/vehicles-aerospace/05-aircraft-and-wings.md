@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An aircraft is a flying machine that stays up because its wings make lift. A wing sized wrong can stall too early or cost too much engine power to fly, so engineers must check it first.
+An **aircraft** is a flying machine that stays up because its wings make lift. A wing sized wrong can stall too early or cost too much engine power to fly, so engineers must check it first.
 
 An engineer sizes the wing to set the stall speed, the cruise drag, and the power the engine must supply to pay for the drag of the wings and body.
 
@@ -13,13 +13,13 @@ An engineer sizes the wing to set the stall speed, the cruise drag, and the powe
 
 ### How it works
 
-A wing sits in moving air and turns the air downward. The wing's shape and its angle to the flow set how much air it turns. The air pushes back on the wing, and that reaction is lift. Newton's third law explains the push, and the pressure picture explains where the force comes from. The air above the wing speeds up and its pressure drops, while the air below stays closer to free-stream pressure. The pressure difference acts over the wing area, and its total is the lift.
+A wing sits in moving air and turns the air downward. The wing's shape and its angle to the flow set how much air it turns. The air pushes back on the wing, and that reaction is **lift**. Newton's third law explains the push, and the pressure picture explains where the force comes from. The air above the wing speeds up and its pressure drops, while the air below stays closer to free-stream pressure. The pressure difference acts over the wing area, and its total is the lift.
 
 A common explanation says the air over the top must cover a longer path and so must move faster to meet the air below at the trailing edge. That claim is wrong. The air over the top moves faster than the equal-transit-time story predicts, and nothing forces the two streams to meet at the trailing edge.
 
 Four forces act on an aircraft. Lift acts up, weight acts down, thrust acts forward, and drag acts backward. In steady level flight, lift equals weight and thrust equals drag. Climbing, descending, and turning all change these balances. In a turn, the wing must make more lift than the aircraft's weight.
 
-The angle of attack $\alpha$ is the angle between the wing chord line and the oncoming air. Lift rises with angle of attack until the flow separates from the upper surface. Past that point, lift drops quickly. This event is a stall.
+The **angle of attack** $\alpha$ is the angle between the wing chord line and the oncoming air. Lift rises with angle of attack until the flow separates from the upper surface. Past that point, lift drops quickly. This event is a stall.
 
 ### Main parts
 
@@ -40,7 +40,7 @@ The angle of attack $\alpha$ is the angle between the wing chord line and the on
 
 ## Key equations
 
-Lift and drag. Both depend on dynamic pressure, $q = \tfrac{1}{2}\rho V^2$.
+Lift and drag. Both depend on **dynamic pressure**, $q = \tfrac{1}{2}\rho V^2$.
 
 $$
 L = \tfrac{1}{2}\rho V^2 S\, C_L \qquad D = \tfrac{1}{2}\rho V^2 S\, C_D
@@ -49,7 +49,7 @@ $$
 - $L$ is lift (N). $D$ is drag (N). $\rho$ is air density (kg/m$^3$, about 1.225 at sea level on Earth). $V$ is airspeed (m/s). $S$ is wing area (m$^2$). $C_L$ and $C_D$ are the lift and drag coefficients (dimensionless).
 - Assumptions: steady flight, subsonic and incompressible air, and $C_L$ and $C_D$ both referenced to the same wing area $S$.
 
-Stall speed, where lift equals weight at the maximum lift coefficient.
+**Stall speed**, where lift equals weight at the maximum lift coefficient.
 
 $$
 V_s = \sqrt{\frac{2W}{\rho\, S\, C_{L,\max}}}
@@ -58,13 +58,13 @@ $$
 - $V_s$ is stall speed (m/s). $W = mg$ is weight (N), with $m$ in kg and $g = 9.81$ m/s$^2$ near Earth's surface. $C_{L,\max}$ is the maximum lift coefficient (dimensionless). The stall speed rises with the square root of the load factor $n$ in a turn, because lift must equal $nW$.
 - Assumptions: steady, unaccelerated flight at the stall point, a load factor of 1 (level flight) unless the text says otherwise, and $C_{L,\max}$ set for the configuration in use.
 
-Induced drag, which comes from the lift itself, and total drag.
+**Induced drag**, which comes from the lift itself, and total drag.
 
 $$
 C_{D,i} = \frac{C_L^2}{\pi\, e\, \mathrm{AR}} \qquad C_D = C_{D,0} + C_{D,i} \qquad \mathrm{AR} = \frac{b^2}{S}
 $$
 
-- $C_{D,i}$ is induced drag coefficient. $C_{D,0}$ is zero-lift drag coefficient, which covers form drag and skin friction. $e$ is the Oswald efficiency factor, typically 0.7 to 0.85 (typical value). $\mathrm{AR}$ is aspect ratio (dimensionless). $b$ is wingspan (m).
+- $C_{D,i}$ is induced drag coefficient. $C_{D,0}$ is zero-lift drag coefficient, which covers form drag and skin friction. $e$ is the **Oswald efficiency factor**, typically 0.7 to 0.85 (typical value). $\mathrm{AR}$ is **aspect ratio** (dimensionless). $b$ is wingspan (m).
 - Assumptions: subsonic, steady flow. The factor $e$ folds the real lift distribution into one number, and $e = 1$ would be the elliptical lift distribution, which is the lowest induced drag for a given span and lift.
 
 Thin-airfoil lift slope, valid below the stall.
@@ -171,5 +171,5 @@ Otto Lilienthal made hundreds of glider flights in Germany in the 1890s. The Wri
 - [What is drag?](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/what-is-drag/) by NASA Glenn Research Center: form drag, skin friction, and induced drag.
 - [Bernoulli's equation](https://www.grc.nasa.gov/www/k-12/airplane/bern.html) by NASA Glenn Research Center: the pressure and speed relation for airfoils and pitot tubes.
 - Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) and [Thermofluids reference](../../physics/reference-thermofluids.md).
-- [University Physics Volume 1, Chapter 14 (fluid dynamics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: fluids, pressure, and Bernoulli's equation.
+- [*University Physics Volume 1*, Chapter 14 (fluid dynamics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction) by OpenStax: fluids, pressure, and Bernoulli's equation.
 - Related lessons: [Rotorcraft and drones](06-rotorcraft-and-drones.md), [Rockets](07-rockets.md), and [Gas turbines and jet engines](../thermal-fluid/07-gas-turbines-and-jet-engines.md).

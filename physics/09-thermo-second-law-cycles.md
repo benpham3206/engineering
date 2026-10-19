@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-The second law of thermodynamics is the rule that some energy conversions are impossible, and it sets the best efficiency any engine can reach. Engineers use it, with entropy and the cycles of engines and refrigerators, to judge how close a real engine, refrigerator, or power plant can get to its ideal limit. The first law says energy is conserved.
+The **second law of thermodynamics** is the rule that some energy conversions are impossible, and it sets the best efficiency any engine can reach. Engineers use it, with entropy and the cycles of engines and refrigerators, to judge how close a real engine, refrigerator, or power plant can get to its ideal limit. The first law says energy is conserved.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md) (work, heat, the first law, and ideal gas air), [Single-variable calculus](../math/03-single-variable-calculus.md) (entropy as an integral, natural logarithm)
 **Time:** 8-12 h
@@ -25,7 +25,7 @@ The second law of thermodynamics is the rule that some energy conversions are im
 
 - **Entropy** $S$ is a property that measures how energy is spread out or how many microscopic arrangements are possible. It is measured in joules per kelvin (J/K).
 - In general, $\Delta S = \int \delta Q_\text{rev}/T$, where $\delta Q_\text{rev}$ is heat added along a reversible path. When heat $Q$ moves reversibly at one constant temperature $T$ (in kelvin), such as with a reservoir, this reduces to $\Delta S = Q/T$.
-- The **entropy of an isolated system never decreases**. It stays the same for reversible processes and increases for irreversible ones. This is one common form of the second law.
+- The entropy of an isolated system never decreases. It stays the same for reversible processes and increases for irreversible ones. This is one common form of the second law.
 - Entropy can decrease inside a part of the universe, such as a refrigerator cooling its inside. The total entropy of the system plus surroundings still does not decrease.
 
 ### Statements of the second law
@@ -154,7 +154,7 @@ $$
 
 ## Go deeper
 
-- [Introduction to the Second Law of Thermodynamics and Entropy (Chapter 4), University Physics Volume 2](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: reversibility, heat engines, refrigerators, the Carnot cycle, and entropy, free to read.
+- [Introduction to the Second Law of Thermodynamics and Entropy (Chapter 4), *University Physics Volume 2*](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: reversibility, heat engines, refrigerators, the Carnot cycle, and entropy, free to read.
 - [The Second Law of Thermodynamics and Entropy](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/second-law-entropy/) by NASA Glenn Research Center: reversible and irreversible processes, and entropy with a worked heat-flow example.
-- [Introduction to Thermodynamics (Chapter 3), University Physics Volume 2](https://openstax.org/books/university-physics-volume-2/pages/3-introduction) by OpenStax: the first law and ideal gas processes, which this lesson builds on.
+- [Introduction to Thermodynamics (Chapter 3), *University Physics Volume 2*](https://openstax.org/books/university-physics-volume-2/pages/3-introduction) by OpenStax: the first law and ideal gas processes, which this lesson builds on.
 - [Thermal-fluids reference](reference-thermofluids.md): the lookup sheet for this topic.

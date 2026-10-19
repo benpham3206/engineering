@@ -2,19 +2,19 @@
 
 **Type:** lesson
 
-Calculus is the branch of mathematics that describes change: a derivative gives the rate at which something changes, and an integral adds up many small pieces. Engineers use derivatives for velocity, slope, and heat flow, and integrals for deflection, total work, and total heat.
+**Calculus** is the branch of mathematics that describes change: a derivative gives the rate at which something changes, and an integral adds up many small pieces. Engineers use derivatives for velocity, slope, and heat flow, and integrals for deflection, total work, and total heat.
 
 **Prerequisites:** [Algebra](01-algebra.md), [Trigonometry](02-trigonometry.md)
 **Time:** 40-60 h (limits, derivatives, integrals, and series, in that order)
 
 ## Core ideas
 
-- A limit describes what a function approaches as its input approaches a value. You do not need the function to be defined at that exact point. Example: $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$.
-- The derivative $f'(x)$ is the slope of the tangent line, or the instantaneous rate of change. It is defined as the limit of the average rate of change over a shrinking interval.
+- A **limit** describes what a function approaches as its input approaches a value. You do not need the function to be defined at that exact point. Example: $\lim_{x \to 0} \dfrac{\sin x}{x} = 1$.
+- The **derivative** $f'(x)$ is the slope of the tangent line, or the instantaneous rate of change. It is defined as the limit of the average rate of change over a shrinking interval.
 - Useful rules: power rule $\frac{d}{dx} x^n = n x^{n-1}$, product rule, quotient rule, and chain rule. The chain rule handles a function inside another function.
-- The integral $\int_a^b f(x)\,dx$ is the signed area under $f$ from $a$ to $b$. It is also the limit of a sum of thin slices.
-- The fundamental theorem of calculus connects the two ideas. Differentiation and integration are inverse operations. If $F' = f$, then $\int_a^b f\,dx = F(b) - F(a)$.
-- A series is a sum of infinitely many terms. A Taylor series approximates a smooth function with polynomials around a point. Keeping only the first few terms gives an approximation with a known error, which engineers rely on for small angles and small strains.
+- The **integral** $\int_a^b f(x)\,dx$ is the signed area under $f$ from $a$ to $b$. It is also the limit of a sum of thin slices.
+- The **fundamental theorem of calculus** connects the two ideas. Differentiation and integration are inverse operations. If $F' = f$, then $\int_a^b f\,dx = F(b) - F(a)$.
+- A **series** is a sum of infinitely many terms. A **Taylor series** approximates a smooth function with polynomials around a point. Keeping only the first few terms gives an approximation with a known error, which engineers rely on for small angles and small strains.
 - Engineering rule of thumb: if a quantity is given as a rate, integrate it to get the total. If a quantity is a total, differentiate it to get the rate.
 
 ## Key equations
@@ -85,8 +85,8 @@ Symbols: $f$ is any function, $h$ is a small step, $x$ is position (m) unless st
 
 ## Go deeper
 
-- [Active Calculus](https://activecalculus.org/) by Matthew Boelkins and collaborators: free, openly licensed calculus textbook (CC BY-SA).
-- [Calculus Volume 1](https://openstax.org/books/calculus-volume-1/pages/1-introduction) by OpenStax: free online calculus textbook.
+- [*Active Calculus*](https://activecalculus.org/) by Matthew Boelkins and collaborators: free, openly licensed calculus textbook (CC BY-SA).
+- [*Calculus Volume 1*](https://openstax.org/books/calculus-volume-1/pages/1-introduction) by OpenStax: free online calculus textbook.
 - [Calculus I, II, and III notes](https://tutorial.math.lamar.edu/) by Paul Dawkins, Paul's Online Math Notes: worked examples for limits, derivatives, and integrals.
 - Next: [Multivariable calculus](04-multivariable-calculus.md).
 - [Math reference](reference.md): the lookup sheet for this topic.

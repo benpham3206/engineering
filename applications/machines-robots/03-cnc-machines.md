@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A CNC machine is a computer-controlled machine tool that moves a cutting tool or a workpiece along straight and rotary axes, each driven by a motor under closed-loop or open-loop control. An engineer who buys, programs, or repairs one must know what limits its accuracy, because a machine that cannot hold its path makes every part wrong.
+A **CNC machine** is a computer-controlled machine tool that moves a cutting tool or a workpiece along straight and rotary axes, each driven by a motor under closed-loop or open-loop control. An engineer who buys, programs, or repairs one must know what limits its accuracy, because a machine that cannot hold its path makes every part wrong.
 
 Its accuracy comes from the machine itself: the stiffness of the structure, the lead of the screws, the resolution of the feedback, and how well the controller holds each axis on its path.
 
@@ -29,7 +29,7 @@ Each move in a program passes through these steps:
 - **Linear guides:** rails and carriages, usually recirculating-ball types, carry each axis with low friction and little play.
 - **Ball screw:** a screw and nut with balls between them. It turns rotation into travel with low friction. The lead is the travel per revolution.
 - **Drives and motors:** servo motors with encoders on the shaft are the usual choice for production machines. Stepper motors appear on lower-cost machines.
-- **Feedback:** a rotary encoder on the motor gives semi-closed-loop control, so screw stretch and pitch error stay outside the loop. A linear glass scale on the table gives closed-loop control, so the scale measures the table directly.
+- **Feedback:** a rotary encoder on the motor gives **semi-closed-loop control**, so screw stretch and pitch error stay outside the loop. A linear glass scale on the table gives **closed-loop control**, so the scale measures the table directly.
 - **Controller:** it reads G-code, interpolates the path between points, and runs the loops for every axis.
 - **Spindle:** a separate drive with its own speed control turns the cutter or the workpiece.
 
@@ -49,7 +49,7 @@ $$v = N L$$
 
 Assumptions: the screw turns without slip, and the nut and screw have no lead error. $v$ is in metres per second (m/s).
 
-Position resolution of a feedback device that gives $n_c$ counts per revolution (dimensionless):
+**Position resolution** of a feedback device that gives $n_c$ counts per revolution (dimensionless):
 
 $$\delta x = \frac{L}{n_c}$$
 
@@ -117,7 +117,8 @@ Assumptions: the member is uniform in temperature, it expands freely (no constra
 4. Administrative controls: a written start-up check, a rule against running an unproved program, and a trained operator for each machine.
 5. Personal protective equipment: safety glasses, hearing protection, and no loose sleeves or gloves near rotating parts. PPE protects the operator, and it does not replace the controls above.
 
-**Lockout and tagout for service:** before a technician works on an axis, spindle, or drive, the technician switches off the machine and isolates its electrical supply at the disconnect. The technician locks the disconnect with a personal lock and attaches a tag with the name and date. The technician then confirms that the machine does not start by pressing the controls, and waits for the drive's stored charge to drain. For a vertical axis, the technician blocks the head with a mechanical support, because gravity can move it. The lock comes off only by the person who fitted it, after the work and the checks are complete.
+> [!WARNING]
+> **Lockout and tagout for service:** before a technician works on an axis, spindle, or drive, the technician switches off the machine and isolates its electrical supply at the disconnect. The technician locks the disconnect with a personal lock and attaches a tag with the name and date. The technician then confirms that the machine does not start by pressing the controls, and waits for the drive's stored charge to drain. For a vertical axis, the technician blocks the head with a mechanical support, because gravity can move it. The lock comes off only by the person who fitted it, after the work and the checks are complete.
 
 ## History
 
@@ -147,7 +148,7 @@ Numerical control grew out of work at the MIT Servomechanisms Laboratory. Around
 - Sizing the drive for cutting force alone. Accelerating the table and the screw takes torque too, and that can exceed the cutting torque.
 - Leaving out thermal growth on a long axis. A 2 m steel axis grows about 0.023 mm for each kelvin.
 - Forgetting the microstep setting on a stepper drive. A wrong setting scales every move by the ratio of the two values.
-- Placing the measuring scale far from the tool tip. When the table tilts, the error at the tool is the tilt times the offset (the Abbe error).
+- Placing the measuring scale far from the tool tip. When the table tilts, the error at the tool is the tilt times the offset (the **Abbe error**).
 
 ## Go deeper
 

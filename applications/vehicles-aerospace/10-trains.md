@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Trains are vehicles that run on steel wheels over steel rails, and the only thing that pushes or stops them is the small contact patch under each wheel. Engineers design traction, braking, and signaling around that contact, because a train that cannot grip the rail can neither accelerate nor stop on time. Signaling keeps trains apart, so a train never runs into the one ahead.
+**Trains** are vehicles that run on steel wheels over steel rails, and the only thing that pushes or stops them is the small contact patch under each wheel. Engineers design traction, braking, and signaling around that contact, because a train that cannot grip the rail can neither accelerate nor stop on time. Signaling keeps trains apart, so a train never runs into the one ahead.
 
 **Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Statics](../../physics/01-statics.md)
 **Time:** 6-10 h
@@ -11,18 +11,18 @@ Trains are vehicles that run on steel wheels over steel rails, and the only thin
 
 ### How it works
 
-A wheel rolls on a rail. The wheel and rail touch over a patch only a few millimetres across, so the whole weight of the train passes through a few small contact patches. Friction at these patches provides the force that accelerates and brakes the train. This friction is called adhesion, and its coefficient $\mu$ is typically about 0.25 when the rail is dry and lower when it is wet or contaminated.
+A wheel rolls on a rail. The wheel and rail touch over a patch only a few millimetres across, so the whole weight of the train passes through a few small contact patches. Friction at these patches provides the force that accelerates and brakes the train. This friction is called **adhesion**, and its coefficient $\mu$ is typically about 0.25 when the rail is dry and lower when it is wet or contaminated.
 
 A steel wheel has a slightly conical tread. When the axle moves off center, one wheel rolls on a larger radius than the other, and the axle steers back to the middle. This self-centering keeps the train on the track in a straight line.
 
 Traction motors turn the driven axles through gearboxes. The motor torque sets the force the wheel tries to deliver, but the adhesion sets the most force the rail will accept. If the motor asks for more than adhesion allows, the wheel slips and spins. Modern trains detect slip and reduce torque.
 
-Braking uses friction brake blocks or discs, electric regenerative braking that feeds energy back to the line, or both. The same adhesion limit applies. Air brakes, first made practical by George Westinghouse, use compressed air to apply the brakes, and a loss of air pressure applies them automatically. This fail-safe design is why air brakes remain standard.
+Braking uses friction brake blocks or discs, electric **regenerative braking** that feeds energy back to the line, or both. The same adhesion limit applies. **Air brakes**, first made practical by George Westinghouse, use compressed air to apply the brakes, and a loss of air pressure applies them automatically. This fail-safe design is why air brakes remain standard.
 
 ### Main parts
 
 - **Wheels and axles**: steel wheels with conical treads, pressed or fixed to axles. Axle loads set the force each wheel can carry.
-- **Rails**: steel rails on sleepers, with ballast or a concrete slab beneath. Standard gauge is 1435 mm.
+- **Rails**: steel rails on sleepers, with ballast or a concrete slab beneath. **Standard gauge** is 1435 mm.
 - **Bogies**: frames under the car that carry the wheels and steer the axles through curves.
 - **Traction system**: a motor, inverter, and gearbox on driven axles. Diesel-electric locomotives use a diesel engine to drive a generator.
 - **Brakes**: friction brakes on wheels or discs, electric regenerative braking, and the air or electronic control that operates them.
@@ -48,7 +48,7 @@ Newton's second law for a train, with mass $m$ in kilograms and acceleration $a$
 
 $$F = m a$$
 
-The braking distance at constant deceleration $a$ from speed $v$ is:
+The **braking distance** at constant deceleration $a$ from speed $v$ is:
 
 $$s = \frac{v^2}{2 a}$$
 
@@ -97,7 +97,7 @@ During brake build-up, the train travels at constant speed before braking takes 
 
 ## History
 
-George and Robert Stephenson's locomotive Rocket won the Rainhill Trials in 1829 for the Liverpool and Manchester Railway. Stephenson's early lines used a track width of 1435 mm, which became the standard gauge. George Westinghouse patented an air brake in 1869 and the automatic, fail-safe version in the early 1870s, and it made stopping long trains safe. Werner von Siemens built an electric locomotive that ran at the Berlin Trades Exhibition in 1879, which showed that electric traction could work on a railway.
+George and Robert Stephenson's locomotive *Rocket* won the Rainhill Trials in 1829 for the Liverpool and Manchester Railway. Stephenson's early lines used a track width of 1435 mm, which became the standard gauge. George Westinghouse patented an air brake in 1869 and the automatic, fail-safe version in the early 1870s, and it made stopping long trains safe. Werner von Siemens built an electric locomotive that ran at the Berlin Trades Exhibition in 1879, which showed that electric traction could work on a railway.
 
 ## Practice
 
@@ -129,7 +129,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook on Newton's laws, friction, work, and energy. It is licensed CC BY-NC-SA.
+- [*University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook on Newton's laws, friction, work, and energy. It is licensed CC BY-NC-SA.
 - [MIT OpenCourseWare](https://ocw.mit.edu/): free lecture notes, exams, and videos from MIT, with no registration required. Search for courses on dynamics and transportation systems.
 - Related: [Cars](02-cars.md), [Electric vehicles](04-electric-vehicles.md), [Gear trains](../power-transmission/01-gear-trains.md), [Brakes and clutches](../power-transmission/04-clutches-and-brakes.md), [Factor of safety and failure](../../design/07-factor-of-safety-and-failure.md), [Mechanical properties](../../materials/03-mechanical-properties.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

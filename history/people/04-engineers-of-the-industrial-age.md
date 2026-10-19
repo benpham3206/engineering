@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Engineers of the industrial age are the people who, from about 1750 to 1900, turned science and craft into machines, bridges, railways, and steel on a scale no earlier society had reached. Engineers today should know them because the machines, bridges, and steel they built set methods that modern engineers still use. This lesson covers thirteen people, from John Smeaton to Gustave Eiffel. Each entry says when and where the person worked, what they built, and which lesson in this repo uses that work.
+**Engineers of the industrial age** are the people who, from about 1750 to 1900, turned science and craft into machines, bridges, railways, and steel on a scale no earlier society had reached. Engineers today should know them because the machines, bridges, and steel they built set methods that modern engineers still use. This lesson covers thirteen people, from John Smeaton to Gustave Eiffel. Each entry says when and where the person worked, what they built, and which lesson in this repo uses that work.
 
 **Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md)
 **Time:** 3-5 h
@@ -15,7 +15,7 @@ Smeaton lived and worked in England, mostly in Yorkshire and London. He rebuilt 
 
 ### James Watt, 1736 to 1819
 
-Watt was born in Greenock, Scotland, and worked as an instrument maker at the University of Glasgow. In 1769 he patented a separate condenser for the steam engine. The condenser kept the cylinder hot on every stroke, which cut the steam and fuel the engine needed compared with Newcomen's engine. Watt later worked with Matthew Boulton in Birmingham to build and sell engines. The horsepower unit came from Watt's effort to compare his engines with horses. Engineers use the separate-condenser idea in every steam plant, and the horsepower unit is still used for motors and engines. See [Steam power plants](../../applications/thermal-fluid/08-steam-power-plants.md) and [Thermodynamics: second law and cycles](../../physics/09-thermo-second-law-cycles.md).
+Watt was born in Greenock, Scotland, and worked as an instrument maker at the University of Glasgow. In 1769 he patented a **separate condenser** for the steam engine. The condenser kept the cylinder hot on every stroke, which cut the steam and fuel the engine needed compared with Newcomen's engine. Watt later worked with Matthew Boulton in Birmingham to build and sell engines. The horsepower unit came from Watt's effort to compare his engines with horses. Engineers use the separate-condenser idea in every steam plant, and the horsepower unit is still used for motors and engines. See [Steam power plants](../../applications/thermal-fluid/08-steam-power-plants.md) and [Thermodynamics: second law and cycles](../../physics/09-thermo-second-law-cycles.md).
 
 ### Henry Maudslay, 1771 to 1831
 
@@ -86,7 +86,7 @@ $$\eta = 1 - \frac{T_C}{T_H}$$
 
 where $\eta$ is efficiency (dimensionless), $T_H$ is the hot reservoir temperature in kelvin (K), and $T_C$ is the cold reservoir temperature in kelvin (K). Both temperatures must be absolute.
 
-Mechanical horsepower, the unit named after Watt's engines:
+**Mechanical horsepower**, the unit named after Watt's engines:
 
 $$1\ \text{hp} = 745.7\ \text{W}$$
 
@@ -142,6 +142,6 @@ These engineers worked with limited theory and built many things that worked. Sm
 ## Go deeper
 
 - [The story of John Smeaton and the Eddystone lighthouse](https://www.gutenberg.org/ebooks/76767), Project Gutenberg: a free account of Smeaton's lighthouse and his mortar.
-- [The Life of George Stephenson and of his Son Robert Stephenson](https://www.gutenberg.org/ebooks/46229) by Samuel Smiles, Project Gutenberg: a free biography of both Stephensons.
+- [*The Life of George Stephenson and of his Son Robert Stephenson*](https://www.gutenberg.org/ebooks/46229) by Samuel Smiles, Project Gutenberg: a free biography of both Stephensons.
 - Related lessons: [Thermodynamics: second law and cycles](../../physics/09-thermo-second-law-cycles.md), [Steam power plants](../../applications/thermal-fluid/08-steam-power-plants.md), and [Scientists and mathematicians](03-scientists-and-mathematicians.md).
 - [People of engineering reference](../reference-people.md): the lookup sheet for this topic.

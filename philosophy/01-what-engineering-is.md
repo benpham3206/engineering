@@ -2,23 +2,23 @@
 
 **Type:** philosophy
 
-Engineering is the work of using science, math, and practical judgment to design, build, and maintain things that people rely on. An engineer cares because every design choice affects real people, money, and safety, and the job is to make those choices on purpose instead of by accident.
+**Engineering** is the work of using science, math, and practical judgment to design, build, and maintain things that people rely on. An engineer cares because every design choice affects real people, money, and safety, and the job is to make those choices on purpose instead of by accident.
 
 **Prerequisites:** none
 **Time:** 2-4 h
 
 ## Core ideas
 
-- Engineering is problem solving under constraints. A problem usually has a goal (move water up a hill, keep a phone cool, carry a load across a river), plus limits on cost, time, materials, space, and the laws of physics.
+- Engineering is problem solving under **constraints**. A problem usually has a goal (move water up a hill, keep a phone cool, carry a load across a river), plus limits on cost, time, materials, space, and the laws of physics.
 - Science asks "how does this work?" Engineering asks "how do I make this work for a purpose, within limits, and does it hold up?" Scientists and engineers use the same physics, but an engineer has to commit to a design and answer for it.
-- A design is a set of decisions. Each decision has a benefit and a cost. For example, a thicker beam is stronger but heavier and more expensive. Good engineers name the trade-offs and make them visible.
+- A design is a set of decisions. Each decision has a benefit and a cost. For example, a thicker beam is stronger but heavier and more expensive. Good engineers name the **trade-offs** and make them visible.
 - Engineering is a loop, not a straight line:
   - Define the need and the constraints.
   - Generate options.
   - Model or analyze the options.
   - Build a prototype or test.
   - Measure the results, find the failures, and repeat.
-- Engineers work with uncertainty. Material strengths vary, loads change, users do things the designer did not expect. A safe design plans for that instead of assuming everything goes as drawn.
+- Engineers work with **uncertainty**. Material strengths vary, loads change, users do things the designer did not expect. A safe design plans for that instead of assuming everything goes as drawn.
 - Engineering is a profession with duties. Licensed engineers in many countries sign their names to designs and can be held responsible for them. That is why ethics and safety are part of the core of the field, not a side topic.
 
 ### Main branches
@@ -44,7 +44,7 @@ The branches overlap a lot. A modern car uses mechanical, electrical, chemical, 
 ### Engineering versus science, and versus technology
 
 - Science discovers what is true about nature. Engineering applies that knowledge to a goal.
-- Technology is the result: the tools, devices, and systems. Engineering is the process that creates them.
+- **Technology** is the result: the tools, devices, and systems. Engineering is the process that creates them.
 
 ## Checklist
 

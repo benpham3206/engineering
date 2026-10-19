@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Machining is the family of processes that shapes a part by cutting away material with a tool. Engineers need to know which process to choose because each one sets the shape, accuracy, and cost of the finished part. Milling uses a rotating multi-tooth cutter on a stationary or moving workpiece. Turning spins the workpiece and holds a single-point tool against it. Drilling makes round holes with a rotating bit. CNC (computer numerical control) runs these operations from a program, so the same part can be made again and again with the same accuracy.
+**Machining** is the family of processes that shapes a part by cutting away material with a tool. Engineers need to know which process to choose because each one sets the shape, accuracy, and cost of the finished part. Milling uses a rotating multi-tooth cutter on a stationary or moving workpiece. Turning spins the workpiece and holds a single-point tool against it. Drilling makes round holes with a rotating bit. **CNC (computer numerical control)** runs these operations from a program, so the same part can be made again and again with the same accuracy.
 
 **Prerequisites:** [Shop safety](01-shop-safety.md), [Machining speeds and feeds](02-machining-speeds-and-feeds.md)
 **Time:** 6-8 h
@@ -18,15 +18,16 @@ Machining is the family of processes that shapes a part by cutting away material
 
 A CNC program is usually a list of blocks, each with a command code. Common codes include:
 
-- G00: rapid move (move fast, no cutting).
-- G01: linear feed move (cut in a straight line at a set feed rate).
-- G02 and G03: clockwise and counterclockwise arc moves.
-- M03 and M05: start and stop the spindle.
-- F: feed rate. S: spindle speed.
+- `G00`: rapid move (move fast, no cutting).
+- `G01`: linear feed move (cut in a straight line at a set feed rate).
+- `G02` and `G03`: clockwise and counterclockwise arc moves.
+- `M03` and `M05`: start and stop the spindle.
+- `F`: feed rate. `S`: spindle speed.
 
-A CAM (computer-aided manufacturing) program writes most CNC programs from a CAD model. An engineer should still know what the commands mean so the program can be checked by eye.
+A **CAM (computer-aided manufacturing)** program writes most CNC programs from a CAD model. An engineer should still know what the commands mean so the program can be checked by eye.
 
-Workholding is a large part of any machining job. Vises, clamps, fixtures, and chucks hold the part so the cut does not move it. A poor hold causes chatter, poor finish, and dangerous part ejection.
+> [!WARNING]
+> Workholding is a large part of any machining job. Vises, clamps, fixtures, and chucks hold the part so the cut does not move it. A poor hold causes chatter, poor finish, and dangerous part ejection.
 
 ## Checklist
 
@@ -63,7 +64,7 @@ $$f_m = 0.08 \times 3 \times 7958 = 1910 \text{ mm/min}$$
 
 1. Which process would you pick to make a 25 mm diameter shaft from round bar stock? Give a one-word answer.
 2. Which process makes a flat face on a block of steel?
-3. A CNC program line reads G01 X50 F300. Describe the move in one sentence.
+3. A CNC program line reads `G01 X50 F300`. Describe the move in one sentence.
 4. A 2-flute end mill runs at 6000 rpm with $f_z = 0.05$ mm/tooth. What is the feed rate in mm/min?
 5. Why should you dry-run a new program before running the part?
 
@@ -83,7 +84,7 @@ $$f_m = 0.08 \times 3 \times 7958 = 1910 \text{ mm/min}$$
 - Forgetting the work offset. A wrong zero moves the whole program.
 - Trusting the program without checking the tool length and diameter.
 - Running with a loose clamp because the cut "looks light."
-- Confusing G00 with G01. A rapid move at the cutting depth can crash the tool.
+- Confusing `G00` with `G01`. A rapid move at the cutting depth can crash the tool.
 
 ## Go deeper
 

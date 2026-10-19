@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A steam power plant is a facility that heats water into steam, expands the steam through a turbine that turns a generator, and condenses the steam back into water to repeat the loop. Steam plants generate much of the world's electricity, so their efficiency, water use, and reliability shape the cost of power. The ideal loop is the Rankine cycle, and engineers use it to size boilers, turbines, condensers, and cooling systems.
+A **steam power plant** is a facility that heats water into steam, expands the steam through a turbine that turns a generator, and condenses the steam back into water to repeat the loop. Steam plants generate much of the world's electricity, so their efficiency, water use, and reliability shape the cost of power. The ideal loop is the Rankine cycle, and engineers use it to size boilers, turbines, condensers, and cooling systems.
 
 **Prerequisites:** [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Thermal systems](01-thermal-systems.md)
 **Time:** 8-12 h
@@ -11,7 +11,7 @@ A steam power plant is a facility that heats water into steam, expands the steam
 
 ### How it works
 
-The Rankine cycle has four steps that repeat in a closed loop.
+The **Rankine cycle** has four steps that repeat in a closed loop.
 
 1. Pumping. A feedwater pump raises the pressure of the liquid water from the condenser pressure to the boiler pressure. Liquid water barely changes volume, so the pump needs very little work.
 2. Heating. The boiler adds heat to the water at nearly constant pressure. The water warms, boils, and then the steam is superheated above the boiling temperature.
@@ -20,7 +20,7 @@ The Rankine cycle has four steps that repeat in a closed loop.
 
 Heat enters the water at a range of temperatures, not at one fixed temperature. For that reason, the Rankine cycle stays below the Carnot limit for the same top and bottom temperatures.
 
-Two changes to the basic loop raise efficiency. Reheat sends partly expanded steam back to the boiler to be heated again before it enters a later turbine stage, which reduces the moisture in the low-pressure stages. Regeneration takes some steam from the turbine and uses it to heat the feedwater, so less heat must come from the boiler.
+Two changes to the basic loop raise efficiency. **Reheat** sends partly expanded steam back to the boiler to be heated again before it enters a later turbine stage, which reduces the moisture in the low-pressure stages. **Regeneration** takes some steam from the turbine and uses it to heat the feedwater, so less heat must come from the boiler.
 
 ### Main parts
 
@@ -45,12 +45,12 @@ Enthalpy $h$ and entropy $s$ are in kilojoules per kilogram and kilojoules per k
 
 - Pump work: $w_p = v_f (P_2 - P_1)$, where $v_f$ is the specific volume of the liquid in cubic metres per kilogram and $P$ is in kilopascals. The result is in kilojoules per kilogram.
 - Turbine work: $w_t = h_3 - h_4$, where $h_3$ is the steam enthalpy at the turbine inlet and $h_4$ is the enthalpy at the exit.
-- Turbine isentropic efficiency: $\eta_T = \dfrac{h_3 - h_4}{h_3 - h_{4s}}$, dimensionless, where $h_{4s}$ is the exit enthalpy for an ideal, isentropic expansion.
-- Steam quality for a wet mixture: $x = \dfrac{s - s_f}{s_{\mathrm{fg}}}$, dimensionless, where $s_f$ and $s_{\mathrm{fg}}$ are the entropy of saturated liquid and the entropy change on vaporization.
+- **Turbine isentropic efficiency**: $\eta_T = \dfrac{h_3 - h_4}{h_3 - h_{4s}}$, dimensionless, where $h_{4s}$ is the exit enthalpy for an ideal, isentropic expansion.
+- **Steam quality** for a wet mixture: $x = \dfrac{s - s_f}{s_{\mathrm{fg}}}$, dimensionless, where $s_f$ and $s_{\mathrm{fg}}$ are the entropy of saturated liquid and the entropy change on vaporization.
 - Rankine efficiency: $\eta = \dfrac{w_t - w_p}{q_{\mathrm{in}}}$, dimensionless, where $q_{\mathrm{in}} = h_3 - h_2$ is the heat added in the boiler, with $h_2$ the enthalpy of the feedwater entering the boiler.
 - Net power: $\dot W = \dot m \, w_{\mathrm{net}}$, where $\dot m$ is the steam mass flow in kilograms per second and $w_{\mathrm{net}}$ is in kilojoules per kilogram. The power is in kilowatts.
-- Heat rate: $\mathrm{HR} = 3600 / \eta$, in kilojoules per kilowatt hour.
-- Carnot limit: $\eta_C = 1 - T_C / T_H$, dimensionless, where $T_H$ and $T_C$ are the hot and cold temperatures in kelvin.
+- **Heat rate (HR)**: $\mathrm{HR} = 3600 / \eta$, in kilojoules per kilowatt hour.
+- **Carnot limit**: $\eta_C = 1 - T_C / T_H$, dimensionless, where $T_H$ and $T_C$ are the hot and cold temperatures in kelvin.
 
 ## Worked example
 
@@ -95,7 +95,9 @@ Enthalpy $h$ and entropy $s$ are in kilojoules per kilogram and kilojoules per k
 - Overspeed: if the generator load drops suddenly, the turbine can speed up dangerously. Overspeed trip valves close the steam supply within a fraction of a second.
 - Condenser leaks: seawater or cooling water that leaks into the steam contaminates the boiler water and corrodes the tubes. Condensers carry leak detection and a vacuum system that removes air that leaks in.
 - Water hammer: a slug of liquid water in a steam line can strike a valve or bend at high speed when the steam flow starts. Steam lines need drains, slow warm-up, and proper pipe supports.
-- Burns: the steam and hot piping can cause severe burns, so the plant uses insulation, guards, and lockout procedures for maintenance.
+
+> [!WARNING]
+> Burns: the steam and hot piping can cause severe burns, so the plant uses insulation, guards, and lockout procedures for maintenance.
 
 ## History
 
@@ -129,7 +131,7 @@ Thomas Newcomen built an atmospheric steam engine in England about 1712, and it 
 
 ## Go deeper
 
-- [University Physics Volume 2, section 4.2, Heat Engines](https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines) by OpenStax: how a heat engine converts heat to work and how efficiency is defined.
-- [University Physics Volume 2, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: the limits that the Carnot and Rankine cycles describe.
+- [*University Physics Volume 2*, section 4.2, Heat Engines](https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines) by OpenStax: how a heat engine converts heat to work and how efficiency is defined.
+- [*University Physics Volume 2*, chapter 4 introduction, The Second Law of Thermodynamics](https://openstax.org/books/university-physics-volume-2/pages/4-introduction) by OpenStax: the limits that the Carnot and Rankine cycles describe.
 - Related lessons: [Internal combustion engines](06-internal-combustion-engines.md), [Gas turbines and jet engines](07-gas-turbines-and-jet-engines.md), [Heat exchangers](05-heat-exchangers.md), [Pumps](09-pumps.md), [Piping and valves](12-piping-and-valves.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

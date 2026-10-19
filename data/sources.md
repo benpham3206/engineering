@@ -15,3 +15,6 @@ Every source that a constant, property, or claim in the repo rests on. Only free
 | eb1911 | Encyclopaedia Britannica, 11th edition, on Wikisource | Encyclopaedia Britannica (public domain text) | 1911 | https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica | pending | eb1911 |
 | smg-collection | Science Museum Group Collection online | Science Museum Group | online catalogue | https://collection.sciencemuseumgroup.org.uk/ | pending | smg |
 | eh-iron-bridge | The Iron Bridge: history | English Heritage | web page | https://www.english-heritage.org.uk/visit/places/iron-bridge/history/ | pending | english-heritage |
+| jpl-astro-par | Astrodynamic Parameters | NASA Jet Propulsion Laboratory, Solar System Dynamics | web page, planetary masses from ephemeris DE440 | https://ssd.jpl.nasa.gov/astro_par.html | pending | jpl |
+| nasa-earth-factsheet | Earth Fact Sheet | NASA Goddard Space Flight Center, NSSDCA | web page | https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html | pending | nasa-gsfc |
+| nist-pqc-2024 | NIST Releases First 3 Finalized Post-Quantum Encryption Standards | NIST | news release, 13 August 2024 | https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards | pending | nist |

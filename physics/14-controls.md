@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Feedback control is a method in which a system measures its output, compares it with a desired value, and changes its input to close the gap. Engineers use feedback to hold a temperature, keep a drone level, or position a robot arm, even when the plant changes or a disturbance pushes on it.
+**Feedback control** is a method in which a system measures its output, compares it with a desired value, and changes its input to close the gap. Engineers use feedback to hold a temperature, keep a drone level, or position a robot arm, even when the plant changes or a disturbance pushes on it.
 
 **Prerequisites:** [Vibrations](13-vibrations.md), [Particle dynamics](02-particle-dynamics.md), [Differential equations](../math/06-differential-equations.md) (Laplace transforms and transfer functions)
 **Time:** 8-12 h
@@ -139,7 +139,7 @@ The 10-90 rise time, $0.122$ s, matches $2.197\,\tau_{\mathrm{cl}} = 0.122$ s.
 
 ## Go deeper
 
-- [Feedback Systems: An Introduction for Scientists and Engineers](https://www.cds.caltech.edu/~murray/books/AM08/pdf/am08-complete_22Feb09.pdf) by Karl Johan Åström and Richard M. Murray: the complete first edition as a free PDF from Caltech. A full controls textbook, from modeling through PID and frequency response.
+- [*Feedback Systems: An Introduction for Scientists and Engineers*](https://www.cds.caltech.edu/~murray/books/AM08/pdf/am08-complete_22Feb09.pdf) by Karl Johan Åström and Richard M. Murray: the complete first edition as a free PDF from Caltech. A full controls textbook, from modeling through PID and frequency response.
 - [MIT OpenCourseWare 2.14 Analysis and Design of Feedback Control Systems (Spring 2014)](https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/) by MIT: a free undergraduate course on transfer functions, time response, root locus and loop shaping.
 - [MIT OpenCourseWare 2.14, calendar](https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/pages/calendar/) by MIT: lists the lecture on PID control and the lecture on first- and second-order time response, which match this lesson.
 - [MIT OpenCourseWare 2.14, syllabus](https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/pages/syllabus) by MIT: states that the course uses linear transfer function models and analysis in the time and frequency domains.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Orbital mechanics and rocketry are the study of how a spacecraft moves under gravity and how much propellant it takes to change that motion. Together they tell an engineer whether a mission is possible and how large the rocket must be.
+**Orbital mechanics** and rocketry are the study of how a spacecraft moves under gravity and how much propellant it takes to change that motion. Together they tell an engineer whether a mission is possible and how large the rocket must be.
 
 **Prerequisites:** [Particle dynamics](02-particle-dynamics.md), [Thermodynamics: properties, work, heat, and the first law](08-thermo-first-law.md), [Trigonometry](../math/02-trigonometry.md)
 **Time:** 10-14 h
@@ -11,7 +11,7 @@ Orbital mechanics and rocketry are the study of how a spacecraft moves under gra
 
 - **Newton's law of gravitation** says two point masses attract each other with force $F = G m_1 m_2 / r^2$. Here $G = 6.674 \times 10^{-11}$ $\mathrm{N\,m^2/kg^2}$ is the gravitational constant (a standard measured value), masses are in kilograms (kg), and $r$ is the distance between the centers of the bodies, in meters (m).
 - Engineers combine $G$ and a planet's mass $M$ into one number, the gravitational parameter $\mu = GM$. Earth's value is $\mu_\oplus = 3.986004418 \times 10^{14}$ $\mathrm{m^3/s^2}$. Using $\mu$ means you rarely need $G$ and $M$ separately.
-- **Radius means distance from the planet's center**, not from its surface. For an orbit at altitude $h$ above a planet of radius $R$, the radius is $r = R + h$. Mixing these up is the most common error in this topic.
+- **Radius** means distance from the planet's center, not from its surface. For an orbit at altitude $h$ above a planet of radius $R$, the radius is $r = R + h$. Mixing these up is the most common error in this topic.
 - **Circular orbit.** Gravity supplies the centripetal force that keeps the object turning. Setting $m v^2 / r = m \mu / r^2$ gives $v = \sqrt{\mu / r}$. The speed depends only on radius, not on the object's mass.
 - **Escape velocity** is the speed an object needs to climb from radius $r$ to infinitely far away with zero speed left over. It equals $\sqrt{2}$ times the circular speed at the same radius.
 - **Kepler's laws** describe planetary and satellite orbits:

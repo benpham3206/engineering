@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Figures, tables, and plots are the visual and tabular ways an engineer presents data to a reader. Engineers must make them honest, because a reader will believe a plot at a glance.
+**Figures, tables, and plots** are the visual and tabular ways an engineer presents data to a reader. Engineers must make them honest, because a reader will believe a plot at a glance.
 
 An honest figure shows the data accurately, labels everything the reader needs, and shows how certain the values are.
 
@@ -19,7 +19,7 @@ An honest figure shows the data accurately, labels everything the reader needs, 
 - **Every figure has a caption.** The caption says what the figure shows, the conditions, and the source. The reader should understand the figure without reading the body text.
 - **Every axis has a label and a unit.** Write "Displacement (mm)" and not "Displacement." The unit goes in parentheses or after a slash.
 - **Show the data.** Where you can, plot each measurement as a point. A line through means hides the spread.
-- **Show uncertainty.** Error bars, shaded bands, or a note of the confidence interval tell the reader how precise a value is. State what the bars mean (standard deviation, standard error, or a confidence interval). If you do not say, the reader will assume.
+- **Show uncertainty.** **Error bars**, shaded bands, or a note of the confidence interval tell the reader how precise a value is. State what the bars mean (standard deviation, standard error, or a confidence interval). If you do not say, the reader will assume.
 
 ### Axes and scales
 
@@ -27,7 +27,7 @@ An honest figure shows the data accurately, labels everything the reader needs, 
 - Choose tick marks that are evenly spaced and easy to read, such as multiples of 1, 2, or 5.
 - Use a log scale only when the data span several orders of magnitude, and label the axis as log.
 - Keep the same scale when you compare two plots side by side.
-- Put the independent variable on the horizontal axis (for example time or applied load) and the dependent variable on the vertical axis (for example temperature or displacement). This is the usual convention, not a rule.
+- Put the **independent variable** on the horizontal axis (for example time or applied load) and the **dependent variable** on the vertical axis (for example temperature or displacement). This is the usual convention, not a rule.
 
 ### Legends, labels, and color
 

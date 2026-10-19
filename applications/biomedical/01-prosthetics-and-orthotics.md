@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Prosthetics and orthotics are devices that replace a missing limb or support and correct one that remains. A poorly fitted device can cause sores and falls, so the design must be comfortable as well as strong.
+**Prosthetics and orthotics** are devices that replace a missing limb or support and correct one that remains. A poorly fitted device can cause sores and falls, so the design must be comfortable as well as strong.
 
 Engineers design both to carry body loads, copy the motion of a healthy joint, and stay comfortable against the skin for many hours a day.
 
@@ -13,7 +13,7 @@ Engineers design both to carry body loads, copy the motion of a healthy joint, a
 
 ### How it works
 
-A prosthesis moves load and motion between the body and the ground. Walking repeats a gait cycle. In normal adult walking at a comfortable speed, the stance phase, when the foot is on the ground, takes about 60 percent of the cycle, and the swing phase takes about 40 percent (typical values). During stance the device holds body weight. During swing it lets the limb move forward with little resistance.
+A prosthesis moves load and motion between the body and the ground. Walking repeats a **gait cycle**. In normal adult walking at a comfortable speed, the **stance phase**, when the foot is on the ground, takes about 60 percent of the cycle, and the **swing phase** takes about 40 percent (typical values). During stance the device holds body weight. During swing it lets the limb move forward with little resistance.
 
 A prosthetic leg carries load through four steps in stance:
 
@@ -26,7 +26,7 @@ Inside the socket, the residual limb presses against a soft liner. The socket sp
 
 ### Main parts
 
-- Socket: the cup that holds the residual limb. It transfers pressure into soft tissue and fixes the limb to the device.
+- **Socket**: the cup that holds the residual limb. It transfers pressure into soft tissue and fixes the limb to the device.
 - Suspension: a liner, pin lock, or vacuum system that keeps the socket on the limb during swing.
 - Pylon or shank: the rigid tube or bar that carries the axial load from the socket to the foot. Aluminum and carbon-fiber composites are common materials.
 - Knee unit, for transfemoral devices: a hinge with friction, hydraulic damping, and a stance lock. Microprocessor knees change damping from sensor data during each step.
@@ -39,7 +39,7 @@ Inside the socket, the residual limb presses against a soft liner. The socket sp
 - Passive devices use springs, friction, and hydraulic dampers only. They need no battery.
 - Microprocessor devices adjust damping or stance locking from sensors. Battery life now limits the design.
 - Powered devices use motors to add energy at push-off. They are the heaviest of the three and need the most battery energy.
-- Orthoses support a limb that remains. An ankle-foot orthosis (AFO) holds the ankle in a set range of motion. A knee-ankle-foot orthosis (KAFO) also controls the knee. Spinal braces support the trunk.
+- Orthoses support a limb that remains. An **ankle-foot orthosis (AFO)** holds the ankle in a set range of motion. A **knee-ankle-foot orthosis (KAFO)** also controls the knee. Spinal braces support the trunk.
 
 ## Key equations
 
@@ -76,7 +76,9 @@ Inside the socket, the residual limb presses against a soft liner. The socket sp
 
 ## How it fails
 
-- Fatigue cracks in pylons and keels. Repeated loading makes cracks grow each cycle until the part breaks. Warning signs include new cracks, creaking, and a change in stiffness. See [Failure: fracture and fatigue](../../materials/06-fracture-and-fatigue.md).
+> [!WARNING]
+> Fatigue cracks in pylons and keels. Repeated loading makes cracks grow each cycle until the part breaks. Warning signs include new cracks, creaking, and a change in stiffness. See [Failure: fracture and fatigue](../../materials/06-fracture-and-fatigue.md).
+
 - Skin breakdown under the socket. High or uneven pressure causes blisters and sores. Redness that does not fade is a warning sign.
 - Loose suspension. A worn liner or pin lock lets the limb move inside the socket, so the device no longer matches the gait.
 - Battery depletion or electronic faults in powered and microprocessor devices. A low-battery alarm or a sensor fault code signals the problem.

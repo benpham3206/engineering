@@ -2,7 +2,7 @@
 
 **Type:** philosophy
 
-A way of working is a consistent approach to carrying a problem from its start to a finished answer. Engineers need one because early decisions shape every step that follows.
+**A way of working** is a consistent approach to carrying a problem from its start to a finished answer. Engineers need one because early decisions shape every step that follows.
 
 This is one way, and it is not the only way. Think of a project like a factory-building game: every early decision about layout, flow, and connections shapes everything built after it. A belt placed badly at the start has to be torn out later, along with everything that depends on it.
 

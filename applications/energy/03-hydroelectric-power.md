@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Hydroelectric power is electricity made by letting falling water drive a turbine and generator. Plants are long-lived civil works, so the site's height and water supply decide how much energy they deliver over decades.
+**Hydroelectric power** is electricity made by letting falling water drive a turbine and generator. Plants are long-lived civil works, so the site's height and water supply decide how much energy they deliver over decades.
 
 Engineers need to understand it because the output depends on two numbers, the head and the flow, and because the same plant can store energy by pumping water back uphill.
 
@@ -13,11 +13,11 @@ Engineers need to understand it because the output depends on two numbers, the h
 
 ### How it works
 
-Water stored high in a reservoir has potential energy. The water flows downhill through a pipe called a penstock, and its pressure and speed drive a turbine. The turbine turns a shaft, and the shaft spins a generator. After the turbine, the water flows out through a tailrace back to the river.
+Water stored high in a reservoir has potential energy. The water flows downhill through a pipe called a **penstock**, and its pressure and speed drive a turbine. The turbine turns a shaft, and the shaft spins a generator. After the turbine, the water flows out through a **tailrace** back to the river.
 
 The steps run in order:
 
-1. A dam or diversion weir holds back water and creates a height difference, called the head.
+1. A dam or diversion weir holds back water and creates a height difference, called the **head**.
 2. An intake with a screen and a gate lets water into the penstock. The screen keeps out debris.
 3. The penstock carries the water down the slope. Pressure at the turbine inlet is roughly $\rho g H$, the weight of the water column per square metre.
 4. The turbine runner converts the water's energy into rotation. Guide vanes or nozzles control the flow.
@@ -47,11 +47,11 @@ Turbines fall into two groups. Impulse turbines use a high-speed jet of water. R
 - **Kaplan and propeller.** Reaction turbines for low head and high flow. Kaplan blades can pitch to match the flow, which keeps efficiency high across a range of flows.
 - **Kinetic.** A free-flow turbine that uses the speed of a river, with little or no dam.
 
-Plants also differ by how they use water. A run-of-river plant has little storage and produces power as water flows past. A storage plant holds water in a reservoir and releases it on demand. A pumped-storage plant moves water between two reservoirs to store energy.
+Plants also differ by how they use water. A run-of-river plant has little storage and produces power as water flows past. A storage plant holds water in a reservoir and releases it on demand. A **pumped-storage plant** moves water between two reservoirs to store energy.
 
 ## Key equations
 
-Hydraulic power, the power available in the flow, in watts:
+**Hydraulic power**, the power available in the flow, in watts:
 
 $$P_{\mathrm{hyd}} = \rho g Q H$$
 
@@ -63,7 +63,7 @@ $$P_{\mathrm{out}} = \eta \rho g Q H$$
 
 where $\eta$ is the turbine-generator efficiency (dimensionless). Large modern plants reach $\eta$ of about 0.85 to 0.95 (typical range).
 
-Net head, in metres:
+**Net head**, in metres:
 
 $$H = H_{\mathrm{gross}} - h_{\mathrm{loss}}$$
 

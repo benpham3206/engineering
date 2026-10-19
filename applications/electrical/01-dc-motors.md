@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A DC motor is a machine that turns electrical energy into rotation with a simple rule. Engineers choose DC motors when they need simple speed and torque control, and they must understand the brushes and commutator because those set the motor's wear, noise, and limits. Current in a conductor inside a magnetic field feels a force, and a commutator keeps that force pointing the same way as the rotor turns.
+A **DC motor** is a machine that turns electrical energy into rotation with a simple rule. Engineers choose DC motors when they need simple speed and torque control, and they must understand the brushes and commutator because those set the motor's wear, noise, and limits. Current in a conductor inside a magnetic field feels a force, and a commutator keeps that force pointing the same way as the rotor turns.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [Mechatronics](../electronics/06-mechatronics.md)
 **Time:** 6-8 h
@@ -15,7 +15,7 @@ A DC motor is a machine that turns electrical energy into rotation with a simple
 2. The rotor, also called the armature, is a laminated iron core with coils wound in slots. Each coil connects to two segments of the commutator.
 3. Current flows through the armature coils from the brushes. A conductor carrying current $I$ in a field $B$ feels a force $F = B I \ell$, where $\ell$ is the length of conductor in the field (m). The forces on the coils make a torque about the shaft.
 4. As the rotor turns, the commutator segments pass under the brushes and reverse the current in each coil about every half turn. The torque stays in the same direction.
-5. A turning coil also cuts the magnetic flux. That motion generates a voltage called back-EMF, which opposes the supply. The rotor speeds up until the back-EMF plus the resistive drop equals the supply voltage. At that speed, the net driving voltage is small and the current settles at the level the load needs.
+5. A turning coil also cuts the magnetic flux. That motion generates a voltage called **back-EMF**, which opposes the supply. The rotor speeds up until the back-EMF plus the resistive drop equals the supply voltage. At that speed, the net driving voltage is small and the current settles at the level the load needs.
 
 The steady-state balance is $V = I R + K_e \omega$. The robot arm lesson states this relation and uses it for speed and stall calculations, so this lesson uses it without repeating that material.
 
@@ -41,7 +41,7 @@ The armature voltage balance, the torque relation, and the speed formula are the
 
 $$V = I R + K_e \omega \qquad T = K_t I \qquad \omega = \frac{V - I R}{K_e}$$
 
-where $V$ is the armature supply voltage (V), $I$ is the armature current (A), $R$ is the armature resistance ($\Omega$), $\omega$ is the shaft speed (rad/s), $T$ is the electromagnetic torque (N m), $K_e$ is the back-EMF constant (V s/rad), and $K_t$ is the torque constant (N m/A).
+where $V$ is the armature supply voltage (V), $I$ is the armature current (A), $R$ is the armature resistance ($\Omega$), $\omega$ is the shaft speed (rad/s), $T$ is the electromagnetic torque (N m), $K_e$ is the **back-EMF constant** (V s/rad), and $K_t$ is the **torque constant** (N m/A).
 
 The two constants come from the motor's construction:
 
@@ -53,9 +53,9 @@ Power and losses:
 
 $$P_{\mathrm{elec}} = V I \qquad P_{\mathrm{mech}} = T \omega \qquad P_{\mathrm{cu}} = I^2 R$$
 
-where $P_{\mathrm{elec}}$ is the electrical input power (W), $P_{\mathrm{mech}}$ is the mechanical power (W), and $P_{\mathrm{cu}}$ is the copper loss (W). The efficiency is $\eta = P_{\mathrm{mech}} / P_{\mathrm{elec}}$, dimensionless.
+where $P_{\mathrm{elec}}$ is the electrical input power (W), $P_{\mathrm{mech}}$ is the mechanical power (W), and $P_{\mathrm{cu}}$ is the **copper loss** (W). The **efficiency** is $\eta = P_{\mathrm{mech}} / P_{\mathrm{elec}}$, dimensionless.
 
-Field weakening changes the flux. When $\Phi$ falls, $K_e$ falls in proportion, and the ideal no-load speed $V / K_e$ rises. The same current then produces less torque.
+**Field weakening** changes the flux. When $\Phi$ falls, $K_e$ falls in proportion, and the ideal no-load speed $V / K_e$ rises. The same current then produces less torque.
 
 ## Worked example
 
@@ -125,7 +125,7 @@ Michael Faraday showed continuous rotation from electromagnetic force in London 
 ## Go deeper
 
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/) by MIT: circuit models and power electronics for motor drives.
-- [University Physics Volume 2, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law and the back-EMF that opposes a motor's supply.
+- [*University Physics Volume 2*, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law and the back-EMF that opposes a motor's supply.
 - [Electric Motors](https://www.energy.gov/eere/buildings/electric-motors) by the U.S. Department of Energy: the federal efficiency standards and test rules for motors.
 - Related lessons: [Robot arms](../machines-robots/01-robot-arms.md) uses the same DC motor torque and speed relations to drive joints. Next: [Brushless and stepper motors](02-brushless-and-stepper-motors.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

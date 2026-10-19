@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Refrigeration and air conditioning are the methods of moving heat from a cold space to a warmer one. Engineers use the same vapor-compression cycle in kitchens, offices, cars, and cold stores, so it is worth understanding once.
+**Refrigeration and air conditioning** are the methods of moving heat from a cold space to a warmer one. Engineers use the same vapor-compression cycle in kitchens, offices, cars, and cold stores, so it is worth understanding once.
 
 Both use a refrigerant that boils at low pressure, absorbs heat, is squeezed to high pressure, and releases heat.
 
@@ -14,7 +14,7 @@ Both use a refrigerant that boils at low pressure, absorbs heat, is squeezed to 
 ### How it works
 
 Heat does not flow uphill on its own. A refrigerator needs work to move heat from cold to hot. The
-vapor-compression cycle does this in four steps.
+**vapor-compression cycle** does this in four steps.
 
 1. The evaporator sits inside the cold space. Liquid refrigerant at low pressure boils there and absorbs
    heat from the air or food around it.
@@ -30,14 +30,14 @@ rejected at the condenser equals the heat absorbed in the evaporator plus that w
 
 ### Main parts
 
-- The compressor, usually hermetic (sealed in a steel shell with its motor), is the only moving part that
+- The **compressor**, usually hermetic (sealed in a steel shell with its motor), is the only moving part that
   adds energy. Its power sets how fast heat can be moved.
-- The evaporator is a coil with a large surface area. Its job is to let the refrigerant boil at a low
+- The **evaporator** is a coil with a large surface area. Its job is to let the refrigerant boil at a low
   temperature while it absorbs heat.
-- The condenser is a coil that rejects heat to a larger, cooler body of air. A fan usually moves that air.
-- The expansion device controls the flow of refrigerant from high pressure to low pressure. It also keeps
+- The **condenser** is a coil that rejects heat to a larger, cooler body of air. A fan usually moves that air.
+- The **expansion device** controls the flow of refrigerant from high pressure to low pressure. It also keeps
   the evaporator fed.
-- The refrigerant is the working fluid. It must boil and condense at useful pressures and temperatures in
+- The **refrigerant** is the working fluid. It must boil and condense at useful pressures and temperatures in
   the working range.
 - The thermostat or controller starts and stops the compressor to hold the cold space at a set
   temperature.
@@ -52,8 +52,7 @@ The refrigerant sets the pressures, the safety rules, and the environmental effe
   than that of CFCs, but it is also being phased out.
 - R-134a is a hydrofluorocarbon (HFC) with no ozone effect. It is common in cars and older household
   systems. Its global warming potential is about 1,400 times that of carbon dioxide over 100 years.
-- R-600a (isobutane) is a hydrocarbon used in many modern household refrigerators. It has a very small
-  warming effect, but it burns, so the charge is kept small.
+- R-600a (isobutane) is a hydrocarbon used in many modern household refrigerators. It has a very small warming effect, but it burns, so the charge is kept small.
 - R-32 and R-1234yf are newer refrigerants used in many new air conditioners and car systems. Both have
   far lower warming effects than R-134a. R-32 is mildly flammable.
 
@@ -62,14 +61,14 @@ moving to lower-warming refrigerants because of it.
 
 ### Coefficient of performance
 
-Refrigeration is judged by its coefficient of performance (COP), the heat moved per unit of work put in.
+Refrigeration is judged by its **coefficient of performance (COP)**, the heat moved per unit of work put in.
 A COP above 1 is normal. A COP of 3 means the cold space gains 3 J of cooling for each 1 J of electrical
 work.
 
 Household refrigerators and room air conditioners usually land between about 2 and 3.5. Their COP is set
 by the temperatures, the compressor and heat exchanger design, and the refrigerant.
 
-Air conditioners in some countries are rated in the seasonal energy efficiency ratio (SEER), in Btu of
+Air conditioners in some countries are rated in the **seasonal energy efficiency ratio (SEER)**, in Btu of
 cooling per watt-hour of electricity over a season. The conversion to a COP is simple, as shown in the
 equations below.
 
@@ -206,7 +205,7 @@ Carnot's 1824 analysis of ideal heat engines set the limit that still bounds the
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 4 (second law of thermodynamics)](https://openstax.org/books/university-physics-volume-2/pages/4-introduction)
+- [*University Physics Volume 2*, Chapter 4 (second law of thermodynamics)](https://openstax.org/books/university-physics-volume-2/pages/4-introduction)
   by OpenStax: heat engines and refrigerators, the second law, and the limits on their performance.
 - Next: [Heat pumps](04-heat-pumps.md), which use the same cycle to heat a building.
 - Related: [Thermodynamics II](../../physics/09-thermo-second-law-cycles.md) for the second law and COP

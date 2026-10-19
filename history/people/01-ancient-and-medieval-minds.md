@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Ancient and medieval minds are the people who, from about 2650 BCE to the early 1200s, built the first tools of engineering in Egypt, Greece, Rome, China, India, and the Islamic world: geometry, mechanics, optics, and precise timekeeping. Engineers today should know them because their methods, from proofs to measured instruments, still set the pattern that engineers follow. This lesson profiles the people behind those tools and shows where their work survives today.
+**Ancient and medieval minds** are the people who, from about 2650 BCE to the early 1200s, built the first tools of engineering in Egypt, Greece, Rome, China, India, and the Islamic world: geometry, mechanics, optics, and precise timekeeping. Engineers today should know them because their methods, from proofs to measured instruments, still set the pattern that engineers follow. This lesson profiles the people behind those tools and shows where their work survives today.
 
 **Prerequisites:** [Simple machines](../01-simple-machines.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md)
 **Time:** 6-8 h
@@ -21,11 +21,11 @@ Euclid taught mathematics in Alexandria. His *Elements* starts from a few defini
 
 ### Archimedes, 287 to 212 BCE, Syracuse, Sicily
 
-Archimedes worked in Syracuse, a Greek city on Sicily. He studied the lever, the pulley, and the screw, and he explained why a body in a fluid loses weight equal to the fluid it pushes aside. This is Archimedes' principle. He also used regular polygons with 96 sides to bound $\pi$ between $3\tfrac{10}{71}$ and $3\tfrac{1}{7}$. Ship designers, hydrometer makers, and pump engineers still use the buoyancy principle, and the lever and screw are basic machines in every hydraulic and mechanical system.
+Archimedes worked in Syracuse, a Greek city on Sicily. He studied the lever, the pulley, and the screw, and he explained why a body in a fluid loses weight equal to the fluid it pushes aside. This is **Archimedes' principle**. He also used regular polygons with 96 sides to bound $\pi$ between $3\tfrac{10}{71}$ and $3\tfrac{1}{7}$. Ship designers, hydrometer makers, and pump engineers still use the buoyancy principle, and the lever and screw are basic machines in every hydraulic and mechanical system.
 
 ### Hero of Alexandria, 1st century CE, Alexandria, Egypt
 
-Hero wrote books on mechanics and pneumatics. His *Pneumatica* describes a sphere that spins when steam jets out of its nozzles, the aeolipile. It also describes devices that use water, air, and weights to open temple doors and dispense holy water. The books show that Greek engineers had already built working steam and pressure devices, even though those devices were not used for industry. Hero's work is an early example of a design that uses fluid pressure to do a job.
+Hero wrote books on mechanics and pneumatics. His *Pneumatica* describes a sphere that spins when steam jets out of its nozzles, the **aeolipile**. It also describes devices that use water, air, and weights to open temple doors and dispense holy water. The books show that Greek engineers had already built working steam and pressure devices, even though those devices were not used for industry. Hero's work is an early example of a design that uses fluid pressure to do a job.
 
 ### Vitruvius, active in the late 1st century BCE, Rome
 
@@ -33,7 +33,7 @@ Vitruvius was a Roman military engineer and architect. His *De architectura* is 
 
 ### Zhang Heng, 78 to 139 CE, Eastern Han China
 
-Zhang Heng was an astronomer, mathematician, and inventor in the Eastern Han dynasty. In 132 CE he built a seismoscope, a bronze vessel with eight dragon heads holding balls. When an earthquake struck, a ball fell from the dragon facing the direction of the quake. The original was lost, but modern replicas show the mechanism. Zhang Heng also built a water-driven armillary sphere that tracked the sky. His devices show early use of precise instruments to measure natural events.
+Zhang Heng was an astronomer, mathematician, and inventor in the Eastern Han dynasty. In 132 CE he built a **seismoscope**, a bronze vessel with eight dragon heads holding balls. When an earthquake struck, a ball fell from the dragon facing the direction of the quake. The original was lost, but modern replicas show the mechanism. Zhang Heng also built a water-driven armillary sphere that tracked the sky. His devices show early use of precise instruments to measure natural events.
 
 ### Brahmagupta, about 598 to about 670, India
 
@@ -41,7 +41,7 @@ Brahmagupta worked as an astronomer and mathematician in northwest India. His te
 
 ### Al-Khwarizmi, about 780 to about 850, Baghdad
 
-Al-Khwarizmi worked at the House of Wisdom in Baghdad under the Abbasid caliph al-Mamun. His book on al-jabr and al-muqabala gave a systematic method for solving linear and quadratic equations. The Latin version of his name gave us the word algorithm, and his book gave us the word algebra. Every calculation an engineer writes as a step-by-step procedure is a descendant of his method.
+Al-Khwarizmi worked at the House of Wisdom in Baghdad under the Abbasid caliph al-Mamun. His book on *al-jabr and al-muqabala* gave a systematic method for solving linear and quadratic equations. The Latin version of his name gave us the word algorithm, and his book gave us the word algebra. Every calculation an engineer writes as a step-by-step procedure is a descendant of his method.
 
 ### Ibn al-Haytham, about 965 to about 1040, Basra and Cairo
 
@@ -168,7 +168,7 @@ Archimedes' principle is still the first tool for buoyancy, from ship hulls to s
 
 - [MacTutor biography of Archimedes](https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/), University of St Andrews
 - [MacTutor biography of Euclid](https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/), University of St Andrews
-- [Vitruvius, The Ten Books on Architecture](https://www.gutenberg.org/ebooks/20239), Project Gutenberg
+- [Vitruvius, *The Ten Books on Architecture*](https://www.gutenberg.org/ebooks/20239), Project Gutenberg
 - [MacTutor biography of al-Khwarizmi](https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/), University of St Andrews
 - Related lessons: [Simple machines](../01-simple-machines.md), [Ancient engineering](../02-ancient-engineering.md), [Medieval and Renaissance](../03-medieval-and-renaissance.md), [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Algebra](../../math/01-algebra.md)
 - [People of engineering reference](../reference-people.md): the lookup sheet for this topic.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Suspension and steering are the springs, dampers, and linkages that keep a car's tires on the road and turn its front wheels. Poor suspension or steering geometry can make a car lose grip in a corner, so an engineer must get both right.
+**Suspension and steering** are the springs, dampers, and linkages that keep a car's tires on the road and turn its front wheels. Poor suspension or steering geometry can make a car lose grip in a corner, so an engineer must get both right.
 
 Engineers tune the spring and damper for ride comfort and grip, and they set the steering geometry so that the inner and outer wheels turn through the right angles in a corner.
 
@@ -15,7 +15,7 @@ Engineers tune the spring and damper for ride comfort and grip, and they set the
 
 A spring stores energy when the wheel moves up over a bump, and it returns that energy as the wheel moves down. A spring alone keeps bouncing. A damper turns the motion of the spring into heat, so each bump dies out after a cycle or two. The tire is a spring too, and it sits between the wheel and the road.
 
-Steering works through a linkage. The driver turns the steering wheel, a rack or a steering box moves a tie rod, and the tie rod turns each front wheel about its steering axis. Ackermann geometry sets the angles of the two front wheels, so the inner wheel turns more sharply than the outer wheel in a corner. Each wheel then rolls in its own circle, and the tires do not scrub sideways.
+Steering works through a linkage. The driver turns the steering wheel, a rack or a steering box moves a tie rod, and the tie rod turns each front wheel about its steering axis. **Ackermann geometry** sets the angles of the two front wheels, so the inner wheel turns more sharply than the outer wheel in a corner. Each wheel then rolls in its own circle, and the tires do not scrub sideways.
 
 ### Main parts
 
@@ -24,7 +24,7 @@ Steering works through a linkage. The driver turns the steering wheel, a rack or
 - **Anti-roll bar:** a torsion bar that links the two wheels on one axle. It resists body roll in a corner, and it adds roll stiffness without adding much stiffness in equal-wheel heave. It does add stiffness when only one wheel hits a bump, because the bar then twists.
 - **Control arms and links:** hold the wheel in place while it moves up and down. Their geometry sets camber change and roll center height.
 - **Steering rack or steering box:** converts the rotation of the steering wheel into a sideways motion of the tie rods.
-- **Tie rods and steering arms:** carry the force to the wheel hubs. The tie rod length sets the toe, which is the angle of the wheel as seen from above.
+- **Tie rods and steering arms:** carry the force to the wheel hubs. The tie rod length sets the **toe**, which is the angle of the wheel as seen from above.
 
 ### Variants
 
@@ -39,10 +39,10 @@ Steering works through a linkage. The driver turns the steering wheel, a rack or
 
 The ride and damping equations assume a linear spring and a linear viscous damper, small deflections, and a quarter-car model with one corner and no coupling to the other wheels. The Ackermann relation assumes rigid links, no tire slip, and small steering angles, so it gives the ideal geometry and not the real angles under load.
 
-- **Ride frequency (quarter-car model):** $f_n = \dfrac{1}{2\pi} \sqrt{\dfrac{k}{m_s}}$, in Hz, where $k$ is the spring rate of one corner in N/m and $m_s$ is the sprung mass of that corner in kg. Typical passenger cars have $f_n$ from 1.0 to 1.5 Hz.
+- **Ride frequency (quarter-car model):** $f_n = \dfrac{1}{2\pi} \sqrt{\dfrac{k}{m_s}}$, in Hz, where $k$ is the spring rate of one corner in N/m and $m_s$ is the **sprung mass** of that corner in kg. Typical passenger cars have $f_n$ from 1.0 to 1.5 Hz.
 - **Critical damping:** $c_{\mathrm{crit}} = 2\sqrt{k \, m_s}$, in N s/m.
 - **Damping ratio:** $\zeta = c / c_{\mathrm{crit}}$, dimensionless. Most road cars use $\zeta$ from 0.2 to 0.4, which gives a few bounces after a bump.
-- **Wheel hop frequency:** $f_w = \dfrac{1}{2\pi} \sqrt{\dfrac{k_t}{m_u}}$, in Hz, where $k_t$ is the tire stiffness in N/m and $m_u$ is the unsprung mass (wheel, hub, brake, and part of the links) in kg. Typical values are 10 to 15 Hz.
+- **Wheel hop frequency:** $f_w = \dfrac{1}{2\pi} \sqrt{\dfrac{k_t}{m_u}}$, in Hz, where $k_t$ is the tire stiffness in N/m and $m_u$ is the **unsprung mass** (wheel, hub, brake, and part of the links) in kg. Typical values are 10 to 15 Hz.
 - **Static deflection:** $\delta = m_s \, g / k$, in m, where $g$ is the local gravitational acceleration (9.81 m/s$^2$ at Earth's surface). The spring compresses by this much under the static load.
 - **Ideal Ackermann relation:** $\cot\delta_{\mathrm{out}} - \cot\delta_{\mathrm{in}} = t / L$, where $\delta_{\mathrm{in}}$ and $\delta_{\mathrm{out}}$ are the inner and outer wheel angles in radians, $t$ is the track width in m, and $L$ is the wheelbase in m. The inner wheel has the larger angle.
 - **Steering ratio:** $R_s = \theta_{\mathrm{wheel}} / \delta_{\mathrm{road}}$, dimensionless, where $\theta_{\mathrm{wheel}}$ is the steering wheel angle and $\delta_{\mathrm{road}}$ is the road wheel angle, both in the same unit. A ratio of 15:1 means that a 15 degree turn of the steering wheel turns the road wheels 1 degree.
@@ -83,7 +83,10 @@ The ride and damping equations assume a linear spring and a linear viscous dampe
 
 ### Spring service hazard
 
-A compressed coil spring stores energy. Removing a strut without compressing the spring first can release that energy suddenly and throw parts or injure a hand. The hierarchy of controls applies here. Elimination means not removing the spring when a complete strut assembly can be swapped instead. Substitution means using a pre-assembled strut with a factory-compressed spring. Engineering controls are a spring compressor with a guard and a safety catch, and a bench vise that holds the strut. Administrative controls are a written procedure, a second person in the room, and training. Personal protective equipment is safety glasses and gloves.
+> [!WARNING]
+> A compressed coil spring stores energy. Removing a strut without compressing the spring first can release that energy suddenly and throw parts or injure a hand.
+
+The hierarchy of controls applies here. Elimination means not removing the spring when a complete strut assembly can be swapped instead. Substitution means using a pre-assembled strut with a factory-compressed spring. Engineering controls are a spring compressor with a guard and a safety catch, and a bench vise that holds the strut. Administrative controls are a written procedure, a second person in the room, and training. Personal protective equipment is safety glasses and gloves.
 
 Lockout and tagout for suspension work means the following. Isolate the car by removing the key and disconnecting the battery if the work involves electronic dampers or active suspension. Release or restrain stored energy by compressing each spring with a rated compressor and holding it before any bolt is removed. Verify a zero-energy state by confirming that the spring tension is off the strut before the final bolt comes out, and by checking that the car is supported on stands before work begins.
 
@@ -121,6 +124,6 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 15 (oscillations)](https://openstax.org/books/university-physics-volume-1/pages/15-introduction) by OpenStax: simple harmonic motion and damped oscillations, the basis for the ride frequency and damping ratio.
+- [*University Physics Volume 1*, Chapter 15 (oscillations)](https://openstax.org/books/university-physics-volume-1/pages/15-introduction) by OpenStax: simple harmonic motion and damped oscillations, the basis for the ride frequency and damping ratio.
 - Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md) for the vibration and force relations, and [Design reference](../../design/reference.md) for the design vocabulary.
 - Related lessons: [Vibrations](../../physics/13-vibrations.md), [Cars](02-cars.md), [Electric vehicles](04-electric-vehicles.md), [Differentials and transmissions](../power-transmission/06-differentials-and-transmissions.md).

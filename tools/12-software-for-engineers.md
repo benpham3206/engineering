@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Software skills for engineers are the working habits and tools, such as the terminal, version control, and small scripts, that let an engineer run calculations and keep work repeatable. Engineers need them because a task done by hand is slow to repeat, while a script reruns the same steps every time.
+**Software skills for engineers** are the working habits and tools, such as the terminal, version control, and small scripts, that let an engineer run calculations and keep work repeatable. Engineers need them because a task done by hand is slow to repeat, while a script reruns the same steps every time.
 
 Most engineers write some software, even if they never call themselves programmers. You repeat the same calculation in a spreadsheet, rename 200 files by hand, or export the same CAD view for each revision. This lesson covers the working skills behind that work: the terminal, version control, reproducible environments, small reliable scripts, testing, debugging, and the basics of web apps. The ideas last longer than any single tool.
 
@@ -17,7 +17,7 @@ Most engineers write some software, even if they never call themselves programme
 - Learn a few commands and their meaning, not their menus. Common ones: `pwd` (print where you are), `ls` or `dir` (list files), `cd` (change folder), `mkdir` (make a folder), `cp`, `mv`, and `rm`.
 - A **path** names a file. An absolute path starts at the drive or root (`C:\Projects\bracket\notes.txt`). A relative path starts from where you are now (`..\data\run1.csv`).
 - A **pipe** (`|`) sends the output of one command into the next. Each step does one small job. On a Unix-style shell, `grep "FAIL" results.txt | wc -l` counts the failing lines.
-- **Scripts beat clicking.** A script is a text file of commands you can rerun. A list of clicks leaves no record and is hard to repeat after a revision changes one number. Write the steps down as code, even if the code is short.
+- Scripts beat clicking. A script is a text file of commands you can rerun. A list of clicks leaves no record and is hard to repeat after a revision changes one number. Write the steps down as code, even if the code is short.
 
 ### Text editors and IDEs
 
@@ -31,15 +31,15 @@ Most engineers write some software, even if they never call themselves programme
 - A **commit** is one saved snapshot with a message. Keep one logical change per commit, and write the message as a short imperative sentence with units where they apply, such as `Use 25 kN allowable in bolt check`.
 - A **branch** is a separate line of work. Make a branch for a design change or an experiment, so the main line stays working.
 - A **merge** combines a finished branch back into another branch. A **pull request** (a review request on a hosting site such as GitHub, as of 2026) asks someone to read the changes before the merge.
-- **Commit these.** Scripts, tests, input data (CSV or JSON), exported neutral files that matter (STEP, PDF, a results table), a list of library versions, and a README that says how to run the work.
-- **Keep these out.** Generated outputs you can regenerate, virtual environment folders, cache folders such as `__pycache__/`, temporary files, and secrets. Put the patterns in a `.gitignore` file.
+- Commit these. Scripts, tests, input data (CSV or JSON), exported neutral files that matter (STEP, PDF, a results table), a list of library versions, and a README that says how to run the work.
+- Keep these out. Generated outputs you can regenerate, virtual environment folders, cache folders such as `__pycache__/`, temporary files, and secrets. Put the patterns in a `.gitignore` file.
 - **Large binary CAD files** such as `.SLDPRT` or `.FCStd` cannot be diffed or merged. Git stores each version as a full copy, so the repository grows fast. Options: track them with Git LFS (as of 2026), keep them in a shared file vault with its own revision system, or keep a text source (a script that rebuilds the model) next to the native file. Always keep a neutral export (STEP) for the revision a drawing or test refers to.
 
 ### Project environments and dependencies
 
 - A **dependency** is a library your code needs, such as NumPy or Pint in Python.
 - A **virtual environment** is a folder that holds one project's libraries, separate from every other project. In Python, make one with `python -m venv .venv` and activate it with the command your shell prints.
-- **Pin versions.** A file such as `requirements.txt` that says `numpy==2.5.1` lets you rebuild the same environment later. An unpinned file gives different results after an upgrade.
+- Pin versions. A file such as `requirements.txt` that says `numpy==2.5.1` lets you rebuild the same environment later. An unpinned file gives different results after an upgrade.
 - Save the environment list with the results it produced. A result you cannot reproduce cannot be checked.
 
 ### Writing small, reliable scripts
@@ -59,10 +59,10 @@ Most engineers write some software, even if they never call themselves programme
 
 ### Debugging
 
-- **Reproduce first.** Write down the exact input that gives the wrong output. A bug you cannot trigger on command is hard to fix.
-- **Isolate.** Cut the input down to the smallest case that still fails. Then test each function on that case, one at a time.
-- **Look at the values.** A `print` of intermediate values is often enough. A **debugger** pauses the program at a line and lets you read every variable. Python has one built in (`breakpoint()`, which opens `pdb`).
-- **Bisect the history.** If a test passed last month and fails now, Git can search the commits for the change that broke it (`git bisect`). The Git documentation and the Pro Git book describe the workflow.
+- Reproduce first. Write down the exact input that gives the wrong output. A bug you cannot trigger on command is hard to fix.
+- Isolate. Cut the input down to the smallest case that still fails. Then test each function on that case, one at a time.
+- Look at the values. A `print` of intermediate values is often enough. A **debugger** pauses the program at a line and lets you read every variable. Python has one built in (`breakpoint()`, which opens `pdb`).
+- Bisect the history. If a test passed last month and fails now, Git can search the commits for the change that broke it (`git bisect`). The Git documentation and the *Pro Git* book describe the workflow.
 - Change one thing at a time. Two changes at once hide which one fixed the problem.
 
 ### Automating engineering tools
@@ -95,7 +95,7 @@ You do not need to build web apps to work with them, but you will use them: a su
 
 ### Security basics
 
-- **Never commit secrets.** Secrets are passwords, API keys, tokens, and license files. Once a secret is in Git history it is exposed, even after you delete it in a later commit. Treat any leaked secret as compromised and replace it.
+- Never commit secrets. Secrets are passwords, API keys, tokens, and license files. Once a secret is in Git history it is exposed, even after you delete it in a later commit. Treat any leaked secret as compromised and replace it.
 - Keep secrets in environment variables or a local file listed in `.gitignore`. Commit an example file with placeholder values instead.
 - Check `git status` before every commit. Read the list of files that will go in.
 - Be careful with data that is not yours to share, such as customer drawings or proprietary test data.
@@ -255,7 +255,7 @@ Numbers and checks to compare against. A good answer includes the work, not only
 
 ## Go deeper
 
-- [Pro Git](https://git-scm.com/book/en/v2) by Scott Chacon and Ben Straub: the free online book on Git, from first commit through branches, merges, and remotes (2nd edition, 2014, still the standard reference).
+- [*Pro Git*](https://git-scm.com/book/en/v2) by Scott Chacon and Ben Straub: the free online book on Git, from first commit through branches, merges, and remotes (2nd edition, 2014, still the standard reference).
 - [The Python Tutorial](https://docs.python.org/3/tutorial/index.html) by the Python Software Foundation: the official language guide, with sections on functions, modules, and the standard library.
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) by MIT: free course on the shell, editors, Git, debugging, and automation, with lectures and notes.
 - Related: [Python for engineering calculations](02-python.md), [Free engineering software](09-free-software.md), [Tools reference](reference.md) (Git commands and file formats).

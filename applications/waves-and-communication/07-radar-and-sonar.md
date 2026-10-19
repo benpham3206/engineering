@@ -13,7 +13,7 @@ Engineers use them to measure distance and speed for aircraft, ships, weather, r
 
 ### How it works
 
-Radar (radio detection and ranging) sends a short pulse of electromagnetic waves, usually at microwave frequencies from about 1 GHz to 40 GHz. Sonar (sound navigation and ranging) does the same job with sound in water or air. Sound travels at about 1500 m/s in seawater and 343 m/s in air at 20 C (typical values). Radio waves travel at $c = 3.00 \times 10^8$ m/s, so radar needs much faster electronics than sonar does.
+**Radar (radio detection and ranging)** sends a short pulse of electromagnetic waves, usually at microwave frequencies from about 1 GHz to 40 GHz. **Sonar (sound navigation and ranging)** does the same job with sound in water or air. Sound travels at about 1500 m/s in seawater and 343 m/s in air at 20 C (typical values). Radio waves travel at $c = 3.00 \times 10^8$ m/s, so radar needs much faster electronics than sonar does.
 
 The sequence is the same for both:
 
@@ -22,7 +22,7 @@ The sequence is the same for both:
 3. The receiver detects the echo after a round-trip time $t = 2R/c$.
 4. The processor converts the time to range and measures any frequency shift to find the target's speed.
 
-A target moving toward or away from the sensor shifts the echo frequency. This is the Doppler effect. Radar uses the shift to separate moving targets from stationary clutter such as buildings, sea, and rain.
+A target moving toward or away from the sensor shifts the echo frequency. This is the **Doppler effect**. Radar uses the shift to separate moving targets from stationary clutter such as buildings, sea, and rain.
 
 ### Main parts
 
@@ -50,7 +50,7 @@ $$R = \frac{c\,t}{2}$$
 
 This assumes free-space propagation at a constant $c$, a stationary target during the round trip, and a single reflection.
 
-Range resolution, the smallest separation two targets can have and still show as two echoes, with $\tau$ the pulse length in seconds:
+**Range resolution**, the smallest separation two targets can have and still show as two echoes, with $\tau$ the pulse length in seconds:
 
 $$\Delta R = \frac{c\,\tau}{2}$$
 
@@ -74,7 +74,7 @@ $$R = \frac{c_w t}{2}$$
 
 This assumes a uniform medium with constant sound speed $c_w$ and straight-line sound paths, so refraction from temperature layers is ignored.
 
-Angular resolution of a circular dish, with $\lambda$ the wavelength in m and $D$ the dish diameter in m, in radians:
+**Angular resolution** of a circular dish, with $\lambda$ the wavelength in m and $D$ the dish diameter in m, in radians:
 
 $$\theta \approx 1.22\,\frac{\lambda}{D}$$
 
@@ -107,11 +107,14 @@ For sonar, a sonar in seawater at 1500 m/s, looking at a wall 200 m away, hears 
 
 ## How it fails
 
-- Clutter: echoes from land, sea, or rain can hide real targets. Designers use Doppler filters to remove stationary returns and constant false alarm rate (CFAR) detection to set thresholds that track background noise.
-- Range ambiguity: if the pulse repetition frequency (PRF) is too high, an echo from one pulse can arrive after the next pulse is sent and appear at the wrong range. The unambiguous range is $c / (2 \cdot \text{PRF})$. At a PRF of 1 kHz, that limit is 150 km.
+- Clutter: echoes from land, sea, or rain can hide real targets. Designers use Doppler filters to remove stationary returns and **constant false alarm rate (CFAR)** detection to set thresholds that track background noise.
+- Range ambiguity: if the **pulse repetition frequency (PRF)** is too high, an echo from one pulse can arrive after the next pulse is sent and appear at the wrong range. The unambiguous range is $c / (2 \cdot \text{PRF})$. At a PRF of 1 kHz, that limit is 150 km.
 - Blind speeds: a moving-target filter cancels targets whose Doppler shift is a multiple of the PRF. Those targets vanish from the display at certain speeds. Operators change the PRF to break up the pattern.
 - Sonar multipath and shadow zones: sound bends in water with temperature layers, and reflections from the surface and bottom make false echoes. Some areas receive no sound at all.
-- Radiation and safety: high-power radar beams can heat tissue. Systems use interlocks that cut power when a person enters the beam, and they set exclusion zones around antennas.
+
+> [!WARNING]
+> Radiation and safety: high-power radar beams can heat tissue. Systems use interlocks that cut power when a person enters the beam, and they set exclusion zones around antennas.
+
 - Marine life: high-power sonar can harm marine mammals. Navies and survey operators use power limits, ramp-up procedures, and monitoring before they transmit.
 
 ## History

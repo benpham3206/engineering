@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Presenting is the act of sharing a technical point with an audience so that it can make a decision or understand the work. Engineers need it because the audience judges the point by what it can take in during a few minutes.
+**Presenting** is the act of sharing a technical point with an audience so that it can make a decision or understand the work. Engineers need it because the audience judges the point by what it can take in during a few minutes.
 
 Engineers present to reviewers, customers, managers, and sometimes to the public. A bad talk hides the point among charts.
 
@@ -13,9 +13,9 @@ Engineers present to reviewers, customers, managers, and sometimes to the public
 
 - **Decide the goal before the slides.** Finish this sentence: "After this talk, the audience should ___." If you cannot finish it, you are not ready to build slides.
 - **Slides support the talk.** The speaker explains. The slide shows the one thing the audience needs to see. Do not put a paragraph on a slide and then read it aloud.
-- **One message per slide.** Give the slide a headline that states the message as a full sentence, such as "The redesigned bracket meets the 2 kN load requirement." A title like "Results" does not tell the audience anything.
+- **One message per slide.** Give the slide a **headline** that states the message as a full sentence, such as "The redesigned bracket meets the 2 kN load requirement." A title like "Results" does not tell the audience anything.
 - **Show the evidence.** A claim without data is an opinion. Put the key number on the slide with its unit and condition.
-- **Plan for questions.** Reviewers ask about assumptions, failure modes, and cost. Keep backup slides for the details you think they will ask about.
+- **Plan for questions.** Reviewers ask about assumptions, failure modes, and cost. Keep **backup slides** for the details you think they will ask about.
 
 ### Structure of a technical talk
 
@@ -103,5 +103,5 @@ Use this for a design review or project update.
 ## Go deeper
 
 - [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace writing genres, including white papers and presentation-related guidance.
-- [OpenStax Writing Guide with Handbook](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University), a free general writing guide covering the writing process and revision, which applies to slides and speaking notes.
+- [*OpenStax Writing Guide with Handbook*](https://openstax.org/books/writing-guide/pages/1-introduction) by OpenStax (Rice University), a free general writing guide covering the writing process and revision, which applies to slides and speaking notes.
 - [Communication reference](reference.md): the lookup sheet for this topic.

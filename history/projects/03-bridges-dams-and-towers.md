@@ -13,11 +13,11 @@ Bridges, dams, and towers are the large structures that engineers built from the
 
 The problem. New York City and the city of Brooklyn needed a permanent crossing of the East River. Ferries could not keep up with the traffic, and no bridge of that span had been built.
 
-The engineering. John A. Roebling designed a suspension bridge with a main span of about 486 m, carried by steel wire cables anchored in masonry. Its towers rise above the water, and the deck hangs from the cables. The foundations of the towers were built with pneumatic caissons, large watertight chambers pushed into the riverbed with compressed air.
+The engineering. John A. Roebling designed a suspension bridge with a main span of about 486 m, carried by steel wire cables anchored in masonry. Its towers rise above the water, and the deck hangs from the cables. The foundations of the towers were built with **pneumatic caissons**, large watertight chambers pushed into the riverbed with compressed air.
 
 The scale. The main span of 486 m was the longest in the world when the bridge opened on May 24, 1883. Construction ran from 1869 to 1883.
 
-What went wrong. John Roebling died in 1869, after a ferry accident crushed his foot and an infection set in. His son Washington Roebling took over, but he was struck by caisson disease, which is decompression sickness, and he was bedridden for years. Emily Warren Roebling carried messages between him and the crews and supervised much of the work. Commonly cited figures put the construction deaths at about 20, including workers who died from caisson disease.
+What went wrong. John Roebling died in 1869, after a ferry accident crushed his foot and an infection set in. His son Washington Roebling took over, but he was struck by **caisson disease**, which is decompression sickness, and he was bedridden for years. Emily Warren Roebling carried messages between him and the crews and supervised much of the work. Commonly cited figures put the construction deaths at about 20, including workers who died from caisson disease.
 
 How it changed the world. The bridge showed that steel wire could carry very long spans, and it influenced later suspension bridges. It also made Brooklyn part of New York City's commuting network.
 
@@ -25,7 +25,7 @@ How it changed the world. The bridge showed that steel wire could carry very lon
 
 The problem. Trains between Edinburgh and northern Scotland had to cross the Firth of Forth by ferry. The 1879 collapse of the Tay Bridge, which killed between 59 and 75 people (estimates vary), had shown the risks of a poorly designed crossing.
 
-The engineering. John Fowler and Benjamin Baker designed a cantilever bridge. Each main span is built from two arms that reach out from a central pier, and the arms meet in the middle with a connecting girder. Steel tubes carry the compression, and the design resists wind through its large size and mass.
+The engineering. John Fowler and Benjamin Baker designed a **cantilever bridge**. Each main span is built from two arms that reach out from a central pier, and the arms meet in the middle with a connecting girder. Steel tubes carry the compression, and the design resists wind through its large size and mass.
 
 The scale. The main spans are about 521 m long. The bridge opened on March 4, 1890. The design needed large quantities of steel, and the tubes were riveted in place on site.
 
@@ -107,11 +107,11 @@ How it changed the world. The tower set new standards for high-rise concrete, wi
 
 ## Key equations
 
-A suspension cable with a uniform load along the horizontal span takes a parabolic shape. The horizontal tension is:
+A **suspension cable** with a uniform load along the horizontal span takes a parabolic shape. The horizontal tension is:
 
 $$H = \frac{w L^2}{8 h}$$
 
-where $H$ is the horizontal tension in newtons (N), $w$ is the load per horizontal metre in newtons per metre (N/m), $L$ is the span in metres (m), and $h$ is the sag, the vertical drop from the tower tops to the lowest point of the cable, in metres (m).
+where $H$ is the horizontal tension in newtons (N), $w$ is the load per horizontal metre in newtons per metre (N/m), $L$ is the span in metres (m), and $h$ is the **sag**, the vertical drop from the tower tops to the lowest point of the cable, in metres (m).
 
 The tension at the top of the tower combines the horizontal component with the vertical component from the load on half the span:
 
@@ -144,9 +144,9 @@ A suspension bridge trades cable strength against sag. A deeper sag cuts horizon
 
 ## How it fails
 
-Suspension bridges can fail in wind when the deck starts to twist. The Tacoma Narrows Bridge failed in 1940 from aeroelastic torsional flutter, a self-excited motion in which the wind and the twisting deck feed energy into each other. The bridge had a shallow, light deck, and its torsional stiffness was too low to resist the motion. Dams fail by overtopping, by seepage under the foundation, or by cracking when concrete heats as it cures. Towers fail under earthquake loads, and foundations fail when soil settles.
+Suspension bridges can fail in wind when the deck starts to twist. The Tacoma Narrows Bridge failed in 1940 from **aeroelastic torsional flutter**, a self-excited motion in which the wind and the twisting deck feed energy into each other. The bridge had a shallow, light deck, and its torsional stiffness was too low to resist the motion. Dams fail by overtopping, by seepage under the foundation, or by cracking when concrete heats as it cures. Towers fail under earthquake loads, and foundations fail when soil settles.
 
-Construction hazards have caused many of the deaths on these projects. Caisson disease, falls from height, collapse of scaffolding, heat, and rock falls are the main causes. A hierarchy of controls ranks the responses from most effective to least. Elimination removes the hazard, for example by building the caisson above the water or assembling large parts on the ground. Substitution replaces the hazard with a safer method, such as lifting prefabricated sections instead of riveting them at height. Engineering controls change the workplace itself, such as safety nets under the deck, pipe cooling for concrete, and decompression stages for caisson workers. Administrative controls set rules for work, such as shift limits, training, and inspection schedules. Personal protective equipment, such as hard hats, harnesses, and respirators, is the last line of defense, and it works only when the higher controls are in place.
+Construction hazards have caused many of the deaths on these projects. Caisson disease, falls from height, collapse of scaffolding, heat, and rock falls are the main causes. A **hierarchy of controls** ranks the responses from most effective to least. Elimination removes the hazard, for example by building the caisson above the water or assembling large parts on the ground. Substitution replaces the hazard with a safer method, such as lifting prefabricated sections instead of riveting them at height. Engineering controls change the workplace itself, such as safety nets under the deck, pipe cooling for concrete, and decompression stages for caisson workers. Administrative controls set rules for work, such as shift limits, training, and inspection schedules. Personal protective equipment, such as hard hats, harnesses, and respirators, is the last line of defense, and it works only when the higher controls are in place.
 
 ## History
 
@@ -197,7 +197,7 @@ Wind is a design load for any long, light structure. The Tacoma Narrows failure 
 
 ## Go deeper
 
-- [Opening Ceremonies of the New York and Brooklyn Bridge, May 24, 1883](https://www.gutenberg.org/ebooks/28191), Project Gutenberg eBook 28191. Contemporary accounts of the bridge's opening.
-- [Elevator Systems of the Eiffel Tower, 1889, Robert M. Vogel](https://www.gutenberg.org/ebooks/32282), Project Gutenberg eBook 32282. A study of the tower's elevators at its opening.
+- [*Opening Ceremonies of the New York and Brooklyn Bridge, May 24, 1883*](https://www.gutenberg.org/ebooks/28191), Project Gutenberg eBook 28191. Contemporary accounts of the bridge's opening.
+- [*Elevator Systems of the Eiffel Tower, 1889*, Robert M. Vogel](https://www.gutenberg.org/ebooks/32282), Project Gutenberg eBook 32282. A study of the tower's elevators at its opening.
 - Reference sheets: [Mechanics reference](../../physics/reference-mechanics.md), [Materials reference](../../materials/reference.md), [Applications reference](../../applications/reference.md).
 - Related lessons: [Bridges](../../applications/structures/01-bridges.md), [Dams](../../applications/structures/05-dams.md), [Towers and cables](../../applications/structures/06-towers-and-cables.md), [Aircraft and wings](../../applications/vehicles-aerospace/05-aircraft-and-wings.md), [Engineers of the industrial age](../people/04-engineers-of-the-industrial-age.md).

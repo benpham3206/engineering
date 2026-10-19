@@ -110,7 +110,7 @@ Coulomb model:
 
 $$F_f \le \mu_s N \qquad F_k = \mu_k N$$
 
-Here $N$ is normal force (N), $\mu_s$ and $\mu_k$ are dimensionless static and kinetic coefficients. $F_k$ acts opposite to sliding.
+$F_k$ acts opposite to sliding.
 
 Typical coefficients (dry, approximate, vary widely; measure for design):
 
@@ -127,8 +127,20 @@ $$T_{\text{high}} = T_{\text{low}}\, e^{\mu\theta}$$
 - Example: $\mu = 0.3$, half wrap $\theta = \pi$ gives $e^{0.3\pi} = 2.566$. Full wrap with $\mu = 0.2$ gives $e^{0.4\pi} = 3.514$ at $\theta = 2\pi$.
 - At high belt speed, subtract centrifugal tension $mv^2$ (per unit belt length, $m$ in kg/m, $v$ in m/s) from both tensions before applying the formula.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $F_f$ | friction force while not sliding | N |
+| $F_k$ | kinetic friction force while sliding | N |
+| $N$ | normal force between the surfaces | N |
+| $\mu_s$, $\mu_k$, $\mu$ | static, kinetic, and belt friction coefficients | dimensionless |
+| $T_{\text{high}}$, $T_{\text{low}}$ | belt tension on the tight and slack sides | N |
+| $\theta$ | wrap angle of the belt on the drum | rad |
+
 Holds when: dry sliding with a single $\mu$, impending or full slip, and no lubrication.
 Breaks when: lubricated, at microscopic adhesion (very clean or very flat surfaces), at high speed (friction varies with velocity), or when temperature or wear changes $\mu$.
+Source and basis: the Coulomb model is an empirical law with measured coefficients, taught in [Statics](01-statics.md); the belt relation is derived from equilibrium of a small belt element with Coulomb friction.
 
 <details><summary>Verification</summary>
 
@@ -165,8 +177,23 @@ $$I_x = \frac{bH^3 - (b - t_w)h^3}{12} \qquad A \approx 2bt_f + t_w h$$
 - Example: $H = 200$ mm, $b = 100$ mm, $t_f = 10$ mm, $t_w = 6$ mm. Then $h = 180$ mm, $I_x = 2.10 \times 10^7$ mm$^{4}$ ($2098$ cm$^{4}$), $A = 3080$ mm$^{2}$.
 - Root fillets and rolled tolerances are ignored. Use catalog values for a real rolled shape.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $A$, $A_i$ | cross-section area, and the area of part $i$ of a composite | m$^{2}$ |
+| $\bar{y}$, $y_i$ | centroid height of the composite, and of part $i$ | m |
+| $I$, $I_c$, $I_x$ | second moment of area about a parallel axis, the centroidal axis, and the strong axis | m$^{4}$ |
+| $J$ | polar second moment of area | m$^{4}$ |
+| $S$ | section modulus $I/c$, with $c$ the distance to the extreme fibre | m$^{3}$ |
+| $d$ | distance between the centroidal axis and the parallel axis; in the section table, a solid circle's diameter | m |
+| $D$, $d_i$ | outer and inner diameter of a hollow circle | m |
+| $b$, $H$, $h$ | width (rectangle or flange), overall depth of the I-beam, depth of a rectangle or clear web depth | m |
+| $t_f$, $t_w$ | flange and web thickness | m |
+
 Holds when: the shape is idealized and the flanges are rectangular.
 Breaks when: the section is thin-walled and open (use shear flow and torsion constant), or the real shape has fillets and tapers that are not small.
+Source and basis: derived from the definition $I = \int y^2\, dA$; the I-beam form subtracts the two rectangles beside the web from the outer rectangle. See [Bending and buckling](05-bending-and-buckling.md).
 
 <details><summary>Verification</summary>
 
@@ -193,17 +220,37 @@ Constant acceleration in one direction:
 
 $$v = v_0 + at \qquad x = x_0 + v_0 t + \tfrac{1}{2}at^2 \qquad v^2 = v_0^2 + 2a(x - x_0)$$
 
-Here $x$ (m), $v$ (m/s), $a$ (m/s$^{2}$), $t$ (s).
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $x$, $x_0$ | position now and at $t = 0$ | m |
+| $v$, $v_0$ | velocity now and at $t = 0$ | m/s |
+| $a$ | constant acceleration | m/s$^{2}$ |
+| $t$ | time | s |
 
 Holds when: acceleration is constant along the path.
 Breaks when: acceleration varies (integrate), or motion is curved (use normal and tangential components).
+Source and basis: derived from integrating a constant acceleration twice in time; taught in [Particle dynamics](02-particle-dynamics.md).
 
 ### Newton's second law
 
 $$\sum \mathbf{F} = m\mathbf{a} \qquad \sum M_G = I_G \alpha \quad (\text{rotation about the centre of mass})$$
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\mathbf{F}$ | external force on the body | N |
+| $m$ | mass | kg |
+| $\mathbf{a}$ | acceleration of the centre of mass | m/s$^{2}$ |
+| $M_G$ | moment about the centre of mass | N m |
+| $I_G$ | mass moment of inertia about the centre of mass | kg m$^{2}$ |
+| $\alpha$ | angular acceleration | rad/s$^{2}$ |
+
 Holds when: inertial frame, $v \ll c$, and the body mass is constant.
 Breaks when: mass changes (rockets: use $F = \dot{m}v$ terms), relativistic speeds, or non-inertial frames without fictitious forces.
+Source and basis: Newton's second law, the founding law of classical mechanics, taught in [Particle dynamics](02-particle-dynamics.md) and [Rigid-body dynamics](03-rigid-body-dynamics.md).
 
 ### Work and energy
 
@@ -216,8 +263,23 @@ $$K_1 + U_1 + W_{\text{nc}} = K_2 + U_2$$
 - Gravity near a surface: $U = mgh$, with $g$ the local gravitational acceleration. Earth: $g = 9.81$ m/s$^{2}$ (typical).
 - Spring: $U = \tfrac{1}{2}kx^2$.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $W_{\text{net}}$, $W_{\text{nc}}$ | work by all forces, and by non-conservative forces only | J |
+| $K$, $K_1$, $K_2$ | kinetic energy, at state 1 and state 2 | J |
+| $U$, $U_1$, $U_2$ | potential energy, at state 1 and state 2 | J |
+| $m$ | mass | kg |
+| $v$ | speed | m/s |
+| $g$ | local gravitational acceleration | m/s$^{2}$ |
+| $h$ | height above a chosen datum | m |
+| $k$ | spring stiffness | N/m |
+| $x$ | spring stretch from its free length | m |
+
 Holds when: forces are known and the work of each force is computable.
 Breaks when: forces depend on time in a way that is not a potential (use the impulse form), or there is internal energy loss that you have not accounted for.
+Source and basis: derived from integrating Newton's second law along the path; taught in [Particle dynamics](02-particle-dynamics.md).
 
 ### Impulse and momentum
 
@@ -225,8 +287,21 @@ $$\int_{t_1}^{t_2} \sum \mathbf{F}\,dt = m\mathbf{v}_2 - m\mathbf{v}_1 \qquad \s
 
 Units: impulse and momentum in N s = kg m/s.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\mathbf{F}$, $\mathbf{F}_{\text{ext}}$ | force on the body, and external force on the system | N |
+| $t_1$, $t_2$, $t$ | start time, end time, time | s |
+| $m$ | mass | kg |
+| $\mathbf{v}_1$, $\mathbf{v}_2$ | velocity before and after | m/s |
+| $\mathbf{p}$ | linear momentum $m\mathbf{v}$ | kg m/s |
+| $e$ | coefficient of restitution | dimensionless |
+| $v_1$, $v_2$, $v_1'$, $v_2'$ | velocities of bodies 1 and 2 before and after impact | m/s |
+
 Holds when: the impulse is over a finite time and the system is clearly defined.
 Breaks when: the force is internal to the system (it does not change total momentum), or the collision is between a body and a field that is not part of the system.
+Source and basis: derived from integrating Newton's second law over time; taught in [Particle dynamics](02-particle-dynamics.md). The coefficient of restitution is a measured property of the pair.
 
 Coefficient of restitution (1-D collision, velocities after $v'$, before $v$): $e = \dfrac{v_2' - v_1'}{v_1 - v_2}$. $e = 1$ for a perfectly elastic collision, $e = 0$ for perfectly plastic (bodies stick).
 
@@ -305,8 +380,24 @@ expect(q(200, "GPa") / (2 * (1 + q(0.30, ""))), "77 GPa")
 
 </details>
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\sigma$, $\tau$ | normal and shear stress | Pa |
+| $F$, $V$ | normal and shear force on the cut | N |
+| $A$ | area of the cut | m$^{2}$ |
+| $\varepsilon$ | normal strain | dimensionless |
+| $\delta$, $L$ | change in length and original length | m |
+| $\gamma$ | shear strain | rad |
+| $\Delta x$, $h$ | shear offset and the height over which it occurs | m |
+| $E$, $G$ | Young's modulus and shear modulus | Pa |
+| $\nu$ | Poisson's ratio | dimensionless |
+| $\sigma_y$ | yield strength | Pa |
+
 Holds when: linear elastic (stress below yield; the 0.2 percent offset yield is the stress that leaves 0.2 percent permanent strain after unloading; total strain at that stress also includes the elastic part $\sigma_y/E$), small strain, uniform material.
 Breaks when: stress exceeds yield, the material is anisotropic (composites, wood, rolled sheets), the part is above its creep temperature, or the strain is large.
+Source and basis: stress and strain are definitions; Hooke's law is the measured linear part of the stress-strain curve, and the $G$ relation is derived from isotropy. Taught in [Axial and torsion](04-axial-and-torsion.md).
 
 ### Axial loading
 
@@ -315,8 +406,19 @@ $$\sigma = \frac{P}{A} \qquad \delta = \frac{PL}{AE}$$
 - $P$ is axial force (N). Tension positive.
 - For a stepped bar, sum $PL/(AE)$ over segments.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\sigma$ | axial normal stress | Pa |
+| $P$ | axial force | N |
+| $A$ | cross-section area | m$^{2}$ |
+| $\delta$, $L$ | elongation and length | m |
+| $E$ | Young's modulus | Pa |
+
 Holds when: the load acts through the centroid and the section is uniform away from ends.
 Breaks when: holes, fillets, and grooves raise the peak stress (use $K_t$, stress concentration factor), or the bar is short and fat (end effects).
+Source and basis: derived from $\sigma = E\varepsilon$ with uniform stress over the section; taught in [Axial and torsion](04-axial-and-torsion.md).
 
 ### Torsion of circular shafts
 
@@ -325,8 +427,21 @@ $$\tau = \frac{Tr}{J} \qquad \tau_{\max} = \frac{Tc}{J} \qquad \phi = \frac{TL}{
 - $T$ torque (N m), $r$ distance from the axis (m), $c$ outer radius (m), $\phi$ angle of twist (rad).
 - Example: hollow shaft $D = 50$ mm, $d_i = 40$ mm, $T = 1.2$ kN m, $L = 1.5$ m, $G = 80$ GPa gives $\tau_{\max} = 82.8$ MPa and $\phi = 3.56$ degrees.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\tau$, $\tau_{\max}$ | shear stress at radius $r$, and at the surface | Pa |
+| $T$ | torque | N m |
+| $r$, $c$ | radius to the point, outer radius | m |
+| $J$ | polar second moment of area | m$^{4}$ |
+| $\phi$ | angle of twist | rad |
+| $L$ | shaft length | m |
+| $G$ | shear modulus | Pa |
+
 Holds when: circular cross section, linear elastic, torque applied at ends.
 Breaks when: non-circular sections (warping, use torsion constant $J_t$ and different formulas), thin-walled open sections, or yielding.
+Source and basis: derived from plane sections that rotate rigidly, so shear strain grows linearly with radius; taught in [Axial and torsion](04-axial-and-torsion.md).
 
 <details><summary>Verification</summary>
 
@@ -359,8 +474,24 @@ $$\tau = \frac{VQ}{Ib}$$
 - Rectangle: $\tau_{\max} = \dfrac{3V}{2A}$ at the neutral axis.
 - Circle: $\tau_{\max} = \dfrac{4V}{3A}$.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\sigma$, $\sigma_{\max}$ | bending stress at $y$, and at the extreme fibre | Pa |
+| $M$ | bending moment | N m |
+| $y$, $c$ | distance from the neutral axis, to the extreme fibre | m |
+| $I$ | second moment of area about the neutral axis | m$^{4}$ |
+| $S$ | section modulus $I/c$ | m$^{3}$ |
+| $\tau$, $\tau_{\max}$ | transverse shear stress, and its peak | Pa |
+| $V$ | shear force | N |
+| $Q$ | first moment of the area beyond the cut | m$^{3}$ |
+| $b$ | width of the section at the cut | m |
+| $A$ | cross-section area | m$^{2}$ |
+
 Holds when: slender beam (span over depth roughly 10 or more), prismatic, plane sections stay plane, linear elastic.
 Breaks when: deep or short beams (shear is significant; use shear deformation or Timoshenko theory), thin-walled sections (shear flow), or stress concentrations at supports and load points.
+Source and basis: derived from plane sections staying plane (Euler-Bernoulli theory) and from equilibrium of a beam slice; taught in [Bending and buckling](05-bending-and-buckling.md).
 
 ### Thin-walled pressure vessels
 
@@ -377,8 +508,18 @@ $$\sigma = \frac{pr}{2t}$$
 - Example: $p = 2$ MPa, $r = 500$ mm, $t = 10$ mm. Hoop stress 100 MPa; longitudinal and sphere stress 50 MPa.
 - The hoop stress is the design-governing stress for cylinders.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\sigma_{\text{hoop}}$, $\sigma_{\text{long}}$, $\sigma$ | hoop, longitudinal, and sphere wall stress | Pa |
+| $p$ | internal pressure minus external pressure | Pa |
+| $r$ | inner radius | m |
+| $t$ | wall thickness | m |
+
 Holds when: $t/r \le 0.1$, internal pressure only, no end-cap or nozzle effects.
 Breaks when: thick walls (use Lame equations), local stresses at nozzles, supports, and head-to-shell joints, and external pressure (buckling governs).
+Source and basis: derived from force balance on half of the vessel cut through its axis (hoop) or across it (longitudinal and sphere), with stress uniform through the thin wall.
 
 <details><summary>Verification</summary>
 
@@ -408,8 +549,20 @@ $$\tan 2\theta_p = \frac{2\tau_{xy}}{\sigma_x - \sigma_y}$$
 - Example: $\sigma_x = 80$, $\sigma_y = 20$, $\tau_{xy} = 30$ MPa. $\sigma_{\text{avg}} = 50$, $R = 42.43$ MPa, $\sigma_1 = 92.43$ MPa, $\sigma_2 = 7.57$ MPa, $\tau_{\max} = 42.43$ MPa, $\theta_p = 22.5$ degrees. Substitution at $\theta = 22.5$ degrees reproduces $\sigma_1$.
 - Sign convention for $\tau$ must match the text you use. Check by substitution.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\sigma_x$, $\sigma_y$ | normal stresses on the $x$ and $y$ faces | Pa |
+| $\tau_{xy}$ | shear stress on those faces | Pa |
+| $\sigma_{\text{avg}}$, $R$ | centre and radius of Mohr's circle | Pa |
+| $\sigma_1$, $\sigma_2$ | in-plane principal stresses | Pa |
+| $\tau_{\max}$ | largest in-plane shear stress | Pa |
+| $\theta_p$, $\theta$ | principal angle and cut angle, measured from $x$ | rad |
+
 Holds when: plane stress (one principal stress is zero or negligible).
 Breaks when: 3D stress (use all three principal stresses), or when the Mohr circle is drawn with the wrong $\tau$ sign convention.
+Source and basis: derived from force equilibrium of a wedge cut from the stressed element at angle $\theta$.
 
 <details><summary>Verification</summary>
 
@@ -439,11 +592,26 @@ expect(s_th, "92.43 MPa")
 
 $$\sigma_{vm} = \sqrt{\sigma_x^2 - \sigma_x\sigma_y + \sigma_y^2 + 3\tau_{xy}^2}$$
 
-- Example above: $\sigma_{vm} = 88.9$ MPa. Factor of safety against yield is $\sigma_y / \sigma_{vm}$.
+- Example above: $\sigma_{vm} = 88.9$ MPa. Factor of safety against yield is the yield strength divided by $\sigma_{vm}$.
 - Tresca (maximum shear), plane stress with $\sigma_3 = 0$: $\tau_{\max} = \dfrac{\max(\sigma_1,\sigma_2,0) - \min(\sigma_1,\sigma_2,0)}{2}$. The Tresca equivalent stress is the largest of $\sigma_1$, $\sigma_2$, 0 minus the smallest. It is more conservative than von Mises.
+
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\sigma_{vm}$ | von Mises equivalent stress | Pa |
+| $\sigma_x$, $\sigma_y$, $\tau_{xy}$ | plane-stress components, as in Mohr's circle | Pa |
+| $\sigma_1$, $\sigma_2$, $\sigma_3$ | principal stresses | Pa |
+| $\tau_{\max}$ | maximum shear stress | Pa |
+| $P$ | axial force | N |
+| $M$ | bending moment | N m |
+| $A$ | cross-section area | m$^{2}$ |
+| $c$ | distance from the neutral axis to the extreme fibre | m |
+| $I$ | second moment of area about the neutral axis | m$^{4}$ |
 
 Holds when: ductile material, static load, yield is the failure mode.
 Breaks when: brittle materials (use maximum normal stress or Mohr-Coulomb), fatigue (use a fatigue criterion such as Goodman or Soderberg), or buckling and fracture-mechanics failures.
+Source and basis: von Mises is derived from the distortion energy of the stress state, Tresca from the maximum shear stress; both are compared with yield tests in [Factor of safety and failure](../design/07-factor-of-safety-and-failure.md).
 
 <details><summary>Verification</summary>
 
@@ -518,8 +686,23 @@ $$\sigma_{cr} = \sigma_y - \frac{\sigma_y^2}{4\pi^2 E}\left(\frac{KL}{r}\right)^
 
 - At $KL/r = 89$ for this steel, Euler gives 249 MPa and Johnson gives 187 MPa, so Euler overpredicts the capacity by about a third. Steel building codes use their own column curves with a similar limit (about 133 for this steel). The example rod has $KL/r = 288$, so Euler applies.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $P_{cr}$ | critical buckling load | N |
+| $\sigma_{cr}$ | critical average stress $P_{cr}/A$ | Pa |
+| $E$ | Young's modulus | Pa |
+| $I$ | smallest second moment of area of the section | m$^{4}$ |
+| $A$ | cross-section area | m$^{2}$ |
+| $K$ | effective-length factor for the end conditions | dimensionless |
+| $L$ | column length | m |
+| $r$ | radius of gyration $\sqrt{I/A}$ | m |
+| $\sigma_y$ | yield strength | Pa |
+
 Holds when: the column is straight, centrally loaded, slender ($KL/r$ above the tangency value), elastic, with ideal end conditions.
 Breaks when: stocky columns (use inelastic or empirical column curves), eccentric loading (secant formula), imperfections, or real end conditions that are partly restrained (use a $K$ between the ideal values, and be conservative).
+Source and basis: the Euler load is derived from the elastic beam equation as its lowest buckling eigenvalue, taught in [Bending and buckling](05-bending-and-buckling.md). The Johnson parabola is derived from the conditions that it meets yield at zero slenderness and touches the Euler curve; its use for real columns rests on tests, so a governing code's column curve takes precedence.
 
 <details><summary>Verification</summary>
 
@@ -559,8 +742,6 @@ Single-degree-of-freedom spring-mass-damper:
 
 $$m\ddot{x} + c\dot{x} + kx = F(t)$$
 
-Units: $m$ kg, $c$ N s/m, $k$ N/m, $F$ N.
-
 Natural frequency and damping ratio:
 
 $$\omega_n = \sqrt{\frac{k}{m}} \quad (\text{rad/s}) \qquad f_n = \frac{\omega_n}{2\pi} \quad (\text{Hz}) \qquad \zeta = \frac{c}{c_{cr}} = \frac{c}{2\sqrt{km}}$$
@@ -588,8 +769,27 @@ $$TR = \sqrt{\frac{1 + (2\zeta r)^2}{(1 - r^2)^2 + (2\zeta r)^2}}$$
 - Example: $\zeta = 0.10$, $r = 2$: $TR = 0.356$ (isolation works). $r = 0.5$: $TR = 1.328$ (amplified).
 - Isolation is effective only for $r > \sqrt{2}$. Lower damping helps isolation at high $r$ and hurts it near resonance.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $m$ | mass | kg |
+| $c$, $c_{cr}$ | viscous damping coefficient, and its critical value $2\sqrt{km}$ | N s/m |
+| $k$ | spring stiffness | N/m |
+| $x$, $x_n$, $x_{n+1}$ | displacement, and two successive peaks | m |
+| $F$, $F_0$ | applied force and its amplitude | N |
+| $t$ | time | s |
+| $\omega_n$, $\omega_d$, $\omega$ | natural, damped, and forcing angular frequency | rad/s |
+| $f_n$ | natural frequency in cycles per second | Hz |
+| $\zeta$ | damping ratio | dimensionless |
+| $\delta$ | logarithmic decrement (not a deflection here) | dimensionless |
+| $X$, $X_0$ | steady amplitude, and static deflection $F_0/k$ | m |
+| $r$ | frequency ratio $\omega/\omega_n$ | dimensionless |
+| $TR$ | transmissibility | dimensionless |
+
 Holds when: linear spring and viscous damper, single degree of freedom, small motion, steady state (transients gone).
 Breaks when: nonlinear stiffness or damping (amplitude-dependent frequency), dry (Coulomb) friction, multiple modes near each other, or time-varying mass or stiffness.
+Source and basis: derived from Newton's second law on the mass with a linear spring and a viscous damper; taught in [Vibrations](13-vibrations.md).
 
 <details><summary>Verification</summary>
 
@@ -639,8 +839,20 @@ Overshoot for common damping ratios (computed):
 - $\zeta \approx 0.707$ is a common design target: low overshoot with reasonable speed.
 - At $\zeta = 1$ or more, there is no overshoot; use the real-root time constants instead.
 
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $G(s)$ | transfer function from input to output | dimensionless |
+| $s$ | Laplace variable | 1/s |
+| $\omega_n$, $\omega_d$ | natural and damped angular frequency | rad/s |
+| $\zeta$ | damping ratio | dimensionless |
+| $M_p$ | overshoot as a fraction of the final value | dimensionless |
+| $t_p$, $t_r$, $t_s$ | peak, rise, and settling time | s |
+
 Holds when: the closed loop is well approximated by a second-order system (dominant poles, no zeros nearby, linear).
 Breaks when: a zero is near the poles (it adds overshoot), there is dead time or a third pole nearby, or the system is nonlinear (saturation, friction). The overshoot formula is only for a step input.
+Source and basis: derived from the inverse Laplace transform of the step response; the settling estimates use the envelope $e^{-\zeta\omega_n t}$. Taught in [Controls](14-controls.md).
 
 <details><summary>Verification</summary>
 

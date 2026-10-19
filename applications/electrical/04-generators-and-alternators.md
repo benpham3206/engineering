@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A generator is a machine that converts rotating mechanical power into electrical power by moving conductors through a magnetic field. An engineer should understand it because almost all grid electricity and the charging current in every car come from such machines, and sizing one means matching speed, voltage, and losses.
+A **generator** is a machine that converts rotating mechanical power into electrical power by moving conductors through a magnetic field. An engineer should understand it because almost all grid electricity and the charging current in every car come from such machines, and sizing one means matching speed, voltage, and losses.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Trigonometry](../../math/02-trigonometry.md), [Single-variable calculus](../../math/03-single-variable-calculus.md)
 **Time:** 4-6 h
@@ -11,11 +11,11 @@ A generator is a machine that converts rotating mechanical power into electrical
 
 ### How it works
 
-Faraday's law sets the basic rule. An EMF appears in a conductor when the magnetic flux through a loop changes. For a coil of $N$ turns:
+**Faraday's law** sets the basic rule. An **EMF** appears in a conductor when the magnetic flux through a loop changes. For a coil of $N$ turns:
 
 $$\varepsilon = -N \frac{d\Phi}{dt}$$
 
-The minus sign is Lenz's law. The induced EMF drives a current that opposes the change that caused it.
+The minus sign is **Lenz's law**. The induced EMF drives a current that opposes the change that caused it.
 
 Picture a single coil of $N$ turns, area $A$, in a uniform field $B$. Turn the coil at angular speed $\omega$. The flux through it is $\Phi = BA\cos\omega t$, so the EMF is a sine wave with peak value $NBA\omega$. The rotation is the only thing that changes the flux, so the rotor must keep turning to keep the voltage.
 
@@ -25,9 +25,9 @@ In a large synchronous generator, a DC field on the rotor produces a magnetic fi
 
 ### Main parts
 
-The rotor carries the magnetic field. It is either a field coil fed with DC through slip rings, or a set of permanent magnets. The rotor is the part that spins.
+The **rotor** carries the magnetic field. It is either a field coil fed with DC through slip rings, or a set of permanent magnets. The rotor is the part that spins.
 
-The stator, also called the armature, is a fixed iron core with insulated copper windings. The EMF appears in these windings, so their voltage and current are the machine's output.
+The **stator**, also called the armature, is a fixed iron core with insulated copper windings. The EMF appears in these windings, so their voltage and current are the machine's output.
 
 The field supply provides DC to the rotor winding. In a large generator, a small exciter machine often supplies this current. In a car, the voltage regulator sets the field current from the battery voltage.
 
@@ -39,9 +39,9 @@ Large machines use fans, water, or hydrogen to carry away heat from the windings
 
 ### Variants
 
-A synchronous generator runs at a speed tied to the output frequency. A two-pole machine at 3600 rpm gives 60 Hz, and a four-pole machine at 1800 rpm gives 60 Hz. Power stations, diesel generator sets, and hydroelectric plants use this type. Hydroelectric turbines turn slowly, so their generators have many poles.
+A **synchronous generator** runs at a speed tied to the output frequency. A two-pole machine at 3600 rpm gives 60 Hz, and a four-pole machine at 1800 rpm gives 60 Hz. Power stations, diesel generator sets, and hydroelectric plants use this type. Hydroelectric turbines turn slowly, so their generators have many poles.
 
-An alternator is a synchronous generator with a rectifier at its output. Cars, boats, and trucks use alternators because they charge a battery with DC from a machine that runs at varying speed.
+An **alternator** is a synchronous generator with a rectifier at its output. Cars, boats, and trucks use alternators because they charge a battery with DC from a machine that runs at varying speed.
 
 A permanent-magnet generator has no field winding and no slip rings. It is common in small wind turbines and in some direct-drive wind turbines (typical).
 
@@ -57,7 +57,7 @@ $$e(t) = N B A \omega \sin(\omega t)$$
 
 Here $B$ is the flux density in teslas (T), $A$ is the coil area in square metres (m$^2$), and $\omega$ is the angular speed in radians per second (rad/s).
 
-Peak and root-mean-square (rms) values:
+Peak and **root-mean-square (rms)** values:
 
 $$E_{\mathrm{max}} = N B A \omega, \qquad E_{\mathrm{rms}} = \frac{E_{\mathrm{max}}}{\sqrt{2}}$$
 
@@ -77,7 +77,7 @@ Electrical output power, DC form and three-phase form:
 
 $$P_{\mathrm{out}} = V I \qquad P_{\mathrm{out}} = \sqrt{3}\, V_L I_L \cos\phi$$
 
-Here $V$ and $I$ are volts and amps, $V_L$ and $I_L$ are the line voltage and line current, and $\cos\phi$ is the power factor (dimensionless).
+Here $V$ and $I$ are volts and amps, $V_L$ and $I_L$ are the line voltage and line current, and $\cos\phi$ is the **power factor** (dimensionless).
 
 Efficiency and shaft torque:
 
@@ -129,11 +129,13 @@ Brush and slip-ring wear causes sparking, carbon dust, and eventually loss of fi
 
 Bearing failure causes rumbling, heat, and seizure. A seized bearing can snap the drive belt, which stops the alternator and can overheat the engine's cooling fan.
 
-Connecting a synchronous generator to a live grid at the wrong phase, voltage, or frequency causes a large current surge and a torque shock on the shaft. Synchronizing check relays and breakers exist to prevent this.
+> [!WARNING]
+> Connecting a synchronous generator to a live grid at the wrong phase, voltage, or frequency causes a large current surge and a torque shock on the shaft. Synchronizing check relays and breakers exist to prevent this.
 
 Loss of field in a synchronous generator makes it draw reactive power from the grid and overheat the stator. A loss-of-field relay trips the machine for this reason.
 
-Overspeed happens when a turbine-driven generator loses its load. A governor and an overspeed trip protect the rotor from the stress that can burst it.
+> [!WARNING]
+> Overspeed happens when a turbine-driven generator loses its load. A governor and an overspeed trip protect the rotor from the stress that can burst it.
 
 Overheating from overload or blocked airflow ages the insulation. Temperature sensors in the windings raise alarms and trip the machine before insulation fails.
 
@@ -169,7 +171,7 @@ Michael Faraday demonstrated electromagnetic induction in 1831 in England. Hippo
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 13: Electromagnetic Induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction), OpenStax. Free text covering Faraday's law, Lenz's law, and electric generators.
-- [University Physics Volume 2, Chapter 15: AC Circuits](https://openstax.org/books/university-physics-volume-2/pages/15-introduction), OpenStax. Free text covering alternating current, phase, and transformers.
+- [*University Physics Volume 2*, Chapter 13: Electromagnetic Induction](https://openstax.org/books/university-physics-volume-2/pages/13-introduction), OpenStax. Free text covering Faraday's law, Lenz's law, and electric generators.
+- [*University Physics Volume 2*, Chapter 15: AC Circuits](https://openstax.org/books/university-physics-volume-2/pages/15-introduction), OpenStax. Free text covering alternating current, phase, and transformers.
 - Related lessons: [DC motors](01-dc-motors.md), [induction motors](03-induction-motors.md), [transformers](05-transformers.md), [the power grid](08-the-power-grid.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

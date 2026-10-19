@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A mechatronic system is a machine that combines mechanics, electronics, sensors, actuators, and software so it can sense what it is doing and correct itself. Engineers who build these systems must understand every part, because a weak link in any one of them limits the performance of the whole machine. A 3D printer, a robotic arm, a camera gimbal, and a car's cruise control are all mechatronic systems. The skill is in the connections. A good mechanical design is wasted if the sensor cannot see the motion, and a good controller cannot fix a loose gear.
+A **mechatronic system** is a machine that combines mechanics, electronics, sensors, actuators, and software so it can sense what it is doing and correct itself. Engineers who build these systems must understand every part, because a weak link in any one of them limits the performance of the whole machine. A 3D printer, a robotic arm, a camera gimbal, and a car's cruise control are all mechatronic systems. The skill is in the connections. A good mechanical design is wasted if the sensor cannot see the motion, and a good controller cannot fix a loose gear.
 
 **Prerequisites:** [Design process](01-design-process.md), [Shafts and bearings](08-shafts-and-bearings.md), [Sensors and transducers](../measurement/05-sensors-and-transducers.md), [Electricity and magnetism](../physics/06-electricity-and-magnetism.md), [Feedback control](../physics/14-controls.md)
 **Time:** 10-15 h
@@ -13,7 +13,7 @@ A mechatronic system is a machine that combines mechanics, electronics, sensors,
 - **Actuator.** The part that makes motion happen, such as a DC motor, a stepper motor, a servo, or a solenoid.
 - **Sensor.** The part that measures the state of the system. An encoder measures angle or position. A limit switch detects an end of travel. A current sensor measures motor load.
 - **Controller.** The processor that reads sensors and decides what the actuator should do. It runs a control law, which is a set of rules or equations.
-- **Feedback loop.** The sensor reports the result, the controller compares it with the target, and the actuator corrects the error. A loop with feedback is called closed-loop control. Without a sensor, the system is open-loop, and it cannot correct errors it cannot see.
+- **Feedback loop.** The sensor reports the result, the controller compares it with the target, and the actuator corrects the error. A loop with feedback is called **closed-loop control**. Without a sensor, the system is open-loop, and it cannot correct errors it cannot see.
 - **Resolution.** The smallest change a sensor can report. It limits how precisely the controller can position the machine.
 - **Interface.** The electrical and software link between parts. Voltage levels, communication protocols, and timing must match.
 
@@ -118,5 +118,5 @@ Step 5. Linear speed: $v = \dfrac{5 \times 600}{60} = 50$ mm/s.
 
 - [MIT OpenCourseWare, 2.017J Design of Electromechanical Robotic Systems](https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/) by MIT: a free course on designing and testing electromechanical robots, covering sensing, actuation, and control in hardware.
 - [Engineering LibreTexts](https://eng.libretexts.org/) by the LibreTexts project: free engineering textbooks, including circuits and control background.
-- [OpenStax University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax at Rice University: free physics text covering motion and forces that drive actuators.
+- [*OpenStax University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax at Rice University: free physics text covering motion and forces that drive actuators.
 - [Design reference](reference.md): the lookup sheet for this topic.

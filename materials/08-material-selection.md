@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Material selection is the process of choosing the material that best meets a part's job at the lowest reasonable cost or mass. Engineers do it because a material chosen by habit or guesswork can be too weak, too heavy, or too costly for the part. Engineers start with what the part must do, turn that into a simple objective (usually mass or cost), and then rank candidate materials by a performance index. Michael Ashby popularized this method, and it works for almost any structural part.
+**Material selection** is the process of choosing the material that best meets a part's job at the lowest reasonable cost or mass. Engineers do it because a material chosen by habit or guesswork can be too weak, too heavy, or too costly for the part. Engineers start with what the part must do, turn that into a simple objective (usually mass or cost), and then rank candidate materials by a performance index. Michael Ashby popularized this method, and it works for almost any structural part.
 
 **Prerequisites:** [Mechanical properties](03-mechanical-properties.md), [Metals, polymers, ceramics, composites](05-material-classes.md), [Failure: fracture and fatigue](06-fracture-and-fatigue.md), [Failure: creep and corrosion](07-creep-and-corrosion.md)
 **Time:** 8-10 h
@@ -18,7 +18,7 @@ The procedure is always the same:
 
 1. Write the objective as a function of the free variables and the material properties.
 2. Use each constraint to eliminate the free variables that are fixed by the design.
-3. What is left is a performance index, a combination of material properties. Rank materials by that index. Higher is better when maximizing.
+3. What is left is a **performance index**, a combination of material properties. Rank materials by that index. Higher is better when maximizing.
 
 ### Example performance indices
 
@@ -29,7 +29,7 @@ These indices assume a light part, meaning the objective is mass and the length 
 - **Strong, light tie** (strength limited): maximize $\sigma_y/\rho$.
 - **Strong, light beam** (bending, strength limited, square section): maximize $\sigma_y^{2/3}/\rho$.
 
-Stiffness-limited means the part must not deflect too much. Strength-limited means the part must not yield. A given part is often limited by one of these, and the choice changes the ranking.
+**Stiffness-limited** means the part must not deflect too much. **Strength-limited** means the part must not yield. A given part is often limited by one of these, and the choice changes the ranking.
 
 ### Why the indices come out this way
 

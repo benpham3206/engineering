@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Spacecraft and satellites are vehicles that operate in space, where there is no air to carry heat away and no grid to supply power. A satellite that fails in orbit usually cannot be repaired, so engineers must get every system right before launch.
+**Spacecraft and satellites** are vehicles that operate in space, where there is no air to carry heat away and no grid to supply power. A satellite that fails in orbit usually cannot be repaired, so engineers must get every system right before launch.
 
 A spacecraft must make its own electrical power, keep its electronics within a narrow temperature band, and point its antennas and sensors with precision. Engineers design these three systems together, because each one changes the mass, area, and heat load of the others.
 
@@ -15,9 +15,9 @@ A spacecraft must make its own electrical power, keep its electronics within a n
 
 A satellite is a body in orbit. Its speed and altitude set the orbit, and its orbit sets how much sunlight, eclipse, and radiation it sees.
 
-The Sun delivers energy to the spacecraft as sunlight. The spacecraft has two ways to shed heat: it emits thermal radiation into space, and it conducts heat through its structure to radiators. The spacecraft is warm when it absorbs more power than it emits. It settles to a steady temperature when the two match. This is the thermal balance.
+The Sun delivers energy to the spacecraft as sunlight. The spacecraft has two ways to shed heat: it emits thermal radiation into space, and it conducts heat through its structure to radiators. The spacecraft is warm when it absorbs more power than it emits. It settles to a steady temperature when the two match. This is the **thermal balance**.
 
-Power comes from solar arrays while the spacecraft is sunlit. During eclipse, when the Earth or Moon blocks the Sun, batteries supply the load. The array must produce enough energy to run the spacecraft and recharge the batteries over each orbit.
+Power comes from solar arrays while the spacecraft is sunlit. During **eclipse**, when the Earth or Moon blocks the Sun, batteries supply the load. The array must produce enough energy to run the spacecraft and recharge the batteries over each orbit.
 
 Attitude control keeps the antennas, cameras, and solar arrays pointed where they must be. Reaction wheels, thrusters, and magnetic torque rods change the orientation. Communications use radio links to a ground station, and the link budget sets the antenna size and transmitter power.
 
@@ -41,17 +41,17 @@ Attitude control keeps the antennas, cameras, and solar arrays pointed where the
 
 ## Key equations
 
-The solar constant $S$ is the solar power per unit area at a given distance from the Sun. At 1 AU, the Earth's mean distance from the Sun, a typical value is $S_0 \approx 1361\ \text{W}/\text{m}^2$. Farther out, the flux falls with the square of the distance:
+The **solar constant** $S$ is the solar power per unit area at a given distance from the Sun. At 1 AU, the Earth's mean distance from the Sun, a typical value is $S_0 \approx 1361\ \text{W}/\text{m}^2$. Farther out, the flux falls with the square of the distance:
 
 $$S(r) = S_0 \left(\frac{1\ \text{AU}}{r}\right)^2$$
 
 where $r$ is the distance from the Sun in astronomical units. A spacecraft at 1.52 AU, the distance of Mars, sees about $589\ \text{W}/\text{m}^2$. The values in this lesson use 1 AU unless stated otherwise.
 
-For a flat plate facing the Sun, the absorbed power per unit area is $\alpha S$, where $\alpha$ is the solar absorptance (dimensionless). The plate emits thermal radiation at the Stefan-Boltzmann rate:
+For a flat plate facing the Sun, the absorbed power per unit area is $\alpha S$, where $\alpha$ is the **solar absorptance** (dimensionless). The plate emits thermal radiation at the Stefan-Boltzmann rate:
 
 $$q_{\text{emit}} = \varepsilon \sigma T^4$$
 
-where $\varepsilon$ is the infrared emittance (dimensionless), $\sigma = 5.670 \times 10^{-8}\ \text{W/(m}^2\ \text{K}^4)$ is the Stefan-Boltzmann constant, and $T$ is the absolute temperature in kelvin (K).
+where $\varepsilon$ is the **infrared emittance** (dimensionless), $\sigma = 5.670 \times 10^{-8}\ \text{W/(m}^2\ \text{K}^4)$ is the **Stefan-Boltzmann constant**, and $T$ is the absolute temperature in kelvin (K).
 
 For a plate sunlit on one face and radiating from both faces with no internal power, the balance per unit area is:
 
@@ -133,7 +133,7 @@ The Soviet Union launched Sputnik 1 on 4 October 1957, the first artificial sate
 
 ## Go deeper
 
-- [University Physics Volume 1](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook on mechanics, gravitation, and fluids. It is licensed CC BY-NC-SA.
+- [*University Physics Volume 1*](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: a free introductory textbook on mechanics, gravitation, and fluids. It is licensed CC BY-NC-SA.
 - [MIT OpenCourseWare](https://ocw.mit.edu/): free lecture notes, exams, and videos from MIT, with no registration required. Search for courses on orbital mechanics and spacecraft design.
 - Related: [Rockets](07-rockets.md), [Photovoltaics](../energy/01-solar-photovoltaics.md), [Batteries](../electrical/06-batteries.md), [Thermal systems](../thermal-fluid/01-thermal-systems.md), [Orbital mechanics and rockets](../../physics/15-orbital-mechanics-and-rockets.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

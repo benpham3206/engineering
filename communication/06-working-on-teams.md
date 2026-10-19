@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Working on teams is the practice of dividing, sharing, and deciding on engineering work with other people. Engineers need it because almost no engineering product is built by one person, and projects succeed or fail on how people divide the work, share information, make decisions, and handle disagreement.
+**Working on teams** is the practice of dividing, sharing, and deciding on engineering work with other people. Engineers need it because almost no engineering product is built by one person, and projects succeed or fail on how people divide the work, share information, make decisions, and handle disagreement.
 
 **Prerequisites:** [04-documentation.md](04-documentation.md): teams depend on shared records.
 **Time:** 3-5 h
@@ -101,6 +101,6 @@ Use this to check a team's working process.
 
 ## Go deeper
 
-- [NASA Systems Engineering Handbook](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA, a free handbook whose sections include crosscutting technical management.
+- [*NASA Systems Engineering Handbook*](https://www.nasa.gov/reference/systems-engineering-handbook/) by NASA, a free handbook whose sections include crosscutting technical management.
 - [Purdue OWL: Professional and Technical Writing](https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html) by Purdue University, covering workplace writing genres, including memos, which teams use to communicate decisions.
 - [Communication reference](reference.md): the lookup sheet for this topic.

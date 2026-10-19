@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-MATLAB is a paid numerical computing language used across engineering for matrices, simulations, signal processing, and control. Engineers use it because the matrix syntax is short and many add-on toolboxes exist. GNU Octave is a free program that runs most of the same basic code, so you can learn the core skills without a license.
+**MATLAB** is a paid numerical computing language used across engineering for matrices, simulations, signal processing, and control. Engineers use it because the matrix syntax is short and many add-on toolboxes exist. **GNU Octave** is a free program that runs most of the same basic code, so you can learn the core skills without a license.
 
 **Prerequisites:** [Python for engineering calculations](02-python.md) (recommended), [Algebra](../math/01-algebra.md), and [Linear algebra](../math/05-linear-algebra.md).
 **Time:** 8-12 h for core matrix and plotting skills

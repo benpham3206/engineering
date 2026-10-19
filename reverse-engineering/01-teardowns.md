@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A teardown is taking a product apart in a planned, careful way so you can see how it is built. Engineers do teardowns to learn how a competitor's product is put together, to repair something, or to study a design they are about to improve. A good teardown records every part, how each part is held, and what order the parts came off in, so you can put the product back together or rebuild it on paper.
+A **teardown** is taking a product apart in a planned, careful way so you can see how it is built. Engineers do teardowns to learn how a competitor's product is put together, to repair something, or to study a design they are about to improve. A good teardown records every part, how each part is held, and what order the parts came off in, so you can put the product back together or rebuild it on paper.
 
 **Prerequisites:** none
 **Time:** 4-6 h
@@ -14,8 +14,11 @@ A teardown is taking a product apart in a planned, careful way so you can see ho
 - Photograph the product from every side before you open it. Photograph each step as you go. Photos keep details you would otherwise forget.
 - Work in the order you remove things. Take the outer shell off first, then the next layer, and so on. Reversing the order later is easier when you know the sequence.
 - Keep fasteners sorted. Use a tray or a labeled cup for each group, and note where each fastener came from. A screw that looks the same as another may have a different length or thread.
-- Stored energy is the main hazard. Springs under tension, charged capacitors, lithium batteries, and parts held under load can release energy suddenly. Discharge capacitors and remove batteries before you cut or pry anything.
-- Lockout means making sure a machine cannot start or move while you work on it. The idea is the same for a household appliance: unplug it, and keep the plug where you can see it.
+
+> [!WARNING]
+> **Stored energy** is the main hazard. Springs under tension, charged capacitors, lithium batteries, and parts held under load can release energy suddenly. Discharge capacitors and remove batteries before you cut or pry anything.
+
+- **Lockout** means making sure a machine cannot start or move while you work on it. The idea is the same for a household appliance: unplug it, and keep the plug where you can see it.
 - An **exploded parts list** is a list of every part with a number, a name, a quantity, and a short note on how it fits. It is named after an exploded view drawing, where parts are drawn pulled apart along their assembly axis.
 - A **parting line** is the seam where two halves of a mold met. It shows up on the finished part as a thin line or ridge. You will use parting lines again in the material and process lesson.
 

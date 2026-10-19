@@ -2,11 +2,12 @@
 
 **Type:** lesson
 
-Shop tools are the machines and hand tools that cut, drill, bend, and finish material in a workshop. Knowing how they work matters to an engineer, because a designer who understands the shop draws parts that a machinist can actually make.
+**Shop tools** are the machines and hand tools that cut, drill, bend, and finish material in a workshop. Knowing how they work matters to an engineer, because a designer who understands the shop draws parts that a machinist can actually make.
 
 Basic shop skill is hands-on and needs supervision and training. This lesson gives the concepts you need before you use a machine: surface speed, feed, safety guards, and the habits of a careful machinist.
 
-Do not use a machine you have not been trained on. Use the school or community shop, or a qualified instructor. Read the [OSHA machine guarding overview](https://www.osha.gov/machine-guarding), which says any part of a machine that could injure a worker must be guarded.
+> [!WARNING]
+> Do not use a machine you have not been trained on. Use the school or community shop, or a qualified instructor. Read the [OSHA machine guarding overview](https://www.osha.gov/machine-guarding), which says any part of a machine that could injure a worker must be guarded.
 
 **Prerequisites:** [Measurement tools](07-measurement-tools.md), [Python](02-python.md) (for speed calculations), [Machining speeds and feeds](../manufacturing/02-machining-speeds-and-feeds.md)
 **Time:** 10-20 h of supervised practice, plus reading
@@ -90,7 +91,7 @@ rpm with 12/pi: 4583.662361046586
 ## Go deeper
 
 - [OSHA: Machine guarding](https://www.osha.gov/machine-guarding) by the U.S. Department of Labor: the guarding requirement that applies to every machine.
-- [NIST Special Publication 811](https://www.nist.gov/pml/special-publication-811) by NIST: units and conversions for the dimensions you cut to.
+- [*NIST Special Publication 811*](https://www.nist.gov/pml/special-publication-811) by NIST: units and conversions for the dimensions you cut to.
 - [Measurement tools](07-measurement-tools.md): reading the tools you check the part with.
 - Related: [CAD](06-cad-solidworks.md), [starter kit](01-starter-kit.md), [design folder](../design/README.md).
 - [Tools reference](reference.md): the lookup sheet for this topic.

@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A transmission is a set of gears that changes the speed and torque from the engine to the wheels, and a differential is a gear set that lets the
+A **transmission** is a set of gears that changes the speed and torque from the engine to the wheels, and a **differential** is a gear set that lets the
 two driven wheels turn at different speeds in a corner. Engineers pick the gear ratios to match the
 engine's power band to the vehicle's speed and load, and they set the differential to balance traction
 against steering and wear. Both parts follow simple ratio and torque rules, and efficiency decides how
@@ -15,13 +15,13 @@ much of the engine's power arrives at the road.
 
 ### How it works
 
-A gear pair changes speed and torque. The gear ratio is $G = N_{\mathrm{out}}/N_{\mathrm{in}}$, where $N$ is the tooth count.
+A gear pair changes speed and torque. The **gear ratio** is $G = N_{\mathrm{out}}/N_{\mathrm{in}}$, where $N$ is the tooth count.
 A pair with more teeth on the output side turns the output slower and gives it more torque. Power stays
 the same apart from losses, so torque times speed is nearly constant through the gears. A transmission is a
 set of gear pairs. A driver picks one pair at a time, or the transmission changes pairs by itself.
 
 The differential sits between the two driven wheels. In a car, the engine turns the ring gear through
-the final drive. The ring gear turns a carrier that holds two small bevel gears, the spider gears. Those
+the final drive. The ring gear turns a carrier that holds two small bevel gears, the **spider gears**. Those
 gears drive two side gears, one on each axle. When the car goes straight, the wheels turn at the same
 speed. In a corner, the outer wheel must turn faster, and the spider gears rotate on the carrier to let it.
 
@@ -31,13 +31,13 @@ wheel can carry through its contact with the ground.
 
 ### Main parts
 
-A manual transmission has input and output shafts, a set of gear pairs, synchronizers that match the
+A manual transmission has input and output shafts, a set of gear pairs, **synchronizers** that match the
 speeds of a gear before it locks, and a shift linkage. An automatic transmission has a torque converter,
-planetary gear sets, and clutches and bands that hold or release each part of the gear set. A continuously
-variable transmission, or CVT, has two variable-diameter pulleys and a belt or chain that runs between them.
+planetary gear sets, and clutches and bands that hold or release each part of the gear set. A **continuously
+variable transmission, or CVT**, has two variable-diameter pulleys and a belt or chain that runs between them.
 
 A differential has a ring gear, a pinion that drives the ring gear, a carrier, spider gears, and side gears.
-A limited-slip differential adds clutch plates, a helical gear set, or a viscous coupling that resists
+A **limited-slip differential** adds clutch plates, a helical gear set, or a viscous coupling that resists
 speed difference between the wheels.
 
 ### Variants
@@ -45,7 +45,7 @@ speed difference between the wheels.
 A manual gearbox has a fixed set of ratios, and the driver chooses one. Its ratios are spaced so that the
 engine stays inside a useful speed band at each step.
 
-An automatic transmission uses a torque converter, which is a fluid coupling with a stator. At low speed,
+An automatic transmission uses a **torque converter**, which is a fluid coupling with a stator. At low speed,
 the stator redirects the fluid, so the converter multiplies torque. The converter locks up at higher speed,
 so it stops slipping. Planetary gear sets then give several fixed ratios, and hydraulic clutches select them.
 

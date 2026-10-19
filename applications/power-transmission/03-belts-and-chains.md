@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Belts and chains are flexible loops that carry power between two shafts that sit some distance apart, so the drive needs no gears on the shafts. Designers pick the belt type, set the tension, and check the wrap and the speed ratio, because those set how much power the drive can carry without slipping. Flat, V, and timing belts and roller chains each suit different loads, speeds, and center distances.
+**Belts and chains** are flexible loops that carry power between two shafts that sit some distance apart, so the drive needs no gears on the shafts. Designers pick the belt type, set the tension, and check the wrap and the speed ratio, because those set how much power the drive can carry without slipping. Flat, V, and timing belts and roller chains each suit different loads, speeds, and center distances.
 
 **Prerequisites:** [Statics](../../physics/01-statics.md), [Axial and torsion](../../physics/04-axial-and-torsion.md), [Shafts and bearings](../../design/08-shafts-and-bearings.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 4-6 h
@@ -11,11 +11,11 @@ Belts and chains are flexible loops that carry power between two shafts that sit
 
 ### How it works
 
-A belt wraps around two pulleys. Friction between the belt and the pulley carries the torque from the driver to the driven pulley. The tight side of the belt carries tension $T_1$, and the slack side carries $T_2$. The difference $T_1 - T_2$ is the force that does work, so the power is $P = (T_1 - T_2) v$.
+A belt wraps around two pulleys. Friction between the belt and the pulley carries the torque from the driver to the driven pulley. The **tight side** of the belt carries tension $T_1$, and the **slack side** carries $T_2$. The difference $T_1 - T_2$ is the force that does work, so the power is $P = (T_1 - T_2) v$.
 
-Friction makes the drive work, and it also limits it. If the tension difference exceeds the friction capacity, the belt slips. Slip lowers the speed of the driven pulley below the ideal ratio. A timing belt avoids slip by using teeth that mesh with the pulley.
+Friction makes the drive work, and it also limits it. If the tension difference exceeds the friction capacity, the belt slips. **Slip** lowers the speed of the driven pulley below the ideal ratio. A timing belt avoids slip by using teeth that mesh with the pulley.
 
-A roller chain works like a belt wrapped around sprockets, but the chain links hold the load through pins and rollers instead of friction. The teeth of the sprocket engage the rollers, so a chain does not slip. It does change speed slightly within each revolution, which is the polygon effect described below.
+A roller chain works like a belt wrapped around sprockets, but the chain links hold the load through pins and rollers instead of friction. The teeth of the sprocket engage the rollers, so a chain does not slip. It does change speed slightly within each revolution, which is the **polygon effect** described below.
 
 ### Main parts
 
@@ -150,7 +150,8 @@ For a roller chain with $p = 12.7$ mm, $N_1 = 17$ teeth on the driver, $N_2 = 34
 - **Sprocket tooth wear.** A worn chain wears the teeth into a hooked shape. The warning sign is a chain that jumps on the sprocket.
 - **Timing belt tooth failure.** Low tension lets the belt jump teeth, and a misaligned pulley shears the teeth.
 
-Safety measures include belt and chain guards, tensioners, and a rated power check for each drive. A chain guard keeps fingers and loose clothing out of the drive, and a tensioner keeps the slack side from whipping.
+> [!WARNING]
+> Safety measures include belt and chain guards, tensioners, and a rated power check for each drive. A chain guard keeps fingers and loose clothing out of the drive, and a tensioner keeps the slack side from whipping.
 
 ## History
 
@@ -184,7 +185,7 @@ Leather flat belts drove factory machinery through overhead line shafts across t
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 10 (rotational motion)](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: torque, rotational speed, and the power carried by a rotating shaft, the physics behind every pulley and sprocket.
+- [*University Physics Volume 1*, Chapter 10 (rotational motion)](https://openstax.org/books/university-physics-volume-1/pages/10-introduction) by OpenStax: torque, rotational speed, and the power carried by a rotating shaft, the physics behind every pulley and sprocket.
 - [Gear trains](01-gear-trains.md): the positive-engagement alternative to friction and chain drives, with exact ratios and higher efficiency.
 - [Planetary gears](02-planetary-gears.md): compact speed and torque changes that use meshing teeth in place of belts.
 - [Shafts and bearings](../../design/08-shafts-and-bearings.md): how belt and chain loads reach the shaft and its bearings.

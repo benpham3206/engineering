@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A spreadsheet is a grid of cells where formulas update when inputs change. Engineers use it for tables, quick sweeps, unit checks, and records. It is the fastest tool for "what if" questions, and the easiest to get wrong without labels.
+A **spreadsheet** is a grid of cells where formulas update when inputs change. Engineers use it for tables, quick sweeps, unit checks, and records. It is the fastest tool for "what if" questions, and the easiest to get wrong without labels.
 
 **Prerequisites:** [Algebra](../math/01-algebra.md) and [Axial and torsion](../physics/04-axial-and-torsion.md) (for the stress example). [Python](02-python.md) is useful but not required.
 **Time:** 6-10 h to learn the parts used here

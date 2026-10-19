@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Radio and antennas are the parts of a link that turn information into electromagnetic waves and recover it at a receiver. A weak received signal can be lost in noise, so an engineer must size the antenna to the wavelength and check the link budget.
+**Radio and antennas** are the parts of a link that turn information into electromagnetic waves and recover it at a receiver. A weak received signal can be lost in noise, so an engineer must size the antenna to the wavelength and check the link budget.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Oscillations, waves, light, and heat](../../physics/07-waves-light-heat.md)
 **Time:** 4-6 h
@@ -13,7 +13,7 @@ Radio and antennas are the parts of a link that turn information into electromag
 
 A transmitter drives alternating current at radio frequency into an antenna. Charges that accelerate in the conductor radiate electromagnetic waves, and those waves travel at the speed of light. A receiving antenna captures a tiny fraction of the wave and converts it back into a small alternating voltage.
 
-The information rides on a carrier wave, and this step is called modulation. Amplitude modulation (AM) changes the strength of the carrier. Frequency modulation (FM) changes its frequency. Digital systems change amplitude and phase together. The carrier frequency sets the wavelength, and the wavelength sets the antenna size.
+The information rides on a **carrier wave**, and this step is called **modulation**. **Amplitude modulation (AM)** changes the strength of the carrier. **Frequency modulation (FM)** changes its frequency. Digital systems change amplitude and phase together. The carrier frequency sets the wavelength, and the wavelength sets the antenna size.
 
 ### Main parts
 
@@ -51,7 +51,7 @@ $$P_r\,(\text{dBm}) = P_t\,(\text{dBm}) + G_t\,(\text{dBi}) + G_r\,(\text{dBi}) 
 
 $$L_{\mathrm{fs}} = 20\log_{10}\!\left(\frac{d}{\text{km}}\right) + 20\log_{10}\!\left(\frac{f}{\text{MHz}}\right) + 32.44$$
 
-Shannon capacity, with bandwidth $B$ in hertz and signal-to-noise ratio $S/N$ as a plain ratio (not decibels):
+**Shannon capacity**, with bandwidth $B$ in hertz and signal-to-noise ratio $S/N$ as a plain ratio (not decibels):
 
 $$C = B\log_2\!\left(1 + \frac{S}{N}\right)$$
 
@@ -82,12 +82,14 @@ $$C = B\log_2\!\left(1 + \frac{S}{N}\right)$$
 
 ## How it fails
 
-- **Mismatch.** A poor match between the antenna and the feed line reflects power back to the transmitter. The warning sign is a high standing-wave ratio (SWR), and the fix is a matching network or a corrected length.
+- **Mismatch.** A poor match between the antenna and the feed line reflects power back to the transmitter. The warning sign is a high **standing-wave ratio (SWR)**, and the fix is a matching network or a corrected length.
 - **Detuning.** A nearby object, a hand, or a damaged element moves the resonance. The signal weakens without any change in the electronics.
 - **Multipath fading.** A signal that arrives by two paths with different delays can cancel itself at some frequencies and places. Receivers use diversity antennas and equalizers to handle it.
 - **Interference.** Another transmitter on the same frequency raises the noise. Spectrum licensing and channel plans reduce this.
 - **Lightning and mast failure.** Tall antennas attract lightning, and guy wires or bases can fail under wind and ice. Grounding, lightning arrestors, and inspection schedules exist because of these failures.
-- **Excess exposure.** Radiation close to a powerful antenna can heat tissue. Regulators limit exposure, and installers keep public access away from high-power antennas.
+
+> [!WARNING]
+> **Excess exposure.** Radiation close to a powerful antenna can heat tissue. Regulators limit exposure, and installers keep public access away from high-power antennas.
 
 ## History
 
@@ -137,7 +139,7 @@ James Clerk Maxwell predicted electromagnetic waves in the 1860s, and his equati
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 16.1, Maxwell's equations and electromagnetic waves](https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves) by OpenStax. Maxwell's theory and Hertz's experiments.
-- [University Physics Volume 2, Chapter 16.5, The electromagnetic spectrum](https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum) by OpenStax. The radio bands among the other electromagnetic waves.
+- [*University Physics Volume 2*, Chapter 16.1, Maxwell's equations and electromagnetic waves](https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves) by OpenStax. Maxwell's theory and Hertz's experiments.
+- [*University Physics Volume 2*, Chapter 16.5, The electromagnetic spectrum](https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum) by OpenStax. The radio bands among the other electromagnetic waves.
 - Related: [Microwave ovens](01-microwave-ovens.md), which uses the same wave equations at 2.45 GHz, and [Lasers](03-lasers.md), which uses the same wavelength and energy ideas at optical frequencies.
 - [Applications reference](../reference.md): the lookup sheet for this topic.

@@ -19,7 +19,7 @@ Metals, polymers, ceramics, and composites are the four broad classes of enginee
 - **Metals.** High stiffness and strength for their density, good toughness, and conduct heat and electricity. They yield before they break, which gives warning before failure.
 - **Polymers.** Low stiffness, low density, low melting point, and good chemical resistance. They creep under load at room temperature more than metals do. Many are excellent electrical insulators.
 - **Ceramics.** Very high stiffness and hardness, high melting point, and good corrosion and wear resistance. They fail suddenly by brittle fracture, and tensile strength is much lower than compressive strength.
-- **Composites.** Properties depend on fiber, matrix, and layout. Fibers aligned with the load give high stiffness and strength in that direction. The matrix holds the fibers and spreads the load. Composite properties are often anisotropic, meaning they change with direction.
+- **Composites.** Properties depend on fiber, matrix, and layout. Fibers aligned with the load give high stiffness and strength in that direction. The matrix holds the fibers and spreads the load. Composite properties are often **anisotropic**, meaning they change with direction.
 
 ### Why the classes behave differently
 

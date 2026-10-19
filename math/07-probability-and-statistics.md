@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Probability and statistics are the tools for describing uncertainty in a model and estimating what a real process does from measured data. Engineers use both to set tolerances, judge whether a test result is real or noise, and estimate how often a part will fail.
+**Probability and statistics** are the tools for describing uncertainty in a model and estimating what a real process does from measured data. Engineers use both to set tolerances, judge whether a test result is real or noise, and estimate how often a part will fail.
 
 **Prerequisites:** [Algebra](01-algebra.md), [Single-variable calculus](03-single-variable-calculus.md) for the continuous-distribution parts
 **Time:** 30-45 h
@@ -10,11 +10,11 @@ Probability and statistics are the tools for describing uncertainty in a model a
 ## Core ideas
 
 - A probability is a number from 0 to 1 that describes how likely an event is. Probabilities of all possible outcomes add to 1.
-- Independent events do not affect each other. For independent events $A$ and $B$, $P(A \text{ and } B) = P(A)\,P(B)$.
-- A random variable is a number assigned to each outcome. A discrete variable takes countable values (defective parts in a batch). A continuous variable takes any value in a range (a diameter in mm).
-- The mean $\mu$ is the average value of the distribution. The standard deviation $\sigma$ measures spread. The sample standard deviation $s$ estimates $\sigma$ from data and divides by $n - 1$.
-- The normal distribution is a bell curve defined by $\mu$ and $\sigma$. Many measurement errors are close to normal, and the Central Limit Theorem explains why averages tend toward it.
-- A confidence interval gives a range that is likely to contain the true mean. A 95% interval means that if you repeated the experiment many times, about 95% of the intervals would contain the true value.
+- **Independent events** do not affect each other. For independent events $A$ and $B$, $P(A \text{ and } B) = P(A)\,P(B)$.
+- A **random variable** is a number assigned to each outcome. A discrete variable takes countable values (defective parts in a batch). A continuous variable takes any value in a range (a diameter in mm).
+- The **mean** $\mu$ is the average value of the distribution. The **standard deviation** $\sigma$ measures spread. The sample standard deviation $s$ estimates $\sigma$ from data and divides by $n - 1$.
+- The **normal distribution** is a bell curve defined by $\mu$ and $\sigma$. Many measurement errors are close to normal, and the Central Limit Theorem explains why averages tend toward it.
+- A **confidence interval** gives a range that is likely to contain the true mean. A 95% interval means that if you repeated the experiment many times, about 95% of the intervals would contain the true value.
 - Use the $t$-distribution instead of the normal when $\sigma$ is estimated from a small sample. For large samples, the two are nearly the same.
 - Statistical significance is not the same as engineering importance. Always compare the size of an effect with the tolerance or the design margin.
 
@@ -84,7 +84,7 @@ $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
 
 ## Go deeper
 
-- [Engineering Statistics Handbook, section 1.3.5 Quantitative Techniques](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35.htm) by NIST: confidence intervals, hypothesis tests, and outlier checks for engineering data.
-- [Introductory Statistics](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: free textbook covering descriptive statistics, probability, and inference.
+- [*Engineering Statistics Handbook*, section 1.3.5 Quantitative Techniques](https://www.itl.nist.gov/div898/handbook/eda/section3/eda35.htm) by NIST: confidence intervals, hypothesis tests, and outlier checks for engineering data.
+- [*Introductory Statistics*](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: free textbook covering descriptive statistics, probability, and inference.
 - Next: [Numerical methods](08-numerical-methods.md).
 - [Math reference](reference.md): the lookup sheet for this topic.

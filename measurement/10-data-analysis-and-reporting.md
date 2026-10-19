@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Data analysis is the work of turning raw readings into a summary, a fitted model, and a reported result with its uncertainty. Engineers need it because raw readings mean little until someone can check how they were summarized.
+**Data analysis** is the work of turning raw readings into a summary, a fitted model, and a reported result with its uncertainty. Engineers need it because raw readings mean little until someone can check how they were summarized.
 
 This lesson covers the core tools: the mean and standard deviation, a straight-line fit by least squares, residuals to check the fit, and a reporting format that another engineer can check.
 
@@ -87,7 +87,7 @@ $$u(b) = \frac{s_r}{\sqrt{\sum (x_i - \bar{x})^2}} \qquad u(a) = s_r \sqrt{\frac
 
 ## Go deeper
 
-- [Introduction to Statistics (chapter 1)](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: descriptive statistics, data collection, and the vocabulary of analysis.
+- [*Introduction to Statistics* (chapter 1)](https://openstax.org/books/introductory-statistics/pages/1-introduction) by OpenStax: descriptive statistics, data collection, and the vocabulary of analysis.
 - [Introduction to Probability and Statistics (18.05)](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/) by MIT OpenCourseWare: linear regression and confidence intervals.
-- [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: how to combine uncertainty components and report a final result.
+- [*Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)*](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: how to combine uncertainty components and report a final result.
 - [Measurement reference](reference.md): the lookup sheet for this topic.

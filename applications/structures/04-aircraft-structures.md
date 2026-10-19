@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An aircraft structure is the thin shell of skin, frames, and stringers that carries an aircraft's flight, pressure, and landing loads. An engineer must keep that shell within stress limits for its whole life, because fatigue and damage grow over thousands of flights.
+An **aircraft structure** is the thin shell of skin, frames, and stringers that carries an aircraft's flight, pressure, and landing loads. An engineer must keep that shell within stress limits for its whole life, because fatigue and damage grow over thousands of flights.
 
 The shell must also weigh as little as possible, which is why it is thin.
 
@@ -13,9 +13,9 @@ The shell must also weigh as little as possible, which is why it is thin.
 
 ### How it works
 
-Most transport aircraft use a semi-monocoque structure. The skin is a thin sheet that carries shear and pressure. Longitudinal stringers stiffen the skin and carry axial load along the fuselage. Circumferential frames hold the cross-section round and transfer pressure loads into the skin. The skin and stringers share the bending load, and the frames keep the skin from buckling under compression.
+Most transport aircraft use a **semi-monocoque** structure. The skin is a thin sheet that carries shear and pressure. Longitudinal stringers stiffen the skin and carry axial load along the fuselage. Circumferential frames hold the cross-section round and transfer pressure loads into the skin. The skin and stringers share the bending load, and the frames keep the skin from buckling under compression.
 
-A wing works the same way. Spars carry bending. The spar caps take axial load, and the web takes shear. Ribs hold the airfoil shape and pass lift loads into the skin. The skin and spars together form a torsion box, which resists twisting.
+A wing works the same way. Spars carry bending. The spar caps take axial load, and the web takes shear. Ribs hold the airfoil shape and pass lift loads into the skin. The skin and spars together form a **torsion box**, which resists twisting.
 
 The load path follows a chain from the source to the ground:
 
@@ -24,7 +24,7 @@ The load path follows a chain from the source to the ground:
 3. The frames and stringers carry the load to the bulkheads and the wing attachment fittings.
 4. The wing carries lift to the fuselage through the wing box, and the landing gear carries the weight to the ground.
 
-The design uses limit loads, which are the largest loads expected in service. Ultimate loads are limit loads multiplied by a factor of 1.5, which is the standard margin for transport aircraft. The structure must not fail at limit load and must not fail at ultimate load.
+The design uses **limit loads**, which are the largest loads expected in service. **Ultimate loads** are limit loads multiplied by a factor of 1.5, which is the standard margin for transport aircraft. The structure must not fail at limit load and must not fail at ultimate load.
 
 ### Main parts
 
@@ -41,7 +41,7 @@ The design uses limit loads, which are the largest loads expected in service. Ul
 - Aluminum semi-monocoque: the standard construction for most transport aircraft since the 1930s.
 - Carbon fibre composite: used for large parts of modern airliners, such as the fuselage and wings of the Boeing 787 and the Airbus A350. Composites save weight and resist fatigue cracking, but damage from impacts can be hard to see.
 - Monocoque shell: a shell that carries all the load without internal stringers. Some sailplanes use this form.
-- Truss and fabric: light general aviation aircraft and early machines used welded steel tubes or wood frames covered with fabric. The Wright Flyer of 1903 used wood and fabric.
+- Truss and fabric: light general aviation aircraft and early machines used welded steel tubes or wood frames covered with fabric. The *Wright Flyer* of 1903 used wood and fabric.
 
 ## Key equations
 
@@ -71,7 +71,7 @@ $$\text{MS} = \frac{\sigma_y}{\sigma} - 1$$
 
 This assumes a single static load case, a uniform stress field at the point checked, and that yield is the failure criterion. It does not cover fatigue or buckling.
 
-Crack growth in fatigue, the Paris law, with $a$ the crack length in metres, $N$ the number of load cycles, $\Delta K$ the stress intensity range in Pa$\sqrt{\text{m}}$, and $C$ and $m$ material constants:
+Crack growth in fatigue, the **Paris law**, with $a$ the crack length in metres, $N$ the number of load cycles, $\Delta K$ the stress intensity range in Pa$\sqrt{\text{m}}$, and $C$ and $m$ material constants:
 
 $$\frac{da}{dN} = C\,(\Delta K)^m, \qquad \Delta K = \Delta\sigma\sqrt{\pi a}$$
 
@@ -108,11 +108,11 @@ Sanity check: the hoop stress is twice the axial stress, which matches the formu
 
 The most famous fatigue failures include the de Havilland Comet jet airliner breakups in 1953 and 1954, which led to a much better understanding of cracks around square windows. In 1988, the upper fuselage of Aloha Airlines Flight 243, a Boeing 737-200, tore away in flight because of fatigue cracks at lap joints.
 
-Safety measures include damage tolerance design, which requires that a crack must grow slowly enough that inspections find it before it reaches critical length. The FAA sets this requirement in 14 CFR 25.571. Designers also use fail-safe load paths, so that one broken member does not collapse the structure, and they set inspection intervals based on crack growth data.
+Safety measures include **damage tolerance design**, which requires that a crack must grow slowly enough that inspections find it before it reaches critical length. The FAA sets this requirement in 14 CFR 25.571. Designers also use **fail-safe load paths**, so that one broken member does not collapse the structure, and they set inspection intervals based on crack growth data.
 
 ## History
 
-The Wright Flyer of 1903 used a wood and fabric structure. Alfred Wilm in Germany developed the aluminum alloy duralumin in about 1909, which made strong, light metal structures practical. Hugo Junkers built the all-metal J 1 in 1915 in Germany. The Boeing 247 of 1933 and the Douglas DC-3 of 1935 brought the stressed-skin aluminum monocoque to commercial airliners. The Comet and Aloha accidents later showed that fatigue design needed its own rules and inspection programs. Dates in this section are approximate where sources differ.
+The *Wright Flyer* of 1903 used a wood and fabric structure. Alfred Wilm in Germany developed the aluminum alloy duralumin in about 1909, which made strong, light metal structures practical. Hugo Junkers built the all-metal J 1 in 1915 in Germany. The Boeing 247 of 1933 and the Douglas DC-3 of 1935 brought the stressed-skin aluminum monocoque to commercial airliners. The Comet and Aloha accidents later showed that fatigue design needed its own rules and inspection programs. Dates in this section are approximate where sources differ.
 
 ## Practice
 

@@ -29,7 +29,7 @@ The design rule follows from this table: make every check that can be determinis
 ## Severity
 
 - **Gate.** Fails the build in any file: broken links and anchors, missing or unknown `**Type:**`, em or en dashes, prerequisite cycles, any failing verify block, any `expect` whose number is not printed where it claims, any citation to an unknown claim, and any registry error in `data/`.
-- **Content.** Fails the build in strict files and is counted as debt elsewhere: template sections, the definition-first rule, answers outside a `<details>` block, process notes, unverified worked examples or answers, uncovered printed numbers, constant mismatches, Earth values without "Earth" or "standard", uncited dated claims, cited values not stated, `as of` without a dated claim, and watch conflicts.
+- **Content.** Fails the build in strict files and is counted as debt elsewhere: template sections, the definition-first rule, answers outside a `<details>` block, process notes, unverified worked examples or answers, uncovered printed numbers, constant mismatches, Earth values without "Earth" or "standard", uncited dated claims, cited values not stated, `as of` without a dated claim, watch conflicts, and reference entries that break the contract below.
 - **Advice.** Never fails: stale dated claims and sources without an archive snapshot.
 
 A file opts into the content rules with a line under its type line:
@@ -103,6 +103,35 @@ Rules the verifier enforces:
 - **Watch.** `Watch:` (a regular expression) and `Require:` (text) flag every line in the repo that mentions a contested subject without the registered answer.
 - **Detection.** In strict history lessons (all sections except key equations, worked examples, practice, and go deeper) and in `## History` sections of strict lessons, every sentence or table row with a year, a century, a BC or CE date, a death count, or "the first" must cite a claim.
 
+## Reference entries
+
+A reference sheet is where an engineer looks up a formula in the middle of a job, so every formula there carries what is needed to use it safely. An **entry** is the text under one heading, up to the next heading of any level. Every entry in a `**Type:** reference` file that holds display math (`$$...$$`) must also hold, in that same entry:
+
+1. A line starting `Variables:`, followed by either a table with an `SI unit` column and one row per symbol, or a bullet list whose items end with the unit in brackets, as `- $F$: spring force [N]`.
+2. A line starting `Holds when:` with the assumptions, geometry, material behavior, and regime the formula needs.
+3. A line starting `Breaks when:` with the first ways it fails.
+4. A line starting `Source and basis:` with a link to a derivation (a lesson or a registered source) or to a registered claim, or the words "derived from" and the principle it comes from. Empirical, attributed, and dated material cites a claim.
+
+```
+$$\sigma = \frac{P}{A}$$
+
+Variables:
+
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $\sigma$ | axial normal stress | Pa |
+| $P$ | axial force | N |
+| $A$ | cross-section area | m$^{2}$ |
+
+Holds when: the load acts through the centroid of a uniform bar.
+Breaks when: holes or fillets raise the local stress.
+Source and basis: derived from equilibrium of a cut bar; taught in [Axial and torsion](physics/04-axial-and-torsion.md).
+```
+
+Each unit must be `dimensionless`, `1`, or a unit in [data/units.md](data/units.md) whose factor to the SI base units is a power of ten, so `kN m`, `mm`, `m$^{4}$`, and `rad/s` pass and `psi`, `deg`, `h`, and `rpm` fail. LaTeX unit markup (`$\text{N m}$`, `m$^{4}$`) is read as written. Equations use radians; degrees appear only as printed inputs or results with their conversion.
+
+The check proves that each field is present and each unit is SI. It cannot prove that the table names every symbol, that the limits are the right ones, or that the basis supports the formula; the reviewer of every reference sheet checks those, per [AGENTS.md](AGENTS.md#migration-waves). Symbols follow [data/notation.md](data/notation.md). Entry findings are content findings: they fail strict sheets and count as debt in sheets not yet migrated.
+
 ## Structure checks
 
 - Relative links and heading anchors resolve.
@@ -114,8 +143,10 @@ Rules the verifier enforces:
 
 ## Coverage report
 
-Every run ends with counts: strict files, fully verified worked examples, verified numeric answers, printed numbers covered, verify blocks and expects, cited dated claims in history scopes, claims by status, sources without an archive snapshot, constant scan hits and mismatches, stale claims, and debt by check in files not yet migrated. Coverage never fails the build; it tells the next wave where to go.
+Every run ends with counts: strict files, fully verified worked examples, verified numeric answers, printed numbers covered, verify blocks and expects, complete reference entries, cited dated claims in history scopes, claims by status, sources without an archive snapshot, constant scan hits and mismatches, stale claims, and debt by check in files not yet migrated. Coverage never fails the build; it tells the next wave where to go.
 
 ## Changing the verifier
 
 The verifier is shared infrastructure. Only the architect role changes it, in its own pull request. Each change states the check, the class of error it catches, and a mutation test: break a pilot file in the way the check targets, run the verifier, and show it fails; then restore the file. A check that never fails on a deliberate error is removed.
+
+Each check also gets fixtures in `tests/fixtures/`, at least one that passes and one that fails, and unit tests in `tests/` that run them. Run them with `python -m unittest discover -s tests`; CI runs them before the verifier. The repo-wide run skips `tests/`, because failing fixtures are broken on purpose.

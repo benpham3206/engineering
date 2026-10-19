@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Legal and ethical limits are the rules from patents, copyright, licenses, and trademarks that decide what you may do with a product or design you have studied. Knowing them matters to an engineer, because a copy or rebuild that ignores them can infringe someone else's rights.
+**Legal and ethical limits** are the rules from patents, copyright, licenses, and trademarks that decide what you may do with a product or design you have studied. Knowing them matters to an engineer, because a copy or rebuild that ignores them can infringe someone else's rights.
 
 Taking things apart to learn how they work is a normal and valuable engineering activity. It can also go past legal or ethical limits: into someone else's patent, into their copyrighted drawings, into a safety-critical part, or into a product whose license forbids it. It is general information, not legal advice. Laws and contracts differ by country and by product.
 
@@ -17,7 +17,10 @@ Taking things apart to learn how they work is a normal and valuable engineering 
 - **Trade secrets** are confidential information a company protects by keeping it secret, such as a formula or a process. Reverse-engineering a product you bought is generally treated as a fair way to learn what is on the market. It does not give you permission to use confidential information that someone else took or leaked.
 - **Licenses and terms of use** can restrict what you do with software or a device. Some software licenses forbid decompiling it. Read the terms that came with the product you own, and do not assume they allow or forbid anything without reading them.
 - **Trademarks** are brand names, logos, and trade dress. Making a copy that uses a brand to pass as the original is a problem even if the part itself is not patented.
-- **Safety-critical parts** include brake components, pressure vessels, medical devices, electrical protection, and anything whose failure can injure a person. A reverse-engineered copy of one of these needs engineering verification and testing before anyone relies on it. A guess that looks close is not enough.
+
+> [!WARNING]
+> **Safety-critical parts** include brake components, pressure vessels, medical devices, electrical protection, and anything whose failure can injure a person. A reverse-engineered copy of one of these needs engineering verification and testing before anyone relies on it. A guess that looks close is not enough.
+
 - **Defeating a protection** such as a safety interlock, an access lock, or a usage limit may be illegal in some places even when the act is only for personal study. Do not do it on products that are not yours.
 
 ### Checklist before you start a reverse-engineering project

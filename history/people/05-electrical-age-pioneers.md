@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Electrical age pioneers are the inventors and engineers who turned electricity and radio from lab curiosities into networks that run cities and carry messages across oceans. Engineers today should know them because their motors, generators, grids, radios, and assembly lines are still the building blocks engineers use.
+**Electrical age pioneers** are the inventors and engineers who turned electricity and radio from lab curiosities into networks that run cities and carry messages across oceans. Engineers today should know them because their motors, generators, grids, radios, and assembly lines are still the building blocks engineers use.
 
 **Prerequisites:** [Industrial revolution](../05-industrial-revolution.md), [Electrical age](../06-electrical-age.md), [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 3-4 h
@@ -21,8 +21,8 @@ his law of induction. See [Generators and alternators](../../applications/electr
 
 ### Charles Babbage and Ada Lovelace
 
-Babbage worked in London and Cambridge, England, in the 1820s to 1840s. He began the Difference
-Engine, a machine to calculate and print mathematical tables, and from 1837 he designed the more
+Babbage worked in London and Cambridge, England, in the 1820s to 1840s. He began the *Difference
+Engine*, a machine to calculate and print mathematical tables, and from 1837 he designed the more
 general Analytical Engine. The Analytical Engine would read punched cards and separate a store, which
 holds numbers, from a mill, which performs operations. Neither machine was finished in his lifetime.
 Ada Lovelace, daughter of the poet Lord Byron, translated a paper on the Analytical Engine by Luigi
@@ -51,7 +51,7 @@ patents. See [Induction motors](../../applications/electrical/03-induction-motor
 
 ### George Westinghouse
 
-Westinghouse built his company in Pittsburgh. He patented the air brake in 1869, which lets compressed
+Westinghouse built his company in Pittsburgh. He patented the **air brake** in 1869, which lets compressed
 air apply the brakes on every car of a train at once. He backed alternating current over Edison's
 direct current. His engineer William Stanley demonstrated a transformer-based AC system at Great
 Barrington, Massachusetts, in 1886. In the 1890s Westinghouse's company built the generators and AC
@@ -63,7 +63,7 @@ See [Trains](../../applications/vehicles-aerospace/10-trains.md) and
 
 Steinmetz was born in Breslau, in what is now Wroclaw, Poland. He emigrated to the United States in
 1889 and spent most of his career at General Electric in Schenectady, New York. In 1892 he published a
-law for hysteresis loss in iron, a formula still called the Steinmetz equation. He also brought complex
+law for **hysteresis loss** in iron, a formula still called the Steinmetz equation. He also brought complex
 numbers, written as phasors, into AC circuit analysis. Engineers use phasors daily, and they use
 Steinmetz's loss equation to estimate heating in transformer and motor cores. See
 [Transformers](../../applications/electrical/05-transformers.md) and
@@ -126,7 +126,7 @@ in work design and ergonomics today. See
 
 ## Key equations
 
-Faraday's law gives the voltage induced in a coil. The EMF $\mathcal{E}$ is in volts (V), $N$ is the
+**Faraday's law** gives the voltage induced in a coil. The EMF $\mathcal{E}$ is in volts (V), $N$ is the
 number of turns (dimensionless), $\Phi_B$ is the magnetic flux in webers (Wb), and $t$ is time in
 seconds (s).
 

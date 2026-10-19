@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Engineering graphics is the language of drawings. A sketch or drawing must show a three-dimensional part in flat views so that someone else can make it without guessing. Engineers use it to think, to communicate, and to write down exactly what a part is.
+**Engineering graphics** is the language of drawings. A sketch or drawing must show a three-dimensional part in flat views so that someone else can make it without guessing. Engineers use it to think, to communicate, and to write down exactly what a part is.
 
 **Prerequisites:** [Design process](01-design-process.md)
 **Time:** 6-10 h
@@ -38,7 +38,7 @@ Choose the fewest views that describe the part completely.
 - Start with the view that shows the most shape. That is the front view.
 - Add a top view or side view only when it shows a feature the front view hides.
 - Use a section when the inside matters.
-- Use a detail view, an enlarged view of a small area, when a feature is too small to dimension clearly.
+- Use a **detail view**, an enlarged view of a small area, when a feature is too small to dimension clearly.
 
 Too many views confuse the reader. Too few leave gaps. Aim for a drawing that a machinist can read without asking questions.
 

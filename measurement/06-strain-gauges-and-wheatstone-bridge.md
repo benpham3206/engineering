@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A strain gauge is a thin resistive wire or foil bonded to a part to measure how much the part stretches or squeezes, and a Wheatstone bridge is a resistor circuit that turns the gauge's small resistance change into a voltage an instrument can read. Engineers use the pair to find how hard a part is loaded without breaking it.
+A **strain gauge** is a thin resistive wire or foil bonded to a part to measure how much the part stretches or squeezes, and a Wheatstone bridge is a resistor circuit that turns the gauge's small resistance change into a voltage an instrument can read. Engineers use the pair to find how hard a part is loaded without breaking it.
 
 When the part stretches or squeezes, the gauge's resistance changes by a tiny, measurable amount.
 
@@ -79,9 +79,9 @@ Balance condition: $\quad R_1 / R_2 = R_3 / R_4$
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 10: Introduction](https://openstax.org/books/university-physics-volume-2/pages/10-introduction) by OpenStax: Kirchhoff's rules and resistors in series and parallel, needed for bridge analysis.
+- [*University Physics Volume 2*, Chapter 10: Introduction](https://openstax.org/books/university-physics-volume-2/pages/10-introduction) by OpenStax: Kirchhoff's rules and resistors in series and parallel, needed for bridge analysis.
 - [6.002 Circuits and Electronics (Spring 2007)](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/) by MIT OpenCourseWare: resistive networks and sources, the circuit foundation for bridges.
-- [Electronics (Wikibooks)](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: resistors and DC circuits.
+- [*Electronics* (Wikibooks)](https://en.wikibooks.org/wiki/Electronics) by Wikibooks contributors: resistors and DC circuits.
 
 The bridge equations above follow from Kirchhoff's rules.
 - [Measurement reference](reference.md): the lookup sheet for this topic.

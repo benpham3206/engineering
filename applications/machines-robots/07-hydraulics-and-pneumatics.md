@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Hydraulic and pneumatic systems are ways of moving loads with pressurized liquid or gas sent through pumps, valves, and cylinders. An engineer who designs or services one must size the cylinder for force and the valves for speed, because stored energy and high-pressure jets make these systems dangerous.
+**Hydraulic and pneumatic systems** are ways of moving loads with pressurized liquid or gas sent through pumps, valves, and cylinders. An engineer who designs or services one must size the cylinder for force and the valves for speed, because stored energy and high-pressure jets make these systems dangerous.
 
 **Prerequisites:** [Hydrostatics and Bernoulli](../../physics/10-hydrostatics-and-bernoulli.md), [Control volumes and pipe flow](../../physics/11-control-volumes-pipe-flow.md), [Fluid systems](../thermal-fluid/02-fluid-systems.md)
 **Time:** 8-12 h
@@ -11,7 +11,7 @@ Hydraulic and pneumatic systems are ways of moving loads with pressurized liquid
 
 - **Pascal's law**: pressure applied to a confined fluid acts equally in every direction and
   reaches every wall. A small piston pushing on oil creates a pressure that acts on a large piston.
-- **Pressure** $p$ (pascals, Pa): force per unit area. The formulas here use gauge pressure, which
+- **Pressure** $p$ (pascals, Pa): force per unit area. The formulas here use **gauge pressure**, which
   is measured above atmospheric pressure.
 - **Flow** $Q$ (m$^3$/s): volume of fluid delivered per second. Shop practice uses litres per minute.
   One litre per minute is $1.667 \times 10^{-5}$ m$^3$/s.
@@ -44,12 +44,12 @@ and reservoir. The exhaust air goes to the atmosphere instead of back to a tank.
 - Reservoir: holds the oil, lets it cool, and lets air and debris settle out.
 - Pump: converts shaft power into fluid flow and pressure. Gear, vane, and axial piston pumps are the
   common types.
-- Relief valve: a spring-loaded valve that protects the system from overpressure.
-- Directional control valve: a spool or poppet that routes flow to each port. It sets the direction
+- **Relief valve**: a spring-loaded valve that protects the system from overpressure.
+- **Directional control valve**: a spool or poppet that routes flow to each port. It sets the direction
   of motion.
 - Flow control valve: a variable restriction that sets the speed of a cylinder.
 - Cylinder: a barrel, piston, and rod. It turns fluid pressure into a linear force.
-- Accumulator: a gas-charged vessel that stores pressurized oil and smooths the pressure.
+- **Accumulator**: a gas-charged vessel that stores pressurized oil and smooths the pressure.
 - Filter: removes particles that wear valves and seals.
 - Hoses, pipes, and fittings: carry the fluid. Their pressure rating sets the safe limit.
 
@@ -147,12 +147,13 @@ $F v = p A (Q / A) = p Q$. Here $50\,265\ \text{N} \times 0.0995\ \text{m/s} = 5
 matches. The retract speed is higher because the rod side has less area, so the same flow moves the
 piston faster but with less force.
 
-**Injection and stored energy in the same system.** A pinhole leak at $\Delta p = 20\ \text{MPa}$ gives
-an ideal jet speed of $\sqrt{2 \times 20 \times 10^6 / 870} = 214\ \text{m/s}$. The real jet is slower
-because of losses, but it still penetrates skin. One litre of oil at $10\ \text{MPa}$ stores
-$\Delta p^2 V / (2K) = (10^7)^2 \times 10^{-3} / (2 \times 1.6 \times 10^9) = 31\ \text{J}$. A
-$2000\ \text{kg}$ load held $2\ \text{m}$ high stores $m g h = 2000 \times 9.81 \times 2 = 39\ \text{kJ}$ (with $g = 9.81\ \text{m}/\text{s}^2$ at Earth's surface).
-A held load is a larger hazard than the oil in the line.
+> [!WARNING]
+> Injection and stored energy in the same system. A pinhole leak at $\Delta p = 20\ \text{MPa}$ gives
+> an ideal jet speed of $\sqrt{2 \times 20 \times 10^6 / 870} = 214\ \text{m/s}$. The real jet is slower
+> because of losses, but it still penetrates skin. One litre of oil at $10\ \text{MPa}$ stores
+> $\Delta p^2 V / (2K) = (10^7)^2 \times 10^{-3} / (2 \times 1.6 \times 10^9) = 31\ \text{J}$. A
+> $2000\ \text{kg}$ load held $2\ \text{m}$ high stores $m g h = 2000 \times 9.81 \times 2 = 39\ \text{kJ}$ (with $g = 9.81\ \text{m}/\text{s}^2$ at Earth's surface).
+> A held load is a larger hazard than the oil in the line.
 
 ## Design trade-offs
 
@@ -266,9 +267,9 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction)
+- [*University Physics Volume 1*, Chapter 14 (fluid mechanics)](https://openstax.org/books/university-physics-volume-1/pages/14-introduction)
   by OpenStax: Pascal's principle, hydraulic systems, and fluid pressure.
-- [Robotics, Wikibooks](https://en.wikibooks.org/wiki/Robotics) by Wikibooks contributors: actuators,
+- [*Robotics*, Wikibooks](https://en.wikibooks.org/wiki/Robotics) by Wikibooks contributors: actuators,
   including pneumatic drives, and how they connect to robot joints.
 - Reference sheets: [Applications reference](../reference.md) and
   [Thermofluids reference](../../physics/reference-thermofluids.md).

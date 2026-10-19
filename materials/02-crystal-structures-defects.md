@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A crystal structure is the regular, repeating arrangement of atoms in a solid, and a defect is a flaw in that arrangement. Engineers need both because the pattern decides how dense the material is, how it deforms, and where it is weak. Most engineering metals and many ceramics are crystalline, and the flaws in real crystals often control strength.
+A **crystal structure** is the regular, repeating arrangement of atoms in a solid, and a **defect** is a flaw in that arrangement. Engineers need both because the pattern decides how dense the material is, how it deforms, and where it is weak. Most engineering metals and many ceramics are crystalline, and the flaws in real crystals often control strength.
 
 **Prerequisites:** [Atomic structure and bonding](01-atomic-structure-bonding.md), [Algebra](../math/01-algebra.md)
 **Time:** 6-8 h
@@ -23,7 +23,7 @@ A crystal structure is the regular, repeating arrangement of atoms in a solid, a
 
 ### Packing and density
 
-Atomic packing factor (APF) is the fraction of a unit cell's volume filled by atoms. Atoms are treated as hard spheres. Close packing gives the highest APF possible for spheres, about 0.74. BCC gives about 0.68. Higher packing usually means higher density for a given atomic mass.
+**Atomic packing factor (APF)** is the fraction of a unit cell's volume filled by atoms. Atoms are treated as hard spheres. Close packing gives the highest APF possible for spheres, about 0.74. BCC gives about 0.68. Higher packing usually means higher density for a given atomic mass.
 
 ### Point defects
 
@@ -35,7 +35,7 @@ Atomic packing factor (APF) is the fraction of a unit cell's volume filled by at
 ### Line and planar defects
 
 - A **dislocation** is a line where the lattice is out of step. Dislocations move under stress, and their motion is how metals deform permanently. Making dislocations hard to move is one of the main ways to strengthen a metal.
-- A **grain boundary** is a planar defect between grains of different orientation. Smaller grains mean more boundaries. More boundaries block dislocation motion, so fine-grained metals are usually stronger. This is the Hall-Petch effect.
+- A grain boundary is a planar defect between grains of different orientation. Smaller grains mean more boundaries. More boundaries block dislocation motion, so fine-grained metals are usually stronger. This is the **Hall-Petch effect**.
 
 ## Key equations
 

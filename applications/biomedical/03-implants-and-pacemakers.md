@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An implant is a device placed inside the body for years. Passive implants, such as joint replacements, carry load, and active implants, such as pacemakers, also store and deliver energy. Engineers must design both kinds to survive body fluids, repeated loading, and a sealed environment where a failure cannot be repaired without surgery.
+An **implant** is a device placed inside the body for years. Passive implants, such as joint replacements, carry load, and active implants, such as pacemakers, also store and deliver energy. Engineers must design both kinds to survive body fluids, repeated loading, and a sealed environment where a failure cannot be repaired without surgery.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Metals, polymers, ceramics, composites](../../materials/05-material-classes.md), [Failure: fracture and fatigue](../../materials/06-fracture-and-fatigue.md), [Failure: creep and corrosion](../../materials/07-creep-and-corrosion.md), [Circuit basics](../electronics/01-circuit-basics.md)
 **Time:** 6-8 h
@@ -11,13 +11,13 @@ An implant is a device placed inside the body for years. Passive implants, such 
 
 ### How it works
 
-A pacemaker keeps watch on the heart's own electrical activity. A sensing amplifier listens through the lead electrodes that touch the heart muscle. If the heart does not beat within a set interval, a pulse generator sends a short electrical stimulus through the lead. The stimulus causes the muscle to contract. The circuit lowers its output to the smallest pulse that still works, which saves energy. A rate-responsive design adds an accelerometer or other sensor to change the pacing rate with activity. A telemetry coil lets a clinician read the device and change its settings through the skin.
+A **pacemaker** keeps watch on the heart's own electrical activity. A sensing amplifier listens through the lead electrodes that touch the heart muscle. If the heart does not beat within a set interval, a pulse generator sends a short electrical stimulus through the lead. The stimulus causes the muscle to contract. The circuit lowers its output to the smallest pulse that still works, which saves energy. A rate-responsive design adds an accelerometer or other sensor to change the pacing rate with activity. A **telemetry coil** lets a clinician read the device and change its settings through the skin.
 
 Joint replacements work on a different principle. A metal or ceramic component replaces the surface of a bone joint. A polymer bearing, such as ultra-high-molecular-weight polyethylene, slides against it. The load passes through the implant into the bone, and bone grows onto or into the fixation surface.
 
 ### Main parts
 
-- Hermetic housing: a titanium or other biocompatible metal case, sealed so body fluids cannot reach the electronics.
+- **Hermetic housing**: a titanium or other biocompatible metal case, sealed so body fluids cannot reach the electronics.
 - Battery: a lithium cell, typically lithium-iodine chemistry in pacemakers. It must hold charge for years at a low self-discharge rate.
 - Feedthroughs: ceramic-to-metal seals that carry signals through the housing without leaks.
 - Leads: insulated conductor coils, usually silicone or polyurethane insulation. The distal tip contacts the heart muscle.
@@ -28,7 +28,7 @@ Joint replacements work on a different principle. A metal or ceramic component r
 ### Variants
 
 - Single-chamber pacemakers pace one heart chamber. Dual-chamber devices pace two. Biventricular devices pace both ventricles to coordinate contraction.
-- Implantable cardioverter-defibrillators (ICDs) share many parts with pacemakers but deliver high-energy shocks.
+- **Implantable cardioverter-defibrillators (ICDs)** share many parts with pacemakers but deliver high-energy shocks.
 - Leadless pacemakers sit entirely inside the heart chamber, with no leads to the chest.
 - Hip replacements use metal-on-polyethylene, metal-on-metal, or ceramic-on-ceramic bearings. Each pairing trades friction, wear debris, and cost differently.
 - Cochlear implants and retinal prostheses are active implants that stimulate nerves. They use the same battery, feedthrough, and telemetry ideas as pacemakers.
@@ -65,13 +65,15 @@ Joint replacements work on a different principle. A metal or ceramic component r
 - Battery size against device size. The battery is often the largest part of the device, so designers cut standby current and pulse energy to keep the case small.
 - Pulse energy against tissue response. A higher amplitude or longer pulse gives a larger margin, but it draws more energy from the battery.
 - Lead flexibility against durability. Soft leads are kinder to tissue, but repeated flexing with each heartbeat fatigues the conductor.
-- Stiffness against bone health. Titanium alloy Ti-6Al-4V has a Young's modulus of about 110 GPa (typical), and cortical bone has about 17 GPa (typical). A stiff stem carries much of the load that the bone would otherwise carry, and the bone can thin from disuse. This is called stress shielding. Designers tune stem stiffness and fixation to limit it.
+- Stiffness against bone health. Titanium alloy Ti-6Al-4V has a Young's modulus of about 110 GPa (typical), and cortical bone has about 17 GPa (typical). A stiff stem carries much of the load that the bone would otherwise carry, and the bone can thin from disuse. This is called **stress shielding**. Designers tune stem stiffness and fixation to limit it.
 - Bearing material against wear. Polyethylene bearings wear and shed debris over years, and the debris can trigger bone loss. Ceramic bearings resist wear better but are brittle.
 - MRI compatibility. Leads, housings, and magnetic components respond to strong fields and gradient coils. Designers choose materials and layouts that keep heating and force within labeled limits.
 
 ## How it fails
 
-- Lead fracture. Repeated flexing fatigues the conductor, which breaks or creates an intermittent short. Warning signs include sensed noise and changes in measured resistance.
+> [!WARNING]
+> Lead fracture. Repeated flexing fatigues the conductor, which breaks or creates an intermittent short. Warning signs include sensed noise and changes in measured resistance.
+
 - Electrode tissue response. Scar tissue grows around the electrode and raises the pulse energy needed to make the muscle contract. Warning signs include a change in the measured pacing threshold.
 - Battery depletion. The device sends an end-of-life signal through telemetry and changes its mode to a safe, reduced function.
 - Electromagnetic interference. Strong external fields can disturb sensing. Shielding, filtering, and a defined interference mode limit the effect.

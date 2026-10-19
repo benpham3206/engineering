@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-An induction motor is a motor that makes torque without brushes and without magnets on the rotor. Induction motors drive most pumps, fans, compressors, and conveyors in industry, so engineers need to understand slip, the speed-torque curve, and how a variable frequency drive changes speed. Three-phase currents in the stator make a rotating magnetic field, and that field induces currents in the rotor, which then turn to follow it.
+An **induction motor** is a motor that makes torque without brushes and without magnets on the rotor. Induction motors drive most pumps, fans, compressors, and conveyors in industry, so engineers need to understand slip, the speed-torque curve, and how a variable frequency drive changes speed. Three-phase currents in the stator make a rotating magnetic field, and that field induces currents in the rotor, which then turn to follow it.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [DC motors](01-dc-motors.md)
 **Time:** 6-8 h
@@ -11,11 +11,11 @@ An induction motor is a motor that makes torque without brushes and without magn
 
 ### How it works
 
-1. Three coils in the stator are spaced 120 degrees apart around the core. Three-phase currents, shifted by a third of a cycle, make a magnetic field that rotates around the stator at a fixed speed, called the synchronous speed.
+1. Three coils in the stator are spaced 120 degrees apart around the core. Three-phase currents, shifted by a third of a cycle, make a magnetic field that rotates around the stator at a fixed speed, called the **synchronous speed**.
 2. The rotor is a set of conducting bars, usually aluminum or copper, joined at each end by rings. This is the squirrel cage. No current reaches the rotor from outside.
 3. The rotating field cuts the rotor bars and induces a voltage in them, as Faraday's law describes. The induced voltage drives current around the shorted bars.
-4. The rotor current interacts with the field and produces torque. Lenz's law says the rotor current opposes the change that caused it, so the rotor is pulled along with the field.
-5. The rotor cannot quite catch the field. If it reached synchronous speed, the bars would see no relative motion, the induced current would vanish, and the torque would fall to zero. The rotor therefore runs slightly slower than the field. That difference is slip.
+4. The rotor current interacts with the field and produces torque. **Lenz's law** says the rotor current opposes the change that caused it, so the rotor is pulled along with the field.
+5. The rotor cannot quite catch the field. If it reached synchronous speed, the bars would see no relative motion, the induced current would vanish, and the torque would fall to zero. The rotor therefore runs slightly slower than the field. That difference is **slip**.
 
 ### Main parts
 
@@ -51,7 +51,7 @@ The rotor frequency is the slip times the supply frequency, in hertz:
 
 $$f_r = s\, f$$
 
-Power flow through the motor: the air-gap power $P_{\mathrm{ag}}$ (W) crosses from stator to rotor. Of that, $s P_{\mathrm{ag}}$ is lost as rotor copper loss, and the rest, $(1 - s) P_{\mathrm{ag}}$, becomes mechanical power:
+Power flow through the motor: the **air-gap power** $P_{\mathrm{ag}}$ (W) crosses from stator to rotor. Of that, $s P_{\mathrm{ag}}$ is lost as rotor copper loss, and the rest, $(1 - s) P_{\mathrm{ag}}$, becomes mechanical power:
 
 $$P_{\mathrm{cu},r} = s\, P_{\mathrm{ag}} \qquad P_{\mathrm{mech}} = (1 - s)\, P_{\mathrm{ag}}$$
 
@@ -59,13 +59,13 @@ Torque from air-gap power, with $\omega_s = 2\pi n_s / 60$ in rad/s:
 
 $$T = \frac{P_{\mathrm{ag}}}{\omega_s}$$
 
-The torque-speed curve is often approximated by the Kloss formula, where $T_{\mathrm{max}}$ is the peak torque (N m) and $s_m$ is the slip at peak torque (dimensionless):
+The torque-speed curve is often approximated by the **Kloss formula**, where $T_{\mathrm{max}}$ is the peak torque (N m) and $s_m$ is the slip at peak torque (dimensionless):
 
 $$T \approx \frac{2 T_{\mathrm{max}}}{s / s_m + s_m / s}$$
 
 The Kloss formula is an approximation. Manufacturers publish the exact curve, and the approximation is useful for a first estimate.
 
-Variable frequency drives keep the ratio of voltage to frequency fixed, so the air-gap flux stays near its rated value:
+**Variable frequency drives** keep the ratio of voltage to frequency fixed, so the air-gap flux stays near its rated value:
 
 $$\frac{V}{f} = \text{constant}$$
 
@@ -138,7 +138,7 @@ Galileo Ferraris in Turin demonstrated the rotating magnetic field in 1885, and 
 
 ## Go deeper
 
-- [University Physics Volume 2, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law and induced currents, the principle behind the squirrel-cage rotor.
+- [*University Physics Volume 2*, Chapter 13 (Electromagnetic Induction)](https://openstax.org/books/university-physics-volume-2/pages/13-introduction) by OpenStax: Faraday's law and induced currents, the principle behind the squirrel-cage rotor.
 - [Electric Motors](https://www.energy.gov/eere/buildings/electric-motors) by the U.S. Department of Energy: efficiency standards and test rules for induction motors.
 - [Circuits and Electronics (6.002), MIT OpenCourseWare](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/) by MIT: circuit models and power electronics used in variable frequency drives.
 - Related lessons: [DC motors](01-dc-motors.md) and [Brushless and stepper motors](02-brushless-and-stepper-motors.md) cover the other motor families. [Circuit basics](../electronics/01-circuit-basics.md) covers the resistance and voltage relations used in the equivalent circuit.

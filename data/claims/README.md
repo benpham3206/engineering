@@ -5,3 +5,7 @@ Specific facts that are not derived from physics: dates, names, attributions, fi
 ## Files
 
 - [History claims](history.md)
+- [Method claims](methods.md): durable empirical methods and correlations
+- [Standards claims](standards.md): standard numbers, editions, and scope (dated)
+- [Software claims](software.md): software behavior and versions (dated)
+- [Manufacturing claims](manufacturing.md): process capability and shop practice

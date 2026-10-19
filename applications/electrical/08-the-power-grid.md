@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-The power grid is the network that carries electricity from power plants to homes, factories, and offices across distances of hundreds of kilometres. An engineer who understands the grid can size a transmission line, read a frequency number, and see why a fault in one substation can trip breakers far away. It runs as one machine that must match supply and demand every second.
+The **power grid** is the network that carries electricity from power plants to homes, factories, and offices across distances of hundreds of kilometres. An engineer who understands the grid can size a transmission line, read a frequency number, and see why a fault in one substation can trip breakers far away. It runs as one machine that must match supply and demand every second.
 
 **Prerequisites:** [Electricity and magnetism](../../physics/06-electricity-and-magnetism.md), [Circuit basics](../electronics/01-circuit-basics.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Trigonometry](../../math/02-trigonometry.md)
 **Time:** 8-10 h
@@ -27,7 +27,7 @@ A power plant turns some form of energy into mechanical rotation, and a synchron
 
 In 2025, U.S. utility-scale generation was about 41 percent natural gas, 18 percent nuclear, 17 percent coal, and 24 percent renewables, according to the U.S. Energy Information Administration. The mix varies by country and by season, so the numbers here describe one grid only.
 
-A generator must spin at a speed that matches the grid frequency. The synchronous speed in revolutions per minute is:
+A generator must spin at a speed that matches the grid frequency. The **synchronous speed** in revolutions per minute is:
 
 $$n = \frac{120\, f}{p}$$
 
@@ -45,11 +45,12 @@ A step-down substation lowers the voltage to a medium level, typically 4 kV to 3
 
 ### Three-phase power
 
-A three-phase generator produces three voltages, each 120 degrees apart. The total power delivered to a balanced load is constant at every instant, while a single-phase supply delivers power that pulses twice per cycle. Industrial motors and large loads use three-phase power because the motor torque stays smooth and the motor starts without help. Line-to-line voltage $V_{\mathrm{LL}}$ and line-to-neutral voltage $V_{\mathrm{LN}}$ differ by $\sqrt{3}$.
+A three-phase generator produces three voltages, each 120 degrees apart. The total power delivered to a balanced load is constant at every instant, while a single-phase supply delivers power that pulses twice per cycle. Industrial motors and large loads use three-phase power because the motor torque stays smooth and the motor starts without help. **Line-to-line voltage** $V_{\mathrm{LL}}$ and line-to-neutral voltage $V_{\mathrm{LN}}$ differ by $\sqrt{3}$.
 
 ### Protection
 
-Protection equipment isolates a fault before it damages equipment or hurts people. Circuit breakers open the circuit when current exceeds a set level. Relays sense the current, voltage, or phase angle and send the trip signal. Surge arresters clamp lightning spikes to the ground. A residual-current device, often called a GFCI or RCD, trips when current leaves a circuit through an unintended path, such as a person.
+> [!WARNING]
+> Protection equipment isolates a fault before it damages equipment or hurts people. Circuit breakers open the circuit when current exceeds a set level. Relays sense the current, voltage, or phase angle and send the trip signal. **Surge arresters** clamp lightning spikes to the ground. A **residual-current device**, often called a GFCI or RCD, trips when current leaves a circuit through an unintended path, such as a person.
 
 Under-frequency relays shed load when the frequency falls, so the generators can recover before the grid collapses. A cascading outage starts when one protective device trips and shifts its load onto other lines, which then trip in turn.
 
@@ -148,6 +149,6 @@ Thomas Edison's Pearl Street Station in New York began supplying direct current 
 
 - [U.S. Energy Information Administration, Electricity explained: delivering electricity to consumers](https://www.eia.gov/energyexplained/electricity/delivery-to-consumers.php), a free, plain account of the path from plant to customer.
 - [U.S. Energy Information Administration, Electricity in the U.S.](https://www.eia.gov/energyexplained/electricity/electricity-in-the-us.php), a free summary of how the U.S. generates electricity.
-- [OpenStax University Physics Volume 2, Chapter 14](https://openstax.org/books/university-physics-volume-2/pages/14-introduction), free text on alternating current, RLC circuits, and power in AC circuits.
+- [OpenStax *University Physics Volume 2*, Chapter 14](https://openstax.org/books/university-physics-volume-2/pages/14-introduction), free text on alternating current, RLC circuits, and power in AC circuits.
 - Related lessons: [Transformers](05-transformers.md), [Generators and alternators](04-generators-and-alternators.md), [Induction motors](03-induction-motors.md), [Batteries](06-batteries.md), and [Power supplies and converters](07-power-supplies-and-converters.md).
 - [Applications reference](../reference.md): the lookup sheet for this topic.

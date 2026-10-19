@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A bridge is a structure that carries a road, rail line, or path across a gap. A bridge that fails can cut off a town's road or railway, so an engineer must get the design right before the first load crosses.
+A **bridge** is a structure that carries a road, rail line, or path across a gap. A bridge that fails can cut off a town's road or railway, so an engineer must get the design right before the first load crosses.
 
 Engineers choose a bridge type from the span, the ground, the traffic, and the budget, then check that every member carries its load without bending too far, buckling, or breaking.
 
@@ -15,7 +15,7 @@ Engineers choose a bridge type from the span, the ground, the traffic, and the b
 
 A bridge has one job: move loads along a path to the ground. The deck carries vehicles and people. The deck passes its load to girders or trusses. The girders or trusses pass it to piers or abutments, and the piers push into soil or rock. Statics says the forces on the whole bridge sum to zero, and it says the same for each support and each joint. Once the load path is clear, the engineer knows which members carry tension, which carry compression, and which bend.
 
-A simply supported beam shows the idea. The load pushes the beam down, and the two supports push up. The beam bends into a shallow curve. The top fibers shorten and the bottom fibers stretch. The middle of the beam has the largest bending moment, and the ends carry the largest shear. Stiffness, the resistance to bending, depends on the material and on the shape of the cross-section. Depth matters most, because stiffness grows with the cube of the depth for a rectangular section.
+A simply supported beam shows the idea. The load pushes the beam down, and the two supports push up. The beam bends into a shallow curve. The top fibers shorten and the bottom fibers stretch. The middle of the beam has the largest bending moment, and the ends carry the largest shear. **Stiffness**, the resistance to bending, depends on the material and on the shape of the cross-section. Depth matters most, because stiffness grows with the cube of the depth for a rectangular section.
 
 ### Main parts
 
@@ -29,7 +29,7 @@ A simply supported beam shows the idea. The load pushes the beam down, and the t
 ### Variants
 
 - **Beam (girder) bridges.** The deck bends. Concrete or steel girders cover spans of tens of metres. This is the most common type because it is simple and cheap to build.
-- **Truss bridges.** Members form triangles. In an ideal truss, each member carries only axial force, either tension or compression. Steel trusses cover spans from about 50 m to 200 m, typically.
+- **Truss bridges.** Members form triangles. In an **ideal truss**, each member carries only axial force, either tension or compression. Steel trusses cover spans from about 50 m to 200 m, typically.
 - **Arch bridges.** The arch carries mostly compression, and it pushes outward at the ends. The abutments must resist that thrust. Stone and concrete arches suit this shape, and Roman builders used it widely.
 - **Suspension bridges.** The main cables carry tension, the hangers carry tension, and the towers carry compression. This type gives the longest spans. The Akashi Kaikyo Bridge in Japan has a main span of 1,991 m and opened in 1998.
 - **Cable-stayed bridges.** Straight cables run from the towers to the deck. The deck carries compression and bending. This type covers spans of several hundred metres and suits medium-long crossings.
@@ -120,6 +120,6 @@ The Romans built stone arch bridges that still stand, and their designs spread a
 
 ## Go deeper
 
-- [University Physics Volume 1, Chapter 12 (static equilibrium and elasticity)](https://openstax.org/books/university-physics-volume-1/pages/12-introduction) by OpenStax: force balance, torque, and stress and strain in beams and rods.
+- [*University Physics Volume 1*, Chapter 12 (static equilibrium and elasticity)](https://openstax.org/books/university-physics-volume-1/pages/12-introduction) by OpenStax: force balance, torque, and stress and strain in beams and rods.
 - Related lessons: [Buildings and skyscrapers](02-buildings-and-skyscrapers.md), [Pressure vessels and tanks](03-pressure-vessels-and-tanks.md), [Aircraft structures](04-aircraft-structures.md), [Dams](05-dams.md), [Towers and cables](06-towers-and-cables.md).
 - Background on the forces: [Statics](../../physics/01-statics.md) and [Bending and buckling](../../physics/05-bending-and-buckling.md).

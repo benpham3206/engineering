@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Thermodynamics is the study of energy and how it moves between heat and work. Engines, compressors, turbines, refrigerators, and power plants all depend on it.
+**Thermodynamics** is the study of energy and how it moves between heat and work. Engines, compressors, turbines, refrigerators, and power plants all depend on it.
 **Prerequisites:** [Oscillations, waves, light, and heat](07-waves-light-heat.md) (temperature, heat, and specific heat)
 **Time:** 8-12 h
 
@@ -160,7 +160,7 @@ $$
 
 ## Go deeper
 
-- [Introduction to Thermodynamics (Chapter 3), University Physics Volume 2](https://openstax.org/books/university-physics-volume-2/pages/3-introduction) by OpenStax: systems, work, heat, the first law, and processes for an ideal gas, free to read.
+- [Introduction to Thermodynamics (Chapter 3), *University Physics Volume 2*](https://openstax.org/books/university-physics-volume-2/pages/3-introduction) by OpenStax: systems, work, heat, the first law, and processes for an ideal gas, free to read.
 - [First Law of Thermodynamics](https://www.grc.nasa.gov/www/k-12/airplane/thermo1.html) by NASA Glenn Research Center: internal energy as a state variable and the relation between heat, work, and energy change.
-- [Introduction to the Temperature and Heat chapter, University Physics Volume 2](https://openstax.org/books/university-physics-volume-2/pages/1-introduction) by OpenStax: temperature, specific heat, and calorimetry, useful as background for the heat terms in this lesson.
+- [Introduction to the Temperature and Heat chapter, *University Physics Volume 2*](https://openstax.org/books/university-physics-volume-2/pages/1-introduction) by OpenStax: temperature, specific heat, and calorimetry, useful as background for the heat terms in this lesson.
 - [Thermal-fluids reference](reference-thermofluids.md): the lookup sheet for this topic.

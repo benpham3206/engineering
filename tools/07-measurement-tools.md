@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A measurement tool is an instrument that reads a length, angle, or size and shows it as a number with units, such as a rule, a caliper, or a micrometer. Engineers rely on these tools to turn a physical part into a number, so knowing how to read them keeps a design honest.
+A **measurement tool** is an instrument that reads a length, angle, or size and shows it as a number with units, such as a rule, a caliper, or a micrometer. Engineers rely on these tools to turn a physical part into a number, so knowing how to read them keeps a design honest.
 
 Every design number depends on a measurement, and every measurement has an error. Measurement tools include rules, calipers, micrometers, gauges, and digital readouts. Learn to read them correctly, estimate the uncertainty, and combine errors in a stack of parts.
 
@@ -17,7 +17,7 @@ Every design number depends on a measurement, and every measurement has an error
 - A **caliper** measures outside, inside, and depth dimensions. A **micrometer** measures smaller lengths with finer steps, typically 0.01 mm or 0.001 in.
 - Always record units with the reading. Convert with $1\ \text{in} = 25.4\ \text{mm}$.
 - A **tolerance** is the allowed variation in a dimension, such as $\pm 0.05$ mm.
-- A **stack-up** adds tolerances of parts that line up in one direction. Two methods are common: worst case (add all the errors) and root-sum-square (RSS, the square root of the sum of squares). RSS assumes independent errors.
+- A **stack-up** adds tolerances of parts that line up in one direction. Two methods are common: **worst case** (add all the errors) and **root-sum-square** (RSS, the square root of the sum of squares). RSS assumes independent errors.
 
 Read the [NIST SI guide](https://www.nist.gov/pml/special-publication-811) for consistent unit use when you record and convert readings.
 
@@ -33,7 +33,8 @@ Root-sum-square:
 
 $$T_{\text{rss}} = \sqrt{\sum_{i=1}^{n} t_i^2}$$
 
-Here $T$ is the total tolerance in mm. Worst case is the safe bound. RSS is an estimate that assumes random, independent variation.
+> [!NOTE]
+> Here $T$ is the total tolerance in mm. Worst case is the safe bound. RSS is an estimate that assumes random, independent variation.
 
 ## Worked example
 
@@ -91,8 +92,8 @@ worst = 0.23 mm, rss = 0.1375 mm
 
 ## Go deeper
 
-- [NIST Special Publication 811](https://www.nist.gov/pml/special-publication-811) by NIST: the official SI guide for units and conversion.
-- [University Physics Volume 1, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: units, unit conversion, dimensional analysis, and significant figures. Free to read.
+- [*NIST Special Publication 811*](https://www.nist.gov/pml/special-publication-811) by NIST: the official SI guide for units and conversion.
+- [*University Physics Volume 1*, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: units, unit conversion, dimensional analysis, and significant figures. Free to read.
 - [Measurement folder](../measurement/README.md): the error and uncertainty lessons for this topic.
 - Related: [CAD](06-cad-solidworks.md), [shop tools](08-shop-tools.md), [starter kit](01-starter-kit.md).
 - [Tools reference](reference.md): the lookup sheet for this topic.

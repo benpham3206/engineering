@@ -2,19 +2,19 @@
 
 **Type:** lesson
 
-A differential equation is a statement that relates a function to its own derivatives. Many physical laws, including cooling, motion, circuits, and vibration, are written this way, so engineers solve them to predict how a system changes over time, and to design it so that it settles at the required value.
+A **differential equation** is a statement that relates a function to its own derivatives. Many physical laws, including cooling, motion, circuits, and vibration, are written this way, so engineers solve them to predict how a system changes over time, and to design it so that it settles at the required value.
 
 **Prerequisites:** [Single-variable calculus](03-single-variable-calculus.md), [Linear algebra](05-linear-algebra.md) for systems
 **Time:** 50-70 h
 
 ## Core ideas
 
-- An ordinary differential equation (ODE) has one independent variable, usually time $t$. Its order is the highest derivative that appears: $y'$ is first order, $y''$ is second order.
-- A solution is a function that makes the equation true. A general solution has arbitrary constants. Initial conditions, such as $y(0) = y_0$, pick out one specific solution.
+- An **ordinary differential equation (ODE)** has one independent variable, usually time $t$. Its order is the highest derivative that appears: $y'$ is first order, $y''$ is second order.
+- A **solution** is a function that makes the equation true. A general solution has arbitrary constants. **Initial conditions**, such as $y(0) = y_0$, pick out one specific solution.
 - First-order linear ODEs model rates that depend on the current state, such as Newton's law of cooling and simple charging of a capacitor. Their solutions are exponentials.
 - Second-order ODEs model inertia and restoring forces: a spring-mass-damper, a pendulum for small angles, and an RLC circuit. The behavior depends on the damping ratio $\zeta$. Underdamped systems oscillate, critically damped systems return fastest without overshoot, and overdamped systems creep back slowly.
 - Systems of ODEs are several coupled equations, such as two masses on springs. They are written in matrix form and solved with eigenvalues, which links directly to the previous lesson.
-- The Laplace transform turns a linear ODE with constant coefficients into an algebra problem in $s$. Solve the algebra, then transform back. It handles sudden inputs well, such as a step load or a switch that turns on at a time.
+- The **Laplace transform** turns a linear ODE with constant coefficients into an algebra problem in $s$. Solve the algebra, then transform back. It handles sudden inputs well, such as a step load or a switch that turns on at a time.
 - Numerical solvers (covered in the numerical methods lesson) handle equations that have no closed-form solution. Always check a numerical answer against a simple analytic case first.
 
 ## Key equations

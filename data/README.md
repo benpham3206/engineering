@@ -5,6 +5,7 @@ The canonical facts the rest of the repo rests on: one fact, one place. Lessons 
 ## Tables
 
 - [Units](units.md): every unit the verifier understands, defined from the SI base units
+- [Notation](notation.md): the canonical symbols, sign conventions, and transform conventions for every formula
 - [Constants](constants.md): physical constants and Earth conventions, plus the prose scans that catch disagreeing values
 - [Properties](properties.md): material and fluid properties with conditions
 - [Sources](sources.md): every free, public source a value or claim rests on

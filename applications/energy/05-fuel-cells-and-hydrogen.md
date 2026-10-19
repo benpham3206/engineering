@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-Fuel cells and hydrogen are the technologies for making electricity from hydrogen and for storing energy as that gas. Whether such a system works depends on the cell physics, the catalyst, and the pressure of the stored gas, so each must be sized with care.
+**Fuel cells and hydrogen** are the technologies for making electricity from hydrogen and for storing energy as that gas. Whether such a system works depends on the cell physics, the catalyst, and the pressure of the stored gas, so each must be sized with care.
 
 A fuel cell turns hydrogen and oxygen into electricity and water with no combustion and no moving parts. Hydrogen also stores energy from solar or wind power when an electrolyzer splits water and a fuel cell later turns the gas back into electricity.
 
@@ -13,7 +13,7 @@ A fuel cell turns hydrogen and oxygen into electricity and water with no combust
 
 ### How it works
 
-A proton exchange membrane (PEM) fuel cell has two electrodes separated by a thin polymer membrane. The membrane conducts protons (hydrogen ions) and blocks electrons. Each electrode carries a catalyst, usually platinum, that speeds up the reaction.
+A **proton exchange membrane (PEM)** fuel cell has two electrodes separated by a thin polymer membrane. The membrane conducts protons (hydrogen ions) and blocks electrons. Each electrode carries a **catalyst**, usually platinum, that speeds up the reaction.
 
 At the anode, each hydrogen molecule splits into two protons and two electrons:
 
@@ -27,7 +27,7 @@ The electrons in the external circuit are the current. The chemistry releases en
 
 Each cell runs at about 60 to 80 °C. The membrane must stay wet to conduct protons, so the gas streams are humidified, and the cooling loop keeps the temperature in range.
 
-Electrolysis runs the same reactions in reverse. Electricity drives water into hydrogen at the cathode and oxygen at the anode. A PEM electrolyzer does this with a similar membrane and catalyst layers.
+**Electrolysis** runs the same reactions in reverse. Electricity drives water into hydrogen at the cathode and oxygen at the anode. A PEM electrolyzer does this with a similar membrane and catalyst layers.
 
 ### Main parts
 
@@ -48,7 +48,7 @@ Electrolysis runs the same reactions in reverse. Electricity drives water into h
 
 ## Key equations
 
-Faraday's law gives the hydrogen consumed by a current $I$ in amperes, over time $t$ in seconds. Here $M = 2.016\ \text{g/mol}$ is the molar mass of H$_2$, $n = 2$ is the number of electrons per molecule, and $F = 96\,485\ \text{C/mol}$ is the Faraday constant:
+**Faraday's law** gives the hydrogen consumed by a current $I$ in amperes, over time $t$ in seconds. Here $M = 2.016\ \text{g/mol}$ is the molar mass of H$_2$, $n = 2$ is the number of electrons per molecule, and $F = 96\,485\ \text{C/mol}$ is the Faraday constant:
 
 $$m = \frac{I\,t\,M}{n\,F}$$
 
@@ -56,11 +56,11 @@ Cell voltage and electrical power, with $V$ in volts and $I$ in amperes:
 
 $$P_{\mathrm{el}} = V I$$
 
-Efficiency on the lower heating value (LHV) basis. The constant 1.25 V equals the LHV energy of one mole of hydrogen, 241.8 kJ/mol, divided by $2F$:
+Efficiency on the **lower heating value (LHV)** basis. The constant 1.25 V equals the LHV energy of one mole of hydrogen, 241.8 kJ/mol, divided by $2F$:
 
 $$\eta_{\mathrm{LHV}} = \frac{V_{\mathrm{cell}}}{1.25\ \text{V}}$$
 
-Hydrogen energy content on the LHV basis is about 120 MJ/kg, or 33.3 kWh/kg. The higher heating value (HHV) is about 142 MJ/kg, or 39.4 kWh/kg. Both are typical values.
+Hydrogen energy content on the LHV basis is about 120 MJ/kg, or 33.3 kWh/kg. The **higher heating value (HHV)** is about 142 MJ/kg, or 39.4 kWh/kg. Both are typical values.
 
 Electrolyzer hydrogen output, with $\eta_{\mathrm{LHV}}$ the electrolyzer efficiency on the LHV basis and $E_{\mathrm{in}}$ the electric energy input in kilowatt-hours:
 

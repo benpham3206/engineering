@@ -4,7 +4,7 @@
 
 Washing machines and dryers are appliances that remove water from clothes, one by spinning and one by heating air. Engineers need the physics of spin and heat because an unbalanced drum shakes the machine, and drying speed depends on the heat supplied.
 
-The spin g-force grows with the square of the drum speed and with the drum radius, and an unbalanced load turns that force into shaking. Engineers who size drums, motors, and suspensions need these relations and the safety measures they demand.
+The **spin g-force** grows with the square of the drum speed and with the drum radius, and an unbalanced load turns that force into shaking. Engineers who size drums, motors, and suspensions need these relations and the safety measures they demand.
 
 **Prerequisites:** [Particle dynamics](../../physics/02-particle-dynamics.md), [Rigid body dynamics](../../physics/03-rigid-body-dynamics.md), [Vibrations](../../physics/13-vibrations.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 3-4 h
@@ -41,9 +41,9 @@ Angular speed from revolutions per minute:
 
 $$\omega = \frac{2\pi N}{60}$$
 
-where $\omega$ is the angular speed in radians per second (rad/s) and $N$ is the speed in revolutions per minute (rpm).
+where $\omega$ is the **angular speed** in radians per second (rad/s) and $N$ is the speed in revolutions per minute (rpm).
 
-Centripetal acceleration of the clothes:
+**Centripetal acceleration** of the clothes:
 
 $$a = \omega^{2} r$$
 
@@ -65,7 +65,7 @@ Energy to evaporate water, assuming all water evaporates and ignoring sensible h
 
 $$Q = m_{w}\,h_{\mathrm{fg}}$$
 
-where $Q$ is the energy in joules (J), $m_{w}$ is the water mass in kilograms (kg), and $h_{\mathrm{fg}} \approx 2.26\ \text{MJ/kg}$ is the latent heat of vaporization of water at 100 °C (typical value).
+where $Q$ is the energy in joules (J), $m_{w}$ is the water mass in kilograms (kg), and $h_{\mathrm{fg}} \approx 2.26\ \text{MJ/kg}$ is the **latent heat of vaporization** of water at 100 °C (typical value).
 
 ## Worked example
 
@@ -142,7 +142,7 @@ Where a problem needs gravitational acceleration, use $g = 9.81\ \text{m}/\text{
 
 ## Go deeper
 
-- [OpenStax University Physics Volume 1, fixed-axis rotation](https://openstax.org/books/university-physics-volume-1/pages/10-introduction): angular speed and centripetal acceleration for a rotating body.
+- [*OpenStax University Physics Volume 1*, fixed-axis rotation](https://openstax.org/books/university-physics-volume-1/pages/10-introduction): angular speed and centripetal acceleration for a rotating body.
 - [Vibrations](../../physics/13-vibrations.md): unbalance and resonance in rotating machines.
 - [Mechanics reference sheet](../../physics/reference-mechanics.md): centripetal and rotational relations.
 - [Thermofluids reference sheet](../../physics/reference-thermofluids.md): heat and latent heat relations for drying.

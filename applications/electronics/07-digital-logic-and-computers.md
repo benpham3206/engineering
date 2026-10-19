@@ -17,11 +17,11 @@ A computer is billions of transistors, and each one is either on or off. Logic g
 - **Gates from transistors.** A CMOS gate pairs a pull-up network of PMOS transistors with a pull-down network of NMOS transistors. In a NAND gate, two NMOS transistors sit in series, so the output goes low only when both inputs are high. Two PMOS transistors sit in parallel, so the output goes high when either input is low. Only one network conducts at a time, which keeps static power low.
 - **Universal gates.** NAND alone builds any logic function. NOT A equals A NAND A. AND equals NOT of a NAND. OR follows from De Morgan's law, $A + B = \overline{\overline{A}\,\overline{B}}$.
 - **Combinational logic.** The output depends only on the present inputs. An adder is the classic example. A half adder adds two bits and produces a sum and a carry. A full adder adds three bits: two data bits and a carry in. Chaining full adders gives a multi-bit adder.
-- **Sequential logic.** A circuit with memory depends on its past. Two cross-coupled NAND gates form a latch that holds one bit. A D flip-flop adds a clock. On each rising clock edge, it copies its D input to its output and holds that value until the next edge. A clock makes every flip-flop in a design update at the same moment, which keeps the timing predictable.
+- **Sequential logic.** A circuit with memory depends on its past. Two cross-coupled NAND gates form a **latch** that holds one bit. A **D flip-flop** adds a clock. On each rising clock edge, it copies its D input to its output and holds that value until the next edge. A clock makes every flip-flop in a design update at the same moment, which keeps the timing predictable.
 - **Registers.** A register is a group of flip-flops that stores a word, such as 8, 16, or 32 bits.
 - **Memory cells.** An SRAM cell uses six transistors to hold one bit as long as power is applied. A DRAM cell uses one transistor and one capacitor. The capacitor leaks charge, so DRAM rows are refreshed on a regular schedule. Many DRAM parts refresh every row about every 64 ms.
-- **The processor.** A CPU repeats a fetch, decode, and execute cycle. The program counter holds the address of the next instruction. The fetch step reads that instruction into the instruction register. The decode step turns the instruction into control signals. The execute step runs the arithmetic logic unit (ALU) or a memory access, and the program counter moves to the next instruction. The clock sets the pace of each step.
-- **Microcontroller.** A microcontroller puts a CPU, program memory (flash), working memory (RAM), and peripherals such as timers, ADCs, and PWM outputs on one chip. On reset, the CPU loads the program counter from a fixed address and starts the program. An interrupt pauses the main program, runs a short handler, and returns.
+- **The processor.** A CPU repeats a fetch, decode, and execute cycle. The **program counter** holds the address of the next instruction. The fetch step reads that instruction into the instruction register. The decode step turns the instruction into control signals. The execute step runs the arithmetic logic unit (ALU) or a memory access, and the program counter moves to the next instruction. The clock sets the pace of each step.
+- **Microcontroller.** A microcontroller puts a CPU, program memory (flash), working memory (RAM), and peripherals such as timers, ADCs, and PWM outputs on one chip. On reset, the CPU loads the program counter from a fixed address and starts the program. An **interrupt** pauses the main program, runs a short handler, and returns.
 
 ### Main parts
 
@@ -37,7 +37,7 @@ A computer is billions of transistors, and each one is either on or off. Logic g
 
 ### Variants
 
-- **Microcontroller.** A CPU, memory, and peripherals on one chip run one program for one product. Appliances, cars, and printers use them.
+- Microcontroller. A CPU, memory, and peripherals on one chip run one program for one product. Appliances, cars, and printers use them.
 - **Microprocessor.** A CPU alone needs external memory and support chips. Personal computers and servers use microprocessors.
 - **FPGA.** A field-programmable gate array is a chip of configurable logic blocks. Engineers describe the circuit in a hardware language, and the chip wires itself to match. FPGAs suit parallel, high-speed work such as video processing.
 - **ASIC.** An application-specific integrated circuit is a custom chip. It costs a lot to design, but it costs little per unit at high volume.

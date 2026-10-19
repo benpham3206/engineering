@@ -14,7 +14,7 @@ Calipers and micrometers are hand tools that measure lengths such as shaft diame
 - A **micrometer** (outside micrometer) uses a screw instead of a sliding scale. One full turn of the thimble moves the spindle 0.5 mm. The thimble has 50 divisions, so each division is $0.5/50 = 0.01$ mm.
 - The micrometer **sleeve** (barrel) has a main scale in millimeters, and a second row of marks, usually below the main line, shows the half millimeter. A half-line that is visible adds 0.5 mm to the sleeve reading.
 - **Zero error** is the reading when the tool is closed. Check it before every series of measurements. If a closed micrometer reads $+0.02$ mm, subtract 0.02 mm from every reading.
-- **Gauges** are fixed-size reference parts. A plug gauge or pin gauge checks a hole or shaft. A go/no-go gauge checks a tolerance band: the go side must enter, and the no-go side must not.
+- **Gauges** are fixed-size reference parts. A plug gauge or pin gauge checks a hole or shaft. A **go/no-go gauge** checks a tolerance band: the go side must enter, and the no-go side must not.
 - Use gentle, consistent force, typically with the ratchet stop on a micrometer. Too much force squeezes the part and the frame.
 
 ## Key equations
@@ -77,8 +77,8 @@ For the caliper, $\delta = 0.02$ mm, so $u = 0.0058$ mm. For the micrometer, $\d
 
 ## Go deeper
 
-- [Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: the Type B method for resolution-limited readings used above.
-- [University Physics Volume 1, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: units, measurement, and estimates in physics context.
+- [*Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (TN 1297)*](https://www.nist.gov/pml/nist-technical-note-1297) by NIST: the Type B method for resolution-limited readings used above.
+- [*University Physics Volume 1*, Chapter 1: Introduction](https://openstax.org/books/university-physics-volume-1/pages/1-introduction) by OpenStax: units, measurement, and estimates in physics context.
 
 Note: no free tutorial specific to calipers and micrometers was confirmed for this lesson. Check the manufacturer's manual for your tool's scale layout, and use a real tool to practice.
 - [Measurement reference](reference.md): the lookup sheet for this topic.

@@ -2,9 +2,10 @@
 
 **Type:** lesson
 
-Bending and buckling are two ways a beam or column can fail under load: bending is the curving of a beam under sideways loads, and buckling is the sudden sideways collapse of a slender column in compression. Engineers study both so that floors, shelves, and building posts carry their loads safely.
+**Bending** and buckling are two ways a beam or column can fail under load: bending is the curving of a beam under sideways loads, and buckling is the sudden sideways collapse of a slender column in compression. Engineers study both so that floors, shelves, and building posts carry their loads safely.
 
-A beam carries loads sideways, such as a floor joist or a shelf. A column carries load along its length, such as a building post or a strut in a truss. Beams fail by bending too far or by overstressing the outer fibers. Columns can fail suddenly by buckling, even when the stress in the material is well below its yield strength.
+> [!WARNING]
+> A beam carries loads sideways, such as a floor joist or a shelf. A column carries load along its length, such as a building post or a strut in a truss. Beams fail by bending too far or by overstressing the outer fibers. Columns can fail suddenly by buckling, even when the stress in the material is well below its yield strength.
 
 **Prerequisites:** [Statics](01-statics.md) (reactions and internal forces), [Axial and torsion](04-axial-and-torsion.md) (stress, strain, and Hooke's law), [Single-variable calculus](../math/03-single-variable-calculus.md) (slope and area relations between load, shear, and moment)
 **Time:** 8-10 h

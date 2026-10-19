@@ -2,7 +2,7 @@
 
 **Type:** lesson
 
-A nuclear reactor is a machine that splits heavy atoms in a controlled chain reaction and uses the released heat to make steam for a turbine. Engineers need to understand reactors because the design comes down to two balances: the neutron balance that keeps the chain reaction steady, and the heat balance that keeps the fuel cool in every operating state.
+A **nuclear reactor** is a machine that splits heavy atoms in a controlled chain reaction and uses the released heat to make steam for a turbine. Engineers need to understand reactors because the design comes down to two balances: the neutron balance that keeps the chain reaction steady, and the heat balance that keeps the fuel cool in every operating state.
 
 **Prerequisites:** [Atomic structure and bonding](../../materials/01-atomic-structure-bonding.md), [Thermodynamics: properties, work, heat, and the first law](../../physics/08-thermo-first-law.md), [Thermodynamics: entropy, the second law, and cycles](../../physics/09-thermo-second-law-cycles.md), [Heat transfer](../../physics/12-heat-transfer.md)
 **Time:** 8-10 h
@@ -13,9 +13,9 @@ A nuclear reactor is a machine that splits heavy atoms in a controlled chain rea
 
 A neutron strikes a uranium-235 nucleus, which splits into two smaller nuclei, two or three new neutrons, and about 200 MeV of energy. That is about $3.2 \times 10^{-11}\ \text{J}$ per fission. Most of the energy appears as the kinetic energy of the fission fragments. The fragments slow down inside the fuel and heat it.
 
-The new neutrons drive the chain reaction. If, on average, exactly one neutron from each fission causes another fission, the reactor is critical. The power then stays constant. If more than one does, the power rises. If fewer do, the power falls.
+The new neutrons drive the chain reaction. If, on average, exactly one neutron from each fission causes another fission, the reactor is **critical**. The power then stays constant. If more than one does, the power rises. If fewer do, the power falls.
 
-Fission neutrons leave the nucleus fast, at about 2 MeV. U-235 is much more likely to fission when the neutron is slow, so the reactor uses a moderator to slow the neutrons to thermal energies near 0.025 eV. In a pressurized water reactor, ordinary water does this job. The same water also carries the heat away.
+Fission neutrons leave the nucleus fast, at about 2 MeV. U-235 is much more likely to fission when the neutron is slow, so the reactor uses a **moderator** to slow the neutrons to thermal energies near 0.025 eV. In a pressurized water reactor, ordinary water does this job. The same water also carries the heat away.
 
 Step by step, one cycle of heat moves like this:
 
@@ -27,7 +27,7 @@ Step by step, one cycle of heat moves like this:
 
 The secondary loop never touches the fuel. That keeps radioactive primary water out of the turbine hall. The turbine and condenser follow the Rankine cycle, covered in the [steam power plants lesson](../thermal-fluid/08-steam-power-plants.md).
 
-Control works through neutron absorbers. Control rods made of boron carbide or silver-indium-cadmium alloy slide into the core and capture neutrons. Pulling rods out raises the reactivity. Pressurized water reactors also dissolve boric acid in the coolant, and the operators adjust its concentration to hold the reactivity over a fuel cycle.
+Control works through **neutron absorbers**. Control rods made of boron carbide or silver-indium-cadmium alloy slide into the core and capture neutrons. Pulling rods out raises the reactivity. Pressurized water reactors also dissolve boric acid in the coolant, and the operators adjust its concentration to hold the reactivity over a fuel cycle.
 
 The fuel has a negative temperature coefficient. When the fuel or water heats up, the reactivity falls. This self-correction keeps the power from running away after a small disturbance.
 
@@ -64,7 +64,7 @@ Thermal power, with $\dot{N}_f$ the fission rate in fissions per second:
 
 $$P_{\mathrm{th}} = \dot{N}_f E_f$$
 
-Electric power, with $\eta$ the thermal efficiency (dimensionless):
+Electric power, with $\eta$ the **thermal efficiency** (dimensionless):
 
 $$P_e = \eta P_{\mathrm{th}}$$
 
@@ -72,11 +72,11 @@ Heat rejected to the environment, in watts:
 
 $$Q_{\mathrm{rej}} = P_{\mathrm{th}} - P_e$$
 
-Reactivity, with $k$ the effective neutron multiplication factor (dimensionless):
+**Reactivity**, with $k$ the effective neutron multiplication factor (dimensionless):
 
 $$\rho_r = \frac{k - 1}{k}$$
 
-Here $k = 1$ means critical, $k > 1$ means the power rises, and $k < 1$ means the power falls. After shutdown, decay heat from fission products still adds roughly 6 percent of full thermal power in the first seconds. That fraction falls over hours and days.
+Here $k = 1$ means critical, $k > 1$ means the power rises, and $k < 1$ means the power falls. After shutdown, **decay heat** from fission products still adds roughly 6 percent of full thermal power in the first seconds. That fraction falls over hours and days.
 
 ## Worked example
 
@@ -147,7 +147,7 @@ In December 1938, Otto Hahn and Fritz Strassmann in Berlin found barium among th
 
 ## Go deeper
 
-- [University Physics Volume 3, Chapter 10 introduction](https://openstax.org/books/university-physics-volume-3/pages/10-introduction), free from OpenStax. It covers the atomic nucleus and introduces fission.
+- [*University Physics Volume 3*, Chapter 10 introduction](https://openstax.org/books/university-physics-volume-3/pages/10-introduction), free from OpenStax. It covers the atomic nucleus and introduces fission.
 - [Steam power plants](../thermal-fluid/08-steam-power-plants.md): the Rankine cycle that turns reactor heat into electricity.
 - [The power grid](../electrical/08-the-power-grid.md): how generated power reaches the load.
 - [Heat transfer](../../physics/12-heat-transfer.md): conduction through fuel and cladding, and convection to the coolant.
