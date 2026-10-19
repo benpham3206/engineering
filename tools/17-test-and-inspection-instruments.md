@@ -59,7 +59,7 @@ An **infrared (IR) thermometer** measures a surface temperature without touching
 
 **Emissivity** ($\varepsilon$) is the fraction of ideal blackbody radiation a surface actually emits, between 0 and 1. Rough, dark, painted, or oxidized surfaces have a high emissivity. Bare polished metals have a low one, and a low-emissivity surface also reflects the surroundings. The instrument assumes an emissivity (often fixed by the maker); if the real surface differs, the reading is wrong.
 
-The **distance-to-spot ratio (D:S)** says how large an area the instrument averages. A ratio of 12:1 means that at 12 m the instrument averages a circle 1 m across. A target smaller than the spot is averaged with its surroundings and reads wrong.
+The **distance-to-spot ratio (D:S)** gives the nominal spot diameter from distance divided by the ratio. A ratio of 12:1 gives a nominal 1 m spot at 12 m. The spot has no sharp edge, and the ratio applies only under the instrument's stated focus conditions, so check its spot-size definition and focal distance. Keep the target wider than the nominal spot to limit background radiation in the reading.
 
 To use one, aim at a matt surface, stand close enough that the spot fits inside the target, and wait for the reading to settle. When the surface is shiny, cover a small patch with matt tape or paint and measure the patch, or use a contact probe.
 
@@ -163,17 +163,17 @@ An IR thermometer has a distance-to-spot ratio of 12:1. You aim it at a warm bea
 
 **Find:** The spot diameter, whether it fits on the target, and the greatest distance at which it would.
 
-**Assumptions:** The spot is a circle of diameter $D/r$, and the instrument reads the average over it.
+**Assumptions:** The nominal spot is a circle of diameter $D/r$. For this example, the target width is at least twice the nominal spot diameter.
 
 **Solution:**
 
 1. Spot diameter: $d = D/r = 0.125$ m, which is 125 mm.
 2. 125 mm is larger than the 80 mm target, so part of the reading comes from the background.
-3. The spot fits when $d \le 0.080$ m, so $D \le r \times 0.080$ m $= 0.96$ m.
+3. For a two-to-one target-to-spot margin, require $d \le 0.040$ m, so $D \le r \times 0.040$ m $= 0.48$ m.
 
-**Answer:** The spot is 125 mm across and does not fit. Move to within 0.96 m.
+**Answer:** The spot is 125 mm across and does not fit. Move to within 0.48 m for a 40 mm nominal spot, half the target width.
 
-**Sanity check:** The spot shrinks in proportion to distance. Halving the distance from 1.5 m to 0.75 m halves the spot to 62.5 mm, which fits inside 80 mm.
+**Sanity check:** The spot shrinks in proportion to distance. At 0.75 m the spot is 62.5 mm, which is smaller than the 80 mm target but does not meet the two-to-one margin. At 0.48 m it is 40 mm.
 
 <details><summary>Verification</summary>
 
@@ -187,10 +187,14 @@ expect(d, "0.125 m")
 expect(d, "125 mm")
 expect(q(0.08, "m"), "80 mm")
 check(d > w, "the spot is larger than the target")
-Dmax = r * w
-expect(Dmax, "0.96 m")
-expect(q(0.75, "m") / r, "62.5 mm")
-check(q(0.75, "m") / r < w, "half the distance fits")
+Dmax = r * w / 2
+expect(w / 2, "0.040 m")
+expect(Dmax, "0.48 m")
+expect(Dmax / r, "40 mm")
+spot075 = q(0.75, "m") / r
+expect(spot075, "62.5 mm")
+check(spot075 < w and spot075 > w / 2, "0.75 m is smaller than the target but misses the two-to-one margin")
+check(Dmax / r == w / 2, "the spot is half the target width at the selected distance")
 ```
 
 </details>
@@ -276,7 +280,7 @@ check(Lt > LA and Lt < Leq, "between one machine and two equal machines")
 1. A load cell has a rated output of 2 mV/V at a capacity of 1000 N. It is powered with 10 V. Find the output voltage in mV when it carries 250 N.
 2. A click-type torque wrench has an effective length of 0.40 m. You add a straight extension 0.10 m long in line with it and want 80 N m on the fastener. Find the setting in N m.
 3. A machine measures 90 dB alone, and a second one adds 80 dB. Find the combined level in dB, and say whether the second machine matters.
-4. Eight readings of height from the mean line, in micrometres, are 2, -3, 1, -2, 4, -1, 3, -2. Find Ra in micrometres.
+4. Eight readings of height from the mean line, in micrometres, are 2, -3, 1, -2, 2, -1, 3, -2. Find Ra in micrometres.
 5. An IR thermometer reads 31 degrees Celsius on a polished steel pan that feels too hot to touch. Give two reasons the reading may be wrong and one way to get a better value.
 
 <details><summary>Answers</summary>
@@ -284,7 +288,7 @@ check(Lt > LA and Lt < Leq, "between one machine and two equal machines")
 1. 5 mV
 2. 64 N m
 3. 90.4 dB. The second machine adds only 0.4 dB, so it does not matter for the total level.
-4. 2.25 micrometres
+4. 2.0 micrometres
 5. The polished metal has a low emissivity, so the thermometer reads mostly the reflected room. The spot may also include background. Cover a patch with matt tape or paint, and measure the patch, or use a contact probe.
 
 ```verify
@@ -302,8 +306,18 @@ L2 = q(80, "1")
 Lt = 10 * log10(10**(L1 / 10) + 10**(L2 / 10))
 expect(Lt, "90.4 1", ans=3)
 expect(Lt - L1, "0.4 1", ans=3)
-z = q(18, "um")
-expect(z / 8, "2.25 um", ans=4)
+z1 = q(2, "um")
+z2 = q(-3, "um")
+z3 = q(1, "um")
+z4 = q(-2, "um")
+z5 = q(2, "um")
+z6 = q(-1, "um")
+z7 = q(3, "um")
+z8 = q(-2, "um")
+zmean = (z1 + z2 + z3 + z4 + z5 + z6 + z7 + z8) / 8
+check(abs(zmean) < q(0.001, "um"), "readings are from the mean line")
+Ra = (abs(z1) + abs(z2) + abs(z3) + abs(z4) + abs(z5) + abs(z6) + abs(z7) + abs(z8)) / 8
+expect(Ra, "2.0 um", ans=4)
 skip(ans=5, why="short answer")
 ```
 

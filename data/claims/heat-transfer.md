@@ -44,6 +44,14 @@ Standard textbook statements about conduction and radiation that the heat transf
 - Sources: lienhard-ahtt (6th edition, Chapter 7, section 7.3, eqns. (7.41) and (7.42), p. 369, "Gnielinski proposed the following modification of eqn. (7.35)")
 - Checked: agent:sonnet, 2026-10-19, fetched the official PDF and read both equations and the validity range
 
+### lienhard-turbulent-pipe-property-correction
+- Claim: Lienhard corrects the Gnielinski Nusselt number for large property changes using (mu_b/mu_w)^n for liquids and (Tb/Tw)^n for gases. For a cooled wall, Tw < Tb, n is 0.11 for liquids and 0.47 for gases; the corrections cover 0.025 <= mu_b/mu_w <= 12.5 and 0.27 <= Tb/Tw <= 2.7, respectively.
+- Values: 0.11; 0.47; 0.025; 12.5; 0.27; 2.7
+- Layer: durable
+- Status: verified-1
+- Sources: lienhard-ahtt (6th edition, Chapter 7, section 7.3, eqns. (7.44) and (7.45), p. 370, "all properties evaluated at Tb using eqn. (7.41)"; for gases, "0.47 for Tw < Tb")
+- Checked: agent:sonnet, 2026-10-19, fetched the official PDF and read both correction equations and their ranges
+
 ### lienhard-plate-laminar
 - Claim: For a laminar boundary layer on an isothermal flat plate with Pr at least 0.6, the average Nusselt number is NuL = 0.664 ReL^(1/2) Pr^(1/3), with properties at the film temperature.
 - Values: 0.664; 0.6
@@ -81,8 +89,16 @@ Standard textbook statements about conduction and radiation that the heat transf
 - Values: 0.149; 0.131
 - Layer: durable
 - Status: verified-1
-- Sources: lienhard-ahtt (6th edition, Chapter 9, section 9.3, eqns. (9.11) and (9.12), pp. 493-495, "We therefore designate the Zuber-Kutateladze equation")
-- Checked: agent:sonnet, 2026-10-19, fetched the official PDF; (9.11) reproduces the book's Example 9.5 value of 1.260 MW/m2
+- Sources: lienhard-ahtt (6th edition, Chapter 9, section 9.3, eqns. (9.11) and (9.12), pp. 493-495, "actual qmax falls below that predicted by eqn. (9.11)" and "it then becomes greater")
+- Checked: agent:sonnet, 2026-10-19, fetched the official PDF; the size trend was read in the text accompanying Fig. 9.12 and (9.11) reproduces Example 9.5
+
+### lienhard-chf-small-heater
+- Claim: For a side-walled heater narrower than about 3d1, actual peak pool-boiling heat flux first falls below the large-plate prediction as size decreases, then rises when one vapor column serves a sufficiently small area.
+- Values: 3
+- Layer: durable
+- Status: verified-1
+- Sources: lienhard-ahtt (6th edition, Chapter 9, section 9.3, text accompanying Fig. 9.12, p. 494, "actual qmax falls below that predicted by eqn. (9.11)" and "it then becomes greater")
+- Checked: agent:sonnet, 2026-10-19, fetched the official PDF and read the size-trend discussion after equation (9.11)
 
 ### lienhard-lewis-analogy
 - Claim: For low-rate mass transfer, the ratio of the heat transfer coefficient to the mass transfer conductance times specific heat is h/(g cp) = Le^(1-b), which is about Le^(2/3), and the Lewis number of air and water is about 0.847.

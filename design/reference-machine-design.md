@@ -99,11 +99,11 @@ Variables:
 | $K$ | nut factor (torque coefficient) | dimensionless |
 | $d$ | nominal bolt diameter | m |
 
-Holds when: the bolt stays elastic, the nut factor matches the actual surfaces and lubricant, and the clamped parts do not relax. The usual choice is $\phi = 0.75$ for a joint that is taken apart, and up to 0.9 for a permanent joint (typical practice).
+Holds when: the bolt stays elastic, the nut factor matches the actual surfaces and lubricant, and the clamped parts do not relax. Typical fastener practice uses $\phi$ from 0.7 to 0.9, chosen for the joint and its service conditions; this is not a universal limit.
 Breaks when: friction differs from the assumed $K$ (the preload scatters widely with torque control alone), the joint embeds or relaxes, or the thread galls. Use bolt stretch or turn-of-nut methods where preload must be accurate.
-Source and basis: $F_i$ is a design rule of thumb on the proof load; $T = K F_i d$ lumps thread and collar friction into $K$, which is a measured value. A typical $K$ for dry steel is about 0.2, and lubricated threads give lower values. Taught in [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md).
+Source and basis: $F_i$ is a design rule of thumb on the proof load; $T = K F_i d$ lumps thread and collar friction into $K$, which is a measured value. Typical fastener practice uses $K$ from about 0.15 to 0.25 for steel fasteners, with the value depending on surface and lubricant. These are practice ranges, not universal limits. Taught in [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md).
 
-Example: a bolt of proof strength 580 MPa with $A_t = 58.0\ \text{mm}^2$, $d = 10$ mm, $K = 0.20$ gives $F_i = 25.2$ kN and $T = 50.5\ \text{N m}$. With lubricated threads of $K = 0.15$, the same torque gives $33.6$ kN, which is the proof load, so a torque set for dry threads over-tightens a lubricated bolt to yield.
+Example: a bolt of proof strength 580 MPa with $A_t = 58.0\ \text{mm}^2$, $d = 10$ mm, $K = 0.20$ gives $F_i = 25.2$ kN and $T = 50.5\ \text{N m}$. With lubricated threads of $K = 0.15$, the same torque gives $33.6$ kN, the proof load; tightening torsion can bring the bolt to yield.
 
 ```verify
 Sp = q(580, "MPa")
@@ -143,23 +143,30 @@ Holds when: the external load acts at the bolt axis, the members stay in contact
 Breaks when: the joint opens ($P > P_0$, then the bolt carries all of $P$), the plates bend or pry, or the load acts off the bolt axis.
 Source and basis: derived from the compatibility of two springs that share one deflection, taught in [Bolted and welded joints](12-bolted-and-welded-joints.md).
 
-Example: an M10 bolt with $A_t = 58.0\ \text{mm}^2$, $E = 200$ GPa, and grip 20 mm has $k_b = 580$ kN/mm. The frustum model for two 10 mm steel plates gives $k_m = 3384$ kN/mm. Then $C = 0.146$. With $F_i = 25.2$ kN and $P = 10$ kN, $F_b = 26.7$ kN, $F_m = 16.7$ kN, and $P_0 = 29.6$ kN.
+Example: an M10 bolt with $A_t = 58.0\ \text{mm}^2$, $E = 200$ GPa, and grip 20 mm has $k_b = 580$ kN/mm. The two half-grip frustums for 10 mm steel plates each have stiffness 4440 kN/mm, so their series stiffness is $k_m = 2220$ kN/mm. Then $C = 0.207$. With $F_i = 25.2$ kN and $P = 10$ kN, $F_b = 27.3$ kN, $F_m = 17.3$ kN, and $P_0 = 31.8$ kN.
 
 ```verify
 At = q(58.0, "mm^2")
 E = q(200, "GPa", of="none")
 l = q(20, "mm")
+d = q(10, "mm")
+dw = 1.5 * d
 kb = At * E / l
 expect(kb, "580 kN/mm")
-km = q(3384, "kN/mm")
+tn = tan(pi / 6)
+t = l / 2
+kf = pi * E * d * tn / log(((2 * t * tn + dw - d) * (dw + d)) / ((2 * t * tn + dw + d) * (dw - d)))
+expect(kf, "4440 kN/mm")
+km = kf / 2
 C = kb / (kb + km)
-expect(C, "0.146")
+expect(km, "2220 kN/mm")
+expect(C, "0.207")
 Fi = 0.75 * q(580, "MPa") * At
 P = q(10, "kN")
 expect(Fi, "25.2 kN")
-expect(Fi + C * P, "26.7 kN")
-expect(Fi - (1 - C) * P, "16.7 kN")
-expect(Fi / (1 - C), "29.6 kN")
+expect(Fi + C * P, "27.3 kN")
+expect(Fi - (1 - C) * P, "17.3 kN")
+expect(Fi / (1 - C), "31.8 kN")
 ```
 
 ### Bolt stress under cycling load
@@ -183,16 +190,16 @@ Holds when: the joint stays closed through the cycle and the load runs from zero
 Breaks when: the joint separates (then the bolt sees the whole of $P$), or the load is fully reversing.
 Source and basis: derived from $F_b = F_i + C P$ at the peak and $F_i$ at zero load. Compare $\sigma_a$ and $\sigma_m$ with the endurance and tensile strength using the mean-stress rules in [materials/reference-fracture-fatigue.md](../materials/reference-fracture-fatigue.md).
 
-Example: the bolt above has $\sigma_a = 12.6$ MPa and $\sigma_m = 447.6$ MPa. A fatigue crack starts at the thread root or under the head, so the strength compared with these stresses is the corrected endurance strength of the threaded bolt.
+Example: the bolt above has $\sigma_a = 17.9$ MPa and $\sigma_m = 452.9$ MPa. A fatigue crack starts at the thread root or under the head, so the strength compared with these stresses is the corrected endurance strength of the threaded bolt.
 
 ```verify
 At = q(58.0, "mm^2")
-C = q(0.1463, "")
+C = q(0.2071463, "")
 P = q(10, "kN")
 Fi = q(25.23, "kN")
 sa = C * P / (2 * At)
-expect(sa, "12.6 MPa")
-expect(Fi / At + sa, "447.6 MPa")
+expect(sa, "17.9 MPa")
+expect(Fi / At + sa, "452.9 MPa")
 ```
 
 ## Welded joints
@@ -400,13 +407,13 @@ Variables:
 | $d$ | wire diameter | m |
 | $D$ | mean coil diameter | m |
 | $N_a$ | number of active coils | dimensionless |
-| $\tau$ | shear stress at the inside of the coil | Pa |
+| $\tau$ | direct plus torsional shear stress used for static yield checks | Pa |
 | $K_s$ | direct-shear factor | dimensionless |
 | $F$ | axial force on the spring | N |
 
 Holds when: the coil is helical with a small pitch angle, the wire is round, the deflection is well below solid, and the spring index $D/d$ is moderate (about 4 to 12, typical).
-Breaks when: the spring index is small (curvature of the wire raises the stress above the value here; spring texts give a curvature correction, the Wahl factor), the spring is loaded to solid or past its elastic limit, or the load cycles (use fatigue strength for the wire).
-Source and basis: derived from torsion of a straight wire of length $\pi D N_a$ (see [Axial and torsion](../physics/04-axial-and-torsion.md)); $K_s$ adds the direct shear $F/A$ to the torsional shear. Taught in [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md).
+Breaks when: curvature raises the local stress above this direct-plus-torsional value, the spring is loaded to solid or past its elastic limit, or the load cycles without a curvature correction for fatigue.
+Source and basis: derived from torsion of a straight wire of length $\pi D N_a$ (see [Axial and torsion](../physics/04-axial-and-torsion.md)); $K_s$ adds direct shear to torsional shear, but does not include curvature. A curvature correction is needed for fatigue checks at every spring index. Taught in [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md).
 
 Example: $d = 2$ mm, $D = 16$ mm, $N_a = 10$, and $G = 79$ GPa give $k = 3.86\ \text{N/mm}$. A 20 N load deflects it $5.18$ mm and gives $K_s = 1.06$ and $\tau = 108$ MPa.
 
@@ -518,7 +525,7 @@ Variables:
 | $S$ | Sommerfeld number | dimensionless |
 | $f$ | coefficient of friction of the bearing (Petroff) | dimensionless |
 | $\mu$ | dynamic viscosity of the oil | Pa s |
-| $N$ | journal speed | 1/s |
+| $N$ | journal speed in revolutions per second | 1/s |
 | $p$ | projected pressure, load over $L D$ | Pa |
 | $r$ | journal radius | m |
 | $c$ | radial clearance | m |
@@ -575,7 +582,7 @@ Holds when: the gears are involute spur gears with a common module $m_g$ and no 
 Breaks when: the mesh has large friction losses (worm gears), the teeth are helical or bevel (the load has axial and radial parts), or speeds are high (dynamic loads add to $W_t$).
 Source and basis: derived from rolling contact of the pitch circles ($v$ equal on both) and torque balance; taught in [Gears, fasteners, and springs](09-gears-fasteners-and-springs.md). Contact ratio of involute spur gears is in [Design reference](reference.md#gears).
 
-Example: a pinion of module 2 mm with 20 teeth, driven by a 40-tooth gear, runs at 20 Hz (1200 rpm) and transmits 5 kW. The ratio is 2.0, the pitch diameter is 40 mm, $v = 2.51$ m/s, and $W_t = 1989$ N.
+Example: a pinion of module 2 mm with 20 teeth, driving a 40-tooth gear, runs at 20 Hz (1200 rpm) and transmits 5 kW. The ratio is 2.0, the pitch diameter is 40 mm, $v = 2.51$ m/s, and $W_t = 1989$ N.
 
 ```verify
 m = q(2, "mm")

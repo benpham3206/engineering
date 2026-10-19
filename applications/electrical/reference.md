@@ -576,7 +576,7 @@ Holds when: the supply is balanced, the machine is in steady state, and the per-
 Breaks when: the supply is unbalanced (a negative-sequence field opposes torque), the iron saturates, or the rotor's skin effect changes $R_2'$ with slip. Shaft power is $P_{\text{mech}}$ minus friction and windage.
 Source and basis: derived from the per-phase equivalent circuit, where the power in $R_2'(1-s_{\text{sl}})/s_{\text{sl}}$ is the mechanical power; taught in [Induction motors](03-induction-motors.md).
 
-- Example: a four-pole, 50 Hz motor delivers 7500 W at 1450 rev/min. Its slip is 0.0333, $P_{\text{ag}} = 7759$ W, $P_{\text{cu,r}} = 258.6$ W, and $\mathcal{T} = 49.39$ N m.
+- Example: a four-pole, 50 Hz motor develops 7500 W of internal mechanical power at 1450 rev/min. Its slip is 0.0333, $P_{\text{ag}} = 7759$ W, $P_{\text{cu,r}} = 258.6$ W, and $\mathcal{T} = 49.39$ N m.
 
 <details><summary>Verification</summary>
 
@@ -940,7 +940,7 @@ Variables:
 | $I_{\text{sym}}$ | RMS value of the symmetrical (AC) fault current | A |
 
 Holds when: the fault occurs at the instant that gives the largest offset (voltage zero crossing), the network is a series resistance and inductance, and the AC component does not decay.
-Breaks when: the network has several time constants, or machines feed the fault so the AC component decays. The first-peak estimate is slightly below the exact maximum, about 0.2 percent at the example ratio below.
+Breaks when: the network has several time constants, or machines feed the fault so the AC component decays. At the example ratio below, the estimate is about 0.4 percent below the exact maximum.
 Source and basis: derived from the solution of $L\,di/dt + Ri = \sqrt{2}\,V\sin(\omega t + \alpha)$; the exact peak is found by setting the derivative to zero.
 
 - Example: at $X/R = 10$ and 50 Hz (example input), $\tau_{dc} = 31.83$ ms and the peak factor is 1.730. A symmetrical fault current of 20 kA RMS has a first peak of 48.94 kA.
@@ -953,6 +953,8 @@ f = q(50, "Hz")
 expect(XR / (2 * pi * f), "31.83 ms")
 k = 1 + exp(-pi / XR)
 expect(k, "1.730")
+exact = q(1.7368, "1", of="none")
+expect(100 * (exact - k) / exact, "0.4")
 expect(sqrt(2) * q(20, "kA") * k, "48.94 kA")
 ```
 

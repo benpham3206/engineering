@@ -102,39 +102,35 @@ expect((sx + sy) / 2 - R, "7.57 MPa")
 expect(((sx + sy) / 2 + R) + ((sx + sy) / 2 - R) + sz, "140 MPa")
 ```
 
-### Von Mises and Tresca as invariants
+### Von Mises invariant
 
-The **deviatoric stress** $s_{ij} = \sigma_{ij} - \tfrac{1}{3}\sigma_{kk}\delta_{ij}$ is the stress that changes shape without changing volume. Its second invariant sets the von Mises equivalent stress, and the largest principal difference sets the Tresca equivalent stress.
+The **deviatoric stress** $s_{ij} = \sigma_{ij} - \tfrac{1}{3}\sigma_{kk}\delta_{ij}$ is the stress that changes shape without changing volume. Its second invariant sets the von Mises equivalent stress.
 
-$$\sigma_{vm} = \sqrt{3 J_2} = \sqrt{\tfrac{1}{2}\left[(\sigma_1 - \sigma_2)^2 + (\sigma_2 - \sigma_3)^2 + (\sigma_3 - \sigma_1)^2\right]} \qquad \sigma_{T} = \sigma_1 - \sigma_3$$
+$$\sigma_{vm} = \sqrt{3 J_2} = \sqrt{\tfrac{1}{2}\left[(\sigma_1 - \sigma_2)^2 + (\sigma_2 - \sigma_3)^2 + (\sigma_3 - \sigma_1)^2\right]}$$
 
-- Yield occurs when $\sigma_{vm} = S_y$ (von Mises) or $\sigma_T = S_y$ (Tresca). Both reduce to $\sigma_1 = S_y$ in a uniaxial test. Pure shear yields at $S_y/\sqrt{3}$ (von Mises) or $S_y/2$ (Tresca).
-- Both depend only on differences of principal stresses, so adding the same pressure to all three leaves them unchanged. Tresca is the more conservative of the two, and the criteria differ by at most about 15 percent.
-- Example: principal stresses 92.43, 40, 7.57 MPa. Then $\sigma_{vm} = 74.17$ MPa and $\sigma_T = 84.86$ MPa. Adding 100 MPa of hydrostatic stress to all three leaves $\sigma_{vm}$ unchanged.
+- Adding the same pressure to all three principal stresses leaves $\sigma_{vm}$ unchanged because it does not change the deviatoric stress. For yield checks, including the Tresca criterion and pure-shear limits, see [combined loading and failure criteria](reference-mechanics.md#combined-loading-and-failure-criteria).
+- Example: principal stresses 92.43, 40, 7.57 MPa give $\sigma_{vm} = 74.17$ MPa. Adding 100 MPa of hydrostatic stress to all three leaves $\sigma_{vm}$ unchanged.
 
 Variables:
 
 | Symbol | Meaning | SI unit |
 |---|---|---|
 | $\sigma_{vm}$ | von Mises equivalent stress | Pa |
-| $\sigma_T$ | Tresca equivalent stress | Pa |
 | $J_2$ | second invariant of the deviatoric stress | $\text{Pa}^{2}$ |
 | $s_{ij}$ | deviatoric stress component | Pa |
 | $\sigma_{kk}$ | trace of the stress tensor, $I_1$ | Pa |
 | $\delta_{ij}$ | Kronecker delta (1 if $i = j$, else 0) | dimensionless |
 | $\sigma_1$, $\sigma_2$, $\sigma_3$ | principal stresses, largest first | Pa |
-| $S_y$ | tensile yield strength | Pa |
 
 Holds when: isotropic ductile metal, yield independent of mean stress, monotonic loading at moderate temperature.
-Breaks when: the material is brittle, pressure-sensitive (soils, concrete, many polymers), or anisotropic (use Hill's criterion), under cyclic loading (use a fatigue criterion), or the stress state is so triaxial that fracture, not yield, governs.
-Source and basis: von Mises derived from the distortion energy (the part of strain energy that changes shape), Tresca from the maximum shear stress; compared with tests in [Factor of safety and failure](../design/07-factor-of-safety-and-failure.md). The plane-stress forms are in [combined loading](reference-mechanics.md#combined-loading-and-failure-criteria).
+Breaks when: the material is brittle, pressure-sensitive (soils, concrete, many polymers), or anisotropic, under cyclic loading, or the stress state is so triaxial that fracture, not yield, governs.
+Source and basis: derived from the distortion energy (the part of strain energy that changes shape); the yield criteria are given in [combined loading and failure criteria](reference-mechanics.md#combined-loading-and-failure-criteria).
 
 ```verify
 s1 = q(92.43, "MPa")
 s2 = q(40, "MPa")
 s3 = q(7.57, "MPa")
 expect(sqrt(0.5 * ((s1 - s2)**2 + (s2 - s3)**2 + (s3 - s1)**2)), "74.17 MPa")
-expect(s1 - s3, "84.86 MPa")
 h = q(100, "MPa")
 expect(sqrt(0.5 * (((s1 + h) - (s2 + h))**2 + ((s2 + h) - (s3 + h))**2 + ((s3 + h) - (s1 + h))**2)), "74.17 MPa")
 ```
@@ -146,7 +142,7 @@ expect(sqrt(0.5 * (((s1 + h) - (s2 + h))**2 + ((s2 + h) - (s3 + h))**2 + ((s3 + 
 $$\text{plane stress: } \varepsilon_z = -\frac{\nu}{E}\left(\sigma_x + \sigma_y\right) \qquad \text{plane strain: } \sigma_z = \nu\left(\sigma_x + \sigma_y\right)$$
 
 - A plane-strain problem has the plane-stress equations with $E \to E/(1 - \nu^2)$ and $\nu \to \nu/(1 - \nu)$.
-- Plane strain makes a body stiffer and raises the von Mises stress for the same in-plane stresses, because the third principal stress is no longer zero.
+- Plane strain adds $\sigma_z = \nu(\sigma_x + \sigma_y)$. When both in-plane principal stresses have the same sign and $\sigma_z$ lies between them, this usually lowers von Mises stress and leaves Tresca unchanged. The added triaxial constraint delays ductile yield but can promote brittle fracture.
 - Example: $\sigma_x = 80$, $\sigma_y = 20$ MPa, $\tau_{xy} = 30$ MPa, $E = 200$ GPa, $\nu = 0.3$. Plane stress gives $\varepsilon_z = -1.5 \times 10^{-4}$. Plane strain gives $\sigma_z = 30$ MPa, and $\sigma_{vm}$ is 76.16 MPa, compared with 88.9 MPa in plane stress.
 
 Variables:
@@ -416,7 +412,7 @@ expect(w * L**4 / (8 * E * I), "0.75 mm")
 
 The **principle of virtual work** says that for a body in equilibrium, the work of the external loads on any compatible virtual displacement equals the work of the internal stresses on the matching virtual strain. The **unit-load method** applies it with a virtual load of 1 at the point and direction of the wanted displacement.
 
-$$\delta\,(1) = \int_V \sigma_{ij}\,\bar{\varepsilon}_{ij}\,dV \qquad \delta = \int_0^L \frac{M m}{EI}\,dx + \sum_i \frac{N_i n_i L_i}{E_i A_i}$$
+$$\delta\,(1) = \int_V \bar{\sigma}_{ij}\,\varepsilon_{ij}\,dV \qquad \delta = \int_0^L \frac{M m}{EI}\,dx + \sum_i \frac{N_i n_i L_i}{E_i A_i}$$
 
 - $M$ and $N_i$ come from the real loads; $m$ and $n_i$ come from a unit load applied at the wanted point. Add $\int T t/(GJ)\,dx$ and $\int \kappa V v/(GA)\,dx$ when torsion or shear matters.
 - Virtual displacements also find reactions: remove one support, give the structure a rigid-body virtual motion, and balance the work of that reaction against the load. Simply supported span 4 m, load 12 kN at 1 m from the left: a virtual rotation $\theta$ about the left pin gives $12\,\text{kN} \times 1\,\text{m}\ \theta = R_B \times 4\,\text{m}\ \theta$, so $R_B = 3$ kN.
@@ -427,7 +423,8 @@ Variables:
 | Symbol | Meaning | SI unit |
 |---|---|---|
 | $\delta$ | displacement at the unit-load point, along the unit load | m |
-| $\bar{\varepsilon}_{ij}$ | strain from the unit-load stress field | dimensionless |
+| $\bar{\sigma}_{ij}$ | stress from the unit load | Pa |
+| $\varepsilon_{ij}$ | real total strain | dimensionless |
 | $M$ | bending moment from the real loads | N m |
 | $m$ | bending moment from the unit load | dimensionless |
 | $N_i$ | axial force in member $i$ from the real loads | N |
@@ -438,7 +435,7 @@ Variables:
 | $R_B$ | reaction found by virtual work | N |
 | $P$ | applied joint load | N |
 
-Holds when: linear elastic for the energy form of the unit-load method (virtual work itself needs only equilibrium and compatibility), small displacement, and pin-jointed members for the truss sum.
+Holds when: the unit-load integral uses the real total strain, including any initial strain; the energy form agrees with it for linear elastic material with no initial strain. Virtual work itself needs equilibrium and compatibility, small displacement, and pin-jointed members for the truss sum.
 Breaks when: joints are stiff and carry bending (add the moment terms), or members buckle or yield.
 Source and basis: derived from the principle of virtual work (equilibrium of the real system against compatible virtual displacements).
 
@@ -983,7 +980,7 @@ Thin-walled and curved bodies:
 - The classical cylinder factor $1/\sqrt{3(1 - \nu^2)}$ is 0.605 for $\nu = 0.30$.
 - Von Mises and Tresca agree in uniaxial tension and differ by at most about 15 percent in other states.
 - Constraining thermal expansion of steel in one direction costs about 2.4 MPa per kelvin ($E\alpha_L$, typical).
-- $K_b$ is $E/3$ at $\nu = 0.33$ and $E$ at $\nu = 0$.
+- $K_b$ is $E/3$ at $\nu = 0$ and $E$ at $\nu = 1/3$.
 - A thick cylinder's bore hoop stress is always above the thin-wall estimate $pr/t$ for the inner radius, and approaches $p$ as the wall thickens without limit.
 - An open thin-walled section in torsion is far softer than the same material closed into a tube.
 
@@ -992,6 +989,9 @@ E = q(200, "GPa")
 al = q(12e-6, "1/K")
 expect(E * al, "2.4 MPa/K")
 expect(1 / sqrt(3 * (1 - q(0.30, "")**2)), "0.605")
+check(E / (3 * (1 - 2 * q(0, ""))) == E / 3, "bulk modulus is E/3 at zero Poisson ratio")
+nu13 = q(1, "") / 3
+check(abs(E / (3 * (1 - 2 * nu13)) / E - 1) < 1e-12, "bulk modulus is E at Poisson ratio one third")
 ```
 
 ## Further reference

@@ -333,72 +333,40 @@ Example: $\lambda = 550$ nm and $D = 0.10$ m give $\theta_{\min} = 6.7\ \mu\text
 
 $$F = G \frac{m_1 m_2}{r^2}, \qquad g = \frac{GM}{r^2}$$
 
-- $F$: force (N). $m_1$, $m_2$: masses (kg). $r$: distance between centers (m). $M$: mass of the attracting body (kg). $g$: gravitational acceleration at distance $r$ ($\text{m/s}^2$).
-- Weight at a location: $W = m g_{\text{local}}$. Use the local $g$, not 9.80665.
-- Above a body of radius $R$ at altitude $h$: $g(h) = g_{\text{surface}} \, (R / (R + h))^2$.
-- Standard gravity $g_0 = 9.80665$ $\text{m/s}^2$ is a defined reference for converting mass and force, not a value at any place.
+Surface gravity at the mean radius $R$ is $g_{\text{surface}} = GM/R^2$; at altitude $h$ above a spherical body, $g(h) = g_{\text{surface}}(R/(R+h))^2$.
 
-Standard gravitational parameter $\mu = GM$ ($\text{m}^3/\text{s}^2$) is usually known more precisely than $G$ or $M$ separately. Use $\mu$ in every orbit formula.
+Variables:
 
-**Holds when:** point masses, or spherically symmetric bodies seen from outside; no relativistic effects.
+| Symbol | Meaning | SI unit |
+|---|---|---|
+| $F$ | gravitational force between two masses | N |
+| $G$ | gravitational constant | $\text{m}^3/(\text{kg s}^2)$ |
+| $m_1$, $m_2$, $M$ | masses | kg |
+| $r$ | distance from the attracting body's center | m |
+| $g$ | gravitational acceleration at radius $r$ | $\text{m/s}^2$ |
+| $R$ | body radius | m |
+| $h$ | altitude above the body's surface | m |
+| $g_{\text{surface}}$ | gravitational acceleration at radius $R$ | $\text{m/s}^2$ |
 
-**Breaks when:** the body is oblate or irregular (add $J_2$ and higher harmonics); you are inside a mass distribution; speeds or fields are strong (general relativity; GPS needs its correction).
+Holds when: point masses, or spherically symmetric bodies viewed from outside; relativistic effects are negligible.
+
+Breaks when: the body is oblate or irregular, the point lies inside a mass distribution, or relativistic effects are significant.
+
+Source and basis: derived from Newton's law of gravitation and the inverse-square field outside a spherical mass distribution.
+
+For its use in orbital motion, see [Energy, angular momentum, and vis-viva](reference-orbital-mechanics.md#energy-angular-momentum-and-vis-viva).
 
 ### Orbital relations (two-body, central force)
 
-| Quantity | Formula | Notes |
-|---|---|---|
-| Circular speed | $v_c = \sqrt{\mu / r}$ | At radius $r$ from the center |
-| Escape speed | $v_e = \sqrt{2\mu / r}$ | $= \sqrt{2} v_c$ at the same radius |
-| Vis-viva | $v^2 = \mu (2/r - 1/a)$ | $a$: semi-major axis (m). Works for ellipses, parabolas ($a \to \infty$), hyperbolas ($a < 0$) |
-| Specific orbital energy | $\varepsilon = -\mu / (2a)$ (J/kg) | Negative for bound orbits |
-| Kepler's third law | $T^2 = 4\pi^2 a^3 / \mu$ | $T$: period (s). Constant $T^2/a^3$ for a given central body |
-| Orbital period, circular | $T = 2\pi r / v_c = 2\pi \sqrt{r^3/\mu}$ | Same as Kepler for $a = r$ |
-
-Example: a circular orbit 300 km above Earth's mean radius has $v_c = 7.73$ km/s and period 90.4 min. A geostationary orbit has $a = 42\,164$ km and period 23.93 h (one sidereal day).
-
-**Holds when:** two bodies, the smaller of negligible mass, no drag, no thrust.
-
-**Breaks when:** atmosphere (drag lowers $a$); third bodies (Moon and Sun perturb Earth orbits); thrust (use the rocket equation); $J_2$ oblateness precesses the orbit; very close to a massive body (relativistic precession).
+For energy, conic, and period relations, see [Two-body invariants](reference-orbital-mechanics.md#two-body-invariants), [Conic trajectories](reference-orbital-mechanics.md#conic-trajectories), and [Kepler's equation, mean motion, and period](reference-orbital-mechanics.md#keplers-equation-mean-motion-and-period).
 
 ### Hohmann transfer (coplanar, circular, two-impulse)
 
-$$\Delta v_1 = \sqrt{\frac{\mu}{r_1}} \left( \sqrt{\frac{2 r_2}{r_1 + r_2}} - 1 \right), \qquad \Delta v_2 = \sqrt{\frac{\mu}{r_2}} \left( 1 - \sqrt{\frac{2 r_1}{r_1 + r_2}} \right)$$
-
-- $r_1$, $r_2$: starting and target orbit radii (m, from the center, not altitude). $\Delta v_1$, $\Delta v_2$: burns at periapsis and apoapsis (m/s).
-- Transfer time (half the ellipse period): $t = \pi \sqrt{a_t^3 / \mu}$, with $a_t = (r_1 + r_2)/2$.
-
-Example: from a 300 km circular orbit to geostationary altitude, $\Delta v_1 = 2.43$ km/s, $\Delta v_2 = 1.47$ km/s, total 3.90 km/s, transfer time 5.27 h.
-
-**Holds when:** burns are impulsive (instantaneous), the orbits are coplanar and nearly circular, and the transfer is between two-body orbits.
-
-**Breaks when:** burns take a significant fraction of the orbit (use finite-burn or gravity-loss estimates); the plane must change (add an inclination change, which is expensive); the transfer uses a third body (gravity assist, low-energy transfers); the target is not circular.
+For the two-impulse transfer, see [Hohmann transfer](reference-orbital-mechanics.md#hohmann-transfer).
 
 ### Rocket equation and specific impulse
 
-$$\Delta v = v_e \ln\frac{m_0}{m_f} = I_{\mathrm{sp}} g_0 \ln\frac{m_0}{m_f}$$
-
-$$I_{\mathrm{sp}} = \frac{v_e}{g_0} \qquad \text{(s)}$$
-
-- $\Delta v$: change in velocity (m/s). $v_e$: effective exhaust velocity (m/s). $m_0$, $m_f$: initial and final mass, including propellant (kg).
-- $I_{\mathrm{sp}}$: specific impulse (s). Thrust per unit propellant weight flow. Higher is more efficient.
-- Mass ratio $m_0/m_f$ grows exponentially with $\Delta v$. Doubling $\Delta v$ squares the mass ratio.
-
-Typical specific impulse (vacuum, approximate):
-
-| Propulsion | $I_{\mathrm{sp}}$ (s, typical) |
-|---|---|
-| Cold gas thruster | 50 to 80 for nitrogen; up to about 165 for helium |
-| Monopropellant hydrazine | 200 to 230 |
-| Liquid bipropellant (LOX/kerosene, $\text{LOX/LH}_2$) | about 300 to 360 (kerosene); about 390 to 460 ($\text{LH}_2$) |
-| Solid rocket motor | 240 to 280 |
-| Electric (Hall thruster, ion) | 1500 to 4000 |
-
-Example: $I_{\mathrm{sp}} = 450$ s and a mass ratio of 3 give $\Delta v = 4.85$ km/s.
-
-**Holds when:** the exhaust velocity is constant, thrust acts along the velocity, and the burn is short compared with the orbit.
-
-**Breaks when:** gravity losses (launch needs roughly 1 to 2 km/s beyond the orbital speed), drag losses, steering losses, thrust that varies with time or atmosphere; the exhaust velocity is not uniform across the nozzle.
+For the rocket equation, staging, and specific impulse, see [Rocket equation and staging](reference-orbital-mechanics.md#rocket-equation-and-staging) and [Specific impulse](reference-orbital-mechanics.md#specific-impulse).
 
 ## Radiation and heat in space
 

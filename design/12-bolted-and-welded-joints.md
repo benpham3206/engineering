@@ -69,7 +69,7 @@ Because crack growth under a stress range $\Delta\sigma$ follows a power law, th
 
 ## Key equations
 
-Symbols: $A_b$ = bolt cross-section area ($\text{m}^2$), $E$ = elastic modulus (Pa), $L$ = length of a bolt segment (m), $k_b$ and $k_m$ = bolt and member stiffness (N/m), $d$ = bolt nominal diameter (m), $d_w$ = diameter of the washer face or bearing area (m), $l$ = grip length, the total thickness of the clamped parts (m).
+Symbols: $A_b$ = bolt cross-section area ($\text{m}^2$), $E$ = elastic modulus (Pa), $L$ = length of a bolt segment (m), $k_b$ = bolt stiffness (N/m), $k_m$ = combined member stiffness (N/m), $k_f$ = stiffness of one frustum (N/m), $d$ = bolt nominal diameter (m), $d_w$ = diameter of the washer face or bearing area (m), $l$ = total grip length (m), and $t$ = thickness spanned by one frustum (m).
 
 Bolt stiffness for a bolt with area $A$ over length $L$:
 
@@ -77,11 +77,13 @@ $$
 k_b = \frac{A E}{L}
 $$
 
-Member stiffness from the frustum model with a $\alpha = 30^\circ$ half-angle cone, valid for $d_w > d$ and a joint of one material (this is the commonly used cone model, a first estimate; finite element analysis does better):
+Stiffness of one member frustum with a $\alpha = 30^\circ$ half-angle cone, valid for $d_w > d$ and one material (this is a commonly used first estimate; finite element analysis can model more detail):
 
 $$
-k_m = \frac{\pi E d \tan\alpha}{\ln \dfrac{(2 l \tan\alpha + d_w - d)(d_w + d)}{(2 l \tan\alpha + d_w + d)(d_w - d)}}
+k_f = \frac{\pi E d \tan\alpha}{\ln \dfrac{(2 t \tan\alpha + d_w - d)(d_w + d)}{(2 t \tan\alpha + d_w + d)(d_w - d)}}
 $$
+
+For two equal half-grip frustums in series, $t = l/2$ and $k_m = k_f/2$.
 
 Joint constant and load sharing, with $F_i$ the preload (N), $P$ the external tensile load per bolt (N), $F_b$ the bolt force (N), and $F_m$ the clamping force on the members (N):
 
@@ -136,17 +138,17 @@ Holds when: loads act on the stated plane, the joint stays elastic, the weld is 
 **Solution:**
 
 1. Bolt stiffness: $k_b = A_t E / l = 58.0 \times 200\,000 / 20 = 580$ kN/mm.
-2. Member stiffness from the frustum formula with $d_w = 15$ mm and $\tan 30^\circ = 0.5774$: $k_m = 3384$ kN/mm.
-3. Joint constant: $C = 580 / (580 + 3384) = 0.1463$, so the bolt takes about 15 percent of the external load.
+2. Each half-grip member frustum has $t = 10$ mm, $d_w = 15$ mm, and $\tan 30^\circ = 0.5774$, giving $k_f = 4440$ kN/mm. The two frustums act in series, so $k_m = 2220$ kN/mm.
+3. Joint constant: $C = 580 / (580 + 2220) = 0.2071$, so the bolt takes about one fifth of the external load.
 4. Preload: $F_i = 0.75 \times 580 \times 58.0 = 25.2$ kN.
-5. Peak bolt force: $F_b = 25.2 + 0.1463 \times 10 = 26.7$ kN. Member force at peak: $F_m = 25.2 - 0.8537 \times 10 = 16.7$ kN, still clamped.
-6. Separation load: $P_0 = 25.2 / (1 - 0.1463) = 29.6$ kN.
-7. Stresses: $\sigma_a = 0.1463 \times 10\,000 / (2 \times 58.0) = 12.6$ MPa, $\sigma_m = 25\,230 / 58.0 + 12.6 = 447.6$ MPa.
-8. Goodman: $1/n = 12.6/129 + 447.6/800$, so $n = 1.52$.
+5. Peak bolt force: $F_b = 25.2 + 0.2071 \times 10 = 27.3$ kN. Member force at peak: $F_m = 25.2 - 0.7929 \times 10 = 17.3$ kN, still clamped.
+6. Separation load: $P_0 = 25.2 / (1 - 0.2071) = 31.8$ kN.
+7. Stresses: $\sigma_a = 0.2071 \times 10\,000 / (2 \times 58.0) = 17.9$ MPa, $\sigma_m = 25\,230 / 58.0 + 17.9 = 452.9$ MPa.
+8. Goodman: $1/n = 17.9/129 + 452.9/800$, so $n = 1.42$.
 
-**Answer:** $C = 0.146$, peak bolt force 26.7 kN, separation at $P_0 = 29.6$ kN (about three times the working load), fatigue safety factor $n = 1.52$.
+**Answer:** $C = 0.207$, peak bolt force 27.3 kN, separation at $P_0 = 31.8$ kN (about three times the working load), fatigue safety factor $n = 1.42$.
 
-**Sanity check:** the bolt force rises by only 1.5 kN while the external load rises by 10 kN, and $C$ is well under 1, as it should be for steel plates clamped by a bolt of this length. The preload is the bulk of the bolt stress.
+**Sanity check:** the bolt force rises by about 2.1 kN while the external load rises by 10 kN, and $C$ is well under 1, as it should be for steel plates clamped by a bolt of this length. The preload is the bulk of the bolt stress.
 
 <details><summary>Verification</summary>
 
@@ -168,28 +170,31 @@ expect(P, "10000 N")
 expect(kb, "580 kN/mm")
 tn = tan(pi / 6)
 expect(tn, "0.5774")
-km = pi * E * d * tn / log(((2 * l * tn + dw - d) * (dw + d)) / ((2 * l * tn + dw + d) * (dw - d)))
-expect(km, "3384 kN/mm")
+t = l / 2
+kf = pi * E * d * tn / log(((2 * t * tn + dw - d) * (dw + d)) / ((2 * t * tn + dw + d) * (dw - d)))
+expect(kf, "4440 kN/mm")
+km = kf / 2
+expect(km, "2220 kN/mm")
 C = kb / (kb + km)
-expect(C, "0.1463")
-expect(C, "0.146")
+expect(C, "0.2071")
+expect(C, "0.207")
 Fi = 0.75 * Sp * At
 expect(Fi, "25.2 kN")
 expect(Fi, "25230 N")
 Fb = Fi + C * P
-expect(Fb, "26.7 kN")
+expect(Fb, "27.3 kN")
 Fm = Fi - (1 - C) * P
-expect(Fm, "16.7 kN")
+expect(Fm, "17.3 kN")
 P0 = Fi / (1 - C)
-expect(P0, "29.6 kN")
+expect(P0, "31.8 kN")
 sa = C * P / (2 * At)
 sm = Fi / At + sa
-expect(sa, "12.6 MPa")
-expect(sm, "447.6 MPa")
+expect(sa, "17.9 MPa")
+expect(sm, "452.9 MPa")
 n = 1 / (sa / Se + sm / Sut)
-expect(n, "1.52")
-expect(1 - C, "0.8537")
-expect(C * P, "1.5 kN")
+expect(n, "1.42")
+expect(1 - C, "0.7929")
+expect(C * P, "2.1 kN")
 check(Fm > q(0, "kN"), "joint stays clamped at peak load")
 check(P0 > 2 * P, "separation load well above working load")
 ```

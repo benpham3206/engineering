@@ -48,7 +48,7 @@ Trusted to own a component that ships: deeper analysis, design data, and the lim
 - Heat transfer and compressible flow: the [heat transfer sheet](physics/reference-heat-transfer.md) and the [compressible flow sheet](physics/reference-compressible-flow.md).
 - Vibration and control: the [vibrations sheet](physics/reference-vibrations.md) and the [controls sheet](physics/reference-controls.md) (modes, stability tests, root locus, frequency response, margins, sampled control).
 - Advanced solid mechanics: the [solid mechanics sheet](physics/reference-solid-mechanics.md) (tensors, energy methods, thick cylinders, plates, shells).
-- Fracture and fatigue: the [fracture toughness](materials/reference.md#fracture-toughness-and-critical-crack-size), [fatigue basics](materials/reference.md#fatigue-basics), and [design fatigue](design/reference.md#fatigue) sections today; a fracture and fatigue sheet in materials (planned).
+- Fracture and fatigue: the [fracture and fatigue sheet](materials/reference-fracture-fatigue.md).
 - Machine elements: the [machine design sheet](design/reference-machine-design.md).
 - Electrical power: the [electrical power sheet](applications/electrical/reference.md) (phasors, three-phase, per-unit, faults).
 - Manufacturing: the [manufacturing sheet](manufacturing/reference.md) for machining, joining, forming, fits, and process statistics.
@@ -92,7 +92,8 @@ One owner per family. Where a new owner sheet replaced a section of an older she
 | Gravitation, orbits, rocket equation | [orbital mechanics sheet](physics/reference-orbital-mechanics.md) | owner |
 | Three-phase power, per-unit, transformers, faults | [electrical power sheet](applications/electrical/reference.md) | owner |
 | Material properties, elastic constants, selection indices | [materials sheet](materials/reference.md) | today |
-| Fracture mechanics, fatigue, creep | [materials sheet](materials/reference.md#fracture-toughness-and-critical-crack-size) | today; fracture and fatigue sheet planned |
+| Fracture mechanics, fatigue | [fracture and fatigue sheet](materials/reference-fracture-fatigue.md) | owner |
+| Creep | [materials sheet](materials/reference.md) | today |
 | Safety factors, failure theories, tolerancing, fits | [design sheet](design/reference.md) | today |
 | Fasteners, shafts, bearings, gears, springs | [machine design sheet](design/reference-machine-design.md) | owner |
 | Reliability, availability, fault trees | [reliability sheet](design/reference-reliability.md) | owner |

@@ -8,7 +8,7 @@ Lookup sheet for the formulation of the finite element method: weak forms, shape
 ## Principles
 
 - A finite element model solves an approximate problem exactly. The unknown is restricted to the shapes the elements can represent, and the solver finds the best member of that set in an energy sense.
-- For a displacement-based model of a linear elastic body with conforming elements and exact integration, the computed strain energy never exceeds the exact value, so the model is on average too stiff, never too soft.
+- For a force-loaded displacement-based model of a linear elastic body with zero prescribed displacements, conforming elements, and exact integration, the computed strain energy never exceeds the exact value, so the model is on average too stiff, never too soft.
 - Convergence needs two properties. An element must reproduce rigid-body motion and constant strain (completeness), and displacement must be continuous across element edges (compatibility). The patch test checks both.
 - Equilibrium holds in a weighted-average sense, not point by point. Stress is discontinuous between elements, and the size of the jump measures the local error.
 - Displacements converge faster than stresses. A displacement that looks right does not prove the stress is right.
@@ -84,7 +84,7 @@ Holds when: the response is linear, loads do not depend on the deformation, and 
 Breaks when: the response is nonlinear (follower loads, contact, plasticity), where $\Pi$ is not quadratic, or the constraints leave rigid-body motion so $\mathbf{K}$ is singular.
 Source and basis: derived from the principle of virtual work; taught in [Finite element method](01-finite-element-method.md).
 
-Consequence. The strain energy of a conforming model rises toward the exact value as the mesh is refined, so $U$ is a convergence monitor that cannot overshoot.
+Consequence. For force-loaded models with zero prescribed displacements, the strain energy of a conforming model rises toward the exact value as the mesh is refined, so $U$ is a convergence monitor that cannot overshoot. With prescribed nonzero displacements and no applied forces, the model can instead converge from above.
 
 Example. One bar element, $E = 200\ \text{GPa}$, $A = 100\ \text{mm}^2$, $l = 1\ \text{m}$, fixed at one end with a 10 kN end pull. The stiffness is $k = E A/l$ and the tip moves $d = P/k$. The stiffness is 20 MN/m and the tip moves 0.500 mm. Then $U = \tfrac{1}{2} P d = 2.50\ \text{J}$ and $\Pi_{\text{min}} = -2.50\ \text{J}$.
 
@@ -186,7 +186,7 @@ expect((a1 + b1 * xc + c1 * yc) / twoA, "0.333")
 
 ### Bilinear quadrilateral and isoparametric mapping
 
-An **isoparametric** element uses the same shape functions for the geometry and for the unknown. The four-node quadrilateral lives on the square $-1 \le \xi, \eta \le 1$ with corner coordinates $(\xi_i, \eta_i) = (\mp 1, \mp 1)$ in counterclockwise order, and maps to the physical element by interpolating its corner coordinates.
+An **isoparametric** element uses the same shape functions for the geometry and for the unknown. The four-node quadrilateral lives on the square $-1 \le \xi, \eta \le 1$ with corner coordinates $(-1,-1)$, $(1,-1)$, $(1,1)$, and $(-1,1)$ in counterclockwise order, and maps to the physical element by interpolating its corner coordinates.
 
 $$N_i = \frac{(1 + \xi_i \xi)(1 + \eta_i \eta)}{4}, \qquad x = \sum N_i x_i, \quad y = \sum N_i y_i$$
 
@@ -200,7 +200,7 @@ Variables:
 | $\xi_i$, $\eta_i$ | natural coordinates of node $i$ | dimensionless |
 | $N_i$ | shape function of node $i$ | dimensionless |
 | $x_i$, $y_i$ | physical coordinates of node $i$ | m |
-| $\mathbf{J}$ | Jacobian matrix of the mapping | dimensionless |
+| $\mathbf{J}$ | Jacobian matrix of the mapping | m |
 | $\det \mathbf{J}$ | area scale factor, physical area per natural area | $\text{m}^{2}$ |
 
 Holds when: the quadrilateral is convex, so $\det \mathbf{J} > 0$ at every integration point.
@@ -472,7 +472,7 @@ Source and basis: derived from partitioning the system and from the energy of a 
 
 Natural conditions. A distributed traction $t$ over an edge of length $L_s$ becomes nodal forces $\int \mathbf{N}^{\mathsf{T}} t\,ds$: for a linear edge $t L_s/2$ at each node; for a quadratic edge $t L_s$ times $(1/6,\ 2/3,\ 1/6)$. A force on a quadratic edge is not equal at the three nodes, and a model that splits it equally gives a wrong stress near the edge.
 
-Symmetry. Cut the model on the plane of symmetry, fix the displacement normal to the plane, and leave the in-plane directions free. For an antisymmetric load, fix the in-plane displacements and the rotation about the plane normal instead. A model with more than one symmetry plane needs a constraint on each.
+Symmetry. Cut the model on the plane of symmetry and fix the displacement normal to the plane. For beam and shell elements, also fix the two rotations about axes in the plane; leave the in-plane translations free. For an antisymmetric load, fix the in-plane displacements and the rotation about the plane normal instead. A model with more than one symmetry plane needs a constraint on each.
 
 Example. The one-bar problem ($k = 20\ \text{MN/m}$, $P = 10\ \text{kN}$) with node 1 held by a penalty $k_p = 1000\,k$. Then $u_2 = (P/k)(1 + k/k_p)$, which is 0.5005 mm against the exact 0.5 mm, an error of 0.1 percent equal to $k/k_p$.
 
@@ -606,7 +606,7 @@ Holds when: the system is linear and the step resolves the highest mode that car
 Breaks when: the response contains modes with $\omega \Delta t \gg 1$ (they are retained without numerical damping and can pollute the result), or the problem is nonlinear (stability is no longer guaranteed; iterate each step).
 Source and basis: derived from integrating the acceleration with its mean value over the step; the amplification matrix has unit-magnitude eigenvalues, so there is no amplitude decay.
 
-The period is stretched, not the amplitude. The relative period elongation is about $(\omega \Delta t)^2/12$ for small $\omega \Delta t$. Rule of thumb: use at least 20 steps per period of the highest mode of interest (about 2 percent error in the period at ten steps drops to about 0.5 percent at twenty).
+The period is stretched, not the amplitude. The relative period elongation is about $(\omega \Delta t)^2/12$ for small $\omega \Delta t$. Rule of thumb: use at least 20 steps per period of the highest mode of interest; the period error falls from 3.21 percent at ten steps to 0.82 percent at twenty.
 
 Example. A mode at $\omega = 100\ \text{rad/s}$ with $\Delta t = 5\ \text{ms}$ has $\omega \Delta t = 0.5$ and 12.6 steps per period. The integrator frequency satisfies $\bar\omega \Delta t = 2 \arctan(\omega \Delta t/2) = 0.490$, so the computed period is 2.05 percent too long.
 
@@ -619,6 +619,14 @@ expect(2 * pi / x, "12.6")
 th = 2 * atan(x / 2)
 expect(th, "0.490")
 expect((x / th - 1) * 100, "2.05")
+n10 = q(10, "")
+x10 = 2 * pi / n10
+th10 = 2 * atan(x10 / 2)
+expect((x10 / th10 - 1) * 100, "3.21")
+n20 = q(20, "")
+x20 = 2 * pi / n20
+th20 = 2 * atan(x20 / 2)
+expect((x20 / th20 - 1) * 100, "0.82")
 ```
 
 ### Transient explicit integration
@@ -669,7 +677,7 @@ Variables:
 
 | Symbol | Meaning | SI unit |
 |---|---|---|
-| $\lVert \mathbf{e} \rVert_{E}$ | error in the energy norm | J |
+| $\lVert \mathbf{e} \rVert_{E}$ | error in the energy norm | $\text{kg}^{1/2}\,\text{m/s}$ |
 | $\lVert e_u \rVert_{L_2}$ | root-mean-square error in displacement | m |
 | $\lVert e_\sigma \rVert$ | root-mean-square error in stress | Pa |
 | $h$ | characteristic element size | m |
@@ -677,7 +685,7 @@ Variables:
 
 Holds when: the proportionality constant depends on the solution and mesh shape but not on $h$, the exact solution is smooth (no singularity), elements are not badly distorted, and the mesh is fine enough to be in the asymptotic range.
 Breaks when: the solution has a singularity (the rate falls, see below), elements are very distorted, or the mesh is too coarse to see the asymptotic rate.
-Source and basis: derived from the best-approximation property of the energy-norm solution and polynomial interpolation error; the study of observed order, Richardson extrapolation, and the grid convergence index is in [Verification and validation reference](reference-verification-validation.md).
+Source and basis: derived from the best-approximation property of the energy-norm solution and polynomial interpolation error. The strain-energy error, which is proportional to the squared energy norm, falls as $h^{2p}$. The study of observed order, Richardson extrapolation, and the grid convergence index is in [Verification and validation reference](reference-verification-validation.md).
 
 Typical rates, for smooth solutions:
 
@@ -788,7 +796,7 @@ Holds when: the geometry has a sharp re-entrant corner or crack in a linear elas
 Breaks when: the real part has a radius or a plastic zone (the true peak stress is finite and set by the radius), in which case model the radius with enough elements and the stress converges.
 Source and basis: derived from the asymptotic solution of the elasticity equations near the singular point.
 
-The strain energy still converges, but at a reduced rate: the energy-norm error falls as $h^{\lambda}$. Reading the peak stress at the singular point therefore gives a number that depends on the element size and carries no design meaning. Take the stress a few element sizes away, model the real fillet, spread the point load over a contact patch, or use a fracture parameter instead of a stress.
+The strain energy still converges, but at a reduced rate: the energy-norm error falls as $h^{\lambda}$, so the strain-energy error falls as $h^{2\lambda}$. Reading the peak stress at the singular point therefore gives a number that depends on the element size and carries no design meaning. Take the stress a few element sizes away, model the real fillet, spread the point load over a contact patch, or use a fracture parameter instead of a stress.
 
 Example. For $\lambda = 0.5$ (a crack), halving $h$ raises the computed tip stress by a factor $2^{1 - \lambda} = 1.414$, and the energy-norm error falls only by $2^{0.5} = 1.414$ per halving instead of 2.
 
@@ -916,7 +924,7 @@ After solving:
 - A mesh that is too coarse overestimates stiffness (displacements low) for conforming elements. A result far more flexible than the hand value suggests a missing load path, a wrong material, or wrong units.
 - Natural frequency of a mass on a spring is $\sqrt{k/m}$; if the lowest nonzero frequency of a model is far from the hand estimate of its main mode, check mass and stiffness units first.
 - Total mass from the mass matrix equals density times volume. A fraction means a missing part or wrong density.
-- Peak stress that doubles when the element size halves at a corner is a singularity, not a result.
+- Peak stress that keeps rising by a steady factor when the element size halves signals a singularity, not a converged result. The factor is at most about 1.4 at a corner or crack and 2 at a point load.
 - Mesh convergence plot: the answer should settle, and the error should fall at the rate given in the error table. If it does not, the mesh is not in the asymptotic range or the solution is singular.
 
 ## Further reference

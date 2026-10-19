@@ -164,11 +164,11 @@ Variables:
 | $t_r$ | rise time from 0 to 100 percent (first crossing of the final value) | s |
 | $t_{s,2\%}$, $t_{s,5\%}$ | settling time into a band of 2 or 5 percent around the final value | s |
 
-Holds when: the closed loop is well approximated by two dominant poles with no nearby zero or third pole, the input is a step, and the system is linear. The settling time is the last time the response leaves the stated band. The estimates use the envelope $e^{-\zeta\omega_n t}$ equal to the band, so $e^{-4} = 0.0183$ for 2 percent. They overestimate the true settling time slightly.
+Holds when: the closed loop is well approximated by two dominant poles with no nearby zero or third pole, the input is a step, and the system is linear. The settling time is the last time the response leaves the stated band. The estimates use the envelope $e^{-\zeta\omega_n t}$ equal to the band, so $e^{-4} = 0.0183$ for 2 percent. They can be either high or low; simulate the response when a specification is tight.
 Breaks when: a zero near the poles adds overshoot, a third pole slows the rise, dead time is present, or the loop saturates. The 10 to 90 percent rise time is shorter than $t_r$ above and must be simulated if a specification uses that definition. At $\zeta \ge 1$ there is no overshoot; use the two real-pole time constants instead. Vibration use of the same model is in [Vibrations reference](reference-vibrations.md).
 Source and basis: derived from the inverse Laplace transform of the step response; taught in [Feedback control](14-controls.md).
 
-Example: $\zeta = 0.5$, $\omega_n = 10$ rad/s. Then $\omega_d = 8.66$ rad/s, overshoot $M_p = 0.163$, peak time 0.363 s, rise time 0.242 s, and 2 percent settling about 0.80 s (5 percent about 0.60 s). An overshoot spec of 0.2 requires $\zeta \ge 0.456$.
+Example: $\zeta = 0.5$, $\omega_n = 10$ rad/s. Then $\omega_d = 8.66$ rad/s, overshoot $M_p = 0.163$, peak time 0.363 s, rise time 0.242 s, and 2 percent settling about 0.808 s (the envelope estimate is 0.80 s). The 5 percent settling time is about 0.529 s (the estimate is 0.60 s). An overshoot spec of 0.2 requires $\zeta \ge 0.456$.
 
 <details><summary>Verification</summary>
 
@@ -182,6 +182,12 @@ expect(pi / wd, "0.363 s")
 expect((pi - acos(z)) / wd, "0.242 s")
 expect(4 / (z * wn), "0.80 s")
 expect(3 / (z * wn), "0.60 s")
+e2a = exp(-z * wn * q(0.807, "s")) * (cos(wd * q(0.807, "s")) + z / sqrt(1 - z**2) * sin(wd * q(0.807, "s")))
+e2b = exp(-z * wn * q(0.808, "s")) * (cos(wd * q(0.808, "s")) + z / sqrt(1 - z**2) * sin(wd * q(0.808, "s")))
+check(abs(e2a) > 0.02 and abs(e2b) < 0.02, "2 percent settling crosses between 0.807 s and 0.808 s")
+e5a = exp(-z * wn * q(0.528, "s")) * (cos(wd * q(0.528, "s")) + z / sqrt(1 - z**2) * sin(wd * q(0.528, "s")))
+e5b = exp(-z * wn * q(0.529, "s")) * (cos(wd * q(0.529, "s")) + z / sqrt(1 - z**2) * sin(wd * q(0.529, "s")))
+check(abs(e5a) > 0.05 and abs(e5b) < 0.05, "5 percent settling crosses between 0.528 s and 0.529 s")
 expect(exp(-4), "0.0183")
 Mp = q(0.2, "")
 expect(-log(Mp) / sqrt(pi**2 + log(Mp)**2), "0.456")
@@ -405,7 +411,7 @@ Variables:
 | $\omega_{pc}$ | phase crossover frequency | rad/s |
 | $\zeta$ | damping ratio of the closed loop | dimensionless |
 
-Holds when: the open loop is stable with a single crossover, and the loop is LTI. The rule $\zeta \approx \phi_m/100$ with $\phi_m$ in degrees is approximate. It is a straight-line fit to the exact second-order curve, good to a few percent for $\zeta$ up to about 0.6, and it overestimates beyond that. It does not hold for loops that are not close to second order. A margin of about $45^\circ$ and a gain margin of 2 or more are common design floors; the right value depends on how much the plant varies.
+Holds when: the open loop is stable with a single crossover, and the loop is LTI. The rule $\zeta \approx \phi_m/100$ with $\phi_m$ in degrees is approximate. Against the exact second-order curve, it estimates $\zeta$ within about 15 percent for $0.1 \le \zeta \le 0.7$. It overestimates below about 0.6 and underestimates above. It does not hold for loops that are not close to second order. A margin of about $45^\circ$ and a gain margin of 2 or more are common design floors; the right value depends on how much the plant varies.
 Breaks when: there are several crossover frequencies (read the Nyquist plot instead), the open loop is unstable (margins alone do not decide stability), or a delay is present (it lowers $\phi_m$ without changing the magnitude). Large margins can coexist with a high peak of the sensitivity function if the plot passes close to $-1$ at another frequency.
 Source and basis: derived from the definitions and the Nyquist criterion; the exact second-order formula is derived from $|L(j\omega_c)| = 1$. Taught in [Feedback control](14-controls.md).
 
@@ -562,7 +568,7 @@ expect(-(a11 + a22) / (2 * sqrt(a11 * a22 - a12 * a21)), "0.5")
 
 State feedback $u = -\mathbf{K}\mathbf{x} + r$ moves the closed-loop poles to the roots of $\det(s\mathbf{I} - \mathbf{A} + \mathbf{B}\mathbf{K})$. In controllable canonical form of order two the gains read off directly.
 
-$$s^2 + (a_1 + k_2)s + (a_0 + k_1) = s^2 + 2\zeta_d\omega_d s + \omega_d^2$$
+$$s^2 + (a_1 + k_2)s + (a_0 + k_1) = s^2 + 2\zeta_d\omega_{n,d} s + \omega_{n,d}^2$$
 
 Variables:
 
@@ -573,25 +579,25 @@ Variables:
 | $k_1$ | state-feedback gain on the first state | $1/\text{s}^{2}$ |
 | $k_2$ | state-feedback gain on the second state | 1/s |
 | $\zeta_d$ | desired damping ratio | dimensionless |
-| $\omega_d$ | desired natural frequency | rad/s |
+| $\omega_{n,d}$ | desired natural frequency | rad/s |
 
 Holds when: the pair $(\mathbf{A}, \mathbf{B})$ is controllable, the model is accurate, all states are available (or estimated), and the form is the canonical one above (for other forms use a transform or Ackermann's formula).
 Breaks when: the pair is not controllable (some poles cannot move), the poles are placed far faster than the plant (the actuator saturates and noise is amplified), or the model error moves the true poles. An observer that estimates the states has its own poles, usually placed faster than the regulator poles so estimation error dies out first; the limit is measurement noise.
 Source and basis: derived from the characteristic polynomial of $\mathbf{A} - \mathbf{B}\mathbf{K}$; taught in [Feedback control](14-controls.md).
 
-Example: for $s^2 + 2s + 4$ ($a_1 = 2$, $a_0 = 4$), the target $\zeta_d = 0.7$, $\omega_d = 5$ rad/s gives $s^2 + 7s + 25$. So $k_2 = 5$ 1/s and $k_1 = 21$ $1/\text{s}^2$.
+Example: for $s^2 + 2s + 4$ ($a_1 = 2$, $a_0 = 4$), the target $\zeta_d = 0.7$, $\omega_{n,d} = 5$ rad/s gives $s^2 + 7s + 25$. So $k_2 = 5$ 1/s and $k_1 = 21$ $1/\text{s}^2$.
 
 <details><summary>Verification</summary>
 
 ```verify
 zd = q(0.7, "")
-wd = q(5, "rad/s")
+wnd = q(5, "rad/s")
 a1 = q(2, "1/s")
 a0 = q(4, "1/s^2")
-expect(2 * zd * wd, "7 rad/s")
-expect(wd**2, "25 1/s^2")
-expect(2 * zd * wd - a1, "5 1/s")
-expect(wd**2 - a0, "21 1/s^2")
+expect(2 * zd * wnd, "7 rad/s")
+expect(wnd**2, "25 1/s^2")
+expect(2 * zd * wnd - a1, "5 1/s")
+expect(wnd**2 - a0, "21 1/s^2")
 ```
 
 </details>
@@ -675,7 +681,7 @@ expect((1 - a) / (1 - a), "1")
 
 The **Tustin (bilinear) transformation** converts a continuous controller to a discrete one by approximating $e^{sT_s}$ with a ratio of first-order terms.
 
-$$s \to \frac{2}{T_s}\,\frac{z - 1}{z + 1} \qquad \omega_a = \frac{2}{T_s}\tan\frac{\omega_d T_s}{2}$$
+$$s \to \frac{2}{T_s}\,\frac{z - 1}{z + 1} \qquad \omega_a = \frac{2}{T_s}\tan\frac{\omega_{\text{dig}} T_s}{2}$$
 
 Variables:
 
@@ -683,22 +689,22 @@ Variables:
 |---|---|---|
 | $T_s$ | sample period | s |
 | $\omega_a$ | analog frequency | rad/s |
-| $\omega_d$ | digital frequency that the transformation places there | rad/s |
+| $\omega_{\text{dig}}$ | digital frequency that the transformation places there | rad/s |
 
-Holds when: the controller is LTI and stable (the map takes the left half plane exactly onto the unit disk, so stability is preserved). The frequency axis is warped, so $\omega_d$ and $\omega_a$ agree closely only when $\omega_d T_s$ is small. To match a critical frequency exactly, prewarp: pick the analog design frequency $\omega_a$ so that the digital filter has its feature at $\omega_d$.
+Holds when: the controller is LTI and stable (the map takes the left half plane exactly onto the unit disk, so stability is preserved). The frequency axis is warped, so $\omega_{\text{dig}}$ and $\omega_a$ agree closely only when $\omega_{\text{dig}} T_s$ is small. To match a critical frequency exactly, prewarp: pick the analog design frequency $\omega_a$ so that the digital filter has its feature at $\omega_{\text{dig}}$.
 Breaks when: the critical frequency approaches half the sampling rate (the warping becomes large), or the controller must match a continuous design in the time domain rather than the frequency domain.
 Source and basis: derived from the trapezoidal-rule approximation of integration.
 
-Example: $T_s = 0.02$ s and $\omega_d = 10$ rad/s. The analog frequency that maps there is $\omega_a = 10.03$ rad/s, a warp of 0.33 percent.
+Example: $T_s = 0.02$ s and $\omega_{\text{dig}} = 10$ rad/s. The analog frequency that maps there is $\omega_a = 10.03$ rad/s, a warp of 0.33 percent.
 
 <details><summary>Verification</summary>
 
 ```verify
 Ts = q(0.02, "s")
-wd = q(10, "rad/s")
-wa = 2 / Ts * tan(wd * Ts / 2)
+wdig = q(10, "rad/s")
+wa = 2 / Ts * tan(wdig * Ts / 2)
 expect(wa, "10.03 rad/s")
-expect(100 * (wa / wd - 1), "0.33")
+expect(100 * (wa / wdig - 1), "0.33")
 ```
 
 </details>
@@ -758,9 +764,9 @@ Variables:
 | $\omega_c$ | gain crossover frequency | rad/s |
 | $T_{\text{margin}}$ | delay margin, the extra delay that brings the loop to instability | s |
 
-Holds when: the approximation is used for $\omega T_d \lesssim 1$. Its phase is $-2\arctan(\omega T_d/2)$, which tracks $-\omega T_d$ to within a few percent there. The delay margin holds when the loop has one crossover and is stable without the delay.
+Holds when: the approximation is used for $\omega T_d \lesssim 1$. Its phase is $-2\arctan(\omega T_d/2)$, which differs from $-\omega T_d$ by about 2 percent at $\omega T_d = 0.5$ and 7 percent at $\omega T_d = 1$. The delay margin holds when the loop has one crossover and is stable without the delay.
 Breaks when: $\omega T_d$ is near or above 1 (use a higher-order Pade or the exact frequency response), or the loop has several crossovers (the delay margin is then the smallest over all of them). The approximation puts a right-half-plane zero at $2/T_d$, which is why a delay limits the crossover to well below $1/T_d$.
-Source and basis: derived from the first-order [2/2] Pade expansion of the exponential and from the phase definition of the margin.
+Source and basis: derived from the first-order [1/1] Pade approximant of the exponential and from the phase definition of the margin.
 
 Example: $T_d = 0.05$ s at $\omega = 10$ rad/s loses 0.5 rad ($28.6^\circ$) exactly, and the Pade model gives 0.490 rad. The loop $L = 4/(s(s + 2))$ with $\phi_m = 0.905$ rad and $\omega_c = 1.572$ rad/s tolerates an extra delay of $0.575$ s before instability.
 

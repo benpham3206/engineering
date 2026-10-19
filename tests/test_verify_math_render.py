@@ -58,5 +58,14 @@ class CollapsedEscape(unittest.TestCase):
         self.assertEqual(verify.bare_commands(r"$T = arepsilon T_s$ and $x = frac{1}{2}$"), ["epsilon", "frac"])
 
 
+class FractionalPowers(unittest.TestCase):
+    def test_exponent_slash_is_not_a_division(self):
+        units = verify.Data([]).units
+        dims = lambda u: [str(x) for x in units.parse(u).d]  # noqa: E731
+        self.assertEqual(dims("Pa m^1/2"), dims("kg m^-1/2 s^-2"))
+        self.assertEqual(dims("kg^1/2 m/s"), dims("J^1/2"))
+        self.assertEqual(dims("m^3/kg"), ["3", "-1", "0", "0", "0", "0", "0"])
+
+
 if __name__ == "__main__":
     unittest.main()

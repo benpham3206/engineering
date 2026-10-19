@@ -330,7 +330,7 @@ Variables:
 
 Holds when: the degree of $P$ is less than that of $Q$ (otherwise divide first) and $Q$ is factored over the reals.
 Breaks when: the factorization of $Q$ is wrong, or a repeated factor is given only one term (it needs a term for each power up to its multiplicity).
-Source and basis: derived from the algebra of rational functions; taught in [Algebra](01-algebra.md).
+Source and basis: derived from the algebra of rational functions.
 
 - Cover-up rule for a simple root $r$: $A=\dfrac{P(r)}{Q'(r)}$.
 - Example: $\dfrac{1}{(x-1)(x+2)}=\dfrac13\left(\dfrac{1}{x-1}-\dfrac{1}{x+2}\right)$, so $\int_{2}^{3}=\tfrac13\ln\tfrac85=0.1567$. At $x=2.5$ the integrand is $0.1481$.
@@ -443,11 +443,12 @@ Holds when: $f'$ is continuous on $[a,b]$ and $f\ge 0$ for the surface formula.
 Breaks when: the curve has a vertical tangent (use a parametric form $s=\int\sqrt{x'^{2}+y'^{2}}\,dt$).
 Source and basis: derived from the Pythagorean length of a small segment; see OpenStax [Calculus Volume 2](https://openstax.org/books/calculus-volume-2/pages/1-introduction).
 
-- Example: $y=\tfrac23x^{3/2}$ has $y'=\sqrt{x}$, so over $0\le x\le 3\ \text{m}$ the length is $\tfrac23(4^{3/2}-1)=4.6667\ \text{m}$. The cone $y=x$ on $0\le x\le 1\ \text{m}$ has $S=\pi\sqrt{2}=4.4429\ \text{m}^2$.
+- Example: $y=\tfrac23x^{3/2}/\sqrt{L}$ with $L=1\ \text{m}$ has $y'=\sqrt{x/L}$, so over $0\le x\le 3\ \text{m}$ the length is $\tfrac{2L}{3}(4^{3/2}-1)=4.6667\ \text{m}$. The cone $y=x$ on $0\le x\le 1\ \text{m}$ has $S=\pi\sqrt{2}=4.4429\ \text{m}^2$.
 
 ```verify
-L = q(3, "m")
-expect((2 / 3) * ((1 + 3) ** 1.5 - 1) * q(1, "m"), "4.6667 m")
+L = q(1, "m")
+x = q(3, "m")
+expect((2 * L / 3) * ((1 + x / L) ** 1.5 - 1), "4.6667 m")
 expect(pi * sqrt(2) * q(1, "m^2"), "4.4429 m^2")
 ```
 
@@ -511,7 +512,7 @@ Variables:
 
 | Symbol | Meaning | SI unit |
 |---|---|---|
-| $W$ | work done by the force | J |
+| $W$ | work done by the applied force on the object | J |
 | $F$ | force along the path | N |
 | $x_{1}$, $x_{2}$ | initial and final positions (spring: stretch from rest length) | m |
 | $k_s$ | spring stiffness | N/m |
@@ -521,11 +522,11 @@ Variables:
 | $y$, $y_{\text{out}}$ | height of a slice and of the outlet | m |
 | $H$ | depth of the fluid | m |
 
-Holds when: the force is along the displacement and depends only on position; for lifting, the fluid rises vertically and is incompressible.
+Holds when: the force is along the displacement and depends only on position; for lifting, the fluid rises vertically and is incompressible. For a spring, positive work means work done on the spring by the applied force $F=k_sx$.
 Breaks when: the force has a component across the path (use the line integral), or the force depends on velocity or history.
-Source and basis: derived from the definition of work as force times displacement summed over small steps; see [Mechanics reference](../physics/reference-mechanics.md).
+Source and basis: the definite integral sums force times displacement along a path; the physics of work and energy is covered in [Mechanics reference, Work and energy](../physics/reference-mechanics.md#work-and-energy).
 
-- Example: a spring with $k_s=200\ \text{N/m}$ stretched from $0.1\ \text{m}$ to $0.3\ \text{m}$ absorbs $8\ \text{J}$. A full cylindrical tank of radius $1\ \text{m}$ and height $2\ \text{m}$ pumped to its top rim needs $\rho g\pi r^{2}H^{2}/2$; with $\rho=1000\ \text{kg/m}^3$ and standard Earth gravity $g$ this is $61.6\ \text{kJ}$.
+- Example of a definite integral: stretching a spring with $k_s=200\ \text{N/m}$ from $0.1\ \text{m}$ to $0.3\ \text{m}$ requires $W=\int_{x_1}^{x_2}k_sx\,dx=8\ \text{J}$ of work done on the spring by the applied force. A full cylindrical tank of radius $1\ \text{m}$ and height $2\ \text{m}$ pumped to its top rim needs $\rho g\pi r^{2}H^{2}/2$; with $\rho=1000\ \text{kg/m}^3$ and standard Earth gravity $g$ this is $61.6\ \text{kJ}$.
 
 ```verify
 ks = q(200, "N/m")
@@ -649,7 +650,7 @@ Variables:
 
 Holds when: $N$ is a non-negative integer.
 Breaks when: the summation starts at an index other than $1$ (subtract the missing terms).
-Source and basis: derived from mathematical induction; taught in [Algebra](01-algebra.md).
+Source and basis: derived from mathematical induction.
 
 - Example with $N=100$: $5050$, $338350$, $25502500$.
 

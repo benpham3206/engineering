@@ -23,7 +23,7 @@ For steady one-dimensional flow between a station 1 and a station 2 in a duct of
 
 $$
 \rho_1 v_1 A_1 = \rho_2 v_2 A_2, \qquad
-p_1 A_1 + \dot{m}\, v_1 = p_2 A_2 + \dot{m}\, v_2 + \int p\, dA, \qquad
+p_1 A_1 + \dot{m}\, v_1 + \int p\, dA = p_2 A_2 + \dot{m}\, v_2, \qquad
 h_1 + \frac{v_1^2}{2} = h_2 + \frac{v_2^2}{2}
 $$
 
@@ -261,7 +261,7 @@ $$
 \dot{m}_{\max} = A^* p_0 \sqrt{\frac{\gamma}{R_s T_0}}\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma+1}{2(\gamma-1)}}
 $$
 
-Choking occurs when the back pressure satisfies $p_b / p_0 \le \left(2/(\gamma+1)\right)^{\gamma/(\gamma-1)}$.
+For a converging nozzle, choking occurs when the back pressure satisfies $p_b / p_0 \le \left(2/(\gamma+1)\right)^{\gamma/(\gamma-1)}$. A converging-diverging nozzle has a geometry-dependent threshold set by its area ratio.
 
 Variables:
 
@@ -276,10 +276,10 @@ Variables:
 | $p_b$ | back pressure downstream of the nozzle | Pa |
 
 Holds when: the flow upstream of the throat is isentropic, the gas is perfect, and the throat is sonic. Real nozzles carry a discharge coefficient below 1 from boundary-layer blockage.
-Breaks when: the back pressure is above the critical value (the throat is subsonic and the flow rate falls with back pressure), the gas has strong real-gas effects, or the stagnation conditions are unsteady.
+Breaks when: the throat is subsonic because the back pressure is above the geometry-dependent choking threshold, the gas has strong real-gas effects, or the stagnation conditions are unsteady.
 Source and basis: derived from $\dot{m} = \rho^* a^* A^*$ with the sonic stagnation ratios; see [Control volumes and pipe flow](11-control-volumes-pipe-flow.md).
 
-Example. Air with $p_0 = 500\ \text{kPa}$ and $T_0 = 300\ \text{K}$ through a throat of $A^* = 10\ \text{cm}^2$ gives $\dot{m}_{\max} = 1.167\ \text{kg/s}$. The critical back-pressure ratio is 0.5283, so the nozzle is choked for any $p_b$ below 264.1 kPa. Doubling $p_0$ doubles $\dot{m}_{\max}$ and raising $T_0$ lowers it as $1/\sqrt{T_0}$.
+Example. Air with $p_0 = 500\ \text{kPa}$ and $T_0 = 300\ \text{K}$ through a throat of $A^* = 10\ \text{cm}^2$ gives $\dot{m}_{\max} = 1.167\ \text{kg/s}$. For a converging nozzle the critical back-pressure ratio is 0.5283, so it is choked for any $p_b$ below 264.1 kPa. For a converging-diverging nozzle with $A_e/A^* = 1.688$, the subsonic exit root is $\mathrm{Ma}_e = 0.3722$, giving $p_e/p_0 = 0.9088$; it is choked for any $p_b$ below 454.4 kPa. Doubling $p_0$ doubles $\dot{m}_{\max}$ and raising $T_0$ lowers it as $1/\sqrt{T_0}$.
 
 <details><summary>Verification</summary>
 
@@ -294,6 +294,13 @@ expect(mdot, "1.167 kg/s")
 pcrit = (2 / (gam + 1))**(gam / (gam - 1))
 expect(pcrit, "0.5283")
 expect(pcrit * p0, "264.1 kPa")
+gam = q(1.4, "", of="none")
+Mae = q(0.3722, "", of="none")
+ar = (1 / Mae) * (2 / (gam + 1) * (1 + (gam - 1) / 2 * Mae**2))**((gam + 1) / (2 * (gam - 1)))
+expect(ar, "1.688")
+pr = (1 + (gam - 1) / 2 * Mae**2)**(-gam / (gam - 1))
+expect(pr, "0.9088")
+expect(pr * p0, "454.4 kPa")
 ```
 
 </details>
@@ -496,7 +503,7 @@ Holds when: the shock is straight and attached, the flow is steady and two-dimen
 Breaks when: the deflection exceeds the maximum for the given Mach number (the shock detaches and becomes curved), the shock meets a boundary layer or another shock, or the flow is three-dimensional.
 Source and basis: derived from the normal-shock conservation equations applied to the normal velocity component, with tangential velocity continuous across the shock.
 
-For a given $\mathrm{Ma}_1$ and $\theta$, the relation has up to three solutions in $\beta$.
+The cubic in $\sin^2\beta$ can have three mathematical roots for a given $\mathrm{Ma}_1$ and $\theta$. Only the weak and strong roots are physical; the third root would decrease entropy across the shock.
 
 | Branch | Wave angle | Downstream flow | Occurs when |
 |---|---|---|---|
@@ -683,10 +690,21 @@ Typical values for air (typical, near 1 atm):
 These values come from the temperature dependence of molecular heat capacity, which follows from quantum energy levels (see [Modern physics and quantum](18-modern-physics-and-quantum.md)). Use tabulated or computed properties for any gas that reaches such temperatures.
 
 - Where the temperature stays below about 800 K, calorically perfect air with $\gamma = 1.4$ is accurate to a few percent in the isentropic and shock relations.
-- Stagnation temperature in a hypersonic flow can far exceed that limit. A flow at $\mathrm{Ma} = 7$ in air at 220 K has $T_0 = 220 \times (1 + 0.2 \times 49) = 2368\ \text{K}$ for perfect gas, where the real value is lower because internal modes absorb energy.
+- Stagnation temperature in a hypersonic flow can far exceed that limit. A flow at $\mathrm{Ma} = 7$ in air at 220 K has $T_0 = 220 \times (1 + 0.2 \times 49) = 2376\ \text{K}$ for perfect gas, where the real value is lower because internal modes absorb energy.
 - Cryogenic and high-pressure gases need a real-gas equation of state. At a reduced pressure above about 0.1 the compressibility factor departs from 1 and the perfect-gas relations lose accuracy.
 - Condensation. Fast expansion of humid air or a vapor can supercool it below saturation and then condense suddenly, a **condensation shock**. The release of latent heat acts as heat addition (Rayleigh flow) and can choke a wind tunnel or nozzle. Dry the air or heat it before expanding.
 - Different gases change the numbers directly. Monatomic gases have $\gamma = 5/3$, diatomic gases near room temperature have $\gamma = 7/5$, and complex molecules fall toward 1.1 to 1.3 (typical).
+
+<details><summary>Verification</summary>
+
+```verify
+gam = q(1.4, "", of="none")
+Ma = q(7, "")
+T = q(220, "K", of="none")
+expect(T * (1 + (gam - 1) / 2 * Ma**2), "2376 K")
+```
+
+</details>
 
 Source and basis: derived from the kinetic theory of gas heat capacity; the high-temperature values need a property library and are not reproduced here.
 
@@ -707,7 +725,7 @@ Source and basis: derived from the kinetic theory of gas heat capacity; the high
 ## Sanity checks
 
 - Air at ambient temperature has a speed of sound near 340 m/s; a jet at 340 m/s is at $\mathrm{Ma} = 1$.
-- Isentropic flow at $\mathrm{Ma} = 1$ has $T/T_0 = 0.833$ and $p/p_0 = 0.528$ for $\gamma = 1.4$. A choked nozzle needs a pressure ratio of at least 1.893.
+- Isentropic flow at $\mathrm{Ma} = 1$ has $T/T_0 = 0.833$ and $p/p_0 = 0.528$ for $\gamma = 1.4$. A converging nozzle chokes at a pressure ratio $p_0/p_b$ of at least 1.893; a converging-diverging nozzle can choke at a higher back pressure set by its area ratio.
 - Across a normal shock, pressure, density, and temperature all rise and $\mathrm{Ma}$ falls below 1. If any property falls, the shock is wrong.
 - The stagnation pressure ratio across a normal shock is below 1 for every $\mathrm{Ma}_1 > 1$ and equals 1 only at $\mathrm{Ma}_1 = 1$.
 - Choked flow for air is about $0.0404\, A^* p_0 / \sqrt{T_0}$ in kg/s with $A^*$ in $\text{m}^{2}$, $p_0$ in Pa and $T_0$ in K. For $\gamma = 1.4$ and $R_s = 287\ \text{J/(kg K)}$, a throat of $1\ \text{m}^{2}$ at $100\ \text{kPa}$ and $400\ \text{K}$ passes 202.1 kg/s.

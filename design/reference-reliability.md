@@ -413,7 +413,7 @@ check(pC > pA * pB, "single failure dominates the cut set pair")
 
 ## Reliability demonstration tests
 
-A **demonstration test** shows with stated confidence that a reliability requirement is met. Confidence $C$ is the probability, over repeated tests, that the claim is true when the test is passed.
+A **demonstration test** shows with stated confidence that a reliability requirement is met. The confidence level $C$ is the repeated-test coverage of the lower-bound procedure: in at least fraction $C$ of repeated tests, the reported lower bound is no greater than the true reliability. For the zero-failure test below, a design whose true reliability equals the requirement passes with probability $1-C$. A design below the requirement passes less often.
 
 ### Zero-failure success-run test
 
@@ -561,7 +561,7 @@ Before trusting a reliability result:
 - A Weibull unit run for exactly its characteristic life survives with $R = e^{-1}$ whatever its shape.
 - Availability is below one and rises as MTTR falls; an MTTR longer than the MTBF gives availability below 0.5.
 - A 2-out-of-3 system of identical units beats a single unit only when each unit has reliability above 0.5.
-- A common-cause term of $\beta Q$ in a redundant pair caps its failure probability at about $\beta$ times the single-unit value; redundancy cannot beat that.
+- A common-cause term of $\beta Q$ in a redundant pair sets a floor at about $\beta$ times the single-unit value; redundancy cannot reduce the pair's failure probability below that floor.
 - An interval for a mean life from two failures spans an order of magnitude. If a report quotes tight bounds from a few failures, look for the assumption doing the work.
 - Zero failures in $n$ trials at confidence $C$ proves only $R \ge (1 - C)^{1/n}$; it never proves perfect reliability.
 

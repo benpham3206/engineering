@@ -54,7 +54,7 @@ Pull on a wrench rather than pushing. If it slips while you pull, your hand move
 
 A fastener head is sized by the distance across its flats. Metric heads use millimetres (for example 13 mm), and inch heads use fractions of an inch (for example 1/2 in). Some of the two are nearly the same, so a wrench of the wrong system can seem to fit.
 
-A wrench that is a little too large touches the head only at its corners, not along the flats. The same torque is then carried by a small area at each corner, so the corners deform and the head rounds off. Once the head is round, the wrench slips and the fastener often cannot be removed. A wrench a little too small does not go on at all. The rule is simple: use the wrench or socket that fits snugly with no rocking, and when you meet a head that seems to fit two sizes, test both and choose the one with less play. Compute the play with the worked example below.
+A wrench that is a little too large touches the head only at its corners, not along the flats. The same torque is then carried by a small area at each corner, so the corners deform and the head rounds off. Once the head is round, the wrench slips and the fastener often cannot be removed. A wrench that is too small does not go on. The rule is simple: use the wrench or socket that fits snugly with no rocking, and when you meet a head that seems to fit two sizes, test both and choose the one with less play. Compare nominal dimensions in the worked example below, then check the actual fit on the fastener.
 
 Using the wrong system is a design problem as well as a shop problem. A designer who mixes metric and inch fasteners in one assembly forces the user to carry two sets and invites this mistake.
 
@@ -96,19 +96,19 @@ The hazard is the blade cutting fingers close to it, and a blade that breaks. Se
 
 A **miter saw** swings a circular blade down onto work held against a fence, for accurate crosscuts at set angles. A **circular saw** is a hand-held blade that you push along the work, for long cuts.
 
-Kickback is the main hazard of both, and it is worst on the circular saw. If the kerf, the slot the blade cuts, closes on the blade, or the blade twists out of line, the saw is thrown back toward you. Support the work so the cut-off piece does not pinch the blade, set the blade depth just below the thickness of the work, and keep the guard able to retract. On a miter saw keep both hands clear of the blade path, hold the work against the fence, and let the blade stop before lifting it. The blade keeps coasting after the switch is released.
+Kickback is the main hazard of both, and it is worst on the circular saw. If the kerf, the slot the blade cuts, closes on the blade, or the blade twists out of line, the saw is thrown back along the cut line. Support the work so the cut-off piece does not pinch the blade. Set the blade so it projects just past the bottom face of the work, about one tooth height. Keep the guard able to retract, hold the saw with both hands, and stand to one side of the blade's line, not behind it. Never hold the work on your knee or in your hand. On a miter saw keep both hands clear of the blade path, hold the work against the fence, and let the blade stop before lifting it. The blade keeps coasting after the switch is released.
 
 #### Angle grinder
 
 An **angle grinder** spins a disc at very high speed on the side of its head. With a grinding disc it removes metal; with a cut-off disc it cuts; with a wire wheel it cleans.
 
-Flying fragments are the main hazard: discs can shatter, and sparks and metal chips fly off. Entanglement and kickback follow if the disc snags. Use only a disc whose rated maximum speed is at least the grinder's speed, and always use the guard. Hold the grinder with both hands, keep the side handle on, and stand so that sparks and a broken disc miss you. Use a cut-off disc only for cutting and a grinding disc only for grinding; side loading a thin cut-off disc can break it. Let it reach full speed before touching the work.
+Flying fragments are the main hazard: discs can shatter, and sparks and metal chips fly off. Entanglement and kickback follow if the disc snags. Wear a face shield over safety glasses for grinding and cut-off work. Use only a disc whose rated maximum speed is at least the grinder's speed, and always use the guard. Hold the grinder with both hands, keep the side handle on, and stand so that sparks and a broken disc miss you. Use a cut-off disc only for cutting and a grinding disc only for grinding; side loading a thin cut-off disc can break it. Let it reach full speed before touching the work.
 
 #### Belt and disc sanders
 
 A **belt sander** moves an abrasive belt, and a **disc sander** spins an abrasive disc, to shape or smooth a part. The work is pressed against the moving surface.
 
-The hazard is the pinch point between the abrasive and the table, which can draw fingers in, and the heat and dust. Keep the table gap small, feed the work against the direction that pulls it down onto the table, and stay clear of the pinch point. Dust from metals and plastics is an inhalation hazard, and sparks from steel can ignite dust, so use extraction and keep sparks away from stored dust.
+The hazard is the pinch point between the abrasive and the table, which can draw fingers in, and the heat and dust. Keep the table gap small. On a disc sander, use only the side of the disc that moves down toward the table, so the abrasive presses the work onto the table. On a belt sander, use the belt face that runs toward the table or backstop, so it presses the work against the support. Hold and feed the work as the machine instructions direct, with hands clear of the pinch point. Dust from metals and plastics is an inhalation hazard, and sparks from steel can ignite dust, so use extraction and keep sparks away from stored dust.
 
 #### Rotary tool
 
@@ -127,8 +127,8 @@ The hazards are burns, fire, and fumes from heated coatings and plastics. Keep t
 | Cordless drill, impact driver | Bit binds and the tool twists | Clamp the work, hold firmly, ease off at breakthrough |
 | Drill press | Entanglement; work spins | Clamp the work, remove the chuck key, keep clothing and hair clear |
 | Band saw | Cut fingers; blade breaks | Guide just above the work, push stick, never freehand round stock |
-| Miter saw, circular saw | Kickback; blade coasts | Support the offcut, blade depth just through, wait for the blade to stop |
-| Angle grinder | Disc bursts; sparks | Rated disc, guard on, both hands, stand out of the line of the disc |
+| Miter saw, circular saw | Kickback; blade coasts | Support the work and offcut; on a circular saw, use both hands and stand to one side of the blade line; wait for the blade to stop |
+| Angle grinder | Disc bursts; sparks | Face shield over safety glasses, rated disc, guard on, both hands, stand out of the line of the disc |
 | Belt and disc sanders | Pinch point; dust | Small table gap, feed the work onto the table, extract dust |
 | Rotary tool | Thin disc shatters | Face shield, clamped work, discs used as rated |
 | Heat gun | Burns, fire, fumes | Keep the nozzle moving, away from flammables, ventilate |
@@ -157,7 +157,7 @@ $$
 g = w - s
 $$
 
-Here $g$ is the gap (mm), $w$ is the wrench opening (mm), and $s$ is the head size across flats (mm). A negative value means the wrench is too small to go on.
+Here $g$ is the gap (mm), $w$ is the wrench opening (mm), and $s$ is the head size across flats (mm). A negative nominal gap means the nominal wrench opening is smaller than the nominal head; actual fit depends on the wrench and fastener dimensions.
 
 ## Worked example
 
@@ -211,7 +211,7 @@ A drawer holds metric wrenches of 8, 11, 13, 14, and 19 mm. A set of bolts has i
 
 **Given:** $s$ in inches, $w$ in millimetres.
 
-**Find:** The gap $g$ for each metric wrench on its nearest inch head, and which pair rounds a head or does not fit.
+**Find:** The nominal gap $g$ for each metric wrench on its nearest inch head, and which nominal pairs have a larger or smaller wrench opening.
 
 **Assumptions:** The wrench opening equals its nominal size, and the head is exactly its nominal size.
 
@@ -225,9 +225,9 @@ A drawer holds metric wrenches of 8, 11, 13, 14, and 19 mm. A set of bolts has i
 | 14 mm | 0.5625 in | 14.29 mm | -0.29 mm |
 | 19 mm | 0.75 in | 19.05 mm | -0.05 mm |
 
-**Answer:** The 11, 14, and 19 mm wrenches are smaller than the inch heads and do not go on. The 8 mm wrench on a 0.3125 in head leaves 0.06 mm of play, which is small enough to seem to fit and turn the corners. The 13 mm wrench on a 0.5 in head leaves 0.30 mm, which is enough to round the head under high torque.
+**Answer:** Under the nominal-size assumption, the 11, 14, and 19 mm wrench openings are smaller than their paired inch heads, while the 8 and 13 mm openings are larger. These nominal gaps do not establish whether real tools fit or whether a head will round. Try the wrench on the fastener and use it only if it seats fully without rocking.
 
-**Sanity check:** The gap is positive only when the wrench is larger than the head. The play is under half a millimetre in every pair, which is why the mistake is easy to make by eye.
+**Sanity check:** The gap is positive only when the nominal wrench opening is larger than the nominal head. The sign compares nominal dimensions; physical fit depends on the actual wrench and fastener.
 
 <details><summary>Verification</summary>
 
@@ -256,7 +256,7 @@ check(q(13, "mm") > c, "13 mm is larger than 0.5 in")
 
 1. A 6 mm drill bit has a surface speed target of 25 m/min. Find the spindle speed in rpm.
 2. A 3/8 in (0.375 in) drill bit has a surface speed target of 100 ft/min. Find the spindle speed in rpm, to the nearest whole number.
-3. A 14 mm wrench is tried on a 0.5625 in head. Find the gap in mm to two decimals, and say whether the wrench fits.
+3. A 14 mm wrench is compared with a 0.5625 in head. Find the nominal gap in mm to two decimals, and say whether the nominal wrench opening is smaller or larger.
 4. A 10 mm hole must be drilled in a tough alloy with a surface speed target of 12 m/min, but the lowest speed the drill press has is 620 rpm. Find the speed the target requires, the surface speed at 620 rpm, and name one way to proceed.
 5. You must put a 60 mm screw into a hardwood beam and then drill a 3 mm pilot hole for it in a thin aluminium bracket. Name the tool for each job and why.
 
@@ -264,8 +264,8 @@ check(q(13, "mm") > c, "13 mm is larger than 0.5 in")
 
 1. 1326 rpm
 2. 1019 rpm
-3. -0.29 mm. The wrench is smaller than the head and does not fit.
-4. The target requires 382 rpm. At 620 rpm the surface speed is 19.5 m/min, above the target, so the edge overheats and dulls. Options are a drill with a lower speed range, a smaller step with a pilot hole, or a different press speed range.
+3. -0.29 mm. The nominal wrench opening is 0.29 mm smaller than the nominal head. Check the actual wrench on the fastener; use it only if it seats fully without rocking.
+4. The target requires 382 rpm. At 620 rpm the surface speed is 19.5 m/min, above the target, so the edge overheats and dulls. Use a drill press with a slower speed range, or choose a cutter whose rated surface speed suits the alloy.
 5. The long screw needs high torque, so use an impact driver (after a pilot hole for the wood). The 3 mm pilot hole in thin aluminium needs control, so use a drill with a clutch or a drill press, with the bracket clamped, since an impact driver's blows can break the small bit.
 
 ```verify
@@ -277,7 +277,7 @@ Vf = q(100, "ft/min")
 expect(Vf / (pi * Din), "1019 1/min", ans=2)
 gap = q(14, "mm") - q(0.5625, "in")
 expect(gap, "-0.29 mm", ans=3)
-check(gap < q(0, "mm"), "the wrench is smaller than the head", ans=3)
+check(gap < q(0, "mm"), "the nominal wrench opening is smaller than the nominal head", ans=3)
 D10 = q(10, "mm")
 Vt = q(12, "m/min")
 expect(Vt / (pi * D10), "382 1/min", ans=4)

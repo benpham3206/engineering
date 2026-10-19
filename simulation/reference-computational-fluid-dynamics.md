@@ -14,7 +14,7 @@ Computational fluid dynamics (CFD) is the numerical solution of the conservation
 - Information travels along characteristics. A scheme that takes data from the wrong side of a wave is unstable or wrong, and boundary conditions must fit the number of characteristics that enter the domain.
 - Incompressible flow has no equation of state to give pressure. Pressure is a constraint that enforces zero divergence of velocity, and the solver must couple it to velocity.
 - The mesh must resolve the thinnest layer that matters: the boundary layer, the shear layer, the shock. Resolution comes from the physics, not from a cell count.
-- Turbulence is the hard part. Resolving all scales costs a number that grows faster than the cube of the Reynolds number, so every practical method models some scales.
+- Turbulence is the hard part. For homogeneous, isotropic turbulence, resolving all scales costs a number that grows about as the cube of the Reynolds number, so every practical method models some scales.
 - A converged run is not a correct run. Small residuals prove that the algebra settled, not that the discretization, the model, or the boundary conditions are right.
 - Verification (solving the equations right) and validation (solving the right equations) are separate jobs. Grid convergence, Richardson extrapolation, and the grid convergence index are in the [verification and validation reference](reference-verification-validation.md).
 
@@ -98,7 +98,7 @@ What each group controls in a simulation:
 | $\mathrm{Re}$ | Viscous, smooth, steady flow; coarse mesh is enough | Thin boundary layers, turbulence; mesh and model cost climb sharply |
 | $\mathrm{Ma}$ | Below about 0.3 the density change is small and an incompressible solver is usable | Compressible solver needed; shocks and expansion waves appear near and above 1 |
 | $\mathrm{Pr}$ | Thermal layer thicker than the velocity layer | Thermal layer thinner than the velocity layer, so the thermal mesh must be finer |
-| $\mathrm{Pe}$ | Diffusion dominates; central differencing is safe | Advection dominates; a central scheme oscillates and an upwind scheme smears |
+| $\mathrm{Pe}$ | Diffusion dominates over the reference length; central differencing is non-oscillatory only when the cell Peclet number $\mathrm{Pe}_{\Delta}$ is at most 2 | Advection dominates over the reference length; central differencing can still be non-oscillatory when $\mathrm{Pe}_{\Delta}$ is at most 2, while an upwind scheme smears |
 
 Example. A flow with $U = 2$ m/s, $L = 0.5$ m, and $\nu_k = 1.5 \times 10^{-5}$ $\text{m}^{2}$/s (air, typical) has $\mathrm{Re} = UL/\nu_k = 66667$, well into turbulent flow for most geometries.
 
@@ -250,7 +250,8 @@ An explicit time step is stable only if information moves less than about one ce
 $$
 \mathrm{CFL} = \frac{|u|\,\Delta t}{\Delta x} \le \mathrm{CFL}_{\max}
 \qquad
-\Delta t_{\text{diff}} \le \frac{\Delta x^{2}}{2\, n_d\, D}
+\Delta t_{\text{diff}} \le \frac{\Delta x^{2}}{2\, n_d\, D}, \qquad
+\Delta t \lesssim \frac{1}{|u|/\Delta x + 2 n_d D/\Delta x^{2}}
 $$
 
 Variables:
@@ -265,11 +266,11 @@ Variables:
 | $D$ | diffusivity (kinematic viscosity or thermal diffusivity) | $\text{m}^{2}$/s |
 | $n_d$ | number of space dimensions | dimensionless |
 
-Holds when: a uniform mesh, an explicit forward-Euler step, and constant coefficients; other explicit schemes (multi-stage Runge-Kutta) have their own $\mathrm{CFL}_{\max}$ from their stability region.
-Breaks when: the mesh is non-uniform (use the smallest cell, so the finest cell sets the global step), the equation has stiff source terms such as chemistry, or an implicit scheme is used (the limit is then an accuracy limit, not a stability limit).
+Holds when: a uniform mesh, an explicit forward-Euler step, and constant coefficients; the advection CFL bound is for an upwind scheme, and the combined advection-diffusion estimate applies when both terms act together on a uniform mesh. Other explicit schemes (multi-stage Runge-Kutta) have their own $\mathrm{CFL}_{\max}$ from their stability region.
+Breaks when: the mesh has unequal spacing (use $\Delta t_{\text{diff}} \le 1/(2D\sum_i \Delta x_i^{-2})$ instead of the equal-spacing diffusion bound), the equation has stiff source terms such as chemistry, or an implicit scheme is used (the limit is then an accuracy limit, not a stability limit). Forward Euler with central advection is unstable at every time step, so use an upwind or another stable advection discretization.
 Source and basis: derived from the von Neumann stability analysis of the upwind advection and forward-Euler diffusion schemes; the stability limits and the behavior of explicit steps are taught in [Numerical methods](../math/08-numerical-methods.md).
 
-- The CFL limit applies to the fastest signal. In compressible flow that is the flow speed plus the sound speed, $|u| + a$. An incompressible flow has no sound-speed limit.
+- The CFL limit applies to the fastest signal. In compressible flow that is the flow speed plus the sound speed, $|u| + a$. An incompressible flow has no sound-speed limit. When advection and diffusion both act, the explicit step must satisfy the combined estimate above, which is tighter than either separate limit.
 - The diffusion limit scales with $\Delta x^2$, so halving the mesh size cuts the allowed explicit step by four. At fine meshes (near walls) an explicit diffusion step becomes tiny, which is why viscous terms are often treated implicitly.
 - Backward-Euler and other implicit steps are stable for any $\Delta t$ in a linear problem. The price is a global linear system per step, and the step must still be small enough to resolve the time scale of interest. An implicit step with $\mathrm{CFL}$ far above 1 damps waves instead of propagating them.
 - Time-accurate runs of vortex shedding or acoustics need $\mathrm{CFL}$ of order 1 even with an implicit method. Steady-state runs may use a large pseudo-time step.
@@ -383,7 +384,7 @@ A boundary condition supplies the information that the outside of the domain pro
 The wall distance in wall units, written y plus, says whether the first mesh cell sits in the viscous sublayer or in the log layer, and it sets the first-cell height for a wall-resolved or wall-function mesh.
 
 $$
-y^{+} = \frac{y\, u_\tau}{\nu_k}, \qquad u_\tau = \sqrt{\frac{\tau_w}{\rho}} = U\sqrt{\frac{C_f}{2}}, \qquad C_{f} = 0.0592\,\mathrm{Re}_x^{-1/5}
+y^{+} = \frac{y\, u_\tau}{\nu_k}, \qquad u_\tau = \sqrt{\frac{\tau_w}{\rho}} = U\sqrt{\frac{C_f}{2}}
 $$
 
 Variables:
@@ -400,9 +401,9 @@ Variables:
 | $C_f$ | local skin-friction coefficient, $\tau_w/(\tfrac{1}{2}\rho U^2)$ | dimensionless |
 | $\mathrm{Re}_x$ | Reynolds number based on distance $x$ from the leading edge | dimensionless |
 
-Holds when: attached turbulent boundary layer on a smooth flat plate with zero pressure gradient, for $\mathrm{Re}_x$ from about $5 \times 10^5$ to $10^7$.
+Holds when: attached turbulent boundary layer from the leading edge on a smooth flat plate with zero pressure gradient, for $\mathrm{Re}_x$ from about $5 \times 10^5$ to $10^7$; there is no laminar run before the point where $\mathrm{Re}_x$ is evaluated.
 Breaks when: the flow has a pressure gradient, separation, roughness, or strong curvature, in which case the estimate of $C_f$ is only a first guess and the true $y^{+}$ must be read from the solution and the mesh adjusted.
-Source and basis: $y^{+}$, $u_\tau$, and $C_f$ are definitions derived from the wall shear; the skin-friction fit is an empirical correlation recorded with its range in the [thermal-fluids reference](../physics/reference-thermofluids.md#external-flow-drag-and-lift).
+Source and basis: $y^{+}$, $u_\tau$, and $C_f$ are definitions derived from the wall shear; use the correlation and its range in [External flow drag and lift](../physics/reference-thermofluids.md#external-flow-drag-and-lift).
 
 - A wall-resolved mesh puts the first cell center at $y^{+}$ near 1, with several cells below 5, so the viscous sublayer is in the mesh. The wall shear is then computed from the velocity gradient.
 - A wall-function mesh puts the first center in the log layer, which is roughly $y^{+}$ between 30 and 300 for most models (typical; consult the model's documentation). The wall shear then comes from a profile law and not from the mesh.
@@ -410,7 +411,7 @@ Source and basis: $y^{+}$, $u_\tau$, and $C_f$ are definitions derived from the 
 - The estimate is made before the run, since the wall shear is not known yet. After the run, read the actual $y^{+}$ from the solution, because $C_f$ depends on the real flow and the first value is only a guide.
 - Grow the cells away from the wall at a modest ratio, so that the cell size changes smoothly through the boundary layer.
 
-Example. Air with $U = 30$ m/s and $\nu_k = 1.5 \times 10^{-5}$ $\text{m}^{2}$/s over a plate, at $x = 1$ m. Then $\mathrm{Re}_x = 2000000$, $C_f = 0.00325$, and $u_\tau = 1.21$ m/s. For $y^{+} = 1$ the first cell center is at $y = 0.0124$ mm from the wall.
+Example. Air with $U = 30$ m/s and $\nu_k = 1.5 \times 10^{-5}$ $\text{m}^{2}$/s over a plate, at $x = 1$ m. The correlation in [External flow drag and lift](../physics/reference-thermofluids.md#external-flow-drag-and-lift) gives $C_f = 0.00325$ at $\mathrm{Re}_x = 2000000$, so $u_\tau = 1.21$ m/s. For $y^{+} = 1$ the first cell center is at $y = 0.0124$ mm from the wall.
 
 <details><summary>Verification</summary>
 
@@ -420,8 +421,7 @@ x = q(1, "m")
 nu = q(1.5e-5, "m^2/s")
 Rex = U * x / nu
 expect(Rex, "2000000")
-Cf = 0.0592 * Rex**(-0.2)
-expect(Cf, "0.00325")
+Cf = q(0.00325, "", of="none")
 utau = U * sqrt(Cf / 2)
 expect(utau, "1.21 m/s")
 yp = q(1, "")
@@ -437,7 +437,7 @@ Turbulent flow contains eddies from the size of the geometry down to a viscous c
 
 | Approach | What is resolved | What is modeled | Cost and use |
 |---|---|---|---|
-| Direct numerical simulation (DNS) | All scales down to the Kolmogorov scale | Nothing | Grows faster than the cube of $\mathrm{Re}$; limited to low $\mathrm{Re}$ and simple geometry; used to study the physics and build models |
+| Direct numerical simulation (DNS) | All scales down to the Kolmogorov scale | Nothing | Cost grows about as the cube of $\mathrm{Re}$ for homogeneous, isotropic turbulence; limited to low $\mathrm{Re}$ and simple geometry; used to study the physics and build models |
 | Large-eddy simulation (LES) | The large, energy-containing eddies | Eddies smaller than the filter, by a subgrid model | Far cheaper than DNS in the free flow but still costly near walls; time-accurate, three-dimensional |
 | Reynolds-averaged Navier-Stokes (RANS) | Only the mean flow | All turbulent fluctuations, through a closure for the Reynolds stresses | Cheapest; steady or slowly varying; the accuracy depends on the closure and the flow |
 

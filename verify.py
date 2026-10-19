@@ -291,7 +291,10 @@ class Units:
         text = (text or "").strip()
         if text in ("", "1"):
             return Q(1.0)
-        num, _, den = text.partition("/")
+        # The unit's own slash splits numerator from denominator; a slash inside
+        # an exponent (Pa m^1/2) belongs to that power and is kept.
+        parts = re.split(r"(?<!\^\d)(?<!\^-\d)/|(?<=\^\d)/(?!\d)|(?<=\^-\d)/(?!\d)", text, maxsplit=1)
+        num, den = parts[0], parts[1] if len(parts) > 1 else ""
         out = Q(1.0)
         for tok in num.replace("*", " ").replace("\u00b7", " ").split():
             if tok != "1":

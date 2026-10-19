@@ -307,13 +307,13 @@ $$
 \theta = \frac{T\,L}{G\,J}
 $$
 
-Static sizing for combined bending and torsion, ductile, ASME elliptic form (use $M$ and $T$ in $\text{N}\cdot\text{mm}$, $S_y$ in MPa):
+Static sizing for combined bending and torsion in a ductile shaft, using the von Mises distortion-energy criterion (use $M$ and $T$ in $\text{N}\cdot\text{mm}$, $S_y$ in MPa):
 
 $$
 d = \left(\frac{16\,n}{\pi\,S_y}\sqrt{4M^2 + 3T^2}\right)^{1/3}
 $$
 
-- Worked: $M = 150$ $\text{N}\cdot\text{m}$, $T = 200$ $\text{N}\cdot\text{m}$, $S_y = 350$ MPa, $n = 2.5$ gives $d = 25.6$ mm (use a standard size at or above).
+- Worked: $M = 150$ $\text{N}\cdot\text{m}$, $T = 200$ $\text{N}\cdot\text{m}$, $S_y = 350$ MPa, $n = 2.5$ gives $d = 25.5$ mm (use a standard size at or above).
 - Tresca alternative for torsion only: $\tau_{\text{allow}} = 0.5\,S_y/n$, $d_{\min} = (16\,T/(\pi\,\tau_{\text{allow}}))^{1/3}$.
 - Stress concentration (keyway, shoulder, fillet, retaining ring groove) is not in these formulas. Apply $K_f$ for fatigue or check the code.
 - Holds when: the shaft is solid, round, loaded steadily, and uniform. Breaks when: the shaft cycles (use fatigue), has notches, or is hollow with a thin wall.

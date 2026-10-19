@@ -714,15 +714,6 @@ Holds when: thrust and flow are steady and measured under stated conditions (vac
 Breaks when: quoting a sea-level value for an upper-stage mission (vacuum values are higher), mixing a thrust-over-mass-flow value with a per-weight value in another unit system, or comparing engines at different mixture ratios.
 Source and basis: definition of specific impulse using the standard acceleration $g_0$; see [Orbital mechanics and rockets](15-orbital-mechanics-and-rockets.md).
 
-Typical vacuum values (approximate; they vary with propellant, nozzle, and engine cycle):
-
-| Propulsion | $I_{\text{sp}}$ (s, typical) |
-|---|---|
-| Monopropellant hydrazine | 200 to 230 |
-| Liquid kerosene and oxygen | about 300 to 360 |
-| Liquid hydrogen and oxygen | about 390 to 460 |
-| Ion and Hall electric thrusters | 1500 to 4000 |
-
 Example: a thrust of 20 kN at a mass flow of 6.0 kg/s has $v_{\text{e}} = 3333$ m/s and $I_{\text{sp}} = 339.9$ s.
 
 ```verify

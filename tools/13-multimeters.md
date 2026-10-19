@@ -51,7 +51,7 @@ A meter measures **resistance** by pushing a small known current through the par
 
 ### Current: in series, and why the amps jack is dangerous
 
-**Current** flows through a part, so the meter must be part of the path. You break the circuit and connect the meter in **series**, so all the current passes through it. Move the red lead to the amps jack and set the dial to amps before you touch anything.
+**Current** flows through a part, so the meter must be part of the path. Turn the power off. Move the red lead to the amps jack and set the dial to amps before you touch the circuit. Check the jack's continuous and time-limited current ratings before connecting. If the current is unknown, start with the high-current jack and range only when the circuit and meter ratings permit. Open the circuit, connect the meter in **series**, then turn the power on. For current in mains circuits, use a clamp meter rated for the circuit's category and voltage. Do not break a mains circuit to insert a handheld meter.
 
 In amps mode the meter is a very small resistance, a **shunt**, across which it reads the voltage, then reports the current. That tiny resistance is the reason for the hazard. Put the meter on its amps jack across a supply or a battery, which is what happens when you carry the leads from a current measurement and touch them to a voltage source, and you have placed a near-short circuit across it. The current is limited only by the supply and the shunt, and the fuse is the only thing that stops it. If the fuse is the wrong rating, or has been replaced with a wire or a lower-rated part, the leads, the meter, and the supply can overheat or burst.
 
@@ -93,9 +93,9 @@ A meter with no category marking, or one rated for a lower category than the pla
 
 ### Clamp meters
 
-A **clamp meter** measures current without breaking the circuit. Its jaws open and close around one conductor. For AC, the jaws are a transformer core: the conductor is the primary and a coil in the meter is the secondary. A DC-capable clamp uses a Hall-effect sensor, which measures the magnetic field directly. Because the field depends on the net current through the jaws, clamp around one conductor only. Two conductors of a cable carrying equal and opposite current show zero.
+A **clamp meter** measures current without breaking the circuit. Its jaws open and close around one conductor. For AC, the jaws are a transformer core: the conductor is the primary and a coil in the meter is the secondary. A DC-capable clamp uses a Hall-effect sensor, which measures the magnetic field directly. Because the field depends on the net current through the jaws, clamp around one insulated conductor only. Two conductors of a cable carrying equal and opposite current show zero. Use a clamp meter rated for the circuit's measurement category and voltage. A clamp does not make live mains work safe by itself.
 
-A clamp is safe for high currents, adds no burden voltage, and needs no circuit change. It is less accurate than a series measurement at low current, and external magnetic fields and the conductor's position in the jaws change the reading. Many clamp meters also have voltage and resistance modes with leads, and the same rules apply to those.
+A clamp adds no burden voltage and needs no circuit change. It is less accurate than a series measurement at low current, and external magnetic fields and the conductor's position in the jaws change the reading. Many clamp meters also have voltage and resistance modes with leads, and the same rules apply to those.
 
 ### A safe checking routine
 
@@ -109,7 +109,7 @@ A clamp is safe for high currents, adds no burden voltage, and needs no circuit 
 
 ## Key equations
 
-Symbols: $V_t$ = true voltage across the part with no meter attached (V), $V_m$ = voltage the meter reads (V), $R_1$, $R_2$ = resistances of the divider (ohms), $R_m$ = meter input resistance (ohms), $R_p$ = parallel resistance of $R_2$ and $R_m$ (ohms), $V_s$ = source voltage (V), $p$ = percent-of-reading term (percent), $n$ = count term (counts), $\delta$ = value of one count on the range (same unit as the reading), $x$ = reading, $e$ = worst-case error limit (same unit as the reading), $V_{rms}$ = RMS voltage (V), $V_{avg}$ = mean of the absolute value (V), $I$ = current (A), $R_{sh}$ = shunt resistance (ohms).
+Symbols: $V_t$ = true voltage across the part with no meter attached (V), $V_m$ = voltage the meter reads (V), $V_{pk}$ = peak voltage (V), $R_1$, $R_2$ = resistances of the divider (ohms), $R_m$ = meter input resistance (ohms), $R_p$ = parallel resistance of $R_2$ and $R_m$ (ohms), $V_s$ = source voltage (V), $p$ = percent-of-reading term (percent), $n$ = count term (counts), $\delta$ = value of one count on the range (same unit as the reading), $x$ = reading, $e$ = worst-case error limit (same unit as the reading), $V_{rms}$ = RMS voltage (V), $V_{avg}$ = mean of the absolute value (V), $I$ = current (A), $R_{sh}$ = shunt resistance (ohms).
 
 Resolution of one count, from the top of the range $x_{max}$ and the number of counts $N$:
 
@@ -127,7 +127,7 @@ Average-responding meter on a symmetric wave, where the scale is set for a sine 
 
 $$V_{read} = \frac{\pi}{2\sqrt{2}}\,V_{avg}$$
 
-For a sine, $V_{avg} = (2/\pi)V_m$ and $V_{read}$ equals $V_{rms}$. For a symmetric square wave, $V_{avg} = V_{rms}$, so the reading is high by the factor $\pi/(2\sqrt{2})$.
+For a sine, $V_{avg} = (2/\pi)V_{pk}$, where $V_{pk}$ is the peak voltage, and $V_{read}$ equals $V_{rms}$. For a symmetric square wave, $V_{avg} = V_{rms}$, so the reading is high by the factor $\pi/(2\sqrt{2})$.
 
 Fault current when the amps jack is placed across a source of voltage $V_s$ through the shunt:
 

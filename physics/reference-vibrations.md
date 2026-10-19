@@ -324,7 +324,7 @@ expect(me / MT * ratio, "0.5287 mm")
 
 $$r = \sqrt{1 + \frac{1}{TR}} \qquad f_n = \frac{f_d}{r} \qquad k = m\,(2\pi f_n)^{2} \qquad \delta_{st} = \frac{m g}{k} = \frac{g}{\omega_n^{2}}$$
 
-The isolation efficiency is $1 - TR$. Light damping costs little at high $r$ and protects at start-up, so $\zeta$ of 0.05 to 0.15 (typical) suits many mounts.
+The isolation efficiency is $1 - TR$. Damping raises transmissibility above the undamped target. At the example's $r = 3.317$, damping ratios $\zeta = 0.05$, $0.10$, and $0.15$ give $TR = 0.105$, $0.120$, and $0.140$, respectively; at $\zeta = 0.15$, the target is missed by 40 percent.
 
 Variables:
 
@@ -342,7 +342,7 @@ Variables:
 
 Example. A 200 kg machine with a 25 Hz disturbance needs $TR = 0.1$. Then $r = 3.317$, $f_n = 7.538$ Hz, and $k = 448.6$ kN/m. The static deflection on Earth (standard gravity, $g = 9.80665$ $\text{m/s}^{2}$) is 4.372 mm.
 
-Holds when: the mount is linear, loaded in its design direction, and the disturbance is a single dominant frequency well above $f_n$.
+Holds when: the mount is linear, loaded in its design direction, and the disturbance is a single dominant frequency well above $f_n$; the design equation assumes an undamped mount, so with damping $\zeta$ check $TR$ with the damped formula in [Transmissibility and relative motion](#transmissibility-and-relative-motion) and raise $r$ if needed.
 Breaks when: the disturbance lies below $\sqrt{2}\,f_n$ or sweeps through resonance (a soft mount amplifies), the base is flexible, the mount has internal resonance, or rocking modes couple with the vertical mode.
 Source and basis: derived from the undamped limit of transmissibility and static equilibrium of the mount; the gravity value is a standard convention in [constants](../data/constants.md).
 
@@ -361,6 +361,14 @@ k = m * wn**2
 expect(k, "448.6 kN/m")
 g = q(9.80665, "m/s^2", of="g_standard")
 expect(g / wn**2, "4.372 mm")
+z05 = q(0.05, "")
+z10 = q(0.10, "")
+z15 = q(0.15, "")
+expect(sqrt((1 + (2 * z05 * r)**2) / ((1 - r**2)**2 + (2 * z05 * r)**2)), "0.105")
+expect(sqrt((1 + (2 * z10 * r)**2) / ((1 - r**2)**2 + (2 * z10 * r)**2)), "0.120")
+tr15 = sqrt((1 + (2 * z15 * r)**2) / ((1 - r**2)**2 + (2 * z15 * r)**2))
+expect(tr15, "0.140")
+expect((tr15 / TR - 1) * 100, "40")
 check(abs(1 / (r**2 - 1) - TR) < 1e-9, "undamped transmissibility closes")
 ```
 
@@ -490,9 +498,9 @@ expect(m1 * 1 * 1 + m2 * s1 * s2, "0 kg")
 
 ### Decoupling the equations of motion
 
-**Modal superposition** writes the response as a sum of mode shapes times modal coordinates, $\mathbf{x} = \sum_i \boldsymbol{\phi}_i q_i$. With mass-normalized shapes and proportional damping, each modal coordinate obeys an SDOF equation.
+**Modal superposition** writes the response as a sum of mode shapes times modal coordinates, $\mathbf{x} = \sum_i \boldsymbol{\phi}_i q_i$. With proportional damping, each modal coordinate obeys an SDOF equation.
 
-$$\ddot{q}_i + 2\zeta_i\omega_i\dot{q}_i + \omega_i^{2}q_i = \boldsymbol{\phi}_i^{\mathsf{T}}\mathbf{f}(t) \qquad \zeta_i = \frac{\alpha}{2\omega_i} + \frac{\beta_R\,\omega_i}{2}$$
+$$\ddot{q}_i + 2\zeta_i\omega_i\dot{q}_i + \omega_i^{2}q_i = \frac{\boldsymbol{\phi}_i^{\mathsf{T}}\mathbf{f}(t)}{m_i} \qquad m_i = \boldsymbol{\phi}_i^{\mathsf{T}}\mathbf{M}\boldsymbol{\phi}_i \qquad \zeta_i = \frac{\alpha}{2\omega_i} + \frac{\beta_R\,\omega_i}{2}$$
 
 The second relation is **Rayleigh damping**, $\mathbf{C} = \alpha\mathbf{M} + \beta_R\mathbf{K}$. To give damping ratio $\zeta$ at two frequencies $\omega_a$ and $\omega_b$:
 
@@ -505,7 +513,9 @@ Variables:
 | Symbol | Meaning | SI unit |
 |---|---|---|
 | $q_i$ | modal coordinate of mode $i$ | m |
-| $\boldsymbol{\phi}_i$ | mass-normalized mode shape, a dimensionless vector with modal mass 1 kg | dimensionless |
+| $\boldsymbol{\phi}_i$ | dimensionless mode shape vector | dimensionless |
+| $m_i$ | modal mass, $\boldsymbol{\phi}_i^{\mathsf{T}}\mathbf{M}\boldsymbol{\phi}_i$ | kg |
+| $\mathbf{M}$ | mass matrix | kg |
 | $\omega_i$ | natural angular frequency of mode $i$ | rad/s |
 | $\zeta_i$ | modal damping ratio | dimensionless |
 | $\mathbf{f}$ | applied force vector | N |
@@ -514,7 +524,7 @@ Variables:
 | $\omega_a$, $\omega_b$ | two frequencies where the damping ratio is set | rad/s |
 | $\zeta$ | target damping ratio at those frequencies | dimensionless |
 
-Example. For the two-mass chain above, a force of 10 N on mass 1 gives the first modal force $\boldsymbol{\phi}_1^{\mathsf{T}}\mathbf{f} = 0.4082 \times 10 = 4.082$ N through the mass-normalized shape, so the right-hand side for mode 1 is 4.082 $\text{m/s}^{2}$ after dividing by the 1 kg modal mass. To set $\zeta = 0.02$ at $\omega_a = 22.36$ and $\omega_b = 44.72$ rad/s, $\alpha = 0.5963$ 1/s and $\beta_R = 5.963\times10^{-4}$ s.
+Example. For the two-mass chain above, a force of 10 N on mass 1 gives the first modal force $\boldsymbol{\phi}_1^{\mathsf{T}}\mathbf{f} = 0.4082 \times 10 = 4.082$ N. With modal mass $m_1 = 1$ kg, the right-hand side for mode 1 is 4.082 $\text{m/s}^{2}$. To set $\zeta = 0.02$ at $\omega_a = 22.36$ and $\omega_b = 44.72$ rad/s, $\alpha = 0.5963$ 1/s and $\beta_R = 5.963\times10^{-4}$ s.
 
 Holds when: the damping matrix is diagonalized by the undamped modes (proportional damping, or light damping where the off-diagonal terms are small).
 Breaks when: damping is concentrated in a few joints or dampers (non-proportional, so use complex modes), or when too few modes are kept to represent the load (add residual static flexibility).
@@ -525,7 +535,14 @@ Source and basis: derived from the orthogonality of mode shapes in the previous 
 ```verify
 wa = sqrt(q(500, "rad^2/s^2"))
 wb = sqrt(q(2000, "rad^2/s^2"))
+expect(wa, "22.36 rad/s")
+expect(wb, "44.72 rad/s")
 z = q(0.02, "")
+phi = q(0.4082, "")
+force = q(10, "N")
+mi = q(1, "kg")
+expect(phi * force, "4.082 N")
+expect(phi * force / mi, "4.082 m/s^2")
 al = 2 * z * wa * wb / (wa + wb)
 be = 2 * z / (wa + wb)
 expect(al, "0.5963 1/s")
@@ -552,7 +569,7 @@ $$f_n = \frac{n\,c_w}{2L}\quad\text{(string fixed at both ends; bar or shaft wit
 
 $$f_n = \frac{(2n-1)\,c_w}{4L}\quad\text{(bar or shaft fixed at one end and free at the other)} \qquad c_w = \sqrt{\frac{T}{\rho_\ell}},\ \sqrt{\frac{E}{\rho}},\ \sqrt{\frac{G}{\rho}}$$
 
-The wave speed is the first form for the string, the second for the bar in axial motion, and the third for a shaft in torsion with the same wave speed relation. The mode number is $n = 1, 2, 3, \dots$.
+The wave speed is the first form for the string, the second for the bar in axial motion, and the third for a circular shaft in torsion. The mode number is $n = 1, 2, 3, \dots$.
 
 Variables:
 
@@ -569,7 +586,7 @@ Variables:
 
 Example. A string with $T = 100$ N, $\rho_\ell = 0.005$ kg/m, and $L = 0.65$ m has $c_w = 141.4$ m/s and $f_1 = 108.8$ Hz. A steel rod with $E = 200$ GPa and $\rho = 7850$ $\text{kg/m}^{3}$ has $c_w = 5048$ m/s, so fixed-free with $L = 1$ m it has $f_1 = 1262$ Hz. A steel shaft with $G = 80$ GPa and the same density has $c_w = 3192$ m/s; fixed at one end and free at the other with $L = 0.5$ m, it has $f_1 = 1596$ Hz.
 
-Holds when: the string is flexible with a small slope, the bar or shaft is uniform with a cross section small against the wavelength, and the ends are ideal (fixed or free).
+Holds when: the string is flexible with a small slope, the bar or circular shaft is uniform with a cross section small against the wavelength, and the ends are ideal (fixed or free); for torsion the section must be circular, solid or hollow, so its torsion constant equals its polar moment.
 Breaks when: the string has bending stiffness (the overtones go sharp), the bar is thick (lateral inertia lowers the frequencies), a shaft carries end disks (use the disk inertia as a boundary condition), or the ends are springs.
 Source and basis: derived from the one-dimensional wave equation by separation of variables; the wave relations are in [Oscillations, waves, light, and heat](07-waves-light-heat.md).
 
@@ -611,7 +628,7 @@ Values of $\beta_n L$ for the first three bending modes:
 | Fixed-fixed | $\cos\beta L\,\cosh\beta L = 1$ | 4.7300 | 7.8532 | 10.9956 |
 | Fixed-pinned | $\tan\beta L = \tanh\beta L$ | 3.9266 | 7.0686 | 10.2102 |
 
-The free-free row omits the two rigid-body modes at zero frequency. For a simply supported beam $\beta_n L = n\pi$. Above the first few modes of the other rows, $\beta_n L$ approaches $(n + 1/2)\pi$ for fixed-free, $(n + 1/2)\pi$ for free-free and fixed-fixed, and $(n + 1/4)\pi$ for fixed-pinned.
+The free-free row omits the two rigid-body modes at zero frequency. For a simply supported beam $\beta_n L = n\pi$. Above the first few modes of the other rows, $\beta_n L$ approaches $(n - 1/2)\pi$ for fixed-free, $(n + 1/2)\pi$ for free-free and fixed-fixed, and $(n + 1/4)\pi$ for fixed-pinned.
 
 Variables:
 

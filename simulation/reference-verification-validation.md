@@ -160,10 +160,10 @@ expect((N1 / N2)**(q(1, "") / 3), "2")
 given("0.1100", "0.0300")
 ```
 
-- Use a refinement ratio of at least about 1.3, and prefer 2 when the cost allows.
+- NASA Glenn gives a minimum ratio of $r \ge 1.1$ and notes that $r = 2$ has traditionally been used [src](../data/claims/simulation-vv.md#nasa-grc-refinement-ratio).
 - Refine in every direction by the same ratio, and keep the mesh quality metrics (skewness, aspect ratio, smoothness) the same across the sequence.
 - Refine the time step on the same ratio when time accuracy matters, and refine space and time together so that neither hides the other.
-- For a non-integer ratio or unequal ratios, the order is the root of a fixed-point equation instead of the closed form above; see [simulation/reference-finite-element-analysis.md](reference-finite-element-analysis.md) and [simulation/reference-computational-fluid-dynamics.md](reference-computational-fluid-dynamics.md) for their mesh practice.
+- The closed form above applies to any constant ratio, including a non-integer ratio. Unequal ratios need an iterative solution of the three-grid error model, which is not given here.
 
 ### Richardson extrapolation
 
@@ -296,7 +296,7 @@ Holds when: the three parts are independent (the root-sum-square assumption), ea
 Breaks when: the parts are correlated (for example one measured boundary condition feeds both the experiment and the simulation, so add the covariance), the numerical error is a one-sided bias and not a symmetric uncertainty, or the experiment does not measure what the simulation computes.
 Source and basis: derived from the propagation of independent uncertainties in [Propagating uncertainty and significant figures](../measurement/03-propagating-uncertainty-and-significant-figures.md); the measurement background is in [Measurement reference](../measurement/reference.md).
 
-Example. A simulation predicts a load of 101.2 N and the test measured 98.0 N. The numerical, input, and experimental uncertainties are 1.0 N, 1.5 N, and 1.2 N. The comparison error is 3.2 N and the validation uncertainty is 2.17 N. Because $\lvert E \rvert$ exceeds $u_{\text{val}}$, the stated uncertainties do not explain the difference, and the remainder is attributed to model-form error.
+Example. A simulation predicts a load of 101.2 N and the test measured 98.0 N. The numerical, input, and experimental standard uncertainties are 1.0 N, 1.5 N, and 1.2 N. The comparison error is 3.2 N and the validation standard uncertainty is 2.17 N. At coverage factor $k = 2$, the comparison error is below the 4.33 N uncertainty band, so this comparison does not show a statistically significant difference at that coverage.
 
 ```verify
 S = q(101.2, "N")
@@ -308,7 +308,9 @@ E = S - D
 expect(E, "3.2 N")
 uv = sqrt(un**2 + ui**2 + ud**2)
 expect(uv, "2.17 N")
-check(abs(E) > uv, "difference is larger than the validation uncertainty")
+k = q(2, "")
+expect(k * uv, "4.33 N")
+check(abs(E) < k * uv, "difference is inside the k=2 uncertainty band")
 ```
 
 - If $\lvert E \rvert$ is within $u_{\text{val}}$ (or within the chosen coverage multiple of it), the model is not shown wrong at that level. That is not proof that it is right.

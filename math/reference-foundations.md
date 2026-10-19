@@ -11,7 +11,7 @@ A lookup sheet for the arithmetic, algebra, geometry, trigonometry, and complex 
 - An equation is a balance. Whatever you do to one side, you do to the other, and the balance holds.
 - Operations have a fixed order. Everyone who follows the same order gets the same answer from the same expression.
 - A formula is a recipe with stated limits. Use it only where its conditions hold.
-- Dividing by zero has no meaning. A formula that asks for it is telling you the situation it describes does not exist.
+- Dividing by zero has no meaning. A formula that asks for it has left the range where its assumptions hold; the physical situation may still exist.
 - Rounding happens once, at the end. Rounding in the middle of a calculation adds error that the final digits cannot hide.
 - A drawing, a graph, or an estimate catches errors that arithmetic repeats. Look at the answer and ask whether it is the right size.
 - Angles in an equation are in radians. Degrees are a way to write an angle for people and are converted before use.
@@ -24,7 +24,7 @@ A lookup sheet for the arithmetic, algebra, geometry, trigonometry, and complex 
 An **expression** is a group of numbers joined by operations such as add, subtract, multiply, and divide. Work an expression in this order:
 
 1. Brackets first, innermost first.
-2. Powers and roots.
+2. Powers (repeated multiplication) and roots (the inverse operation, such as the square root).
 3. Multiplication and division, left to right.
 4. Addition and subtraction, left to right.
 
@@ -46,12 +46,12 @@ expect((-6) * 3, "-18")
 ```
 
 Holds when: the expression is written in the standard notation above.
-Breaks when: a calculator or program uses different rules for chained division (check by putting brackets around every step you care about) or when a written fraction bar hides a bracket (the whole top and the whole bottom are each in brackets).
+Breaks when: a calculator or program uses different rules for chained division (check by putting brackets around every step you care about), when a written fraction bar hides a bracket (the whole top and the whole bottom are each in brackets), or when a minus sign and a power are ambiguous. In standard notation, $-3^{2} = -(3^{2}) = -9$ because the power comes first; write $(-3)^{2}$ for 9. In a spreadsheet, enter `=-(3^2)` for -9 or `=(-3)^2` for 9 so the intended order is explicit.
 Source and basis: derived from the definition of the operations and the convention that makes expressions unambiguous; taught in [Algebra](01-algebra.md).
 
 ### The distributive law
 
-The **distributive law** says that multiplying a sum equals multiplying each part and adding. It lets you expand a bracket or pull a common factor out.
+The **distributive law** says that multiplying a sum equals multiplying each part and adding. To **expand a bracket** is to multiply each term inside it; to **factor** is to rewrite a sum as a product by taking out a **common factor**, a quantity that divides every term.
 
 $$a(b + c) = ab + ac$$
 
@@ -316,7 +316,7 @@ Source and basis: derived from the balance rule for equations; taught in [Algebr
 
 Example: $5x + 7 = 32$ gives $x = (32 - 7)/5 = 5$. Check: $5 \times 5 + 7 = 32$.
 
-To rearrange a formula, treat the symbol you want as the unknown. For the distance under steady acceleration from rest, $s = \tfrac{1}{2} a t^{2}$, the time is $t = \sqrt{2 s / a}$. With $s = 20$ m and $a = 5$ $\text{m/s}^{2}$ the time is 2.828 s. The units check: $\sqrt{\text{m} / (\text{m/s}^{2})} = \sqrt{\text{s}^{2}} = \text{s}$.
+To rearrange a formula, treat the symbol you want as the unknown. **Steady acceleration** means acceleration that does not change with time. For distance under steady acceleration from rest, $s = \tfrac{1}{2} a t^{2}$, so the time is $t = \sqrt{2 s / a}$. With $s = 20$ m and $a = 5$ $\text{m/s}^{2}$ the time is 2.828 s. The units check: $\sqrt{\text{m} / (\text{m/s}^{2})} = \sqrt{\text{s}^{2}} = \text{s}$.
 
 ```verify
 x = (q(32, "") - q(7, "")) / q(5, "")
@@ -329,40 +329,7 @@ expect(sqrt(2 * s / a), "2.828 s")
 
 ### Quadratic equation
 
-A **quadratic equation** has $x$ to the second power as its highest power. It has two real solutions, one repeated solution, or none, depending on the **discriminant** $b^{2} - 4ac$.
-
-$$a x^{2} + b x + c = 0 \quad\Longrightarrow\quad x = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}$$
-
-Variables:
-
-| Symbol | Meaning | SI unit |
-|---|---|---|
-| $x$ | the unknown | dimensionless |
-| $a$ | coefficient of $x^{2}$, not zero | dimensionless |
-| $b$ | coefficient of $x$ | dimensionless |
-| $c$ | constant term | dimensionless |
-
-Holds when: $a \ne 0$. A positive discriminant gives two real solutions, zero gives one, and a negative one gives two complex solutions.
-Breaks when: $a$ is very small next to $b$, where subtracting two nearly equal numbers loses digits. Compute the larger-magnitude solution first, then use the product of the solutions $c/a$ for the other.
-Source and basis: derived by completing the square; taught in [Algebra](01-algebra.md).
-
-Example: $x^{2} - 5x + 6 = 0$ has $b^{2} - 4ac = 25 - 24 = 1$, so $x = (5 \pm 1)/2$, giving 3 and 2. The solutions sum to $-b/a = 5$ and multiply to $c/a = 6$.
-
-```verify
-a = 1
-b = -5
-c = 6
-disc = b**2 - 4*a*c
-expect(b**2, "25")
-expect(4*a*c, "24")
-expect(disc, "1")
-x1 = (-b + sqrt(disc)) / (2*a)
-x2 = (-b - sqrt(disc)) / (2*a)
-expect(x1, "3")
-expect(x2, "2")
-expect(x1 + x2, "5")
-expect(x1 * x2, "6")
-```
+A **quadratic equation** has the unknown squared as its highest power. For its formula, discriminant, solution limits, and examples, see [Algebra and logarithms](reference.md#algebra-and-logarithms).
 
 ### Useful expansions
 
@@ -392,67 +359,9 @@ expect(100**2 - 1**2, "9999")
 expect(q(99, "") * q(101, ""), "9999")
 ```
 
-## Logarithms and exponentials (basic rules only)
+## Logarithms and exponentials
 
-### Logarithm rules
-
-The **logarithm** of a positive number $x$ to base $b$, written $\log_{b} x$, is the exponent you put on $b$ to get $x$. So $\log_{10} 1000 = 3$ because $10^{3} = 1000$. The **natural logarithm** $\ln x$ uses the base $e = 2.71828$, a constant that appears wherever growth is proportional to size. A logarithm turns multiplication into addition.
-
-$$\log_{b}(xy) = \log_{b} x + \log_{b} y \qquad \log_{b}\frac{x}{y} = \log_{b} x - \log_{b} y \qquad \log_{b}(x^{n}) = n \log_{b} x \qquad \log_{b} x = \frac{\ln x}{\ln b}$$
-
-Variables:
-
-| Symbol | Meaning | SI unit |
-|---|---|---|
-| $x$, $y$ | positive numbers | dimensionless |
-| $b$ | the base, positive and not 1 | dimensionless |
-| $n$ | any real exponent | dimensionless |
-
-Holds when: $x$ and $y$ are positive, because the logarithm of zero or a negative number is not a real number.
-Breaks when: you apply it to a sum. $\log(x + y)$ does not simplify. Also take the logarithm of a pure number only; a quantity with a unit (a length in metres) must first be divided by a reference of the same unit.
-Source and basis: derived from the laws of powers above, since a logarithm is an exponent.
-
-Examples:
-
-- $\log_{10} 2000 = \log_{10} 2 + \log_{10} 1000 = 0.3010 + 3 = 3.301$.
-- $\ln 8 = 3 \ln 2 = 2.079$.
-- $\log_{2} 1024 = \ln 1024 / \ln 2 = 10$.
-
-```verify
-expect(log10(2000), "3.301")
-expect(log10(2) + 3, "3.301")
-expect(log(8), "2.079")
-expect(3 * log(2), "2.079")
-expect(log(1024) / log(2), "10")
-```
-
-### Exponential growth and decay
-
-**Exponential growth** is a quantity that changes by a fixed fraction in each equal step. A positive $k$ gives growth, and a negative $k$ gives decay.
-
-$$y = y_{0}\, e^{k t} \qquad t = \frac{1}{k} \ln\frac{y}{y_{0}}$$
-
-Variables:
-
-| Symbol | Meaning | SI unit |
-|---|---|---|
-| $y$ | quantity at time $t$ | dimensionless |
-| $y_{0}$ | quantity at $t = 0$ | dimensionless |
-| $k$ | rate constant | 1/s |
-| $t$ | time | s |
-
-Holds when: the rate of change is proportional to the current value and $k$ is constant.
-Breaks when: the growth is limited (a supply runs out) or the rate changes with time. A real cooling or charging process needs its own model.
-Source and basis: derived from the definition of $e$ and the logarithm rules above; the calculus behind it is in [Single-variable calculus](03-single-variable-calculus.md).
-
-Example: a quantity that grows 3 percent per step doubles after $\ln 2 / \ln 1.03 = 23.45$ steps. A decaying signal with $k = -0.2\ \text{1/s}$ falls to $e^{-1} = 0.3679$ of its start after $t = 5$ s.
-
-```verify
-expect(log(2) / log(q(1.03, "")), "23.45")
-k = q(-0.2, "1/s")
-t = q(5, "s")
-expect(exp(k * t), "0.3679")
-```
+For logarithm rules, exponential growth and decay, and their worked examples, see [Algebra and logarithms](reference.md#algebra-and-logarithms).
 
 ## Functions and graphs
 
@@ -644,7 +553,7 @@ Source and basis: derived from the definition of similarity and from counting un
 Examples:
 
 - A 2 m pole casts a 1.5 m shadow while a tree casts a 12 m shadow at the same moment. The sun angle is the same, so $k = 12/1.5 = 8$ and the tree is $2 \times 8 = 16$ m tall.
-- A model at scale 1:10 ($k = 10$ from model to full size) has 100 times the area and 1000 times the volume.
+- At scale 1:10 ($k = 10$ from model to full size), the full-size object has 100 times the model's area and 1000 times its volume.
 
 ```verify
 k = q(12, "m") / q(1.5, "m")
@@ -655,93 +564,19 @@ expect(kk**2, "100")
 expect(kk**3, "1000")
 ```
 
-## Right-triangle trigonometry and radians
+## Trigonometry and radians
 
-### Sine, cosine, and tangent
-
-**Trigonometry** relates the angles of a right triangle to the ratios of its sides. For an angle $\theta$ other than the right angle, call the side across from it the **opposite**, the side touching it (not the hypotenuse) the **adjacent**, and the longest side the **hypotenuse**.
-
-$$\sin\theta = \frac{\text{opp}}{\text{hyp}} \qquad \cos\theta = \frac{\text{adj}}{\text{hyp}} \qquad \tan\theta = \frac{\text{opp}}{\text{adj}} \qquad \theta = \arcsin\frac{\text{opp}}{\text{hyp}}$$
-
-Variables:
-
-| Symbol | Meaning | SI unit |
-|---|---|---|
-| $\theta$ | the angle, in radians in equations | rad |
-| opp, adj, hyp | lengths of the opposite, adjacent, and hypotenuse sides | m |
-
-Holds when: the triangle has a right angle and $0 < \theta < \pi/2$ for the side-ratio definitions. For other angles the functions are defined on the unit circle, with $\sin\theta$ and $\cos\theta$ the vertical and horizontal coordinates of the point at angle $\theta$.
-Breaks when: your calculator is in degree mode while the formula expects radians, or the other way round (check with $\sin 90^{\circ} = 1$). $\tan\theta$ grows without limit as $\theta$ approaches $\pi/2$.
-Source and basis: derived from the similarity of right triangles that share an angle (the ratios do not depend on size); taught in [Trigonometry](02-trigonometry.md). For identities and the laws of sines and cosines see [the trigonometry reference](reference.md#trigonometry).
-
-Special angles (exact values):
-
-| Angle | Radians | $\sin$ | $\cos$ | $\tan$ |
-|---|---|---|---|---|
-| $30^{\circ}$ | $\pi/6$ | $1/2$ | $\sqrt{3}/2$ | $1/\sqrt{3}$ |
-| $45^{\circ}$ | $\pi/4$ | $\sqrt{2}/2$ | $\sqrt{2}/2$ | $1$ |
-| $60^{\circ}$ | $\pi/3$ | $\sqrt{3}/2$ | $1/2$ | $\sqrt{3}$ |
-
-Examples:
-
-- A 5 m ladder at $70^{\circ}$ to the ground reaches $5 \sin 70^{\circ} = 4.698$ m up the wall and its foot is $5 \cos 70^{\circ} = 1.710$ m from the wall.
-- A ramp rises 0.4 m over a horizontal run of 2.0 m. Its angle is $\arctan(0.4/2.0) = 0.1974$ rad, which is $11.31^{\circ}$.
-- $\sin 30^{\circ} = 0.5$ and $\cos 45^{\circ} = 0.7071$.
-
-```verify
-L = q(5, "m")
-th = q(70, "deg")
-expect(L * sin(th), "4.698 m")
-expect(L * cos(th), "1.710 m")
-ang = atan(q(0.4, "m") / q(2.0, "m"))
-expect(ang, "0.1974")
-expect(ang * 180 / pi, "11.31")
-expect(sin(q(30, "deg")), "0.5")
-expect(cos(q(45, "deg")), "0.7071")
-```
-
-### Radians and arc length
-
-A **radian** is the angle at the centre of a circle that cuts off an arc equal in length to the radius. A full turn is $2\pi$ rad, which is $360^{\circ}$. Equations in this repo use radians because the formulas for arc length, angular speed, and small angles are simplest in them.
-
-$$\theta_{\text{rad}} = \theta_{\text{deg}} \cdot \frac{\pi}{180} \qquad s = r \theta$$
-
-Variables:
-
-| Symbol | Meaning | SI unit |
-|---|---|---|
-| $\theta_{\text{rad}}$ | the angle in radians | rad |
-| $\theta_{\text{deg}}$ | the same angle written in degrees (a pure number) | dimensionless |
-| $s$ | arc length along the circle | m |
-| $r$ | radius | m |
-| $\theta$ | the angle in radians | rad |
-
-Holds when: $\theta$ is in radians in the formula $s = r\theta$.
-Breaks when: you put degrees into $s = r\theta$, which gives an answer about 57 times too large. For small angles (about $0.1$ rad or less) $\sin\theta \approx \theta$ and $\tan\theta \approx \theta$ to within about 1 percent; beyond that use the full function.
-Source and basis: derived from the definition of the radian as arc length divided by radius.
-
-Examples:
-
-- $1\ \text{rad} = 180/\pi = 57.30^{\circ}$, and $90^{\circ} = 1.571$ rad.
-- An arc of angle $40^{\circ}$ on a circle of radius 0.5 m has length $0.5 \times 0.6981 = 0.3491$ m.
-- For $\theta = 0.1$ rad, $\sin\theta = 0.09983$, which differs from $\theta$ by 0.17 percent.
-
-```verify
-expect(180 / pi, "57.30")
-expect(q(90, "deg"), "1.571 rad")
-th = q(40, "deg")
-expect(th, "0.6981 rad")
-expect(q(0.5, "m") * th, "0.3491 m")
-x = 0.1
-expect(sin(x), "0.09983")
-expect(100 * (x - sin(x)) / sin(x), "0.17")
-```
+A **radian** is the central angle that cuts off an arc equal in length to the circle's radius. The **inverse sine**, written $\arcsin x$, gives the angle in $[-\pi/2, \pi/2]$ whose sine is $x$, for $-1 \le x \le 1$. The **inverse tangent**, written $\arctan x$, gives the angle in $(-\pi/2, \pi/2)$ whose tangent is $x$. For right-triangle ratios, angle conversions, arc length, and worked examples, see [Trigonometry](reference.md#trigonometry).
 
 ## Complex numbers
+
+This section is beyond level 0. Read it after learning radians, exponentials, and the unit circle, when you need to represent oscillating signals, rotations, or equations with negative discriminants.
 
 ### Rectangular and polar form
 
 An **imaginary number** is a multiple of $j$, where $j$ is defined by $j^{2} = -1$. A **complex number** adds a real part and an imaginary part. It describes a point on a plane, with the real part along the horizontal axis and the imaginary part along the vertical axis. The **magnitude** $r$ is its distance from the origin and the **angle** $\varphi$ is measured counterclockwise from the positive real axis. This repo writes $j$ rather than $i$, as set in [Notation](../data/notation.md).
+
+The **two-argument arctangent**, written $\operatorname{atan2}(b, a)$, gives the angle from the positive horizontal axis to the point $(a,b)$, in the range $(-\pi, \pi]$.
 
 $$z = a + j b = r\,e^{j\varphi} \qquad r = \sqrt{a^{2} + b^{2}} \qquad \varphi = \operatorname{atan2}(b, a) \qquad a = r\cos\varphi \qquad b = r\sin\varphi$$
 
@@ -757,9 +592,9 @@ Variables:
 
 Holds when: $z$ is a single complex number. The angle is defined for $r > 0$ and is unique up to adding $2\pi$.
 Breaks when: you use $\arctan(b/a)$ alone, which cannot tell $(a, b)$ from $(-a, -b)$. Use $\operatorname{atan2}(b, a)$ or place the point in the correct quadrant yourself. The angle of $z = 0$ is undefined.
-Source and basis: derived from plotting $a + jb$ as a point and applying right-triangle trigonometry; taught in [Algebra](01-algebra.md) and [Trigonometry](02-trigonometry.md).
+Source and basis: derived from plotting $a + jb$ as a point and applying right-triangle trigonometry; the notation $j$ is defined in [Notation](../data/notation.md).
 
-Example: $z = 3 + 4j$ has $r = \sqrt{9 + 16} = 5$ and $\varphi = \arctan(4/3) = 0.9273$ rad ($53.13^{\circ}$). Converting back gives $5\cos 0.9273 = 3$ and $5\sin 0.9273 = 4$. The point $-3 - 4j$ has the same magnitude but angle $-2.214$ rad, not $0.9273$ rad.
+Example: $z = 3 + 4j$ has $r = \sqrt{9 + 16} = 5$ and $\varphi = \operatorname{atan2}(4, 3) = 0.9273$ rad ($53.13^{\circ}$). Converting back gives $5\cos 0.9273 = 3$ and $5\sin 0.9273 = 4$. The point $-3 - 4j$ has the same magnitude but angle $-2.214$ rad, not $0.9273$ rad.
 
 ```verify
 a = 3
@@ -772,7 +607,7 @@ expect(phi, "0.9273")
 expect(phi * 180 / pi, "53.13")
 expect(r * cos(phi), "3")
 expect(r * sin(phi), "4")
-expect(atan(4 / 3) - pi, "-2.214")
+expect(atan((-4) / (-3)) - pi, "-2.214")
 ```
 
 ### Euler's formula
@@ -824,7 +659,7 @@ Source and basis: derived from Euler's formula and the laws of powers. For how a
 Example with $z_{1} = 3 + 4j$ and $z_{2} = 1 + j$ (magnitudes 5 and 1.414, angles 0.9273 rad and 0.7854 rad):
 
 - Product in rectangular form: $(3 + 4j)(1 + j) = 3 + 3j + 4j + 4j^{2} = -1 + 7j$.
-- Product in polar form: magnitude $5 \times 1.414 = 7.071$ and angle $0.9273 + 0.7854 = 1.7127$ rad. The rectangular result agrees, since $\sqrt{1 + 49} = 7.071$ and $\pi + \arctan(7/(-1)) = 1.7127$ rad.
+- Product in polar form: magnitude $5 \times 1.414 = 7.071$ and angle $0.9273 + 0.7854 = 1.7127$ rad. The rectangular result agrees, since $\sqrt{1 + 49} = 7.071$ and $\operatorname{atan2}(7, -1) = 1.7127$ rad.
 - Quotient: multiply top and bottom by the conjugate of $z_{2}$, giving $(3 + 4j)(1 - j)/2 = (7 + j)/2 = 3.5 + 0.5j$. Polar form gives magnitude $5/1.414 = 3.536$ and angle $0.9273 - 0.7854 = 0.1419$ rad.
 
 ```verify

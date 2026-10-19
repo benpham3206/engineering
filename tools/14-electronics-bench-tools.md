@@ -26,7 +26,7 @@ The current limit is what protects the circuit. A wiring mistake, a reversed cap
 The safe first use, in order:
 
 1. Turn the output off. Set the voltage to the value the circuit needs.
-2. Short the two output leads together, or use the supply's own limit-set function if it has one, and turn the current limit knob until the display shows the limit you want. Remove the short. Choose a limit a little above the current you expect the circuit to draw, so a fault trips it.
+2. Set the current limit with the supply's limit-preview function while the output is off, if it has one. Otherwise, short the output leads, turn the output on, set the current limit while the supply is in constant-current mode, then turn the output off before removing the short. Choose a limit a little above the current you expect the circuit to draw, so a fault puts the supply into CC mode.
 3. Connect the leads to the circuit with the output still off, red to the positive input and black to the return, then turn the output on and watch the current reading.
 4. If the supply goes into CC mode at once, or the current is far from what you calculated, turn the output off and look for the fault before raising the limit.
 
@@ -67,10 +67,10 @@ Many scopes behave close to this model, which is why the rule works well. It is 
 
 What matters at the bench is that the scope and the signal's edge add in quadrature. The rise time you see is $t_{meas} = \sqrt{t_{sig}^2 + t_{scope}^2}$. If the scope is as fast as the edge, the picture is wrong by more than 40 percent. A common rule of thumb is to choose a scope with a bandwidth at least five times the highest frequency content of the signal, which keeps the rise-time error near 2 percent. The frequency content of a fast edge is about $0.35/t_r$, not just the repetition rate of the wave: a 1 MHz square wave with a 5 ns edge needs far more than 5 MHz.
 
-The probe's bandwidth counts too. The bandwidth of the whole system is set by the slower of the probe and the scope.
+The probe's response counts too. The probe and scope rise times combine in quadrature, just like the signal and scope rise times: $t_{system} = \sqrt{t_{probe}^2 + t_{scope}^2}$. The complete measurement system is slower than either part alone.
 
 > [!WARNING]
-> A scope's probe ground clip is connected to the mains safety earth through the scope's power cord. Clipping it onto a circuit that is referenced to the mains, such as the primary side of a switching power supply or any circuit plugged into the wall without an isolating transformer, connects that circuit to earth through the clip and the cord. The result is a short, a flash, burned parts, or a shock. Never defeat the earth pin on a scope's plug to get around this. Measure mains-referenced circuits only with an isolation transformer feeding the circuit, a differential probe, or a battery-powered scope, and only if you have been trained to work on mains circuits. A probe's tip and ground clip are both at the scope's earth, so never clip the ground lead to a point that is not at earth potential unless you know why.
+> On a mains-powered bench scope, the probe ground clip and BNC shell are bonded to protective earth; the probe tip is the signal input. Never clip the ground lead to a live or mains-referenced node. It shorts that node to earth and can cause electric shock, an arc, fire, or equipment damage. Never defeat the scope's protective earth. For mains-referenced measurements, use a differential probe rated for the voltage and measurement category, or a scope with inputs isolated from each other and from the case and rated for the work. Battery power alone does not make a scope input isolated. Check the instrument and probe ratings, and do not make mains measurements without training.
 
 ### Reading amplitude, period, frequency, and duty cycle
 
@@ -122,7 +122,7 @@ To make a through-hole joint, place the component lead in its hole, touch the ti
 **Desoldering** removes solder to take a part off. A **desoldering pump** (a spring-loaded suction tool) or **desoldering braid** (woven copper wick) pulls molten solder away from the joint. Heat the joint, apply the pump or braid, and remove the solder until the lead moves freely. Do not pull a part that is still held, since pads and their traces peel off the board with it.
 
 > [!WARNING]
-> A hot iron burns skin and ignites materials, so rest it in its stand, never on the bench, and unplug it or turn it off when you leave. Soldering also produces fumes from the flux that irritate lungs, so work with a fume extractor or good ventilation that draws fumes away from your face. Leaded solder contains lead, which harms the nervous system and is absorbed from contaminated hands. Wash your hands with soap after soldering and before you eat, drink, or touch your face, and do not eat at the bench. Dispose of solder waste as hazardous waste under your workplace rules. Lead-free solder avoids lead, but flux fumes and heat hazards remain. See OSHA's [overview of lead](https://www.osha.gov/lead).
+> A hot iron burns skin and ignites materials, so rest it in its stand, never on the bench, and unplug it or turn it off when you leave. Wear safety glasses because molten solder and flux can spatter, and clipped leads can fly. Rosin-based flux fumes can cause occupational asthma, so use fume extraction at the joint and keep your head out of the fume plume. Leaded solder contains lead, which harms the nervous system and can be swallowed from contaminated hands. Wash your hands with soap after soldering and before you eat, drink, or touch your face, and do not eat at the bench. Dispose of solder waste as hazardous waste under your workplace rules. Lead-free solder avoids lead, but flux fumes and heat hazards remain. See OSHA's [overview of lead](https://www.osha.gov/lead).
 
 ### Breadboards and their limits
 

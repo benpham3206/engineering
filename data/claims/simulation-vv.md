@@ -12,6 +12,14 @@ Facts about published grid convergence methods and the NASA modeling and simulat
 - Sources: nasa-grc-cfd-vv (spatial convergence page, https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html, "estimate of the continuum value")
 - Checked: agent:sonnet, 2026-10-18, fetched the page and matched the formulas and the quoted words
 
+### nasa-grc-refinement-ratio
+- Claim: The NASA Glenn Research Center verification and validation tutorial states a minimum grid refinement ratio of 1.1 to distinguish discretization error from other error sources, and notes that a ratio of 2 has traditionally been used.
+- Values: 1.1; 2
+- Layer: durable
+- Status: verified-1
+- Sources: nasa-grc-cfd-vv (spatial convergence page, https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html, "minimum of r >= 1.1" and "Traditionally, Richardson extrapolation has been used with grid refinement ratios of r = 2")
+- Checked: agent:codex, 2026-10-19, fetched the page and matched the ratio guidance and quoted words
+
 ### nasa-grc-gci-safety-factors
 - Claim: For the grid convergence index, the NASA Glenn tutorial recommends a safety factor of 3.0 for comparisons of two grids and 1.25 for three or more grids.
 - Values: 3.0; 1.25
